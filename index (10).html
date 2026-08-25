@@ -757,6 +757,28 @@ p{margin:0}
   border-radius:0 14px 14px 0;padding:12px 14px;margin:0 0 13px;font-weight:700}
 .nt-foot{display:flex;gap:11px;margin-top:15px}
 .nt-foot .btn{flex:1}
+
+/* spelling section */
+.spell-hero{display:flex;gap:14px;align-items:center;background:var(--sky-50);border:1.5px solid var(--sky-100);border-radius:var(--r-lg);padding:18px;margin:8px 0}.spell-hero p,.spell-mistake p{color:var(--muted);font-size:14px;margin-top:4px}.spell-emoji{font-size:38px}.spell-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.spell-pick{min-height:92px;border:1.5px solid var(--line);border-radius:var(--r-md);background:#fff;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:16px;box-shadow:var(--sh-1)}.spell-pick b{font-size:25px}.spell-pick span{color:var(--muted);font-size:13px}.spell-mistake{margin-top:18px}.spell-levels{display:grid;gap:12px}.spell-level{display:flex;align-items:center;gap:12px;text-align:left;background:#fff;border:1.5px solid var(--line);border-radius:var(--r-md);padding:17px;min-height:76px;box-shadow:var(--sh-1)}.spell-level b{flex:1}.spell-card{background:#fff;border:1.5px solid var(--line);border-radius:var(--r-lg);padding:22px 18px;margin:16px 0;text-align:center}.spell-tags{display:flex;gap:8px;justify-content:center;align-items:center;color:var(--muted);font-size:13px}.spell-prompt{display:flex;flex-direction:column;gap:12px;font-size:20px;margin:24px 0 4px}.spell-hidden{font-size:14px;color:var(--muted)}.spell-word{font-size:32px;font-weight:900;letter-spacing:.02em;color:var(--sky-ink);margin:12px}.misspelled{font-size:32px;color:var(--coral-ink);text-decoration:line-through}.spell-input{margin:0 0 12px;min-height:62px;text-align:center;font-size:22px}.spell-audio{margin-bottom:12px}.spell-options{display:grid;gap:12px;margin-bottom:15px}.spell-option{background:#fff;border:1.5px solid var(--line);border-radius:var(--r-md);min-height:60px;text-align:left;padding:0 18px;font-weight:800;font-size:19px}.spell-feedback{min-height:30px;text-align:center;color:var(--coral-ink);font-weight:800;margin:10px}.spelling-next{margin-top:8px}.spell-score{text-align:center;background:linear-gradient(135deg,var(--green-50),var(--sky-50));border-radius:var(--r-xl);padding:26px;margin:14px 0 18px}.score-big{font-size:42px;font-weight:900}.spell-score>b{font-size:25px;color:var(--green-ink)}.spell-score p{margin-top:10px;color:var(--muted)}.spell-review{margin-top:12px;display:grid;gap:8px}.spell-review div{background:var(--coral-50);padding:11px 13px;border-radius:12px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}.spell-review span{color:var(--muted);font-size:13px}
+
+/* Laptop and desktop layout: keep the same simple mobile flow, with comfortable use of the extra width. */
+@media (min-width:1024px){
+  body{padding:32px 0}
+  #app{max-width:1100px;min-height:calc(100dvh - 64px);height:calc(100dvh - 64px);border-radius:var(--r-xl)}
+  .screen{padding-left:42px;padding-right:42px}
+  .tiles{grid-template-columns:repeat(3,1fr);gap:16px}
+  .tile{min-height:112px}
+  .rows{max-width:920px}
+  .spell-grid{grid-template-columns:repeat(4,1fr)}
+  .spell-levels{grid-template-columns:repeat(3,1fr)}
+  .spell-level{min-height:150px;align-items:flex-start;flex-direction:column}
+  .spell-level svg{margin-top:auto;align-self:flex-end}
+  .spell-card{max-width:760px;margin-left:auto;margin-right:auto}
+  .spell-options{grid-template-columns:1fr 1fr;max-width:760px;margin-left:auto;margin-right:auto}
+  .spell-input{max-width:680px;margin-left:auto;margin-right:auto;display:block}
+  .spell-practice-body{max-width:760px;margin-left:auto;margin-right:auto}
+}
+@media (min-width:1400px){#app{max-width:1200px}.screen{padding-left:64px;padding-right:64px}}
 </style>
 </head>
 <body>
@@ -1063,7 +1085,7 @@ const state = {
   klass:'P6', psubject:'SST', progress:{}, ptopic:null,
   nsubject:'SST', ntopic:null, nsec:0, noteSeen:{},
   exsubject:'MATH', exTid:null, exRun:null,
-  timerId:null,
+  timerId:null, spellClass:'P6', spellDiff:'Easy', spell:null,
 };
 
 /* Colour helpers — every colour comes from the 6-hue system */
@@ -1090,8 +1112,8 @@ const TAB_OF = {home:'home',practice:'practice',subjects:'practice',subjects_top
   topics:'practice',papers:'papers',paperDetail:'papers',progress:'home',profile:'profile',
   notes:'notes',noteTopic:'notes',noteRead:'notes',
   exercises:'exercises',exTopic:'exercises',exDo:'exercises',exResult:'exercises',exMine:'exercises',
-  avatar:'profile',settings:'profile',offline:'profile',about:'profile'};
-const FULLSCREEN = ['question','exam','results','review','archive','pquestion'];
+  avatar:'profile',settings:'profile',offline:'profile',about:'profile', spelling:'home', spellDifficulty:'home', spellModes:'home', spellPractice:'home', spellResults:'home', spellMistakes:'home'};
+const FULLSCREEN = ['question','exam','results','review','archive','pquestion','spellPractice','spellResults'];
 
 function go(screen, push=true){
   if(push && state.screen!==screen) state.stack.push(state.screen);
@@ -1162,6 +1184,10 @@ SCREENS.home = () => `
       <span class="ic">${I.book(26)}</span>
       <span><b>Study Notes</b><br><span>Read topic by topic</span></span>
     </button>
+    <button class="tile t-practice" onclick="go('spelling')">
+      <span class="ic">🔤</span>
+      <span><b>Spelling</b><br><span>P4–P7 spelling practice</span></span>
+    </button>
   </div>
 
   <div class="spacer"></div>
@@ -1216,6 +1242,45 @@ SCREENS.practice = () => {
     <span>Only <b>${cls} ${SUBJ_META[state.psubject].name}</b> questions are used. Other classes and subjects are never mixed in.</span></div>
 `;
 };
+
+/* ============================================================
+   SPELLING PRACTICE — P4 to P7, offline-first
+   ============================================================ */
+const SPELLING_BANK = {
+ P4:{Easy:['school','teacher','pencil','garden','family','market','water','friend','morning','window','animal','village'],Medium:['because','beautiful','country','children','January','kitchen','library','people','picture','weather','answer','yellow'],Hard:['accident','afternoon','bicycle','carefully','different','elephant','important','medicine','remember','together','umbrella','vegetable']},
+ P5:{Easy:['Africa','Uganda','farmer','harvest','health','letter','journey','forest','village','simple','message','number'],Medium:['community','exercise','language','February','knowledge','straight','surprise','traffic','calendar','neighbour','ordinary','possible'],Hard:['adventure','agriculture','environment','government','necessary','opportunity','population','temperature','transportation','responsibility','communication','comfortable']},
+ P6:{Easy:['energy','culture','district','market','nature','subject','library','island','minute','science','service','victory'],Medium:['ancient','continent','dictionary','electricity','equipment','government','paragraph','physical','sentence','separate','similar','through'],Hard:['achievement','circulation','competition','conservation','development','independence','information','preparation','pronunciation','questionnaire','responsible','vegetation']},
+ P7:{Easy:['education','health','history','language','nation','resource','society','subject','teacher','vocabulary','weather','wisdom'],Medium:['accurate','argument','atmosphere','boundary','confidence','democracy','especially','experiment','familiar','parliament','population','successful'],Hard:['accommodation','announcement','environmental','extraordinary','independence','misunderstanding','pronunciation','recommendation','refrigerator','representative','responsibility','unnecessary']}
+};
+const SPELLING_CATS = ['Everyday words','School words','Environment','Science','Community','Commonly misspelled'];
+const spellWords = (cls,diff) => (SPELLING_BANK[cls]&&SPELLING_BANK[cls][diff]||[]).map((word,i)=>({word,classLevel:cls,difficulty:diff,category:SPELLING_CATS[i%SPELLING_CATS.length],mistakes:[]}));
+function spellLoad(){ try{return JSON.parse(localStorage.getItem('smartple_spelling')||'{}');}catch(e){return{};} }
+function spellSave(d){try{localStorage.setItem('smartple_spelling',JSON.stringify(d));}catch(e){}}
+function spellMistakes(){return spellLoad().mistakes||[];}
+function spellRemember(word,cls){const d=spellLoad();d.mistakes=d.mistakes||[];if(!d.mistakes.some(x=>x.word===word&&x.classLevel===cls)) d.mistakes.push({word,classLevel:cls});spellSave(d);}
+function spellForget(word,cls){const d=spellLoad();d.mistakes=(d.mistakes||[]).filter(x=>!(x.word===word&&x.classLevel===cls));spellSave(d);}
+function spellSpeak(word){if('speechSynthesis' in window){speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(word);u.lang='en-UG';u.rate=.82;speechSynthesis.speak(u);}else toast('Audio is not available on this device');}
+function spellStart(cls,diff,mode){const pool=spellWords(cls,diff);if(!pool.length)return;state.spell={kind:'spelling',cls,diff,mode,items:shuffle(pool).slice(0,10),i:0,correct:0,attempt:0,detail:[],locked:false,t0:Date.now()};go('spellPractice');}
+function spellStartMistakes(){const m=spellMistakes();if(!m.length){toast('No saved words yet');return;}const cls=m[0].classLevel;state.spell={kind:'spelling',cls,diff:'Review',mode:'listen',items:shuffle(m).slice(0,10).map(x=>({word:x.word,classLevel:x.classLevel,difficulty:'Review',category:'Words to practise',mistakes:[]})),i:0,correct:0,attempt:0,detail:[],locked:false,t0:Date.now()};go('spellPractice');}
+function spellCurrent(){return state.spell&&state.spell.items[state.spell.i];}
+function spellFinishItem(ok,answer){const s=state.spell,w=spellCurrent();if(s.locked)return;s.locked=true;if(ok){s.correct++;spellForget(w.word,s.cls);}else spellRemember(w.word,s.cls);s.detail.push({word:w.word,answer:answer||'',ok});render();}
+function spellNext(){const s=state.spell;if(s.i>=s.items.length-1){state.lastResult={kind:'spelling',correct:s.correct,total:s.items.length,pct:Math.round(s.correct/s.items.length*100),detail:s.detail,cls:s.cls,diff:s.diff};go('spellResults');return;}s.i++;s.attempt=0;s.locked=false;render();}
+function spellSubmit(){const s=state.spell,w=spellCurrent(),el=document.getElementById('spellInput');const given=normAns(el&&el.value);if(!given){toast('Type an answer first');return;}if(given===normAns(w.word)){spellFinishItem(true,given);return;}s.attempt++;if(s.attempt<2){const f=document.getElementById('spellFeedback');if(f)f.innerHTML='<b>Try again!</b> Check the letters and listen once more.';if(el){el.value='';el.focus();}return;}spellFinishItem(false,given);}
+function spellChoice(word){const s=state.spell,w=spellCurrent();if(s.locked)return;spellFinishItem(normAns(word)===normAns(w.word),word);}
+function spellOptions(w){const wrong=spellWords(w.classLevel,w.difficulty).filter(x=>x.word!==w.word).map(x=>x.word);return shuffle([w.word,...shuffle(wrong).slice(0,3)]);}
+function spellStats(){const m=spellMistakes();return m.length?m.map(x=>x.word).join(', '):'None yet — keep it up!';}
+
+SCREENS.spelling = () => `
+ <header class="pagehead"><button class="back" onclick="back()" aria-label="Go back">${I.back(22)}</button><div><h2>Spelling</h2><div class="sub">Practice English for Primary 4 to 7</div></div></header>
+ <div class="spell-hero"><div class="spell-emoji">🔤</div><div><h3>Build your spelling power</h3><p>Choose your class, level and practice style.</p></div></div>
+ <div class="section-title">Choose your class</div><div class="spell-grid">${CLASSES.map(c=>`<button class="spell-pick" onclick="state.spellClass='${c}';go('spellDifficulty')"><b>${c}</b><span>Primary ${c[1]}</span></button>`).join('')}</div>
+ <div class="spell-mistake card"><b>Words to practise again</b><p>${spellStats()}</p>${spellMistakes().length?`<button class="btn btn-soft" style="margin-top:12px" onclick="go('spellMistakes')">PRACTISE MY WORDS</button>`:''}</div>`;
+SCREENS.spellDifficulty = () => {const c=state.spellClass||'P6';return `<header class="pagehead"><button class="back" onclick="go('spelling')">${I.back(22)}</button><div><h2>${c} spelling</h2><div class="sub">Choose a level</div></div></header><div class="spell-levels">${[['Easy','Everyday words and familiar school vocabulary','green'],['Medium','Longer words and common spelling patterns','yellow'],['Hard','Challenging primary-level vocabulary','coral']].map(x=>`<button class="spell-level" onclick="state.spellDiff='${x[0]}';go('spellModes')"><span class="pill ${x[2]==='green'?'off':x[2]==='yellow'?'time':'warn'}">${x[0]}</span><b>${x[1]}</b>${I.chev(21)}</button>`).join('')}</div>`;};
+SCREENS.spellModes = () => {const c=state.spellClass||'P6',d=state.spellDiff||'Easy';return `<header class="pagehead"><button class="back" onclick="go('spellDifficulty')">${I.back(22)}</button><div><h2>${c} · ${d}</h2><div class="sub">Choose how to practise</div></div></header><div class="rows">${[['type','Type the word','See a prompt and type the spelling','book','sky'],['listen','Listen and spell','Hear the word, then type it','play','purple'],['fix','Fix the spelling','Correct a word with a mistake','refresh','orange'],['choose','Choose the correct spelling','Pick the correctly spelled word','check','green'],['challenge','Spelling challenge','Ten words with a final score','medal','coral']].map(x=>`<button class="row" onclick="spellStart('${c}','${d}','${x[0]}')">${iconBox(x[3],x[4],26)}<span class="txt"><b>${x[1]}</b><span>${x[2]}</span></span><span class="chev">${I.chev(22)}</span></button>`).join('')}</div><div class="hint-strip cream">${I.info(18)} <span>Words are selected for ${c} and are available offline.</span></div>`;};
+SCREENS.spellPractice = () => {const s=state.spell,w=spellCurrent(),n=s.i+1;let prompt='',body='';if(s.mode==='listen'){prompt='<b>Listen carefully</b><span class="spell-hidden">The word is hidden until you answer.</span>';body=`<button class="btn btn-soft spell-audio" onclick="spellSpeak('${w.word}')">🔊 PLAY WORD AGAIN</button><input id="spellInput" class="fillin spell-input" placeholder="Type what you hear" autocomplete="off" onkeydown="if(event.key==='Enter')spellSubmit()"><button class="btn btn-primary" onclick="spellSubmit()">CHECK SPELLING</button>`;}else if(s.mode==='choose'){prompt='<b>Which spelling is correct?</b>';body=`<div class="spell-options">${spellOptions(w).map(x=>`<button class="spell-option" onclick="spellChoice('${x}')">${x}</button>`).join('')}</div>`;}else{const shown=s.mode==='fix'?w.word.slice(0,Math.max(2,w.word.length-1)):(s.mode==='type'?w.word:'');prompt=s.mode==='fix'?`<b>Correct this spelling:</b><strong class="misspelled">${shown}</strong>`:'<b>Type the word you hear or see in the prompt.</b>';body=s.mode==='type'?`<div class="spell-word">${w.word}</div>`:'';body+=`<input id="spellInput" class="fillin spell-input" placeholder="Type the correct spelling" autocomplete="off" onkeydown="if(event.key==='Enter')spellSubmit()"><button class="btn btn-primary" onclick="spellSubmit()">CHECK SPELLING</button>`;}return `<div class="qbar"><div class="qbar-top"><button class="back" onclick="go('spellModes')" aria-label="Leave spelling">${I.x(20)}</button><div class="qcount">Word ${n} <em>of ${s.items.length}</em></div><span class="pill off">${s.correct} correct</span></div><div class="qprog"><i style="width:${n/s.items.length*100}%"></i></div></div><div class="spell-card"><div class="spell-tags"><span class="pill dl">${s.cls}</span><span class="pill ${s.diff==='Easy'?'off':s.diff==='Medium'?'time':'warn'}">${s.diff}</span><span>${w.category}</span></div><div class="spell-prompt">${prompt}</div></div>${body}<div id="spellFeedback" class="spell-feedback"></div><div class="spelling-next">${s.locked?`<button class="btn btn-green" onclick="spellNext()">${n===s.items.length?'SEE RESULTS':'NEXT WORD'} ${I.chev(18)}</button>`:''}</div>`;};
+SCREENS.spellResults = () => {const r=state.lastResult||{},bad=(r.detail||[]).filter(x=>!x.ok);return `<header class="pagehead"><div><h2>Your spelling results</h2><div class="sub">${r.cls} · ${r.diff}</div></div></header><div class="spell-score"><div class="score-big">${r.correct} / ${r.total}</div><b>${r.pct}%</b><p>${r.pct>=80?'Good work! Keep practising and you will improve.':'Keep going! Every practice word makes you stronger.'}</p></div><div class="card"><b>✓ Correct: ${r.correct}</b><br><b>✗ Incorrect: ${r.total-r.correct}</b>${bad.length?`<h3 style="margin-top:18px">Practise these words</h3><div class="spell-review">${bad.map(x=>`<div><b>${x.word}</b><span>Your answer: ${x.answer||'—'}</span></div>`).join('')}</div>`:''}</div><button class="btn btn-primary" onclick="go('spellModes')">PRACTISE AGAIN</button><button class="btn btn-ghost" style="margin-top:11px" onclick="go('spelling')">BACK TO SPELLING</button>`;};
+SCREENS.spellMistakes = () => {const m=spellMistakes();return `<header class="pagehead"><button class="back" onclick="go('spelling')">${I.back(22)}</button><div><h2>Words to practise</h2><div class="sub">Your saved spelling words</div></div></header>${m.length?`<div class="rows">${m.map(x=>`<div class="row"><span class="txt"><b>${x.word}</b><span>${x.classLevel}</span></span><button class="btn btn-soft" style="width:auto;min-height:44px;padding:0 14px" onclick="spellSpeak('${x.word}')">🔊</button></div>`).join('')}</div><button class="btn btn-primary" style="margin-top:16px" onclick="spellStartMistakes()">PRACTISE THESE WORDS</button>`:`<div class="card" style="text-align:center"><h3>Nothing saved yet</h3><p class="muted" style="margin-top:8px">Misspelled words will appear here for more practice.</p></div>`}`;};
+
 
 /* Class picker — the primary filter for everything */
 SCREENS.classPick = () => `
@@ -3783,5 +3848,6 @@ render = function(){
 
 render();
 </script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30de574eb9fe72e',t:'MTc4NzY5NTUwNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f"}' crossorigin="anonymous"></script>
 </body>
 </html>
