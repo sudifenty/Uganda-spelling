@@ -1,0 +1,3688 @@
+{
+ "class": "P6",
+ "subject": "ENG",
+ "subject_name": "English",
+ "total": 6,
+ "words": 12289,
+ "topics": [
+  {
+   "id": "P6_ENG_T01",
+   "class": "P6",
+   "subject": "ENG",
+   "topic_no": 1,
+   "title": "Safety on the Road",
+   "heading": "TOPIC 1: SAFETY ON THE ROAD",
+   "slug": "safety-on-the-road",
+   "periods": 36,
+   "curriculum_pages": "26–29",
+   "words": 1951,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Six Curriculum, Set One, English Topic 1, 36 periods (`curriculum/P6-SET-ONE-2010.pdf`, topic outline page 24 and pages 26–29). Sub-topics: **1A Safety on the Road (18 periods)** and **1B Traffic Dangers (18 periods)**.*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** In P.1 and P.2 you learnt about accidents, safety and transport. In P.6 you learn the **English used to talk about road safety** — the vocabulary, the must/should structures, adjectives and adverbs, and the conjunctions *when, because* and *so … that*."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "use road-safety vocabulary correctly",
+        "describe how to use the road safely",
+        "pronounce and write words with the **'l'** and **'r'** sounds correctly",
+        "use *must, mustn't … unless, should not, as soon as, may, should always*",
+        "use *because, when, so … that* to give reasons",
+        "read and write texts, poems and dialogues about road safety"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "SUB-TOPIC 1A: SAFETY ON THE ROAD",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Vocabulary from the syllabus"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "pedestrian",
+         "A person walking along or crossing a road"
+        ],
+        [
+         "zebra crossing",
+         "The black and white stripes where pedestrians cross"
+        ],
+        [
+         "traffic",
+         "The vehicles and people moving on a road"
+        ],
+        [
+         "traffic jam",
+         "A long line of vehicles that can hardly move"
+        ],
+        [
+         "cyclist",
+         "A person riding a bicycle"
+        ],
+        [
+         "motorist",
+         "A person driving a motor vehicle"
+        ],
+        [
+         "signal",
+         "A sign given to show what one is about to do"
+        ],
+        [
+         "sign post",
+         "A board at the roadside giving information or warning"
+        ],
+        [
+         "rail crossing",
+         "The place where a road crosses a railway line"
+        ],
+        [
+         "black spot",
+         "A place where accidents happen very often"
+        ],
+        [
+         "seat belt",
+         "The belt that holds a person safely in a vehicle"
+        ],
+        [
+         "helmet",
+         "The hard hat worn by a rider for protection"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Rules for using the road safely"
+      },
+      {
+       "t": "p",
+       "x": "Walk on the **right-hand side** facing oncoming traffic where there is no pavement · use a **side path or pavement** where there is one · **look right, look left and look right again** before crossing · cross at the **zebra crossing** or where you can see clearly · never cross in front of or behind a parked vehicle · never play or run in the road · wear **bright clothing** at night · obey the **traffic police** and the traffic lights · wear a **seat belt** in a vehicle and a **helmet** on a motorcycle · never board or leave a moving vehicle · do not put your hand or head out of a moving vehicle."
+      },
+      {
+       "t": "h3",
+       "x": "Language structures"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**… as soon as …**",
+         "*The boy crossed the road **as soon as** it was clear.*"
+        ],
+        [
+         "**… must …**",
+         "*Drivers **must** signal at junctions.*"
+        ],
+        [
+         "**… should not …**",
+         "*Children **should not** play in the road.*"
+        ],
+        [
+         "**… mustn't … unless …**",
+         "*You **mustn't** cross the road **unless** it is clear.*"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Note:** *must* shows a **strong duty or rule**; *mustn't* is a **prohibition**; *should not* is strong advice. After *unless* we use the **positive** form — *unless it **is** clear*, never \"unless it isn't clear\"."
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus 1: adjectives and adverbs"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Adjective (describes a noun)",
+        "Adverb (describes a verb)"
+       ],
+       "rows": [
+        [
+         "a **careless** driver",
+         "he drove **carelessly**"
+        ],
+        [
+         "a **quick** cyclist",
+         "she rode **quickly**"
+        ],
+        [
+         "a **heavy** lorry",
+         "it moved **heavily**"
+        ],
+        [
+         "a **good** driver",
+         "he drives **well**"
+        ],
+        [
+         "a **fast** vehicle",
+         "it moves **fast**"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus 2: the 'l' and 'r' sounds"
+      },
+      {
+       "t": "p",
+       "x": "Many learners confuse these two sounds. Practise the pairs aloud:"
+      },
+      {
+       "t": "table",
+       "head": [
+        "'l'",
+        "'r'"
+       ],
+       "rows": [
+        [
+         "light",
+         "right"
+        ],
+        [
+         "lane",
+         "rain"
+        ],
+        [
+         "load",
+         "road"
+        ],
+        [
+         "collect",
+         "correct"
+        ],
+        [
+         "play",
+         "pray"
+        ],
+        [
+         "glass",
+         "grass"
+        ],
+        [
+         "lice",
+         "rice"
+        ],
+        [
+         "belly",
+         "berry"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "*Practice sentence:* **\"The lorry driver turned right at the rail crossing and lit his lights.\"**"
+      }
+     ]
+    },
+    {
+     "title": "SUB-TOPIC 1B: TRAFFIC DANGERS",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Vocabulary from the syllabus"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "cross road",
+         "A place where two roads cross each other"
+        ],
+        [
+         "roundabout",
+         "A circular junction round which traffic moves"
+        ],
+        [
+         "junction",
+         "A place where roads meet"
+        ],
+        [
+         "traffic lights",
+         "The red, amber and green lights controlling traffic"
+        ],
+        [
+         "side path",
+         "The path at the side of the road for pedestrians"
+        ],
+        [
+         "island",
+         "The raised part in the middle of a road where pedestrians can wait"
+        ],
+        [
+         "road humps",
+         "Raised bars across the road to slow vehicles"
+        ],
+        [
+         "Highway Code",
+         "The book of rules for using roads"
+        ],
+        [
+         "first aid",
+         "The first help given to an injured person"
+        ],
+        [
+         "careless / careful",
+         "Without care / with care"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "The traffic lights"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Light",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**Red**",
+         "**Stop**"
+        ],
+        [
+         "**Amber (yellow)**",
+         "Get ready — stop if you can, or prepare to move"
+        ],
+        [
+         "**Green**",
+         "**Go**, if the way is clear"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Causes of road accidents"
+      },
+      {
+       "t": "p",
+       "x": "Careless and **over-speeding** drivers · **drunken driving** · using a phone while driving · **poor vehicles** — bad brakes and worn tyres · **bad roads** with potholes, no humps or no markings · careless pedestrians crossing without looking · children playing in the road · overloading vehicles · driving at night without lights · animals straying onto the road · riding without a helmet · ignoring road signs and traffic lights."
+      },
+      {
+       "t": "h3",
+       "x": "What to do at the scene of an accident"
+      },
+      {
+       "t": "p",
+       "x": "Keep calm and **call for help** — shout, or ring the police or an ambulance · do not crowd around the injured · give **first aid** if you know how · do not move a badly injured person carelessly · take the injured to hospital quickly · report to the **police**."
+      },
+      {
+       "t": "h3",
+       "x": "Language structures"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**… so … that …**",
+         "*The driver was **so** careless **that** he caused the accident.*"
+        ],
+        [
+         "**… so …**",
+         "*It became dark, **so** he turned on the headlights.*"
+        ],
+        [
+         "**… because …**",
+         "*Trudy was knocked down by the car **because** she crossed the road carelessly.*"
+        ],
+        [
+         "**… may …**",
+         "*You **may** get an accident if you don't use a side path.*"
+        ],
+        [
+         "**… should always …**",
+         "*We **should always** be aware of the Highway Code.*"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus 3: conjunctions *when* and *because*"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "**When** joins ideas by **time**: *He stopped **when** the light turned red.*",
+        "**Because** gives the **reason**: *He stopped **because** the light turned red.*"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Careful:** write one sentence, not two. *\"He stopped. Because the light was red.\"* is wrong — join them: *He stopped **because** the light was red.*"
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Pedestrian",
+         "A person walking along or crossing a road"
+        ],
+        [
+         "Zebra crossing",
+         "The striped place where pedestrians cross"
+        ],
+        [
+         "Junction",
+         "A place where roads meet"
+        ],
+        [
+         "Roundabout",
+         "A circular junction round which traffic moves"
+        ],
+        [
+         "Black spot",
+         "A place where accidents happen very often"
+        ],
+        [
+         "Highway Code",
+         "The book of rules for using the road"
+        ],
+        [
+         "First aid",
+         "The first help given to an injured person"
+        ],
+        [
+         "Adjective",
+         "A word that describes a noun"
+        ],
+        [
+         "Adverb",
+         "A word that tells how, when or where an action is done"
+        ],
+        [
+         "Conjunction",
+         "A word that joins parts of a sentence"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**Red = stop · Amber = get ready · Green = go** when clear.",
+        "**Look right, left and right again** before crossing.",
+        "Walk facing **oncoming traffic** where there is no pavement.",
+        "**Must** = a rule; **mustn't** = forbidden; **should** = strong advice.",
+        "After **unless**, use the **positive** form.",
+        "Adjectives describe **nouns**; adverbs describe **verbs** and usually end in **-ly**.",
+        "**Because** gives a reason; **when** gives the time.",
+        "The book of road rules is the **Highway Code**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "*You mustn't cross the road ____ it is clear.* → **unless**",
+        "*The driver was so careless ____ he caused an accident.* → **that**",
+        "*Trudy was knocked down ____ she crossed carelessly.* → **because**",
+        "Give one word for: a place where accidents happen very often → **black spot**.",
+        "Give one word for: a person walking on the road → **pedestrian**.",
+        "Adverb from *careless* → **carelessly**; from *good* → **well**.",
+        "What the amber light means → get ready to stop or move."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Writing *\"unless it isn't clear\"* — after **unless** use the positive.",
+        "Using an adjective for an adverb: *\"He drove careless\"* → *he drove **carelessly***.",
+        "Starting a sentence with *Because* and leaving it incomplete.",
+        "Confusing **l** and **r**: *\"lice\"* for *rice*, *\"pray\"* for *play*.",
+        "Writing *\"traffic jam\"* when you mean *traffic lights*."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Give the meaning of: pedestrian, zebra crossing, black spot, Highway Code.",
+        "What do the red, amber and green traffic lights mean?",
+        "Give any six rules of using the road safely.",
+        "Give any six causes of road accidents.",
+        "Say what should be done at the scene of an accident.",
+        "Complete: *You mustn't cross the road ____ it is clear.*",
+        "Complete: *The boy crossed the road ____ ____ ____ it was clear.* (three words)",
+        "Complete: *Drivers ____ signal at junctions.*",
+        "Join using *because*: *Trudy was knocked down by a car. She crossed carelessly.*",
+        "Join using *so … that*: *The driver was very careless. He caused an accident.*",
+        "Join using *when*: *He stopped. The light turned red.*",
+        "Give the adverbs formed from: careless, quick, heavy, good, angry.",
+        "Write the pairs correctly: l____ and r____ (light/right); g____ and g____ (glass/grass).",
+        "Use *should always* in a sentence about the Highway Code.",
+        "Write a short paragraph (about six sentences) advising P.3 pupils on how to cross the road safely."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "**Pedestrian** — a person walking along or crossing a road; **zebra crossing** — the striped place where pedestrians cross; **black spot** — a place where accidents happen very often; **Highway Code** — the book of rules for using roads.",
+        "**Red** — stop; **amber** — get ready, stop if you can or prepare to move; **green** — go if the way is clear.",
+        "Any six of: walk on a side path or facing oncoming traffic; look right, left and right again before crossing; cross at the zebra crossing; never cross in front of a parked vehicle; never play in the road; wear bright clothes at night; obey the traffic police and lights; wear a seat belt and a helmet; never board a moving vehicle.",
+        "Any six of: over-speeding; drunken driving; using a phone while driving; bad brakes and worn tyres; potholed roads; careless pedestrians; children playing in the road; overloading; driving without lights; stray animals; ignoring road signs.",
+        "Keep calm and call for help (police or ambulance); do not crowd round the injured; give first aid if you know how; do not move a badly injured person carelessly; take the injured to hospital quickly; report to the police.",
+        "**unless**",
+        "**as soon as**",
+        "**must**",
+        "*Trudy was knocked down by a car **because** she crossed carelessly.*",
+        "*The driver was **so** careless **that** he caused an accident.*",
+        "*He stopped **when** the light turned red.*",
+        "careless → **carelessly**; quick → **quickly**; heavy → **heavily**; good → **well**; angry → **angrily**.",
+        "**light** and **right**; **glass** and **grass**.",
+        "*Learner's sentence,* for example: *We **should always** obey the Highway Code when using the road.*",
+        "*Learner's paragraph.* It should be one paragraph, in the present tense, with clear advice such as: stop at the edge, look right, look left and right again, listen, cross quickly but do not run, use the zebra crossing, and never cross in front of a parked vehicle."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.6 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**Red stop · Amber get ready · Green go** · Look **right, left, right**",
+        "**must** rule · **mustn't … unless (positive)** · **should not** advice",
+        "Adjective → noun · **Adverb → verb (-ly)**",
+        "**because** = reason · **when** = time · **so … that** = result",
+        "Practise **l / r**: light–right, glass–grass, play–pray",
+        "Accident scene: call for help, first aid, do not crowd, report to police"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, sub-topics, vocabulary lists, language structures, grammar items, competences and teacher guidance above were taken from the official **NCDC Primary Six Curriculum, Set One** (© NCDC 2010; topic outline page 24 and pages 26–29 of the PDF in `curriculum/`), including its instruction to teach the difference between the **'l' and 'r'** sounds. The explanations, tables, examples, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.6 was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P6_ENG_T02",
+   "class": "P6",
+   "subject": "ENG",
+   "topic_no": 2,
+   "title": "Debating",
+   "heading": "TOPIC 2: DEBATING",
+   "slug": "debating",
+   "periods": 24,
+   "curriculum_pages": "30–32",
+   "words": 1964,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Six Curriculum, Set One, English Topic 2, 24 periods (`curriculum/P6-SET-ONE-2010.pdf`, topic outline page 24 and pages 30–32).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You have argued for and against ideas in class. In P.6 you learn the **language of a formal debate** — the roles, the motion, the points of order, and the structures *even though, although* and *if*."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "name the people in a debate and the work of each",
+        "read, interpret and formulate a motion",
+        "speak for or against a motion using proper language",
+        "raise a point of order, information or inquiry correctly",
+        "write points and take notes during a debate",
+        "use direct and indirect speech and the structures *even though, although, if*"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. WHAT A DEBATE IS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Debate:** A formal discussion in which two sides argue for and against a motion before an audience."
+      },
+      {
+       "t": "p",
+       "x": "**Motion:** The statement that is being debated. It always begins with **\"That …\"** — for example, *\"That girls should be given more chances in education than boys.\"*"
+      }
+     ]
+    },
+    {
+     "title": "2. THE PEOPLE IN A DEBATE AND THEIR WORK",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Person",
+        "Work"
+       ],
+       "rows": [
+        [
+         "**Chairperson**",
+         "Controls the debate, keeps order, gives each speaker a turn, decides on points raised, and announces the winning side"
+        ],
+        [
+         "**Secretary**",
+         "Writes the minutes and records the points of each speaker"
+        ],
+        [
+         "**Time keeper**",
+         "Keeps time and rings a bell to warn or stop a speaker"
+        ],
+        [
+         "**Proposer**",
+         "Speaks **for** the motion (the proposing side)"
+        ],
+        [
+         "**Opposer**",
+         "Speaks **against** the motion (the opposing side)"
+        ],
+        [
+         "**Main speaker**",
+         "The first and strongest speaker on each side"
+        ],
+        [
+         "**Audience (the house)**",
+         "Listens, raises points and may vote"
+        ],
+        [
+         "**Judges**",
+         "Award marks where the debate is a competition"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Vocabulary from the syllabus"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "motion",
+         "The statement being debated"
+        ],
+        [
+         "proposer",
+         "A speaker supporting the motion"
+        ],
+        [
+         "opposer",
+         "A speaker against the motion"
+        ],
+        [
+         "point of order",
+         "A statement drawing attention to a rule being broken"
+        ],
+        [
+         "point of information",
+         "A short piece of correct information offered to a speaker"
+        ],
+        [
+         "point of inquiry",
+         "A question asking for clarification"
+        ],
+        [
+         "audience",
+         "The people listening"
+        ],
+        [
+         "argue / argument",
+         "To give reasons for or against / the reason given"
+        ],
+        [
+         "opinion",
+         "What a person thinks"
+        ],
+        [
+         "conclude",
+         "To end"
+        ],
+        [
+         "previous",
+         "The one that came before"
+        ],
+        [
+         "current",
+         "The one at present"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "3. THE THREE POINTS AND HOW TO RAISE THEM",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Point",
+        "When it is used",
+        "How to say it"
+       ],
+       "rows": [
+        [
+         "**Point of order**",
+         "When a rule is broken — a speaker abuses another, goes off the motion, or exceeds the time",
+         "*\"Mr Chairperson, I rise on a **point of order**. The speaker is insulting…\"*"
+        ],
+        [
+         "**Point of information**",
+         "When you can give a correct fact the speaker has got wrong",
+         "*\"Mr Chairperson, on a **point of information**, the school has 400 pupils, not 200.\"*"
+        ],
+        [
+         "**Point of inquiry**",
+         "When something needs to be made clear",
+         "*\"Mr Chairperson, on a **point of inquiry**, does the motion mean all pupils or only P.7?\"*"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**The rule:** stand up, address the **chairperson**, state which point you are raising, be brief, and sit down when the chairperson tells you to."
+      }
+     ]
+    },
+    {
+     "title": "4. THE LANGUAGE OF DEBATE",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Opening"
+      },
+      {
+       "t": "p",
+       "x": "*\"Mr/Madam Chairperson, honourable members of the house, ladies and gentlemen, I greet you all. I stand here to **support (or oppose)** the motion which says that…\"*"
+      },
+      {
+       "t": "h3",
+       "x": "Giving points"
+      },
+      {
+       "t": "p",
+       "x": "*\"My first point is that…\" · \"Furthermore…\" · \"In addition…\" · \"Moreover…\" · \"For example…\" · \"This is because…\"*"
+      },
+      {
+       "t": "h3",
+       "x": "Disagreeing politely"
+      },
+      {
+       "t": "p",
+       "x": "*\"The previous speaker said…, but I disagree because…\" · \"Even though my opponent says…, the truth is…\" · \"I would like to correct the previous speaker…\"*"
+      },
+      {
+       "t": "h3",
+       "x": "Closing"
+      },
+      {
+       "t": "p",
+       "x": "*\"With those few words, Mr Chairperson, I beg to move (or oppose) the motion. Thank you.\"*"
+      },
+      {
+       "t": "h3",
+       "x": "Rules of good debating"
+      },
+      {
+       "t": "p",
+       "x": "Address the **chairperson**, not your opponent directly · attack the **point, never the person** · keep to the **motion** · keep within the **time** · speak loudly and clearly · stand up straight and look at the audience · listen when others are speaking · accept the chairperson's ruling."
+      }
+     ]
+    },
+    {
+     "title": "5. LANGUAGE STRUCTURES",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**Even though …**",
+         "***Even though** the previous speaker said father buys clothes, mother loves me more.*"
+        ],
+        [
+         "**… although …**",
+         "*She argued out her points **although** people did not accept them.*"
+        ],
+        [
+         "**If … (If 2)**",
+         "***If** I **were** the chairperson, I **would** chase Zika from the debate for misbehaviour.*"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Note:** *even though* and *although* both show contrast and are followed by a **complete idea**. In **If 2** we use *were* for every person — *If I **were** you…*"
+      }
+     ]
+    },
+    {
+     "title": "6. GRAMMAR FOCUS: DIRECT AND INDIRECT SPEECH",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "In a debate you often report what another speaker said."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Direct",
+        "Indirect (reported)"
+       ],
+       "rows": [
+        [
+         "*\"I support the motion,\" said Ann.*",
+         "*Ann said that **she supported** the motion.*"
+        ],
+        [
+         "*\"We shall win the debate,\" the proposers said.*",
+         "*The proposers said that **they would win** the debate.*"
+        ],
+        [
+         "*\"The school has 400 pupils,\" he said.*",
+         "*He said that the school **had** 400 pupils.*"
+        ],
+        [
+         "*\"Are you opposing?\" the chairperson asked.*",
+         "*The chairperson asked **whether I was opposing**.*"
+        ],
+        [
+         "*\"Sit down,\" the chairperson said.*",
+         "*The chairperson told him **to sit down**.*"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**The rules:** the tense moves **one step back**; pronouns change; *today → that day*, *here → there*, *this → that*; questions become *whether/if* statements; commands become *to + verb*."
+      }
+     ]
+    },
+    {
+     "title": "7. WRITING POINTS AND TAKING NOTES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Before the debate:** read the motion carefully and be sure which side you are on · **research** — ask teachers, read books, listen to radio · write your points in **short phrases**, not full paragraphs · put the **strongest point first** · think of what the other side will say and prepare an answer."
+      },
+      {
+       "t": "p",
+       "x": "**During the debate:** write down each speaker's **main point** in a few words · mark the points you can answer · note any wrong facts so you can raise a **point of information**."
+      },
+      {
+       "t": "p",
+       "x": "**A sample motion and points**"
+      },
+      {
+       "t": "note",
+       "x": "**Motion: \"That television is more useful to a pupil than radio.\"**  **For:** you see as well as hear · programmes show experiments and places · it teaches good English through pictures and speech. **Against:** it is expensive and needs electricity · it wastes study time · radio is portable and can be used anywhere."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Debate",
+         "A formal discussion for and against a motion"
+        ],
+        [
+         "Motion",
+         "The statement being debated"
+        ],
+        [
+         "Proposer",
+         "A speaker who supports the motion"
+        ],
+        [
+         "Opposer",
+         "A speaker who is against the motion"
+        ],
+        [
+         "Chairperson",
+         "The person who controls the debate"
+        ],
+        [
+         "Point of order",
+         "A statement showing that a rule has been broken"
+        ],
+        [
+         "Point of information",
+         "Correct information offered to a speaker"
+        ],
+        [
+         "Point of inquiry",
+         "A question asking for clarification"
+        ],
+        [
+         "Direct speech",
+         "The exact words spoken, in quotation marks"
+        ],
+        [
+         "Indirect speech",
+         "Reporting what was said without the exact words"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "A motion always begins with **\"That …\"**.",
+        "The **chairperson** controls the debate; the **secretary** records; the **time keeper** keeps time.",
+        "Always address the **chairperson**, never your opponent directly.",
+        "**Attack the point, not the person.**",
+        "**Point of order** = a rule broken · **information** = a fact · **inquiry** = a question.",
+        "In reported speech the tense moves **one step back**.",
+        "**If 2** uses *were* for all persons: *If I **were** the chairperson…*",
+        "*Even though* and *although* both show **contrast**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "The person who controls a debate → the chairperson.",
+        "A speaker who supports the motion → the proposer.",
+        "The statement being debated → the motion.",
+        "Raising attention to a broken rule → a point of order.",
+        "*\"I support the motion,\" said Ann.* → *Ann said that **she supported** the motion.*",
+        "*If I ____ (be) the chairperson, I would stop him.* → **were**",
+        "Two words showing contrast → *although* and *even though*."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Insulting the other speaker instead of answering the point.",
+        "Writing a motion without \"That …\".",
+        "Keeping the present tense in reported speech.",
+        "Using *was* instead of **were** in an If 2 sentence.",
+        "Standing up and speaking before the chairperson allows you.",
+        "Going outside the motion."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "What is a debate, and what is a motion?",
+        "Name any five people involved in a debate and the work of each.",
+        "Give the difference between a proposer and an opposer.",
+        "Explain a point of order, a point of information and a point of inquiry.",
+        "How does a speaker correctly raise a point of order?",
+        "Write a suitable opening sentence for a speaker supporting a motion.",
+        "Write a suitable closing sentence for a speaker opposing a motion.",
+        "Give any six rules of good debating.",
+        "Complete: *____ ____ the previous speaker said father buys clothes, mother loves me more.* (two words)",
+        "Complete: *She argued out her points ____ people did not accept them.*",
+        "Complete: *If I ____ (be) the chairperson, I would stop the noise.*",
+        "Change to reported speech: *\"I support the motion,\" said Ann.*",
+        "Change to reported speech: *\"Sit down,\" the chairperson said to him.*",
+        "Write a motion of your own and give two points for it and two against it.",
+        "Give any four things a speaker should do before a debate."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "A **debate** is a formal discussion in which two sides argue for and against a motion before an audience. A **motion** is the statement being debated, beginning with \"That …\".",
+        "Any five: **chairperson** — controls the debate; **secretary** — writes the minutes and records the points; **time keeper** — keeps time and rings the bell; **proposer** — speaks for the motion; **opposer** — speaks against it; **audience** — listens and may vote.",
+        "A **proposer** speaks **for** the motion; an **opposer** speaks **against** it.",
+        "**Point of order** — raised when a rule has been broken, for example insulting or going off the motion; **point of information** — giving a correct fact the speaker has got wrong; **point of inquiry** — asking for something to be made clear.",
+        "The speaker stands up, addresses the **chairperson**, says *\"I rise on a point of order,\"* states the point briefly, and sits down when the chairperson rules.",
+        "*Learner's answer,* for example: *\"Mr Chairperson, honourable members of the house, I stand here to **support** the motion which says that…\"*",
+        "*Learner's answer,* for example: *\"With those few words, Mr Chairperson, I beg to **oppose** the motion. Thank you.\"*",
+        "Any six of: address the chairperson; attack the point, not the person; keep to the motion; keep within the time; speak loudly and clearly; stand up straight; listen to others; accept the chairperson's ruling.",
+        "**Even though**",
+        "**although**",
+        "**were**",
+        "*Ann said that **she supported** the motion.*",
+        "*The chairperson told him **to sit down**.*",
+        "*Learner's answer.* The motion must begin with **\"That …\"**, with two clear points supporting it and two opposing it.",
+        "Any four of: read the motion carefully and know which side you are on; research the topic; write points in short phrases; put the strongest point first; think about what the other side will say and prepare answers; practise speaking."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.6 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Motion begins with **\"That …\"**",
+        "Chairperson controls · secretary records · time keeper times · **proposer for** · **opposer against**",
+        "**Order** = rule broken · **Information** = fact · **Inquiry** = question",
+        "Address the **chairperson** · attack the **point, not the person**",
+        "**Even though / although** = contrast · **If 2** uses **were**",
+        "Reported speech: tense **one step back**, commands → **to + verb**"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, vocabulary list, language structures, grammar items (direct and indirect speech), competences and teacher guidance above were taken from the official **NCDC Primary Six Curriculum, Set One** (© NCDC 2010; topic outline page 24 and pages 30–32 of the PDF in `curriculum/`), including its instruction to hold debates at least once a month and to revise \"If 1\" before teaching \"If 2\". The explanations, tables, sample motion, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.6 was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P6_ENG_T03",
+   "class": "P6",
+   "subject": "ENG",
+   "topic_no": 3,
+   "title": "Family Relationships",
+   "heading": "TOPIC 3: FAMILY RELATIONSHIPS",
+   "slug": "family-relationships",
+   "periods": 24,
+   "curriculum_pages": "33–36",
+   "words": 1805,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Six Curriculum, Set One, English Topic 3, 24 periods (`curriculum/P6-SET-ONE-2010.pdf`, topic outline page 24 and pages 33–36).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You can name the members of your family. In P.6 you learn the **full family vocabulary in English**, how to draw and read a **family tree**, and the grammar of **prepositions, adverbs (*just* and *already*) and adjectives**."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "describe family relationships using the correct words",
+        "explain the relationship between any two members of a family",
+        "draw and interpret a family tree",
+        "use prepositions, the adverbs *just* and *already*, and adjectives correctly",
+        "read and interpret information about population",
+        "write compositions and poems about the family"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. FAMILY VOCABULARY",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**grandparent**",
+         "The parent of your father or mother"
+        ],
+        [
+         "**stepmother**",
+         "The wife your father married after your own mother"
+        ],
+        [
+         "**stepfather**",
+         "The husband your mother married after your own father"
+        ],
+        [
+         "**stepbrother / stepsister**",
+         "The son or daughter of your stepparent, not related to you by blood"
+        ],
+        [
+         "**half-brother / half-sister**",
+         "A brother or sister with whom you share **one** parent only"
+        ],
+        [
+         "**uncle**",
+         "The brother of your father or mother (also your aunt's husband)"
+        ],
+        [
+         "**auntie (aunt)**",
+         "The sister of your father or mother (also your uncle's wife)"
+        ],
+        [
+         "**cousin**",
+         "The child of your uncle or aunt"
+        ],
+        [
+         "**nephew**",
+         "The son of your brother or sister"
+        ],
+        [
+         "**niece**",
+         "The daughter of your brother or sister"
+        ],
+        [
+         "**brother-in-law**",
+         "Your sister's husband, or your husband's or wife's brother"
+        ],
+        [
+         "**sister-in-law**",
+         "Your brother's wife, or your husband's or wife's sister"
+        ],
+        [
+         "**mother-in-law / father-in-law**",
+         "The mother or father of your husband or wife"
+        ],
+        [
+         "**twins**",
+         "Two children born at the same birth"
+        ],
+        [
+         "**triplets**",
+         "Three children born at the same birth"
+        ],
+        [
+         "**quadruplets**",
+         "Four children born at the same birth"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Other words in the syllabus list"
+      },
+      {
+       "t": "p",
+       "x": "**elder** (older, of people in the same family) · **eldest** (the oldest of all) · **marry** · **give birth to** · **tribe** · **populated** · **densely** · **scarcely** · and the serious words **defile**, **rape** and **incest**, which name **crimes against a person** — any child who is threatened in this way must **tell a trusted adult at once**, and it is never the child's fault."
+      }
+     ]
+    },
+    {
+     "title": "2. TALKING ABOUT RELATIONSHIPS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Question",
+        "Answer"
+       ],
+       "rows": [
+        [
+         "*Who is your mother's sister?*",
+         "She is my **aunt**."
+        ],
+        [
+         "*What do you call your aunt's son?*",
+         "He is my **cousin**."
+        ],
+        [
+         "*What is your sister's daughter to you?*",
+         "She is my **niece**."
+        ],
+        [
+         "*What is your brother's wife to you?*",
+         "She is my **sister-in-law**."
+        ],
+        [
+         "*What is your father's father to you?*",
+         "He is my **grandfather**."
+        ],
+        [
+         "*What are you to your grandmother?*",
+         "I am her **grandson / granddaughter**."
+        ],
+        [
+         "*What is your mother to your father's mother?*",
+         "She is her **daughter-in-law**."
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**A useful sentence pattern:** *Marsha is Maria's sister.* · *Peter is Ann's uncle.* · *Sarah and Sam are twins.*"
+      }
+     ]
+    },
+    {
+     "title": "3. THE FAMILY TREE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Family tree:** A drawing showing the members of a family and how they are related."
+      },
+      {
+       "t": "pre",
+       "x": "            Grandfather = Grandmother\n                        |\n        -----------------------------------\n        |                |                |\n     Father = Mother   Uncle = Aunt     Aunt\n        |                     |\n   -----------            ---------\n   |         |            |       |\n  Me     Sister         Cousin  Cousin"
+      },
+      {
+       "t": "p",
+       "x": "**How to read it:** the **equals sign (=)** shows a marriage · a **vertical line** joins parents to their children · people on the **same level** are of the same generation."
+      },
+      {
+       "t": "p",
+       "x": "**Questions a family tree can answer:** Who is the eldest child? · How many grandchildren are there? · What is Cousin A to Me? (a cousin) · Who is Me's aunt? · How many people are in the third generation?"
+      }
+     ]
+    },
+    {
+     "title": "4. GRAMMAR",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "(a) Prepositions"
+      },
+      {
+       "t": "p",
+       "x": "Prepositions show position, direction, time or relationship: *in, on, at, to, from, of, with, between, among, beside, near, under, above, into, over, for, since*."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Rule",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**married to** (not \"married with\")",
+         "*My aunt is married **to** a teacher.*"
+        ],
+        [
+         "**between** two, **among** many",
+         "*He sat **between** his parents and **among** his cousins.*"
+        ],
+        [
+         "**at** a small place, **in** a bigger one",
+         "*He lives **at** Kabale, **in** Uganda.*"
+        ],
+        [
+         "**on** a day, **in** a month, **at** a time",
+         "*We travel **on** Monday, **in** June, **at** 6 o'clock.*"
+        ],
+        [
+         "**related to**",
+         "*Musa is **related to** me.*"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "(b) The adverbs *just* and *already*"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Adverb",
+        "Meaning",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**just**",
+         "A very short time ago",
+         "*My uncle has **just** arrived.*"
+        ],
+        [
+         "**already**",
+         "Sooner than expected; before now",
+         "*My cousins have **already** eaten.*"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "Both are used with the **present perfect** (*has/have* + past participle), and they come **between the helping verb and the main verb**."
+      },
+      {
+       "t": "h3",
+       "x": "(c) Adjectives: *young, old, elder, eldest*"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Use"
+       ],
+       "rows": [
+        [
+         "**young / old**",
+         "General: *a young child, an old man*"
+        ],
+        [
+         "**younger / older than**",
+         "Comparing two people: *Ann is **older than** Peter.*"
+        ],
+        [
+         "**elder / eldest**",
+         "Only for people in the same family, and used before a noun: *my **elder** brother, the **eldest** son*"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Careful:** we say *Ann is **older than** Peter*, never \"elder than\"."
+      }
+     ]
+    },
+    {
+     "title": "5. POPULATION LANGUAGE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The syllabus asks you to read maps, charts and graphs about population."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**Populated**",
+         "Having people living there"
+        ],
+        [
+         "**Densely populated**",
+         "Having **many** people in a small area"
+        ],
+        [
+         "**Sparsely / scarcely populated**",
+         "Having **few** people in a large area"
+        ],
+        [
+         "**Population**",
+         "The number of people in a place"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "*Examples:* *Kampala is **densely** populated because of jobs and services.* · *Karamoja is **sparsely** populated because it is dry.*"
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Family tree",
+         "A drawing showing the members of a family and how they are related"
+        ],
+        [
+         "Cousin",
+         "The child of your uncle or aunt"
+        ],
+        [
+         "Nephew / niece",
+         "The son / daughter of your brother or sister"
+        ],
+        [
+         "Half-brother",
+         "A brother with whom you share one parent only"
+        ],
+        [
+         "Stepbrother",
+         "The son of your stepparent, not related to you by blood"
+        ],
+        [
+         "In-law",
+         "A relative gained through marriage"
+        ],
+        [
+         "Twins",
+         "Two children born at the same birth"
+        ],
+        [
+         "Preposition",
+         "A word showing position, time or relationship"
+        ],
+        [
+         "Densely populated",
+         "Having many people in a small area"
+        ],
+        [
+         "Sparsely populated",
+         "Having few people in a large area"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**Nephew** = brother's or sister's **son**; **niece** = their **daughter**.",
+        "**Cousin** = the child of an uncle or aunt.",
+        "**Half-brother** shares **one parent**; a **stepbrother** shares **none**.",
+        "**-in-law** words come from **marriage**.",
+        "Twins **2**, triplets **3**, quadruplets **4**.",
+        "Say **married to**, not \"married with\".",
+        "**Elder/eldest** are used only inside a family and **before a noun**; use **older than** when comparing.",
+        "*Just* and *already* go **between the helping verb and the main verb**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Your father's brother → your **uncle**. His child → your **cousin**.",
+        "Your sister's daughter → your **niece**.",
+        "Your brother's wife → your **sister-in-law**.",
+        "Three children born at the same birth → **triplets**.",
+        "*My uncle has ____ arrived* (a moment ago) → **just**.",
+        "*They have ____ finished eating* → **already**.",
+        "*My aunt is married ____ a doctor.* → **to**",
+        "An area with very many people → **densely populated**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Writing *\"married with\"* instead of **married to**.",
+        "Saying *\"elder than\"* instead of **older than**.",
+        "Confusing **nephew** (boy) with **niece** (girl).",
+        "Confusing a **half-brother** with a **stepbrother**.",
+        "Putting *just* and *already* in the wrong place: *\"He has arrived just\"* → *He **has just** arrived.*",
+        "Using *between* for more than two people."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Give one word for: the son of your uncle.",
+        "Give one word for: the daughter of your brother.",
+        "Give one word for: the son of your sister.",
+        "Give one word for: your brother's wife.",
+        "Give one word for: the mother of your husband or wife.",
+        "Give the difference between a half-brother and a stepbrother.",
+        "Give one word for: three children born at the same birth.",
+        "What is your mother to your father's mother?",
+        "Draw a simple family tree showing your grandparents, your parents, yourself and one cousin.",
+        "Fill in: *My aunt is married ____ a headteacher.*",
+        "Fill in: *He shared the money ____ his three brothers.* (between / among)",
+        "Fill in: *My uncle has ____ arrived; he came a minute ago.*",
+        "Fill in: *The visitors have ____ eaten, so do not cook for them.*",
+        "Fill in the correct word: *Sarah is ____ than her cousin.* (elder / older)",
+        "Use *eldest* in a sentence of your own.",
+        "Give the meaning of: densely populated and sparsely populated.",
+        "Give one reason why a town is usually densely populated.",
+        "Write four sentences describing the relationships in your family.",
+        "What should a child do if an adult threatens or abuses him or her?",
+        "Write a short paragraph (about six sentences) about your family."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "My **cousin**.",
+        "My **niece**.",
+        "My **nephew**.",
+        "My **sister-in-law**.",
+        "My **mother-in-law**.",
+        "A **half-brother** shares **one parent** with you; a **stepbrother** is the son of your stepparent and shares **no parent** with you.",
+        "**Triplets**.",
+        "She is her **daughter-in-law**.",
+        "*Learner's family tree.* It should use an equals sign for marriage, vertical lines from parents to children, and place each generation on its own level.",
+        "**to**",
+        "**among**",
+        "**just**",
+        "**already**",
+        "**older**",
+        "*Learner's sentence,* for example: *My **eldest** brother is a teacher.*",
+        "**Densely populated** means having many people in a small area; **sparsely populated** means having few people in a large area.",
+        "Because towns have **jobs, schools, hospitals, electricity, water and business opportunities**, which attract many people.",
+        "*Learner's answer.* Each sentence should show one relationship clearly, for example: *My mother's sister is my aunt.*",
+        "The child should **say NO, get away and tell a trusted adult at once** — a parent, teacher, religious leader, health worker or the police. It must never be kept secret, and it is **never the child's fault**.",
+        "*Learner's paragraph.* It should be one paragraph, name the family members and their relationships, use correct family words and correct punctuation."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.6 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**Nephew** boy · **Niece** girl · **Cousin** = uncle's or aunt's child",
+        "**Half-** shares one parent · **Step-** shares none · **-in-law** comes from marriage",
+        "Twins 2 · Triplets 3 · **Quadruplets 4**",
+        "**married to** · **between** two, **among** many",
+        "**just** = a moment ago · **already** = sooner than expected (both with *has/have*)",
+        "**older than** for comparing · **elder/eldest** before a noun in a family",
+        "**Densely** = many people · **Sparsely** = few people"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, vocabulary list, language structures, grammar items (prepositions, the adverbs *just* and *already*, verbs and adjectives), competences and teacher guidance above were taken from the official **NCDC Primary Six Curriculum, Set One** (© NCDC 2010; topic outline page 24 and pages 33–36 of the PDF in `curriculum/`), including its instruction to draw and interpret family trees and to read population maps and charts. The explanations, tables, family tree, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "The syllabus vocabulary list includes the words *defile, rape and incest*. They are named here only as **crimes against a person**, with the child-protection message to tell a trusted adult at once; no explicit detail is given, and no NCDC guidance document on handling them was held."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.6 was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P6_ENG_T04",
+   "class": "P6",
+   "subject": "ENG",
+   "topic_no": 4,
+   "title": "Occupations",
+   "heading": "TOPIC 4: OCCUPATIONS",
+   "slug": "occupations",
+   "periods": 36,
+   "curriculum_pages": "37–46",
+   "words": 2587,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Six Curriculum, Set One, English Topic 4, 36 periods (`curriculum/P6-SET-ONE-2010.pdf`, topic outline page 24 and pages 37–46). Sub-topics: **4A Carpentry (7)**, **4B Tailoring (9)**, **4C Baking (11)** and **4D Keeping Animals (9)**.*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You see carpenters, tailors, bakers and farmers in your community. In P.6 you learn the **English of these four trades** — their tools, their processes and the structures used to describe them."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "name the tools and materials used in carpentry, tailoring and baking",
+        "describe a process in the correct order using *first, next, then, finally*",
+        "use *… is used for …*, *… prefer … to …*, *be careful when …*, *not only … but also …*",
+        "use the passive voice, the perfect tense and the \"to\" infinitive",
+        "talk and write about animal care using *should* and *should not*"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "SUB-TOPIC 4A: CARPENTRY",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Vocabulary and tools"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning / use"
+       ],
+       "rows": [
+        [
+         "**carpenter**",
+         "A person who makes things out of wood"
+        ],
+        [
+         "**saw**",
+         "Used for cutting wood"
+        ],
+        [
+         "**plane**",
+         "Used for smoothing wood"
+        ],
+        [
+         "**hammer**",
+         "Used for driving in nails"
+        ],
+        [
+         "**drill**",
+         "Used for making holes"
+        ],
+        [
+         "**screwdriver**",
+         "Used for driving in screws"
+        ],
+        [
+         "**sandpaper**",
+         "Used for smoothing a surface"
+        ],
+        [
+         "**bench**",
+         "The strong table a carpenter works on"
+        ],
+        [
+         "**plank / timber**",
+         "Sawn pieces of wood"
+        ],
+        [
+         "**wood glue**",
+         "Used for sticking pieces of wood together"
+        ],
+        [
+         "**varnish / polish**",
+         "Put on wood to make it shine and last"
+        ],
+        [
+         "**saw dust**",
+         "The powder left after sawing"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Products:** chairs, tables, beds, doors, windows, cupboards, shelves, coffins."
+      },
+      {
+       "t": "h3",
+       "x": "Describing the process"
+      },
+      {
+       "t": "p",
+       "x": "*First* you measure and mark the wood, *next* you cut it with a saw, *then* you plane it smooth, *after that* you join the pieces with nails or wood glue, and *finally* you sand it and apply varnish."
+      },
+      {
+       "t": "h3",
+       "x": "Language structures"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**… is used for …**",
+         "*A saw **is used for** cutting wood.*"
+        ],
+        [
+         "**First … next … then …**",
+         "***First** you plane the wood, **next** you cut it into pieces, **then** you use wood glue to fix them.*"
+        ],
+        [
+         "**… besides …**",
+         "*The carpenter made a chair **besides** a table.*"
+        ],
+        [
+         "**Though …**",
+         "***Though** John is not a trained carpenter, he makes good chairs.*"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus: the passive voice"
+      },
+      {
+       "t": "p",
+       "x": "In the **active** voice the doer comes first; in the **passive** the thing done comes first."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Active",
+        "Passive"
+       ],
+       "rows": [
+        [
+         "The carpenter **cuts** the wood.",
+         "The wood **is cut** by the carpenter. *(present simple)*"
+        ],
+        [
+         "The carpenter **is making** a table.",
+         "A table **is being made** by the carpenter. *(present continuous)*"
+        ],
+        [
+         "The carpenter **has finished** the chair.",
+         "The chair **has been finished** by the carpenter. *(present perfect)*"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**The pattern:** the right form of **be** + the **past participle**."
+      }
+     ]
+    },
+    {
+     "title": "SUB-TOPIC 4B: TAILORING",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Vocabulary and tools"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning / use"
+       ],
+       "rows": [
+        [
+         "**tailor / seamstress**",
+         "A person who makes and mends clothes (a woman who sews is often called a seamstress)"
+        ],
+        [
+         "**sewing machine**",
+         "The machine used for stitching"
+        ],
+        [
+         "**needle**",
+         "Used for hand sewing"
+        ],
+        [
+         "**thread**",
+         "The line used in sewing"
+        ],
+        [
+         "**bobbin**",
+         "The small reel holding the lower thread in a machine"
+        ],
+        [
+         "**tape measure**",
+         "Used for taking measurements"
+        ],
+        [
+         "**scissors**",
+         "Used for cutting cloth"
+        ],
+        [
+         "**thimble**",
+         "Worn on a finger to protect it when hand sewing"
+        ],
+        [
+         "**seam**",
+         "The line where two pieces of cloth are joined"
+        ],
+        [
+         "**hemming**",
+         "Turning and stitching the edge of cloth"
+        ],
+        [
+         "**button hole**",
+         "The hole through which a button passes"
+        ],
+        [
+         "**patch**",
+         "A piece of cloth used to mend a hole"
+        ],
+        [
+         "**zip**",
+         "A fastener with two rows of teeth"
+        ],
+        [
+         "**texture**",
+         "How a material feels"
+        ],
+        [
+         "**garment**",
+         "A piece of clothing"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Describing the process"
+      },
+      {
+       "t": "p",
+       "x": "*First* the tailor takes the customer's **measurements**, *next* he chooses and cuts the **material** to a **design**, *then* he **stitches** the pieces on the sewing machine, *after that* he does the **hemming** and makes the **button holes**, and *finally* he presses the **garment** with an iron."
+      },
+      {
+       "t": "h3",
+       "x": "Language structures"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**Be careful when …**",
+         "***Be careful when** stitching the cloth, because you may hurt your finger.*"
+        ],
+        [
+         "**… prefer … to …**",
+         "*Robert **prefers** sewing **to** knitting.*"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus: the perfect tense and adverbs"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "**Present perfect:** *has/have + past participle* — *The tailor **has finished** my dress.*",
+        "**Past perfect:** *had + past participle* — *He **had cut** the cloth before I arrived.*",
+        "**Adverbs:** *carefully, quickly, neatly, well* — *She sews **neatly**.*",
+        "**Conjunctions:** *and, but, because, when, although* join the ideas together."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "SUB-TOPIC 4C: BAKING",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Vocabulary and ingredients"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning / use"
+       ],
+       "rows": [
+        [
+         "**baker / bakery**",
+         "The person who bakes / the place where baking is done"
+        ],
+        [
+         "**oven**",
+         "Used for baking"
+        ],
+        [
+         "**baking tin**",
+         "The container in which cakes and bread are baked"
+        ],
+        [
+         "**baking flour**",
+         "The main ingredient"
+        ],
+        [
+         "**yeast**",
+         "Makes the dough rise"
+        ],
+        [
+         "**dough**",
+         "The soft mixture of flour and water before baking"
+        ],
+        [
+         "**knead**",
+         "To press and fold the dough with the hands"
+        ],
+        [
+         "**sieve**",
+         "Used for sifting the flour"
+        ],
+        [
+         "**roll out**",
+         "To flatten dough with a rolling pin"
+        ],
+        [
+         "**cookie cutter**",
+         "Used for cutting shapes out of dough"
+        ],
+        [
+         "**icing sugar**",
+         "Fine sugar used for decorating cakes"
+        ],
+        [
+         "**food colour / flavour**",
+         "Used to colour and to give taste"
+        ],
+        [
+         "**ingredients**",
+         "All the items used to make something"
+        ],
+        [
+         "**recipe**",
+         "The instructions for making a dish"
+        ],
+        [
+         "**a pinch of**",
+         "A very small amount held between two fingers"
+        ],
+        [
+         "**tier**",
+         "One layer of a cake standing above another"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Products:** bread, buns, cakes, biscuits, cookies, a wedding cake, doughnuts."
+      },
+      {
+       "t": "h3",
+       "x": "A simple recipe (written as instructions)"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "**Sieve** the flour into a bowl and add a **pinch** of salt.",
+        "Mix the **margarine** and sugar until soft.",
+        "Add the eggs and **flavour**, then mix in the flour.",
+        "**Knead** the dough and **roll it out**.",
+        "Cut shapes with a **cookie cutter** and place them in a greased **baking tin**.",
+        "Bake in a hot **oven** for about twenty minutes.",
+        "**Turn off** the oven, remove the tin and let the cakes cool.",
+        "Decorate with **icing sugar**."
+       ],
+       "start": 1
+      },
+      {
+       "t": "h3",
+       "x": "Language structures"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**\"to\" infinitive**",
+         "*Don't forget **to shut** the oven.*"
+        ],
+        [
+         "**… used to …**",
+         "*I **used to** bake cakes when I was young.*"
+        ],
+        [
+         "**… used for …**",
+         "*A spoon **is used for** mixing butter and sugar.*"
+        ],
+        [
+         "**… prefers … to …**",
+         "*Musa **prefers** cakes **to** bread.*"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Careful:** *used to* (past habit) is different from *is used for* (purpose) and from *is used to* (is accustomed to)."
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus: forming nouns"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Verb",
+        "Noun",
+        "Verb",
+        "Noun"
+       ],
+       "rows": [
+        [
+         "bake",
+         "baker / bakery / baking",
+         "sew",
+         "sewing / sewer"
+        ],
+        [
+         "mix",
+         "mixture",
+         "measure",
+         "measurement"
+        ],
+        [
+         "decorate",
+         "decoration",
+         "build",
+         "builder / building"
+        ],
+        [
+         "teach",
+         "teacher",
+         "cook",
+         "cook / cooking"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "SUB-TOPIC 4D: KEEPING ANIMALS",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Vocabulary from the syllabus"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**welfare**",
+         "The good condition and comfort of an animal"
+        ],
+        [
+         "**husbandry**",
+         "The care and management of animals"
+        ],
+        [
+         "**veterinary**",
+         "To do with the treatment of animals"
+        ],
+        [
+         "**dip**",
+         "To put an animal into a liquid that kills ticks"
+        ],
+        [
+         "**tether**",
+         "To tie an animal with a rope to a peg"
+        ],
+        [
+         "**dock**",
+         "To cut short an animal's tail"
+        ],
+        [
+         "**stray**",
+         "An animal wandering with no owner"
+        ],
+        [
+         "**cruelty**",
+         "Deliberately causing pain to an animal"
+        ],
+        [
+         "**torture**",
+         "Causing severe pain"
+        ],
+        [
+         "**misery / sorrow / anxiety**",
+         "Suffering and distress"
+        ],
+        [
+         "**comfort / discomfort**",
+         "Being at ease / not being at ease"
+        ],
+        [
+         "**body signs**",
+         "The way an animal shows how it feels"
+        ],
+        [
+         "**slaughter**",
+         "To kill an animal for meat"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Caring for animals"
+      },
+      {
+       "t": "p",
+       "x": "Give **clean water and enough feed** · build a **clean, dry shelter** · **treat and vaccinate** them · **dip or spray** against ticks · handle them **gently** · give them **space and company** · protect them from thieves and bad weather · never overwork or beat them · call a **veterinary officer** when they are sick."
+      },
+      {
+       "t": "h3",
+       "x": "How animals show how they feel (body signs and sounds)"
+      },
+      {
+       "t": "p",
+       "x": "A dog **wags its tail** when happy and **growls** when angry · a cow **lows (moos)** when hungry or looking for its calf · a hen **clucks** to call its chicks · a goat **bleats** · a cat **purrs** when content and **hisses** when frightened. A sick animal is **quiet, dull, off its feed** and keeps apart from the others."
+      },
+      {
+       "t": "h3",
+       "x": "Language structures"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**You should …**",
+         "*You **should** mind about the welfare of animals.*"
+        ],
+        [
+         "**You should not …**",
+         "*You **should not** dock dogs, because it hurts them.*"
+        ],
+        [
+         "**Not only … but also …**",
+         "***Not only** should you feed animals **but also** treat them when they are sick.*"
+        ],
+        [
+         "**If 2 conditional**",
+         "*If I **had** a cow, I **would** build it a shed.*"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Note:** after *Not only* at the beginning of a sentence, the verb comes **before** the subject: *Not only **should you** feed them…*"
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Occupation",
+         "The work a person does to earn a living"
+        ],
+        [
+         "Carpenter",
+         "A person who makes things out of wood"
+        ],
+        [
+         "Tailor",
+         "A person who makes and mends clothes"
+        ],
+        [
+         "Seam",
+         "The line where two pieces of cloth are joined"
+        ],
+        [
+         "Baker",
+         "A person who bakes bread and cakes"
+        ],
+        [
+         "Dough",
+         "The soft mixture of flour and water before baking"
+        ],
+        [
+         "Ingredients",
+         "All the items used to make a dish"
+        ],
+        [
+         "Recipe",
+         "The instructions for making a dish"
+        ],
+        [
+         "Welfare",
+         "The good condition and comfort of an animal"
+        ],
+        [
+         "Veterinary officer",
+         "A person trained to treat animals"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**… is used for + verb-ing:** *A saw is used **for cutting** wood.*",
+        "Order words: **first, next, then, after that, finally**.",
+        "Passive = the right form of **be + past participle**.",
+        "**prefer … to …** — *He prefers sewing **to** knitting.*",
+        "**used to** = a past habit; **is used for** = purpose.",
+        "After **Not only** at the start, the verb comes **before** the subject.",
+        "**Yeast** makes dough rise; **kneading** is pressing and folding the dough.",
+        "**Docking** is cutting an animal's tail short — the syllabus says you **should not** do it."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "A saw is used ____ cutting wood → **for**.",
+        "A person who makes clothes → a **tailor**.",
+        "Tool used for taking measurements → a **tape measure**.",
+        "What makes dough rise → **yeast**.",
+        "Fine sugar used for decorating cakes → **icing sugar**.",
+        "Robert prefers sewing ____ knitting → **to**.",
+        "Change to passive: *The carpenter cuts the wood.* → *The wood **is cut** by the carpenter.*",
+        "Cutting an animal's tail short → **docking**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Writing *\"used for cut\"* — after **for** use the **-ing** form.",
+        "Writing *\"prefers sewing than knitting\"* — it is **prefer … to …**.",
+        "Confusing **used to** (past habit) with **is used for** (purpose).",
+        "Forgetting the **be** verb in the passive: *\"The wood cut by the carpenter.\"*",
+        "Writing *\"Not only you should feed…\"* — the verb comes first: *Not only **should you** feed…*",
+        "Spelling: **scissors, thimble, bakery, veterinary, carpenter**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Name any six tools used by a carpenter and say what each is used for.",
+        "Describe, using *first, next, then* and *finally*, how a carpenter makes a stool.",
+        "Change to the passive: *The carpenter is making a table.*",
+        "Change to the passive: *The tailor has finished my shirt.*",
+        "Name any six items used by a tailor and say what each is used for.",
+        "Give one word for: the line where two pieces of cloth are joined.",
+        "Give one word for: the small object worn on a finger to protect it when sewing.",
+        "Complete: *Be careful ____ stitching the cloth, because you may hurt your finger.*",
+        "Complete: *Robert prefers sewing ____ knitting.*",
+        "Name any six things used in baking and say what each is used for.",
+        "What is the work of yeast in baking? What does *knead* mean?",
+        "Write out five steps of baking cakes, in order.",
+        "Complete: *Don't forget ____ ____ the oven.* (two words)",
+        "Give the difference between *used to* and *is used for*, with an example of each.",
+        "Form nouns from: bake, mix, decorate, measure, teach.",
+        "Give any six ways of caring for animals.",
+        "Give the meaning of: welfare, docking, tethering, stray.",
+        "Complete: *Not only ____ ____ feed animals but also treat them when they are sick.*",
+        "Give three ways in which animals show how they feel.",
+        "Write a short paragraph (about six sentences) about an occupation you would like to do when you grow up."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Any six: **saw** — cutting wood; **plane** — smoothing wood; **hammer** — driving in nails; **drill** — making holes; **screwdriver** — driving in screws; **sandpaper** — smoothing a surface; **tape measure** — measuring.",
+        "*Learner's answer,* for example: **First** he measures and marks the wood, **next** he cuts it with a saw, **then** he planes it smooth and joins the pieces with nails, and **finally** he sands it and applies varnish.",
+        "*A table **is being made** by the carpenter.*",
+        "*My shirt **has been finished** by the tailor.*",
+        "Any six: **sewing machine** — stitching; **needle** — hand sewing; **thread** — sewing; **tape measure** — taking measurements; **scissors** — cutting cloth; **thimble** — protecting the finger; **bobbin** — holding the lower thread.",
+        "A **seam**.",
+        "A **thimble**.",
+        "**when**",
+        "**to**",
+        "Any six: **oven** — baking; **baking tin** — holding the dough; **sieve** — sifting flour; **rolling pin** — rolling out dough; **cookie cutter** — cutting shapes; **yeast** — making dough rise; **icing sugar** — decorating.",
+        "**Yeast** makes the dough **rise** so that the bread or cake is soft and light. To **knead** is to press and fold the dough with the hands until it is smooth.",
+        "*Learner's answer,* for example: sieve the flour → mix the margarine and sugar → add eggs and flour and knead → put the dough in a greased tin → bake in a hot oven, then cool and decorate.",
+        "**to shut**",
+        "**Used to** shows a habit in the past: *I **used to** bake cakes when I was young.* **Is used for** shows purpose: *A spoon **is used for** mixing butter and sugar.*",
+        "bake → **baker/bakery/baking**; mix → **mixture**; decorate → **decoration**; measure → **measurement**; teach → **teacher/teaching**.",
+        "Any six of: give clean water and enough feed; build a clean dry shelter; treat and vaccinate them; dip or spray against ticks; handle them gently; give them space; protect them from thieves and bad weather; never beat or overwork them; call a veterinary officer when they are sick.",
+        "**Welfare** — the good condition and comfort of an animal; **docking** — cutting short an animal's tail; **tethering** — tying an animal with a rope to a peg; **stray** — an animal wandering with no owner.",
+        "**should you**",
+        "Any three, for example: a dog **wags its tail** when happy and **growls** when angry; a cow **lows** when hungry or looking for its calf; a hen **clucks** to call its chicks; a sick animal becomes **dull and quiet and refuses to eat**.",
+        "*Learner's paragraph.* It should name the occupation, give reasons for the choice, mention some of its tools or activities, and be written in one paragraph with correct punctuation."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.6 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**… is used for + -ing** · order words **first, next, then, finally**",
+        "Passive = **be + past participle**",
+        "**prefer … to …** · **used to** (past habit) ≠ **used for** (purpose)",
+        "Carpenter: saw, plane, hammer, drill · Tailor: machine, needle, thimble, tape measure",
+        "Baker: oven, yeast, dough, knead, icing sugar",
+        "Animals: **welfare · husbandry · dip · tether** · you **should not dock**",
+        "**Not only + verb + subject … but also …**"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, the four sub-topics, the vocabulary lists, language structures, grammar items (present tense and the passive, the perfect tense, adverbs and conjunctions, formation of nouns, adjectives and If 2), competences and teacher guidance above were taken from the official **NCDC Primary Six Curriculum, Set One** (© NCDC 2010; topic outline page 24 and pages 37–46 of the PDF in `curriculum/`). The explanations, tables, sample recipe and process descriptions, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.6 was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P6_ENG_T05",
+   "class": "P6",
+   "subject": "ENG",
+   "topic_no": 5,
+   "title": "Hotels",
+   "heading": "TOPIC 5: HOTELS",
+   "slug": "hotels",
+   "periods": 35,
+   "curriculum_pages": "47–51",
+   "words": 2019,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Six Curriculum, Set One, English Topic 5, 35 periods (`curriculum/P6-SET-ONE-2010.pdf`, topic outline page 24 and pages 47–51).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You have seen hotels, restaurants and lodges in your town. In P.6 you learn the **English used in a hotel** — the workers, the rooms, the meals, the menu, and the polite structures used when asking for service."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "use hotel vocabulary correctly",
+        "name the workers in a hotel and their duties",
+        "read and write a **menu** and a hotel **advertisement**",
+        "ask for service politely using *May I …?*",
+        "use *may*, *no sooner … than*, adjectives and direct speech",
+        "act out dialogues that take place in a hotel"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. HOTEL VOCABULARY",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "The people"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**waiter / waitress**",
+         "The man / woman who serves food and drinks at table"
+        ],
+        [
+         "**chef**",
+         "The person who cooks the food"
+        ],
+        [
+         "**receptionist**",
+         "The person at the reception who receives guests and books rooms"
+        ],
+        [
+         "**customer / guest**",
+         "The person who buys the service"
+        ],
+        [
+         "**manager**",
+         "The person in charge of the hotel"
+        ],
+        [
+         "**porter**",
+         "The person who carries guests' luggage"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "The places"
+      },
+      {
+       "t": "p",
+       "x": "**reception** · **restaurant** · **dining room** · **lounge** · **bar** · **pub** · **conference room** · **washrooms / restrooms** · **gym** · **sauna** · **swimming pool** · **balcony** · **counter** · **kitchen** · **bedroom with a shower**."
+      },
+      {
+       "t": "h3",
+       "x": "The things and the service"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**menu**",
+         "The list of food and drinks a hotel offers, with prices"
+        ],
+        [
+         "**order**",
+         "To ask for the food you want"
+        ],
+        [
+         "**serve**",
+         "To bring the food to the customer"
+        ],
+        [
+         "**bill**",
+         "The paper showing how much a customer must pay"
+        ],
+        [
+         "**receipt**",
+         "The paper showing that payment has been made"
+        ],
+        [
+         "**cutlery**",
+         "Knives, forks and spoons"
+        ],
+        [
+         "**serviette / napkin**",
+         "The cloth or paper used to wipe the mouth and hands"
+        ],
+        [
+         "**table mat**",
+         "The mat placed under a plate"
+        ],
+        [
+         "**tooth pick**",
+         "The small stick used to remove food from between the teeth"
+        ],
+        [
+         "**booking**",
+         "Arranging a room or table in advance"
+        ],
+        [
+         "**check in / check out**",
+         "To arrive and register / to leave and pay"
+        ],
+        [
+         "**air conditioner / fan**",
+         "Machines that cool a room"
+        ],
+        [
+         "**table manners**",
+         "The correct way of behaving at table"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "The meals and the courses"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Meal",
+        "When it is taken"
+       ],
+       "rows": [
+        [
+         "**Breakfast**",
+         "In the morning"
+        ],
+        [
+         "**Lunch**",
+         "In the middle of the day"
+        ],
+        [
+         "**Supper**",
+         "In the evening"
+        ],
+        [
+         "**Dinner**",
+         "The main meal of the day, usually in the evening"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**The parts of a meal:** **soup** or **salad** first, then the **main course** with a **sauce**, then **dessert** — **pudding**, **jelly** or **fruit**."
+      }
+     ]
+    },
+    {
+     "title": "2. A MENU",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A menu shows what is available and how much it costs, usually in groups."
+      },
+      {
+       "t": "table",
+       "head": [
+        "**KAMPALA VIEW HOTEL — LUNCH MENU**",
+        "**Price (UGX)**"
+       ],
+       "rows": [
+        [
+         "**Soups**",
+         ""
+        ],
+        [
+         "Vegetable soup",
+         "4,000"
+        ],
+        [
+         "**Main dishes**",
+         ""
+        ],
+        [
+         "Matooke with groundnut sauce",
+         "10,000"
+        ],
+        [
+         "Rice with beef stew",
+         "12,000"
+        ],
+        [
+         "Chicken with chips",
+         "15,000"
+        ],
+        [
+         "**Desserts**",
+         ""
+        ],
+        [
+         "Fresh fruit salad",
+         "5,000"
+        ],
+        [
+         "Jelly",
+         "4,000"
+        ],
+        [
+         "**Drinks**",
+         ""
+        ],
+        [
+         "Soda",
+         "2,500"
+        ],
+        [
+         "Bottled water",
+         "1,500"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**When you write a menu:** put the name of the hotel and the meal at the top · group the items (soups, main dishes, desserts, drinks) · write the **price** against each item · spell the dishes correctly · keep it neat."
+      }
+     ]
+    },
+    {
+     "title": "3. POLITE LANGUAGE IN A HOTEL",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Situation",
+        "What to say"
+       ],
+       "rows": [
+        [
+         "Asking for the menu",
+         "*\"**May I** have the menu, please?\"*"
+        ],
+        [
+         "Ordering",
+         "*\"I would like rice and beef stew, please.\"*"
+        ],
+        [
+         "Asking the price",
+         "*\"How much is the chicken, please?\"*"
+        ],
+        [
+         "Calling the waiter",
+         "*\"Excuse me, please.\"*"
+        ],
+        [
+         "Asking for the bill",
+         "*\"**May I** have the bill, please?\"*"
+        ],
+        [
+         "Thanking",
+         "*\"Thank you very much.\"*"
+        ],
+        [
+         "Booking a room",
+         "*\"I would like to book a single room for two nights.\"*"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Table manners"
+      },
+      {
+       "t": "p",
+       "x": "Wash your hands before eating · sit upright · put the **serviette** on your lap · use the **cutlery** properly, starting from the outside · do not talk with your mouth full · chew with your mouth closed · do not make noise with the cutlery · say *please* and *thank you* · ask to be excused before leaving the table."
+      }
+     ]
+    },
+    {
+     "title": "4. LANGUAGE STRUCTURES",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**May I …?**",
+         "***May I** have the menu, please?*"
+        ],
+        [
+         "**… may …**",
+         "*Amuria Primary School **may** hold their end of year party in the hotel conference room.*"
+        ],
+        [
+         "**… no sooner … than …**",
+         "***No sooner had** the boss paid for his breakfast **than** he left the hotel.*"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Note on *no sooner*:** when the sentence begins with **No sooner**, the verb comes **before** the subject (*No sooner **had he** finished…*), and the second part uses **than**, never \"when\"."
+      }
+     ]
+    },
+    {
+     "title": "5. GRAMMAR",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "(a) Forming adjectives"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Noun / verb",
+        "Adjective"
+       ],
+       "rows": [
+        [
+         "comfort",
+         "**comfortable**"
+        ],
+        [
+         "enjoy",
+         "**enjoyable**"
+        ],
+        [
+         "beauty",
+         "**beautiful**"
+        ],
+        [
+         "care",
+         "**careful / careless**"
+        ],
+        [
+         "attract",
+         "**attractive**"
+        ],
+        [
+         "expense",
+         "**expensive**"
+        ],
+        [
+         "taste",
+         "**tasty**"
+        ],
+        [
+         "use",
+         "**useful / useless**"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "*Example:* *The hotel has **comfortable** beds and an **attractive** garden, and the food is **tasty** but rather **expensive**.*"
+      },
+      {
+       "t": "h3",
+       "x": "(b) Direct speech and its punctuation"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Rule",
+        "Example"
+       ],
+       "rows": [
+        [
+         "Put the exact words in **quotation marks**",
+         "*\"May I have the menu, please?\"*"
+        ],
+        [
+         "Begin the spoken words with a **capital letter**",
+         "*The guest said, **\"T**he food is delicious.\"*"
+        ],
+        [
+         "Put a **comma** before the quotation when the saying part comes first",
+         "*He said, \"Bring the bill.\"*"
+        ],
+        [
+         "The **question mark or full stop goes inside** the quotation marks",
+         "*\"Is the room ready?\" he asked.*"
+        ],
+        [
+         "Start a **new line** for each new speaker in a dialogue",
+         ""
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**A short dialogue**"
+      },
+      {
+       "t": "note",
+       "x": "**Waiter:** Good afternoon, madam. May I take your order? **Guest:** Yes, please. May I have the menu first? **Waiter:** Here it is, madam. **Guest:** I would like rice with beef stew and a bottle of water. **Waiter:** Very well, madam. Your order will be ready in ten minutes."
+      }
+     ]
+    },
+    {
+     "title": "6. A HOTEL ADVERTISEMENT",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "An advertisement should have a **name and a catchy line**, the **services offered**, the **price or special offer**, the **location**, and the **contact**."
+      },
+      {
+       "t": "note",
+       "x": "**RWENZORI GARDEN HOTEL** *Where every guest is family.* Clean self-contained rooms · free Wi-Fi · a swimming pool and a gym · a conference room for 200 people · tasty local and international dishes. **Rooms from 60,000/= a night. Book two nights and get breakfast free.** Opposite the main market, Fort Portal. Tel: 0700 000 000."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Hotel",
+         "A place where travellers pay for meals and accommodation"
+        ],
+        [
+         "Waiter / waitress",
+         "A person who serves food and drinks at table"
+        ],
+        [
+         "Chef",
+         "The person who cooks the food"
+        ],
+        [
+         "Receptionist",
+         "The person who receives guests and books rooms"
+        ],
+        [
+         "Menu",
+         "The list of food and drinks with their prices"
+        ],
+        [
+         "Bill",
+         "The paper showing how much a customer must pay"
+        ],
+        [
+         "Receipt",
+         "The paper showing that payment has been made"
+        ],
+        [
+         "Cutlery",
+         "Knives, forks and spoons"
+        ],
+        [
+         "Booking",
+         "Arranging a room or table in advance"
+        ],
+        [
+         "Table manners",
+         "The correct way of behaving at table"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**Waiter** serves; **chef** cooks; **receptionist** books rooms and receives guests.",
+        "A **menu** lists the food; a **bill** shows what you owe; a **receipt** proves you paid.",
+        "**Check in** on arrival; **check out** when leaving.",
+        "**May I …?** is the polite way to ask for anything.",
+        "**No sooner … than …**, with the verb before the subject at the start of the sentence.",
+        "Dessert comes **last**: pudding, jelly or fruit.",
+        "Direct speech: quotation marks, capital letter, comma, and the full stop or question mark **inside**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "The person who cooks in a hotel → the **chef**.",
+        "The list of food and prices → the **menu**.",
+        "The paper showing what a customer must pay → the **bill**.",
+        "Knives, forks and spoons → **cutlery**.",
+        "Cloth used to wipe the mouth at table → a **serviette (napkin)**.",
+        "*____ I have the menu, please?* → **May**",
+        "*No sooner had he paid ____ he left.* → **than**",
+        "Adjective from *comfort* → **comfortable**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Writing *\"No sooner had he paid **when** he left\"* — it must be **than**.",
+        "Confusing **bill** (what you owe) with **receipt** (proof of payment).",
+        "Writing *\"Can I have the menu\"* in a formal test where **May I** is expected.",
+        "Forgetting quotation marks and the comma in direct speech.",
+        "Spelling: **restaurant, serviette, cutlery, receipt, conference**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Name any five workers in a hotel and give the duty of each.",
+        "Give the meaning of: menu, bill, receipt, cutlery, serviette.",
+        "Give the difference between checking in and checking out.",
+        "Name any six places found in a big hotel.",
+        "Name the four meals mentioned in the syllabus and say when each is taken.",
+        "What is a dessert? Give three examples.",
+        "Write a short lunch menu for a hotel, with at least five items and their prices.",
+        "Complete: *____ I have the bill, please?*",
+        "Complete: *No sooner had the guest finished eating ____ he asked for the bill.*",
+        "Complete: *The school ____ hold its party in the hotel conference room.*",
+        "Give the adjectives formed from: comfort, enjoy, beauty, expense, taste.",
+        "Punctuate correctly: *may i have the menu please said the guest*",
+        "Write a four-line dialogue between a waiter and a customer ordering a meal.",
+        "Give any six good table manners.",
+        "Write a short advertisement (about four lines) for a hotel in your town."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Any five: **waiter/waitress** — serves food and drinks at table; **chef** — cooks the food; **receptionist** — receives guests and books rooms; **manager** — is in charge of the hotel; **porter** — carries guests' luggage.",
+        "**Menu** — the list of food and drinks with prices; **bill** — the paper showing how much a customer must pay; **receipt** — the paper showing that payment has been made; **cutlery** — knives, forks and spoons; **serviette** — the cloth or paper used to wipe the mouth and hands.",
+        "**Checking in** is arriving at a hotel and registering for a room; **checking out** is leaving the hotel and paying the bill.",
+        "Any six of: reception, restaurant, dining room, lounge, bar, conference room, washrooms, gym, sauna, swimming pool, kitchen, balcony.",
+        "**Breakfast** — in the morning; **lunch** — in the middle of the day; **supper** — in the evening; **dinner** — the main meal, usually in the evening.",
+        "A **dessert** is the sweet dish taken at the end of a meal. Examples: fruit, jelly, pudding (also ice cream, cake).",
+        "*Learner's menu.* It should have the hotel name and meal at the top, at least five items grouped sensibly, and a price against each.",
+        "**May**",
+        "**than**",
+        "**may**",
+        "comfort → **comfortable**; enjoy → **enjoyable**; beauty → **beautiful**; expense → **expensive**; taste → **tasty**.",
+        "***\"May I have the menu, please?\" said the guest.***",
+        "*Learner's dialogue.* It must name each speaker, start a new line for each, use quotation marks or the play format consistently, and use polite language such as *May I …, please*.",
+        "Any six of: wash hands before eating; sit upright; place the serviette on your lap; use the cutlery properly; do not talk with your mouth full; chew with your mouth closed; do not make noise with the cutlery; say please and thank you; ask to be excused before leaving the table.",
+        "*Learner's advertisement.* It should have the hotel name, a catchy line, the services, the price or an offer, the location and a contact."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.6 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**Waiter** serves · **Chef** cooks · **Receptionist** books rooms",
+        "**Menu** (list) · **Bill** (what you owe) · **Receipt** (proof of payment)",
+        "**Check in** on arrival · **check out** when leaving",
+        "Polite: **May I … , please?**",
+        "**No sooner had he paid than he left** (never \"when\")",
+        "Direct speech: quotation marks · capital · comma · stop **inside**",
+        "Table manners: wash hands, serviette on the lap, no talking with a full mouth"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, vocabulary list, language structures (*May I …?*, *may*, *no sooner … than*), grammar items (formation of adjectives and direct speech), competences and teacher guidance above were taken from the official **NCDC Primary Six Curriculum, Set One** (© NCDC 2010; topic outline page 24 and pages 47–51 of the PDF in `curriculum/`), including its instruction that learners write menus according to their localities and write advertisements. The sample menu, advertisement, dialogue, explanations, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook. The prices in the sample menu are made-up teaching figures."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.6 was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P6_ENG_T06",
+   "class": "P6",
+   "subject": "ENG",
+   "topic_no": 6,
+   "title": "Using a Dictionary",
+   "heading": "TOPIC 6: USING A DICTIONARY",
+   "slug": "using-a-dictionary",
+   "periods": 25,
+   "curriculum_pages": "52–55",
+   "words": 1963,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Six Curriculum, Set One, English Topic 6, 25 periods (`curriculum/P6-SET-ONE-2010.pdf`, topic outline page 24 and pages 52–55).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You have seen a dictionary in class. In P.6 you learn **how to use it properly** — alphabetical order, guide words, meanings, pronunciation, abbreviations and labels — and the grammar of **question tags, opposites and superlatives**."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "arrange words in alphabetical order",
+        "use guide words to find a word quickly",
+        "find the meaning, spelling, pronunciation and part of speech of a word",
+        "understand the abbreviations and labels used in a dictionary",
+        "use a thesaurus to find words of similar meaning",
+        "use question tags, opposites and superlative forms"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. WHAT A DICTIONARY IS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Dictionary:** A book that lists words in alphabetical order and gives their meanings, spellings, pronunciations and other information."
+      },
+      {
+       "t": "h3",
+       "x": "What a dictionary tells you about a word"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Its **spelling**",
+        "Its **meaning** (sometimes several meanings)",
+        "Its **pronunciation** and the **stress** — which part is said more strongly",
+        "Its **part of speech** — noun, verb, adjective and so on",
+        "Its **plural** or other forms",
+        "Its **origin**, and sometimes an **example sentence**"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Thesaurus:** A book that gives words of **similar meaning (synonyms)** and opposite meaning (antonyms)."
+      }
+     ]
+    },
+    {
+     "title": "2. ALPHABETICAL ORDER",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The dictionary follows the **alphabet: A B C D E … Z**."
+      },
+      {
+       "t": "p",
+       "x": "**The rule:** compare the **first letters**. If they are the same, compare the **second**, then the **third**, and so on."
+      },
+      {
+       "t": "h3",
+       "x": "Worked examples"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Given words",
+        "In alphabetical order"
+       ],
+       "rows": [
+        [
+         "mango, banana, apple, orange",
+         "**apple, banana, mango, orange**"
+        ],
+        [
+         "pear, peach, people, pen",
+         "**peach, pear, pen, people**"
+        ],
+        [
+         "stand, star, stamp, state",
+         "**stamp, stand, star, state**"
+        ],
+        [
+         "child, chief, chalk, chair",
+         "**chair, chalk, chief, child**"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "*Notice:* **peach** comes **before** **people**, and **people** comes **after** **peach**, because *pea…* comes before *peo…* (a before o)."
+      }
+     ]
+    },
+    {
+     "title": "3. GUIDE WORDS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Guide words:** The two words printed at the top of a dictionary page. The one on the left is the **first** word on that page, and the one on the right is the **last**."
+      },
+      {
+       "t": "p",
+       "x": "**How to use them:** if the guide words are **market — mask**, then *marry, marsh* and *martin* are on that page, but *marble* (before) and *mast* (after) are not."
+      },
+      {
+       "t": "h3",
+       "x": "Practice"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Guide words",
+        "Is the word on the page?"
+       ],
+       "rows": [
+        [
+         "**father — feather**",
+         "*feast* → **yes** · *fast* → no · *feed* → no"
+        ],
+        [
+         "**paint — palm**",
+         "*pair* → **yes** · *pack* → no · *panic* → no"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "4. OTHER THINGS IN A DICTIONARY ENTRY",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Parts of speech and their short forms"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Abbreviation",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**n.**",
+         "noun"
+        ],
+        [
+         "**v.**",
+         "verb"
+        ],
+        [
+         "**adj.**",
+         "adjective"
+        ],
+        [
+         "**adv.**",
+         "adverb"
+        ],
+        [
+         "**prep.**",
+         "preposition"
+        ],
+        [
+         "**conj.**",
+         "conjunction"
+        ],
+        [
+         "**pron.**",
+         "pronoun"
+        ],
+        [
+         "**pl.**",
+         "plural"
+        ],
+        [
+         "**sing.**",
+         "singular"
+        ],
+        [
+         "**syn.**",
+         "synonym · **ant.** — antonym"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "A sample entry"
+      },
+      {
+       "t": "note",
+       "x": "**kind** /kaɪnd/ *adj.* 1. gentle and caring towards others: *She is **kind** to animals.* 2. *n.* a type or sort: *What **kind** of book is it?* — **kindly** *adv.* · **kindness** *n.*"
+      },
+      {
+       "t": "p",
+       "x": "From this entry you learn the spelling, the pronunciation, that the word can be an **adjective** or a **noun**, two meanings, an example, and two related words."
+      },
+      {
+       "t": "h3",
+       "x": "Labels you may meet"
+      },
+      {
+       "t": "p",
+       "x": "**formal / informal** · **old-fashioned** · **British / American** · **slang** · **foreign words** taken into English, such as *safari*, *veranda*, *matooke* and *sauna*."
+      },
+      {
+       "t": "h3",
+       "x": "Acronyms and abbreviations"
+      },
+      {
+       "t": "p",
+       "x": "An **acronym** is a word made from the first letters of other words: **UNEB**, **NEMA**, **UWA**, **NGO**, **AIDS**. Many dictionaries list them too."
+      }
+     ]
+    },
+    {
+     "title": "5. GRAMMAR",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "(a) Question tags"
+      },
+      {
+       "t": "p",
+       "x": "A short question added to a statement. **Positive statement → negative tag; negative statement → positive tag.**"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Statement",
+        "Tag"
+       ],
+       "rows": [
+        [
+         "A dictionary gives meanings,",
+         "**doesn't it?**"
+        ],
+        [
+         "You have found the word,",
+         "**haven't you?**"
+        ],
+        [
+         "She isn't using a thesaurus,",
+         "**is she?**"
+        ],
+        [
+         "We shall check the spelling,",
+         "**shan't we?**"
+        ],
+        [
+         "I am right,",
+         "**aren't I?**"
+        ],
+        [
+         "Let us look it up,",
+         "**shall we?**"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "(b) Opposites (antonyms)"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Opposite",
+        "Word",
+        "Opposite"
+       ],
+       "rows": [
+        [
+         "big",
+         "small",
+         "ancient",
+         "modern"
+        ],
+        [
+         "cheap",
+         "expensive",
+         "shallow",
+         "deep"
+        ],
+        [
+         "arrive",
+         "depart",
+         "remember",
+         "forget"
+        ],
+        [
+         "polite",
+         "rude",
+         "full",
+         "empty"
+        ],
+        [
+         "ancient",
+         "modern",
+         "accept",
+         "refuse"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**By adding a prefix:** happy → **unhappy** · possible → **impossible** · legal → **illegal** · regular → **irregular** · agree → **disagree** · behave → **misbehave**."
+      },
+      {
+       "t": "h3",
+       "x": "(c) Superlative forms"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Type",
+        "Adjective",
+        "Comparative",
+        "Superlative"
+       ],
+       "rows": [
+        [
+         "Short words",
+         "tall",
+         "taller",
+         "**tallest**"
+        ],
+        [
+         "",
+         "big",
+         "bigger",
+         "**biggest**"
+        ],
+        [
+         "",
+         "happy",
+         "happier",
+         "**happiest**"
+        ],
+        [
+         "Long words",
+         "expensive",
+         "more expensive",
+         "**most expensive**"
+        ],
+        [
+         "",
+         "beautiful",
+         "more beautiful",
+         "**most beautiful**"
+        ],
+        [
+         "Irregular",
+         "good",
+         "better",
+         "**best**"
+        ],
+        [
+         "",
+         "bad",
+         "worse",
+         "**worst**"
+        ],
+        [
+         "",
+         "many/much",
+         "more",
+         "**most**"
+        ],
+        [
+         "",
+         "little",
+         "less",
+         "**least**"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**The rule:** use **-est** or **most** with **the**: *the **tallest** boy*, *the **most useful** book*. Never write \"more taller\" or \"most tallest\"."
+      },
+      {
+       "t": "h3",
+       "x": "(d) Language structures from the syllabus"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**… before …**",
+         "*Peach comes **before** people in the dictionary.*"
+        ],
+        [
+         "**… after …**",
+         "*The word people comes **after** peach in the dictionary.*"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "6. WHY A DICTIONARY MATTERS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "It gives the **correct spelling** · it explains **new words** you meet in reading · it shows how a word is **pronounced** · it tells you the **part of speech**, so you use the word correctly · it improves your **vocabulary and composition** · it settles arguments about meaning · a **thesaurus** helps you avoid repeating the same word."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Dictionary",
+         "A book of words in alphabetical order with their meanings"
+        ],
+        [
+         "Alphabetical order",
+         "Arrangement following the order of the alphabet"
+        ],
+        [
+         "Guide words",
+         "The first and last words on a dictionary page"
+        ],
+        [
+         "Entry",
+         "A word and all the information given about it"
+        ],
+        [
+         "Pronunciation",
+         "The way a word is said"
+        ],
+        [
+         "Stress",
+         "The part of a word said more strongly"
+        ],
+        [
+         "Abbreviation",
+         "A short form of a word"
+        ],
+        [
+         "Acronym",
+         "A word formed from the first letters of other words"
+        ],
+        [
+         "Synonym / antonym",
+         "A word of similar meaning / opposite meaning"
+        ],
+        [
+         "Thesaurus",
+         "A book of synonyms and antonyms"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Compare **letter by letter** when arranging words alphabetically.",
+        "**Guide words** show the first and last words on a page.",
+        "**n.** noun · **v.** verb · **adj.** adjective · **adv.** adverb.",
+        "A **thesaurus** gives words of similar meaning.",
+        "Positive statement → **negative** tag; negative statement → **positive** tag.",
+        "*I am…,* **aren't I?**",
+        "Superlatives take **-est** or **most**, always with **the** — never both together.",
+        "*peach* comes **before** *people*; *people* comes **after** *peach*."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Arrange in alphabetical order: peach, pen, people, pear → **peach, pear, pen, people**.",
+        "Guide words *market — mask*: is *marry* on the page? → **yes**.",
+        "What does **adj.** stand for? → adjective.",
+        "Book giving words of similar meaning → a **thesaurus**.",
+        "*A dictionary helps us, ____?* → **doesn't it?**",
+        "Opposite of *ancient* → **modern**. Of *shallow* → **deep**.",
+        "Superlative of *good* → **best**; of *bad* → **worst**; of *beautiful* → **most beautiful**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Looking only at the **first letter** when arranging words.",
+        "Writing *\"more better\"* or *\"most tallest\"*.",
+        "Writing *\"amn't I?\"* instead of **aren't I?**",
+        "Mixing up a **dictionary** (meanings) with a **thesaurus** (similar words).",
+        "Ignoring the **guide words** and searching the whole page."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "What is a dictionary? Give any four things it tells you about a word.",
+        "What is a thesaurus, and how is it different from a dictionary?",
+        "Arrange in alphabetical order: orange, apple, mango, banana, pear.",
+        "Arrange in alphabetical order: stand, stamp, state, star, stay.",
+        "Arrange in alphabetical order: chief, chair, child, chalk, cheese.",
+        "What are guide words?",
+        "If the guide words on a page are *father — feather*, which of these words are on that page: fast, feast, feed, fault?",
+        "What do these abbreviations stand for: n., v., adj., adv., pl.?",
+        "Write out what this entry tells you: **quick** /kwɪk/ *adj.* fast; taking a short time.",
+        "Give one word for: a word formed from the first letters of other words, and give two examples.",
+        "Add question tags: *A dictionary gives meanings, ____?* · *She isn't reading, ____?* · *I am late, ____?*",
+        "Give the opposites of: cheap, arrive, polite, shallow, ancient.",
+        "Give the opposites by adding a prefix: happy, possible, legal, agree, behave.",
+        "Give the comparative and superlative of: tall, big, happy, expensive, good, bad.",
+        "Complete: *Peach comes ____ people in the dictionary, and people comes ____ peach.*",
+        "Give any five reasons why a dictionary is important to a P.6 learner.",
+        "Which word would come first in a dictionary: *market* or *marble*? Give a reason.",
+        "Use *most useful* correctly in a sentence.",
+        "Find and write any three words in this note that would appear on a dictionary page with the guide words *sound — spelling*.",
+        "Write a short paragraph (about five sentences) explaining to a P.4 pupil how to look up a word in a dictionary."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "A dictionary is a book that lists words in alphabetical order and gives information about them. Any four of: spelling, meaning, pronunciation, stress, part of speech, plural form, origin, example sentence.",
+        "A **thesaurus** is a book that gives words of **similar meaning (synonyms)** and opposites. A dictionary explains **what a word means**, while a thesaurus offers **other words you could use instead**.",
+        "apple, banana, mango, orange, pear",
+        "stamp, stand, star, state, stay",
+        "chair, chalk, cheese, chief, child",
+        "Guide words are the two words at the top of a dictionary page: the **first** word on that page and the **last** word on that page.",
+        "**feast** is on that page. *Fast* comes before *father*, and *feed* and *fault* fall outside the range.",
+        "**n.** — noun; **v.** — verb; **adj.** — adjective; **adv.** — adverb; **pl.** — plural.",
+        "It tells you the **spelling** (quick), the **pronunciation** /kwɪk/, that it is an **adjective**, and its **meaning** — fast, taking a short time.",
+        "An **acronym**. Examples: **UNEB**, **NEMA** (also UWA, NGO, AIDS).",
+        "**doesn't it?** · **is she?** · **aren't I?**",
+        "cheap → **expensive**; arrive → **depart**; polite → **rude**; shallow → **deep**; ancient → **modern**.",
+        "happy → **unhappy**; possible → **impossible**; legal → **illegal**; agree → **disagree**; behave → **misbehave**.",
+        "tall — taller — **tallest**; big — bigger — **biggest**; happy — happier — **happiest**; expensive — more expensive — **most expensive**; good — better — **best**; bad — worse — **worst**.",
+        "Peach comes **before** people, and people comes **after** peach.",
+        "Any five of: it gives correct spellings; it explains new words; it shows pronunciation; it gives the part of speech; it improves vocabulary and composition; it settles arguments about meaning; it helps in reading and research.",
+        "**Marble**, because after *mar-* we compare the fourth letter: **b** comes before **k**.",
+        "*Learner's sentence,* for example: *A dictionary is the **most useful** book in the classroom.*",
+        "Any three words falling between *sound* and *spelling* alphabetically, for example **sounds, speech, spell** (also *speaker, special*).",
+        "*Learner's paragraph.* It should tell the pupil to know the first letter of the word, open the dictionary near that letter, use the **guide words** at the top of the page, follow the letters one by one, and then read the meaning and the part of speech."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.6 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Alphabetical order: compare **letter by letter**",
+        "**Guide words** = first and last word on the page",
+        "**n. v. adj. adv. pl.** · **thesaurus** = similar words",
+        "Tags: positive → negative, negative → positive · *I am…,* **aren't I?**",
+        "Opposites by prefix: **un-, im-, il-, ir-, dis-, mis-**",
+        "Superlative: **-est** or **most**, with **the** — never both",
+        "*peach* **before** *people* · *people* **after** *peach*"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, vocabulary list, language structures (*before* and *after* in dictionary order), grammar items (question tags, opposites and superlative forms), competences and teacher guidance above were taken from the official **NCDC Primary Six Curriculum, Set One** (© NCDC 2010; topic outline page 24 and pages 52–55 of the PDF in `curriculum/`), including its instruction that learners use a thesaurus and identify words with opposite meanings. The explanations, tables, sample entry, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.6 was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

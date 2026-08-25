@@ -1,0 +1,2457 @@
+=== PDFPAGE 1 ===
+A
+National Curriculum Development Centre 2010 National Curriculum Development Centre 2010
+THE REPUBLIC OF UGANDA
+Ministry of Education and Sports
+2010
+Primary Four
+National Curriculum Development Centre,
+P .O. Box 7002,
+Kampala - Uganda
+SOCIAL STUDIES SYLLABUS
+=== PDFPAGE 2 ===
+
+=== PDFPAGE 3 ===
+THE REPUBLIC OF UGANDA
+Ministry of Education and Sports
+2010
+Primary Four
+National Curriculum Development Centre,
+P .O. Box 7002,
+Kampala - Uganda
+SOCIAL STUDIES SYLLABUS
+=== PDFPAGE 4 ===
+ii
+National Curriculum Development Centre 2010 National Curriculum Development Centre 2010
+   
+
+ 
+NATIONAL CURRICULUM DEVELOPMENT CENTRE (NCDC) UGANDA 2010 
+ 
+ 
+COPYRIGHT © NCDC, 2010. 
+P.O BOX 7002, KYAMBOGO, KAMPALA  
+KAMPALA- UGANDA 
+URL. www.ncdc.go.ug 
+ 
+ 
+ 
+ 
+ 
+ALL rights reserved. No part of this syllabus should be reproduced stored in a retrieval system or transmitted in any form by any means 
+electronic, mechanical, photocopying, recording or otherwise without the permission of National Curriculum Development Centre. No 
+patent liability is assumed with respect to the use of the information contained herein. 
+ 
+ 
+ISBN 978-9970-117-49-9 
+ 
+Published by: National Curriculum Development Centre 
+=== PDFPAGE 5 ===
+iii
+National Curriculum Development Centre 2010 National Curriculum Development Centre 2010
+   
+
+ 
+NATIONAL CURRICULUM DEVELOPMENT CENTRE (NCDC) UGANDA 2010 
+ 
+ 
+COPYRIGHT © NCDC, 2010. 
+P.O BOX 7002, KYAMBOGO, KAMPALA  
+KAMPALA- UGANDA 
+URL. www.ncdc.go.ug 
+ 
+ 
+ 
+ 
+ 
+ALL rights reserved. No part of this syllabus should be reproduced stored in a retrieval system or transmitted in any form by any means 
+electronic, mechanical, photocopying, recording or otherwise without the permission of National Curriculum Development Centre. No 
+patent liability is assumed with respect to the use of the information contained herein. 
+ 
+ 
+ISBN 978-9970-117-49-9 
+ 
+Published by: National Curriculum Development Centre 
+
+
+ 
+ 
+CONTENTS 
+ACKNOWLEDGEMENT ................................................................................................................................ ................................................................................................ ....................... iv 
+FOREWORD ................................................................................................................................ ................................................................................................................................ ........ v 
+INTRODUCTION ................................................................................................................................ ................................................................................................ ................................. vi 
+METHODOLOGY OF TEACHING S.S.T ................................................................................................ ................................................................................................ ................................ viii 
+LEARNING OUTCOMES ........................................................................................................................................................................................................................................................................ viii 
+SKILLS DEVELOPED IN TEACHING SST ................................................................................................ ................................................................................................ ................................. ix 
+VALUES AND ATTITUDES ................................................................................................................................ ................................................................................................ .................... x 
+TEACHING/LEARNING AIDS (INSTRUCTIONAL MATERIALS) ................................................................ ................................................................................................ .................................. x 
+EVALUATION/ASSESSMENT OF PUPILS’ LEARNING ................................................................ ................................................................................................................................ ............. xi 
+SCOPE AND SEQUENCE SCHEME ................................................................................................ ................................................................................................................................ ...... xiii 
+TERM I ................................................................................................................................ ................................................................................................................................ ............... 1 
+THEME: LIVING TOGETHER IN OUR DISTRICT ....................................................................................................................................................................................................................................... 1 
+TOPIC 1: LOCATION OF OUR DISTRICT IN UGANDA   (PERIODS 16) ................................................................ ................................................................................................ ....................... 1 
+TOPIC 2: PHYSICAL FEATURES IN OUR DISTRICT (PERIODS 20) ................................................................ ................................................................................................ ............................. 4 
+TERM II ................................................................................................................................ ................................................................................................................................ .............. 7 
+TOPIC 3: VEGETATION IN OUR DISTRICT (25 PERIODS) ................................................................ ................................................................................................................................ ........ 7 
+TOPIC 4: PEOPLE IN OUR DISTRICT (15 PERIODS) ................................................................................................ ................................................................................................ ............... 10 
+TERM III ................................................................................................................................ ................................................................................................................................ ........... 15 
+TOPIC 5: OUR LEADERS IN THE DISTRICT (25 PERIODS) ................................................................ ................................................................................................................................ ...... 15 
+TOPIC 6: HOW TO MEET PEOPLE’S NEEDS IN OUR DISTRICT (25 PERIODS) ................................................................................................................................................................ ......... 19 
+ 
+ 
+ 
+=== PDFPAGE 6 ===
+iv
+National Curriculum Development Centre 2010 National Curriculum Development Centre 2010
+
+
+ACKNOWLEDGEMENT 
+The National Curriculu m Development Centre (NCDC) would like to express its appreciation to all those who worked tirelessly towards 
+the production of this P.4 Curriculum. 
+ 
+Our gratitude goes to the Curriculum Task Force of the Ministry of Education and Sports for overseeing and  taking timely decisions 
+whenever necessary. Our thanks also go to partners in education who provided the professional information and technical assis tance 
+and guidance to enable us come up with syllabuses in the seven subjects. 
+ 
+Our gratitude is also exte nded to our members of the various subject panels who worked tirelessly to ensure the various curriculum 
+materials are ready within time. 
+ 
+Lastly but not least, we would like to acknowledge all those behind the scenes who formed part of the team that worke d hard to finalise 
+the work on the various syllabi. 
+ 
+The National Curriculum Development Centre (NCDC) takes responsibility for any shortcomings that might be identified in the 
+publication and welcomes suggestions for effectively addressing the inadequacie s. Such comments and suggestions may be 
+communicated to NCDC through: P.O. Box 7002, Kampala or E-mail admin@ncdc.go.ug or www.ncdc.go.ug . 
+ 
+ 
+ 
+Connie Kateeba 
+Director 
+National Curriculum Development Centre. 
+
+=== PDFPAGE 7 ===
+v
+National Curriculum Development Centre 2010 National Curriculum Development Centre 2010
+
+
+ACKNOWLEDGEMENT 
+The National Curriculu m Development Centre (NCDC) would like to express its appreciation to all those who worked tirelessly towards 
+the production of this P.4 Curriculum. 
+ 
+Our gratitude goes to the Curriculum Task Force of the Ministry of Education and Sports for overseeing and  taking timely decisions 
+whenever necessary. Our thanks also go to partners in education who provided the professional information and technical assis tance 
+and guidance to enable us come up with syllabuses in the seven subjects. 
+ 
+Our gratitude is also exte nded to our members of the various subject panels who worked tirelessly to ensure the various curriculum 
+materials are ready within time. 
+ 
+Lastly but not least, we would like to acknowledge all those behind the scenes who formed part of the team that worke d hard to finalise 
+the work on the various syllabi. 
+ 
+The National Curriculum Development Centre (NCDC) takes responsibility for any shortcomings that might be identified in the 
+publication and welcomes suggestions for effectively addressing the inadequacie s. Such comments and suggestions may be 
+communicated to NCDC through: P.O. Box 7002, Kampala or E-mail admin@ncdc.go.ug or www.ncdc.go.ug . 
+ 
+ 
+ 
+Connie Kateeba 
+Director 
+National Curriculum Development Centre. 
+
+
+ 
+ 
+FOREWORD 
+ 
+The Curriculum for Primary Four 
+The Curriculum for lower primary (P1 -3) which the learner in primary four went through was organized around different themes 
+(Thematic) that were familiar to the learner. The main emphasis of that curriculum was numeracy, literacy and life skills. The medium of 
+instruction for most children was the local language. English was taught as a subject. 
+ 
+In this curriculum for primary four, children are required to change from the th eme-based to subject -based learning. They are also 
+required to begin learning in English. P4 learners will have textbooks. The teacher will encourage learners to do all activit ies and make 
+responses in English. These phenomena make primary four a transitional class. 
+ 
+The Primary Four Curriculum revisits content concepts and skills that have already been learnt in local languages as well as introducing 
+some new content and concepts. 
+ 
+Learners and teachers will start the year using local language when necessary and there will be steady development in the use of English 
+as the medium of instruction. By the end of primary four the local language will be used only for explaining the most difficu lt concepts. 
+Written materials including textbooks will be in English . Local languages will continue to be taught as subjects to reinforce children’s  
+literacy. 
+ 
+The subjects to be taught in this Primary Four Curriculum include: English, Mathematics, Social Studies, Religious Education (Christian 
+Religious Education – CRE) and (Islamic Religious Education – IRE), Integrated Science, Creative Arts & Physical Education (CAPE) and 
+Local Language. 
+ 
+I, therefore, recommend this Primary Four Curriculum for its implementation in the on-going reforms in Uganda. 
+ 
+ 
+ 
+Dr. Y. K. Nsubuga 
+DIRECTOR OF BASIC EDUCATION 
+
+=== PDFPAGE 8 ===
+vi
+National Curriculum Development Centre 2010 National Curriculum Development Centre 2010
+
+
+INTRODUCTION 
+ 
+Rationale of Teaching SST in P.4 
+Social Studies is the study of people and their environment. The environment in which people live and work has two components i.e. the 
+physical and social environment. The environme nt enables people to survive. The physical environment includes plants, animals, air, 
+water, soils and other natural resources. The social environment involves the need for acceptable social conduct, which is en forced 
+through customs, beliefs, laws and social practices such as funerals, marriages and other ceremonies. 
+ 
+As people work with one another, they establish systems to facilitate this relationship. Such systems include laws, education  and others 
+which are facilitated by the government institutions s et up by people. They give government the legislative, executive and judicial 
+powers. All these, including religious institutions are set up to regulate people’s ways of life. Social studies aims at equi pping the youth 
+with knowledge, skills, values and de sirable attitudes, all of which are necessary in preparing them for living in the physical and social 
+environment as informed; knowledgeable and participating citizens of the society. 
+ 
+The Primary School Curriculum has been undergoing Reform since 2005 due  to identified societal concerns of low levels of Literacy, 
+Numeracy, Vocational and Life skills among primary school learners. 
+ 
+Primary one to primary three curriculum handled the learners’ immediate environment that is the family, home, school, the 
+neighbourhood and the sub county/Division through the oral literature strand. The Primary four curriculum, which is for a transiti onal 
+class has been prepared to consolidate what was covered from P.1 – P.3; relating it to the district which is the learners’ next immediate 
+environment. It also prepares learners for a smooth transition to the next level, maintaining the spiral arrangement of theme s and 
+topics. The content, methods, instructions and skills have been carefully selected to cater for all learners incl uding those with special 
+learning needs. 
+ 
+The curriculum targets the development of various subject and language competences, life skills and values through the follow ing 
+learning outcomes: 
+ 
+The National Aims of Education 
+Both Thematic and Upper Primary Curriculum are designed to address the National Aims of Education as specified in the Government 
+White Paper on the Education Policy Review Commission Report (1992). The aims are: 
+ 
+=== PDFPAGE 9 ===
+vii
+National Curriculum Development Centre 2010 National Curriculum Development Centre 2010
+
+
+INTRODUCTION 
+ 
+Rationale of Teaching SST in P.4 
+Social Studies is the study of people and their environment. The environment in which people live and work has two components i.e. the 
+physical and social environment. The environme nt enables people to survive. The physical environment includes plants, animals, air, 
+water, soils and other natural resources. The social environment involves the need for acceptable social conduct, which is en forced 
+through customs, beliefs, laws and social practices such as funerals, marriages and other ceremonies. 
+ 
+As people work with one another, they establish systems to facilitate this relationship. Such systems include laws, education  and others 
+which are facilitated by the government institutions s et up by people. They give government the legislative, executive and judicial 
+powers. All these, including religious institutions are set up to regulate people’s ways of life. Social studies aims at equi pping the youth 
+with knowledge, skills, values and de sirable attitudes, all of which are necessary in preparing them for living in the physical and social 
+environment as informed; knowledgeable and participating citizens of the society. 
+ 
+The Primary School Curriculum has been undergoing Reform since 2005 due  to identified societal concerns of low levels of Literacy, 
+Numeracy, Vocational and Life skills among primary school learners. 
+ 
+Primary one to primary three curriculum handled the learners’ immediate environment that is the family, home, school, the 
+neighbourhood and the sub county/Division through the oral literature strand. The Primary four curriculum, which is for a transiti onal 
+class has been prepared to consolidate what was covered from P.1 – P.3; relating it to the district which is the learners’ next immediate 
+environment. It also prepares learners for a smooth transition to the next level, maintaining the spiral arrangement of theme s and 
+topics. The content, methods, instructions and skills have been carefully selected to cater for all learners incl uding those with special 
+learning needs. 
+ 
+The curriculum targets the development of various subject and language competences, life skills and values through the follow ing 
+learning outcomes: 
+ 
+The National Aims of Education 
+Both Thematic and Upper Primary Curriculum are designed to address the National Aims of Education as specified in the Government 
+White Paper on the Education Policy Review Commission Report (1992). The aims are: 
+ 
+
+
+(a) To promote understanding and appreciation of the value of national unity, patriotism and cultural heritage, with due 
+consideration to internal relations and beneficial interdependence; 
+(b) To inculcate moral, ethical and spiritual values in the individual and to develop self discipline, integrity, tolerance and human 
+fellowship. 
+(c) To inculcate into Ugandans a sense of service, duty and leadership for participation in civic, social and national affairs through 
+group activities in educational institutions and the community. 
+(d) To promote scientific, technical and cultural knowledge, skills and attitudes needed to enhance individual and national 
+development. 
+(e) To eradicate illiteracy and equip the individual with basic skills and knowledge to exploit the environment for self -development 
+as well as national development; for better health, nutrition and family life, and the capacity for continued learning; and 
+(f) To equip the learners with the ability to contribute to the building of an integrated, self-sustaining and independent national 
+economy. 
+ 
+Aims and Objectives of Primary Education in Uganda 
+At Primary education level the national aims can be translated to include the following aims and objectives: 
+1. To enable individuals to acquire functional literacy, numeracy and communication skills in Ugandan languages and English. 
+2. To develop and maintain sound mental and physical health; 
+3. To instill the value of living and working cooperatively with other people and caring for others in the community. 
+4. To develop cultural, moral and spiritual values of life; 
+5. To inculcate an understanding of and appreciation, for, the protection and utilization of the natural environment using scientific 
+and technological knowledge. 
+6. To develop a sense of patriotism and unity, an understanding of one’s rights and responsibilities and an appreciation of the need 
+to participate actively in civic matters. 
+7. To develop pre-requisite for continuing education and development. 
+8. To develop adequate practical skills for making a living. 
+9. To develop appreciation for the dignity of work and for making a living by one’s honest effort. 
+10. To develop the ability to use the problem-solving approach in various life situations; and 
+11. To develop discipline and good manners. 
+ 
+=== PDFPAGE 10 ===
+viii
+National Curriculum Development Centre 2010 National Curriculum Development Centre 2010
+
+
+METHODOLOGY OF TEACHING S.S.T 
+Teaching Social Studies calls for the application of various methods which support the development of liter acy, numeracy, behaviour, 
+attitudes, values and application of life skills. Therefore, the following generic methods are recommended for use: group dis cussion, 
+project method, dramatisation, exhibition, construction, inquiry, discovery method and problem solving. 
+ 
+Method Techniques 
+Discussion  Brain storming, question and answer, debate, resource person, story telling, arguments, 
+experiment, observation, illustration, interview and field visits. 
+Projection method  Audio - Visual, video recording, slides, films, trips and audio-recording. 
+Dramatisation  Role play, drama, conversations, dialogue or monologue, simulation. 
+Exhibition  Display, interest corner/centre, picture essays, demonstration, use of ground and wall 
+maps and real objects. 
+Representation  Drawing, painting, sculpture, modeling, use of diagrams, charts photographs, posters. 
+Group method  Grouping, reporting, brainstorming and display. 
+Problem solving  Sorting, competitions, initiations, note making, puzzles and quizzes. 
+Inquiry or Discovery  Project assignment, research, field visits, excursion, questions, resource persons, 
+observations, recording and interviews. 
+ 
+Learning outcomes 
+ͳǤ Explore and know one’s immediate and distant environment and interactions of human and physical factors. 
+ʹǤ Promote and practice desirable values in society and show respect for own and other cultures. 
+͵Ǥ Understand the structures and functions of government and demonstrate willingness to participate in democratic and civic process 
+of one’s country. 
+ͶǤ Demonstrate knowledge of and appreciate the rights of the individual and one’s responsibilities in maintaining social justice. 
+ͷǤ Understand the importance of interdependence of people and nations. 
+͸Ǥ Show loyalty, love and support for all leadership institutions to promote peace, harmony and unity. 
+͹Ǥ Demonstrate an understanding of and use map-reading skills to interpret information. 
+ͺǤ Demonstrate the application of appropriate life skills to support and promote positive behavior towards HIV and AIDS related issues 
+and other social challenges. 
+=== PDFPAGE 11 ===
+ix
+National Curriculum Development Centre 2010 National Curriculum Development Centre 2010
+
+
+METHODOLOGY OF TEACHING S.S.T 
+Teaching Social Studies calls for the application of various methods which support the development of liter acy, numeracy, behaviour, 
+attitudes, values and application of life skills. Therefore, the following generic methods are recommended for use: group dis cussion, 
+project method, dramatisation, exhibition, construction, inquiry, discovery method and problem solving. 
+ 
+Method Techniques 
+Discussion  Brain storming, question and answer, debate, resource person, story telling, arguments, 
+experiment, observation, illustration, interview and field visits. 
+Projection method  Audio - Visual, video recording, slides, films, trips and audio-recording. 
+Dramatisation  Role play, drama, conversations, dialogue or monologue, simulation. 
+Exhibition  Display, interest corner/centre, picture essays, demonstration, use of ground and wall 
+maps and real objects. 
+Representation  Drawing, painting, sculpture, modeling, use of diagrams, charts photographs, posters. 
+Group method  Grouping, reporting, brainstorming and display. 
+Problem solving  Sorting, competitions, initiations, note making, puzzles and quizzes. 
+Inquiry or Discovery  Project assignment, research, field visits, excursion, questions, resource persons, 
+observations, recording and interviews. 
+ 
+Learning outcomes 
+ͳǤ Explore and know one’s immediate and distant environment and interactions of human and physical factors. 
+ʹǤ Promote and practice desirable values in society and show respect for own and other cultures. 
+͵Ǥ Understand the structures and functions of government and demonstrate willingness to participate in democratic and civic process 
+of one’s country. 
+ͶǤ Demonstrate knowledge of and appreciate the rights of the individual and one’s responsibilities in maintaining social justice. 
+ͷǤ Understand the importance of interdependence of people and nations. 
+͸Ǥ Show loyalty, love and support for all leadership institutions to promote peace, harmony and unity. 
+͹Ǥ Demonstrate an understanding of and use map-reading skills to interpret information. 
+ͺǤ Demonstrate the application of appropriate life skills to support and promote positive behavior towards HIV and AIDS related issues 
+and other social challenges. 
+
+
+SKILLS DEVELOPED IN TEACHING SST 
+ 
+A: LIFE SKILLS   
+A life skill is the ability to cope with any emerging situation both in happiness and difficulty.  
+These skills are grouped in three categories. 
+1. Life skills for living and knowing oneself: 
+a) Self awareness: Knowing one’s strength and weakness. 
+b) Self esteem: Having confidence in oneself. 
+c) Coping with emotions: One’s ability to manage or deal effectively with situations or problems such as fear love, anger, 
+shyness, disgust and the desire to be accepted by others. 
+d) Coping with stress: Overcoming of physical, psychological and emotional tension arising out of difficult situations. 
+e) Assertiveness: Expressing one’s feelings, needs or desires openly and specifically in a respectful manner. 
+2. Skills of knowing and living with others. 
+a) Interpersonal relationship: Ability to relate freely with others. 
+b) Friendship formation: The ability to build/make meaningful and healthy associations with people. 
+c) Empathy: The ability to understand and address other people’s circumstances/problems and finding ways of helping 
+them make the right decisions. 
+d) Peer pressure resistance: Overcoming misleading influence from friends. 
+e) Negotiation: Ability to come up with agreed positions. 
+ 
+=== PDFPAGE 12 ===
+x
+National Curriculum Development Centre 2010 National Curriculum Development Centre 2010
+
+
+ 
+ 
+f) Non-violence conflict resolution: Ability to handle hostile situations or friction calmly and peacefully. 
+g) Effective communication: Ability to express oneself clearly and appropriately. 
+ 
+3. Skills of making effective decisions: 
+a) Critical thinking: Ability to explore possibilities of solving problems. 
+b) Creative thinking: Ability of coming up with new ways of doing things, ideas, arrangements or organizations. 
+c) Decision making: Ability to make the right choice from alternatives. 
+d) Problem solving: Ability to identify, cope with and find solutions to difficult or challenging situations. 
+ 
+B: STUDY SKILLS 
+A study skill is the ability to collect, analyze and use information during the teaching learning process. Some examples of study skills 
+are: listening, observation, investigating, reading, writing, grouping/classifying, analyzing, experimenting, collecting and recording 
+information. 
+ 
+C: MANIPULATIVE SKILLS 
+A manipulative skill is the ability to express knowledge by the use of hands and other body parts. Some of these skills are; 
+displaying, drawing, painting, modeling, making cut-outs and all activities done using hands. 
+ 
+VALUES AND ATTITUDES 
+Values are things we believe in and support openly, i.e. orderliness, honesty, love, carefulness, respect, faithfulness, obedience, 
+kindness and trustworthiness. 
+ 
+Attitudes are inner feelings manifested by actions like appreciation, cooperation, patience, tolerance, empathy and sympathy. 
+ 
+TEACHING/LEARNING AIDS (INSTRUCTIONAL MATERIALS) 
+In the teaching and learning of social studies, the following instructional materials may be used (help only to impart knowledge): 
+Reference books, Textbooks, Maps, charts, globes, flash cards, models, radios, televisions and other Audio visual Aids. 
+ 
+Above all, the teacher is encouraged to use the surrounding environment. This is a major source of teaching and learning aids. Among 
+the things provided by the environment as teaching learning aids and real objects. They include: plants, animals, physical features, 
+=== PDFPAGE 13 ===
+xi
+National Curriculum Development Centre 2010 National Curriculum Development Centre 2010
+
+
+ 
+ 
+f) Non-violence conflict resolution: Ability to handle hostile situations or friction calmly and peacefully. 
+g) Effective communication: Ability to express oneself clearly and appropriately. 
+ 
+3. Skills of making effective decisions: 
+a) Critical thinking: Ability to explore possibilities of solving problems. 
+b) Creative thinking: Ability of coming up with new ways of doing things, ideas, arrangements or organizations. 
+c) Decision making: Ability to make the right choice from alternatives. 
+d) Problem solving: Ability to identify, cope with and find solutions to difficult or challenging situations. 
+ 
+B: STUDY SKILLS 
+A study skill is the ability to collect, analyze and use information during the teaching learning process. Some examples of study skills 
+are: listening, observation, investigating, reading, writing, grouping/classifying, analyzing, experimenting, collecting and recording 
+information. 
+ 
+C: MANIPULATIVE SKILLS 
+A manipulative skill is the ability to express knowledge by the use of hands and other body parts. Some of these skills are; 
+displaying, drawing, painting, modeling, making cut-outs and all activities done using hands. 
+ 
+VALUES AND ATTITUDES 
+Values are things we believe in and support openly, i.e. orderliness, honesty, love, carefulness, respect, faithfulness, obedience, 
+kindness and trustworthiness. 
+ 
+Attitudes are inner feelings manifested by actions like appreciation, cooperation, patience, tolerance, empathy and sympathy. 
+ 
+TEACHING/LEARNING AIDS (INSTRUCTIONAL MATERIALS) 
+In the teaching and learning of social studies, the following instructional materials may be used (help only to impart knowledge): 
+Reference books, Textbooks, Maps, charts, globes, flash cards, models, radios, televisions and other Audio visual Aids. 
+ 
+Above all, the teacher is encouraged to use the surrounding environment. This is a major source of teaching and learning aids. Among 
+the things provided by the environment as teaching learning aids and real objects. They include: plants, animals, physical features, 
+
+
+houses, factories, household property, Social service centres, such as schools, Health Centres, hospitals, police stations and roads. 
+ 
+Teaching / learning Aids are very important in the teaching learning process because they make teaching and learning real and 
+enjoyable. They reinforce learning and also attract learners’ attention and motivate them. 
+ 
+Instructional materials can make the teaching and learning effective if they are clear, bold, representative and attractive. Learners must 
+be involved in the making or collecting of Instructional Materials. 
+ 
+As a teacher selects instructional materials he/ she is encouraged to consider the special needs learners as well. 
+ 
+EVALUATION/ASSESSMENT OF PUPILS’ LEARNING 
+Evaluation or assessment of learning is a very important aspect of education. Educators agree that of all aspects of school education, 
+evaluation or assessment has the greatest impact on learners. Learning in social studies should be evaluated in terms of the stated 
+outcomes and competences. 
+ 
+The following categories of learning outcomes must be evaluated or assessed for the achievement of the learners: 
+ 
+ͳǤ Knowledge and understanding (for example, of cultural heritage of the country, religion and so on) 
+ 
+ʹǤ Skills: 
+Ȍ Social skills such as co-operation, respect for law, order, recognition of civil responsibility and others. 
+ 
+Ȍ Performance skills such as gathering information from field survey, recording and drawing sketch maps. 
+ 
+͵Ǥ Attitude and value development, for example valuing, the natural environment and public utilities. 
+The above areas represent the cognitive, Psychomotor and affective domains of the le arning process. These domains will be 
+evaluated or assessed through simple text, observations, checklists, oral tests, simple texts, objective texts, group project s, records of 
+behaviours and classroom discussion. 
+ 
+The assessment and recording of both find ings and results should be a continuous process. Value scale is a measure of person’s 
+preference for people, places, things or aspects of them. It should be noted that very little work has been done on values, y et, its 
+knowledge is important to a full understanding of the behaviour of people. 
+=== PDFPAGE 14 ===
+xii
+National Curriculum Development Centre 2010 National Curriculum Development Centre 2010
+
+
+ 
+Proposed Period Allocation per Subject 
+ 
+Subject Periods 
+P4 P5 P6 P7 
+1. English 7 7 7 7 
+2. Social Studies 5 5 5 5 
+3. RE 3 3 3 3 
+4. Maths 7 7 7 7 
+5. Integrated Science (with Agriculture) 7 7 7 7 
+6. Local Language 3 3 3 3 
+7. Creative Arts & PE (CAPE) 7 6 6 6 
+Library  1 2 2 2 
+Total Periods 40 40 40 40 
+ 
+Proposed Sample timetable for P.4 
+ 
+Day            
+Mon Eng MTC CAPE 
+BREAK SCE SST 
+LUNCH 
+BREAK RE LIB 
+GAMES Tue MTC ENG ENG SST MTC CAPE SCE 
+Wed  SCE SST CAPE MTC LL ENG ENG LL 
+Thur RE ENG SCE SST MTC SCE CAPE CAPE 
+Fri MTC CAPE ENG RE LL CAPE SST 
+ 
+CAPE Creative Performing Arts   LIB Library   MTC Maths 
+SCE  Integrated Science with Agriculture  ENG English   LL Local Language 
+RE  Religious Education    SST Social Studies   
+ 
+ 
+ 
+=== PDFPAGE 15 ===
+xiii
+National Curriculum Development Centre 2010 National Curriculum Development Centre 2010
+
+
+ 
+Proposed Period Allocation per Subject 
+ 
+Subject Periods 
+P4 P5 P6 P7 
+1. English 7 7 7 7 
+2. Social Studies 5 5 5 5 
+3. RE 3 3 3 3 
+4. Maths 7 7 7 7 
+5. Integrated Science (with Agriculture) 7 7 7 7 
+6. Local Language 3 3 3 3 
+7. Creative Arts & PE (CAPE) 7 6 6 6 
+Library  1 2 2 2 
+Total Periods 40 40 40 40 
+ 
+Proposed Sample timetable for P.4 
+ 
+Day            
+Mon Eng MTC CAPE 
+BREAK SCE SST 
+LUNCH 
+BREAK RE LIB 
+GAMES Tue MTC ENG ENG SST MTC CAPE SCE 
+Wed  SCE SST CAPE MTC LL ENG ENG LL 
+Thur RE ENG SCE SST MTC SCE CAPE CAPE 
+Fri MTC CAPE ENG RE LL CAPE SST 
+ 
+CAPE Creative Performing Arts   LIB Library   MTC Maths 
+SCE  Integrated Science with Agriculture  ENG English   LL Local Language 
+RE  Religious Education    SST Social Studies   
+ 
+ 
+ 
+
+
+SCOPE AND SEQUENCE SCHEME 
+ 
+TERM I 
+THEME: LIVING TOGETHER IN OUR DISTRICT 
+TOPIC 1: OUR DISTRICT 
+ 
+(i) Revision of compass directions 
+(ii) Location of out district. 
+(iii) Size of out district (Sub-counties, Divisions and Municipalities) 
+(iv) History of out district and its importance (New input)g 
+(v) Important places in our district features (New input) 
+ 
+TOPIC 2: PHYSICAL FEATURES IN OUT DISTRICT 
+ 
+(i) Location of main physical features in out district. 
+(ii) Uses and dangers of different physical features 
+(iii) Caring for physical features (New input) 
+ 
+TERM II 
+TOPIC 3: VEGETATION IN OUT DISTRICT 
+(i) Types of vegetation in our district and their uses. 
+(ii) How people affect the vegetation. 
+(iii) Caring for the vegetation (New input) 
+ 
+=== PDFPAGE 16 ===
+xiv
+National Curriculum Development Centre 2010 National Curriculum Development Centre 2010
+
+
+TOPIC 4: PEOPLE IN OUR DISTRICT 
+(i) History of the people in out district (New input) 
+(ii) Settlement of people in our district (New input) 
+(iii) Types of work done by people in our district (New input) 
+(iv) Importance of social activities in our district. 
+(v) Factors contributing to people’s way of life in our district (New input) 
+ 
+TERM III 
+TOPIC 5: OUR LEADERS IN THE DISTRICT 
+(i) Titles of leaders in our district 
+(ii) Electing leaders in out district 
+(iii) Roles of different leaders in our district. 
+(iv) Rights and responsibilities of people in our district (New input) 
+ 
+TOPIC 6: HOW TO MEET PEOPLE’S NEEDS IN OUR DISTRICT 
+(i) Types of social services used to meet people’ needs in our district. 
+(ii) People who provide social services in our district 
+(iii) Problems in meeting people’s needs in our district 
+(iv) Caring for social service centres in our district (New input).
+=== PDFPAGE 17 ===
+1
+National Curriculum Development Centre 2010 National Curriculum Development Centre 2010
+
+
+TOPIC 4: PEOPLE IN OUR DISTRICT 
+(i) History of the people in out district (New input) 
+(ii) Settlement of people in our district (New input) 
+(iii) Types of work done by people in our district (New input) 
+(iv) Importance of social activities in our district. 
+(v) Factors contributing to people’s way of life in our district (New input) 
+ 
+TERM III 
+TOPIC 5: OUR LEADERS IN THE DISTRICT 
+(i) Titles of leaders in our district 
+(ii) Electing leaders in out district 
+(iii) Roles of different leaders in our district. 
+(iv) Rights and responsibilities of people in our district (New input) 
+ 
+TOPIC 6: HOW TO MEET PEOPLE’S NEEDS IN OUR DISTRICT 
+(i) Types of social services used to meet people’ needs in our district. 
+(ii) People who provide social services in our district 
+(iii) Problems in meeting people’s needs in our district 
+(iv) Caring for social service centres in our district (New input).
+1 
+
+
+ 
+ 
+TERM I 
+ 
+THEME: LIVING TOGETHER IN OUR DISTRICT 
+TOPIC 1: LOCATION OF OUR DISTRICT IN UGANDA   (PERIODS 16) 
+General Background to the Topic 
+Learners need to know the name of their district, its location and size in relation to number of sub -counties, counties, 
+divisions/municipalities. Learners are not expected to memorize all the sub -counties, counties and divisions, but perhaps they should 
+know the neighbouring sub -counties and counties. Learners can find out this information through research and readings from atlases. 
+This topic will enable learners to relate what they studied in P.3 (the sub -county) to the district which is a more distant environment. 
+Teacher should bear in mind that counties are not part of the main administrative structure of the District. They are only i ntegral 
+structures in some localities. Use of resource persons is very important in this topic. 
+ 
+Learning Outcomes: 
+ Demonstrates an understanding and use of map making and map reading skills to interpret information 
+ Explores and knows one’s immediate and distant environment and the interactions of human and other factors. 
+ 
+Skills and values /attitudes to be developed 
+ 
+Skills Values/attitudes 
+ Effective communication  Appreciation 
+ Creative thinking  Cooperation 
+ Recording  Sharing 
+ Observation  
+ Interpretation  
+=== PDFPAGE 18 ===
+2
+National Curriculum Development Centre 2010 National Curriculum Development Centre 2010 2 
+
+
+ 
+Subject Competence Language Competence Content Suggested Activities 
+The learner; 
+ Revises compass 
+points 
+ 
+ 
+ 
+ 
+ 
+ 
+ Locates his/her district 
+on the map of Uganda 
+ 
+ 
+ 
+ 
+ Compares the size of 
+his/her district with 
+the neighbouring 
+districts. 
+ The learner pronounces, reads 
+and spells words related to the 
+four cardinal points (North, 
+East, South and West) and the 
+four semi-cardinal points North 
+East (NE), South East (SE), 
+North West (NW), South West 
+(SW) 
+Revision of compass points. 
+Cardinal: 
+ North (N), East (E), South 
+(S) and West (W) 
+Semi cardinal 
+ North East (NE), South East 
+(SE), South West (SW) 
+North West (NW) 
+ 
+ Location of our district, sub-
+counties and counties 
+municipality. 
+ 
+ 
+ 
+ Size of our district 
+ Sub-counties 
+ Divisions/counties 
+ Municipalities 
+ Drawing and naming the compass 
+points (cardinal and semi cardinal) 
+ Using body parts to locate different 
+places in the school compound. 
+ Using the sun and shadows to tell 
+the direction. 
+ 
+ 
+ Locating his/her district on the 
+map of Uganda. 
+ Naming the sub-counties, counties, 
+and municipalities in the district. 
+ Drawing a map of the 
+district. 
+ Naming the sub-counties and 
+counties that make up our district 
+ Comparing the size of the district 
+with its neighbours. 
+ Measuring distance from 
+different points of the district 
+with a ruler. 
+ Compare those distances 
+ with the distances of neighbouring 
+districts. 
+=== PDFPAGE 19 ===
+3
+National Curriculum Development Centre 2010 National Curriculum Development Centre 20102 
+
+
+ 
+Subject Competence Language Competence Content Suggested Activities 
+The learner; 
+ Revises compass 
+points 
+ 
+ 
+ 
+ 
+ 
+ 
+ Locates his/her district 
+on the map of Uganda 
+ 
+ 
+ 
+ 
+ Compares the size of 
+his/her district with 
+the neighbouring 
+districts. 
+ The learner pronounces, reads 
+and spells words related to the 
+four cardinal points (North, 
+East, South and West) and the 
+four semi-cardinal points North 
+East (NE), South East (SE), 
+North West (NW), South West 
+(SW) 
+Revision of compass points. 
+Cardinal: 
+ North (N), East (E), South 
+(S) and West (W) 
+Semi cardinal 
+ North East (NE), South East 
+(SE), South West (SW) 
+North West (NW) 
+ 
+ Location of our district, sub-
+counties and counties 
+municipality. 
+ 
+ 
+ 
+ Size of our district 
+ Sub-counties 
+ Divisions/counties 
+ Municipalities 
+ Drawing and naming the compass 
+points (cardinal and semi cardinal) 
+ Using body parts to locate different 
+places in the school compound. 
+ Using the sun and shadows to tell 
+the direction. 
+ 
+ 
+ Locating his/her district on the 
+map of Uganda. 
+ Naming the sub-counties, counties, 
+and municipalities in the district. 
+ Drawing a map of the 
+district. 
+ Naming the sub-counties and 
+counties that make up our district 
+ Comparing the size of the district 
+with its neighbours. 
+ Measuring distance from 
+different points of the district 
+with a ruler. 
+ Compare those distances 
+ with the distances of neighbouring 
+districts. 
+3 
+
+
+ 
+ 
+ 
+Subject Competence Language Competence Content Suggested Activities 
+ Describes the 
+history of his/her 
+district 
+ 
+ 
+ 
+ 
+ 
+ Locates important 
+places in his/her 
+district 
+ The learner reads and 
+writes simple sentences 
+related to the history of 
+the district e.g. Name, 
+when created, meaning 
+of the name, why it was 
+formed, etc. 
+ 
+ The learner reads and 
+writes simple sentences 
+related to important 
+places in our district, 
+markets, police station, 
+post office, district 
+headquarters, mosques, 
+towns, churches and 
+roads. 
+ 
+ Location of 
+headquarters of the 
+district. 
+ History of our district. 
+ The importance/purpose 
+of out district. 
+ Big population 
+ Size of the mother district 
+ Request by the people. 
+ 
+ 
+- Important places in 
+our district - towns, 
+district headquarters, 
+hospitals, health 
+centres markets, 
+churches/mosques 
+and roads. 
+ Asking elders and resource 
+personas about the history 
+of the district. 
+ Giving reports about the 
+history of their district to 
+the class. 
+ 
+ 
+ Visiting some important 
+places 
+ Observing and recording 
+down what is happening in 
+these important places. 
+ Giving reports on what they 
+have observed. 
+ Model some of these 
+important places. 
+ 
+Suggested competences for assessment 
+ Drawing the map of the district and writing the names of the main towns and other important places 
+ Naming the neighbouring districts. 
+ Naming the cardinal and semi-cardinal (ordinal) points of the compass and indicating their direction. 
+ Describing how to get to the main towns in the districts (Direction from school means of transport, main features on the way 
+(direction from school) main features on the way. 
+=== PDFPAGE 20 ===
+4
+National Curriculum Development Centre 2010 National Curriculum Development Centre 2010 4 
+
+
+ 
+ 
+TOPIC 2: PHYSICAL FEATURES IN OUR DISTRICT (PERIODS 20) 
+General Background to the Topic 
+The learners should explain what physical fe atures are, locate them on the map of the district. Describe their importance and how they 
+affect people and other living things. Learners should explain and discuss the relationship the physical features, people and  other living 
+things. This topic will also lead the learners to develop skills of using and caring for the physical features. It is important that learners are 
+given opportunity to examine any local feature and talking to people living around it. Learners should realize that physical features are 
+natural resources which people in the district use to earn a living. 
+ 
+Learning Outcome: 
+ Explores, understands and appreciates the value of his/her immediate and distant environment for better health and harmonious 
+living. 
+ 
+Skills and values /attitudes to be developed 
+ 
+Skills Values/Attitudes 
+ Describing  Caring 
+ Inquiry  Appreciation 
+ Drawing  Sharing 
+ Observation  Cooperation 
+ Creativity  
+ Critical thinking  
+ Effective Communication  
+ 
+=== PDFPAGE 21 ===
+5
+National Curriculum Development Centre 2010 National Curriculum Development Centre 20104 
+
+
+ 
+ 
+TOPIC 2: PHYSICAL FEATURES IN OUR DISTRICT (PERIODS 20) 
+General Background to the Topic 
+The learners should explain what physical fe atures are, locate them on the map of the district. Describe their importance and how they 
+affect people and other living things. Learners should explain and discuss the relationship the physical features, people and  other living 
+things. This topic will also lead the learners to develop skills of using and caring for the physical features. It is important that learners are 
+given opportunity to examine any local feature and talking to people living around it. Learners should realize that physical features are 
+natural resources which people in the district use to earn a living. 
+ 
+Learning Outcome: 
+ Explores, understands and appreciates the value of his/her immediate and distant environment for better health and harmonious 
+living. 
+ 
+Skills and values /attitudes to be developed 
+ 
+Skills Values/Attitudes 
+ Describing  Caring 
+ Inquiry  Appreciation 
+ Drawing  Sharing 
+ Observation  Cooperation 
+ Creativity  
+ Critical thinking  
+ Effective Communication  
+ 
+5 
+
+
+ 
+Subject Competence Language Competence Content Suggested Activities 
+The learner;  
+Locates main physical 
+features in our district 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Explains the uses 
+and dangers of 
+different physical 
+features 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Suggests ways of 
+caring for physical 
+features 
+The learner:  
+ Pronounces words related to the 
+physical features in the district. 
+ Writes and reads simple sentences 
+related to the physical features  
+ 
+ 
+ 
+ 
+ 
+ 
+ Reads and writes sentences related 
+to uses and dangers caused by 
+different physical features e.g. 
+growing food, growing cash crops, 
+homes of many living things, 
+landslides. etc. 
+ 
+ 
+ 
+ 
+ 
+ 
+Writes and reads guided 
+compositions on ways of caring for 
+the physical features e.g. protecting 
+water sources such as lakes, rivers, 
+ponds and wells. 
+Location of physical features 
+in our district 
+- rivers 
+- lakes and dams 
+- hills 
+- mountains 
+- valleys 
+- rift valleys 
+- plains 
+ 
+ 
+ Uses of physical 
+features 
+ Dangers of different 
+physical features. 
+ 
+Usage 
+  Fishing, stones, 
+source of water, 
+minerals. 
+ 
+Dangers 
+ Landslides, harbor 
+bad people, floods 
+ Caring for physical 
+features 
+- Avoid pouring dirty 
+things, into lakes and 
+rivers. 
+- Using physical 
+features carefully. 
+Covering with soil areas 
+ Locating main physical 
+features on the map of the 
+district. 
+ Drawing the map of the 
+district and showing main 
+physical features. 
+ Visiting some of these  
+physical features in the 
+neighbourhood and 
+observe them. 
+ Visiting different 
+physical features. 
+ Listening to the resource 
+person and retelling stories 
+about physical features. 
+ Composing songs and 
+rhymes about the uses and 
+dangers of physical  
+features. 
+ Discussing the uses of 
+these physical features in 
+groups. 
+ Identifying solutions for 
+dangers caused by physical 
+features. 
+ Clearing areas leading to 
+the water source and 
+around the water sources. 
+ Discussing better methods 
+of quarrying stones and 
+sand. 
+=== PDFPAGE 22 ===
+6
+National Curriculum Development Centre 2010 National Curriculum Development Centre 2010 6 
+
+
+Subject Competence Language Competence Content Suggested Activities 
+where bricks have been 
+made and where sand 
+has been dug out. 
+- - Plant crops that 
+keep water within 
+the features. 
+ Discussing with parents on 
+how to care for physical 
+features. 
+ Practicing ways of caring for 
+physical features in their 
+mmunity. 
+ 
+Suggested competences for assessment 
+ 
+ Discussing the importance of physical features. 
+ Identifying and practicing ways of caring for the physical features. 
+ Identifying dangers caused by physical features. 
+ Suggesting solutions to dangers caused by physical features. 
+=== PDFPAGE 23 ===
+7
+National Curriculum Development Centre 2010 National Curriculum Development Centre 20106 
+
+
+Subject Competence Language Competence Content Suggested Activities 
+where bricks have been 
+made and where sand 
+has been dug out. 
+- - Plant crops that 
+keep water within 
+the features. 
+ Discussing with parents on 
+how to care for physical 
+features. 
+ Practicing ways of caring for 
+physical features in their 
+mmunity. 
+ 
+Suggested competences for assessment 
+ 
+ Discussing the importance of physical features. 
+ Identifying and practicing ways of caring for the physical features. 
+ Identifying dangers caused by physical features. 
+ Suggesting solutions to dangers caused by physical features. 
+7 
+
+
+ 
+ 
+ 
+TERM II 
+ 
+TOPIC 3: VEGETATION IN OUR DISTRICT (25 PERIODS) 
+General Background to the topic 
+This topic introduces learners to the land cover called vegetation. In the process of learning about vegetation around their school and 
+district, learners will be given an opportunity to visit, study and identify dif ferent types of vegetation, their importance to people and 
+other living things. In addition, learners should be helped and supported to develop skills of caring and preserving vegetati on to benefit 
+people and animals. 
+Learning Outcomes  
+The learner; 
+ Understands and appreciates the value of vegetation for better living. 
+ Plants, cares and uses of different types of vegetation correctly. 
+ 
+Skills and values/attitudes to be developed. 
+ 
+Skills Values/Attitudes 
+ Description  Caring 
+ Inquiry  Appreciating 
+ Drawing  Sharing 
+ Observation  Cooperating 
+ Creativity  
+ Critical thinking  
+ Effective Communication  
+=== PDFPAGE 24 ===
+8
+National Curriculum Development Centre 2010 National Curriculum Development Centre 2010 8 
+
+
+ 
+ 
+ 
+Subject competence Language competence Content Suggested activities 
+The learner: 
+ Identifies natural 
+and planted 
+vegetation. 
+ 
+ 
+ 
+ 
+ Demonstrates correct 
+usage of vegetation. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Identifies activities 
+that people do 
+which affect 
+vegetation. 
+ 
+ 
+ 
+ 
+ Pronounces, reads and 
+writes words and 
+structures related to 
+types of vegetation. 
+ 
+ 
+ 
+ 
+ Pronounces, reads and 
+writes words and 
+structure related to the 
+usage of vegetation 
+ 
+ 
+ 
+ 
+ 
+ 
+ Pronounces, reads and 
+writes words and 
+structures related to 
+people’s activities that 
+affect vegetation 
+ 
+ 
+ 
+ Each group different 
+kinds of vegetation. 
+ Examples of vegetation: 
+- Forests 
+- Swamps 
+- Shrubs 
+- Grass 
+- Crops. 
+ 
+ Uses of vegetation: 
+- Source of herbs for medicine 
+- Source of firewood 
+- Source of food 
+- Provides oxygen 
+- Supports in rain formation 
+- Controls soil erosion and 
+wind 
+- Improves soil fertility 
+- For beauty. 
+ 
+ How people affect vegetation: 
+- Burning bushes 
+- Over cultivation 
+- Over grazing 
+- Deforestation 
+- Making bricks 
+- Construction of roads 
+- Building houses for 
+settlement and industries 
+ 
+ Visiting different 
+vegetation areas near 
+the school. 
+ Comparing the 
+natural and 
+planted forests. 
+ 
+ 
+ Identifying the uses 
+of different types of 
+vegetation to people 
+and other living 
+things 
+ Making crafts like 
+mats, carpets 
+ Printing designs 
+ Making an experiment 
+on how plants support 
+in the formation of 
+rainfall. 
+ Identifying areas at 
+school and at home 
+where vegetation has 
+been destroyed by 
+peoples activities. 
+ Planting trees and 
+grass in school 
+compound and at 
+home 
+=== PDFPAGE 25 ===
+9
+National Curriculum Development Centre 2010 National Curriculum Development Centre 20108 
+
+
+ 
+ 
+ 
+Subject competence Language competence Content Suggested activities 
+The learner: 
+ Identifies natural 
+and planted 
+vegetation. 
+ 
+ 
+ 
+ 
+ Demonstrates correct 
+usage of vegetation. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Identifies activities 
+that people do 
+which affect 
+vegetation. 
+ 
+ 
+ 
+ 
+ Pronounces, reads and 
+writes words and 
+structures related to 
+types of vegetation. 
+ 
+ 
+ 
+ 
+ Pronounces, reads and 
+writes words and 
+structure related to the 
+usage of vegetation 
+ 
+ 
+ 
+ 
+ 
+ 
+ Pronounces, reads and 
+writes words and 
+structures related to 
+people’s activities that 
+affect vegetation 
+ 
+ 
+ 
+ Each group different 
+kinds of vegetation. 
+ Examples of vegetation: 
+- Forests 
+- Swamps 
+- Shrubs 
+- Grass 
+- Crops. 
+ 
+ Uses of vegetation: 
+- Source of herbs for medicine 
+- Source of firewood 
+- Source of food 
+- Provides oxygen 
+- Supports in rain formation 
+- Controls soil erosion and 
+wind 
+- Improves soil fertility 
+- For beauty. 
+ 
+ How people affect vegetation: 
+- Burning bushes 
+- Over cultivation 
+- Over grazing 
+- Deforestation 
+- Making bricks 
+- Construction of roads 
+- Building houses for 
+settlement and industries 
+ 
+ Visiting different 
+vegetation areas near 
+the school. 
+ Comparing the 
+natural and 
+planted forests. 
+ 
+ 
+ Identifying the uses 
+of different types of 
+vegetation to people 
+and other living 
+things 
+ Making crafts like 
+mats, carpets 
+ Printing designs 
+ Making an experiment 
+on how plants support 
+in the formation of 
+rainfall. 
+ Identifying areas at 
+school and at home 
+where vegetation has 
+been destroyed by 
+peoples activities. 
+ Planting trees and 
+grass in school 
+compound and at 
+home 
+9 
+
+
+Subject competence Language competence Content Suggested activities 
+ 
+ 
+ Identifies ways of 
+caring for the 
+vegetation. 
+ 
+ 
+ Pronounces, reads, 
+spells and writes words 
+and structures 
+connected to caring for 
+vegetation. 
+- Clearing bushes and forests 
+for crop growing. 
+ 
+ 
+ Caring for the vegetation: 
+- Watering them. 
+- Add manure 
+- Trimming them 
+ Making nursery beds 
+for tree seedlings. 
+ 
+ 
+ Trimming fences, 
+flowers and trees. 
+ Slashing compound at 
+school and home. 
+ 
+Suggested competences for assessment: 
+ Naming three uses of vegetation. 
+ Identifying three ways of caring for vegetation in the school compound. 
+ Giving two reasons as to why vegetation should be cared for. 
+ Practicing ways of caring for the vegetation. (Planting trees, flowers, shrubs sand hedges). 
+ Identifying three plants which provide medicine, plant them at home and care for them. 
+ Identifying dangerous plants which harm people and other living things. 
+ Naming three different animals which stay in; 
+(i) forests 
+(ii) swamps 
+(iii) grass. 
+ 
+ Reading and writing words and sentences related to: 
+(i) types of vegetation 
+(ii) importance and uses of vegetation 
+(iii) caring for vegetation. 
+ 
+ 
+=== PDFPAGE 26 ===
+10
+National Curriculum Development Centre 2010 National Curriculum Development Centre 2010 10 
+
+
+TOPIC 4: PEOPLE IN OUR DISTRICT (15 PERIODS) 
+General Background to the Topic 
+The environment is made up of two components that is the physical and social environments. People and what they make constitu te 
+the social environment . The learners should know the major tribes in the district and the number of people found there. This topic is 
+meant to help learners study about the people found in their districts, their activities as well as social and political orga nization. 
+Learners should also know how their district develops and what social activities are carried out in the district. 
+ 
+Learning Outcomes 
+The learner: 
+ Promotes and practices desirable values in the society and shows respect for his/her own culture and for others. 
+ Understands the importance of independence among people within the district and other districts. 
+ 
+Skills and values /attitudes to be developed 
+ 
+Skills Values/Attitudes 
+ Effective communication  Cooperation 
+ Self awareness  Respect for him/her self and others 
+  Appreciation 
+  Love 
+=== PDFPAGE 27 ===
+11
+National Curriculum Development Centre 2010 National Curriculum Development Centre 201010 
+
+
+TOPIC 4: PEOPLE IN OUR DISTRICT (15 PERIODS) 
+General Background to the Topic 
+The environment is made up of two components that is the physical and social environments. People and what they make constitu te 
+the social environment . The learners should know the major tribes in the district and the number of people found there. This topic is 
+meant to help learners study about the people found in their districts, their activities as well as social and political orga nization. 
+Learners should also know how their district develops and what social activities are carried out in the district. 
+ 
+Learning Outcomes 
+The learner: 
+ Promotes and practices desirable values in the society and shows respect for his/her own culture and for others. 
+ Understands the importance of independence among people within the district and other districts. 
+ 
+Skills and values /attitudes to be developed 
+ 
+Skills Values/Attitudes 
+ Effective communication  Cooperation 
+ Self awareness  Respect for him/her self and others 
+  Appreciation 
+  Love 
+11 
+
+
+ 
+Subject Competence Language Competence Content Suggested Activities 
+ The learner explains the 
+origin of the people in our 
+district 
+ Pronounces, reads and 
+writes words and sentences 
+related to the origin of the 
+people in our district. 
+ Origin of the people in our 
+district. 
+- Legends of some tribes. 
+- Tribes found in our 
+district 
+- Clans that form tribes of 
+people 
+ Causes of immigration 
+- search of water, food 
+and pasture 
+- looking for jobs. 
+- epidemics 
+- draughts 
+- running away from 
+conflicts 
+search for fertile soils for 
+crop growing. 
+ Inquiring about the origin of 
+clans in the district. 
+ Telling the common legends 
+e.g. the story of Mundu and 
+Sera in Bugisu. The story of 
+Labong and Gipir in Luo 
+speaking areas. The story of 
+Kintu and Nambi in Buganda. 
+ Discussing the causes of 
+immigration into and out of 
+our district. 
+ Identifies factors that 
+determine settlement 
+patterns in the district 
+today. 
+ Pronounces, reads and 
+writes words, structures and 
+sentences related to the 
+factors that determine 
+settlement patterns in the 
+district. 
+ Factors influencing 
+settlement patterns in our 
+district include: 
+- soil fertility 
+- enough and reliable 
+rainfall 
+- trade 
+- jobs 
+- enough food 
+- good security/peace 
+- availability of social 
+services like education, 
+water, trade, good 
+roads,roads, health 
+care and others. 
+ Discussing with parents why 
+some places have more 
+people than others (Report 
+the findings to class). 
+ Writing down factors 
+contributing to people’s 
+settlement patterns. (Children 
+display their work in class). 
+=== PDFPAGE 28 ===
+12
+National Curriculum Development Centre 2010 National Curriculum Development Centre 2010 12 
+
+
+Subject Competence Language Competence Content Suggested Activities 
+  Discusses various types of 
+work done by people in 
+our district. 
+ Pronounces, reads and 
+writes words and sentences 
+related to the types of work 
+done by people in our 
+district. 
+ Types of work : 
+- fishing 
+- farming 
+- pottery 
+- brick laying 
+- craft working 
+- trading 
+- teaching 
+- office work 
+ Modeling and weaving 
+different things made by 
+people in their locality, e.g. 
+pots, mats, baskets. 
+ Displaying craft work in SST 
+corner. 
+ Preparing gardens and 
+planting crops in the school 
+garden. 
+ Identifies problems faced 
+by people as they carry 
+on their work. 
+ Reads and writes words and 
+sentences related to 
+problems people face as they 
+carry out their work. 
+ Problems faced: 
+- insecurity/wars 
+- diseases of animals and 
+birds 
+- poor people’s health 
+- poor transport 
+- poor roads 
+- lack of knowledge and 
+technical skills. 
+- weather changes 
+- laziness of the people 
+- poverty 
+- unstable prices of 
+commodities 
+- thieves 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Discussing problems faced by 
+people when carrying out 
+their work. 
+ Inquiring from community 
+members problems faced by 
+people doing various types of 
+work. 
+=== PDFPAGE 29 ===
+13
+National Curriculum Development Centre 2010 National Curriculum Development Centre 201012 
+
+
+Subject Competence Language Competence Content Suggested Activities 
+  Discusses various types of 
+work done by people in 
+our district. 
+ Pronounces, reads and 
+writes words and sentences 
+related to the types of work 
+done by people in our 
+district. 
+ Types of work : 
+- fishing 
+- farming 
+- pottery 
+- brick laying 
+- craft working 
+- trading 
+- teaching 
+- office work 
+ Modeling and weaving 
+different things made by 
+people in their locality, e.g. 
+pots, mats, baskets. 
+ Displaying craft work in SST 
+corner. 
+ Preparing gardens and 
+planting crops in the school 
+garden. 
+ Identifies problems faced 
+by people as they carry 
+on their work. 
+ Reads and writes words and 
+sentences related to 
+problems people face as they 
+carry out their work. 
+ Problems faced: 
+- insecurity/wars 
+- diseases of animals and 
+birds 
+- poor people’s health 
+- poor transport 
+- poor roads 
+- lack of knowledge and 
+technical skills. 
+- weather changes 
+- laziness of the people 
+- poverty 
+- unstable prices of 
+commodities 
+- thieves 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Discussing problems faced by 
+people when carrying out 
+their work. 
+ Inquiring from community 
+members problems faced by 
+people doing various types of 
+work. 
+13 
+
+
+Subject Competence Language Competence Content Suggested Activities 
+ Identifies social activities 
+people engage in. 
+ Spells, reads and writes 
+words and sentences related 
+o social activities. 
+ 
+ Types of social activities: in 
+our district 
+ Introduction in marriages 
+ Weddings 
+ Naming of children 
+ Circumcision 
+ Demonstrating some of the 
+social activities. 
+ Discussing the importance of 
+social activities to the people 
+ Reciting rhymes on some 
+social activities. 
+ Singing songs on some social 
+activities (according to the 
+locality). 
+ Participating during any social 
+activity in the community. 
+ Discusses the importance 
+of social activities. 
+ Reads and writes words and 
+sentences related to 
+importance of social 
+activities. 
+ Importance of social 
+activities. 
+- They keep different 
+families together. 
+- They promote, culture, 
+e.g. language, 
+feeding, dressing. 
+- Unite people. 
+- They promote 
+acceptable behaviour. 
+- Promoting working 
+together 
+- Strengthen family clan 
+ties and norms. 
+ Singing cultural songs 
+connected to work and social 
+activities. 
+ Cultural fashion show. 
+ Explains factors 
+contributing to people’s 
+way of life 
+ Reads and writes words and 
+sentences related to factors 
+contributing to people’s way 
+of life. 
+- Factors contributing to 
+peoples way of life. 
+- work 
+- availability of food 
+- security 
+- education 
+- diseases 
+- unemployment 
+- poverty 
+ Listing down ways of how 
+their parents/guardians get 
+money to meet family needs. 
+Identifying ways of how 
+learners contribute to family 
+income. 
+ Participating in cleaning old 
+people’s homes in their 
+community. 
+=== PDFPAGE 30 ===
+14
+National Curriculum Development Centre 2010 National Curriculum Development Centre 2010 14 
+
+
+Subject Competence Language Competence Content Suggested Activities 
+- trade 
+- transport 
+- communication 
+ 
+Suggested competences for assessment: 
+ Matching tribes and languages spoken in the district 
+ Describing the social and economic set up of the people in the district 
+ Identifying main factors that contribute to people’s quality of life. 
+ Explaining the effect of diseases on people’s quality of life in the district 
+ Suggesting ways of improving quality life among the people. 
+=== PDFPAGE 31 ===
+15
+National Curriculum Development Centre 2010 National Curriculum Development Centre 201014 
+
+
+Subject Competence Language Competence Content Suggested Activities 
+- trade 
+- transport 
+- communication 
+ 
+Suggested competences for assessment: 
+ Matching tribes and languages spoken in the district 
+ Describing the social and economic set up of the people in the district 
+ Identifying main factors that contribute to people’s quality of life. 
+ Explaining the effect of diseases on people’s quality of life in the district 
+ Suggesting ways of improving quality life among the people. 
+15 
+
+
+ 
+ 
+TERM III 
+TOPIC 5: OUR LEADERS IN THE DISTRICT (25 PERIODS) 
+General Background to the topic 
+This topic introduces learners to different groups of leaders in the district. It also shows the administrative structure of different leaders 
+which include political, civic, cultural religious and voluntary leaders. Some leaders are elected by people, appointed by government some 
+inherit leadership from their ancestral leaders and yet others volunteer to lead. 
+ 
+These leaders help to plan and organize people as they work. 
+ 
+Learning Outcomes 
+The learner; 
+ Understands the different groups of leaders in the district. 
+ Appreciates the roles of different leaders in the district. 
+ Demonstrates interest and willingness to participate in the democratic and civic processes in the district. 
+ 
+Skills and values /attitudes to be developed 
+ 
+ Skills Values/Attitudes  
+ Inquiry  Cooperation 
+ Classifying  Respect 
+ Drawing  Honesty 
+ Displaying  Tolerance 
+  Responsibility 
+=== PDFPAGE 32 ===
+16
+National Curriculum Development Centre 2010 National Curriculum Development Centre 2010 16 
+
+
+
+Subject Competence Language Competence Content Suggested Activities 
+The Learner; 
+ Identifies different 
+groups of leaders in 
+the district 
+ Pronounces, reads, writes 
+and practices structures 
+related to different groups 
+of leaders in the district. 
+Types of leaders in our 
+district. 
+Political leaders: 
+LC1 – LC 5, RDC, 
+District Internal 
+Security Officer 
+(DISO) 
+ Civic leaders: 
+CAO, District 
+Health Officer, 
+District 
+Agricultural 
+Officer, 
+Magistrates, 
+District Police 
+Commander. 
+ Religious 
+Leaders: Bishops, 
+Priests, 
+Reverends, 
+Sheiks, Pastors 
+and Khadis. 
+ Voluntary leaders: 
+Scouts, Guides, All 
+leaders of NGOs., 
+UWESO, TASO, The Red 
+Cross etc 
+ Grouping leaders in our district. 
+Describing and drawing the 
+political and civic administrative 
+structures. 
+ Role playing an L.C I meeting 
+ Identifying names of leaders in 
+our district. 
+ Role playing election 
+procedures. 
+ Singing patriotic songs. 
+ Drawing election posters. 
+ Modeling a ballot paper. 
+ Demonstrating campaigning to 
+be prefects. 
+ Describes how leaders 
+are chosen in the 
+district.
+ How leaders are 
+chosen n Our district 
+- By election 
+- By appointment 
+- Through inheritance. 
+
+=== PDFPAGE 33 ===
+17
+National Curriculum Development Centre 2010 National Curriculum Development Centre 201016 
+
+
+
+Subject Competence Language Competence Content Suggested Activities 
+The Learner; 
+ Identifies different 
+groups of leaders in 
+the district 
+ Pronounces, reads, writes 
+and practices structures 
+related to different groups 
+of leaders in the district. 
+Types of leaders in our 
+district. 
+Political leaders: 
+LC1 – LC 5, RDC, 
+District Internal 
+Security Officer 
+(DISO) 
+ Civic leaders: 
+CAO, District 
+Health Officer, 
+District 
+Agricultural 
+Officer, 
+Magistrates, 
+District Police 
+Commander. 
+ Religious 
+Leaders: Bishops, 
+Priests, 
+Reverends, 
+Sheiks, Pastors 
+and Khadis. 
+ Voluntary leaders: 
+Scouts, Guides, All 
+leaders of NGOs., 
+UWESO, TASO, The Red 
+Cross etc 
+ Grouping leaders in our district. 
+Describing and drawing the 
+political and civic administrative 
+structures. 
+ Role playing an L.C I meeting 
+ Identifying names of leaders in 
+our district. 
+ Role playing election 
+procedures. 
+ Singing patriotic songs. 
+ Drawing election posters. 
+ Modeling a ballot paper. 
+ Demonstrating campaigning to 
+be prefects. 
+ Describes how leaders 
+are chosen in the 
+district.
+ How leaders are 
+chosen n Our district 
+- By election 
+- By appointment 
+- Through inheritance. 
+
+17 
+
+
+Subject Competence Language Competence Content Suggested Activities 
+- By volunteering
+ Identifies qualities of a 
+good leader and roles 
+of different leaders in 
+the district.
+ Pronounces, reads, writes 
+and practices structures 
+related to qualities of a 
+good leader
+Qualities of a good leader 
+- Ability/able 
+- Kindness
+- Respectful 
+- Knowledgeable 
+- Approachable 
+- Responsible 
+- Tolerant 
+- Obedient 
+- Careful 
+- Hardworking 
+- Cooperative 
+- Exemplary 
+- Confident
+ Brainstorming on qualities of a good 
+leader. 
+ Telling a story on how she helped 
+someone in a problem. 
+ Discussing the roles of different 
+leaders. 
+ Role – play an L.C V Council meeting. 
+ Listening to a resource person on 
+roles of cultural leaders, Civic and 
+political 
+ Listing down roles of different 
+leaders in the district. 
+ Matching the leaders with their 
+correct roles.
+ Identifies the rights and 
+responsibilities of the 
+people in our district 
+ Pronounces, reads, writes 
+and practices structures 
+related to peoples rights 
+and responsibilities. 
+ Rights and 
+responsibilities of people 
+in our district: 
+Rights of the people in our 
+District. 
+- Life, food, Education, 
+security 
+- Right to medical care. 
+ 
+(ii) Responsibilities of 
+people in our 
+district: 
+Obeying laws 
+Participating in 
+community work, Doing 
+Productive activities, 
+Caring for the sick,, 
+going to school. 
+ Listing children’s rights. 
+ Identifying people who provide 
+services related to these rights. 
+ Singing songs of appreciation to the 
+people who provide these rights. 
+ Making posters of people who abuse 
+their rights and display their work in 
+class and compound 
+ Making campaign against people 
+who abuse peoples’ rights in the 
+school and neighborhood. 
+ Discussing in groups the 
+responsibilities people do in their 
+localities to provide the basic needs. 
+ Reporting the discussed 
+responsibilities to class 
+ Writing class rules for them to follow. 
+=== PDFPAGE 34 ===
+18
+National Curriculum Development Centre 2010 National Curriculum Development Centre 2010 18 
+
+
+Subject Competence Language Competence Content Suggested Activities 
+- Participating in making 
+laws. 
+- Maintaining proper 
+sanitation. 
+- Helping and caring for 
+others. 
+
+ 
+Suggested competences for assessment 
+ 
+ Encouraging class – leaders to observe how the class members are following the class rules. 
+ Class leaders guiding some class members who have not followed the class rules. 
+ Class leaders appreciating some class members who have followed the class rules. 
+ 
+=== PDFPAGE 35 ===
+19
+National Curriculum Development Centre 2010 National Curriculum Development Centre 201018 
+
+
+Subject Competence Language Competence Content Suggested Activities 
+- Participating in making 
+laws. 
+- Maintaining proper 
+sanitation. 
+- Helping and caring for 
+others. 
+
+ 
+Suggested competences for assessment 
+ 
+ Encouraging class – leaders to observe how the class members are following the class rules. 
+ Class leaders guiding some class members who have not followed the class rules. 
+ Class leaders appreciating some class members who have followed the class rules. 
+ 
+19 
+
+
+TOPIC 6: HOW TO MEET PEOPLE’S NEEDS IN OUR DISTRICT (25 PERIODS) 
+General Background to the topic 
+In Primary Three,, the learner was briefly introduced to different types of social services, problems met in providing the services and the 
+suggested solutions to those problems at the sub – county. 
+ 
+The topic is intended to expand the learners’ knowledge on social ser vices provided by the government. Government has the 
+responsibility of providing social services to the people for example Education, medical care, security, transport, road main tenance, 
+water supply, electricity, housing, and banking. 
+ 
+There are some people who are allowed by the government to provide social services on its behalf. Such people are religious groups, 
+private medical practitioners and business people. 
+ 
+Learning Outcomes 
+The learner; 
+ Identifies people who provide social services in the district. 
+ Appreciates the value of different social services in the district. 
+ Suggests the solutions to the problems met in providing the social services. 
+Skills and values /attitudes to be developed 
+Skills Values/Attitudes  
+ Effective communication  Appreciation 
+ Inquiry  Care 
+ Creativity  Love 
+ Observation  Cooperation 
+  Sharing 
+=== PDFPAGE 36 ===
+20
+National Curriculum Development Centre 2010 National Curriculum Development Centre 2010 20 
+
+
+
+ 
+Subject Competence Language Competence Content Suggested Activities 
+Learner; 
+ Identifies the 
+different social 
+services provided to 
+meet people’s needs 
+in our district. 
+
+ Pronounces, reads, writes 
+and practices structures 
+related to social services 
+provided to meet 
+people’s needs. 
+
+ Explain what social 
+services are. 
+ Types of social services 
+used to meet people’s 
+needs in our district. 
+- Education service 
+- Medical service 
+- Security service 
+- Transport service 
+- Water service 
+- Electricity service 
+- Housing service 
+- Road maintenance 
+- Banking 
+- Postal and 
+communication like 
+telephones, faxes, E-mail 
+and the websites. 
+
+ Practicing safe ways of crossing roads. 
+ Cleaning roads leading to their schools 
+and homes 
+ Explaining different ways how 
+government provides safe and clean 
+water. 
+ Visiting the markets to observe how 
+people solve their needs in the market. 
+ Drawing different social service centres. 
+ Listening to a resource person from 
+police on their roles. 
+
+ Classifies different 
+groups of people 
+who provide social 
+services to meet 
+people’s needs
+ Pronounces reads 
+writes and practices 
+words and structures 
+related to the people 
+who provide social 
+services in the district.
+ People who provide social 
+services in our district. 
+- Local leaders 
+- Teachers
+- Doctors 
+- Veterinary Officers 
+- Nurses 
+- Police officers 
+- Farmers 
+- Drivers 
+- Carpenters 
+- Bankers 
+- Chiefs 
+- Parents 
+ Listing people who provide services to 
+people in the district. 
+Role playing in groups: different 
+social service providers for 
+example: police, doctors, farmers, 
+shopkeepers, bankers, Teachers. 
+ - Matching the social service providers 
+with the services they provide.
+=== PDFPAGE 37 ===
+21
+National Curriculum Development Centre 2010 National Curriculum Development Centre 201020 
+
+
+
+ 
+Subject Competence Language Competence Content Suggested Activities 
+Learner; 
+ Identifies the 
+different social 
+services provided to 
+meet people’s needs 
+in our district. 
+
+ Pronounces, reads, writes 
+and practices structures 
+related to social services 
+provided to meet 
+people’s needs. 
+
+ Explain what social 
+services are. 
+ Types of social services 
+used to meet people’s 
+needs in our district. 
+- Education service 
+- Medical service 
+- Security service 
+- Transport service 
+- Water service 
+- Electricity service 
+- Housing service 
+- Road maintenance 
+- Banking 
+- Postal and 
+communication like 
+telephones, faxes, E-mail 
+and the websites. 
+
+ Practicing safe ways of crossing roads. 
+ Cleaning roads leading to their schools 
+and homes 
+ Explaining different ways how 
+government provides safe and clean 
+water. 
+ Visiting the markets to observe how 
+people solve their needs in the market. 
+ Drawing different social service centres. 
+ Listening to a resource person from 
+police on their roles. 
+
+ Classifies different 
+groups of people 
+who provide social 
+services to meet 
+people’s needs
+ Pronounces reads 
+writes and practices 
+words and structures 
+related to the people 
+who provide social 
+services in the district.
+ People who provide social 
+services in our district. 
+- Local leaders 
+- Teachers
+- Doctors 
+- Veterinary Officers 
+- Nurses 
+- Police officers 
+- Farmers 
+- Drivers 
+- Carpenters 
+- Bankers 
+- Chiefs 
+- Parents 
+ Listing people who provide services to 
+people in the district. 
+Role playing in groups: different 
+social service providers for 
+example: police, doctors, farmers, 
+shopkeepers, bankers, Teachers. 
+ - Matching the social service providers 
+with the services they provide.
+21 
+
+
+Subject Competence Language Competence Content Suggested Activities 
+- Shopkeepers 
+- Army officers
+ Identifies problems 
+the district meets 
+when providing 
+social services. 
+ 
+ Pronounces, reads, 
+writes and practices 
+structures related to 
+problems met in 
+providing social services 
+ 
+ Problems in meeting 
+people’s needs in our 
+district. 
+- Poverty 
+- Bad weather 
+- Shortage of food 
+- Theft 
+- Corruption 
+- Irresponsibility/not caring 
+- Laziness 
+- Idleness. 
+- High population 
+- Poor attitude to work 
+ 
+ Identifying problems service providers 
+meet. 
+ Discussing and suggesting solutions for 
+problems. 
+ Composing songs, rhymes, poems and 
+talk shows against these bad practices 
+that affect service provision to the 
+people. 
+ 
+ Suggests solutions 
+to problems 
+identified 
+ Pronounces, reads 
+writes and practices 
+words and structures 
+related to solutions of 
+the problems identified. 
+ Suggested 
+solutions to 
+problems 
+identified. 
+- Creating employment 
+opportunities 
+especially for young 
+people. 
+Providing education on 
+methods of producing 
+more quality food. 
+- Providing medical services 
+- Controlling 
+population 
+growing. 
+- Introducing group farming. 
+ Identifying solutions to the 
+problems. 
+ Discussing ways and means of 
+reducing poverty 
+ Planting and caring for short term 
+crops. 
+ Drawing posters on how to increase 
+food production. 
+ Identifies the social 
+services centres in 
+ Pronounces, reads, 
+writes words and 
+ Caring for social 
+service centres. 
+ Identifying ways of caring for the social 
+service centres. 
+=== PDFPAGE 38 ===
+22
+National Curriculum Development Centre 2010 National Curriculum Development Centre 2010 22 
+
+
+Subject Competence Language Competence Content Suggested Activities 
+the district structures related to 
+social service centres. 
+Ǧ Respecting people who 
+care for social service 
+centres. 
+Ǧ Cleaning social service 
+centres. 
+Ǧ Mobilizing 
+communities on 
+proper use of social 
+service centres. 
+Ǧ Showing love for social 
+service centres. 
+ 
+ Suggesting things which destroy our 
+social service centres. 
+ Discussing ways of controlling things 
+which destroy our social service 
+centres. 
+ Arranging for a speech day for the 
+parents and the community on how to 
+care for the social service centres. 
+
+Suggested competences for assessment 
+ Participating in caring for their school environment, classroom, latrines, compound. 
+ Organizing class members to clean some elderly people’s homes 
+ Maintaining a spring well in their community.
+=== PDFPAGE 39 ===
+23
+National Curriculum Development Centre 2010 National Curriculum Development Centre 201022 
+
+
+Subject Competence Language Competence Content Suggested Activities 
+the district structures related to 
+social service centres. 
+Ǧ Respecting people who 
+care for social service 
+centres. 
+Ǧ Cleaning social service 
+centres. 
+Ǧ Mobilizing 
+communities on 
+proper use of social 
+service centres. 
+Ǧ Showing love for social 
+service centres. 
+ 
+ Suggesting things which destroy our 
+social service centres. 
+ Discussing ways of controlling things 
+which destroy our social service 
+centres. 
+ Arranging for a speech day for the 
+parents and the community on how to 
+care for the social service centres. 
+
+Suggested competences for assessment 
+ Participating in caring for their school environment, classroom, latrines, compound. 
+ Organizing class members to clean some elderly people’s homes 
+ Maintaining a spring well in their community.
+23 
+
+
+=== PDFPAGE 40 ===
+24
+National Curriculum Development Centre 2010
+www.ncdc.go.ug

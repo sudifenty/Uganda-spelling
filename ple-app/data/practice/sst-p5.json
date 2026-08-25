@@ -1,0 +1,1727 @@
+{
+  "class": "P5",
+  "className": "Primary 5",
+  "subject": "SST",
+  "curriculum": "Uganda primary Social Studies",
+  "levels": {
+    "1": "Beginner",
+    "2": "Intermediate",
+    "3": "Advanced"
+  },
+  "target": {
+    "total": 200,
+    "difficulty": {
+      "Easy": 70,
+      "Medium": 80,
+      "Hard": 50
+    }
+  },
+  "topics": {
+    "African Communities": [
+      "Ways of life"
+    ],
+    "Agriculture": [
+      "Cash crops",
+      "Farming systems",
+      "Mixed farming",
+      "Plantations",
+      "Soil conservation",
+      "Types of farming"
+    ],
+    "Citizenship": [
+      "Duties",
+      "Voting"
+    ],
+    "Climate": [
+      "Climate types",
+      "Elements of weather",
+      "Rainfall",
+      "Rainfall types",
+      "Seasons"
+    ],
+    "Communication": [
+      "Media"
+    ],
+    "Community Development": [
+      "Projects"
+    ],
+    "Culture": [
+      "Cultural practices"
+    ],
+    "Drainage": [
+      "Rivers",
+      "Swamps"
+    ],
+    "Environment": [
+      "Conservation",
+      "Wetlands"
+    ],
+    "Fishing": [
+      "Bad fishing methods",
+      "Fish farming",
+      "Fishing grounds",
+      "Methods"
+    ],
+    "Government": [
+      "Ministries"
+    ],
+    "History": [
+      "Early Uganda",
+      "Independence"
+    ],
+    "Leadership": [
+      "Central government",
+      "Local government"
+    ],
+    "Map Skills": [
+      "Direction",
+      "Map elements",
+      "Scale",
+      "Symbols"
+    ],
+    "Mining": [
+      "Effects",
+      "Salt"
+    ],
+    "Natural Resources": [
+      "Conservation",
+      "Forests",
+      "Minerals",
+      "Uses",
+      "Water"
+    ],
+    "Physical Features": [
+      "Islands",
+      "Lake formation",
+      "Lakes",
+      "Location of features",
+      "Mountains",
+      "Relief",
+      "Rift Valley"
+    ],
+    "Population": [
+      "Census",
+      "Population density",
+      "Population growth"
+    ],
+    "Settlement": [
+      "Reasons for settlement",
+      "Settlement patterns"
+    ],
+    "Social Services": [
+      "Education",
+      "Government ministries",
+      "Health services"
+    ],
+    "Soils": [
+      "Soil erosion",
+      "Soil fertility",
+      "Soil types"
+    ],
+    "Trade": [
+      "Barter",
+      "Exports",
+      "Imports and exports"
+    ],
+    "Transport": [
+      "Railway",
+      "Road transport"
+    ],
+    "Urban and Rural": [
+      "Differences",
+      "Rural life"
+    ],
+    "Vegetation": [
+      "Forests",
+      "Savanna",
+      "Vegetation types"
+    ]
+  },
+  "total": 77,
+  "questions": [
+    {
+      "id": "P5_SST_001",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Physical Features",
+      "subtopic": "Lakes",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which is the largest lake in Uganda?",
+      "options": [
+        "A. Lake Kyoga",
+        "B. Lake Albert",
+        "C. Lake Victoria",
+        "D. Lake Edward"
+      ],
+      "correctAnswer": "C",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Lake Victoria is the largest lake in Uganda and in Africa."
+    },
+    {
+      "id": "P5_SST_002",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Physical Features",
+      "subtopic": "Mountains",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "In which part of Uganda is Mount Rwenzori found?",
+      "options": [
+        "A. Eastern",
+        "B. Western",
+        "C. Northern",
+        "D. Central"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Mount Rwenzori lies in western Uganda, on the border with the D.R. Congo."
+    },
+    {
+      "id": "P5_SST_003",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Physical Features",
+      "subtopic": "Mountains",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "The highest peak of Mount Rwenzori is called ______ peak.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "margherita"
+      ],
+      "pairs": null,
+      "explanation": "Margherita is the highest peak of Mount Rwenzori."
+    },
+    {
+      "id": "P5_SST_004",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Physical Features",
+      "subtopic": "Lake formation",
+      "difficulty": "Hard",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Lake Albert was formed mainly by ______.",
+      "options": [
+        "A. Faulting",
+        "B. River deposits",
+        "C. Volcanic action",
+        "D. Wind action"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Lake Albert lies in the Rift Valley, which was formed by faulting."
+    },
+    {
+      "id": "P5_SST_005",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Climate",
+      "subtopic": "Climate types",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which type of climate is found around Lake Victoria?",
+      "options": [
+        "A. Desert",
+        "B. Equatorial",
+        "C. Mediterranean",
+        "D. Temperate"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "The Lake Victoria area has an equatorial climate: warm with rain most of the year."
+    },
+    {
+      "id": "P5_SST_006",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Climate",
+      "subtopic": "Rainfall",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which part of Uganda receives the least rainfall?",
+      "options": [
+        "A. Kalangala",
+        "B. Karamoja",
+        "C. Kabale",
+        "D. Mukono"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Karamoja is semi-arid, so it gets little and unreliable rainfall."
+    },
+    {
+      "id": "P5_SST_007",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Vegetation",
+      "subtopic": "Vegetation types",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which vegetation type covers most of Karamoja?",
+      "options": [
+        "A. Tropical rain forest",
+        "B. Savanna grassland with thorny bushes",
+        "C. Mangrove forest",
+        "D. Montane forest"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Dry savanna with thorny bushes suits areas with low rainfall like Karamoja."
+    },
+    {
+      "id": "P5_SST_008",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Soils",
+      "subtopic": "Soil types",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which soil type is best for growing most crops?",
+      "options": [
+        "A. Sandy soil",
+        "B. Clay soil",
+        "C. Loam soil",
+        "D. Murram"
+      ],
+      "correctAnswer": "C",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Loam soil holds water well and is rich in plant food."
+    },
+    {
+      "id": "P5_SST_009",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Natural Resources",
+      "subtopic": "Minerals",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "Copper used to be mined at ______ in Kasese district.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "kilembe"
+      ],
+      "pairs": null,
+      "explanation": "Kilembe mines in Kasese are known for copper."
+    },
+    {
+      "id": "P5_SST_010",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Natural Resources",
+      "subtopic": "Minerals",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Limestone used for making cement is mined at ______.",
+      "options": [
+        "A. Tororo",
+        "B. Gulu",
+        "C. Arua",
+        "D. Soroti"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Tororo has limestone deposits used in the cement industry."
+    },
+    {
+      "id": "P5_SST_011",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Agriculture",
+      "subtopic": "Types of farming",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "Growing crops mainly for selling is called ______ farming.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "commercial"
+      ],
+      "pairs": null,
+      "explanation": "Commercial farming produces for sale; subsistence farming is for the family."
+    },
+    {
+      "id": "P5_SST_012",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Agriculture",
+      "subtopic": "Cash crops",
+      "difficulty": "Hard",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which cash crop grows best on the slopes of Mount Elgon?",
+      "options": [
+        "A. Cotton",
+        "B. Arabica coffee",
+        "C. Rice",
+        "D. Sisal"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "The cool, high slopes of Mt Elgon suit Arabica coffee."
+    },
+    {
+      "id": "P5_SST_013",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Fishing",
+      "subtopic": "Fishing grounds",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which lake supplies the largest amount of fish in Uganda?",
+      "options": [
+        "A. Lake Victoria",
+        "B. Lake Bunyonyi",
+        "C. Lake Wamala",
+        "D. Lake Nakivale"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Lake Victoria is Uganda's biggest source of fish."
+    },
+    {
+      "id": "P5_SST_014",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Fishing",
+      "subtopic": "Bad fishing methods",
+      "difficulty": "Hard",
+      "questionType": "cause_effect",
+      "renderAs": "mcq",
+      "question": "Why is fishing using poison discouraged?",
+      "options": [
+        "A. It increases fish",
+        "B. It kills young fish and pollutes the water",
+        "C. It cleans the water",
+        "D. It helps fish breed"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Poison kills fish of all sizes and makes the water unsafe."
+    },
+    {
+      "id": "P5_SST_015",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Population",
+      "subtopic": "Census",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "The official counting of all people in a country is called a population ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "census"
+      ],
+      "pairs": null,
+      "explanation": "A census counts people and collects information for planning."
+    },
+    {
+      "id": "P5_SST_016",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Population",
+      "subtopic": "Population density",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "An area with very many people living in it is said to be ______.",
+      "options": [
+        "A. Sparsely populated",
+        "B. Densely populated",
+        "C. Empty",
+        "D. Rural"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Densely populated means many people live in a small area."
+    },
+    {
+      "id": "P5_SST_017",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Settlement",
+      "subtopic": "Reasons for settlement",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Why do many people settle near lakes?",
+      "options": [
+        "A. It is cold there",
+        "B. There is water, fish and fertile soil",
+        "C. There are no roads",
+        "D. The land is rocky"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Water, fish and fertile soils attract settlement."
+    },
+    {
+      "id": "P5_SST_018",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Leadership",
+      "subtopic": "Local government",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Who is the political head of a district in Uganda?",
+      "options": [
+        "A. The LC I chairperson",
+        "B. The LC V chairperson",
+        "C. The head teacher",
+        "D. The Resident District Commissioner"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "The LC V chairperson is the elected political head of a district."
+    },
+    {
+      "id": "P5_SST_019",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "History",
+      "subtopic": "Independence",
+      "difficulty": "Easy",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "Uganda got her independence in the year ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "1962"
+      ],
+      "pairs": null,
+      "explanation": "Uganda became independent on 9th October 1962."
+    },
+    {
+      "id": "P5_SST_020",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Citizenship",
+      "subtopic": "Voting",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "At what age can a Ugandan citizen vote in national elections?",
+      "options": [
+        "A. 16 years",
+        "B. 18 years",
+        "C. 21 years",
+        "D. 25 years"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Ugandans aged 18 years and above are allowed to vote."
+    },
+    {
+      "id": "P5_SST_021",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Map Skills",
+      "subtopic": "Map elements",
+      "difficulty": "Easy",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "The part of a map that explains what the symbols mean is called the ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "key",
+        "legend"
+      ],
+      "pairs": null,
+      "explanation": "The key (or legend) explains the symbols used on a map."
+    },
+    {
+      "id": "P5_SST_022",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Map Skills",
+      "subtopic": "Scale",
+      "difficulty": "Hard",
+      "questionType": "map_skill",
+      "renderAs": "mcq",
+      "question": "On a map with a scale of 1:50,000, one centimetre represents ______ on the ground.",
+      "options": [
+        "A. 500 metres",
+        "B. 5 kilometres",
+        "C. 50 metres",
+        "D. 5,000 metres"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "1 cm stands for 50,000 cm, and 50,000 cm is 500 metres."
+    },
+    {
+      "id": "P5_SST_023",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Map Skills",
+      "subtopic": "Direction",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "The direction exactly between North and East is called ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "north east",
+        "northeast",
+        "north-east"
+      ],
+      "pairs": null,
+      "explanation": "North East lies halfway between North and East."
+    },
+    {
+      "id": "P5_SST_024",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Environment",
+      "subtopic": "Conservation",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "Planting trees in an area where there were no trees before is called ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "afforestation"
+      ],
+      "pairs": null,
+      "explanation": "Afforestation is planting new forest; replanting a cut forest is reafforestation."
+    },
+    {
+      "id": "P5_SST_025",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Environment",
+      "subtopic": "Wetlands",
+      "difficulty": "Hard",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Why should swamps be protected?",
+      "options": [
+        "A. They dry up the land",
+        "B. They filter water and hold it during dry seasons",
+        "C. They cause drought",
+        "D. They kill all fish"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Wetlands clean water, store it and are home to many living things."
+    },
+    {
+      "id": "P5_SST_026",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Social Services",
+      "subtopic": "Government ministries",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which ministry is responsible for schools in Uganda?",
+      "options": [
+        "A. Ministry of Health",
+        "B. Ministry of Education and Sports",
+        "C. Ministry of Works",
+        "D. Ministry of Agriculture"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "The Ministry of Education and Sports runs education in Uganda."
+    },
+    {
+      "id": "P5_SST_027",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Social Services",
+      "subtopic": "Health services",
+      "difficulty": "Easy",
+      "questionType": "true_false",
+      "renderAs": "tf",
+      "question": "A dispensary is one of the places where people get health services.",
+      "options": [
+        "A. True",
+        "B. False"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Dispensaries, health centres and hospitals all provide health services."
+    },
+    {
+      "id": "P5_SST_028",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Transport",
+      "subtopic": "Railway",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "The railway line built from Mombasa towards Kampala is called the ______ Railway.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "uganda"
+      ],
+      "pairs": null,
+      "explanation": "It was named the Uganda Railway although it started at Mombasa."
+    },
+    {
+      "id": "P5_SST_029",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Trade",
+      "subtopic": "Imports and exports",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "Buying goods from other countries is called ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "importation",
+        "importing",
+        "imports"
+      ],
+      "pairs": null,
+      "explanation": "Importation is buying from abroad; exportation is selling abroad."
+    },
+    {
+      "id": "P5_SST_030",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Physical Features",
+      "subtopic": "Location of features",
+      "difficulty": "Hard",
+      "questionType": "matching",
+      "renderAs": "match",
+      "question": "Match each physical feature with where it is found.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": null,
+      "pairs": [
+        [
+          "Mount Elgon",
+          "Eastern Uganda"
+        ],
+        [
+          "Mount Rwenzori",
+          "Western Uganda"
+        ],
+        [
+          "Lake Bunyonyi",
+          "Kabale"
+        ],
+        [
+          "Source of the Nile",
+          "Jinja"
+        ]
+      ],
+      "explanation": "Knowing where features are helps you read maps of Uganda."
+    },
+    {
+      "id": "P5_SST_031",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Agriculture",
+      "subtopic": "Soil conservation",
+      "difficulty": "Hard",
+      "questionType": "scenario",
+      "renderAs": "mcq",
+      "question": "A farmer on a steep hill is losing soil whenever it rains. What should he do?",
+      "options": [
+        "A. Burn the grass",
+        "B. Dig terraces across the slope",
+        "C. Graze more animals",
+        "D. Leave the land bare"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Terraces slow down running water so it cannot wash away soil."
+    },
+    {
+      "id": "P5_SST_032",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Natural Resources",
+      "subtopic": "Uses",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which one is a renewable natural resource?",
+      "options": [
+        "A. Copper",
+        "B. Limestone",
+        "C. Forests",
+        "D. Petroleum"
+      ],
+      "correctAnswer": "C",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Forests can grow again if replanted. Minerals cannot be replaced."
+    },
+    {
+      "id": "P5_SST_033",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Physical Features",
+      "subtopic": "Relief",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Land that is flat and raised high above sea level is called a ______.",
+      "options": [
+        "A. Plateau",
+        "B. Valley",
+        "C. Delta",
+        "D. Bay"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "A plateau is high, fairly flat land."
+    },
+    {
+      "id": "P5_SST_034",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Physical Features",
+      "subtopic": "Mountains",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Mount Elgon is found near which town?",
+      "options": [
+        "A. Mbale",
+        "B. Kabale",
+        "C. Arua",
+        "D. Masaka"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Mount Elgon rises near Mbale in eastern Uganda."
+    },
+    {
+      "id": "P5_SST_035",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Physical Features",
+      "subtopic": "Islands",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "A piece of land completely surrounded by water is called an ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "island"
+      ],
+      "pairs": null,
+      "explanation": "Islands such as the Ssese Islands sit in Lake Victoria."
+    },
+    {
+      "id": "P5_SST_036",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Physical Features",
+      "subtopic": "Rift Valley",
+      "difficulty": "Hard",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Lakes Albert, Edward and George lie in the ______.",
+      "options": [
+        "A. Eastern Rift Valley",
+        "B. Western Rift Valley",
+        "C. Central plateau",
+        "D. Coastal plain"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "These lakes lie in the Western branch of the Rift Valley."
+    },
+    {
+      "id": "P5_SST_037",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Drainage",
+      "subtopic": "Rivers",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "The River Nile leaves Lake Victoria at ______.",
+      "options": [
+        "A. Jinja",
+        "B. Gulu",
+        "C. Mbarara",
+        "D. Fort Portal"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "The Nile begins its journey north at Jinja."
+    },
+    {
+      "id": "P5_SST_038",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Drainage",
+      "subtopic": "Swamps",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "Low, wet land covered with papyrus is called a ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "swamp",
+        "wetland"
+      ],
+      "pairs": null,
+      "explanation": "Swamps hold water and support plants such as papyrus."
+    },
+    {
+      "id": "P5_SST_039",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Climate",
+      "subtopic": "Elements of weather",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which instrument shows the direction from which the wind is blowing?",
+      "options": [
+        "A. Thermometer",
+        "B. Rain gauge",
+        "C. Wind vane",
+        "D. Barometer"
+      ],
+      "correctAnswer": "C",
+      "answers": null,
+      "pairs": null,
+      "explanation": "A wind vane turns to point towards where the wind comes from."
+    },
+    {
+      "id": "P5_SST_040",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Climate",
+      "subtopic": "Seasons",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "A long period without rainfall is called a ______.",
+      "options": [
+        "A. Wet season",
+        "B. Dry season",
+        "C. Cold season",
+        "D. Windy season"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "A dry season is a long spell with little or no rain."
+    },
+    {
+      "id": "P5_SST_041",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Climate",
+      "subtopic": "Rainfall types",
+      "difficulty": "Hard",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Rain that falls when moist air is forced to rise over a mountain is called ______ rainfall.",
+      "options": [
+        "A. Relief",
+        "B. Convectional",
+        "C. Frontal",
+        "D. Cyclonic"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Air rising over highlands cools and drops relief rainfall."
+    },
+    {
+      "id": "P5_SST_042",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Vegetation",
+      "subtopic": "Forests",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which vegetation grows in areas with heavy rainfall all year?",
+      "options": [
+        "A. Desert scrub",
+        "B. Tropical rain forest",
+        "C. Short grass",
+        "D. Thorn bush"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Heavy, year-round rain supports thick rain forest."
+    },
+    {
+      "id": "P5_SST_043",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Vegetation",
+      "subtopic": "Savanna",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "Vegetation made up of tall grass with scattered trees is called ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "savanna",
+        "savannah",
+        "savanna grassland"
+      ],
+      "pairs": null,
+      "explanation": "Savanna is grassland with a few scattered trees."
+    },
+    {
+      "id": "P5_SST_044",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Soils",
+      "subtopic": "Soil erosion",
+      "difficulty": "Hard",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which farming method best reduces soil erosion on a slope?",
+      "options": [
+        "A. Digging up and down the slope",
+        "B. Contour ploughing across the slope",
+        "C. Burning the grass",
+        "D. Leaving soil bare"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Ploughing across the slope slows running water."
+    },
+    {
+      "id": "P5_SST_045",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Soils",
+      "subtopic": "Soil fertility",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which practice improves soil fertility naturally?",
+      "options": [
+        "A. Adding manure",
+        "B. Burning all the grass",
+        "C. Continuous digging",
+        "D. Overgrazing"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Manure returns plant food to the soil."
+    },
+    {
+      "id": "P5_SST_046",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Natural Resources",
+      "subtopic": "Water",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which one is a use of water in the home?",
+      "options": [
+        "A. Cooking",
+        "B. Building roads",
+        "C. Mining",
+        "D. Weaving"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Water is used at home for cooking, washing and drinking."
+    },
+    {
+      "id": "P5_SST_047",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Natural Resources",
+      "subtopic": "Forests",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which product comes from forests?",
+      "options": [
+        "A. Timber",
+        "B. Copper",
+        "C. Salt",
+        "D. Cement"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Trees in forests are cut for timber."
+    },
+    {
+      "id": "P5_SST_048",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Mining",
+      "subtopic": "Salt",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "Salt is traditionally mined at Lake ______ in western Uganda.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "katwe"
+      ],
+      "pairs": null,
+      "explanation": "Lake Katwe in Kasese is known for salt mining."
+    },
+    {
+      "id": "P5_SST_049",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Mining",
+      "subtopic": "Effects",
+      "difficulty": "Hard",
+      "questionType": "cause_effect",
+      "renderAs": "mcq",
+      "question": "Which problem is most likely where open mining takes place?",
+      "options": [
+        "A. More forests grow",
+        "B. Large pits and destroyed land",
+        "C. Cleaner rivers",
+        "D. More rainfall"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Open mining leaves pits and damages the land surface."
+    },
+    {
+      "id": "P5_SST_050",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Agriculture",
+      "subtopic": "Farming systems",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Growing crops only for the family to eat is called ______ farming.",
+      "options": [
+        "A. Subsistence",
+        "B. Commercial",
+        "C. Plantation",
+        "D. Mixed"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Subsistence farming feeds the farmer's own household."
+    },
+    {
+      "id": "P5_SST_051",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Agriculture",
+      "subtopic": "Mixed farming",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "A farmer who grows crops and also keeps animals practises ______ farming.",
+      "options": [
+        "A. Mixed",
+        "B. Shifting",
+        "C. Plantation",
+        "D. Nomadic"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Mixed farming combines crops and livestock on one farm."
+    },
+    {
+      "id": "P5_SST_052",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Agriculture",
+      "subtopic": "Plantations",
+      "difficulty": "Hard",
+      "questionType": "cause_effect",
+      "renderAs": "mcq",
+      "question": "Why are tea and sugarcane usually grown on large plantations?",
+      "options": [
+        "A. They need very little land",
+        "B. They need large areas and are processed in bulk",
+        "C. They grow in water only",
+        "D. They are food crops"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Plantation crops are grown in bulk to feed a factory nearby."
+    },
+    {
+      "id": "P5_SST_053",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Fishing",
+      "subtopic": "Methods",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which fishing method is allowed and safe for the lake?",
+      "options": [
+        "A. Using poison",
+        "B. Using a net with legal mesh size",
+        "C. Using explosives",
+        "D. Draining the lake"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Legal nets let young fish escape and grow."
+    },
+    {
+      "id": "P5_SST_054",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Fishing",
+      "subtopic": "Fish farming",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "Rearing fish in man-made ponds is called fish ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "farming"
+      ],
+      "pairs": null,
+      "explanation": "Fish farming raises fish in ponds to increase supply."
+    },
+    {
+      "id": "P5_SST_055",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Trade",
+      "subtopic": "Barter",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Exchanging goods for other goods without money is called ______ trade.",
+      "options": [
+        "A. Barter",
+        "B. Retail",
+        "C. Wholesale",
+        "D. Foreign"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Barter trade exchanges goods directly."
+    },
+    {
+      "id": "P5_SST_056",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Trade",
+      "subtopic": "Exports",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Selling goods to other countries is called ______.",
+      "options": [
+        "A. Importation",
+        "B. Exportation",
+        "C. Retailing",
+        "D. Bartering"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Exportation is selling goods abroad."
+    },
+    {
+      "id": "P5_SST_057",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Transport",
+      "subtopic": "Road transport",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which is an advantage of road transport over water transport in Uganda?",
+      "options": [
+        "A. It reaches most parts of the country",
+        "B. It is only for heavy goods",
+        "C. It needs no fuel",
+        "D. It works only at night"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Roads reach nearly every district, unlike lakes and rivers."
+    },
+    {
+      "id": "P5_SST_058",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Communication",
+      "subtopic": "Media",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which one is an example of print media?",
+      "options": [
+        "A. Newspaper",
+        "B. Radio",
+        "C. Television",
+        "D. Telephone"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Newspapers are printed, so they are print media."
+    },
+    {
+      "id": "P5_SST_059",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Population",
+      "subtopic": "Population growth",
+      "difficulty": "Hard",
+      "questionType": "cause_effect",
+      "renderAs": "mcq",
+      "question": "What is the main reason Uganda's population keeps growing?",
+      "options": [
+        "A. Many people leave the country",
+        "B. Births are more than deaths",
+        "C. There is no farming",
+        "D. People marry late"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "When births outnumber deaths, population grows."
+    },
+    {
+      "id": "P5_SST_060",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Settlement",
+      "subtopic": "Settlement patterns",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Houses built close together along a road form a ______ settlement.",
+      "options": [
+        "A. Linear",
+        "B. Scattered",
+        "C. Nucleated",
+        "D. Circular"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Linear settlements stretch in a line along a road or river."
+    },
+    {
+      "id": "P5_SST_061",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Urban and Rural",
+      "subtopic": "Differences",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which feature is more common in an urban area than a rural area?",
+      "options": [
+        "A. Large gardens",
+        "B. Tall buildings and many shops",
+        "C. Cattle grazing",
+        "D. Forests"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Towns have many buildings, shops and services close together."
+    },
+    {
+      "id": "P5_SST_062",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Urban and Rural",
+      "subtopic": "Rural life",
+      "difficulty": "Hard",
+      "questionType": "cause_effect",
+      "renderAs": "mcq",
+      "question": "Why do many young people move from villages to towns?",
+      "options": [
+        "A. To look for jobs and services",
+        "B. Because villages have no land",
+        "C. To avoid rainfall",
+        "D. Because towns are quiet"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Towns offer jobs, schools and services that attract young people."
+    },
+    {
+      "id": "P5_SST_063",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Leadership",
+      "subtopic": "Central government",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Who is the head of state of Uganda?",
+      "options": [
+        "A. The President",
+        "B. The Speaker",
+        "C. The Chief Justice",
+        "D. The Mayor"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "The President is the head of state."
+    },
+    {
+      "id": "P5_SST_064",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Government",
+      "subtopic": "Ministries",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "A person appointed to head a government ministry is called a ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "minister"
+      ],
+      "pairs": null,
+      "explanation": "Ministers head ministries and are appointed by the President."
+    },
+    {
+      "id": "P5_SST_065",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Citizenship",
+      "subtopic": "Duties",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which one is a duty of every citizen?",
+      "options": [
+        "A. Obeying the laws",
+        "B. Ignoring taxes",
+        "C. Damaging property",
+        "D. Refusing to vote"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Citizens must obey the laws of the country."
+    },
+    {
+      "id": "P5_SST_066",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Culture",
+      "subtopic": "Cultural practices",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which one helps to keep a community's culture alive?",
+      "options": [
+        "A. Traditional dances and songs",
+        "B. Ignoring elders",
+        "C. Forgetting local language",
+        "D. Refusing ceremonies"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Dances, songs and ceremonies pass culture to the young."
+    },
+    {
+      "id": "P5_SST_067",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "African Communities",
+      "subtopic": "Ways of life",
+      "difficulty": "Hard",
+      "questionType": "cause_effect",
+      "renderAs": "mcq",
+      "question": "The Karimojong keep moving with their animals mainly because ______.",
+      "options": [
+        "A. they enjoy travelling",
+        "B. they search for pasture and water",
+        "C. they dislike villages",
+        "D. the animals are wild"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "In dry areas, herders move to find grass and water."
+    },
+    {
+      "id": "P5_SST_068",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "History",
+      "subtopic": "Early Uganda",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "The Bachwezi are remembered in Ugandan history for ruling the empire of ______.",
+      "options": [
+        "A. Bunyoro-Kitara",
+        "B. Buganda",
+        "C. Ankole",
+        "D. Busoga"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "The Bachwezi ruled the Bunyoro-Kitara empire."
+    },
+    {
+      "id": "P5_SST_069",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "History",
+      "subtopic": "Independence",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "The colonial power that ruled Uganda before independence was ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "britain",
+        "the british",
+        "british"
+      ],
+      "pairs": null,
+      "explanation": "Uganda was a British protectorate until 1962."
+    },
+    {
+      "id": "P5_SST_070",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Environment",
+      "subtopic": "Conservation",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which practice protects a forest?",
+      "options": [
+        "A. Selective cutting and replanting",
+        "B. Burning it",
+        "C. Clearing it for building",
+        "D. Cutting all trees at once"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Cutting a few trees and replanting keeps a forest alive."
+    },
+    {
+      "id": "P5_SST_071",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Community Development",
+      "subtopic": "Projects",
+      "difficulty": "Hard",
+      "questionType": "scenario",
+      "renderAs": "mcq",
+      "question": "A village wants clean water. Which project is most useful?",
+      "options": [
+        "A. Building a borehole",
+        "B. Building a stadium",
+        "C. Buying uniforms",
+        "D. Planting flowers"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "A borehole directly solves the need for clean water."
+    },
+    {
+      "id": "P5_SST_072",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Map Skills",
+      "subtopic": "Scale",
+      "difficulty": "Hard",
+      "questionType": "map_skill",
+      "renderAs": "mcq",
+      "question": "On a map of scale 1:100,000, 1 cm represents ______.",
+      "options": [
+        "A. 1 kilometre",
+        "B. 10 kilometres",
+        "C. 100 metres",
+        "D. 10 metres"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "100,000 cm equals 1 km."
+    },
+    {
+      "id": "P5_SST_073",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Map Skills",
+      "subtopic": "Direction",
+      "difficulty": "Medium",
+      "questionType": "map_skill",
+      "renderAs": "mcq",
+      "question": "Which direction lies between South and West?",
+      "options": [
+        "A. South East",
+        "B. South West",
+        "C. North West",
+        "D. North East"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "South West lies halfway between South and West."
+    },
+    {
+      "id": "P5_SST_074",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Map Skills",
+      "subtopic": "Symbols",
+      "difficulty": "Medium",
+      "questionType": "map_skill",
+      "renderAs": "mcq",
+      "question": "On a map, a small aeroplane symbol usually shows a ______.",
+      "options": [
+        "A. Airport",
+        "B. School",
+        "C. Market",
+        "D. Hospital"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Map symbols stand for real features like airports."
+    },
+    {
+      "id": "P5_SST_075",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Map Skills",
+      "subtopic": "Map elements",
+      "difficulty": "Easy",
+      "questionType": "true_false",
+      "renderAs": "tf",
+      "question": "Every good map should have a title, a key and a scale.",
+      "options": [
+        "A. True",
+        "B. False"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Title, key and scale help a reader understand a map."
+    },
+    {
+      "id": "P5_SST_076",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Social Services",
+      "subtopic": "Education",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which programme helps Ugandan children attend primary school free of tuition?",
+      "options": [
+        "A. Universal Primary Education",
+        "B. National Service",
+        "C. Youth Fund",
+        "D. Road Fund"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "UPE was introduced so more children could attend primary school."
+    },
+    {
+      "id": "P5_SST_077",
+      "class": "P5",
+      "subject": "SST",
+      "topic": "Natural Resources",
+      "subtopic": "Conservation",
+      "difficulty": "Hard",
+      "questionType": "comparison",
+      "renderAs": "mcq",
+      "question": "Which resource can be used up completely and never replaced?",
+      "options": [
+        "A. Copper ore",
+        "B. Forests",
+        "C. Fish",
+        "D. Grass"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Minerals such as copper are non-renewable: once mined, they are gone for good."
+    }
+  ]
+}

@@ -1,0 +1,1716 @@
+{
+  "class": "P6",
+  "className": "Primary 6",
+  "subject": "SST",
+  "curriculum": "Uganda primary Social Studies",
+  "levels": {
+    "1": "Beginner",
+    "2": "Intermediate",
+    "3": "Advanced"
+  },
+  "target": {
+    "total": 200,
+    "difficulty": {
+      "Easy": 70,
+      "Medium": 80,
+      "Hard": 50
+    }
+  },
+  "topics": {
+    "African Geography": [
+      "Deserts",
+      "Regions"
+    ],
+    "African Peoples": [
+      "Communities"
+    ],
+    "Agriculture": [
+      "Cash crops"
+    ],
+    "Citizenship": [
+      "Rights",
+      "Rights and duties"
+    ],
+    "Climate": [
+      "Climate and altitude",
+      "Rainfall patterns"
+    ],
+    "Communication": [
+      "Modern communication"
+    ],
+    "Community Development": [
+      "Participation",
+      "Problem solving"
+    ],
+    "Culture": [
+      "Cultural heritage"
+    ],
+    "Drainage": [
+      "Rivers"
+    ],
+    "East Africa": [
+      "Capital cities",
+      "Coast",
+      "Countries",
+      "Physical features",
+      "Uganda's neighbours"
+    ],
+    "East African Community": [
+      "Benefits",
+      "Challenges",
+      "EAC organs",
+      "Membership"
+    ],
+    "Economic Activities": [
+      "Cash crops"
+    ],
+    "Environment": [
+      "Soil erosion"
+    ],
+    "Environmental Conservation": [
+      "Wetlands"
+    ],
+    "Government": [
+      "Arms of government",
+      "Executive",
+      "Judiciary",
+      "Legislature",
+      "Parliament"
+    ],
+    "History": [
+      "Colonial agreements",
+      "Colonial rule",
+      "Explorers",
+      "Kingdoms",
+      "Missionaries",
+      "Slave trade",
+      "Uganda's independence"
+    ],
+    "Industry": [
+      "Location factors",
+      "Types",
+      "Types of industry"
+    ],
+    "Leadership": [
+      "Local government"
+    ],
+    "Map Work": [
+      "Direction",
+      "Grid references",
+      "Interpretation",
+      "Map symbols",
+      "Relief",
+      "Scale"
+    ],
+    "Migration": [
+      "Types"
+    ],
+    "Natural Resources": [
+      "Minerals"
+    ],
+    "Physical Features": [
+      "Lakes",
+      "Mountains",
+      "Rift Valley"
+    ],
+    "Population": [
+      "Census",
+      "Migration"
+    ],
+    "Rights and Responsibilities": [
+      "Balance"
+    ],
+    "Settlement": [
+      "Factors"
+    ],
+    "Soils": [
+      "Volcanic soils"
+    ],
+    "Trade": [
+      "Balance of trade",
+      "Types of trade"
+    ],
+    "Transport": [
+      "Air transport",
+      "Railways",
+      "Sea ports",
+      "Water transport"
+    ],
+    "Urbanisation": [
+      "Effects",
+      "Solutions"
+    ],
+    "Vegetation": [
+      "Coastal vegetation",
+      "Montane vegetation"
+    ]
+  },
+  "total": 75,
+  "questions": [
+    {
+      "id": "P6_SST_001",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "East Africa",
+      "subtopic": "Uganda's neighbours",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which East African country lies between Uganda and the Indian Ocean?",
+      "options": [
+        "A. Kenya",
+        "B. Rwanda",
+        "C. South Sudan",
+        "D. Burundi"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Kenya lies between Uganda and the Indian Ocean, which is why Uganda uses the port of Mombasa."
+    },
+    {
+      "id": "P6_SST_002",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "East Africa",
+      "subtopic": "Capital cities",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "The official capital city of Tanzania is ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "dodoma"
+      ],
+      "pairs": null,
+      "explanation": "Dodoma is the official capital of Tanzania."
+    },
+    {
+      "id": "P6_SST_003",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Physical Features",
+      "subtopic": "Lakes",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which is the deepest lake in East Africa?",
+      "options": [
+        "A. Lake Victoria",
+        "B. Lake Tanganyika",
+        "C. Lake Albert",
+        "D. Lake Kyoga"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Lake Tanganyika is the deepest lake in Africa and in East Africa."
+    },
+    {
+      "id": "P6_SST_004",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Physical Features",
+      "subtopic": "Mountains",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Mount Kilimanjaro is found in ______.",
+      "options": [
+        "A. Kenya",
+        "B. Tanzania",
+        "C. Uganda",
+        "D. Rwanda"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Kilimanjaro is in Tanzania and is Africa's highest mountain."
+    },
+    {
+      "id": "P6_SST_005",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Physical Features",
+      "subtopic": "Rift Valley",
+      "difficulty": "Hard",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "The Great Rift Valley enters East Africa in two branches: the Eastern branch and the ______ branch.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "western"
+      ],
+      "pairs": null,
+      "explanation": "The Western branch holds lakes such as Albert, Edward and Tanganyika."
+    },
+    {
+      "id": "P6_SST_006",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Drainage",
+      "subtopic": "Rivers",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which river flows out of Lake Victoria?",
+      "options": [
+        "A. River Tana",
+        "B. River Nile",
+        "C. River Rufiji",
+        "D. River Pangani"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "The Nile leaves Lake Victoria at Jinja and flows northwards."
+    },
+    {
+      "id": "P6_SST_007",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Climate",
+      "subtopic": "Rainfall patterns",
+      "difficulty": "Hard",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Areas lying near the Equator usually receive rainfall ______.",
+      "options": [
+        "A. Once a year",
+        "B. Twice a year",
+        "C. Only in December",
+        "D. Never"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Near the Equator there are two rainy seasons in a year."
+    },
+    {
+      "id": "P6_SST_008",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Vegetation",
+      "subtopic": "Coastal vegetation",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Mangrove forests grow ______.",
+      "options": [
+        "A. On mountain tops",
+        "B. Along the sea coast",
+        "C. In deserts",
+        "D. In rift valleys"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Mangroves grow in salty, muddy water along the coast."
+    },
+    {
+      "id": "P6_SST_009",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Economic Activities",
+      "subtopic": "Cash crops",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Sisal is grown mainly in ______.",
+      "options": [
+        "A. Uganda",
+        "B. Tanzania",
+        "C. Rwanda",
+        "D. Burundi"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Tanzania, especially around Tanga, is known for sisal growing."
+    },
+    {
+      "id": "P6_SST_010",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Industry",
+      "subtopic": "Types of industry",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which industry turns cotton into cloth?",
+      "options": [
+        "A. Textile",
+        "B. Cement",
+        "C. Brewing",
+        "D. Sugar"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Textile industries spin and weave cotton into cloth."
+    },
+    {
+      "id": "P6_SST_011",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Trade",
+      "subtopic": "Types of trade",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "Trade carried out between two or more countries is called ______ trade.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "international",
+        "external",
+        "foreign"
+      ],
+      "pairs": null,
+      "explanation": "International trade crosses national borders."
+    },
+    {
+      "id": "P6_SST_012",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Transport",
+      "subtopic": "Railways",
+      "difficulty": "Hard",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "The TAZARA railway links Tanzania with ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "zambia"
+      ],
+      "pairs": null,
+      "explanation": "TAZARA runs from Dar es Salaam to Zambia."
+    },
+    {
+      "id": "P6_SST_013",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Transport",
+      "subtopic": "Sea ports",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which sea port handles most of Uganda's imports?",
+      "options": [
+        "A. Mombasa",
+        "B. Dar es Salaam",
+        "C. Tanga",
+        "D. Mtwara"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Mombasa in Kenya is the nearest and busiest port for Uganda."
+    },
+    {
+      "id": "P6_SST_014",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Population",
+      "subtopic": "Migration",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "The movement of people from villages to towns is called rural-urban ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "migration"
+      ],
+      "pairs": null,
+      "explanation": "Rural-urban migration is people moving to towns, often to look for work."
+    },
+    {
+      "id": "P6_SST_015",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Urbanisation",
+      "subtopic": "Effects",
+      "difficulty": "Hard",
+      "questionType": "cause_effect",
+      "renderAs": "mcq",
+      "question": "What problem is most likely when too many people move into a town at once?",
+      "options": [
+        "A. More farmland",
+        "B. Slums and congestion",
+        "C. Cleaner air",
+        "D. Fewer schools needed"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Fast growth without planning leads to crowding, slums and pressure on services."
+    },
+    {
+      "id": "P6_SST_016",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Government",
+      "subtopic": "Arms of government",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "How many arms of government does Uganda have?",
+      "options": [
+        "A. Two",
+        "B. Three",
+        "C. Four",
+        "D. Five"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "The three arms are the Legislature, the Executive and the Judiciary."
+    },
+    {
+      "id": "P6_SST_017",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Government",
+      "subtopic": "Legislature",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "The arm of government that makes laws is the ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "legislature",
+        "parliament"
+      ],
+      "pairs": null,
+      "explanation": "Parliament, the legislature, debates and passes laws."
+    },
+    {
+      "id": "P6_SST_018",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Government",
+      "subtopic": "Judiciary",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Who heads the Judiciary in Uganda?",
+      "options": [
+        "A. The Speaker",
+        "B. The Chief Justice",
+        "C. The Prime Minister",
+        "D. The Attorney General"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "The Chief Justice is the head of the Judiciary."
+    },
+    {
+      "id": "P6_SST_019",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Citizenship",
+      "subtopic": "Rights and duties",
+      "difficulty": "Hard",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which one is a responsibility of a citizen rather than a right?",
+      "options": [
+        "A. Right to education",
+        "B. Paying taxes",
+        "C. Right to life",
+        "D. Freedom of worship"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Rights are what you are entitled to; responsibilities are what you must do."
+    },
+    {
+      "id": "P6_SST_020",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "History",
+      "subtopic": "Uganda's independence",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Who became the first Prime Minister of independent Uganda?",
+      "options": [
+        "A. Sir Edward Mutesa II",
+        "B. Apollo Milton Obote",
+        "C. Idi Amin",
+        "D. Benedicto Kiwanuka"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Milton Obote was Prime Minister when Uganda became independent in 1962."
+    },
+    {
+      "id": "P6_SST_021",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "History",
+      "subtopic": "Colonial agreements",
+      "difficulty": "Hard",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "The Buganda Agreement between the British and Buganda was signed in the year ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "1900"
+      ],
+      "pairs": null,
+      "explanation": "The 1900 Buganda Agreement set out land and administration arrangements."
+    },
+    {
+      "id": "P6_SST_022",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "History",
+      "subtopic": "Explorers",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which explorer reported the source of the River Nile in 1862?",
+      "options": [
+        "A. Henry Morton Stanley",
+        "B. John Hanning Speke",
+        "C. David Livingstone",
+        "D. Samuel Baker"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Speke reached the point where the Nile leaves Lake Victoria in 1862."
+    },
+    {
+      "id": "P6_SST_023",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "History",
+      "subtopic": "Missionaries",
+      "difficulty": "Hard",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "The first Church Missionary Society missionary to reach Buganda in 1877 was Alexander ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "mackay"
+      ],
+      "pairs": null,
+      "explanation": "Alexander Mackay arrived in Buganda in 1877 and taught reading and crafts."
+    },
+    {
+      "id": "P6_SST_024",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "History",
+      "subtopic": "Kingdoms",
+      "difficulty": "Hard",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which group replaced the Bachwezi as rulers of Bunyoro-Kitara?",
+      "options": [
+        "A. The Babiito",
+        "B. The Bahinda",
+        "C. The Baganda",
+        "D. The Basoga"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "The Babiito, of Luo origin, took over from the Bachwezi in Bunyoro-Kitara."
+    },
+    {
+      "id": "P6_SST_025",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "East African Community",
+      "subtopic": "EAC organs",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "The headquarters of the East African Community is at ______ in Tanzania.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "arusha"
+      ],
+      "pairs": null,
+      "explanation": "The EAC Secretariat is based in Arusha."
+    },
+    {
+      "id": "P6_SST_026",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "East African Community",
+      "subtopic": "Membership",
+      "difficulty": "Hard",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which country was one of the three founder members of the East African Community in 1967?",
+      "options": [
+        "A. Rwanda",
+        "B. Burundi",
+        "C. Kenya",
+        "D. South Sudan"
+      ],
+      "correctAnswer": "C",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Kenya, Uganda and Tanzania formed the first EAC in 1967."
+    },
+    {
+      "id": "P6_SST_027",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Map Work",
+      "subtopic": "Grid references",
+      "difficulty": "Hard",
+      "questionType": "map_skill",
+      "renderAs": "mcq",
+      "question": "What is a grid reference used for on a map?",
+      "options": [
+        "A. Measuring temperature",
+        "B. Locating an exact place",
+        "C. Drawing the scale",
+        "D. Showing colours"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Grid references use numbered lines to give the exact position of a place."
+    },
+    {
+      "id": "P6_SST_028",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Map Work",
+      "subtopic": "Map symbols",
+      "difficulty": "Medium",
+      "questionType": "map_skill",
+      "renderAs": "mcq",
+      "question": "On most maps, blue colour is used to show ______.",
+      "options": [
+        "A. Forests",
+        "B. Water bodies",
+        "C. Mountains",
+        "D. Roads"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Blue shows lakes, rivers and other water bodies."
+    },
+    {
+      "id": "P6_SST_029",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Map Work",
+      "subtopic": "Direction",
+      "difficulty": "Hard",
+      "questionType": "map_skill",
+      "renderAs": "fill",
+      "question": "The direction directly opposite South West is ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "north east",
+        "northeast",
+        "north-east"
+      ],
+      "pairs": null,
+      "explanation": "Opposite directions are always 180° apart: SW and NE."
+    },
+    {
+      "id": "P6_SST_030",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Environment",
+      "subtopic": "Soil erosion",
+      "difficulty": "Hard",
+      "questionType": "cause_effect",
+      "renderAs": "mcq",
+      "question": "Which activity most increases soil erosion on hillsides?",
+      "options": [
+        "A. Terracing",
+        "B. Overgrazing",
+        "C. Mulching",
+        "D. Planting cover crops"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Overgrazing leaves the soil bare so rain washes it away."
+    },
+    {
+      "id": "P6_SST_031",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "East Africa",
+      "subtopic": "Capital cities",
+      "difficulty": "Medium",
+      "questionType": "matching",
+      "renderAs": "match",
+      "question": "Match each East African country with its capital city.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": null,
+      "pairs": [
+        [
+          "Kenya",
+          "Nairobi"
+        ],
+        [
+          "Rwanda",
+          "Kigali"
+        ],
+        [
+          "South Sudan",
+          "Juba"
+        ],
+        [
+          "Uganda",
+          "Kampala"
+        ]
+      ],
+      "explanation": "Knowing capitals helps you locate countries and understand regional links."
+    },
+    {
+      "id": "P6_SST_032",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Community Development",
+      "subtopic": "Problem solving",
+      "difficulty": "Hard",
+      "questionType": "scenario",
+      "renderAs": "mcq",
+      "question": "Farmers in a district cannot get their produce to market because the roads are poor. What is the best solution?",
+      "options": [
+        "A. Stop farming",
+        "B. Repair and maintain the feeder roads",
+        "C. Increase taxes on farmers",
+        "D. Move everyone to the city"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Good feeder roads let farmers reach markets and earn more."
+    },
+    {
+      "id": "P6_SST_033",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "East Africa",
+      "subtopic": "Countries",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which country lies to the south west of Uganda?",
+      "options": [
+        "A. Kenya",
+        "B. Rwanda",
+        "C. South Sudan",
+        "D. Ethiopia"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Rwanda borders Uganda in the south west."
+    },
+    {
+      "id": "P6_SST_034",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "East Africa",
+      "subtopic": "Capital cities",
+      "difficulty": "Easy",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "The capital city of Kenya is ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "nairobi"
+      ],
+      "pairs": null,
+      "explanation": "Nairobi is Kenya's capital and largest city."
+    },
+    {
+      "id": "P6_SST_035",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "East Africa",
+      "subtopic": "Physical features",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Mount Kenya lies in which country?",
+      "options": [
+        "A. Kenya",
+        "B. Tanzania",
+        "C. Uganda",
+        "D. Burundi"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Mount Kenya is Africa's second highest mountain."
+    },
+    {
+      "id": "P6_SST_036",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "East Africa",
+      "subtopic": "Coast",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which East African country has NO sea coast?",
+      "options": [
+        "A. Kenya",
+        "B. Tanzania",
+        "C. Uganda",
+        "D. Somalia"
+      ],
+      "correctAnswer": "C",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Uganda is landlocked, with no coastline."
+    },
+    {
+      "id": "P6_SST_037",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Physical Features",
+      "subtopic": "Lakes",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Lake Kyoga was formed mainly by ______.",
+      "options": [
+        "A. Faulting",
+        "B. The flooding of a river valley",
+        "C. Volcanic action",
+        "D. Wind"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Lake Kyoga formed when river valleys were flooded."
+    },
+    {
+      "id": "P6_SST_038",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Physical Features",
+      "subtopic": "Mountains",
+      "difficulty": "Hard",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which mountain is a block mountain formed by faulting?",
+      "options": [
+        "A. Mount Elgon",
+        "B. Mount Rwenzori",
+        "C. Mount Muhavura",
+        "D. Mount Kilimanjaro"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Rwenzori is a block mountain pushed up between faults."
+    },
+    {
+      "id": "P6_SST_039",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Drainage",
+      "subtopic": "Rivers",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "The river that flows from Lake Victoria through Lake Kyoga is called the ______ Nile.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "victoria"
+      ],
+      "pairs": null,
+      "explanation": "The stretch between Lake Victoria and Lake Kyoga is the Victoria Nile."
+    },
+    {
+      "id": "P6_SST_040",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Climate",
+      "subtopic": "Climate and altitude",
+      "difficulty": "Hard",
+      "questionType": "cause_effect",
+      "renderAs": "mcq",
+      "question": "Why is Kabale cooler than Soroti?",
+      "options": [
+        "A. It is nearer the Equator",
+        "B. It lies at a higher altitude",
+        "C. It has fewer trees",
+        "D. It is nearer a lake"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Temperature falls as altitude increases."
+    },
+    {
+      "id": "P6_SST_041",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Vegetation",
+      "subtopic": "Montane vegetation",
+      "difficulty": "Hard",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Vegetation found on high mountain slopes is described as ______.",
+      "options": [
+        "A. Montane",
+        "B. Mangrove",
+        "C. Desert",
+        "D. Coastal"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Montane vegetation grows on cool, high mountain slopes."
+    },
+    {
+      "id": "P6_SST_042",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Soils",
+      "subtopic": "Volcanic soils",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Why are volcanic soils good for farming?",
+      "options": [
+        "A. They are very fertile",
+        "B. They hold no water",
+        "C. They are stony",
+        "D. They are salty"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Volcanic soils are rich in plant food."
+    },
+    {
+      "id": "P6_SST_043",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Natural Resources",
+      "subtopic": "Minerals",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which mineral is associated with Kilembe?",
+      "options": [
+        "A. Copper",
+        "B. Gold",
+        "C. Salt",
+        "D. Diamond"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Kilembe in Kasese is known for copper."
+    },
+    {
+      "id": "P6_SST_044",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Agriculture",
+      "subtopic": "Cash crops",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which cash crop is grown mainly in the drier parts of eastern Uganda?",
+      "options": [
+        "A. Cotton",
+        "B. Tea",
+        "C. Cocoa",
+        "D. Rubber"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Cotton suits the warmer, drier east."
+    },
+    {
+      "id": "P6_SST_045",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Industry",
+      "subtopic": "Location factors",
+      "difficulty": "Hard",
+      "questionType": "cause_effect",
+      "renderAs": "mcq",
+      "question": "Why are many industries located in and around Kampala?",
+      "options": [
+        "A. Cheap land only",
+        "B. Large market, labour and good transport",
+        "C. Cool climate",
+        "D. Many forests"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Industries locate where there are buyers, workers and transport."
+    },
+    {
+      "id": "P6_SST_046",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Industry",
+      "subtopic": "Types",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "A factory that turns sugarcane into sugar is a ______ industry.",
+      "options": [
+        "A. Processing",
+        "B. Mining",
+        "C. Service",
+        "D. Construction"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Processing industries change raw materials into finished goods."
+    },
+    {
+      "id": "P6_SST_047",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Trade",
+      "subtopic": "Balance of trade",
+      "difficulty": "Hard",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "A country that imports more than it exports has ______.",
+      "options": [
+        "A. A trade surplus",
+        "B. An unfavourable balance of trade",
+        "C. No trade",
+        "D. Free trade"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Importing more than you export gives an unfavourable balance."
+    },
+    {
+      "id": "P6_SST_048",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Transport",
+      "subtopic": "Air transport",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Uganda's main international airport is at ______.",
+      "options": [
+        "A. Entebbe",
+        "B. Gulu",
+        "C. Arua",
+        "D. Soroti"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Entebbe International Airport handles most international flights."
+    },
+    {
+      "id": "P6_SST_049",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Transport",
+      "subtopic": "Water transport",
+      "difficulty": "Hard",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which is a disadvantage of water transport on Lake Victoria?",
+      "options": [
+        "A. It is very cheap",
+        "B. It is slow and limited to the lake shores",
+        "C. It carries heavy goods",
+        "D. It needs no fuel"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Boats are slow and can only serve places on the shore."
+    },
+    {
+      "id": "P6_SST_050",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Communication",
+      "subtopic": "Modern communication",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which service allows people to send written messages instantly using the internet?",
+      "options": [
+        "A. Email",
+        "B. Telegram drum",
+        "C. Letter",
+        "D. Newspaper"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Email sends written messages instantly over the internet."
+    },
+    {
+      "id": "P6_SST_051",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Population",
+      "subtopic": "Census",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Information collected during a census helps the government to ______.",
+      "options": [
+        "A. Plan services such as schools and hospitals",
+        "B. Increase taxes only",
+        "C. Choose a president",
+        "D. Draw the flag"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Census data guides planning for services."
+    },
+    {
+      "id": "P6_SST_052",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Migration",
+      "subtopic": "Types",
+      "difficulty": "Hard",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "A person who moves to another country because of war is called a ______.",
+      "options": [
+        "A. Tourist",
+        "B. Refugee",
+        "C. Trader",
+        "D. Pilgrim"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Refugees flee their country because of war or persecution."
+    },
+    {
+      "id": "P6_SST_053",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Settlement",
+      "subtopic": "Factors",
+      "difficulty": "Hard",
+      "questionType": "cause_effect",
+      "renderAs": "mcq",
+      "question": "Which factor most discourages settlement in an area?",
+      "options": [
+        "A. Fertile soils",
+        "B. Frequent flooding and disease",
+        "C. Good roads",
+        "D. Reliable rainfall"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "People avoid places that are unsafe or unhealthy."
+    },
+    {
+      "id": "P6_SST_054",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Urbanisation",
+      "subtopic": "Solutions",
+      "difficulty": "Hard",
+      "questionType": "scenario",
+      "renderAs": "mcq",
+      "question": "Which is the best long-term solution to congestion in a growing town?",
+      "options": [
+        "A. Ban all vehicles",
+        "B. Plan the town and improve public transport",
+        "C. Close the schools",
+        "D. Stop building houses"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Planning and good public transport ease congestion."
+    },
+    {
+      "id": "P6_SST_055",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Government",
+      "subtopic": "Executive",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "The arm of government that puts laws into action is the ______.",
+      "options": [
+        "A. Legislature",
+        "B. Executive",
+        "C. Judiciary",
+        "D. Electoral Commission"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "The Executive implements laws and runs government."
+    },
+    {
+      "id": "P6_SST_056",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Government",
+      "subtopic": "Parliament",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Who presides over sittings of Parliament?",
+      "options": [
+        "A. The President",
+        "B. The Speaker",
+        "C. The Chief Justice",
+        "D. The Prime Minister"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "The Speaker chairs parliamentary sittings."
+    },
+    {
+      "id": "P6_SST_057",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Leadership",
+      "subtopic": "Local government",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which council level serves a sub-county?",
+      "options": [
+        "A. LC I",
+        "B. LC II",
+        "C. LC III",
+        "D. LC V"
+      ],
+      "correctAnswer": "C",
+      "answers": null,
+      "pairs": null,
+      "explanation": "LC III is the sub-county council."
+    },
+    {
+      "id": "P6_SST_058",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Citizenship",
+      "subtopic": "Rights",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which one is a right of a child in Uganda?",
+      "options": [
+        "A. The right to education",
+        "B. The right to skip school",
+        "C. The right to work full time",
+        "D. The right to break laws"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Every child has a right to education."
+    },
+    {
+      "id": "P6_SST_059",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Rights and Responsibilities",
+      "subtopic": "Balance",
+      "difficulty": "Hard",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Why does every right come with a responsibility?",
+      "options": [
+        "A. Rights are not important",
+        "B. Because your freedom must not harm others",
+        "C. To reduce freedom",
+        "D. Because leaders say so"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Exercising a right responsibly protects other people's rights."
+    },
+    {
+      "id": "P6_SST_060",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "East African Community",
+      "subtopic": "Benefits",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which is a benefit of the East African Community to member states?",
+      "options": [
+        "A. Free movement of goods and people",
+        "B. Higher visa fees",
+        "C. Closed borders",
+        "D. Separate currencies only"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "The EAC allows easier movement of goods and people."
+    },
+    {
+      "id": "P6_SST_061",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "East African Community",
+      "subtopic": "Challenges",
+      "difficulty": "Hard",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which problem can slow down cooperation in a regional bloc?",
+      "options": [
+        "A. Shared language",
+        "B. Political disagreements between members",
+        "C. Good roads",
+        "D. Common market"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Disagreements between governments slow joint decisions."
+    },
+    {
+      "id": "P6_SST_062",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "African Geography",
+      "subtopic": "Regions",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Egypt is found in which part of Africa?",
+      "options": [
+        "A. North Africa",
+        "B. West Africa",
+        "C. Central Africa",
+        "D. Southern Africa"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Egypt lies in North Africa."
+    },
+    {
+      "id": "P6_SST_063",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "African Geography",
+      "subtopic": "Deserts",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "The Kalahari Desert is found in ______ Africa.",
+      "options": [
+        "A. North",
+        "B. Southern",
+        "C. West",
+        "D. East"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "The Kalahari lies in southern Africa."
+    },
+    {
+      "id": "P6_SST_064",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "African Peoples",
+      "subtopic": "Communities",
+      "difficulty": "Hard",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "The Tuareg of the Sahara are best described as ______.",
+      "options": [
+        "A. Fishermen",
+        "B. Nomadic herders and traders",
+        "C. Miners",
+        "D. Sailors"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "The Tuareg move across the desert herding and trading."
+    },
+    {
+      "id": "P6_SST_065",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "History",
+      "subtopic": "Missionaries",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which group of missionaries arrived in Buganda in 1879?",
+      "options": [
+        "A. The White Fathers",
+        "B. The Arabs",
+        "C. The Portuguese",
+        "D. The Germans"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Catholic White Fathers reached Buganda in 1879."
+    },
+    {
+      "id": "P6_SST_066",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "History",
+      "subtopic": "Slave trade",
+      "difficulty": "Hard",
+      "questionType": "cause_effect",
+      "renderAs": "mcq",
+      "question": "Which of these was a result of the slave trade in East Africa?",
+      "options": [
+        "A. Growth of villages",
+        "B. Loss of population and insecurity",
+        "C. More schools",
+        "D. Better farming"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Slave raiding depopulated areas and caused fear."
+    },
+    {
+      "id": "P6_SST_067",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "History",
+      "subtopic": "Kingdoms",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "The king of Buganda is given the title ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "kabaka"
+      ],
+      "pairs": null,
+      "explanation": "The Kabaka is the king of Buganda."
+    },
+    {
+      "id": "P6_SST_068",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "History",
+      "subtopic": "Colonial rule",
+      "difficulty": "Hard",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which of these was a reason Europeans wanted colonies in Africa?",
+      "options": [
+        "A. To get raw materials and markets",
+        "B. To learn African languages",
+        "C. To reduce their own population",
+        "D. To build African kingdoms"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Colonies supplied raw materials and bought European goods."
+    },
+    {
+      "id": "P6_SST_069",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Culture",
+      "subtopic": "Cultural heritage",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which one is an example of Uganda's cultural heritage?",
+      "options": [
+        "A. The Kasubi Tombs",
+        "B. A shopping mall",
+        "C. A tarmac road",
+        "D. A power dam"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "The Kasubi Tombs are an important cultural heritage site."
+    },
+    {
+      "id": "P6_SST_070",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Environmental Conservation",
+      "subtopic": "Wetlands",
+      "difficulty": "Hard",
+      "questionType": "cause_effect",
+      "renderAs": "mcq",
+      "question": "Why should wetlands not be drained for building?",
+      "options": [
+        "A. They store water and control floods",
+        "B. They have no use",
+        "C. They cause disease only",
+        "D. They block roads"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Wetlands store water, reduce floods and support wildlife."
+    },
+    {
+      "id": "P6_SST_071",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Map Work",
+      "subtopic": "Scale",
+      "difficulty": "Hard",
+      "questionType": "map_skill",
+      "renderAs": "mcq",
+      "question": "Two towns are 6 cm apart on a map of scale 1:50,000. The real distance is ______.",
+      "options": [
+        "A. 3 kilometres",
+        "B. 6 kilometres",
+        "C. 30 kilometres",
+        "D. 300 metres"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "6 cm x 50,000 = 300,000 cm = 3 km."
+    },
+    {
+      "id": "P6_SST_072",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Map Work",
+      "subtopic": "Relief",
+      "difficulty": "Hard",
+      "questionType": "map_skill",
+      "renderAs": "mcq",
+      "question": "Widely spaced contour lines on a map show ______.",
+      "options": [
+        "A. A steep slope",
+        "B. A gentle slope",
+        "C. A cliff",
+        "D. A river"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Contours far apart mean the land rises slowly."
+    },
+    {
+      "id": "P6_SST_073",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Map Work",
+      "subtopic": "Interpretation",
+      "difficulty": "Hard",
+      "questionType": "map_skill",
+      "renderAs": "mcq",
+      "question": "A map shows scattered huts, gardens and a cattle track. This area is most likely ______.",
+      "options": [
+        "A. An industrial town",
+        "B. A rural farming area",
+        "C. A port",
+        "D. An airport"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Huts, gardens and tracks suggest rural farming."
+    },
+    {
+      "id": "P6_SST_074",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "Community Development",
+      "subtopic": "Participation",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which action best shows community participation in a project?",
+      "options": [
+        "A. Waiting for government only",
+        "B. Contributing labour and ideas",
+        "C. Complaining",
+        "D. Ignoring meetings"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Communities succeed when members contribute effort and ideas."
+    },
+    {
+      "id": "P6_SST_075",
+      "class": "P6",
+      "subject": "SST",
+      "topic": "East Africa",
+      "subtopic": "Physical features",
+      "difficulty": "Hard",
+      "questionType": "matching",
+      "renderAs": "match",
+      "question": "Match each feature with its country.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": null,
+      "pairs": [
+        [
+          "Mount Kilimanjaro",
+          "Tanzania"
+        ],
+        [
+          "Mount Kenya",
+          "Kenya"
+        ],
+        [
+          "Mount Rwenzori",
+          "Uganda"
+        ],
+        [
+          "Lake Tanganyika",
+          "Tanzania and neighbours"
+        ]
+      ],
+      "explanation": "Knowing where features lie helps in map work."
+    }
+  ]
+}

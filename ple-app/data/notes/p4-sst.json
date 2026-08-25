@@ -1,0 +1,3525 @@
+{
+ "class": "P4",
+ "subject": "SST",
+ "subject_name": "Social Studies",
+ "total": 6,
+ "words": 11457,
+ "topics": [
+  {
+   "id": "P4_SST_T01",
+   "class": "P4",
+   "subject": "SST",
+   "topic_no": 1,
+   "title": "Location of Our District in Uganda",
+   "heading": "TOPIC 1: LOCATION OF OUR DISTRICT IN UGANDA",
+   "slug": "location-of-our-district-in-uganda",
+   "periods": 16,
+   "curriculum_pages": "17–20",
+   "words": 1846,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term I, Topic 1, 16 periods (`curriculum/P4-SOCIAL-STUDIES-2010.pdf`, pages 17–20).*"
+      },
+      {
+       "t": "p",
+       "x": "**How to use this topic.** The syllabus is about **your own district** — and every learner is in a different district. So these notes teach you **what to look for and how to find it**, and you fill in the answers for your own district. Where you see a blank like *(your district)*, write in your own answer."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "name the points of the compass",
+        "find your district on the map of Uganda",
+        "name the sub-counties, counties and municipalities in your district",
+        "name the districts that neighbour yours",
+        "compare the size of your district with its neighbours",
+        "name important places in your district"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. WHAT A DISTRICT IS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "In P.3 you learnt about your **sub-county**. A district is bigger."
+      },
+      {
+       "t": "p",
+       "x": "Uganda is divided into **districts** so that government can bring services nearer to the people. Your district is then divided into smaller parts:"
+      },
+      {
+       "t": "pre",
+       "x": "UGANDA\n  └── DISTRICT\n        └── COUNTY  (or MUNICIPALITY in a town)\n              └── SUB-COUNTY  (or DIVISION in a town)\n                    └── PARISH  (or WARD)\n                          └── VILLAGE  (or CELL)"
+      },
+      {
+       "t": "note",
+       "x": "**Note from the syllabus:** counties are **not** part of the main administrative structure of every district. In some places they exist and in others they do not."
+      },
+      {
+       "t": "note",
+       "x": "**Newer than the syllabus:** this syllabus was written in **2010**, when Uganda had far fewer districts. New districts have been created many times since then, and the number is now **over 130**. Different sources give slightly different totals because new districts keep being added. **Ask your teacher for the number this year** — do not learn an old number by heart."
+      }
+     ]
+    },
+    {
+     "title": "2. THE COMPASS POINTS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A **compass** shows direction. You revise this from P.3."
+      },
+      {
+       "t": "h3",
+       "x": "The four cardinal points"
+      },
+      {
+       "t": "pre",
+       "x": "                 NORTH\n                   |\n                   |\n    WEST ----------+---------- EAST\n                   |\n                   |\n                 SOUTH"
+      },
+      {
+       "t": "p",
+       "x": "**A way to remember them, going clockwise from the top:** **N**ever · **E**at · **S**our · **W**atermelon → **N, E, S, W**."
+      },
+      {
+       "t": "h3",
+       "x": "The four semi-cardinal points"
+      },
+      {
+       "t": "p",
+       "x": "These lie **between** the cardinal points."
+      },
+      {
+       "t": "pre",
+       "x": "      NW        N        NE\n        \\       |       /\n         \\      |      /\n    W ----------+---------- E\n         /      |      \\\n        /       |       \\\n      SW        S        SE"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Short form",
+        "Full name"
+       ],
+       "rows": [
+        [
+         "NE",
+         "North East"
+        ],
+        [
+         "SE",
+         "South East"
+        ],
+        [
+         "SW",
+         "South West"
+        ],
+        [
+         "NW",
+         "North West"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Finding direction without a compass"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Way",
+        "How it works"
+       ],
+       "rows": [
+        [
+         "**The sun**",
+         "The sun rises in the **East** and sets in the **West**"
+        ],
+        [
+         "**Shadows**",
+         "In the morning shadows point **west**; in the evening they point **east**"
+        ],
+        [
+         "**Your body**",
+         "Face the sunrise: in front is East, behind is West, your left hand is North and your right hand is South"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "3. FINDING YOUR DISTRICT ON THE MAP OF UGANDA",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Steps to follow**"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Get a **map of Uganda** showing the districts.",
+        "Look at the **key** to see what the lines and colours mean.",
+        "Find the name of your district written on the map.",
+        "Look at the **compass rose** on the map to check the directions.",
+        "Write down which districts touch yours, and on which side."
+       ],
+       "start": 1
+      },
+      {
+       "t": "p",
+       "x": "**Fill this in for your own district:**"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Question",
+        "My answer"
+       ],
+       "rows": [
+        [
+         "My district is called",
+         "*(your district)*"
+        ],
+        [
+         "My district is in the ______ part of Uganda",
+         "North / East / South / West / Central"
+        ],
+        [
+         "The districts that neighbour mine",
+         "*(list them)*"
+        ],
+        [
+         "The district to my north is",
+         "*(name)*"
+        ],
+        [
+         "The district to my south is",
+         "*(name)*"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "4. THE PARTS OF YOUR DISTRICT",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**County**",
+         "A large part of a district in the countryside"
+        ],
+        [
+         "**Municipality**",
+         "A large town with its own council"
+        ],
+        [
+         "**Sub-county**",
+         "A part of a county"
+        ],
+        [
+         "**Division**",
+         "A part of a municipality or city"
+        ],
+        [
+         "**Parish**",
+         "A part of a sub-county"
+        ],
+        [
+         "**Village**",
+         "The smallest part"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "You are **not** asked to learn every sub-county by heart. The syllabus says you should know **the ones near you** and be able to find the rest by asking or by reading a map."
+      }
+     ]
+    },
+    {
+     "title": "5. THE SIZE OF YOUR DISTRICT",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Size** means how much land a district covers. It is measured in **square kilometres (km²)**."
+      },
+      {
+       "t": "p",
+       "x": "**How to compare sizes on a map**"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Use a **ruler** to measure across your district on the map.",
+        "Measure across a neighbouring district in the same way.",
+        "The one that measures longer is the **bigger** district.",
+        "Use the map **scale** to change your measurement into real kilometres."
+       ],
+       "start": 1
+      },
+      {
+       "t": "table",
+       "head": [
+        "Words you will need",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**Bigger than**",
+         "Covers more land"
+        ],
+        [
+         "**Smaller than**",
+         "Covers less land"
+        ],
+        [
+         "**The largest**",
+         "The biggest of them all"
+        ],
+        [
+         "**Borders**",
+         "Touches, shares a boundary with"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "6. IMPORTANT PLACES IN YOUR DISTRICT",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Every district has places that matter to the people. Look for these in yours:"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Kind of place",
+        "Examples to look for"
+       ],
+       "rows": [
+        [
+         "**Administrative**",
+         "The district headquarters, the sub-county offices, the court"
+        ],
+        [
+         "**Health**",
+         "The district hospital, health centres"
+        ],
+        [
+         "**Education**",
+         "Primary schools, secondary schools, a technical school"
+        ],
+        [
+         "**Trade**",
+         "Markets, the main trading centre, shops, banks"
+        ],
+        [
+         "**Transport**",
+         "The main roads, the bus park, a landing site, an airfield"
+        ],
+        [
+         "**Worship**",
+         "Churches, mosques, temples"
+        ],
+        [
+         "**Historical or cultural**",
+         "Old sites, shrines, palaces, monuments"
+        ],
+        [
+         "**Natural**",
+         "Hills, rivers, lakes, forests"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "7. DRAWING A MAP OF YOUR DISTRICT",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A good map has these five things:"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Part",
+        "What it does"
+       ],
+       "rows": [
+        [
+         "**Title**",
+         "Says what the map shows — *\"A map of Mukono District\"*"
+        ],
+        [
+         "**Key**",
+         "Explains the symbols used"
+        ],
+        [
+         "**Compass**",
+         "Shows which way is north"
+        ],
+        [
+         "**Scale**",
+         "Shows how map distance stands for real distance"
+        ],
+        [
+         "**Frame**",
+         "The line drawn round the map"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**A way to remember: T · K · C · S · F** — Title, Key, Compass, Scale, Frame."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "District",
+         "A large part of Uganda with its own local government"
+        ],
+        [
+         "County",
+         "A large part of a district"
+        ],
+        [
+         "Municipality",
+         "A large town with its own council"
+        ],
+        [
+         "Sub-county",
+         "A part of a county"
+        ],
+        [
+         "Parish",
+         "A part of a sub-county"
+        ],
+        [
+         "Village",
+         "The smallest administrative unit"
+        ],
+        [
+         "Compass",
+         "An instrument that shows direction"
+        ],
+        [
+         "Cardinal points",
+         "North, East, South and West"
+        ],
+        [
+         "Semi-cardinal points",
+         "North East, South East, South West, North West"
+        ],
+        [
+         "Map",
+         "A drawing of a place as seen from above"
+        ],
+        [
+         "Key",
+         "The part of a map that explains the symbols"
+        ],
+        [
+         "Scale",
+         "What a distance on the map stands for on the ground"
+        ],
+        [
+         "Border",
+         "The line where two districts meet"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "The four **cardinal points** are **North, East, South and West**.",
+        "The four **semi-cardinal points** are **NE, SE, SW and NW**.",
+        "The sun rises in the **East** and sets in the **West**.",
+        "Uganda is divided into **districts**; a district has counties or municipalities, then sub-counties or divisions, then parishes, then villages.",
+        "Every map needs a **title, key, compass, scale and frame**.",
+        "Size of land is measured in **square kilometres**.",
+        "The number of districts in Uganda **keeps changing** — ask your teacher for this year's number."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Name the four cardinal points of a compass.",
+        "Give the short form of North East — **NE**.",
+        "In which direction does the sun rise? **East.**",
+        "Name the smallest administrative unit in a district — the **village**.",
+        "Name any two things found on a good map.",
+        "Name your own district and any two districts that border it.",
+        "Which is bigger, your district or the one next to it?"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Saying the sun rises in the west.",
+        "Putting the semi-cardinal points in the wrong order between the cardinal points.",
+        "Drawing a map without a **key** or a **title**.",
+        "Confusing a **county** (countryside) with a **municipality** (town).",
+        "Learning an old number of districts instead of asking for the current one.",
+        "Confusing your **sub-county** (small) with your **district** (big)."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Name the four cardinal points of a compass.",
+        "Name the four semi-cardinal points.",
+        "Give the short form of South West.",
+        "In which direction does the sun rise?",
+        "In which direction does the sun set?",
+        "Which way do shadows point in the morning?",
+        "Name the parts of a district, from the biggest to the smallest.",
+        "What is a municipality?",
+        "What is the smallest administrative unit?",
+        "Name any four things found on a good map.",
+        "What is the key of a map used for?",
+        "In what units is the size of a district measured?",
+        "Name your own district.",
+        "Name any two districts that border your district.",
+        "Name any three important places found in your district.",
+        "What is a border?",
+        "Why has Uganda been divided into districts?",
+        "What is a division?",
+        "Give one way of finding direction without a compass.",
+        "Draw the compass showing all eight points."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "**North, East, South and West**",
+        "**North East, South East, South West and North West**",
+        "**SW**",
+        "In the **East**",
+        "In the **West**",
+        "Towards the **west**",
+        "**District → county or municipality → sub-county or division → parish → village**",
+        "**A large town that has its own council**",
+        "The **village**",
+        "Any four of **title, key, compass, scale, frame**",
+        "To **explain the symbols used on the map**",
+        "**Square kilometres (km²)**",
+        "*(Your own answer — the name of your district.)*",
+        "*(Your own answer — two districts that touch yours.)*",
+        "*(Your own answer — for example the district hospital, the main market, a secondary school.)*",
+        "**The line where two districts meet**",
+        "To **bring government services nearer to the people**",
+        "**A part of a municipality or city** (like a sub-county in a town)",
+        "Any one of: **use the sun**, **use shadows**, **face the sunrise and use your body** — East in front, West behind, North on the left, South on the right.",
+        "*(Your own drawing — it should show N, NE, E, SE, S, SW, W and NW in the correct places.)*"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.4 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**N · E · S · W** — *Never Eat Sour Watermelon*",
+        "Between them: **NE · SE · SW · NW**",
+        "Sun rises **East**, sets **West**",
+        "District → county/municipality → sub-county/division → parish → village",
+        "Map needs **T K C S F** — Title, Key, Compass, Scale, Frame",
+        "Know **your** district, **your** neighbours, **your** important places"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, the period allocation (16 periods), the content list (revision of the cardinal and semi-cardinal compass points; location of our district, sub-counties, counties and municipality; size of our district), the competences and the suggested activities were taken from the official **NCDC Primary Four Social Studies Syllabus** (© NCDC 2010, ISBN 978-9970-117-49-9; pages 17–20 of the PDF in `curriculum/`), downloaded from **ncdc.go.ug**. The syllabus's own warning that counties are not part of the administrative structure of every district is repeated above. The explanations, tables, diagrams, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "**This topic is about the learner's own district, and no district is named in the syllabus.** No facts about any particular district have been invented here. Where an answer depends on the learner's district, the notes say so and leave the answer to the learner."
+      },
+      {
+       "t": "p",
+       "x": "The remark that Uganda now has over 130 districts is **newer than the syllabus**. Published sources give **different totals** because new districts keep being created, so no single figure is stated as fact; the learner is told to ask the teacher for the current number."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.4 was available, so the syllabus's own guidance was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P4_SST_T02",
+   "class": "P4",
+   "subject": "SST",
+   "topic_no": 2,
+   "title": "Physical Features in Our District",
+   "heading": "TOPIC 2: PHYSICAL FEATURES IN OUR DISTRICT",
+   "slug": "physical-features-in-our-district",
+   "periods": 20,
+   "curriculum_pages": "20–23",
+   "words": 1911,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term I, Topic 2, 20 periods (`curriculum/P4-SOCIAL-STUDIES-2010.pdf`, pages 20–23).*"
+      },
+      {
+       "t": "p",
+       "x": "**How to use this topic.** The syllabus asks about the physical features of **your own district**. These notes teach you what each feature is, what it is used for and how to care for it. You then name the ones found in your district."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "say what physical features are",
+        "name the physical features found in your district and locate them on a map",
+        "explain the uses of physical features",
+        "explain the dangers of some physical features",
+        "suggest ways of caring for physical features"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. WHAT PHYSICAL FEATURES ARE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Physical features** are the **natural things on the earth's surface** — things that were not made by people."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Physical features (natural)",
+        "Made by people (not physical features)"
+       ],
+       "rows": [
+        [
+         "Hills, mountains, valleys, plains",
+         "Houses, roads, bridges"
+        ],
+        [
+         "Rivers, lakes, swamps",
+         "Dams, canals, fish ponds"
+        ],
+        [
+         "Forests, rocks, islands",
+         "Schools, factories, markets"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "x": "A **dam** is listed in the syllabus with lakes because a dam holds water like a lake — but remember a dam is **built by people**, while a lake is natural."
+      }
+     ]
+    },
+    {
+     "title": "2. THE PHYSICAL FEATURES IN THE SYLLABUS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Feature",
+        "What it is"
+       ],
+       "rows": [
+        [
+         "**River**",
+         "Water flowing in a channel from a highland to a lake or sea"
+        ],
+        [
+         "**Lake**",
+         "A large body of water surrounded by land"
+        ],
+        [
+         "**Dam**",
+         "A wall built across a river to hold back water"
+        ],
+        [
+         "**Hill**",
+         "Raised land, lower than a mountain"
+        ],
+        [
+         "**Mountain**",
+         "Very high raised land, often with a rocky top"
+        ],
+        [
+         "**Valley**",
+         "Low land lying between hills or mountains"
+        ],
+        [
+         "**Rift valley**",
+         "A very long, deep, wide valley formed when the land sank between cracks"
+        ],
+        [
+         "**Plain**",
+         "Flat or gently sloping land"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Others you may see in your district:** swamps, forests, islands, waterfalls, rocks and springs."
+      },
+      {
+       "t": "h3",
+       "x": "Fill this in for your own district"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Feature",
+        "Found in my district?",
+        "Name"
+       ],
+       "rows": [
+        [
+         "River",
+         "Yes / No",
+         "*(name)*"
+        ],
+        [
+         "Lake",
+         "Yes / No",
+         "*(name)*"
+        ],
+        [
+         "Hill or mountain",
+         "Yes / No",
+         "*(name)*"
+        ],
+        [
+         "Valley",
+         "Yes / No",
+         "*(name)*"
+        ],
+        [
+         "Swamp",
+         "Yes / No",
+         "*(name)*"
+        ],
+        [
+         "Forest",
+         "Yes / No",
+         "*(name)*"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "3. USES OF PHYSICAL FEATURES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The syllabus says learners should see that physical features are **natural resources which people use to earn a living**."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Feature",
+        "How people use it"
+       ],
+       "rows": [
+        [
+         "**Rivers and lakes**",
+         "Fishing · water for drinking, washing and animals · transport by boat · irrigation · tourism"
+        ],
+        [
+         "**Dams**",
+         "Storing water · making electricity · watering animals"
+        ],
+        [
+         "**Hills and mountains**",
+         "Quarrying stones · growing crops on the slopes · tourism and climbing · rain formation"
+        ],
+        [
+         "**Valleys**",
+         "Growing crops such as rice · grazing animals · settlement"
+        ],
+        [
+         "**Plains**",
+         "Farming · grazing cattle · building homes, roads and towns"
+        ],
+        [
+         "**Swamps**",
+         "Papyrus for mats and baskets · clay for bricks and pots · growing yams and rice · home for birds and fish"
+        ],
+        [
+         "**Forests**",
+         "Timber · firewood · herbs for medicine · homes for animals · rainfall"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "4. DANGERS OF PHYSICAL FEATURES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Physical features are useful, but they can also cause harm."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Feature",
+        "Danger"
+       ],
+       "rows": [
+        [
+         "**Rivers and lakes**",
+         "**Drowning** · floods · dangerous animals such as crocodiles and hippos · water-borne diseases such as bilharzia and cholera"
+        ],
+        [
+         "**Mountains and steep hills**",
+         "**Landslides** · falling rocks · soil erosion"
+        ],
+        [
+         "**Valleys and low plains**",
+         "Flooding after heavy rain · waterlogging"
+        ],
+        [
+         "**Swamps**",
+         "Mosquitoes that spread **malaria** · people can sink and drown"
+        ],
+        [
+         "**Forests**",
+         "Dangerous animals and snakes · people get lost · bush fires"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Keeping safe**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Do not swim in a lake or river without a grown-up who can swim.",
+        "Do not build a house at the bottom of a very steep slope.",
+        "Sleep under a **treated mosquito net** if you live near a swamp.",
+        "Do not enter a forest alone.",
+        "**If you see someone in danger, call an adult at once. Do not jump into the water yourself.**"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "5. CARING FOR PHYSICAL FEATURES",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Feature",
+        "How to care for it"
+       ],
+       "rows": [
+        [
+         "**Rivers and lakes**",
+         "Do not throw rubbish in the water · do not wash cars or bathe in the source · leave plants growing on the banks · do not fish with poison or small nets"
+        ],
+        [
+         "**Wells and springs**",
+         "Fence them · keep animals away · keep the surroundings clean"
+        ],
+        [
+         "**Hills and mountains**",
+         "Plant trees and grass · dig **terraces** and trenches across the slope · do not cut all the trees"
+        ],
+        [
+         "**Swamps**",
+         "Do not drain the whole swamp · harvest papyrus carefully and let it grow again"
+        ],
+        [
+         "**Forests**",
+         "Plant more trees · cut only mature trees · avoid bush burning"
+        ],
+        [
+         "**Soil and land**",
+         "Practise **crop rotation** and mulching · avoid over-grazing"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Words to know**"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**Conservation**",
+         "Protecting something so that it lasts"
+        ],
+        [
+         "**Afforestation**",
+         "Planting trees where there were none"
+        ],
+        [
+         "**Reafforestation**",
+         "Planting trees again where they were cut"
+        ],
+        [
+         "**Deforestation**",
+         "Cutting down trees and not replacing them"
+        ],
+        [
+         "**Soil erosion**",
+         "The carrying away of soil by water or wind"
+        ],
+        [
+         "**Terracing**",
+         "Cutting steps across a slope to stop the soil washing away"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "6. HOW PHYSICAL FEATURES AFFECT PEOPLE",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "People **settle** where there is water and good flat land, so plains and lake shores are crowded.",
+        "People **avoid** very steep slopes, very dry places and big swamps, so these have few people.",
+        "Physical features decide the **work** people do — fishing at a lake, farming on a plain, quarrying on a hill.",
+        "Mountains **help rain to form**, so their slopes are usually green and good for crops.",
+        "Rivers and lakes can be **boundaries** between districts."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Physical feature",
+         "A natural thing on the earth's surface"
+        ],
+        [
+         "River",
+         "Water flowing in a channel"
+        ],
+        [
+         "Lake",
+         "A large body of water surrounded by land"
+        ],
+        [
+         "Dam",
+         "A wall built across a river to hold back water"
+        ],
+        [
+         "Hill",
+         "Raised land, lower than a mountain"
+        ],
+        [
+         "Mountain",
+         "Very high raised land"
+        ],
+        [
+         "Valley",
+         "Low land between hills"
+        ],
+        [
+         "Rift valley",
+         "A long, deep, wide valley formed when land sank"
+        ],
+        [
+         "Plain",
+         "Flat or gently sloping land"
+        ],
+        [
+         "Swamp",
+         "Wet land covered with water and water plants"
+        ],
+        [
+         "Soil erosion",
+         "The carrying away of soil by water or wind"
+        ],
+        [
+         "Conservation",
+         "Protecting something so that it lasts"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Physical features are **natural**; a dam, a road and a bridge are **made by people**.",
+        "Rivers and lakes give **water, fish and transport**, but they cause **drowning and floods**.",
+        "Mountains and hills cause **landslides** and **soil erosion** when trees are cut.",
+        "Swamps breed **mosquitoes**, which spread **malaria**.",
+        "**Terracing** and **tree planting** protect hill slopes.",
+        "**Afforestation** = planting new trees. **Deforestation** = cutting trees without replacing them.",
+        "People settle most where the land is **flat and there is water**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "What is a physical feature? A natural thing on the earth's surface.",
+        "Give one use of a swamp — papyrus for mats (or clay, or growing rice).",
+        "Give one danger of a river — drowning (or floods, or bilharzia).",
+        "Name the disease spread by mosquitoes from a swamp — **malaria**.",
+        "Give one way of caring for a hill — plant trees, or dig terraces.",
+        "Which physical feature is made by people? A **dam**.",
+        "Name a physical feature found in your own district."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Calling a road, a bridge or a building a physical feature.",
+        "Saying a hill and a mountain are the same — a **mountain is much higher**.",
+        "Giving a **use** when the question asks for a **danger**.",
+        "Writing \"cutting trees\" as a way of **caring** for a forest.",
+        "Mixing up **afforestation** (planting new) with **reafforestation** (planting again).",
+        "Naming a feature that is not in your own district."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "What are physical features?",
+        "Give any four examples of physical features.",
+        "Which of these is **not** a physical feature: a lake, a hill, a bridge, a valley?",
+        "What is a river?",
+        "What is a valley?",
+        "What is a plain?",
+        "Give any three uses of a lake.",
+        "Give any two uses of a swamp.",
+        "Give any two uses of a forest.",
+        "Give any two dangers of a river.",
+        "Give one danger of a steep mountain slope.",
+        "Which disease do mosquitoes from a swamp spread?",
+        "Give any three ways of caring for a lake.",
+        "What is terracing?",
+        "What is soil erosion?",
+        "What is the difference between afforestation and deforestation?",
+        "Why do many people settle on plains?",
+        "Name one physical feature found in your own district.",
+        "Give one use of that feature to the people of your district.",
+        "Give one way the people of your district can care for it."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "**Natural things found on the earth's surface** that were not made by people.",
+        "Any four of **hills, mountains, valleys, plains, rivers, lakes, swamps, forests, rocks, islands**",
+        "A **bridge** — it is made by people",
+        "**Water flowing in a channel** from a highland to a lake or sea",
+        "**Low land lying between hills or mountains**",
+        "**Flat or gently sloping land**",
+        "Any three of **fishing, water for use, transport by boat, tourism, irrigation**",
+        "Any two of **papyrus for mats and baskets, clay for bricks and pots, growing rice or yams, home for fish and birds**",
+        "Any two of **timber, firewood, herbs for medicine, homes for animals, help rainfall**",
+        "Any two of **drowning, floods, crocodiles and hippos, water-borne diseases such as bilharzia**",
+        "**Landslides** (or falling rocks, or soil erosion)",
+        "**Malaria**",
+        "Any three of **do not throw rubbish in it, do not fish with poison, leave plants on the banks, do not use small nets, do not bathe or wash cars at the source**",
+        "**Cutting steps across a slope to stop soil being washed away**",
+        "**The carrying away of soil by water or wind**",
+        "**Afforestation** is planting trees where there were none; **deforestation** is cutting down trees without replacing them.",
+        "Because the land is **flat and easy to farm and build on**, and there is usually water.",
+        "*(Your own answer — a feature really found in your district.)*",
+        "*(Your own answer.)*",
+        "*(Your own answer.)*"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.4 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Physical feature = **natural**, not made by people",
+        "River · lake · dam · hill · mountain · valley · rift valley · plain",
+        "Uses: water · fish · transport · farming · timber · stones · tourism",
+        "Dangers: **drowning · floods · landslides · malaria**",
+        "Care: plant trees · terrace slopes · keep rubbish out of water",
+        "**Afforestation** plant new · **reafforestation** plant again · **deforestation** cut and don't replace"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, the period allocation (20 periods), the content list (location of physical features in our district — rivers, lakes and dams, hills, mountains, valleys, rift valleys and plains; their uses; their dangers; and ways of caring for them), the competences and the suggested activities were taken from the official **NCDC Primary Four Social Studies Syllabus** (© NCDC 2010, ISBN 978-9970-117-49-9; pages 20–23 of the PDF in `curriculum/`), downloaded from **ncdc.go.ug**. The syllabus's own examples — growing food, growing cash crops, homes of many living things, landslides, and protecting water sources such as lakes, rivers, ponds and wells — are used above. The explanations, tables, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "**This topic is about the learner's own district.** No facts about any particular district have been invented; where an answer depends on the learner's district, the notes leave the answer to the learner."
+      },
+      {
+       "t": "p",
+       "x": "The water-safety line (\"call an adult, do not jump in yourself\") is ordinary safety advice. **No NCDC guidance document on child safety was available**, and none is claimed here."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.4 was available, so the syllabus's own guidance was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P4_SST_T03",
+   "class": "P4",
+   "subject": "SST",
+   "topic_no": 3,
+   "title": "Vegetation in Our District",
+   "heading": "TOPIC 3: VEGETATION IN OUR DISTRICT",
+   "slug": "vegetation-in-our-district",
+   "periods": 25,
+   "curriculum_pages": "23–26",
+   "words": 1763,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term II, Topic 3, 25 periods (`curriculum/P4-SOCIAL-STUDIES-2010.pdf`, pages 23–26).*"
+      },
+      {
+       "t": "p",
+       "x": "**How to use this topic.** The syllabus asks about the vegetation of **your own district**. These notes teach you the types of vegetation, their uses, how people damage them and how to care for them. You name the ones found where you live."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "say what vegetation is",
+        "name the types of vegetation",
+        "tell natural vegetation from planted vegetation",
+        "give the uses of vegetation",
+        "name the activities of people that damage vegetation",
+        "suggest ways of caring for vegetation"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. WHAT VEGETATION IS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Vegetation** means **all the plants growing in a place**. It is sometimes called the **land cover**, because plants cover the land."
+      },
+      {
+       "t": "p",
+       "x": "Vegetation includes big trees, small trees, bushes, grass and even the plants growing in water."
+      }
+     ]
+    },
+    {
+     "title": "2. TYPES OF VEGETATION",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The syllabus names these five:"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Type",
+        "What it looks like"
+       ],
+       "rows": [
+        [
+         "**Forests**",
+         "Many tall trees growing close together, with thick shade"
+        ],
+        [
+         "**Swamps**",
+         "Wet land covered with water plants such as papyrus and reeds"
+        ],
+        [
+         "**Shrubs**",
+         "Short woody plants and bushes, shorter than trees"
+        ],
+        [
+         "**Grass**",
+         "Land covered mainly with grass, with a few scattered trees"
+        ],
+        [
+         "**Crops**",
+         "Plants that people have planted for food or for sale"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "3. NATURAL AND PLANTED VEGETATION",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "",
+        "**Natural vegetation**",
+        "**Planted vegetation**"
+       ],
+       "rows": [
+        [
+         "Who put it there",
+         "Grew **on its own**",
+         "**Planted by people**"
+        ],
+        [
+         "Kinds of plants",
+         "Many different kinds mixed together",
+         "Usually one kind together"
+        ],
+        [
+         "Arrangement",
+         "Grows anyhow, not in lines",
+         "Grows in **straight lines**"
+        ],
+        [
+         "Care",
+         "Nobody weeds it",
+         "People weed, prune and water it"
+        ],
+        [
+         "Examples",
+         "Natural forest, natural swamp, wild grassland, bushes",
+         "A pine or eucalyptus plantation, a banana garden, a tea or sugar-cane estate, trees planted at school"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**A quick test:** if the trees stand in **straight rows**, people planted them."
+      }
+     ]
+    },
+    {
+     "title": "4. USES OF VEGETATION",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The syllabus lists these uses:"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Use",
+        "How it helps"
+       ],
+       "rows": [
+        [
+         "**Source of herbs for medicine**",
+         "Many local medicines come from leaves, roots and bark"
+        ],
+        [
+         "**Source of firewood**",
+         "Wood and charcoal for cooking"
+        ],
+        [
+         "**Source of food**",
+         "Fruits, vegetables, mushrooms, honey and yams"
+        ],
+        [
+         "**Provides oxygen**",
+         "Plants give out the oxygen we breathe"
+        ],
+        [
+         "**Supports in rain formation**",
+         "Trees give off water vapour, which helps rain to form"
+        ],
+        [
+         "**Controls soil erosion and wind**",
+         "Roots hold the soil; trees act as a windbreak"
+        ],
+        [
+         "**For beauty**",
+         "Trees, flowers and lawns make a place look good"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**More uses you should also know**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "**Timber** for building and furniture",
+        "**Shade** for people and animals",
+        "**Grazing** — grass feeds cattle, sheep and goats",
+        "**Homes for wild animals, birds and insects**",
+        "**Tourism** — visitors pay to see forests and the animals in them",
+        "**Materials** — papyrus for mats and baskets, reeds for roofing, bark for crafts"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "5. HOW PEOPLE AFFECT VEGETATION",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The syllabus lists these activities:"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Activity",
+        "What it does"
+       ],
+       "rows": [
+        [
+         "**Burning bushes**",
+         "Kills small plants, insects and young trees"
+        ],
+        [
+         "**Over cultivation**",
+         "Uses up the soil so plants can no longer grow well"
+        ],
+        [
+         "**Over grazing**",
+         "Too many animals eat the grass down to the roots"
+        ],
+        [
+         "**Deforestation**",
+         "Cutting down trees without replacing them"
+        ],
+        [
+         "**Making bricks**",
+         "Clearing swamps and burning firewood to bake the bricks"
+        ],
+        [
+         "**Construction of roads**",
+         "Trees and grass are cleared for the road"
+        ],
+        [
+         "**Building houses for settlement and industries**",
+         "Land is cleared for homes and factories"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**What happens when vegetation is destroyed**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "**Soil erosion** — nothing holds the soil, so rain washes it away",
+        "**Less rain** — fewer trees means less water vapour in the air",
+        "**Drought** and dry streams",
+        "**Wild animals lose their homes**",
+        "**Shortage of firewood, timber and herbs**",
+        "Strong winds blow off roofs because there is no windbreak",
+        "**Deserts** can form where the land is left bare"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "6. CARING FOR VEGETATION",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Way",
+        "What to do"
+       ],
+       "rows": [
+        [
+         "**Afforestation**",
+         "Plant trees where there were none"
+        ],
+        [
+         "**Reafforestation**",
+         "Plant trees again where they were cut"
+        ],
+        [
+         "**Selective cutting**",
+         "Cut only the mature trees, leave the young ones"
+        ],
+        [
+         "**Avoid bush burning**",
+         "Never set fire to the bush"
+        ],
+        [
+         "**Control grazing**",
+         "Keep only as many animals as the land can feed; use paddocks"
+        ],
+        [
+         "**Use other fuels**",
+         "Use energy-saving stoves, biogas or gas instead of much firewood"
+        ],
+        [
+         "**Gazetting**",
+         "Government marks off forest reserves and national parks and protects them by law"
+        ],
+        [
+         "**Educating people**",
+         "Teach people why vegetation matters"
+        ],
+        [
+         "**Crop rotation and mulching**",
+         "Keep the soil fertile so land is not cleared again and again"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**What a pupil can do:** plant a tree at home and at school, water it, put a small fence round it, and never break young plants."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Vegetation",
+         "All the plants growing in a place"
+        ],
+        [
+         "Natural vegetation",
+         "Vegetation that grew on its own"
+        ],
+        [
+         "Planted vegetation",
+         "Vegetation planted and cared for by people"
+        ],
+        [
+         "Forest",
+         "Many tall trees growing close together"
+        ],
+        [
+         "Swamp",
+         "Wet land covered with water plants"
+        ],
+        [
+         "Shrub",
+         "A short woody plant or bush"
+        ],
+        [
+         "Deforestation",
+         "Cutting down trees without replacing them"
+        ],
+        [
+         "Afforestation",
+         "Planting trees where there were none"
+        ],
+        [
+         "Reafforestation",
+         "Planting trees again where they were cut"
+        ],
+        [
+         "Over grazing",
+         "Keeping too many animals on the same land"
+        ],
+        [
+         "Over cultivation",
+         "Growing crops on the same land until the soil is worn out"
+        ],
+        [
+         "Gazetting",
+         "Marking off land by law so that it is protected"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Vegetation means **all the plants growing in a place**.",
+        "The five types in the syllabus are **forests, swamps, shrubs, grass and crops**.",
+        "**Natural** vegetation grows on its own; **planted** vegetation is put there by people and usually grows in **straight lines**.",
+        "Plants give us **oxygen**, and they **help rain to form**.",
+        "Roots of plants **hold the soil** and stop **soil erosion**.",
+        "**Deforestation** leads to soil erosion, less rain and drought.",
+        "**Afforestation** = new trees. **Reafforestation** = trees again.",
+        "Cutting **only mature trees** is called **selective cutting**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "What is vegetation? All the plants growing in a place.",
+        "Name any three types of vegetation — forests, swamps, shrubs, grass, crops.",
+        "Give one difference between natural and planted vegetation.",
+        "Give two uses of vegetation — firewood, medicine, food, oxygen, timber, shade.",
+        "Name two activities of people that destroy vegetation — bush burning, deforestation.",
+        "Give two ways of caring for vegetation — planting trees, avoiding bush burning.",
+        "What gas do plants give to people? **Oxygen.**"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Saying vegetation means only trees — grass and crops are vegetation too.",
+        "Calling a planted forest a **natural** forest.",
+        "Writing \"cutting trees\" as a way of **caring** for vegetation.",
+        "Mixing up **afforestation** and **reafforestation**.",
+        "Giving a **use** when the question asks how people **destroy** vegetation.",
+        "Saying plants give us carbon dioxide — they give us **oxygen**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "What is vegetation?",
+        "Name the five types of vegetation given in the syllabus.",
+        "What is natural vegetation?",
+        "What is planted vegetation?",
+        "Give one way of telling a planted forest from a natural forest.",
+        "Give any four uses of vegetation.",
+        "Which gas do plants give out that people need?",
+        "How does vegetation help rain to form?",
+        "How do the roots of plants help the soil?",
+        "Name any four activities of people that destroy vegetation.",
+        "What is deforestation?",
+        "Give any three results of destroying vegetation.",
+        "What is afforestation?",
+        "What is reafforestation?",
+        "What is selective cutting?",
+        "What is over grazing?",
+        "Give any four ways of caring for vegetation.",
+        "What does it mean to gazette a forest?",
+        "Name one type of vegetation found in your own district.",
+        "Give one way you yourself can help care for vegetation."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "**All the plants growing in a place**",
+        "**Forests, swamps, shrubs, grass and crops**",
+        "**Vegetation that grew on its own**, without being planted by people",
+        "**Vegetation planted and cared for by people**",
+        "A planted forest grows in **straight lines** and is usually of **one kind of tree**.",
+        "Any four of **firewood, herbs for medicine, food, oxygen, timber, shade, grazing, beauty, homes for animals, tourism**",
+        "**Oxygen**",
+        "Trees give off **water vapour**, which rises and helps clouds and rain to form.",
+        "They **hold the soil together** so it is not washed or blown away.",
+        "Any four of **burning bushes, over cultivation, over grazing, deforestation, making bricks, road construction, building houses and industries**",
+        "**Cutting down trees without replacing them**",
+        "Any three of **soil erosion, less rain, drought, wild animals lose homes, shortage of firewood and timber, strong winds, deserts forming**",
+        "**Planting trees where there were none before**",
+        "**Planting trees again where they had been cut**",
+        "**Cutting only the mature trees and leaving the young ones**",
+        "**Keeping too many animals on the same land** so the grass is eaten down to the roots",
+        "Any four of **afforestation, reafforestation, selective cutting, avoiding bush burning, controlling grazing, using energy-saving stoves, gazetting forests, educating people, mulching and crop rotation**",
+        "It means the government **marks it off by law** as a protected reserve.",
+        "*(Your own answer — the vegetation really found in your district.)*",
+        "Any correct answer, for example: **plant a tree at school or at home and take care of it**, or **never set fire to the bush**."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.4 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Vegetation = **all the plants in a place**",
+        "Types: **forests · swamps · shrubs · grass · crops**",
+        "**Natural** grows on its own · **planted** grows in straight lines",
+        "Uses: firewood · medicine · food · **oxygen** · rain · stops erosion · beauty",
+        "Destroyed by: bush burning · over cultivation · over grazing · deforestation · bricks · roads · building",
+        "Cared for by: **afforestation · reafforestation** · selective cutting · no bush burning · gazetting"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, the period allocation (25 periods), the content list (examples of vegetation — forests, swamps, shrubs, grass and crops; uses of vegetation — herbs for medicine, firewood, food, oxygen, support in rain formation, control of soil erosion and wind, and beauty; how people affect vegetation — burning bushes, over cultivation, over grazing, deforestation, making bricks, construction of roads and building houses for settlement and industries; and caring for the vegetation, which the syllabus marks as **new input**), the competences and the suggested activities — including comparing natural and planted forests and making crafts such as mats and carpets — were taken from the official **NCDC Primary Four Social Studies Syllabus** (© NCDC 2010, ISBN 978-9970-117-49-9; pages 23–26 of the PDF in `curriculum/`), downloaded from **ncdc.go.ug**. The explanations, tables, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "**This topic is about the learner's own district.** No facts about any particular district have been invented; where an answer depends on the learner's district, the notes leave the answer to the learner."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.4 was available, so the syllabus's own guidance was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P4_SST_T04",
+   "class": "P4",
+   "subject": "SST",
+   "topic_no": 4,
+   "title": "People in Our District",
+   "heading": "TOPIC 4: PEOPLE IN OUR DISTRICT",
+   "slug": "people-in-our-district",
+   "periods": 15,
+   "curriculum_pages": "26–31",
+   "words": 2017,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term II, Topic 4, 15 periods (`curriculum/P4-SOCIAL-STUDIES-2010.pdf`, pages 26–31).*"
+      },
+      {
+       "t": "p",
+       "x": "**How to use this topic.** The syllabus asks about the people of **your own district** — their origin, why they settled there and the work they do. These notes teach you the ideas and the words. You fill in the tribes, clans and jobs of your own district."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "explain the origin of the people in your district",
+        "name the tribes and clans found in your district",
+        "tell a legend of one of those people",
+        "give the causes of immigration",
+        "give the factors that make people settle in a place",
+        "name the types of work people do and the problems they meet"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. THE SOCIAL ENVIRONMENT",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The environment has two parts:"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Physical environment",
+        "Social environment"
+       ],
+       "rows": [
+        [
+         "The natural things — land, water, air, plants, animals",
+         "**People and the things people make** — homes, schools, roads, markets"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "This topic is about the **social environment**: the people."
+      }
+     ]
+    },
+    {
+     "title": "2. TRIBES AND CLANS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**Tribe**",
+         "A large group of people who share one language, one culture and one origin"
+        ],
+        [
+         "**Clan**",
+         "A smaller group inside a tribe, whose members believe they came from one ancestor"
+        ],
+        [
+         "**Ancestor**",
+         "A person from whom a family or clan came long ago"
+        ],
+        [
+         "**Totem**",
+         "An animal or plant that a clan respects and does not eat"
+        ],
+        [
+         "**Culture**",
+         "The whole way of life of a group of people"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "A **tribe is made up of many clans**. Each clan usually has its own **totem**."
+      },
+      {
+       "t": "p",
+       "x": "**Fill this in for your own district:**"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Question",
+        "My answer"
+       ],
+       "rows": [
+        [
+         "The main tribe or tribes in my district",
+         "*(your answer)*"
+        ],
+        [
+         "The language they speak",
+         "*(your answer)*"
+        ],
+        [
+         "My clan",
+         "*(your answer)*"
+        ],
+        [
+         "My clan's totem",
+         "*(your answer)*"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "3. LEGENDS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A **legend** is an **old story handed down by word of mouth**, telling how a group of people began. Legends are told by elders. They are not history that can be proved, but they teach a people about themselves."
+      },
+      {
+       "t": "p",
+       "x": "The syllabus gives these three examples:"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Legend",
+        "People it belongs to"
+       ],
+       "rows": [
+        [
+         "The story of **Mundu and Sera**",
+         "The Bagisu, in Bugisu"
+        ],
+        [
+         "The story of **Labong and Gipir**",
+         "The Luo-speaking people"
+        ],
+        [
+         "The story of **Kintu and Nambi**",
+         "The Baganda"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "x": "*The syllabus names these three legends but does not print the stories. Ask an elder, your teacher or the school library to tell you the one that belongs to your own people, and write it in your own words.*"
+      }
+     ]
+    },
+    {
+     "title": "4. MIGRATION",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**Migration**",
+         "The movement of people from one place to another to settle"
+        ],
+        [
+         "**Immigration**",
+         "Moving **into** a place"
+        ],
+        [
+         "**Emigration**",
+         "Moving **out of** a place"
+        ],
+        [
+         "**Immigrant**",
+         "A person who moves into a place"
+        ],
+        [
+         "**Emigrant**",
+         "A person who moves out of a place"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**A way to remember: I**mmigration = coming **I**n."
+      },
+      {
+       "t": "h3",
+       "x": "Causes of migration (from the syllabus)"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Cause",
+        "Why people move"
+       ],
+       "rows": [
+        [
+         "**Search for water, food and pasture**",
+         "To find enough water and grass for animals and food for the family"
+        ],
+        [
+         "**Looking for jobs**",
+         "To find work and earn money"
+        ],
+        [
+         "**Epidemics**",
+         "To escape a disease that is killing many people"
+        ],
+        [
+         "**Droughts**",
+         "To escape a long time without rain"
+        ],
+        [
+         "**Running away from conflicts**",
+         "To escape war and fighting"
+        ],
+        [
+         "**Search for fertile soils**",
+         "To find good soil for growing crops"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "5. SETTLEMENT PATTERNS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A **settlement pattern** is **the way people's homes are arranged in a place** — whether they are close together or far apart."
+      },
+      {
+       "t": "h3",
+       "x": "Factors that make people settle in a place (from the syllabus)"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Factor",
+        "Why it attracts people"
+       ],
+       "rows": [
+        [
+         "**Fertile soil**",
+         "Crops grow well, so there is food"
+        ],
+        [
+         "**Enough and reliable rainfall**",
+         "Crops and animals do well"
+        ],
+        [
+         "**Trade**",
+         "People can buy and sell and earn money"
+        ],
+        [
+         "**Jobs**",
+         "There is work to do"
+        ],
+        [
+         "**Enough food**",
+         "Nobody goes hungry"
+        ],
+        [
+         "**Good security and peace**",
+         "People feel safe"
+        ],
+        [
+         "**Social services**",
+         "Schools, water, good roads and health care are near"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Why some places have few people"
+      },
+      {
+       "t": "p",
+       "x": "Poor or rocky soil · too little rain · steep slopes · thick forests · big swamps · insecurity · pests and diseases · no roads, schools or water."
+      }
+     ]
+    },
+    {
+     "title": "6. TYPES OF WORK PEOPLE DO",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The syllabus lists these:"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Work",
+        "What the person does"
+       ],
+       "rows": [
+        [
+         "**Fishing**",
+         "Catches fish from lakes, rivers or ponds"
+        ],
+        [
+         "**Farming**",
+         "Grows crops and keeps animals"
+        ],
+        [
+         "**Pottery**",
+         "Makes pots and jars from clay"
+        ],
+        [
+         "**Brick laying**",
+         "Makes bricks and builds with them"
+        ],
+        [
+         "**Craft working**",
+         "Makes mats, baskets, carpets and carvings"
+        ],
+        [
+         "**Trading**",
+         "Buys and sells goods"
+        ],
+        [
+         "**Teaching**",
+         "Teaches learners in a school"
+        ],
+        [
+         "**Office work**",
+         "Works in an office, writing and keeping records"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Why people work:** to get food, to get money, to pay school fees, to buy clothes and medicine, to build a home, and to serve others."
+      }
+     ]
+    },
+    {
+     "title": "7. PROBLEMS PEOPLE FACE IN THEIR WORK",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The syllabus lists these:"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Problem",
+        "What it does"
+       ],
+       "rows": [
+        [
+         "**Insecurity and wars**",
+         "People cannot work in safety and property is destroyed"
+        ],
+        [
+         "**Diseases of animals and birds**",
+         "Animals die, so the farmer loses money"
+        ],
+        [
+         "**Poor people's health**",
+         "A sick person cannot work"
+        ],
+        [
+         "**Poor transport**",
+         "Goods cannot reach the market, and they go bad"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Other problems you should also know:** bad weather · poor prices · pests and crop diseases · lack of money to start · lack of skills · too few tools · theft."
+      },
+      {
+       "t": "h3",
+       "x": "Suggested solutions"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Keep **peace and security** and report wrong acts",
+        "**Vaccinate** and treat animals; spray against pests",
+        "Go for treatment early and keep the home clean",
+        "Repair the **roads** and use better transport",
+        "**Save** money and join a savings group",
+        "Learn **skills** at a technical school",
+        "Store crops well and sell when the price is fair"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Social environment",
+         "People and the things people make"
+        ],
+        [
+         "Tribe",
+         "A large group sharing one language, culture and origin"
+        ],
+        [
+         "Clan",
+         "A smaller group in a tribe with one ancestor"
+        ],
+        [
+         "Totem",
+         "An animal or plant a clan respects and does not eat"
+        ],
+        [
+         "Legend",
+         "An old story handed down by word of mouth"
+        ],
+        [
+         "Migration",
+         "The movement of people to settle in another place"
+        ],
+        [
+         "Immigration",
+         "Moving into a place"
+        ],
+        [
+         "Emigration",
+         "Moving out of a place"
+        ],
+        [
+         "Settlement pattern",
+         "The way people's homes are arranged in a place"
+        ],
+        [
+         "Occupation",
+         "The work a person does to earn a living"
+        ],
+        [
+         "Drought",
+         "A long time without rain"
+        ],
+        [
+         "Epidemic",
+         "A disease that attacks very many people at once"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "A **tribe** is made up of many **clans**.",
+        "A **legend** is an old story told by elders; it is not proved history.",
+        "**Immigration** = coming **in**. **Emigration** = going **out**.",
+        "People settle where there is **fertile soil, water, peace, jobs and social services**.",
+        "Few people live where there is **poor soil, little rain, insecurity or no services**.",
+        "The main types of work in the syllabus are **fishing, farming, pottery, brick laying, craft working, trading, teaching and office work**.",
+        "Problems in work include **insecurity, animal diseases, poor health and poor transport**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "What is a clan? A smaller group in a tribe whose members came from one ancestor.",
+        "Name the legend of the Baganda — **Kintu and Nambi**.",
+        "Name the legend told in Bugisu — **Mundu and Sera**.",
+        "Give the meaning of immigration — moving into a place.",
+        "Give two causes of migration — drought, war, looking for jobs, epidemics.",
+        "Give three factors that attract people to settle — fertile soil, peace, jobs.",
+        "Name two problems people face in their work — insecurity, poor transport."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Mixing up **immigration** (in) with **emigration** (out).",
+        "Saying a clan is bigger than a tribe — it is **smaller**.",
+        "Treating a **legend** as proved history.",
+        "Giving a **problem** when the question asks for a **solution**.",
+        "Naming a tribe that is not found in your own district.",
+        "Writing \"people\" as an answer for the type of work — name the actual work."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "What is the social environment?",
+        "What is a tribe?",
+        "What is a clan?",
+        "Which is bigger, a tribe or a clan?",
+        "What is a totem?",
+        "What is a legend?",
+        "Name the legend told among the Baganda.",
+        "Name the legend told in Bugisu.",
+        "Name the legend told among the Luo-speaking people.",
+        "What is migration?",
+        "What is the difference between immigration and emigration?",
+        "Give any four causes of migration.",
+        "What is a drought?",
+        "What is a settlement pattern?",
+        "Give any five factors that make people settle in a place.",
+        "Give any two reasons why some places have very few people.",
+        "Name any six types of work done by people in a district.",
+        "Give any three problems people face as they do their work.",
+        "Suggest one solution to poor transport.",
+        "Name the main tribe found in your own district."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "**People and the things that people make**",
+        "**A large group of people who share one language, one culture and one origin**",
+        "**A smaller group inside a tribe whose members believe they came from one ancestor**",
+        "A **tribe**",
+        "**An animal or plant that a clan respects and does not eat**",
+        "**An old story handed down by word of mouth**, telling how a people began",
+        "**Kintu and Nambi**",
+        "**Mundu and Sera**",
+        "**Labong and Gipir**",
+        "**The movement of people from one place to another to settle**",
+        "**Immigration** is moving **into** a place; **emigration** is moving **out of** a place.",
+        "Any four of **search for water, food and pasture; looking for jobs; epidemics; droughts; running away from conflicts; search for fertile soils**",
+        "**A long time without rain**",
+        "**The way people's homes are arranged in a place**",
+        "Any five of **fertile soil, enough and reliable rainfall, trade, jobs, enough food, good security and peace, social services**",
+        "Any two of **poor soil, little rain, steep slopes, thick forests, big swamps, insecurity, pests and diseases, no roads or schools or water**",
+        "Any six of **fishing, farming, pottery, brick laying, craft working, trading, teaching, office work**",
+        "Any three of **insecurity and wars, diseases of animals and birds, poor health, poor transport, bad weather, poor prices, lack of money**",
+        "**Repair the roads** (or use better vehicles, or build bridges)",
+        "*(Your own answer — the tribe really found in your district.)*"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.4 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Tribe = big · **clan** = small part of a tribe · **totem** = the clan's animal or plant",
+        "Legends: **Kintu and Nambi** (Baganda) · **Mundu and Sera** (Bagisu) · **Labong and Gipir** (Luo)",
+        "**I**mmigration = coming **i**n · emigration = going out",
+        "People settle where there is: fertile soil · rain · peace · jobs · trade · services",
+        "Work: fishing · farming · pottery · brick laying · crafts · trading · teaching · office work",
+        "Problems: insecurity · animal diseases · poor health · poor transport"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, the period allocation (15 periods), the content list (origin of the people in our district — legends of some tribes, tribes found in our district, and clans that form tribes, all marked **new input** in the syllabus; causes of immigration; factors influencing settlement patterns; types of work; and problems faced by people as they work), the competences and the suggested activities — including modelling and weaving pots, mats and baskets, and discussing with parents why some places have more people than others — were taken from the official **NCDC Primary Four Social Studies Syllabus** (© NCDC 2010, ISBN 978-9970-117-49-9; pages 26–31 of the PDF in `curriculum/`), downloaded from **ncdc.go.ug**. The three legends named above — **Mundu and Sera**, **Labong and Gipir**, and **Kintu and Nambi** — are the syllabus's own examples."
+      },
+      {
+       "t": "p",
+       "x": "**The syllabus names those legends but does not print the stories**, and no version of any of them has been written out here, because no source document containing them is held. The learner is asked to get the story from an elder, the teacher or the library."
+      },
+      {
+       "t": "p",
+       "x": "**This topic is about the learner's own district.** No tribe, clan or totem has been assigned to any district here; where an answer depends on the learner's district, the notes leave the answer to the learner."
+      },
+      {
+       "t": "p",
+       "x": "The explanations, tables, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.4 was available, so the syllabus's own guidance was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P4_SST_T05",
+   "class": "P4",
+   "subject": "SST",
+   "topic_no": 5,
+   "title": "Our Leaders in the District",
+   "heading": "TOPIC 5: OUR LEADERS IN THE DISTRICT",
+   "slug": "our-leaders-in-the-district",
+   "periods": 25,
+   "curriculum_pages": "31–35",
+   "words": 1913,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term III, Topic 5, 25 periods (`curriculum/P4-SOCIAL-STUDIES-2010.pdf`, pages 31–35).*"
+      },
+      {
+       "t": "p",
+       "x": "**How to use this topic.** The syllabus asks about the leaders of **your own district**. These notes teach you the **groups of leaders**, what each does and how leaders are chosen. You fill in the names of the leaders where you live."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "name the different groups of leaders in the district",
+        "say what each group of leaders does",
+        "describe the local council structure from LC1 to LC5",
+        "explain how leaders are chosen",
+        "describe how an election is carried out",
+        "say what makes a good leader"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. WHAT A LEADER IS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A **leader** is a person who **guides, plans and organises other people** so that work is done well and people live in peace."
+      },
+      {
+       "t": "p",
+       "x": "**Why we need leaders:** to keep law and order · to plan development · to settle quarrels · to speak for the people · to look after public property · to represent the people to government."
+      }
+     ]
+    },
+    {
+     "title": "2. THE FOUR GROUPS OF LEADERS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The syllabus puts the leaders of a district into **four groups**."
+      },
+      {
+       "t": "h3",
+       "x": "(a) Political leaders"
+      },
+      {
+       "t": "p",
+       "x": "Chosen by the people, or appointed by government, to govern."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Leader",
+        "Where they work"
+       ],
+       "rows": [
+        [
+         "**LC1 chairperson**",
+         "The village"
+        ],
+        [
+         "**LC2 chairperson**",
+         "The parish"
+        ],
+        [
+         "**LC3 chairperson**",
+         "The sub-county"
+        ],
+        [
+         "**LC4 chairperson**",
+         "The county"
+        ],
+        [
+         "**LC5 chairperson**",
+         "The **whole district**"
+        ],
+        [
+         "**RDC** — Resident District Commissioner",
+         "Represents the **President** in the district"
+        ],
+        [
+         "**DISO** — District Internal Security Officer",
+         "Looks after security in the district"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "(b) Civic leaders"
+      },
+      {
+       "t": "p",
+       "x": "These are **government officers**. They are **appointed** because of their training, not elected."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Leader",
+        "Work"
+       ],
+       "rows": [
+        [
+         "**CAO** — Chief Administrative Officer",
+         "The head of all civil servants in the district"
+        ],
+        [
+         "**District Health Officer**",
+         "In charge of health services and hospitals"
+        ],
+        [
+         "**District Agricultural Officer**",
+         "Advises farmers on crops and animals"
+        ],
+        [
+         "**Magistrate**",
+         "Hears cases in court"
+        ],
+        [
+         "**District Police Commander (DPC)**",
+         "Head of the police in the district"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "(c) Religious leaders"
+      },
+      {
+       "t": "p",
+       "x": "They lead people in worship and teach good behaviour."
+      },
+      {
+       "t": "p",
+       "x": "**Bishops · priests · reverends · pastors · sheikhs · khadis.**"
+      },
+      {
+       "t": "h3",
+       "x": "(d) Voluntary leaders"
+      },
+      {
+       "t": "p",
+       "x": "They lead **without being paid**, because they want to help."
+      },
+      {
+       "t": "p",
+       "x": "**Scouts and Guides leaders · leaders of NGOs** such as **UWESO**, **TASO** and **the Red Cross**."
+      },
+      {
+       "t": "note",
+       "x": "**UWESO** — Uganda Women's Effort to Save Orphans. **TASO** — The AIDS Support Organisation. These two are the syllabus's own examples of NGOs."
+      },
+      {
+       "t": "p",
+       "x": "**Fill this in for your own district:**"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Post",
+        "Name of the person"
+       ],
+       "rows": [
+        [
+         "My LC1 chairperson",
+         "*(name)*"
+        ],
+        [
+         "My LC5 chairperson",
+         "*(name)*"
+        ],
+        [
+         "My RDC",
+         "*(name)*"
+        ],
+        [
+         "My head teacher",
+         "*(name)*"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "3. HOW LEADERS ARE CHOSEN",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The syllabus gives **four** ways:"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Way",
+        "What it means",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**By election**",
+         "The people **vote** for the person they want",
+         "LC1 to LC5 chairpersons, Members of Parliament, class prefects"
+        ],
+        [
+         "**By appointment**",
+         "Someone in authority **chooses** the person",
+         "The RDC, the CAO, the District Health Officer"
+        ],
+        [
+         "**Through inheritance**",
+         "Leadership **passes down in a family**",
+         "Cultural leaders — a king, a chief, a clan head"
+        ],
+        [
+         "**By volunteering**",
+         "A person **offers himself or herself** to serve, unpaid",
+         "Scout leaders, Red Cross helpers, church group leaders"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "4. HOW AN ELECTION IS CARRIED OUT",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Step",
+        "What happens"
+       ],
+       "rows": [
+        [
+         "1. **Registration**",
+         "Names of those old enough to vote are written on the **voters' register**"
+        ],
+        [
+         "2. **Nomination**",
+         "Those who want the post put their names forward"
+        ],
+        [
+         "3. **Campaigning**",
+         "The candidates tell the people what they will do if chosen"
+        ],
+        [
+         "4. **Voting**",
+         "On polling day each voter marks a **ballot paper** and puts it in the **ballot box**"
+        ],
+        [
+         "5. **Counting**",
+         "The votes are counted in front of everyone"
+        ],
+        [
+         "6. **Declaring**",
+         "The **returning officer** announces the winner"
+        ],
+        [
+         "7. **Swearing in**",
+         "The winner takes an oath and starts work"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Words to know**"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**Candidate**",
+         "A person standing for a post"
+        ],
+        [
+         "**Voter**",
+         "A person who votes"
+        ],
+        [
+         "**Ballot paper**",
+         "The paper on which a voter marks a choice"
+        ],
+        [
+         "**Ballot box**",
+         "The box in which ballot papers are put"
+        ],
+        [
+         "**Secret ballot**",
+         "Voting in a way nobody else can see"
+        ],
+        [
+         "**Manifesto**",
+         "What a candidate promises to do"
+        ],
+        [
+         "**Free and fair election**",
+         "An election with no cheating and no force"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "x": "In Uganda, **lining up behind a candidate** was used long ago; today voting is by **secret ballot**."
+      }
+     ]
+    },
+    {
+     "title": "5. WHAT MAKES A GOOD LEADER",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "A good leader",
+        "A bad leader"
+       ],
+       "rows": [
+        [
+         "Is **honest** and does not steal",
+         "Is corrupt and takes bribes"
+        ],
+        [
+         "**Listens** to the people",
+         "Refuses to listen"
+        ],
+        [
+         "Is **fair** to everybody",
+         "Favours only friends and relatives"
+        ],
+        [
+         "**Keeps promises**",
+         "Forgets the promises made"
+        ],
+        [
+         "Is **hard-working**",
+         "Is lazy and often absent"
+        ],
+        [
+         "Is **humble and patient**",
+         "Is proud and rude"
+        ],
+        [
+         "Is **educated enough** for the work",
+         "Cannot read the papers of the office"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Duties of the people towards their leaders"
+      },
+      {
+       "t": "p",
+       "x": "Obey the law · pay taxes · attend meetings · vote wisely · respect leaders · report wrong acts · take part in community work."
+      }
+     ]
+    },
+    {
+     "title": "6. PREFECTS — LEADERS AT SCHOOL",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Your school is like a small district. Prefects are chosen the same way — by **nomination, campaigning and voting**."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Prefect",
+        "Work"
+       ],
+       "rows": [
+        [
+         "Head prefect",
+         "Leads all the other prefects"
+        ],
+        [
+         "Time keeper",
+         "Rings the bell and keeps time"
+        ],
+        [
+         "Sanitation prefect",
+         "Sees that the compound and toilets are clean"
+        ],
+        [
+         "Games prefect",
+         "Organises games and sports"
+        ],
+        [
+         "Dining hall prefect",
+         "Keeps order at meals"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Leader",
+         "A person who guides and organises other people"
+        ],
+        [
+         "Political leader",
+         "A leader chosen or appointed to govern"
+        ],
+        [
+         "Civic leader",
+         "A trained government officer appointed to a district post"
+        ],
+        [
+         "Religious leader",
+         "A person who leads people in worship"
+        ],
+        [
+         "Voluntary leader",
+         "A person who leads without being paid"
+        ],
+        [
+         "LC",
+         "Local Council"
+        ],
+        [
+         "RDC",
+         "Resident District Commissioner, who represents the President"
+        ],
+        [
+         "CAO",
+         "Chief Administrative Officer, head of civil servants in the district"
+        ],
+        [
+         "Election",
+         "Choosing a leader by voting"
+        ],
+        [
+         "Appointment",
+         "Choosing a leader by naming him or her to a post"
+        ],
+        [
+         "Inheritance",
+         "Receiving leadership from one's family line"
+        ],
+        [
+         "Candidate",
+         "A person standing for a post"
+        ],
+        [
+         "Ballot box",
+         "The box in which ballot papers are put"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "The four groups of leaders: **political, civic, religious and voluntary**.",
+        "The councils run **LC1 (village) → LC2 (parish) → LC3 (sub-county) → LC4 (county) → LC5 (district)**.",
+        "The **LC5 chairperson** heads the district council; the **CAO** heads the civil servants.",
+        "The **RDC represents the President** in the district.",
+        "Leaders are chosen **by election, by appointment, through inheritance or by volunteering**.",
+        "Voting today is by **secret ballot**.",
+        "A good leader is **honest, fair, hard-working** and **keeps promises**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Name the four groups of leaders in a district.",
+        "Who heads the local council at village level? The **LC1 chairperson**.",
+        "Who represents the President in a district? The **RDC**.",
+        "Give the full meaning of CAO — **Chief Administrative Officer**.",
+        "Give the full meaning of DISO — **District Internal Security Officer**.",
+        "Name two voluntary organisations given in the syllabus — **UWESO** and **TASO**.",
+        "Give two ways in which leaders are chosen.",
+        "Name two qualities of a good leader."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Saying the **RDC** is elected — the RDC is **appointed**.",
+        "Mixing up the **LC5 chairperson** (political, elected) with the **CAO** (civic, appointed).",
+        "Putting the LC levels in the wrong order.",
+        "Calling a bishop a political leader.",
+        "Saying a cultural leader is elected — cultural leadership is usually **inherited**.",
+        "Writing \"voting\" as the only way leaders are chosen."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Who is a leader?",
+        "Give any three reasons why we need leaders.",
+        "Name the four groups of leaders found in a district.",
+        "Name the local council levels from the village to the district.",
+        "Who is the head of the local council at the village?",
+        "Who heads the district council?",
+        "Who represents the President in the district?",
+        "Give the full meaning of RDC.",
+        "Give the full meaning of CAO.",
+        "Give the full meaning of DISO.",
+        "Name any three civic leaders in a district.",
+        "Name any four religious leaders.",
+        "Name any two voluntary organisations given in the syllabus.",
+        "Give the four ways in which leaders are chosen.",
+        "Which leaders are chosen through inheritance?",
+        "Name the steps followed in an election.",
+        "What is a ballot box used for?",
+        "What is a secret ballot?",
+        "Give any four qualities of a good leader.",
+        "Give any three duties of the people towards their leaders."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "**A person who guides, plans and organises other people**",
+        "Any three of **to keep law and order, to plan development, to settle quarrels, to speak for the people, to look after public property, to represent people to government**",
+        "**Political, civic, religious and voluntary leaders**",
+        "**LC1 (village), LC2 (parish), LC3 (sub-county), LC4 (county), LC5 (district)**",
+        "The **LC1 chairperson**",
+        "The **LC5 chairperson**",
+        "The **RDC**",
+        "**Resident District Commissioner**",
+        "**Chief Administrative Officer**",
+        "**District Internal Security Officer**",
+        "Any three of **CAO, District Health Officer, District Agricultural Officer, magistrate, District Police Commander**",
+        "Any four of **bishops, priests, reverends, pastors, sheikhs, khadis**",
+        "Any two of **UWESO, TASO, the Red Cross** (Scouts and Guides also accepted)",
+        "**By election, by appointment, through inheritance, and by volunteering**",
+        "**Cultural leaders** — for example a king, a chief or a clan head",
+        "**Registration, nomination, campaigning, voting, counting, declaring the winner, swearing in**",
+        "For **putting in the ballot papers** during voting",
+        "**Voting in a way that nobody else can see** whom you have chosen",
+        "Any four of **honest, fair, listens to people, keeps promises, hard-working, humble, patient, educated enough**",
+        "Any three of **obey the law, pay taxes, attend meetings, vote wisely, respect leaders, report wrong acts, take part in community work**"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.4 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Four groups: **political · civic · religious · voluntary**",
+        "**LC1** village → **LC2** parish → **LC3** sub-county → **LC4** county → **LC5** district",
+        "**RDC** = President's man · **CAO** = head of civil servants · **DPC** = head of police",
+        "Chosen by: **election · appointment · inheritance · volunteering**",
+        "Election steps: register → nominate → campaign → **vote** → count → declare → swear in",
+        "Good leader: honest · fair · listens · keeps promises · hard-working"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, the period allocation (25 periods), the content list (types of leaders in our district — political leaders LC1 to LC5, the RDC and the DISO; civic leaders including the CAO, District Health Officer, District Agricultural Officer, magistrates and the District Police Commander; religious leaders — bishops, priests, reverends, sheikhs, pastors and khadis; and voluntary leaders — Scouts, Guides and leaders of NGOs such as UWESO, TASO and the Red Cross; together with how leaders are chosen — by election, by appointment, through inheritance and by volunteering), the competences and the suggested activities — including role-playing an LC1 meeting, role-playing election procedures, drawing election posters, modelling a ballot paper and demonstrating campaigning to be prefects — were taken from the official **NCDC Primary Four Social Studies Syllabus** (© NCDC 2010, ISBN 978-9970-117-49-9; pages 31–35 of the PDF in `curriculum/`), downloaded from **ncdc.go.ug**."
+      },
+      {
+       "t": "p",
+       "x": "The **steps of an election** and the **qualities of a good leader** are set out here as ordinary teaching material to explain the syllabus's own content; the syllabus lists the activities but does not print a numbered procedure."
+      },
+      {
+       "t": "p",
+       "x": "**This topic is about the learner's own district.** No leader of any district is named here; where an answer depends on the learner's district, the notes leave the answer to the learner. Office-holders change, so no names are given."
+      },
+      {
+       "t": "p",
+       "x": "The explanations, tables, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.4 was available, so the syllabus's own guidance was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P4_SST_T06",
+   "class": "P4",
+   "subject": "SST",
+   "topic_no": 6,
+   "title": "How to Meet People's Needs in Our District",
+   "heading": "TOPIC 6: HOW TO MEET PEOPLE'S NEEDS IN OUR DISTRICT",
+   "slug": "how-to-meet-peoples-needs-in-our-district",
+   "periods": 25,
+   "curriculum_pages": "35–40",
+   "words": 2007,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term III, Topic 6, 25 periods (`curriculum/P4-SOCIAL-STUDIES-2010.pdf`, pages 35–40).*"
+      },
+      {
+       "t": "p",
+       "x": "**How to use this topic.** In P.3 you were briefly shown social services at the **sub-county**. Now you look at the whole **district**. These notes teach you the services, who provides them, the problems met and the solutions. You name the actual centres in your own district."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "explain what social services are",
+        "name the types of social services in a district",
+        "name the people who provide social services and match each to the service",
+        "name the problems met in providing social services",
+        "suggest solutions to those problems",
+        "say how the social service centres should be cared for"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. WHAT SOCIAL SERVICES ARE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Social services** are the **things provided to help people live well**, which people cannot easily provide for themselves alone."
+      },
+      {
+       "t": "p",
+       "x": "**Government has the responsibility of providing social services.** Government also allows some others to provide them on its behalf — **religious groups, private medical practitioners and business people**."
+      }
+     ]
+    },
+    {
+     "title": "2. TYPES OF SOCIAL SERVICES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The syllabus lists these:"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Service",
+        "What it provides",
+        "Where it is found"
+       ],
+       "rows": [
+        [
+         "**Education service**",
+         "Teaching and learning",
+         "Schools, technical institutes, libraries"
+        ],
+        [
+         "**Medical service**",
+         "Treatment and medicines",
+         "Hospitals, health centres, clinics"
+        ],
+        [
+         "**Security service**",
+         "Safety and law and order",
+         "Police stations, police posts, army barracks"
+        ],
+        [
+         "**Transport service**",
+         "Moving people and goods",
+         "Roads, bus parks, taxi stages, landing sites"
+        ],
+        [
+         "**Water service**",
+         "Clean, safe water",
+         "Boreholes, protected springs, taps, water tanks"
+        ],
+        [
+         "**Electricity service**",
+         "Power for light and machines",
+         "Power lines, transformers, solar panels"
+        ],
+        [
+         "**Housing service**",
+         "Places for people to live",
+         "Housing estates, staff quarters"
+        ],
+        [
+         "**Road maintenance**",
+         "Keeping roads in good order",
+         "Graders and road gangs at work"
+        ],
+        [
+         "**Banking**",
+         "Keeping and lending money",
+         "Banks, savings groups"
+        ],
+        [
+         "**Postal and communication**",
+         "Sending messages",
+         "Post office, telephones, faxes, **e-mail and websites**"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "x": "**Newer than the syllabus:** the syllabus (2010) lists **faxes** among the ways of communicating. Faxes are hardly used in Uganda today. **Mobile phones, mobile money and the internet** now do most of this work. The syllabus list is kept above because it is what the curriculum says, and the change is noted here."
+      }
+     ]
+    },
+    {
+     "title": "3. THE PEOPLE WHO PROVIDE SOCIAL SERVICES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The syllabus lists these providers:"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Provider",
+        "Service they give"
+       ],
+       "rows": [
+        [
+         "**Teachers**",
+         "Education"
+        ],
+        [
+         "**Doctors and nurses**",
+         "Medical care"
+        ],
+        [
+         "**Veterinary officers**",
+         "Treatment of animals"
+        ],
+        [
+         "**Police officers**",
+         "Security"
+        ],
+        [
+         "**Army officers**",
+         "Defence and security"
+        ],
+        [
+         "**Drivers**",
+         "Transport"
+        ],
+        [
+         "**Carpenters**",
+         "Furniture and building"
+        ],
+        [
+         "**Bankers**",
+         "Banking and safe keeping of money"
+        ],
+        [
+         "**Farmers**",
+         "Food"
+        ],
+        [
+         "**Shopkeepers**",
+         "Goods for sale"
+        ],
+        [
+         "**Local leaders and chiefs**",
+         "Organising the people, keeping order"
+        ],
+        [
+         "**Parents**",
+         "Food, clothing, shelter, school fees, love and care"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Match each one:** *A doctor* → *treats the sick.* *A veterinary officer* → *treats animals.* *A carpenter* → *makes doors, desks and furniture.*"
+      }
+     ]
+    },
+    {
+     "title": "4. PROBLEMS MET IN PROVIDING SOCIAL SERVICES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The syllabus lists these:"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Problem",
+        "What it causes"
+       ],
+       "rows": [
+        [
+         "**Poverty**",
+         "People cannot pay for services, and government has little money"
+        ],
+        [
+         "**Bad weather**",
+         "Floods and drought spoil roads and crops"
+        ],
+        [
+         "**Shortage of food**",
+         "Hunger makes people weak and unable to work"
+        ],
+        [
+         "**Theft**",
+         "Materials and equipment are stolen"
+        ],
+        [
+         "**Corruption**",
+         "Money meant for services is taken by dishonest people"
+        ],
+        [
+         "**Irresponsibility / not caring**",
+         "People damage and do not look after what is provided"
+        ],
+        [
+         "**Laziness**",
+         "Work is left undone"
+        ],
+        [
+         "**Idleness**",
+         "People waste time instead of working"
+        ],
+        [
+         "**High population**",
+         "Too many people for the few services there are"
+        ],
+        [
+         "**Poor attitude to work**",
+         "People do not do their work well"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "5. SOLUTIONS TO THE PROBLEMS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Problem",
+        "Suggested solution"
+       ],
+       "rows": [
+        [
+         "**Poverty**",
+         "Start income-generating work · join savings groups · work hard · learn skills"
+        ],
+        [
+         "**Bad weather**",
+         "Plant trees · irrigate · store food after harvest · build stronger roads"
+        ],
+        [
+         "**Shortage of food**",
+         "Grow more food crops · store food well · practise better farming"
+        ],
+        [
+         "**Theft**",
+         "Guard property · report thieves · fence and lock the centres"
+        ],
+        [
+         "**Corruption**",
+         "Report corrupt officers · punish them by law · keep clear records"
+        ],
+        [
+         "**Irresponsibility**",
+         "Teach people to care for public property · form user committees"
+        ],
+        [
+         "**Laziness and idleness**",
+         "Educate people on the dignity of work · create jobs"
+        ],
+        [
+         "**High population**",
+         "Family planning and education · build more schools and health centres"
+        ],
+        [
+         "**Poor attitude to work**",
+         "Train and supervise workers · reward good work"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "The syllabus also lists **providing medical services**, **controlling population growth** and **introducing group farming** among the solutions, and asks learners to plant short-term crops and draw posters on increasing food production."
+      }
+     ]
+    },
+    {
+     "title": "6. CARING FOR SOCIAL SERVICE CENTRES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Social service centres belong to **all of us**. Caring for them is everybody's work."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Centre",
+        "How to care for it"
+       ],
+       "rows": [
+        [
+         "**School**",
+         "Sweep and slash the compound · do not write on walls or break desks · use the latrine properly"
+        ],
+        [
+         "**Health centre**",
+         "Keep it clean · do not steal drugs · queue patiently"
+        ],
+        [
+         "**Borehole or spring**",
+         "Keep the surroundings clean · repair the handle · do not wash clothes at the source"
+        ],
+        [
+         "**Road**",
+         "Clear the trenches · do not dig in the road · fill small potholes"
+        ],
+        [
+         "**Market**",
+         "Throw rubbish in the pit · do not damage the stalls"
+        ],
+        [
+         "**Police post**",
+         "Report crime honestly · do not give false information"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**What a P.4 pupil can do:** take part in cleaning the school and the road to it, report damage to a teacher, use water carefully, and tell others why these places matter."
+      },
+      {
+       "t": "p",
+       "x": "**Road safety:** the syllabus asks learners to practise **safe ways of crossing the road** — **stop, look right, look left, look right again, and cross when it is clear**. Use a zebra crossing where there is one."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Social services",
+         "Things provided to help people live well"
+        ],
+        [
+         "Service provider",
+         "A person or group that gives a service"
+        ],
+        [
+         "Poverty",
+         "Lack of enough money and basic things"
+        ],
+        [
+         "Corruption",
+         "Dishonest use of a position for personal gain"
+        ],
+        [
+         "Veterinary officer",
+         "A person who treats animals"
+        ],
+        [
+         "Population",
+         "The number of people living in a place"
+        ],
+        [
+         "Public property",
+         "Property that belongs to everybody"
+        ],
+        [
+         "Maintenance",
+         "Keeping something in good working order"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**Government has the main responsibility** for providing social services.",
+        "Religious groups, private medical practitioners and business people also provide services **on government's behalf**.",
+        "The main services are **education, medical, security, transport, water, electricity, housing, road maintenance, banking, and postal and communication**.",
+        "A **veterinary officer** treats **animals**; a **doctor** treats **people**.",
+        "The biggest problems listed are **poverty, corruption, theft, high population and a poor attitude to work**.",
+        "Social service centres are **public property** and must be cared for by everybody.",
+        "Crossing a road: **stop, look right, left, right again, then cross**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "What are social services? Things provided to help people live well.",
+        "Name any four social services in your district.",
+        "Who provides education? **Teachers.**",
+        "Who treats animals? A **veterinary officer**.",
+        "Name three problems met in providing social services.",
+        "Give one solution to corruption.",
+        "Give two ways of caring for a borehole.",
+        "Who has the main responsibility of providing social services? **The government.**"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Saying a **doctor** treats animals — that is a **veterinary officer**.",
+        "Naming a service centre that is **not** in your own district.",
+        "Giving a **problem** when the question asks for a **solution**.",
+        "Forgetting that **parents** are also service providers.",
+        "Writing \"money\" alone as a solution to poverty — say **how** money is got.",
+        "Thinking only government must care for the centres — **everybody** must."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "What are social services?",
+        "Who has the main responsibility of providing social services?",
+        "Name any three groups allowed to provide services on behalf of government.",
+        "Name any six types of social services.",
+        "Where is the medical service found?",
+        "Which service is provided at a police post?",
+        "Name any six people who provide social services.",
+        "Who provides education?",
+        "Who treats animals?",
+        "What does a banker do?",
+        "What do parents provide for their children?",
+        "Name any five problems met in providing social services.",
+        "What is corruption?",
+        "Give one solution to poverty.",
+        "Give one solution to theft of school property.",
+        "Give one solution to a high population.",
+        "Give any three ways of caring for a school.",
+        "Give any two ways of caring for a borehole.",
+        "Give the steps to follow when crossing a road safely.",
+        "Name any two social service centres found in your own district."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "**Things provided to help people live well**, which people cannot easily provide alone",
+        "The **government**",
+        "**Religious groups, private medical practitioners and business people**",
+        "Any six of **education, medical, security, transport, water, electricity, housing, road maintenance, banking, postal and communication**",
+        "At **hospitals, health centres and clinics**",
+        "**Security** (law and order)",
+        "Any six of **teachers, doctors, nurses, veterinary officers, police officers, army officers, drivers, carpenters, bankers, farmers, shopkeepers, local leaders, chiefs, parents**",
+        "**Teachers**",
+        "A **veterinary officer**",
+        "**Keeps people's money safely and lends money**",
+        "**Food, clothing, shelter, school fees, love and care**",
+        "Any five of **poverty, bad weather, shortage of food, theft, corruption, irresponsibility, laziness, idleness, high population, poor attitude to work**",
+        "**The dishonest use of a position for personal gain** — for example taking money meant for services",
+        "Any one of **start income-generating work, join a savings group, work hard, learn a skill, group farming**",
+        "Any one of **guard the property, fence and lock the buildings, report thieves to the police**",
+        "Any one of **family planning and education, building more schools and health centres**",
+        "Any three of **sweep and slash the compound, do not write on the walls, do not break desks, use the latrine properly, plant trees, report damage**",
+        "Any two of **keep the surroundings clean, repair the handle, do not wash clothes at the source, keep animals away, fence it**",
+        "**Stop · look right · look left · look right again · cross when the road is clear** (use a zebra crossing where there is one)",
+        "*(Your own answer — two centres really found in your district.)*"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.4 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Social services = things that help people live well · **government** provides them",
+        "Education · medical · security · transport · water · electricity · housing · roads · banking · communication",
+        "Providers: teachers · doctors · nurses · **vets** · police · drivers · bankers · farmers · **parents**",
+        "Problems: poverty · bad weather · theft · **corruption** · laziness · high population",
+        "Care: keep clean · do not damage · report damage · they are **public property**",
+        "Crossing a road: **stop · right · left · right · cross**"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, the period allocation (25 periods), the content list (an explanation of what social services are; the types of social services — education, medical, security, transport, water, electricity and housing services, road maintenance, banking, and postal and communication such as telephones, faxes, e-mail and the websites; the people who provide them — local leaders, teachers, doctors, veterinary officers, nurses, police officers, farmers, drivers, carpenters, bankers, chiefs, parents, shopkeepers and army officers; the problems met — poverty, bad weather, shortage of food, theft, corruption, irresponsibility, laziness, idleness, high population and poor attitude to work; suggested solutions; and caring for social service centres, which the syllabus marks as **new input**), the competences and the suggested activities — including practising safe ways of crossing roads, cleaning the roads leading to school and home, visiting the market, drawing social service centres, listening to a resource person from the police, and composing songs and poems against bad practices — were taken from the official **NCDC Primary Four Social Studies Syllabus** (© NCDC 2010, ISBN 978-9970-117-49-9; pages 35–40 of the PDF in `curriculum/`), downloaded from **ncdc.go.ug**."
+      },
+      {
+       "t": "p",
+       "x": "The syllabus's mention of **faxes** is **older than present-day practice**, and this is flagged in the text above rather than presented as current."
+      },
+      {
+       "t": "p",
+       "x": "**This topic is about the learner's own district.** No service centre of any district is named here; where an answer depends on the learner's district, the notes leave the answer to the learner."
+      },
+      {
+       "t": "p",
+       "x": "The explanations, tables, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.4 was available, so the syllabus's own guidance was used directly instead."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

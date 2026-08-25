@@ -1,0 +1,1350 @@
+{
+  "subject": "sst",
+  "subject_name": "Social Studies with Religious Education",
+  "level": "PLE / Primary 7",
+  "year": 2008,
+  "paper_title": "PLE Social Studies with Religious Education 2008",
+  "total_questions": 55,
+  "duration_minutes": 135,
+  "format": "written",
+  "sections": {
+    "A": [
+      1,
+      40
+    ],
+    "B": [
+      41,
+      55
+    ]
+  },
+  "source": {
+    "verified": false,
+    "origin": "Transcript supplied by the project owner",
+    "obtained_from": "",
+    "checked_by": "",
+    "checked_date": "",
+    "notes": "Wording preserved verbatim from the supplied transcript. NOT yet cross-checked against the official UNEB booklet, so 'verified' stays false and no question claims UNEB origin. Answers were not supplied: every answer_status is 'not_supplied'. Three printed items are missing: the Q16 map symbol, the Q41 climate table and the Q46 map of Sudan."
+  },
+  "questions": [
+    {
+      "year": 2008,
+      "number": 1,
+      "section": "A",
+      "type": "short",
+      "question": "State one problem affecting cattle keeping in Karamoja region.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q1",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 2,
+      "section": "A",
+      "type": "short",
+      "question": "Give any importance of mountains to farmers who live near them.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q2",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 3,
+      "section": "A",
+      "type": "short",
+      "question": "Mention any one disadvantage of building in a wetland.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q3",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 4,
+      "section": "A",
+      "type": "short",
+      "question": "Give one reason why it was easier for the British to rule Buganda and not Lango or West Nile.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q4",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 5,
+      "section": "A",
+      "type": "short",
+      "question": "What is the similarity between the Motto of Uganda and the first verse of the National Anthem?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q5",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 6,
+      "section": "A",
+      "type": "short",
+      "question": "Why is Carl Peters important in the history of East Africa?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q6",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 7,
+      "section": "A",
+      "type": "short",
+      "question": "Give one reason why there are many different types of natural vegetation in Africa.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q7",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 8,
+      "section": "A",
+      "type": "short",
+      "question": "Suggest one way of improving the labour force in Africa.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q8",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 9,
+      "section": "A",
+      "type": "short",
+      "question": "Give one reason why landslides are not common in many parts of Central and Northern Uganda.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q9",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 10,
+      "section": "A",
+      "type": "short",
+      "question": "Name an international economic organization that includes Nigeria, Algeria and Libya.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q10",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 11,
+      "section": "A",
+      "type": "short",
+      "question": "State one way in which the coming of Arabs affected the people of East Africa.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q11",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 12,
+      "section": "A",
+      "type": "short",
+      "question": "State one way in which the police contributes to the welfare of other people in a community.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q12",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 13,
+      "section": "A",
+      "type": "short",
+      "question": "Give one contribution made by Omukama Kasagama of Toro in the colonization of Uganda by the British.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q13",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 14,
+      "section": "A",
+      "type": "short",
+      "question": "Mention the instrument that is used to measure the amount of rainfall at a weather station.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q14",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 15,
+      "section": "A",
+      "type": "short",
+      "question": "Name the ethnic group of people who occupy the North-Eastern part of Uganda.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q15",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 16,
+      "section": "A",
+      "type": "short",
+      "question": "Why is the symbol below important on a map?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q16",
+      "verified": false,
+      "asset": {
+        "kind": "symbol",
+        "file": null,
+        "status": "missing",
+        "caption": "Map symbol printed with Question 16",
+        "alt": ""
+      },
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 17,
+      "section": "A",
+      "type": "short",
+      "question": "In which way is the formation of Lake Kyoga different from that of Lake Edward?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q17",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 18,
+      "section": "A",
+      "type": "short",
+      "question": "Identify any one problem faced by people living near a cement industry.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q18",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 19,
+      "section": "A",
+      "type": "short",
+      "question": "Suggest any one way the government can help the people in rural areas to increase agricultural produce.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q19",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 20,
+      "section": "A",
+      "type": "short",
+      "question": "In which way does peace promote development of the country?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q20",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 21,
+      "section": "A",
+      "type": "short",
+      "question": "Why is it difficult to carry out crop farming in north-eastern Kenya?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q21",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 22,
+      "section": "A",
+      "type": "short",
+      "question": "State one reason controlling population increase is difficult.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q22",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 23,
+      "section": "A",
+      "type": "short",
+      "question": "How did the explorers contribute to the colonization of Uganda?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q23",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 24,
+      "section": "A",
+      "type": "short",
+      "question": "State the importance of political parties in Uganda before 1962.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q24",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 25,
+      "section": "A",
+      "type": "short",
+      "question": "On which dam is Sennar Dam found?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q25",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 26,
+      "section": "A",
+      "type": "short",
+      "question": "How is the harvesting of cocoa in Ghana different from harvesting coffee in Uganda?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q26",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 27,
+      "section": "A",
+      "type": "short",
+      "question": "State one way in which the African Union (A.U.) is helping member states to solve the problem of civil wars.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q27",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 28,
+      "section": "A",
+      "type": "short",
+      "question": "Apart from providing water for industrial use, how has Lake Victoria contributed to the growth of industries in Uganda?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q28",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 29,
+      "section": "A",
+      "type": "short",
+      "question": "In which way is an extinct volcano different from an active volcano?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q29",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 30,
+      "section": "A",
+      "type": "short",
+      "question": "Name the major crop grown in the Kirombero Irrigation Scheme in Tanzania.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q30",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 31,
+      "section": "A",
+      "type": "short",
+      "question": "Why did Egypt try to colonize Uganda?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q31",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 32,
+      "section": "A",
+      "type": "short",
+      "question": "How are camels helpful to the Berbers of North Africa?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q32",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 33,
+      "section": "A",
+      "type": "short",
+      "question": "Give one problem the builders of the Uganda Railway faced in the Nandi area.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q33",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 34,
+      "section": "A",
+      "type": "short",
+      "question": "State one reason why crop farming is common in the highlands area of Kisoro.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q34",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 35,
+      "section": "A",
+      "type": "short",
+      "question": "Apart from being cloudy or windy, give any one other change of weather.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q35",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 36,
+      "section": "A",
+      "type": "short",
+      "question": "Mention one reason why the Equator is marked 0°.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q36",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 37,
+      "section": "A",
+      "type": "alternative",
+      "question": null,
+      "parts": null,
+      "variants": {
+        "christian": {
+          "question": "Why did God create Eve?",
+          "parts": null
+        },
+        "islamic": {
+          "question": "Why did Allah create Hawa?",
+          "parts": null
+        }
+      },
+      "audience": "alternative",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q37",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 38,
+      "section": "A",
+      "type": "alternative",
+      "question": null,
+      "parts": null,
+      "variants": {
+        "christian": {
+          "question": "Why do Christians ask for the Holy Spirit to be with them?",
+          "parts": null
+        },
+        "islamic": {
+          "question": "Why is the angel who is always on the right-hand side of every Muslim important?",
+          "parts": null
+        }
+      },
+      "audience": "alternative",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q38",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 39,
+      "section": "A",
+      "type": "alternative",
+      "question": null,
+      "parts": null,
+      "variants": {
+        "christian": {
+          "question": "What is the difference between Cana and Canaan?",
+          "parts": null
+        },
+        "islamic": {
+          "question": "Give one way in which Yusuf's dream was fulfilled.",
+          "parts": null
+        }
+      },
+      "audience": "alternative",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q39",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 40,
+      "section": "A",
+      "type": "alternative",
+      "question": null,
+      "parts": null,
+      "variants": {
+        "christian": {
+          "question": "In which way does God communicate to his people?",
+          "parts": null
+        },
+        "islamic": {
+          "question": "How do Muslims show respect to the Holy House of Allah?",
+          "parts": null
+        }
+      },
+      "audience": "alternative",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q40",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 41,
+      "section": "B",
+      "type": "structured",
+      "question": "Study the table showing the climate of place A and answer:",
+      "parts": [
+        {
+          "label": "a",
+          "text": "In which month of the year does place A receive the highest amount of rainfall?",
+          "parts": null
+        },
+        {
+          "label": "b",
+          "text": "Give one reason why crops can be grown at any time of the year at place A.",
+          "parts": null
+        },
+        {
+          "label": "c",
+          "text": "Mention one cash crop that can grow well under this type of climate.",
+          "parts": null
+        },
+        {
+          "label": "d",
+          "text": "Calculate the temperature range of place A.",
+          "parts": null
+        }
+      ],
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q41",
+      "verified": false,
+      "asset": {
+        "kind": "table",
+        "file": null,
+        "status": "missing",
+        "caption": "Table showing the climate of place A",
+        "alt": ""
+      },
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 42,
+      "section": "B",
+      "type": "structured",
+      "question": null,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Mention any two problems that can be caused by floods.",
+          "parts": null
+        },
+        {
+          "label": "b",
+          "text": "Give two ways in which the government can help the people affected by floods.",
+          "parts": null
+        }
+      ],
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q42",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 43,
+      "section": "B",
+      "type": "structured",
+      "question": null,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Give the importance of each of the following in the development of an industry:",
+          "parts": [
+            {
+              "label": "i",
+              "text": "Labour",
+              "parts": null
+            },
+            {
+              "label": "ii",
+              "text": "Capital",
+              "parts": null
+            }
+          ]
+        },
+        {
+          "label": "b",
+          "text": "Mention any two reasons why good roads are important in the development of an industry.",
+          "parts": null
+        }
+      ],
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q43",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 44,
+      "section": "B",
+      "type": "structured",
+      "question": null,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Give any two reasons why people migrate from one place to another.",
+          "parts": null
+        },
+        {
+          "label": "b",
+          "text": "Mention any two problems caused by low population density in some rural areas.",
+          "parts": null
+        }
+      ],
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q44",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 45,
+      "section": "B",
+      "type": "structured",
+      "question": null,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Mention any two modern cattle-keeping methods being practiced today.",
+          "parts": null
+        },
+        {
+          "label": "b",
+          "text": "Which of the methods mentioned above is practiced mainly in Central Kenya?",
+          "parts": null
+        },
+        {
+          "label": "c",
+          "text": "How can artificial insemination help a cattle farmer in Uganda?",
+          "parts": null
+        }
+      ],
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q45",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 46,
+      "section": "B",
+      "type": "structured",
+      "question": "Study the map of Sudan and answer:",
+      "parts": [
+        {
+          "label": "a",
+          "text": "Name the country marked A.",
+          "parts": null
+        },
+        {
+          "label": "b",
+          "text": "What is the major cash crop grown in the area marked S?",
+          "parts": null
+        },
+        {
+          "label": "c",
+          "text": "Give one reason why area S is good for growing crops.",
+          "parts": null
+        },
+        {
+          "label": "d",
+          "text": "Mention any one problem faced by farmers in area S.",
+          "parts": null
+        }
+      ],
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q46",
+      "verified": false,
+      "asset": {
+        "kind": "map",
+        "file": null,
+        "status": "missing",
+        "caption": "Map of Sudan printed with Question 46",
+        "alt": ""
+      },
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 47,
+      "section": "B",
+      "type": "structured",
+      "question": null,
+      "parts": [
+        {
+          "label": "a",
+          "text": "State any two problems faced by Arabs when spreading Islam in East Africa.",
+          "parts": null
+        },
+        {
+          "label": "b",
+          "text": "Mention any two good changes the Arabs brought to East Africa.",
+          "parts": null
+        }
+      ],
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q47",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 48,
+      "section": "B",
+      "type": "structured",
+      "question": null,
+      "parts": [
+        {
+          "label": "a",
+          "text": "State any one of the children's rights.",
+          "parts": null
+        },
+        {
+          "label": "b",
+          "text": "Mention any one of the children's responsibilities.",
+          "parts": null
+        },
+        {
+          "label": "c",
+          "text": "State any two reasons why children should know their rights and responsibilities.",
+          "parts": null
+        }
+      ],
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q48",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 49,
+      "section": "B",
+      "type": "structured",
+      "question": null,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Mention any one area in Uganda where the people fought against British colonialists.",
+          "parts": null
+        },
+        {
+          "label": "b",
+          "text": "Give any two reasons why the people in those areas fought against the British.",
+          "parts": null
+        },
+        {
+          "label": "c",
+          "text": "In which way did Semei Kakungulu help the British colonialists in Uganda?",
+          "parts": null
+        }
+      ],
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q49",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 50,
+      "section": "B",
+      "type": "structured",
+      "question": null,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Give any two causes of large family sizes in Uganda.",
+          "parts": null
+        },
+        {
+          "label": "b",
+          "text": "Mention any two problems of having a large family.",
+          "parts": null
+        }
+      ],
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q50",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 51,
+      "section": "B",
+      "type": "structured",
+      "question": "Give any two ways in which each of the following has helped the people of Uganda:",
+      "parts": [
+        {
+          "label": "a",
+          "text": "Red Cross / Red Crescent",
+          "parts": null
+        },
+        {
+          "label": "b",
+          "text": "United Nations International Children's Emergency Fund (UNICEF)",
+          "parts": null
+        }
+      ],
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q51",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 52,
+      "section": "B",
+      "type": "structured",
+      "question": null,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Give any two reasons why it was important for African countries to unite after getting independence.",
+          "parts": null
+        },
+        {
+          "label": "b",
+          "text": "State any two reasons why most African countries continue to depend on foreign countries.",
+          "parts": null
+        }
+      ],
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q52",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 53,
+      "section": "B",
+      "type": "alternative_structured",
+      "question": null,
+      "parts": null,
+      "variants": {
+        "christian": {
+          "question": null,
+          "parts": [
+            {
+              "label": "a",
+              "text": "“Blessed are you among women and blessed is the fruit of your womb.” Who said these words?",
+              "parts": null
+            },
+            {
+              "label": "b",
+              "text": "What is the meaning of the word “fruit” mentioned above?",
+              "parts": null
+            },
+            {
+              "label": "c",
+              "text": "Why was Mary “blessed among women”?",
+              "parts": null
+            },
+            {
+              "label": "d",
+              "text": "“Behold, servant of the Lord; let it happen to me according to your word.” What lesson do we learn from this?",
+              "parts": null
+            }
+          ]
+        },
+        "islamic": {
+          "question": null,
+          "parts": [
+            {
+              "label": "a",
+              "text": "What did Muhammad do to the woman who wanted to poison him?",
+              "parts": null
+            },
+            {
+              "label": "b",
+              "text": "What happened to Muhammad when he went to ask for help from the people of Taif?",
+              "parts": null
+            },
+            {
+              "label": "c",
+              "text": "What didn't the people of Taif like about Muhammad?",
+              "parts": null
+            },
+            {
+              "label": "d",
+              "text": "What lesson do we learn from what happened to Muhammad?",
+              "parts": null
+            }
+          ]
+        }
+      },
+      "audience": "alternative",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q53",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 54,
+      "section": "B",
+      "type": "alternative_structured",
+      "question": null,
+      "parts": null,
+      "variants": {
+        "christian": {
+          "question": null,
+          "parts": [
+            {
+              "label": "a",
+              "text": "What is Holy Matrimony?",
+              "parts": null
+            },
+            {
+              "label": "b",
+              "text": "State one reason that may stop Holy Matrimony from taking place.",
+              "parts": null
+            },
+            {
+              "label": "c",
+              "text": "Give one reason that may allow someone who had married in church before to marry again.",
+              "parts": null
+            }
+          ]
+        },
+        "islamic": {
+          "question": null,
+          "parts": [
+            {
+              "label": "a",
+              "text": "What is Nikah?",
+              "parts": null
+            },
+            {
+              "label": "b",
+              "text": "Give three conditions that allow Nikah to take place.",
+              "parts": null
+            }
+          ]
+        }
+      },
+      "audience": "alternative",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q54",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2008,
+      "number": 55,
+      "section": "B",
+      "type": "structured",
+      "question": "For all candidates — both Christians and Muslims:",
+      "parts": [
+        {
+          "label": "a",
+          "text": "Give any two qualities of a God-fearing person.",
+          "parts": null
+        },
+        {
+          "label": "b",
+          "text": "State any two ways in which religious organizations have improved the lives of the people of Uganda.",
+          "parts": null
+        }
+      ],
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2008 — Q55",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    }
+  ]
+}

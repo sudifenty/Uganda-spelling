@@ -1,0 +1,3293 @@
+{
+ "class": "P6",
+ "subject": "SST",
+ "subject_name": "Social Studies",
+ "total": 5,
+ "words": 14202,
+ "topics": [
+  {
+   "id": "P6_SST_T01",
+   "class": "P6",
+   "subject": "SST",
+   "topic_no": 1,
+   "title": "The East African Community",
+   "heading": "TOPIC 1: THE EAST AFRICAN COMMUNITY",
+   "slug": "east-african-community",
+   "periods": 50,
+   "curriculum_pages": "317–325",
+   "words": 3167,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Six Curriculum, Set One, Social Studies Topic 1, 50 periods (`curriculum/P6-SET-ONE-2010.pdf`, topic outline page 311 and pages 317–325).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** In P.5 you studied **Uganda** — its people, their origin and their settlement. In P.6 you widen the picture to the whole of **East Africa**. The curriculum says plainly that, with the rebirth of the East African Community, **Rwanda and Burundi are now counted as part of East Africa**."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "describe the historical background of the East African Community (1967–1977)",
+        "give the reasons why the old Community collapsed",
+        "describe the revival of the Community and its benefits today",
+        "name the national symbols of the member countries and the symbols of the EAC",
+        "describe the peoples of East Africa, their cradle land and their ethnic groups",
+        "explain the factors that influence settlement, and population growth, distribution and density"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. THE OLD EAST AFRICAN COMMUNITY (1967–1977)",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definition"
+      },
+      {
+       "t": "p",
+       "x": "**East African Community (EAC):** An inter-governmental organisation of East African countries that work together for their political, economic and social development."
+      },
+      {
+       "t": "h3",
+       "x": "Formation"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Fact",
+        "Detail"
+       ],
+       "rows": [
+        [
+         "Year formed",
+         "**1967**"
+        ],
+        [
+         "Founder countries",
+         "**Uganda, Kenya and Tanzania**"
+        ],
+        [
+         "Headquarters",
+         "**Arusha, Tanzania**"
+        ],
+        [
+         "Personalities involved",
+         "**Milton Obote** (Uganda), **Jomo Kenyatta** (Kenya), **Julius Nyerere** (Tanzania)"
+        ],
+        [
+         "Year it collapsed",
+         "**1977**"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Location of the founder countries"
+      },
+      {
+       "t": "p",
+       "x": "Uganda is **landlocked**, lying north-west of Lake Victoria. Kenya lies to the **east** of Uganda and touches the Indian Ocean. Tanzania lies to the **south** and also touches the Indian Ocean."
+      },
+      {
+       "t": "h3",
+       "x": "Objectives of the old EAC"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "To promote **cooperation** among the member states.",
+        "To run **common services** together and save money.",
+        "To create a **common market** for the goods of member states.",
+        "To allow **free movement** of people, goods and services.",
+        "To promote **peace and unity** in the region.",
+        "To speak with **one voice** in world affairs."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Common services they shared"
+      },
+      {
+       "t": "p",
+       "x": "East African Airways · East African Railways and Harbours · East African Posts and Telecommunications · the East African Development Bank · a common currency (the East African shilling) · the University of East Africa · joint research institutes."
+      },
+      {
+       "t": "h3",
+       "x": "Benefits of the old Community"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "A **wider market** for goods produced in the region.",
+        "**Cheaper services**, because the three countries shared the cost.",
+        "**Free movement** of people and goods across the borders.",
+        "**Employment** for East Africans in the common services.",
+        "**Sharing of skills, ideas and research**.",
+        "Better **bargaining power** in world trade."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Reasons for the collapse of the EAC in 1977"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "**Differences in political ideologies** — Tanzania followed socialism (*Ujamaa*) while Kenya followed capitalism.",
+        "**Unequal sharing of benefits** — Kenya had more industries and gained the most, which the others resented.",
+        "**Personal differences between the leaders**, especially between Idi Amin and Julius Nyerere.",
+        "The **military coup in Uganda in 1971**, after which some members refused to recognise the new government.",
+        "**Lack of funds** and failure by members to pay their contributions.",
+        "**Nationalism and mistrust** — each state began to protect only its own interests.",
+        "Each country started its **own airline, currency and services**.",
+        "**Border closures and quarrels**, ending in the Uganda–Tanzania war of 1978–79."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "2. THE REVIVAL OF THE EAST AFRICAN COMMUNITY",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "How it came back"
+      },
+      {
+       "t": "p",
+       "x": "The three countries signed a new treaty in **Arusha in 1999**, and the new Community was officially launched in **2001**. **Rwanda and Burundi joined in 2007**, making five member states at the time this syllabus was written."
+      },
+      {
+       "t": "p",
+       "x": "**Note for today:** the Community has continued to grow. **South Sudan** joined in 2016, the **Democratic Republic of Congo** in 2022 and **Somalia** in 2024, so the EAC now has **eight member states**. Your syllabus was written when it had five, so both answers should be explained carefully in an examination."
+      },
+      {
+       "t": "h3",
+       "x": "Personalities involved in the revival"
+      },
+      {
+       "t": "p",
+       "x": "**Yoweri Museveni** (Uganda), **Daniel arap Moi** (Kenya) and **Benjamin Mkapa** (Tanzania) signed the treaty of 1999."
+      },
+      {
+       "t": "h3",
+       "x": "Objectives of the present EAC"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "To build a **customs union**, a **common market**, a **monetary union** and finally a **political federation**.",
+        "To promote **trade and investment** among members.",
+        "To allow **free movement** of people, labour, goods, services and capital.",
+        "To develop **joint infrastructure** — roads, railways, power lines, airports.",
+        "To keep **peace and security** in the region.",
+        "To improve the **standard of living** of East Africans."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Organs of the EAC"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Organ",
+        "Work"
+       ],
+       "rows": [
+        [
+         "**The Summit**",
+         "The heads of state; gives general direction"
+        ],
+        [
+         "**The Council of Ministers**",
+         "The main policy-making body"
+        ],
+        [
+         "**The Co-ordination Committee**",
+         "Coordinates the work of the sectoral committees"
+        ],
+        [
+         "**Sectoral Committees**",
+         "Prepare programmes in particular areas"
+        ],
+        [
+         "**East African Court of Justice**",
+         "Settles disputes about the treaty"
+        ],
+        [
+         "**East African Legislative Assembly (EALA)**",
+         "Makes the laws of the Community"
+        ],
+        [
+         "**The Secretariat**",
+         "The office in Arusha that runs the daily work"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Benefits of the present EAC"
+      },
+      {
+       "t": "p",
+       "x": "A **large market** of over 300 million people · easier and cheaper **cross-border trade** · **free movement** using national identity cards and the **East African passport** · **joint projects** such as roads, railways and power lines · **peace-keeping** and joint security · **employment** and business opportunities · **sharing of education** — East African students pay lower fees in one another's universities."
+      },
+      {
+       "t": "h3",
+       "x": "Symbols of the East African Community"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "The **EAC flag** — blue, black, green, gold and white with a map of East Africa in the middle.",
+        "The **EAC emblem (coat of arms)**.",
+        "The **EAC anthem** — *Wimbo wa Jumuiya ya Afrika Mashariki*.",
+        "The **East African passport**.",
+        "**Kiswahili**, the language that unites the region."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "National symbols of the member countries"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Country",
+        "Capital city",
+        "Currency",
+        "One well-known symbol"
+       ],
+       "rows": [
+        [
+         "Uganda",
+         "Kampala",
+         "Uganda shilling",
+         "The **crested crane**"
+        ],
+        [
+         "Kenya",
+         "Nairobi",
+         "Kenya shilling",
+         "The **shield and two spears**"
+        ],
+        [
+         "Tanzania",
+         "Dodoma",
+         "Tanzanian shilling",
+         "The **Uhuru torch**"
+        ],
+        [
+         "Rwanda",
+         "Kigali",
+         "Rwandan franc",
+         "The **crowned crane** on its emblem"
+        ],
+        [
+         "Burundi",
+         "Gitega",
+         "Burundian franc",
+         "The **lion** and three stars"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "Every country also has a **national flag, a national anthem, a coat of arms** and a **national motto**."
+      }
+     ]
+    },
+    {
+     "title": "3. THE PEOPLES OF EAST AFRICA",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "The cradle of the people of East Africa"
+      },
+      {
+       "t": "p",
+       "x": "**Cradle land:** The place where a people or a group first lived."
+      },
+      {
+       "t": "p",
+       "x": "East Africa is often called **the cradle of mankind**, because some of the oldest remains of early human beings have been found here — at **Olduvai Gorge** in Tanzania, at **Koobi Fora** and **Nariokotome** near Lake Turkana in Kenya, and at **Nsongezi** in Uganda."
+      },
+      {
+       "t": "h3",
+       "x": "Ethnic groups of East Africa"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Ethnic group",
+        "Cradle land",
+        "Examples of tribes"
+       ],
+       "rows": [
+        [
+         "**Bantu**",
+         "Congo–Cameroon region of West/Central Africa",
+         "Baganda, Banyankole, Bagisu, Bakiga (Uganda); Kikuyu, Luhya (Kenya); Chagga, Sukuma (Tanzania); Banyarwanda, Barundi"
+        ],
+        [
+         "**River–Lake Nilotes (Nilotics)**",
+         "Bahr-el-Ghazal, southern Sudan",
+         "Acholi, Langi, Alur, Japadhola (Uganda); Luo (Kenya)"
+        ],
+        [
+         "**Plain Nilotes (Nilo-Hamites)**",
+         "Ethiopian border area",
+         "Karimojong, Iteso, Kakwa (Uganda); Maasai, Turkana (Kenya)"
+        ],
+        [
+         "**Highland Nilotes**",
+         "Southern Ethiopia",
+         "Sebei (Uganda); Kalenjin, Nandi, Pokot (Kenya)"
+        ],
+        [
+         "**Cushites (Hamites)**",
+         "Ethiopian Highlands",
+         "Somali, Oromo, Borana (Kenya); Iraqw (Tanzania)"
+        ],
+        [
+         "**Pygmies (Batwa)**",
+         "Equatorial forests of Central Africa",
+         "Batwa of south-western Uganda, Rwanda and Burundi"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Visitors to East Africa and their contributions"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Visitors",
+        "Contributions"
+       ],
+       "rows": [
+        [
+         "**Arabs**",
+         "Trade, Islam, Kiswahili words and coastal towns; but also the slave trade"
+        ],
+        [
+         "**Persians (Shirazi)**",
+         "Coastal settlements, mosques, coins and building styles"
+        ],
+        [
+         "**Indians / Asians**",
+         "Trade and shops, the railway workforce, industries, Hinduism"
+        ],
+        [
+         "**Portuguese**",
+         "New crops such as maize, cassava, pawpaw and sweet potatoes; Fort Jesus in Mombasa"
+        ],
+        [
+         "**European explorers**",
+         "Mapped the interior and reported it to Europe"
+        ],
+        [
+         "**Missionaries**",
+         "Christianity, schools, hospitals, writing of local languages"
+        ],
+        [
+         "**Colonialists**",
+         "Roads, railways, towns, cash crops and new systems of administration; but Africans lost their independence"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Organisation long ago and today"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Then",
+        "Now"
+       ],
+       "rows": [
+        [
+         "**Centralised societies** with kings — Buganda (Kabaka), Bunyoro (Omukama), Ankole (Omugabe), Rwanda and Burundi (Umwami), Wanga in Kenya (Nabongo)",
+         "**Republics** headed by presidents, with parliaments, courts and local governments"
+        ],
+        [
+         "**Decentralised societies** with clan elders — Acholi, Karimojong, Kikuyu, Maasai",
+         "Districts, counties, sub-counties, parishes and villages (LCs)"
+        ],
+        [
+         "Economy: subsistence farming, cattle keeping, barter trade, iron working",
+         "Money economy, cash crops, industry, services and international trade"
+        ],
+        [
+         "Religion: traditional beliefs, gods and ancestors",
+         "Christianity, Islam and traditional beliefs together"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "4. SETTLEMENT AND POPULATION",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Factors that influence settlement in East Africa"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "**Fertile soils** for farming — the slopes of Mt Elgon, Kilimanjaro and the Lake Victoria basin.",
+        "**Reliable rainfall** and a good climate.",
+        "**Availability of water** — lakes, rivers and springs.",
+        "**Security** from enemies and from wild animals.",
+        "**Good transport** — roads, railways and lake ports.",
+        "**Employment** in towns, mines, plantations and industries.",
+        "**Absence of pests and diseases** such as tsetse flies and mosquitoes.",
+        "**Gentle relief** — flat and gently sloping land.",
+        "**Minerals**, which attract mining towns.",
+        "**Government policy**, such as resettlement schemes."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Population: three words you must not mix up"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**Population growth**",
+         "The increase in the number of people in an area over a period of time"
+        ],
+        [
+         "**Population distribution**",
+         "The way people are spread over an area"
+        ],
+        [
+         "**Population density**",
+         "The number of people living in one square kilometre"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Population density = total population ÷ total area (km²)**"
+      },
+      {
+       "t": "p",
+       "x": "*Example:* a district with 240,000 people and an area of 3,000 km² has a density of 240,000 ÷ 3,000 = **80 people per km²**."
+      },
+      {
+       "t": "h3",
+       "x": "Population figures"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Country",
+        "Latest national census",
+        "Population counted"
+       ],
+       "rows": [
+        [
+         "Uganda",
+         "2024",
+         "about **45.9 million**"
+        ],
+        [
+         "Kenya",
+         "2019",
+         "about 47.6 million"
+        ],
+        [
+         "Tanzania",
+         "2022",
+         "about 61.7 million"
+        ],
+        [
+         "Rwanda",
+         "2022",
+         "about 13.2 million"
+        ],
+        [
+         "Burundi",
+         "2008 (with later estimates)",
+         "about 12–13 million"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Census:** The official counting of all the people in a country. Uganda holds one about every ten years, and the 2024 census was the first digital one."
+      },
+      {
+       "t": "h3",
+       "x": "Causes of rapid population growth"
+      },
+      {
+       "t": "p",
+       "x": "High birth rate · early marriages · polygamy · better health services and immunisation · falling death rate · better food supply · religious and cultural beliefs about big families · low use of family planning · immigration and refugees."
+      },
+      {
+       "t": "h3",
+       "x": "Areas of dense and sparse population"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Densely populated",
+        "Sparsely populated"
+       ],
+       "rows": [
+        [
+         "Lake Victoria basin (Kampala, Kisumu, Mwanza)",
+         "Karamoja and northern Kenya (dry)"
+        ],
+        [
+         "Slopes of Mt Elgon, Kilimanjaro and Mt Kenya",
+         "Miombo woodlands of central Tanzania (tsetse flies)"
+        ],
+        [
+         "Kigezi and Rwanda highlands",
+         "Lake Turkana area (very hot and dry)"
+        ],
+        [
+         "Big towns — Nairobi, Kampala, Dar es Salaam",
+         "Swampy and forested areas"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Problems associated with high population density"
+      },
+      {
+       "t": "p",
+       "x": "Shortage of land and land conflicts · overcrowding and slums · unemployment · pressure on schools, hospitals and water · food shortage · poor sanitation and fast spread of disease · soil exhaustion and erosion · destruction of forests and wetlands · traffic congestion · increase in crime."
+      },
+      {
+       "t": "h3",
+       "x": "Solutions"
+      },
+      {
+       "t": "p",
+       "x": "Family planning education and services · educating girls and discouraging early marriage · creating jobs and supporting small businesses · resettling people in less crowded areas · building more schools, hospitals and houses · improving farming methods so that less land feeds more people · developing rural areas so that fewer people move to towns · planning towns properly."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "East African Community",
+         "An inter-governmental organisation of East African states"
+        ],
+        [
+         "Common market",
+         "An arrangement where member states trade freely with one another"
+        ],
+        [
+         "Cradle land",
+         "The place where a group of people first lived"
+        ],
+        [
+         "Ethnic group",
+         "A large group of people sharing origin, language family and customs"
+        ],
+        [
+         "Centralised society",
+         "A society ruled by one leader such as a king"
+        ],
+        [
+         "Decentralised society",
+         "A society ruled by clan elders, with no single king"
+        ],
+        [
+         "Population growth",
+         "The increase in the number of people over time"
+        ],
+        [
+         "Population distribution",
+         "The way people are spread over an area"
+        ],
+        [
+         "Population density",
+         "The number of people per square kilometre"
+        ],
+        [
+         "Census",
+         "The official counting of all people in a country"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "The old EAC was formed in **1967** by **Uganda, Kenya and Tanzania**, and collapsed in **1977**.",
+        "Its headquarters was and still is **Arusha, Tanzania**.",
+        "The founder leaders were **Obote, Kenyatta and Nyerere**.",
+        "The EAC was revived in **2001**; **Rwanda and Burundi joined in 2007**.",
+        "The law-making organ of the EAC is **EALA**; the top organ is the **Summit**.",
+        "East Africa is called the **cradle of mankind**; remains were found at **Olduvai Gorge**.",
+        "The main ethnic groups: **Bantu, River–Lake Nilotes, Plain Nilotes, Highland Nilotes, Cushites**.",
+        "**Population density = population ÷ area**.",
+        "Uganda's 2024 census counted about **45.9 million** people."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Year the EAC was formed — 1967. Year it collapsed — 1977. Year it was revived — 2001.",
+        "Headquarters of the EAC — Arusha, Tanzania.",
+        "One reason for the collapse of the old EAC — differences in political ideologies (or unequal sharing of benefits).",
+        "Two countries that joined the EAC in 2007 — Rwanda and Burundi.",
+        "Language that unites East Africa — Kiswahili.",
+        "Site where remains of early man were found in Tanzania — Olduvai Gorge.",
+        "The largest ethnic group in East Africa — the Bantu.",
+        "Official counting of people — a census.",
+        "One problem of a densely populated area — land shortage (or unemployment)."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "MAP WORK",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "On a map of East Africa you should be able to:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "draw and label **Uganda, Kenya, Tanzania, Rwanda and Burundi** and their capital cities",
+        "mark **Arusha** and label it \"EAC headquarters\"",
+        "shade the **densely populated areas** around Lake Victoria and the mountain slopes",
+        "shade the **sparsely populated areas** of Karamoja and northern Kenya",
+        "mark **Olduvai Gorge** in Tanzania"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Practice activity:** Draw the map of East Africa. Write inside each country its capital city and the year it became independent. Then shade in one colour the three founder members of the EAC and in another colour the two that joined in 2007."
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "What is the East African Community?",
+        "Name the three countries that formed the EAC in 1967 and the leader of each.",
+        "Where are the headquarters of the EAC?",
+        "Give any four reasons why the old East African Community collapsed.",
+        "In which year was the EAC revived, and which two countries joined it in 2007?",
+        "Name any four organs of the East African Community.",
+        "Give any four benefits of the present East African Community.",
+        "Name any three symbols of the East African Community.",
+        "Give the capital city and currency of each of the five East African countries named in the syllabus.",
+        "Why is East Africa called the cradle of mankind? Name one site where evidence was found.",
+        "Name the main ethnic groups of East Africa and give one tribe in each.",
+        "Give any four contributions of the Arabs and the missionaries to East Africa.",
+        "Give the difference between a centralised and a decentralised society, with one example of each.",
+        "Give any five factors that influence where people settle in East Africa.",
+        "Define population density. A district has 360,000 people and covers 4,500 km². Find its population density.",
+        "Give any four causes of rapid population growth in East Africa.",
+        "Name two densely populated and two sparsely populated areas of East Africa, giving a reason for each.",
+        "Give any five problems caused by a high population density.",
+        "Suggest any four solutions to the problems of a high population.",
+        "Draw the map of East Africa and mark the five countries of the syllabus and their capital cities."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "The East African Community is an inter-governmental organisation of East African countries that work together for their political, economic and social development.",
+        "Uganda — Milton Obote; Kenya — Jomo Kenyatta; Tanzania — Julius Nyerere.",
+        "Arusha, in Tanzania.",
+        "Any four of: differences in political ideologies; unequal sharing of benefits; personal differences between leaders; the 1971 coup in Uganda; lack of funds; nationalism and mistrust; each state starting its own services; border closures and war.",
+        "It was revived in **2001**; **Rwanda and Burundi** joined in **2007**.",
+        "Any four of: the Summit, the Council of Ministers, the Co-ordination Committee, Sectoral Committees, the East African Court of Justice, the East African Legislative Assembly, the Secretariat.",
+        "Any four of: a large market; cheaper cross-border trade; free movement of people and goods; joint projects such as roads and railways; peace and security; employment; lower university fees for East Africans.",
+        "Any three of: the EAC flag, the EAC emblem, the EAC anthem, the East African passport.",
+        "Uganda — Kampala, Uganda shilling; Kenya — Nairobi, Kenya shilling; Tanzania — Dodoma, Tanzanian shilling; Rwanda — Kigali, Rwandan franc; Burundi — Gitega, Burundian franc.",
+        "Because some of the oldest remains of early human beings have been found here. One site is **Olduvai Gorge** in Tanzania (also Koobi Fora in Kenya or Nsongezi in Uganda).",
+        "Bantu — Baganda; River–Lake Nilotes — Acholi; Plain Nilotes — Karimojong; Highland Nilotes — Sebei; Cushites — Somali. (Any correct tribe for each group.)",
+        "**Arabs:** brought trade, Islam, Kiswahili and built coastal towns. **Missionaries:** brought Christianity, started schools and hospitals, and wrote down local languages. (Any four points in total.)",
+        "A **centralised** society is ruled by one leader such as a king, for example Buganda under the Kabaka. A **decentralised** society has no single ruler and is led by clan elders, for example the Acholi or the Karimojong.",
+        "Any five of: fertile soils, reliable rainfall, availability of water, security, good transport, employment, absence of pests and diseases, gentle relief, minerals, government policy.",
+        "Population density is the number of people living in one square kilometre. 360,000 ÷ 4,500 = **80 people per km²**.",
+        "Any four of: high birth rate, early marriages, polygamy, improved health services, falling death rate, better food supply, cultural and religious beliefs, low use of family planning, immigration.",
+        "**Dense:** the Lake Victoria basin — fertile soils and reliable rainfall; the slopes of Mt Elgon or Kilimanjaro — fertile volcanic soils and relief rainfall. **Sparse:** Karamoja — too dry with little pasture and water; central Tanzania's miombo woodland — tsetse flies and poor soils.",
+        "Any five of: land shortage and conflicts; overcrowding and slums; unemployment; pressure on schools, hospitals and water; food shortage; poor sanitation and disease; soil exhaustion and erosion; destruction of forests and wetlands; traffic congestion; crime.",
+        "Any four of: family planning education and services; educating girls and discouraging early marriage; creating jobs; resettling people; building more social services; improving farming methods; developing rural areas; proper town planning.",
+        "*Learner's map.* Uganda — Kampala; Kenya — Nairobi; Tanzania — Dodoma; Rwanda — Kigali; Burundi — Gitega."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.6 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Old EAC **1967–1977**: Uganda, Kenya, Tanzania · Obote, Kenyatta, Nyerere · HQ **Arusha**",
+        "Collapse: ideologies · unequal benefits · leaders quarrelled · no funds",
+        "Revived **2001**; Rwanda and Burundi **2007** (today eight members)",
+        "Organs: Summit · Council of Ministers · **EALA** · Court of Justice · Secretariat",
+        "East Africa = **cradle of mankind** (Olduvai Gorge)",
+        "Groups: Bantu · River–Lake Nilotes · Plain Nilotes · Highland Nilotes · Cushites",
+        "**Density = population ÷ area** · Uganda 2024 census ≈ 45.9 million"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, sub-topics, competences and teacher guidance above were taken from the official **NCDC Primary Six Curriculum, Set One** (© NCDC 2010; topic outline page 311 and pages 317–325 of the PDF in `curriculum/`). The explanations, tables, examples, revision questions and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "Two figures are **newer than the 2010 syllabus** and are marked as such in the notes: the current EAC membership of eight states, and Uganda's 2024 census population of about 45.9 million (Uganda Bureau of Statistics). The syllabus itself was written when the EAC had five members."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.6 was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P6_SST_T02",
+   "class": "P6",
+   "subject": "SST",
+   "topic_no": 2,
+   "title": "Major Resources of East Africa",
+   "heading": "TOPIC 2: MAJOR RESOURCES OF EAST AFRICA",
+   "slug": "major-resources",
+   "periods": 30,
+   "curriculum_pages": "326–331",
+   "words": 2806,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Six Curriculum, Set One, Social Studies Topic 2, 30 periods (`curriculum/P6-SET-ONE-2010.pdf`, topic outline page 312 and pages 326–331).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** In P.5 you studied the resources of **Uganda**. In P.6 you study the resources of the **whole of East Africa** — the land, the minerals, the water and the fishing industry."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "name the major resources of East Africa and locate them",
+        "describe land as a resource: plants, animals, cultivation and tourism",
+        "name the minerals of East Africa, the types of mining and where minerals are found",
+        "describe the drainage of East Africa and the uses of water",
+        "describe fishing methods, preservation, importance, problems and solutions"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. WHAT RESOURCES ARE",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definitions"
+      },
+      {
+       "t": "p",
+       "x": "**Resource:** Anything found in the environment that people use to satisfy their needs."
+      },
+      {
+       "t": "p",
+       "x": "**Natural resource:** A resource provided by nature — land, water, minerals, vegetation, animals and climate."
+      },
+      {
+       "t": "p",
+       "x": "The major resources of East Africa are **land, minerals, water, vegetation, wildlife, climate and the people themselves**."
+      }
+     ]
+    },
+    {
+     "title": "2. LAND AS A RESOURCE",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "(a) Plants (vegetation)"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Vegetation type",
+        "Where in East Africa"
+       ],
+       "rows": [
+        [
+         "Tropical rain forest",
+         "Mabira and Budongo (Uganda), Kakamega (Kenya), Kivu shores"
+        ],
+        [
+         "Savannah grassland",
+         "Most of the region — the largest area"
+        ],
+        [
+         "Montane vegetation",
+         "Slopes of Kilimanjaro, Mt Kenya, Elgon and Rwenzori"
+        ],
+        [
+         "Semi-desert",
+         "Karamoja, northern Kenya, central Tanzania"
+        ],
+        [
+         "Mangrove forest",
+         "The Indian Ocean coast of Kenya and Tanzania"
+        ],
+        [
+         "Swamp vegetation",
+         "The Sudd edge, Lake Kyoga area, Kilombero"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Uses:** timber, poles, firewood and charcoal · medicine · pasture · raw materials for paper and furniture · protection of soil and water catchments · homes for wild animals · tourist attractions."
+      },
+      {
+       "t": "h3",
+       "x": "(b) Animals — domestic and wild"
+      },
+      {
+       "t": "p",
+       "x": "**Domestic animals:** cattle, goats, sheep, pigs, poultry, donkeys. Breeds of cattle include the local **Ankole long-horned** and **Zebu**, and the exotic **Friesian, Jersey and Guernsey**. They give meat, milk, hides and skins, manure, transport and money."
+      },
+      {
+       "t": "p",
+       "x": "**Wild animals:** elephants, lions, buffaloes, giraffes, zebras, antelopes, rhinos, gorillas and chimpanzees. They attract **tourists**, are used for research and education, and are part of our heritage."
+      },
+      {
+       "t": "h3",
+       "x": "(c) Cultivation — cash and food crops"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Crop type",
+        "Examples and where they are grown"
+       ],
+       "rows": [
+        [
+         "**Cash crops**",
+         "Coffee (Uganda, Kenya, Tanzania), tea (Kericho in Kenya, Fort Portal in Uganda), cotton (eastern Uganda, Tanzania), sugar cane (Kakira, Kinyara, Mumias), sisal (Tanga in Tanzania), pyrethrum (Kenya highlands), tobacco (West Nile), cloves (**Zanzibar and Pemba**), cashew nuts (southern Tanzania), vanilla (Uganda)"
+        ],
+        [
+         "**Food crops**",
+         "Matooke, maize, millet, sorghum, cassava, sweet potatoes, beans, groundnuts, rice, wheat"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Factors favouring crop growing:** fertile soils · reliable rainfall · suitable climate · availability of land and labour · markets and transport."
+      },
+      {
+       "t": "h3",
+       "x": "(d) Tourism"
+      },
+      {
+       "t": "p",
+       "x": "**Tourism:** Travelling to visit places of interest for pleasure, study or rest."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Attraction",
+        "Examples"
+       ],
+       "rows": [
+        [
+         "Game parks and reserves",
+         "**Serengeti, Ngorongoro** (Tanzania); **Maasai Mara, Tsavo, Amboseli** (Kenya); **Murchison Falls, Queen Elizabeth, Kidepo, Bwindi** (Uganda); **Akagera** (Rwanda); **Ruvubu** (Burundi)"
+        ],
+        [
+         "Mountains",
+         "Kilimanjaro, Mt Kenya, Rwenzori, Elgon, Virunga volcanoes"
+        ],
+        [
+         "Water features",
+         "Lake Victoria, the source of the Nile at Jinja, Murchison Falls, the Indian Ocean beaches"
+        ],
+        [
+         "Culture and history",
+         "Kasubi Tombs, Fort Jesus in Mombasa, Bagamoyo, traditional dances, the Kigali Genocide Memorial"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Importance of tourism:** foreign exchange · employment · government revenue · market for crafts and food · development of roads, hotels and airports · international friendship."
+      },
+      {
+       "t": "p",
+       "x": "**Problems of tourism:** poaching · insecurity and political unrest · poor roads to some parks · high cost of travel · destruction of habitats · few skilled guides · animals raiding gardens near parks."
+      }
+     ]
+    },
+    {
+     "title": "3. MINERALS",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definitions"
+      },
+      {
+       "t": "p",
+       "x": "**Mineral:** A useful substance obtained from the earth by mining."
+      },
+      {
+       "t": "p",
+       "x": "**Mining:** The process of removing minerals from the earth."
+      },
+      {
+       "t": "h3",
+       "x": "Minerals of East Africa and where they are found"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Country",
+        "Minerals"
+       ],
+       "rows": [
+        [
+         "**Uganda**",
+         "Copper (**Kilembe**), cobalt, limestone (**Hima, Tororo**), gold (Karamoja, Busia), salt (**Katwe**), iron ore (Muko), phosphates (Sukulu), oil (**Albertine Graben**)"
+        ],
+        [
+         "**Kenya**",
+         "Soda ash (**Lake Magadi**), fluorspar (Kerio Valley), limestone (Athi River), titanium (Kwale), gemstones, salt"
+        ],
+        [
+         "**Tanzania**",
+         "Diamonds (**Mwadui**), gold (**Geita**), **tanzanite** (Mererani), natural gas (Songo Songo), coal (Kiwira), tin, phosphates"
+        ],
+        [
+         "**Rwanda**",
+         "Cassiterite (tin), coltan, wolfram, gold"
+        ],
+        [
+         "**Burundi**",
+         "Nickel, gold, cassiterite, peat"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Types of mining"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Type",
+        "How it is done"
+       ],
+       "rows": [
+        [
+         "**Traditional**",
+         "Simple tools — hoes, pangas, pans and baskets; panning gold in river sand; digging shallow pits by hand"
+        ],
+        [
+         "**Modern (open cast)**",
+         "Removing the soil above and scooping the mineral with machines, as at Mwadui and Hima"
+        ],
+        [
+         "**Modern (shaft / underground)**",
+         "Digging deep shafts and tunnels, as at Kilembe"
+        ],
+        [
+         "**Drilling**",
+         "Boring deep holes for oil and natural gas"
+        ],
+        [
+         "**Dredging / alluvial**",
+         "Scooping minerals from river or lake beds"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Minerals as a source of income"
+      },
+      {
+       "t": "p",
+       "x": "They earn **foreign exchange** when exported · provide **employment** · give government **taxes and royalties** · provide **raw materials** for industries such as cement and steel · lead to the growth of **towns and roads** where mines are opened."
+      },
+      {
+       "t": "h3",
+       "x": "Problems of the mining industry"
+      },
+      {
+       "t": "p",
+       "x": "Shortage of **capital** and modern machinery · **low level of technology** and few skilled people · minerals in **remote areas** with poor roads · **accidents** and mine collapses · **pollution** and land degradation · minerals in **small scattered deposits** · unstable **world prices** · **smuggling** and illegal mining · displacement of people."
+      },
+      {
+       "t": "p",
+       "x": "**Solutions:** attract investment, train people in mining skills, improve roads to mining areas, enforce safety and environmental laws, add value by processing minerals at home, and fight smuggling."
+      }
+     ]
+    },
+    {
+     "title": "4. WATER AND DRAINAGE",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definition"
+      },
+      {
+       "t": "p",
+       "x": "**Drainage:** The way water is held and carried in an area by lakes, rivers, swamps, seas and oceans."
+      },
+      {
+       "t": "h3",
+       "x": "Lakes of East Africa"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Lake",
+        "Notes"
+       ],
+       "rows": [
+        [
+         "**Lake Victoria**",
+         "The largest in Africa; shared by Uganda, Kenya and Tanzania"
+        ],
+        [
+         "**Lake Tanganyika**",
+         "The deepest in Africa; Tanzania, D.R. Congo, Burundi, Zambia"
+        ],
+        [
+         "**Lake Albert, Edward, George, Kyoga, Wamala**",
+         "Uganda"
+        ],
+        [
+         "**Lake Turkana, Naivasha, Nakuru, Baringo, Magadi**",
+         "Kenya"
+        ],
+        [
+         "**Lake Natron, Eyasi, Manyara, Rukwa, Nyasa (Malawi)**",
+         "Tanzania"
+        ],
+        [
+         "**Lake Kivu**",
+         "Rwanda and D.R. Congo"
+        ],
+        [
+         "**Lake Rweru and Cohoha**",
+         "Burundi"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "Lakes are of different kinds: **rift valley** lakes (Tanganyika, Albert, Turkana), **depression** lakes (Victoria, Kyoga), **crater** lakes (Katwe, Nyamunuka) and **man-made** lakes (behind dams)."
+      },
+      {
+       "t": "h3",
+       "x": "Rivers of East Africa"
+      },
+      {
+       "t": "p",
+       "x": "**River Nile** (from Lake Victoria at Jinja, flowing north) · **Kagera** (the longest feeder of Lake Victoria) · **Tana** and **Athi–Galana** (Kenya) · **Rufiji, Pangani, Ruvuma, Ruaha** (Tanzania) · **Katonga, Semliki, Aswa** (Uganda) · **Ruvubu and Ruzizi** (Burundi and Rwanda)."
+      },
+      {
+       "t": "p",
+       "x": "**Other water bodies:** the **Indian Ocean** on the eastern side, and swamps such as those of Lake Kyoga, the Kilombero valley and Rwanda's Rugezi."
+      },
+      {
+       "t": "h3",
+       "x": "Uses of water in East Africa"
+      },
+      {
+       "t": "p",
+       "x": "Drinking and domestic use · **irrigation** (Mubuku, Doho, Mwea in Kenya) · **hydro-electric power** (Nalubaale, Kiira, Bujagali, Isimba, Karuma, Owen Falls; Kidatu in Tanzania) · **fishing** · **water transport** on lakes, rivers and the ocean · **tourism and sport** · industry · watering animals."
+      },
+      {
+       "t": "p",
+       "x": "**Problems:** pollution from factories and towns · water hyacinth · silting · drying up of lakes and wetlands · floods · water-borne diseases · water shortage in dry areas."
+      }
+     ]
+    },
+    {
+     "title": "5. FISHING",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definition"
+      },
+      {
+       "t": "p",
+       "x": "**Fishing:** The catching of fish and other water animals for food and for sale."
+      },
+      {
+       "t": "h3",
+       "x": "Fishing grounds"
+      },
+      {
+       "t": "p",
+       "x": "Lake Victoria (the biggest) · Lakes Kyoga, Albert, Edward and George · Lake Tanganyika · Lake Turkana · the **Indian Ocean** coast · fish ponds on farms."
+      },
+      {
+       "t": "p",
+       "x": "Common fish: **Nile perch (mputa), tilapia (ngege), silver fish (mukene), tuna, catfish, lungfish, sardines (dagaa)**."
+      },
+      {
+       "t": "h3",
+       "x": "Fishing methods"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Traditional",
+        "Modern"
+       ],
+       "rows": [
+        [
+         "Hooks and lines",
+         "Trawling with large nets pulled by boats"
+        ],
+        [
+         "Baskets and traps",
+         "Purse seining"
+        ],
+        [
+         "Spears and harpoons",
+         "Gill nets and long lines from motor boats"
+        ],
+        [
+         "Weirs and fences across streams",
+         "Fish farming in ponds and cages"
+        ],
+        [
+         "Poisoning and stunning (now illegal)",
+         "Use of echo sounders and refrigerated boats"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Preservation of fish"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Traditional",
+        "Modern"
+       ],
+       "rows": [
+        [
+         "Sun drying",
+         "Refrigeration and freezing"
+        ],
+        [
+         "Smoking",
+         "Canning"
+        ],
+        [
+         "Salting",
+         "Filleting and cold storage"
+        ],
+        [
+         "Deep frying",
+         "Modern processing factories, as at Jinja and Kisumu"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Importance of fishing to the people of East Africa"
+      },
+      {
+       "t": "p",
+       "x": "**Food** rich in protein · **employment** for fishermen, traders and factory workers · **income** for families · **foreign exchange** from exported Nile perch fillets · **raw materials** for fish-processing and animal-feed industries · government **revenue** through licences and taxes · growth of **landing sites and towns**."
+      },
+      {
+       "t": "h3",
+       "x": "Problems of the fishing industry"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "**Over-fishing** and use of **undersized nets**, which catch immature fish.",
+        "Use of **poison and explosives**, which kill all life in the water.",
+        "**Water hyacinth** blocking landing sites.",
+        "**Water pollution** from factories, towns and farms.",
+        "**Poor preservation and transport**, so fish goes bad.",
+        "**Lack of capital** for modern boats and equipment.",
+        "**Accidents and storms** on the lakes; many fishermen cannot swim.",
+        "**Insecurity** and theft of nets and engines.",
+        "**Diseases** such as bilharzia at landing sites.",
+        "**Low prices** paid to the fishermen by middlemen."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Solutions"
+      },
+      {
+       "t": "p",
+       "x": "Enforce laws on **net sizes and closed seasons** · ban poison and explosives · encourage **fish farming** in ponds and cages · remove water hyacinth · build **cold rooms** and improve roads to landing sites · give **loans and training** to fishermen · provide life jackets and weather warnings · form **fishermen's cooperatives** so they get fair prices · patrol the lakes."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Resource",
+         "Anything in the environment used to satisfy human needs"
+        ],
+        [
+         "Mineral",
+         "A useful substance obtained from the earth"
+        ],
+        [
+         "Mining",
+         "The removal of minerals from the earth"
+        ],
+        [
+         "Open cast mining",
+         "Mining by removing the soil above the mineral"
+        ],
+        [
+         "Shaft mining",
+         "Mining by sinking deep shafts underground"
+        ],
+        [
+         "Drainage",
+         "The way water is carried and held in an area"
+        ],
+        [
+         "Tourism",
+         "Travelling to visit places of interest"
+        ],
+        [
+         "Cash crop",
+         "A crop grown mainly for sale"
+        ],
+        [
+         "Food crop",
+         "A crop grown mainly for eating"
+        ],
+        [
+         "Over-fishing",
+         "Catching too many fish so that the stock cannot recover"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Copper is mined at **Kilembe** in Uganda; diamonds at **Mwadui** and gold at **Geita** in Tanzania; soda ash at **Lake Magadi** in Kenya.",
+        "**Tanzanite** is found only in Tanzania.",
+        "Cloves are the main cash crop of **Zanzibar and Pemba**; pyrethrum is grown in the **Kenya highlands**; sisal at **Tanga**.",
+        "**Lake Victoria** is the largest lake in Africa; **Lake Tanganyika** is the deepest.",
+        "The **River Nile** starts from Lake Victoria at Jinja and flows **north**.",
+        "Main fish: **Nile perch, tilapia and mukene**.",
+        "Traditional preservation: sun drying, smoking, salting. Modern: refrigeration and canning.",
+        "The biggest problem of the fishing industry is **over-fishing and the use of wrong fishing gear**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Mineral mined at Kilembe — copper. At Mwadui — diamonds. At Lake Magadi — soda ash.",
+        "Type of mining used at Kilembe — shaft (underground) mining.",
+        "Cash crop grown on the slopes of Mt Kilimanjaro — coffee.",
+        "Largest lake in East Africa — Lake Victoria.",
+        "Longest river that feeds Lake Victoria — River Kagera.",
+        "One modern method of fishing — trawling (or use of gill nets).",
+        "One traditional way of preserving fish — smoking (or sun drying, salting).",
+        "One way of solving over-fishing — using recommended net sizes and fish farming."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "MAP WORK",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "On a map of East Africa you should be able to locate and label:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "**Lake Victoria, Tanganyika, Turkana, Albert, Kyoga, Kivu** and the **Indian Ocean**",
+        "**River Nile, Kagera, Tana, Rufiji, Pangani**",
+        "Mining centres: **Kilembe, Hima, Katwe, Mwadui, Geita, Magadi, Mererani**",
+        "Game parks: **Serengeti, Maasai Mara, Murchison Falls, Queen Elizabeth, Akagera**",
+        "Cash-crop areas: coffee, tea, cotton, sisal and cloves"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Practice activity:** Draw the map of East Africa and use one symbol for minerals, one for game parks and one for fishing grounds. Add a key at the corner."
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "What is a natural resource? Name any five natural resources of East Africa.",
+        "Give any four uses of vegetation to the people of East Africa.",
+        "Name any four cash crops of East Africa and where each is grown.",
+        "Give any four factors that favour crop growing in East Africa.",
+        "What is tourism? Name any four tourist attractions in East Africa.",
+        "Give any four importances of tourism to East Africa.",
+        "Give any three problems facing the tourism industry.",
+        "Name the mineral mined at each of these places: Kilembe, Mwadui, Lake Magadi, Geita.",
+        "Give the difference between traditional and modern mining.",
+        "Name any two types of modern mining and give one example of each.",
+        "Give any four problems facing the mining industry in East Africa.",
+        "Name any four lakes and any three rivers of East Africa.",
+        "Give any five uses of water in East Africa.",
+        "Name any three traditional and three modern methods of fishing.",
+        "Give three traditional and two modern ways of preserving fish.",
+        "Give any five importances of fishing to the people of East Africa.",
+        "Give any five problems facing the fishing industry.",
+        "Suggest any five solutions to the problems of the fishing industry.",
+        "Why are minerals said to be a source of income to a country?",
+        "Draw the map of East Africa and mark on it Lake Victoria, the River Nile and Kilembe."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "A natural resource is a resource provided by nature. Any five of: land, water, minerals, vegetation, wildlife, climate, people.",
+        "Any four of: timber and poles, firewood and charcoal, medicine, pasture, raw materials for industry, protection of soil and water catchments, homes for wild animals, tourist attraction.",
+        "Any four, for example: coffee — Uganda and the slopes of Kilimanjaro; tea — Kericho in Kenya and Fort Portal in Uganda; cotton — eastern Uganda; sisal — Tanga in Tanzania; cloves — Zanzibar and Pemba; pyrethrum — the Kenya highlands.",
+        "Any four of: fertile soils, reliable rainfall, suitable climate, enough land, available labour, markets and good transport.",
+        "Tourism is travelling to visit places of interest for pleasure, study or rest. Attractions: Serengeti, Murchison Falls, Mt Kilimanjaro, the source of the Nile, the Indian Ocean beaches, the Kasubi Tombs (any four).",
+        "Any four of: it earns foreign exchange; it creates employment; it earns government revenue; it provides a market for crafts and food; it leads to development of roads, hotels and airports; it promotes international friendship.",
+        "Any three of: poaching, insecurity, poor roads to parks, high travel costs, destruction of habitats, shortage of skilled guides.",
+        "Kilembe — **copper**; Mwadui — **diamonds**; Lake Magadi — **soda ash**; Geita — **gold**.",
+        "Traditional mining uses simple hand tools such as hoes, pans and baskets and digs shallow pits, while modern mining uses machines, deep shafts, drilling and dredging, and produces much larger amounts.",
+        "Any two of: **open cast** — Hima limestone or Mwadui diamonds; **shaft (underground)** — Kilembe copper; **drilling** — oil in the Albertine Graben; **dredging** — minerals from river beds.",
+        "Any four of: shortage of capital, low technology and few skilled workers, remote deposits with poor roads, accidents, pollution, small scattered deposits, unstable world prices, smuggling.",
+        "Lakes: Victoria, Tanganyika, Albert, Kyoga, Turkana, Kivu (any four). Rivers: Nile, Kagera, Tana, Rufiji, Pangani (any three).",
+        "Any five of: drinking and domestic use, irrigation, hydro-electric power, fishing, transport, tourism and sport, industry, watering animals.",
+        "**Traditional:** hooks and lines, baskets and traps, spears, weirs (any three). **Modern:** trawling, purse seining, gill nets from motor boats, fish farming (any three).",
+        "**Traditional:** sun drying, smoking, salting. **Modern:** refrigeration and freezing, canning.",
+        "Any five of: it provides food rich in protein; employment; income for families; foreign exchange from exports; raw materials for industries; government revenue; growth of landing sites and towns.",
+        "Any five of: over-fishing; use of undersized nets; poison and explosives; water hyacinth; pollution; poor preservation and transport; lack of capital; accidents on the lakes; insecurity; low prices from middlemen.",
+        "Any five of: enforce laws on net sizes and closed seasons; ban poison and explosives; encourage fish farming; remove water hyacinth; build cold rooms and improve roads; give loans and training; provide life jackets; form cooperatives; patrol the lakes.",
+        "Because minerals are sold both at home and abroad, earning **foreign exchange**; they provide employment and wages; the government collects taxes and royalties from mining companies; and they supply raw materials for industries, which creates more income and jobs.",
+        "*Learner's map.* Lake Victoria in the middle of the region, the River Nile flowing north from Jinja, and Kilembe in western Uganda near the Rwenzori."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.6 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Resources: **land · minerals · water · vegetation · wildlife · climate · people**",
+        "Kilembe **copper** · Mwadui **diamonds** · Geita **gold** · Magadi **soda ash** · Mererani **tanzanite**",
+        "Mining: traditional (hand tools) · open cast · shaft · drilling · dredging",
+        "Victoria = largest · Tanganyika = deepest · Nile starts at **Jinja**",
+        "Fishing: traditional traps and spears · modern trawling and gill nets",
+        "Preserve: sun drying, smoking, salting → refrigeration, canning",
+        "Biggest fishing problem = **over-fishing and bad gear** → laws + fish farming"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, sub-topics, competences and teacher guidance above were taken from the official **NCDC Primary Six Curriculum, Set One** (© NCDC 2010; topic outline page 312 and pages 326–331 of the PDF in `curriculum/`). The explanations, tables, examples, revision questions and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.6 was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P6_SST_T03",
+   "class": "P6",
+   "subject": "SST",
+   "topic_no": 3,
+   "title": "Transport and Communication in East Africa",
+   "heading": "TOPIC 3: TRANSPORT AND COMMUNICATION IN EAST AFRICA",
+   "slug": "transport-and-communication",
+   "periods": 25,
+   "curriculum_pages": "332–336",
+   "words": 2477,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Six Curriculum, Set One, Social Studies Topic 3, 25 periods (`curriculum/P6-SET-ONE-2010.pdf`, topic outline page 313 and pages 332–336).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You know how people in your village send messages and move from place to place. In P.6 you study **communication and transport in the whole of East Africa** — how they were done long ago, how they are done today, and the good and bad side of each."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "define communication and transport",
+        "describe traditional means of communication and their challenges",
+        "describe modern means of communication, their challenges and solutions",
+        "describe traditional and modern means of transport in East Africa",
+        "give the advantages and disadvantages of the different forms of transport"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. COMMUNICATION",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definition"
+      },
+      {
+       "t": "p",
+       "x": "**Communication:** The sending and receiving of messages, information or ideas from one person or place to another."
+      },
+      {
+       "t": "h3",
+       "x": "Traditional means of communication"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Means",
+        "How it was used"
+       ],
+       "rows": [
+        [
+         "**Drums**",
+         "Different beats announced war, death, a meeting, a ceremony or danger"
+        ],
+        [
+         "**Alarms and screaming**",
+         "To call for help when there was danger, a thief or a fire"
+        ],
+        [
+         "**Horns and trumpets**",
+         "Blown to call people to a meeting, to hunt or to war"
+        ],
+        [
+         "**Whistles**",
+         "Used by hunters, herdsmen and leaders"
+        ],
+        [
+         "**Smoke signals**",
+         "Smoke from a fire on a hill warned of danger or called people"
+        ],
+        [
+         "**Specialised messengers**",
+         "Trusted runners carried word from the chief to the people"
+        ],
+        [
+         "**Rock pictures and signs**",
+         "Drawings and marks left to pass on messages, as at Nyero rock paintings"
+        ],
+        [
+         "**Fire and torches at night**",
+         "Warned of danger or guided people"
+        ],
+        [
+         "**Word of mouth and town criers**",
+         "Announcements made in the village"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Challenges of traditional communication"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Messages could be **misunderstood** or wrongly interpreted.",
+        "They covered a **short distance** only.",
+        "They were **slow**.",
+        "They needed a person who knew the **code** or the language.",
+        "Smoke and drums could not be used in **bad weather** or in war time secrecy.",
+        "The **enemy could hear** the drums and know the plan.",
+        "**No record** was kept of the message.",
+        "Messengers were attacked by wild animals or enemies, or got tired."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Modern means of communication"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Group",
+        "Examples"
+       ],
+       "rows": [
+        [
+         "**Postal services**",
+         "Letters, parcels, telegrams, post office boxes"
+        ],
+        [
+         "**Telephones**",
+         "Mobile phones and landlines; mobile money"
+        ],
+        [
+         "**Radio calls**",
+         "Used by police, health workers and organisations in remote places"
+        ],
+        [
+         "**Broadcasting**",
+         "Radio and television"
+        ],
+        [
+         "**Print media**",
+         "Newspapers, magazines, posters, notice boards, billboards"
+        ],
+        [
+         "**Electronic media**",
+         "The internet, e-mail, websites, social media, video calls"
+        ],
+        [
+         "**Others**",
+         "Fax machines, neon signs, sirens, church and school bells"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Advantages of modern communication"
+      },
+      {
+       "t": "p",
+       "x": "It is **fast** — a message reaches another country in seconds · it covers **long distances** · a **record** can be kept (letters, e-mails, recordings) · it carries **detail and pictures** · it can reach **many people at once** through radio and television · it creates **employment** and supports business."
+      },
+      {
+       "t": "h3",
+       "x": "Challenges in modern communication"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "It is **expensive** — phones, airtime, data and computers cost money.",
+        "Many rural areas have **no electricity** and poor **network coverage**.",
+        "**Illiteracy** — some people cannot read letters, newspapers or the internet.",
+        "**Language barriers**.",
+        "Poor **roads** delay the postal service.",
+        "**Breakdowns**, power cuts and network failures.",
+        "**Theft, fraud and con artists** using phones and the internet.",
+        "Spread of **false information (rumours)** and harmful content.",
+        "**Loss of privacy**."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Solutions to the challenges"
+      },
+      {
+       "t": "p",
+       "x": "Extend **electricity and network masts** to rural areas · encourage **adult literacy** and teach ICT in schools · make phones, data and airtime **cheaper** · improve **roads** for postal services · use **solar power** where there is no mains electricity · train people to check information before believing it · make and enforce **laws against fraud and cyber crime** · use local languages on radio."
+      }
+     ]
+    },
+    {
+     "title": "2. TRANSPORT",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definition"
+      },
+      {
+       "t": "p",
+       "x": "**Transport:** The movement of people and goods from one place to another."
+      },
+      {
+       "t": "h3",
+       "x": "Traditional means of transport"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Group",
+        "Examples"
+       ],
+       "rows": [
+        [
+         "**Human**",
+         "Walking on foot, head porterage, carrying on the back, stretchers, hammocks"
+        ],
+        [
+         "**Animals**",
+         "Donkeys, camels, oxen, horses; ox carts and sledges"
+        ],
+        [
+         "**Water**",
+         "Canoes made from tree trunks, rafts, **dhows** on the coast"
+        ],
+        [
+         "**Bridges**",
+         "Rope bridges, logs across streams, stepping stones"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Challenges:** slow · only small loads · tiring · dangerous (wild animals, robbers, drowning) · could not go far · goods such as milk and fish went bad on the way."
+      },
+      {
+       "t": "h3",
+       "x": "Modern means of transport"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Type",
+        "Examples in East Africa"
+       ],
+       "rows": [
+        [
+         "**Road**",
+         "Bicycles, motorcycles (boda boda), cars, buses, lorries, trailers"
+        ],
+        [
+         "**Railway**",
+         "The old metre-gauge Kenya–Uganda railway (Mombasa–Kisumu, built 1896–1901), the Central Line in Tanzania (Dar es Salaam–Kigoma), **TAZARA** to Zambia, and the new **Standard Gauge Railway** in Kenya"
+        ],
+        [
+         "**Air**",
+         "Entebbe International Airport, Jomo Kenyatta International Airport (Nairobi), Julius Nyerere International Airport (Dar es Salaam), Kigali International Airport"
+        ],
+        [
+         "**Water**",
+         "Ferries and steamers on Lake Victoria (Port Bell, Jinja, Kisumu, Mwanza, Bukoba); ships at the ports of **Mombasa, Dar es Salaam and Tanga**"
+        ],
+        [
+         "**Pipeline**",
+         "The Eldoret–Mombasa oil pipeline; the crude-oil pipeline from Hoima being built to Tanga"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Advantages and disadvantages of each form of transport"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Form",
+        "Advantages",
+        "Disadvantages"
+       ],
+       "rows": [
+        [
+         "**Road**",
+         "Reaches almost everywhere, door to door; flexible; cheap for short distances",
+         "Accidents; traffic jams; roads damaged by rain; expensive for heavy loads over long distances"
+        ],
+        [
+         "**Railway**",
+         "Carries very heavy and bulky goods cheaply; few accidents; not affected by traffic jams",
+         "Very expensive to build; fixed routes only; slow; cannot reach every village"
+        ],
+        [
+         "**Air**",
+         "The **fastest**; good for perishables such as fish, flowers and medicine; reaches remote places",
+         "The **most expensive**; carries small loads; affected by bad weather; few airports"
+        ],
+        [
+         "**Water**",
+         "Cheapest for very heavy goods over long distances; carries bulky cargo",
+         "Very slow; only where there is water; storms and accidents; needs ports"
+        ],
+        [
+         "**Pipeline**",
+         "Carries oil, gas and water safely and continuously; low running cost; no traffic",
+         "Very costly to lay; carries liquids and gases only; leaks pollute the environment"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Importance of transport and communication"
+      },
+      {
+       "t": "p",
+       "x": "They carry **goods to markets** and raw materials to industries · they take people to **school, work and hospital** · they help **trade** within East Africa and with the world · they create **employment** · they spread **news and knowledge** · they help government services and **security** reach the people · they promote **unity and tourism** in the region."
+      },
+      {
+       "t": "h3",
+       "x": "Problems facing transport in East Africa"
+      },
+      {
+       "t": "p",
+       "x": "**Poor roads**, especially in rural areas and during the rains · **traffic jams** in big towns · **accidents** caused by careless driving and bad vehicles · **high fuel costs** · **old vehicles and trains** · **insecurity** and road robbery · rivers, mountains and swamps that make road building hard · being **landlocked**, as Uganda, Rwanda and Burundi are · shortage of funds for building and repair."
+      },
+      {
+       "t": "h3",
+       "x": "Solutions"
+      },
+      {
+       "t": "p",
+       "x": "Tarmac and repair the roads · widen roads and build by-passes in towns · enforce **traffic laws** and vehicle inspection · rebuild and extend the **railway** · improve lake ports and ferries · train drivers · strengthen regional cooperation through the **EAC** so that goods cross borders quickly · build pipelines for fuel · attract investment in transport."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Communication",
+         "The sending and receiving of messages or information"
+        ],
+        [
+         "Transport",
+         "The movement of people and goods from one place to another"
+        ],
+        [
+         "Traditional means",
+         "Ways used long ago, using local materials and skills"
+        ],
+        [
+         "Modern means",
+         "Ways that use present-day machines and technology"
+        ],
+        [
+         "Head porterage",
+         "Carrying goods on the head"
+        ],
+        [
+         "Dhow",
+         "A wooden sailing boat used on the Indian Ocean coast"
+        ],
+        [
+         "Pipeline",
+         "A line of pipes for carrying oil, gas or water"
+        ],
+        [
+         "Landlocked country",
+         "A country with no coastline of its own"
+        ],
+        [
+         "Perishable goods",
+         "Goods that go bad quickly, such as fish, milk and flowers"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Traditional communication: **drums, horns, whistles, smoke, messengers, alarms, rock signs**.",
+        "The biggest weakness of traditional communication is that it covered **only a short distance** and could be **misunderstood**.",
+        "Modern communication is **fast, keeps records and reaches far**, but it is costly and needs power and network.",
+        "The Kenya–Uganda railway was built from **Mombasa** and reached **Kisumu** in 1901.",
+        "The main sea ports of East Africa are **Mombasa (Kenya)** and **Dar es Salaam (Tanzania)**.",
+        "**Air transport** is the fastest but the most expensive; **water transport** is the cheapest for heavy goods but the slowest.",
+        "**Uganda, Rwanda and Burundi are landlocked** and depend on Mombasa and Dar es Salaam.",
+        "**Pipelines** carry only liquids and gases."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "One traditional means of communication — drums (or horns, smoke, messengers).",
+        "One challenge of traditional communication — the message could be misunderstood.",
+        "The fastest means of transport — air.",
+        "The cheapest means of transport for heavy goods over a long distance — water.",
+        "Main port used by Uganda — Mombasa.",
+        "Country in East Africa with no coastline — Uganda (also Rwanda and Burundi).",
+        "Means of transport used to carry oil — pipeline.",
+        "One cause of road accidents — careless driving (or poor roads, old vehicles)."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "MAP WORK",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "On a map of East Africa you should be able to locate and label:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "the ports of **Mombasa, Dar es Salaam and Tanga**",
+        "the lake ports of **Port Bell, Jinja, Kisumu, Mwanza and Bukoba**",
+        "**Entebbe, Nairobi (JKIA), Dar es Salaam and Kigali** international airports",
+        "the **Kenya–Uganda railway line** from Mombasa through Nairobi to Kampala",
+        "the **Central Line** and **TAZARA** in Tanzania"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Practice activity:** Draw the map of East Africa and use one colour for railway lines, one for the main roads to the coast, and dots for airports. Then write two sentences saying why Uganda depends on Mombasa and Dar es Salaam."
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Define communication and transport.",
+        "Name any five traditional means of communication.",
+        "Give any four challenges of traditional communication.",
+        "Name any six modern means of communication.",
+        "Give any four advantages of modern communication.",
+        "Give any four challenges facing modern communication in East Africa.",
+        "Suggest any four solutions to the challenges of modern communication.",
+        "Name any four traditional means of transport.",
+        "Give any three challenges of traditional transport.",
+        "Name the five modern forms of transport used in East Africa.",
+        "Give two advantages and two disadvantages of road transport.",
+        "Give two advantages and two disadvantages of air transport.",
+        "Why is water transport preferred for very heavy goods?",
+        "Name the two main sea ports used by the East African countries.",
+        "Name the three landlocked countries of East Africa.",
+        "Which means of transport is used to carry oil over long distances, and give one of its advantages?",
+        "Give any five importances of transport and communication in East Africa.",
+        "Give any five problems facing transport in East Africa.",
+        "Suggest any five solutions to the transport problems of East Africa.",
+        "Draw the map of East Africa and mark on it Mombasa, Dar es Salaam and Entebbe."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "**Communication** is the sending and receiving of messages, information or ideas. **Transport** is the movement of people and goods from one place to another.",
+        "Any five of: drums, horns, trumpets, whistles, smoke signals, specialised messengers, alarms and screaming, rock pictures and signs, town criers.",
+        "Any four of: messages could be misunderstood; they covered short distances; they were slow; one needed to know the code; the enemy could also hear them; no record was kept; messengers faced danger.",
+        "Any six of: letters and telegrams through the post office, telephones (mobile and landline), radio calls, radio, television, newspapers, notice boards and billboards, the internet, e-mail, fax.",
+        "Any four of: it is very fast; it covers long distances; records can be kept; it carries pictures and detail; it reaches many people at once; it supports business and creates jobs.",
+        "Any four of: high cost of phones, airtime and data; no electricity or network in rural areas; illiteracy; language barriers; poor roads delaying post; breakdowns and power cuts; fraud and con artists; false information.",
+        "Any four of: extend electricity and network masts to rural areas; promote adult literacy and ICT in schools; reduce the cost of airtime and data; improve roads; use solar power; enforce laws against fraud; broadcast in local languages.",
+        "Any four of: walking on foot, head porterage, stretchers, donkeys, camels, oxen and ox carts, canoes, rafts, dhows.",
+        "Any three of: it was slow; only small loads could be carried; it was tiring; it was dangerous because of wild animals, robbers and drowning; goods went bad on the way.",
+        "Road, railway, air, water and pipeline.",
+        "**Advantages:** it reaches almost everywhere, door to door, and it is flexible and cheap for short distances. **Disadvantages:** accidents and traffic jams; roads are damaged by rain and it is costly for heavy loads over long distances.",
+        "**Advantages:** it is the fastest and it is good for perishable goods and remote places. **Disadvantages:** it is the most expensive and it carries only small loads (it is also affected by bad weather).",
+        "Because it is the **cheapest** way of moving very heavy and bulky goods over long distances, and ships can carry huge amounts at once, even though it is slow.",
+        "**Mombasa** in Kenya and **Dar es Salaam** in Tanzania.",
+        "**Uganda, Rwanda and Burundi.**",
+        "A **pipeline**. It carries oil continuously and safely, with a low running cost and no traffic jams or accidents on the road.",
+        "Any five of: carrying goods to markets and raw materials to industries; taking people to school, work and hospital; promoting trade; creating employment; spreading news and knowledge; helping government services and security; promoting unity and tourism.",
+        "Any five of: poor roads; traffic jams; accidents; high fuel costs; old vehicles and trains; insecurity; difficult physical features such as swamps and mountains; being landlocked; shortage of funds.",
+        "Any five of: tarmac and repair roads; widen roads and build by-passes; enforce traffic laws and vehicle inspection; rebuild and extend the railway; improve lake ports and ferries; train drivers; strengthen EAC cooperation at borders; build pipelines; attract investment.",
+        "*Learner's map.* Mombasa and Dar es Salaam on the Indian Ocean coast, and Entebbe on the northern shore of Lake Victoria in Uganda."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.6 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Traditional communication: **drums · horns · whistles · smoke · messengers** — short distance, easily misunderstood",
+        "Modern communication: post · phone · radio · TV · internet — fast but costly, needs power and network",
+        "Traditional transport: foot · head porterage · animals · canoes · dhows",
+        "Modern transport: **road · rail · air · water · pipeline**",
+        "**Air = fastest and dearest** · **Water = cheapest for bulky goods but slowest**",
+        "Ports: **Mombasa** and **Dar es Salaam** · landlocked: **Uganda, Rwanda, Burundi**"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, sub-topics, competences and teacher guidance above were taken from the official **NCDC Primary Six Curriculum, Set One** (© NCDC 2010; topic outline page 313 and pages 332–336 of the PDF in `curriculum/`). The explanations, tables, examples, revision questions and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "The Standard Gauge Railway and the crude-oil pipeline mentioned in the notes are **newer than the 2010 syllabus** and are described as recent developments, not as syllabus content."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.6 was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P6_SST_T04",
+   "class": "P6",
+   "subject": "SST",
+   "topic_no": 4,
+   "title": "The Road to Independence in East Africa",
+   "heading": "TOPIC 4: THE ROAD TO INDEPENDENCE IN EAST AFRICA",
+   "slug": "road-to-independence",
+   "periods": 40,
+   "curriculum_pages": "337–343",
+   "words": 3106,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Six Curriculum, Set One, Social Studies Topic 4, 40 periods (`curriculum/P6-SET-ONE-2010.pdf`, topic outline page 314 and pages 337–343).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** In P.5 you learnt a little about foreigners in Uganda. In P.6 you follow the whole story for **East Africa**: the explorers, the colonialists, the struggle for independence country by country, what happened after independence, and how **democracy and elections** work today."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "describe the explorers — who they were, when they came, how they came and why",
+        "describe colonial settlement, administration and its impact on East Africans",
+        "describe the struggle for independence in Kenya, Tanganyika, Uganda, Burundi and Rwanda",
+        "describe post-independence East Africa and its challenges",
+        "explain democracy, citizenship, rights and responsibilities and the electoral process"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. THE COLONIAL PERIOD",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "The explorers"
+      },
+      {
+       "t": "p",
+       "x": "**Explorer:** A person who travels to an unknown place in order to find out about it."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Explorer",
+        "When",
+        "What he did"
+       ],
+       "rows": [
+        [
+         "**Krapf and Rebmann** (missionaries and explorers)",
+         "1840s",
+         "The first Europeans to see Mt Kilimanjaro and Mt Kenya"
+        ],
+        [
+         "**Burton and Speke**",
+         "1857–58",
+         "Reached Lake Tanganyika; Speke reached Lake Victoria"
+        ],
+        [
+         "**John Hanning Speke and James Grant**",
+         "1862",
+         "Reached the **source of the Nile at Jinja**"
+        ],
+        [
+         "**Sir Samuel Baker and his wife**",
+         "1864",
+         "Reached Lake Albert and Murchison Falls"
+        ],
+        [
+         "**Dr David Livingstone**",
+         "1850s–1873",
+         "Explored Central and East Africa and fought the slave trade"
+        ],
+        [
+         "**Henry Morton Stanley**",
+         "1871, 1875",
+         "Found Livingstone at Ujiji; sailed round Lake Victoria and wrote the letter inviting missionaries to Buganda"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "How and why they came"
+      },
+      {
+       "t": "p",
+       "x": "They came **by sea** to the coast and then walked inland with porters, using caravan routes. They came to find the **source of the Nile**, to **map** the interior, to look for **raw materials and markets**, to **spread Christianity**, to help **stop the slave trade**, and for **adventure and fame**. Many were sent by geographical societies or by their governments."
+      },
+      {
+       "t": "h3",
+       "x": "Their achievements"
+      },
+      {
+       "t": "p",
+       "x": "They mapped the lakes, rivers and mountains · they told Europe about East Africa · their reports helped to **end the slave trade** · they opened routes that later became roads and towns · they invited missionaries, who started schools and hospitals."
+      },
+      {
+       "t": "h3",
+       "x": "Challenges they faced"
+      },
+      {
+       "t": "p",
+       "x": "Tropical **diseases** such as malaria and sleeping sickness · **hostile people** who attacked them · **wild animals** · **thick forests, swamps, rivers and mountains** · **language barriers** · shortage of food and clean water · **desertion** by porters · long distances on foot."
+      },
+      {
+       "t": "h3",
+       "x": "Colonialists, settlement and administration"
+      },
+      {
+       "t": "p",
+       "x": "After the **Berlin Conference of 1884–85**, East Africa was shared out:"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Country",
+        "Colonial master"
+       ],
+       "rows": [
+        [
+         "**Uganda**",
+         "Britain (a **Protectorate**, 1894)"
+        ],
+        [
+         "**Kenya**",
+         "Britain (a **Colony**, with white settlers in the \"White Highlands\")"
+        ],
+        [
+         "**Tanganyika**",
+         "**Germany** first, then Britain after the First World War (as a mandated territory)"
+        ],
+        [
+         "**Zanzibar**",
+         "Britain (a Protectorate)"
+        ],
+        [
+         "**Rwanda and Burundi**",
+         "**Germany** first, then **Belgium** after the First World War"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Methods of administration:** the British used **indirect rule** — governing through existing chiefs, as with the Buganda Agreement of 1900. The Germans and the Belgians used mostly **direct rule**, with their own officers and appointed chiefs, and the Belgians in Rwanda and Burundi ruled through the king while deepening the divisions between groups."
+      },
+      {
+       "t": "h3",
+       "x": "Impact of colonialists on the people of East Africa"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Positive",
+        "Negative"
+       ],
+       "rows": [
+        [
+         "Roads, railways and towns were built",
+         "Africans **lost their independence** and their land"
+        ],
+        [
+         "Schools and hospitals were started",
+         "Forced labour and heavy **taxes**"
+        ],
+        [
+         "Christianity, Islam and formal education spread",
+         "African **culture was weakened**"
+        ],
+        [
+         "New cash crops — coffee, tea, cotton, sisal",
+         "Africans were made to grow crops for the coloniser"
+        ],
+        [
+         "The slave trade was stopped",
+         "Traditional rulers lost their power"
+        ],
+        [
+         "Money economy, trade and industries began",
+         "Borders divided tribes; new **ethnic divisions** were created"
+        ],
+        [
+         "Peace was enforced between warring groups",
+         "Exploitation of raw materials and cheap labour"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "2. THE STRUGGLE FOR INDEPENDENCE, COUNTRY BY COUNTRY",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Kenya Colony"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Kenya had many **white settlers**, who had taken the fertile **White Highlands**, so the struggle was hard.",
+        "Early movements: the **Young Kikuyu Association** (Harry Thuku), the **Kikuyu Central Association**, and later **KAU** and **KANU**.",
+        "The **Mau Mau uprising (1952–1960)** was an armed struggle for land and freedom; a state of emergency was declared and **Jomo Kenyatta** was imprisoned.",
+        "Kenya became independent on **12 December 1963**, with **Jomo Kenyatta** as leader, and a republic in 1964."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Tanganyika (Tanzania) Territory"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Africans resisted the Germans in the **Maji Maji rebellion (1905–1907)**.",
+        "**TANU** (Tanganyika African National Union) was formed in 1954 under **Julius Nyerere**.",
+        "The struggle was mainly **peaceful**, using meetings, newspapers and elections.",
+        "Tanganyika became independent on **9 December 1961** and a republic in 1962.",
+        "Zanzibar became independent in 1963 and had a revolution in January 1964; on **26 April 1964** Tanganyika and Zanzibar united to form **Tanzania**."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Uganda Protectorate"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Political parties were formed: the **Uganda National Congress (1952)**, the **Democratic Party (DP)**, the **Uganda People's Congress (UPC)** and **Kabaka Yekka (KY)**.",
+        "Farmers' cooperatives, trade unions and the press pressed for self-rule.",
+        "Uganda became independent on **9 October 1962**, with **Milton Obote** as Prime Minister and the **Kabaka, Sir Edward Mutesa II**, as the first President in 1963."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Burundi and Rwanda"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Both were ruled by **Belgium** after the First World War.",
+        "Both became independent on **1 July 1962**.",
+        "Burundi began as a kingdom and became a republic in 1966; Rwanda became a republic at independence.",
+        "Both suffered serious ethnic conflict afterwards, the worst being the **1994 genocide against the Tutsi in Rwanda**."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Why the Africans wanted independence"
+      },
+      {
+       "t": "p",
+       "x": "To **rule themselves** · to regain their **land** · to stop **forced labour and heavy taxes** · to end **racial discrimination** · to control their own **resources** · to restore **African dignity and culture** · to get better services, jobs and pay."
+      },
+      {
+       "t": "h3",
+       "x": "Methods used in the struggle"
+      },
+      {
+       "t": "p",
+       "x": "Forming **political parties** and **trade unions** · **strikes and boycotts** · **petitions and delegations** to the colonial government and to Britain · use of **newspapers** and public rallies · **armed struggle** where peaceful means failed, as in the Mau Mau · taking part in **elections** when they were allowed."
+      }
+     ]
+    },
+    {
+     "title": "3. POST-INDEPENDENCE EAST AFRICA",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "The first leaders of the independent countries"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Country",
+        "First leader at independence"
+       ],
+       "rows": [
+        [
+         "Kenya",
+         "**Jomo Kenyatta**"
+        ],
+        [
+         "Tanganyika / Tanzania",
+         "**Julius Nyerere**"
+        ],
+        [
+         "Uganda",
+         "**Milton Obote** (Prime Minister); Sir Edward Mutesa II, first President"
+        ],
+        [
+         "Rwanda",
+         "**Grégoire Kayibanda**"
+        ],
+        [
+         "Burundi",
+         "**Mwami Mwambutsa IV** (as king at independence)"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Formation of republics"
+      },
+      {
+       "t": "p",
+       "x": "**Republic:** A country in which the head of state is a president chosen by the people, not a king."
+      },
+      {
+       "t": "p",
+       "x": "Tanganyika became a republic in **1962**, Uganda in **1963** (and again under the 1967 constitution), Kenya in **1964**, Burundi in **1966**, and Rwanda at independence in **1962**."
+      },
+      {
+       "t": "h3",
+       "x": "Political parties today"
+      },
+      {
+       "t": "p",
+       "x": "Parties change with time, so learn the idea rather than only the names. Tanzania's ruling party has been **CCM (Chama Cha Mapinduzi)** since 1977; Uganda's is the **NRM**; Rwanda's is the **RPF**; Burundi's is the **CNDD–FDD**; Kenya has many parties that form coalitions at each election. All five countries today allow **multiparty politics**."
+      },
+      {
+       "t": "h3",
+       "x": "Challenges of post-independence East Africa"
+      },
+      {
+       "t": "p",
+       "x": "**Military coups** and unstable governments · **dictatorship** and abuse of human rights · **civil wars and rebellions** · the **1994 genocide against the Tutsi** in Rwanda · **tribalism and nepotism** · **corruption** · **poverty, unemployment and illiteracy** · **refugees** · heavy **foreign debts** · dependence on the export of raw materials · the collapse of the old EAC in 1977."
+      }
+     ]
+    },
+    {
+     "title": "4. DEMOCRATIC RULE IN EAST AFRICAN COUNTRIES",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definitions"
+      },
+      {
+       "t": "p",
+       "x": "**Democracy:** Government of the people, by the people and for the people — a system in which people choose their leaders and take part in how they are governed."
+      },
+      {
+       "t": "p",
+       "x": "**Citizen:** A full member of a country who owes it loyalty and enjoys its rights and protection."
+      },
+      {
+       "t": "h3",
+       "x": "The democratic process"
+      },
+      {
+       "t": "p",
+       "x": "Free and fair **elections** held regularly · **freedom of speech, assembly and the press** · respect for **human rights** and the **rule of law** · separation of powers between the **executive, legislature and judiciary** · accountability of leaders · involving people in decisions at village, district and national level."
+      },
+      {
+       "t": "h3",
+       "x": "Political and civic education"
+      },
+      {
+       "t": "p",
+       "x": "**Civic education** teaches citizens about their country, their constitution, their leaders, their rights and their duties, so that they can take part wisely. It is done through schools, radio, seminars, posters, drama and the Electoral Commission."
+      },
+      {
+       "t": "h3",
+       "x": "How one becomes a citizen"
+      },
+      {
+       "t": "p",
+       "x": "By **birth** · by **descent** (having a parent who is a citizen) · by **registration** (for example through marriage or long residence) · by **naturalisation**."
+      },
+      {
+       "t": "h3",
+       "x": "Rights and responsibilities of citizens"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Basic rights",
+        "Responsibilities"
+       ],
+       "rows": [
+        [
+         "The right to **life**",
+         "Obeying the laws of the country"
+        ],
+        [
+         "The right to **education**",
+         "**Paying taxes** honestly"
+        ],
+        [
+         "The right to **own property**",
+         "Protecting public property and the environment"
+        ],
+        [
+         "**Freedom of speech, worship and association**",
+         "**Voting** in elections"
+        ],
+        [
+         "The right to **health care**",
+         "Respecting the rights of others"
+        ],
+        [
+         "The right to a **fair trial**",
+         "Defending the country and keeping peace"
+        ],
+        [
+         "The right to **vote and to be voted for**",
+         "Reporting crime and being a good neighbour"
+        ],
+        [
+         "Freedom of **movement**",
+         "Working hard and caring for one's family"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "The electoral process"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "**Voter registration** and display of the voters' register.",
+        "**Nomination** of candidates by the Electoral Commission.",
+        "**Campaigning** within the given period and rules.",
+        "**Polling day** — voters queue, are checked against the register, are marked with ink, and cast a **secret ballot**.",
+        "**Counting** the votes at the polling station in the presence of agents and observers.",
+        "**Declaring the results** by the returning officer and the Electoral Commission.",
+        "**Swearing in** of the winner; complaints go to the courts."
+       ],
+       "start": 1
+      },
+      {
+       "t": "h3",
+       "x": "Challenges of the electoral process"
+      },
+      {
+       "t": "p",
+       "x": "**Rigging** and stuffing of ballot boxes · **bribery** of voters · **violence and intimidation** · **illiteracy**, so some voters cannot read the ballot · late delivery of materials and late opening of polling stations · **low voter turnout** · mistakes in the voters' register · shortage of **funds** · misuse of state resources · buying of voters' cards."
+      },
+      {
+       "t": "h3",
+       "x": "Solutions"
+      },
+      {
+       "t": "p",
+       "x": "Use a **strong, independent Electoral Commission** · use a **clean register** and modern identification · provide **civic and voter education** · deploy **observers, agents and police** · punish rigging and bribery · deliver materials on time · count and announce results openly · settle disputes through the **courts** rather than violence."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Explorer",
+         "A person who travels to an unknown place to find out about it"
+        ],
+        [
+         "Protectorate",
+         "A country protected and controlled by a stronger country, ruled through its own leaders"
+        ],
+        [
+         "Colony",
+         "A country ruled directly by a foreign power"
+        ],
+        [
+         "Indirect rule",
+         "Ruling a colony through the existing African chiefs"
+        ],
+        [
+         "Independence",
+         "Freedom of a country to govern itself"
+        ],
+        [
+         "Republic",
+         "A country whose head of state is an elected president"
+        ],
+        [
+         "Democracy",
+         "Government of the people, by the people and for the people"
+        ],
+        [
+         "Citizen",
+         "A full member of a country with rights and duties"
+        ],
+        [
+         "Electoral process",
+         "The steps followed in choosing leaders through voting"
+        ],
+        [
+         "Rigging",
+         "Cheating in an election"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**Speke and Grant** reached the source of the Nile at Jinja in **1862**.",
+        "The **Berlin Conference (1884–85)** shared out East Africa.",
+        "Uganda was a **Protectorate**; Kenya was a **Colony**; Tanganyika was German, then British.",
+        "**Rwanda and Burundi** were ruled by Germany, then **Belgium**.",
+        "Independence dates: **Tanganyika 9 December 1961 · Uganda 9 October 1962 · Rwanda and Burundi 1 July 1962 · Kenya 12 December 1963**.",
+        "Tanganyika and Zanzibar united on **26 April 1964** to form **Tanzania**.",
+        "The **Mau Mau** was the armed struggle in Kenya; **TANU** led Tanganyika; **UPC, DP and KY** were Uganda's parties.",
+        "A **secret ballot** means no one else knows how you voted.",
+        "The **Electoral Commission** organises elections."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Explorer who reached the source of the Nile — John Hanning Speke (with James Grant).",
+        "The conference that partitioned Africa — the Berlin Conference.",
+        "Colonial master of Rwanda and Burundi after the First World War — Belgium.",
+        "Method of administration used by the British — indirect rule.",
+        "Armed struggle in Kenya — the Mau Mau.",
+        "First Prime Minister of Uganda at independence — Milton Obote.",
+        "Date Uganda got independence — 9 October 1962.",
+        "Union that formed Tanzania — Tanganyika and Zanzibar, 1964.",
+        "One challenge of the electoral process — rigging (or bribery, violence, illiteracy).",
+        "One responsibility of a citizen — paying taxes (or obeying the law, voting)."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "MAP WORK",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "On a map of East Africa you should be able to:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "write inside each country the **year of independence** and the **first leader**",
+        "shade the countries once ruled by **Britain**, by **Germany** and later by **Belgium**",
+        "mark **Jinja** (the source of the Nile) and **Ujiji** (where Stanley found Livingstone)",
+        "mark the **White Highlands** of Kenya"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Practice activity:** Draw the map of East Africa and make a small table beside it with three columns: country, colonial master, date of independence. Fill it in from memory, then check your answers."
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Who is an explorer? Name any four explorers who came to East Africa.",
+        "Which two explorers reached the source of the Nile, and in which year?",
+        "Give any four reasons why the explorers came to East Africa.",
+        "Give any four challenges the explorers faced.",
+        "Name the colonial master of each: Uganda, Kenya, Tanganyika (after 1919), Rwanda and Burundi.",
+        "Give the difference between a colony and a protectorate.",
+        "What is indirect rule, and which colonial power used it?",
+        "Give any four positive and four negative effects of colonial rule in East Africa.",
+        "What was the Mau Mau, and in which country did it take place?",
+        "Give the date of independence of Uganda, Kenya, Tanganyika, Rwanda and Burundi.",
+        "Name the first leader of each East African country at independence.",
+        "How was Tanzania formed?",
+        "Give any four methods used by East Africans in the struggle for independence.",
+        "Give any five challenges faced by East African countries after independence.",
+        "Define democracy and give any four features of a democratic country.",
+        "Give four ways in which a person can become a citizen.",
+        "Give any five rights and five responsibilities of a citizen.",
+        "Outline the steps of the electoral process.",
+        "Give any five challenges of the electoral process and three solutions.",
+        "Draw the map of East Africa and write in each country its year of independence."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "An explorer is a person who travels to an unknown place in order to find out about it. Any four of: Speke, Grant, Burton, Baker, Livingstone, Stanley, Krapf, Rebmann.",
+        "**John Hanning Speke and James Grant**, in **1862**.",
+        "Any four of: to find the source of the Nile; to map the interior; to look for raw materials and markets; to spread Christianity; to help stop the slave trade; for adventure and fame.",
+        "Any four of: tropical diseases; hostile people; wild animals; thick forests, swamps and mountains; language barriers; shortage of food and clean water; desertion by porters.",
+        "Uganda — **Britain**; Kenya — **Britain**; Tanganyika after 1919 — **Britain** (Germany before); Rwanda and Burundi — **Belgium** (Germany before).",
+        "A **colony** is ruled directly by the foreign power, whose officers govern it; a **protectorate** is protected and controlled by the foreign power but is governed largely through its own traditional rulers.",
+        "Indirect rule is governing a colony through the existing African chiefs and traditional systems. It was used by **Britain**.",
+        "**Positive:** roads and railways were built; schools and hospitals were started; new cash crops were introduced; the slave trade was stopped (any four). **Negative:** Africans lost independence and land; forced labour and heavy taxes; African culture was weakened; traditional rulers lost power; raw materials were exploited (any four).",
+        "The Mau Mau was an **armed struggle (1952–1960)** for land and freedom. It took place in **Kenya**.",
+        "Uganda — 9 October 1962; Kenya — 12 December 1963; Tanganyika — 9 December 1961; Rwanda — 1 July 1962; Burundi — 1 July 1962.",
+        "Uganda — Milton Obote (Prime Minister), with Sir Edward Mutesa II as first President; Kenya — Jomo Kenyatta; Tanganyika — Julius Nyerere; Rwanda — Grégoire Kayibanda; Burundi — Mwami Mwambutsa IV.",
+        "Tanzania was formed on **26 April 1964** by the union of **Tanganyika and Zanzibar**.",
+        "Any four of: forming political parties; forming trade unions; strikes and boycotts; petitions and delegations; newspapers and rallies; armed struggle; taking part in elections.",
+        "Any five of: military coups; dictatorship and abuse of human rights; civil wars; the 1994 genocide against the Tutsi in Rwanda; tribalism and nepotism; corruption; poverty and unemployment; refugees; heavy foreign debts.",
+        "Democracy is government of the people, by the people and for the people. Features: free and fair elections; freedom of speech and the press; respect for human rights; the rule of law; accountable leaders (any four).",
+        "By **birth**, by **descent**, by **registration** and by **naturalisation**.",
+        "**Rights:** life, education, property, freedom of speech and worship, health care, a fair trial, voting, movement (any five). **Responsibilities:** obeying the law, paying taxes, protecting public property and the environment, voting, respecting others' rights, keeping peace, reporting crime (any five).",
+        "Voter registration → nomination of candidates → campaigning → polling day with a secret ballot → counting the votes → declaring the results → swearing in of the winner (with complaints going to the courts).",
+        "**Challenges:** rigging; bribery of voters; violence and intimidation; illiteracy; late delivery of materials; low turnout; errors in the register (any five). **Solutions:** an independent Electoral Commission with a clean register; civic and voter education; observers, agents and police at polling stations, with rigging and bribery punished (any three).",
+        "*Learner's map.* Tanganyika 1961, Uganda 1962, Rwanda 1962, Burundi 1962, Kenya 1963."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.6 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**Speke and Grant 1862** — source of the Nile at Jinja",
+        "Berlin Conference **1884–85** · Uganda **Protectorate** · Kenya **Colony** · Rwanda and Burundi → **Belgium**",
+        "Britain = **indirect rule** · Germany and Belgium = direct rule",
+        "Independence: **Tanganyika 1961 · Uganda 9 Oct 1962 · Rwanda and Burundi 1 July 1962 · Kenya 12 Dec 1963**",
+        "**Tanzania = Tanganyika + Zanzibar, 1964**",
+        "Mau Mau = Kenya · TANU = Tanganyika · UPC, DP, KY = Uganda",
+        "Democracy: free elections, rights, rule of law · Citizenship: birth, descent, registration, naturalisation",
+        "Elections: register → nominate → campaign → **secret ballot** → count → declare → swear in"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, sub-topics, competences and teacher guidance above were taken from the official **NCDC Primary Six Curriculum, Set One** (© NCDC 2010; topic outline page 314 and pages 337–343 of the PDF in `curriculum/`). The explanations, tables, dates, revision questions and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "Because ruling parties change, the note on political parties gives the long-standing ones and warns the learner that the names change with each election; the syllabus itself asks only for \"current political parties of East African countries\"."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.6 was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P6_SST_T05",
+   "class": "P6",
+   "subject": "SST",
+   "topic_no": 5,
+   "title": "Responsible Living in the East African Environment",
+   "heading": "TOPIC 5: RESPONSIBLE LIVING IN THE EAST AFRICAN ENVIRONMENT",
+   "slug": "responsible-living",
+   "periods": 15,
+   "curriculum_pages": "344–346",
+   "words": 2646,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Six Curriculum, Set One, Social Studies Topic 5, 15 periods (`curriculum/P6-SET-ONE-2010.pdf`, topic outline page 315 and pages 344–346).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** In Topic 2 you saw how rich East Africa is in land, water, minerals and wildlife. In this last topic you learn how to **use those resources without destroying them**, and what happens when people live carelessly in the environment."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "explain the sustainable use and conservation of the environment",
+        "describe proper methods of farming and the use of alternative energy",
+        "explain waste management, including recycling and sewage disposal",
+        "state the work of the National Environment Management Authority (NEMA)",
+        "explain climate change and the consequences of irresponsible living",
+        "suggest solutions to environmental problems in East Africa"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. ENVIRONMENTAL PROTECTION",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definitions"
+      },
+      {
+       "t": "p",
+       "x": "**Environment:** Everything that surrounds us — land, water, air, plants, animals and people."
+      },
+      {
+       "t": "p",
+       "x": "**Environmental protection:** Taking care of the environment so that it is not damaged."
+      },
+      {
+       "t": "p",
+       "x": "**Sustainable use:** Using resources carefully today in a way that leaves enough for the people of tomorrow."
+      },
+      {
+       "t": "p",
+       "x": "**Conservation:** Protecting and looking after natural resources so that they are not used up or destroyed."
+      },
+      {
+       "t": "h3",
+       "x": "Sustainable use of the environment"
+      },
+      {
+       "t": "p",
+       "x": "**(a) Afforestation and reafforestation**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "**Afforestation** — planting trees in an area where there were no trees before.",
+        "**Reafforestation** — replanting trees in an area where trees were cut down.",
+        "**Agroforestry** — growing trees together with crops and animals on the same land."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**(b) Proper methods of farming**"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Method",
+        "What it does"
+       ],
+       "rows": [
+        [
+         "**Crop rotation**",
+         "Changing the crop grown on a plot each season so the soil is not exhausted"
+        ],
+        [
+         "**Mulching**",
+         "Covering the soil with dry grass or leaves to hold moisture and stop erosion"
+        ],
+        [
+         "**Terracing**",
+         "Cutting steps on a hillside to slow running water"
+        ],
+        [
+         "**Contour ploughing**",
+         "Ploughing across the slope instead of up and down"
+        ],
+        [
+         "**Strip cropping**",
+         "Planting crops in strips along the contour"
+        ],
+        [
+         "**Applying manure and compost**",
+         "Returning fertility to the soil naturally"
+        ],
+        [
+         "**Controlled grazing (paddocking)**",
+         "Preventing overgrazing and bare ground"
+        ],
+        [
+         "**Fallowing**",
+         "Resting the land for a season to recover"
+        ],
+        [
+         "**Planting cover crops**",
+         "Protecting the soil surface from rain and sun"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**(c) Alternative energy use**"
+      },
+      {
+       "t": "p",
+       "x": "Instead of cutting trees for firewood and charcoal, people can use **solar energy, biogas, hydro-electric power, wind energy, energy-saving stoves and briquettes** made from waste. These save trees, produce less smoke and are cheaper in the long run."
+      },
+      {
+       "t": "p",
+       "x": "**(d) Other conservation measures**"
+      },
+      {
+       "t": "p",
+       "x": "Gazetting **forest reserves, national parks and wetlands** · protecting **water catchment areas** · fighting **poaching** · controlling **bush burning** · educating the community · making and enforcing **environmental laws** · planting trees on public land and at school."
+      }
+     ]
+    },
+    {
+     "title": "2. WASTE MANAGEMENT",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definition"
+      },
+      {
+       "t": "p",
+       "x": "**Waste management:** The collecting, sorting, treating and disposing of rubbish and other waste in a safe way."
+      },
+      {
+       "t": "h3",
+       "x": "Types of waste"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Type",
+        "Examples"
+       ],
+       "rows": [
+        [
+         "**Biodegradable (rots)**",
+         "Food remains, peelings, leaves, paper, animal dung"
+        ],
+        [
+         "**Non-biodegradable (does not rot)**",
+         "Polythene bags (buveera), plastic bottles, glass, metal, batteries"
+        ],
+        [
+         "**Liquid waste**",
+         "Sewage, waste water from homes and factories"
+        ],
+        [
+         "**Industrial and medical waste**",
+         "Chemicals, oils, used syringes and drugs"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "The good ways of handling waste"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "**Reduce** — buy and use less of what becomes rubbish, especially polythene.",
+        "**Reuse** — use containers, bottles, sacks and jerrycans again.",
+        "**Recycle** — turn waste into new things: plastic into basins, paper into new paper, metal into tools, old tyres into sandals.",
+        "**Composting** — rot food waste and peelings into manure for the garden.",
+        "**Sorting** — separate waste that rots from waste that does not.",
+        "**Sanitary landfills** — bury waste in a prepared pit far from homes and water.",
+        "**Incineration** — burn medical and dangerous waste in a proper incinerator.",
+        "**Sewage treatment** — treat sewage in ponds or plants before it reaches rivers and lakes.",
+        "**Using latrines and toilets** properly.",
+        "**Community clean-up days** and public rubbish skips."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Dangers of poor waste disposal"
+      },
+      {
+       "t": "p",
+       "x": "Blocked drainage and **flooding** · **diseases** such as cholera, typhoid, dysentery and malaria · **pollution** of soil, water and air · bad smells · injuries from broken glass and metal · death of animals and fish that swallow polythene · ugly surroundings that drive away tourists."
+      }
+     ]
+    },
+    {
+     "title": "3. THE NATIONAL ENVIRONMENT MANAGEMENT AUTHORITY (NEMA)",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "What it is"
+      },
+      {
+       "t": "p",
+       "x": "**NEMA** is the Ugandan government body responsible for the management of the environment. It was set up under the National Environment Act and started work in **1995**, with its offices in Kampala. Other East African countries have similar bodies — Kenya has **NEMA** too, and Tanzania has **NEMC**."
+      },
+      {
+       "t": "h3",
+       "x": "Functions of NEMA"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "**Coordinating and supervising** all environmental activities in the country.",
+        "Making and enforcing **environmental standards and regulations**.",
+        "Carrying out **environmental impact assessments** before big projects such as factories, dams and roads are built.",
+        "**Monitoring** pollution of air, water and land.",
+        "Protecting **wetlands, forests, river banks and lake shores**.",
+        "**Educating the public** about the environment.",
+        "**Advising government** on environmental policy.",
+        "**Punishing offenders** who break environmental laws."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "4. CLIMATE CHANGE",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definition"
+      },
+      {
+       "t": "p",
+       "x": "**Climate change:** A long-term change in the normal climate of an area, such as rain becoming less reliable and temperatures rising."
+      },
+      {
+       "t": "h3",
+       "x": "Causes"
+      },
+      {
+       "t": "p",
+       "x": "**Deforestation** · **bush burning** · **swamp reclamation** · smoke from **factories and vehicles** · **overgrazing** · mining and quarrying · burning of fossil fuels · poor disposal of waste."
+      },
+      {
+       "t": "h3",
+       "x": "Signs and effects in East Africa"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Rains that come **late, stop early or fail** altogether.",
+        "**Longer droughts**, especially in Karamoja and northern Kenya.",
+        "**Heavier storms and floods**, as in Kasese, Bududa and Kampala.",
+        "**Melting of the ice** on Mt Kilimanjaro and Rwenzori.",
+        "Lakes and rivers **drying up**; falling water levels affect hydro-electric power.",
+        "**Famine** and loss of pasture; conflicts over water and grazing land.",
+        "More **crop pests and diseases**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "5. CONSEQUENCES OF IRRESPONSIBLE LIVING IN THE EAST AFRICAN ENVIRONMENT",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Consequence",
+        "How it happens"
+       ],
+       "rows": [
+        [
+         "**Floods**",
+         "Wetlands are filled in and drainage channels are blocked with rubbish"
+        ],
+        [
+         "**Mud and landslides**",
+         "Farming on steep slopes after clearing the trees, as at Bududa"
+        ],
+        [
+         "**Desertification**",
+         "Overgrazing, tree cutting and bush burning turn land into semi-desert, as in parts of Karamoja"
+        ],
+        [
+         "**Pollution of land, water and air**",
+         "Factory waste, sewage, polythene, chemicals and smoke"
+        ],
+        [
+         "**Diseases**",
+         "Cholera and typhoid from dirty water; malaria from stagnant water; coughs from smoke and dust"
+        ],
+        [
+         "**Resource depletion**",
+         "Over-fishing, over-mining and over-cutting of forests leave nothing for the future"
+        ],
+        [
+         "**Over production of children**",
+         "A very fast-growing population puts great pressure on land, forests, water and services"
+        ],
+        [
+         "**Loss of wildlife**",
+         "Poaching and destruction of habitats"
+        ],
+        [
+         "**Soil erosion and loss of fertility**",
+         "Bare soil is washed away by rain"
+        ],
+        [
+         "**Silting of lakes and rivers**",
+         "Soil washed from gardens fills up the water bodies"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "6. SOLUTIONS TO THE ENVIRONMENTAL PROBLEMS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**Afforestation and reafforestation**; every school and home planting trees.",
+        "Using **energy-saving stoves, biogas and solar** instead of firewood and charcoal.",
+        "**Proper farming methods** — terracing, mulching, crop rotation, contour ploughing.",
+        "**Protecting wetlands, river banks and lake shores** and stopping building in them.",
+        "**Proper waste management** — reduce, reuse, recycle, compost, and use sanitary landfills.",
+        "**Treating sewage and factory waste** before releasing it.",
+        "**Enforcing environmental laws** through NEMA, local councils and the police.",
+        "**Environmental education** in schools, on radio and in the community.",
+        "**Family planning education** to slow very rapid population growth.",
+        "**Resettling people** from dangerous slopes and flood-prone areas.",
+        "**Controlled grazing** and better livestock management.",
+        "Joint action across East Africa through the **EAC**, since air, lakes and rivers are shared."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "What a P.6 learner can do"
+      },
+      {
+       "t": "p",
+       "x": "Plant and water a tree · use both sides of paper · pick up and sort rubbish · never burn polythene in the compound · use a latrine · switch off lights and use water sparingly · join the **school environment club** · tell others what you have learnt."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Environment",
+         "Everything that surrounds us, living and non-living"
+        ],
+        [
+         "Conservation",
+         "Protecting resources so that they are not destroyed or used up"
+        ],
+        [
+         "Sustainable use",
+         "Using resources in a way that leaves enough for the future"
+        ],
+        [
+         "Afforestation",
+         "Planting trees where there were none before"
+        ],
+        [
+         "Reafforestation",
+         "Replanting trees where they were cut down"
+        ],
+        [
+         "Waste management",
+         "Safe collecting, treating and disposing of waste"
+        ],
+        [
+         "Recycling",
+         "Making waste into new useful things"
+        ],
+        [
+         "Biodegradable",
+         "Waste that rots naturally"
+        ],
+        [
+         "Desertification",
+         "The spread of desert conditions into land that was not desert"
+        ],
+        [
+         "Climate change",
+         "A long-term change in the normal climate of an area"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**Afforestation** = new trees where there were none; **reafforestation** = replanting where trees were cut.",
+        "The three Rs of waste: **Reduce, Reuse, Recycle**.",
+        "**Polythene (buveera)** does not rot — it blocks drainage, kills animals and spoils soil.",
+        "**NEMA** manages the environment in Uganda and started work in **1995**.",
+        "NEMA carries out an **environmental impact assessment** before big projects are built.",
+        "Causes of climate change: **deforestation, bush burning, swamp drainage, factory and vehicle smoke**.",
+        "Landslides at **Bududa** came from farming on steep, cleared slopes.",
+        "Wetlands are **filters and sponges** — they clean water and hold floods."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Planting trees where there were none — afforestation.",
+        "The body that manages the environment in Uganda — NEMA.",
+        "One duty of NEMA — enforcing environmental laws (or carrying out impact assessments).",
+        "One method of soil conservation on a hill — terracing (or contour ploughing).",
+        "One alternative to firewood — solar energy, biogas or energy-saving stoves.",
+        "Waste that does not rot — polythene, plastic, glass, metal.",
+        "One effect of draining a wetland — flooding (or shortage of water and fish).",
+        "One sign of climate change in East Africa — unreliable rainfall (or longer droughts, melting mountain ice)."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "MAP WORK",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "On a map of East Africa you should be able to mark and label:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "forest reserves such as **Mabira** and **Budongo** in Uganda",
+        "the **wetlands** around Lake Kyoga and Lake Victoria",
+        "**Bududa** on Mt Elgon (landslides) and **Kasese** (floods)",
+        "**Karamoja** and northern Kenya (drought and desertification)",
+        "**Mt Kilimanjaro** and **Rwenzori**, where the ice is melting"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Practice activity:** Draw a map of your school or village. Mark the rubbish pit, the latrines, the water source and the trees. Then write three things your class could do to improve the environment there."
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Define the environment and environmental conservation.",
+        "Give the difference between afforestation and reafforestation.",
+        "Name any five proper methods of farming that protect the soil.",
+        "Give any four alternative sources of energy that save trees.",
+        "What is waste management?",
+        "Give the difference between biodegradable and non-biodegradable waste, with two examples of each.",
+        "Explain the three Rs of waste management.",
+        "Give any four dangers of poor waste disposal.",
+        "What does NEMA stand for, and in which year did it start work?",
+        "State any five functions of NEMA.",
+        "Define climate change and give any four of its causes.",
+        "Give any four effects of climate change in East Africa.",
+        "Give any five consequences of irresponsible living in the environment.",
+        "Why is it dangerous to build houses in a wetland?",
+        "Give any two causes of landslides and two ways of preventing them.",
+        "What is desertification, and which parts of East Africa are most affected?",
+        "Give any six solutions to the environmental problems of East Africa.",
+        "Give any four things a P.6 learner can do to protect the environment.",
+        "Why should the East African countries work together on environmental issues?",
+        "Draw a poster message of not more than ten words encouraging people to protect the environment."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "The environment is everything that surrounds us — land, water, air, plants, animals and people. Conservation is protecting and looking after natural resources so that they are not used up or destroyed.",
+        "**Afforestation** is planting trees where there were none before, while **reafforestation** is replanting trees in an area where trees were cut down.",
+        "Any five of: crop rotation, mulching, terracing, contour ploughing, strip cropping, applying manure, controlled grazing, fallowing, planting cover crops.",
+        "Any four of: solar energy, biogas, hydro-electric power, wind energy, energy-saving stoves, briquettes.",
+        "Waste management is the collecting, sorting, treating and disposing of rubbish and other waste in a safe way.",
+        "**Biodegradable** waste rots naturally, for example food remains and leaves. **Non-biodegradable** waste does not rot, for example polythene bags and glass.",
+        "**Reduce** — use less of what becomes rubbish; **Reuse** — use items such as bottles and sacks again; **Recycle** — make waste into new useful things such as plastic basins from old plastic.",
+        "Any four of: blocked drainage and flooding; diseases such as cholera and malaria; pollution of soil, water and air; bad smells; injuries from broken glass; death of animals that swallow polythene; ugly surroundings.",
+        "**National Environment Management Authority**; it started work in **1995**.",
+        "Any five of: coordinating environmental activities; making and enforcing standards; carrying out environmental impact assessments; monitoring pollution; protecting wetlands and forests; educating the public; advising government; punishing offenders.",
+        "Climate change is a long-term change in the normal climate of an area. Causes: deforestation, bush burning, swamp reclamation, smoke from factories and vehicles, overgrazing (any four).",
+        "Any four of: unreliable rainfall; longer droughts; heavier storms and floods; melting of ice on Kilimanjaro and Rwenzori; drying lakes and rivers; famine; more crop pests.",
+        "Any five of: floods, landslides, desertification, pollution of land, water and air, diseases, resource depletion, pressure from a very fast-growing population, loss of wildlife, soil erosion, silting of lakes.",
+        "Because a wetland holds water like a sponge. When it is filled in and built on, the water has nowhere to go, so the area **floods**; the houses stand on weak, waterlogged ground; the wetland can no longer filter water or provide fish, papyrus and water for the community.",
+        "**Causes:** cutting trees and farming on steep slopes; heavy prolonged rain on loose soil (also digging and building on steep ground). **Prevention:** plant trees and grass on steep slopes; make terraces and dig contour trenches; avoid cultivating and settling on very steep land; resettle people from dangerous slopes.",
+        "Desertification is the spread of desert conditions into land that was not desert before. It affects **Karamoja in Uganda and northern Kenya** most (also parts of central Tanzania).",
+        "Any six of: afforestation and reafforestation; energy-saving stoves, biogas and solar; proper farming methods; protecting wetlands and river banks; proper waste management; treating sewage and factory waste; enforcing laws through NEMA; environmental education; family planning education; resettling people from dangerous areas; joint EAC action.",
+        "Any four of: plant and water a tree; use both sides of paper; pick up and sort rubbish; never burn polythene; use a latrine; save water and switch off lights; join the school environment club; teach others.",
+        "Because the environment is **shared** — Lake Victoria, the River Nile, the air and the migrating wildlife cross borders. Pollution or deforestation in one country affects the others, so laws, research and clean-up efforts work best when the countries act together through the EAC.",
+        "*Learner's poster.* For example: **\"Plant a tree today, save your tomorrow.\"**"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.6 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**Afforestation** (new trees) vs **reafforestation** (replanting)",
+        "Farming care: crop rotation · mulching · terracing · contour ploughing · manure",
+        "Energy that saves trees: **solar · biogas · energy-saving stoves**",
+        "Waste: **Reduce · Reuse · Recycle** · compost · sanitary landfill · treat sewage",
+        "**NEMA** — Uganda's environment authority, started **1995**, does impact assessments",
+        "Climate change: deforestation, bush burning, swamp draining, smoke",
+        "Careless living → floods · landslides (Bududa) · desertification (Karamoja) · pollution · disease"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, sub-topics (including the syllabus's own list of consequences) and teacher guidance above were taken from the official **NCDC Primary Six Curriculum, Set One** (© NCDC 2010; topic outline page 315 and pages 344–346 of the PDF in `curriculum/`). The explanations, tables, examples, revision questions and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "The date given for NEMA (starting work in 1995 under the National Environment Act) and the examples of Bududa and Kasese are additions for the learner's understanding; the syllabus names NEMA and the consequences but gives no dates or case studies."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.6 was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

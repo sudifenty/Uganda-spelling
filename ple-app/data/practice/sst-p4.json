@@ -1,0 +1,2312 @@
+{
+  "class": "P4",
+  "className": "Primary 4",
+  "subject": "SST",
+  "curriculum": "Uganda primary Social Studies",
+  "levels": {
+    "1": "Beginner",
+    "2": "Intermediate",
+    "3": "Advanced"
+  },
+  "target": {
+    "total": 200,
+    "difficulty": {
+      "Easy": 70,
+      "Medium": 80,
+      "Hard": 50
+    }
+  },
+  "topics": {
+    "Agriculture": [
+      "Animals",
+      "Crops",
+      "Farm tools",
+      "Poultry"
+    ],
+    "Communication": [
+      "Mass media",
+      "Modern communication",
+      "Sending messages",
+      "Traditional"
+    ],
+    "Culture": [
+      "Language",
+      "Traditional food",
+      "Traditional practices"
+    ],
+    "Direction": [
+      "Cardinal points",
+      "Using direction"
+    ],
+    "Economic Activities": [
+      "Types of work",
+      "Workers and work"
+    ],
+    "Environment": [
+      "Conservation",
+      "Natural resources",
+      "Pollution"
+    ],
+    "Good Citizenship": [
+      "Behaviour",
+      "Property"
+    ],
+    "Health": [
+      "Disease prevention",
+      "Food",
+      "Keeping clean",
+      "Sanitation"
+    ],
+    "Leadership": [
+      "Good citizenship",
+      "Local leaders",
+      "Qualities",
+      "School leaders"
+    ],
+    "Map Skills": [
+      "Map symbols",
+      "What a map is"
+    ],
+    "Markets": [
+      "Buying and selling",
+      "Market goods",
+      "Money",
+      "Trade"
+    ],
+    "National Identity": [
+      "Coat of arms",
+      "National anthem",
+      "National flag",
+      "National symbols"
+    ],
+    "Natural Resources": [
+      "Uses"
+    ],
+    "Occupations": [
+      "Community jobs"
+    ],
+    "Our Community": [
+      "Community leaders",
+      "Community life",
+      "Community needs",
+      "Community services",
+      "Community workers",
+      "What is a community"
+    ],
+    "Our District": [
+      "Districts",
+      "Neighbours",
+      "Regions",
+      "Uganda"
+    ],
+    "Our Family": [
+      "Family care",
+      "Family duties",
+      "Family members",
+      "Family needs",
+      "Types of family"
+    ],
+    "Our Home": [
+      "Home safety",
+      "Housing"
+    ],
+    "Our School": [
+      "Learning",
+      "School leaders",
+      "School members",
+      "School property",
+      "School rules",
+      "School work"
+    ],
+    "Physical Features": [
+      "Landforms",
+      "Water bodies"
+    ],
+    "Rules": [
+      "Why rules matter"
+    ],
+    "Safety": [
+      "Emergencies",
+      "Fire safety",
+      "Road safety",
+      "Water safety"
+    ],
+    "Trade": [
+      "Buying and selling"
+    ],
+    "Transport": [
+      "Means of transport",
+      "Road safety",
+      "Water transport"
+    ],
+    "Weather": [
+      "Weather and activities",
+      "Weather and clothes",
+      "Weather and farming",
+      "Weather instruments",
+      "Weather recording",
+      "Weather types"
+    ]
+  },
+  "total": 105,
+  "questions": [
+    {
+      "id": "P4_SST_001",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our Community",
+      "subtopic": "What is a community",
+      "difficulty": "Easy",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "A group of people who live together in the same area is called a ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "community"
+      ],
+      "pairs": null,
+      "explanation": "A community is people living together in one area and sharing things like schools and markets."
+    },
+    {
+      "id": "P4_SST_002",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our Community",
+      "subtopic": "Community services",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which one of these gives health services in a community?",
+      "options": [
+        "A. Market",
+        "B. Health centre",
+        "C. Bus park",
+        "D. Playground"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "A health centre is where people go when they are sick."
+    },
+    {
+      "id": "P4_SST_003",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our Community",
+      "subtopic": "Community workers",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Who keeps law and order in a community?",
+      "options": [
+        "A. A teacher",
+        "B. A police officer",
+        "C. A farmer",
+        "D. A shopkeeper"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Police officers protect people and keep peace in the community."
+    },
+    {
+      "id": "P4_SST_004",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our Community",
+      "subtopic": "Community workers",
+      "difficulty": "Medium",
+      "questionType": "matching",
+      "renderAs": "match",
+      "question": "Match each worker with the place where they work.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": null,
+      "pairs": [
+        [
+          "Teacher",
+          "School"
+        ],
+        [
+          "Doctor",
+          "Health centre"
+        ],
+        [
+          "Police officer",
+          "Police post"
+        ],
+        [
+          "Farmer",
+          "Garden"
+        ]
+      ],
+      "explanation": "Every community worker has a place where they do their work."
+    },
+    {
+      "id": "P4_SST_005",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our Family",
+      "subtopic": "Types of family",
+      "difficulty": "Easy",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "A family with a father, a mother and their children only is called a ______ family.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "nuclear"
+      ],
+      "pairs": null,
+      "explanation": "A nuclear family is small: parents and their own children."
+    },
+    {
+      "id": "P4_SST_006",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our Family",
+      "subtopic": "Types of family",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which person belongs to an extended family but NOT to a nuclear family?",
+      "options": [
+        "A. Father",
+        "B. Mother",
+        "C. Uncle",
+        "D. Daughter"
+      ],
+      "correctAnswer": "C",
+      "answers": null,
+      "pairs": null,
+      "explanation": "An extended family adds relatives like uncles, aunts and grandparents."
+    },
+    {
+      "id": "P4_SST_007",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our Family",
+      "subtopic": "Family needs",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which one is a basic need of every family?",
+      "options": [
+        "A. Television",
+        "B. Food",
+        "C. Radio",
+        "D. Bicycle"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Food, clothing and shelter are basic needs. Others are wants."
+    },
+    {
+      "id": "P4_SST_008",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our School",
+      "subtopic": "School leaders",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Who is the head of a primary school?",
+      "options": [
+        "A. Class monitor",
+        "B. Head teacher",
+        "C. Head prefect",
+        "D. Parent"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "The head teacher leads the school and all its teachers."
+    },
+    {
+      "id": "P4_SST_009",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our School",
+      "subtopic": "School rules",
+      "difficulty": "Easy",
+      "questionType": "true_false",
+      "renderAs": "tf",
+      "question": "A school timetable helps learners know what to do at each time of the day.",
+      "options": [
+        "A. True",
+        "B. False"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "A timetable organises the school day so everyone knows what comes next."
+    },
+    {
+      "id": "P4_SST_010",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our School",
+      "subtopic": "School rules",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Why does a school have rules?",
+      "options": [
+        "A. To punish learners",
+        "B. To keep order and safety",
+        "C. To make school hard",
+        "D. To stop learning"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Rules keep everyone safe and help the school run well."
+    },
+    {
+      "id": "P4_SST_011",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Leadership",
+      "subtopic": "Local leaders",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Who leads a village in Uganda?",
+      "options": [
+        "A. The LC I chairperson",
+        "B. The President",
+        "C. The head teacher",
+        "D. The district chairperson"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "The LC I chairperson is the leader closest to the people in a village."
+    },
+    {
+      "id": "P4_SST_012",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Leadership",
+      "subtopic": "Good citizenship",
+      "difficulty": "Medium",
+      "questionType": "scenario",
+      "renderAs": "mcq",
+      "question": "Amina finds a pen that belongs to her classmate. What is the right thing to do?",
+      "options": [
+        "A. Keep the pen",
+        "B. Give it back to the owner",
+        "C. Sell the pen",
+        "D. Hide the pen"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Returning what is not yours shows honesty, which is good citizenship."
+    },
+    {
+      "id": "P4_SST_013",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our District",
+      "subtopic": "Uganda",
+      "difficulty": "Easy",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "The capital city of Uganda is ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "kampala"
+      ],
+      "pairs": null,
+      "explanation": "Kampala is Uganda's capital city and its biggest town."
+    },
+    {
+      "id": "P4_SST_014",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our District",
+      "subtopic": "Regions",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "How many main regions does Uganda have?",
+      "options": [
+        "A. Two",
+        "B. Three",
+        "C. Four",
+        "D. Five"
+      ],
+      "correctAnswer": "C",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Uganda has four regions: Central, Eastern, Northern and Western."
+    },
+    {
+      "id": "P4_SST_015",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our District",
+      "subtopic": "Regions",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "In which region of Uganda is Kampala found?",
+      "options": [
+        "A. Eastern",
+        "B. Central",
+        "C. Northern",
+        "D. Western"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Kampala is in the Central region of Uganda."
+    },
+    {
+      "id": "P4_SST_016",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Weather",
+      "subtopic": "Weather instruments",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which instrument measures the amount of rainfall?",
+      "options": [
+        "A. Wind vane",
+        "B. Rain gauge",
+        "C. Windsock",
+        "D. Ruler"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "A rain gauge collects rain so we can measure how much fell."
+    },
+    {
+      "id": "P4_SST_017",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Weather",
+      "subtopic": "Weather instruments",
+      "difficulty": "Easy",
+      "questionType": "true_false",
+      "renderAs": "tf",
+      "question": "A wind vane shows the direction from which the wind is blowing.",
+      "options": [
+        "A. True",
+        "B. False"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "A wind vane turns to point to where the wind comes from."
+    },
+    {
+      "id": "P4_SST_018",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Weather",
+      "subtopic": "Weather and activities",
+      "difficulty": "Medium",
+      "questionType": "scenario",
+      "renderAs": "mcq",
+      "question": "A farmer wants to dry maize. Which weather is best?",
+      "options": [
+        "A. Rainy",
+        "B. Cloudy",
+        "C. Sunny",
+        "D. Foggy"
+      ],
+      "correctAnswer": "C",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Sunshine dries crops quickly and keeps them from rotting."
+    },
+    {
+      "id": "P4_SST_019",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Direction",
+      "subtopic": "Cardinal points",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "How many cardinal points are there?",
+      "options": [
+        "A. Two",
+        "B. Four",
+        "C. Six",
+        "D. Eight"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "The four cardinal points are North, East, South and West."
+    },
+    {
+      "id": "P4_SST_020",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Direction",
+      "subtopic": "Cardinal points",
+      "difficulty": "Easy",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "The sun rises in the ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "east"
+      ],
+      "pairs": null,
+      "explanation": "The sun always rises in the east and sets in the west."
+    },
+    {
+      "id": "P4_SST_021",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Direction",
+      "subtopic": "Using direction",
+      "difficulty": "Medium",
+      "questionType": "application",
+      "renderAs": "mcq",
+      "question": "If you face East, which direction is behind you?",
+      "options": [
+        "A. North",
+        "B. South",
+        "C. West",
+        "D. East"
+      ],
+      "correctAnswer": "C",
+      "answers": null,
+      "pairs": null,
+      "explanation": "West is directly opposite East, so it is behind you."
+    },
+    {
+      "id": "P4_SST_022",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Map Skills",
+      "subtopic": "Map symbols",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "On a map, what usually shows water such as a lake?",
+      "options": [
+        "A. Green colour",
+        "B. Blue colour",
+        "C. Brown colour",
+        "D. Yellow colour"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Map makers use blue for water bodies like lakes and rivers."
+    },
+    {
+      "id": "P4_SST_023",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Transport",
+      "subtopic": "Means of transport",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which means of transport moves on a road?",
+      "options": [
+        "A. Aeroplane",
+        "B. Bus",
+        "C. Ship",
+        "D. Train"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Buses use roads. Trains use railways, ships use water, planes use air."
+    },
+    {
+      "id": "P4_SST_024",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Communication",
+      "subtopic": "Sending messages",
+      "difficulty": "Easy",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "A letter is sent to another town through the ______ office.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "post"
+      ],
+      "pairs": null,
+      "explanation": "The post office collects and delivers letters and parcels."
+    },
+    {
+      "id": "P4_SST_025",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Communication",
+      "subtopic": "Modern communication",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which one is a modern means of communication?",
+      "options": [
+        "A. Drum",
+        "B. Mobile phone",
+        "C. Smoke signal",
+        "D. Horn"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "A mobile phone is modern. Drums and smoke were used long ago."
+    },
+    {
+      "id": "P4_SST_026",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Occupations",
+      "subtopic": "Community jobs",
+      "difficulty": "Easy",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "A person who treats sick people is called a ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "doctor"
+      ],
+      "pairs": null,
+      "explanation": "Doctors examine and treat sick people at health centres and hospitals."
+    },
+    {
+      "id": "P4_SST_027",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Markets",
+      "subtopic": "Buying and selling",
+      "difficulty": "Easy",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "A place where people buy and sell goods is called a ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "market"
+      ],
+      "pairs": null,
+      "explanation": "A market brings buyers and sellers together in one place."
+    },
+    {
+      "id": "P4_SST_028",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Agriculture",
+      "subtopic": "Farm tools",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which one is a tool used by a farmer?",
+      "options": [
+        "A. Hoe",
+        "B. Chalk",
+        "C. Stethoscope",
+        "D. Chalkboard"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "A hoe is used for digging and weeding in the garden."
+    },
+    {
+      "id": "P4_SST_029",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "National Identity",
+      "subtopic": "National symbols",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "The national motto of Uganda is 'For God and My ______'.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "country"
+      ],
+      "pairs": null,
+      "explanation": "Uganda's motto is 'For God and My Country'."
+    },
+    {
+      "id": "P4_SST_030",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "National Identity",
+      "subtopic": "National flag",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which colour is at the top of the Uganda national flag?",
+      "options": [
+        "A. Yellow",
+        "B. Red",
+        "C. Black",
+        "D. White"
+      ],
+      "correctAnswer": "C",
+      "answers": null,
+      "pairs": null,
+      "explanation": "The Uganda flag starts with black at the top, then yellow, then red."
+    },
+    {
+      "id": "P4_SST_031",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "National Identity",
+      "subtopic": "Coat of arms",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "The bird found on Uganda's Coat of Arms is the crested ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "crane"
+      ],
+      "pairs": null,
+      "explanation": "The crested crane is Uganda's national bird."
+    },
+    {
+      "id": "P4_SST_032",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Culture",
+      "subtopic": "Traditional practices",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which one is a way of passing on culture to children?",
+      "options": [
+        "A. Telling folk stories",
+        "B. Watching cars",
+        "C. Sleeping",
+        "D. Digging alone"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Elders pass on culture through stories, songs, proverbs and dances."
+    },
+    {
+      "id": "P4_SST_033",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Health",
+      "subtopic": "Keeping clean",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Washing hands before eating helps to prevent ______.",
+      "options": [
+        "A. Rain",
+        "B. Diseases",
+        "C. Wind",
+        "D. Noise"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Clean hands stop germs from entering the body with food."
+    },
+    {
+      "id": "P4_SST_034",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Health",
+      "subtopic": "Sanitation",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which one keeps the school compound clean?",
+      "options": [
+        "A. Sweeping and collecting rubbish",
+        "B. Throwing papers around",
+        "C. Leaving food remains",
+        "D. Blocking drains"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Sweeping and collecting rubbish stops flies and diseases."
+    },
+    {
+      "id": "P4_SST_035",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Safety",
+      "subtopic": "Road safety",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Before crossing a road, you should look ______.",
+      "options": [
+        "A. Only to the left",
+        "B. Only to the right",
+        "C. Both sides",
+        "D. At the sky"
+      ],
+      "correctAnswer": "C",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Look both ways so you can see vehicles coming from either direction."
+    },
+    {
+      "id": "P4_SST_036",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Safety",
+      "subtopic": "Emergencies",
+      "difficulty": "Medium",
+      "questionType": "scenario",
+      "renderAs": "mcq",
+      "question": "You see a fire starting in the kitchen at home. What should you do first?",
+      "options": [
+        "A. Watch it burn",
+        "B. Tell an adult at once",
+        "C. Run and hide",
+        "D. Add more firewood"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Telling an adult immediately brings help before the fire spreads."
+    },
+    {
+      "id": "P4_SST_037",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Environment",
+      "subtopic": "Natural resources",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "Water, soil, trees and air are all called ______ resources.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "natural"
+      ],
+      "pairs": null,
+      "explanation": "Natural resources are useful things we get from nature, not from factories."
+    },
+    {
+      "id": "P4_SST_038",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Environment",
+      "subtopic": "Conservation",
+      "difficulty": "Medium",
+      "questionType": "true_false",
+      "renderAs": "tf",
+      "question": "Cutting down all the trees in an area is good for the environment.",
+      "options": [
+        "A. True",
+        "B. False"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Cutting all trees causes soil erosion and less rain. We should plant more trees."
+    },
+    {
+      "id": "P4_SST_039",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Direction",
+      "subtopic": "Using direction",
+      "difficulty": "Hard",
+      "questionType": "application",
+      "renderAs": "mcq",
+      "question": "The school is to the North of the church. In which direction is the church from the school?",
+      "options": [
+        "A. North",
+        "B. South",
+        "C. East",
+        "D. West"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "If A is north of B, then B must be south of A. Directions work both ways."
+    },
+    {
+      "id": "P4_SST_040",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Markets",
+      "subtopic": "Trade",
+      "difficulty": "Hard",
+      "questionType": "comparison",
+      "renderAs": "mcq",
+      "question": "How is a market different from a shop?",
+      "options": [
+        "A. A market has many sellers in one open place, a shop usually has one seller",
+        "B. A market sells nothing",
+        "C. A shop has many sellers",
+        "D. They are exactly the same"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "A market brings many traders together; a shop is usually run by one trader."
+    },
+    {
+      "id": "P4_SST_041",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our Community",
+      "subtopic": "Community services",
+      "difficulty": "Hard",
+      "questionType": "cause_effect",
+      "renderAs": "mcq",
+      "question": "Why is it important for a village to have a health centre nearby?",
+      "options": [
+        "A. So people travel far when sick",
+        "B. So sick people get treatment quickly",
+        "C. So the village looks big",
+        "D. So children stay home"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "A nearby health centre means help arrives before an illness gets worse."
+    },
+    {
+      "id": "P4_SST_042",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Health",
+      "subtopic": "Sanitation",
+      "difficulty": "Hard",
+      "questionType": "scenario",
+      "renderAs": "mcq",
+      "question": "Your class wants to keep the classroom clean all week. Which plan works best?",
+      "options": [
+        "A. Everybody cleans on Friday only",
+        "B. Make a duty rota so a group cleans each day",
+        "C. Wait for the teacher to clean",
+        "D. Clean only when visitors come"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "A duty rota shares the work fairly and keeps the room clean every day."
+    },
+    {
+      "id": "P4_SST_043",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Leadership",
+      "subtopic": "Local leaders",
+      "difficulty": "Hard",
+      "questionType": "application",
+      "renderAs": "mcq",
+      "question": "Why should children know the leaders of their village?",
+      "options": [
+        "A. To play with them",
+        "B. To know who to report a problem to",
+        "C. To copy their clothes",
+        "D. To avoid school"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Knowing your leaders means you know where to go for help."
+    },
+    {
+      "id": "P4_SST_044",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our Family",
+      "subtopic": "Family members",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Your mother's sister is your ______.",
+      "options": [
+        "A. Aunt",
+        "B. Uncle",
+        "C. Cousin",
+        "D. Niece"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Your mother's sister is called your aunt."
+    },
+    {
+      "id": "P4_SST_045",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our Family",
+      "subtopic": "Family members",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Your father's father is your ______.",
+      "options": [
+        "A. Uncle",
+        "B. Grandfather",
+        "C. Brother",
+        "D. Cousin"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "The father of your father or mother is your grandfather."
+    },
+    {
+      "id": "P4_SST_046",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our Family",
+      "subtopic": "Family duties",
+      "difficulty": "Easy",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "Sweeping the compound at home is one of the ______ of a child.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "duties",
+        "responsibilities",
+        "work"
+      ],
+      "pairs": null,
+      "explanation": "Children help at home by doing simple duties."
+    },
+    {
+      "id": "P4_SST_047",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our Family",
+      "subtopic": "Family needs",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which one is a want rather than a need?",
+      "options": [
+        "A. Food",
+        "B. Shelter",
+        "C. A television",
+        "D. Water"
+      ],
+      "correctAnswer": "C",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Needs keep us alive. A television is nice to have but not needed."
+    },
+    {
+      "id": "P4_SST_048",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our Family",
+      "subtopic": "Family care",
+      "difficulty": "Easy",
+      "questionType": "true_false",
+      "renderAs": "tf",
+      "question": "Parents have a duty to send their children to school.",
+      "options": [
+        "A. True",
+        "B. False"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Parents must provide care, food and education for their children."
+    },
+    {
+      "id": "P4_SST_049",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our Home",
+      "subtopic": "Home safety",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which item at home should a young child NOT play with?",
+      "options": [
+        "A. A ball",
+        "B. A panga",
+        "C. A book",
+        "D. A skipping rope"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Sharp tools like a panga can cause serious injury."
+    },
+    {
+      "id": "P4_SST_050",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our Home",
+      "subtopic": "Housing",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which material is used to build a permanent house?",
+      "options": [
+        "A. Grass",
+        "B. Bricks",
+        "C. Banana leaves",
+        "D. Papyrus"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Bricks make strong, permanent walls."
+    },
+    {
+      "id": "P4_SST_051",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our School",
+      "subtopic": "School members",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Who helps the head teacher to lead learners in a school?",
+      "options": [
+        "A. The cook",
+        "B. The prefects",
+        "C. The visitors",
+        "D. The parents"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Prefects are learners chosen to help lead other learners."
+    },
+    {
+      "id": "P4_SST_052",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our School",
+      "subtopic": "School property",
+      "difficulty": "Medium",
+      "questionType": "scenario",
+      "renderAs": "mcq",
+      "question": "A learner breaks a school window while playing. What should she do?",
+      "options": [
+        "A. Hide and say nothing",
+        "B. Report it to a teacher",
+        "C. Blame a friend",
+        "D. Run home"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Telling the truth is honest and helps the school repair the window."
+    },
+    {
+      "id": "P4_SST_053",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our School",
+      "subtopic": "School work",
+      "difficulty": "Easy",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "The book in which a learner writes class work is called an ______ book.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "exercise"
+      ],
+      "pairs": null,
+      "explanation": "Learners write their work in exercise books."
+    },
+    {
+      "id": "P4_SST_054",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our School",
+      "subtopic": "School rules",
+      "difficulty": "Easy",
+      "questionType": "true_false",
+      "renderAs": "tf",
+      "question": "Coming to school on time is a good school habit.",
+      "options": [
+        "A. True",
+        "B. False"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Being on time means you do not miss lessons."
+    },
+    {
+      "id": "P4_SST_055",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our School",
+      "subtopic": "Learning",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Why is a school library useful to learners?",
+      "options": [
+        "A. For sleeping",
+        "B. For reading and finding information",
+        "C. For cooking",
+        "D. For playing football"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "A library keeps books that help learners read and learn more."
+    },
+    {
+      "id": "P4_SST_056",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our Community",
+      "subtopic": "Community needs",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which one is a source of clean water in a community?",
+      "options": [
+        "A. A borehole",
+        "B. A rubbish pit",
+        "C. A road",
+        "D. A shop"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Boreholes give safe water for drinking."
+    },
+    {
+      "id": "P4_SST_057",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our Community",
+      "subtopic": "Community services",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Where are letters and parcels handled?",
+      "options": [
+        "A. At the market",
+        "B. At the post office",
+        "C. At the church",
+        "D. At the garden"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "The post office handles letters and parcels."
+    },
+    {
+      "id": "P4_SST_058",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our Community",
+      "subtopic": "Community life",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Neighbours join together to repair a village path. This is called ______.",
+      "options": [
+        "A. Quarrelling",
+        "B. Communal work",
+        "C. Trading",
+        "D. Travelling"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Communal work is people working together for the good of all."
+    },
+    {
+      "id": "P4_SST_059",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our Community",
+      "subtopic": "Community leaders",
+      "difficulty": "Easy",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "A person chosen by people to lead them is called a ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "leader"
+      ],
+      "pairs": null,
+      "explanation": "Leaders are chosen to guide and speak for the people."
+    },
+    {
+      "id": "P4_SST_060",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our Community",
+      "subtopic": "Community services",
+      "difficulty": "Hard",
+      "questionType": "scenario",
+      "renderAs": "mcq",
+      "question": "A village has one well that often breaks down. What is the best thing for the community to do?",
+      "options": [
+        "A. Wait for it to break completely",
+        "B. Choose a group to look after and repair it",
+        "C. Stop using water",
+        "D. Blame the leaders"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Caring for shared property keeps it working for everyone."
+    },
+    {
+      "id": "P4_SST_061",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Leadership",
+      "subtopic": "School leaders",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Who is in charge of one class?",
+      "options": [
+        "A. The class teacher",
+        "B. The cook",
+        "C. The gate keeper",
+        "D. The nurse"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Each class has a class teacher who looks after it."
+    },
+    {
+      "id": "P4_SST_062",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Leadership",
+      "subtopic": "Qualities",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which behaviour shows that a village leader can be trusted?",
+      "options": [
+        "A. Telling the truth to the people",
+        "B. Hiding village money",
+        "C. Shouting at everyone",
+        "D. Refusing to hold meetings"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "A leader who tells the truth and is open with people earns their trust."
+    },
+    {
+      "id": "P4_SST_063",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Rules",
+      "subtopic": "Why rules matter",
+      "difficulty": "Easy",
+      "questionType": "true_false",
+      "renderAs": "tf",
+      "question": "Rules help people to live together peacefully.",
+      "options": [
+        "A. True",
+        "B. False"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Rules guide behaviour so people live together well."
+    },
+    {
+      "id": "P4_SST_064",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Good Citizenship",
+      "subtopic": "Behaviour",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which action shows good citizenship in a community?",
+      "options": [
+        "A. Throwing rubbish in the road",
+        "B. Helping an elderly neighbour",
+        "C. Breaking a water tap",
+        "D. Shouting at visitors"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Helping others is a mark of a good citizen."
+    },
+    {
+      "id": "P4_SST_065",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Good Citizenship",
+      "subtopic": "Property",
+      "difficulty": "Hard",
+      "questionType": "scenario",
+      "renderAs": "mcq",
+      "question": "You see a friend writing on a school wall. What is the best thing to do?",
+      "options": [
+        "A. Join in",
+        "B. Politely tell him to stop and clean it",
+        "C. Laugh at him",
+        "D. Write on another wall"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Protecting school property helps everyone and stops damage."
+    },
+    {
+      "id": "P4_SST_066",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our District",
+      "subtopic": "Districts",
+      "difficulty": "Easy",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "The area smaller than a region but bigger than a village is called a ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "district"
+      ],
+      "pairs": null,
+      "explanation": "Uganda is divided into districts for easier administration."
+    },
+    {
+      "id": "P4_SST_067",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our District",
+      "subtopic": "Regions",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which region of Uganda lies in the far north?",
+      "options": [
+        "A. Central",
+        "B. Northern",
+        "C. Western",
+        "D. Eastern"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "The Northern region lies in the north of Uganda."
+    },
+    {
+      "id": "P4_SST_068",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our District",
+      "subtopic": "Uganda",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which one is the money used in Uganda?",
+      "options": [
+        "A. Shilling",
+        "B. Dollar",
+        "C. Pound",
+        "D. Franc"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Uganda uses the Uganda Shilling."
+    },
+    {
+      "id": "P4_SST_069",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Our District",
+      "subtopic": "Neighbours",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "The country found to the south of Uganda is ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "tanzania"
+      ],
+      "pairs": null,
+      "explanation": "Tanzania borders Uganda on the south."
+    },
+    {
+      "id": "P4_SST_070",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Physical Features",
+      "subtopic": "Landforms",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "A raised piece of land smaller than a mountain is called a ______.",
+      "options": [
+        "A. Hill",
+        "B. Valley",
+        "C. Lake",
+        "D. Plain"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "A hill is raised land, but lower than a mountain."
+    },
+    {
+      "id": "P4_SST_071",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Physical Features",
+      "subtopic": "Water bodies",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "A large body of water surrounded by land is called a ______.",
+      "options": [
+        "A. River",
+        "B. Lake",
+        "C. Road",
+        "D. Hill"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "A lake is water surrounded by land."
+    },
+    {
+      "id": "P4_SST_072",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Physical Features",
+      "subtopic": "Water bodies",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "Water that flows in a channel from a highland to a lake is called a ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "river"
+      ],
+      "pairs": null,
+      "explanation": "Rivers flow from high ground down to lakes or seas."
+    },
+    {
+      "id": "P4_SST_073",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Weather",
+      "subtopic": "Weather types",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which weather has a lot of clouds but no rain?",
+      "options": [
+        "A. Sunny",
+        "B. Cloudy",
+        "C. Windy",
+        "D. Rainy"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Cloudy weather means the sky is covered by clouds."
+    },
+    {
+      "id": "P4_SST_074",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Weather",
+      "subtopic": "Weather recording",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Where in a school are weather instruments kept?",
+      "options": [
+        "A. In the kitchen",
+        "B. At the weather station",
+        "C. In the library",
+        "D. Under a desk"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "A weather station is an open place where instruments are kept."
+    },
+    {
+      "id": "P4_SST_075",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Weather",
+      "subtopic": "Weather and clothes",
+      "difficulty": "Easy",
+      "questionType": "true_false",
+      "renderAs": "tf",
+      "question": "People wear heavy clothes when the weather is cold.",
+      "options": [
+        "A. True",
+        "B. False"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Warm clothing protects the body from cold."
+    },
+    {
+      "id": "P4_SST_076",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Weather",
+      "subtopic": "Weather and farming",
+      "difficulty": "Hard",
+      "questionType": "cause_effect",
+      "renderAs": "mcq",
+      "question": "Why do farmers plant seeds at the start of the rainy season?",
+      "options": [
+        "A. So seeds get enough water to grow",
+        "B. Because the soil is dry",
+        "C. To avoid weeds",
+        "D. So birds eat them"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Young plants need steady rain to grow well."
+    },
+    {
+      "id": "P4_SST_077",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Environment",
+      "subtopic": "Pollution",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which action pollutes a river?",
+      "options": [
+        "A. Planting trees along it",
+        "B. Pouring rubbish into it",
+        "C. Fetching water carefully",
+        "D. Fencing it"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Rubbish makes river water dirty and unsafe."
+    },
+    {
+      "id": "P4_SST_078",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Environment",
+      "subtopic": "Conservation",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "Planting trees to replace those cut down helps to protect the ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "environment"
+      ],
+      "pairs": null,
+      "explanation": "Trees hold the soil, give shade and help bring rain."
+    },
+    {
+      "id": "P4_SST_079",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Natural Resources",
+      "subtopic": "Uses",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which natural resource is used for making bricks?",
+      "options": [
+        "A. Soil",
+        "B. Air",
+        "C. Sunlight",
+        "D. Wind"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Bricks are moulded from clay soil."
+    },
+    {
+      "id": "P4_SST_080",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Natural Resources",
+      "subtopic": "Uses",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which natural resource gives us fish?",
+      "options": [
+        "A. Forests",
+        "B. Water bodies",
+        "C. Rocks",
+        "D. Air"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Fish are caught from lakes, rivers and swamps."
+    },
+    {
+      "id": "P4_SST_081",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Transport",
+      "subtopic": "Water transport",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which means of transport is used on a lake?",
+      "options": [
+        "A. Boat",
+        "B. Bus",
+        "C. Bicycle",
+        "D. Lorry"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Boats and canoes move people and goods on water."
+    },
+    {
+      "id": "P4_SST_082",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Transport",
+      "subtopic": "Road safety",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Where should a pedestrian walk along a busy road?",
+      "options": [
+        "A. In the middle",
+        "B. On the walkway at the side",
+        "C. Behind vehicles",
+        "D. On the tarmac"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Walkways keep people away from moving vehicles."
+    },
+    {
+      "id": "P4_SST_083",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Communication",
+      "subtopic": "Traditional",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "Long ago, people passed messages in a village by beating a ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "drum"
+      ],
+      "pairs": null,
+      "explanation": "Drums were beaten to call people or warn of danger."
+    },
+    {
+      "id": "P4_SST_084",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Communication",
+      "subtopic": "Mass media",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which one reaches many people at the same time?",
+      "options": [
+        "A. A letter",
+        "B. A radio",
+        "C. A whisper",
+        "D. A note"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Radio sends the same message to very many listeners at once."
+    },
+    {
+      "id": "P4_SST_085",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Agriculture",
+      "subtopic": "Crops",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which one is a food crop?",
+      "options": [
+        "A. Coffee",
+        "B. Maize",
+        "C. Cotton",
+        "D. Tobacco"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Maize is grown mainly to be eaten."
+    },
+    {
+      "id": "P4_SST_086",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Agriculture",
+      "subtopic": "Animals",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which animal gives us milk?",
+      "options": [
+        "A. Cow",
+        "B. Dog",
+        "C. Cat",
+        "D. Hen"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Cows are kept for milk and meat."
+    },
+    {
+      "id": "P4_SST_087",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Agriculture",
+      "subtopic": "Poultry",
+      "difficulty": "Easy",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "The keeping of birds such as hens for eggs and meat is called ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "poultry",
+        "poultry keeping",
+        "poultry farming"
+      ],
+      "pairs": null,
+      "explanation": "Poultry keeping is rearing birds like hens and ducks."
+    },
+    {
+      "id": "P4_SST_088",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Trade",
+      "subtopic": "Buying and selling",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "A person who sells goods in small quantities to people is called a ______.",
+      "options": [
+        "A. Retailer",
+        "B. Farmer",
+        "C. Doctor",
+        "D. Teacher"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "A retailer sells small amounts directly to buyers."
+    },
+    {
+      "id": "P4_SST_089",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Markets",
+      "subtopic": "Market goods",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which goods are usually sold in a food market?",
+      "options": [
+        "A. Bricks and sand",
+        "B. Tomatoes and beans",
+        "C. Iron sheets",
+        "D. Books"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Food markets sell farm produce like vegetables and grains."
+    },
+    {
+      "id": "P4_SST_090",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Markets",
+      "subtopic": "Money",
+      "difficulty": "Hard",
+      "questionType": "application",
+      "renderAs": "mcq",
+      "question": "Mary has 2,000 shillings. She buys a book at 1,200 shillings. How much is left?",
+      "options": [
+        "A. 600 shillings",
+        "B. 800 shillings",
+        "C. 1,000 shillings",
+        "D. 1,200 shillings"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "2,000 minus 1,200 leaves 800 shillings."
+    },
+    {
+      "id": "P4_SST_091",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Health",
+      "subtopic": "Disease prevention",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Sleeping under a treated mosquito net prevents ______.",
+      "options": [
+        "A. Malaria",
+        "B. Cough",
+        "C. Broken bones",
+        "D. Toothache"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Mosquito nets stop mosquito bites that spread malaria."
+    },
+    {
+      "id": "P4_SST_092",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Health",
+      "subtopic": "Food",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which meal is the most balanced?",
+      "options": [
+        "A. Only posho",
+        "B. Posho, beans and greens",
+        "C. Only tea",
+        "D. Only sugarcane"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "A balanced meal mixes different food groups."
+    },
+    {
+      "id": "P4_SST_093",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Health",
+      "subtopic": "Sanitation",
+      "difficulty": "Easy",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "Human waste should be disposed of in a ______.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "latrine",
+        "toilet",
+        "pit latrine"
+      ],
+      "pairs": null,
+      "explanation": "Using a latrine keeps germs away from people and water."
+    },
+    {
+      "id": "P4_SST_094",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Safety",
+      "subtopic": "Water safety",
+      "difficulty": "Medium",
+      "questionType": "true_false",
+      "renderAs": "tf",
+      "question": "Children should swim in a lake without an adult watching them.",
+      "options": [
+        "A. True",
+        "B. False"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Swimming without an adult is dangerous. Always be supervised."
+    },
+    {
+      "id": "P4_SST_095",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Safety",
+      "subtopic": "Fire safety",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which one can start a fire at home?",
+      "options": [
+        "A. A closed book",
+        "B. A lit candle left alone",
+        "C. A plastic cup",
+        "D. A blanket folded away"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "An unattended flame can set nearby things alight."
+    },
+    {
+      "id": "P4_SST_096",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Culture",
+      "subtopic": "Traditional food",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which one is a traditional Ugandan food?",
+      "options": [
+        "A. Matooke",
+        "B. Pizza",
+        "C. Burger",
+        "D. Pasta"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Matooke is a common traditional food in Uganda."
+    },
+    {
+      "id": "P4_SST_097",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Culture",
+      "subtopic": "Language",
+      "difficulty": "Medium",
+      "questionType": "fill_blank",
+      "renderAs": "fill",
+      "question": "The language spoken by a group of people as their mother tongue is called their ______ language.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": [
+        "local",
+        "native",
+        "mother"
+      ],
+      "pairs": null,
+      "explanation": "A local language is the one a community grew up speaking."
+    },
+    {
+      "id": "P4_SST_098",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "National Identity",
+      "subtopic": "National anthem",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "What should you do when the National Anthem is being sung?",
+      "options": [
+        "A. Keep walking",
+        "B. Stand still and quiet",
+        "C. Sit down",
+        "D. Talk to friends"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Standing still and quiet shows respect for the country."
+    },
+    {
+      "id": "P4_SST_099",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "National Identity",
+      "subtopic": "National symbols",
+      "difficulty": "Hard",
+      "questionType": "cause_effect",
+      "renderAs": "mcq",
+      "question": "Why does a country have national symbols such as a flag?",
+      "options": [
+        "A. To decorate offices",
+        "B. To show the country's identity and unity",
+        "C. To sell to visitors",
+        "D. To replace money"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Symbols stand for the country and bring people together."
+    },
+    {
+      "id": "P4_SST_100",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Map Skills",
+      "subtopic": "What a map is",
+      "difficulty": "Easy",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "A drawing of a place as seen from above is called a ______.",
+      "options": [
+        "A. Map",
+        "B. Photo",
+        "C. Story",
+        "D. Song"
+      ],
+      "correctAnswer": "A",
+      "answers": null,
+      "pairs": null,
+      "explanation": "A map shows a place from above, drawn on paper."
+    },
+    {
+      "id": "P4_SST_101",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Map Skills",
+      "subtopic": "Map symbols",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "On a map, a small drawing that stands for a real thing is called a ______.",
+      "options": [
+        "A. Title",
+        "B. Symbol",
+        "C. Frame",
+        "D. Number"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "Symbols stand for real features like schools or roads."
+    },
+    {
+      "id": "P4_SST_102",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Direction",
+      "subtopic": "Cardinal points",
+      "difficulty": "Medium",
+      "questionType": "multiple_choice",
+      "renderAs": "mcq",
+      "question": "Which direction is opposite North?",
+      "options": [
+        "A. East",
+        "B. West",
+        "C. South",
+        "D. North East"
+      ],
+      "correctAnswer": "C",
+      "answers": null,
+      "pairs": null,
+      "explanation": "South is directly opposite North."
+    },
+    {
+      "id": "P4_SST_103",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Direction",
+      "subtopic": "Using direction",
+      "difficulty": "Hard",
+      "questionType": "application",
+      "renderAs": "mcq",
+      "question": "The market is East of the school. In which direction is the school from the market?",
+      "options": [
+        "A. North",
+        "B. South",
+        "C. East",
+        "D. West"
+      ],
+      "correctAnswer": "D",
+      "answers": null,
+      "pairs": null,
+      "explanation": "If the market is east of the school, the school is west of the market."
+    },
+    {
+      "id": "P4_SST_104",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Economic Activities",
+      "subtopic": "Workers and work",
+      "difficulty": "Medium",
+      "questionType": "matching",
+      "renderAs": "match",
+      "question": "Match each worker with what they produce or provide.",
+      "options": null,
+      "correctAnswer": null,
+      "answers": null,
+      "pairs": [
+        [
+          "Farmer",
+          "Food crops"
+        ],
+        [
+          "Fisherman",
+          "Fish"
+        ],
+        [
+          "Carpenter",
+          "Furniture"
+        ],
+        [
+          "Tailor",
+          "Clothes"
+        ]
+      ],
+      "explanation": "Different workers provide different goods and services."
+    },
+    {
+      "id": "P4_SST_105",
+      "class": "P4",
+      "subject": "SST",
+      "topic": "Economic Activities",
+      "subtopic": "Types of work",
+      "difficulty": "Hard",
+      "questionType": "cause_effect",
+      "renderAs": "mcq",
+      "question": "Why do people in a community do different kinds of work?",
+      "options": [
+        "A. To confuse each other",
+        "B. So that all the different needs of the community are met",
+        "C. Because work is easy",
+        "D. To avoid farming"
+      ],
+      "correctAnswer": "B",
+      "answers": null,
+      "pairs": null,
+      "explanation": "When people specialise, the community gets all the goods and services it needs."
+    }
+  ]
+}

@@ -1,0 +1,1454 @@
+{
+  "subject": "sst",
+  "subject_name": "Social Studies with Religious Education",
+  "level": "PLE / Primary 7",
+  "year": 2009,
+  "paper_title": "PLE Social Studies with Religious Education 2009",
+  "total_questions": 55,
+  "duration_minutes": 135,
+  "format": "written",
+  "sections": {
+    "A": [
+      1,
+      40
+    ],
+    "B": [
+      41,
+      55
+    ]
+  },
+  "source": {
+    "verified": false,
+    "origin": "Transcript supplied by the project owner",
+    "obtained_from": "",
+    "checked_by": "",
+    "checked_date": "",
+    "notes": "Wording preserved verbatim. NOT cross-checked against the official UNEB booklet, so 'verified' stays false and no question claims UNEB origin. Answers were not supplied. Q41 climate table WAS supplied and is stored as data. Q5 road sign and Q46 Sudan map were NOT supplied and are marked as requiring the original artwork."
+  },
+  "questions": [
+    {
+      "year": 2009,
+      "number": 1,
+      "section": "A",
+      "type": "short",
+      "question": "What helps a person to find the actual distance between two places on a map?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q1",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 2,
+      "section": "A",
+      "type": "short",
+      "question": "Name any one food crop that grows well in a swamp.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q2",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 3,
+      "section": "A",
+      "type": "short",
+      "question": "What is the compass direction of Mt. Elgon from Mt. Ruwenzori?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q3",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 4,
+      "section": "A",
+      "type": "short",
+      "question": "Apart from colonial rulers which other group of people helped to develop social service in Uganda?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q4",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 5,
+      "section": "A",
+      "type": "short",
+      "question": "What does the road sign below mean?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q5",
+      "verified": false,
+      "asset": {
+        "kind": "road sign",
+        "file": null,
+        "status": "missing",
+        "caption": "Road sign printed with Question 5",
+        "alt": ""
+      },
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 6,
+      "section": "A",
+      "type": "short",
+      "question": "Give one reason why farmers are advised to plant crops in the beginning of a rainy season.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q6",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 7,
+      "section": "A",
+      "type": "short",
+      "question": "Name the winds that brings rain to East Africa.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q7",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 8,
+      "section": "A",
+      "type": "short",
+      "question": "Which mineral is mined in the Osukuru hills in Tororo?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q8",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 9,
+      "section": "A",
+      "type": "short",
+      "question": "Which people used dhows to come to East Africa?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q9",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 10,
+      "section": "A",
+      "type": "short",
+      "question": "How many countries does Uganda share its border with?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q10",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 11,
+      "section": "A",
+      "type": "short",
+      "question": "Why was Uganda known as a “protectorate”?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q11",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 12,
+      "section": "A",
+      "type": "short",
+      "question": "Why is Dr. Kwame Nkurumah remembered in Ghana?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q12",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 13,
+      "section": "A",
+      "type": "short",
+      "question": "Mention one reason why goats are more common than cattle in most parts of East Africa.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q13",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 14,
+      "section": "A",
+      "type": "short",
+      "question": "Give one advantage of exporting processed goods other than raw materials.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q14",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 15,
+      "section": "A",
+      "type": "short",
+      "question": "How can a small scale sugarcane grower in Jinja benefit from the nearby Kakira sugar factory?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q15",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 16,
+      "section": "A",
+      "type": "short",
+      "question": "What is Bwindi National park famous for?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q16",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 17,
+      "section": "A",
+      "type": "short",
+      "question": "Give one reason why the people living in the Sahara Desert wear turbans on their heads.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q17",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 18,
+      "section": "A",
+      "type": "short",
+      "question": "State any one way in which the discovery of iron improved the life of the early man.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q18",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 19,
+      "section": "A",
+      "type": "short",
+      "question": "State any one way in which freedom of association practiced in Uganda today.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q19",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 20,
+      "section": "A",
+      "type": "short",
+      "question": "Mention any one way in which nomadic pastoralism in North-Eastern Uganda can be reduced.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q20",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 21,
+      "section": "A",
+      "type": "short",
+      "question": "What is the advantage of a country having its own seaport?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q21",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 22,
+      "section": "A",
+      "type": "short",
+      "question": "Give one reason why the North Eastern part of East Africa receives little rainfall.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q22",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 23,
+      "section": "A",
+      "type": "short",
+      "question": "Why is it difficult for one to travel by boat along the Victoria Nile?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q23",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 24,
+      "section": "A",
+      "type": "short",
+      "question": "Give any one way in which people can encourage to live and work in rural areas.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q24",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 25,
+      "section": "A",
+      "type": "short",
+      "question": "In which agreement were the boundaries of Buganda drawn?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q25",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 26,
+      "section": "A",
+      "type": "short",
+      "question": "Give one reason why Mutesa 1 was not happy with the missionaries.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q26",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 27,
+      "section": "A",
+      "type": "short",
+      "question": "Why should citizen obey the laws of country?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q27",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 28,
+      "section": "A",
+      "type": "short",
+      "question": "Mention one source of income for the colonial government in Uganda.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q28",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 29,
+      "section": "A",
+      "type": "short",
+      "question": "Why is air transport used by very few people in Africa?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q29",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 30,
+      "section": "A",
+      "type": "short",
+      "question": "State one reason why the coastal areas of East Africa have high temperatures.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q30",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 31,
+      "section": "A",
+      "type": "short",
+      "question": "Name the physical feature that forms the natural boundary between Tanzania and Democratic Republic of Congo (Zaire).",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q31",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 32,
+      "section": "A",
+      "type": "short",
+      "question": "State one reason why traditional education is important to your community.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q32",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 33,
+      "section": "A",
+      "type": "short",
+      "question": "How did the coming of the Luo-Babiito affect the Bunyoro-Kitara kingdom?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q33",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 34,
+      "section": "A",
+      "type": "short",
+      "question": "What is the importance of a National Anthem in a country?",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q34",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 35,
+      "section": "A",
+      "type": "short",
+      "question": "Name the port at the East African coast where the railway line from Tanzania to Zambia begins.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q35",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 36,
+      "section": "A",
+      "type": "short",
+      "question": "Give one reason why the people of South Africa fought against Apartheid.",
+      "parts": null,
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q36",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 37,
+      "section": "A",
+      "type": "alternative",
+      "question": null,
+      "parts": null,
+      "variants": {
+        "christian": {
+          "question": "What does wine in the Holy Eucharist represent?",
+          "parts": null
+        },
+        "islamic": {
+          "question": "Why should a Moslem read Suratu Nas every day?",
+          "parts": null
+        }
+      },
+      "audience": "alternative",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q37",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 38,
+      "section": "A",
+      "type": "alternative",
+      "question": null,
+      "parts": null,
+      "variants": {
+        "christian": {
+          "question": "Who was the mother of John the Baptist?",
+          "parts": null
+        },
+        "islamic": {
+          "question": "Who was the father of prophet Muhammad (S.A.W)?",
+          "parts": null
+        }
+      },
+      "audience": "alternative",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q38",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 39,
+      "section": "A",
+      "type": "alternative",
+      "question": null,
+      "parts": null,
+      "variants": {
+        "christian": {
+          "question": "How did Jesus show his power over death?",
+          "parts": null
+        },
+        "islamic": {
+          "question": "Why do Muslims wash a dead body before it is buried?",
+          "parts": null
+        }
+      },
+      "audience": "alternative",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q39",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 40,
+      "section": "A",
+      "type": "alternative",
+      "question": null,
+      "parts": null,
+      "variants": {
+        "christian": {
+          "question": "What was Moses’ work before he was called by God?",
+          "parts": null
+        },
+        "islamic": {
+          "question": "Write a single word which means “Total submission to the will of Allah”.",
+          "parts": null
+        }
+      },
+      "audience": "alternative",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q40",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 41,
+      "section": "B",
+      "type": "structured",
+      "question": "Study the table below showing the climate of place A and answer the questions that follow.",
+      "parts": [
+        {
+          "label": "a",
+          "text": "In which month of the year does place A receive the highest amount of rainfall?",
+          "parts": null,
+          "lines": 0
+        },
+        {
+          "label": "b",
+          "text": "Give any one reason why crops can be grown at any time of the year at place A.",
+          "parts": null,
+          "lines": 0
+        },
+        {
+          "label": "c",
+          "text": "Mention one cash crop that can grow well under this type of climate.",
+          "parts": null,
+          "lines": 0
+        },
+        {
+          "label": "d",
+          "text": "Calculate the temperature range of place A.",
+          "parts": null,
+          "lines": 0
+        }
+      ],
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q41",
+      "verified": false,
+      "asset": {
+        "kind": "table",
+        "file": null,
+        "status": "supplied",
+        "caption": "Table showing the climate of place A",
+        "alt": "Table of monthly temperature in degrees Celsius and rainfall in millimetres for place A.",
+        "table": {
+          "header": [
+            "Month",
+            "J",
+            "F",
+            "M",
+            "A",
+            "M",
+            "J",
+            "J",
+            "A",
+            "S",
+            "O",
+            "N",
+            "J"
+          ],
+          "rows": [
+            [
+              "Temperature °C",
+              22,
+              21,
+              22,
+              24,
+              23,
+              25,
+              21,
+              21,
+              23,
+              22,
+              24,
+              25
+            ],
+            [
+              "Rainfall (mm)",
+              100,
+              90,
+              100,
+              150,
+              130,
+              165,
+              90,
+              95,
+              120,
+              110,
+              150,
+              160
+            ]
+          ]
+        },
+        "transcription_note": "The 12th month is printed as 'J' in the supplied transcript; December would be expected. Left exactly as supplied — check against the original paper."
+      },
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 42,
+      "section": "B",
+      "type": "structured",
+      "question": null,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Mention any one problem that can be caused by floods.",
+          "parts": null,
+          "lines": 0
+        },
+        {
+          "label": "b",
+          "text": "Give two ways in which the government can help the people affected by floods.",
+          "parts": null,
+          "lines": 0
+        }
+      ],
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q42",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 43,
+      "section": "B",
+      "type": "structured",
+      "question": null,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Give the importance of each of the following in the development of an industry:",
+          "parts": [
+            {
+              "label": "i",
+              "text": "Labour",
+              "parts": null,
+              "lines": 0
+            },
+            {
+              "label": "ii",
+              "text": "Capital",
+              "parts": null,
+              "lines": 0
+            }
+          ],
+          "lines": 0
+        },
+        {
+          "label": "b",
+          "text": "Mention any two reasons why good roads are important in the development of an industry.",
+          "parts": null,
+          "lines": 0
+        }
+      ],
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q43",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 44,
+      "section": "B",
+      "type": "structured",
+      "question": null,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Give any two reasons why people migrate from one place to another.",
+          "parts": null,
+          "lines": 0
+        },
+        {
+          "label": "b",
+          "text": "Mention any two problems caused by low population density in some rural parts.",
+          "parts": null,
+          "lines": 0
+        }
+      ],
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q44",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 45,
+      "section": "B",
+      "type": "structured",
+      "question": null,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Mention any two modern cattle keeping practices done today.",
+          "parts": null,
+          "lines": 0
+        },
+        {
+          "label": "b",
+          "text": "Which of the methods mentioned above is practiced mainly in Central Kenya?",
+          "parts": null,
+          "lines": 0
+        },
+        {
+          "label": "c",
+          "text": "How can artificial insemination help a farmer in Uganda?",
+          "parts": null,
+          "lines": 0
+        }
+      ],
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q45",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 46,
+      "section": "B",
+      "type": "structured",
+      "question": "Study the map of Sudan below and answer the questions that follow.",
+      "parts": [
+        {
+          "label": "a",
+          "text": "Name the country marked A.",
+          "parts": null,
+          "lines": 0
+        },
+        {
+          "label": "b",
+          "text": "What is the major cash crop grown in the area marked S?",
+          "parts": null,
+          "lines": 0
+        },
+        {
+          "label": "c",
+          "text": "Give one reason why area marked S is good for the growing of crops.",
+          "parts": null,
+          "lines": 0
+        },
+        {
+          "label": "d",
+          "text": "Mention any one problem faced by farmers in the area marked S.",
+          "parts": null,
+          "lines": 0
+        }
+      ],
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q46",
+      "verified": false,
+      "asset": {
+        "kind": "map",
+        "file": null,
+        "status": "missing",
+        "caption": "Map of Sudan printed with Question 46",
+        "alt": ""
+      },
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 47,
+      "section": "B",
+      "type": "structured",
+      "question": null,
+      "parts": [
+        {
+          "label": "a",
+          "text": "State any two problems faced by Arabs when spreading Islam in East Africa.",
+          "parts": null,
+          "lines": 0
+        },
+        {
+          "label": "b",
+          "text": "Mention any two changes that the Arabs brought to East Africa.",
+          "parts": null,
+          "lines": 0
+        }
+      ],
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q47",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 48,
+      "section": "B",
+      "type": "structured",
+      "question": null,
+      "parts": [
+        {
+          "label": "a",
+          "text": "State any one of the child rights.",
+          "parts": null,
+          "lines": 0
+        },
+        {
+          "label": "b",
+          "text": "Mention any two of the children's responsibilities.",
+          "parts": null,
+          "lines": 0
+        },
+        {
+          "label": "c",
+          "text": "State any two reasons why children should know their rights and responsibilities.",
+          "parts": null,
+          "lines": 0
+        }
+      ],
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q48",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 49,
+      "section": "B",
+      "type": "structured",
+      "question": null,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Mention any one area in Uganda where the people fought against British colonialists.",
+          "parts": null,
+          "lines": 0
+        },
+        {
+          "label": "b",
+          "text": "Give any two reasons why the people in those areas fought against the British.",
+          "parts": null,
+          "lines": 0
+        },
+        {
+          "label": "c",
+          "text": "In which way did Semei Kakungulu help the British colonialists in Uganda?",
+          "parts": null,
+          "lines": 0
+        }
+      ],
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q49",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 50,
+      "section": "B",
+      "type": "structured",
+      "question": null,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Give any two causes of large family size in Uganda.",
+          "parts": null,
+          "lines": 0
+        },
+        {
+          "label": "b",
+          "text": "Mention any two problems of having a large family.",
+          "parts": null,
+          "lines": 0
+        }
+      ],
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q50",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 51,
+      "section": "B",
+      "type": "structured",
+      "question": "Give any two ways in which each of the following has helped the people of Uganda:",
+      "parts": [
+        {
+          "label": "a",
+          "text": "Red Cross / Red Crescent",
+          "parts": null,
+          "lines": 0
+        },
+        {
+          "label": "b",
+          "text": "United Nations International Children's Emergency Fund (UNICEF)",
+          "parts": null,
+          "lines": 0
+        }
+      ],
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q51",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 52,
+      "section": "B",
+      "type": "structured",
+      "question": null,
+      "parts": [
+        {
+          "label": "a",
+          "text": "Give any two reasons why it was important for African countries to unite after getting independence.",
+          "parts": null,
+          "lines": 0
+        },
+        {
+          "label": "b",
+          "text": "State any two reasons why most African countries continue to depend on foreign countries.",
+          "parts": null,
+          "lines": 0
+        }
+      ],
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q52",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 53,
+      "section": "B",
+      "type": "alternative_structured",
+      "question": null,
+      "parts": null,
+      "variants": {
+        "christian": {
+          "question": null,
+          "parts": [
+            {
+              "label": "a",
+              "text": "“Blessed are you among women and blessed is the fruit of your womb.” Who said these words?",
+              "parts": null,
+              "lines": 0
+            },
+            {
+              "label": "b",
+              "text": "What is the meaning of the word “fruit” mentioned above?",
+              "parts": null,
+              "lines": 0
+            },
+            {
+              "label": "c",
+              "text": "Why was Mary “blessed among women”?",
+              "parts": null,
+              "lines": 0
+            },
+            {
+              "label": "d",
+              "text": "“Behold, servant of the Lord; let it happen to me according to your word.” What lesson do we learn from this?",
+              "parts": null,
+              "lines": 0
+            }
+          ]
+        },
+        "islamic": {
+          "question": null,
+          "parts": [
+            {
+              "label": "a",
+              "text": "What did Muhammad do to the woman who wanted to poison him?",
+              "parts": null,
+              "lines": 0
+            },
+            {
+              "label": "b",
+              "text": "What happened to Muhammad when he went to ask for help from the people of Taif?",
+              "parts": null,
+              "lines": 0
+            },
+            {
+              "label": "c",
+              "text": "What didn’t the people of Taif like about Muhammad?",
+              "parts": null,
+              "lines": 0
+            },
+            {
+              "label": "d",
+              "text": "What lesson do we learn from what happened to Muhammad?",
+              "parts": null,
+              "lines": 0
+            }
+          ]
+        }
+      },
+      "audience": "alternative",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q53",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 54,
+      "section": "B",
+      "type": "alternative_structured",
+      "question": null,
+      "parts": null,
+      "variants": {
+        "christian": {
+          "question": null,
+          "parts": [
+            {
+              "label": "a",
+              "text": "What is Holy Matrimony?",
+              "parts": null,
+              "lines": 0
+            },
+            {
+              "label": "b",
+              "text": "State one reason that may stop Holy Matrimony from taking place.",
+              "parts": null,
+              "lines": 0
+            },
+            {
+              "label": "c",
+              "text": "Give one reason that may allow someone who had married in church before to marry again.",
+              "parts": null,
+              "lines": 0
+            },
+            {
+              "label": "d",
+              "text": "Mention any one advantage of Holy Matrimony.",
+              "parts": null,
+              "lines": 0
+            }
+          ]
+        },
+        "islamic": {
+          "question": null,
+          "parts": [
+            {
+              "label": "a",
+              "text": "What is Nikah?",
+              "parts": null,
+              "lines": 0
+            },
+            {
+              "label": "b",
+              "text": "Give three conditions that allow Nikah to take place.",
+              "parts": null,
+              "lines": 3
+            }
+          ]
+        }
+      },
+      "audience": "alternative",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q54",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    },
+    {
+      "year": 2009,
+      "number": 55,
+      "section": "B",
+      "type": "structured",
+      "question": "This question is for all candidates (both Christians and Muslims) to answer.",
+      "parts": [
+        {
+          "label": "a",
+          "text": "Give any two qualities of a God-fearing person.",
+          "parts": null,
+          "lines": 2
+        },
+        {
+          "label": "b",
+          "text": "State any two ways in which religious organizations have improved the lives of the people of Uganda.",
+          "parts": null,
+          "lines": 2
+        }
+      ],
+      "variants": null,
+      "audience": "all",
+      "answer": null,
+      "answer_status": "not_supplied",
+      "topic": "",
+      "subtopic": "",
+      "source": "PLE SST 2009 — Q55",
+      "verified": false,
+      "asset": null,
+      "parent": null
+    }
+  ]
+}

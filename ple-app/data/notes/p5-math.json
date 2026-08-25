@@ -1,0 +1,5903 @@
+{
+ "class": "P5",
+ "subject": "MATH",
+ "subject_name": "Mathematics",
+ "total": 12,
+ "words": 18439,
+ "topics": [
+  {
+   "id": "P5_MATH_T01",
+   "class": "P5",
+   "subject": "MATH",
+   "topic_no": 1,
+   "title": "Set Concepts",
+   "heading": "TOPIC 1: SET CONCEPTS",
+   "slug": "set-concepts",
+   "periods": null,
+   "curriculum_pages": "100–101",
+   "words": 1520,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Five Curriculum, Set One, Mathematics Theme 1, Set Concepts (`curriculum/P5-SET-ONE-2010.pdf`, pages 100–101).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** In P.3 and P.4 you formed sets of objects and counted their members. In P.5 you learn the words **equal, equivalent and empty**, and you learn to show **union** and **intersection** on a **Venn diagram**."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "form sets and describe them",
+        "tell an equal set from an equivalent set",
+        "name the empty set",
+        "find the union and the intersection of two sets",
+        "draw a Venn diagram and read members from it"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. WHAT A SET IS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Set:** A group of things that belong together. The things in the set are its **members** (also called **elements**). A set is written inside **curly brackets { }** and given a capital letter as its name."
+      },
+      {
+       "t": "pre",
+       "x": "A = {2, 4, 6, 8}"
+      },
+      {
+       "t": "p",
+       "x": "We read this as: *\"Set A is the set of two, four, six and eight.\"*"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "**n(A)** means *the number of members of set A*. Here **n(A) = 4**.",
+        "**∈** means *is a member of*. So 6 ∈ A.",
+        "**∉** means *is not a member of*. So 5 ∉ A."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Describing a set"
+      },
+      {
+       "t": "p",
+       "x": "A set can be written in **two ways**:"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Way",
+        "Example"
+       ],
+       "rows": [
+        [
+         "By **listing** the members",
+         "B = {Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday}"
+        ],
+        [
+         "By **describing** them in words",
+         "B = the set of days of the week"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "2. EQUAL SETS AND EQUIVALENT SETS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Equal sets:** Two sets that have **exactly the same members**. The order does not matter."
+      },
+      {
+       "t": "pre",
+       "x": "P = {a, b, c}      Q = {c, a, b}      →  P = Q"
+      },
+      {
+       "t": "p",
+       "x": "**Equivalent sets:** Two sets that have **the same number of members**, but the members themselves may be different. The sign used is **↔**."
+      },
+      {
+       "t": "pre",
+       "x": "R = {1, 2, 3}      S = {cat, dog, goat}      n(R) = 3, n(S) = 3   →  R ↔ S"
+      },
+      {
+       "t": "table",
+       "head": [
+        "",
+        "Equal sets",
+        "Equivalent sets"
+       ],
+       "rows": [
+        [
+         "Members",
+         "Exactly the same",
+         "May be different"
+        ],
+        [
+         "Number of members",
+         "The same",
+         "The same"
+        ],
+        [
+         "Sign",
+         "=",
+         "↔"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Remember:** All equal sets are also equivalent, but **equivalent sets are not always equal**."
+      }
+     ]
+    },
+    {
+     "title": "3. THE EMPTY SET",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Empty set:** A set with **no members at all**. It is written as **{ }** or **∅**."
+      },
+      {
+       "t": "p",
+       "x": "Examples of empty sets:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "the set of pupils in P.5 who are 100 years old",
+        "the set of cows with six legs",
+        "the set of even numbers between 4 and 6"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "For the empty set, **n(∅) = 0**."
+      },
+      {
+       "t": "note",
+       "x": "Careful: {0} is **not** the empty set. It is a set with one member — the number 0."
+      }
+     ]
+    },
+    {
+     "title": "4. UNION OF SETS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Union (∪):** The set of **all** the members found in either set, or in both. A member is written **only once**."
+      },
+      {
+       "t": "pre",
+       "x": "A = {2, 4, 6, 8}        B = {4, 8, 12}\nA ∪ B = {2, 4, 6, 8, 12}\nn(A ∪ B) = 5"
+      }
+     ]
+    },
+    {
+     "title": "5. INTERSECTION OF SETS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Intersection (∩):** The set of members that are found in **both** sets — the members the two sets share."
+      },
+      {
+       "t": "pre",
+       "x": "A = {2, 4, 6, 8}        B = {4, 8, 12}\nA ∩ B = {4, 8}\nn(A ∩ B) = 2"
+      },
+      {
+       "t": "p",
+       "x": "If two sets share no members at all, their intersection is the **empty set**."
+      },
+      {
+       "t": "pre",
+       "x": "C = {1, 3, 5}     D = {2, 4}     C ∩ D = { }"
+      }
+     ]
+    },
+    {
+     "title": "6. VENN DIAGRAMS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A **Venn diagram** shows sets as rings inside a rectangle. Where the rings overlap, the members belong to **both** sets."
+      },
+      {
+       "t": "pre",
+       "x": "   ------------------------------\n  |   A                B         |\n  |  ______        ______        |\n  | /      \\      /      \\       |\n  | |  2   |  4  |   12  |       |\n  | |  6   |  8  |       |       |\n  | \\______/     \\______/        |\n  |                              |\n   ------------------------------"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "The **overlap** (4 and 8) is **A ∩ B**.",
+        "**Everything inside both rings** (2, 6, 4, 8, 12) is **A ∪ B**.",
+        "2 and 6 are in **A only**. 12 is in **B only**."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "A useful check"
+      },
+      {
+       "t": "pre",
+       "x": "n(A ∪ B) = n(A) + n(B) − n(A ∩ B)\n         = 4 + 3 − 2\n         = 5   ✓"
+      },
+      {
+       "t": "p",
+       "x": "We take away the intersection once because those members were counted twice."
+      },
+      {
+       "t": "h3",
+       "x": "Worked example"
+      },
+      {
+       "t": "p",
+       "x": "In a class of 30 pupils, 18 play football, 14 play netball and 6 play **both** games. How many pupils play only football?"
+      },
+      {
+       "t": "pre",
+       "x": "Only football = 18 − 6 = 12 pupils\nOnly netball  = 14 − 6 = 8 pupils\nCheck: 12 + 6 + 8 = 26 pupils play a game\n       30 − 26 = 4 pupils play neither game"
+      },
+      {
+       "t": "p",
+       "x": "**Answer: 12 pupils play only football.**"
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Set",
+         "A group of things that belong together"
+        ],
+        [
+         "Member (element)",
+         "One of the things in a set"
+        ],
+        [
+         "n(A)",
+         "The number of members in set A"
+        ],
+        [
+         "Equal sets",
+         "Sets with exactly the same members"
+        ],
+        [
+         "Equivalent sets",
+         "Sets with the same number of members"
+        ],
+        [
+         "Empty set",
+         "A set with no members, written { } or ∅"
+        ],
+        [
+         "Union (∪)",
+         "All members of both sets, each written once"
+        ],
+        [
+         "Intersection (∩)",
+         "The members found in both sets"
+        ],
+        [
+         "Venn diagram",
+         "A drawing that shows sets as rings"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "A set is written in **curly brackets { }**.",
+        "A member is never written **twice** in the same set.",
+        "The **order** of members does not change the set.",
+        "**Equal** means the same members; **equivalent** means the same *number* of members.",
+        "n(∅) = **0**, but n({0}) = **1**.",
+        "The **overlap** on a Venn diagram is the **intersection**.",
+        "n(A ∪ B) = n(A) + n(B) − n(A ∩ B)."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Given A = {2, 4, 6, 8} and B = {4, 8, 12}: A ∪ B = {2, 4, 6, 8, 12} and A ∩ B = {4, 8}.",
+        "{1, 2, 3} and {3, 2, 1} are **equal** sets.",
+        "{a, b} and {5, 9} are **equivalent** sets.",
+        "\"The set of men with three heads\" is the **empty set**.",
+        "Always count the members carefully when asked for n(A).",
+        "In a word problem, put the **\"both\" number in the overlap first**, then subtract."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Writing a repeated member twice in a union.",
+        "Confusing ∪ (union) with ∩ (intersection) — **∪ is like a cup that holds everything**.",
+        "Saying {0} is the empty set.",
+        "Forgetting to subtract the \"both\" group when filling a Venn diagram.",
+        "Leaving out the curly brackets when writing an answer."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Write in set notation: the set of vowels in the English alphabet.",
+        "Given M = {3, 6, 9, 12}, find n(M).",
+        "Are {p, q, r} and {r, q, p} equal or equivalent? Explain.",
+        "Are {1, 2, 3, 4} and {w, x, y, z} equal or equivalent?",
+        "Write one example of an empty set.",
+        "Given A = {1, 2, 3, 4} and B = {3, 4, 5}, find A ∪ B.",
+        "Using the sets in question 6, find A ∩ B.",
+        "Using the sets in question 6, find n(A ∪ B).",
+        "Given C = {2, 4} and D = {5, 7}, find C ∩ D.",
+        "If n(P) = 7, n(Q) = 5 and n(P ∩ Q) = 3, find n(P ∪ Q).",
+        "Set X = {even numbers between 1 and 11}. List its members.",
+        "Set Y = {factors of 12}. List its members.",
+        "Using X and Y from questions 11 and 12, find X ∩ Y.",
+        "In a class, 20 pupils like maize, 15 like beans and 8 like both. How many like only maize?",
+        "Using question 14, how many pupils like only beans?"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "**{a, e, i, o, u}**",
+        "**n(M) = 4**",
+        "**Equal** — they have exactly the same members, and order does not matter.",
+        "**Equivalent** — each has 4 members, but the members are different.",
+        "Any true example, for example **the set of pupils in P.5 who are 100 years old** (or: cows with six legs).",
+        "A ∪ B = **{1, 2, 3, 4, 5}**",
+        "A ∩ B = **{3, 4}**",
+        "n(A ∪ B) = **5**",
+        "C ∩ D = **{ }** (the empty set)",
+        "7 + 5 − 3 = **9**",
+        "X = **{2, 4, 6, 8, 10}**",
+        "Y = **{1, 2, 3, 4, 6, 12}**",
+        "X ∩ Y = **{2, 4, 6}**",
+        "20 − 8 = **12 pupils**",
+        "15 − 8 = **7 pupils**"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.5 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Set = { } · member ∈ · number of members n(A)",
+        "**Equal** = same members · **Equivalent** = same number",
+        "Empty set = { } or ∅ · n(∅) = 0",
+        "**∪ union** = everything · **∩ intersection** = the overlap",
+        "n(A ∪ B) = n(A) + n(B) − n(A ∩ B)"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, the content list (equivalent, empty, equal, union, intersection, Venn diagrams), the competences and the teacher guidance above were taken from the official **NCDC Primary Five Curriculum, Set One** (© NCDC 2010; pages 100–101 of the PDF in `curriculum/`). The explanations, diagrams, worked examples, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook. Every calculation above was worked out and checked."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.5 was available, so the syllabus's own \"Teacher's Notes\" were used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P5_MATH_T02",
+   "class": "P5",
+   "subject": "MATH",
+   "topic_no": 2,
+   "title": "Whole Numbers",
+   "heading": "TOPIC 2: WHOLE NUMBERS",
+   "slug": "whole-numbers",
+   "periods": null,
+   "curriculum_pages": "101–102",
+   "words": 1370,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Five Curriculum, Set One, Mathematics Theme 2 Topic 1, Whole Numbers (`curriculum/P5-SET-ONE-2010.pdf`, pages 101–102).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You can count, read and write numbers. In P.5 you work with whole numbers **up to 999,999**, round off to the **nearest ten thousand**, and read and write **Roman numerals up to fifty**."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "name the place value of every digit in a six-digit number",
+        "find the value of a digit",
+        "write a six-digit number in expanded form and in words",
+        "round off whole numbers to the nearest ten thousand",
+        "read and write Roman numerals up to fifty"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. PLACE VALUE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Place value** is the **name of the position** a digit stands in."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Hundred thousands",
+        "Ten thousands",
+        "Thousands",
+        "Hundreds",
+        "Tens",
+        "Ones"
+       ],
+       "rows": [
+        [
+         "4",
+         "7",
+         "6",
+         "2",
+         "8",
+         "5"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "The number above is **476,285**."
+      },
+      {
+       "t": "ul",
+       "items": [
+        "The place value of **7** is **ten thousands**.",
+        "The place value of **2** is **hundreds**.",
+        "The place value of **5** is **ones**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "2. VALUE OF A DIGIT",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Value** = the digit **multiplied by** its place value."
+      },
+      {
+       "t": "p",
+       "x": "In **476,285**:"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Digit",
+        "Place value",
+        "Value"
+       ],
+       "rows": [
+        [
+         "4",
+         "Hundred thousands",
+         "4 × 100,000 = **400,000**"
+        ],
+        [
+         "7",
+         "Ten thousands",
+         "7 × 10,000 = **70,000**"
+        ],
+        [
+         "6",
+         "Thousands",
+         "6 × 1,000 = **6,000**"
+        ],
+        [
+         "2",
+         "Hundreds",
+         "2 × 100 = **200**"
+        ],
+        [
+         "8",
+         "Tens",
+         "8 × 10 = **80**"
+        ],
+        [
+         "5",
+         "Ones",
+         "5 × 1 = **5**"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "x": "**Place value** is a *name*. **Value** is a *number*."
+      }
+     ]
+    },
+    {
+     "title": "3. EXPANDED FORM",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "To **expand** a number is to write it as the sum of the values of its digits."
+      },
+      {
+       "t": "pre",
+       "x": "476,285 = 400,000 + 70,000 + 6,000 + 200 + 80 + 5"
+      },
+      {
+       "t": "p",
+       "x": "It can also be expanded using multiplication:"
+      },
+      {
+       "t": "pre",
+       "x": "476,285 = (4 × 100,000) + (7 × 10,000) + (6 × 1,000) + (2 × 100) + (8 × 10) + (5 × 1)"
+      },
+      {
+       "t": "p",
+       "x": "**Going back:** 300,000 + 50,000 + 400 + 9 = **350,409** (there are no thousands and no tens, so we write **0** in those places)."
+      }
+     ]
+    },
+    {
+     "title": "4. READING AND WRITING NUMBERS IN WORDS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Number",
+        "In words"
+       ],
+       "rows": [
+        [
+         "4,506",
+         "Four thousand, five hundred six"
+        ],
+        [
+         "30,072",
+         "Thirty thousand, seventy-two"
+        ],
+        [
+         "476,285",
+         "Four hundred seventy-six thousand, two hundred eighty-five"
+        ],
+        [
+         "800,040",
+         "Eight hundred thousand, forty"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**How to do it:** split the number after the **thousands** — 476 | 285 — read the first part, say \"thousand\", then read the second part."
+      }
+     ]
+    },
+    {
+     "title": "5. ROUNDING OFF",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "To round off, look at the digit **immediately to the right** of the place you are rounding to."
+      },
+      {
+       "t": "ul",
+       "items": [
+        "If it is **5 or more**, round **up**.",
+        "If it is **4 or less**, round **down** (leave the digit as it is).",
+        "All digits to the right become **zeros**."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Rounding to the nearest ten thousand"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Number",
+        "Digit to check (thousands)",
+        "Rounded"
+       ],
+       "rows": [
+        [
+         "476,285",
+         "6 → round up",
+         "**480,000**"
+        ],
+        [
+         "342,900",
+         "2 → round down",
+         "**340,000**"
+        ],
+        [
+         "65,000",
+         "5 → round up",
+         "**70,000**"
+        ],
+        [
+         "918,401",
+         "8 → round up",
+         "**920,000**"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Rounding to other places (revision)"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Number",
+        "Nearest ten",
+        "Nearest hundred",
+        "Nearest thousand"
+       ],
+       "rows": [
+        [
+         "4,678",
+         "4,680",
+         "4,700",
+         "5,000"
+        ],
+        [
+         "23,142",
+         "23,140",
+         "23,100",
+         "23,000"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "6. ROMAN NUMERALS UP TO FIFTY",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The Romans used **letters** for numbers. Up to fifty you need only four of them:"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Letter",
+        "I",
+        "V",
+        "X",
+        "L"
+       ],
+       "rows": [
+        [
+         "Value",
+         "1",
+         "5",
+         "10",
+         "50"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "The two rules"
+      },
+      {
+       "t": "p",
+       "x": "**Rule 1 — adding.** A smaller letter written **after** a bigger one is **added**."
+      },
+      {
+       "t": "pre",
+       "x": "VI  = 5 + 1  = 6\nXII = 10 + 2 = 12\nXXVII = 10 + 10 + 5 + 1 + 1 = 27"
+      },
+      {
+       "t": "p",
+       "x": "**Rule 2 — subtracting.** A smaller letter written **before** a bigger one is **subtracted**."
+      },
+      {
+       "t": "pre",
+       "x": "IV = 5 − 1  = 4\nIX = 10 − 1 = 9\nXL = 50 − 10 = 40"
+      },
+      {
+       "t": "h3",
+       "x": "Numerals you should know"
+      },
+      {
+       "t": "table",
+       "head": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+       ],
+       "rows": [
+        [
+         "I",
+         "II",
+         "III",
+         "IV",
+         "V",
+         "VI",
+         "VII",
+         "VIII",
+         "IX",
+         "X"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "head": [
+        "11",
+        "14",
+        "15",
+        "19",
+        "20",
+        "24",
+        "29",
+        "30",
+        "39",
+        "40",
+        "44",
+        "49",
+        "50"
+       ],
+       "rows": [
+        [
+         "XI",
+         "XIV",
+         "XV",
+         "XIX",
+         "XX",
+         "XXIV",
+         "XXIX",
+         "XXX",
+         "XXXIX",
+         "XL",
+         "XLIV",
+         "XLIX",
+         "L"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Worked examples"
+      },
+      {
+       "t": "pre",
+       "x": "Change 38 to a Roman numeral\n38 = 30 + 8 = XXX + VIII = XXXVIII\n\nChange XLVI to a Hindu-Arabic numeral\nXL + V + I = 40 + 5 + 1 = 46"
+      },
+      {
+       "t": "note",
+       "x": "Never write a letter more than **three** times in a row. So 4 is **IV**, not IIII, and 40 is **XL**, not XXXX."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Whole number",
+         "A counting number including zero: 0, 1, 2, 3 …"
+        ],
+        [
+         "Digit",
+         "Any one of the symbols 0 to 9"
+        ],
+        [
+         "Place value",
+         "The name of the position of a digit"
+        ],
+        [
+         "Value",
+         "The digit multiplied by its place value"
+        ],
+        [
+         "Expanded form",
+         "A number written as the sum of the values of its digits"
+        ],
+        [
+         "Rounding off",
+         "Writing a number to the nearest ten, hundred, thousand and so on"
+        ],
+        [
+         "Roman numeral",
+         "A number written with the letters I, V, X, L"
+        ],
+        [
+         "Hindu-Arabic numeral",
+         "The ordinary number written with digits"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "P.5 works with whole numbers **up to 999,999**.",
+        "The places from the right are: **ones, tens, hundreds, thousands, ten thousands, hundred thousands**.",
+        "**Place value is a name; value is a number.**",
+        "When rounding, look **one place to the right**: 5 or more rounds up.",
+        "Roman letters up to fifty: **I = 1, V = 5, X = 10, L = 50**.",
+        "Smaller **after** bigger → add. Smaller **before** bigger → subtract.",
+        "A Roman letter is never repeated more than **three times**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "In 476,285 the value of 7 is **70,000**.",
+        "350,409 expanded is 300,000 + 50,000 + 400 + 9.",
+        "476,285 to the nearest ten thousand is **480,000**.",
+        "65,000 to the nearest ten thousand is **70,000** (5 rounds up).",
+        "XXIX = 29 and 44 = XLIV.",
+        "Write a **zero** in any empty place when you build a number from its expansion."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Giving the value when the place value is asked for.",
+        "Forgetting the zeros when a place is empty (writing 3,549 instead of 350,409).",
+        "Rounding by looking at the wrong digit.",
+        "Writing IIII for 4 or XXXX for 40.",
+        "Reading XL as 60 instead of 40."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Write the place value of 8 in 384,207.",
+        "Write the value of 5 in 452,910.",
+        "Expand 706,384.",
+        "Write in figures: 600,000 + 40,000 + 300 + 20 + 7.",
+        "Write 285,046 in words.",
+        "Write in figures: nine hundred thousand, five hundred sixty.",
+        "Round off 476,285 to the nearest ten thousand.",
+        "Round off 132,500 to the nearest ten thousand.",
+        "Round off 45,678 to the nearest thousand.",
+        "Change 27 to a Roman numeral.",
+        "Change 44 to a Roman numeral.",
+        "Change XXXIV to a Hindu-Arabic numeral.",
+        "Change XLIX to a Hindu-Arabic numeral.",
+        "Which is bigger, 348,900 or 348,090?",
+        "Arrange in ascending order: 65,432 · 65,234 · 65,324."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "**Ten thousands**",
+        "5 × 10,000 = **50,000**",
+        "**700,000 + 6,000 + 300 + 80 + 4**",
+        "**640,327**",
+        "**Two hundred eighty-five thousand, forty-six**",
+        "**900,560**",
+        "**480,000**",
+        "**130,000** (the thousands digit is 2, so it rounds down)",
+        "**46,000**",
+        "**XXVII**",
+        "**XLIV**",
+        "30 + 4 = **34**",
+        "40 + 9 = **49**",
+        "**348,900** is bigger (compare the hundreds: 9 is more than 0)",
+        "**65,234 · 65,324 · 65,432**"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.5 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Places: ones · tens · hundreds · thousands · ten thousands · hundred thousands",
+        "Value = digit × place value",
+        "Round off: 5 or more → up · 4 or less → down",
+        "I = 1 · V = 5 · X = 10 · L = 50",
+        "IV = 4 · IX = 9 · XL = 40 · XLIX = 49"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, the content list (place value and value up to 999,999, natural numbers up to 999,999, rounding off to the nearest ten thousand, Roman numerals), the competences and the teacher guidance — including the instruction to use an abacus — were taken from the official **NCDC Primary Five Curriculum, Set One** (© NCDC 2010; pages 101–102 of the PDF in `curriculum/`). The explanations, tables, worked examples, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook. Every calculation above was worked out and checked."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.5 was available, so the syllabus's own \"Teacher's Notes\" were used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P5_MATH_T03",
+   "class": "P5",
+   "subject": "MATH",
+   "topic_no": 3,
+   "title": "Operations on Whole Numbers",
+   "heading": "TOPIC 3: OPERATIONS ON WHOLE NUMBERS",
+   "slug": "operations-on-whole-numbers",
+   "periods": null,
+   "curriculum_pages": "102–104",
+   "words": 1536,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Five Curriculum, Set One, Mathematics Theme 2 Topic 2, Operations on Whole Numbers (`curriculum/P5-SET-ONE-2010.pdf`, pages 102–104).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You can add, subtract, multiply and divide. In P.5 you add and subtract numbers of **up to six digits**, multiply **four-digit numbers by two-digit numbers**, divide **by two-digit numbers**, and you meet **numbers in Base Five**."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "add and subtract whole numbers up to six digits, with or without regrouping",
+        "multiply numbers up to four digits by two-digit numbers",
+        "divide whole numbers by two-digit numbers, with or without remainders",
+        "use the four operations together in mixed operations",
+        "solve word problems from everyday life",
+        "count, add and subtract numbers in Base Five"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. ADDITION",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Regrouping (carrying):** when a column adds up to ten or more, write the ones digit and carry the ten to the next column."
+      },
+      {
+       "t": "pre",
+       "x": "    3 4 8 6 7 5\n  + 2 7 6 4 8 9\n  -------------\n    6 2 5 1 6 4"
+      },
+      {
+       "t": "p",
+       "x": "*Check:* 348,675 + 276,489 = **625,164**"
+      },
+      {
+       "t": "h3",
+       "x": "Other words that mean \"add\""
+      },
+      {
+       "t": "p",
+       "x": "sum · total · plus · altogether · in all · increase by · more than · and."
+      }
+     ]
+    },
+    {
+     "title": "2. SUBTRACTION",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "When you cannot take away, **borrow** from the next column on the left."
+      },
+      {
+       "t": "pre",
+       "x": "    6 0 0 0 0 0\n  - 2 4 7 8 5 3\n  -------------\n    3 5 2 1 4 7"
+      },
+      {
+       "t": "p",
+       "x": "*Check:* 352,147 + 247,853 = 600,000 ✓"
+      },
+      {
+       "t": "h3",
+       "x": "Other words that mean \"subtract\""
+      },
+      {
+       "t": "p",
+       "x": "difference · minus · take away · less than · decrease by · reduce by · remainder · how many more."
+      },
+      {
+       "t": "p",
+       "x": "**Watch the word order:** *\"Subtract 250 from 900\"* means **900 − 250 = 650**."
+      }
+     ]
+    },
+    {
+     "title": "3. MULTIPLICATION",
+     "blocks": [
+      {
+       "t": "pre",
+       "x": "      3 4 2 6\n    ×     2 4\n    ----------\n     1 3 7 0 4      (3,426 × 4)\n   6 8 5 2 0        (3,426 × 20)\n   -----------\n   8 2 2 2 4"
+      },
+      {
+       "t": "p",
+       "x": "*Check:* 3,426 × 24 = **82,224**"
+      },
+      {
+       "t": "h3",
+       "x": "Other words that mean \"multiply\""
+      },
+      {
+       "t": "p",
+       "x": "product · times · twice (× 2) · thrice (× 3) · double · of."
+      }
+     ]
+    },
+    {
+     "title": "4. DIVISION",
+     "blocks": [
+      {
+       "t": "pre",
+       "x": "9,072 ÷ 24\n\n24 into 90 goes 3 times (72), remainder 18\n24 into 187 goes 7 times (168), remainder 19\n24 into 192 goes 8 times (192), remainder 0\n\nAnswer: 378"
+      },
+      {
+       "t": "p",
+       "x": "*Check:* 378 × 24 = 9,072 ✓"
+      },
+      {
+       "t": "h3",
+       "x": "Division with a remainder"
+      },
+      {
+       "t": "pre",
+       "x": "5,000 ÷ 36 = 138 remainder 32\nCheck: 138 × 36 = 4,968 ; 4,968 + 32 = 5,000  ✓"
+      },
+      {
+       "t": "h3",
+       "x": "Other words that mean \"divide\""
+      },
+      {
+       "t": "p",
+       "x": "quotient · share equally · goes into · divided by · split · each."
+      }
+     ]
+    },
+    {
+     "title": "5. MIXED OPERATIONS — BODMAS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Work in this order:"
+      },
+      {
+       "t": "p",
+       "x": "**B**rackets → **O**f → **D**ivision → **M**ultiplication → **A**ddition → **S**ubtraction."
+      },
+      {
+       "t": "pre",
+       "x": "40 + 12 × 3      = 40 + 36 = 76\n(40 + 12) × 3    = 52 × 3  = 156\n100 − 60 ÷ 5     = 100 − 12 = 88\n7 × (18 − 6) ÷ 4 = 7 × 12 ÷ 4 = 84 ÷ 4 = 21"
+      }
+     ]
+    },
+    {
+     "title": "6. WORD PROBLEMS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Read → find the key word → work out → check → write the unit.**"
+      },
+      {
+       "t": "p",
+       "x": "**Example 1.** A school harvested 12,450 kg of maize in the first season and 9,875 kg in the second. How much maize altogether?"
+      },
+      {
+       "t": "pre",
+       "x": "12,450 + 9,875 = 22,325 kg"
+      },
+      {
+       "t": "p",
+       "x": "**Example 2.** A trader bought 1,250 exercise books at 1,800 shillings each. How much did he pay?"
+      },
+      {
+       "t": "pre",
+       "x": "1,250 × 1,800 = 2,250,000 shillings"
+      },
+      {
+       "t": "p",
+       "x": "**Example 3.** 4,860 oranges are packed in boxes of 45. How many boxes are filled?"
+      },
+      {
+       "t": "pre",
+       "x": "4,860 ÷ 45 = 108 boxes\nCheck: 108 × 45 = 4,860  ✓"
+      }
+     ]
+    },
+    {
+     "title": "7. NUMBERS IN BASE FIVE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "In **Base Ten** (the numbers we use every day) we use ten digits, **0 to 9**."
+      },
+      {
+       "t": "p",
+       "x": "In **Base Five** we use only **five digits — 0, 1, 2, 3 and 4**. There is no digit 5. As soon as we reach five, we carry one to the next place."
+      },
+      {
+       "t": "h3",
+       "x": "Counting in Base Five"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Base Ten",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+       ],
+       "rows": [
+        [
+         "Base Five",
+         "1",
+         "2",
+         "3",
+         "4",
+         "10",
+         "11",
+         "12",
+         "13",
+         "14",
+         "20",
+         "21",
+         "22"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "We write the base as a small word after the number: **23five**."
+      },
+      {
+       "t": "h3",
+       "x": "Place values in Base Five"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Twenty-fives",
+        "Fives",
+        "Ones"
+       ],
+       "rows": [
+        [
+         "25",
+         "5",
+         "1"
+        ]
+       ]
+      },
+      {
+       "t": "pre",
+       "x": "23five = (2 × 5) + (3 × 1) = 10 + 3 = 13ten\n142five = (1 × 25) + (4 × 5) + (2 × 1) = 25 + 20 + 2 = 47ten"
+      },
+      {
+       "t": "h3",
+       "x": "Adding in Base Five"
+      },
+      {
+       "t": "pre",
+       "x": "    2 3 five\n  + 1 4 five\n  ----------\n    4 2 five\n\n3 + 4 = 7. Seven is one five and two, so write 2 and carry 1.\n1 + 2 + 1 = 4.\nCheck in Base Ten: 13 + 9 = 22, and 42five = (4 × 5) + 2 = 22  ✓"
+      },
+      {
+       "t": "h3",
+       "x": "Subtracting in Base Five"
+      },
+      {
+       "t": "pre",
+       "x": "    3 2 five\n  - 1 4 five\n  ----------\n    1 3 five\n\n2 − 4 cannot be done, so borrow one five: 5 + 2 = 7, and 7 − 4 = 3.\nNow 2 − 1 = 1.\nCheck in Base Ten: 17 − 9 = 8, and 13five = 5 + 3 = 8  ✓"
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Sum",
+         "The answer in addition"
+        ],
+        [
+         "Difference",
+         "The answer in subtraction"
+        ],
+        [
+         "Product",
+         "The answer in multiplication"
+        ],
+        [
+         "Quotient",
+         "The answer in division"
+        ],
+        [
+         "Dividend",
+         "The number being divided"
+        ],
+        [
+         "Divisor",
+         "The number you divide by"
+        ],
+        [
+         "Remainder",
+         "What is left over after dividing"
+        ],
+        [
+         "Regrouping",
+         "Carrying in addition or borrowing in subtraction"
+        ],
+        [
+         "BODMAS",
+         "The order in which operations are worked out"
+        ],
+        [
+         "Base Five",
+         "A way of writing numbers using only the digits 0, 1, 2, 3 and 4"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Line up the **place values** before you add or subtract.",
+        "Check subtraction by **adding back**; check division by **multiplying back**.",
+        "Always work in the order **BODMAS**.",
+        "\"Subtract A **from** B\" means **B − A**.",
+        "In Base Five there is **no digit 5** — five ones make one five.",
+        "10five = 5ten and 100five = 25ten.",
+        "Always write the **unit** (kg, shillings, books) in a word-problem answer."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "348,675 + 276,489 = **625,164**.",
+        "600,000 − 247,853 = **352,147**.",
+        "3,426 × 24 = **82,224**.",
+        "9,072 ÷ 24 = **378**.",
+        "40 + 12 × 3 = **76** (multiply first).",
+        "23five + 14five = **42five**.",
+        "32five − 14five = **13five**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Adding before multiplying when there are no brackets.",
+        "Forgetting to carry or to borrow.",
+        "Reversing a subtraction word problem.",
+        "Dropping the remainder in a division word problem.",
+        "Writing the digit 5 in a Base Five answer.",
+        "Leaving out the unit in the answer."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Add: 348,675 + 276,489.",
+        "Add: 204,318 + 79,486 + 5,027.",
+        "Subtract: 600,000 − 247,853.",
+        "Subtract 158,472 from 400,000.",
+        "Multiply: 3,426 × 24.",
+        "Multiply: 1,208 × 35.",
+        "Divide: 9,072 ÷ 24.",
+        "Divide: 5,000 ÷ 36 (give the remainder).",
+        "Work out: 40 + 12 × 3.",
+        "Work out: (40 + 12) × 3.",
+        "Work out: 100 − 60 ÷ 5.",
+        "A school harvested 12,450 kg of maize and 9,875 kg of beans. Find the total mass.",
+        "A trader had 850,000 shillings and spent 476,300 shillings. How much remained?",
+        "4,860 oranges are packed in boxes of 45. How many boxes are filled?",
+        "Change 142five to Base Ten.",
+        "Change 19ten to Base Five.",
+        "Add: 23five + 14five.",
+        "Subtract: 32five − 14five.",
+        "A lorry carries 1,450 bricks a trip. How many bricks in 32 trips?",
+        "Find the difference between the product of 250 and 40 and the sum of 3,000 and 1,500."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "**625,164**",
+        "204,318 + 79,486 = 283,804; 283,804 + 5,027 = **288,831**",
+        "**352,147**",
+        "400,000 − 158,472 = **241,528**",
+        "**82,224**",
+        "1,208 × 35 = **42,280**",
+        "**378**",
+        "**138 remainder 32**",
+        "40 + 36 = **76**",
+        "52 × 3 = **156**",
+        "100 − 12 = **88**",
+        "12,450 + 9,875 = **22,325 kg**",
+        "850,000 − 476,300 = **373,700 shillings**",
+        "4,860 ÷ 45 = **108 boxes**",
+        "(1 × 25) + (4 × 5) + 2 = **47ten**",
+        "19 = (3 × 5) + 4 = **34five**",
+        "**42five**",
+        "**13five**",
+        "1,450 × 32 = **46,400 bricks**",
+        "Product = 250 × 40 = 10,000. Sum = 3,000 + 1,500 = 4,500. Difference = **5,500**"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.5 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "sum + · difference − · product × · quotient ÷",
+        "**BODMAS** always",
+        "Check subtraction by adding back, division by multiplying back",
+        "Base Five digits: **0 1 2 3 4** only · 10five = 5 · 100five = 25",
+        "Word problems: read twice, work out, check, write the unit"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, the content list (addition and subtraction of whole numbers, multiplication by two-digit numbers, division by two-digit numbers, mixed operations and **numbers in Base Five**), the competences and the teacher guidance above were taken from the official **NCDC Primary Five Curriculum, Set One** (© NCDC 2010; pages 102–104 of the PDF in `curriculum/`), including the syllabus's own list of other words used for the operations. The explanations, worked examples, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook. Every calculation above was worked out and checked."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.5 was available, so the syllabus's own \"Teacher's Notes\" were used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P5_MATH_T04",
+   "class": "P5",
+   "subject": "MATH",
+   "topic_no": 4,
+   "title": "Patterns and Sequences",
+   "heading": "TOPIC 4: PATTERNS AND SEQUENCES",
+   "slug": "patterns-and-sequences",
+   "periods": null,
+   "curriculum_pages": "105–106",
+   "words": 1556,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Five Curriculum, Set One, Mathematics Theme 2 Topic 3, Patterns and Sequences (`curriculum/P5-SET-ONE-2010.pdf`, pages 105–106).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You can count in twos, fives and tens. In P.5 you learn the **types of numbers**, you list **factors and multiples**, and you work out the **L.C.M.** and the **G.C.F.**"
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "form patterns using increasing and decreasing progression",
+        "name even, odd, prime, composite, triangular and square numbers",
+        "list the factors and the multiples of a number",
+        "work out the L.C.M. and the G.C.F. of two or three numbers",
+        "find the missing number in a sequence"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. TYPES OF NUMBERS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Type",
+        "Meaning",
+        "Examples"
+       ],
+       "rows": [
+        [
+         "**Even**",
+         "Divisible by 2",
+         "2, 4, 6, 8, 10 …"
+        ],
+        [
+         "**Odd**",
+         "Not divisible by 2",
+         "1, 3, 5, 7, 9 …"
+        ],
+        [
+         "**Prime**",
+         "Has exactly **two** factors — 1 and itself",
+         "2, 3, 5, 7, 11, 13 …"
+        ],
+        [
+         "**Composite**",
+         "Has **more than two** factors",
+         "4, 6, 8, 9, 10, 12 …"
+        ],
+        [
+         "**Square**",
+         "The answer when a number is multiplied by itself",
+         "1, 4, 9, 16, 25 …"
+        ],
+        [
+         "**Triangular**",
+         "Numbers that make a triangle of dots",
+         "1, 3, 6, 10, 15 …"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Prime numbers up to 50"
+      },
+      {
+       "t": "p",
+       "x": "**2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47.**"
+      },
+      {
+       "t": "note",
+       "x": "**2 is the only even prime number.** **1 is neither prime nor composite** — it has only one factor."
+      },
+      {
+       "t": "h3",
+       "x": "Square numbers"
+      },
+      {
+       "t": "pre",
+       "x": "1 × 1 = 1    2 × 2 = 4    3 × 3 = 9    4 × 4 = 16    5 × 5 = 25\n6 × 6 = 36   7 × 7 = 49   8 × 8 = 64   9 × 9 = 81    10 × 10 = 100"
+      },
+      {
+       "t": "h3",
+       "x": "Triangular numbers"
+      },
+      {
+       "t": "p",
+       "x": "You get the next triangular number by adding the next counting number."
+      },
+      {
+       "t": "pre",
+       "x": "1\n1 + 2 = 3\n3 + 3 = 6\n6 + 4 = 10\n10 + 5 = 15\n15 + 6 = 21\n21 + 7 = 28"
+      },
+      {
+       "t": "p",
+       "x": "So the triangular numbers are **1, 3, 6, 10, 15, 21, 28, 36, 45, 55 …**"
+      }
+     ]
+    },
+    {
+     "title": "2. FACTORS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Factor:** a number that divides another number exactly, without a remainder."
+      },
+      {
+       "t": "pre",
+       "x": "Factors of 12: 1, 2, 3, 4, 6, 12\nFactors of 18: 1, 2, 3, 6, 9, 18"
+      },
+      {
+       "t": "p",
+       "x": "**Prime factors** are the factors that are prime numbers."
+      },
+      {
+       "t": "pre",
+       "x": "Prime factors of 12: 2 and 3\n12 = 2 × 2 × 3"
+      },
+      {
+       "t": "h3",
+       "x": "Finding prime factors by division"
+      },
+      {
+       "t": "pre",
+       "x": "2 | 18\n3 |  9\n3 |  3\n  |  1        18 = 2 × 3 × 3"
+      }
+     ]
+    },
+    {
+     "title": "3. MULTIPLES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Multiple:** the answer when a number is multiplied by 1, 2, 3, 4 …"
+      },
+      {
+       "t": "pre",
+       "x": "Multiples of 4: 4, 8, 12, 16, 20, 24, 28 …\nMultiples of 6: 6, 12, 18, 24, 30, 36 …"
+      },
+      {
+       "t": "p",
+       "x": "**Common multiples of 4 and 6:** 12, 24, 36 …"
+      }
+     ]
+    },
+    {
+     "title": "4. G.C.F. — GREATEST COMMON FACTOR",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The **G.C.F.** (also called the Highest Common Factor) is the **biggest number that divides both numbers exactly**."
+      },
+      {
+       "t": "h3",
+       "x": "Method 1 — list the factors"
+      },
+      {
+       "t": "pre",
+       "x": "Factors of 12: 1, 2, 3, 4, 6, 12\nFactors of 18: 1, 2, 3, 6, 9, 18\nCommon factors: 1, 2, 3, 6\nG.C.F. = 6"
+      },
+      {
+       "t": "h3",
+       "x": "Method 2 — prime factors"
+      },
+      {
+       "t": "pre",
+       "x": "12 = 2 × 2 × 3\n18 = 2 × 3 × 3\nCommon: 2 × 3\nG.C.F. = 6"
+      }
+     ]
+    },
+    {
+     "title": "5. L.C.M. — LOWEST COMMON MULTIPLE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The **L.C.M.** is the **smallest number that both numbers divide into exactly**."
+      },
+      {
+       "t": "h3",
+       "x": "Method 1 — list the multiples"
+      },
+      {
+       "t": "pre",
+       "x": "Multiples of 12: 12, 24, 36, 48 …\nMultiples of 18: 18, 36, 54 …\nL.C.M. = 36"
+      },
+      {
+       "t": "h3",
+       "x": "Method 2 — prime factors"
+      },
+      {
+       "t": "pre",
+       "x": "12 = 2 × 2 × 3\n18 = 2 × 3 × 3\nTake each factor the greatest number of times it appears:\n2 × 2 × 3 × 3 = 36\nL.C.M. = 36"
+      },
+      {
+       "t": "h3",
+       "x": "Worked example with three numbers"
+      },
+      {
+       "t": "p",
+       "x": "Find the L.C.M. of 4, 6 and 8."
+      },
+      {
+       "t": "pre",
+       "x": "2 | 4  6  8\n2 | 2  3  4\n2 | 1  3  2\n3 | 1  3  1\n  | 1  1  1\n\nL.C.M. = 2 × 2 × 2 × 3 = 24\nCheck: 24 ÷ 4 = 6, 24 ÷ 6 = 4, 24 ÷ 8 = 3   ✓"
+      }
+     ]
+    },
+    {
+     "title": "6. PATTERNS AND SEQUENCES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A **sequence** is a list of numbers that follow a rule. Find the rule by looking at what is done to get from one number to the next."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Sequence",
+        "Rule",
+        "Next two"
+       ],
+       "rows": [
+        [
+         "3, 7, 11, 15, …",
+         "add 4 (**increasing**)",
+         "19, 23"
+        ],
+        [
+         "40, 35, 30, 25, …",
+         "subtract 5 (**decreasing**)",
+         "20, 15"
+        ],
+        [
+         "2, 4, 8, 16, …",
+         "multiply by 2",
+         "32, 64"
+        ],
+        [
+         "1, 4, 9, 16, …",
+         "square numbers",
+         "25, 36"
+        ],
+        [
+         "1, 3, 6, 10, …",
+         "triangular numbers",
+         "15, 21"
+        ],
+        [
+         "100, 50, 25, …",
+         "divide by 2",
+         "12.5, 6.25"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Finding a missing number in the middle:** in 5, 11, __, 23, 29 the rule is *add 6*, so the missing number is 11 + 6 = **17**."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Factor",
+         "A number that divides another exactly"
+        ],
+        [
+         "Multiple",
+         "The answer when a number is multiplied by a counting number"
+        ],
+        [
+         "Prime number",
+         "A number with exactly two factors"
+        ],
+        [
+         "Composite number",
+         "A number with more than two factors"
+        ],
+        [
+         "Square number",
+         "The answer when a number is multiplied by itself"
+        ],
+        [
+         "Triangular number",
+         "A number that can be arranged as a triangle of dots"
+        ],
+        [
+         "G.C.F.",
+         "The greatest number that divides two numbers exactly"
+        ],
+        [
+         "L.C.M.",
+         "The smallest number that two numbers divide into exactly"
+        ],
+        [
+         "Sequence",
+         "A list of numbers that follow a rule"
+        ],
+        [
+         "Progression",
+         "A sequence that keeps increasing or keeps decreasing"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**1 is neither prime nor composite.**",
+        "**2 is the only even prime number.**",
+        "Every number is a factor of itself, and 1 is a factor of every number.",
+        "The **G.C.F.** is never bigger than the smaller number.",
+        "The **L.C.M.** is never smaller than the bigger number.",
+        "Prime numbers up to 20: **2, 3, 5, 7, 11, 13, 17, 19**.",
+        "Square numbers to 100: **1, 4, 9, 16, 25, 36, 49, 64, 81, 100**.",
+        "Triangular numbers: **1, 3, 6, 10, 15, 21, 28 …**"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "G.C.F. of 12 and 18 = **6**. L.C.M. of 12 and 18 = **36**.",
+        "L.C.M. of 4, 6 and 8 = **24**.",
+        "Prime factors of 18 are **2 and 3**; 18 = 2 × 3 × 3.",
+        "The next number after 3, 7, 11, 15 is **19**.",
+        "The fifth triangular number is **15**.",
+        "Check an L.C.M. by dividing it by each of the numbers."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Calling 1 a prime number.",
+        "Mixing up factors (they divide **into** the number) with multiples (they come **from** it).",
+        "Giving a **common** factor instead of the **greatest** common factor.",
+        "Multiplying the two numbers together and calling it the L.C.M. — that is not always the smallest.",
+        "Looking at only the first gap when finding the rule of a sequence."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "List all the factors of 24.",
+        "List the first five multiples of 7.",
+        "Write all the prime numbers between 10 and 30.",
+        "Is 51 prime or composite? Give a reason.",
+        "Write the first six triangular numbers.",
+        "Write the square numbers between 20 and 90.",
+        "Find the G.C.F. of 12 and 18.",
+        "Find the G.C.F. of 24 and 36.",
+        "Find the L.C.M. of 12 and 18.",
+        "Find the L.C.M. of 4, 6 and 8.",
+        "Express 36 as a product of its prime factors.",
+        "Find the next two numbers: 3, 7, 11, 15, …",
+        "Find the next two numbers: 60, 53, 46, 39, …",
+        "Find the missing number: 5, 11, __, 23, 29.",
+        "Find the next two numbers: 1, 4, 9, 16, …"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "**1, 2, 3, 4, 6, 8, 12, 24**",
+        "**7, 14, 21, 28, 35**",
+        "**11, 13, 17, 19, 23, 29**",
+        "**Composite** — 51 = 3 × 17, so it has more than two factors.",
+        "**1, 3, 6, 10, 15, 21**",
+        "**25, 36, 49, 64, 81**",
+        "**6**",
+        "Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. G.C.F. = **12**",
+        "**36**",
+        "**24**",
+        "36 = **2 × 2 × 3 × 3**",
+        "Add 4 → **19, 23**",
+        "Subtract 7 → **32, 25**",
+        "Add 6 → **17**",
+        "Square numbers → **25, 36**"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.5 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Prime = exactly **two** factors · 1 is not prime",
+        "Factors divide in · multiples come out",
+        "**G.C.F.** = biggest common factor · **L.C.M.** = smallest common multiple",
+        "Squares: 1 4 9 16 25 36 49 64 81 100",
+        "Triangular: 1 3 6 10 15 21 28",
+        "Find the rule first, then continue the sequence"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, the content list (types of numbers, factors and multiples of whole numbers, L.C.M. and G.C.F., number patterns), the competences and the teacher guidance — including the instruction to let learners form their own patterns for their classmates to solve — were taken from the official **NCDC Primary Five Curriculum, Set One** (© NCDC 2010; pages 105–106 of the PDF in `curriculum/`). The explanations, tables, worked examples, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook. Every calculation above was worked out and checked."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.5 was available, so the syllabus's own guidance was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P5_MATH_T05",
+   "class": "P5",
+   "subject": "MATH",
+   "topic_no": 5,
+   "title": "Fractions",
+   "heading": "TOPIC 5: FRACTIONS",
+   "slug": "fractions",
+   "periods": null,
+   "curriculum_pages": "106–110",
+   "words": 1559,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Five Curriculum, Set One, Mathematics — Fractions, taught in Term I (common fractions) and Term II (decimals) (`curriculum/P5-SET-ONE-2010.pdf`, pages 106–110).*"
+      },
+      {
+       "t": "p",
+       "x": "**How this topic is arranged:** the syllabus lists **Fractions** as one topic but teaches it in two parts — **common fractions in Term I** and **decimals in Term II**. Both parts are written up here, as **Part A** and **Part B**."
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You can name a half, a third and a quarter, and you can add fractions that have the same denominator. In P.5 the denominators are **different**, and you also **multiply and divide** fractions and work with **decimals up to hundredths**."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "add and subtract fractions with different denominators",
+        "multiply a fraction by a fraction and by a whole number",
+        "divide a fraction by a fraction and by a whole number",
+        "name the place value of decimals up to hundredths",
+        "put decimals on a number line and order them",
+        "change decimals to fractions and fractions to decimals",
+        "add and subtract decimals up to hundredths"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. THE PARTS OF A FRACTION",
+     "blocks": [
+      {
+       "t": "pre",
+       "x": "    3   ← numerator (how many parts we have)\n    -\n    4   ← denominator (how many equal parts the whole was cut into)"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Kind",
+        "Meaning",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**Proper fraction**",
+         "Numerator smaller than denominator",
+         "3/4"
+        ],
+        [
+         "**Improper fraction**",
+         "Numerator bigger than denominator",
+         "7/4"
+        ],
+        [
+         "**Mixed number**",
+         "A whole number and a fraction",
+         "1 3/4"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Equivalent fractions** are fractions with the same value."
+      },
+      {
+       "t": "pre",
+       "x": "1/2 = 2/4 = 3/6 = 4/8 = 5/10"
+      }
+     ]
+    },
+    {
+     "title": "2. ADDING FRACTIONS WITH DIFFERENT DENOMINATORS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Step 1:** find the **L.C.M.** of the denominators. **Step 2:** change each fraction to an equivalent fraction with that denominator. **Step 3:** add the numerators only. **Step 4:** simplify if you can."
+      },
+      {
+       "t": "pre",
+       "x": "2/3 + 1/4\n\nL.C.M. of 3 and 4 is 12\n2/3 = 8/12      1/4 = 3/12\n8/12 + 3/12 = 11/12"
+      },
+      {
+       "t": "pre",
+       "x": "1/2 + 3/8\n\nL.C.M. of 2 and 8 is 8\n1/2 = 4/8\n4/8 + 3/8 = 7/8"
+      },
+      {
+       "t": "h3",
+       "x": "Adding mixed numbers"
+      },
+      {
+       "t": "pre",
+       "x": "1 1/2 + 2 1/3\n= (1 + 2) + (1/2 + 1/3)\n= 3 + (3/6 + 2/6)\n= 3 + 5/6\n= 3 5/6"
+      }
+     ]
+    },
+    {
+     "title": "3. SUBTRACTING FRACTIONS WITH DIFFERENT DENOMINATORS",
+     "blocks": [
+      {
+       "t": "pre",
+       "x": "5/6 − 1/4\n\nL.C.M. of 6 and 4 is 12\n5/6 = 10/12     1/4 = 3/12\n10/12 − 3/12 = 7/12"
+      },
+      {
+       "t": "pre",
+       "x": "3/4 − 2/3\n\nL.C.M. of 4 and 3 is 12\n9/12 − 8/12 = 1/12"
+      }
+     ]
+    },
+    {
+     "title": "4. MULTIPLYING FRACTIONS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Rule: multiply the numerators, multiply the denominators, then simplify.**"
+      },
+      {
+       "t": "pre",
+       "x": "3/4 × 2/5 = (3 × 2)/(4 × 5) = 6/20 = 3/10"
+      },
+      {
+       "t": "h3",
+       "x": "A fraction of a whole number"
+      },
+      {
+       "t": "p",
+       "x": "The word **\"of\"** means **multiply**."
+      },
+      {
+       "t": "pre",
+       "x": "2/3 of 12 = 2/3 × 12 = 24/3 = 8\n3/5 of 40 = 120/5 = 24"
+      },
+      {
+       "t": "p",
+       "x": "**Word problem:** A farmer has 45 goats and sells 2/9 of them. How many did he sell?"
+      },
+      {
+       "t": "pre",
+       "x": "2/9 × 45 = 90/9 = 10 goats"
+      }
+     ]
+    },
+    {
+     "title": "5. DIVIDING FRACTIONS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Rule: turn the second fraction upside down, then multiply.**"
+      },
+      {
+       "t": "pre",
+       "x": "3/4 ÷ 1/2 = 3/4 × 2/1 = 6/4 = 1 1/2"
+      },
+      {
+       "t": "h3",
+       "x": "Dividing a fraction by a whole number"
+      },
+      {
+       "t": "pre",
+       "x": "2/3 ÷ 4 = 2/3 × 1/4 = 2/12 = 1/6"
+      },
+      {
+       "t": "h3",
+       "x": "Dividing a whole number by a fraction"
+      },
+      {
+       "t": "pre",
+       "x": "6 ÷ 1/2 = 6 × 2/1 = 12"
+      },
+      {
+       "t": "p",
+       "x": "*This makes sense: there are 12 halves in 6 whole things.*"
+      }
+     ]
+    },
+    {
+     "title": "6. PLACE VALUE OF DECIMALS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A **decimal** is a fraction whose denominator is ten, a hundred, and so on. The **decimal point** separates the whole numbers from the parts."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Tens",
+        "Ones",
+        "**·**",
+        "Tenths",
+        "Hundredths"
+       ],
+       "rows": [
+        [
+         "2",
+         "5",
+         "·",
+         "3",
+         "7"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "In **25.37**:"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Digit",
+        "Place value",
+        "Value"
+       ],
+       "rows": [
+        [
+         "2",
+         "Tens",
+         "20"
+        ],
+        [
+         "5",
+         "Ones",
+         "5"
+        ],
+        [
+         "3",
+         "Tenths",
+         "0.3 or 3/10"
+        ],
+        [
+         "7",
+         "Hundredths",
+         "0.07 or 7/100"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Reading it:** *twenty-five point three seven.*"
+      }
+     ]
+    },
+    {
+     "title": "7. DECIMALS ON A NUMBER LINE",
+     "blocks": [
+      {
+       "t": "pre",
+       "x": "0        0.2       0.4       0.6       0.8       1.0\n|----|----|----|----|----|----|----|----|----|----|\n   0.1  0.3      0.5      0.7      0.9"
+      },
+      {
+       "t": "p",
+       "x": "Between 0.3 and 0.4 lie 0.31, 0.32 … up to 0.39."
+      },
+      {
+       "t": "p",
+       "x": "**Ordering:** to compare decimals, compare the **tenths first**, then the hundredths."
+      },
+      {
+       "t": "pre",
+       "x": "0.5 , 0.35 , 0.3 , 0.45\nIn order (smallest first): 0.3 , 0.35 , 0.45 , 0.5"
+      },
+      {
+       "t": "note",
+       "x": "0.5 is bigger than 0.35, even though 35 looks bigger than 5. Think of 0.5 as **0.50**."
+      }
+     ]
+    },
+    {
+     "title": "8. CHANGING DECIMALS TO FRACTIONS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Count the figures after the point: **one figure → tenths, two figures → hundredths.**"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Decimal",
+        "Fraction",
+        "Simplified"
+       ],
+       "rows": [
+        [
+         "0.7",
+         "7/10",
+         "7/10"
+        ],
+        [
+         "0.5",
+         "5/10",
+         "**1/2**"
+        ],
+        [
+         "0.25",
+         "25/100",
+         "**1/4**"
+        ],
+        [
+         "0.04",
+         "4/100",
+         "**1/25**"
+        ],
+        [
+         "2.75",
+         "2 75/100",
+         "**2 3/4**"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "9. CHANGING FRACTIONS TO DECIMALS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Divide the numerator by the denominator, or make the denominator 10 or 100."
+      },
+      {
+       "t": "pre",
+       "x": "3/4  = 3 ÷ 4  = 0.75        (or 3/4 = 75/100 = 0.75)\n1/5  = 2/10   = 0.2\n1/2  = 5/10   = 0.5\n3/20 = 15/100 = 0.15"
+      }
+     ]
+    },
+    {
+     "title": "10. ADDING AND SUBTRACTING DECIMALS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Always put the decimal points under one another.**"
+      },
+      {
+       "t": "pre",
+       "x": "    4 . 3 5\n  + 2 . 8 0\n  ---------\n    7 . 1 5"
+      },
+      {
+       "t": "pre",
+       "x": "    9 . 2 0\n  − 3 . 7 5\n  ---------\n    5 . 4 5"
+      },
+      {
+       "t": "p",
+       "x": "*Check:* 5.45 + 3.75 = 9.20 ✓"
+      },
+      {
+       "t": "p",
+       "x": "**Word problem:** Ana bought 2.5 kg of sugar and 1.75 kg of rice. What is the total mass?"
+      },
+      {
+       "t": "pre",
+       "x": "2.50 + 1.75 = 4.25 kg"
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Numerator",
+         "The top number of a fraction"
+        ],
+        [
+         "Denominator",
+         "The bottom number of a fraction"
+        ],
+        [
+         "Proper fraction",
+         "Numerator smaller than denominator"
+        ],
+        [
+         "Improper fraction",
+         "Numerator bigger than denominator"
+        ],
+        [
+         "Mixed number",
+         "A whole number together with a fraction"
+        ],
+        [
+         "Equivalent fractions",
+         "Different fractions with the same value"
+        ],
+        [
+         "Decimal",
+         "A fraction written with a decimal point"
+        ],
+        [
+         "Tenths",
+         "The first place after the decimal point"
+        ],
+        [
+         "Hundredths",
+         "The second place after the decimal point"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "To add or subtract fractions, the **denominators must be the same** — use the L.C.M.",
+        "Never add the denominators together.",
+        "**\"Of\" means multiply.**",
+        "To divide by a fraction, **turn it upside down and multiply**.",
+        "One figure after the point = **tenths**; two figures = **hundredths**.",
+        "0.5 = 1/2 · 0.25 = 1/4 · 0.75 = 3/4 · 0.2 = 1/5.",
+        "When adding decimals, **line up the points**, and fill empty places with zeros."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "2/3 + 1/4 = **11/12**.",
+        "5/6 − 1/4 = **7/12**.",
+        "3/4 × 2/5 = **3/10**.",
+        "2/3 of 12 = **8**.",
+        "3/4 ÷ 1/2 = **1 1/2**.",
+        "In 25.37, the value of 7 is **7/100 (0.07)**.",
+        "0.25 = **1/4** and 3/4 = **0.75**.",
+        "4.35 + 2.8 = **7.15**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Adding the denominators: 1/2 + 1/3 is **not** 2/5.",
+        "Forgetting to simplify the answer.",
+        "Turning the **first** fraction upside down instead of the second when dividing.",
+        "Saying 0.35 is bigger than 0.5.",
+        "Not lining up the decimal points before adding or subtracting.",
+        "Losing the decimal point altogether in the answer."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Add: 2/3 + 1/4.",
+        "Add: 1/2 + 3/8.",
+        "Add: 1 1/2 + 2 1/3.",
+        "Subtract: 5/6 − 1/4.",
+        "Subtract: 3/4 − 2/3.",
+        "Multiply: 3/4 × 2/5.",
+        "Work out 2/3 of 12.",
+        "Work out 3/5 of 40.",
+        "Divide: 3/4 ÷ 1/2.",
+        "Divide: 2/3 ÷ 4.",
+        "Work out 6 ÷ 1/2.",
+        "Write the place value of 7 in 25.37.",
+        "Write the value of 3 in 25.37.",
+        "Change 0.25 to a fraction in its simplest form.",
+        "Change 3/4 to a decimal.",
+        "Arrange from smallest to largest: 0.5, 0.35, 0.3, 0.45.",
+        "Add: 4.35 + 2.8.",
+        "Subtract: 9.2 − 3.75.",
+        "A farmer has 45 goats and sells 2/9 of them. How many goats did he sell?",
+        "Ana bought 2.5 kg of sugar and 1.75 kg of rice. Find the total mass."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "8/12 + 3/12 = **11/12**",
+        "4/8 + 3/8 = **7/8**",
+        "3 + 5/6 = **3 5/6**",
+        "10/12 − 3/12 = **7/12**",
+        "9/12 − 8/12 = **1/12**",
+        "6/20 = **3/10**",
+        "24/3 = **8**",
+        "120/5 = **24**",
+        "3/4 × 2/1 = 6/4 = **1 1/2**",
+        "2/3 × 1/4 = 2/12 = **1/6**",
+        "6 × 2 = **12**",
+        "**Hundredths**",
+        "**0.3 (three tenths)**",
+        "25/100 = **1/4**",
+        "**0.75**",
+        "**0.3 , 0.35 , 0.45 , 0.5**",
+        "**7.15**",
+        "**5.45**",
+        "2/9 × 45 = **10 goats**",
+        "2.50 + 1.75 = **4.25 kg**"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.5 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Same denominator before you **+** or **−** — use the L.C.M.",
+        "**Of** = × · to divide, **flip the second fraction**",
+        "Simplify every answer",
+        "Places after the point: **tenths, hundredths**",
+        "0.5 = 1/2 · 0.25 = 1/4 · 0.75 = 3/4",
+        "Line up the decimal points"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title and the content lists — addition and subtraction of fractions with different denominators, multiplication of fractions by fractions and by natural numbers, division of fractions, place value of decimals up to hundredths, decimals on number lines, conversion of decimals to fractions and back, and addition and subtraction of decimals — together with the competences and teacher guidance, were taken from the official **NCDC Primary Five Curriculum, Set One** (© NCDC 2010; pages 106–110 of the PDF in `curriculum/`). The syllabus places the common-fraction work in Term I and the decimal work in Term II under the same topic name; both are written up here so nothing is left out. The explanations, worked examples, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook. Every calculation above was worked out and checked."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.5 was available, so the syllabus's own guidance — including the practical cutting-and-joining activity used to introduce different denominators — was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P5_MATH_T06",
+   "class": "P5",
+   "subject": "MATH",
+   "topic_no": 6,
+   "title": "Data Handling",
+   "heading": "TOPIC 6: DATA HANDLING",
+   "slug": "data-handling",
+   "periods": null,
+   "curriculum_pages": "112–113",
+   "words": 1530,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Five Curriculum, Set One, Mathematics Theme 4, Data Handling (`curriculum/P5-SET-ONE-2010.pdf`, pages 112–113).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You have made tally marks and simple pictographs. In P.5 you learn to use a **scale** on the axes, to draw and read **bar graphs and line graphs**, and to work out the **average**."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "draw and recognise scales on the horizontal and vertical axes",
+        "collect data and record it in a table",
+        "draw a bar graph and a line graph",
+        "read and interpret information from a graph",
+        "work out the average of a set of data"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. DATA AND HOW WE COLLECT IT",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Data:** facts or information that have been collected, for example the marks of a class or the number of pupils born in each month."
+      },
+      {
+       "t": "p",
+       "x": "We collect data by **counting, measuring, asking questions** or **observing**, and we record it with **tally marks**."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Colour of shirt",
+        "Tally",
+        "Number of pupils"
+       ],
+       "rows": [
+        [
+         "White",
+         "\\",
+         "\\",
+         "\\",
+         "\\",
+         "\\",
+         "\\",
+         "\\",
+         "\\",
+         "",
+         "9"
+        ],
+        [
+         "Blue",
+         "\\",
+         "\\",
+         "\\",
+         "\\",
+         "\\",
+         "\\",
+         "\\",
+         "",
+         "8"
+        ],
+        [
+         "Green",
+         "\\",
+         "\\",
+         "\\",
+         "\\",
+         "",
+         "5"
+        ],
+        [
+         "Yellow",
+         "\\",
+         "\\",
+         "\\",
+         "",
+         "3"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "Tally marks are grouped in **fives** — four upright strokes and one across them."
+      }
+     ]
+    },
+    {
+     "title": "2. THE AXES AND THE SCALE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Every graph has two lines called **axes**:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "the **horizontal axis** (across, also called the x-axis) — usually what we are counting",
+        "the **vertical axis** (up, also called the y-axis) — usually how many"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Scale:** what one square or one space on the axis stands for. A scale must be written on the graph, for example **\"Scale: 1 square represents 5 pupils.\"**"
+      },
+      {
+       "t": "pre",
+       "x": "Scale: 1 square = 5 pupils\n1 square  →  5 pupils\n3 squares →  15 pupils\n7 squares →  35 pupils"
+      },
+      {
+       "t": "p",
+       "x": "**Choosing a scale:** if the biggest number is 40 and you have 8 squares, use 40 ÷ 8 = **5 pupils to a square**."
+      }
+     ]
+    },
+    {
+     "title": "3. BAR GRAPHS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A **bar graph** uses bars of equal width. The **height** of the bar shows the number. The bars do **not** touch each other."
+      },
+      {
+       "t": "p",
+       "x": "Pupils in a class and the fruits they like best:"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Fruit",
+        "Mangoes",
+        "Oranges",
+        "Bananas",
+        "Pineapples"
+       ],
+       "rows": [
+        [
+         "Pupils",
+         "12",
+         "8",
+         "15",
+         "5"
+        ]
+       ]
+      },
+      {
+       "t": "pre",
+       "x": "Pupils\n 16 |            ##\n 14 |            ##\n 12 | ##         ##\n 10 | ##         ##\n  8 | ##   ##    ##\n  6 | ##   ##    ##\n  4 | ##   ##    ##   ##\n  2 | ##   ##    ##   ##\n    ---------------------------\n     Man   Ora   Ban   Pin\nScale: 1 space on the vertical axis = 2 pupils"
+      },
+      {
+       "t": "h3",
+       "x": "Reading a bar graph"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Which fruit is liked most? **Bananas (15 pupils)**",
+        "Which is liked least? **Pineapples (5 pupils)**",
+        "How many more like bananas than oranges? **15 − 8 = 7 pupils**",
+        "How many pupils are in the class? **12 + 8 + 15 + 5 = 40 pupils**"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "4. LINE GRAPHS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A **line graph** shows how something **changes over time**. Points are plotted and then joined with straight lines."
+      },
+      {
+       "t": "p",
+       "x": "The number of pupils absent each day in one week:"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Day",
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri"
+       ],
+       "rows": [
+        [
+         "Absent",
+         "4",
+         "6",
+         "3",
+         "7",
+         "5"
+        ]
+       ]
+      },
+      {
+       "t": "pre",
+       "x": "Pupils\n  8 |\n  7 |                   *\n  6 |       *          / \\\n  5 |      / \\        /   *\n  4 | *   /   \\      /\n  3 |  \\ /     *----/\n  2 |\n    ---------------------------\n     Mon  Tue  Wed  Thu  Fri"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "On which day were most pupils absent? **Thursday**",
+        "On which day were fewest absent? **Wednesday**",
+        "Between which days did absence fall most? **Tuesday to Wednesday (6 down to 3)**"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "5. AVERAGE (MEAN)",
+     "blocks": [
+      {
+       "t": "pre",
+       "x": "Average = Total ÷ Number of items"
+      },
+      {
+       "t": "p",
+       "x": "**Worked example 1.** Find the average of 12, 15, 18, 11 and 14."
+      },
+      {
+       "t": "pre",
+       "x": "Total  = 12 + 15 + 18 + 11 + 14 = 70\nNumber = 5\nAverage = 70 ÷ 5 = 14"
+      },
+      {
+       "t": "p",
+       "x": "**Worked example 2.** From the fruit bar graph above, find the average number of pupils per fruit."
+      },
+      {
+       "t": "pre",
+       "x": "Total = 12 + 8 + 15 + 5 = 40\nNumber of fruits = 4\nAverage = 40 ÷ 4 = 10 pupils"
+      },
+      {
+       "t": "p",
+       "x": "**Worked example 3 — working backwards.** The average mass of 6 boys is 32 kg. Find their total mass."
+      },
+      {
+       "t": "pre",
+       "x": "Total = Average × Number = 32 × 6 = 192 kg"
+      },
+      {
+       "t": "p",
+       "x": "**Worked example 4.** The average of four numbers is 15. Three of them are 12, 18 and 14. Find the fourth number."
+      },
+      {
+       "t": "pre",
+       "x": "Total of all four = 15 × 4 = 60\nTotal of the three = 12 + 18 + 14 = 44\nFourth number = 60 − 44 = 16\nCheck: (12 + 18 + 14 + 16) ÷ 4 = 60 ÷ 4 = 15  ✓"
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Data",
+         "Information that has been collected"
+        ],
+        [
+         "Tally",
+         "A stroke used to record one item while counting"
+        ],
+        [
+         "Axis",
+         "One of the two lines of a graph"
+        ],
+        [
+         "Horizontal axis",
+         "The line going across (x-axis)"
+        ],
+        [
+         "Vertical axis",
+         "The line going up (y-axis)"
+        ],
+        [
+         "Scale",
+         "What one square or space on an axis stands for"
+        ],
+        [
+         "Bar graph",
+         "A graph that uses separate bars of equal width"
+        ],
+        [
+         "Line graph",
+         "A graph in which plotted points are joined by lines"
+        ],
+        [
+         "Average (mean)",
+         "The total divided by the number of items"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Tally marks are grouped in **fives**.",
+        "Every graph needs a **title**, **labelled axes** and a **scale**.",
+        "In a bar graph the bars are of **equal width** and do **not touch**.",
+        "A **line graph** is best for showing change over time.",
+        "**Average = Total ÷ Number of items.**",
+        "**Total = Average × Number of items.**",
+        "The average always lies **between** the smallest and the largest value."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "If 1 square = 5 pupils, then 7 squares = **35 pupils**.",
+        "The average of 12, 15, 18, 11 and 14 is **14**.",
+        "If the average mass of 6 boys is 32 kg, the total mass is **192 kg**.",
+        "Read the **scale first** before answering any question on a graph.",
+        "\"How many more?\" means **subtract** the two bars.",
+        "To find a missing value, work out the **total first**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Reading a bar as \"1 square = 1\" when the scale says something else.",
+        "Forgetting to label the axes or to write the scale.",
+        "Dividing by the wrong number of items when finding an average.",
+        "Adding the averages of two groups instead of working out the totals.",
+        "Drawing bars of different widths."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Use this table for questions 1 to 5."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Fruit",
+        "Mangoes",
+        "Oranges",
+        "Bananas",
+        "Pineapples"
+       ],
+       "rows": [
+        [
+         "Pupils",
+         "12",
+         "8",
+         "15",
+         "5"
+        ]
+       ]
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Which fruit is liked by most pupils?",
+        "Which fruit is liked by fewest pupils?",
+        "How many more pupils like bananas than oranges?",
+        "How many pupils are there altogether?",
+        "Find the average number of pupils per fruit.",
+        "If 1 square stands for 4 books, how many books do 6 squares stand for?",
+        "If 1 square stands for 5 pupils, how many squares are needed for 45 pupils?",
+        "Find the average of 12, 15, 18, 11 and 14.",
+        "Find the average of 24, 30 and 36.",
+        "The average mass of 6 boys is 32 kg. Find their total mass.",
+        "The average of four numbers is 15. Three of them are 12, 18 and 14. Find the fourth.",
+        "A pupil scored 60, 72, 68 and 80 in four tests. Find the average mark.",
+        "Name the two axes of a graph.",
+        "Which graph is better for showing how the temperature changed each hour, a bar graph or a line graph?",
+        "The number of pupils absent from Monday to Friday was 4, 6, 3, 7 and 5. Find the average."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "**Bananas**",
+        "**Pineapples**",
+        "15 − 8 = **7 pupils**",
+        "12 + 8 + 15 + 5 = **40 pupils**",
+        "40 ÷ 4 = **10 pupils**",
+        "6 × 4 = **24 books**",
+        "45 ÷ 5 = **9 squares**",
+        "70 ÷ 5 = **14**",
+        "(24 + 30 + 36) ÷ 3 = 90 ÷ 3 = **30**",
+        "32 × 6 = **192 kg**",
+        "Total = 60; 60 − 44 = **16**",
+        "(60 + 72 + 68 + 80) ÷ 4 = 280 ÷ 4 = **70**",
+        "The **horizontal axis** and the **vertical axis**",
+        "A **line graph**",
+        "(4 + 6 + 3 + 7 + 5) ÷ 5 = 25 ÷ 5 = **5 pupils**"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.5 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Tally in fives · record in a table",
+        "Read the **scale** before anything else",
+        "Bar graph = separate bars · line graph = change over time",
+        "**Average = Total ÷ Number** · **Total = Average × Number**",
+        "Label the axes and give the graph a title"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, the content list (scales on the horizontal and vertical axes, bar graphs, line graphs and average), the competences and the teacher guidance — including the suggestion that learners graph their own test marks — were taken from the official **NCDC Primary Five Curriculum, Set One** (© NCDC 2010; pages 112–113 of the PDF in `curriculum/`). The tables, graphs, worked examples, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook. Every calculation above was worked out and checked."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.5 was available, so the syllabus's own \"Teacher's Notes\" were used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P5_MATH_T07",
+   "class": "P5",
+   "subject": "MATH",
+   "topic_no": 7,
+   "title": "Money",
+   "heading": "TOPIC 7: MONEY",
+   "slug": "money",
+   "periods": null,
+   "curriculum_pages": "115",
+   "words": 1522,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Five Curriculum, Set One, Mathematics Term III, Theme Measurements Topic 1, Money (`curriculum/P5-SET-ONE-2010.pdf`, page 115).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You know Uganda's notes and coins and you can add and subtract money. In P.5 you work with **buying and selling**, **cost and price**, and you learn to work out **profit and loss**."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "name the notes and coins of Uganda's currency",
+        "work out the cost of several items and the change due",
+        "explain what profit and loss mean",
+        "calculate simple profit and loss",
+        "solve everyday money problems"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. UGANDA'S CURRENCY",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Uganda's money is the **Uganda shilling** (written **UGX** or **shs**)."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Coins in use",
+        "Notes in use"
+       ],
+       "rows": [
+        [
+         "50, 100, 200, 500 shillings",
+         "1,000 · 2,000 · 5,000 · 10,000 · 20,000 · 50,000 shillings"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "x": "**A note that is newer than the syllabus:** the syllabus was written in 2010 and simply says \"Uganda currency\". The list of notes and coins above is what is in everyday use in Uganda today. Older coins of smaller value are no longer used in ordinary trade."
+      }
+     ]
+    },
+    {
+     "title": "2. BUYING — WORKING OUT THE COST",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Cost = price of one item × number of items.**"
+      },
+      {
+       "t": "p",
+       "x": "**Example 1.** Sugar costs 4,500 shillings a kilogram. How much do 3 kg cost?"
+      },
+      {
+       "t": "pre",
+       "x": "3 × 4,500 = 13,500 shillings"
+      },
+      {
+       "t": "p",
+       "x": "**Example 2.** A pupil buys 4 exercise books at 1,200 shillings each and 2 pens at 500 shillings each. What is the total cost?"
+      },
+      {
+       "t": "pre",
+       "x": "Books: 4 × 1,200 = 4,800\nPens:  2 × 500   = 1,000\nTotal: 4,800 + 1,000 = 5,800 shillings"
+      },
+      {
+       "t": "h3",
+       "x": "Change"
+      },
+      {
+       "t": "p",
+       "x": "**Change = money given − total cost.**"
+      },
+      {
+       "t": "pre",
+       "x": "If the pupil gives a 10,000 note:\nChange = 10,000 − 5,800 = 4,200 shillings"
+      },
+      {
+       "t": "h3",
+       "x": "Finding the price of one item"
+      },
+      {
+       "t": "pre",
+       "x": "5 kg of rice cost 17,500 shillings.\nPrice of 1 kg = 17,500 ÷ 5 = 3,500 shillings"
+      }
+     ]
+    },
+    {
+     "title": "3. COST PRICE AND SELLING PRICE",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**Cost price (C.P.)**",
+         "The money a trader pays to **buy** goods"
+        ],
+        [
+         "**Selling price (S.P.)**",
+         "The money a trader receives when he **sells** goods"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "4. PROFIT",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A trader makes a **profit** when the selling price is **more than** the cost price."
+      },
+      {
+       "t": "pre",
+       "x": "Profit = Selling price − Cost price"
+      },
+      {
+       "t": "p",
+       "x": "**Example.** A trader buys a bag of charcoal at 25,000 shillings and sells it at 32,000 shillings. Find his profit."
+      },
+      {
+       "t": "pre",
+       "x": "Profit = 32,000 − 25,000 = 7,000 shillings"
+      },
+      {
+       "t": "p",
+       "x": "**Finding the selling price when the profit is known:**"
+      },
+      {
+       "t": "pre",
+       "x": "Selling price = Cost price + Profit\nA shirt bought at 15,000 is sold at a profit of 4,000.\nS.P. = 15,000 + 4,000 = 19,000 shillings"
+      }
+     ]
+    },
+    {
+     "title": "5. LOSS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A trader makes a **loss** when the selling price is **less than** the cost price."
+      },
+      {
+       "t": "pre",
+       "x": "Loss = Cost price − Selling price"
+      },
+      {
+       "t": "p",
+       "x": "**Example.** A trader buys a goat at 180,000 shillings and sells it at 165,000 shillings."
+      },
+      {
+       "t": "pre",
+       "x": "Loss = 180,000 − 165,000 = 15,000 shillings"
+      },
+      {
+       "t": "p",
+       "x": "**Finding the cost price when the loss is known:**"
+      },
+      {
+       "t": "pre",
+       "x": "Cost price = Selling price + Loss\nA radio sold at 45,000 gave a loss of 8,000.\nC.P. = 45,000 + 8,000 = 53,000 shillings"
+      }
+     ]
+    },
+    {
+     "title": "6. WHY PROFIT AND LOSS HAPPEN",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Leads to profit",
+        "Leads to loss"
+       ],
+       "rows": [
+        [
+         "Buying cheaply and selling at a good price",
+         "Goods going bad or expiring"
+        ],
+        [
+         "Selling many goods quickly",
+         "Theft or fire"
+        ],
+        [
+         "Keeping costs such as transport low",
+         "Selling below the cost price to get customers"
+        ],
+        [
+         "Good record keeping",
+         "Prices falling after the goods were bought"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "7. MIXED WORD PROBLEMS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Example 1.** A shopkeeper bought 20 loaves of bread at 3,500 shillings each and sold all of them at 4,200 shillings each. Find the total profit."
+      },
+      {
+       "t": "pre",
+       "x": "Cost price   = 20 × 3,500 = 70,000 shillings\nSelling price = 20 × 4,200 = 84,000 shillings\nProfit = 84,000 − 70,000 = 14,000 shillings\nCheck: profit on one loaf = 700; 700 × 20 = 14,000  ✓"
+      },
+      {
+       "t": "p",
+       "x": "**Example 2.** Mother's shopping list: 2 kg of beans at 4,000, 3 kg of sugar at 4,500 and 1 litre of oil at 9,000. She pays with two 20,000 notes. Find her change."
+      },
+      {
+       "t": "pre",
+       "x": "Beans: 2 × 4,000 = 8,000\nSugar: 3 × 4,500 = 13,500\nOil:                9,000\nTotal: 8,000 + 13,500 + 9,000 = 30,500\nMoney given = 2 × 20,000 = 40,000\nChange = 40,000 − 30,500 = 9,500 shillings"
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Currency",
+         "The money used in a country"
+        ],
+        [
+         "Cost price",
+         "The money paid to buy goods"
+        ],
+        [
+         "Selling price",
+         "The money received when goods are sold"
+        ],
+        [
+         "Profit",
+         "The money gained when the selling price is higher"
+        ],
+        [
+         "Loss",
+         "The money lost when the selling price is lower"
+        ],
+        [
+         "Change",
+         "The money given back after paying more than the cost"
+        ],
+        [
+         "Discount",
+         "Money taken off the usual price"
+        ],
+        [
+         "Balance",
+         "The money that remains"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**Profit = S.P. − C.P.** and **Loss = C.P. − S.P.**",
+        "**S.P. = C.P. + Profit** and **C.P. = S.P. + Loss**",
+        "**Change = money given − total cost.**",
+        "Always write **shillings** in your answer.",
+        "If the selling price equals the cost price, there is **neither profit nor loss**.",
+        "Work out the cost of **all** the items before finding the change."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Bought at 25,000, sold at 32,000 → **profit 7,000 shillings**.",
+        "Bought at 180,000, sold at 165,000 → **loss 15,000 shillings**.",
+        "3 kg of sugar at 4,500 → **13,500 shillings**.",
+        "Change from 10,000 after spending 5,800 → **4,200 shillings**.",
+        "20 loaves bought at 3,500 and sold at 4,200 → **profit 14,000 shillings**.",
+        "Check a total profit by finding the profit on **one item** and multiplying."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Subtracting the wrong way round and calling a loss a profit.",
+        "Forgetting to multiply by the **number of items** before comparing.",
+        "Leaving out one item when adding up a shopping list.",
+        "Writing the answer without the word **shillings**.",
+        "Confusing the cost price with the selling price in a word problem."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Name any three notes used in Uganda today.",
+        "Sugar costs 4,500 shillings a kilogram. Find the cost of 3 kg.",
+        "Find the cost of 4 exercise books at 1,200 shillings each.",
+        "5 kg of rice cost 17,500 shillings. Find the cost of 1 kg.",
+        "A pupil spends 5,800 shillings and gives a 10,000 note. Find the change.",
+        "A trader buys a bag of charcoal at 25,000 and sells it at 32,000. Find the profit.",
+        "A goat bought at 180,000 was sold at 165,000. Find the loss.",
+        "A shirt bought at 15,000 is sold at a profit of 4,000. Find the selling price.",
+        "A radio sold at 45,000 gave a loss of 8,000. Find the cost price.",
+        "A trader buys 20 loaves at 3,500 each and sells them at 4,200 each. Find the total profit.",
+        "Find the total cost of 2 kg of beans at 4,000, 3 kg of sugar at 4,500 and 1 litre of oil at 9,000.",
+        "Using question 11, find the change from two 20,000 shilling notes.",
+        "A book costs 8,500 shillings. How many such books can be bought with 60,000 shillings, and what will remain?",
+        "A trader bought 50 eggs at 400 shillings each and sold them all at 550 shillings each. Find the profit.",
+        "If a bicycle is bought at 250,000 and sold at 250,000, what has the trader made?"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Any three of **1,000 · 2,000 · 5,000 · 10,000 · 20,000 · 50,000 shillings**",
+        "3 × 4,500 = **13,500 shillings**",
+        "4 × 1,200 = **4,800 shillings**",
+        "17,500 ÷ 5 = **3,500 shillings**",
+        "10,000 − 5,800 = **4,200 shillings**",
+        "32,000 − 25,000 = **7,000 shillings profit**",
+        "180,000 − 165,000 = **15,000 shillings loss**",
+        "15,000 + 4,000 = **19,000 shillings**",
+        "45,000 + 8,000 = **53,000 shillings**",
+        "C.P. = 70,000; S.P. = 84,000; profit = **14,000 shillings**",
+        "8,000 + 13,500 + 9,000 = **30,500 shillings**",
+        "40,000 − 30,500 = **9,500 shillings**",
+        "60,000 ÷ 8,500 = 7 books (7 × 8,500 = 59,500), remainder **500 shillings** → **7 books and 500 shillings left**",
+        "C.P. = 50 × 400 = 20,000; S.P. = 50 × 550 = 27,500; profit = **7,500 shillings**",
+        "**Neither profit nor loss** — the selling price equals the cost price."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.5 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**Profit = S.P. − C.P.** · **Loss = C.P. − S.P.**",
+        "**S.P. = C.P. + Profit** · **C.P. = S.P. + Loss**",
+        "Change = money given − total cost",
+        "Multiply by the number of items first",
+        "Always write **shillings**"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title and the content list (money, buying and selling, profit and loss, costs and prices), the competences and the teacher guidance — including the suggestion that learners role-play buying and selling — were taken from the official **NCDC Primary Five Curriculum, Set One** (© NCDC 2010; page 115 of the PDF in `curriculum/`). The list of notes and coins in use today is **newer than the syllabus**, which does not list them, and this is flagged in the text above. The explanations, worked examples, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook. Every calculation above was worked out and checked."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.5 was available, so the syllabus's own \"Teacher's Notes\" were used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P5_MATH_T08",
+   "class": "P5",
+   "subject": "MATH",
+   "topic_no": 8,
+   "title": "Time",
+   "heading": "TOPIC 8: TIME",
+   "slug": "time",
+   "periods": null,
+   "curriculum_pages": "113–114",
+   "words": 1453,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Five Curriculum, Set One, Mathematics Term II, Topic 4, Time (`curriculum/P5-SET-ONE-2010.pdf`, pages 113–114).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You can tell the hours and the half hours on a clock. In P.5 you tell time on the **12-hour clock** to the minute and the second, you find **duration**, and you solve problems on **time, distance and speed**."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "tell and write time on the 12-hour clock",
+        "change hours to minutes and minutes to seconds, and back again",
+        "use a.m. and p.m. correctly",
+        "find the duration between two times",
+        "calculate speed, distance and time"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. UNITS OF TIME",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Change",
+        "Rule"
+       ],
+       "rows": [
+        [
+         "1 minute",
+         "= **60 seconds**"
+        ],
+        [
+         "1 hour",
+         "= **60 minutes**"
+        ],
+        [
+         "1 day",
+         "= **24 hours**"
+        ],
+        [
+         "1 week",
+         "= 7 days"
+        ],
+        [
+         "1 year",
+         "= 12 months = 365 days (366 in a leap year)"
+        ]
+       ]
+      },
+      {
+       "t": "pre",
+       "x": "Hours → minutes:   × 60          Minutes → hours:   ÷ 60\nMinutes → seconds: × 60          Seconds → minutes: ÷ 60"
+      },
+      {
+       "t": "p",
+       "x": "**Examples**"
+      },
+      {
+       "t": "pre",
+       "x": "3 hours = 3 × 60 = 180 minutes\n2 1/2 hours = 2.5 × 60 = 150 minutes\n240 minutes = 240 ÷ 60 = 4 hours\n5 minutes = 5 × 60 = 300 seconds"
+      }
+     ]
+    },
+    {
+     "title": "2. TELLING TIME ON THE 12-HOUR CLOCK",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The **long hand** shows the minutes. The **short hand** shows the hours."
+      },
+      {
+       "t": "ul",
+       "items": [
+        "For the first **half hour** we say **\"past\"**.",
+        "For the second half hour we say **\"to\"** the next hour."
+       ]
+      },
+      {
+       "t": "table",
+       "head": [
+        "Clock",
+        "We say"
+       ],
+       "rows": [
+        [
+         "7:00",
+         "Seven o'clock"
+        ],
+        [
+         "7:15",
+         "A quarter past seven"
+        ],
+        [
+         "7:30",
+         "Half past seven"
+        ],
+        [
+         "7:45",
+         "A quarter to eight"
+        ],
+        [
+         "7:20",
+         "Twenty minutes past seven"
+        ],
+        [
+         "7:40",
+         "Twenty minutes to eight"
+        ],
+        [
+         "8:50",
+         "Ten minutes to nine"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**How to change a \"past\" time into a \"to\" time:** subtract the minutes from 60 and move to the next hour."
+      },
+      {
+       "t": "pre",
+       "x": "9:35  →  60 − 35 = 25  →  twenty-five minutes to ten"
+      }
+     ]
+    },
+    {
+     "title": "3. A.M. AND P.M.",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "a.m.",
+        "p.m."
+       ],
+       "rows": [
+        [
+         "From **midnight (12:00 a.m.)** to just before midday",
+         "From **midday (12:00 noon)** to just before midnight"
+        ],
+        [
+         "Morning times",
+         "Afternoon, evening and night times"
+        ]
+       ]
+      },
+      {
+       "t": "pre",
+       "x": "6:30 a.m.  →  early morning\n12:00 noon →  midday\n3:15 p.m.  →  afternoon\n9:00 p.m.  →  night"
+      }
+     ]
+    },
+    {
+     "title": "4. DURATION",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Duration** is the length of time something takes."
+      },
+      {
+       "t": "pre",
+       "x": "Duration = ending time − starting time"
+      },
+      {
+       "t": "p",
+       "x": "**Example 1.** A lesson starts at 8:30 a.m. and ends at 11:15 a.m."
+      },
+      {
+       "t": "pre",
+       "x": "   11 h 15 min\n −  8 h 30 min\n\n15 minutes cannot take away 30 minutes, so borrow 1 hour = 60 minutes:\n   10 h 75 min\n −  8 h 30 min\n   ------------\n    2 h 45 min\n\nDuration = 2 hours 45 minutes"
+      },
+      {
+       "t": "p",
+       "x": "**Example 2.** A journey starts at 10:40 a.m. and takes 3 hours 35 minutes. When does it end?"
+      },
+      {
+       "t": "pre",
+       "x": "  10 h 40 min\n+  3 h 35 min\n  ------------\n  13 h 75 min  →  75 min = 1 h 15 min  →  14 h 15 min\n14:15 is 2:15 p.m."
+      },
+      {
+       "t": "p",
+       "x": "**Example 3 — crossing midday.** From 10:20 a.m. to 1:05 p.m."
+      },
+      {
+       "t": "pre",
+       "x": "10:20 a.m. to 12:00 noon = 1 hour 40 minutes\n12:00 noon to 1:05 p.m.  = 1 hour 5 minutes\nTotal = 2 hours 45 minutes"
+      }
+     ]
+    },
+    {
+     "title": "5. TIME, DISTANCE AND SPEED",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Speed** tells how fast something moves — the distance covered in one hour (or in one second)."
+      },
+      {
+       "t": "pre",
+       "x": "Speed    = Distance ÷ Time\nDistance = Speed × Time\nTime     = Distance ÷ Speed"
+      },
+      {
+       "t": "p",
+       "x": "**Example 1.** A bus covers 120 km in 2 hours. Find its speed."
+      },
+      {
+       "t": "pre",
+       "x": "Speed = 120 ÷ 2 = 60 km/hr"
+      },
+      {
+       "t": "p",
+       "x": "**Example 2.** A car travels at 80 km/hr for 3 hours. How far does it go?"
+      },
+      {
+       "t": "pre",
+       "x": "Distance = 80 × 3 = 240 km"
+      },
+      {
+       "t": "p",
+       "x": "**Example 3.** How long does a lorry take to cover 150 km at 50 km/hr?"
+      },
+      {
+       "t": "pre",
+       "x": "Time = 150 ÷ 50 = 3 hours"
+      },
+      {
+       "t": "p",
+       "x": "**Example 4.** A cyclist rides 24 km in 1 1/2 hours. Find the speed."
+      },
+      {
+       "t": "pre",
+       "x": "Speed = 24 ÷ 1.5 = 16 km/hr\nCheck: 16 × 1.5 = 24 km  ✓"
+      },
+      {
+       "t": "p",
+       "x": "**Example 5.** A taxi left Kampala at 7:30 a.m. and reached a town 180 km away at 10:30 a.m. Find its speed."
+      },
+      {
+       "t": "pre",
+       "x": "Time taken = 10:30 − 7:30 = 3 hours\nSpeed = 180 ÷ 3 = 60 km/hr"
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Second",
+         "The smallest common unit of time"
+        ],
+        [
+         "Minute",
+         "60 seconds"
+        ],
+        [
+         "Hour",
+         "60 minutes"
+        ],
+        [
+         "a.m.",
+         "The time from midnight to just before midday"
+        ],
+        [
+         "p.m.",
+         "The time from midday to just before midnight"
+        ],
+        [
+         "Duration",
+         "The length of time between a starting and an ending time"
+        ],
+        [
+         "Speed",
+         "The distance covered in one unit of time"
+        ],
+        [
+         "Distance",
+         "How far something travels"
+        ],
+        [
+         "km/hr",
+         "Kilometres travelled in one hour"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "60 seconds = 1 minute · 60 minutes = 1 hour · 24 hours = 1 day.",
+        "**Hours to minutes: multiply by 60. Minutes to hours: divide by 60.**",
+        "Past the hour for the first 30 minutes; **to** the next hour after that.",
+        "**Speed = Distance ÷ Time.**",
+        "**Distance = Speed × Time.** **Time = Distance ÷ Speed.**",
+        "When subtracting time, borrow **60 minutes**, not 100.",
+        "12:00 noon is written 12:00 p.m. and 12:00 midnight is 12:00 a.m."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "3 hours = **180 minutes**.",
+        "7:45 is read as **a quarter to eight**.",
+        "9:35 is **twenty-five minutes to ten**.",
+        "8:30 a.m. to 11:15 a.m. = **2 hours 45 minutes**.",
+        "120 km in 2 hours = **60 km/hr**.",
+        "80 km/hr for 3 hours = **240 km**.",
+        "150 km at 50 km/hr = **3 hours**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Borrowing 100 instead of 60 when subtracting time.",
+        "Writing 2.45 hours when the answer is 2 hours 45 minutes.",
+        "Mixing up a.m. and p.m. in a duration question.",
+        "Multiplying when the question asks for time (you must divide).",
+        "Forgetting the unit — km, hours or km/hr."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Change 3 hours to minutes.",
+        "Change 240 minutes to hours.",
+        "Change 5 minutes to seconds.",
+        "Change 2 1/2 hours to minutes.",
+        "Write 7:45 in words.",
+        "Write 9:35 in words.",
+        "Write \"twenty minutes to nine\" in figures.",
+        "Is 4:00 in the afternoon a.m. or p.m.?",
+        "Find the duration from 8:30 a.m. to 11:15 a.m.",
+        "A journey starts at 10:40 a.m. and takes 3 hours 35 minutes. At what time does it end?",
+        "Find the duration from 10:20 a.m. to 1:05 p.m.",
+        "A bus covers 120 km in 2 hours. Find its speed.",
+        "A car travels at 80 km/hr for 3 hours. Find the distance covered.",
+        "How long does a lorry take to cover 150 km at 50 km/hr?",
+        "A cyclist rides 24 km in 1 1/2 hours. Find the speed.",
+        "A taxi left at 7:30 a.m. and arrived at 10:30 a.m. after covering 180 km. Find its speed.",
+        "A train travels at 90 km/hr. How far does it go in 2 1/2 hours?",
+        "Change 150 minutes to hours and minutes.",
+        "A film starts at 2:15 p.m. and lasts 1 hour 50 minutes. When does it end?",
+        "How many seconds are there in 2 hours?"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "3 × 60 = **180 minutes**",
+        "240 ÷ 60 = **4 hours**",
+        "5 × 60 = **300 seconds**",
+        "2.5 × 60 = **150 minutes**",
+        "**A quarter to eight**",
+        "**Twenty-five minutes to ten**",
+        "**8:40**",
+        "**p.m.**",
+        "**2 hours 45 minutes**",
+        "**2:15 p.m.**",
+        "**2 hours 45 minutes**",
+        "120 ÷ 2 = **60 km/hr**",
+        "80 × 3 = **240 km**",
+        "150 ÷ 50 = **3 hours**",
+        "24 ÷ 1.5 = **16 km/hr**",
+        "Time = 3 hours; 180 ÷ 3 = **60 km/hr**",
+        "90 × 2.5 = **225 km**",
+        "150 ÷ 60 = 2 remainder 30 → **2 hours 30 minutes**",
+        "2:15 p.m. + 1 h 50 min = **4:05 p.m.**",
+        "2 × 60 × 60 = **7,200 seconds**"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.5 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "60 s = 1 min · 60 min = 1 h · 24 h = 1 day",
+        "Past for the first half hour · **to** for the second",
+        "a.m. = before midday · p.m. = after midday",
+        "Borrow **60**, not 100",
+        "**S = D ÷ T** · **D = S × T** · **T = D ÷ S**"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title and the content list (time on the 12-hour clock, duration, and time, distance and speed), the competences and the teacher guidance — including the instruction to bring a real clock to class and to introduce duration using two times in the same phase — were taken from the official **NCDC Primary Five Curriculum, Set One** (© NCDC 2010; pages 113–114 of the PDF in `curriculum/`). The explanations, worked examples, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook. Every calculation above was worked out and checked."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.5 was available, so the syllabus's own \"Teacher's Notes\" were used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P5_MATH_T09",
+   "class": "P5",
+   "subject": "MATH",
+   "topic_no": 9,
+   "title": "Length, Mass and Capacity",
+   "heading": "TOPIC 9: LENGTH, MASS AND CAPACITY",
+   "slug": "length-mass-and-capacity",
+   "periods": null,
+   "curriculum_pages": "116–117",
+   "words": 1612,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Five Curriculum, Set One, Mathematics Term III, Theme Measurements Topic 2 (`curriculum/P5-SET-ONE-2010.pdf`, pages 116–117).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You have measured lengths with a ruler and weighed things on a scale. In P.5 you **convert** between units, and you calculate **perimeter** and **area**."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "convert millimetres to centimetres to metres, and back",
+        "calculate the perimeter of plane shapes",
+        "calculate the area of rectangles, squares and triangles",
+        "convert kilograms to grams and back, and solve problems on mass",
+        "convert litres to millilitres and back, and solve problems on capacity"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. LENGTH AND ITS UNITS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Length** is how long something is. It is measured with a **ruler, tape measure or metre rule**."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Change",
+        "Rule"
+       ],
+       "rows": [
+        [
+         "1 centimetre (cm)",
+         "= **10 millimetres (mm)**"
+        ],
+        [
+         "1 metre (m)",
+         "= **100 centimetres**"
+        ],
+        [
+         "1 metre",
+         "= 1,000 millimetres"
+        ],
+        [
+         "1 kilometre (km)",
+         "= **1,000 metres**"
+        ]
+       ]
+      },
+      {
+       "t": "pre",
+       "x": "mm → cm : ÷ 10        cm → mm : × 10\ncm → m  : ÷ 100       m  → cm : × 100\nm  → km : ÷ 1,000     km → m  : × 1,000"
+      },
+      {
+       "t": "p",
+       "x": "**Examples**"
+      },
+      {
+       "t": "pre",
+       "x": "75 mm  = 75 ÷ 10  = 7.5 cm\n4.2 cm = 4.2 × 10 = 42 mm\n350 cm = 350 ÷ 100 = 3.5 m\n2.4 m  = 2.4 × 100 = 240 cm"
+      }
+     ]
+    },
+    {
+     "title": "2. PERIMETER",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Perimeter** is the **total distance round** a shape. It is a length, so the answer is in cm, m or mm."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Shape",
+        "Perimeter"
+       ],
+       "rows": [
+        [
+         "Rectangle",
+         "**2 × (length + width)**"
+        ],
+        [
+         "Square",
+         "**4 × side**"
+        ],
+        [
+         "Triangle",
+         "side + side + side"
+        ],
+        [
+         "Any shape",
+         "add up all the sides"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Examples**"
+      },
+      {
+       "t": "pre",
+       "x": "Rectangle 12 cm by 8 cm:\nP = 2 × (12 + 8) = 2 × 20 = 40 cm\n\nSquare of side 9 cm:\nP = 4 × 9 = 36 cm\n\nTriangle with sides 5 cm, 7 cm and 9 cm:\nP = 5 + 7 + 9 = 21 cm"
+      },
+      {
+       "t": "p",
+       "x": "**Working backwards:** the perimeter of a square is 48 cm. Find one side."
+      },
+      {
+       "t": "pre",
+       "x": "Side = 48 ÷ 4 = 12 cm"
+      }
+     ]
+    },
+    {
+     "title": "3. AREA",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Area** is the amount of **surface** a shape covers. It is measured in **square units** — cm², m²."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Shape",
+        "Area"
+       ],
+       "rows": [
+        [
+         "Rectangle",
+         "**length × width**"
+        ],
+        [
+         "Square",
+         "**side × side**"
+        ],
+        [
+         "Triangle",
+         "**1/2 × base × height**"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Examples**"
+      },
+      {
+       "t": "pre",
+       "x": "Rectangle 12 cm by 8 cm:\nA = 12 × 8 = 96 cm²\n\nSquare of side 9 cm:\nA = 9 × 9 = 81 cm²\n\nTriangle, base 10 cm, height 6 cm:\nA = 1/2 × 10 × 6 = 30 cm²"
+      },
+      {
+       "t": "p",
+       "x": "**Working backwards:** a rectangle has an area of 72 cm² and a length of 12 cm. Find the width."
+      },
+      {
+       "t": "pre",
+       "x": "Width = 72 ÷ 12 = 6 cm\nCheck: 12 × 6 = 72 cm²  ✓"
+      },
+      {
+       "t": "note",
+       "x": "**Perimeter is a distance (cm). Area is a surface (cm²).** Never mix the two."
+      }
+     ]
+    },
+    {
+     "title": "4. MASS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Mass** is how heavy something is. It is measured with a **weighing scale or balance**."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Change",
+        "Rule"
+       ],
+       "rows": [
+        [
+         "1 kilogram (kg)",
+         "= **1,000 grams (g)**"
+        ],
+        [
+         "1 tonne",
+         "= 1,000 kilograms"
+        ]
+       ]
+      },
+      {
+       "t": "pre",
+       "x": "kg → g : × 1,000       g → kg : ÷ 1,000"
+      },
+      {
+       "t": "p",
+       "x": "**Examples**"
+      },
+      {
+       "t": "pre",
+       "x": "3 kg    = 3 × 1,000 = 3,000 g\n2.5 kg  = 2,500 g\n4,750 g = 4,750 ÷ 1,000 = 4.75 kg"
+      },
+      {
+       "t": "p",
+       "x": "**Word problem.** A sack holds 50 kg of maize flour. It is packed into 2 kg packets. How many packets are made?"
+      },
+      {
+       "t": "pre",
+       "x": "50 ÷ 2 = 25 packets"
+      },
+      {
+       "t": "p",
+       "x": "**Word problem.** Three bags weigh 12 kg 500 g, 8 kg 250 g and 6 kg 400 g. Find the total."
+      },
+      {
+       "t": "pre",
+       "x": "12 kg 500 g + 8 kg 250 g + 6 kg 400 g\ngrams: 500 + 250 + 400 = 1,150 g = 1 kg 150 g\nkilograms: 12 + 8 + 6 = 26 kg\nTotal = 26 kg + 1 kg 150 g = 27 kg 150 g"
+      }
+     ]
+    },
+    {
+     "title": "5. CAPACITY",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Capacity** is how much a container can hold. It is measured with a **measuring cylinder, jug or graduated container**."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Change",
+        "Rule"
+       ],
+       "rows": [
+        [
+         "1 litre (l)",
+         "= **1,000 millilitres (ml)**"
+        ]
+       ]
+      },
+      {
+       "t": "pre",
+       "x": "litres → ml : × 1,000        ml → litres : ÷ 1,000"
+      },
+      {
+       "t": "p",
+       "x": "**Examples**"
+      },
+      {
+       "t": "pre",
+       "x": "5 litres    = 5,000 ml\n0.75 litres = 750 ml\n2,500 ml    = 2.5 litres"
+      },
+      {
+       "t": "p",
+       "x": "**Word problem.** A jerrycan holds 20 litres of water. How many 500 ml bottles can be filled from it?"
+      },
+      {
+       "t": "pre",
+       "x": "20 litres = 20,000 ml\n20,000 ÷ 500 = 40 bottles"
+      },
+      {
+       "t": "p",
+       "x": "**Word problem.** A tank holds 450 litres. If 165 litres are used, how much remains?"
+      },
+      {
+       "t": "pre",
+       "x": "450 − 165 = 285 litres"
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Length",
+         "How long something is"
+        ],
+        [
+         "Perimeter",
+         "The total distance round a shape"
+        ],
+        [
+         "Area",
+         "The amount of surface a shape covers"
+        ],
+        [
+         "Mass",
+         "How heavy something is"
+        ],
+        [
+         "Capacity",
+         "How much a container can hold"
+        ],
+        [
+         "Millimetre",
+         "One tenth of a centimetre"
+        ],
+        [
+         "Gram",
+         "One thousandth of a kilogram"
+        ],
+        [
+         "Millilitre",
+         "One thousandth of a litre"
+        ],
+        [
+         "Square centimetre (cm²)",
+         "The area of a square of side 1 cm"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "10 mm = 1 cm · 100 cm = 1 m · 1,000 m = 1 km.",
+        "1,000 g = 1 kg · 1,000 ml = 1 litre.",
+        "**Perimeter of a rectangle = 2 × (L + W).** **Area = L × W.**",
+        "**Area of a triangle = 1/2 × base × height.**",
+        "Perimeter is written in **cm**; area is written in **cm²**.",
+        "To go from a **big unit to a small unit, multiply**; from small to big, **divide**.",
+        "Both measurements must be in the **same unit** before you calculate."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "A rectangle 12 cm by 8 cm has perimeter **40 cm** and area **96 cm²**.",
+        "A square of side 9 cm has perimeter **36 cm** and area **81 cm²**.",
+        "A triangle with base 10 cm and height 6 cm has area **30 cm²**.",
+        "75 mm = **7.5 cm**; 350 cm = **3.5 m**.",
+        "4,750 g = **4.75 kg**; 2,500 ml = **2.5 litres**.",
+        "20 litres fills **40** bottles of 500 ml."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Giving the area when the perimeter is asked for.",
+        "Writing cm instead of cm² for an area.",
+        "Forgetting the **1/2** in the area of a triangle.",
+        "Multiplying when you should divide in a conversion.",
+        "Adding a length in cm to a length in mm without converting first."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Change 75 mm to centimetres.",
+        "Change 4.2 cm to millimetres.",
+        "Change 350 cm to metres.",
+        "Change 2.4 m to centimetres.",
+        "Find the perimeter of a rectangle 12 cm long and 8 cm wide.",
+        "Find the area of the same rectangle.",
+        "Find the perimeter of a square of side 9 cm.",
+        "Find the area of the same square.",
+        "Find the area of a triangle with base 10 cm and height 6 cm.",
+        "The perimeter of a square is 48 cm. Find the length of one side.",
+        "A rectangle has an area of 72 cm² and a length of 12 cm. Find its width.",
+        "Change 3 kg to grams.",
+        "Change 4,750 g to kilograms.",
+        "A sack of 50 kg is packed into 2 kg packets. How many packets are made?",
+        "Add: 12 kg 500 g + 8 kg 250 g + 6 kg 400 g.",
+        "Change 5 litres to millilitres.",
+        "Change 2,500 ml to litres.",
+        "A jerrycan of 20 litres fills bottles of 500 ml. How many bottles?",
+        "A tank holds 450 litres and 165 litres are used. How much remains?",
+        "A garden is 15 m long and 9 m wide. Find its perimeter and its area."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "75 ÷ 10 = **7.5 cm**",
+        "4.2 × 10 = **42 mm**",
+        "350 ÷ 100 = **3.5 m**",
+        "2.4 × 100 = **240 cm**",
+        "2 × (12 + 8) = **40 cm**",
+        "12 × 8 = **96 cm²**",
+        "4 × 9 = **36 cm**",
+        "9 × 9 = **81 cm²**",
+        "1/2 × 10 × 6 = **30 cm²**",
+        "48 ÷ 4 = **12 cm**",
+        "72 ÷ 12 = **6 cm**",
+        "3 × 1,000 = **3,000 g**",
+        "4,750 ÷ 1,000 = **4.75 kg**",
+        "50 ÷ 2 = **25 packets**",
+        "**27 kg 150 g**",
+        "5 × 1,000 = **5,000 ml**",
+        "2,500 ÷ 1,000 = **2.5 litres**",
+        "20,000 ÷ 500 = **40 bottles**",
+        "450 − 165 = **285 litres**",
+        "Perimeter = 2 × (15 + 9) = **48 m**; Area = 15 × 9 = **135 m²**"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.5 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "10 mm = 1 cm · 100 cm = 1 m · 1,000 m = 1 km",
+        "1,000 g = 1 kg · 1,000 ml = 1 litre",
+        "**P = 2(L + W)** · **A = L × W** · **A = 1/2 × b × h**",
+        "Perimeter in cm · area in cm²",
+        "Big unit → small unit: **multiply**"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title and the content list (lengths in m, cm and mm; perimeters in cm and mm; areas in m² and cm²; mass in kg and g; capacity in litres and millilitres), the competences and the teacher guidance — including the practical activities with a metre rule, marked containers and a weighing balance — were taken from the official **NCDC Primary Five Curriculum, Set One** (© NCDC 2010; pages 116–117 of the PDF in `curriculum/`). One line of the printed content list reads \"Converts litres to m and vice versa\"; from the activities beside it, the unit intended is the **millilitre**, and this is how it is taught above. The explanations, worked examples, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook. Every calculation above was worked out and checked."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.5 was available, so the syllabus's own \"Teacher's Notes\" were used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P5_MATH_T10",
+   "class": "P5",
+   "subject": "MATH",
+   "topic_no": 10,
+   "title": "Lines, Angles and Geometrical Figures",
+   "heading": "TOPIC 10: LINES, ANGLES AND GEOMETRICAL FIGURES",
+   "slug": "lines-angles-and-geometrical-figures",
+   "periods": null,
+   "curriculum_pages": "110–112",
+   "words": 1703,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Five Curriculum, Set One, Mathematics Theme 3, Geometry (`curriculum/P5-SET-ONE-2010.pdf`, pages 110–112).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You can name a square, a rectangle, a triangle and a circle. In P.5 you draw **parallel and perpendicular lines**, **measure and draw angles**, **construct circles and regular hexagons**, find **lines of folding symmetry**, and describe **rotations and revolutions**."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "draw and identify parallel and perpendicular lines",
+        "name and measure angles with a protractor",
+        "name the parts of a circle and construct a circle",
+        "construct a regular hexagon",
+        "find the lines of folding symmetry of a shape",
+        "describe rotations and revolutions"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. INSTRUMENTS YOU NEED",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A **geometry set**: a **ruler**, a **pair of compasses**, a **protractor**, a **set square** and a **sharp pencil**."
+      }
+     ]
+    },
+    {
+     "title": "2. PARALLEL AND PERPENDICULAR LINES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Parallel lines:** lines that run in the same direction and **never meet**, however far they are drawn. They stay the same distance apart. The sign is **‖**."
+      },
+      {
+       "t": "pre",
+       "x": "--------------------------->\n--------------------------->"
+      },
+      {
+       "t": "p",
+       "x": "Examples around us: the two long edges of a ruler, railway lines, the opposite sides of a door, lines on a ruled exercise book."
+      },
+      {
+       "t": "p",
+       "x": "**Perpendicular lines:** two lines that meet or cross at a **right angle (90°)**. The sign is **⊥**."
+      },
+      {
+       "t": "pre",
+       "x": "        |\n        |\n--------+--------\n        |\n        |"
+      },
+      {
+       "t": "p",
+       "x": "Examples around us: the corner of a window, the corner of a book, a wall meeting the floor."
+      }
+     ]
+    },
+    {
+     "title": "3. ANGLES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Angle:** the amount of turning between two lines that meet at a point. It is measured in **degrees (°)** using a **protractor**."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Type of angle",
+        "Size"
+       ],
+       "rows": [
+        [
+         "**Acute**",
+         "Less than 90°"
+        ],
+        [
+         "**Right angle**",
+         "Exactly 90°"
+        ],
+        [
+         "**Obtuse**",
+         "More than 90° but less than 180°"
+        ],
+        [
+         "**Straight angle**",
+         "Exactly 180°"
+        ],
+        [
+         "**Reflex**",
+         "More than 180° but less than 360°"
+        ],
+        [
+         "**Complete turn**",
+         "360°"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Measuring an angle"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Put the **centre of the protractor** on the point where the two lines meet.",
+        "Lay the **base line** of the protractor along one arm.",
+        "Read the scale that starts at **zero** on that arm."
+       ],
+       "start": 1
+      },
+      {
+       "t": "h3",
+       "x": "Facts about angles"
+      },
+      {
+       "t": "pre",
+       "x": "Angles on a straight line add up to 180°\nAngles at a point add up to 360°\nThe angles of a triangle add up to 180°"
+      },
+      {
+       "t": "p",
+       "x": "**Worked example.** Two angles on a straight line are 115° and x. Find x."
+      },
+      {
+       "t": "pre",
+       "x": "x = 180° − 115° = 65°"
+      },
+      {
+       "t": "p",
+       "x": "**Worked example.** A triangle has angles of 50° and 60°. Find the third angle."
+      },
+      {
+       "t": "pre",
+       "x": "Third angle = 180° − (50° + 60°) = 180° − 110° = 70°"
+      }
+     ]
+    },
+    {
+     "title": "4. CIRCLES",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Parts of a circle"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Part",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**Centre**",
+         "The middle point of the circle"
+        ],
+        [
+         "**Radius**",
+         "A straight line from the centre to the edge"
+        ],
+        [
+         "**Diameter**",
+         "A straight line through the centre, from edge to edge"
+        ],
+        [
+         "**Circumference**",
+         "The distance all the way round the circle"
+        ],
+        [
+         "**Chord**",
+         "A straight line joining two points on the circle"
+        ],
+        [
+         "**Arc**",
+         "A part of the circumference"
+        ],
+        [
+         "**Sector**",
+         "The part enclosed by two radii and an arc"
+        ]
+       ]
+      },
+      {
+       "t": "pre",
+       "x": "Diameter = 2 × radius          Radius = diameter ÷ 2"
+      },
+      {
+       "t": "p",
+       "x": "**Examples**"
+      },
+      {
+       "t": "pre",
+       "x": "A circle of radius 3.5 cm has diameter 2 × 3.5 = 7 cm\nA circle of diameter 10 cm has radius 10 ÷ 2 = 5 cm"
+      },
+      {
+       "t": "h3",
+       "x": "Constructing a circle"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Open the pair of compasses to the size of the **radius** against a ruler.",
+        "Put the sharp point on the paper — this is the **centre**.",
+        "Turn the pencil right round without changing the opening."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "5. CONSTRUCTING A REGULAR HEXAGON",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A **regular hexagon** has **6 equal sides** and **6 equal angles**. Each interior angle is **120°**."
+      },
+      {
+       "t": "p",
+       "x": "**Steps**"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Draw a circle of any radius, for example 4 cm.",
+        "**Without changing the compasses**, put the point anywhere on the circle and make a mark on the circle.",
+        "Move the point to that mark and make the next mark. Continue right round.",
+        "You will get exactly **six marks**.",
+        "Join the six marks with a ruler."
+       ],
+       "start": 1
+      },
+      {
+       "t": "note",
+       "x": "Why it works: the radius of a circle steps round the circumference **exactly six times**."
+      }
+     ]
+    },
+    {
+     "title": "6. LINES OF FOLDING SYMMETRY",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A **line of symmetry** is a fold line that makes the two halves of a shape match exactly."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Shape",
+        "Lines of folding symmetry"
+       ],
+       "rows": [
+        [
+         "Square",
+         "**4**"
+        ],
+        [
+         "Rectangle",
+         "**2**"
+        ],
+        [
+         "Equilateral triangle",
+         "**3**"
+        ],
+        [
+         "Isosceles triangle",
+         "**1**"
+        ],
+        [
+         "Scalene triangle",
+         "**0**"
+        ],
+        [
+         "Regular hexagon",
+         "**6**"
+        ],
+        [
+         "Circle",
+         "Very many (any line through the centre)"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Try it:** fold a square piece of paper down the middle, across the middle, and along each diagonal. All four folds match — so a square has 4 lines of symmetry. A rectangle only matches on the two middle folds, not on the diagonals."
+      }
+     ]
+    },
+    {
+     "title": "7. ROTATION AND REVOLUTION",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Rotation:** turning about a fixed point."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Turn",
+        "Degrees"
+       ],
+       "rows": [
+        [
+         "Quarter turn",
+         "**90°**"
+        ],
+        [
+         "Half turn",
+         "**180°**"
+        ],
+        [
+         "Three-quarter turn",
+         "**270°**"
+        ],
+        [
+         "Complete turn (one revolution)",
+         "**360°**"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "Turning may be **clockwise** (the way the hands of a clock move) or **anticlockwise**."
+      },
+      {
+       "t": "p",
+       "x": "**Worked example.** A learner faces north and makes a quarter turn clockwise. Which way is she facing?"
+      },
+      {
+       "t": "pre",
+       "x": "North → quarter turn clockwise → East"
+      },
+      {
+       "t": "p",
+       "x": "**Worked example.** The minute hand of a clock moves from 12 to 6. How many degrees has it turned?"
+      },
+      {
+       "t": "pre",
+       "x": "12 to 6 is half a turn = 180°"
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Parallel lines",
+         "Lines that never meet"
+        ],
+        [
+         "Perpendicular lines",
+         "Lines that meet at 90°"
+        ],
+        [
+         "Angle",
+         "The amount of turning between two lines that meet"
+        ],
+        [
+         "Degree",
+         "The unit for measuring angles"
+        ],
+        [
+         "Protractor",
+         "The instrument used to measure angles"
+        ],
+        [
+         "Radius",
+         "A line from the centre of a circle to the edge"
+        ],
+        [
+         "Diameter",
+         "A line through the centre from edge to edge"
+        ],
+        [
+         "Circumference",
+         "The distance round a circle"
+        ],
+        [
+         "Hexagon",
+         "A shape with six sides"
+        ],
+        [
+         "Line of symmetry",
+         "A fold line that makes two halves match exactly"
+        ],
+        [
+         "Revolution",
+         "One complete turn of 360°"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Parallel lines never meet; perpendicular lines meet at **90°**.",
+        "Angles on a straight line = **180°**; angles at a point = **360°**.",
+        "The angles of a triangle add up to **180°**.",
+        "**Diameter = 2 × radius.**",
+        "A regular hexagon has **6 equal sides** and each interior angle is **120°**.",
+        "The radius steps round its own circle exactly **six** times.",
+        "Square = 4 lines of symmetry · rectangle = 2 · equilateral triangle = 3.",
+        "A quarter turn = 90°, a half turn = 180°, a complete revolution = 360°."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "An angle of 65° is **acute**; an angle of 130° is **obtuse**.",
+        "Angles on a straight line: 180° − 115° = **65°**.",
+        "A triangle with 50° and 60° has a third angle of **70°**.",
+        "A circle of radius 3.5 cm has a diameter of **7 cm**.",
+        "A regular hexagon has **6** lines of folding symmetry.",
+        "Facing north and turning 90° clockwise leaves you facing **east**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Reading the wrong scale on the protractor (always start from zero on one arm).",
+        "Calling an angle of exactly 90° an acute angle.",
+        "Using the diameter when the radius is needed to set the compasses.",
+        "Saying a rectangle has 4 lines of symmetry — it has only **2**.",
+        "Changing the compass opening while stepping round a hexagon.",
+        "Turning anticlockwise when the question says clockwise."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "What are parallel lines?",
+        "Give one example of perpendicular lines in your classroom.",
+        "Name the type of angle that measures 65°.",
+        "Name the type of angle that measures 130°.",
+        "Name the type of angle that measures exactly 90°.",
+        "Two angles on a straight line are 115° and x. Find x.",
+        "A triangle has angles of 50° and 60°. Find the third angle.",
+        "Angles at a point are 120°, 150° and y. Find y.",
+        "Find the diameter of a circle whose radius is 3.5 cm.",
+        "Find the radius of a circle whose diameter is 10 cm.",
+        "Name the part of a circle that joins two points on the circle without passing through the centre.",
+        "How many equal sides has a regular hexagon?",
+        "How many lines of folding symmetry has a square?",
+        "How many lines of folding symmetry has a rectangle?",
+        "How many lines of folding symmetry has an equilateral triangle?",
+        "How many degrees are there in a quarter turn?",
+        "How many degrees are there in one complete revolution?",
+        "A learner facing north makes a quarter turn clockwise. Which direction is she facing?",
+        "The minute hand moves from 12 to 6. Through how many degrees has it turned?",
+        "Describe in two steps how you would construct a circle of radius 4 cm."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "**Lines that run in the same direction and never meet**, however far they are drawn.",
+        "Any correct example, for example **the corner of a window or a door frame** (a wall meeting the floor).",
+        "**Acute**",
+        "**Obtuse**",
+        "**A right angle**",
+        "180° − 115° = **65°**",
+        "180° − 110° = **70°**",
+        "360° − (120° + 150°) = 360° − 270° = **90°**",
+        "2 × 3.5 = **7 cm**",
+        "10 ÷ 2 = **5 cm**",
+        "A **chord**",
+        "**6**",
+        "**4**",
+        "**2**",
+        "**3**",
+        "**90°**",
+        "**360°**",
+        "**East**",
+        "**180°**",
+        "Open the compasses to **4 cm** against a ruler, then put the sharp point on the centre and turn the pencil right round without changing the opening."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.5 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Parallel = never meet · perpendicular = 90°",
+        "Acute < 90° · right = 90° · obtuse 90°–180° · straight = 180° · reflex > 180°",
+        "Straight line = 180° · point = 360° · triangle = 180°",
+        "**D = 2r** · the radius steps round its circle **6** times → hexagon",
+        "Symmetry: square 4 · rectangle 2 · equilateral triangle 3",
+        "Quarter turn 90° · half turn 180° · revolution 360°"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title and the content list (parallel and perpendicular lines; angles; circles and regular hexagons; simple lines of folding symmetry of the rectangle, square and special triangles; rotations and revolutions), the competences and the teacher guidance — including the instruction that learners should have their own geometry sets and should fold paper shapes to discover lines of symmetry — were taken from the official **NCDC Primary Five Curriculum, Set One** (© NCDC 2010; pages 110–112 of the PDF in `curriculum/`). The explanations, diagrams, construction steps, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook. Every calculation above was worked out and checked."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.5 was available, so the syllabus's own \"Teacher's Notes\" were used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P5_MATH_T11",
+   "class": "P5",
+   "subject": "MATH",
+   "topic_no": 11,
+   "title": "Integers",
+   "heading": "TOPIC 11: INTEGERS",
+   "slug": "integers",
+   "periods": null,
+   "curriculum_pages": "117–118",
+   "words": 1483,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Five Curriculum, Set One, Mathematics Term III, Theme 2 Topic 3, Integers (`curriculum/P5-SET-ONE-2010.pdf`, pages 117–118).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You can count and use a number line. **Integers are a new topic in P.5.** They are the numbers you meet when you go *below* zero — like a loss in business or a cold night on a mountain."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "draw a number line showing positive and negative integers",
+        "identify positive and negative integers",
+        "arrange integers in ascending and descending order",
+        "compare integers using =, < and >",
+        "add and subtract integers",
+        "solve simple word problems involving integers"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. WHAT INTEGERS ARE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Integers** are whole numbers together with their negatives, and zero:"
+      },
+      {
+       "t": "pre",
+       "x": "… −5, −4, −3, −2, −1, 0, +1, +2, +3, +4, +5 …"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Kind",
+        "Meaning",
+        "Examples"
+       ],
+       "rows": [
+        [
+         "**Positive integers**",
+         "Numbers above zero, written with **+** (or with no sign at all)",
+         "+1, +2, +7"
+        ],
+        [
+         "**Negative integers**",
+         "Numbers below zero, written with **−**",
+         "−1, −2, −7"
+        ],
+        [
+         "**Zero**",
+         "Neither positive nor negative",
+         "0"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**We read −3 as \"negative three\"**, not \"minus three\", when it is a number on its own."
+      }
+     ]
+    },
+    {
+     "title": "2. THE NUMBER LINE",
+     "blocks": [
+      {
+       "t": "pre",
+       "x": " ←---|----|----|----|----|----|----|----|----|----|----|---→\n    −5   −4   −3   −2   −1    0   +1   +2   +3   +4   +5"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Numbers get **bigger as you move to the right**.",
+        "Numbers get **smaller as you move to the left**.",
+        "Moving **right** is a **positive** movement (add).",
+        "Moving **left** is a **negative** movement (subtract)."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "3. INTEGERS IN EVERYDAY LIFE",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Situation",
+        "Positive",
+        "Negative"
+       ],
+       "rows": [
+        [
+         "Business",
+         "Profit of 5,000 → **+5,000**",
+         "Loss of 5,000 → **−5,000**"
+        ],
+        [
+         "Temperature",
+         "8 degrees above zero → **+8**",
+         "3 degrees below zero → **−3**"
+        ],
+        [
+         "Height",
+         "40 m above sea level → **+40**",
+         "12 m below sea level → **−12**"
+        ],
+        [
+         "A building",
+         "Second floor → **+2**",
+         "Second basement → **−2**"
+        ],
+        [
+         "Movement",
+         "6 steps forward → **+6**",
+         "6 steps backward → **−6**"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "4. ORDERING INTEGERS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Ascending order** means from the smallest to the biggest. **Descending order** means from the biggest to the smallest."
+      },
+      {
+       "t": "pre",
+       "x": "Given: 3, −5, 0, −2, 4\nAscending:  −5, −2, 0, 3, 4\nDescending:  4, 3, 0, −2, −5"
+      },
+      {
+       "t": "note",
+       "x": "The further left a number is on the number line, the **smaller** it is. So **−5 is smaller than −2**, even though 5 is bigger than 2."
+      }
+     ]
+    },
+    {
+     "title": "5. COMPARING INTEGERS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Symbol",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**=**",
+         "is equal to"
+        ],
+        [
+         "**<**",
+         "is less than"
+        ],
+        [
+         "**>**",
+         "is greater than"
+        ]
+       ]
+      },
+      {
+       "t": "pre",
+       "x": "−3 < 2        (−3 is to the left of 2)\n−1 > −6       (−1 is to the right of −6)\n0 > −4\n5 > −5\n−7 < −2"
+      },
+      {
+       "t": "p",
+       "x": "**A way to remember:** the wide open end of the symbol always faces the **bigger** number."
+      }
+     ]
+    },
+    {
+     "title": "6. ADDING INTEGERS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Start at the first number on the number line and **move**:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "**+** means move to the **right**",
+        "**−** means move to the **left**"
+       ]
+      },
+      {
+       "t": "pre",
+       "x": "−3 + 5 : start at −3, move 5 steps right  →  +2\n 4 + (−6) : start at 4, move 6 steps left  →  −2\n−2 + (−3) : start at −2, move 3 steps left →  −5\n−4 + 4 : start at −4, move 4 steps right   →   0"
+      },
+      {
+       "t": "h3",
+       "x": "Two short rules"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Signs",
+        "What to do",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**Same signs**",
+         "Add and keep the sign",
+         "−5 + (−3) = **−8**"
+        ],
+        [
+         "**Different signs**",
+         "Subtract the smaller from the bigger and keep the sign of the bigger",
+         "−7 + 3 = **−4**"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "7. SUBTRACTING INTEGERS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "To subtract, move to the **left** on the number line."
+      },
+      {
+       "t": "pre",
+       "x": "2 − 5  : start at 2, move 5 steps left   →  −3\n−1 − 4 : start at −1, move 4 steps left  →  −5\n−4 − 3 : start at −4, move 3 steps left  →  −7"
+      },
+      {
+       "t": "p",
+       "x": "**Taking away a negative** means moving to the **right**:"
+      },
+      {
+       "t": "pre",
+       "x": "3 − (−2) = 3 + 2 = 5\n−1 − (−4) = −1 + 4 = 3"
+      },
+      {
+       "t": "note",
+       "x": "Two minus signs next to each other become a **plus**."
+      }
+     ]
+    },
+    {
+     "title": "8. WORD PROBLEMS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Example 1.** The temperature at night was −3 °C. By midday it had risen by 9 degrees. What was the midday temperature?"
+      },
+      {
+       "t": "pre",
+       "x": "−3 + 9 = +6 °C"
+      },
+      {
+       "t": "p",
+       "x": "**Example 2.** A trader made a profit of 8,000 shillings on Monday and a loss of 12,000 shillings on Tuesday. What was the result for the two days?"
+      },
+      {
+       "t": "pre",
+       "x": "+8,000 + (−12,000) = −4,000\nA loss of 4,000 shillings"
+      },
+      {
+       "t": "p",
+       "x": "**Example 3.** A lift starts on floor +3, goes down 5 floors, then up 2 floors. Where does it stop?"
+      },
+      {
+       "t": "pre",
+       "x": "3 − 5 + 2 = 0\nIt stops at the ground floor."
+      },
+      {
+       "t": "p",
+       "x": "**Example 4.** How many degrees are there between −4 °C and 7 °C?"
+      },
+      {
+       "t": "pre",
+       "x": "From −4 to 0 is 4 degrees. From 0 to 7 is 7 degrees.\n4 + 7 = 11 degrees"
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Integer",
+         "A whole number, positive, negative or zero"
+        ],
+        [
+         "Positive integer",
+         "A number greater than zero"
+        ],
+        [
+         "Negative integer",
+         "A number less than zero"
+        ],
+        [
+         "Zero",
+         "The integer that is neither positive nor negative"
+        ],
+        [
+         "Number line",
+         "A line on which numbers are marked in order"
+        ],
+        [
+         "Ascending order",
+         "From the smallest to the biggest"
+        ],
+        [
+         "Descending order",
+         "From the biggest to the smallest"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Integers are **whole numbers only** — there are no fractions among them.",
+        "**Zero is neither positive nor negative.**",
+        "On a number line, **right is bigger, left is smaller**.",
+        "Every negative integer is **less than** every positive integer.",
+        "**−5 is smaller than −2.**",
+        "**Same signs:** add and keep the sign. **Different signs:** subtract and keep the sign of the bigger.",
+        "**Two minus signs together make a plus:** 3 − (−2) = 5."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "−3 + 5 = **+2**.",
+        "−2 + (−3) = **−5**.",
+        "2 − 5 = **−3**.",
+        "3 − (−2) = **5**.",
+        "Ascending: −5, −2, 0, 3, 4.",
+        "−7 **<** −2 and −1 **>** −6.",
+        "A loss of 12,000 after a profit of 8,000 is an overall **loss of 4,000**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Saying −5 is bigger than −2.",
+        "Forgetting the sign in the answer.",
+        "Turning the wrong way on the number line.",
+        "Reading 3 − (−2) as 3 − 2.",
+        "Calling zero a positive number."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Write three negative integers.",
+        "Is zero positive, negative or neither?",
+        "Write \"a loss of 6,000 shillings\" as an integer.",
+        "Write \"12 metres below sea level\" as an integer.",
+        "Arrange in ascending order: 3, −5, 0, −2, 4.",
+        "Arrange in descending order: −1, 6, −7, 2, 0.",
+        "Fill in with < or >: −3 __ 2.",
+        "Fill in with < or >: −1 __ −6.",
+        "Fill in with < or >: 0 __ −4.",
+        "Work out: −3 + 5.",
+        "Work out: 4 + (−6).",
+        "Work out: −2 + (−3).",
+        "Work out: 2 − 5.",
+        "Work out: −4 − 3.",
+        "Work out: 3 − (−2).",
+        "Work out: −1 − (−4).",
+        "The temperature at night was −3 °C and rose by 9 degrees by midday. Find the midday temperature.",
+        "A trader made a profit of 8,000 shillings and then a loss of 12,000 shillings. What was the overall result?",
+        "A lift starts at floor 3, goes down 5 floors, then up 2 floors. On which floor does it stop?",
+        "How many degrees are there between −4 °C and 7 °C?"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Any three, for example **−1, −4, −9**",
+        "**Neither** — zero is neither positive nor negative",
+        "**−6,000**",
+        "**−12**",
+        "**−5, −2, 0, 3, 4**",
+        "**6, 2, 0, −1, −7**",
+        "−3 **<** 2",
+        "−1 **>** −6",
+        "0 **>** −4",
+        "**+2**",
+        "**−2**",
+        "**−5**",
+        "**−3**",
+        "**−7**",
+        "3 + 2 = **5**",
+        "−1 + 4 = **3**",
+        "−3 + 9 = **+6 °C**",
+        "8,000 − 12,000 = **−4,000, that is a loss of 4,000 shillings**",
+        "3 − 5 + 2 = **0, the ground floor**",
+        "4 + 7 = **11 degrees**"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.5 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Integers: … −3, −2, −1, 0, +1, +2, +3 …",
+        "Right = bigger · left = smaller",
+        "Zero is neither positive nor negative",
+        "Same signs → add and keep · different signs → subtract and keep the bigger sign",
+        "**− (−) becomes +**",
+        "Profit +, loss − · above zero +, below zero −"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title and the content list (positive and negative integers, ordering integers, comparison of integers with symbols, addition and subtraction of integers, simple word problems), the competences and the teacher guidance — including the syllabus's own advice to introduce integers on a number line and to relate positive and negative numbers to profit and loss — were taken from the official **NCDC Primary Five Curriculum, Set One** (© NCDC 2010; pages 117–118 of the PDF in `curriculum/`). The syllabus itself notes that this is a **new topic** at this level. The explanations, worked examples, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook. Every calculation above was worked out and checked."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.5 was available, so the syllabus's own \"Teacher's Notes\" were used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P5_MATH_T12",
+   "class": "P5",
+   "subject": "MATH",
+   "topic_no": 12,
+   "title": "Algebra",
+   "heading": "TOPIC 12: ALGEBRA",
+   "slug": "algebra",
+   "periods": null,
+   "curriculum_pages": "119",
+   "words": 1595,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Five Curriculum, Set One, Mathematics Term III, Theme 6 Topic 4, Algebra (`curriculum/P5-SET-ONE-2010.pdf`, page 119).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You have filled in missing numbers in sums like 5 + __ = 9. In P.5 that missing number is given a **letter**, and you learn to **collect like terms**, to **form expressions** and to **solve simple equations**."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "say whether a mathematical statement is true or false",
+        "name like terms and collect them",
+        "form algebraic expressions from words",
+        "solve simple equations with one unknown",
+        "solve simple word problems using algebra"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. TRUE AND FALSE MATHEMATICAL STATEMENTS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A mathematical statement is **true** when both sides have the same value."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Statement",
+        "True or false",
+        "Why"
+       ],
+       "rows": [
+        [
+         "7 + 5 = 12",
+         "**True**",
+         "Both sides are 12"
+        ],
+        [
+         "9 − 4 = 6",
+         "**False**",
+         "9 − 4 is 5, not 6"
+        ],
+        [
+         "6 × 3 = 18",
+         "**True**",
+         "Both sides are 18"
+        ],
+        [
+         "20 ÷ 4 = 6",
+         "**False**",
+         "20 ÷ 4 is 5"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "When a number is missing we put a **letter** in its place and call it the **unknown**."
+      },
+      {
+       "t": "pre",
+       "x": "5 + __ = 9      becomes      5 + n = 9      and      n = 4"
+      }
+     ]
+    },
+    {
+     "title": "2. THE WORDS OF ALGEBRA",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**Variable (unknown)**",
+         "The letter that stands for a number",
+         "the *n* in 5 + n = 9"
+        ],
+        [
+         "**Term**",
+         "A number, a letter, or a number and a letter joined by ×",
+         "5a, 3, y"
+        ],
+        [
+         "**Coefficient**",
+         "The number in front of the letter",
+         "in 7m the coefficient is 7"
+        ],
+        [
+         "**Expression**",
+         "Terms joined by + or −, with no equals sign",
+         "3a + 5"
+        ],
+        [
+         "**Equation**",
+         "Two expressions joined by an equals sign",
+         "3a + 5 = 20"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Note:** 5 × a is written **5a**, and a × a is written **a²**. A letter on its own, like *m*, means **1m**."
+      }
+     ]
+    },
+    {
+     "title": "3. LIKE TERMS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Like terms** are terms that use **the same letter**. Only like terms can be added or subtracted."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Like terms",
+        "Unlike terms"
+       ],
+       "rows": [
+        [
+         "5a and 3a",
+         "5a and 3b"
+        ],
+        [
+         "7m, m, 2m",
+         "4x and 4"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Collecting like terms"
+      },
+      {
+       "t": "pre",
+       "x": "5a + 3a = 8a\n9y − 4y = 5y\n7x − 2x + 4 = 5x + 4\n3m + 2n + 5m − n = 8m + n\n6p + 4 − 2p + 3 = 4p + 7"
+      },
+      {
+       "t": "p",
+       "x": "**Work carefully:**"
+      },
+      {
+       "t": "pre",
+       "x": "3m + 2n + 5m − n\nm terms: 3m + 5m = 8m\nn terms: 2n − n  = 1n = n\nAnswer: 8m + n"
+      },
+      {
+       "t": "note",
+       "x": "**You cannot add 5a and 3b.** They are different things — like adding 5 goats and 3 chairs."
+      }
+     ]
+    },
+    {
+     "title": "4. FORMING ALGEBRAIC EXPRESSIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "In words",
+        "In algebra"
+       ],
+       "rows": [
+        [
+         "A number increased by 8",
+         "n + 8"
+        ],
+        [
+         "A number decreased by 5",
+         "n − 5"
+        ],
+        [
+         "Twice a number",
+         "2n"
+        ],
+        [
+         "Three times a number, plus 4",
+         "3n + 4"
+        ],
+        [
+         "A number shared among 4",
+         "n ÷ 4 or n/4"
+        ],
+        [
+         "The sum of a number and 7",
+         "n + 7"
+        ],
+        [
+         "6 less than a number",
+         "n − 6"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Example.** Ali has *x* mangoes. Ben has 5 more than Ali. Write what Ben has and what they have altogether."
+      },
+      {
+       "t": "pre",
+       "x": "Ben:        x + 5\nAltogether: x + (x + 5) = 2x + 5"
+      }
+     ]
+    },
+    {
+     "title": "5. SOLVING SIMPLE EQUATIONS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "To solve an equation, get the letter **alone on one side**. Whatever you do to one side you must do to the **other side too**."
+      },
+      {
+       "t": "h3",
+       "x": "Type 1 — addition"
+      },
+      {
+       "t": "pre",
+       "x": "x + 7 = 12\nx + 7 − 7 = 12 − 7\nx = 5\nCheck: 5 + 7 = 12  ✓"
+      },
+      {
+       "t": "h3",
+       "x": "Type 2 — subtraction"
+      },
+      {
+       "t": "pre",
+       "x": "y − 4 = 9\ny − 4 + 4 = 9 + 4\ny = 13\nCheck: 13 − 4 = 9  ✓"
+      },
+      {
+       "t": "h3",
+       "x": "Type 3 — multiplication"
+      },
+      {
+       "t": "pre",
+       "x": "3m = 21\n3m ÷ 3 = 21 ÷ 3\nm = 7\nCheck: 3 × 7 = 21  ✓"
+      },
+      {
+       "t": "h3",
+       "x": "Type 4 — division"
+      },
+      {
+       "t": "pre",
+       "x": "n ÷ 4 = 6\nn = 6 × 4\nn = 24\nCheck: 24 ÷ 4 = 6  ✓"
+      },
+      {
+       "t": "h3",
+       "x": "Type 5 — two steps"
+      },
+      {
+       "t": "pre",
+       "x": "2p − 5 = 9\n2p = 9 + 5\n2p = 14\np = 7\nCheck: (2 × 7) − 5 = 14 − 5 = 9  ✓"
+      },
+      {
+       "t": "pre",
+       "x": "4k + 3 = 23\n4k = 23 − 3 = 20\nk = 5\nCheck: (4 × 5) + 3 = 23  ✓"
+      }
+     ]
+    },
+    {
+     "title": "6. WORD PROBLEMS USING ALGEBRA",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Steps:** let the unknown be a letter → write the equation → solve it → **check** → answer in words."
+      },
+      {
+       "t": "p",
+       "x": "**Example 1.** A number increased by 8 gives 20. Find the number."
+      },
+      {
+       "t": "pre",
+       "x": "Let the number be n\nn + 8 = 20\nn = 12\nCheck: 12 + 8 = 20  ✓"
+      },
+      {
+       "t": "p",
+       "x": "**Example 2.** Three times a number, less 4, gives 17. Find the number."
+      },
+      {
+       "t": "pre",
+       "x": "Let the number be x\n3x − 4 = 17\n3x = 21\nx = 7\nCheck: (3 × 7) − 4 = 17  ✓"
+      },
+      {
+       "t": "p",
+       "x": "**Example 3.** Mary has *y* books. Her sister has twice as many. Together they have 27 books. How many has Mary?"
+      },
+      {
+       "t": "pre",
+       "x": "y + 2y = 27\n3y = 27\ny = 9\nMary has 9 books and her sister has 18.\nCheck: 9 + 18 = 27  ✓"
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Algebra",
+         "Using letters to stand for unknown numbers"
+        ],
+        [
+         "Variable (unknown)",
+         "The letter that stands for a number"
+        ],
+        [
+         "Term",
+         "A single number or letter in an expression"
+        ],
+        [
+         "Coefficient",
+         "The number written in front of a letter"
+        ],
+        [
+         "Like terms",
+         "Terms that use the same letter"
+        ],
+        [
+         "Expression",
+         "Terms joined by + or −, with no equals sign"
+        ],
+        [
+         "Equation",
+         "A statement that two expressions are equal"
+        ],
+        [
+         "Solve",
+         "To find the value of the unknown"
+        ],
+        [
+         "Simplify",
+         "To collect like terms and write the shortest form"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**Only like terms can be collected.**",
+        "5 × a is written **5a**; the letter *m* alone means **1m**.",
+        "An **expression** has no equals sign; an **equation** does.",
+        "Whatever you do to one side of an equation, do to the **other side too**.",
+        "To undo **+** use **−**; to undo **×** use **÷**.",
+        "Always **check** by putting your answer back into the equation.",
+        "\"Twice\" means **× 2**; \"the sum of\" means **+**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "5a + 3a = **8a**.",
+        "3m + 2n + 5m − n = **8m + n**.",
+        "x + 7 = 12 gives **x = 5**.",
+        "3m = 21 gives **m = 7**.",
+        "2p − 5 = 9 gives **p = 7**.",
+        "\"A number increased by 8 is 20\" gives n + 8 = 20 and **n = 12**.",
+        "Always show the checking line."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Adding unlike terms, for example writing 5a + 3b = 8ab.",
+        "Forgetting that a lone letter counts as 1 of that letter.",
+        "Changing only one side of the equation.",
+        "Using + when you should use − to undo an operation.",
+        "Writing the answer as 7x when the question asks for the value of x.",
+        "Not checking the answer."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Is 9 − 4 = 6 true or false? Give the correct answer.",
+        "Simplify: 5a + 3a.",
+        "Simplify: 9y − 4y.",
+        "Simplify: 7x − 2x + 4.",
+        "Simplify: 3m + 2n + 5m − n.",
+        "Simplify: 6p + 4 − 2p + 3.",
+        "Write \"a number increased by 8\" in algebra.",
+        "Write \"three times a number, plus 4\" in algebra.",
+        "Solve: x + 7 = 12.",
+        "Solve: y − 4 = 9.",
+        "Solve: 3m = 21.",
+        "Solve: n ÷ 4 = 6.",
+        "Solve: 2p − 5 = 9.",
+        "Solve: 4k + 3 = 23.",
+        "A number increased by 8 gives 20. Find the number.",
+        "Three times a number, less 4, gives 17. Find the number.",
+        "Ali has x mangoes and Ben has 5 more. Write, in algebra, how many they have altogether.",
+        "Mary has y books and her sister has twice as many. Together they have 27. Find y.",
+        "Simplify: 8k − 3k + 2k.",
+        "Solve: 5w = 45."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "**False** — 9 − 4 = **5**",
+        "**8a**",
+        "**5y**",
+        "**5x + 4**",
+        "**8m + n**",
+        "**4p + 7**",
+        "**n + 8**",
+        "**3n + 4**",
+        "**x = 5**",
+        "**y = 13**",
+        "**m = 7**",
+        "**n = 24**",
+        "2p = 14, so **p = 7**",
+        "4k = 20, so **k = 5**",
+        "n + 8 = 20, so **n = 12**",
+        "3x − 4 = 17, 3x = 21, so **x = 7**",
+        "x + (x + 5) = **2x + 5**",
+        "3y = 27, so **y = 9** (Mary has 9 books)",
+        "**7k**",
+        "**w = 9**"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.5 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Letters stand for unknown numbers",
+        "Collect **like terms** only · m means 1m",
+        "Expression has no **=** · equation has **=**",
+        "Do the same thing to **both sides**",
+        "Undo + with − · undo × with ÷",
+        "Always **check** your answer"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title and the content list (true mathematical statements, like terms, expressions in algebra, and simple word problems involving algebra), the competences and the teacher guidance — including the syllabus's own advice to begin with mental work on missing numbers and to call the missing number the unknown — were taken from the official **NCDC Primary Five Curriculum, Set One** (© NCDC 2010; page 119 of the PDF in `curriculum/`). The explanations, worked examples, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook. Every calculation above was worked out and checked."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.5 was available, so the syllabus's own \"Teacher's Notes\" were used directly instead."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

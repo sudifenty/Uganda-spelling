@@ -1,0 +1,4725 @@
+{
+ "class": "P7",
+ "subject": "SCI",
+ "subject_name": "Science",
+ "total": 8,
+ "words": 16568,
+ "topics": [
+  {
+   "id": "P7_SCI_T01",
+   "class": "P7",
+   "subject": "SCI",
+   "topic_no": 1,
+   "title": "The Muscular–skeletal System",
+   "heading": "TOPIC 1: THE MUSCULAR–SKELETAL SYSTEM",
+   "slug": "muscular-skeletal-system",
+   "periods": 24,
+   "curriculum_pages": "83–86",
+   "words": 1826,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Seven Curriculum, Set One, Integrated Science Topic 1, 24 periods (`curriculum/PRIMARY-SEVEN-SET-ONE.pdf`, topic outline page 75 and pages 83–86).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** In P.4 you learnt the parts of the body. In P.7 you study the **bones and muscles** that hold the body up and make it move."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "describe the structure of the human skeleton and name the different bones",
+        "name and describe the types of joints",
+        "tell the difference between voluntary and involuntary muscles",
+        "state the functions of the muscular–skeletal system",
+        "name diseases and disorders of bones and muscles and how to prevent them",
+        "explain the importance of correct posture"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. THE STRUCTURE OF THE HUMAN SKELETON",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definition"
+      },
+      {
+       "t": "p",
+       "x": "**Skeleton:** The framework of bones that supports the body and gives it shape."
+      },
+      {
+       "t": "p",
+       "x": "An adult human skeleton has about **206 bones**. A baby is born with more (about 300), because some bones join together as the child grows."
+      },
+      {
+       "t": "h3",
+       "x": "The two main parts"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Part",
+        "Bones it contains"
+       ],
+       "rows": [
+        [
+         "**Axial skeleton**",
+         "Skull, vertebral column (backbone), ribs and breastbone (sternum)"
+        ],
+        [
+         "**Appendicular skeleton**",
+         "Arms, legs, shoulder girdle and hip (pelvic) girdle"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "2. NAMES OF DIFFERENT BONES",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Region",
+        "Bone",
+        "Where it is"
+       ],
+       "rows": [
+        [
+         "Head",
+         "**Cranium**",
+         "The box that protects the brain"
+        ],
+        [
+         "Head",
+         "**Mandible**",
+         "The lower jaw — the only movable bone of the skull"
+        ],
+        [
+         "Chest",
+         "**Ribs** (12 pairs)",
+         "Protect the heart and lungs"
+        ],
+        [
+         "Chest",
+         "**Sternum**",
+         "The breastbone at the front"
+        ],
+        [
+         "Back",
+         "**Vertebral column**",
+         "33 small bones called vertebrae"
+        ],
+        [
+         "Shoulder",
+         "**Clavicle** (collar bone), **Scapula** (shoulder blade)",
+         "Shoulder girdle"
+        ],
+        [
+         "Upper arm",
+         "**Humerus**",
+         "Between shoulder and elbow"
+        ],
+        [
+         "Lower arm",
+         "**Radius** and **Ulna**",
+         "Between elbow and wrist"
+        ],
+        [
+         "Hand",
+         "**Carpals, metacarpals, phalanges**",
+         "Wrist, palm and fingers"
+        ],
+        [
+         "Hip",
+         "**Pelvic girdle**",
+         "Supports the trunk on the legs"
+        ],
+        [
+         "Thigh",
+         "**Femur**",
+         "The longest and strongest bone in the body"
+        ],
+        [
+         "Knee",
+         "**Patella**",
+         "The knee cap"
+        ],
+        [
+         "Lower leg",
+         "**Tibia** (shin) and **Fibula**",
+         "Between knee and ankle"
+        ],
+        [
+         "Foot",
+         "**Tarsals, metatarsals, phalanges**",
+         "Ankle, sole and toes"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**The smallest bone** in the body is the **stapes (stirrup)** in the middle ear."
+      }
+     ]
+    },
+    {
+     "title": "3. JOINTS",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definition"
+      },
+      {
+       "t": "p",
+       "x": "**Joint:** The place where two or more bones meet."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Type of joint",
+        "Movement",
+        "Examples"
+       ],
+       "rows": [
+        [
+         "**Immovable (fixed)**",
+         "No movement",
+         "Joints of the cranium; joints of the pelvic girdle"
+        ],
+        [
+         "**Slightly movable**",
+         "A little movement",
+         "Joints between the vertebrae; joints of the ribs"
+        ],
+        [
+         "**Freely movable (synovial)**",
+         "Free movement",
+         "Shoulder, hip, elbow, knee, neck"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Types of freely movable joints"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Joint",
+        "Movement",
+        "Where"
+       ],
+       "rows": [
+        [
+         "**Ball and socket**",
+         "Moves in all directions",
+         "Shoulder, hip"
+        ],
+        [
+         "**Hinge**",
+         "Moves in one direction only, like a door",
+         "Elbow, knee, fingers"
+        ],
+        [
+         "**Pivot**",
+         "Turning or rotating",
+         "Neck (between the skull and the first vertebra)"
+        ],
+        [
+         "**Gliding**",
+         "Bones slide over each other",
+         "Wrist, ankle"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Parts that hold joints together"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Part",
+        "Work"
+       ],
+       "rows": [
+        [
+         "**Ligament**",
+         "Joins **bone to bone**"
+        ],
+        [
+         "**Tendon**",
+         "Joins **muscle to bone**"
+        ],
+        [
+         "**Cartilage**",
+         "Soft, smooth tissue at the ends of bones; stops rubbing"
+        ],
+        [
+         "**Synovial fluid**",
+         "Oils the joint so that it moves smoothly"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "4. MUSCLES",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definition"
+      },
+      {
+       "t": "p",
+       "x": "**Muscle:** A body tissue that contracts (shortens) and relaxes to cause movement."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Type",
+        "Control",
+        "Where it is found"
+       ],
+       "rows": [
+        [
+         "**Voluntary muscles**",
+         "Under our control",
+         "Arms, legs, face — attached to the skeleton"
+        ],
+        [
+         "**Involuntary muscles**",
+         "Work on their own",
+         "Stomach, intestines, blood vessels"
+        ],
+        [
+         "**Cardiac muscle**",
+         "Works on its own, never tires",
+         "Only in the heart"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "How muscles work in pairs (antagonistic muscles)"
+      },
+      {
+       "t": "p",
+       "x": "Muscles can only **pull**, never push, so they work in pairs."
+      },
+      {
+       "t": "ul",
+       "items": [
+        "To **bend** the arm: the **biceps contracts** and the **triceps relaxes**.",
+        "To **straighten** the arm: the **triceps contracts** and the **biceps relaxes**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "5. FUNCTIONS OF THE MUSCULAR–SKELETAL SYSTEM",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**Support** — holds the body upright.",
+        "**Shape** — gives the body its form.",
+        "**Protection** — the cranium protects the brain, the ribs protect the heart and lungs, the vertebral column protects the spinal cord.",
+        "**Movement** — bones, joints and muscles work together.",
+        "**Production of blood cells** — red bone marrow makes red and white blood cells.",
+        "**Storage of minerals** — bones store calcium and phosphorus.",
+        "**Attachment** — muscles and organs are attached to bones."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "6. DISEASES AND DISORDERS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Condition",
+        "Cause",
+        "Sign"
+       ],
+       "rows": [
+        [
+         "**Rickets**",
+         "Lack of vitamin D and calcium in children",
+         "Bowed (bent) legs, soft weak bones"
+        ],
+        [
+         "**Osteomalacia**",
+         "Lack of vitamin D in adults",
+         "Soft, painful bones"
+        ],
+        [
+         "**Osteoporosis**",
+         "Loss of calcium, common in old age",
+         "Bones break easily"
+        ],
+        [
+         "**Arthritis**",
+         "Inflammation of joints",
+         "Painful, swollen, stiff joints"
+        ],
+        [
+         "**Polio**",
+         "A virus",
+         "Wasting and paralysis of muscles"
+        ],
+        [
+         "**Fracture**",
+         "Accident or a heavy knock",
+         "A broken or cracked bone"
+        ],
+        [
+         "**Dislocation**",
+         "A bone forced out of its joint",
+         "Pain, swelling, deformity"
+        ],
+        [
+         "**Sprain**",
+         "Torn or stretched ligaments",
+         "Pain and swelling at a joint"
+        ],
+        [
+         "**Cramp**",
+         "Muscle contracting suddenly and not relaxing",
+         "Sharp pain in the muscle"
+        ],
+        [
+         "**Muscle strain**",
+         "Overworking or overstretching a muscle",
+         "Pain and stiffness"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Types of fractures"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Fracture",
+        "What happens"
+       ],
+       "rows": [
+        [
+         "**Simple (closed)**",
+         "The bone breaks but does not pierce the skin"
+        ],
+        [
+         "**Compound (open)**",
+         "The broken bone pierces through the skin"
+        ],
+        [
+         "**Greenstick**",
+         "The bone bends and cracks on one side — common in children"
+        ],
+        [
+         "**Comminuted**",
+         "The bone breaks into many pieces"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "First aid for a fracture"
+      },
+      {
+       "t": "p",
+       "x": "Keep the person calm and still · do **not** try to force the bone back · support the limb with a **splint** and a sling · stop any bleeding · take the person to a health worker at once."
+      }
+     ]
+    },
+    {
+     "title": "7. KEEPING THE SYSTEM HEALTHY",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Eat a **balanced diet** rich in calcium (milk, fish with bones, greens) and protein.",
+        "Get **vitamin D** from sunshine in the early morning and evening.",
+        "Take **regular exercise** to keep muscles and bones strong.",
+        "**Rest and sleep** enough.",
+        "Avoid accidents — play safely, do not carry loads that are too heavy.",
+        "**Immunise** children against polio.",
+        "Treat injuries and infections early.",
+        "Sit, stand and walk with **correct posture**."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Importance of correct posture"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "It keeps the vertebral column straight and healthy.",
+        "It prevents back, neck and chest pain.",
+        "It allows the lungs to fill properly with air and helps digestion.",
+        "It prevents deformities such as a bent back.",
+        "It makes a person look smart and confident."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Good posture:** sit upright with the back straight and both feet on the floor; stand with the shoulders back and the head up; bend the knees, not the back, when lifting a load."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Skeleton",
+         "The framework of bones supporting the body"
+        ],
+        [
+         "Joint",
+         "The place where two or more bones meet"
+        ],
+        [
+         "Ligament",
+         "Tissue joining bone to bone"
+        ],
+        [
+         "Tendon",
+         "Tissue joining muscle to bone"
+        ],
+        [
+         "Cartilage",
+         "Smooth tissue at the ends of bones"
+        ],
+        [
+         "Voluntary muscle",
+         "A muscle under our control"
+        ],
+        [
+         "Involuntary muscle",
+         "A muscle that works on its own"
+        ],
+        [
+         "Antagonistic muscles",
+         "A pair of muscles that work against each other"
+        ],
+        [
+         "Fracture",
+         "A broken or cracked bone"
+        ],
+        [
+         "Posture",
+         "The way a person sits, stands or walks"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "An adult skeleton has about **206 bones**.",
+        "The **femur** is the longest and strongest bone; the **stapes** is the smallest.",
+        "The **mandible** is the only movable bone of the skull.",
+        "Ball and socket — shoulder and hip. Hinge — elbow and knee. Pivot — neck.",
+        "**Ligament joins bone to bone; tendon joins muscle to bone.**",
+        "Biceps and triceps are **antagonistic** muscles.",
+        "**Cardiac muscle** is found only in the heart.",
+        "**Rickets** is caused by lack of vitamin D and calcium.",
+        "Red bone marrow makes **blood cells**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Bone that protects the brain — cranium.",
+        "Bones that protect the heart and lungs — ribs.",
+        "Joint at the shoulder — ball and socket.",
+        "Joint at the elbow — hinge.",
+        "Muscle found only in the heart — cardiac muscle.",
+        "Disease caused by lack of vitamin D in children — rickets.",
+        "Fracture where the bone pierces the skin — compound fracture.",
+        "First aid for a fracture — support the limb with a splint and take the person to hospital."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "What is a skeleton?",
+        "Name the two main parts of the human skeleton.",
+        "Name any four bones found in the arm and hand.",
+        "Name the longest bone and the smallest bone in the human body.",
+        "Give the three types of joints according to movement, with one example of each.",
+        "Name the four types of freely movable joints.",
+        "Give the difference between a ligament and a tendon.",
+        "Differentiate between voluntary and involuntary muscles.",
+        "Which muscles work together to bend and straighten the arm?",
+        "State any four functions of the muscular–skeletal system.",
+        "Name the disease caused by lack of vitamin D and calcium in children and give one sign.",
+        "Name the four types of fractures.",
+        "Give the first aid you would give to a person with a fractured arm.",
+        "Give three ways of keeping the muscular–skeletal system healthy.",
+        "State any three importances of correct posture."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "A skeleton is the framework of bones that supports the body and gives it shape.",
+        "The axial skeleton and the appendicular skeleton.",
+        "Any four of: humerus, radius, ulna, carpals, metacarpals, phalanges.",
+        "Longest — the **femur**; smallest — the **stapes** in the middle ear.",
+        "Immovable — joints of the cranium; slightly movable — joints between the vertebrae; freely movable — the shoulder joint.",
+        "Ball and socket, hinge, pivot and gliding.",
+        "A ligament joins **bone to bone**, while a tendon joins **muscle to bone**.",
+        "Voluntary muscles are under our control, for example the arm muscles; involuntary muscles work on their own, for example the muscles of the stomach.",
+        "The **biceps and the triceps**. The biceps contracts to bend the arm, and the triceps contracts to straighten it.",
+        "Any four of: support, giving shape, protection of organs, movement, production of blood cells, storage of minerals, attachment of muscles.",
+        "**Rickets** — the child has bent (bowed) legs and soft, weak bones.",
+        "Simple (closed), compound (open), greenstick and comminuted.",
+        "Keep the person calm and still, do not try to push the bone back, support the arm with a splint and a sling, control any bleeding, and take the person to a health worker immediately.",
+        "Any three of: eat a balanced diet rich in calcium and protein, get vitamin D from morning sunshine, exercise regularly, rest enough, avoid accidents, immunise against polio, keep correct posture.",
+        "Any three of: it keeps the backbone straight, it prevents back and neck pain, it allows the lungs to work properly, it prevents deformities, it makes a person look smart."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.7 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**206 bones** · axial (skull, ribs, sternum, backbone) + appendicular (limbs and girdles)",
+        "**Femur** longest · **stapes** smallest · **mandible** only movable skull bone",
+        "Ball & socket = shoulder/hip · Hinge = elbow/knee · Pivot = neck",
+        "**Ligament** bone→bone · **Tendon** muscle→bone",
+        "Biceps bends, triceps straightens (antagonistic)",
+        "Rickets = no vitamin D · Fractures: simple, compound, greenstick, comminuted",
+        "Good posture protects the backbone and the lungs"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, sub-topics, competences and teacher guidance above were taken from the official **NCDC Primary Seven Curriculum, Set One** (topic outline page 75 and pages 83–86), stored in `curriculum/`. The explanations, tables, examples, revision questions and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P7_SCI_T02",
+   "class": "P7",
+   "subject": "SCI",
+   "topic_no": 2,
+   "title": "Electricity and Magnetism",
+   "heading": "TOPIC 2: ELECTRICITY AND MAGNETISM",
+   "slug": "electricity-and-magnetism",
+   "periods": 24,
+   "curriculum_pages": "87–90",
+   "words": 2072,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Seven Curriculum, Set One, Integrated Science Topic 2, 24 periods (`curriculum/PRIMARY-SEVEN-SET-ONE.pdf`, topic outline page 76 and pages 87–90).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You have seen torches, radios and electric bulbs working. In P.7 you learn **where electricity comes from, how a circuit works, how to stay safe**, and how **magnets** are made and used."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "name the sources and types of electricity",
+        "tell conductors from insulators and draw a simple circuit",
+        "explain short circuits and the safety rules for handling electricity",
+        "state the importance of electricity",
+        "describe natural and artificial magnets and how temporary magnets are made",
+        "explain how a dynamo generates electricity and how an electric bell works"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. ELECTRICITY",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definition"
+      },
+      {
+       "t": "p",
+       "x": "**Electricity:** A form of energy caused by the movement of tiny charged particles called electrons."
+      },
+      {
+       "t": "h3",
+       "x": "Sources of electricity"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Source",
+        "How it works"
+       ],
+       "rows": [
+        [
+         "**Dry cells and batteries**",
+         "Chemicals inside produce electricity"
+        ],
+        [
+         "**Hydro-electric power (HEP)**",
+         "Falling water turns turbines — Nalubaale, Kiira, Bujagali, Isimba, Karuma"
+        ],
+        [
+         "**Solar panels**",
+         "Change sunlight into electricity"
+        ],
+        [
+         "**Wind (windmills)**",
+         "Moving air turns a turbine"
+        ],
+        [
+         "**Generators and dynamos**",
+         "Fuel or movement turns a coil inside a magnet"
+        ],
+        [
+         "**Geothermal**",
+         "Heat from inside the earth"
+        ],
+        [
+         "**Thermal (fossil fuels)**",
+         "Burning coal, oil or gas to make steam"
+        ],
+        [
+         "**Biogas**",
+         "Gas from rotting waste is burnt to run a generator"
+        ],
+        [
+         "**Lightning**",
+         "Natural electricity in the sky"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Types of electricity"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Type",
+        "Meaning",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**Static electricity**",
+         "Electricity that stays in one place",
+         "A comb rubbed on dry hair picks up small pieces of paper; lightning"
+        ],
+        [
+         "**Current electricity**",
+         "Electricity that flows through a conductor",
+         "Electricity from a cell or from the mains"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "Current electricity is of two kinds: **direct current (d.c.)**, which flows one way, as from a dry cell, and **alternating current (a.c.)**, which keeps changing direction, as from the mains supply."
+      }
+     ]
+    },
+    {
+     "title": "2. CONDUCTORS AND INSULATORS",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definitions"
+      },
+      {
+       "t": "p",
+       "x": "**Conductor:** A material that allows electricity to pass through it."
+      },
+      {
+       "t": "p",
+       "x": "**Insulator:** A material that does not allow electricity to pass through it."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Conductors",
+        "Insulators"
+       ],
+       "rows": [
+        [
+         "Copper, aluminium, iron, steel, gold, silver",
+         "Rubber, plastic, dry wood, glass, dry cloth"
+        ],
+        [
+         "Graphite (pencil lead), the human body, salty water",
+         "Porcelain, ceramics, dry air, paper"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Why it matters:** wires are made of **copper** (a good conductor) but are covered with **rubber or plastic** (an insulator) to keep people safe."
+      }
+     ]
+    },
+    {
+     "title": "3. ELECTRIC CIRCUITS",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definition"
+      },
+      {
+       "t": "p",
+       "x": "**Electric circuit:** The complete path along which electric current flows."
+      },
+      {
+       "t": "p",
+       "x": "A simple circuit needs: a **source** (cell), **connecting wires**, a **switch** and an **appliance** such as a bulb."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Circuit",
+        "How it is arranged",
+        "What happens"
+       ],
+       "rows": [
+        [
+         "**Closed (complete)**",
+         "No gaps",
+         "Current flows and the bulb lights"
+        ],
+        [
+         "**Open**",
+         "A gap or an off switch",
+         "No current flows"
+        ],
+        [
+         "**Series**",
+         "Bulbs one after another in one path",
+         "If one bulb blows, all go off; bulbs are dimmer"
+        ],
+        [
+         "**Parallel**",
+         "Bulbs on separate branches",
+         "If one blows, the others stay on; bulbs are brighter"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Short circuits"
+      },
+      {
+       "t": "p",
+       "x": "**Short circuit:** When the current finds a shorter path of very little resistance and flows without passing through the appliance."
+      },
+      {
+       "t": "p",
+       "x": "**Causes:** worn out or damaged insulation, loose or bare wires touching, water reaching wires, overloading a socket, poor wiring."
+      },
+      {
+       "t": "p",
+       "x": "**Dangers:** it causes overheating, fires, damaged appliances, electric shock and blown fuses."
+      },
+      {
+       "t": "h3",
+       "x": "Safety precautions"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Never touch electrical wires, switches or appliances with **wet hands**.",
+        "Never put **metal objects** into a socket.",
+        "Do not overload a socket with many appliances.",
+        "Repair or replace **worn out wires**; do not use naked wires.",
+        "Switch off the mains before repairing anything.",
+        "Keep children away from sockets; use socket covers.",
+        "Do not fly kites near power lines or stand under them during a storm.",
+        "Report fallen power lines; never touch them.",
+        "Use **fuses and circuit breakers**, and earth (ground) appliances."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Importance of electricity"
+      },
+      {
+       "t": "p",
+       "x": "Lighting homes, schools and streets · cooking and heating water · running machines and industries · pumping and treating water · powering hospitals, fridges and incubators · charging phones and running computers and the internet · running radios and televisions · welding and metal work · creating jobs and small businesses (salons, welding, video halls)."
+      }
+     ]
+    },
+    {
+     "title": "4. MAGNETISM",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definitions"
+      },
+      {
+       "t": "p",
+       "x": "**Magnet:** A material that attracts iron and other magnetic materials."
+      },
+      {
+       "t": "p",
+       "x": "**Magnetic materials:** Iron, steel, nickel and cobalt."
+      },
+      {
+       "t": "p",
+       "x": "**Non-magnetic materials:** Wood, plastic, copper, aluminium, glass, paper."
+      },
+      {
+       "t": "h3",
+       "x": "Types of magnets"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Type",
+        "Meaning",
+        "Examples"
+       ],
+       "rows": [
+        [
+         "**Natural magnets**",
+         "Found in the ground",
+         "**Lodestone (magnetite)**, the earth itself"
+        ],
+        [
+         "**Artificial magnets**",
+         "Made by people",
+         "Bar magnet, horseshoe magnet, ring magnet, needle magnet"
+        ],
+        [
+         "**Temporary magnets**",
+         "Lose their magnetism quickly",
+         "Soft iron, electromagnets"
+        ],
+        [
+         "**Permanent magnets**",
+         "Keep their magnetism for a long time",
+         "Steel magnets"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Properties of magnets"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "A magnet has two poles: **north** and **south**, and the pull is strongest at the poles.",
+        "**Like poles repel; unlike poles attract.** Repulsion is the surest test for a magnet.",
+        "A freely hanging magnet always rests pointing **north–south** — this is how a compass works.",
+        "Magnetism can pass through thin non-magnetic materials such as paper and glass."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Making temporary magnets"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Method",
+        "How"
+       ],
+       "rows": [
+        [
+         "**Stroking**",
+         "Stroke a steel bar with one pole of a magnet, always in the same direction"
+        ],
+        [
+         "**Induction**",
+         "Place a magnetic material near a strong magnet"
+        ],
+        [
+         "**Electrical method (electromagnet)**",
+         "Wind insulated wire round a soft iron nail and pass current through it"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Losing magnetism (demagnetisation)"
+      },
+      {
+       "t": "p",
+       "x": "Heating strongly · hammering or dropping a magnet repeatedly · passing alternating current through it · storing magnets carelessly."
+      },
+      {
+       "t": "p",
+       "x": "**Storing magnets:** keep bar magnets in pairs with unlike poles together and place soft iron **keepers** across the ends."
+      },
+      {
+       "t": "h3",
+       "x": "Generating electricity with a dynamo"
+      },
+      {
+       "t": "p",
+       "x": "A **dynamo** changes movement into electricity. When a coil of wire is turned inside a magnetic field (or a magnet is turned near a coil), electricity is produced. This is used on bicycles to light the lamp and, in a much bigger form, in power stations."
+      },
+      {
+       "t": "h3",
+       "x": "The electric bell"
+      },
+      {
+       "t": "p",
+       "x": "The bell uses an **electromagnet**. When the switch is pressed, current flows and the electromagnet attracts the soft iron armature, so the hammer strikes the gong. As the armature moves, it breaks the circuit, the electromagnet loses its magnetism and the spring pulls the armature back — closing the circuit again. This happens over and over, so the bell rings continuously."
+      },
+      {
+       "t": "h3",
+       "x": "Uses of magnets"
+      },
+      {
+       "t": "p",
+       "x": "Compasses for direction · loudspeakers, radios and telephones · electric bells · dynamos and generators · electric motors · cranes for lifting scrap metal · separating iron from other materials · fridge and cupboard door catches · magnetic cards and computer parts · picking up dropped pins."
+      },
+      {
+       "t": "h3",
+       "x": "Electricity and magnetism in the modern world of work"
+      },
+      {
+       "t": "p",
+       "x": "They run factories and machines, welding and metal work, transport (electric trains and cars), communication (phones, radio, internet), medical equipment in hospitals, and they create many jobs — electricians, engineers, technicians, phone repairers and solar installers."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Electricity",
+         "A form of energy caused by moving electrons"
+        ],
+        [
+         "Conductor",
+         "A material that lets electricity pass through"
+        ],
+        [
+         "Insulator",
+         "A material that does not let electricity pass through"
+        ],
+        [
+         "Circuit",
+         "The complete path taken by an electric current"
+        ],
+        [
+         "Short circuit",
+         "When current takes a shorter path, missing the appliance"
+        ],
+        [
+         "Static electricity",
+         "Electricity that does not flow but stays in one place"
+        ],
+        [
+         "Magnet",
+         "A material that attracts iron and other magnetic materials"
+        ],
+        [
+         "Lodestone",
+         "A natural magnet found in the ground"
+        ],
+        [
+         "Electromagnet",
+         "A temporary magnet made by passing current through a coil"
+        ],
+        [
+         "Dynamo",
+         "A machine that changes movement into electricity"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Two types of electricity: **static** and **current**.",
+        "Copper is used for wires; rubber and plastic are used to cover them.",
+        "In a **series** circuit, one blown bulb switches off all the others; in a **parallel** circuit, the others stay on.",
+        "**Like poles repel; unlike poles attract.** Repulsion is the surest test for magnetism.",
+        "Magnetic materials: **iron, steel, nickel, cobalt**.",
+        "**Lodestone** is a natural magnet.",
+        "Soft iron makes **temporary** magnets; steel makes **permanent** magnets.",
+        "An electric bell works using an **electromagnet**.",
+        "Never touch electrical fittings with **wet hands**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Instrument that changes movement into electricity — dynamo (or generator).",
+        "Natural magnet — lodestone.",
+        "Surest test for a magnet — repulsion.",
+        "Metal used for electric wires — copper.",
+        "Material used to cover wires — rubber or plastic.",
+        "Circuit in which one bulb going off leaves the others on — parallel.",
+        "Main cause of short circuits — worn out or bare wires touching.",
+        "Device that protects a circuit from too much current — a fuse."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Define electricity and name its two types.",
+        "Give any four sources of electricity used in Uganda.",
+        "Give the difference between a conductor and an insulator, with one example of each.",
+        "Draw and label a simple electric circuit. *(Cell, switch, bulb and connecting wires.)*",
+        "Give two differences between a series circuit and a parallel circuit.",
+        "What is a short circuit, and give two of its causes?",
+        "State any four safety precautions in handling electricity.",
+        "Give any four uses of electricity in a home.",
+        "Name any four magnetic materials.",
+        "Give the difference between natural and artificial magnets, with one example of each.",
+        "State the law of magnetism.",
+        "Describe how you would make a magnet by the stroking method.",
+        "Give three ways in which a magnet can lose its magnetism.",
+        "How are magnets properly stored?",
+        "Explain briefly how an electric bell works."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Electricity is a form of energy caused by the movement of electrons. Its two types are **static electricity** and **current electricity**.",
+        "Any four of: dry cells, hydro-electric power, solar panels, wind, generators, geothermal, thermal (fossil fuels), biogas.",
+        "A conductor allows electricity to pass through it, for example copper; an insulator does not, for example rubber.",
+        "*Learner's drawing.* It should show a cell, connecting wires, a switch and a bulb forming a complete (closed) loop.",
+        "In a series circuit the bulbs are in one path, so if one blows all go off and the bulbs are dimmer. In a parallel circuit each bulb is on its own branch, so if one blows the others stay on and the bulbs are brighter.",
+        "A short circuit is when current finds a shorter path of very little resistance and flows without passing through the appliance. Causes: worn out or bare wires touching, water reaching the wires, overloading a socket, poor wiring.",
+        "Any four of: never touch switches with wet hands; do not put metal objects in sockets; do not overload sockets; replace worn out wires; switch off the mains before repairs; keep children away from sockets; never touch fallen power lines.",
+        "Any four of: lighting, cooking, ironing, refrigeration, pumping water, running radios and televisions, charging phones, running computers.",
+        "Iron, steel, nickel and cobalt.",
+        "Natural magnets are found in the ground, for example lodestone; artificial magnets are made by people, for example a bar magnet.",
+        "**Like poles repel and unlike poles attract.**",
+        "Place the steel bar on a table. Take one pole of a strong magnet and stroke the bar from one end to the other, always in the **same direction**, lifting the magnet high at the end of each stroke. Repeat many times; the bar becomes a magnet.",
+        "Any three of: heating it strongly, hammering or dropping it repeatedly, passing alternating current through it, storing it carelessly.",
+        "Bar magnets are stored in pairs with unlike poles facing each other and soft iron keepers placed across the ends.",
+        "When the switch is pressed, current flows through the electromagnet, which attracts the soft iron armature so that the hammer hits the gong. This movement breaks the circuit, the electromagnet loses its magnetism and the spring pulls the armature back, closing the circuit again. The action repeats quickly, so the bell rings continuously."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.7 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Electricity: **static** (stays) and **current** (flows)",
+        "Conductors: copper, iron, graphite · Insulators: rubber, plastic, glass, dry wood",
+        "Series = one path (all go off) · Parallel = branches (others stay on)",
+        "Short circuit → overheating and fire · never touch with **wet hands**",
+        "Magnetic: **iron, steel, nickel, cobalt** · Natural magnet = **lodestone**",
+        "**Like poles repel** — the surest test for a magnet",
+        "Soft iron = temporary · Steel = permanent · Dynamo = movement → electricity"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, sub-topics, competences and teacher guidance above were taken from the official **NCDC Primary Seven Curriculum, Set One** (topic outline page 76 and pages 87–90), stored in `curriculum/`. The explanations, tables, examples, revision questions and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P7_SCI_T03",
+   "class": "P7",
+   "subject": "SCI",
+   "topic_no": 3,
+   "title": "Energy Resources in the Environment",
+   "heading": "TOPIC 3: ENERGY RESOURCES IN THE ENVIRONMENT",
+   "slug": "energy-resources",
+   "periods": 12,
+   "curriculum_pages": "91–94",
+   "words": 1652,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Seven Curriculum, Set One, Integrated Science Topic 3, 12 periods (`curriculum/PRIMARY-SEVEN-SET-ONE.pdf`, topic outline page 77 and pages 91–94).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You know that energy makes things work. In P.7 you study the **energy resources found in the environment** — where each one comes from, how it is used, and why some will run out."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "name the energy resources in the environment and their sources",
+        "describe energy from water, fossil fuels, plants, animals and wind",
+        "state the importance of the different energy resources",
+        "explain the difference between renewable and non-renewable resources",
+        "suggest ways of conserving energy"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. WHAT ENERGY IS",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definitions"
+      },
+      {
+       "t": "p",
+       "x": "**Energy:** The ability to do work."
+      },
+      {
+       "t": "p",
+       "x": "**Energy resource:** Anything in the environment from which we can get energy."
+      },
+      {
+       "t": "h3",
+       "x": "Forms of energy"
+      },
+      {
+       "t": "p",
+       "x": "Heat · light · sound · electrical · chemical · mechanical · nuclear."
+      },
+      {
+       "t": "p",
+       "x": "**The sun is the main source of energy on earth.** Almost every other energy resource can be traced back to the sun."
+      }
+     ]
+    },
+    {
+     "title": "2. ENERGY RESOURCES FROM WATER",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Resource",
+        "How it works",
+        "Where"
+       ],
+       "rows": [
+        [
+         "**Hydro-electric power**",
+         "Falling or fast-flowing water turns turbines that drive generators",
+         "Nalubaale and Kiira (Jinja), Bujagali, Isimba, Karuma; Aswan in Egypt; Kainji in Nigeria"
+        ],
+        [
+         "**Steam engines**",
+         "Water is heated until it makes steam; the steam pushes pistons or turbines",
+         "Old railway engines, thermal power stations, sugar factories"
+        ],
+        [
+         "**Tidal energy**",
+         "The rise and fall of sea tides turns turbines",
+         "Coastal countries with a big tidal range"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Advantages of water energy"
+      },
+      {
+       "t": "p",
+       "x": "It is **renewable**, it does not pollute the air, it is cheap to run once built, and the dam can also store water for irrigation and fishing."
+      },
+      {
+       "t": "h3",
+       "x": "Disadvantages"
+      },
+      {
+       "t": "p",
+       "x": "Building a dam is **very expensive**, it may flood people's land and homes, it can affect fish and wildlife, and it fails when the water level drops during long droughts."
+      }
+     ]
+    },
+    {
+     "title": "3. ENERGY RESOURCES FROM FOSSIL FUELS",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definition"
+      },
+      {
+       "t": "p",
+       "x": "**Fossil fuels:** Fuels formed from the remains of plants and animals that died and were buried millions of years ago. They are **coal, petroleum (crude oil) and natural gas**."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Fuel",
+        "Formed from",
+        "Used for"
+       ],
+       "rows": [
+        [
+         "**Coal**",
+         "Buried plant remains",
+         "Heating, thermal power stations, industries"
+        ],
+        [
+         "**Petroleum (oil)**",
+         "Buried sea animals and plants",
+         "Petrol, diesel, paraffin, jet fuel, lubricants"
+        ],
+        [
+         "**Natural gas**",
+         "Found with oil deposits",
+         "Cooking, heating, generating electricity"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Important Points"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Fossil fuels are **non-renewable** — once used, they cannot be replaced in our lifetime.",
+        "Burning them releases smoke and gases that cause **air pollution, acid rain and global warming**.",
+        "Uganda has discovered oil in the **Albertine Graben** in the west."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "4. ENERGY RESOURCES FROM PLANTS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Resource",
+        "Description"
+       ],
+       "rows": [
+        [
+         "**Firewood and charcoal**",
+         "The commonest fuels in Ugandan homes; from trees"
+        ],
+        [
+         "**Biofuel (biodiesel, ethanol)**",
+         "Fuel made from crops such as sugar cane, maize and jatropha"
+        ],
+        [
+         "**Biogas from plant waste**",
+         "Gas produced when plant material rots without air"
+        ],
+        [
+         "**Plant residues**",
+         "Coffee husks, maize cobs, rice husks and bagasse burnt as fuel"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Care:** cutting too many trees for firewood and charcoal causes **deforestation**, soil erosion and less rainfall. Use energy-saving stoves and plant more trees."
+      }
+     ]
+    },
+    {
+     "title": "5. ENERGY RESOURCES FROM ANIMALS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Resource",
+        "Description"
+       ],
+       "rows": [
+        [
+         "**Animal (muscle) energy**",
+         "Oxen ploughing, donkeys and camels carrying loads, horses pulling carts"
+        ],
+        [
+         "**Biogas from dung**",
+         "Cow dung is put in a digester where bacteria break it down without air, producing gas for cooking and lighting"
+        ],
+        [
+         "**Animal fats and oils**",
+         "Once used in lamps and candles"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Advantages of biogas"
+      },
+      {
+       "t": "p",
+       "x": "It is cheap and renewable · it uses waste that would otherwise pollute · the used slurry makes very good manure · it reduces the cutting of trees · it burns cleanly with no smoke."
+      }
+     ]
+    },
+    {
+     "title": "6. ENERGY FROM WIND, THE SUN AND THE EARTH",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Resource",
+        "How it is used",
+        "Notes"
+       ],
+       "rows": [
+        [
+         "**Wind**",
+         "Windmills pump water and turn turbines to make electricity; wind drives sailing boats",
+         "Free and clean, but the wind is not always blowing"
+        ],
+        [
+         "**Solar**",
+         "Solar panels make electricity; solar cookers and driers use the heat",
+         "Very useful in Uganda because there is sunshine all year"
+        ],
+        [
+         "**Geothermal**",
+         "Heat from hot rocks inside the earth makes steam that drives turbines",
+         "Found near hot springs, for example in western Uganda and in Kenya"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "7. RENEWABLE AND NON-RENEWABLE RESOURCES",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Renewable (can be replaced)",
+        "Non-renewable (get used up)"
+       ],
+       "rows": [
+        [
+         "Solar, wind, water (hydro and tidal), biogas, firewood if trees are replanted, geothermal, animal energy",
+         "Coal, petroleum, natural gas, and other minerals"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Importance of energy resources"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Cooking, lighting and heating in homes.",
+        "Running **industries and machines**.",
+        "**Transport** — vehicles, boats, trains and aeroplanes.",
+        "Pumping and treating **water**.",
+        "Powering **hospitals, schools and offices**.",
+        "**Communication** — radio, television, phones, internet.",
+        "Creating **jobs** and income.",
+        "Ploughing and other farm work."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Ways of conserving energy"
+      },
+      {
+       "t": "p",
+       "x": "Switch off lights and appliances that are not in use · use **energy-saving bulbs and stoves** · use solar and biogas instead of firewood · plant trees for fuel wood · maintain vehicles well so they use less fuel · walk or share transport for short journeys · insulate and cover cooking pots to save heat."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Energy",
+         "The ability to do work"
+        ],
+        [
+         "Energy resource",
+         "Anything from which energy can be obtained"
+        ],
+        [
+         "Fossil fuel",
+         "Fuel formed from remains of plants and animals buried long ago"
+        ],
+        [
+         "Renewable resource",
+         "A resource that can be replaced or does not run out"
+        ],
+        [
+         "Non-renewable resource",
+         "A resource that gets used up and cannot be replaced"
+        ],
+        [
+         "Hydro-electric power",
+         "Electricity produced by falling water"
+        ],
+        [
+         "Biogas",
+         "Gas produced when organic waste rots without air"
+        ],
+        [
+         "Biofuel",
+         "Fuel made from crops or plant material"
+        ],
+        [
+         "Geothermal energy",
+         "Energy from heat inside the earth"
+        ],
+        [
+         "Tidal energy",
+         "Energy from the rise and fall of sea tides"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "The **sun** is the main source of energy on earth.",
+        "The three fossil fuels are **coal, petroleum and natural gas** — all **non-renewable**.",
+        "HEP stations in Uganda: **Nalubaale, Kiira, Bujagali, Isimba and Karuma**, all on the Nile.",
+        "**Biogas** is made from dung and other waste rotting **without air**, and the leftover slurry is good manure.",
+        "Renewable: solar, wind, water, biogas, geothermal.",
+        "Burning fossil fuels causes **air pollution and global warming**.",
+        "Most Ugandan homes still cook with **firewood and charcoal**, which causes deforestation."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Main source of energy on earth — the sun.",
+        "Energy from falling water — hydro-electric power.",
+        "Gas from rotting dung — biogas.",
+        "Two examples of fossil fuels — coal and petroleum.",
+        "One disadvantage of fossil fuels — they pollute the air / they are non-renewable.",
+        "One renewable resource — solar (or wind, water, biogas).",
+        "Machine that turns wind energy into useful work — a windmill.",
+        "One way of saving energy at home — using energy-saving stoves and bulbs."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Define energy and name any four forms of energy.",
+        "What is the main source of energy on earth?",
+        "Name three energy resources obtained from water.",
+        "Name the three fossil fuels.",
+        "Give two disadvantages of using fossil fuels.",
+        "Name two energy resources obtained from plants.",
+        "What is biogas and how is it made?",
+        "Give three advantages of using biogas.",
+        "Give two ways in which animals provide energy.",
+        "Give the difference between renewable and non-renewable energy resources.",
+        "Classify these as renewable or non-renewable: solar, coal, wind, natural gas.",
+        "Name three hydro-electric power stations in Uganda.",
+        "Give two advantages and two disadvantages of hydro-electric power.",
+        "State any four importances of energy resources.",
+        "Suggest four ways of conserving energy in your home or school."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Energy is the ability to do work. Forms: heat, light, sound, electrical, chemical, mechanical (any four).",
+        "**The sun.**",
+        "Hydro-electric power, steam energy and tidal energy.",
+        "Coal, petroleum (crude oil) and natural gas.",
+        "They pollute the air and cause global warming; they are non-renewable and will get used up. (Also: mining and drilling damage the environment.)",
+        "Any two of: firewood, charcoal, biofuel (ethanol or biodiesel), biogas from plant waste, crop residues such as bagasse.",
+        "Biogas is a gas produced when animal dung or other organic waste rots in a digester **without air**. The gas is piped away and burnt for cooking and lighting.",
+        "Any three of: it is cheap and renewable; it uses waste; the slurry left over is good manure; it reduces the cutting of trees; it burns cleanly without smoke.",
+        "Animals give **muscle energy** — oxen ploughing, donkeys carrying loads — and their **dung is used to make biogas**.",
+        "Renewable resources can be replaced or never run out, such as solar and wind; non-renewable resources get used up and cannot be replaced, such as coal and oil.",
+        "Renewable: **solar, wind**. Non-renewable: **coal, natural gas**.",
+        "Any three of: Nalubaale, Kiira, Bujagali, Isimba, Karuma.",
+        "**Advantages:** it is renewable and it does not pollute the air (also cheap to run, and the dam stores water). **Disadvantages:** dams are very expensive to build and they may flood people's land (also affected by drought).",
+        "Any four of: cooking and lighting, running industries, transport, pumping water, powering hospitals and schools, communication, creating jobs, farm work.",
+        "Any four of: switch off lights and appliances not in use; use energy-saving bulbs and stoves; use solar or biogas instead of firewood; plant trees for firewood; cover pots while cooking; service vehicles regularly; walk or share transport for short journeys."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.7 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**Sun** = main source of energy",
+        "Water: **HEP**, steam, tidal · Uganda: Nalubaale, Kiira, Bujagali, Isimba, Karuma",
+        "Fossil fuels: **coal, petroleum, natural gas** — non-renewable, polluting",
+        "Plants: firewood, charcoal, biofuel · Animals: muscle power and **biogas**",
+        "Renewable: solar, wind, water, biogas, geothermal",
+        "Save energy: energy-saving stoves and bulbs, solar, plant trees"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, sub-topics, competences and teacher guidance above were taken from the official **NCDC Primary Seven Curriculum, Set One** (topic outline page 77 and pages 91–94), stored in `curriculum/`. The explanations, tables, examples, revision questions and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P7_SCI_T04",
+   "class": "P7",
+   "subject": "SCI",
+   "topic_no": 4,
+   "title": "Simple Machines and Friction",
+   "heading": "TOPIC 4: SIMPLE MACHINES AND FRICTION",
+   "slug": "simple-machines-and-friction",
+   "periods": 24,
+   "curriculum_pages": "95–98",
+   "words": 1965,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Seven Curriculum, Set One, Integrated Science Topic 4, 24 periods (`curriculum/PRIMARY-SEVEN-SET-ONE.pdf`, topic outline page 77 and pages 95–98).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You have used a knife, a wheelbarrow and a pair of scissors — all of them machines. In P.7 you learn the **six simple machines**, how to work out **mechanical advantage** and the **principle of moments**, and how **friction** helps and troubles us."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "say what a simple machine is and name the six types",
+        "work out mechanical advantage and use the principle of moments",
+        "name the three classes of levers and give examples",
+        "explain how inclined planes, wedges, screws, pulleys and wheels-and-axles help us",
+        "explain what friction is, where it helps, where it is a nuisance, and how to change it"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. SIMPLE MACHINES",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definitions"
+      },
+      {
+       "t": "p",
+       "x": "**Machine:** A device that makes work easier."
+      },
+      {
+       "t": "p",
+       "x": "**Effort:** The force applied to the machine by the user."
+      },
+      {
+       "t": "p",
+       "x": "**Load:** The weight or resistance the machine works against."
+      },
+      {
+       "t": "p",
+       "x": "**Fulcrum (pivot):** The fixed point about which a lever turns."
+      },
+      {
+       "t": "h3",
+       "x": "How machines make work easier"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "They allow a **small effort to move a big load**.",
+        "They change the **direction** of a force (pulling down to lift up).",
+        "They make work **faster and more comfortable**.",
+        "They let us work at a **distance** from danger."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Mechanical advantage"
+      },
+      {
+       "t": "p",
+       "x": "**Mechanical advantage (M.A.) = Load ÷ Effort**"
+      },
+      {
+       "t": "p",
+       "x": "*Example:* A load of 600 N is lifted using an effort of 150 N. M.A. = 600 ÷ 150 = **4** (the machine multiplies the force 4 times)"
+      },
+      {
+       "t": "p",
+       "x": "*A machine has a mechanical advantage of 5 and lifts a load of 450 N. What effort is used?* Effort = 450 ÷ 5 = **90 N**"
+      }
+     ]
+    },
+    {
+     "title": "2. THE PRINCIPLE OF MOMENTS",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definition"
+      },
+      {
+       "t": "p",
+       "x": "**Moment of a force:** The turning effect of a force, found by multiplying the force by its distance from the fulcrum."
+      },
+      {
+       "t": "h3",
+       "x": "The principle"
+      },
+      {
+       "t": "p",
+       "x": "**Load × distance of load from the fulcrum = Effort × distance of effort from the fulcrum**"
+      },
+      {
+       "t": "p",
+       "x": "When these are equal, the lever **balances**."
+      },
+      {
+       "t": "h3",
+       "x": "Worked examples"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "*A load of 40 N is placed 2 m from the fulcrum. An effort acts 4 m from the fulcrum on the other side. Find the effort needed.* 40 × 2 = E × 4 → 80 = 4E → E = **20 N**"
+       ],
+       "start": 1
+      },
+      {
+       "t": "ol",
+       "items": [
+        "*A see-saw balances with a boy of 30 kg sitting 2 m from the pivot. A girl of 20 kg sits on the other side. How far must she sit?* 30 × 2 = 20 × d → 60 = 20d → d = **3 m**"
+       ],
+       "start": 2
+      },
+      {
+       "t": "p",
+       "x": "**Lesson:** the further the effort is from the fulcrum, the **less** effort is needed."
+      }
+     ]
+    },
+    {
+     "title": "3. LEVERS",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definition"
+      },
+      {
+       "t": "p",
+       "x": "**Lever:** A rigid bar that turns about a fulcrum."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Class",
+        "Order",
+        "Examples"
+       ],
+       "rows": [
+        [
+         "**First class**",
+         "Fulcrum **between** effort and load",
+         "See-saw, pair of scissors, claw hammer, crowbar, pliers, beam balance"
+        ],
+        [
+         "**Second class**",
+         "Load **between** fulcrum and effort",
+         "Wheelbarrow, bottle opener, nutcracker, door, oar"
+        ],
+        [
+         "**Third class**",
+         "Effort **between** fulcrum and load",
+         "Fishing rod, broom, spade, tongs, human forearm, a pair of forceps"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**A quick way to remember:** in class 1 the **F**ulcrum is in the middle; in class 2 the **L**oad is in the middle; in class 3 the **E**ffort is in the middle — **F, L, E: 1, 2, 3**."
+      }
+     ]
+    },
+    {
+     "title": "4. OTHER SIMPLE MACHINES",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Inclined plane (ramp or slope)"
+      },
+      {
+       "t": "p",
+       "x": "A slanting surface used to raise a load. It is easier to **push a drum up a plank** than to lift it straight up, though you must move it a longer distance. *Examples:* ramps, hilly roads that zigzag, staircases, loading planks."
+      },
+      {
+       "t": "h3",
+       "x": "Wedge"
+      },
+      {
+       "t": "p",
+       "x": "Two inclined planes joined back to back. It is pushed into something to **split or cut** it. *Examples:* axe, knife, panga, nail, chisel, needle, teeth, pin."
+      },
+      {
+       "t": "h3",
+       "x": "Screw"
+      },
+      {
+       "t": "p",
+       "x": "An inclined plane wound round a cylinder. It changes turning movement into a strong pushing or pulling force. *Examples:* screws, bolts and nuts, screw jack, vice, drill bit, corkscrew, bottle top."
+      },
+      {
+       "t": "h3",
+       "x": "Pulleys"
+      },
+      {
+       "t": "p",
+       "x": "A wheel with a groove in which a rope runs."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Type",
+        "Effect"
+       ],
+       "rows": [
+        [
+         "**Fixed pulley**",
+         "Changes only the direction of the force — you pull down to lift up (M.A. = 1)"
+        ],
+        [
+         "**Movable pulley**",
+         "Reduces the effort needed (M.A. = 2)"
+        ],
+        [
+         "**Block and tackle**",
+         "A system of several pulleys used for very heavy loads, as in cranes and garages"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "*Examples:* flag pole, well bucket, crane, lift, curtain rail."
+      },
+      {
+       "t": "h3",
+       "x": "Wheel and axle"
+      },
+      {
+       "t": "p",
+       "x": "A big wheel fixed to a smaller shaft (the axle). Turning the big wheel gives a strong turn on the axle. *Examples:* steering wheel, door knob, bicycle pedals and wheels, windlass on a well, tap handle, screwdriver handle."
+      },
+      {
+       "t": "h3",
+       "x": "Gears"
+      },
+      {
+       "t": "p",
+       "x": "Toothed wheels that work together to change speed or turning force, as in a bicycle, a clock or a maize mill."
+      }
+     ]
+    },
+    {
+     "title": "5. FRICTION",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definition"
+      },
+      {
+       "t": "p",
+       "x": "**Friction:** The force that opposes movement between two surfaces that are in contact."
+      },
+      {
+       "t": "h3",
+       "x": "Examples of friction in nature"
+      },
+      {
+       "t": "p",
+       "x": "Walking without slipping · a car stopping when brakes are applied · rubbing hands to warm them · a match lighting when struck · a bicycle tyre gripping the road · a parachute slowed by air resistance · a boat slowed by water."
+      },
+      {
+       "t": "h3",
+       "x": "Useful friction and how to increase it"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Useful friction",
+        "Way to increase it"
+       ],
+       "rows": [
+        [
+         "Walking and running",
+         "Rough soles on shoes; rough ground"
+        ],
+        [
+         "Braking in vehicles and bicycles",
+         "Brake pads and rough tyre treads"
+        ],
+        [
+         "Writing with a pencil, striking a match",
+         "Rough paper, rough match box"
+        ],
+        [
+         "Holding things in the hand, tying knots",
+         "Rough surfaces; using sand or resin"
+        ],
+        [
+         "Nails and screws holding wood",
+         "Rough threads"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "Ways of increasing friction: making surfaces **rougher**, adding **treads and grooves**, increasing the **weight** pressing the surfaces together, using rubber or sand."
+      },
+      {
+       "t": "h3",
+       "x": "Friction as a nuisance and how to reduce it"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Problem it causes",
+        "Way to reduce it"
+       ],
+       "rows": [
+        [
+         "Wearing out of tyres, shoes and machine parts",
+         "**Lubrication** with oil and grease"
+        ],
+        [
+         "Making machines heat up",
+         "Fitting **ball bearings and rollers**"
+        ],
+        [
+         "Wasting energy and fuel",
+         "**Streamlining** vehicles, boats and aeroplanes"
+        ],
+        [
+         "Making it hard to push heavy objects",
+         "Using **wheels, rollers or trolleys**"
+        ],
+        [
+         "Noise in machines",
+         "**Polishing and smoothing** surfaces"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Important Points"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Friction always **acts against motion**.",
+        "Friction produces **heat** and **sound**.",
+        "Friction is greater on **rough** surfaces than on smooth ones.",
+        "Without friction we could not walk, write or stop a moving vehicle."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Machine",
+         "A device that makes work easier"
+        ],
+        [
+         "Effort",
+         "The force applied to a machine"
+        ],
+        [
+         "Load",
+         "The weight or resistance the machine moves"
+        ],
+        [
+         "Fulcrum",
+         "The fixed point about which a lever turns"
+        ],
+        [
+         "Mechanical advantage",
+         "Load divided by effort"
+        ],
+        [
+         "Moment",
+         "The turning effect of a force (force × distance)"
+        ],
+        [
+         "Lever",
+         "A rigid bar turning about a fulcrum"
+        ],
+        [
+         "Inclined plane",
+         "A slanting surface used to raise a load"
+        ],
+        [
+         "Pulley",
+         "A grooved wheel in which a rope runs"
+        ],
+        [
+         "Friction",
+         "The force that opposes movement between surfaces in contact"
+        ],
+        [
+         "Lubrication",
+         "Using oil or grease to reduce friction"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**M.A. = Load ÷ Effort.**",
+        "**Load × load distance = Effort × effort distance** (principle of moments).",
+        "Class 1 — fulcrum in the middle (see-saw, scissors). Class 2 — load in the middle (wheelbarrow). Class 3 — effort in the middle (fishing rod, forearm).",
+        "A **wedge** is two inclined planes; a **screw** is an inclined plane wound round a cylinder.",
+        "A **fixed pulley** only changes direction; a **movable pulley** reduces effort.",
+        "Friction always **opposes motion** and produces **heat**.",
+        "Reduce friction by **lubricating, using ball bearings, rollers, polishing and streamlining**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Wheelbarrow — second class lever. Scissors — first class. Fishing rod — third class.",
+        "Turning point of a lever — fulcrum.",
+        "Machine that changes only the direction of force — fixed pulley.",
+        "An axe and a knife are examples of a **wedge**.",
+        "A screw jack is used to lift a car — it is a **screw**.",
+        "Oil and grease are used to **reduce** friction.",
+        "Treads on tyres **increase** friction."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "What is a simple machine? Give two ways in which machines make work easier.",
+        "Define effort, load and fulcrum.",
+        "A load of 800 N is lifted by an effort of 200 N. Find the mechanical advantage.",
+        "A machine has a mechanical advantage of 6. What effort is needed to lift a load of 540 N?",
+        "State the principle of moments.",
+        "A load of 50 N is 3 m from the fulcrum. Find the effort acting 5 m from the fulcrum on the other side.",
+        "Name the three classes of levers and give one example of each.",
+        "Name the class of lever to which a pair of pliers belongs.",
+        "What is an inclined plane, and give two examples?",
+        "Give two examples each of a wedge and a screw.",
+        "Give the difference between a fixed pulley and a movable pulley.",
+        "Give three examples of a wheel and axle.",
+        "Define friction and give three examples of friction in daily life.",
+        "Give three ways of increasing friction and three ways of reducing it.",
+        "Give two disadvantages of friction."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "A simple machine is a device that makes work easier. It allows a small effort to move a big load, and it can change the direction of the force applied.",
+        "**Effort** is the force applied to the machine; **load** is the weight or resistance the machine works against; **fulcrum** is the fixed point about which a lever turns.",
+        "M.A. = 800 ÷ 200 = **4**",
+        "Effort = 540 ÷ 6 = **90 N**",
+        "Load × distance of the load from the fulcrum = effort × distance of the effort from the fulcrum.",
+        "50 × 3 = E × 5 → 150 = 5E → E = **30 N**",
+        "First class — see-saw or scissors; second class — wheelbarrow; third class — fishing rod.",
+        "**First class** (the fulcrum is between the effort and the load).",
+        "An inclined plane is a slanting surface used to raise a load. Examples: a ramp and a plank used to roll a drum onto a lorry (also staircases and zigzag hill roads).",
+        "Wedge: axe, knife (also panga, nail, chisel). Screw: bolt and nut, screw jack (also vice, corkscrew).",
+        "A fixed pulley only changes the direction of the force, so the effort equals the load; a movable pulley reduces the effort needed, giving a mechanical advantage of about 2.",
+        "Any three of: steering wheel, door knob, bicycle wheel and pedals, windlass on a well, tap handle, screwdriver.",
+        "Friction is the force that opposes movement between two surfaces in contact. Examples: brakes stopping a bicycle; shoes gripping the ground when walking; a match lighting when struck.",
+        "**Increase:** make surfaces rougher; put treads on tyres and shoes; press the surfaces together more firmly. **Reduce:** lubricate with oil or grease; use ball bearings or rollers; polish surfaces or streamline the shape.",
+        "It wears out tyres, shoes and machine parts, and it wastes energy as heat, so machines use more fuel. (It also causes noise and overheating.)"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.7 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**M.A. = Load ÷ Effort** · Moments: **L × dL = E × dE**",
+        "Levers: **1** fulcrum middle · **2** load middle · **3** effort middle",
+        "Wedge = two inclined planes · Screw = inclined plane round a cylinder",
+        "Fixed pulley = direction only · Movable pulley = less effort",
+        "Friction opposes motion, makes **heat**",
+        "More friction: rough, treads · Less friction: oil, ball bearings, rollers, streamlining"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, sub-topics, competences and teacher guidance above were taken from the official **NCDC Primary Seven Curriculum, Set One** (topic outline page 77 and pages 95–98), stored in `curriculum/`. The explanations, tables, worked examples, revision questions and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook. Every calculation above was worked out and checked."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P7_SCI_T05",
+   "class": "P7",
+   "subject": "SCI",
+   "topic_no": 5,
+   "title": "The Excretory System",
+   "heading": "TOPIC 5: THE EXCRETORY SYSTEM",
+   "slug": "excretory-system",
+   "periods": 18,
+   "curriculum_pages": "99–101",
+   "words": 1831,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Seven Curriculum, Set One, Integrated Science Topic 5, 18 periods (`curriculum/PRIMARY-SEVEN-SET-ONE.pdf`, topic outline page 78 and pages 99–101).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You know that the body takes in food, water and air. In P.7 you learn how the body **gets rid of the waste** it does not need, through the **skin, kidneys and lungs**."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "name the excretory organs and the waste each one removes",
+        "describe the structure, functions and care of the human skin",
+        "describe the urinary system and the structure and work of the kidney",
+        "explain how the lungs act as excretory organs",
+        "name diseases and disorders of the skin, kidneys and lungs",
+        "state good habits for the proper functioning of the system"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. EXCRETION AND THE EXCRETORY ORGANS",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definitions"
+      },
+      {
+       "t": "p",
+       "x": "**Excretion:** The removal of waste products made inside the body."
+      },
+      {
+       "t": "p",
+       "x": "**Egestion:** The removal of undigested food (faeces) from the body — this is **not** excretion."
+      },
+      {
+       "t": "h3",
+       "x": "The excretory organs"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Organ",
+        "Waste removed"
+       ],
+       "rows": [
+        [
+         "**Skin**",
+         "Sweat — water, salts and a little urea"
+        ],
+        [
+         "**Kidneys**",
+         "Urine — water, urea and mineral salts"
+        ],
+        [
+         "**Lungs**",
+         "Carbon dioxide and water vapour"
+        ],
+        [
+         "**Liver**",
+         "Bile pigments; it also changes harmful substances into urea"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "2. THE HUMAN SKIN",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Structure"
+      },
+      {
+       "t": "p",
+       "x": "The skin has two main layers:"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Layer",
+        "What it contains"
+       ],
+       "rows": [
+        [
+         "**Epidermis** (outer)",
+         "Dead cells on the surface, growing cells below, and the colouring matter (melanin)"
+        ],
+        [
+         "**Dermis** (inner)",
+         "Sweat glands, sebaceous (oil) glands, hair follicles, blood vessels, nerve endings and fat"
+        ]
+       ]
+      },
+      {
+       "t": "table",
+       "head": [
+        "Part",
+        "Work"
+       ],
+       "rows": [
+        [
+         "**Sweat gland**",
+         "Makes sweat and passes it out through the sweat pore"
+        ],
+        [
+         "**Sebaceous gland**",
+         "Makes oil (sebum) that keeps the skin and hair soft"
+        ],
+        [
+         "**Hair follicle**",
+         "Holds the root of the hair"
+        ],
+        [
+         "**Nerve endings**",
+         "Feel heat, cold, pain, pressure and touch"
+        ],
+        [
+         "**Blood vessels**",
+         "Bring water and waste to the sweat glands and help control temperature"
+        ],
+        [
+         "**Fatty layer**",
+         "Stores fat and keeps the body warm"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Functions of the skin"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "**Excretion** — removes sweat containing water, salts and urea.",
+        "**Regulation of body temperature** — sweating cools the body; blood vessels narrow when it is cold.",
+        "**Protection** — keeps out germs, dirt and harmful rays; protects the organs inside.",
+        "**Sensation** — feels touch, pain, heat, cold and pressure.",
+        "**Formation of vitamin D** when sunlight falls on it.",
+        "**Storage** of fat and water."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Diseases and disorders of the skin"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Disease",
+        "Cause",
+        "Signs"
+       ],
+       "rows": [
+        [
+         "**Scabies**",
+         "Mites that burrow into the skin",
+         "Itching, small rashes, especially between fingers"
+        ],
+        [
+         "**Ringworm**",
+         "A fungus",
+         "Round, itchy patches with a clear centre"
+        ],
+        [
+         "**Athlete's foot**",
+         "A fungus",
+         "Cracking and itching between the toes"
+        ],
+        [
+         "**Eczema**",
+         "Allergy or irritation",
+         "Dry, itchy, red patches"
+        ],
+        [
+         "**Boils**",
+         "Bacteria infecting a hair follicle",
+         "Painful swelling with pus"
+        ],
+        [
+         "**Jiggers**",
+         "A sand flea burrowing into the skin",
+         "Itching and swelling on feet and hands"
+        ],
+        [
+         "**Sunburn**",
+         "Too much strong sunlight",
+         "Painful, peeling skin"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Care of the skin"
+      },
+      {
+       "t": "p",
+       "x": "Bathe daily with clean water and soap · wash hands with soap · wear clean, dry clothes · cut nails short · treat wounds and cuts at once · eat a balanced diet and drink plenty of water · do not share clothes, towels, combs or beddings · wear shoes · avoid harmful skin-lightening creams · dry between the toes."
+      }
+     ]
+    },
+    {
+     "title": "3. THE URINARY SYSTEM",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Parts and their work"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Part",
+        "Work"
+       ],
+       "rows": [
+        [
+         "**Kidneys** (two)",
+         "Filter the blood and form urine"
+        ],
+        [
+         "**Ureters** (two)",
+         "Carry urine from the kidneys to the bladder"
+        ],
+        [
+         "**Urinary bladder**",
+         "Stores urine for a short time"
+        ],
+        [
+         "**Urethra**",
+         "Passes urine out of the body"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Structure of the kidney"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Part",
+        "Work"
+       ],
+       "rows": [
+        [
+         "**Cortex**",
+         "The outer layer where filtering begins"
+        ],
+        [
+         "**Medulla**",
+         "The middle layer with tubes that collect urine"
+        ],
+        [
+         "**Pelvis**",
+         "The space that collects urine and passes it to the ureter"
+        ],
+        [
+         "**Nephrons**",
+         "Tiny filtering units — each kidney has about a million"
+        ],
+        [
+         "**Renal artery**",
+         "Brings blood with waste to the kidney"
+        ],
+        [
+         "**Renal vein**",
+         "Takes away the clean blood"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Functions of the kidney"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "**Filters the blood** and removes urea, excess water and excess salts.",
+        "**Forms urine.**",
+        "**Controls the amount of water** in the body (osmoregulation).",
+        "Keeps the blood at the right level of salts."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Diseases and disorders of the kidney"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Condition",
+        "Notes"
+       ],
+       "rows": [
+        [
+         "**Kidney (renal) stones**",
+         "Hard lumps of salts that block the tubes; very painful"
+        ],
+        [
+         "**Nephritis**",
+         "Inflammation of the kidney, often after an infection"
+        ],
+        [
+         "**Kidney failure**",
+         "The kidney stops filtering; treated by **dialysis** or a transplant"
+        ],
+        [
+         "**Bilharzia (schistosomiasis)**",
+         "Worms from snails in dirty water; blood appears in urine"
+        ],
+        [
+         "**Cystitis**",
+         "Infection of the bladder causing painful urination"
+        ],
+        [
+         "**Diabetes insipidus**",
+         "Passing very large amounts of urine"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Care of the kidneys"
+      },
+      {
+       "t": "p",
+       "x": "Drink plenty of clean water · avoid too much salt · avoid alcohol and unnecessary drugs · do not hold urine for too long · treat infections early · keep the private parts clean · avoid bathing in or drinking untreated water (bilharzia)."
+      }
+     ]
+    },
+    {
+     "title": "4. THE LUNGS AS EXCRETORY ORGANS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The lungs remove **carbon dioxide** and **water vapour** produced when the body breaks down food to release energy. You can see the water vapour when you breathe onto a cold mirror."
+      },
+      {
+       "t": "h3",
+       "x": "Diseases and disorders of the lungs"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Disease",
+        "Cause"
+       ],
+       "rows": [
+        [
+         "**Tuberculosis (TB)**",
+         "Bacteria spread through coughing and sneezing"
+        ],
+        [
+         "**Pneumonia**",
+         "Bacteria or viruses; the air sacs fill with fluid"
+        ],
+        [
+         "**Bronchitis**",
+         "Infection or irritation of the air tubes"
+        ],
+        [
+         "**Asthma**",
+         "Narrowing of the air tubes; often triggered by dust or cold"
+        ],
+        [
+         "**Lung cancer**",
+         "Mainly caused by smoking"
+        ],
+        [
+         "**Whooping cough**",
+         "Bacteria; a violent cough with a whoop"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Care of the lungs"
+      },
+      {
+       "t": "p",
+       "x": "Do not smoke and avoid second-hand smoke · keep rooms well ventilated · avoid dust and smoke from firewood; use energy-saving or outdoor stoves · immunise children against TB (BCG) and whooping cough · cover the mouth when coughing · take exercise · treat coughs early."
+      }
+     ]
+    },
+    {
+     "title": "5. GOOD HABITS FOR THE WHOLE SYSTEM",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Drink at least **six to eight glasses of clean water** every day.",
+        "Eat a **balanced diet** with plenty of fruits and vegetables, and not too much salt.",
+        "Bathe daily and keep clothes and beddings clean.",
+        "Take **regular exercise**.",
+        "Avoid **alcohol, smoking and drug abuse**.",
+        "Do not take medicine without advice from a health worker.",
+        "Go for **medical check-ups** and treat infections early.",
+        "Use a clean latrine and wash hands with soap afterwards."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Excretion",
+         "The removal of waste products made in the body"
+        ],
+        [
+         "Egestion",
+         "The removal of undigested food from the body"
+        ],
+        [
+         "Urea",
+         "A waste product formed in the liver from extra protein"
+        ],
+        [
+         "Nephron",
+         "The tiny filtering unit of the kidney"
+        ],
+        [
+         "Ureter",
+         "The tube from the kidney to the bladder"
+        ],
+        [
+         "Urethra",
+         "The tube that carries urine out of the body"
+        ],
+        [
+         "Dialysis",
+         "Cleaning the blood by machine when the kidneys fail"
+        ],
+        [
+         "Epidermis",
+         "The outer layer of the skin"
+        ],
+        [
+         "Dermis",
+         "The inner layer of the skin"
+        ],
+        [
+         "Sebum",
+         "The oil made by the sebaceous glands"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "The four excretory organs are the **skin, kidneys, lungs and liver**.",
+        "The skin excretes **sweat**; the kidneys excrete **urine**; the lungs excrete **carbon dioxide and water vapour**.",
+        "The skin has two layers: **epidermis** (outer) and **dermis** (inner).",
+        "Sweating **cools** the body.",
+        "Each kidney contains about a million **nephrons**.",
+        "Urine flows: kidney → **ureter** → bladder → **urethra**.",
+        "Kidney failure is treated by **dialysis** or a transplant.",
+        "Bilharzia is caught from **dirty water containing snails**.",
+        "Egestion is **not** excretion."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Largest excretory organ — the skin.",
+        "Waste removed by the lungs — carbon dioxide and water vapour.",
+        "Tube from the kidney to the bladder — ureter.",
+        "Filtering unit of the kidney — nephron.",
+        "Skin disease caused by a fungus — ringworm (or athlete's foot).",
+        "Skin disease caused by mites — scabies.",
+        "Machine used when the kidneys fail — dialysis machine.",
+        "Vitamin formed by the skin in sunlight — vitamin D."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Define excretion and give the difference between excretion and egestion.",
+        "Name the four excretory organs and the waste each one removes.",
+        "Name the two main layers of the human skin.",
+        "Name any four parts found in the dermis.",
+        "State any four functions of the skin.",
+        "Name any three skin diseases and the cause of each.",
+        "Give four ways of caring for the skin.",
+        "Name the four parts of the urinary system in the order urine passes through them.",
+        "Name any three parts of a kidney.",
+        "State any three functions of the kidney.",
+        "Name any three diseases or disorders of the kidney.",
+        "How is kidney failure treated?",
+        "Which two wastes do the lungs remove?",
+        "Name any three diseases of the lungs and give one way of preventing lung disease.",
+        "Give any four good habits that keep the excretory system working well."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Excretion is the removal of waste products made inside the body. Egestion is the removal of **undigested food** (faeces), which was never part of the body's chemical processes.",
+        "Skin — sweat; kidneys — urine; lungs — carbon dioxide and water vapour; liver — bile pigments (and it makes urea).",
+        "The **epidermis** and the **dermis**.",
+        "Any four of: sweat glands, sebaceous glands, hair follicles, blood vessels, nerve endings, fatty layer.",
+        "Any four of: excretion of sweat, control of body temperature, protection against germs and injury, sensation, formation of vitamin D, storage of fat and water.",
+        "Any three, for example: scabies — mites; ringworm — a fungus; boils — bacteria; athlete's foot — a fungus; eczema — allergy or irritation.",
+        "Any four of: bathe daily with soap and clean water; wear clean clothes; cut nails short; treat wounds early; eat a balanced diet and drink water; avoid sharing towels and combs; wear shoes.",
+        "Kidneys → ureters → urinary bladder → urethra.",
+        "Any three of: cortex, medulla, pelvis, nephrons, renal artery, renal vein.",
+        "Any three of: filtering the blood, removing urea and excess salts, forming urine, controlling the amount of water in the body.",
+        "Any three of: kidney stones, nephritis, kidney failure, bilharzia, cystitis.",
+        "By **dialysis** — cleaning the blood using a machine — or by a **kidney transplant**.",
+        "**Carbon dioxide** and **water vapour**.",
+        "Any three of: tuberculosis, pneumonia, bronchitis, asthma, lung cancer, whooping cough. Prevention: do not smoke, keep rooms well ventilated, avoid smoke and dust, and immunise children.",
+        "Any four of: drink plenty of clean water; eat a balanced diet with little salt; bathe daily; exercise regularly; avoid alcohol, smoking and drug abuse; do not hold urine too long; go for medical check-ups."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.7 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Excretory organs: **skin · kidneys · lungs · liver**",
+        "Skin: epidermis + dermis · excretes **sweat**, controls temperature, makes vitamin D",
+        "Urine path: kidney → **ureter** → bladder → **urethra**",
+        "Kidney unit = **nephron** · failure treated by **dialysis**",
+        "Lungs excrete **carbon dioxide and water vapour**",
+        "Drink water, eat little salt, avoid alcohol and smoking"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, sub-topics, competences and teacher guidance above were taken from the official **NCDC Primary Seven Curriculum, Set One** (topic outline page 78 and pages 99–101), stored in `curriculum/`. The explanations, tables, examples, revision questions and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P7_SCI_T06",
+   "class": "P7",
+   "subject": "SCI",
+   "topic_no": 6,
+   "title": "Light Energy",
+   "heading": "TOPIC 6: LIGHT ENERGY",
+   "slug": "light-energy",
+   "periods": 18,
+   "curriculum_pages": "102–105",
+   "words": 2453,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Seven Curriculum, Set One, Integrated Science Topic 6, 18 periods (`curriculum/PRIMARY-SEVEN-SET-ONE.pdf`, topic outline page 79 and pages 102–105).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You know that we need light to see. In P.7 you learn **how light travels**, how it makes **shadows and eclipses**, how it **reflects and refracts**, how **lenses and cameras** work, and how the **human eye** sees."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "name natural and artificial sources of light and describe how light travels",
+        "explain the effect of different materials on light",
+        "explain shadows, eclipses and the pin-hole camera",
+        "describe reflection, plane mirrors and the periscope",
+        "explain refraction, dispersion and the rainbow",
+        "describe lenses, the lens camera and the human eye, its defects and its care"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. LIGHT AS A FORM OF ENERGY",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definitions"
+      },
+      {
+       "t": "p",
+       "x": "**Light:** A form of energy that enables us to see."
+      },
+      {
+       "t": "p",
+       "x": "**Luminous body:** An object that produces its own light (the sun, a candle, a bulb)."
+      },
+      {
+       "t": "p",
+       "x": "**Non-luminous body:** An object that does not produce light but can be seen when light falls on it (the moon, a book, a wall)."
+      },
+      {
+       "t": "h3",
+       "x": "Sources of light"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Natural sources",
+        "Artificial sources"
+       ],
+       "rows": [
+        [
+         "The sun, stars, lightning, fireflies, burning wood",
+         "Electric bulbs, candles, torches, lanterns, gas lamps"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "How light travels"
+      },
+      {
+       "t": "p",
+       "x": "Light travels in **straight lines** — this is called **rectilinear propagation** — and it travels very fast (about 300,000 km per second). Light can travel through a vacuum, unlike sound."
+      },
+      {
+       "t": "p",
+       "x": "**Simple proof:** line up three cards with holes in the same position; you can see a candle through them only when the holes are in a straight line."
+      },
+      {
+       "t": "h3",
+       "x": "Beams of light"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Beam",
+        "Description"
+       ],
+       "rows": [
+        [
+         "**Parallel**",
+         "Rays travel side by side, as in a torch beam"
+        ],
+        [
+         "**Converging**",
+         "Rays come together at a point, as through a convex lens"
+        ],
+        [
+         "**Diverging**",
+         "Rays spread out from a point, as from a bulb"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Importance of light"
+      },
+      {
+       "t": "p",
+       "x": "Seeing · plants use it for **photosynthesis** · it gives warmth · it is used in photography, mirrors, microscopes and telescopes · solar energy · it kills some germs and dries clothes and food · it enables signalling and communication (optical fibres)."
+      }
+     ]
+    },
+    {
+     "title": "2. EFFECT OF DIFFERENT MATERIALS ON LIGHT",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Material",
+        "Meaning",
+        "Examples"
+       ],
+       "rows": [
+        [
+         "**Transparent**",
+         "Lets nearly all light pass through; you can see clearly through it",
+         "Clear glass, clean water, air"
+        ],
+        [
+         "**Translucent**",
+         "Lets only some light through; you cannot see clearly",
+         "Frosted glass, oiled paper, thin cloth, muddy water"
+        ],
+        [
+         "**Opaque**",
+         "Does not let light through at all",
+         "Wood, metal, stone, cardboard, the human body"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "3. SHADOWS AND ECLIPSES",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definition"
+      },
+      {
+       "t": "p",
+       "x": "**Shadow:** A dark area formed when an opaque object blocks light."
+      },
+      {
+       "t": "p",
+       "x": "A shadow needs three things: a **source of light**, an **opaque object** and a **screen**."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Part",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**Umbra**",
+         "The dark, full shadow in the middle"
+        ],
+        [
+         "**Penumbra**",
+         "The lighter shadow around the umbra"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Note:** the nearer the object is to the light, the **bigger** the shadow."
+      },
+      {
+       "t": "h3",
+       "x": "Eclipses"
+      },
+      {
+       "t": "p",
+       "x": "**Eclipse:** What happens when one heavenly body blocks light from reaching another."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Eclipse",
+        "What happens",
+        "Order"
+       ],
+       "rows": [
+        [
+         "**Solar eclipse** (eclipse of the sun)",
+         "The moon comes between the sun and the earth",
+         "Sun – **Moon** – Earth"
+        ],
+        [
+         "**Lunar eclipse** (eclipse of the moon)",
+         "The earth comes between the sun and the moon",
+         "Sun – **Earth** – Moon"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Warning:** never look directly at the sun during a solar eclipse; it can damage the eyes."
+      },
+      {
+       "t": "h3",
+       "x": "The pin-hole camera"
+      },
+      {
+       "t": "p",
+       "x": "A closed box, blackened inside, with a tiny hole at the front and a screen of translucent paper at the back. Light from the object travels in straight lines through the hole and forms an image on the screen."
+      },
+      {
+       "t": "p",
+       "x": "**The image is: real, inverted (upside down), laterally inverted and smaller** (it becomes bigger if the camera is moved closer to the object or the box is made longer). Making the hole bigger makes the image brighter but blurred."
+      }
+     ]
+    },
+    {
+     "title": "4. REFLECTION AND MIRRORS",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definitions"
+      },
+      {
+       "t": "p",
+       "x": "**Reflection:** The bouncing back of light when it hits a surface."
+      },
+      {
+       "t": "p",
+       "x": "**Regular reflection:** Reflection from a smooth, shiny surface, giving a clear image."
+      },
+      {
+       "t": "p",
+       "x": "**Diffuse (irregular) reflection:** Reflection from a rough surface, scattering the light."
+      },
+      {
+       "t": "h3",
+       "x": "Laws of reflection"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "The **angle of incidence equals the angle of reflection**.",
+        "The incident ray, the reflected ray and the normal all lie in the same plane."
+       ],
+       "start": 1
+      },
+      {
+       "t": "h3",
+       "x": "Images formed by a plane mirror"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "**Virtual** (cannot be caught on a screen)",
+        "**Upright** (the same way up)",
+        "**The same size** as the object",
+        "**Laterally inverted** (left appears as right — that is why words look reversed)",
+        "As **far behind** the mirror as the object is in front"
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "The periscope"
+      },
+      {
+       "t": "p",
+       "x": "A long box with **two plane mirrors** fixed at **45°**, facing each other. Light from the object hits the top mirror, is reflected down to the bottom mirror, and then into the eye. It is used to see over walls and crowds, and in submarines."
+      }
+     ]
+    },
+    {
+     "title": "5. REFRACTION",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definition"
+      },
+      {
+       "t": "p",
+       "x": "**Refraction:** The bending of light as it passes from one transparent material into another of different density."
+      },
+      {
+       "t": "h3",
+       "x": "Effects of refraction"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "A stick in water looks **bent** at the surface.",
+        "A swimming pool or river looks **shallower** than it really is.",
+        "Coins in water appear **raised**.",
+        "The sun is seen for a short time **before it rises and after it sets**.",
+        "Stars appear to twinkle.",
+        "**Dispersion** and the rainbow."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Dispersion and the rainbow"
+      },
+      {
+       "t": "p",
+       "x": "**Dispersion:** The splitting of white light into its seven colours as it passes through a prism or raindrops."
+      },
+      {
+       "t": "p",
+       "x": "The seven colours in order: **red, orange, yellow, green, blue, indigo, violet** — remembered as **ROY G BIV**."
+      },
+      {
+       "t": "p",
+       "x": "A **rainbow** forms when sunlight is refracted, reflected and dispersed inside raindrops. It is seen when the sun is behind you and rain is falling in front of you."
+      }
+     ]
+    },
+    {
+     "title": "6. LENSES AND THE LENS CAMERA",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definitions"
+      },
+      {
+       "t": "p",
+       "x": "**Lens:** A piece of transparent glass or plastic with curved surfaces that bends light."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Lens",
+        "Shape",
+        "What it does",
+        "Uses"
+       ],
+       "rows": [
+        [
+         "**Convex (converging)**",
+         "Thicker in the middle",
+         "Brings rays together",
+         "Magnifying glass, camera, spectacles for long sight, human eye"
+        ],
+        [
+         "**Concave (diverging)**",
+         "Thinner in the middle",
+         "Spreads rays out",
+         "Spectacles for short sight, peep holes"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "The magnifying glass"
+      },
+      {
+       "t": "p",
+       "x": "A convex lens held close to an object makes the object appear **bigger, upright and virtual**. It is used for reading small print and examining insects."
+      },
+      {
+       "t": "h3",
+       "x": "The lens camera"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Part",
+        "Work"
+       ],
+       "rows": [
+        [
+         "**Convex lens**",
+         "Focuses light onto the film or sensor"
+        ],
+        [
+         "**Diaphragm and aperture**",
+         "Control how much light enters"
+        ],
+        [
+         "**Shutter**",
+         "Controls how long light enters"
+        ],
+        [
+         "**Film / sensor**",
+         "Records the image"
+        ],
+        [
+         "**Light-proof box**",
+         "Keeps out unwanted light"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "The image formed is **real, inverted and smaller** than the object."
+      }
+     ]
+    },
+    {
+     "title": "7. THE HUMAN EYE",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Structure and functions"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Part",
+        "Work"
+       ],
+       "rows": [
+        [
+         "**Cornea**",
+         "The clear front part; lets light in and begins to bend it"
+        ],
+        [
+         "**Sclera**",
+         "The tough white outer coat that protects the eye"
+        ],
+        [
+         "**Iris**",
+         "The coloured part; controls the size of the pupil"
+        ],
+        [
+         "**Pupil**",
+         "The hole that lets light into the eye"
+        ],
+        [
+         "**Lens**",
+         "Focuses light onto the retina"
+        ],
+        [
+         "**Ciliary muscles**",
+         "Change the shape of the lens (accommodation)"
+        ],
+        [
+         "**Retina**",
+         "The light-sensitive screen where the image forms"
+        ],
+        [
+         "**Optic nerve**",
+         "Carries the message to the brain"
+        ],
+        [
+         "**Aqueous humour**",
+         "Watery fluid in front of the lens"
+        ],
+        [
+         "**Vitreous humour**",
+         "Jelly-like fluid behind the lens; keeps the eye's shape"
+        ],
+        [
+         "**Choroid**",
+         "The dark layer that prevents reflection inside the eye"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "The image formed on the retina is **real, inverted and smaller** — the **brain** turns it the right way up."
+      },
+      {
+       "t": "h3",
+       "x": "Comparing the eye with a lens camera"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Eye",
+        "Camera"
+       ],
+       "rows": [
+        [
+         "Iris and pupil",
+         "Diaphragm and aperture"
+        ],
+        [
+         "Lens (changes shape)",
+         "Lens (moves in and out)"
+        ],
+        [
+         "Retina",
+         "Film or sensor"
+        ],
+        [
+         "Eyelid",
+         "Shutter"
+        ],
+        [
+         "Choroid",
+         "Black inside of the camera box"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Eye defects and their correction"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Defect",
+        "Problem",
+        "Correction"
+       ],
+       "rows": [
+        [
+         "**Short sight (myopia)**",
+         "Can see near objects but not distant ones",
+         "**Concave** lenses"
+        ],
+        [
+         "**Long sight (hypermetropia)**",
+         "Can see distant objects but not near ones",
+         "**Convex** lenses"
+        ],
+        [
+         "**Astigmatism**",
+         "Blurred vision from an uneven cornea",
+         "Cylindrical lenses"
+        ],
+        [
+         "**Presbyopia (old sight)**",
+         "The lens hardens with age",
+         "Reading (convex) glasses"
+        ],
+        [
+         "**Colour blindness**",
+         "Cannot tell some colours apart",
+         "No cure; the person is advised on suitable work"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Diseases and disorders of the eye"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Disease",
+        "Notes"
+       ],
+       "rows": [
+        [
+         "**Conjunctivitis (red eye)**",
+         "Infection; red, itching, watering eyes; very contagious"
+        ],
+        [
+         "**Trachoma**",
+         "Bacterial infection spread by flies and dirt; can cause blindness"
+        ],
+        [
+         "**Cataract**",
+         "The lens becomes cloudy; treated by surgery"
+        ],
+        [
+         "**Night blindness**",
+         "Caused by **lack of vitamin A**"
+        ],
+        [
+         "**Glaucoma**",
+         "Pressure builds up inside the eye and damages the optic nerve"
+        ],
+        [
+         "**Squint**",
+         "The eyes do not look in the same direction"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Care of the eye"
+      },
+      {
+       "t": "p",
+       "x": "Eat foods rich in **vitamin A** (carrots, pawpaw, mangoes, green vegetables, liver, eggs) · wash the face and eyes daily · never share towels or handkerchiefs · read in good light and do not read in a moving vehicle · never look directly at the sun or a welding flame · avoid rubbing the eyes with dirty hands · wear protective glasses when working with dust or chemicals · treat eye infections early and go for eye check-ups."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Light",
+         "A form of energy that enables us to see"
+        ],
+        [
+         "Luminous body",
+         "An object that makes its own light"
+        ],
+        [
+         "Transparent",
+         "Allows nearly all light through"
+        ],
+        [
+         "Translucent",
+         "Allows only some light through"
+        ],
+        [
+         "Opaque",
+         "Does not allow light through"
+        ],
+        [
+         "Umbra",
+         "The full dark part of a shadow"
+        ],
+        [
+         "Reflection",
+         "The bouncing back of light from a surface"
+        ],
+        [
+         "Refraction",
+         "The bending of light as it moves between materials"
+        ],
+        [
+         "Dispersion",
+         "The splitting of white light into seven colours"
+        ],
+        [
+         "Accommodation",
+         "The changing of the eye lens shape to focus"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Light travels in **straight lines** at about 300,000 km/s.",
+        "**Solar eclipse:** sun – moon – earth. **Lunar eclipse:** sun – earth – moon.",
+        "A pin-hole camera image is **real, inverted and smaller**.",
+        "A plane mirror image is **virtual, upright, the same size and laterally inverted**.",
+        "A periscope uses **two plane mirrors at 45°**.",
+        "Seven colours: **ROY G BIV**.",
+        "**Convex** lens converges light; **concave** lens diverges it.",
+        "The retina is the screen of the eye; the **brain** turns the image the right way up.",
+        "**Short sight is corrected with concave lenses; long sight with convex lenses.**",
+        "**Night blindness** comes from lack of **vitamin A**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Material that lets some light through — translucent.",
+        "Dark part of a shadow — umbra.",
+        "Instrument with two mirrors used to see over a wall — periscope.",
+        "Splitting of white light — dispersion; the instrument used — a prism.",
+        "Lens used in a magnifying glass — convex.",
+        "Part of the eye that controls the amount of light entering — the iris.",
+        "Part of the eye on which the image forms — the retina.",
+        "Defect corrected by concave lenses — short sight.",
+        "Vitamin that prevents night blindness — vitamin A."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Define light and give two natural and two artificial sources of light.",
+        "Give the difference between a luminous and a non-luminous body.",
+        "How does light travel? Describe one experiment that proves it.",
+        "Give the difference between transparent, translucent and opaque materials, with one example of each.",
+        "What three things are needed for a shadow to form?",
+        "Give the difference between a solar eclipse and a lunar eclipse.",
+        "Describe the image formed by a pin-hole camera.",
+        "State the two laws of reflection.",
+        "Give four characteristics of an image formed by a plane mirror.",
+        "How does a periscope work?",
+        "What is refraction? Give three of its effects.",
+        "Name the seven colours of white light in order.",
+        "Name the two types of lenses and give one use of each.",
+        "Name any five parts of the human eye and give the work of each.",
+        "Name two eye defects and how each is corrected."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Light is a form of energy that enables us to see. Natural: the sun, lightning (also stars, fireflies). Artificial: electric bulb, candle (also torch, lantern).",
+        "A luminous body produces its own light, for example the sun; a non-luminous body does not produce light but is seen when light falls on it, for example the moon.",
+        "Light travels in **straight lines**. Take three cards with holes punched at the same height, line them up with a candle behind them; the candle is seen only when the three holes are in a straight line. When one card is moved, the light is blocked.",
+        "Transparent lets nearly all light through (clear glass); translucent lets only some light through (frosted glass or oiled paper); opaque lets no light through (wood).",
+        "A source of light, an opaque object and a screen.",
+        "In a **solar eclipse** the moon comes between the sun and the earth. In a **lunar eclipse** the earth comes between the sun and the moon.",
+        "It is **real, inverted (upside down), laterally inverted and smaller** than the object.",
+        "(i) The angle of incidence is equal to the angle of reflection. (ii) The incident ray, the reflected ray and the normal all lie in the same plane.",
+        "It is virtual, upright, the same size as the object, laterally inverted, and as far behind the mirror as the object is in front (any four).",
+        "It has two plane mirrors fixed at 45° facing each other. Light from the object strikes the top mirror and is reflected down to the lower mirror, which reflects it into the eye of the observer.",
+        "Refraction is the bending of light as it passes from one transparent material to another. Effects: a stick in water looks bent; a pool looks shallower than it is; a coin in water appears raised; dispersion and the rainbow (any three).",
+        "Red, orange, yellow, green, blue, indigo, violet.",
+        "**Convex (converging)** — used in a magnifying glass and cameras; **concave (diverging)** — used in spectacles for short sight.",
+        "Any five, for example: cornea — lets light in and starts bending it; iris — controls the size of the pupil; pupil — lets light into the eye; lens — focuses light on the retina; retina — where the image is formed; optic nerve — carries the message to the brain.",
+        "**Short sight** is corrected with **concave** lenses; **long sight** is corrected with **convex** lenses."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.7 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Light travels in **straight lines** · transparent / translucent / opaque",
+        "Solar eclipse: sun–**moon**–earth · Lunar: sun–**earth**–moon",
+        "Pin-hole camera: real, inverted, smaller · Plane mirror: virtual, upright, laterally inverted",
+        "Periscope = **two mirrors at 45°** · Dispersion = **ROY G BIV**",
+        "Convex converges (magnifying glass) · Concave diverges (short sight)",
+        "Eye: iris controls light, image forms on the **retina**, brain rights it",
+        "Vitamin **A** prevents night blindness"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, sub-topics, competences and teacher guidance above were taken from the official **NCDC Primary Seven Curriculum, Set One** (topic outline page 79 and pages 102–105), stored in `curriculum/`. The explanations, tables, examples, revision questions and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P7_SCI_T07",
+   "class": "P7",
+   "subject": "SCI",
+   "topic_no": 7,
+   "title": "Interdependence of Things in the Environment",
+   "heading": "TOPIC 7: INTERDEPENDENCE OF THINGS IN THE ENVIRONMENT",
+   "slug": "interdependence",
+   "periods": 24,
+   "curriculum_pages": "106–110",
+   "words": 2147,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Seven Curriculum, Set One, Integrated Science Topic 7, 24 periods (`curriculum/PRIMARY-SEVEN-SET-ONE.pdf`, topic outline page 80 and pages 106–110).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You know that plants and animals live around us. In P.7 you learn how every living and non-living thing **depends on the others**, and how **agroforestry** helps people to farm and keep trees at the same time."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "name the components of the environment",
+        "explain how plants and animals depend on each other",
+        "explain how living things depend on non-living things and the other way round",
+        "describe agroforestry, its types and its importance",
+        "describe how trees are cared for and harvested properly",
+        "explain how to manage a school or home wood project"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. COMPONENTS OF THE ENVIRONMENT",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definitions"
+      },
+      {
+       "t": "p",
+       "x": "**Environment:** Everything that surrounds a living thing — living and non-living."
+      },
+      {
+       "t": "p",
+       "x": "**Interdependence:** The way living and non-living things depend on one another for survival."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Component",
+        "Meaning",
+        "Examples"
+       ],
+       "rows": [
+        [
+         "**Living (biotic)**",
+         "Things that have life",
+         "Plants, animals, human beings, bacteria, fungi"
+        ],
+        [
+         "**Non-living (abiotic)**",
+         "Things that have no life",
+         "Air, water, soil, sunlight, rocks, temperature"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "2. INTERDEPENDENCE OF PLANTS AND ANIMALS",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "How animals depend on plants"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Plants give animals **food** (fruits, leaves, grass, grains, roots).",
+        "Plants give out **oxygen** for breathing.",
+        "Plants provide **shelter and habitat** — nests, hiding places, shade.",
+        "Plants provide **materials** for building nests and homes.",
+        "Plants provide **medicine** for people and some animals."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "How animals depend on other animals"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Some animals **eat other animals** — a lion eats a zebra (predator and prey).",
+        "Animals get **protection** from others (a hen protects her chicks).",
+        "Some animals **clean** others, for example the oxpecker bird eating ticks off a cow.",
+        "People keep animals for **food, transport and work**.",
+        "Some animals depend on others for **transport** of seeds and germs."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "How plants depend on animals"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Animals give out **carbon dioxide**, which plants use in photosynthesis.",
+        "Animal droppings and dead bodies **make the soil fertile** (manure).",
+        "Animals **pollinate** flowers — bees, butterflies and birds.",
+        "Animals **disperse seeds** by carrying and dropping them.",
+        "People **plant, weed, water and protect** crops and trees.",
+        "Earthworms and burrowing animals **aerate** the soil."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "How plants depend on other plants"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Big trees give **shade** to small plants and shelter them from wind and heavy rain.",
+        "Climbing plants use others for **support**.",
+        "Fallen leaves rot and form **humus** that feeds other plants.",
+        "Some plants live on others (parasites, such as dodder), and some, like beans and other legumes, **add nitrogen to the soil** for other plants."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Food chains and food webs"
+      },
+      {
+       "t": "p",
+       "x": "**Food chain:** The path along which food energy passes from one living thing to another."
+      },
+      {
+       "t": "p",
+       "x": "*Example:* grass → grasshopper → lizard → hawk"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**Producer**",
+         "A green plant that makes its own food"
+        ],
+        [
+         "**Consumer**",
+         "An animal that eats plants or other animals"
+        ],
+        [
+         "**Herbivore**",
+         "An animal that eats only plants"
+        ],
+        [
+         "**Carnivore**",
+         "An animal that eats only meat"
+        ],
+        [
+         "**Omnivore**",
+         "An animal that eats both plants and meat"
+        ],
+        [
+         "**Decomposer**",
+         "Bacteria and fungi that rot dead matter and return nutrients to the soil"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Food web:** Many food chains joined together, showing that most animals eat more than one kind of food."
+      }
+     ]
+    },
+    {
+     "title": "3. INTERDEPENDENCE OF LIVING AND NON-LIVING THINGS",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "How animals depend on non-living things"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "**Air** — for oxygen to breathe.",
+        "**Water** — for drinking, cooling the body and as a home for fish.",
+        "**Soil** — a home for worms and ants; it holds the plants they eat.",
+        "**Sunlight** — for warmth and vitamin D."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "How plants depend on non-living things"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "**Soil** — for anchorage, water and mineral salts.",
+        "**Water** — for photosynthesis and transport of food.",
+        "**Air** — carbon dioxide for photosynthesis and oxygen for respiration.",
+        "**Sunlight** — the energy for photosynthesis."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "How non-living things benefit from living things"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Dead plants and animals **add humus** and make the soil fertile.",
+        "Plant roots **hold the soil** and prevent erosion.",
+        "Plants **release oxygen and water vapour** into the air, purifying it.",
+        "Plants and animals help form **rocks and fossils** over a very long time.",
+        "Wetland plants **filter and clean water**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "4. AGROFORESTRY",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definition"
+      },
+      {
+       "t": "p",
+       "x": "**Agroforestry:** The growing of trees together with crops and/or animals on the same piece of land."
+      },
+      {
+       "t": "h3",
+       "x": "Types of agroforestry"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Type",
+        "What is done together"
+       ],
+       "rows": [
+        [
+         "**Agri-silviculture**",
+         "Growing **crops and trees** together"
+        ],
+        [
+         "**Silvo-pastoral**",
+         "Rearing **animals and growing trees** on the same farm"
+        ],
+        [
+         "**Agro-silvo-pastoral**",
+         "Growing **crops, rearing animals and growing trees** all on the same farm"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Importance of agroforestry"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Trees provide **firewood, timber, poles and charcoal** without clearing forests.",
+        "Trees give **shade** and act as **windbreaks** for crops and animals.",
+        "Fallen leaves make **manure** and improve the soil.",
+        "Tree roots **control soil erosion** and hold water.",
+        "Some trees (leguminous, such as calliandra, sesbania and leucaena) **add nitrogen** to the soil.",
+        "Trees provide **fodder** for animals and **fruits and medicine** for people.",
+        "They provide **extra income** from fruits, timber and honey.",
+        "They **attract rainfall** and keep the environment cool.",
+        "Land is used **more productively** — the farmer gets crops, animals and trees from the same land."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Care for trees in agroforestry"
+      },
+      {
+       "t": "p",
+       "x": "Water young seedlings · weed and mulch around them · **prune** the branches so that they do not shade the crops too much · protect them from animals using fences or tree guards · apply manure · spray or remove pests and diseased parts · thin out where they are too close together."
+      },
+      {
+       "t": "h3",
+       "x": "Proper harvesting of trees"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Method",
+        "What is done",
+        "Why"
+       ],
+       "rows": [
+        [
+         "**Pollarding**",
+         "Cutting off the top branches of a tree, leaving the trunk standing",
+         "New shoots grow from the top; gives firewood and lets light reach crops"
+        ],
+        [
+         "**Coppicing**",
+         "Cutting the tree close to the ground",
+         "New shoots grow from the stump, giving poles and firewood again"
+        ],
+        [
+         "**Lopping**",
+         "Cutting off selected side branches",
+         "Gives firewood and fodder while the tree keeps growing"
+        ],
+        [
+         "**Pruning**",
+         "Removing lower or unwanted branches",
+         "Improves growth and reduces shading"
+        ],
+        [
+         "**Thinning**",
+         "Removing some whole trees from a crowded stand",
+         "Leaves room for the rest to grow big"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Important:** never clear-cut all the trees at once. Harvest a few at a time and always **replant**."
+      }
+     ]
+    },
+    {
+     "title": "5. MANAGING A SCHOOL OR HOME WOOD PROJECT",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Steps"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "**Choose a suitable site** — good soil, near water if possible, and safe from animals.",
+        "**Prepare a nursery bed** — fine soil, shade and regular watering; sow the seeds.",
+        "**Prepare the land** — clear, dig and mark planting holes at the right **spacing**.",
+        "**Transplant** the seedlings, preferably at the start of the rains and in the evening.",
+        "**Water and mulch** the young trees.",
+        "**Weed** around them regularly.",
+        "**Protect** them from animals, fire and people using a fence or a live hedge.",
+        "**Prune and thin** as the trees grow.",
+        "**Control pests and diseases.**",
+        "**Keep records** of the number planted, the dates and the costs.",
+        "**Harvest properly** — pollarding, coppicing or lopping — and **replant** what is cut."
+       ],
+       "start": 1
+      },
+      {
+       "t": "h3",
+       "x": "Importance of a school wood project"
+      },
+      {
+       "t": "p",
+       "x": "It supplies firewood and poles for the school · it teaches learners practical skills · it earns the school money · it beautifies the compound and gives shade · it protects the soil · it teaches learners to care for the environment."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Environment",
+         "Everything surrounding a living thing"
+        ],
+        [
+         "Interdependence",
+         "The way living and non-living things depend on one another"
+        ],
+        [
+         "Biotic component",
+         "The living part of the environment"
+        ],
+        [
+         "Abiotic component",
+         "The non-living part of the environment"
+        ],
+        [
+         "Food chain",
+         "The path along which food energy passes from one organism to another"
+        ],
+        [
+         "Producer",
+         "A green plant that makes its own food"
+        ],
+        [
+         "Decomposer",
+         "An organism that rots dead matter and returns nutrients to the soil"
+        ],
+        [
+         "Agroforestry",
+         "Growing trees together with crops and/or animals on the same land"
+        ],
+        [
+         "Pollarding",
+         "Cutting off the top branches, leaving the trunk"
+        ],
+        [
+         "Coppicing",
+         "Cutting a tree close to the ground so new shoots grow from the stump"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "The environment has **living (biotic)** and **non-living (abiotic)** components.",
+        "A food chain **always begins with a producer** (a green plant).",
+        "Animals give plants **carbon dioxide** and manure; plants give animals **oxygen** and food.",
+        "**Decomposers** are bacteria and fungi.",
+        "Three types of agroforestry: **agri-silviculture, silvo-pastoral, agro-silvo-pastoral**.",
+        "**Pollarding** = cut the top; **coppicing** = cut near the ground; **lopping** = cut side branches.",
+        "Leguminous trees add **nitrogen** to the soil.",
+        "Always **replant** after harvesting trees."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Living things in the environment — biotic components.",
+        "The first organism in every food chain — a green plant (producer).",
+        "Organism that breaks down dead matter — a decomposer.",
+        "Growing crops and trees on the same land — agri-silviculture.",
+        "Cutting the top branches of a tree — pollarding.",
+        "Two gases exchanged between plants and animals — oxygen and carbon dioxide.",
+        "One importance of agroforestry — it controls soil erosion (or provides firewood without clearing forests)."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Define the environment and name its two components.",
+        "Give three ways in which animals depend on plants.",
+        "Give three ways in which plants depend on animals.",
+        "Give two ways in which plants depend on other plants.",
+        "Write down a food chain with four members.",
+        "What is a producer? What is a decomposer?",
+        "Give the difference between a food chain and a food web.",
+        "Give three ways in which plants depend on non-living things.",
+        "Give two ways in which non-living things benefit from living things.",
+        "Define agroforestry and name its three types.",
+        "State any five importances of agroforestry.",
+        "Give three ways of caring for trees on an agroforestry farm.",
+        "Give the difference between pollarding and coppicing.",
+        "Outline any five steps in managing a school wood project.",
+        "Give three benefits of a school wood project."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "The environment is everything that surrounds a living thing. Its components are the **living (biotic)** and the **non-living (abiotic)**.",
+        "Any three of: plants give animals food; plants give out oxygen; plants provide shelter and nesting materials; plants provide medicine and shade.",
+        "Any three of: animals give out carbon dioxide used in photosynthesis; animal droppings and dead bodies make the soil fertile; animals pollinate flowers; animals disperse seeds; people plant and protect crops; burrowing animals aerate the soil.",
+        "Big trees give shade and shelter to smaller plants; climbing plants use others for support; fallen leaves rot into humus that feeds other plants; legumes add nitrogen to the soil (any two).",
+        "For example: **grass → grasshopper → lizard → hawk**.",
+        "A producer is a green plant that makes its own food. A decomposer is an organism such as bacteria or fungi that rots dead matter and returns nutrients to the soil.",
+        "A food chain shows one single path of food energy, while a food web is many food chains joined together, showing that animals feed on more than one thing.",
+        "Plants use **soil** for anchorage and mineral salts, **water** for photosynthesis and transport, **air** for carbon dioxide, and **sunlight** as the energy for photosynthesis (any three).",
+        "Dead plants and animals add humus and make the soil fertile; plant roots hold the soil and prevent erosion; plants release oxygen and water vapour into the air (any two).",
+        "Agroforestry is the growing of trees together with crops and/or animals on the same piece of land. Types: **agri-silviculture, silvo-pastoral and agro-silvo-pastoral**.",
+        "Any five of: provides firewood, timber and poles; gives shade and windbreaks; leaves make manure; roots control soil erosion; legumes add nitrogen; provides fodder, fruits and medicine; brings extra income; attracts rainfall; uses land productively.",
+        "Any three of: watering seedlings, weeding and mulching, pruning branches, fencing against animals, applying manure, controlling pests and diseases, thinning.",
+        "**Pollarding** is cutting off the top branches and leaving the trunk standing, while **coppicing** is cutting the whole tree close to the ground so that new shoots grow from the stump.",
+        "Any five of: choose a suitable site; prepare a nursery bed and sow seeds; prepare the land and mark the spacing; transplant at the start of the rains; water and mulch; weed regularly; fence and protect from fire and animals; prune and thin; control pests; keep records; harvest properly and replant.",
+        "Any three of: it supplies firewood and poles for the school; it teaches learners practical skills; it earns the school money; it gives shade and beautifies the compound; it protects the soil and the environment."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.7 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Environment = **biotic** (living) + **abiotic** (non-living)",
+        "Food chain starts with a **producer** · decomposers = bacteria and fungi",
+        "Plants ↔ animals: **oxygen ↔ carbon dioxide**, food, manure, pollination, seed dispersal",
+        "Agroforestry: **agri-silviculture · silvo-pastoral · agro-silvo-pastoral**",
+        "Harvesting: **pollarding** (top) · **coppicing** (ground) · **lopping** (side branches)",
+        "Always **replant** after cutting"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, sub-topics, competences and teacher guidance above were taken from the official **NCDC Primary Seven Curriculum, Set One** (topic outline page 80 and pages 106–110), stored in `curriculum/`. The explanations, tables, examples, revision questions and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P7_SCI_T08",
+   "class": "P7",
+   "subject": "SCI",
+   "topic_no": 8,
+   "title": "Population and Health",
+   "heading": "TOPIC 8: POPULATION AND HEALTH",
+   "slug": "population-and-health",
+   "periods": 24,
+   "curriculum_pages": "111–115",
+   "words": 2622,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Seven Curriculum, Set One, Integrated Science Topic 8, 24 periods (`curriculum/PRIMARY-SEVEN-SET-ONE.pdf`, topic outline page 81 and pages 111–115).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You have learnt about hygiene, diseases and the family. In P.7 you look at the **health of the whole community**, the problems young people meet, and how **population information** is collected and used."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "name common sicknesses in the home, their causes and how to control them",
+        "describe community health and social problems among young people",
+        "explain anti-social behaviour and how to keep yourself safe",
+        "describe activities that address health concerns, such as health surveys and health education",
+        "explain how information on human population is collected and why it matters",
+        "describe the activities of health clubs"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. COMMON SICKNESSES IN A HOME",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Sickness",
+        "Cause",
+        "How it is spread",
+        "Control and prevention"
+       ],
+       "rows": [
+        [
+         "**Malaria**",
+         "A parasite carried by the female anopheles mosquito",
+         "Mosquito bites",
+         "Sleep under a treated net, drain stagnant water, clear bushes, take treatment early"
+        ],
+        [
+         "**Diarrhoea**",
+         "Germs in dirty food and water",
+         "Dirty hands, unsafe water, flies",
+         "Boil drinking water, wash hands with soap, cover food, use a latrine; give ORS"
+        ],
+        [
+         "**Typhoid**",
+         "Bacteria in contaminated food and water",
+         "Dirty water and food",
+         "Boil water, wash hands, proper waste disposal, immunisation"
+        ],
+        [
+         "**Cholera**",
+         "Bacteria",
+         "Dirty water and food",
+         "Boil water, use latrines, wash hands, report cases at once"
+        ],
+        [
+         "**Intestinal worms**",
+         "Worms and their eggs",
+         "Walking barefoot, dirty food, dirty hands",
+         "Wear shoes, wash hands and food, deworm regularly, use latrines"
+        ],
+        [
+         "**Cough, flu and colds**",
+         "Viruses",
+         "Coughing and sneezing",
+         "Cover the mouth, keep rooms airy, keep warm, treat early"
+        ],
+        [
+         "**Tuberculosis (TB)**",
+         "Bacteria",
+         "Coughing and sneezing in crowded rooms",
+         "BCG immunisation, ventilation, complete the treatment"
+        ],
+        [
+         "**Skin diseases** (scabies, ringworm, jiggers)",
+         "Mites, fungi, fleas",
+         "Dirt and sharing clothing",
+         "Bathe daily, wash clothes and beddings, do not share towels, wear shoes"
+        ],
+        [
+         "**Eye infections** (conjunctivitis, trachoma)",
+         "Bacteria and viruses spread by flies and dirt",
+         "Sharing towels, flies",
+         "Wash the face daily, keep the home clean, treat early"
+        ],
+        [
+         "**Malnutrition** (kwashiorkor, marasmus)",
+         "Poor feeding",
+         "—",
+         "Eat a balanced diet; feed babies well"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "General ways of controlling sickness in a home"
+      },
+      {
+       "t": "p",
+       "x": "Keep the home and compound **clean** · use a **latrine** and wash hands with soap · **boil or treat** drinking water · cover and store food well · sleep under a **treated mosquito net** · drain stagnant water · take children for **immunisation** and growth monitoring · eat a **balanced diet** · go to a health centre early instead of using untested remedies · keep animals away from the house."
+      }
+     ]
+    },
+    {
+     "title": "2. COMMUNITY HEALTH AND SOCIAL PROBLEMS AMONG YOUNG PEOPLE",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Problem",
+        "Effects"
+       ],
+       "rows": [
+        [
+         "**Early pregnancy and early marriage**",
+         "Dropping out of school, birth complications, poverty"
+        ],
+        [
+         "**Drug and substance abuse** (alcohol, tobacco, marijuana, aviation fuel, khat)",
+         "Poor health, poor performance at school, crime, addiction"
+        ],
+        [
+         "**Sexually transmitted infections and HIV/AIDS**",
+         "Long illness, stigma, death"
+        ],
+        [
+         "**Defilement and sexual abuse**",
+         "Injury, disease, pregnancy, fear and trauma; it is a **crime**"
+        ],
+        [
+         "**Poor personal hygiene**",
+         "Skin disease, worms, bad smell, low self-esteem"
+        ],
+        [
+         "**Child labour and school dropout**",
+         "Loss of education, injury, exploitation"
+        ],
+        [
+         "**Peer pressure**",
+         "Leads young people into risky behaviour"
+        ],
+        [
+         "**Poor nutrition**",
+         "Anaemia, poor growth, tiredness in class"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Anti-social behaviour"
+      },
+      {
+       "t": "p",
+       "x": "**Anti-social behaviour:** Behaviour that harms other people or the community."
+      },
+      {
+       "t": "p",
+       "x": "Examples: stealing · bullying · fighting and violence · drug and alcohol abuse · truancy (staying away from school) · vandalism (destroying property) · abusive language · gambling · rape and defilement · prostitution · cheating in examinations."
+      },
+      {
+       "t": "p",
+       "x": "**Effects:** it destroys peace and trust, causes injury and disease, leads to punishment and imprisonment, spoils a person's future, and brings shame and loss to families."
+      },
+      {
+       "t": "p",
+       "x": "**Prevention:** good guidance and counselling at home and school · useful use of free time in sports, clubs and hobbies · choosing friends wisely and resisting **peer pressure** · following the rules of the school and the country · religious and moral teaching · reporting wrongdoing to parents, teachers or the police."
+      },
+      {
+       "t": "h3",
+       "x": "Sex deviations"
+      },
+      {
+       "t": "p",
+       "x": "The syllabus lists, under the heading **\"sex deviations\"**, the following: *bestiality, incest, homosexuality, lesbianism, oral sex and masturbation.*"
+      },
+      {
+       "t": "p",
+       "x": "At P.7 level the teaching aim is **protection, not detail**. What every learner should know:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Your body belongs to you. **No one** — a relative, a neighbour, an older pupil or an adult — has the right to touch your private parts.",
+        "Any sexual act involving a child is **abuse** and is against the law in Uganda.",
+        "Some sexual practices carry a high risk of **infection**, including HIV and other sexually transmitted infections.",
+        "If someone touches you wrongly, or tries to, **say NO, get away and tell a trusted adult at once** — a parent, teacher, health worker, religious leader or the police. It is never the child's fault, and it must never be kept secret.",
+        "Avoid pornography, dangerous friendships and places where you are alone with someone who makes you uncomfortable."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "*(This section states the syllabus's own list of terms and keeps to safety, health and the law. Explicit description is not part of the P.7 curriculum.)*"
+      }
+     ]
+    },
+    {
+     "title": "3. ACTIVITIES TO ADDRESS HEALTH CONCERNS",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Health education"
+      },
+      {
+       "t": "p",
+       "x": "Teaching people how to keep healthy — through talks, radio programmes, posters, drama, songs, health clubs and community meetings."
+      },
+      {
+       "t": "h3",
+       "x": "A health survey"
+      },
+      {
+       "t": "p",
+       "x": "**Health survey:** Going round a community to collect information about health problems so that they can be solved."
+      },
+      {
+       "t": "p",
+       "x": "**Steps in carrying out a simple health survey:**"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Choose the health problem to study (for example, malaria in the village).",
+        "Prepare simple questions or a checklist.",
+        "Get permission from the head teacher or the local leaders.",
+        "Visit the homes and **observe, ask and record** (Is there a latrine? A rubbish pit? Mosquito nets? Stagnant water?).",
+        "Organise the findings in tables, tally charts and graphs.",
+        "Discuss what the findings mean.",
+        "**Report** to the community and the health workers, and suggest what should be done.",
+        "Take action — clean-up days, drama, posters — then check whether things improve."
+       ],
+       "start": 1
+      },
+      {
+       "t": "h3",
+       "x": "Other activities"
+      },
+      {
+       "t": "p",
+       "x": "Immunisation days · clean-up campaigns · digging rubbish pits and latrines · protecting water sources · distributing mosquito nets · growing vegetables and fruit for good nutrition · sports and physical fitness · guidance and counselling."
+      }
+     ]
+    },
+    {
+     "title": "4. INFORMATION AND DATA ON HUMAN POPULATION",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definitions"
+      },
+      {
+       "t": "p",
+       "x": "**Population:** The total number of people living in a place at a particular time."
+      },
+      {
+       "t": "p",
+       "x": "**Census:** The official counting of all the people in a country. In Uganda, a national census is carried out about every ten years."
+      },
+      {
+       "t": "h3",
+       "x": "Ways of collecting population information"
+      },
+      {
+       "t": "p",
+       "x": "By **census** · from **birth and death registers** (NIRA) · from **health centre records** · from **school registers** · through **surveys and questionnaires** · from **local council records**."
+      },
+      {
+       "t": "h3",
+       "x": "Why population information is needed"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "To plan for **schools, hospitals, water, roads and houses**.",
+        "To know the **growth rate** of the population.",
+        "To plan for **food production and jobs**.",
+        "To share **government services and money** fairly.",
+        "To fight disease — for example, to know how many children need immunisation."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Effects of a rapidly growing population"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Problems",
+        "Advantages"
+       ],
+       "rows": [
+        [
+         "Overcrowding, slums and poor sanitation",
+         "A large labour force"
+        ],
+        [
+         "Pressure on schools, hospitals and water",
+         "A bigger market for goods"
+        ],
+        [
+         "Unemployment and poverty",
+         "More ideas, skills and taxes"
+        ],
+        [
+         "Food shortage and famine",
+         "Better use of land in areas with few people"
+        ],
+        [
+         "Land shortage and land conflicts",
+         "Faster development of services"
+        ],
+        [
+         "Destruction of forests and wetlands",
+         ""
+        ],
+        [
+         "Fast spread of diseases",
+         ""
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Ways of controlling rapid population growth"
+      },
+      {
+       "t": "p",
+       "x": "Educating people, especially girls, so that they marry later · **family planning** services and education · discouraging early marriage and teenage pregnancy · improving child survival so that families do not need many children · creating jobs and improving incomes."
+      }
+     ]
+    },
+    {
+     "title": "5. HEALTH CLUBS",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definition"
+      },
+      {
+       "t": "p",
+       "x": "**Health club:** A group of learners in a school who work together to promote good health in the school and the community."
+      },
+      {
+       "t": "h3",
+       "x": "Activities of a health club"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Keeping the **compound, classrooms and latrines clean**.",
+        "Checking **personal hygiene** — nails, hair, uniforms, handkerchiefs.",
+        "Running **hand-washing points** with soap and clean water.",
+        "Making and displaying **posters and health messages**.",
+        "Presenting **drama, poems, songs and debates** about health.",
+        "Organising **talks** by health workers.",
+        "Growing **vegetables and fruit trees** for good nutrition.",
+        "Carrying out **health surveys** and clean-up campaigns.",
+        "Teaching about malaria, HIV/AIDS, worms and personal safety.",
+        "Keeping a **first-aid box** and reporting sick learners."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Importance of health clubs"
+      },
+      {
+       "t": "p",
+       "x": "They reduce disease in the school · they teach practical skills and responsibility · they spread health messages to families · they build confidence and leadership · they make the school clean and pleasant."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Community health",
+         "The health of all the people living in an area"
+        ],
+        [
+         "Anti-social behaviour",
+         "Behaviour that harms other people or the community"
+        ],
+        [
+         "Peer pressure",
+         "The influence of friends of one's own age"
+        ],
+        [
+         "Health education",
+         "Teaching people how to keep healthy"
+        ],
+        [
+         "Health survey",
+         "Collecting information about the health problems of a community"
+        ],
+        [
+         "Population",
+         "The number of people living in a place at a particular time"
+        ],
+        [
+         "Census",
+         "The official counting of all people in a country"
+        ],
+        [
+         "Family planning",
+         "Deciding how many children to have and when to have them"
+        ],
+        [
+         "Health club",
+         "A school group that promotes good health"
+        ],
+        [
+         "Immunisation",
+         "Giving a vaccine to protect against a disease"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Malaria is spread by the **female anopheles mosquito**; the best home protection is a **treated mosquito net**.",
+        "Diarrhoea is treated at home with **ORS** (oral rehydration salts) while getting help.",
+        "Most home sicknesses are prevented by **clean water, latrines, hand washing with soap and a balanced diet**.",
+        "Sexual abuse of a child is a **crime**; the child must **tell a trusted adult at once**, and it is never the child's fault.",
+        "A **census** counts everybody in the country; Uganda holds one about every ten years.",
+        "Rapid population growth causes **unemployment, land shortage and pressure on services**.",
+        "Health clubs promote hygiene, nutrition and health education in schools."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Insect that spreads malaria — the female anopheles mosquito.",
+        "Best way to prevent malaria at home — sleeping under a treated mosquito net.",
+        "Disease caused by drinking dirty water — typhoid or cholera.",
+        "Medicine given to a child with diarrhoea before reaching hospital — ORS.",
+        "Official counting of people in a country — a census.",
+        "One effect of rapid population growth — unemployment (or overcrowding).",
+        "One activity of a health club — cleaning the compound / health education.",
+        "What a child should do if touched wrongly — say NO and tell a trusted adult immediately."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Name any five common sicknesses in a home and give the cause of each.",
+        "How is malaria spread and how can it be prevented at home?",
+        "Give four ways of controlling common sicknesses in a home.",
+        "Name any four health and social problems facing young people today.",
+        "What is anti-social behaviour? Give four examples.",
+        "Give three effects of drug abuse on a young person.",
+        "Give three ways of preventing anti-social behaviour among young people.",
+        "What should a child do if an adult tries to touch his or her private parts?",
+        "What is a health survey? Give four steps followed in carrying one out.",
+        "Give three activities, other than a survey, used to address health concerns in a community.",
+        "Define population and census.",
+        "Give three ways of collecting information about the population.",
+        "Give four reasons why a country needs population information.",
+        "Give four problems caused by a rapidly growing population.",
+        "Name any five activities of a school health club."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Any five, for example: malaria — a parasite carried by the mosquito; diarrhoea — germs in dirty food and water; typhoid — bacteria in contaminated food or water; worms — worm eggs from dirty hands or bare feet; cough and flu — viruses; scabies — mites.",
+        "Malaria is spread by the bite of an infected **female anopheles mosquito**. It is prevented by sleeping under a treated mosquito net, draining stagnant water, clearing bushes around the house, closing windows early, and getting tested and treated early.",
+        "Any four of: keep the home clean; use a latrine and wash hands with soap; boil or treat drinking water; cover food; sleep under a treated net; immunise children; eat a balanced diet; go to a health centre early.",
+        "Any four of: early pregnancy and early marriage, drug and substance abuse, HIV/AIDS and other STIs, defilement and sexual abuse, poor hygiene, child labour, peer pressure, poor nutrition.",
+        "Anti-social behaviour is behaviour that harms other people or the community. Examples: stealing, bullying, drug abuse, vandalism, fighting, truancy, gambling (any four).",
+        "Any three of: poor health and addiction; poor performance and dropping out of school; involvement in crime and accidents; loss of money; broken relationships with family and friends.",
+        "Any three of: guidance and counselling; using free time well in sports and clubs; choosing friends wisely and resisting peer pressure; obeying school and community rules; religious and moral teaching; reporting wrongdoing.",
+        "The child should **say NO firmly, get away from the person, and tell a trusted adult at once** — a parent, teacher, health worker, religious leader or the police. The child should not keep it secret; it is never the child's fault.",
+        "A health survey is the collecting of information about the health problems of a community so that they can be solved. Steps: choose the problem; prepare questions or a checklist; get permission from leaders; visit homes and record observations; organise the findings in tables or graphs; report to the community and health workers; suggest and take action (any four).",
+        "Any three of: health education talks and radio programmes; immunisation campaigns; clean-up days; digging latrines and rubbish pits; protecting water sources; distributing mosquito nets; guidance and counselling.",
+        "**Population** is the total number of people living in a place at a particular time. A **census** is the official counting of all the people in a country.",
+        "Any three of: a national census; birth and death registers; health centre records; school registers; surveys and questionnaires; local council records.",
+        "Any four of: to plan for schools, hospitals, water and roads; to know the population growth rate; to plan for food and jobs; to share government services and funds fairly; to plan immunisation and other health services.",
+        "Any four of: overcrowding and slums; pressure on schools, hospitals and water; unemployment and poverty; food shortage; land shortage and conflicts; destruction of forests and wetlands; fast spread of disease.",
+        "Any five of: cleaning the compound and latrines; checking personal hygiene; running hand-washing points; making health posters; performing drama, songs and poems; inviting health workers to give talks; growing vegetables and fruit; carrying out health surveys; keeping a first-aid box."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.7 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Home sicknesses come mostly from **dirty water, dirty hands, flies and mosquitoes**",
+        "Malaria → **treated net**, drain stagnant water · Diarrhoea → **ORS** + clean water",
+        "Anti-social behaviour harms others: theft, bullying, drug abuse, vandalism",
+        "Personal safety: **say NO, get away, tell a trusted adult** — abuse is a crime and never the child's fault",
+        "**Census** counts everyone; population data plans schools, hospitals and jobs",
+        "Fast population growth → unemployment, land shortage, pressure on services",
+        "Health clubs: hygiene, hand washing, posters, drama, surveys, nutrition"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, sub-topics (including the syllabus's own list under \"sex deviations\") and the teacher guidance above were taken from the official **NCDC Primary Seven Curriculum, Set One** (topic outline page 81 and pages 111–115), stored in `curriculum/`. The explanations, tables, examples, revision questions and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "Because no NCDC **Teacher's Guide** and no NCDC guidance on how to handle the sensitive sub-topics were available, that section keeps strictly to child protection, health risk and the law, and does not go into explicit detail. The exact NCDC guidance document for teaching that sub-topic is not available to verify this section."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

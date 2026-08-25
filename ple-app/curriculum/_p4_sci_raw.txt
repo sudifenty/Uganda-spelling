@@ -1,0 +1,1649 @@
+=== PDFPAGE 1 ===
+THE REPUBLIC OF UGANDA
+Ministry of Education and Sports
+Primary School Curriculum
+Primary 4 – Integrated Science Syllabus
+National Curriculum Development Centre
+April 2009
+
+=== PDFPAGE 2 ===
+ACKNOWLEDGEMENT
+The National Curriculum Development Centre (NCDC) would like to express its appreciation to all those who worked tirelessly 
+towards the production of this P.4 Curriculum.
+Our gratitude goes to the Curriculum Task Force of the Ministry of Education and Sports for overseeing and taking timely 
+decisions whenever necessary. Our thanks also go to partners in education who provided the professional information and 
+technical assistance and guidance to enable us come up with syllabuses in the seven subjects.
+Our gratitude is also extended to our members of the various subject panels who worked tirelessly to ensure the various 
+curriculum materials are ready within time.
+Lastly but not least, we would like to acknowledge all those behind the scenes who formed part of the team that worked hard to 
+finalise the work on the various syllabi.
+The National Curriculum Development Centre (NCDC) takes responsibility for any shortcomings that might be identified in the 
+publication and welcomes suggestions for effectively addressing the inadequacies.  Such comments and suggestions may be 
+communicated to NCDC through: P.O. Box 7002, Kampala or E-mail admin@ncdc.go.ug or www.ncdc.go.ug .
+Connie Kateeba
+Director
+National Curriculum Development Centre.  
+=== PDFPAGE 3 ===
+FOREWORD
+The Curriculum for Primary Four
+The Curriculum for lower primary (P1-3) which the learner in primary four went through was organized around different themes 
+(Thematic) that were familiar to the learner.  The main emphasis of that curriculum was numeracy, literacy and life skills.  The 
+medium of instruction for most children was the local language.  English was taught as a subject.
+In this curriculum for primary four, children are required to change from the theme-based to subject-based learning.  They are 
+also required to begin learning in English.  P4 learners will have textbooks.  The teacher will encourage learners to do all 
+activities and make responses in English.  These phenomena make primary four a transitional class.
+The Primary Four Curriculum revisits content concepts and skills that have already been learnt in local languages as well as 
+introducing some new content and concepts.
+Learners and teachers will start the year using local language when necessary and there will be steady development in the use 
+of English as the medium of instruction.  By the end of primary four the local language will be used only for explaining the most 
+difficult concepts.  Written materials including textbooks will be in English.  Local languages will continue to be taught as 
+subjects to reinforce children’s literacy.
+The subjects to be taught in this Primary Four Curriculum include:  English, Mathematics, Social Studies, Religious Education
+(Christian Religious Education – CRE) and (Islamic Religious Education – IRE), Integrated Science, Creative Arts & Physical 
+Education (CAPE) and Local Language.
+I, therefore, recommend this Primary Four Curriculum for its implementation in the on-going reforms in Uganda.
+Hon. Namirembe Bitamazire (MP)
+MINISTER OF EDUCATION AND SPORTS
+=== PDFPAGE 4 ===
+NATIONAL CURRICULUM DEVELOPMENT CENTRE (NCDC) UGANDA 2009
+COPYRIGHT        © NCDC, 2009.
+P.O BOX 7002, KYAMBOGO, KAMPALA
+KAMPALA- UGANDA
+URL. www.ncdc.go.ug
+ALL rights reserved. No part of this syllabus should be reproduced stored in a retrieval system or transmitted in any form by any means 
+electronic, mechanical, photocopying, recording or otherwise without the permission of the authors and publisher. No patent liability is 
+assumed with respect to the use of the information contained herein.
+ISBN 978-9970-117-46-8
+Published by:
+National Curriculum Development Centre
+Designed by …………………………
+=== PDFPAGE 5 ===
+4
+Table of Contents 
+Page
+Acknowledgement ………………………………………………………………………………………………………………… …………………………….. 2
+Foreword ……………………………………………………………………………………………………………………………………………………………. 3
+National Aims of Education ……………………………………………………………………………………………………………………………………. 6
+Aims and Objectives of Primary Education in Uganda ……………………………………………………………………………………… …….. 6
+Background …………………………………………………………………………………………………………………………………………………… ……… 7
+Rationale ……………………………………………………………………………………………………………………………………………………… ……….. 7
+General Methodology ……………………………………………………………………………………………………………………………………… …….. 8
+Assessment Guidelines …………………………………………………………………………………………………………………………………… ……… 8
+General Learning Outcomes …………………………………………………………………………………………………………………………… ……… 8-10
+P4 Science and Health Education Topic Outline ……………………………………………………………………………………………………….. 11
+Term I ………………………………… ………………………………………………………………………………………………………………………………… 15
+Theme: The World of Living Things (Plant Life) …………………………………………………………………………………………………… 15
+Theme: The World of Living Things (Growing Crops) ………………………………………………………………………………………….. 17
+Theme: Our Environment (Weather changes around us) ……………………………………………………………………………………… 20
+Theme: Human Health (Personal Hygiene) …………………………………………………………………………………………………………. 22
+Term II ……………………………………………………………………………………………………………………………………………………………… 23
+Theme: Human Body (Our Food) ………………………………………………………………………………………………………………………… 23
+Theme: Human Body (Human Body Organs) ……………………………………………………………………………………………………….. 26
+=== PDFPAGE 6 ===
+5
+Theme: Human Body (The Teeth) ………………………………………………………………………………………………………………………. 28
+Theme: Human Health (Sanitation) ……………… ……………………………………………………………………………………………………. 30
+Term III …………………………………………………………………………………………………………………………………………………………….. 32
+Theme: Human Health (Communicable Intestinal diseases and worm infestation) ………………………………………………… 32
+Theme: Human Health (Vectors and Diseases) …………………………………………………………………………………………………….. 35
+Theme: Human Health (Accidents, Poisoning and First Aid) …………………………………………………………………………………. 37
+Theme: World of Living Things (Animal life) ……………………………………………………………………………………………………….. 39
+=== PDFPAGE 7 ===
+6
+The National Aims of Education
+The Curricula in both Thematic Curriculum and Upper Primary have been designed to address the National Aims of Education as 
+specifically stated in the Government White Paper on the Education Policy Review Commission Report (1992).  The aims are:
+a) To promote understanding and appreciation of the value of national unity, patriotism and cultural heritage, with due 
+consideration to internal relations and beneficial interdependence;
+b) To inculcate moral, ethical and spiritual values in the individual and to develop self discipline, integrity, tolerance and human 
+fellowship;
+c) To inculcate into Ugandans a sense of service, duty and leadership for participation in civic, social and national affairs through 
+group activities in educational institutions and the community;
+d) To promote scientific, technical and cultural knowledge, skills and attitudes needed to enhance individual and national 
+development;
+e) To eradicate illiteracy and equip the individual with basic skills and knowledge to exploit the environment for self-development 
+as well as national development; for better health, nutrition and family life, and the capacity for continued learning; and
+f) To equip the learners with the ability to contribute to the building of an integrate, self-sustaining and independent national 
+economy.
+Aims and Objectives of Primary Education in Uganda
+The Government White Paper on Education (1992) state that aims and objectives of Primary Education should include the 
+following:
+1. To enable individuals to acquire functional literacy, numeracy and communication skills in Ugandan language and English.
+2. To develop and maintain sound mental and physical health;
+3. To instill the value of living and working cooperatively with other people and caring for others in the community.
+4. To develop cultural, moral and spiritual values of life;
+5. To inculcate an understanding of and appreciation, for, the protection and utilization of the natural environment using scientific 
+and technological knowledge.
+6. To develop a sense of patriotism and unity, an understanding of one’s rights and responsibilities and an appreciation of the need 
+to participate actively in civic matters.
+7. To develop pre-requisite for continuing education and development.
+8. To develop adequate practical skills for making a living
+9. To develop appreciation for the dignity of work and for making a living by one’s honest effort;
+10. To develop the ability to use the problem-solving approach in various life situations; and
+=== PDFPAGE 8 ===
+7
+11. To develop discipline and good manners 
+Background
+This is Primary Four Science Syllabus.  In Primary 1-3 learning is based on themes, learning outcomes and competences.  Most of 
+the Science related competences are covered under the literacy strands of the Thematic Curriculum.
+Learners in Primary Four are expected to have developed sufficient basic literacy skills both in local and English language.  The 
+teacher can now use English as a medium of instruction.  This will help learners to form correct concepts, relate and consolidate 
+what was learnt in earlier classes.
+The instructional process, content and learner’s text will have to be kept simple since this is a transition class and children are 
+experiencing science subject based learning for the first time.
+Rationale
+This revised Primary Four (P4) Science syllabus has been designed to consolidate the basic literacy and numeracy skills acquired 
+during the Thematic Curriculum.  It is also intended to provide the learner with knowledge on basic science, health, agriculture and 
+environmental knowledge, skills, attitudes, practice and values important to a P4 learner.  
+The main changes which have been made in this Primary Four syllabus are:
+- Topic overflow from P1-3 e.g. seed germination, rabbits and personal hygiene have been included.
+- Contents in some topics have been reduced in order to keep the learning experience light and simple.  The more complex 
+content has been shifted to upper classes.
+- The scope and sequencing of content has been based on progression of outcomes and competences. 
+- Literacy skills and Language competences have been included in each topic to clarify concepts.
+- Possible life skills which can be developed have been suggested in each topic.
+- Subject competences and language competences have been included to replace objectives.  These are arranged in order of 
+cognitive levels namely knowledge, comprehension and application.
+- Language competences have been included especially to reinforce literacy skills and to help clarify concepts.
+- General outcomes instead of aims and objectives have been provided for each topic.
+- The background for each topic has been given together with other necessary guidance to the teacher.
+- Some topics have been re-designed, while others have been transferred to higher classes or other disciplines
+=== PDFPAGE 9 ===
+8
+NB: Bilingual medium of instruction is recommended but Learners’ Text and all written responses must be in English. 
+General Methodology
+It is strongly suggested that the teacher uses those methods and activities which put the learner at the centre of the 
+teaching/learning process.  The active verbs used in expressing the learning competences are all directed to the learner.  This 
+implies that as a result of teaching/learning process, the learner should exhibit these competences.
+The learners’ text is activity based to emphasize the continuous learner centred approach.  The teacher is expected to constantly 
+help relate science to real life situations and experiences.    Not all schools in Uganda may have same learning environment. The 
+teacher should feel free to use examples which provide the learner with the opportunity to acquire the same knowledge, concepts, 
+skills, values and competences. 
+The methods a teacher chooses to use should be those which contribute towards the achievement of competences, learning 
+outcomes and eventually lead to the achievements of aims and objectives of primary education.  Such methods therefore, should 
+cater for the spiral nature of the science syllabus.  At Primary Four the topics introduced and basics covered should pave way for 
+further study of the topics in upper classes.  Primary four class will be useful in preparing learners for effective participating in P5-7
+Assessment Guidelines
+In principle continuous assessment is recommended and should be based on the summarized competences suggested in each topic.  
+All assessments of learning shall be based on the learning competences given in this syllabus.  
+Like in P1-3, assessment guidelines are provided to guide the teacher carry out, manage and keep records on each individual 
+learner, class progress and end of term performance. The teacher is encouraged to record those innovative products of the learner 
+that may not have been planned but indicate positive progress.
+Besides the Continuous Assessment, there shall be end of term and end of year assessment carried out and records kept.
+General Learning Outcomes
+When the learners go through this syllabus they will be able to:
+ Survey, identify and distinguish the attributes of plants, animals, other objects and conditions in the environment.
+ Use characteristics to compare and classify animals, plants and other objects in the environment.
+=== PDFPAGE 10 ===
+9
+ Identify the features and describe the functions of different parts of the human body.
+ Take care of the different parts of their bodies and practice good health habits.
+ Keep safe and avoid accidents.
+ Understand the conditions for proper growth of living things.
+ Apply correct scientific processes in investigations of various phenomena.
+ Show knowledge of and take care of the environment for its sustainable use.
+Specific indicators
+The learner should be able to:
+1. Identify and distinguish the attributes of plants, animals, other objects and conditions in the environment by;
+1. Making trips and excursions
+- Observing
+- Collecting
+- Grouping / classifying
+- Recording
+- Reporting
+2. Use characteristics to compare and classify animals, plants and other objects in the environment by;
+2. Making trips and excursions
+- Collect specimens of plants and animals
+- Observing plants and animals grow
+- Grouping / classifying plants and animals (kingdoms)
+- Comparing plants and animals
+- Recording
+- Reporting
+- Caring 
+3. Identify the characteristics and functions of different parts of the human body by;
+- Identifying and naming the different parts
+- Describing functions of each part
+- Caring for the different parts of the body
+=== PDFPAGE 11 ===
+10
+- Relating the different parts of the body to human activities
+4. Take care of the different parts of the human body and practice good health habits by;
+- Identify the different parts of the body
+- Naming different activities done in order to keep the body clean.
+- Caring for different parts of the body
+- Keeping healthy and practicing good health habits
+- Having self-concept, confidence and self-esteem
+5. Keep safe and avoid diseases and accidents by
+- Identifying ways of keeping safe from diseases and accidents at home and  in the community 
+- Identifying common accidents and first aid given for each.
+- Identifying dangers in the environment and taking precautions.
+6. Understand the conditions for proper growth of living things by
+- Identify the different conditions for proper growth
+- Experiment the different conditions for proper growth 
+- Recording
+- Reporting 
+7. Apply correct scientific processes in investigations of various phenomena by
+- Identifying problems
+- Designing and practice scientific investigation processes.
+- Examining the evidence useful in inferences.
+- Demonstrating the skills of observation, classification accurate measurement and recording, 
+- Making predictions, formulating hypothesis for evidence.
+- Communicating findings accurately and honestly
+- Analysing courses and effects
+- Using a variety of sources for acquiring information
+- Recording information with reasonable accuracy 
+=== PDFPAGE 12 ===
+11
+8. Show knowledge of and take care of the environment for sustainable use by
+- Make and record weather readings accurately
+- Identify various resources in the environment
+- Caring for the resources in the environment
+- Making and using suitable labour saving devices to save time and energy
+- Practice using the available resources sustainably 
+- Making an economic contribution to the individual family and community.
+- Participate in environment conservation activities.
+P4 Integrated Science Syllabus Topic Outline
+TERM I
+Theme Topic Sub-topics Periods
+1. The World of Living 
+Things
+Plant Life  Flowering plant
+- Parts of a Flowering Plant
+- Functions of different parts
+- Seeds 
+- Uses of plants to people
+25
+2. The World of Living 
+things
+Growing crops  Growing common annual crops (maize, beans / sorghum)
+- Common annual crops in the community
+- Garden tools, equipment and materials 
+- Practices for growing an annual crop
+- Common signs of disease and pest damage in crops 
+- Common pests
+- Ways of controlling pests and diseases
+25 
+=== PDFPAGE 13 ===
+12
+3. Our Environment    Weather changes 
+around us
+ Changes in the weather
+- The water cycle
+- Rain fall
+- Simple weather chart 
+10
+4. Human Health Personal Hygiene  Keeping clean 
+- Importance of keeping our bodies clean
+- Ways of keeping clean: body, clothing and bedding
+- Things sued for keeping our bodies clean
+- Keeping bedding and clothing clean 
+- Importance of keeping our clothing and bedding clean
+- What can go wrong if we do not keep clean 
+10
+TERM II
+Theme Topic Sub-topics Periods
+5. Human Health Our Food - Classes of food and their values
+- Uses of food
+- Deficiency diseases 
+- How food gets contaminated
+- Preventing food contamination
+- Preparing simple dishes 
+25
+6. Human Body Human Body Organs - Major organs of the human Body
+- How the Human Body works
+10
+7. Human Body The Teeth - Sets of teeth
+- Functions of the different types of teeth
+- Types and structure of teeth
+15
+=== PDFPAGE 14 ===
+13
+Theme Topic Sub-topics Periods
+- Care of the teeth 
+- Diseases and disorders of the teeth 
+8. Human Health Sanitation - Sanitation concerns
+- Importance of sanitation
+- Germs and diseases
+- Ways of maintaining sanitation 
+20
+TERM III
+Theme Topic Sub-topics Periods
+9. Human Health Communicable 
+Intestinal diseases 
+and worm
+infestation.
+ Diarrhoeal diseases
+- Prevention, control and treatment of diarrhoeal diseases.
+- Mixing and making oral rehydration salts / solutions (ORS) 
+making sugar, salt solutions (SSS).
+ Intestinal worms
+- Ways of entry into the body
+- Signs and symptoms of worm infestation and diseases
+- Management of diseases and worms.
+10. Human Health Vectors and diseases  Examples of Disease Vectors
+- Characteristics of disease vectors
+- Structure
+- Life cycle
+- Where they live
+- Diseases associated with each vector
+- Prevention, control and treatment 
+20
+11. Human Health Accidents, Poisoning  Accidents 10
+=== PDFPAGE 15 ===
+14
+Theme Topic Sub-topics Periods
+and First aid - Causes
+- Types of injuries
+- Types of fractures
+ Poisoning:  causes, types of poisoning 
+ First Aid and First Aid Kit
+- Care
+12. World of Living 
+Things 
+Animal Life  Rabbits
+- External parts of a rabbit 
+- Types of rabbits
+- Housing rabbits
+- Feeding rabbits 
+- Breeding 
+- Hygiene
+- General signs of a sick rabbit
+- Common diseases and parasites
+- Control and treatment
+- Keeping rabbit records 
+20
+=== PDFPAGE 16 ===
+15
+TERM I
+THEME: World of Living Things
+Topic: Plant Life
+General Background
+Plants are very useful to both people and animals. Many common plants multiply by means of seeds. Seeds are formed from flowers 
+of the flowering plants. This topic will help learners acquire the basic scientific knowledge of plant life through studying the 
+structure of flowering plants in the local environment.  At the start of the topic some seeds e.g. Beans and maize should be planted 
+ready to use in the experiments recommended to study germination. There has been an introduction to this topic in P1-3 and this 
+work should be revised.  After investigating conditions for germination, observing the structure of seedlings, the class should be 
+guided to compare the structure of seedlings with mature plants of the same group. 
+Learning Outcomes:  
+-     Surveys, identifies and distinguishes the attributes of plants in the environment.
+- Understands the conditions for germination and proper growth of flowering plants. 
+- Uses characteristics to classify a plant by studying its structure 
+SUBJECT COMPETENCES LANGUAGE COMPETENCES CONTENT SUGGESTED ACTIVITIES 
+The learner; 
+ Identifies the external parts of 
+a flowering plant.
+ Labels the parts of a flowering 
+plant. 
+ Discusses the uses of plants
+ Discusses the functions of the 
+different parts of the 
+flowering parts.
+ Investigates the conditions 
+necessary for germination.
+ Names the different parts of 
+a flowering plant orally in 
+local language and in English.
+ Labels with correct spelling a 
+diagram showing the 
+different parts of a flowering 
+plant.
+ Reads / writes short 
+sentences on uses of plants 
+to people 
+ Reads/writes short 
+1. Parts of a flowering 
+plant:
+- roots
+- stems
+- leaves
+- flowers
+2. Functions of each 
+part of a flowering 
+plant 
+3. Seeds
+-     Seed structure.
+1. Planting seeds
+2. Collecting different 
+flowering plants
+3. Naming, the parts of 
+the collected plants.
+4. Drawing, labelling the 
+parts of the collected 
+plants.
+5. Discussing uses of 
+plants to people 
+6. Describing the 
+=== PDFPAGE 17 ===
+16
+SUBJECT COMPETENCES LANGUAGE COMPETENCES CONTENT SUGGESTED ACTIVITIES 
+ Describes the structures of a 
+seed.
+sentences on conditions 
+necessary for seed 
+germination.
+ Draws and labels diagrams of 
+a flowering plant.
+- Conditions 
+necessary for 
+germination 
+4. Uses of plants to 
+people:
+- food
+- medicinal
+- sold for money
+- construction
+- firewood
+- charcoal
+structures of a 
+germinating seed
+7. Experimenting in 
+pairs with local seeds.
+- Seed viability
+- Conditions for 
+germination
+- Noting the progress 
+in germinating 
+seed.
+Life Skills Values Assessment Activities 
+ Creative thinking
+ Critical observation
+ Problem solving
+ Decision making 
+ Effective communication
+ Fluency
+ Audibility 
+ Logic
+ Care 
+ Responsibility
+ Appreciation 
+ Taking decisions 
+1. Name different parts of a flowering plant.
+2. Describe the functions of parts of the flowering plant.
+3. Describe types and conditions necessary for 
+germination. 
+=== PDFPAGE 18 ===
+17
+THEME: World of Living Things
+Topic: Growing Crops 
+General Background
+Most of your learners know about different crops grown in locality and county.  In Social Studies they name other crops that grow in 
+Uganda.  Although each crop is grown differently, there are some common activities that are carried out when growing any crop
+using different garden tools, equipment and materials.  Crops can be used as food or sold to get money.  Crops should be cared for 
+well by protecting them from pests and diseases. Exposing learners to seeing, feeling and smelling real crops, enhances 
+understanding and development of the concepts you intend to develop especially to learners with special educational needs.
+Learning Outcome:  
+- Demonstrate skills in growing crops for increased output. 
+SUBJECT COMPETENCES LANGUAGE COMPETENCES CONTENT SUGGESTED ACTIVITIES 
+The learner; 
+ Identifies common crops in 
+the community.
+ Groups the common crops 
+into perennials and annuals.
+ Draws and labels annual 
+crops.
+ Identifies common tools, 
+equipment and materials used 
+in growing annual crops.
+ Describes the uses of common 
+tools, equipment and 
+materials.
+ Draws and labels common 
+tools and equipment.
+ Identifies crop growing 
+ Names the common crops in 
+local language and in English.
+ Reads / writes words with 
+correct spelling
+ Draws and labels annual 
+crops
+ Recites rhymes / poems 
+about crops.
+ Names the common tools, 
+equipment and materials.
+ Reads and spells the words 
+correctly
+ Draws and labels the tools.
+ Writes a short story about 
+tools.
+ Names the crop growing 
+1. Common crops:
+- Maize
+- Sorghum
+- Peas
+- Ground nuts
+- Bananas
+- Beans
+- Cassava
+- Coffee
+- Tea
+- Cotton
+2. Groups of crops
+- Perennial crops: 
+coffee, tea, bananas
+- Annual crops: maize, 
+sorghum, peas, 
+ground nuts, cassava, 
+ Naming common crops
+ Grouping common 
+crops into perennials 
+and annuals.
+ Identifying common
+tools, equipment and 
+materials used in 
+growing annual crops.
+ Describing the uses of 
+tools, equipment and 
+materials used in 
+growing annual crops.
+ Drawing and labeling 
+garden tools and 
+equipment.
+ Naming the crop 
+=== PDFPAGE 19 ===
+18
+SUBJECT COMPETENCES LANGUAGE COMPETENCES CONTENT SUGGESTED ACTIVITIES 
+practices.
+ Describes crop growing 
+practices.
+ Demonstrates some of the 
+crop rowing practices.
+ Identifies some common signs 
+of pest and disease damage in 
+crops.
+ Describes some signs of pest 
+and disease damage in crops
+and ways of controlling them.
+practices.
+ Reads and writes the words 
+correctly.
+ Acts a dialogue about crop 
+growing.
+ Describes common signs of 
+pest and disease damage in 
+crops.
+ Reads and writes sentences 
+correctly.
+ Writes a short story about 
+pest and disease damage in 
+crops and ways of controlling 
+them.
+beans, cotton
+3. Garden tools, equipment 
+and materials:
+-   hoe, spade, rake, 
+wheel barrow, pegs, 
+shovel, pick axe, pot, 
+hand folk, pangas, 
+watering can, string, 
+garden fork, trowel, 
+secateur pruner, axe, 
+pail, jerrican, 
+sprayer, knives.
+4. Crop growing practices
+- Land clearing, digging 
+/ ploughing, seed 
+selection, planting, 
+gap filling, weeding, 
+thinning, mulching, 
+manuring, drying, 
+transplanting, 
+pruning, spraying, 
+harvesting, record 
+keeping, storing, 
+watering
+5. Common signs of pest 
+and disease damage in 
+crops
+- Holes in leaves, fruits, 
+seeds, roots and 
+stems of crops
+growing practices.
+ Describing what is 
+done at each stage.
+ Demonstrating some 
+of the crop growing 
+practices.
+ Acting a dialogue 
+about crop growing 
+practices. 
+ Describing some signs 
+of pest and disease 
+damage in crops and 
+the ways of controlling 
+them.
+=== PDFPAGE 20 ===
+19
+SUBJECT COMPETENCES LANGUAGE COMPETENCES CONTENT SUGGESTED ACTIVITIES 
+- Spots on leaves, 
+fruits, seeds, roots 
+and stems of crops.
+- Change of colour in 
+leaves, fruits and 
+stems.
+- Rotten plant parts.
+- Deformed plant 
+parts. 
+6. Ways of controlling 
+pests and diseases in 
+garden
+- Spraying
+- Planting clean seeds
+- Uprooting diseased 
+crops
+- Timely weeding
+- Early planting
+- Use of scare crows.
+Life Skills Values Assessment Activities 
+ Effective communication 
+ Creative thinking
+ Critical observation
+ Decision making 
+ Problem solving
+ Fluency 
+ Confidence 
+ Responsibility
+ Appreciation 
+ Making right choices 
+ Taking decisions
+ Care 
+1. Draw and label common tools and equipment used for 
+growing annual crops.
+2. Demonstrate some crop growing practices e.g. mulching, 
+pruning, weeding.
+3. Describe signs of pest and disease damage in crops 
+=== PDFPAGE 21 ===
+20
+THEME: Our Environment
+Topic: Weather changes around us 
+General Background
+This theme has been studied from P.1 – 3. At this level learners should be guided to study weather changes, record weather 
+measurements and focus on simple study on rain formation.  Changes in weather and climate affect our environment. In this topic, 
+learner’s scientific skills of making observations, recording and interpreting are developed by measuring these changes in rainfall 
+and temperature as developed changes in weather. The learner must also become aware of the variation of climate conditions in 
+different parts of Uganda.  The importance of the water cycle should be emphasized.  Experiments carried out to measure rainfall 
+during the rainy season and to measure temperature using a thermometer should be related to daily experiences of learners.
+Although each school is encouraged to have weather instrument corner, If possible a visit to a weather station should be arranged. 
+You should note that this topic will be more meaningfully taught when the weather changes actually exist. You should be flexible 
+enough to change the lessons to a more suitable time.
+Learning Outcomes:
+- Make and interpret weather records accurately.
+SUBJECT COMPETENCES LANGUAGE COMPETENCES CONTENT SUGGESTED ACTIVITIES 
+The learner;
+ Describes the changes in 
+the weather throughout 
+the year.
+ Describes weather 
+patterns and climate 
+changes in different parts 
+of Uganda.
+ Makes accurate 
+measurements of rainfall 
+ Uses a thermometer to 
+ Describes the changes in 
+weather orally.
+ Reads, spells and writes 
+the words related to 
+weather and draws 
+pictures to illustrate it.
+ Explains orally the water 
+cycle.
+ Names the parts of a 
+thermometer.
+ Distinguishes between 
+1. Changes in the weather.
+- sunshine
+- clouds
+- rain
+- wind
+- temperature
+2. The water cycle
+- sources
+- water in air
+3. Rainfall 
+- rain clouds
+- effects of rain
+1. Making a weather 
+chart.
+2. Recording the daily 
+weather changes on 
+the charts.
+3. Reporting on their 
+findings. 
+4. Drawing and 
+labelling the rain 
+cycle
+5. Draw and label a 
+thermometer. 
+=== PDFPAGE 22 ===
+21
+SUBJECT COMPETENCES LANGUAGE COMPETENCES CONTENT SUGGESTED ACTIVITIES 
+measure temperature.
+ Draws a simple weather 
+chart.
+rain and rainfall, weather 
+and climate, sky and 
+atmosphere.
+- importance of rainfall
+4. Simple weather chart
+Life Skills Values Assessment Activities 
+ Effective communication 
+ Critical thinking
+ Creative thinking
+ Decision making 
+ Coping with stress 
+ Problem solving
+ Logic
+ Patience 
+ Endurance 
+ Taking decision
+ Fluency 
+ Evaluating facts 
+ Prediction
+ Self awareness
+ Draw the rain cycle
+ Record the daily weather changes in your school
+ Draw a rain gauge and a weather thermometer 
+ Describe the rain cycle (for learners with visual 
+impairments and those with severe motor problems).
+=== PDFPAGE 23 ===
+22
+THEME: Human Health
+Topic: Personal Hygiene 
+General Background
+Personal hygiene is a very important element in one’s life.  It is all about keeping clean in every aspect of our lives.  Learners need to 
+increase their awareness of personal hygiene, i.e. keeping the body, clothing and bedding clean.  At this level you need to encourage 
+the learners to continue to develop desirable habits for good personal hygiene.  Simple health messages can be displayed in the 
+classroom and around the compound to encourage good health habits. Practical health parades were done in P1-2. The teacher 
+needs to devise a means of ensuring regular checking on learners’ personal hygiene.  Build on what was done in P1-2 to ensure 
+personal hygiene.
+Learning Outcomes:
+- Demonstrate good practice of keeping clean.
+- Appreciate the importance of keeping clean. 
+SUBJECT COMPETENCES LANGUAGE COMPETENCES CONTENT SUGGESTED ACTIVITIES 
+The learner;
+ States why we keep 
+clean.
+ Identifies ways of 
+keeping clean.
+ Demonstrates keeping 
+clean.
+ Discuss what can go 
+wrong if we do not 
+keep clean
+ Discusses orally why we 
+keep clean.
+ Listen to stories on 
+keeping clean. 
+ Reads and writes words, 
+related to why we keep 
+clean.
+ Reads and writes 
+structured story of how 
+to keep clean
+ Draws and labels things 
+we use to keep clean
+1. Importance of keeping 
+our bodies clean
+- Remove dirt, remove 
+germs, avoid bad 
+smell, keep healthy, 
+be smart.
+2. Ways of keeping clean
+3. Things used for keeping 
+our bodies clean
+4. Keeping bedding and 
+clothing clean
+1. Talking about what we do 
+each day to keep clean
+2. Listing things we use to keep 
+clean.
+3. Collecting and displaying
+materials used to keep clean
+4. Practicing activities for 
+keeping ourselves clean, e.g.
+- Cutting the nails, brushing 
+the teeth, washing the 
+body and washing clothes.
+- Discussing what can go 
+wrong if we do not keep 
+clean
+=== PDFPAGE 24 ===
+23
+Life Skills Values Assessment Activities 
+ Self awareness
+ Self esteem
+ Assertiveness
+ Problem solving
+ Creative thinking
+ Care
+ Responsibility
+ Concern
+ Appreciation
+ Acceptance   
+1. Discuss how and why to keep clean
+2. Draw and name materials for keeping clean
+3. Write short sentences on what, how and why we keep
+clean.
+=== PDFPAGE 25 ===
+24
+TERM II
+THEME: Human Health
+Topic 1: Our Food  
+General Background
+Food is important for the growth and development of living things.  We need food with various food values. We need to feed on a 
+variety of foods. The learners should be encouraged to carry out practical activities such as collecting, talking about and grouping 
+foods of different food values.  This will help them to understand what their bodies require to be healthy and the diseases that occur 
+when there are deficiencies in their diet. They should also be aware of how food becomes contaminated and how to prevent this.  If 
+possible you should arrange for learners to visit nutritional centers and to observe pictures of children with diseases caused by 
+deficiency in diet. 
+Learning Outcomes: 
+- Show scientific knowledge and demonstrate skills of handling food safely
+- Identify classes, appreciate different types and know the importance of proper food values.
+- Recognize diseases caused by food deficiency
+SUBJECT COMPETENCES LANGUAGE COMPETENCES CONTENT SUGGESTED ACTIVITIES 
+The learner; 
+ Identifies classes of 
+food and their values.
+ Describes the uses of 
+food values to the 
+body.
+ Describes how food 
+gets contaminated
+ Practices proper 
+handling of food 
+ Identifies some 
+deficiency diseases.
+ Prepares local dishes 
+ Names classes of food 
+and their values.
+ Reads and write words, 
+sentences and stories 
+concerning food values
+ Recites rhymes about 
+uses of food to us.
+ Draws and labels 
+diagrams of the different 
+foods.
+ Writes names of 
+different dishes 
+ Writes and reads a story 
+1. Classes of food – the 3Gs
+- go foods
+- glow foods
+- grow foods
+2. Food values
+- Carbohydrates 
+- Vitamins and minerals 
+- Proteins
+3. Uses of food values to the body
+- growth
+- energy
+- protection
+4. Deficiency diseases
+1. Using a collection of
+everyday foods name 
+and label their values
+2. Describing how to 
+handle food properly
+3. Describing signs and 
+symptoms of deficiency 
+diseases and those 
+caused by eating 
+contaminated food.
+4. Preparing local dishes 
+=== PDFPAGE 26 ===
+25
+SUBJECT COMPETENCES LANGUAGE COMPETENCES CONTENT SUGGESTED ACTIVITIES 
+using common foods in 
+the community.
+about food preparation.
+ Writes stages of 
+preparation of different 
+local dishes.
+- Night blindness
+- Kwashiorkor
+- Marasmus
+- Goiter
+- Beriberi
+- Scurvy
+- rickets
+5. How food gets contaminated
+- dirty hands
+- dirty containers
+- dusty/dirty surrounding
+- flies 
+6. Prevention of food 
+contamination
+- cooking well
+- covering food
+- serving in clean containers
+- serving in clean environment 
+7. preparation of simple dishes 
+using local foods 
+-
+Life Skills Values Assessment Activities 
+ Effective communication 
+ Critical thinking 
+ Empathy
+ Decision making 
+ Creative thinking
+ Responsibility
+ Care
+ Sympathy
+ Appreciation
+ Concern
+1. Name classes of food 
+2. Explain how food gets contaminated
+3. Talk about the diet chart displayed in the class.
+=== PDFPAGE 27 ===
+26
+THEME: Human Body
+Topic 2: Human Body Organs
+General Background
+Learners now know the external parts of their bodies.  This topic describes the major organs of the human body, their location and 
+how they work. You should make sure learners understand the use of each organ and the role it plays in the working of the human 
+body. 
+Learning Outcome:
+- Locate and name the major organs of the human body.
+- Appreciate the importance of the major organs of the human body.
+SUBJECT COMPETENCES LANGUAGE COMPETENCES CONTENT SUGGESTED ACTIVITIES 
+The learner; 
+ Names different organs 
+of our body.
+ States the function of 
+the different organs of 
+our body.
+ States four ways in 
+which our body works.
+ Draws and labels the 
+different human body.
+ Reads and writes the 
+names of the major 
+organs in local language 
+and English.
+ Reads and answers 
+simple comprehension 
+questions on how the 
+human body works.
+ Tells a story about body 
+organs
+ Recites a rhyme about 
+how the body works.
+1. Major organs of the human 
+body
+- eyes 
+- brain 
+- ears
+- stomach
+- urinary bladder
+- heart 
+- lungs 
+- liver 
+- kidneys
+2. How the human body works
+- takes in food and oxygen
+- uses food and oxygen to 
+get energy
+- carries food and oxygen to 
+different parts of the body
+- removes wastes.
+ Naming different organs of 
+our body. 
+ Drawing a diagram of 
+human body showing the 
+major organs.
+ Labelling the major organs 
+of the human body.
+ Matches the labels to a 
+diagram of the major organs 
+of our body. 
+ Drawing / modelling a 
+human body in clay.
+ Story telling 
+ Reciting  a rhyme about 
+body functions 
+=== PDFPAGE 28 ===
+27
+Life Skills Values Assessment Activities 
+ Critical thinking
+ Creative thinking 
+ Effective communication
+ Self-esteem 
+ Decision making 
+ Self awareness 
+ Logic
+ Care
+ Responsibility 
+ Acceptance
+ Confidence
+ Fluency 
+ Name different organs of the body
+ Match the labels to major organs of a diagram of the 
+body
+ State the functions of the different organs of the 
+human body.
+=== PDFPAGE 29 ===
+28
+THEME: Human Body 
+Topic 3: The Teeth 
+General Background
+Oral health is important in maintaining our health.  Learners of P4 age may have had an experience with their oral health.  You 
+should develop in the learners the skills and practices that promote their oral health.  You should help the learners to identify and 
+describe the different types of teeth and their functions. Learners should also know how to care for their teeth and the simple 
+diseases which can affect them if not cared for properly. 
+Learning Outcome:
+- Identify the characteristics and functions of different types of teeth.
+- Take care of teeth
+- Describe different diseases of teeth.
+SUBJECT COMPETENCES LANGUAGE COMPETENCES CONTENT SUGGESTED ACTIVITIES 
+The learner; 
+ Identifies the different 
+sets of teeth.
+ Describes the different 
+types of teeth and their 
+functions.
+ Identifies the diseases 
+and disorders of the 
+teeth.
+ Demonstrates how to 
+brush teeth correctly.
+ Practices habits that 
+promote oral health.
+ Draws different types of 
+teeth with correct 
+ Names different types of 
+teeth.
+ Reads and writes words, 
+sentences and stories 
+about oral health.
+ Draws and labels the 
+different types of teeth.
+ Tells stories in proper 
+sequence about their 
+experiences on 
+removing a bat teeth.
+1. Sets of teeth
+- milk teeth
+- permanent teeth
+2. Types of teeth
+-     canines
+-     incisors
+-     pre-molars
+-     molars 
+3. Functions
+-     cutting
+-     tearing
+-     grinding 
+-     chewing 
+4. Teeth structure
+- enamel
+- crown
+1. Matching different types 
+of teeth to diagrams.
+2. Drawing and labelling 
+teeth structure.
+3. Drawing diagrams of 
+different types of teeth 
+and labelling them.
+4. Practising correct 
+brushing of teeth and 
+correct maintenance of 
+the mouth.
+=== PDFPAGE 30 ===
+29
+labellings. - neck
+- root
+5. Care of our teeth
+- brushing
+- flossing 
+- regular dental check up
+- eating correct food
+- use tooth paste
+6. Teeth diseases and disorders
+-     dental cavity 
+-     dental caries
+- tooth cracks
+- dental plaque
+- improper growth
+- broken teeth
+Life Skills Values Assessment Activities 
+ Effective communication
+ Self awareness 
+ Critical thinking
+ Problem solving
+ Decision making 
+ Self-esteem
+ Empathy
+ Logic
+ Confidence
+ Acceptance
+ Care
+ Responsibility
+1. Name the different types of teeth in the jaw.
+2. Name the diseases and disorders of the teeth.
+3. Describe types of teeth and their functions.
+=== PDFPAGE 31 ===
+30
+Theme: Human Health 
+Topic 4: Sanitation  
+General Background
+Sanitation is all about keeping our surroundings clean.  We need a clean environment to maintain our hygiene. Sanitation concerns 
+in our communities should be addressed aggressively if diseases have to be reduced.  Communities should be equipped with skills 
+to handle sanitation challenges. Learners should be aware that they too, can help and make a difference by being aware of the 
+importance of good sanitation and carrying out activities of keeping the environment clean.   In this topic the learners will also learn 
+about germs and diseases, building on the knowledge they gained in P1-3 on how to keep our homes clean. 
+Learning Outcome:
+- Understand the importance of proper sanitation and practise basic habits to avoid germs and diseases.
+SUBJECT COMPETENCES LANGUAGE COMPETENCES CONTENT SUGGESTED ACTIVITIES 
+The learner; 
+ States what sanitation 
+is.
+ Discusses the 
+importance of proper 
+sanitation
+ Explains what germs 
+are.
+ Discusses how the 
+germs spread.
+ Describes the different 
+ways of maintaining 
+proper sanitation.
+ Describes in English what 
+good sanitation is  
+ Reads and writes words, 
+sentences, stories, recite 
+rhymes about keeping 
+the local environment 
+clean
+ Draws pictures about 
+activities to keep the 
+environment clean
+1. What sanitation is 
+2. Importance of good 
+sanitation in our 
+environment 
+3. Germs and diseases
+- What they are 
+- Where they are found
+- How they are spread
+- The 4Fs germ path
+- How they cause rotting
+4. Ways of protecting against 
+germs and diseases in the 
+environment: school, on the 
+way and homes.
+1. Surveying the sanitation 
+situation in our 
+environment.
+2. Writing a list of identified 
+sanitation concerns.
+3. Drawing and labelling 
+diagrams of how they 
+spread.
+4. Describing the germ 
+path.
+5. Carrying out activities of 
+keeping the environment 
+clean.
+6. Experimentation on 
+rotting
+=== PDFPAGE 32 ===
+31
+Life Skills Values Assessment Activities 
+ Effective communication
+ Self-awareness 
+ Self-esteem
+ Critical thinking
+ Creative thinking 
+ Problem solving
+ Decision making 
+ Responsibility 
+ Care
+ Love 
+ Appreciation 
+ Respect 
+1. Name the breeding places for germs.
+2. List ways of keeping the environment clean.
+3. Describe the 4Fs germ path.
+=== PDFPAGE 33 ===
+32
+Term III
+THEME: Human Health 
+Topic: Communicable intestinal diseases & worm infestation  
+General Background
+Learners have learnt about personal hygiene and sanitation.  Diseases and worm infestations are some of the things which can 
+cause ill health.  Learners should be made aware of the types of worms and diseases and their modes of spread.  Guide them to 
+develop basic skills of managing the diseases where prevention has failed.  They should appreciate the importance of avoiding
+diseases and worm infestations especially through proper sanitation and proper personal hygiene.
+Learning Outcome:
+- Identify and explain how intestinal diseases and worm infestations are spread and managed.
+SUBJECT COMPETENCES LANGUAGE COMPETENCES CONTENT SUGGESTED ACTIVITIES 
+The learner;
+ Identifies diarrhoeal 
+diseases.
+ Describes the causes of 
+diarrhoeal diseases and 
+how they can spread.
+ Demonstrates how to mix
+and administer oral 
+rehydration solution 
+(ORS) and make salt, 
+sugar, solution (SSS).
+ Identifies types of worms.
+ Explains how worms enter 
+the body.
+ Describes signs and 
+ Names diarrhoeal 
+diseases.
+ Describes the steps of 
+making oral rehydration 
+solution (ORS).
+ Reads, writes words, 
+sentences, stories, 
+recites rhymes, poems 
+and acts dialogues
+related to vectors and 
+diseases.
+ Draws and labels 
+different types of worms.
+1. Diarrhoeal diseases
+- Diarrhoea
+- Dysentery
+- Cholera
+- Typhoid 
+2. Causes of intestinal common 
+communicable diseases
+- Bacteria
+- Virus
+- Protozoa
+- Worms
+3. How some common intestinal 
+communicable diseases are 
+spread through 4Fs.
+4. Signs and symptoms of common 
+intestinal communicable 
+1. Naming common 
+communicable 
+diseases.
+2. Prevention activities: 
+cleaning a latrine, 
+boiling water.
+3. Drawing and labelling 
+different types of 
+worms.
+4. Describing the mode of 
+spread.
+5. Making SSS.
+6. Mixing ORS.
+=== PDFPAGE 34 ===
+33
+SUBJECT COMPETENCES LANGUAGE COMPETENCES CONTENT SUGGESTED ACTIVITIES 
+symptoms of worm 
+infestations.
+ Describes treatment of 
+worms and intestinal  
+diseases.
+diseases, diarrhoea, dysentery, 
+cholera and typhoid.
+5. Treatment and prevention of 
+common communicable 
+diseases.
+- mixing and administering 
+ORS
+- eating well prepared foods
+- drinking boiled water
+- proper personal and food 
+hygiene 
+- seek medical advice 
+6. Worm infestation
+- tape worms 
+- round worms (hookworms, 
+askaris)
+- thread worms (pin worms)
+7. Describe signs and symptoms of 
+worm infestation.
+8. Treatment and prevention of 
+worm infestations.
+- well cooked meat 
+- wear shoes and sandals 
+- wash all foods eaten raw 
+Life Skills Values Assessment Activities 
+ Critical thinking
+ Creative thinking 
+ Effective communication
+ Self-awareness 
+ Care
+ Sharing 
+ Responsibility 
+ Appreciation 
+1. Name common diarrhoeal diseases and worm 
+infestations.
+2. Describe the steps of preparing oral rehydration 
+solution
+=== PDFPAGE 35 ===
+34
+ Problem solving
+ Self-esteem
+ Empathy 
+ Decision making 
+ Concern 
+ Sympathy
+ Taking decisions
+3. Describe prevention and treatment of worm infestations
+=== PDFPAGE 36 ===
+35
+Theme:   Human Health 
+Topic: Vectors and Diseases  
+General Background
+Disease vectors play an important role in the spread of disease and learners must recognize the common vectors in their 
+environment. Disease vectors include common insects like house flies, mosquitoes and animals like rates.  They spread dangerous 
+diseases.  To prevent the diseases caused by these vectors, learners should know their characteristics, their life cycles and the 
+disease they spread. 
+Learning Outcome:
+- Identify, prevent and control disease vectors for good health.
+SUBJECT 
+COMPETENCES
+LANGUAGE COMPETENCES CONTENT SUGGESTED ACTIVITIES 
+The learner; 
+ Names some disease 
+vectors 
+ States characteristics 
+of some disease 
+vectors
+ Describes the life 
+cycle of some vectors.
+ Explains how vectors 
+spread disease.
+ Identifies the 
+diseases spread by 
+the vectors.
+ Practices correct 
+prevention and 
+control of diseases 
+spread by disease 
+ Names disease vectors in 
+local language and English
+ Reads and writes stories 
+about vectors.
+ Acts dialogues about 
+preventing the diseases 
+spread by the vectors
+ Draws and labels
+diagrams of different 
+disease vectors
+ Matches names of diseases 
+with their vectors.
+1. Common vectors: bed bugs, 
+cockroaches, ticks, fleas, house 
+flies, mites, rats, lice, mosquitoes
+and tsetse flies.
+2. Characteristics of disease vectors. 
+- Their body structure 
+- Their habitat
+- Their feeding habits
+- The life cycle of mosquitoes, 
+cockroaches and houseflies, 
+tsetse fly.
+3. How vectors spread diseases.
+- bites, dirty body, dirty 
+environment.
+4. Prevention and control.
+- proper hygiene
+- covering food
+- spraying
+1. Naming diseases, 
+vectors and their life 
+cycles
+2. Identifying and naming 
+the feeding habits of 
+some disease vectors
+3. Drawing and labelling
+different stages of the 
+life cycle of disease 
+vectors.
+4. Demonstrating 
+activities to prevent 
+the spread of common 
+vectors in the 
+environment.
+5. Tabulating to show 
+vectors, the germs they 
+carry and the diseases 
+=== PDFPAGE 37 ===
+36
+SUBJECT 
+COMPETENCES
+LANGUAGE COMPETENCES CONTENT SUGGESTED ACTIVITIES 
+vectors. - biological control
+- sleeping under mosquito nets.
+spread.
+Life Skills Values Assessment Activities 
+ Critical thinking
+ Creative thinking 
+ Effective communication
+ Self-awareness
+ Problem solving
+ Self-esteem
+ Empathy
+ Decision making
+ Responsibility 
+ Sharing
+ Appreciation
+ Care 
+ Concern 
+ Sympathy
+ Taking decision
+1. Name vectors and the diseases they spread.
+2. Describe ways of preventing and controlling disease 
+vectors.
+3. Draw and label different stages of the life cycles of
+a) Housefly
+b) Cockroach
+c) Mosquito 
+=== PDFPAGE 38 ===
+37
+THEME: Human Health 
+Topic: Accidents, Poisoning and First Aid. 
+General Background
+Accidents are sudden bad happening which result in injuries.  They include traffic accidents, cuts, falls and snake bits at home, 
+poisoning and burns.  Many accidents are caused by carelessness and poor conditions in which we live, walk or work.  Schools 
+should provide suitable conditions for learners. Learners should be aware of what should be done when an accident occurs and the 
+different types of injuries that can happen. Each school should have a First Aid Kit and the teacher should show this to the learners 
+explaining that is contains and how it is used.   A study of poisoning is included in this topic, its causes, types and how to manage it.
+Learning Outcome:
+- Identify and manage common accidents and poisoning.
+SUBJECT COMPETENCES LANGUAGE COMPETENCES CONTENT SUGGESTED ACTIVITIES 
+The learner; 
+ Names common accidents and 
+poisoning at home, on the way 
+to, from and at school.
+ States causes of accidents and 
+poisoning.
+ Demonstrates correct practices 
+to avoid accidents.
+ Practices habits which help to 
+avoid accidents and poisoning 
+at home, on the way and at 
+school.
+ Demonstrates how to care for 
+an injured person.
+ Describes how to take care for 
+a person who has taken poison.
+ Talks about a common 
+accident which 
+happened  in the 
+community 
+ Reads and writes words, 
+sentences and stories 
+about accidents.
+ Recites rhymes and 
+poems on accidents and 
+poisoning.
+ Draws an accident scene.
+1. Accidents at home, on 
+the way and at school.
+- Types of injuries
+- Causes
+- Ways of preventing 
+accidents
+- Safety rules on the 
+road.
+2. Poisoning 
+- Causes of poisoning.
+- Prevention of 
+poisoning.
+3. First Aid Kit
+- Components 
+- Uses of components
+- Giving First Aid.
+ Role play how to behave 
+safely when walking on 
+a busy street.
+ Role play a road 
+accident and how one 
+should act.
+ Discuss effects of 
+accidents and poisoning 
+and the First Aid care
+necessary.
+ Demonstrate how to 
+administer Firsts Aid 
+using the First Aid Kit.
+ Describe what to do 
+after a person has been 
+bitten by a snake.
+=== PDFPAGE 39 ===
+38
+Life Skills Values Assessment Activities 
+ Critical thinking
+ Creative thinking 
+ Problem solving
+ Empathy
+ Coping with stress
+ Coping with emotions 
+ Care 
+ Concern 
+ Responsibility 
+ Sympathy
+ Acceptance 
+ Patience 
+1. Identify common accidents and their causes.
+2. Describe different types of injuries.
+3. Demonstrate administering First Aid.
+=== PDFPAGE 40 ===
+39
+THEME: World of Living Things 
+Topic: Animal Life 
+General Background
+Animal life is an important topic which helps learners to develop interest and basic skills for managing simple projects like keeping 
+rabbits.  Note that caring for rabbits will involve, studying the external features, feeding them, identifying some of their diseases, 
+and treating them when they are sick, housing them and controlling diseases that affect them.
+Learners have already learnt about things in the environment and plant life.  Animals are among the living things in the 
+environment.  Learners need to be guided to acquire basic scientific knowledge and skills to study about animals taking a rabbit as a 
+example animal.  Animals are important in the environment and our lives.  Study of a rabbit will help learners to develop their
+production skills.
+Learning Outcome:
+- Understand, appreciate, the contribution of rabbits in homes.
+SUBJECT COMPETENCES LANGUAGE 
+COMPETENCES
+CONTENT SUGGESTED ACTIVITIES 
+The learner;
+ List names of external parts of a 
+rabbit.
+ Names different types of rabbits
+and their uses.
+ Compares the different types of 
+rabbits.
+ Constructs a hutch for rabbits.
+ Describes breeding habits of 
+rabbits.
+ Names common diseases of 
+rabbits.
+ Listens to stories about 
+rabbits.
+ Spells the words 
+related to rabbit 
+keeping correctly.
+ Draws and labels the 
+external parts of a 
+rabbit.
+1. External parts of a 
+rabbit
+ head
+ eyes
+ ears
+2. Types and uses
+ Types 
+- Local 
+- Exotic 
+ Uses 
+- Meat
+- Manure
+ Studying a live rabbit 
+writing down some of 
+its habits
+ Drawing and labeling 
+the external structure 
+of rabbit.
+ Describing how 
+rabbits can be kept 
+healthy
+ Writing down the 
+common diseases of 
+rabbits.
+=== PDFPAGE 41 ===
+40
+SUBJECT COMPETENCES LANGUAGE 
+COMPETENCES
+CONTENT SUGGESTED ACTIVITIES 
+ Practices the control, prevention 
+and treating of rabbit diseases.
+ Demonstrates skills in keeping 
+rabbits.
+- Money
+- Skin for making 
+bags and belts
+3. Construction of rabbit 
+hutch (housing)
+4. Management practices 
+(keeping Rabbits)
+ Feeding rabbits
+ Breeding of rabbits
+ Hygiene
+ Common diseases
+- Ear canker, 
+- Flue
+- Cold
+- Coccidiosis
+- Pneumonia
+- Snuffles
+- Fleas
+- Mites
+- Ticks 
+5. Control and treatment 
+of diseases of rabbits
+6. Keeping rabbit records.
+ Demonstrating 
+activities of 
+preventing and 
+controlling diseases 
+and parasites.
+ Keeping records on 
+rabbits.
+Life Skills Values Assessment Activities 
+ Effective communication 
+ Critical thinking
+ Creative thinking 
+ Responsibility 
+ Care 
+ Logic 
+1. Name the different types of rabbits.
+2. Describe common diseases of rabbits.
+3. Draw and label external structures of rabbits.
+=== PDFPAGE 42 ===
+41
+ Decision making 
+ Problem solving 
+ Appreciation 
+ Fluency 
+ Patience 

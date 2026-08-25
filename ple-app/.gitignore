@@ -1,0 +1,11 @@
+# Python build artefacts
+__pycache__/
+*.pyc
+
+# Release archive (regenerate with: python3 tools/release.py --zip)
+*.zip
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+*.swp

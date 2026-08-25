@@ -1,0 +1,4812 @@
+{
+ "class": "P5",
+ "subject": "ENG",
+ "subject_name": "English",
+ "total": 8,
+ "words": 14499,
+ "topics": [
+  {
+   "id": "P5_ENG_T01",
+   "class": "P5",
+   "subject": "ENG",
+   "topic_no": 1,
+   "title": "Vehicle Repair and Maintenance",
+   "heading": "TOPIC 1: VEHICLE REPAIR AND MAINTENANCE",
+   "slug": "vehicle-repair-and-maintenance",
+   "periods": 23,
+   "curriculum_pages": "15–17",
+   "words": 1857,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Five Curriculum, Set One, English Topic 1, 23 periods (`curriculum/P5-SET-ONE-2010.pdf`, pages 15–17). The syllabus divides this topic into Sub-topic 1A **Parts of a Vehicle** and Sub-topic 1B **Equipment used in Vehicle Repair**.*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You can name common vehicles and describe simple actions. In P.5 you learn the **names of vehicle parts and repair tools**, and you use **must / mustn't**, **has / have**, the **present perfect tense** and the conditional **if**."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "name and describe the parts of a car and of a bicycle",
+        "name the tools used in vehicle repair and say what each is used for",
+        "use *must* and *mustn't* to give rules and advice",
+        "use *has* and *have* and the present perfect tense correctly",
+        "use *if* and *in order to* in sentences",
+        "read and write short texts about vehicle repair and maintenance"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. PARTS OF A VEHICLE — VOCABULARY",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Parts of a car"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**engine**",
+         "The machine that makes the vehicle move"
+        ],
+        [
+         "**tyre**",
+         "The rubber ring fitted round a wheel"
+        ],
+        [
+         "**wheel**",
+         "The round part on which the vehicle runs"
+        ],
+        [
+         "**steering**",
+         "The wheel the driver turns to guide the vehicle"
+        ],
+        [
+         "**windscreen**",
+         "The big glass in front of the driver"
+        ],
+        [
+         "**wiper**",
+         "The arm that wipes rain off the windscreen"
+        ],
+        [
+         "**driving mirror**",
+         "The mirror that lets the driver see behind"
+        ],
+        [
+         "**boot**",
+         "The space at the back for carrying luggage"
+        ],
+        [
+         "**seat**",
+         "Where a person sits"
+        ],
+        [
+         "**seat belt**",
+         "The strap that holds a person safely in the seat"
+        ],
+        [
+         "**head lamp**",
+         "The light in front of the vehicle"
+        ],
+        [
+         "**indicator**",
+         "The blinking light that shows which way the driver will turn"
+        ],
+        [
+         "**brakes**",
+         "The parts used to slow down or stop the vehicle"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Parts of a bicycle"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**spokes**",
+         "The thin rods that join the rim of the wheel to its centre"
+        ],
+        [
+         "**chain**",
+         "The row of metal links that turns the back wheel"
+        ],
+        [
+         "**mudguard**",
+         "The cover above a wheel that keeps off mud"
+        ],
+        [
+         "**carrier**",
+         "The frame at the back for carrying goods or a passenger"
+        ],
+        [
+         "**saddle**",
+         "The seat of a bicycle"
+        ],
+        [
+         "**reflector**",
+         "The red disc that shines when light falls on it"
+        ],
+        [
+         "**bell**",
+         "The part rung to warn people"
+        ],
+        [
+         "**pedal**",
+         "The part pressed with the foot to turn the chain"
+        ],
+        [
+         "**handlebar**",
+         "The bar held with the hands to steer"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "x": "**A note on one word:** the printed syllabus list spells this word \"**peddle**\". The part of a bicycle is correctly spelt **pedal**. *Peddle* is a different word meaning to sell goods from place to place."
+      }
+     ]
+    },
+    {
+     "title": "2. GRAMMAR: MUST AND MUSTN'T",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Must** = it is necessary; it is a rule. **Mustn't** (must not) = it is forbidden; do not do it."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Must",
+        "Mustn't"
+       ],
+       "rows": [
+        [
+         "You **must** repair your vehicle.",
+         "You **mustn't** drive with flat tyres."
+        ],
+        [
+         "A driver **must** fasten the seat belt.",
+         "You **mustn't** ride a bicycle without brakes."
+        ],
+        [
+         "You **must** check the brakes before a journey.",
+         "Children **mustn't** play near a moving vehicle."
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Form:** *must* and *mustn't* are followed by the verb with **no** *to* and **no** *-s*."
+      },
+      {
+       "t": "ul",
+       "items": [
+        "✗ He must **to** repair the car. → ✓ He **must repair** the car.",
+        "✗ She mustn't **drives** fast. → ✓ She **mustn't drive** fast."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "3. GRAMMAR: HAS AND HAVE, AND THE PRESENT PERFECT TENSE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Has** is used with **he, she, it** and one person or thing. **Have** is used with **I, you, we, they** and more than one."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Sentence"
+       ],
+       "rows": [
+        [
+         "Ogule **has** bought new tyres for his car."
+        ],
+        [
+         "The children **have** broken the windscreen of Mr Kasozi's car."
+        ],
+        [
+         "The mechanic **has** repaired the engine."
+        ],
+        [
+         "We **have** washed the vehicle."
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**The present perfect tense** is formed like this:"
+      },
+      {
+       "t": "pre",
+       "x": "has / have  +  past participle"
+      },
+      {
+       "t": "p",
+       "x": "It is used for something that has **just happened**, or that happened at **some time before now**, where the exact time is not important."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Present simple",
+        "Present perfect"
+       ],
+       "rows": [
+        [
+         "He repairs the car.",
+         "He **has repaired** the car."
+        ],
+        [
+         "They buy new tyres.",
+         "They **have bought** new tyres."
+        ],
+        [
+         "She cleans the windscreen.",
+         "She **has cleaned** the windscreen."
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Useful past participles:** buy → **bought** · break → **broken** · drive → **driven** · take → **taken** · put → **put** · mend → **mended** · fix → **fixed**."
+      }
+     ]
+    },
+    {
+     "title": "4. EQUIPMENT USED IN VEHICLE REPAIR",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Tool",
+        "What it is used for"
+       ],
+       "rows": [
+        [
+         "**tool box**",
+         "A box in which the tools are kept"
+        ],
+        [
+         "**spanner**",
+         "Tightening and loosening nuts and bolts"
+        ],
+        [
+         "**screwdriver**",
+         "Turning screws in and out"
+        ],
+        [
+         "**pliers**",
+         "Holding, bending and cutting wire"
+        ],
+        [
+         "**hammer**",
+         "Knocking nails and straightening metal"
+        ],
+        [
+         "**file**",
+         "Smoothing rough metal"
+        ],
+        [
+         "**car jack**",
+         "Lifting one side of the vehicle so a wheel can be removed"
+        ],
+        [
+         "**saw**",
+         "Cutting wood or metal"
+        ],
+        [
+         "**grease**",
+         "A thick oil that stops parts from rubbing"
+        ],
+        [
+         "**oil**",
+         "A liquid that makes the engine parts run smoothly"
+        ],
+        [
+         "**sandpaper**",
+         "Rubbing a surface smooth before painting"
+        ],
+        [
+         "**tester**",
+         "Checking whether electricity is passing"
+        ],
+        [
+         "**wire**",
+         "A thin metal thread that carries electricity"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "5. GRAMMAR: THE CONDITIONAL \"IF\" AND \"IN ORDER TO\"",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**If** shows that one thing depends on another."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**If** … , … will …",
+         "**If** I want to remove a tyre, I **will** use a car jack."
+        ],
+        [
+         "… will … **if** …",
+         "I **will** buy a spanner tomorrow **if** I go to town."
+        ],
+        [
+         "**If** … , …",
+         "**If** the tyre bursts, the vehicle stops."
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**In order to** shows the **reason** or **purpose** for doing something."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Example"
+       ],
+       "rows": [
+        [
+         "Kirya used a pair of pliers **in order to** cut the wire."
+        ],
+        [
+         "The mechanic lifted the car **in order to** change the wheel."
+        ],
+        [
+         "We service the vehicle **in order to** avoid accidents."
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "*In order to* can usually be shortened to **to**: *He came **to** repair the car.*"
+      }
+     ]
+    },
+    {
+     "title": "6. WHY VEHICLES ARE MAINTAINED",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A short text to read aloud:"
+      },
+      {
+       "t": "note",
+       "x": "A vehicle in a dangerous mechanical condition can kill. Brakes that do not hold, bald tyres and broken lights cause many accidents on our roads. A good driver checks the engine oil, the water, the tyres and the brakes before every long journey. He must also take the vehicle for servicing. He mustn't wait until something breaks."
+      },
+      {
+       "t": "p",
+       "x": "**Questions on the text:** What can a vehicle in a dangerous condition do? Name three things a good driver checks. What mustn't the driver wait for?"
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Maintenance",
+         "Looking after something so that it stays in good order"
+        ],
+        [
+         "Service",
+         "To check and repair a vehicle regularly"
+        ],
+        [
+         "Mechanic",
+         "A person whose work is repairing machines and vehicles"
+        ],
+        [
+         "Garage",
+         "A place where vehicles are kept or repaired"
+        ],
+        [
+         "Puncture",
+         "A small hole that lets air out of a tyre"
+        ],
+        [
+         "Spare",
+         "An extra part kept in case one is needed"
+        ],
+        [
+         "Present perfect tense",
+         "The tense formed with *has* or *have* and a past participle"
+        ],
+        [
+         "Conditional",
+         "A sentence that uses *if* to show one thing depends on another"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**Must** = it is necessary. **Mustn't** = it is forbidden.",
+        "After *must* and *mustn't*, the verb never takes **to** and never takes **-s**.",
+        "**Has** goes with he, she, it. **Have** goes with I, you, we, they.",
+        "The present perfect = **has / have + past participle**.",
+        "*Buy* becomes **bought** and *break* becomes **broken** in the present perfect.",
+        "**In order to** answers the question *why?*",
+        "The bicycle part is spelt **pedal**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "You **mustn't** drive with flat tyres.",
+        "Ogule **has** bought new tyres for his car.",
+        "The children **have** broken the windscreen.",
+        "**If** I want to remove a tyre, I will use a car jack.",
+        "Kirya used a pair of pliers **in order to** cut the wire.",
+        "A **car jack** lifts the vehicle; a **spanner** loosens nuts.",
+        "The seat of a bicycle is the **saddle**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Writing \"He must to repair the car\" — leave out *to*.",
+        "Writing \"She has broke the mirror\" — the participle is **broken**.",
+        "Using *have* with *he* or *she*.",
+        "Confusing the **windscreen** (the glass) with the **wiper** (the arm that cleans it).",
+        "Spelling the bicycle part as *peddle*.",
+        "Using *must* when you mean *mustn't* in a warning."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "What is the part of a car that the driver turns to guide it?",
+        "What is a wiper used for?",
+        "Name the part of a bicycle on which the rider sits.",
+        "What do we call the thin rods that join the rim of a bicycle wheel to its centre?",
+        "Which tool is used to loosen and tighten nuts?",
+        "Which tool is used to lift a vehicle when changing a wheel?",
+        "What is sandpaper used for?",
+        "Complete: You ________ drive with flat tyres. (must / mustn't)",
+        "Complete: Every passenger ________ fasten the seat belt. (must / mustn't)",
+        "Complete: Ogule ________ bought new tyres for his car. (has / have)",
+        "Complete: The children ________ broken the windscreen. (has / have)",
+        "Change to the present perfect: The mechanic repairs the engine.",
+        "Join with *if*: I want to remove a tyre. I will use a car jack.",
+        "Join with *in order to*: Kirya used a pair of pliers. He cut the wire.",
+        "Give the past participle of *drive*.",
+        "Give the opposite of *must*.",
+        "What is a puncture?",
+        "Why should a driver service a vehicle?",
+        "Use *mustn't* in a sentence about riding a bicycle.",
+        "Write one sentence using the word *reflector*."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "The **steering** (steering wheel)",
+        "For **wiping rain and dirt off the windscreen**",
+        "The **saddle**",
+        "**Spokes**",
+        "A **spanner**",
+        "A **car jack**",
+        "For **rubbing a surface smooth**, usually before painting",
+        "**mustn't**",
+        "**must**",
+        "**has**",
+        "**have**",
+        "The mechanic **has repaired** the engine.",
+        "**If** I want to remove a tyre, I will use a car jack.",
+        "Kirya used a pair of pliers **in order to** cut the wire.",
+        "**Driven**",
+        "**Mustn't** (must not)",
+        "**A small hole in a tyre that lets the air out**",
+        "So that it stays in good condition and **does not cause an accident** or break down.",
+        "Any correct sentence, for example: **You mustn't ride a bicycle without brakes.**",
+        "Any correct sentence, for example: **A bicycle must have a reflector so that drivers can see it at night.**"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.5 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Car: engine · tyre · steering · windscreen · wiper · boot · indicator · brakes",
+        "Bicycle: spokes · chain · mudguard · carrier · saddle · reflector · bell · pedal · handlebar",
+        "Tools: spanner · screwdriver · pliers · hammer · file · car jack · sandpaper · tester",
+        "**must** = necessary · **mustn't** = forbidden · no *to*, no *-s*",
+        "**has / have + past participle** = present perfect",
+        "**if** = condition · **in order to** = purpose"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, the period allocation (23 periods), the two sub-topics, the **vocabulary lists**, the grammar items (present perfect tense; *has* and *have*; *must* and *mustn't*; conditionals with *if*; *in order to*), the sample structures and the suggested activities were taken from the official **NCDC Primary Five Curriculum, Set One** (© NCDC 2010; pages 15–17 of the PDF in `curriculum/`). The meanings, tables, reading text, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook. Where the printed list spells the bicycle part \"peddle\", the correct spelling **pedal** is given and the difference is explained."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.5 was available, so the syllabus's own competences and suggested activities were used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P5_ENG_T02",
+   "class": "P5",
+   "subject": "ENG",
+   "topic_no": 2,
+   "title": "Print Media",
+   "heading": "TOPIC 2: PRINT MEDIA",
+   "slug": "print-media",
+   "periods": 16,
+   "curriculum_pages": "18–19",
+   "words": 1664,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Five Curriculum, Set One, English Topic 2, 16 periods (`curriculum/P5-SET-ONE-2010.pdf`, pages 18–19).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You have seen newspapers and magazines. In P.5 you learn the **words used in the print media** and you practise the **articles a, an and the**, the **relative pronouns** and the **past simple and future tenses**."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "name the different kinds of print media and their parts",
+        "name the people who work in the print media and say what each does",
+        "use *a*, *an* and *the* correctly",
+        "use the relative pronouns *who, which, that, whose*",
+        "use the past simple and the future tense",
+        "write a short article, an advertisement or an announcement"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. WHAT PRINT MEDIA MEANS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Print media** are the things that carry news and information in **printed form** — newspapers, magazines, newsletters, brochures and pamphlets. They are read, not listened to."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Kind",
+        "What it is"
+       ],
+       "rows": [
+        [
+         "**Newspaper**",
+         "Printed sheets carrying the news of the day or week"
+        ],
+        [
+         "**Magazine**",
+         "A booklet printed weekly or monthly with stories and pictures"
+        ],
+        [
+         "**Newsletter**",
+         "A short printed letter of news from a school, church or office"
+        ],
+        [
+         "**Brochure**",
+         "A small printed book that advertises a place or a service"
+        ],
+        [
+         "**Pullout**",
+         "A section that can be pulled out of a newspaper and kept"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "2. VOCABULARY FROM THE SYLLABUS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**news**",
+         "Reports of things that have just happened"
+        ],
+        [
+         "**story**",
+         "An account of an event, written for readers"
+        ],
+        [
+         "**article**",
+         "A piece of writing on one subject in a newspaper or magazine"
+        ],
+        [
+         "**editorial**",
+         "The article that gives the opinion of the newspaper itself"
+        ],
+        [
+         "**column**",
+         "A regular piece written by the same person; also a narrow strip of print down a page"
+        ],
+        [
+         "**front page**",
+         "The first page, carrying the biggest news"
+        ],
+        [
+         "**back page**",
+         "The last page, which often carries sport"
+        ],
+        [
+         "**advertisement**",
+         "A notice that tells people about something for sale"
+        ],
+        [
+         "**announcement**",
+         "A public notice telling people about an event"
+        ],
+        [
+         "**cartoon**",
+         "A funny drawing, often about the news"
+        ],
+        [
+         "**crossword**",
+         "A word puzzle in squares"
+        ],
+        [
+         "**puzzle**",
+         "A game that makes you think"
+        ],
+        [
+         "**media**",
+         "All the ways news reaches people"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "The people who work in the print media"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Person",
+        "Work"
+       ],
+       "rows": [
+        [
+         "**Reporter**",
+         "Goes out, finds the facts and writes the news"
+        ],
+        [
+         "**Journalist**",
+         "Anyone whose work is collecting and writing news"
+        ],
+        [
+         "**Editor**",
+         "Corrects the work and decides what will be printed"
+        ],
+        [
+         "**Columnist**",
+         "Writes a regular column, often giving opinions"
+        ],
+        [
+         "**Photographer**",
+         "Takes the pictures that go with the stories"
+        ],
+        [
+         "**Vendor**",
+         "Sells the newspapers in the street"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "x": "**Reporter or journalist?** Every reporter is a journalist, but a journalist may also be an editor, a columnist or a photographer."
+      }
+     ]
+    },
+    {
+     "title": "3. GRAMMAR: THE ARTICLES A, AN AND THE",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Article",
+        "When it is used",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**a**",
+         "Before a word beginning with a **consonant sound**",
+         "Mpungu is **a** good columnist."
+        ],
+        [
+         "**an**",
+         "Before a word beginning with a **vowel sound** (a, e, i, o, u)",
+         "The journalist wrote **an** interesting story."
+        ],
+        [
+         "**the**",
+         "For something already known or only one of its kind",
+         "**The** article was on **the** front page."
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Careful cases**"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Correct",
+        "Why"
+       ],
+       "rows": [
+        [
+         "**an** hour",
+         "*hour* begins with a vowel **sound** — the h is silent"
+        ],
+        [
+         "**a** university",
+         "*university* begins with the sound \"yu\""
+        ],
+        [
+         "**an** editor",
+         "begins with a vowel sound"
+        ],
+        [
+         "**a** newspaper",
+         "begins with a consonant sound"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "4. GRAMMAR: RELATIVE PRONOUNS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A **relative pronoun** joins two sentences and tells us more about a person or thing."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Pronoun",
+        "Used for",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**who**",
+         "People",
+         "The reporter **who** wrote the story is my uncle."
+        ],
+        [
+         "**which**",
+         "Things",
+         "The article **which** appeared in the newspaper last week was sad."
+        ],
+        [
+         "**that**",
+         "People or things",
+         "The magazine **that** I bought has good pictures."
+        ],
+        [
+         "**whose**",
+         "Belonging to",
+         "The editor **whose** office is upstairs called us."
+        ],
+        [
+         "**whom**",
+         "People, as the object",
+         "The columnist **whom** we met is famous."
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Joining two sentences**"
+      },
+      {
+       "t": "pre",
+       "x": "The story was sad. It appeared in the newspaper.\n→ The story which appeared in the newspaper was sad.\n\nI met a journalist. She works for a daily paper.\n→ I met a journalist who works for a daily paper."
+      }
+     ]
+    },
+    {
+     "title": "5. GRAMMAR: TENSES",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Tense",
+        "Use",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**Present simple**",
+         "Something that happens regularly",
+         "The vendor **sells** newspapers every morning."
+        ],
+        [
+         "**Past simple**",
+         "Something finished in the past",
+         "The advertisement **appeared** yesterday."
+        ],
+        [
+         "**Future (will)**",
+         "Something still to happen",
+         "The advertisement on games and sports **will be** in the newspapers next week."
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Past simple of some useful verbs:** write → **wrote** · read → **read** · buy → **bought** · say → **said** · print → **printed** · appear → **appeared** · sell → **sold**."
+      }
+     ]
+    },
+    {
+     "title": "6. WRITING FOR THE PRINT MEDIA",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "An announcement"
+      },
+      {
+       "t": "pre",
+       "x": "ANNOUNCEMENT\n\nAll pupils of Primary Five are informed that the debate that was to take place\non Friday has been moved to Monday, 3rd March, at 2:00 p.m. in the school hall.\n\nSigned: The Head Prefect"
+      },
+      {
+       "t": "p",
+       "x": "An announcement gives **what, when, where, who** — and nothing more."
+      },
+      {
+       "t": "h3",
+       "x": "An advertisement"
+      },
+      {
+       "t": "pre",
+       "x": "FOR SALE\n\nA strong bicycle in good condition. New tyres and brakes.\nPrice: 180,000 shillings. Call at Plot 4, Market Road, Mbale."
+      },
+      {
+       "t": "p",
+       "x": "An advertisement is **short**, uses **attractive words** and gives a way to reach the seller."
+      },
+      {
+       "t": "h3",
+       "x": "An article"
+      },
+      {
+       "t": "p",
+       "x": "An article has a **heading**, an **introduction**, a **body** with the facts, and a **conclusion**. It should answer **who, what, where, when, why and how**."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Print media",
+         "News and information that reaches people in printed form"
+        ],
+        [
+         "Article",
+         "A piece of writing on one subject"
+        ],
+        [
+         "Editorial",
+         "The article that gives the newspaper's own opinion"
+        ],
+        [
+         "Reporter",
+         "A person who finds the facts and writes the news"
+        ],
+        [
+         "Editor",
+         "The person who corrects and decides what is printed"
+        ],
+        [
+         "Columnist",
+         "A person who writes a regular column"
+        ],
+        [
+         "Advertisement",
+         "A notice about something for sale"
+        ],
+        [
+         "Announcement",
+         "A public notice about an event"
+        ],
+        [
+         "Relative pronoun",
+         "A word such as *who* or *which* that joins two sentences"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**Print** media are read; radio and television are **not** print media.",
+        "**a** before a consonant sound, **an** before a vowel sound.",
+        "It is **an hour** but **a university** — go by the **sound**, not the letter.",
+        "**who** for people, **which** for things, **that** for either.",
+        "The **editorial** carries the newspaper's opinion; a **column** carries one writer's opinion.",
+        "The **front page** carries the biggest news; the **back page** often carries sport.",
+        "*Will* is used for the future."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "The article **which** appeared in the newspaper last week was sad.",
+        "The journalist wrote **an** interesting story about elections.",
+        "Mpungu is **a** good columnist.",
+        "The advertisement on games and sports **will be** in the newspapers next week.",
+        "A person who sells newspapers in the street is a **vendor**.",
+        "The past simple of *write* is **wrote**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Writing *a article* instead of **an article**.",
+        "Writing *a hour* instead of **an hour**.",
+        "Using **which** for people or **who** for things.",
+        "Mixing tenses in one sentence: *Yesterday he writes an article.*",
+        "Calling the radio a print medium.",
+        "Writing an advertisement that leaves out the price or the address."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "What is meant by print media?",
+        "Name any three examples of print media.",
+        "Who is a reporter?",
+        "Who is an editor?",
+        "What is an editorial?",
+        "What do we call a funny drawing in a newspaper?",
+        "On which page of a newspaper is the biggest news usually found?",
+        "Fill in *a* or *an*: Mpungu is ____ good columnist.",
+        "Fill in *a* or *an*: The journalist wrote ____ interesting story.",
+        "Fill in *a* or *an*: We waited for ____ hour.",
+        "Join with *which*: The story was sad. It appeared in the newspaper.",
+        "Join with *who*: I met a journalist. She works for a daily paper.",
+        "Give the past simple of *write*.",
+        "Give the past simple of *sell*.",
+        "Change to the future: The advertisement appears in the newspaper.",
+        "What is a crossword?",
+        "What do we call a small printed book that advertises a place or service?",
+        "Write a short announcement telling pupils that the debate has been moved to Monday.",
+        "Name two things an advertisement for a bicycle should include.",
+        "What is the difference between a reporter and a vendor?"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "**News and information that reaches people in printed form**, such as newspapers and magazines.",
+        "Any three of **newspaper, magazine, newsletter, brochure, pullout, pamphlet**",
+        "A person who **goes out, finds the facts and writes the news**",
+        "The person who **corrects the work and decides what will be printed**",
+        "**The article that gives the opinion of the newspaper itself**",
+        "A **cartoon**",
+        "The **front page**",
+        "**a**",
+        "**an**",
+        "**an**",
+        "The story **which** appeared in the newspaper was sad.",
+        "I met a journalist **who** works for a daily paper.",
+        "**Wrote**",
+        "**Sold**",
+        "The advertisement **will appear** in the newspaper.",
+        "**A word puzzle written in squares**",
+        "A **brochure**",
+        "Any clear announcement, for example: **All P.5 pupils are informed that the debate has been moved to Monday, 3rd March, at 2:00 p.m. in the school hall.**",
+        "Any two of **the price, a description of the bicycle, where to find the seller, a telephone number**",
+        "A **reporter writes** the news; a **vendor sells** the newspapers."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.5 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Print media = newspaper · magazine · newsletter · brochure · pullout",
+        "People: reporter · journalist · editor · columnist · photographer · vendor",
+        "**a** + consonant sound · **an** + vowel sound · *an hour*, *a university*",
+        "**who** = people · **which** = things · **that** = either",
+        "Past: wrote · sold · said · read · Future: **will**",
+        "Announcement = what, when, where, who"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, the period allocation (16 periods), the **vocabulary list**, the grammar items (articles *a*, *an*, *the*; relative pronouns; past simple and future tenses), the sample structures and the suggested activities were taken from the official **NCDC Primary Five Curriculum, Set One** (© NCDC 2010; pages 18–19 of the PDF in `curriculum/`). The meanings, tables, sample announcement and advertisement, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.5 was available, so the syllabus's own competences and suggested activities were used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P5_ENG_T03",
+   "class": "P5",
+   "subject": "ENG",
+   "topic_no": 3,
+   "title": "Travelling",
+   "heading": "TOPIC 3: TRAVELLING",
+   "slug": "travelling",
+   "periods": 15,
+   "curriculum_pages": "20–21",
+   "words": 1507,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Five Curriculum, Set One, English Topic 3, 15 periods (`curriculum/P5-SET-ONE-2010.pdf`, pages 20–21).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** In P.4 you learnt to **give directions**. In P.5 you build on that with the language of **travelling** — fares, tickets, departure and destination — and you use **adverbs**, the **past continuous tense** and the **past simple tense**."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "name the different means of travel and describe them",
+        "use the vocabulary of travelling correctly",
+        "use adverbs of manner, place, time and frequency",
+        "use the past continuous with *while*",
+        "use the past simple tense",
+        "read a travel timetable and write a composition about a journey"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. VOCABULARY FROM THE SYLLABUS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**travel**",
+         "To go from one place to another"
+        ],
+        [
+         "**passenger**",
+         "A person being carried in a vehicle"
+        ],
+        [
+         "**conductor**",
+         "The person who collects the fare in a taxi or bus"
+        ],
+        [
+         "**fare**",
+         "The money paid for a journey"
+        ],
+        [
+         "**ticket**",
+         "The printed paper showing that the fare has been paid"
+        ],
+        [
+         "**seat**",
+         "The place where a passenger sits"
+        ],
+        [
+         "**luggage**",
+         "The bags and things a traveller carries"
+        ],
+        [
+         "**departure**",
+         "The time or act of leaving"
+        ],
+        [
+         "**destination**",
+         "The place a traveller is going to"
+        ],
+        [
+         "**arrive**",
+         "To reach a place"
+        ],
+        [
+         "**reach**",
+         "To get to a place"
+        ],
+        [
+         "**leave**",
+         "To go away from a place"
+        ],
+        [
+         "**speed**",
+         "How fast a vehicle is moving"
+        ],
+        [
+         "**fast**",
+         "Moving quickly"
+        ],
+        [
+         "**reduce**",
+         "To make less, for example to reduce speed"
+        ],
+        [
+         "**further**",
+         "A longer distance away"
+        ],
+        [
+         "**about**",
+         "Nearly; approximately"
+        ],
+        [
+         "**cycle**",
+         "To ride a bicycle"
+        ],
+        [
+         "**taxi**",
+         "A small public vehicle that carries passengers"
+        ],
+        [
+         "**coach**",
+         "A big comfortable bus for long journeys"
+        ],
+        [
+         "**by**",
+         "Used to show the means: *by bus, by air*"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "2. MEANS OF TRAVEL",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "By land",
+        "By water",
+        "By air"
+       ],
+       "rows": [
+        [
+         "bus · coach · taxi · car · lorry · bicycle · motorcycle · train",
+         "boat · canoe · ferry · ship",
+         "aeroplane · helicopter"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**We say:** travel **by** bus, **by** train, **by** boat, **by** air — but **on foot**."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Correct",
+        "Wrong"
+       ],
+       "rows": [
+        [
+         "I travelled **by bus**.",
+         "I travelled with bus."
+        ],
+        [
+         "We went **on foot**.",
+         "We went by foot."
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "3. GRAMMAR: ADVERBS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "An **adverb** tells us more about a verb — **how**, **where**, **when** or **how often** something happens."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Kind of adverb",
+        "Question it answers",
+        "Examples"
+       ],
+       "rows": [
+        [
+         "**Manner**",
+         "How?",
+         "quickly, slowly, carefully, fast, well"
+        ],
+        [
+         "**Place**",
+         "Where?",
+         "here, there, outside, further"
+        ],
+        [
+         "**Time**",
+         "When?",
+         "yesterday, today, early, late, soon"
+        ],
+        [
+         "**Frequency**",
+         "How often?",
+         "always, often, sometimes, never, rarely"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Making adverbs of manner:** add **-ly** to the adjective."
+      },
+      {
+       "t": "pre",
+       "x": "quick → quickly      careful → carefully      slow → slowly\nhappy → happily      easy → easily"
+      },
+      {
+       "t": "p",
+       "x": "Some do not change: **fast → fast**, **hard → hard**, **early → early**. **Good** becomes **well**."
+      },
+      {
+       "t": "p",
+       "x": "**Where the adverb of frequency goes:** before the main verb."
+      },
+      {
+       "t": "pre",
+       "x": "I often travel by bus to town.\nShe always arrives early.\nThey never travel at night."
+      }
+     ]
+    },
+    {
+     "title": "4. GRAMMAR: THE PAST CONTINUOUS WITH \"WHILE\"",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The **past continuous** shows an action that was **going on** in the past. It is formed with:"
+      },
+      {
+       "t": "pre",
+       "x": "was / were  +  verb + ing"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Sentence"
+       ],
+       "rows": [
+        [
+         "The taxi **was moving**."
+        ],
+        [
+         "The passengers **were waiting** at the stage."
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**While** joins a longer action to a shorter one. The longer action takes the **past continuous**; the shorter one takes the **past simple**."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "… **while** …",
+         "The conductor collected the fare **while** the taxi was moving."
+        ],
+        [
+         "**While** … , …",
+         "**While** we were travelling, one of the children started crying."
+        ],
+        [
+         "… **while** …",
+         "It began to rain **while** we were waiting for the bus."
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Was or were?** *was* with I, he, she, it · *were* with you, we, they."
+      }
+     ]
+    },
+    {
+     "title": "5. GRAMMAR: THE PAST SIMPLE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The past simple shows an action **finished** in the past."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Present",
+        "Past"
+       ],
+       "rows": [
+        [
+         "travel",
+         "**travelled**"
+        ],
+        [
+         "arrive",
+         "**arrived**"
+        ],
+        [
+         "reach",
+         "**reached**"
+        ],
+        [
+         "leave",
+         "**left**"
+        ],
+        [
+         "go",
+         "**went**"
+        ],
+        [
+         "pay",
+         "**paid**"
+        ],
+        [
+         "take",
+         "**took**"
+        ],
+        [
+         "begin",
+         "**began**"
+        ],
+        [
+         "ride",
+         "**rode**"
+        ],
+        [
+         "buy",
+         "**bought**"
+        ]
+       ]
+      },
+      {
+       "t": "pre",
+       "x": "We left home at six o'clock and reached Mbarara at noon.\nShe paid the fare and took her seat."
+      }
+     ]
+    },
+    {
+     "title": "6. READING A TRAVEL TIMETABLE",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Bus",
+        "Leaves Kampala",
+        "Arrives Gulu",
+        "Fare"
+       ],
+       "rows": [
+        [
+         "Morning coach",
+         "7:00 a.m.",
+         "1:00 p.m.",
+         "40,000 shillings"
+        ],
+        [
+         "Midday coach",
+         "12:00 noon",
+         "6:00 p.m.",
+         "40,000 shillings"
+        ],
+        [
+         "Night coach",
+         "9:00 p.m.",
+         "3:00 a.m.",
+         "35,000 shillings"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Questions:** Which coach is cheapest? How long does the journey take? If you must be in Gulu by 2:00 p.m., which coach do you take?"
+      },
+      {
+       "t": "p",
+       "x": "**Answers:** the night coach · six hours · the morning coach."
+      }
+     ]
+    },
+    {
+     "title": "7. SAFETY AND GOOD MANNERS WHEN TRAVELLING",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Keep your **ticket** and your **change** safely.",
+        "Do not hang out of the window of a moving vehicle.",
+        "Ask the driver to **reduce speed** if he is driving dangerously.",
+        "Give your seat to an elderly person or to a mother with a baby.",
+        "Keep **time** — a coach will not wait.",
+        "Do not accept food or drink from a stranger on a journey."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Journey",
+         "The act of travelling from one place to another"
+        ],
+        [
+         "Fare",
+         "The money paid for a journey"
+        ],
+        [
+         "Conductor",
+         "The person who collects the fare"
+        ],
+        [
+         "Destination",
+         "The place a traveller is going to"
+        ],
+        [
+         "Departure",
+         "The act or time of leaving"
+        ],
+        [
+         "Luggage",
+         "The bags a traveller carries"
+        ],
+        [
+         "Adverb",
+         "A word that tells more about a verb"
+        ],
+        [
+         "Past continuous",
+         "The tense formed with *was* or *were* and a verb ending in *-ing*"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "We travel **by** bus, **by** train, **by** air — but **on foot**.",
+        "Most adverbs of manner are made by adding **-ly**.",
+        "*Good* becomes **well**; *fast* and *hard* do not change.",
+        "Adverbs of frequency go **before the main verb**: *I often travel by bus.*",
+        "Past continuous = **was / were + verb-ing**.",
+        "With **while**, the longer action takes the past continuous.",
+        "*Leave* becomes **left** and *pay* becomes **paid** in the past."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "The conductor collected the fare **while** the taxi **was moving**.",
+        "**While** we **were travelling**, one of the children **started** crying.",
+        "I **often** travel by bus to town.",
+        "The money paid for a journey is the **fare**.",
+        "The place you are going to is your **destination**.",
+        "The past simple of *leave* is **left**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Writing \"by foot\" instead of **on foot**.",
+        "Writing \"He drives good\" instead of **He drives well**.",
+        "Using the past simple in both halves of a *while* sentence.",
+        "Mixing up *was* and *were*.",
+        "Confusing **fare** (money) with **fair** (just, or a market).",
+        "Confusing **departure** (leaving) with **destination** (arriving)."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "What is a fare?",
+        "Who collects the fare in a taxi?",
+        "What is a destination?",
+        "What is luggage?",
+        "Fill in the correct word: We travelled ____ bus to Jinja.",
+        "Correct this sentence: We went to school by foot.",
+        "Form an adverb from *careful*.",
+        "Form an adverb from *good*.",
+        "Complete: The conductor collected the fare while the taxi ________ (move).",
+        "Complete: While we ________ (travel), one of the children started crying.",
+        "Put *often* in the right place: I travel by bus to town.",
+        "Give the past simple of *leave*.",
+        "Give the past simple of *pay*.",
+        "Change to the past simple: She takes her seat and pays the fare.",
+        "Name any two means of travelling by water.",
+        "What does it mean to *reduce speed*?",
+        "From the timetable in this topic, which coach is the cheapest?",
+        "From the timetable, how long does the journey to Gulu take?",
+        "Give one rule of good manners when travelling in a bus.",
+        "Use the word *departure* in a sentence."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "**The money paid for a journey**",
+        "The **conductor**",
+        "**The place a traveller is going to**",
+        "**The bags and things a traveller carries**",
+        "**by**",
+        "We went to school **on foot**.",
+        "**Carefully**",
+        "**Well**",
+        "**was moving**",
+        "**were travelling**",
+        "I **often** travel by bus to town.",
+        "**Left**",
+        "**Paid**",
+        "She **took** her seat and **paid** the fare.",
+        "Any two of **boat, canoe, ferry, ship**",
+        "**To go more slowly**",
+        "The **night coach** (35,000 shillings)",
+        "**Six hours**",
+        "Any correct rule, for example: **Give your seat to an elderly person**, or **do not hang out of the window**.",
+        "Any correct sentence, for example: **The departure of the coach was delayed by one hour.**"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.5 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "fare · ticket · conductor · passenger · luggage · departure · destination",
+        "**by** bus, **by** air — but **on foot**",
+        "Adverbs: manner (-ly) · place · time · frequency",
+        "**was / were + -ing** = past continuous",
+        "*While* + past continuous, then past simple",
+        "left · paid · took · went · began · rode"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, the period allocation (15 periods), the **vocabulary list**, the grammar items (adverbs, past continuous tense, past simple tense), the sample structures with *while* and *often*, and the suggested activities were taken from the official **NCDC Primary Five Curriculum, Set One** (© NCDC 2010; pages 20–21 of the PDF in `curriculum/`), including its note that this topic builds on the P.4 topic \"Giving Direction\". The meanings, tables, sample timetable, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook. The fares in the sample timetable are made up for practice and are **not** real fares."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.5 was available, so the syllabus's own competences and suggested activities were used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P5_ENG_T04",
+   "class": "P5",
+   "subject": "ENG",
+   "topic_no": 4,
+   "title": "Letter Writing",
+   "heading": "TOPIC 4: LETTER WRITING",
+   "slug": "letter-writing",
+   "periods": 10,
+   "curriculum_pages": "22–23",
+   "words": 1647,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Five Curriculum, Set One, English Topic 4, 10 periods (`curriculum/P5-SET-ONE-2010.pdf`, pages 22–23).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You can write short messages and notes. In P.5 you learn to write **personal (friendly) letters** — invitations, seasonal greetings and news — and you use **interjections**, **punctuation**, **personal pronouns** and the structures **would** and **could**."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "name the parts of a personal letter",
+        "write a personal letter with the parts in the right order",
+        "punctuate a letter correctly",
+        "use personal pronouns correctly",
+        "use *would* and *could* in statements and in questions",
+        "write an invitation and a reply"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. VOCABULARY FROM THE SYLLABUS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**letter**",
+         "A written message sent to a person"
+        ],
+        [
+         "**envelope**",
+         "The paper cover in which a letter is put"
+        ],
+        [
+         "**address**",
+         "The details showing where a person lives or where a letter is sent"
+        ],
+        [
+         "**sender**",
+         "The person who writes and sends the letter"
+        ],
+        [
+         "**receiver**",
+         "The person the letter is sent to"
+        ],
+        [
+         "**reply**",
+         "An answer to a letter"
+        ],
+        [
+         "**invite**",
+         "To ask someone to come"
+        ],
+        [
+         "**occasion**",
+         "A special event"
+        ],
+        [
+         "**party**",
+         "A gathering to enjoy and celebrate"
+        ],
+        [
+         "**ceremony**",
+         "A formal event such as a wedding or a graduation"
+        ],
+        [
+         "**guest**",
+         "A person who has been invited"
+        ],
+        [
+         "**host**",
+         "The man who invites and receives the guests"
+        ],
+        [
+         "**hostess**",
+         "The woman who invites and receives the guests"
+        ],
+        [
+         "**card**",
+         "A stiff piece of paper carrying a greeting or an invitation"
+        ],
+        [
+         "**affectionate**",
+         "Showing love — used in the ending *Yours affectionately*"
+        ],
+        [
+         "**sincerely**",
+         "Honestly — used in the ending *Yours sincerely*"
+        ],
+        [
+         "**dear**",
+         "The word that begins the greeting of a letter"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "2. THE PARTS OF A PERSONAL LETTER",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Part",
+        "Where it goes",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**The sender's address**",
+         "Top **right** corner",
+         "P.O. Box 24, Mukono"
+        ],
+        [
+         "**The date**",
+         "Under the address",
+         "3rd March, 2026"
+        ],
+        [
+         "**The salutation (greeting)**",
+         "On the left, under the date",
+         "Dear Aunt Grace,"
+        ],
+        [
+         "**The introduction**",
+         "First paragraph",
+         "How are you? I hope you are well."
+        ],
+        [
+         "**The body**",
+         "The middle paragraphs",
+         "The news or the message"
+        ],
+        [
+         "**The conclusion**",
+         "Last paragraph",
+         "Greet everybody at home for me."
+        ],
+        [
+         "**The subscription (ending)**",
+         "Below the body, on the left or right",
+         "Yours affectionately,"
+        ],
+        [
+         "**The signature (name)**",
+         "Below the ending",
+         "Sarah"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "A sample personal letter"
+      },
+      {
+       "t": "pre",
+       "x": "                                              P.O. Box 24,\n                                              Mukono.\n                                              3rd March, 2026\n\nDear Aunt Grace,\n\nHow are you? I hope you and the family are well. We are all fine here at\nschool.\n\nI am writing to invite you to our Parents' Day, which will take place on\nSaturday, 21st March, at 10:00 a.m. I will be reciting a poem and my class\nwill present a play. It would make me very happy if you came.\n\nCould you please come with my cousin Peter? Greet everybody at home for me.\n\n                                              Yours affectionately,\n                                              Sarah"
+      },
+      {
+       "t": "h3",
+       "x": "The envelope"
+      },
+      {
+       "t": "pre",
+       "x": "                     Aunt Grace Nakato\n                     P.O. Box 105\n                     Iganga"
+      },
+      {
+       "t": "p",
+       "x": "The **receiver's** address goes on the front of the envelope. The **sender's** address may be written on the back."
+      }
+     ]
+    },
+    {
+     "title": "3. PUNCTUATION IN A LETTER",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Mark",
+        "Where it is used"
+       ],
+       "rows": [
+        [
+         "**Capital letter**",
+         "Names, places, months, the first word of a sentence"
+        ],
+        [
+         "**Comma (,)**",
+         "After the greeting — *Dear Aunt Grace,* — and after the ending — *Yours affectionately,*"
+        ],
+        [
+         "**Full stop (.)**",
+         "At the end of a statement"
+        ],
+        [
+         "**Question mark (?)**",
+         "At the end of a question — *How are you?*"
+        ],
+        [
+         "**Exclamation mark (!)**",
+         "After an interjection — *Hurrah!*"
+        ],
+        [
+         "**Apostrophe (')**",
+         "To show belonging — *Parents' Day* — or a short form — *I'm*"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "4. GRAMMAR: INTERJECTIONS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "An **interjection** is a word that shows sudden feeling. It is usually followed by an **exclamation mark**."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Interjection",
+        "Feeling shown",
+        "Example"
+       ],
+       "rows": [
+        [
+         "Hullo!",
+         "Greeting",
+         "**Hullo,** my friend."
+        ],
+        [
+         "Hurrah!",
+         "Joy",
+         "**Hurrah!** We have won."
+        ],
+        [
+         "Oh!",
+         "Surprise",
+         "**Oh!** What a big cake."
+        ],
+        [
+         "Alas!",
+         "Sorrow",
+         "**Alas!** He did not come."
+        ],
+        [
+         "Well done!",
+         "Praise",
+         "**Well done!** You passed."
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "5. GRAMMAR: PERSONAL PRONOUNS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A **personal pronoun** stands in place of the name of a person or thing."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Doing the action (subject)",
+        "Receiving the action (object)",
+        "Showing belonging"
+       ],
+       "rows": [
+        [
+         "I",
+         "me",
+         "my, mine"
+        ],
+        [
+         "you",
+         "you",
+         "your, yours"
+        ],
+        [
+         "he",
+         "him",
+         "his"
+        ],
+        [
+         "she",
+         "her",
+         "her, hers"
+        ],
+        [
+         "it",
+         "it",
+         "its"
+        ],
+        [
+         "we",
+         "us",
+         "our, ours"
+        ],
+        [
+         "they",
+         "them",
+         "their, theirs"
+        ]
+       ]
+      },
+      {
+       "t": "pre",
+       "x": "Maria wrote the letter.       →  She wrote it.\nI invited Peter and Sarah.    →  I invited them.\nThe letter belongs to me.     →  It is mine."
+      }
+     ]
+    },
+    {
+     "title": "6. GRAMMAR: WOULD AND COULD",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Would** is used for something that depends on a condition, and for polite requests. **Could** is used for ability in the past, for possibility, and for polite requests."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "… **would** …",
+         "He **would** come to our party if we invited him."
+        ],
+        [
+         "**Would** …?",
+         "**Would** you write a letter to your mother if she was sick?"
+        ],
+        [
+         "… **could** …",
+         "Maria **could** write a letter inviting Maggy to a birthday party."
+        ],
+        [
+         "**Could** …?",
+         "**Could** he reply to that letter immediately?"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Polite requests** use *would* and *could*, not the plain verb:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "**Could** you please come early?",
+        "**Would** you like some tea?"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "7. WRITING AN INVITATION CARD",
+     "blocks": [
+      {
+       "t": "pre",
+       "x": "                  YOU ARE INVITED\n\n              To the birthday party of\n                   MAGGY NAMULI\n\n    Date:  Saturday, 14th June, 2026\n    Time:  2:00 p.m.\n    Place: Plot 7, Church Road, Mukono\n\n           R.S.V.P.  Tel. 0700 000 000"
+      },
+      {
+       "t": "p",
+       "x": "An invitation gives the **occasion, the date, the time and the place**, and asks for a reply."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Personal letter",
+         "A friendly letter to a person you know"
+        ],
+        [
+         "Salutation",
+         "The greeting at the start of a letter"
+        ],
+        [
+         "Subscription",
+         "The ending, such as *Yours affectionately*"
+        ],
+        [
+         "Sender",
+         "The person writing the letter"
+        ],
+        [
+         "Receiver",
+         "The person the letter is written to"
+        ],
+        [
+         "Invitation",
+         "A written or spoken request to come to an occasion"
+        ],
+        [
+         "Interjection",
+         "A word showing sudden feeling"
+        ],
+        [
+         "Personal pronoun",
+         "A word used in place of the name of a person or thing"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "The **sender's address** goes at the **top right**, with the **date** under it.",
+        "A **comma** follows the greeting and the ending.",
+        "A personal letter to a relative or close friend ends **Yours affectionately**; to a friend it may end **Yours sincerely** or **Your friend**.",
+        "The **receiver's** address goes on the **envelope**, not at the top of a personal letter.",
+        "An interjection takes an **exclamation mark**.",
+        "Use **would** and **could** to be polite.",
+        "Never begin a personal letter with *Dear Sir* — that is for a formal letter."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**Hullo, my friend.**",
+        "He **would** come to our party if we invited him.",
+        "**Could** he reply to that letter immediately?",
+        "The part of a letter that says *Dear Aunt Grace* is the **salutation**.",
+        "The person who receives a letter is the **receiver**.",
+        "*Yours affectionately* is followed by a **comma**, then the writer's name."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Putting the sender's address on the left of a personal letter.",
+        "Forgetting the comma after the greeting.",
+        "Writing the date as 3/3 without the month and year.",
+        "Signing the letter with a full name and title in a friendly letter.",
+        "Writing *Yours faithfully* in a letter to a relative.",
+        "Using *would* with a second verb ending in *-ed*: ✗ *He would came*. ✓ *He would come*."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Name any four parts of a personal letter.",
+        "Where is the sender's address written in a personal letter?",
+        "What goes immediately under the sender's address?",
+        "What punctuation mark follows the greeting?",
+        "Give a suitable ending for a letter to your aunt.",
+        "Whose address is written on the envelope?",
+        "What is a reply?",
+        "What is the difference between a host and a hostess?",
+        "Give one example of an interjection.",
+        "Punctuate: hurrah we have won",
+        "Replace with pronouns: Maria wrote the letter.",
+        "Replace with a pronoun: I invited Peter and Sarah.",
+        "Complete: He ________ come to our party if we invited him. (would / will)",
+        "Turn into a polite question: Reply to that letter immediately.",
+        "Complete: ________ you write a letter to your mother if she was sick?",
+        "Name four things an invitation card must show.",
+        "What does R.S.V.P. ask the reader to do?",
+        "Write the first two lines of a letter, showing the address and date.",
+        "Write a suitable greeting for a letter to your friend Peter.",
+        "Give the opposite of *sender*."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Any four of **the address, the date, the salutation, the introduction, the body, the conclusion, the subscription, the signature**",
+        "In the **top right corner**",
+        "The **date**",
+        "A **comma**",
+        "**Yours affectionately,**",
+        "The **receiver's** address",
+        "**An answer to a letter**",
+        "A **host** is a man who receives guests; a **hostess** is a woman who receives guests.",
+        "Any one of **Hullo! · Hurrah! · Oh! · Alas! · Well done!**",
+        "**Hurrah! We have won.**",
+        "**She wrote it.**",
+        "**I invited them.**",
+        "**would**",
+        "**Could you please reply to that letter immediately?**",
+        "**Would**",
+        "**The occasion, the date, the time and the place** (a request for a reply is also expected)",
+        "To **reply**, saying whether or not you will come",
+        "For example: **P.O. Box 24, Mukono.** on the first lines and **3rd March, 2026** under it",
+        "**Dear Peter,**",
+        "**Receiver**"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.5 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Address top **right** · date under it · greeting on the **left**",
+        "*Dear Aunt Grace,* — comma after the greeting",
+        "Ending: **Yours affectionately,** then your name",
+        "Interjection + **!**",
+        "**would** / **could** = polite and conditional",
+        "Invitation: occasion · date · time · place · R.S.V.P."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, the period allocation (10 periods), the **vocabulary list**, the grammar items (interjections, punctuation, personal pronouns), the sample structures with *would* and *could*, and the suggested activities were taken from the official **NCDC Primary Five Curriculum, Set One** (© NCDC 2010; pages 22–23 of the PDF in `curriculum/`), including its note that this topic lays a foundation for the formal writing handled in P.7. The sample letter, the sample invitation card, the meanings, the exercises and the answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook. All names, addresses, dates and telephone numbers in the samples are made up."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.5 was available, so the syllabus's own competences and suggested activities were used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P5_ENG_T05",
+   "class": "P5",
+   "subject": "ENG",
+   "topic_no": 5,
+   "title": "Communication",
+   "heading": "TOPIC 5: COMMUNICATION",
+   "slug": "communication",
+   "periods": 74,
+   "curriculum_pages": "24–27",
+   "words": 2316,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Five Curriculum, Set One, English Topic 5, 74 periods (`curriculum/P5-SET-ONE-2010.pdf`, pages 24–27). The syllabus divides this topic into three sub-topics: **5A The Post Office**, **5B The Telephone** and **5C The Internet**.*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You have written letters and spoken on a telephone. This is the **longest topic in P.5 English (74 periods)**. It brings together the language of sending and receiving messages by **post, by telephone and by e-mail**."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "name the services of the post office and the words used there",
+        "name the parts of a telephone and use the language of a telephone call",
+        "name the words used on the internet and describe how e-mail works",
+        "use *either … or*, *might* and *unless*",
+        "use *enough … to*, *need to* and *needn't*",
+        "use *too … to*, *in order to* and *so as to*",
+        "write a composition or a short e-mail message about communication"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. VOCABULARY FROM THE SYLLABUS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**post office**",
+         "The place where letters and parcels are handled"
+        ],
+        [
+         "**post**",
+         "To send a letter through the post office"
+        ],
+        [
+         "**mail**",
+         "Letters and parcels sent by post"
+        ],
+        [
+         "**stamp**",
+         "The small printed label bought and stuck on a letter to pay for posting"
+        ],
+        [
+         "**letter box**",
+         "The box in which letters are posted"
+        ],
+        [
+         "**letter slot**",
+         "The narrow opening through which a letter is dropped"
+        ],
+        [
+         "**private box**",
+         "A numbered box rented at the post office for receiving mail"
+        ],
+        [
+         "**box rental**",
+         "The money paid each year for a private box"
+        ],
+        [
+         "**parcel**",
+         "Goods wrapped and sent by post"
+        ],
+        [
+         "**package**",
+         "Something wrapped up for sending"
+        ],
+        [
+         "**registered letter**",
+         "A letter recorded at the post office so that it cannot be lost easily"
+        ],
+        [
+         "**money order**",
+         "A paper bought at a post office that allows another person to be paid money"
+        ],
+        [
+         "**telegram**",
+         "A short urgent message sent by wire — a service of earlier years"
+        ],
+        [
+         "**aerogram**",
+         "A light letter sheet that folds into its own envelope and is sent by air"
+        ],
+        [
+         "**directory**",
+         "A book listing names, addresses or telephone numbers"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "x": "**Newer than the syllabus:** the **telegram** service, which the 2010 syllabus lists, is no longer in ordinary use in Uganda; people now send urgent messages by telephone or e-mail. The word is taught here because the syllabus lists it, and the change is noted honestly."
+      }
+     ]
+    },
+    {
+     "title": "2. HOW A LETTER TRAVELS",
+     "blocks": [
+      {
+       "t": "pre",
+       "x": "Write the letter  →  put it in an envelope  →  write the address\n→  buy and stick a stamp  →  drop it in the letter box\n→  the post office sorts the mail  →  it is carried to the other town\n→  it is put in the receiver's private box or delivered"
+      }
+     ]
+    },
+    {
+     "title": "3. GRAMMAR: EITHER … OR, MIGHT, UNLESS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Meaning",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**either … or**",
+         "One of two things",
+         "Sarah will **either** send a letter **or** send a telegram."
+        ],
+        [
+         "**might**",
+         "Perhaps; it is possible",
+         "She **might** receive her parcel this evening."
+        ],
+        [
+         "… **unless** …",
+         "If … not",
+         "Your letter will not be posted **unless** you fix a postage stamp."
+        ],
+        [
+         "**Unless** … , …",
+         "If … not",
+         "**Unless** you pay for your box rental, it will be closed."
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Note on *unless*:** *unless* already carries the meaning of *not*, so we never add a second *not* in the same clause."
+      },
+      {
+       "t": "ul",
+       "items": [
+        "✗ Unless you don't pay, the box will be closed.",
+        "✓ **Unless you pay, the box will be closed.**"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Note on *might*:** it is followed by the plain verb — *she might **come***, not *she might comes*."
+      }
+     ]
+    },
+    {
+     "title": "4. VOCABULARY FROM THE SYLLABUS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**telephone**",
+         "An instrument used for speaking to a person far away"
+        ],
+        [
+         "**mobile telephone**",
+         "A telephone that is carried about"
+        ],
+        [
+         "**landline / fixed line**",
+         "A telephone joined by a wire to one place"
+        ],
+        [
+         "**handset**",
+         "The part of the telephone that is held in the hand"
+        ],
+        [
+         "**receiver**",
+         "The part held to the ear and mouth"
+        ],
+        [
+         "**dial**",
+         "To press or turn the numbers in order to make a call"
+        ],
+        [
+         "**call**",
+         "A conversation on the telephone"
+        ],
+        [
+         "**airtime**",
+         "The talking time bought for a mobile telephone"
+        ],
+        [
+         "**airtime card**",
+         "The card bought to load airtime"
+        ],
+        [
+         "**load**",
+         "To put airtime on a telephone"
+        ],
+        [
+         "**SIM card**",
+         "The subscriber's identification module — the small card that gives the telephone its number"
+        ],
+        [
+         "**network mast**",
+         "The tall tower that carries telephone signals"
+        ],
+        [
+         "**telephone directory**",
+         "The book listing telephone numbers"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "5. THE LANGUAGE OF A TELEPHONE CALL",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Stage",
+        "What to say"
+       ],
+       "rows": [
+        [
+         "Answering",
+         "*Hullo, this is Sarah speaking.*"
+        ],
+        [
+         "Asking for someone",
+         "*May I speak to the head teacher, please?*"
+        ],
+        [
+         "Saying who is calling",
+         "*This is Mr Okello of Hill Primary School.*"
+        ],
+        [
+         "Asking to wait",
+         "*Hold on, please.*"
+        ],
+        [
+         "Not available",
+         "*I am sorry, he is not in. Would you like to leave a message?*"
+        ],
+        [
+         "Bad line",
+         "*I can't hear you clearly. Could you speak up, please?*"
+        ],
+        [
+         "Ending",
+         "*Thank you very much. Goodbye.*"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Good telephone manners:** greet first · say who you are · speak clearly and briefly · never shout · do not call very late at night · say goodbye before you cut the call."
+      }
+     ]
+    },
+    {
+     "title": "6. GRAMMAR: ENOUGH … TO, NEED TO, NEEDN'T",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Meaning",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**enough … to**",
+         "As much as is required",
+         "She did not have **enough** airtime **to** make a call."
+        ],
+        [
+         "**need to**",
+         "It is necessary",
+         "You **need to** fix a landline at home."
+        ],
+        [
+         "**needn't**",
+         "It is not necessary",
+         "You **needn't** own two telephones."
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Word order:** *enough* comes **after** an adjective but **before** a noun."
+      },
+      {
+       "t": "ul",
+       "items": [
+        "She is **old enough** to use a telephone. (after the adjective)",
+        "She has **enough airtime** to make a call. (before the noun)"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Careful:** the syllabus prints the example *\"She did not enough have airtime to make a call.\"* The words are in the wrong order. The correct sentence is **\"She did not have enough airtime to make a call.\"** The syllabus also prints *\"needn't to\"*; the correct form is **needn't** with no *to* — *You needn't own two telephones.*"
+      }
+     ]
+    },
+    {
+     "title": "7. VOCABULARY FROM THE SYLLABUS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**internet**",
+         "The worldwide network that joins computers together"
+        ],
+        [
+         "**computer**",
+         "The machine used to store and work with information"
+        ],
+        [
+         "**e-mail**",
+         "Electronic mail — a message sent from one computer or phone to another"
+        ],
+        [
+         "**website**",
+         "A place on the internet where information is kept"
+        ],
+        [
+         "**web page**",
+         "One page of a website"
+        ],
+        [
+         "**search engine**",
+         "A service used to look for information on the internet"
+        ],
+        [
+         "**surfing**",
+         "Moving from page to page looking for information"
+        ],
+        [
+         "**access**",
+         "To reach or get into something"
+        ],
+        [
+         "**sign in / log in**",
+         "To enter your name and password to open your account"
+        ],
+        [
+         "**sign out / log out**",
+         "To close your account safely"
+        ],
+        [
+         "**save**",
+         "To keep your work"
+        ],
+        [
+         "**delete**",
+         "To remove something"
+        ],
+        [
+         "**open**",
+         "To make a file or page show"
+        ],
+        [
+         "**scroll**",
+         "To move the page up or down"
+        ],
+        [
+         "**folder**",
+         "A place where files are kept together"
+        ],
+        [
+         "**virus**",
+         "A harmful program that spoils a computer"
+        ],
+        [
+         "**internet café**",
+         "A shop where people pay to use the internet"
+        ],
+        [
+         "**service fee**",
+         "The money paid for a service"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "8. GRAMMAR: TOO … TO, IN ORDER TO, SO AS TO",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Meaning",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**too … to**",
+         "More than is wanted, so it cannot be done",
+         "The internet café was **too** congested **to** sit in."
+        ],
+        [
+         "**in order to**",
+         "For the purpose of",
+         "I opened the website **in order to** access my e-mail."
+        ],
+        [
+         "**so as to**",
+         "For the purpose of",
+         "He logged onto his account **so as to** read the news."
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**The difference between *too* and *enough***"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Sentence",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "The café was **too** noisy **to** work in.",
+         "Cannot work there — there is a problem."
+        ],
+        [
+         "The café was quiet **enough to** work in.",
+         "Can work there — it is all right."
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "9. USING E-MAIL SAFELY",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Keep your **password** secret; never give it to anyone.",
+        "Always **sign out** when you finish, especially in an internet café.",
+        "Do not open a message from someone you do not know — it may carry a **virus**.",
+        "Never agree to meet a stranger you have met online. **Tell a trusted adult** at once if anyone online asks you for your photograph, your home address or to keep a secret from your parents. **It is never the child's fault.**"
+       ]
+      },
+      {
+       "t": "note",
+       "x": "*No NCDC guidance document on internet safety for children was available; the safety points above are ordinary child-protection advice, given so that the topic can be taught responsibly.*"
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Communication",
+         "Giving and receiving information"
+        ],
+        [
+         "Post office",
+         "The place where letters and parcels are handled"
+        ],
+        [
+         "Stamp",
+         "The label bought to pay for posting a letter"
+        ],
+        [
+         "Parcel",
+         "Goods wrapped and sent by post"
+        ],
+        [
+         "Airtime",
+         "The talking time bought for a mobile telephone"
+        ],
+        [
+         "SIM card",
+         "The small card that gives a telephone its number"
+        ],
+        [
+         "E-mail",
+         "A message sent electronically"
+        ],
+        [
+         "Website",
+         "A place on the internet where information is kept"
+        ],
+        [
+         "Virus",
+         "A harmful program that spoils a computer"
+        ],
+        [
+         "Log out",
+         "To close your account safely"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**Either … or** shows a choice between **two** things.",
+        "**Might** shows possibility and is followed by the plain verb.",
+        "**Unless** means *if … not* — never use another *not* with it.",
+        "**Enough** comes **after** an adjective but **before** a noun.",
+        "**Needn't** is followed by the plain verb, with **no** *to*.",
+        "**Too … to** shows that something **cannot** be done.",
+        "**In order to** and **so as to** both give the **reason**.",
+        "Always **sign out** and keep your password secret."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Sarah will **either** send a letter **or** send a telegram.",
+        "She **might** receive her parcel this evening.",
+        "Your letter will not be posted **unless** you fix a postage stamp.",
+        "She did not have **enough** airtime **to** make a call.",
+        "You **needn't** own two telephones.",
+        "The internet café was **too** congested **to** sit in.",
+        "I opened the website **in order to** access my e-mail."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Writing \"Unless you don't pay …\" — *unless* already means *if not*.",
+        "Writing \"She might comes\" — *might* takes the plain verb.",
+        "Writing \"enough airtime\" as \"airtime enough\".",
+        "Writing \"needn't to own\" — leave out *to*.",
+        "Using **too** where you mean **very**: *The café was too noisy* means you could **not** work.",
+        "Mixing *either … or* with *neither … nor*."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "What is a stamp used for?",
+        "What is a private box?",
+        "What is box rental?",
+        "What is a registered letter?",
+        "Complete: Sarah will ________ send a letter ________ send a telegram.",
+        "Complete: Your letter will not be posted ________ you fix a postage stamp.",
+        "Rewrite correctly: Unless you don't pay for your box rental, it will be closed.",
+        "Complete with *might*: She ________ receive her parcel this evening.",
+        "What is airtime?",
+        "What does SIM stand for?",
+        "Write what you would say when answering a telephone call.",
+        "Rewrite correctly: She did not enough have airtime to make a call.",
+        "Complete: You ________ fix a landline at home. (need to / needn't)",
+        "Complete: You ________ own two telephones. (need to / needn't)",
+        "What is an e-mail?",
+        "What is a search engine used for?",
+        "What is a computer virus?",
+        "Complete: The internet café was ________ congested ________ sit in.",
+        "Join with *in order to*: I opened the website. I wanted to access my e-mail.",
+        "Give two safety rules to follow when using the internet."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "For **paying for a letter to be posted** — it is stuck on the envelope.",
+        "**A numbered box rented at the post office for receiving mail**",
+        "**The money paid each year for a private box**",
+        "**A letter recorded at the post office** so that it cannot easily be lost",
+        "**either … or**",
+        "**unless**",
+        "**Unless you pay for your box rental, it will be closed.**",
+        "**might**",
+        "**The talking time bought for a mobile telephone**",
+        "**Subscriber's Identification Module**",
+        "Any correct greeting, for example: **\"Hullo, this is Sarah speaking.\"**",
+        "**She did not have enough airtime to make a call.**",
+        "**need to**",
+        "**needn't**",
+        "**An electronic message sent from one computer or telephone to another**",
+        "For **looking for information on the internet**",
+        "**A harmful program that spoils a computer**",
+        "**too … to**",
+        "I opened the website **in order to** access my e-mail.",
+        "Any two of: **keep your password secret · always sign out · do not open messages from strangers · never agree to meet a stranger met online · tell a trusted adult if anyone online makes you uncomfortable**"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.5 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Post: stamp · letter box · private box · box rental · parcel · registered letter",
+        "Phone: handset · dial · airtime · SIM card · landline · directory",
+        "Internet: e-mail · website · search engine · log in · log out · virus",
+        "**either … or** · **might** + plain verb · **unless** = if not",
+        "**enough** after an adjective, before a noun · **needn't** with no *to*",
+        "**too … to** = cannot · **in order to / so as to** = why"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, the period allocation (74 periods), the three sub-topics, the **vocabulary lists**, the grammar items (future tense and conjunctions; past and present simple; interrogative pronouns) and the sample structures — *either … or*, *might*, *unless*, *enough … to*, *need to*, *needn't*, *too … to*, *in order to*, *so as to* — together with the suggested activities, were taken from the official **NCDC Primary Five Curriculum, Set One** (© NCDC 2010; pages 24–27 of the PDF in `curriculum/`). Two printed example sentences contain word-order and form errors (\"She did not enough have airtime…\" and \"needn't to\"); both are quoted and corrected above rather than repeated. The **telegram** is listed in the syllabus but is no longer in ordinary use in Uganda, and this is flagged in the text. The meanings, the telephone dialogue language, the exercises and the answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "The internet-safety points in section 9 are ordinary child-protection advice. **No NCDC guidance document on child online safety was available**, and none is claimed here."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.5 was available, so the syllabus's own competences and suggested activities were used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P5_ENG_T06",
+   "class": "P5",
+   "subject": "ENG",
+   "topic_no": 6,
+   "title": "Culture",
+   "heading": "TOPIC 6: CULTURE",
+   "slug": "culture",
+   "periods": 29,
+   "curriculum_pages": "27–30",
+   "words": 1660,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Five Curriculum, Set One, English Topic 6, 29 periods (`curriculum/P5-SET-ONE-2010.pdf`, pages 27–30). The syllabus divides this topic into Sub-topic 6A **Nationalities** and Sub-topic 6B **Languages**.*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** In P.3 you learnt about culture in your sub-county. In P.5 you learn to name **nationalities and languages**, and you use **adjectives**, **prepositions**, the **passive voice** and the conditional **if 2**."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "name people by their nationality and say where they come from",
+        "name the main languages spoken in Uganda and beyond",
+        "use adjectives and prepositions correctly",
+        "change a sentence from the active to the passive voice",
+        "use *if … would* (the second conditional)",
+        "use *because* and *as … so …* to compare",
+        "write a short composition about your own culture and other people's"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. WHAT CULTURE AND NATIONALITY MEAN",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Culture:** the way of life of a group of people — their language, food, dress, music, dances, greetings, beliefs and customs."
+      },
+      {
+       "t": "p",
+       "x": "**Nationality:** the country a person belongs to."
+      }
+     ]
+    },
+    {
+     "title": "2. COUNTRIES AND THEIR PEOPLE",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Country",
+        "The people",
+        "Country",
+        "The people"
+       ],
+       "rows": [
+        [
+         "Uganda",
+         "**Ugandans**",
+         "Germany",
+         "**Germans**"
+        ],
+        [
+         "Kenya",
+         "**Kenyans**",
+         "France",
+         "**The French**"
+        ],
+        [
+         "Tanzania",
+         "**Tanzanians**",
+         "England",
+         "**The English**"
+        ],
+        [
+         "Rwanda",
+         "**Rwandese** (Rwandans)",
+         "Scotland",
+         "**The Scottish** (Scots)"
+        ],
+        [
+         "Sudan",
+         "**Sudanese**",
+         "America",
+         "**Americans**"
+        ],
+        [
+         "Egypt",
+         "**Egyptians**",
+         "Brazil",
+         "**Brazilians**"
+        ],
+        [
+         "Nigeria",
+         "**Nigerians**",
+         "China",
+         "**Chinese**"
+        ],
+        [
+         "Congo",
+         "**Congolese**",
+         "India",
+         "**Indians**"
+        ],
+        [
+         "Spain",
+         "**Spaniards**",
+         "Japan",
+         "**Japanese**"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "x": "**Newer than the syllabus:** the syllabus was written in **2010**, before **South Sudan became an independent country in July 2011**. Today a person may be **Sudanese** (from Sudan) or **South Sudanese** (from South Sudan)."
+      }
+     ]
+    },
+    {
+     "title": "3. GRAMMAR: SAYING WHERE PEOPLE COME FROM",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "I am …",
+         "**I am Ugandan.** / **I am a Ugandan.**"
+        ],
+        [
+         "… not a … but …",
+         "He is **not a** Ugandan **but** a Kenyan."
+        ],
+        [
+         "… come from …",
+         "**Egyptians come from Egypt.**"
+        ],
+        [
+         "… lives in …",
+         "A **Tanzanian lives in** Tanzania."
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "x": "**A note on one printed example:** the syllabus prints *\"I am a Chinese.\"* In good English we say **\"I am Chinese\"** or **\"I am a Chinese person.\"** The words *Chinese, Japanese, Sudanese, Congolese* and *Rwandese* are used as **adjectives**, so they do not take *a* on their own. The syllabus is quoted here so you know what it says, but the corrected forms are the ones to use."
+      }
+     ]
+    },
+    {
+     "title": "4. GRAMMAR: ADJECTIVES AND PREPOSITIONS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "An **adjective** describes a noun. Words of nationality are often adjectives."
+      },
+      {
+       "t": "pre",
+       "x": "a Ugandan teacher       a Kenyan song       Chinese food       French bread"
+      },
+      {
+       "t": "p",
+       "x": "**Order of adjectives:** opinion → size → age → colour → origin → material."
+      },
+      {
+       "t": "pre",
+       "x": "a beautiful long red Ugandan cloth"
+      },
+      {
+       "t": "p",
+       "x": "Common **prepositions** used with places and people:"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Preposition",
+        "Use",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**from**",
+         "Where a person comes from",
+         "She comes **from** Rwanda."
+        ],
+        [
+         "**in**",
+         "Inside a country or town",
+         "They live **in** Kampala."
+        ],
+        [
+         "**at**",
+         "An exact place",
+         "We met **at** the border."
+        ],
+        [
+         "**to**",
+         "Movement",
+         "He travelled **to** Tanzania."
+        ],
+        [
+         "**between**",
+         "Two things",
+         "Uganda lies **between** Kenya and the Congo."
+        ],
+        [
+         "**among**",
+         "More than two",
+         "Kiswahili is spoken **among** East Africans."
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "5. LANGUAGES AND THE PEOPLE WHO SPEAK THEM",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Language",
+        "Spoken by"
+       ],
+       "rows": [
+        [
+         "**Luganda**",
+         "The Baganda"
+        ],
+        [
+         "**Lumasaba (Lugisu)**",
+         "The Bamasaba (Bagisu)"
+        ],
+        [
+         "**Runyankore-Rukiga**",
+         "The Banyankore and Bakiga"
+        ],
+        [
+         "**Luo**",
+         "The Acholi and Alur, among others"
+        ],
+        [
+         "**Ateso**",
+         "The Iteso"
+        ],
+        [
+         "**Kiswahili**",
+         "Widely spoken across East Africa"
+        ],
+        [
+         "**Kinyarwanda**",
+         "Rwandese"
+        ],
+        [
+         "**Lingala**",
+         "Many Congolese"
+        ],
+        [
+         "**Igbo**",
+         "Many people in Nigeria"
+        ],
+        [
+         "**English**",
+         "England and many other countries"
+        ],
+        [
+         "**French**",
+         "France and other countries"
+        ],
+        [
+         "**German**",
+         "Germany"
+        ],
+        [
+         "**Chinese**",
+         "China"
+        ],
+        [
+         "**Latin**",
+         "An old language still used in some prayers, law and science"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "x": "**Notes on the printed list:** the syllabus writes **\"Runyankitura\"**, **\"Iteso\"**, **\"Ibo\"**, **\"lingala\"** and **\"Kinyanwanda\"**. The usual spellings are **Runyankore-Rukiga**, **Ateso** (the language of the **Iteso** people), **Igbo**, **Lingala** and **Kinyarwanda**. Both are shown so nothing is lost.  Also newer than the syllabus: the syllabus mentions that **Kiswahili** had \"recently\" been declared a second official language of Uganda. Kiswahili remains an official language alongside English."
+      }
+     ]
+    },
+    {
+     "title": "6. GRAMMAR: USING \"BECAUSE\"",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Because** gives the **reason**."
+      },
+      {
+       "t": "pre",
+       "x": "She speaks Lumasaba because she comes from Bugisu.\nHe speaks Kinyarwanda because he was born in Rwanda.\nWe learn English because it is our official language."
+      }
+     ]
+    },
+    {
+     "title": "7. GRAMMAR: THE PASSIVE VOICE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "In the **active voice** the doer comes first. In the **passive voice** the thing done comes first."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Active",
+        "Passive"
+       ],
+       "rows": [
+        [
+         "People in England speak English.",
+         "**English is spoken in England.**"
+        ],
+        [
+         "The Baganda speak Luganda.",
+         "**Luganda is spoken by the Baganda.**"
+        ],
+        [
+         "They sang a Kenyan song.",
+         "**A Kenyan song was sung.**"
+        ],
+        [
+         "Farmers grow coffee in Uganda.",
+         "**Coffee is grown in Uganda.**"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**How to change to the passive:**"
+      },
+      {
+       "t": "pre",
+       "x": "1. Put the object first.\n2. Use is / are (present) or was / were (past) with the past participle.\n3. Add \"by …\" only if the doer matters."
+      }
+     ]
+    },
+    {
+     "title": "8. GRAMMAR: IF … WOULD (THE SECOND CONDITIONAL)",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "This is used for something **imagined**, not real."
+      },
+      {
+       "t": "pre",
+       "x": "if + past tense  ,  would + plain verb"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Example"
+       ],
+       "rows": [
+        [
+         "**If I were** a Nigerian, I **would** speak Igbo."
+        ],
+        [
+         "Muyobo **would** speak Spanish **if she were** from Spain."
+        ],
+        [
+         "**If** we **lived** in Rwanda, we **would** learn Kinyarwanda."
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "x": "We say **\"If I were\"**, not *\"If I was\"*, in this kind of imagined sentence."
+      }
+     ]
+    },
+    {
+     "title": "9. GRAMMAR: THE \"AS … SO …\" COMPARISON",
+     "blocks": [
+      {
+       "t": "pre",
+       "x": "Kinyarwanda is to the Rwandese as Lingala is to the Congolese.\nLuganda is to the Baganda as Ateso is to the Iteso."
+      },
+      {
+       "t": "p",
+       "x": "This shows that two pairs match in the same way."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Culture",
+         "The whole way of life of a group of people"
+        ],
+        [
+         "Nationality",
+         "The country a person belongs to"
+        ],
+        [
+         "Custom",
+         "Something a people has done for a long time"
+        ],
+        [
+         "Adjective",
+         "A word that describes a noun"
+        ],
+        [
+         "Preposition",
+         "A word showing position or relation, such as *in*, *from*"
+        ],
+        [
+         "Active voice",
+         "The doer of the action comes first"
+        ],
+        [
+         "Passive voice",
+         "The thing acted upon comes first"
+        ],
+        [
+         "Second conditional",
+         "An *if … would* sentence about something imagined"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**Chinese, Japanese, Sudanese, Congolese, Rwandese** stay the same in the plural.",
+        "We say *the French*, *the English*, *the Scottish* — not *Frenches* or *Englishes*.",
+        "**Because** gives a reason.",
+        "The passive uses **is / are / was / were + past participle**.",
+        "The second conditional is **if + past tense, would + plain verb**.",
+        "Use **\"If I were\"**, not *if I was*, for something imagined.",
+        "**Kiswahili** is an official language of Uganda alongside **English**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "He is **not a** Ugandan **but** a Kenyan.",
+        "**Egyptians come from Egypt.**",
+        "She speaks Lumasaba **because** she comes from Bugisu.",
+        "*People in England speak English* becomes **English is spoken in England**.",
+        "**If I were** a Nigerian, I **would** speak Igbo.",
+        "Kinyarwanda is to the Rwandese **as** Lingala is to the Congolese.",
+        "The language of the Iteso is **Ateso**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Writing *Chineses* or *Japaneses* — these words do not add **-s**.",
+        "Saying *\"I am a Chinese\"* instead of **\"I am Chinese\"**.",
+        "Forgetting *is* or *are* in a passive sentence.",
+        "Writing *\"If I was a Nigerian, I will be…\"* — it is **were … would**.",
+        "Confusing the **people** (Iteso) with their **language** (Ateso).",
+        "Using *because* twice in one sentence: *Because she is Ugandan, so she speaks Luganda.*"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "What is culture?",
+        "What is nationality?",
+        "What do we call people from Rwanda?",
+        "What do we call people from Japan?",
+        "Where do Egyptians come from?",
+        "Complete: He is not a Ugandan ________ a Kenyan.",
+        "Which language is spoken by the Baganda?",
+        "Which language is spoken by the Iteso?",
+        "Name the language spoken by most Congolese in the syllabus list.",
+        "Give the reason using *because*: She speaks Lumasaba. She comes from Bugisu.",
+        "Change to the passive: People in England speak English.",
+        "Change to the passive: The Baganda speak Luganda.",
+        "Change to the passive: Farmers grow coffee in Uganda.",
+        "Complete: If I ________ a Nigerian, I would speak Igbo.",
+        "Complete: Muyobo would speak Spanish if she ________ from Spain.",
+        "Complete the comparison: Kinyarwanda is to the Rwandese ________ Lingala is to the Congolese.",
+        "Give the plural of *Chinese*.",
+        "Name the two official languages of Uganda.",
+        "Give one example of a Ugandan custom.",
+        "Write one sentence using the word *Brazilian*."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "**The whole way of life of a group of people** — their language, food, dress, music, dances and customs.",
+        "**The country a person belongs to**",
+        "**Rwandese** (also written Rwandans)",
+        "**Japanese**",
+        "**From Egypt**",
+        "**but**",
+        "**Luganda**",
+        "**Ateso**",
+        "**Lingala**",
+        "She speaks Lumasaba **because** she comes from Bugisu.",
+        "**English is spoken in England.**",
+        "**Luganda is spoken by the Baganda.**",
+        "**Coffee is grown in Uganda.**",
+        "**were**",
+        "**were** (*was* is often heard, but *were* is the correct form here)",
+        "**as**",
+        "**Chinese** — the word does not change",
+        "**English** and **Kiswahili**",
+        "Any correct example, for example **kneeling to greet an elder**, or **a naming ceremony for a new baby**.",
+        "Any correct sentence, for example: **A Brazilian comes from Brazil.**"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.5 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Culture = way of life · nationality = country you belong to",
+        "Chinese · Japanese · Sudanese · Congolese · Rwandese — no **-s**",
+        "**because** = reason",
+        "Passive: *is / are / was / were* + past participle",
+        "**If I were … , I would …**",
+        "*A* is to *B* **as** *C* is to *D*"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, the period allocation (29 periods), the two sub-topics, the **vocabulary lists of nationalities and languages**, the grammar items (adjectives, prepositions, nouns, the passive voice and conditionals \"if 2\"), the sample structures and the suggested activities were taken from the official **NCDC Primary Five Curriculum, Set One** (© NCDC 2010; pages 27–30 of the PDF in `curriculum/`), including its note that the topic builds on the P.3 theme on culture and gender. Several printed spellings and one printed example sentence differ from standard usage; each is quoted and corrected in the text above rather than repeated silently. **South Sudan's independence in 2011** is newer than the syllabus and is flagged. The meanings, tables, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.5 was available, so the syllabus's own competences and suggested activities were used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P5_ENG_T07",
+   "class": "P5",
+   "subject": "ENG",
+   "topic_no": 7,
+   "title": "Peace and Security",
+   "heading": "TOPIC 7: PEACE AND SECURITY",
+   "slug": "peace-and-security",
+   "periods": 15,
+   "curriculum_pages": "31–32",
+   "words": 1868,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Five Curriculum, Set One, English Topic 7, 15 periods (`curriculum/P5-SET-ONE-2010.pdf`, pages 31–32).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You know that people must live together peacefully. In P.5 you learn the **words used about peace, security and the law**, and you use **conjunctions**, the **past simple tense** and the **present perfect tense**."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "use the vocabulary of peace and security correctly",
+        "name the people who keep law and order and say what each does",
+        "use the conjunctions *so … that* and *and*",
+        "use *has* and *have* in the present perfect tense",
+        "use *about* correctly after verbs of speaking",
+        "tell and write a story about keeping peace"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. VOCABULARY FROM THE SYLLABUS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**peace**",
+         "Living together quietly, without fighting or fear"
+        ],
+        [
+         "**security**",
+         "Being safe and protected from danger"
+        ],
+        [
+         "**crime**",
+         "An act that breaks the law"
+        ],
+        [
+         "**offence**",
+         "A wrong act that is punished by law"
+        ],
+        [
+         "**offend**",
+         "To do something wrong or against the law"
+        ],
+        [
+         "**arrest**",
+         "To take a person to the police for breaking the law"
+        ],
+        [
+         "**handcuff**",
+         "The metal rings put on the wrists of a person under arrest"
+        ],
+        [
+         "**cell**",
+         "The locked room where a person is kept at a police station"
+        ],
+        [
+         "**police station**",
+         "The main office of the police in an area"
+        ],
+        [
+         "**police post**",
+         "A smaller police office serving a village or trading centre"
+        ],
+        [
+         "**report**",
+         "To tell the police or an elder about something wrong"
+        ],
+        [
+         "**statement**",
+         "The written account a person gives to the police"
+        ],
+        [
+         "**court**",
+         "The place where cases are heard and judged"
+        ],
+        [
+         "**case**",
+         "A matter brought before a court"
+        ],
+        [
+         "**judge**",
+         "The senior officer who decides cases in a high court"
+        ],
+        [
+         "**magistrate**",
+         "The officer who hears cases in a lower court"
+        ],
+        [
+         "**witness**",
+         "A person who saw what happened and tells the court"
+        ],
+        [
+         "**defence**",
+         "The side that answers the charge in court"
+        ],
+        [
+         "**army**",
+         "The soldiers who protect the country"
+        ],
+        [
+         "**barracks**",
+         "The place where soldiers live"
+        ],
+        [
+         "**gun**",
+         "A weapon that fires bullets"
+        ],
+        [
+         "**arrows**",
+         "Thin sticks with sharp points, shot from a bow"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "2. WHO KEEPS PEACE AND SECURITY",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Person or group",
+        "What they do"
+       ],
+       "rows": [
+        [
+         "**The police**",
+         "Keep law and order, arrest offenders, take statements"
+        ],
+        [
+         "**The army**",
+         "Defend the country from attack"
+        ],
+        [
+         "**Local council leaders (LCs)**",
+         "Settle small quarrels and keep order in the village"
+        ],
+        [
+         "**Magistrates and judges**",
+         "Listen to cases and decide them fairly"
+        ],
+        [
+         "**Parents and teachers**",
+         "Teach children to live peacefully with others"
+        ],
+        [
+         "**Every citizen**",
+         "Reports wrong acts and refuses to take part in them"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "3. WHAT BUILDS PEACE AND WHAT DESTROYS IT",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Builds peace",
+        "Destroys peace"
+       ],
+       "rows": [
+        [
+         "Sharing and helping one another",
+         "Quarrelling and fighting"
+        ],
+        [
+         "Talking problems over calmly",
+         "Insulting and abusing others"
+        ],
+        [
+         "Forgiving and apologising",
+         "Stealing and lying"
+        ],
+        [
+         "Respecting other people's property and beliefs",
+         "Drunkenness and idleness"
+        ],
+        [
+         "Obeying the law and reporting wrong acts",
+         "Keeping quiet when a crime is done"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**If something wrong happens to you or to another child, tell a trusted adult at once — a parent, a teacher, an LC leader or the police. Reporting is not telling tales; it is how peace is kept. If a child has been hurt or badly treated, it is never the child's fault.**"
+      },
+      {
+       "t": "note",
+       "x": "*No NCDC guidance document on handling sensitive cases with children was available. The guidance above is limited to the ordinary advice to report to a trusted adult, and no further detail is given.*"
+      }
+     ]
+    },
+    {
+     "title": "4. GRAMMAR: THE CONJUNCTION \"SO … THAT\"",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**So … that** shows a **result**: the first part is so strong that something follows."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Example"
+       ],
+       "rows": [
+        [
+         "The village has **so** many thieves **that** there is no peace."
+        ],
+        [
+         "The noise was **so** loud **that** the neighbours called the police."
+        ],
+        [
+         "He ran **so** fast **that** nobody could catch him."
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Form:** *so* + adjective (or *many / much* + noun) + **that** + a full clause."
+      }
+     ]
+    },
+    {
+     "title": "5. GRAMMAR: JOINING WITH \"AND\"",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**And** joins two ideas of equal weight."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Two sentences",
+        "Joined with *and*"
+       ],
+       "rows": [
+        [
+         "The policeman arrested the murderer. He took him to court.",
+         "The policeman arrested the murderer **and** took him to court."
+        ],
+        [
+         "The witness came to court. She gave her evidence.",
+         "The witness came to court **and** gave her evidence."
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "When the doer is the same person, we do **not** repeat the name after *and*."
+      },
+      {
+       "t": "ul",
+       "items": [
+        "✗ The policeman arrested the thief and the policeman took him to court.",
+        "✓ The policeman arrested the thief **and took** him to court."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "6. GRAMMAR: HAS AND HAVE (PRESENT PERFECT)",
+     "blocks": [
+      {
+       "t": "pre",
+       "x": "has / have  +  past participle"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Sentence"
+       ],
+       "rows": [
+        [
+         "Okumu **has given** his statement to the police."
+        ],
+        [
+         "The witnesses **have given** their statements about the case."
+        ],
+        [
+         "The magistrate **has heard** the case."
+        ],
+        [
+         "The police **have arrested** two suspects."
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Has** with *he, she, it* and one person. **Have** with *I, you, we, they* and more than one."
+      },
+      {
+       "t": "p",
+       "x": "**Useful past participles:** give → **given** · take → **taken** · steal → **stolen** · catch → **caught** · hear → **heard** · see → **seen** · write → **written**."
+      }
+     ]
+    },
+    {
+     "title": "7. GRAMMAR: USING \"ABOUT\"",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**About** means *concerning* or *on the subject of*."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Example"
+       ],
+       "rows": [
+        [
+         "The witnesses have given their statements **about** the case."
+        ],
+        [
+         "They talked **about** the theft for a long time."
+        ],
+        [
+         "The teacher warned us **about** fighting."
+        ],
+        [
+         "We read a story **about** peace."
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "Verbs that often take *about*: **talk, speak, write, read, hear, complain, warn, worry, ask, think, quarrel**."
+      }
+     ]
+    },
+    {
+     "title": "8. THE PAST SIMPLE IN A STORY",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Present",
+        "Past"
+       ],
+       "rows": [
+        [
+         "arrest",
+         "**arrested**"
+        ],
+        [
+         "report",
+         "**reported**"
+        ],
+        [
+         "steal",
+         "**stole**"
+        ],
+        [
+         "catch",
+         "**caught**"
+        ],
+        [
+         "take",
+         "**took**"
+        ],
+        [
+         "run",
+         "**ran**"
+        ],
+        [
+         "give",
+         "**gave**"
+        ],
+        [
+         "hear",
+         "**heard**"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**A short story to read aloud**"
+      },
+      {
+       "t": "note",
+       "x": "Last Sunday evening, a thief broke into a shop at our trading centre. The shopkeeper's neighbour heard a noise and reported it at the police post. Two policemen came quickly and arrested the thief. They put handcuffs on him and took him to the police station, where he gave a statement. On Tuesday the case was heard by a magistrate. The neighbour stood as a witness. Since that day the traders have slept peacefully, and they have thanked the neighbour for being alert."
+      },
+      {
+       "t": "p",
+       "x": "**Questions on the story:** What happened on Sunday evening? Who reported the crime? Where was the thief taken? Who heard the case? Why have the traders slept peacefully?"
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Peace",
+         "Living together without fighting or fear"
+        ],
+        [
+         "Security",
+         "Being safe from danger"
+        ],
+        [
+         "Crime",
+         "An act that breaks the law"
+        ],
+        [
+         "Suspect",
+         "A person thought to have committed a crime"
+        ],
+        [
+         "Witness",
+         "A person who saw what happened and tells the court"
+        ],
+        [
+         "Statement",
+         "The written account given to the police"
+        ],
+        [
+         "Magistrate",
+         "The officer who hears cases in a lower court"
+        ],
+        [
+         "Conjunction",
+         "A word that joins two parts of a sentence"
+        ],
+        [
+         "Present perfect",
+         "The tense formed with *has* or *have* and a past participle"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**So … that** shows a result and needs a full clause after *that*.",
+        "After **and**, do not repeat the doer if it is the same person.",
+        "The present perfect is **has / have + past participle**.",
+        "*Give* becomes **given** and *steal* becomes **stolen**.",
+        "**About** follows verbs of speaking, writing, hearing and worrying.",
+        "A **magistrate** sits in a lower court; a **judge** sits in a higher court.",
+        "Reporting a wrong act to a trusted adult is the right thing to do."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "The village has **so** many thieves **that** there is no peace.",
+        "The policeman arrested the murderer **and** took him to court.",
+        "Okumu **has given** his statement to the police.",
+        "The witnesses **have given** their statements **about** the case.",
+        "The place where soldiers live is the **barracks**.",
+        "The room where a suspect is kept at a police station is a **cell**.",
+        "The past simple of *catch* is **caught**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Writing *so much thieves* instead of **so many thieves**.",
+        "Leaving out *that* in a *so … that* sentence.",
+        "Repeating the subject after *and*.",
+        "Writing *has gave* instead of **has given**.",
+        "Writing *talked on the case* instead of **talked about the case**.",
+        "Confusing a **witness** (who saw it) with the **defence** (who answers the charge)."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "What is peace?",
+        "What is security?",
+        "What is a crime?",
+        "Who is a witness?",
+        "What is a statement?",
+        "What is the difference between a police station and a police post?",
+        "Where do soldiers live?",
+        "Complete: The village has ________ many thieves ________ there is no peace.",
+        "Join with *and*: The policeman arrested the murderer. He took him to court.",
+        "Complete: Okumu ________ given his statement to the police. (has / have)",
+        "Complete: The witnesses ________ given their statements. (has / have)",
+        "Complete: The witnesses have given their statements ________ the case.",
+        "Give the past simple of *catch*.",
+        "Give the past participle of *steal*.",
+        "Change to the present perfect: The police arrest two suspects.",
+        "Name any two things that destroy peace in a village.",
+        "Name any two people who help to keep peace in your area.",
+        "What should you do if you see someone breaking into a house?",
+        "Who hears cases in a lower court?",
+        "Use the word *offence* in a sentence."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "**Living together quietly, without fighting or fear**",
+        "**Being safe and protected from danger**",
+        "**An act that breaks the law**",
+        "**A person who saw what happened and tells the court**",
+        "**The written account a person gives to the police**",
+        "A **police station** is the main police office of an area; a **police post** is a smaller one serving a village or trading centre.",
+        "In the **barracks**",
+        "**so … that**",
+        "The policeman arrested the murderer **and took** him to court.",
+        "**has**",
+        "**have**",
+        "**about**",
+        "**Caught**",
+        "**Stolen**",
+        "The police **have arrested** two suspects.",
+        "Any two of **fighting, stealing, insulting others, drunkenness, lying, keeping quiet about a crime**",
+        "Any two of **the police, the army, LC leaders, magistrates, parents, teachers**",
+        "**Report it at once to a trusted adult** — a parent, a teacher, an LC leader or the police. Do not try to stop the person yourself.",
+        "A **magistrate**",
+        "Any correct sentence, for example: **Stealing is an offence punished by law.**"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.5 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "peace · security · crime · offence · arrest · cell · court · case · witness",
+        "**so … that** = result · **and** joins equal ideas",
+        "**has / have + past participle** = present perfect",
+        "talk / write / hear / warn **about**",
+        "caught · stole/stolen · gave/given · took/taken",
+        "Report wrong acts to a **trusted adult**"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, the period allocation (15 periods), the **vocabulary list**, the grammar items (conjunctions, past simple tense, present perfect tense), the sample structures (*so … that*, *and*, *has / have*, *about*) and the suggested activities were taken from the official **NCDC Primary Five Curriculum, Set One** (© NCDC 2010; pages 31–32 of the PDF in `curriculum/`), including its life-skills list on non-violent conflict resolution, negotiation and the reporting of bad acts. The meanings, tables, the sample story, the exercises and the answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook. The story is made up for practice; the people and places in it are not real."
+      },
+      {
+       "t": "p",
+       "x": "The advice on reporting to a trusted adult is kept short and general on purpose. **No NCDC guidance document on handling sensitive cases with children was available**, and none is claimed here."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.5 was available, so the syllabus's own competences and suggested activities were used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P5_ENG_T08",
+   "class": "P5",
+   "subject": "ENG",
+   "topic_no": 8,
+   "title": "Services (banking)",
+   "heading": "TOPIC 8: SERVICES (BANKING)",
+   "slug": "services-banking",
+   "periods": 16,
+   "curriculum_pages": "33–34",
+   "words": 1980,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Five Curriculum, Set One, English Topic 8, 16 periods (`curriculum/P5-SET-ONE-2010.pdf`, pages 33–34).*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** In P.3 you learnt about managing resources. In P.5 you learn the **language used in a bank**, and you use **conjunctions**, the **past simple**, the **present simple** and the **future tense**, with the structures **neither … nor** and **as soon as**."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "name the people who work in a bank and say what each does",
+        "use the vocabulary of banking correctly",
+        "describe the steps of depositing and withdrawing money",
+        "use *neither … nor* correctly",
+        "use *as soon as* in the middle and at the beginning of a sentence",
+        "read and complete a simple bank form"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "1. WHAT A BANK IS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A **bank** is a place where people **keep their money safely**, take it out when they need it, and may borrow money. Keeping money in a bank is safer than keeping it at home, and savings may earn a little extra money called **interest**."
+      }
+     ]
+    },
+    {
+     "title": "2. VOCABULARY FROM THE SYLLABUS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**bank**",
+         "The place where money is kept safely"
+        ],
+        [
+         "**bank manager**",
+         "The person in charge of a bank"
+        ],
+        [
+         "**cashier / teller**",
+         "The worker who receives and pays out money at the counter"
+        ],
+        [
+         "**account**",
+         "The record of one customer's money in the bank"
+        ],
+        [
+         "**savings**",
+         "Money kept aside for the future"
+        ],
+        [
+         "**save**",
+         "To keep money for later use"
+        ],
+        [
+         "**safe**",
+         "A strong steel box in which money is locked; also *free from danger*"
+        ],
+        [
+         "**deposit**",
+         "To put money into an account"
+        ],
+        [
+         "**withdraw**",
+         "To take money out of an account"
+        ],
+        [
+         "**deposit form**",
+         "The paper filled in when putting money in"
+        ],
+        [
+         "**withdrawal form**",
+         "The paper filled in when taking money out"
+        ],
+        [
+         "**balance**",
+         "The money remaining on an account"
+        ],
+        [
+         "**bank statement**",
+         "A printed list of all the money paid in and taken out"
+        ],
+        [
+         "**pass-book / bank-book**",
+         "The small book in which a customer's deposits and withdrawals are written"
+        ],
+        [
+         "**cheque**",
+         "A written order telling a bank to pay a named person"
+        ],
+        [
+         "**cheque book**",
+         "The book of cheques given to an account holder"
+        ],
+        [
+         "**bounce**",
+         "What a cheque does when there is not enough money to pay it"
+        ],
+        [
+         "**forge**",
+         "To copy a signature or a document dishonestly, in order to cheat"
+        ],
+        [
+         "**credit**",
+         "Money put into an account; also money lent"
+        ],
+        [
+         "**ATM card**",
+         "The card used at a machine to get money without a cashier"
+        ],
+        [
+         "**machine (ATM)**",
+         "The automated teller machine that pays out cash"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "x": "**Newer than the syllabus:** the 2010 syllabus does not mention **mobile money**, which today is one of the commonest ways Ugandans send, receive and save money. The words above are the ones the syllabus lists, and this addition is flagged rather than slipped in."
+      }
+     ]
+    },
+    {
+     "title": "3. THE PEOPLE IN A BANK",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Person",
+        "Work"
+       ],
+       "rows": [
+        [
+         "**Bank manager**",
+         "Is in charge of the bank and its staff"
+        ],
+        [
+         "**Cashier (teller)**",
+         "Receives deposits and pays out withdrawals at the counter"
+        ],
+        [
+         "**Accountant**",
+         "Keeps the records of the money"
+        ],
+        [
+         "**Security guard**",
+         "Watches over the bank and its customers"
+        ],
+        [
+         "**Customer (account holder)**",
+         "The person who keeps money at the bank"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "4. DEPOSITING AND WITHDRAWING — THE STEPS",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Depositing money"
+      },
+      {
+       "t": "pre",
+       "x": "1. Get a deposit form.\n2. Write your name, your account number, the date and the amount.\n3. Count the money.\n4. Take the form and the money to the cashier.\n5. The cashier counts it, stamps the form and gives you a receipt."
+      },
+      {
+       "t": "h3",
+       "x": "Withdrawing money"
+      },
+      {
+       "t": "pre",
+       "x": "1. Get a withdrawal form.\n2. Write your name, your account number, the date and the amount.\n3. Sign the form with the same signature the bank has.\n4. Give it to the cashier with your pass-book or identity card.\n5. The cashier checks the signature, pays the money and records the new balance."
+      },
+      {
+       "t": "h3",
+       "x": "A simple deposit form"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Field",
+        "What to write"
+       ],
+       "rows": [
+        [
+         "Name of account holder",
+         "Sarah Nakato"
+        ],
+        [
+         "Account number",
+         "0123456789"
+        ],
+        [
+         "Date",
+         "3rd March, 2026"
+        ],
+        [
+         "Amount in figures",
+         "150,000"
+        ],
+        [
+         "Amount in words",
+         "One hundred fifty thousand shillings"
+        ],
+        [
+         "Signature",
+         "*(the customer signs)*"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "*This sample form is made up for practice. The name, number and amount are not real.*"
+      }
+     ]
+    },
+    {
+     "title": "5. GRAMMAR: NEITHER … NOR",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Neither … nor** means **not one and not the other**. It is the opposite of *either … or*."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Example"
+       ],
+       "rows": [
+        [
+         "He is **neither** a manager **nor** a cashier at that bank."
+        ],
+        [
+         "Wafula will **neither** withdraw **nor** deposit money today."
+        ],
+        [
+         "**Neither** the cheque **nor** the form was signed."
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "x": "**A note on one printed example:** the syllabus prints *\"Neither is he a Manager nor a cashier at that bank.\"* In good English the words come in this order: **\"He is neither a manager nor a cashier at that bank.\"** The syllabus wording is quoted so you know what it says; the corrected order is the one to use."
+      },
+      {
+       "t": "p",
+       "x": "**Remember:** with *neither … nor* the sentence is already negative, so we never add another *not*."
+      },
+      {
+       "t": "ul",
+       "items": [
+        "✗ He is neither **not** a manager nor a cashier.",
+        "✓ **He is neither a manager nor a cashier.**"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "6. GRAMMAR: AS SOON AS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**As soon as** means **immediately after**. It joins two actions that follow each other closely."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "… **as soon as** …",
+         "The cashier gave Akello money **as soon as** she presented the withdrawal form."
+        ],
+        [
+         "**As soon as** … , …",
+         "**As soon as** Apio gave in the account number, the bank manager told him his balance."
+        ],
+        [
+         "… **as soon as** …",
+         "I will open an account **as soon as** I get the money."
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Tense rule:** when the sentence is about the future, the part after *as soon as* uses the **present** tense, not *will*."
+      },
+      {
+       "t": "ul",
+       "items": [
+        "✗ I will go **as soon as** the bank **will open**.",
+        "✓ I will go **as soon as** the bank **opens**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "7. GRAMMAR: THE TENSES USED IN THIS TOPIC",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Tense",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**Present simple**",
+         "The bank **opens** at nine o'clock."
+        ],
+        [
+         "**Past simple**",
+         "The cashier **paid** the money and **stamped** the form."
+        ],
+        [
+         "**Future**",
+         "Wafula **will deposit** his savings tomorrow."
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Past simple of useful verbs:** deposit → **deposited** · withdraw → **withdrew** · pay → **paid** · sign → **signed** · give → **gave** · count → **counted** · bounce → **bounced**."
+      }
+     ]
+    },
+    {
+     "title": "8. A CONVERSATION AT THE BANK",
+     "blocks": [
+      {
+       "t": "note",
+       "x": "**Sarah:** Good morning. I would like to deposit some money, please. **Cashier:** Good morning. May I have your deposit form and your account number? **Sarah:** Here they are. The amount is one hundred fifty thousand shillings. **Cashier:** Thank you. *(counts the money)* That is correct. Here is your receipt. **Sarah:** Could you also tell me my balance, please? **Cashier:** As soon as I enter this deposit, I will print your statement. **Sarah:** Thank you very much."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Bank",
+         "A place where money is kept safely"
+        ],
+        [
+         "Account",
+         "The record of one customer's money"
+        ],
+        [
+         "Deposit",
+         "To put money into an account"
+        ],
+        [
+         "Withdraw",
+         "To take money out of an account"
+        ],
+        [
+         "Balance",
+         "The money remaining on an account"
+        ],
+        [
+         "Cashier (teller)",
+         "The worker who receives and pays out money"
+        ],
+        [
+         "Cheque",
+         "A written order telling a bank to pay someone"
+        ],
+        [
+         "Bounce",
+         "What a cheque does when there is not enough money"
+        ],
+        [
+         "Forge",
+         "To copy a signature dishonestly in order to cheat"
+        ],
+        [
+         "Interest",
+         "The extra money a bank pays on savings"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**Deposit** = money in. **Withdraw** = money out.",
+        "The **balance** is what remains.",
+        "**Neither … nor** = not one and not the other; never add another *not*.",
+        "**Either … or** is the positive pair; **neither … nor** is the negative pair.",
+        "After **as soon as**, use the **present tense** for a future action.",
+        "A cheque **bounces** when the account has too little money.",
+        "To **forge** a signature is a crime."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "He is **neither** a manager **nor** a cashier at that bank.",
+        "Wafula will **neither** withdraw **nor** deposit money today.",
+        "The cashier gave Akello money **as soon as** she presented the withdrawal form.",
+        "**As soon as** Apio gave in the account number, the manager told him his balance.",
+        "The person in charge of a bank is the **bank manager**.",
+        "The book in which deposits and withdrawals are written is the **pass-book**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Writing *neither … or* instead of **neither … nor**.",
+        "Adding a second *not* in a *neither … nor* sentence.",
+        "Writing \"as soon as the bank will open\" — use **opens**.",
+        "Confusing **deposit** with **withdraw**.",
+        "Writing *withdrawed*; the past of *withdraw* is **withdrew**.",
+        "Leaving the amount in words blank on a form."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "What is a bank?",
+        "Who is in charge of a bank?",
+        "Who receives and pays out money at the counter?",
+        "What does it mean to deposit money?",
+        "What does it mean to withdraw money?",
+        "What is a balance?",
+        "What is a bank statement?",
+        "What happens when a cheque bounces?",
+        "What does it mean to forge a signature?",
+        "What is an ATM card used for?",
+        "Complete: He is ________ a manager ________ a cashier at that bank.",
+        "Complete: Wafula will ________ withdraw ________ deposit money today.",
+        "Rewrite correctly: Neither is he a manager nor a cashier at that bank.",
+        "Complete: The cashier gave Akello money ________ she presented the withdrawal form.",
+        "Begin with *As soon as*: Apio gave in the account number. The manager told him his balance.",
+        "Correct this sentence: I will go to the bank as soon as it will open.",
+        "Give the past simple of *withdraw*.",
+        "Give the past simple of *pay*.",
+        "Name any three things written on a deposit form.",
+        "Give one reason why it is better to keep money in a bank than at home."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "**A place where people keep their money safely**, take it out when needed and may borrow.",
+        "The **bank manager**",
+        "The **cashier** (teller)",
+        "**To put money into an account**",
+        "**To take money out of an account**",
+        "**The money remaining on an account**",
+        "**A printed list of all the money paid in and taken out of an account**",
+        "It is **not paid, because there is not enough money on the account**.",
+        "**To copy a signature dishonestly in order to cheat** — it is a crime.",
+        "For **getting money from a machine without going to a cashier**",
+        "**neither … nor**",
+        "**neither … nor**",
+        "**He is neither a manager nor a cashier at that bank.**",
+        "**as soon as**",
+        "**As soon as** Apio gave in the account number, the manager told him his balance.",
+        "I will go to the bank **as soon as it opens**.",
+        "**Withdrew**",
+        "**Paid**",
+        "Any three of **the name, the account number, the date, the amount in figures, the amount in words, the signature**",
+        "Any correct reason, for example: **the money is safe from thieves and fire**, or **savings can earn interest**."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.5 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "bank · manager · cashier · account · deposit · withdraw · balance · statement",
+        "pass-book · cheque · bounce · forge · ATM card",
+        "**Deposit** = in · **withdraw** = out",
+        "**neither … nor** — no extra *not*",
+        "**as soon as** + present tense for the future",
+        "Past: deposited · withdrew · paid · signed · gave"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, the period allocation (16 periods), the **vocabulary list**, the grammar items (conjunctions; past simple, present simple and future tenses), the sample structures (*neither … nor*, *as soon as*) and the suggested activities were taken from the official **NCDC Primary Five Curriculum, Set One** (© NCDC 2010; pages 33–34 of the PDF in `curriculum/`), including its note that the topic builds on the P.3 theme on managing resources. One printed example sentence has its words in an unusual order; it is quoted and corrected above rather than repeated. **Mobile money** is newer than the syllabus and is flagged as such. The meanings, the steps, the sample form, the conversation, the exercises and the answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook. The names, account number and amounts in the samples are made up."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** for P.5 was available, so the syllabus's own competences and suggested activities were used directly instead."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

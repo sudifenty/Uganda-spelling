@@ -1,0 +1,4285 @@
+THE REPUBLIC OF UGANDA
+
+Ministry of Education and Sports
+
+MATHEMATICS
+SYLLABUS
+Primary Four
+
+National Curriculum Development Centre,
+P.O. Box 7002,
+Kampala - Uganda
+
+2010
+
+THE REPUBLIC OF UGANDA
+Ministry of Education and Sports
+
+MATHEMATICS
+SYLLABUS
+Primary Four
+
+National Curriculum Development Centre,
+P.O. Box 7002,
+Kampala - Uganda
+2010
+
+NATIONAL CURRICULUM DEVELOPMENT CENTRE (NCDC) UGANDA 2010
+
+COPYRIGHT © NCDC, 2010.
+BOX 7002, KYAMBOGO, KAMPALA
+KAMPALA- UGANDA
+URL. www.ncdc.go.ug
+ALL 
+
+rights reserved. No part of this syllabus should be reproduced stored in a retrieval system or transmitted in any form by any means 
+electronic, mechanical, photocopying, recording or otherwise without the permission of the authors and publisher. No patent liability is 
+assumed with respect to the use of the information contained herein.
+ISBN 978-9970-117-40-6
+
+Published by:
+National Curriculum Development Centre 
+
+ 
+
+ 
+
+TABLE OF CONTENTS 
+
+ACKNOWLEDGEMENT ........................................................................................................................................................................................................................... v 
+
+FOREWORD .............................................................................................................................................................................................................................................. vi 
+
+INTRODUCTION .................................................................................................................................................................................................................................... vii 
+
+P4 MATHEMATICS SYLLABUS ............................................................................................................................................................................................................. 1 
+
+Scope and Sequence ............................................................................................................................................................................................................................... 5 
+
+TERM I ......................................................................................................................................................................................................................................................... 5 
+
+ 
+
+ 
+
+Topic: Set Concepts
+
+ 
+Theme 1: Sets ............................................................................................................................................................................................................................................................... 5
+ 
+(8 periods) .......................................................................................................................................................................................................................... 5
+ 
+Theme 2: Numeracy ................................................................................................................................................................................................................................................... 6
+ 
+(20 periods) ................................................................................................................................................................................. 6
+ 
+Topic 2: Operations on Whole Numbers ............................................................................................................................................................................................................. 7
+
+Topic 1: Whole numbers up to 100,000
+
+ 
+
+Topic 3: Patterns and Sequences ........................................................................................................................................................................................................................... 9
+Term II ..................................................................................................................................................................................................................................................... 10 
+
+Theme 2: Numeracy .................................................................................................................................................................................................................................................. 10
+
+ 
+
+Topic 4: Fractions
+
+(24 periods) ........................................................................................................................................................................................................................ 10
+
+THEME 3: GEOMETRY ............................................................................................................................................................................................................................................. 12
+
+ 
+
+Topic 1: 2-Dimensional Geometry
+
+(18 periods) ........................................................................................................................................................................................ 12
+
+Theme 4: Interpretation of Graphs and Data ................................................................................................................................................................................................. 14
+
+ 
+
+Topic 1: Data handling
+
+(Proposed 12 periods) .......................................................................................................................................................................................... 14
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+iii
+
+TERM III ................................................................................................................................................................................................................................................... 15 
+
+Theme 5: Measurement .......................................................................................................................................................................................................................................... 15
+
+ 
+
+ 
+Topic 1: Money
+
+Topic 2: Time
+
+(16 periods) ............................................................................................................................................................................................................................. 15
+
+(16 periods) ................................................................................................................................................................................................................................ 16
+
+ 
+
+Topic 3: Length, Mass, Capacity
+
+(20 periods) ............................................................................................................................................................................................. 17
+
+Theme 6: Algebra ...................................................................................................................................................................................................................................................... 18
+
+ 
+
+Topic 1: Equations without Letters
+
+(8 Periods) ........................................................................................................................................................................................ 18
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+iv
+
+ 
+ 
+
+P4 Mathematics Syllabus, National Curriculum Development CentreTERM III ................................................................................................................................................................................................................................................... 15 
+
+ACKNOWLEDGEMENT 
+
+ 
+
+ 
+
+Theme 5: Measurement .......................................................................................................................................................................................................................................... 15
+
+Topic 1: Money
+
+(16 periods) ............................................................................................................................................................................................................................. 15
+
+Topic 2: Time
+
+(16 periods) ................................................................................................................................................................................................................................ 16
+
+Topic 3: Length, Mass, Capacity
+
+(20 periods) ............................................................................................................................................................................................. 17
+
+Theme 6: Algebra ...................................................................................................................................................................................................................................................... 18
+
+Topic 1: Equations without Letters
+
+(8 Periods) ........................................................................................................................................................................................ 18
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+The National Curriculum Development Centre (NCDC) would like to express its appreciation to all those who worked tirelessly towards the 
+production of this Primary Four Curriculum. 
+
+Our gratitude goes to the Curriculum Task Force of the Ministry of Education and Sports for overseeing and taking timely decisions whenever 
+necessary. Our thanks also go to partners in education who provided the professional information and technical assistance and guidance to enable 
+us come up with syllabuses in the seven subjects. 
+
+Our gratitude is also extended to our members of the various subject panels who worked tirelessly to ensure the various curriculum materials are 
+ready within time. 
+
+Lastly but not least, we would like to acknowledge all those behind the scenes who formed part of the team that worked hard to finalise the work 
+on the various syllabi. 
+
+The National Curriculum Development Centre (NCDC) takes responsibility for any shortcomings that might be identified in the publication and 
+welcomes suggestions for effectively addressing the inadequacies. Such comments and suggestions may be communicated to NCDC through: P.O. 
+Box 7002, Kampala or E-mail admin@ncdc.go.ug or www.ncdc.go.ug . 
+
+DIRECTOR 
+Connie Kateeba 
+NATIONAL CURRICULUM DEVELOPMENT CENTRE. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+v
+
+P4 Mathematics Syllabus, National Curriculum Development Centre 
+FOREWORD 
+
+The Curriculum for Primary Four 
+
+The Curriculum for Lower Primary (P1-3) which the learner in Primary Four went through was organized around different themes (Thematic) that 
+were familiar to the learner. The main emphasis of that curriculum was numeracy, literacy and life skills. The medium of instruction for most 
+children was the local language. English was taught as a subject. 
+
+In this curriculum for Primary Four, children are required to change from the theme-based to subject-based learning. They are also required to 
+begin learning in English. P4 learners will have textbooks. The teacher will encourage learners to do all activities and make responses in English. 
+These phenomena make primary four a transitional class. 
+
+The Primary Four Curriculum revisits contents, concepts and skills that have already been learnt in local languages as well as introducing some 
+new content and concepts. 
+
+Learners and teachers will start the year using English as medium of instruction and occasionally local language when necessary. By the end of 
+Primary Four the local language will be used only for explaining the most difficult concepts. Written materials including textbooks will be in 
+English. Local languages will continue to be taught as subjects to reinforce children’s literacy. 
+
+The subjects to be taught in this Primary Four curriculum include: English, Mathematics, Social Studies, Religious Education (Christian Religious 
+Education – CRE and Islamic Religious Education – IRE), Integrated Science, Creative Arts & Physical Education (CAPE) and Local Language. Each 
+subject emphasizes the development of contents/(subject) competences and relevant language competences. 
+
+I, therefore, recommend this Primary Four Curriculum for its implementation in the on-going reforms in Uganda. 
+
+DIRECTOR OF BASIC EDUCATION 
+Dr. Y. K. Nsubuga 
+MINISTRY OF EDUCATION AND PORTS 
+
+ 
+
+ 
+
+vi
+
+ 
+ 
+
+P4 Mathematics Syllabus, National Curriculum Development CentreFOREWORD 
+
+The Curriculum for Primary Four 
+
+INTRODUCTION 
+
+Background 
+
+The Curriculum for Lower Primary (P1-3) which the learner in Primary Four went through was organized around different themes (Thematic) that 
+
+were familiar to the learner. The main emphasis of that curriculum was numeracy, literacy and life skills. The medium of instruction for most 
+
+children was the local language. English was taught as a subject. 
+
+The new Primary Education Curriculum for Uganda has put emphasis on integrated production skills and on an integrated approach in all 
+disciplines. Therefore, the Mathematics curriculum has been designed in such a way that will provide the learners with the means of developing 
+logical thought and numerical skills which will be a powerful tool in their further study and later work in exploring the environment. 
+
+In this curriculum for Primary Four, children are required to change from the theme-based to subject-based learning. They are also required to 
+
+begin learning in English. P4 learners will have textbooks. The teacher will encourage learners to do all activities and make responses in English. 
+
+These phenomena make primary four a transitional class. 
+
+The Primary Four Curriculum revisits contents, concepts and skills that have already been learnt in local languages as well as introducing some 
+
+new content and concepts. 
+
+Learners and teachers will start the year using English as medium of instruction and occasionally local language when necessary. By the end of 
+
+Primary Four the local language will be used only for explaining the most difficult concepts. Written materials including textbooks will be in 
+
+English. Local languages will continue to be taught as subjects to reinforce children’s literacy. 
+
+The subjects to be taught in this Primary Four curriculum include: English, Mathematics, Social Studies, Religious Education (Christian Religious 
+
+Education – CRE and Islamic Religious Education – IRE), Integrated Science, Creative Arts & Physical Education (CAPE) and Local Language. Each 
+
+subject emphasizes the development of contents/(subject) competences and relevant language competences. 
+
+I, therefore, recommend this Primary Four Curriculum for its implementation in the on-going reforms in Uganda. 
+
+DIRECTOR OF BASIC EDUCATION 
+
+Dr. Y. K. Nsubuga 
+
+MINISTRY OF EDUCATION AND PORTS 
+
+ 
+
+ 
+
+ 
+
+ 
+
+In this curriculum, the teacher has the task of trying to make Mathematics a reality in life. In this, he/she must succeed. Methods and approaches to 
+learning experiences should be mostly practical and based on the experience of the learners. Hence, teaching methods to be emphasized are those 
+that allow the learners to explore, try different procedures and solve problems practically. In this way, Mathematics should be concretized as much 
+as possible so as to assist the learner to visualize it properly. 
+
+The syllabus is arranged in ten major themes and in each theme there are various topics. Themes include: Sets, Numeracy, Geometry, 
+Interpretation of Graphs and Data, Measurement and Algebra. 
+
+Mathematics must be integrated with other subjects. In order to do so, the teacher will need to seek opportunities for drawing mathematical 
+experiences out of a wide range of pupils’ activities. Very many curricular areas and activities give rise to the need to use mathematical concepts, 
+principles or ideas. Measurement and symmetry arise frequently in Art and Crafts and many patterns have some geometrical basis. Environmental 
+Education and Social Studies use measurements of many kinds and the study of maps introduces the concepts of direction, scale and ratio. A great 
+deal of measurement can arise in the course of cooking, including cost calculations, in the study of Home Economics. 
+
+Mathematics syllabus has been organized in Themes and within these themes there are topics. Time allocated to each Theme/Topic is indicated. 
+Rationale 
+
+The vital interplay between Mathematics and Science has been emphasized. The list of opportunities and examples of the relevance of 
+Mathematics in the teaching and understanding of other subjects is endless. It follows, therefore, that the overall aim of teaching this subject must 
+be to develop in the learners a positive attitude towards Mathematics and an awareness of its great power to communicate and to provide 
+explanations in matters of daily phenomena. This will result in Mathematics being used in many activities of daily life. In this way, the subject will 
+be demystified and user-friendly. 
+In implementing this syllabus, attention must be given to time allocation, i.e. double periods should be avoided except during practical lessons. The 
+teacher should constantly facilitate and evaluate the teaching/learning process in his or her class. Most of the evaluation will be through 
+continuous assessment of the learners and self. Some techniques for doing this are: oral drills, flash cards, speed tests, power tests, written vii
+ 
+
+ 
+ 
+
+P4 Mathematics Syllabus, National Curriculum Development Centreexercise, puzzles, riddles, contests, games self-appraisal, inventories, besides others. This will enable the teacher to check whether or not the 
+objectives of teaching Mathematics have been realized. 
+The National Aims of Education 
+
+Both Thematic and Upper Primary Curriculum are designed to address the National Aims of Education as specified in the Government White Paper 
+(a) 
+on the Education Policy Review Commission Report (1992). The aims are: 
+
+(b) 
+(c) 
+
+(d) 
+(e) 
+
+(f) 
+
+To promote understanding and appreciation of the value of national unity, patriotism and cultural heritage, with due consideration to internal 
+relations and beneficial interdependence; 
+To inculcate moral, ethical and spiritual values in the individual and to develop self-discipline, integrity, tolerance and human fellowship. 
+To inculcate into Ugandans a sense of service, duty and leadership for participation in civic, social and national affairs through group activities 
+in educational institutions and the community. 
+To promote scientific, technical and cultural knowledge, skills and attitudes needed to enhance individual and national development. 
+To eradicate illiteracy and equip the individual with basic skills and knowledge to exploit the environment for self- development as well as 
+national development; for better health, nutrition and family life, and the capacity for continued learning; and 
+To equip the learners with the ability to contribute to the building of an integrated, self-sustaining and independent national economy. 
+
+Aims and Objectives of Primary Education in Uganda 
+
+At Primary education level the national aims can be translated to include the following aims and objectives: 
+
+1.
+2.
+3.
+4.
+5.
+
+6.
+
+7.
+8.
+9.
+10.
+11.
+viii
+
+To enable individuals to acquire functional literacy, numeracy and communication skills in Ugandan languages and English. 
+To develop and maintain sound mental and physical health; 
+To instill the value of living and working cooperatively with other people and caring for others in the community. 
+To develop cultural, moral and spiritual values of life; 
+To inculcate an understanding of and appreciation, for, the protection and utilization of the natural environment using scientific and 
+technological knowledge. 
+To develop a sense of patriotism and unity, an understanding of one’s rights and responsibilities and an appreciation of the need to 
+participate actively in civic matters. 
+To develop pre-requisite for continuing education and development. 
+To develop adequate practical skills for making a living. 
+To develop appreciation for the dignity of work and for making a living by one’s honest effort. 
+To develop the ability to use the problem-solving approach in various life situations; and 
+To develop discipline and good manners. 
+
+ 
+ 
+
+ 
+
+P4 Mathematics Syllabus, National Curriculum Development Centre 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+exercise, puzzles, riddles, contests, games self-appraisal, inventories, besides others. This will enable the teacher to check whether or not the 
+
+objectives of teaching Mathematics have been realized. 
+
+The National Aims of Education 
+
+Both Thematic and Upper Primary Curriculum are designed to address the National Aims of Education as specified in the Government White Paper 
+
+on the Education Policy Review Commission Report (1992). The aims are: 
+
+To promote understanding and appreciation of the value of national unity, patriotism and cultural heritage, with due consideration to internal 
+
+relations and beneficial interdependence; 
+
+To inculcate moral, ethical and spiritual values in the individual and to develop self-discipline, integrity, tolerance and human fellowship. 
+
+To inculcate into Ugandans a sense of service, duty and leadership for participation in civic, social and national affairs through group activities 
+
+in educational institutions and the community. 
+
+To promote scientific, technical and cultural knowledge, skills and attitudes needed to enhance individual and national development. 
+
+To eradicate illiteracy and equip the individual with basic skills and knowledge to exploit the environment for self- development as well as 
+
+national development; for better health, nutrition and family life, and the capacity for continued learning; and 
+
+To equip the learners with the ability to contribute to the building of an integrated, self-sustaining and independent national economy. 
+
+Aims and Objectives of Primary Education in Uganda 
+
+At Primary education level the national aims can be translated to include the following aims and objectives: 
+
+To enable individuals to acquire functional literacy, numeracy and communication skills in Ugandan languages and English. 
+
+To develop and maintain sound mental and physical health; 
+
+To instill the value of living and working cooperatively with other people and caring for others in the community. 
+
+To develop cultural, moral and spiritual values of life; 
+
+technological knowledge. 
+
+To inculcate an understanding of and appreciation, for, the protection and utilization of the natural environment using scientific and 
+
+6.
+
+To develop a sense of patriotism and unity, an understanding of one’s rights and responsibilities and an appreciation of the need to 
+
+participate actively in civic matters. 
+
+To develop pre-requisite for continuing education and development. 
+
+To develop adequate practical skills for making a living. 
+
+To develop appreciation for the dignity of work and for making a living by one’s honest effort. 
+
+10.
+
+To develop the ability to use the problem-solving approach in various life situations; and 
+
+11.
+
+To develop discipline and good manners. 
+
+ 
+
+ 
+
+ 
+
+(a) 
+
+(b) 
+
+(c) 
+
+(d) 
+
+(e) 
+
+(f) 
+
+1.
+
+2.
+
+3.
+
+4.
+
+5.
+
+7.
+
+8.
+
+9.
+
+Broad Aims of Education 
+
+Mathematics provides a foundation to a dynamic society. This is a reflection of some of the National Goals and Broad Aims of Education in Uganda, 
+which in particular are: 
+
+1.
+
+2.
+
+Promoting scientific, technical and cultural knowledge, skills and positive attitudes needed to promote development, self-sufficiency and 
+wealth. 
+Equipping the individual with basic and production skills as well as knowledge towards understanding the laws of nature, taming the 
+environment and taking the right decisions. 
+
+Learning Outcomes 
+
+Effective learning promotes the ability for the learner to: 
+Promote problem solving in life situations; 
+Relate it closely to integrated production skills and other subjects, since it is an essential knowledge base; and 
+Develop and enrich children’s aesthetic and linguistic experiences. 
+
+1.
+2.
+3.
+
+General Methodology 
+
+Mathematic should be taught practically using examples drawn from the learner’s real life situation. The methods to be used are those which 
+encourage the learner’s active participation. Learners should be allowed to do activities on their own with little assistance from the teacher. The 
+role of the teacher is to guide the learners when they (pupils) are doing the activities. 
+
+Primary Four is a transition class, therefore learners can use their local language when explaining a concept, but the teacher should encourage the 
+same learner to do the same explanation in English. Again the teacher is required to assist the learner to acquire proper English language. 
+Assessment 
+
+Mathematics appears on the timetable everyday. This gives the teacher a chance to assess the learner’s everyday as she/he teaches. Continuous 
+assessment is very much encouraged rather than having summative evaluation of the learners at the end of the term. Assessing learners daily does 
+not mean assessing each learner in every lesson, but you can assess a group of learners. What is needed in this method of assessment is to make 
+sure that each learner is assessed before the end of the topic. The teacher is encouraged to keep record of assessment for each learner. This will 
+help the teacher to organize remedial teaching for her/his time takers. 
+
+Assessment can be done through assignments, projects, observation, discussion, pen and paper work and other methods. 
+
+ 
+
+ 
+ 
+
+ix
+
+P4 Mathematics Syllabus, National Curriculum Development Centre 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Proposed Period Allocation per Subject 
+
+Subject 
+
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+
+English 
+Social Studies 
+RE 
+Math 
+Integrated Science (with Agriculture) 
+Local Language 
+Creative Arts & PE (CAPE) 
+Total Periods 
+Library 
+
+ Proposed Sample timetable for P.4 
+
+P4 P5 
+Periods 
+
+P6 
+
+P7 
+
+7 7 
+5 5 
+3 3 
+7 7 
+7 7 
+3 3 
+7 6 
+40 40 
+1 2 
+
+7 
+5 
+3 
+7 
+7 
+3 
+6 
+40 
+2 
+
+7 
+5 
+3 
+7 
+7 
+3 
+6 
+40 
+2 
+
+Day 
+Mon 
+Tue 
+Wed 
+Thur 
+Fri 
+CAPE 
+ 
+SCE 
+RE 
+
+ 
+
+x
+
+MTC 
+ 
+ENG 
+SST 
+ENG 
+
+Eng 
+ 
+MTC 
+SCE 
+RE 
+MTC 
+
+CAPE 
+ 
+ENG 
+CAPE 
+SCE 
+CAPE 
+
+ 
+
+K
+A
+E
+R
+B
+
+SCE 
+ 
+SST 
+MTC 
+SST 
+ENG 
+
+ 
+MTC 
+LL 
+MTC 
+RE 
+
+SST 
+ 
+CAPE 
+ENG 
+SCE 
+LL 
+
+ 
+
+K
+A
+E
+R
+B
+H
+C
+N
+U
+L
+
+LIB 
+ 
+
+RE 
+ 
+SCE 
+ENG LL 
+CAPE CAPE 
+CAPE SST 
+
+ 
+
+ 
+
+S
+E
+M
+A
+G
+
+Creative Performing Arts 
+Library 
+Integrated Science with Agriculture ENG English 
+Social Studies 
+Religious Education 
+
+LIB 
+
+SST 
+
+MTC Math 
+LL 
+
+Local Language 
+
+ 
+ 
+
+P4 Mathematics Syllabus, National Curriculum Development Centre 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Proposed Period Allocation per Subject 
+
+English 
+
+Social Studies 
+
+RE 
+
+Math 
+
+Subject 
+
+1.
+
+2.
+
+3.
+
+4.
+
+5.
+
+6.
+
+7.
+
+Integrated Science (with Agriculture) 
+
+Local Language 
+
+Creative Arts & PE (CAPE) 
+
+Total Periods 
+
+Library 
+
+ Proposed Sample timetable for P.4 
+
+P4 P5 
+
+Periods 
+
+P6 
+
+P7 
+
+7 7 
+
+5 5 
+
+3 3 
+
+7 7 
+
+7 7 
+
+3 3 
+
+7 
+
+5 
+
+3 
+
+7 
+
+7 
+
+3 
+
+7 
+
+5 
+
+3 
+
+7 
+
+7 
+
+3 
+
+7 6 
+
+40 40 
+
+1 2 
+
+6 
+
+40 
+
+2 
+
+6 
+
+40 
+
+2 
+
+MTC 
+
+ENG 
+
+ 
+
+SST 
+
+ENG 
+
+Eng 
+
+ 
+
+MTC 
+
+SCE 
+
+RE 
+
+MTC 
+
+CAPE 
+
+ 
+
+ENG 
+
+CAPE 
+
+SCE 
+
+CAPE 
+
+ 
+
+K
+
+A
+
+E
+
+R
+
+B
+
+SCE 
+
+SST 
+
+ 
+
+MTC 
+
+SST 
+
+ENG 
+
+ 
+
+MTC 
+
+LL 
+
+MTC 
+
+RE 
+
+SST 
+
+ 
+
+CAPE 
+
+ENG 
+
+SCE 
+
+LL 
+
+ 
+
+K
+
+A
+
+E
+
+R
+
+B
+
+H
+
+C
+
+N
+
+U
+
+L
+
+RE 
+
+ 
+
+SCE 
+
+LIB 
+
+ 
+
+ENG LL 
+
+CAPE CAPE 
+
+CAPE SST 
+
+ 
+
+ 
+
+S
+
+E
+
+M
+
+A
+
+G
+
+Creative Performing Arts 
+
+LIB 
+
+Library 
+
+Integrated Science with Agriculture ENG English 
+
+Religious Education 
+
+SST 
+
+Social Studies 
+
+MTC Math 
+
+LL 
+
+Local Language 
+
+Day 
+
+Mon 
+
+Tue 
+
+Wed 
+
+Thur 
+
+Fri 
+
+CAPE 
+
+ 
+
+SCE 
+
+RE 
+
+ 
+
+P4 MATHEMATICS SYLLABUS 
+
+Term 1 
+
+Theme 1: Sets 
+Topic 1: Set Concepts 
+Sub-Topics 
+
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+
+Identifying sets 
+Naming sets 
+Forming sets 
+The number of members in a set 
+Equivalent sets 
+Empty sets 
+Identifying common members in given sets. 
+Theme 2: Numeracy 
+Topic 2: Whole numbers 
+Sub-Topics 
+
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+
+Read whole numbers up to 99,999 
+Count whole numbers up to 99,999 
+Place value of 5 digit numbers 
+Value of digits of 5 digits numbers 
+Expand 5 digit numbers 
+Writing in short form 
+Writing numbers in words 
+Writing numbers in figures 
+Round off whole numbers to the nearest 10, 100 and 1,000 
+Read and write Roman numbers up to 20 (xx). 
+
+(Proposed 8 periods) 
+
+(Proposed 20 periods) 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+1
+
+P4 Mathematics Syllabus, National Curriculum Development Centre 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Topic 3: Operations on Whole numbers 
+Sub-Topics 
+
+(Proposed 20 periods) 
+
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+
+Adding whole numbers up to 5 digits where the sum does not exceed 99,999 without regrouping. 
+Adding whole numbers up to 5 digits where the sum does not exceed 99,999 with regrouping. 
+Form and solve simple word problems involving addition. 
+Subtract whole numbers up to 5 digits where the terms do not exceed 99,999 without regrouping. 
+Subtract whole numbers up to 5 digits where the terms do not exceed 99,999 with regrouping. 
+Form and solve simple word problems involving subtraction. 
+Multiply whole numbers up to 3 digits by 0, 10 and 100. 
+Multiply whole numbers up to 3 digits by whole numbers 1 – 9. 
+Form and solve simple word problems using multiplication. 
+Form and solve simple word problems using division. 
+Divide 4-digit numbers by whole number from 1-10 and 100 without remainders. 
+
+ Topic 4: Patterns and Sequences 
+Sub-Topics 
+
+1.
+2.
+3.
+4.
+
+Recognize and name common shapes 
+Identify even and odd numbers 
+Recognize patterns and sequences from given examples 
+Form patterns and sequences 
+
+ 
+
+Theme 2: Numeracy 
+Topic 5: Fractions 
+Sub-Topics 
+
+Term II 
+
+1.
+2.
+3.
+2
+4.
+
+Identify simple equivalent fractions less than 1. 
+Identify and name proper, improper fractions and mixed numbers 
+Rename improper fractions as mixed numbers and vice versa 
+Equivalent fractions 
+
+ 
+ 
+
+ 
+
+(Proposed 12 periods) 
+
+(Proposed 24 periods) 
+
+P4 Mathematics Syllabus, National Curriculum Development Centre 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Topic 3: Operations on Whole numbers 
+
+Sub-Topics 
+
+(Proposed 20 periods) 
+
+Adding whole numbers up to 5 digits where the sum does not exceed 99,999 without regrouping. 
+
+Adding whole numbers up to 5 digits where the sum does not exceed 99,999 with regrouping. 
+
+Form and solve simple word problems involving addition. 
+
+Subtract whole numbers up to 5 digits where the terms do not exceed 99,999 without regrouping. 
+
+Subtract whole numbers up to 5 digits where the terms do not exceed 99,999 with regrouping. 
+
+Form and solve simple word problems involving subtraction. 
+
+Multiply whole numbers up to 3 digits by 0, 10 and 100. 
+
+Multiply whole numbers up to 3 digits by whole numbers 1 – 9. 
+
+Form and solve simple word problems using multiplication. 
+
+10.
+
+Form and solve simple word problems using division. 
+
+11.
+
+Divide 4-digit numbers by whole number from 1-10 and 100 without remainders. 
+
+ Topic 4: Patterns and Sequences 
+
+Sub-Topics 
+
+(Proposed 12 periods) 
+
+1.
+
+2.
+
+3.
+
+4.
+
+5.
+
+6.
+
+7.
+
+8.
+
+9.
+
+1.
+
+2.
+
+3.
+
+4.
+
+1.
+
+2.
+
+3.
+
+4.
+
+ 
+
+ 
+
+5.
+6.
+7.
+8.
+9.
+
+Order and compare fractions with the same denominator using a number line and diagrams 
+Find simple fractions of a group 
+Add fractions with the same denominator 
+Subtract fractions with the same denominator 
+Simple word problems involving fractions 
+
+ Theme 3: Geometry 
+Topic 6: 2 - Dimensional Geometry 
+Sub-Topics 
+
+(Proposed 18 periods) 
+
+1.
+2.
+3.
+4.
+5.
+
+Identify 2-dimensional figures 
+Name 2-dimensional figures 
+Use rulers, set squares or compasses to construct equilateral triangles, rectangles, squares, triangles and lines 
+Recognize right angles in real life situations 
+Build polygon figures using straws, sticks, reeds, wires. 
+
+Topic 7: 3-Dimensional Geometry 
+Sub-Topics 
+
+(Proposed 8 periods) 
+
+Recognize and name common shapes 
+
+Identify even and odd numbers 
+
+Recognize patterns and sequences from given examples 
+
+Form patterns and sequences 
+
+Term II 
+
+Theme 2: Numeracy 
+
+Topic 5: Fractions 
+
+Sub-Topics 
+
+Identify simple equivalent fractions less than 1. 
+
+Identify and name proper, improper fractions and mixed numbers 
+
+Rename improper fractions as mixed numbers and vice versa 
+
+Equivalent fractions 
+
+ 
+
+ 
+
+1.
+2.
+3.
+
+Identify the following solids and figures; cube, cuboids, sphere, cylinder, pyramid and cone 
+Identify the faces, edges and vertices of the solids. 
+Build models of solids 
+
+(Proposed 24 periods) 
+
+Theme 4: Interpretation of Graphs and Data 
+Topic 8: Data handlin 
+Sub-Topics 
+
+(Proposed 12 periods) 
+
+1.
+2.
+3.
+4.
+
+Represent and interpret pictographs 
+Represent and interpret bar graphs. 
+Represent and interpret line graphs 
+Use tally marks and common counting symbols to collect and group data 
+
+ 
+ 
+
+ 
+ 
+
+3
+
+P4 Mathematics Syllabus, National Curriculum Development Centre 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Theme 5: Measurements 
+Topic 9:Money 
+Sub-Topics 
+
+Term III 
+
+Identify the coins and notes of Uganda currency 
+Add money 
+Subtract money 
+Conversion of money 
+Buying and selling with Uganda currency 
+Calculate simple profit and loss. 
+
+Topic 10: Time 
+Sub-Topics 
+
+Revise names of days and months Calendar in English 
+Tell time in hours and minutes 
+Convert measures of time e.g. months to days, days to weeks, hours to minutes and vice versa 
+Find duration. 
+
+Topic 11: Length, Mass, Capacity 
+Sub-Topics 
+
+Identify standard instruments used for measuring length, mass and capacity 
+Use standard units to measure length, mass and capacity 
+Distance 
+Measure perimeter of rectangles, squares and triangles 
+Calculate the areas of squares and rectangles 
+Solve simple problems using standard units of measure. 
+
+Theme 6: Algebra 
+Topic 12:Equations 
+Sub-Topics 
+
+1.
+
+Simple equations without letters 
+
+ 
+
+ 
+
+4
+
+ 
+ 
+
+1.
+2.
+3.
+4.
+5.
+6.
+
+1.
+2.
+3.
+4.
+
+1.
+2.
+3.
+4.
+5.
+6.
+
+(Proposed 16 periods) 
+
+(Proposed 16 periods) 
+
+(Proposed 20 periods) 
+
+(Proposed 8 periods) 
+
+P4 Mathematics Syllabus, National Curriculum Development Centre 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1.
+
+2.
+
+3.
+
+4.
+
+5.
+
+1.
+
+2.
+
+3.
+
+1.
+
+2.
+
+3.
+
+4.
+
+5.
+
+Term III 
+
+Theme 5: Measurements 
+
+Topic 9:Money 
+
+Sub-Topics 
+
+Identify the coins and notes of Uganda currency 
+
+Add money 
+
+Subtract money 
+
+Conversion of money 
+
+Buying and selling with Uganda currency 
+
+Topic 10: Time 
+
+Calculate simple profit and loss. 
+
+6.
+
+Sub-Topics 
+
+Identify standard instruments used for measuring length, mass and capacity 
+
+Use standard units to measure length, mass and capacity 
+
+Distance 
+
+Measure perimeter of rectangles, squares and triangles 
+
+Calculate the areas of squares and rectangles 
+
+Theme 6: Algebra 
+
+Solve simple problems using standard units of measure. 
+
+6.
+
+Topic 12:Equations 
+
+Sub-Topics 
+
+1.
+
+Simple equations without letters 
+
+ 
+
+ 
+
+ 
+
+ 
+
+(Proposed 16 periods) 
+
+(Proposed 16 periods) 
+
+(Proposed 8 periods) 
+
+Revise names of days and months Calendar in English 
+
+Tell time in hours and minutes 
+
+Convert measures of time e.g. months to days, days to weeks, hours to minutes and vice versa 
+
+Topic 11: Length, Mass, Capacity 
+
+Find duration. 
+
+4.
+
+Sub-Topics 
+
+(Proposed 20 periods) 
+
+Scope and Sequence 
+
+Theme 1: Sets 
+
+Topic: Set Concepts 
+
+TERM I 
+
+(8 periods) 
+
+This topic continues the work on sets which was covered in P1-3. The examples should be of everyday real life situations. There must be emphasis 
+on those English words which have a special meaning in Mathematics like ‘member’, ‘empty’, ‘equivalent’, etc. Learners should begin a dictionary of 
+such words. Pictures should be used sometimes to explain the meaning of the words. 
+Learning outcome(s) 
+
+The learner demonstrates the knowledge of sets in solving problems in everyday life situations. 
+Life skills: 
+
+Logical thinking, problem solving, effective communication. 
+
+Language Competences 
+
+Subject Competences 
+
+Content 
+
+Suggested Activities 
+
+• 
+
+• 
+• 
+
+Names, identifies, forms 
+equivalent sets and empty sets 
+using examples at home 
+Counts number of members in sets 
+Identifies and names common 
+members that belong to given sets. 
+
+• 
+
+• 
+• 
+
+Writes and uses the words 
+set, equivalent, empty and 
+member of a set 
+Describes equivalent sets. 
+Gives orally examples of an 
+empty set. 
+
+• 
+• 
+• 
+
+• 
+
+Equivalent, empty set. 
+Members of sets. 
+Number of members in 
+given sets. 
+Common members in 
+given sets. 
+
+• 
+
+• 
+• 
+
+• 
+
+Assessment competences: 
+
+drawing equivalent sets of various 
+named objects e.g. fruits and animals. 
+Naming examples of empty sets. 
+Identifying and writes common 
+members of sets. 
+Counting number of members in 
+given sets. 
+
+1.
+2.
+3.
+4.
+5.
+
+Draws equivalent sets of various named objects. 
+Describes sets in local language and English 
+Counts number of members in a set 
+Identifies common members in two given sets. 
+Writes members of a set from everyday life. 
+
+ 
+
+ 
+ 
+
+5
+
+P4 Mathematics Syllabus, National Curriculum Development Centre 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Theme 2: Numeracy 
+
+Topic 1: Whole numbers up to 100,000 
+
+(20 periods) 
+
+This topic is also a continuation of the work covered in P1-3. Now learners work with numbers up to 99,999. In order for it to be more interesting, 
+examples from every day life competitions and games should be used. Words like ‘place value’, ‘thousands’, ‘hundreds’, ‘tens’ and ‘ones’ should be 
+included in the learners’ own dictionaries with examples to show their meaning. Examples using Ugandan currency can be given to show how 
+large numbers are used in every day life. 
+Learning outcome(s) 
+
+The learner appreciates the need of counting in everyday life and works with whole number up to 99,999. 
+Life skills: 
+
+ 
+• 
+
+• 
+
+• 
+
+• 
+
+Critical thinking, problem solving 
+
+Subject Competences 
+
+Language Competences 
+
+Content 
+
+Suggested Activities 
+
+• 
+• 
+
+• 
+• 
+• 
+
+• 
+
+• 
+
+Reads, counts, writes 
+and orders whole 
+numbers up to 99,999. 
+
+Identifies the place value 
+and value of each digit in 
+a 5 digit number. 
+
+Expands five digit 
+numbers 
+Rounds off whole 
+numbers to the nearest 
+10, 100, 1,000 using 
+number line. 
+
+Counts all the number names up to 100. 
+Recognizes and names any number up to 
+99,999. 
+Counts backward for example from 466 to 450. 
+Counts in tens from 10 – 200 
+Names the place values from ones to ten 
+thousands. 
+Expands numbers according to values of digits. 
+
+Write numbers to the nearest tens, hundreds, 
+and thousands 
+
+• 
+
+• 
+• 
+
+• 
+
+• 
+
+Whole numbers to 
+99,999. 
+
+Place value 
+Value. 
+
+Expanding numbers 
+up to five digits. 
+Rounding off whole 
+numbers 
+
+• 
+
+• 
+
+• 
+
+• 
+• 
+
+• 
+
+• 
+• 
+
+Drawing a number line to show 
+numbers in 100s from 
+0 – 2000. 
+
+Using an abacus or table to show 
+place value and values of various 
+numbers. 
+Using values of digits in given 
+numbers to expand them. 
+Using a number line to round off 
+numbers to the 
+nearest 10, 100 
+and 1000. 
+
+ 
+ 
+
+6
+
+ 
+ 
+
+P4 Mathematics Syllabus, National Curriculum Development Centre Theme 2: Numeracy 
+
+Topic 1: Whole numbers up to 100,000 
+
+(20 periods) 
+
+ 
+
+• 
+
+Subject Competences 
+
+Language Competences 
+
+Content 
+
+Suggested Activities 
+
+• 
+
+• 
+
+Reads and writes Roman 
+numbers I-XX 
+
+Reads and writes Roman numbers 
+
+Roman numerals 
+
+Assessment competences: 
+
+1.
+2.
+3.
+4.
+
+Counts in hundreds to 99,999 
+Uses number line to show rounding off 
+Reads Roman numerals 
+Matches Roman to Hindu numerals 
+ Topic 2: Operations on Whole Numbers 
+
+• 
+• 
+• 
+
+Reading and writing Roman numbers. 
+Converting Hindu 
+Arabic to Roman and vice versa. 
+
+The basic number work on the four operations should be revised at the beginning of this topic using mental work, ‘number spiders’, games and 
+competitions. There are many words used which have a special mathematical meaning in English and it is important that learners can read, write 
+and speak them correctly. Examples can be written in the learner’s dictionary. 
+
+The examples used should be concerned with every day life. 
+Learning outcome(s): 
+
+the four operations. 
+Life skills 
+
+: 
+
+The learner solves mathematical problems with competence and confidence using 
+
+Subject Competences 
+
+Accuracy, critical thinking, problem solving, self esteem. 
+
+Language Competences 
+
+Content 
+
+Suggested Activities 
+
+• 
+
+ 
+ 
+
+• 
+
+• 
+
+Adds whole numbers up to 
+5 digits where the sum does 
+not exceed 99,999. 
+
+Adds and expresses the terms for addition 
+4 plus 3 equals 7 or 4 and 3 is 7. 
+
+Addition of whole 
+numbers 
+
+ 
+ 
+
+• 
+
+• 
+
+Learners in pairs make up 
+simple addition problems using 
+numbers up to 99,999 and ask 
+
+partner to solve them. 
+
+7
+
+This topic is also a continuation of the work covered in P1-3. Now learners work with numbers up to 99,999. In order for it to be more interesting, 
+
+examples from every day life competitions and games should be used. Words like ‘place value’, ‘thousands’, ‘hundreds’, ‘tens’ and ‘ones’ should be 
+
+included in the learners’ own dictionaries with examples to show their meaning. Examples using Ugandan currency can be given to show how 
+
+large numbers are used in every day life. 
+
+Learning outcome(s) 
+
+The learner appreciates the need of counting in everyday life and works with whole number up to 99,999. 
+
+Life skills: 
+
+Critical thinking, problem solving 
+
+Subject Competences 
+
+Language Competences 
+
+Content 
+
+Suggested Activities 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+thousands. 
+
+Reads, counts, writes 
+
+Counts all the number names up to 100. 
+
+Whole numbers to 
+
+Drawing a number line to show 
+
+and orders whole 
+
+Recognizes and names any number up to 
+
+99,999. 
+
+numbers in 100s from 
+
+numbers up to 99,999. 
+
+99,999. 
+
+Counts backward for example from 466 to 450. 
+
+Identifies the place value 
+
+Counts in tens from 10 – 200 
+
+and value of each digit in 
+
+Names the place values from ones to ten 
+
+Place value 
+
+Value. 
+
+Using an abacus or table to show 
+
+place value and values of various 
+
+Expands numbers according to values of digits. 
+
+Expanding numbers 
+
+Using values of digits in given 
+
+up to five digits. 
+
+numbers to expand them. 
+
+Rounds off whole 
+
+Write numbers to the nearest tens, hundreds, 
+
+Rounding off whole 
+
+Using a number line to round off 
+
+numbers to the nearest 
+
+and thousands 
+
+numbers 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+0 – 2000. 
+
+numbers. 
+
+numbers to the 
+
+nearest 10, 100 
+
+and 1000. 
+
+a 5 digit number. 
+
+Expands five digit 
+
+numbers 
+
+10, 100, 1,000 using 
+
+number line. 
+
+ 
+
+• 
+
+• 
+
+• 
+
+• 
+
+ 
+
+ 
+
+ 
+
+ 
+
+P4 Mathematics Syllabus, National Curriculum Development Centre 
+ 
+ 
+ 
+Subject Competences 
+
+Language Competences 
+
+Content 
+
+Suggested Activities 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+Subtracts two whole 
+numbers where both 
+terms are not greater 
+than 99,999. 
+Multiplies numbers up to 
+3 digits by 10 and 100. 
+
+Multiplies whole 
+numbers up to 3 digits 
+by whole numbers from 
+0 – 9. 
+Divides 4 digit numbers 
+by whole numbers 1 to 
+10 with and without 
+remainders. 
+Applies the operations of 
+addition, subtraction, 
+multiplication and 
+division to solve real life 
+problems. 
+Solves simple word 
+problems using the four 
+operations. 
+
+Assessment competences: 
+
+Expresses subtraction using any of the terms; 
+“Subtract” 
+“Take away” 
+“Minus” 
+Recites the multiplication tables up to 12. 
+Uses correct 
+mathematical terms for multiplication e.g. 2 
+multiplied by 3 equals 6. 
+Introduces the word product for 
+multiplication e.g. what is the product of 102 
+and 4? 
+
+Uses correctly mathematical terms for 
+division, e.g. 12 divided by 3 equals 4. 
+
+Reads problems and makes up others. 
+
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+Subtraction of whole 
+numbers 
+
+Multiplication of 
+whole numbers by 0, 
+10 and 100 
+
+Multiplication of 
+whole numbers up to 
+3 digits by whole 
+numbers from 0 to 9. 
+Division of whole 
+numbers by numbers 
+1 to 10. 
+
+Solution of real life 
+problems. 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+Solves word problems both orally and in 
+writing. 
+
+Number sentences 
+
+Learners in pairs make up simple 
+subtraction story problems. 
+Using numbers up to 99,999 and 
+asks partner to solve them. 
+The learner multiplies 3 digit 
+numerals by 0, 10 and 100. 
+
+The learners in pairs multiply 
+numbers and later individually. 
+
+Learners work out a division sum 
+describing each step first in 
+mother tongue then English. 
+
+Learners solve and form simple 
+number sentences e.g. 4 [box] = 13. 
+
+Learners solve simple real life 
+problems in groups and 
+individually. 
+
+1.
+2.
+3.
+4.
+5.
+6.
+8
+
+Adds using numbers up to 99,999 
+Subtracts using numbers up to 99,999 
+Multiplies whole numbers up to 3 digits 
+Divides whole numbers by up to 2 digits 
+Applies the four operations on whole numbers in simple word problems. 
+Gives examples showing the relationship between addition and subtraction. 
+
+ 
+ 
+
+ 
+
+P4 Mathematics Syllabus, National Curriculum Development Centre 
+ 
+ 
+ 
+ 
+ 
+Subject Competences 
+
+Language Competences 
+
+Content 
+
+Suggested Activities 
+
+Topic 3: Patterns and Sequences 
+
+Subtracts two whole 
+
+numbers where both 
+
+terms are not greater 
+
+than 99,999. 
+
+“Subtract” 
+
+“Take away” 
+
+“Minus” 
+
+Expresses subtraction using any of the terms; 
+
+Subtraction of whole 
+
+Learners in pairs make up simple 
+
+numbers 
+
+subtraction story problems. 
+
+Using numbers up to 99,999 and 
+
+asks partner to solve them. 
+
+Multiplies numbers up to 
+
+Recites the multiplication tables up to 12. 
+
+Multiplication of 
+
+The learner multiplies 3 digit 
+
+3 digits by 10 and 100. 
+
+Uses correct 
+
+whole numbers by 0, 
+
+numerals by 0, 10 and 100. 
+
+This topic should be an interesting one with learners making patterns and sequences themselves and testing their neighbours. It begins with 
+revision of simple shapes where the language of English is used orally and in written form. In the learners’ dictionary pictures, the names of the 
+shapes should be illustrated with diagrams of the shapes. The use of the words ‘pattern’ for shapes and colours and ‘sequence’ for numbers should 
+be pointed out and used correctly and also illustrated in the dictionaries. Many other English phrases are included here for example ‘What comes 
+first/next?’ 
+Learning outcome(s) 
+
+Multiplication of 
+
+The learners in pairs multiply 
+
+The learner recognizes and forms patterns and sequences using shapes andcolours. 
+Life skills 
+
+: 
+
+Subject Competences 
+
+Language Competences 
+
+Logical thinking, problem solving, creative thinking, friendship formation. 
+
+Content 
+
+• 
+
+• 
+
+• 
+
+• 
+
+Describes and names 
+common shapes. 
+
+Identifies even and odd 
+numbers. 
+
+Fills in and continues 
+patterns and sequences 
+from given examples. 
+Forms patterns and 
+sequences. 
+
+Assessment competences: 
+
+• 
+
+• 
+• 
+
+• 
+
+Names shapes in mother tongue and 
+English. 
+
+Counts even and odd 
+numbers e.g. even 2 up to 50. 
+
+Discusses solution of patterns and 
+sequences and forms others. 
+
+• 
+
+• 
+• 
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+Different shapes. 
+
+Even and odd numbers 
+
+Forming patterns and 
+sequences using the four 
+operations. 
+
+Suggested Activities 
+
+Using pictures or cut outs of 
+common shapes and ask 
+pupils to identify and name them. 
+Listing even and odd numbers. 
+Finds sum of even and odd 
+numbers. 
+Forming patterns or sequences of 
+numbers or shapes and solve them. 
+
+1.
+2.
+3.
+
+Recognizes and names common shapes in local language and English. 
+Writes and reads sequence of even and odd numbers. 
+Forms simple patterns of shapes and sequences of numbers. 
+ 
+ 
+
+ 
+
+9
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+mathematical terms for multiplication e.g. 2 
+
+10 and 100 
+
+multiplied by 3 equals 6. 
+
+Introduces the word product for 
+
+multiplication e.g. what is the product of 102 
+
+whole numbers up to 
+
+numbers and later individually. 
+
+and 4? 
+
+• 
+
+Uses correctly mathematical terms for 
+
+division, e.g. 12 divided by 3 equals 4. 
+
+3 digits by whole 
+
+numbers from 0 to 9. 
+
+Division of whole 
+
+numbers by numbers 
+
+1 to 10. 
+
+• 
+
+Learners work out a division sum 
+
+describing each step first in 
+
+mother tongue then English. 
+
+Applies the operations of 
+
+Reads problems and makes up others. 
+
+Solution of real life 
+
+problems. 
+
+Learners solve and form simple 
+
+number sentences e.g. 4 [box] = 13. 
+
+Solves simple word 
+
+Solves word problems both orally and in 
+
+Number sentences 
+
+Learners solve simple real life 
+
+problems using the four 
+
+writing. 
+
+Assessment competences: 
+
+operations. 
+
+problems in groups and 
+
+individually. 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+Multiplies whole 
+
+numbers up to 3 digits 
+
+by whole numbers from 
+
+0 – 9. 
+
+Divides 4 digit numbers 
+
+by whole numbers 1 to 
+
+10 with and without 
+
+remainders. 
+
+addition, subtraction, 
+
+multiplication and 
+
+division to solve real life 
+
+problems. 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+ 
+
+Adds using numbers up to 99,999 
+
+Subtracts using numbers up to 99,999 
+
+Multiplies whole numbers up to 3 digits 
+
+Divides whole numbers by up to 2 digits 
+
+1.
+
+2.
+
+3.
+
+4.
+
+5.
+
+6.
+
+Applies the four operations on whole numbers in simple word problems. 
+
+Gives examples showing the relationship between addition and subtraction. 
+
+ 
+
+ 
+
+P4 Mathematics Syllabus, National Curriculum Development Centre 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Theme 2: Numeracy 
+
+Topic 4: Fractions 
+
+Term II 
+
+(24 periods) 
+
+It is important that there is revision of all the work covered in P1-3 at the start of this topic. Many learners find fractions difficult if they do not 
+have a firm foundation of the basic concepts. Using diagrams and dividing real objects helps understanding of the basics. The language of fractions 
+in English is important with knowledge of the difference between proper, improper fractions and mixed numbers necessary. Simple equivalent 
+fractions have been shown in P3 but should be extended here using diagrams and real objects to illustrate. 
+
+Finally, an introduction to addition and subtraction of fractions is given using fractions with the same denominators. 
+Learning outcome(s) 
+
+The learner demonstrates the concepts of fractions and their relationship in real life situations 
+Life skills 
+
+Creative thinking, accuracy, friendship formation. 
+
+Subject Competences 
+
+Language Competences 
+
+Content 
+
+Suggested Activities 
+
+• 
+
+• 
+
+Identifies improper and 
+proper fractions and 
+converts improper 
+fractions to mixed 
+numbers. 
+Identifies simple equivalent 
+fractions using diagrams 
+
+• 
+
+• 
+
+• 
+
+Names fractions, gives examples of 
+fractions that are proper, improper or 
+mixed numbers. 
+
+Describes and names equivalent 
+fractions. 
+
+Writes equivalent fractions 
+
+• 
+
+• 
+
+Proper, improper 
+fraction and mixed 
+numbers. 
+
+Equivalent fractions. 
+
+• 
+
+• 
+
+• 
+
+• 
+
+Showing examples of proper, 
+improper fractions and mixed 
+numbers using diagrams. 
+Renaming mixed numbers as 
+improper fractions and vice versa. 
+
+Dividing up real 
+objects/diagrams (e.g. orange) 
+to show that [half] equals 
+
+2
+4
+ etc. 
+/
+
+Working out problems involving 
+equivalent fractions. 
+
+ 
+
+10
+
+ 
+ 
+
+P4 Mathematics Syllabus, National Curriculum Development Centre 
+ 
+Theme 2: Numeracy 
+
+Topic 4: Fractions 
+
+Term II 
+
+(24 periods) 
+
+ 
+
+• 
+
+• 
+
+Orders fractions with the 
+same denominators. 
+
+It is important that there is revision of all the work covered in P1-3 at the start of this topic. Many learners find fractions difficult if they do not 
+
+have a firm foundation of the basic concepts. Using diagrams and dividing real objects helps understanding of the basics. The language of fractions 
+
+in English is important with knowledge of the difference between proper, improper fractions and mixed numbers necessary. Simple equivalent 
+
+fractions have been shown in P3 but should be extended here using diagrams and real objects to illustrate. 
+
+Finally, an introduction to addition and subtraction of fractions is given using fractions with the same denominators. 
+
+Learning outcome(s) 
+
+Solves simple problems 
+using addition and 
+subtraction of fractions 
+with the same 
+denominator. 
+
+ Assessment competences: 
+
+Subject Competences 
+
+Language Competences 
+
+Content 
+
+Suggested Activities 
+
+• 
+
+• 
+• 
+
+Orders fractions with the same 
+denominator 
+Reads fractions 
+Reads and solves problems involving 
+fractions with the same denominator. 
+
+• 
+
+• 
+
+Fractions with the same 
+denominator 
+
+Fractions with the same 
+denominators. 
+
+• 
+
+• 
+
+• 
+
+Ordering and compares fractions. 
+
+Drawing diagrams of fractions 
+with the same denominators. 
+Adding and subtracts fractions 
+with the same denominators. 
+
+The learner demonstrates the concepts of fractions and their relationship in real life situations 
+
+Life skills 
+
+Creative thinking, accuracy, friendship formation. 
+
+Subject Competences 
+
+Language Competences 
+
+Content 
+
+Suggested Activities 
+
+• 
+
+• 
+
+Identifies improper and 
+
+Names fractions, gives examples of 
+
+Proper, improper 
+
+proper fractions and 
+
+fractions that are proper, improper or 
+
+fraction and mixed 
+
+mixed numbers. 
+
+numbers. 
+
+converts improper 
+
+fractions to mixed 
+
+numbers. 
+
+Identifies simple equivalent 
+
+• 
+
+fractions using diagrams 
+
+fractions. 
+
+Writes equivalent fractions 
+
+Describes and names equivalent 
+
+Equivalent fractions. 
+
+• 
+
+• 
+
+• 
+
+• 
+
+Showing examples of proper, 
+
+improper fractions and mixed 
+
+numbers using diagrams. 
+
+Renaming mixed numbers as 
+
+• 
+
+improper fractions and vice versa. 
+
+Dividing up real 
+
+• 
+
+objects/diagrams (e.g. orange) 
+
+2
+
+to show that [half] equals 
+
+/
+
+ etc. 
+
+4
+
+Working out problems involving 
+
+equivalent fractions. 
+
+• 
+
+• 
+
+ 
+
+1.
+2.
+3.
+4.
+5.
+
+Shows proper and mixed numbers using diagrams. 
+Names equivalent fractions and illustrates them. 
+Adds fractions with same denominator. 
+Subtracts fractions with same denominators. 
+Solves simple word problems involving fractions. 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+11
+
+P4 Mathematics Syllabus, National Curriculum Development Centre 
+ 
+ 
+ 
+ 
+ 
+ 
+THEME 3: GEOMETRY 
+
+Topic 1: 2-Dimensional Geometry 
+
+(18 periods) 
+
+Manual dexterity is important for Mathematics and learners need to practice using pencils, rulers and compasses. The simple 2-D shapes – 
+triangle, equilateral triangle, squares, rectangles must all be drawn by each individual learner. The names of these shapes in English must also be 
+known and added to the learner’s dictionary. The perimeter of shapes is introduced and also area using counting squares to compare areas of 
+shapes. 
+Learning outcome 
+
+The learner demonstrates knowledge of 2-dimensional figures and uses construction instruments in appropriate situations. 
+Life skills 
+
+Creative thinking, Accuracy, Effective Communication 
+
+Subject Competences 
+
+Language Competences 
+
+Content 
+
+Suggested Activities 
+
+• 
+The learner: 
+• 
+• 
+
+Identifies 2 - 
+dimensional figures 
+
+Names 2- dimensional figures 
+
+• 
+
+• 
+
+• 
+
+Use construction instruments 
+to draw. 
+
+Recognizes right angles 
+
+Measures perimeter 
+of rectangles, squares 
+and triangles. 
+
+Finds areas of squares and 
+rectangles. 
+
+• 
+
+• 
+• 
+• 
+• 
+
+• 
+
+• 
+• 
+
+Identifies 2- dimensional 
+figures 
+2- dimensional figures 
+
+Names 2- dimensional figures 
+
+Identifies and names 
+
+the instruments for 
+construction 
+
+Points out and names right 
+angles in the 
+classroom and the playground 
+
+Explains the meaning of 
+perimeter in English and 
+illustrates it using his/her 
+exercise book 
+
+• 
+
+• 
+• 
+
+2-dimensional figures 
+
+2-dimension figures: 
+
+• 
+
+triangles, squares, 
+rectangles. 
+
+Right angles 
+
+• 
+
+• 
+
+Perimeter of squares and 
+rectangles. 
+Area of squares and 
+rectangles. 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+• 
+
+• 
+• 
+
+Matching pictures of figures to 
+their names in English. 
+
+Drawing 2- dimensional figures. 
+
+Constructing simple 2- 
+dimensional figures. 
+
+Playing game to find as many right 
+angles in the 
+
+classroom and or the playground. 
+
+Measuring the perimeter of 
+playground using large steps. 
+Working out perimeter and 
+area of various squares and 
+rectangles. 
+
+ 
+
+12
+
+ 
+ 
+
+P4 Mathematics Syllabus, National Curriculum Development CentreTHEME 3: GEOMETRY 
+
+Topic 1: 2-Dimensional Geometry 
+
+(18 periods) 
+
+Assessment competences: 
+
+1.
+2.
+3.
+4.
+
+Draws simple shapes using instruments correctly 
+Matches shapes to names in English 
+Measures perimeter of real objects 
+Finds and compares areas of different shapes. 
+
+ Topic 2: 3-Dimensional Geometry 
+
+ Learning outcome(s) 
+
+The learner recognizes and builds 3-dimensional shapes. 
+Life skills: 
+
+Creative thinking, Critical thinking, Problem solving. 
+
+Subject Competences 
+
+Language Competences 
+
+(8 periods) 
+
+Content 
+
+Suggested Activities 
+
+• 
+• 
+
+• 
+
+Identifies solid figures 
+Names solid figures 
+
+Builds models of solids 
+
+• 
+
+• 
+
+ Assessment competences: 
+
+Names and identifies common 
+solids in mother tongue and 
+English 
+Labels the parts of the models of 
+solids built. 
+
+• 
+
+• 
+
+Common solids 
+
+Models of solids 
+
+• 
+
+• 
+
+Drawing figures showing solids 
+and matches their names. 
+
+Making models of common solids 
+and displays them. 
+
+1.
+2.
+
+Identifies and names common solids 
+Makes models of simple solids and labels them in English. 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+13
+
+Manual dexterity is important for Mathematics and learners need to practice using pencils, rulers and compasses. The simple 2-D shapes – 
+
+triangle, equilateral triangle, squares, rectangles must all be drawn by each individual learner. The names of these shapes in English must also be 
+
+known and added to the learner’s dictionary. The perimeter of shapes is introduced and also area using counting squares to compare areas of 
+
+shapes. 
+
+Learning outcome 
+
+The learner demonstrates knowledge of 2-dimensional figures and uses construction instruments in appropriate situations. 
+
+Life skills 
+
+Creative thinking, Accuracy, Effective Communication 
+
+Subject Competences 
+
+Language Competences 
+
+Content 
+
+Suggested Activities 
+
+Names 2- dimensional figures 
+
+Names 2- dimensional figures 
+
+• 
+
+The learner: 
+
+Identifies 2 - 
+
+dimensional figures 
+
+Use construction instruments 
+
+to draw. 
+
+Recognizes right angles 
+
+Measures perimeter 
+
+of rectangles, squares 
+
+and triangles. 
+
+Finds areas of squares and 
+
+rectangles. 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+ 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+Identifies 2- dimensional 
+
+figures 
+
+2- dimensional figures 
+
+Identifies and names 
+
+the instruments for 
+
+construction 
+
+Points out and names right 
+
+angles in the 
+
+classroom and the playground 
+
+Explains the meaning of 
+
+perimeter in English and 
+
+illustrates it using his/her 
+
+exercise book 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+2-dimensional figures 
+
+2-dimension figures: 
+
+triangles, squares, 
+
+rectangles. 
+
+Right angles 
+
+Perimeter of squares and 
+
+rectangles. 
+
+Area of squares and 
+
+rectangles. 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+Matching pictures of figures to 
+
+their names in English. 
+
+Drawing 2- dimensional figures. 
+
+Constructing simple 2- 
+
+dimensional figures. 
+
+Playing game to find as many right 
+
+angles in the 
+
+classroom and or the playground. 
+
+Measuring the perimeter of 
+
+playground using large steps. 
+
+Working out perimeter and 
+
+area of various squares and 
+
+rectangles. 
+
+P4 Mathematics Syllabus, National Curriculum Development Centre 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Theme 4: Interpretation of Graphs and Data 
+
+Topic 1: Data handling 
+
+(Proposed 12 periods) 
+
+This should be a fun topic for the learners where they collect, record, display and interpret data from their everyday lives using pictographs, line 
+graphs and bar graphs. They should also know which is best for each set of data. Some completed graphs should be displayed on the classroom 
+walls. Graphs can be used which have been circulated from different government department, for example the Ministry of Health and the Ministry 
+of Education, Local Government. 
+Learning outcome(s) 
+
+The learner represents and interprets simple mathematics data in various forms. 
+Life skills: 
+
+Effective communication, Critical thinking and friendship formation. 
+
+Subject Competences 
+
+Language Competences 
+
+Content 
+
+Suggested Activities 
+
+• 
+
+• 
+• 
+• 
+
+Uses tally marks to collect and 
+group data 
+
+Organizes data 
+Displays data 
+Interprets data 
+
+• 
+• 
+• 
+• 
+
+Counts objects or people 
+Records 
+Describe the graph 
+Explains the graph. 
+
+• 
+
+• 
+• 
+• 
+
+Tally marks 
+
+Pictographs 
+Line graphs 
+Bar graphs 
+
+• 
+• 
+• 
+• 
+• 
+• 
+
+Counting tally marks 
+Grouping using tally marks 
+Drawing 
+Reading 
+Interpreting 
+Displaying. 
+
+ Assessment competences: 
+
+1.
+2.
+3.
+4.
+
+Collects data from home and community 
+Displays data 
+Draws graphs 
+Describes and explains the graph 
+
+ 
+
+14
+
+ 
+ 
+
+P4 Mathematics Syllabus, National Curriculum Development Centre 
+ 
+ 
+ 
+Theme 4: Interpretation of Graphs and Data 
+
+Topic 1: Data handling 
+
+(Proposed 12 periods) 
+
+Theme 5: Measurement 
+
+TERM III 
+
+Topic 1: Money 
+
+(16 periods) 
+
+This topic should begin with revision of the work covered in P1-3. There should be very practical lessons with role play using the classroom shop. 
+Learners themselves should provide many of the items and they should suggest the price for each and list the items in English with their price. The 
+concept of profit and loss is introduced and these words in English used carefully and written in their dictionary. 
+Learning outcome(s) 
+
+The learner recognizes, describes and uses money in buying and selling 
+Life skills: 
+
+Problem solving. Logical thinking, creative thinking, effective communication. 
+
+Subject Competences 
+
+Language Competences 
+
+Content 
+
+Suggested Activities 
+
+• 
+
+• 
+
+• 
+
+Identifies coins and notes. 
+
+Practices buying and selling 
+items 
+
+Calculates simple profit and 
+loss 
+ 
+
+Assessment competences: 
+
+• 
+
+• 
+
+• 
+
+Describes different coins and 
+notes 
+Role plays using money in 
+English 
+
+• 
+
+• 
+
+• 
+
+Uganda currency 
+
+Buying and selling 
+
+Uses examples to describe 
+understanding of profit and loss. 
+
+Profit and loss 
+
+• 
+
+• 
+• 
+• 
+• 
+• 
+
+Describing coins and notes. 
+
+Role playing using money 
+Calculating 
+Role playing buyer seller 
+Giving examples of profit and loss 
+Working out problems involving profit 
+and loss 
+
+1.
+2.
+3.
+
+Finds different ways of calculating a certain sum of money. 
+Identifies and uses in role play Uganda money 
+Shows understanding of profit and loss using role play,. 
+
+ 
+
+ 
+ 
+
+15
+
+This should be a fun topic for the learners where they collect, record, display and interpret data from their everyday lives using pictographs, line 
+
+graphs and bar graphs. They should also know which is best for each set of data. Some completed graphs should be displayed on the classroom 
+
+walls. Graphs can be used which have been circulated from different government department, for example the Ministry of Health and the Ministry 
+
+of Education, Local Government. 
+
+Learning outcome(s) 
+
+The learner represents and interprets simple mathematics data in various forms. 
+
+Life skills: 
+
+Effective communication, Critical thinking and friendship formation. 
+
+Subject Competences 
+
+Language Competences 
+
+Content 
+
+Suggested Activities 
+
+Uses tally marks to collect and 
+
+Counts objects or people 
+
+Tally marks 
+
+• 
+
+• 
+
+• 
+
+• 
+
+Records 
+
+Describe the graph 
+
+Explains the graph. 
+
+• 
+
+• 
+
+• 
+
+• 
+
+Pictographs 
+
+Line graphs 
+
+Bar graphs 
+
+group data 
+
+Organizes data 
+
+Displays data 
+
+Interprets data 
+
+ Assessment competences: 
+
+Counting tally marks 
+
+Grouping using tally marks 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+Drawing 
+
+Reading 
+
+Interpreting 
+
+Displaying. 
+
+• 
+
+• 
+
+• 
+
+• 
+
+1.
+
+2.
+
+3.
+
+4.
+
+ 
+
+Collects data from home and community 
+
+Displays data 
+
+Draws graphs 
+
+Describes and explains the graph 
+
+ 
+
+ 
+
+P4 Mathematics Syllabus, National Curriculum Development Centre 
+ 
+ 
+ 
+ 
+ 
+ 
+ Topic 2: Time 
+
+(16 periods) 
+
+Revision of all the earlier work from P1-3 should be done at the start of this topic using real or model Clocks. There should be practical lessons 
+with learners making a weekly timetable for their homework and a monthly calendar for the classroom wall. 
+Learning outcome(s) 
+
+The learner appreciates and uses the concept of time in everyday life situations. 
+Life skills: 
+
+Accuracy, problem solving, creative thinking, effective communication and decisionmaking. 
+Content 
+
+Language Competences 
+
+Subject Competences 
+
+Suggested Activities 
+
+• 
+
+• 
+• 
+
+Uses different types of Clocks 
+to tell time 
+Converts measures of time 
+e.g. months to days 
+
+• 
+
+• 
+
+• 
+
+ Assessment competences: 
+
+Tells time in both local language 
+and English. 
+Gives months of the year in 
+English 
+Makes a weekly timetable in 
+his/her exercise book 
+
+• 
+
+• 
+
+Telling time 
+
+Conversion of units 
+of time. 
+
+• 
+
+• 
+
+• 
+
+Using real or model Clocks, the learner 
+tells time 
+Making a calendar showing the months of 
+the year 
+Working out problems involving time. 
+
+1.
+2.
+
+Tells time using digital and analogue Clocks 
+Converts bigger units of time to small ones. 
+
+ 
+
+16
+
+ 
+ 
+
+P4 Mathematics Syllabus, National Curriculum Development Centre 
+ 
+ Topic 2: Time 
+
+(16 periods) 
+
+Revision of all the earlier work from P1-3 should be done at the start of this topic using real or model Clocks. There should be practical lessons 
+
+with learners making a weekly timetable for their homework and a monthly calendar for the classroom wall. 
+
+Learning outcome(s) 
+
+This topic is a very practical one with the learners doing the measuring themselves in groups. It is similar to a topic in science and it is important 
+that there is not too much repetition and that the lessons are taught in a similar way. At the start of the topic, the need for standard units should be 
+emphasized. This can be done using an experiment measuring length using different learner’s feet and so obtaining different measures. The units 
+and the instruments used should be revised for each of mass, length and capacity. 
+Learning outcome(s) 
+
+Topic 3: Length, Mass, Capacity 
+
+(20 periods) 
+
+The learner appreciates and uses the concept of time in everyday life situations. 
+
+Life skills: 
+
+The learner uses standard measuring instruments and converts units of measure. 
+Life skills: 
+
+Subject Competences 
+
+Accuracy, problem solving, creative thinking 
+
+Accuracy, problem solving, creative thinking, effective communication and decisionmaking. 
+
+Subject Competences 
+
+Language Competences 
+
+Content 
+
+Suggested Activities 
+
+Uses different types of Clocks 
+
+Tells time in both local language 
+
+Telling time 
+
+Using real or model Clocks, the learner 
+
+to tell time 
+
+and English. 
+
+tells time 
+
+Converts measures of time 
+
+Gives months of the year in 
+
+Conversion of units 
+
+Making a calendar showing the months of 
+
+e.g. months to days 
+
+English 
+
+of time. 
+
+the year 
+
+Makes a weekly timetable in 
+
+his/her exercise book 
+
+Working out problems involving time. 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+ Assessment competences: 
+
+1.
+
+2.
+
+Tells time using digital and analogue Clocks 
+
+Converts bigger units of time to small ones. 
+
+• 
+
+• 
+
+• 
+
+ 
+
+• 
+
+Uses standard measuring 
+instruments to measure length 
+in m. cm. and mm, mass in kg 
+and g, capacity in l and ml. 
+
+• 
+
+• 
+
+Assessment competences: 
+
+Expresses measurement of 
+length, mass and capacity in 
+English of different items. 
+Makes a table of the different 
+units of length, mass and 
+capacity/volume and shows 
+their abbreviations. 
+
+• 
+
+• 
+
+• 
+
+The use of standard 
+measuring 
+instruments to 
+measure accurately 
+length, mass and 
+capacity. 
+
+In pairs using a standard instrument, 
+measure the height of partner. 
+Discovering which unit of measurement is 
+appropriate to use in different situations. 
+
+1.
+2.
+3.
+
+Measures length and mass using correct instruments. 
+Relates the different measures in English for mass, length and capacity. 
+Uses the correct units of mass, length and capacity when solving problems. 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+17
+
+Content 
+
+Suggested Activities 
+
+Language Competences 
+
+P4 Mathematics Syllabus, National Curriculum Development Centre 
+ 
+ 
+ 
+ 
+Theme 6: Algebra 
+
+Topic 1: Equations without Letters 
+
+(8 Periods) 
+
+This is an introduction to Algebra but without using letters for numbers. There has been similar work before. By now, the learners are more fluent 
+in their English and by the end of this topic should be able to change simple word problems into mathematical sentences and solve them. 
+
+The relationships between addition and subtraction and multiplication and division are also revised. 
+Learning outcome(s) 
+
+The learner solves simple mathematical problems in the form of equations with no letters. 
+Life skills: 
+
+Critical thinking, problem solving, logical creative thinking, effective communication 
+
+Subject Competences 
+
+Content 
+
+Language 
+Competences 
+
+• 
+
+Reads and creates 
+simple equations 
+without letters. 
+
+• 
+
+• 
+
+Simple equations 
+without letters. 
+Using the four 
+operations. 
+
+• 
+
+• 
+• 
+
+Uses the relationships between addition 
+and subtraction and between 
+multiplication and division to solve 
+problems. 
+Solves simple equations without letters 
+Changes simple word problems into 
+simple equations without letters. 
+
+ Assessment competences: 
+
+1.
+2.
+
+Solves simple equations without letters. 
+Forms equations without letters from simple word problems and solving them. 
+
+ 
+
+ 
+
+18
+
+ 
+ 
+
+Suggested Activities 
+
+• 
+
+• 
+
+• 
+
+• 
+
+Asking learners in pairs to solve 
+equations like 4 [box] ? = 13 and 7 x ? 
+= 42 using addition and subtraction. Then 
+ask them to make up their own. 
+Writing many equivalent sentences using 
+the relationship between [box] and 
+– and between x and [box] e.g. 5 [box] 17 = 22 is 
+equivalent to 22 – 7 = 5 
+
+P4 Mathematics Syllabus, National Curriculum Development Centre 
+ 
+Theme 6: Algebra 
+
+Topic 1: Equations without Letters 
+
+(8 Periods) 
+
+This is an introduction to Algebra but without using letters for numbers. There has been similar work before. By now, the learners are more fluent 
+
+in their English and by the end of this topic should be able to change simple word problems into mathematical sentences and solve them. 
+
+The relationships between addition and subtraction and multiplication and division are also revised. 
+
+Learning outcome(s) 
+
+The learner solves simple mathematical problems in the form of equations with no letters. 
+
+Life skills: 
+
+Critical thinking, problem solving, logical creative thinking, effective communication 
+
+Language 
+
+Subject Competences 
+
+Content 
+
+Suggested Activities 
+
+Competences 
+
+• 
+
+Uses the relationships between addition 
+
+Reads and creates 
+
+Simple equations 
+
+Asking learners in pairs to solve 
+
+and subtraction and between 
+
+multiplication and division to solve 
+
+simple equations 
+
+without letters. 
+
+• 
+
+• 
+
+without letters. 
+
+Using the four 
+
+operations. 
+
+• 
+
+• 
+
+• 
+
+• 
+
+equations like 4 [box] ? = 13 and 7 x ? 
+
+= 42 using addition and subtraction. Then 
+
+ask them to make up their own. 
+
+Writing many equivalent sentences using 
+
+the relationship between [box] and 
+
+– and between x and [box] e.g. 5 [box] 17 = 22 is 
+
+equivalent to 22 – 7 = 5 
+
+problems. 
+
+Solves simple equations without letters 
+
+Changes simple word problems into 
+
+simple equations without letters. 
+
+ Assessment competences: 
+
+Solves simple equations without letters. 
+
+Forms equations without letters from simple word problems and solving them. 
+
+ 
+
+ 
+
+• 
+
+• 
+
+• 
+
+1.
+
+2.
+
+ 
+
+ 
+
+19
+
+P4 Mathematics Syllabus, National Curriculum Development Centre 
+ 
+www.ncdc.go.ug
+
+

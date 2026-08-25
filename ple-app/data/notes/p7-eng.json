@@ -1,0 +1,4640 @@
+{
+ "class": "P7",
+ "subject": "ENG",
+ "subject_name": "English",
+ "total": 7,
+ "words": 15509,
+ "topics": [
+  {
+   "id": "P7_ENG_T01",
+   "class": "P7",
+   "subject": "ENG",
+   "topic_no": 1,
+   "title": "School Holidays",
+   "heading": "TOPIC 1: SCHOOL HOLIDAYS",
+   "slug": "school-holidays",
+   "periods": 30,
+   "curriculum_pages": "32–35",
+   "words": 2023,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Seven Curriculum, Set One, English Topic 1, 30 periods (`curriculum/PRIMARY-SEVEN-SET-ONE.pdf`, topic outline page 30 and pages 32–35). Sub-topics: **1A Holiday Plans** and **1B Holiday Activities**.*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You have talked and written about your holidays before. In P.7 you learn the **vocabulary, language structures and grammar** that let you describe plans and activities correctly."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "use holiday vocabulary correctly in speech and writing",
+        "use \"going to\" for the near future and form question tags",
+        "change direct speech into reported speech",
+        "use participles and the third conditional (If 3)",
+        "form adjectives and use the active voice",
+        "write compositions, stories and poems about holiday plans and activities"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "SUB-TOPIC 1A: HOLIDAY PLANS",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Vocabulary from the syllabus"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "holiday",
+         "A period when school is closed and learners rest at home"
+        ],
+        [
+         "travel",
+         "To move from one place to another"
+        ],
+        [
+         "plan",
+         "An arrangement made in advance"
+        ],
+        [
+         "break off",
+         "To stop; to close for the holidays"
+        ],
+        [
+         "prepare for",
+         "To get ready for something"
+        ],
+        [
+         "pick",
+         "To collect somebody or something"
+        ],
+        [
+         "remedial classes",
+         "Extra lessons to help learners who are behind"
+        ],
+        [
+         "end of vacation",
+         "The last part of the holiday"
+        ],
+        [
+         "relatives",
+         "People in your family — uncles, aunts, cousins"
+        ],
+        [
+         "pen pal",
+         "A friend you write letters to but may never have met"
+        ],
+        [
+         "up-country",
+         "Away from the city, in the villages"
+        ],
+        [
+         "urban",
+         "To do with a town or city"
+        ],
+        [
+         "rural",
+         "To do with the countryside"
+        ],
+        [
+         "commence",
+         "To begin"
+        ],
+        [
+         "board",
+         "To get into a bus, train or plane"
+        ],
+        [
+         "programme",
+         "A plan showing what will be done and when"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Language structures"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example",
+        "When it is used"
+       ],
+       "rows": [
+        [
+         "**… going to …** (near future)",
+         "*I am going to visit my grandmother next holiday.*",
+         "For a plan already decided"
+        ],
+        [
+         "**Question tags**",
+         "*You will go to the village next week, **won't you**?*",
+         "To ask for agreement"
+        ],
+        [
+         "**Reported speech**",
+         "*She said that she was going to travel.*",
+         "To report what someone said"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus 1: Question tags"
+      },
+      {
+       "t": "p",
+       "x": "A question tag is a short question added at the end of a statement."
+      },
+      {
+       "t": "p",
+       "x": "**The rule:** positive statement → **negative** tag; negative statement → **positive** tag. The tag uses the same auxiliary verb and a pronoun."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Statement",
+        "Tag"
+       ],
+       "rows": [
+        [
+         "You are travelling tomorrow,",
+         "**aren't you?**"
+        ],
+        [
+         "She isn't coming,",
+         "**is she?**"
+        ],
+        [
+         "We shall visit Jinja,",
+         "**shan't we?**"
+        ],
+        [
+         "They went home,",
+         "**didn't they?**"
+        ],
+        [
+         "Peter can swim,",
+         "**can't he?**"
+        ],
+        [
+         "Let us go,",
+         "**shall we?**"
+        ],
+        [
+         "Open the window,",
+         "**will you?**"
+        ],
+        [
+         "I am late,",
+         "**aren't I?**"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus 2: Reported speech"
+      },
+      {
+       "t": "p",
+       "x": "**Direct speech** gives the exact words in quotation marks. **Reported (indirect) speech** tells what was said, without quotation marks."
+      },
+      {
+       "t": "p",
+       "x": "**When reporting, the tense moves one step back:**"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Direct",
+        "Reported"
+       ],
+       "rows": [
+        [
+         "present simple →",
+         "past simple"
+        ],
+        [
+         "present continuous →",
+         "past continuous"
+        ],
+        [
+         "past simple →",
+         "past perfect"
+        ],
+        [
+         "will →",
+         "would · can → could · may → might"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "Words also change: *today → that day · tomorrow → the following day · here → there · this → that · now → then · I → he/she.*"
+      },
+      {
+       "t": "p",
+       "x": "**Examples**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Direct: *\"I am going to the village,\" said Ann.* Reported: *Ann said that **she was going** to the village.*",
+        "Direct: *\"We shall write to our pen pals,\" the pupils said.* Reported: *The pupils said that **they would write** to their pen pals.*",
+        "Direct: *\"Did you pick her from the park?\" he asked.* Reported: *He asked **whether I had picked** her from the park.*"
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus 3: Forming adjectives"
+      },
+      {
+       "t": "table",
+       "head": [
+        "From a noun",
+        "Adjective",
+        "From a verb",
+        "Adjective"
+       ],
+       "rows": [
+        [
+         "danger",
+         "dangerous",
+         "enjoy",
+         "enjoyable"
+        ],
+        [
+         "beauty",
+         "beautiful",
+         "excite",
+         "exciting / excited"
+        ],
+        [
+         "care",
+         "careful / careless",
+         "interest",
+         "interesting / interested"
+        ],
+        [
+         "friend",
+         "friendly",
+         "tire",
+         "tiring / tired"
+        ],
+        [
+         "child",
+         "childish",
+         "bore",
+         "boring / bored"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Careful:** *-ing* describes the thing (*the journey was **tiring***); *-ed* describes the person (*I was **tired***)."
+      }
+     ]
+    },
+    {
+     "title": "SUB-TOPIC 1B: HOLIDAY ACTIVITIES",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Vocabulary from the syllabus"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "tour",
+         "A journey visiting several places"
+        ],
+        [
+         "camp",
+         "To stay in tents away from home"
+        ],
+        [
+         "concert",
+         "A show of music, dance and drama"
+        ],
+        [
+         "revise",
+         "To go over work already learnt"
+        ],
+        [
+         "chores",
+         "Small jobs done at home"
+        ],
+        [
+         "routine",
+         "The usual order of doing things each day"
+        ],
+        [
+         "vacation",
+         "A holiday period"
+        ],
+        [
+         "fare",
+         "Money paid for a journey"
+        ],
+        [
+         "bash",
+         "A party or celebration"
+        ],
+        [
+         "trip",
+         "A short journey to a place and back"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Language structures"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**Participle tense**",
+         "*Having finished my chores, I went to play.*"
+        ],
+        [
+         "**If 3 (third conditional)**",
+         "*If I had seen him in the holiday, he would have given me money.*"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus 4: Participles"
+      },
+      {
+       "t": "p",
+       "x": "A **participle** is a form of a verb used with a helping verb or as an adjective."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Type",
+        "Form",
+        "Example"
+       ],
+       "rows": [
+        [
+         "Present participle",
+         "verb + **-ing**",
+         "*We were **swimming** in the lake.*"
+        ],
+        [
+         "Past participle",
+         "usually verb + **-ed**, or an irregular form",
+         "*We have **eaten**. The **broken** cup…*"
+        ],
+        [
+         "Perfect participle",
+         "**having** + past participle",
+         "***Having washed** the plates, she rested.*"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus 5: The third conditional (If 3)"
+      },
+      {
+       "t": "p",
+       "x": "**If 3** talks about something in the **past that did not happen**."
+      },
+      {
+       "t": "p",
+       "x": "**If + past perfect , would have + past participle**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "*If I **had known**, I **would have come** earlier.*",
+        "*If we **had saved** money, we **would have travelled** to Mombasa.*",
+        "*If she **had revised**, she **would have passed**.*"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "Compare the three conditionals:"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Type",
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "If 1 (real, future)",
+         "If + present simple, will + verb",
+         "*If it rains, we **will stay** indoors.*"
+        ],
+        [
+         "If 2 (unreal, present)",
+         "If + past simple, would + verb",
+         "*If I **had** money, I would buy a bicycle.*"
+        ],
+        [
+         "If 3 (unreal, past)",
+         "If + past perfect, would have + past participle",
+         "*If I **had had** money, I would have bought a bicycle.*"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus 6: Active voice"
+      },
+      {
+       "t": "p",
+       "x": "In the **active voice** the subject does the action; in the **passive** it receives it."
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Active: **Mother cooked** the food. → Passive: The food **was cooked** by mother.",
+        "Active: **The pupils cleaned** the compound. → Passive: The compound **was cleaned** by the pupils."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "The syllabus asks you to use the **active voice** when telling stories, because it is shorter and livelier."
+      },
+      {
+       "t": "h3",
+       "x": "Writing practice"
+      },
+      {
+       "t": "p",
+       "x": "**A holiday composition should have:** an interesting **title**, an **introduction** saying when and where, a **body** in proper paragraphs telling what happened in order, and a **conclusion** saying how you felt. Use the **past tense**, joining words (*first, then, after that, finally*), and correct punctuation."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Question tag",
+         "A short question added at the end of a statement"
+        ],
+        [
+         "Direct speech",
+         "The exact words spoken, written in quotation marks"
+        ],
+        [
+         "Reported speech",
+         "Telling what someone said without using their exact words"
+        ],
+        [
+         "Participle",
+         "A verb form ending in -ing or -ed used with a helping verb or as an adjective"
+        ],
+        [
+         "Conditional sentence",
+         "A sentence with \"if\", showing that one thing depends on another"
+        ],
+        [
+         "Active voice",
+         "A sentence in which the subject does the action"
+        ],
+        [
+         "Passive voice",
+         "A sentence in which the subject receives the action"
+        ],
+        [
+         "Adjective",
+         "A word that describes a noun"
+        ],
+        [
+         "Pen pal",
+         "A friend one writes letters to"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Positive statement takes a **negative** tag; negative statement takes a **positive** tag.",
+        "*I am late,* **aren't I?** (not \"amn't I\")",
+        "In reported speech the tense moves **one step back** and time words change.",
+        "**If 3** = *If + had + past participle , would have + past participle.*",
+        "*-ing* adjectives describe the **thing**; *-ed* adjectives describe the **person**.",
+        "\"Going to\" is used for a plan already made.",
+        "Use the **past tense** in a holiday composition."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "*You will travel tomorrow, ____?* → **won't you**",
+        "*\"I am tired,\" said John.* → *John said that **he was tired**.*",
+        "*If I had gone early, I ____ (meet) her.* → **would have met**",
+        "Form the adjective from *danger* → **dangerous**; from *enjoy* → **enjoyable**.",
+        "Change to the active voice: *The letter was written by Ann.* → *Ann wrote the letter.*",
+        "One word for \"a friend one writes to but has never met\" → **pen pal**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Writing *\"amn't I?\"* instead of **aren't I?**",
+        "Keeping the present tense in reported speech: *She said she **is** going* → *She said she **was** going.*",
+        "Mixing conditionals: *If I would have known…* → *If I **had** known…*",
+        "Saying *I was very boring* when you mean *I was very **bored***.",
+        "Forgetting the comma before the question tag."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Add a correct question tag: *You are travelling to Gulu tomorrow, ____?*",
+        "Add a correct question tag: *She didn't attend the concert, ____?*",
+        "Add a correct question tag: *Let us begin the journey, ____?*",
+        "Change to reported speech: *\"I am going to visit my aunt,\" said Maria.*",
+        "Change to reported speech: *\"We shall board the bus at six o'clock,\" the children said.*",
+        "Change to direct speech: *He said that he had enjoyed the trip.*",
+        "Complete with the correct form: *If I ____ (know) about the party, I would have come.*",
+        "Complete: *If she had revised well, she ____ (pass) the examination.*",
+        "Give the adjective formed from each: care, beauty, friend, excite.",
+        "Fill in: *The journey was very ____ (tire) and we were all ____ (tire) when we arrived.*",
+        "Change to the active voice: *The compound was swept by the pupils.*",
+        "Rewrite using \"going to\": *I intend to visit my grandparents next holiday.*",
+        "Give one word for: a friend you write letters to but may never have met.",
+        "Give one word for: extra lessons given to help a learner who is behind.",
+        "Use the word *commence* in a sentence of your own.",
+        "Rewrite beginning with the words given: *He finished his chores and then went to play.* — **Having** …",
+        "Give the meaning of *up-country* and use it in a sentence.",
+        "Write four sentences describing your plans for the next holiday, using \"going to\" in each.",
+        "Write a short paragraph (about six sentences) about the most interesting thing you did last holiday. Use the past tense.",
+        "Give two differences between direct speech and reported speech."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "**aren't you?**",
+        "**did she?**",
+        "**shall we?**",
+        "Maria said that **she was going to visit her aunt**.",
+        "The children said that **they would board the bus at six o'clock**.",
+        "*\"I enjoyed the trip,\"* **he said**. (Also acceptable: *\"I have enjoyed the trip,\" he said.*)",
+        "**had known**",
+        "**would have passed**",
+        "care → **careful** (or careless); beauty → **beautiful**; friend → **friendly**; excite → **exciting** (or excited).",
+        "The journey was very **tiring** and we were all **tired**.",
+        "**The pupils swept the compound.**",
+        "**I am going to visit my grandparents next holiday.**",
+        "A **pen pal**.",
+        "**Remedial classes.**",
+        "*Learner's sentence,* for example: *The lessons will **commence** at eight o'clock.*",
+        "**Having finished his chores, he went to play.**",
+        "*Up-country* means away from the city, in the villages. Example: *My father travelled **up-country** to see his parents.*",
+        "*Learner's answer.* Each sentence must use \"am/is/are going to\" + verb, for example: *I **am going to** help my mother in the garden.*",
+        "*Learner's paragraph.* It should be in the **past tense**, in one paragraph, with a topic sentence, correct punctuation and capital letters.",
+        "In **direct speech** the exact words are used and put in quotation marks, while in **reported speech** the words are not exact and there are no quotation marks; in reported speech the **tense moves one step back** and words such as *today, here, this* change to *that day, there, that*."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.7 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Question tags: **positive → negative**, negative → positive · *I am…, **aren't I?***",
+        "Reported speech: tense **one step back**, change time and place words",
+        "**If 3**: *If + had + p.p. , would have + p.p.* (about the past that did not happen)",
+        "Participles: **-ing** (present) · **-ed / irregular** (past) · **having + p.p.** (perfect)",
+        "**-ing** describes the thing · **-ed** describes the person",
+        "Holiday composition: title · introduction · body in paragraphs · conclusion · past tense"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, sub-topics, vocabulary list, language structures, grammar items, competences and teacher guidance above were taken from the official **NCDC Primary Seven Curriculum, Set One** (topic outline page 30 and pages 32–35 of the PDF in `curriculum/`). The explanations, tables, examples, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P7_ENG_T02",
+   "class": "P7",
+   "subject": "ENG",
+   "topic_no": 2,
+   "title": "Letter Writing",
+   "heading": "TOPIC 2: LETTER WRITING",
+   "slug": "letter-writing",
+   "periods": 28,
+   "curriculum_pages": "36–39",
+   "words": 2390,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Seven Curriculum, Set One, English Topic 2, 28 periods (`curriculum/PRIMARY-SEVEN-SET-ONE.pdf`, topic outline page 30 and pages 36–39). Sub-topics: **2A Informal Letters** and **2B Formal Letters**.*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You wrote letters in P.5. In P.7 you must know the **exact format** of both an informal and a formal letter, and be able to tell them apart. Letter writing is one of the commonest questions in the examination."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "name the parts of an informal letter and of a formal letter",
+        "say when each type of letter is written",
+        "write both types correctly, including an application letter",
+        "fill in official forms",
+        "use the abbreviations and adverbs required by the syllabus",
+        "answer comprehension questions about letters"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "SUB-TOPIC 2A: INFORMAL LETTERS",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definition"
+      },
+      {
+       "t": "p",
+       "x": "**Informal (personal) letter:** A letter written to someone you know well — a parent, a brother, a friend, a classmate or a pen pal."
+      },
+      {
+       "t": "h3",
+       "x": "When an informal letter is written"
+      },
+      {
+       "t": "p",
+       "x": "To greet somebody · to thank them · to invite them to a party or ceremony · to ask for something · to give news · to congratulate or console · to apologise · to reply to a letter."
+      },
+      {
+       "t": "h3",
+       "x": "The parts of an informal letter, in order"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "**Your address** — written at the top **right-hand** corner (never your name above it).",
+        "**The date** — written under the address.",
+        "**The salutation (greeting)** — *Dear Ann,* *Dear Uncle,* followed by a **comma**.",
+        "**The introduction** — a short opening: *How are you? I hope you are fine.*",
+        "**The body** — the message, in paragraphs.",
+        "**The conclusion** — *Greet everyone at home. I look forward to hearing from you.*",
+        "**The complimentary close** — *Yours affectionately,* *Yours sincerely,* *Your friend,*",
+        "**Your first name only** — *Sarah*"
+       ],
+       "start": 1
+      },
+      {
+       "t": "h3",
+       "x": "Example layout"
+      },
+      {
+       "t": "pre",
+       "x": "                                        P.7 Blue\n                                        Kabale Junior School\n                                        P.O. Box 45\n                                        Kabale\n                                        12th August 2026\n\nDear Grace,\n\n    How are you? I hope you and the family are well. ...\n\n    ... (body of the letter in paragraphs) ...\n\n    Please greet everyone at home. I am waiting for your reply.\n\n                                        Yours affectionately,\n                                        Sarah"
+      },
+      {
+       "t": "h3",
+       "x": "Vocabulary from the syllabus"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "address",
+         "The details of where a person lives or receives post"
+        ],
+        [
+         "personal letter",
+         "A letter to somebody you know well"
+        ],
+        [
+         "stamp",
+         "A small printed label paid for and stuck on an envelope"
+        ],
+        [
+         "envelope",
+         "The paper cover in which a letter is posted"
+        ],
+        [
+         "occasion",
+         "A special event"
+        ],
+        [
+         "affectionately",
+         "With love; used to close a letter to a relative"
+        ],
+        [
+         "sincerely",
+         "Truly; used to close a letter to a person you named"
+        ],
+        [
+         "body",
+         "The main part of the letter"
+        ],
+        [
+         "purpose",
+         "The reason for writing"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Language structures"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**… is likely to …**",
+         "*Anna **is likely to** write to me. / I **am likely to** forget your address.*"
+        ],
+        [
+         "**… hardly …**",
+         "*There is **hardly** anyone who has bothered to reply.*"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Note:** *hardly* means \"almost not\". It is already negative, so never add another negative: *I can **hardly** hear you* (not \"can't hardly\")."
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus: the present continuous tense"
+      },
+      {
+       "t": "p",
+       "x": "**Form:** am / is / are + verb + **-ing**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "*I **am writing** to invite you to my birthday party.*",
+        "*They **are preparing** for the ceremony.*"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "It is used for something happening **now** or **around now**, and also for a **fixed future arrangement**: *We **are travelling** to Mbale on Friday.*"
+      }
+     ]
+    },
+    {
+     "title": "SUB-TOPIC 2B: FORMAL LETTERS",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definition"
+      },
+      {
+       "t": "p",
+       "x": "**Formal (official) letter:** A letter written to someone in their official position — a head teacher, a manager, an editor, a district officer — usually somebody you do not know personally."
+      },
+      {
+       "t": "h3",
+       "x": "When a formal letter is written"
+      },
+      {
+       "t": "p",
+       "x": "To apply for a job or a place in school · to ask for permission · to make a request · to complain · to apologise · to invite officially · to give or ask for information · to reply to an advertisement."
+      },
+      {
+       "t": "h3",
+       "x": "The parts of a formal letter, in order"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "**Your address and the date** — top **right**.",
+        "**The receiver's address** — on the **left**, below your date: *The Head Teacher, …*",
+        "**The salutation** — *Dear Sir,* / *Dear Madam,* / *Dear Sir/Madam,*",
+        "**The heading (Re:)** — underlined: *RE: APPLICATION FOR THE POST OF A TYPIST*",
+        "**The body** — short, polite and to the point, in paragraphs.",
+        "**The complimentary close** — **Yours faithfully,** if you began *Dear Sir/Madam*; **Yours sincerely,** if you used the person's name.",
+        "**Your signature**, then **your full name** in capital letters below it."
+       ],
+       "start": 1
+      },
+      {
+       "t": "h3",
+       "x": "Example layout"
+      },
+      {
+       "t": "pre",
+       "x": "                                        P.O. Box 120\n                                        Mbarara\n                                        3rd September 2026\n\nThe Head Teacher\nRukungiri Modern Primary School\nP.O. Box 33\nRukungiri\n\nDear Sir,\n\nRE: REQUEST FOR A PLACE IN SENIOR ONE\n\n    I am writing to request ...\n\n                                        Yours faithfully,\n                                        (signature)\n                                        JOHN MUGISHA"
+      },
+      {
+       "t": "h3",
+       "x": "Informal and formal letters compared"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Point",
+        "Informal letter",
+        "Formal letter"
+       ],
+       "rows": [
+        [
+         "Written to",
+         "A relative or friend",
+         "An official or a stranger"
+        ],
+        [
+         "Receiver's address",
+         "Not written",
+         "**Written on the left**"
+        ],
+        [
+         "Salutation",
+         "*Dear Ann,*",
+         "*Dear Sir,* / *Dear Madam,*"
+        ],
+        [
+         "Heading (Re:)",
+         "Not used",
+         "**Used and underlined**"
+        ],
+        [
+         "Language",
+         "Friendly, may use short forms",
+         "Polite, official, no short forms"
+        ],
+        [
+         "Closing",
+         "*Yours affectionately / Your friend*",
+         "**Yours faithfully / Yours sincerely**"
+        ],
+        [
+         "Signing off",
+         "First name only",
+         "**Signature + full name in capitals**"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Vocabulary from the syllabus"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "surname",
+         "Family name"
+        ],
+        [
+         "maiden name",
+         "A woman's family name before marriage"
+        ],
+        [
+         "salutation",
+         "The greeting at the beginning of a letter"
+        ],
+        [
+         "vacancy",
+         "A job or place that is free and needs to be filled"
+        ],
+        [
+         "application",
+         "A written request for a job or place"
+        ],
+        [
+         "referee",
+         "A person who can speak about your character or work"
+        ],
+        [
+         "draft",
+         "A first rough copy"
+        ],
+        [
+         "edit",
+         "To correct and improve a piece of writing"
+        ],
+        [
+         "signature",
+         "Your own written mark showing you wrote it"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Abbreviations you must know"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Abbreviation",
+        "Full meaning"
+       ],
+       "rows": [
+        [
+         "**Re:**",
+         "Reference — the subject of the letter"
+        ],
+        [
+         "**pp**",
+         "On behalf of (signing for another person)"
+        ],
+        [
+         "**c.c.**",
+         "Carbon copy — a copy sent to another person"
+        ],
+        [
+         "**P.O. Box**",
+         "Post Office Box"
+        ],
+        [
+         "**Dr**",
+         "Doctor · **Rev** — Reverend · **Hon** — Honourable · **Prof** — Professor"
+        ],
+        [
+         "**Mr, Mrs, Miss, Ms**",
+         "Titles for men, married women, unmarried women, and women whether married or not"
+        ],
+        [
+         "**e.g.**",
+         "For example · **i.e.** — that is · **etc.** — and the rest"
+        ],
+        [
+         "**N.B.**",
+         "Note well · **P.S.** — added at the end of a letter"
+        ],
+        [
+         "**NGO**",
+         "Non-Governmental Organisation · **UNEB** — Uganda National Examinations Board"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Language structures"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**Barely …** (at the start)",
+         "***Barely** 30% of the people applied for the position advertised.*"
+        ],
+        [
+         "**… barely …** (inside the sentence)",
+         "*The letter was **barely** legible.*"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "*Barely* means \"only just\" or \"almost not\"."
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus: forming adverbs"
+      },
+      {
+       "t": "p",
+       "x": "Most adverbs are formed by adding **-ly** to an adjective."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Adjective",
+        "Adverb",
+        "Note"
+       ],
+       "rows": [
+        [
+         "quick",
+         "quickly",
+         "simple + ly"
+        ],
+        [
+         "careful",
+         "carefully",
+         ""
+        ],
+        [
+         "happy",
+         "happily",
+         "y → i + ly"
+        ],
+        [
+         "gentle",
+         "gently",
+         "drop the e, add y"
+        ],
+        [
+         "true",
+         "truly",
+         "irregular spelling"
+        ],
+        [
+         "good",
+         "**well**",
+         "completely irregular"
+        ],
+        [
+         "fast",
+         "**fast**",
+         "no change"
+        ],
+        [
+         "hard",
+         "**hard** (*hardly* means something else!)",
+         ""
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Filling in official forms"
+      },
+      {
+       "t": "p",
+       "x": "Write in **CAPITAL LETTERS** unless told otherwise · use **black or blue ink** · write your **surname first** where asked · write dates as **day/month/year** · leave nothing blank — write **N/A** (not applicable) where a question does not concern you · do not overwrite — cancel neatly with one line · sign where a signature is asked for; do not print your name there."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Informal letter",
+         "A letter to a person you know well"
+        ],
+        [
+         "Formal letter",
+         "A letter written to somebody in their official position"
+        ],
+        [
+         "Salutation",
+         "The greeting at the beginning of a letter"
+        ],
+        [
+         "Complimentary close",
+         "The polite ending, such as *Yours faithfully*"
+        ],
+        [
+         "Re:",
+         "The reference or subject of a formal letter"
+        ],
+        [
+         "c.c.",
+         "Carbon copy — a copy sent to another person"
+        ],
+        [
+         "pp",
+         "Signing on behalf of another person"
+        ],
+        [
+         "Vacancy",
+         "A job or place that needs to be filled"
+        ],
+        [
+         "Referee",
+         "A person who speaks for your character or ability"
+        ],
+        [
+         "Adverb",
+         "A word that tells how, when or where an action is done"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**Dear Sir / Dear Madam → Yours faithfully.** **Dear Mr Okello → Yours sincerely.**",
+        "The receiver's address is written **only in a formal letter**, on the **left**.",
+        "**Re:** is written and **underlined** in a formal letter only.",
+        "Sign an informal letter with your **first name**; a formal letter with your **signature and full name in capitals**.",
+        "Never use short forms (*don't, can't, I'm*) in a formal letter — write them in full.",
+        "*Yours* has **no apostrophe**: *Yours faithfully*, never \"Your's\".",
+        "Only the first word of the closing takes a capital letter: *Yours faithfully*, not *Yours Faithfully*.",
+        "**N/A** means \"not applicable\" when filling a form."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "A letter beginning *Dear Madam* must end with **Yours faithfully**.",
+        "The full meaning of **c.c.** — carbon copy. Of **Re:** — reference. Of **pp** — on behalf of.",
+        "One difference between formal and informal letters — the receiver's address is written in a formal letter only.",
+        "The adverb from *happy* → **happily**; from *good* → **well**.",
+        "A woman's family name before marriage — her **maiden name**.",
+        "A job that is free and needs to be filled — a **vacancy**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Writing \"Your's faithfully\" — it is **Yours faithfully**.",
+        "Ending *Dear Sir* with *Yours sincerely*.",
+        "Writing your **name above your address** at the top of the letter.",
+        "Putting the receiver's address in an **informal** letter.",
+        "Using slang or short forms in a formal letter.",
+        "Forgetting the **comma** after the salutation and after the closing.",
+        "Writing *Re:* in an informal letter."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Give the difference between a formal and an informal letter.",
+        "Name any six parts of a formal letter in the order in which they are written.",
+        "Name any five parts of an informal letter.",
+        "Which complimentary close is used when a letter begins with *Dear Sir*?",
+        "Which complimentary close is used when a letter begins with *Dear Mrs Achieng*?",
+        "Give the full meaning of: Re:, c.c., pp, N.B., P.S.",
+        "Give the meaning of *maiden name* and *vacancy*.",
+        "Where is the receiver's address written, and in which type of letter?",
+        "Form adverbs from: careful, happy, true, good, fast.",
+        "Fill in with the correct word: *There is ____ anyone who replied to my letter.* (hardly / hard)",
+        "Rewrite beginning with the word given: *Only 30% of the people applied.* — **Barely** …",
+        "Use *is likely to* in a sentence of your own.",
+        "Write the present continuous form: *I ____ (write) to invite you to my party.*",
+        "Give any four rules to follow when filling in an official form.",
+        "You are Nakato Sarah of P.O. Box 12, Masaka. Write the address and date part of a letter you would write on 4th May 2026.",
+        "Write the heading (Re:) you would use in a letter applying for the post of a cook.",
+        "Write a short formal letter (about eight lines) to your head teacher requesting permission to be away from school for two days.",
+        "Write a short informal letter (about eight lines) to your friend telling him or her about your new school.",
+        "Give two reasons why people write informal letters and two reasons why they write formal letters.",
+        "Correct the mistake: *Dear Sir, … Your's Sincerely, Ann.*"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "An **informal letter** is written to a person you know well, such as a friend or relative, using friendly language; a **formal letter** is written to somebody in their official position, using polite official language, and it includes the receiver's address and a heading (Re:).",
+        "Sender's address; date; receiver's address; salutation; heading (Re:); body; complimentary close; signature and full name. (Any six in order.)",
+        "Sender's address; date; salutation; introduction; body; conclusion; complimentary close; first name. (Any five.)",
+        "**Yours faithfully.**",
+        "**Yours sincerely.**",
+        "Re: — **reference**; c.c. — **carbon copy**; pp — **on behalf of**; N.B. — **note well**; P.S. — a note **added at the end of a letter**.",
+        "**Maiden name** — a woman's family name before she married. **Vacancy** — a job or place that is free and needs to be filled.",
+        "On the **left-hand side**, below the date, and only in a **formal letter**.",
+        "careful → **carefully**; happy → **happily**; true → **truly**; good → **well**; fast → **fast**.",
+        "**hardly**",
+        "**Barely 30% of the people applied.**",
+        "*Learner's sentence,* for example: *He **is likely to** come tomorrow.*",
+        "**am writing**",
+        "Any four of: write in capital letters; use black or blue ink; write the surname first where asked; write dates as day/month/year; leave nothing blank — write N/A; do not overwrite; sign where a signature is required.",
+        "For example: *P.O. Box 12* *Masaka* *4th May 2026* (written at the top right, with no name above the address)",
+        "**RE: APPLICATION FOR THE POST OF A COOK** (written and underlined).",
+        "*Learner's letter.* It must have: the sender's address and date (right), the head teacher's address (left), *Dear Sir/Madam,*, an underlined **RE:** line, a polite body giving the reason and dates, **Yours faithfully,** a signature and the full name in capitals.",
+        "*Learner's letter.* It must have: the sender's address and date (right), *Dear …,* a friendly opening, a body in paragraphs, a closing greeting, *Yours affectionately/Your friend,* and the first name only. **No** receiver's address and **no** Re: line.",
+        "**Informal:** to greet or give news, to invite a friend, to thank somebody, to apologise (any two). **Formal:** to apply for a job or a place, to ask permission, to complain, to request information (any two).",
+        "It should read: *Dear Sir, … **Yours faithfully**, Ann.* — the close must match *Dear Sir*, *Yours* has no apostrophe, and *faithfully* takes a small letter."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.7 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**Dear Sir/Madam → Yours faithfully** · **Dear Mr/Mrs (name) → Yours sincerely**",
+        "Formal letter only: **receiver's address (left)** + **RE: underlined** + signature and full name",
+        "Informal letter: address, date, *Dear …,* body, *Yours affectionately,* **first name**",
+        "**Yours** — no apostrophe · small letter for *faithfully / sincerely*",
+        "Re: = reference · c.c. = carbon copy · pp = on behalf of · N/A = not applicable",
+        "Adverbs: happy → happily · true → truly · good → **well**"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, sub-topics, vocabulary list, language structures, abbreviations, competences and teacher guidance above were taken from the official **NCDC Primary Seven Curriculum, Set One** (topic outline page 30 and pages 36–39 of the PDF in `curriculum/`). The sample layouts, explanations, tables, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P7_ENG_T03",
+   "class": "P7",
+   "subject": "ENG",
+   "topic_no": 3,
+   "title": "Examinations",
+   "heading": "TOPIC 3: EXAMINATIONS",
+   "slug": "examinations",
+   "periods": 26,
+   "curriculum_pages": "40–43",
+   "words": 2051,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Seven Curriculum, Set One, English Topic 3, 26 periods (`curriculum/PRIMARY-SEVEN-SET-ONE.pdf`, topic outline page 30 and pages 40–43). Sub-topics: **3A Preparation for Examinations** and **3B Sitting Examinations**.*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You have sat tests since P.1. In P.7 you are preparing for your **first national examination**, so this topic gives you the language, the instructions and the good habits you need."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "use vocabulary about preparing for and sitting examinations",
+        "read and interpret a timetable, an examination card and a result sheet",
+        "follow oral and written instructions exactly",
+        "use the structures *or else, look forward to, whereas, could, in spite of, despite*",
+        "use adverbs such as *quite* and *rather*, and possessives correctly",
+        "write compositions about examinations"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "SUB-TOPIC 3A: PREPARATION FOR EXAMINATIONS",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Vocabulary from the syllabus"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "timetable",
+         "A table showing what is done and at what time"
+        ],
+        [
+         "instructions",
+         "Orders telling you what to do and how"
+        ],
+        [
+         "index number",
+         "The number given to a candidate to identify him or her"
+        ],
+        [
+         "candidate",
+         "A person sitting an examination"
+        ],
+        [
+         "time allowed",
+         "The length of time given for a paper"
+        ],
+        [
+         "examiner",
+         "The person who sets or marks the examination"
+        ],
+        [
+         "examination room",
+         "The room where candidates sit the examination"
+        ],
+        [
+         "answer sheet",
+         "The paper on which answers are written"
+        ],
+        [
+         "examination centre",
+         "The school or place where candidates sit"
+        ],
+        [
+         "briefing",
+         "A short talk giving important information before an activity"
+        ],
+        [
+         "registration",
+         "Entering a candidate's names officially for the examination"
+        ],
+        [
+         "revision",
+         "Going over work already learnt"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "How to prepare well"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Make a **revision timetable** and follow it.",
+        "Revise a **little every day** rather than everything on the last night.",
+        "Do **past papers** under the correct time.",
+        "Ask the teacher about anything you do not understand.",
+        "Form a small **discussion group** with serious classmates.",
+        "Keep your **index number, examination card and instruments** safely.",
+        "Eat well, drink water and **get enough rest and sleep** — the syllabus tells the teacher to caution learners about this.",
+        "Do not cram at the last minute; do not use \"leakage\"."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Reading a timetable, an examination card and a result sheet"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Document",
+        "What to look for"
+       ],
+       "rows": [
+        [
+         "**Examination timetable**",
+         "The date, the paper, the starting time and the time allowed"
+        ],
+        [
+         "**Examination card**",
+         "Your names, index number, examination centre and the subjects entered"
+        ],
+        [
+         "**Result sheet**",
+         "The subjects, the score or grade in each, the **aggregate** and the **division**"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Language structures"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**… or else …**",
+         "*You must revise your notes, **or else** you will fail the examination.*"
+        ],
+        [
+         "**… look forward to …**",
+         "*We **look forward to sitting** our final examinations.*"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Careful:** after *look forward to* the verb takes **-ing**: *I look forward to **meeting** you* (not \"to meet\")."
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus: adverbs of degree"
+      },
+      {
+       "t": "p",
+       "x": "**Quite, rather, very, fairly, too, almost** tell us **how much**."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Adverb",
+        "Use",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**quite**",
+         "a good amount, but not completely",
+         "*The paper was **quite** easy.*"
+        ],
+        [
+         "**rather**",
+         "more than expected, often about something unwelcome",
+         "*The paper was **rather** difficult.*"
+        ],
+        [
+         "**very**",
+         "to a high degree",
+         "*She was **very** confident.*"
+        ],
+        [
+         "**too**",
+         "more than is wanted or possible",
+         "*The time was **too** short.*"
+        ],
+        [
+         "**almost**",
+         "nearly",
+         "*I had **almost** finished.*"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "SUB-TOPIC 3B: SITTING EXAMINATIONS",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Vocabulary from the syllabus"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "invigilator",
+         "The person who watches over candidates during an examination"
+        ],
+        [
+         "supervisor",
+         "The officer in charge of an examination centre"
+        ],
+        [
+         "pass mark",
+         "The lowest mark needed to pass"
+        ],
+        [
+         "aggregate",
+         "The total of the grades scored in the subjects"
+        ],
+        [
+         "division",
+         "The grade band a candidate falls in from the aggregate"
+        ],
+        [
+         "duration",
+         "The length of time a paper takes"
+        ],
+        [
+         "malpractice",
+         "Cheating or any dishonest act in an examination"
+        ],
+        [
+         "leakage",
+         "Examination questions getting out before the examination"
+        ],
+        [
+         "disqualify",
+         "To cancel a candidate's results for breaking the rules"
+        ],
+        [
+         "pass slip",
+         "The paper showing a candidate's results"
+        ],
+        [
+         "certificate",
+         "The official document showing what a candidate achieved"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Rules of the examination room"
+      },
+      {
+       "t": "p",
+       "x": "Arrive **early** · carry your **examination card** and the correct instruments · do not carry books, phones or notes into the room · listen carefully to the **invigilator** · write your **name and index number** on every answer sheet · read **all instructions** first · use **ink** (a pencil only for drawings and maps) · work **silently and alone** · never look at another candidate's work or exchange papers — this is **malpractice** and leads to **disqualification** · watch the time · check your work before handing in."
+      },
+      {
+       "t": "h3",
+       "x": "Following instructions — the words that matter"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Instruction",
+        "What you must do"
+       ],
+       "rows": [
+        [
+         "**Underline**",
+         "Draw a line under the word"
+        ],
+        [
+         "**Circle / Ring**",
+         "Draw a circle round the answer"
+        ],
+        [
+         "**Tick**",
+         "Put a ✓ against the right one"
+        ],
+        [
+         "**Fill in** / **Complete**",
+         "Write the missing word or words"
+        ],
+        [
+         "**Rewrite**",
+         "Write the sentence again as told"
+        ],
+        [
+         "**Give one word for**",
+         "Answer with a single word"
+        ],
+        [
+         "**Arrange**",
+         "Put in the correct order"
+        ],
+        [
+         "**State / Name / Mention**",
+         "Give a short answer, no explanation"
+        ],
+        [
+         "**Explain / Describe**",
+         "Give a fuller answer in sentences"
+        ],
+        [
+         "**Study the passage and answer**",
+         "Read carefully first, then answer in your own words where asked"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Language structures"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**Whereas …**",
+         "***Whereas** many candidates passed, Okello failed.*"
+        ],
+        [
+         "**… could …**",
+         "*Cheating **could** lead to closure of the examination centre.*"
+        ],
+        [
+         "**… in spite of …**",
+         "*Aboke came for the examination **in spite of** her being sick.*"
+        ],
+        [
+         "**In spite of …** (at the start)",
+         "***In spite of** her being sick, Aboke came for the examination.*"
+        ],
+        [
+         "**Despite …**",
+         "***Despite** the fact that Zziwa was late, she completed her examination on time.*"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Careful:** *despite* is **never** followed by \"of\". Write *despite the rain* or *in spite of the rain*, never \"despite of the rain\"."
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus: possessives"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Possessive adjective (before a noun)",
+        "Possessive pronoun (stands alone)"
+       ],
+       "rows": [
+        [
+         "my",
+         "mine"
+        ],
+        [
+         "your",
+         "yours"
+        ],
+        [
+         "his",
+         "his"
+        ],
+        [
+         "her",
+         "hers"
+        ],
+        [
+         "its",
+         "its"
+        ],
+        [
+         "our",
+         "ours"
+        ],
+        [
+         "their",
+         "theirs"
+        ]
+       ]
+      },
+      {
+       "t": "ul",
+       "items": [
+        "*This is **my** pen. This pen is **mine**.*",
+        "*Those are **their** results. Those results are **theirs**.*"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Two traps:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "**its** = belonging to it; **it's** = it is. *The school lost **its** book. **It's** raining.*",
+        "Possessive pronouns take **no apostrophe**: *hers, yours, ours, theirs* — never \"her's\"."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Candidate",
+         "A person sitting an examination"
+        ],
+        [
+         "Invigilator",
+         "The person who watches over candidates during an examination"
+        ],
+        [
+         "Supervisor",
+         "The officer in charge of an examination centre"
+        ],
+        [
+         "Index number",
+         "The number that identifies a candidate"
+        ],
+        [
+         "Aggregate",
+         "The total of the grades scored"
+        ],
+        [
+         "Division",
+         "The grade band a candidate falls in"
+        ],
+        [
+         "Malpractice",
+         "Cheating or any dishonest act in an examination"
+        ],
+        [
+         "Leakage",
+         "Examination questions getting out before the examination"
+        ],
+        [
+         "Disqualify",
+         "To cancel a candidate's results for breaking the rules"
+        ],
+        [
+         "Revision",
+         "Going over work already learnt"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "After **look forward to**, the verb ends in **-ing**.",
+        "**Despite** takes no \"of\"; **in spite of** always has \"of\".",
+        "*Whereas* joins two contrasting ideas in one sentence.",
+        "**Quite** = fairly; **rather** = more than expected, often unwelcome.",
+        "**its** = belonging to it; **it's** = it is.",
+        "Possessive pronouns (*hers, ours, yours, theirs*) take **no apostrophe**.",
+        "The person who watches candidates is the **invigilator**; the one in charge of the centre is the **supervisor**.",
+        "Cheating is **malpractice** and can lead to **disqualification**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "*We look forward to ____ (meet) you.* → **meeting**",
+        "*____ the rain, the candidates arrived on time.* → **Despite** / **In spite of**",
+        "*Whereas many passed, ____* — complete with a contrasting idea.",
+        "Word for the total of the grades scored → **aggregate**.",
+        "Word for the person who watches over candidates → **invigilator**.",
+        "Word for questions getting out before the examination → **leakage**.",
+        "*This book is ____ (she).* → **hers**"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Writing *\"despite of\"*.",
+        "Writing *\"look forward to see you\"* instead of *look forward to **seeing** you*.",
+        "Confusing **its** and **it's**.",
+        "Writing *her's, our's, their's* with an apostrophe.",
+        "Starting to write before reading the instructions.",
+        "Forgetting to write your **index number** on the answer sheet."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Give one word for: a person sitting an examination.",
+        "Give one word for: the person who watches over candidates in the examination room.",
+        "Give the meaning of *aggregate* and *malpractice*.",
+        "What is *leakage* in an examination, and give one of its effects?",
+        "Complete: *You must revise your work ____ ____ you will fail.* (two words)",
+        "Complete: *We look forward to ____ (write) our examinations in November.*",
+        "Rewrite using *Despite*: *Although she was sick, she came for the examination.*",
+        "Rewrite using *In spite of*: *Although it rained heavily, the paper started on time.*",
+        "Join using *Whereas*: *Many candidates passed. Okello failed.*",
+        "Complete: *Cheating ____ lead to the closure of an examination centre.* (could / can hardly)",
+        "Fill in: *The paper was ____ difficult, so many candidates complained.* (quite / rather)",
+        "Fill in with the correct possessive: *This pen is ____ (I) and that one is ____ (they).*",
+        "Fill in: *The school lost ____ trophy because ____ raining heavily.* (its / it's)",
+        "Give any five rules a candidate must follow in the examination room.",
+        "Give any five ways of preparing well for an examination.",
+        "Say exactly what each instruction asks you to do: underline, tick, arrange, state, explain.",
+        "What three things should a candidate check on the examination card?",
+        "Give two effects of examination malpractice on a candidate.",
+        "Use the word *invigilator* in a sentence of your own.",
+        "Write a short paragraph (about six sentences) advising a P.6 pupil on how to prepare for examinations."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "A **candidate**.",
+        "An **invigilator**.",
+        "**Aggregate** — the total of the grades scored in the subjects. **Malpractice** — cheating or any dishonest act in an examination.",
+        "Leakage is examination questions getting out before the examination. One effect: the examination may be **cancelled** and the candidates disqualified (it also makes the results unfair and spoils the name of the school).",
+        "**or else**",
+        "**writing**",
+        "**Despite** being sick, she came for the examination. *(Also: Despite her sickness, she came for the examination.)*",
+        "**In spite of** the heavy rain, the paper started on time.",
+        "**Whereas** many candidates passed, Okello failed.",
+        "**could**",
+        "**rather**",
+        "This pen is **mine** and that one is **theirs**.",
+        "The school lost **its** trophy because **it's** raining heavily.",
+        "Any five of: arrive early; carry your examination card and instruments; leave books, notes and phones outside; listen to the invigilator; write your name and index number on every sheet; read all instructions first; use ink; work silently and alone; never copy or exchange work; check your work before handing in.",
+        "Any five of: make and follow a revision timetable; revise a little every day; do past papers under time; ask the teacher what you do not understand; join a serious discussion group; keep your card and instruments safely; eat well and get enough sleep.",
+        "**Underline** — draw a line under the word; **tick** — put a ✓ against the right answer; **arrange** — put the items in the correct order; **state** — give a short answer without explaining; **explain** — give a fuller answer in sentences.",
+        "His or her **names**, the **index number**, and the **examination centre** (and the subjects entered).",
+        "The candidate's **results are cancelled (disqualification)**, and he or she may be **barred from sitting** the examination for some years; it also brings shame to the candidate, the family and the school.",
+        "*Learner's sentence,* for example: *The **invigilator** told us to stop writing when the time was over.*",
+        "*Learner's paragraph.* It should be one paragraph, in the present or future tense, with clear advice such as making a revision timetable, revising daily, doing past papers, asking teachers, resting well and avoiding cheating."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.7 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**look forward to + verb-ing**",
+        "**Despite** (no \"of\") · **In spite of** (with \"of\")",
+        "**Whereas** joins two contrasting ideas",
+        "**quite** = fairly · **rather** = more than expected",
+        "**its** = belonging to it · **it's** = it is · *hers, ours, yours, theirs* — no apostrophe",
+        "Room words: **candidate · invigilator · supervisor · index number · aggregate · division**",
+        "Cheating = **malpractice** → **disqualification**"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, sub-topics, vocabulary list, language structures, grammar items, competences and teacher guidance above were taken from the official **NCDC Primary Seven Curriculum, Set One** (topic outline page 30 and pages 40–43 of the PDF in `curriculum/`). The explanations, tables, examples, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook. The advice on rest and sleep follows the syllabus's own instruction to the teacher."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P7_ENG_T04",
+   "class": "P7",
+   "subject": "ENG",
+   "topic_no": 4,
+   "title": "Electronic Media",
+   "heading": "TOPIC 4: ELECTRONIC MEDIA",
+   "slug": "electronic-media",
+   "periods": 27,
+   "curriculum_pages": "45–49",
+   "words": 2201,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Seven Curriculum, Set One, English Topic 4, 27 periods (`curriculum/PRIMARY-SEVEN-SET-ONE.pdf`, topic outline page 30 and pages 45–49). Sub-topics: **4A Radio / Television** and **4B Other Electronic Media**.*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** In P.5 you studied **print media** — newspapers and magazines. In P.7 you study **electronic media**: radio, television, the internet and recording machines, and the language used with them."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "use vocabulary about radio, television and other electronic media",
+        "read, listen to and interpret adverts, announcements and news",
+        "write news items, adverts, announcements and dialogues",
+        "use the **If 1** and **If 2** conditionals correctly",
+        "use *and so, needn't, I like / I don't like*, and reported speech"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "SUB-TOPIC 4A: RADIO AND TELEVISION",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Vocabulary from the syllabus"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "programme",
+         "A show or item broadcast at a set time"
+        ],
+        [
+         "channel",
+         "A station you tune to on radio or television"
+        ],
+        [
+         "knob",
+         "The small round handle used to turn something on or adjust it"
+        ],
+        [
+         "volume",
+         "The loudness of the sound"
+        ],
+        [
+         "speaker",
+         "The part from which the sound comes out"
+        ],
+        [
+         "aerial",
+         "The rod or wire that receives the signal"
+        ],
+        [
+         "presenter",
+         "The person who introduces and runs a programme"
+        ],
+        [
+         "studio",
+         "The room from which programmes are made or broadcast"
+        ],
+        [
+         "advert",
+         "A short message paid for, telling people about goods or services"
+        ],
+        [
+         "broadcast",
+         "To send out a programme by radio or television"
+        ],
+        [
+         "talk show",
+         "A programme where people discuss a subject"
+        ],
+        [
+         "line-up",
+         "The list of programmes to be shown or heard"
+        ],
+        [
+         "forecast",
+         "A statement of what is expected, for example the weather"
+        ],
+        [
+         "tune",
+         "To set a radio or television to a station"
+        ],
+        [
+         "station",
+         "A broadcasting organisation, for example UBC or NBS"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Kinds of programmes"
+      },
+      {
+       "t": "p",
+       "x": "News · sports · music (gospel, pop, traditional) · drama · documentaries · talk shows · farming programmes · children's programmes · religious programmes · adverts and announcements · the weather forecast."
+      },
+      {
+       "t": "h3",
+       "x": "Reading and writing media items"
+      },
+      {
+       "t": "p",
+       "x": "**An announcement** must answer: **what, who, when, where** and **who to contact**."
+      },
+      {
+       "t": "note",
+       "x": "*All P.7 candidates of Kigoowa Primary School are informed that briefing for the examinations will take place on Monday, 5th October 2026, at 9:00 a.m. in the school hall. For more information, contact the head teacher.*"
+      },
+      {
+       "t": "p",
+       "x": "**An advert** should have an attention-catching first line, the **name of the product or service**, what makes it good, the **price or offer**, and **where to find it**."
+      },
+      {
+       "t": "p",
+       "x": "**A news item** answers **who, what, when, where, why** and **how**, with the most important fact first."
+      },
+      {
+       "t": "h3",
+       "x": "Language structures"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**If + present simple + will/shall + verb (If 1)**",
+         "*If you tune in at five o'clock, you **will** hear the soccer news.*"
+        ],
+        [
+         "**… and so …**",
+         "*Joan is a good presenter, **and so** is Amina.*"
+        ],
+        [
+         "**I like …**",
+         "*I **like listening** to gospel music.*"
+        ],
+        [
+         "**I don't like …**",
+         "*I **don't like** the new programme.*"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Note on \"and so\":** the verb comes **before** the subject — *and so **is** Amina*, *and so **do** I*, *and so **can** he*. Use *neither / nor* for negatives: *Joan does not like adverts, and **neither does** Amina.*"
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus: If 1 and If 2"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Conditional",
+        "Structure",
+        "Meaning",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**If 1** (real, likely)",
+         "If + **present simple**, **will/shall** + verb",
+         "Something that can really happen",
+         "*If it **rains**, we **shall** watch television indoors.*"
+        ],
+        [
+         "**If 2** (unreal, present)",
+         "If + **past simple**, **would/could** + verb",
+         "Something imagined or unlikely now",
+         "*If I **had** a television, I **would** watch the news.*"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "More examples:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "*If you **press** that knob, the volume **will** increase.* (If 1)",
+        "*If she **were** a presenter, she **would** run a talk show.* (If 2 — use *were* for all persons)",
+        "*If I **knew** his station, I **would** tune in.* (If 2)"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "SUB-TOPIC 4B: OTHER ELECTRONIC MEDIA",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Vocabulary from the syllabus"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "eject",
+         "To push out, for example a disc from a player"
+        ],
+        [
+         "CD",
+         "Compact disc — a disc that stores music or data"
+        ],
+        [
+         "CD-ROM",
+         "A compact disc that only reads stored information"
+        ],
+        [
+         "DVD",
+         "Digital versatile disc — stores films and large files"
+        ],
+        [
+         "player",
+         "A machine used to play discs or tapes"
+        ],
+        [
+         "recorder",
+         "A machine used to record sound or pictures"
+        ],
+        [
+         "tape",
+         "A ribbon that stores sound or pictures"
+        ],
+        [
+         "the Internet",
+         "A worldwide network of computers linked together"
+        ],
+        [
+         "extension cable",
+         "A cable that carries power further from the socket"
+        ],
+        [
+         "connect",
+         "To join one thing to another"
+        ],
+        [
+         "compact",
+         "Small and neatly packed together"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Uses of other electronic media"
+      },
+      {
+       "t": "p",
+       "x": "Getting information and news · learning through videos and e-learning · sending e-mail and messages · storing pictures, music and school work · entertainment · business and mobile money · keeping in touch with people far away."
+      },
+      {
+       "t": "h3",
+       "x": "Good and bad sides of electronic media"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Advantages",
+        "Disadvantages"
+       ],
+       "rows": [
+        [
+         "Fast information from everywhere",
+         "Costly: gadgets, data and electricity"
+        ],
+        [
+         "Learning and research",
+         "Bad content, cheating and time wasting"
+        ],
+        [
+         "Entertainment and relaxation",
+         "Eye strain and lack of exercise"
+        ],
+        [
+         "Communication over long distances",
+         "Fraud and cheating on the internet"
+        ],
+        [
+         "Keeps records of pictures and sound",
+         "Spread of false news and rumours"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "How to care for electronic gadgets"
+      },
+      {
+       "t": "p",
+       "x": "Keep them **dry and free from dust** · handle discs by the **edges** · **eject** discs properly before switching off · keep them out of strong sunlight and away from heat · switch off during storms and unplug · use the right **cables and voltage** · do not overload one socket · keep out of the reach of small children."
+      },
+      {
+       "t": "h3",
+       "x": "Language structures"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**If + past simple + would/could + verb (If 2)**",
+         "*If I **had** a lot of money, I **would record** all the gospel music on one DVD.*"
+        ],
+        [
+         "**… needn't have …**",
+         "*You **needn't have switched off** the DVD, because I was watching a nice film.*"
+        ],
+        [
+         "**… and so …**",
+         "*A CD should be kept well, **and so should** a DVD.*"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Note:** *needn't have + past participle* means the action was done but it **was not necessary**."
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus: reported speech with media language"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Direct",
+        "Reported"
+       ],
+       "rows": [
+        [
+         "*\"I am watching the news,\" he said.*",
+         "*He said that **he was watching** the news.*"
+        ],
+        [
+         "*\"We shall broadcast at eight,\" the presenter said.*",
+         "*The presenter said that **they would broadcast** at eight.*"
+        ],
+        [
+         "*\"Eject the disc,\" she told me.*",
+         "*She told me **to eject** the disc.*"
+        ],
+        [
+         "*\"Do you like this station?\" he asked.*",
+         "*He asked **whether I liked** that station.*"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "Remember: the tense moves **one step back**, and commands become **to + verb**."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Electronic media",
+         "Means of communication that use electricity or electronic devices"
+        ],
+        [
+         "Broadcast",
+         "To send out a programme by radio or television"
+        ],
+        [
+         "Presenter",
+         "The person who introduces and runs a programme"
+        ],
+        [
+         "Studio",
+         "The room from which programmes are made or broadcast"
+        ],
+        [
+         "Advert",
+         "A paid message telling people about goods or services"
+        ],
+        [
+         "Aerial",
+         "The rod or wire that receives a broadcast signal"
+        ],
+        [
+         "The Internet",
+         "A worldwide network of connected computers"
+        ],
+        [
+         "CD-ROM",
+         "A compact disc that only reads stored information"
+        ],
+        [
+         "Eject",
+         "To push out, for example a disc from a player"
+        ],
+        [
+         "Forecast",
+         "A statement of what is expected to happen"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**If 1** = real and likely: *If + present simple, will + verb.*",
+        "**If 2** = imagined now: *If + past simple, would + verb* (use **were** for all persons).",
+        "After *and so* the verb comes **before** the subject: *and so **is** Amina.*",
+        "Use **neither / nor** for the negative: *and **neither does** she.*",
+        "*needn't have + past participle* = it was done but was not necessary.",
+        "In reported speech, commands become **to + verb**.",
+        "Electronic media include radio, television, the internet, CDs, DVDs, players and recorders."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "*If you tune in at five, you ____ (hear) the news.* → **will hear**",
+        "*If I ____ (be) a presenter, I would host a talk show.* → **were**",
+        "*Joan is a good presenter and so ____ Amina.* → **is**",
+        "*Musa doesn't like adverts and ____ does Peter.* → **neither**",
+        "Give one word for: the person who introduces a programme → **presenter**.",
+        "Give one word for: the room from which programmes are broadcast → **studio**.",
+        "Change to reported speech: *\"Eject the disc,\" she said.* → *She told him **to eject** the disc.*"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Writing *\"If it will rain, we shall stay indoors\"* — after **if** use the **present simple**.",
+        "Writing *\"and so Amina is\"* instead of *and so **is** Amina*.",
+        "Using *and so* with a negative sentence; use **neither/nor**.",
+        "Confusing *needn't have* (it was unnecessary) with *didn't need to* (it was not done).",
+        "Spelling: **aerial**, **advertisement**, **programme**, **studio**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "What is electronic media? Give any four examples.",
+        "Give the meaning of: presenter, studio, aerial, eject.",
+        "Give the full meaning of CD, DVD and CD-ROM.",
+        "Complete: *If you ____ (tune) in at seven o'clock, you will hear the news.*",
+        "Complete: *If I ____ (have) a radio, I would listen to the farming programme.*",
+        "Complete: *If I were you, I ____ (not buy) that old player.*",
+        "Complete: *Sarah is a good presenter and so ____ Doreen.*",
+        "Complete: *Musa does not like adverts and ____ does Peter.*",
+        "Rewrite using *needn't have*: *You switched off the television, but it was not necessary.*",
+        "Change to reported speech: *\"I am watching the news,\" said Father.*",
+        "Change to reported speech: *\"Connect the extension cable,\" the teacher told us.*",
+        "Give any four kinds of programmes broadcast on radio or television.",
+        "What five questions must a good news item answer?",
+        "Write a short announcement (about three sentences) telling P.7 pupils about a briefing on Monday.",
+        "Write a short advert (about three sentences) for a shop selling school bags.",
+        "Give any four advantages and four disadvantages of electronic media.",
+        "Give any five ways of caring for electronic gadgets.",
+        "Use *I don't like* and *I like* each in a sentence about programmes.",
+        "Give the difference between If 1 and If 2, with one example of each.",
+        "Write a short dialogue (six lines) between two friends discussing their favourite programmes."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Electronic media are means of communication that use electricity or electronic devices. Examples: radio, television, the internet, DVD and CD players (any four).",
+        "**Presenter** — the person who introduces and runs a programme; **studio** — the room from which programmes are made or broadcast; **aerial** — the rod or wire that receives the signal; **eject** — to push out, for example a disc from a player.",
+        "CD — **compact disc**; DVD — **digital versatile disc**; CD-ROM — **compact disc read-only memory**.",
+        "**tune**",
+        "**had**",
+        "**would not buy**",
+        "**is**",
+        "**neither**",
+        "**You needn't have switched off the television.**",
+        "Father said that **he was watching the news**.",
+        "The teacher told us **to connect the extension cable**.",
+        "Any four of: news, sports, music, drama, documentaries, talk shows, farming programmes, children's programmes, religious programmes, adverts.",
+        "**Who, what, when, where, why** (and how).",
+        "*Learner's answer,* for example: *All P.7 pupils are informed that a briefing about the examinations will take place on Monday at 9:00 a.m. in the school hall. Every candidate must attend with a pen and a notebook. For more information, see the head teacher.*",
+        "*Learner's answer,* for example: *Are you looking for a strong school bag? Visit Mukwano Bag Shop, opposite the market, for strong bags from only 25,000 shillings. Hurry while stocks last!*",
+        "**Advantages:** fast information; learning and research; entertainment; communication over long distances (any four). **Disadvantages:** high cost of gadgets and data; bad content and time wasting; eye strain and little exercise; fraud; false news (any four).",
+        "Any five of: keep them dry and dust-free; hold discs by the edges; eject discs before switching off; keep away from strong sunlight and heat; switch off and unplug during storms; use the right cables and voltage; do not overload a socket; keep away from small children.",
+        "*Learner's sentences,* for example: *I **like** watching the weather forecast.* / *I **don't like** long adverts.*",
+        "**If 1** is about something real and likely and uses *If + present simple, will + verb*: *If it rains, we shall stay indoors.* **If 2** is about something imagined or unlikely now and uses *If + past simple, would + verb*: *If I had a television, I would watch the news.*",
+        "*Learner's dialogue.* It should have two speakers named, a new line for each speaker, correct punctuation and natural language, for example: *Ann: Which programme do you like most?* *Ben: I like the sports news. And you?*"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.7 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**If 1**: *If + present simple, will + verb* (real) · **If 2**: *If + past simple, would + verb* (imagined; use **were**)",
+        "***and so + verb + subject*** · negatives take **neither / nor**",
+        "**needn't have + p.p.** = done but not necessary",
+        "Reported speech: tense back one step; commands → **to + verb**",
+        "Radio/TV words: programme · channel · presenter · studio · advert · aerial · forecast",
+        "News answers **who, what, when, where, why**"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, sub-topics, vocabulary list, language structures, grammar items, competences and teacher guidance above were taken from the official **NCDC Primary Seven Curriculum, Set One** (topic outline page 30 and pages 45–49 of the PDF in `curriculum/`). The explanations, tables, sample announcements, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P7_ENG_T05",
+   "class": "P7",
+   "subject": "ENG",
+   "topic_no": 5,
+   "title": "Rights, Responsibilities and Freedom",
+   "heading": "TOPIC 5: RIGHTS, RESPONSIBILITIES AND FREEDOM",
+   "slug": "rights-responsibilities-freedom",
+   "periods": 41,
+   "curriculum_pages": "50–55",
+   "words": 2470,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Seven Curriculum, Set One, English Topic 5, 41 periods (`curriculum/PRIMARY-SEVEN-SET-ONE.pdf`, topic outline page 30 and pages 50–55). Sub-topics: **5A Children's Rights and Responsibilities** and **5B Animal Needs and Freedoms**.*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You met child protection in P.2 and animal keeping in P.6. In P.7 you learn the **language of rights and responsibilities** — for children and for animals — so that you can speak, read and write about them confidently."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "use vocabulary about rights, responsibilities and abuse",
+        "tell the difference between a right and a responsibility",
+        "use *ought to, in order to, either … or, is likely to, more interested in … than*",
+        "use relative pronouns and the future continuous tense",
+        "talk and write about animal needs and freedoms, and know the welfare acronyms",
+        "form nouns from verbs and use the past perfect tense"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "SUB-TOPIC 5A: CHILDREN'S RIGHTS AND RESPONSIBILITIES",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Definitions"
+      },
+      {
+       "t": "p",
+       "x": "**Right:** Something every child is entitled to and which others must give or allow."
+      },
+      {
+       "t": "p",
+       "x": "**Responsibility:** Something a child is expected to do — a duty."
+      },
+      {
+       "t": "p",
+       "x": "**Child abuse:** Any act that harms a child physically, emotionally or sexually, or neglects the child's needs."
+      },
+      {
+       "t": "h3",
+       "x": "Rights and the matching responsibilities"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Right",
+        "Matching responsibility"
+       ],
+       "rows": [
+        [
+         "The right to **education**",
+         "Attending school regularly and doing your homework"
+        ],
+        [
+         "The right to **food**",
+         "Eating what is provided and helping with the chores"
+        ],
+        [
+         "The right to **shelter and clothing**",
+         "Keeping the home and your clothes clean and tidy"
+        ],
+        [
+         "The right to **medical care**",
+         "Keeping yourself clean and reporting when you are unwell"
+        ],
+        [
+         "The right to **play and rest**",
+         "Playing safely and returning home in good time"
+        ],
+        [
+         "The right to be **listened to**",
+         "Listening to others and speaking respectfully"
+        ],
+        [
+         "The right to **protection from abuse**",
+         "Reporting abuse and avoiding dangerous places and company"
+        ],
+        [
+         "The right to a **name and nationality**",
+         "Respecting the laws of the country"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Vocabulary from the syllabus"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "abuse",
+         "Cruel or harmful treatment of a person"
+        ],
+        [
+         "mistreatment",
+         "Treating somebody badly"
+        ],
+        [
+         "early marriage",
+         "Marrying while still a child"
+        ],
+        [
+         "dropout",
+         "A learner who leaves school before finishing"
+        ],
+        [
+         "child labour",
+         "Making a child do heavy or harmful work"
+        ],
+        [
+         "bad touches",
+         "Touching a child's private parts or in a way that is not right"
+        ],
+        [
+         "sugar-daddy / sugar-mummy",
+         "An older person who gives a young person gifts or money in exchange for a sexual relationship"
+        ],
+        [
+         "convict",
+         "To find somebody guilty in a court of law"
+        ],
+        [
+         "imprison",
+         "To put somebody in prison"
+        ],
+        [
+         "innocent",
+         "Not guilty; having done no wrong"
+        ],
+        [
+         "chores",
+         "Small jobs done at home"
+        ],
+        [
+         "obedient",
+         "Willing to do what you are told by those in authority"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Staying safe"
+      },
+      {
+       "t": "p",
+       "x": "Move in **groups**, especially at night · refuse gifts and lifts from strangers · say **NO** loudly and get away if someone tries to touch you wrongly · never keep abuse a secret — **tell a trusted adult at once**: a parent, teacher, religious leader, police officer or the child helpline · remember that abuse is **never the child's fault** · avoid dangerous places and bad company."
+      },
+      {
+       "t": "h3",
+       "x": "Language structures"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**more interested in … than …**",
+         "*Girls are **more interested in** cooking **than** playing.*"
+        ],
+        [
+         "**… ought to …**",
+         "*All children **ought to** go to school.*"
+        ],
+        [
+         "**… in order to …**",
+         "*You should always move in groups **in order to** avoid child abuse.*"
+        ],
+        [
+         "**either … or …**",
+         "*You **either** provide food to your children **or** you risk going to prison.*"
+        ],
+        [
+         "**… is likely to …**",
+         "*Making wrong friends **is likely to** affect your studies.*"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Note:** *ought to* means a strong duty, like *should*. Its negative is *ought not to*."
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus 1: Relative pronouns"
+      },
+      {
+       "t": "p",
+       "x": "Relative pronouns join two sentences and tell us more about a noun."
+      },
+      {
+       "t": "table",
+       "head": [
+        "Pronoun",
+        "Used for",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**who**",
+         "people (subject)",
+         "*The girl **who** reported the abuse was brave.*"
+        ],
+        [
+         "**whom**",
+         "people (object)",
+         "*The man **whom** the police arrested is a neighbour.*"
+        ],
+        [
+         "**whose**",
+         "possession",
+         "*The child **whose** parents died lives with an aunt.*"
+        ],
+        [
+         "**which**",
+         "things and animals",
+         "*The school **which** helps orphans is nearby.*"
+        ],
+        [
+         "**that**",
+         "people or things",
+         "*This is the book **that** I lost.*"
+        ],
+        [
+         "**where**",
+         "places",
+         "*This is the home **where** she was rescued.*"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus 2: Future continuous tense"
+      },
+      {
+       "t": "p",
+       "x": "**Form:** will be + verb + **-ing** — an action that will be going on at a certain time in the future."
+      },
+      {
+       "t": "ul",
+       "items": [
+        "*This time tomorrow we **shall be discussing** children's rights.*",
+        "*The pupils **will be presenting** a play about child abuse next week.*"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "SUB-TOPIC 5B: ANIMAL NEEDS AND FREEDOMS",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Why animals matter"
+      },
+      {
+       "t": "p",
+       "x": "The syllabus explains that animal freedom is taught so that learners can **compare their own rights with those of animals**, and grow up ready to protect animals."
+      },
+      {
+       "t": "h3",
+       "x": "The needs and freedoms of animals"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Freedom",
+        "What it means"
+       ],
+       "rows": [
+        [
+         "Freedom from **hunger and thirst**",
+         "Enough food and clean water"
+        ],
+        [
+         "Freedom from **discomfort**",
+         "Proper shelter and a comfortable resting place"
+        ],
+        [
+         "Freedom from **pain, injury and disease**",
+         "Prevention, quick treatment, no beating"
+        ],
+        [
+         "Freedom to express **natural behaviour**",
+         "Enough space, company of their own kind"
+        ],
+        [
+         "Freedom from **fear and distress**",
+         "Kind handling, no frightening or overworking"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Vocabulary from the syllabus"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "capture",
+         "To catch and hold an animal"
+        ],
+        [
+         "poach",
+         "To kill or catch wild animals illegally"
+        ],
+        [
+         "poacher",
+         "A person who kills or catches animals illegally"
+        ],
+        [
+         "captivity",
+         "Being kept in a cage or enclosure, not free"
+        ],
+        [
+         "sanctuary",
+         "A protected place where animals are safe"
+        ],
+        [
+         "insemination",
+         "Putting semen into a female animal so that it can produce young"
+        ],
+        [
+         "discomfort",
+         "A feeling of not being comfortable"
+        ],
+        [
+         "distress",
+         "Great worry, pain or suffering"
+        ],
+        [
+         "hindrance",
+         "Something that stops or delays something"
+        ],
+        [
+         "secure",
+         "Safe and protected"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Ways people abuse animals"
+      },
+      {
+       "t": "p",
+       "x": "Overloading and overworking · beating and stoning · tying legs of chickens and goats tightly or hanging them on bicycles · starving them or giving dirty water · keeping them in dirty, tight places · not treating sickness · **poaching** · burning bush where wild animals live · abandoning pets."
+      },
+      {
+       "t": "h3",
+       "x": "How to care for animals"
+      },
+      {
+       "t": "p",
+       "x": "Give enough **clean water and feed** · build a clean, dry **shelter** · **treat and vaccinate** them · handle them **gently** · give them **space** to move · protect them from thieves and wild animals · report poaching and cruelty to the authorities."
+      },
+      {
+       "t": "h3",
+       "x": "Acronyms about animal welfare (from the syllabus)"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Acronym",
+        "Full meaning"
+       ],
+       "rows": [
+        [
+         "**WSPA**",
+         "World Society for the Protection of Animals"
+        ],
+        [
+         "**USPA**",
+         "Uganda Society for the Protection of Animals"
+        ],
+        [
+         "**UWEC**",
+         "Uganda Wildlife Education Centre"
+        ],
+        [
+         "**UWA**",
+         "Uganda Wildlife Authority"
+        ],
+        [
+         "**WCU**",
+         "Wildlife Clubs of Uganda"
+        ],
+        [
+         "**ABS**",
+         "Animal Behaviour Society"
+        ],
+        [
+         "**ADI**",
+         "Animal Defenders International"
+        ],
+        [
+         "**AVAR**",
+         "Association of Veterinarians for Animal Rights"
+        ],
+        [
+         "**ASAB**",
+         "Association for the Study of Animal Behaviour"
+        ],
+        [
+         "**CAPS**",
+         "Captive Animals Protection Society"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Language structures"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**Much as …**",
+         "***Much as** a cow is an animal, it also needs protection.*"
+        ],
+        [
+         "**… need not have …**",
+         "*Obbo **need not have tied** his goat on the motorcycle carrier.*"
+        ],
+        [
+         "**Whereas …**",
+         "***Whereas** people want their rights, they do not respect animal freedoms.*"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus 3: Forming nouns from verbs"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Verb",
+        "Noun",
+        "Verb",
+        "Noun"
+       ],
+       "rows": [
+        [
+         "protect",
+         "protection",
+         "inseminate",
+         "insemination"
+        ],
+        [
+         "capture",
+         "captivity / capture",
+         "free",
+         "freedom"
+        ],
+        [
+         "abuse",
+         "abuse / abuser",
+         "educate",
+         "education"
+        ],
+        [
+         "behave",
+         "behaviour",
+         "responsible *(adj.)*",
+         "responsibility"
+        ],
+        [
+         "decide",
+         "decision",
+         "care",
+         "care / carer"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus 4: Past perfect tense"
+      },
+      {
+       "t": "p",
+       "x": "**Form:** had + past participle — the action that happened **first** of two past actions."
+      },
+      {
+       "t": "ul",
+       "items": [
+        "*The poacher **had escaped** before the rangers arrived.*",
+        "*We **had fed** the animals before it rained.*"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Right",
+         "Something a person is entitled to"
+        ],
+        [
+         "Responsibility",
+         "A duty; something one is expected to do"
+        ],
+        [
+         "Child abuse",
+         "Any act that harms or neglects a child"
+        ],
+        [
+         "Child labour",
+         "Making a child do heavy or harmful work"
+        ],
+        [
+         "Poaching",
+         "Killing or catching wild animals illegally"
+        ],
+        [
+         "Captivity",
+         "Being kept in a cage or enclosure"
+        ],
+        [
+         "Sanctuary",
+         "A protected place where animals are safe"
+        ],
+        [
+         "Relative pronoun",
+         "A word such as who, which or whose that joins and describes"
+        ],
+        [
+         "Future continuous",
+         "will/shall be + verb-ing — an action going on in the future"
+        ],
+        [
+         "Past perfect",
+         "had + past participle — the earlier of two past actions"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Every **right** has a matching **responsibility**.",
+        "**ought to** = a strong duty (like *should*); negative *ought not to*.",
+        "**who** for people, **which** for things and animals, **whose** for possession, **where** for places.",
+        "Future continuous: **will/shall be + verb-ing**. Past perfect: **had + past participle**.",
+        "*need not have + past participle* = the action was done but was not necessary.",
+        "Animals have five freedoms: from **hunger and thirst, discomfort, pain, fear**, and freedom to show **natural behaviour**.",
+        "**UWA** = Uganda Wildlife Authority; **UWEC** = Uganda Wildlife Education Centre.",
+        "Abuse is **never the child's fault** — report it to a trusted adult at once."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "*The girl ____ reported the case was brave.* → **who**",
+        "*The dog ____ leg was broken was treated.* → **whose**",
+        "*All children ____ go to school.* → **ought to**",
+        "*You should move in groups ____ avoid abuse.* → **in order to**",
+        "Form the noun from *protect* → **protection**; from *behave* → **behaviour**.",
+        "Give the full meaning of **UWA** → Uganda Wildlife Authority.",
+        "Give one word for: a person who kills wild animals illegally → **poacher**.",
+        "Give one word for: a protected place where animals are safe → **sanctuary**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Confusing a right with a responsibility.",
+        "Writing *\"ought to going\"* — after *ought to* use the **plain verb**: *ought to go*.",
+        "Using *which* for people or *who* for things.",
+        "Writing *\"either … nor\"* — it is **either … or**, and **neither … nor**.",
+        "Mixing the past perfect with the simple past: *He had escaped before the rangers **arrived*** (not \"had arrived\" twice).",
+        "Spelling: **responsibility, protection, sanctuary, captivity**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Give the difference between a right and a responsibility, with one example of each.",
+        "Name any five rights of a child and the responsibility that goes with each.",
+        "Give the meaning of: child labour, dropout, early marriage, bad touches.",
+        "What should a child do if somebody tries to touch him or her wrongly?",
+        "Complete: *All children ____ ____ go to school.* (two words)",
+        "Complete: *You should move in groups ____ ____ ____ avoid child abuse.* (three words)",
+        "Complete: *You ____ provide food to your children ____ you risk going to prison.*",
+        "Fill in the correct relative pronoun: *The teacher ____ helped the orphan was rewarded.*",
+        "Fill in the correct relative pronoun: *The goat ____ leg was broken has been treated.*",
+        "Fill in the correct relative pronoun: *This is the sanctuary ____ the animals are kept.*",
+        "Rewrite in the future continuous: *We shall discuss children's rights this time tomorrow.*",
+        "Rewrite using the past perfect: *The poacher escaped. Then the rangers arrived.*",
+        "Name the five freedoms of animals.",
+        "Give any five ways in which people abuse animals.",
+        "Give any five ways of caring for animals.",
+        "Give the full meaning of: UWA, UWEC, WSPA, USPA, WCU.",
+        "Form nouns from these verbs: protect, behave, decide, educate, capture.",
+        "Rewrite using *Much as*: *Although a cow is an animal, it also needs protection.*",
+        "Rewrite using *need not have*: *Obbo tied his goat on the motorcycle carrier, but it was not necessary.*",
+        "Write a short paragraph (about six sentences) explaining why children should protect animals."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "A **right** is something a child is entitled to, for example the right to education; a **responsibility** is a duty the child is expected to perform, for example attending school regularly and doing homework.",
+        "Any five pairs from the table, for example: the right to food — helping with the chores; the right to education — attending school regularly; the right to medical care — keeping clean and reporting illness; the right to play — playing safely; the right to protection — reporting abuse.",
+        "**Child labour** — making a child do heavy or harmful work; **dropout** — a learner who leaves school before finishing; **early marriage** — marrying while still a child; **bad touches** — touching a child's private parts or in a way that is not right.",
+        "The child should **say NO loudly, get away from the person, and tell a trusted adult at once** — a parent, teacher, religious leader, police officer or child helpline. The child must not keep it a secret, and it is never the child's fault.",
+        "**ought to**",
+        "**in order to**",
+        "*You **either** provide food to your children **or** you risk going to prison.*",
+        "**who**",
+        "**whose**",
+        "**where**",
+        "*This time tomorrow, we **shall be discussing** children's rights.*",
+        "*The poacher **had escaped** before the rangers arrived.*",
+        "Freedom from hunger and thirst; freedom from discomfort; freedom from pain, injury and disease; freedom to express natural behaviour; freedom from fear and distress.",
+        "Any five of: overloading and overworking; beating and stoning; tying legs tightly or hanging animals on bicycles; starving them or giving dirty water; keeping them in dirty, tight places; not treating sickness; poaching; burning bush; abandoning pets.",
+        "Any five of: give clean water and enough feed; build a clean dry shelter; treat and vaccinate them; handle them gently; give them space; protect them from thieves and wild animals; report cruelty and poaching.",
+        "**UWA** — Uganda Wildlife Authority; **UWEC** — Uganda Wildlife Education Centre; **WSPA** — World Society for the Protection of Animals; **USPA** — Uganda Society for the Protection of Animals; **WCU** — Wildlife Clubs of Uganda.",
+        "protect → **protection**; behave → **behaviour**; decide → **decision**; educate → **education**; capture → **captivity** (or capture).",
+        "***Much as** a cow is an animal, it also needs protection.*",
+        "*Obbo **need not have tied** his goat on the motorcycle carrier.*",
+        "*Learner's paragraph.* It should be one paragraph with clear reasons, such as: animals also feel pain; they give us food, work and money; wild animals bring tourists and income; caring for animals shows kindness; the law protects them; and animals cannot speak for themselves."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.7 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Every **right** has a matching **responsibility**",
+        "Safety: say **NO**, move away, **tell a trusted adult** — never a secret, never your fault",
+        "**ought to** + plain verb · **in order to** = purpose · **either … or** / **neither … nor**",
+        "**who** people · **which** things · **whose** possession · **where** places",
+        "Future continuous **will be + -ing** · Past perfect **had + p.p.**",
+        "Five animal freedoms: hunger/thirst · discomfort · pain · natural behaviour · fear",
+        "**UWA · UWEC · WSPA · USPA · WCU**"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, sub-topics, vocabulary list, language structures, grammar items, the animal-welfare acronyms, competences and teacher guidance above were taken from the official **NCDC Primary Seven Curriculum, Set One** (topic outline page 30 and pages 50–55 of the PDF in `curriculum/`). The explanations, tables, examples, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "The safety advice keeps strictly to child protection — say no, get away, tell a trusted adult — as the syllabus intends; no explicit detail is given."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P7_ENG_T06",
+   "class": "P7",
+   "subject": "ENG",
+   "topic_no": 6,
+   "title": "Environmental Protection",
+   "heading": "TOPIC 6: ENVIRONMENTAL PROTECTION",
+   "slug": "environmental-protection",
+   "periods": 25,
+   "curriculum_pages": "57–61",
+   "words": 2195,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Seven Curriculum, Set One, English Topic 6, 25 periods (`curriculum/PRIMARY-SEVEN-SET-ONE.pdf`, topic outline page 30 and pages 57–61). Sub-topics: **6A Importance of Environmental Protection** and **6B Ways of Protecting the Environment**.*"
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** You have studied the environment in Science and Social Studies. Here the work is on **the English** you need to talk, read and write about it: the vocabulary, abstract nouns, and the **If 1** and **If 3** conditionals."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "use environmental vocabulary correctly",
+        "name activities that damage the environment and explain why protection matters",
+        "describe ways of protecting the environment",
+        "use the structures *We must … to …, so, since, as well as, had to, If we don't …*",
+        "form and use abstract nouns",
+        "write articles, messages, poems and songs about the environment"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "SUB-TOPIC 6A: IMPORTANCE OF ENVIRONMENTAL PROTECTION",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Vocabulary from the syllabus"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "pollution",
+         "Making air, water or land dirty and harmful"
+        ],
+        [
+         "garbage",
+         "Rubbish thrown away, especially from a home"
+        ],
+        [
+         "refuse *(noun: REF-use)*",
+         "Waste material; rubbish"
+        ],
+        [
+         "erosion",
+         "The wearing away and carrying off of soil"
+        ],
+        [
+         "drought",
+         "A long period without rain"
+        ],
+        [
+         "floods",
+         "Large amounts of water covering land that is usually dry"
+        ],
+        [
+         "storms",
+         "Very bad weather with strong wind and rain"
+        ],
+        [
+         "source",
+         "The place where something begins"
+        ],
+        [
+         "raw materials",
+         "Natural materials used to make goods"
+        ],
+        [
+         "habitat",
+         "The natural home of a plant or an animal"
+        ],
+        [
+         "flora",
+         "All the plants of an area"
+        ],
+        [
+         "fauna",
+         "All the animals of an area"
+        ],
+        [
+         "manure",
+         "Rotted plant or animal matter used to make soil fertile"
+        ],
+        [
+         "drainage",
+         "The way water is carried away from land"
+        ],
+        [
+         "conserve",
+         "To protect and use carefully"
+        ],
+        [
+         "conservation",
+         "The protection of nature and its resources"
+        ],
+        [
+         "overgrazing",
+         "Letting animals eat the grass until the ground is bare"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Note the pronunciation trap:** *refuse* as a **noun** means rubbish (REF-use); *refuse* as a **verb** means to say no (re-FUSE)."
+      },
+      {
+       "t": "h3",
+       "x": "Activities that damage the environment"
+      },
+      {
+       "t": "p",
+       "x": "Cutting down trees (**deforestation**) · bush burning · overgrazing · poor farming on steep slopes · swamp draining · dumping garbage anywhere · smoke from factories and vehicles · mining and quarrying · poaching · pouring waste into rivers and lakes."
+      },
+      {
+       "t": "h3",
+       "x": "Why the environment must be protected"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "To keep **reliable rainfall** and a good climate.",
+        "To protect the **soil** from erosion and keep it fertile.",
+        "To keep **clean air and clean water**.",
+        "To protect the **habitat** of animals and plants — the flora and fauna.",
+        "To keep supplying **raw materials, food, firewood and medicine**.",
+        "To prevent **floods, drought, landslides and disease**.",
+        "To keep the country **beautiful** and attract **tourists**.",
+        "To leave enough for the people of **tomorrow**."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Language structures"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**We must … to …**",
+         "*We **must** protect our environment **to** have rain.*"
+        ],
+        [
+         "**… so …**",
+         "*Our well was polluted, **so** we did not have clean water.*"
+        ],
+        [
+         "**Since …** (at the start)",
+         "***Since** the forests have been cut, we shall have no rain.*"
+        ],
+        [
+         "**… since …** (inside)",
+         "*We shall have no rain **since** the forests have been cut.*"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "*Since* here gives a **reason** (like *because*). It can also show **time**: *I have lived here **since** 2020.*"
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus: abstract nouns"
+      },
+      {
+       "t": "p",
+       "x": "**Abstract noun:** The name of something you cannot see or touch — an idea, a quality or a state."
+      },
+      {
+       "t": "table",
+       "head": [
+        "From an adjective",
+        "Abstract noun",
+        "From a verb",
+        "Abstract noun"
+       ],
+       "rows": [
+        [
+         "beautiful",
+         "**beauty**",
+         "protect",
+         "**protection**"
+        ],
+        [
+         "strong",
+         "strength",
+         "pollute",
+         "**pollution**"
+        ],
+        [
+         "poor",
+         "poverty",
+         "conserve",
+         "**conservation**"
+        ],
+        [
+         "wise",
+         "wisdom",
+         "destroy",
+         "destruction"
+        ],
+        [
+         "kind",
+         "kindness",
+         "grow",
+         "growth"
+        ],
+        [
+         "free",
+         "freedom",
+         "erode",
+         "erosion"
+        ],
+        [
+         "dark",
+         "darkness",
+         "decide",
+         "decision"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "SUB-TOPIC 6B: WAYS OF PROTECTING THE ENVIRONMENT",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Vocabulary from the syllabus"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "terraces",
+         "Steps cut across a slope to slow running water"
+        ],
+        [
+         "crop rotation",
+         "Changing the crop grown on a plot each season"
+        ],
+        [
+         "mulching",
+         "Covering the soil with dry grass or leaves"
+        ],
+        [
+         "dumping",
+         "Throwing away waste, often carelessly"
+        ],
+        [
+         "pollute",
+         "To make air, water or land dirty"
+        ],
+        [
+         "erode",
+         "To wear away soil"
+        ],
+        [
+         "reserve",
+         "An area kept and protected, such as a forest reserve"
+        ],
+        [
+         "degrade",
+         "To spoil or lower the quality of land"
+        ],
+        [
+         "dustbin",
+         "A container for rubbish"
+        ],
+        [
+         "dispose",
+         "To get rid of something properly"
+        ],
+        [
+         "incinerator",
+         "A machine or pit for burning waste safely"
+        ],
+        [
+         "waste basket",
+         "A small basket for waste paper"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Ways of protecting the environment"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Way",
+        "What is done"
+       ],
+       "rows": [
+        [
+         "**Afforestation and reafforestation**",
+         "Planting trees where there were none, and replanting cut areas"
+        ],
+        [
+         "**Terracing and contour ploughing**",
+         "Cutting steps and ploughing across the slope to stop erosion"
+        ],
+        [
+         "**Mulching and cover crops**",
+         "Covering the soil so rain does not wash it away"
+        ],
+        [
+         "**Crop rotation and manure**",
+         "Keeping the soil fertile without exhausting it"
+        ],
+        [
+         "**Controlled grazing**",
+         "Keeping the right number of animals on the land"
+        ],
+        [
+         "**Proper waste disposal**",
+         "Dustbins, rubbish pits, incinerators, recycling, composting"
+        ],
+        [
+         "**Protecting wetlands and river banks**",
+         "Not farming or building in them"
+        ],
+        [
+         "**Using alternative energy**",
+         "Solar, biogas and energy-saving stoves instead of firewood"
+        ],
+        [
+         "**Making and obeying laws**",
+         "Forest and wildlife reserves, fines for polluters"
+        ],
+        [
+         "**Educating people**",
+         "Radio messages, posters, debates, environment clubs"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Language structures"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**If we don't …** (If 1)",
+         "***If we don't** build terraces, the soil **will** erode.*"
+        ],
+        [
+         "**If …** (If 3)",
+         "***If** we **had not cut** down all the trees, we **would have had** more rain.*"
+        ],
+        [
+         "**… as well as …**",
+         "*Bush burning **as well as** overgrazing cause environmental degradation.*"
+        ],
+        [
+         "**… had to …**",
+         "*We **had to** build terraces in order to protect our soil.*"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Careful with *as well as*:** the verb agrees with the **first** subject — *The teacher, as well as the pupils, **was** planting trees.*"
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus: If 1 and If 3 again"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Type",
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**If 1** — real and likely",
+         "If + present simple, **will** + verb",
+         "*If we plant trees, we **will** get more rain.*"
+        ],
+        [
+         "**If 3** — the past that did not happen",
+         "If + **had** + past participle, **would have** + past participle",
+         "*If we **had planted** trees, we **would have had** more rain.*"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Writing an environmental article or message"
+      },
+      {
+       "t": "p",
+       "x": "Give it a clear **title** · begin with the **problem** · give **reasons and examples** · suggest **what should be done** · end with a **call to action**. Keep sentences short and use strong verbs."
+      },
+      {
+       "t": "note",
+       "x": "**PLANT A TREE, SAVE OUR VILLAGE** *Our village used to be green. Today the hills are bare, the rain is late and the soil is washed into the river. If we do not act now, our gardens will not feed us. Let every family plant five trees this season.*"
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Environment",
+         "Everything that surrounds us — land, water, air, plants and animals"
+        ],
+        [
+         "Pollution",
+         "Making air, water or land dirty and harmful"
+        ],
+        [
+         "Erosion",
+         "The wearing away and carrying off of soil"
+        ],
+        [
+         "Conservation",
+         "The protection of nature and its resources"
+        ],
+        [
+         "Habitat",
+         "The natural home of a plant or animal"
+        ],
+        [
+         "Flora",
+         "All the plants of an area"
+        ],
+        [
+         "Fauna",
+         "All the animals of an area"
+        ],
+        [
+         "Terraces",
+         "Steps cut across a slope to slow running water"
+        ],
+        [
+         "Mulching",
+         "Covering the soil with dry grass or leaves"
+        ],
+        [
+         "Abstract noun",
+         "The name of something you cannot see or touch"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**Flora** = plants; **fauna** = animals.",
+        "*Refuse* (noun) = rubbish; *refuse* (verb) = to say no.",
+        "*Since* can mean **because** or show **time**.",
+        "With **as well as**, the verb agrees with the **first** subject.",
+        "**If 1** = *If + present simple, will + verb.* **If 3** = *If + had + p.p., would have + p.p.*",
+        "Abstract nouns: beauty, strength, poverty, freedom, pollution, conservation, protection.",
+        "Ways of protecting: afforestation · terracing · mulching · crop rotation · proper waste disposal · laws · education."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Give one word for: all the plants of an area → **flora**.",
+        "Give one word for: a machine for burning waste safely → **incinerator**.",
+        "Form the abstract noun from *beautiful* → **beauty**; from *pollute* → **pollution**.",
+        "*If we don't build terraces, the soil ____ (erode).* → **will erode**",
+        "*If we had not cut the trees, we ____ (have) more rain.* → **would have had**",
+        "*The teacher as well as the pupils ____ (be) planting trees.* → **was**",
+        "*____ the forests have been cut, we shall have no rain.* → **Since**"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Writing *\"If we don't plant trees, the soil erodes\"* — use **will erode** in If 1.",
+        "Mixing If 1 and If 3 in one sentence.",
+        "Making the verb agree with the second subject after **as well as**.",
+        "Confusing **flora** and **fauna**.",
+        "Spelling: **environment** (not \"enviroment\"), **conservation**, **erosion**, **incinerator**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Give the meaning of: pollution, erosion, habitat, conservation.",
+        "Give the difference between *flora* and *fauna*.",
+        "Give the two meanings of the word *refuse* and use each in a sentence.",
+        "Name any six activities that damage the environment.",
+        "Give any five reasons why the environment should be protected.",
+        "Name any six ways of protecting the environment.",
+        "Complete: *We must protect our environment ____ have rain.*",
+        "Complete: *Our well was polluted, ____ we did not have clean water.*",
+        "Rewrite beginning with *Since*: *We shall have no rain because the forests have been cut.*",
+        "Complete: *If we don't build terraces, the soil ____ (erode).*",
+        "Complete: *If we ____ (not cut) the trees, we would have had more rain.*",
+        "Complete: *Bush burning ____ ____ ____ overgrazing cause degradation.* (three words)",
+        "Complete: *The head teacher as well as the pupils ____ (be) planting trees yesterday.*",
+        "Form abstract nouns from: beautiful, poor, strong, protect, conserve, free.",
+        "Rewrite using *had to*: *It was necessary for us to build terraces to protect our soil.*",
+        "Give any four ways of disposing of waste properly.",
+        "Write a short message of not more than fifteen words for a poster about tree planting.",
+        "Write a short paragraph (about six sentences) about the importance of protecting the environment.",
+        "Give the difference between If 1 and If 3, with one example of each.",
+        "Use each of these words in a sentence of your own: mulching, incinerator, degrade."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "**Pollution** — making air, water or land dirty and harmful; **erosion** — the wearing away and carrying off of soil; **habitat** — the natural home of a plant or animal; **conservation** — the protection of nature and its resources.",
+        "**Flora** means all the plants of an area, while **fauna** means all the animals of an area.",
+        "As a **noun** it means rubbish: *The refuse was collected on Monday.* As a **verb** it means to say no: *They refuse to pay the fine.*",
+        "Any six of: cutting down trees, bush burning, overgrazing, poor farming on slopes, draining swamps, dumping garbage, smoke from factories and vehicles, mining and quarrying, poaching, pouring waste into rivers.",
+        "Any five of: to keep reliable rainfall; to protect the soil; to keep air and water clean; to protect the habitats of plants and animals; to keep supplying raw materials, food and medicine; to prevent floods, drought and disease; to attract tourists; to leave enough for future generations.",
+        "Any six of: afforestation and reafforestation; terracing and contour ploughing; mulching and cover crops; crop rotation and manure; controlled grazing; proper waste disposal; protecting wetlands and river banks; using solar and biogas; making and obeying laws; educating people.",
+        "**to**",
+        "**so**",
+        "***Since** the forests have been cut, we shall have no rain.*",
+        "**will erode**",
+        "**had not cut**",
+        "**as well as**",
+        "**was**",
+        "beautiful → **beauty**; poor → **poverty**; strong → **strength**; protect → **protection**; conserve → **conservation**; free → **freedom**.",
+        "*We **had to** build terraces in order to protect our soil.*",
+        "Any four of: using dustbins and waste baskets; digging a rubbish pit; composting food waste; burning dangerous waste in an incinerator; recycling plastic, paper and metal; taking waste to a proper dumping site.",
+        "*Learner's message,* for example: **\"Plant a tree today — save the rain for tomorrow.\"**",
+        "*Learner's paragraph.* It should have a topic sentence, three or four supporting reasons in the present tense, correct punctuation and a closing sentence.",
+        "**If 1** is about something real and likely: *If we plant trees, we will get more rain.* **If 3** is about something in the past that did not happen: *If we had planted trees, we would have had more rain.*",
+        "*Learner's sentences,* for example: *Mulching keeps the soil moist during the dry season.* / *The hospital burns its waste in an incinerator.* / *Bush burning can degrade the land.*"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.7 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "**Flora** = plants · **Fauna** = animals · *refuse* = rubbish (noun) / say no (verb)",
+        "**If 1**: *If + present, will + verb* · **If 3**: *If + had + p.p., would have + p.p.*",
+        "**as well as** → verb agrees with the **first** subject",
+        "*Since* = because (or shows time) · *so* = as a result",
+        "Abstract nouns: beauty · strength · poverty · freedom · pollution · conservation",
+        "Protect: **plant trees · terrace · mulch · rotate crops · dispose of waste properly · obey laws**"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, sub-topics, vocabulary list, language structures, grammar items, competences and teacher guidance above were taken from the official **NCDC Primary Seven Curriculum, Set One** (topic outline page 30 and pages 57–61 of the PDF in `curriculum/`). The explanations, tables, sample poster message, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P7_ENG_T07",
+   "class": "P7",
+   "subject": "ENG",
+   "topic_no": 7,
+   "title": "Ceremonies",
+   "heading": "TOPIC 7: CEREMONIES",
+   "slug": "ceremonies",
+   "periods": 40,
+   "curriculum_pages": "62–66",
+   "words": 2179,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Seven Curriculum, Set One, English Topic 7 (`curriculum/PRIMARY-SEVEN-SET-ONE.pdf`, topic outline page 30 and pages 62–66). Sub-topics: **7A Marriage** and **7B Funeral**.*"
+      },
+      {
+       "t": "p",
+       "x": "**A note on the periods:** the **topic outline on page 30 says 40 periods**, while the **topic page itself says 47 periods**. Both figures appear in the same document; this note reports what the document says rather than choosing one."
+      },
+      {
+       "t": "p",
+       "x": "**What you already know:** In P.5 you studied **Culture**. In P.7 you learn the **English used at ceremonies** — the words, the order of events and the structures — so that you can describe them clearly and respectfully."
+      },
+      {
+       "t": "p",
+       "x": "**By the end of this topic you should be able to:**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "use vocabulary related to marriage and funeral ceremonies",
+        "describe the order of events at a ceremony",
+        "use relative pronouns, *neither … nor*, *both … and*, *prefer*, and emphatic pronouns",
+        "use the past perfect and future perfect tenses",
+        "write plays, dialogues and compositions about ceremonies"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "SUB-TOPIC 7A: MARRIAGE",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Types of marriage named in the syllabus"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Type",
+        "What it is"
+       ],
+       "rows": [
+        [
+         "**Cultural (customary) marriage**",
+         "Conducted according to the customs of the people, with the introduction and bride price"
+        ],
+        [
+         "**Religious marriage**",
+         "Conducted in a church or mosque by a religious leader"
+        ],
+        [
+         "**State (civil) marriage**",
+         "Conducted before a registrar of marriages, in a government office"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Vocabulary from the syllabus"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "introduction (kwanjula)",
+         "The ceremony where the man is formally introduced to the girl's family"
+        ],
+        [
+         "engagement",
+         "A promise to marry, often marked by giving a ring"
+        ],
+        [
+         "bride",
+         "The woman getting married"
+        ],
+        [
+         "bridegroom",
+         "The man getting married"
+        ],
+        [
+         "couple",
+         "The two people getting married"
+        ],
+        [
+         "spouse",
+         "A husband or a wife"
+        ],
+        [
+         "best man",
+         "The man who supports the bridegroom"
+        ],
+        [
+         "maid / matron of honour",
+         "The young woman (maid) or married woman (matron) who supports the bride"
+        ],
+        [
+         "bridesmaids",
+         "The girls who attend to the bride"
+        ],
+        [
+         "bridal gown",
+         "The special dress worn by the bride"
+        ],
+        [
+         "bouquet",
+         "The bunch of flowers the bride carries"
+        ],
+        [
+         "fiancé / fiancée",
+         "A man / a woman who is engaged to be married"
+        ],
+        [
+         "bride price / dowry",
+         "Property or money given in a customary marriage"
+        ],
+        [
+         "certificate",
+         "The document proving the marriage took place"
+        ],
+        [
+         "refreshments",
+         "Food and drinks served to guests"
+        ],
+        [
+         "reception",
+         "The party held after the wedding"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "The order of events at a wedding"
+      },
+      {
+       "t": "p",
+       "x": "Engagement → introduction (kwanjula) → announcing the banns or giving notice → the wedding service (vows, rings, signing the register) → photographs → **reception** with speeches, cake cutting and refreshments → gifts → sending off the couple."
+      },
+      {
+       "t": "h3",
+       "x": "Language structures"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**Relative pronouns**",
+         "*The woman **who** was the bride is my aunt.*"
+        ],
+        [
+         "**Neither … nor …**",
+         "***Neither** my aunt **nor** my uncle attended the burial.*"
+        ],
+        [
+         "**Both … and …**",
+         "***Both** the President **and** the Prime Minister attended the wedding.*"
+        ],
+        [
+         "**… prefer …**",
+         "*Most couples **prefer having** a religious marriage **to** a state one.*"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Two rules to remember**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "**Neither … nor** takes a **singular** verb when both parts are singular: *Neither Ann nor Sarah **was** present.* **Both … and** takes a **plural** verb: *Both Ann and Sarah **were** present.*",
+        "After **prefer** use *-ing … to …* or *to … rather than …*: *I prefer **walking to** riding* / *I prefer **to walk rather than** ride.*"
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus 1: Relative pronouns (who, which, where)"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Pronoun",
+        "Used for",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**who**",
+         "people",
+         "*The man **who** married my sister is a teacher.*"
+        ],
+        [
+         "**whose**",
+         "possession",
+         "*The bride **whose** gown was white is my cousin.*"
+        ],
+        [
+         "**which**",
+         "things",
+         "*The cake **which** was cut first was very big.*"
+        ],
+        [
+         "**where**",
+         "places",
+         "*This is the church **where** they wedded.*"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus 2: Forming adjectives"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Noun",
+        "Adjective",
+        "Noun",
+        "Adjective"
+       ],
+       "rows": [
+        [
+         "culture",
+         "cultural",
+         "religion",
+         "religious"
+        ],
+        [
+         "tradition",
+         "traditional",
+         "ceremony",
+         "ceremonial"
+        ],
+        [
+         "beauty",
+         "beautiful",
+         "nation",
+         "national"
+        ],
+        [
+         "colour",
+         "colourful",
+         "custom",
+         "customary"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "SUB-TOPIC 7B: FUNERAL",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*The syllabus warns the teacher to handle this sub-topic gently, because some learners have lost people they love.*"
+      },
+      {
+       "t": "h3",
+       "x": "Vocabulary from the syllabus"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "burial",
+         "The placing of a dead body in a grave"
+        ],
+        [
+         "funeral rites",
+         "The customs performed when somebody has died"
+        ],
+        [
+         "widow",
+         "A woman whose husband has died"
+        ],
+        [
+         "widower",
+         "A man whose wife has died"
+        ],
+        [
+         "orphan",
+         "A child whose parent or parents have died"
+        ],
+        [
+         "mourner",
+         "A person who attends a funeral to show sorrow"
+        ],
+        [
+         "a will",
+         "A written statement saying who should get a person's property"
+        ],
+        [
+         "condolences",
+         "Words expressing sorrow to the bereaved"
+        ],
+        [
+         "pay respect",
+         "To honour the dead person, usually by viewing the body or attending"
+        ],
+        [
+         "coffin",
+         "The box in which a dead body is placed"
+        ],
+        [
+         "back cloth (barkcloth)",
+         "Cloth from a tree used in some cultures to wrap the body"
+        ],
+        [
+         "shroud",
+         "The cloth in which a body is wrapped"
+        ],
+        [
+         "state funeral",
+         "An official funeral organised by the government for an important person"
+        ],
+        [
+         "heir / heiress",
+         "The male / female person chosen to take the dead person's place"
+        ],
+        [
+         "ancestral grounds",
+         "The family land where relatives are traditionally buried"
+        ],
+        [
+         "cremate",
+         "To burn a dead body to ashes"
+        ],
+        [
+         "grave",
+         "The hole in the ground where a body is buried"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "The order of events at a funeral"
+      },
+      {
+       "t": "p",
+       "x": "Announcement of the death → gathering of relatives and neighbours → sending condolence messages → preparing the body and the grave → the funeral service, with speeches and prayers → burial → the last funeral rites and the naming of the **heir** in some cultures → comforting the bereaved family afterwards."
+      },
+      {
+       "t": "h3",
+       "x": "Language structures"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Structure",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**Despite the fact that …**",
+         "***Despite the fact that** Abdul was a rich man, he was buried in two shrouds.*"
+        ],
+        [
+         "**Emphatic pronouns**",
+         "*He **himself** read the condolence messages.*"
+        ],
+        [
+         "**… often …**",
+         "*I **often** dream about dead relatives.*"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus 3: Emphatic (reflexive) pronouns"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Person",
+        "Pronoun"
+       ],
+       "rows": [
+        [
+         "I",
+         "myself"
+        ],
+        [
+         "you (one)",
+         "yourself"
+        ],
+        [
+         "you (many)",
+         "yourselves"
+        ],
+        [
+         "he",
+         "himself"
+        ],
+        [
+         "she",
+         "herself"
+        ],
+        [
+         "it",
+         "itself"
+        ],
+        [
+         "we",
+         "ourselves"
+        ],
+        [
+         "they",
+         "themselves"
+        ]
+       ]
+      },
+      {
+       "t": "ul",
+       "items": [
+        "**Emphatic use** — for stress: *The Kabaka **himself** attended the funeral.*",
+        "**Reflexive use** — the action returns to the doer: *She hurt **herself**.*"
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus 4: Adjectives of number and quantity"
+      },
+      {
+       "t": "table",
+       "head": [
+        "With countable nouns",
+        "With uncountable nouns"
+       ],
+       "rows": [
+        [
+         "few, a few, many, several, both",
+         "little, a little, much"
+        ]
+       ]
+      },
+      {
+       "t": "ul",
+       "items": [
+        "***A few** mourners arrived early* (some — positive).",
+        "***Few** mourners arrived early* (almost none — negative).",
+        "*There was **little** food left.* *There was **a little** food left.*"
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Grammar focus 5: Past perfect and future perfect"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Tense",
+        "Form",
+        "Example"
+       ],
+       "rows": [
+        [
+         "**Past perfect**",
+         "had + past participle",
+         "*The mourners **had left** before the rain started.*"
+        ],
+        [
+         "**Future perfect**",
+         "will/shall have + past participle",
+         "*By Sunday, they **will have completed** the funeral rites.*"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Ceremony",
+         "A formal event held to mark an important occasion"
+        ],
+        [
+         "Introduction (kwanjula)",
+         "The ceremony where a man is presented to the girl's family"
+        ],
+        [
+         "Bride / bridegroom",
+         "The woman / the man getting married"
+        ],
+        [
+         "Best man",
+         "The man who supports the bridegroom"
+        ],
+        [
+         "Bride price (dowry)",
+         "Property or money given in a customary marriage"
+        ],
+        [
+         "Widow / widower",
+         "A woman whose husband has died / a man whose wife has died"
+        ],
+        [
+         "Orphan",
+         "A child whose parent or parents have died"
+        ],
+        [
+         "Condolences",
+         "Words expressing sorrow to the bereaved"
+        ],
+        [
+         "Heir / heiress",
+         "The male / female person chosen to take the dead person's place"
+        ],
+        [
+         "Emphatic pronoun",
+         "A pronoun such as *himself* used to give emphasis"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Three types of marriage: **cultural, religious and state (civil)**.",
+        "**Neither … nor** with two singular subjects takes a **singular** verb; **both … and** takes a **plural** verb.",
+        "After **prefer**: *prefer + -ing + to + -ing*, or *prefer to … rather than …*",
+        "**who** for people, **which** for things, **where** for places, **whose** for possession.",
+        "Emphatic pronouns end in **-self** (singular) and **-selves** (plural).",
+        "**Few** = almost none; **a few** = some. **Little** = almost none; **a little** = some.",
+        "Past perfect **had + p.p.**; future perfect **will have + p.p.**",
+        "A woman whose husband has died is a **widow**; a man whose wife has died is a **widower**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Give one word for: a man whose wife has died → **widower**.",
+        "Give one word for: a child whose parents have died → **orphan**.",
+        "Give one word for: the box in which a body is placed → **coffin**.",
+        "Give one word for: words expressing sorrow to the bereaved → **condolences**.",
+        "*Neither Ann nor Sarah ____ (be) present.* → **was**",
+        "*Both the bride and the bridegroom ____ (be) happy.* → **were**",
+        "*The Kabaka ____ attended the ceremony.* → **himself**",
+        "*By next Sunday, they ____ (complete) the rites.* → **will have completed**"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "COMMON MISTAKES TO AVOID",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Writing *\"either … nor\"* or *\"neither … or\"* — it is **either … or** and **neither … nor**.",
+        "Using a plural verb after *neither … nor* with two singular subjects.",
+        "Writing *\"I prefer to walk than ride\"* — say *prefer walking **to** riding* or *prefer to walk **rather than** ride*.",
+        "Writing *\"theirselves\"* or *\"hisself\"* — the correct forms are **themselves** and **himself**.",
+        "Confusing *few* (almost none) with *a few* (some).",
+        "Spelling: **ceremony, bridegroom, condolences, cemetery, bouquet**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Name the three types of marriage mentioned in the syllabus.",
+        "Give the meaning of: introduction (kwanjula), bride price, best man, matron of honour.",
+        "Give one word for: the bunch of flowers carried by a bride.",
+        "Arrange these wedding events in the correct order: reception, engagement, wedding service, introduction.",
+        "Give one word for: a woman whose husband has died.",
+        "Give one word for: a person chosen to take the place of the dead person.",
+        "Give the meaning of: condolences, mourner, shroud, cremate.",
+        "Fill in: *Neither the bride nor the bridegroom ____ (be) late.*",
+        "Fill in: *Both the maid of honour and the best man ____ (be) present.*",
+        "Rewrite using *prefer*: *He likes a religious marriage more than a state one.*",
+        "Fill in the correct relative pronoun: *The church ____ they wedded is near the market.*",
+        "Fill in the correct relative pronoun: *The woman ____ was the bride is my aunt.*",
+        "Fill in the correct emphatic pronoun: *The President ____ attended the state funeral.*",
+        "Fill in: *____ mourners arrived early, so the service started late.* (Few / A few)",
+        "Rewrite in the past perfect: *The mourners left. Then the rain started.*",
+        "Rewrite in the future perfect: *They will complete the funeral rites by Sunday.*",
+        "Rewrite beginning *Despite the fact that*: *Although Abdul was a rich man, he was buried in two shrouds.*",
+        "Form adjectives from: culture, religion, tradition, ceremony.",
+        "Write a short dialogue (six lines) between two people planning to attend a wedding.",
+        "Write a short paragraph (about six sentences) describing a ceremony you have attended."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "**Cultural (customary) marriage, religious marriage and state (civil) marriage.**",
+        "**Introduction (kwanjula)** — the ceremony where the man is formally introduced to the girl's family; **bride price** — property or money given in a customary marriage; **best man** — the man who supports the bridegroom; **matron of honour** — the married woman who supports the bride.",
+        "A **bouquet**.",
+        "Engagement → introduction → wedding service → reception.",
+        "A **widow**.",
+        "An **heir** (a female one is an **heiress**).",
+        "**Condolences** — words expressing sorrow to the bereaved; **mourner** — a person who attends a funeral to show sorrow; **shroud** — the cloth in which a body is wrapped; **cremate** — to burn a dead body to ashes.",
+        "**was**",
+        "**were**",
+        "*He **prefers** a religious marriage **to** a state one.* (Also: *He prefers having a religious marriage to having a state one.*)",
+        "**where**",
+        "**who**",
+        "**himself**",
+        "**Few**",
+        "*The mourners **had left** before the rain started.*",
+        "*By Sunday, they **will have completed** the funeral rites.*",
+        "***Despite the fact that** Abdul was a rich man, he was buried in two shrouds.*",
+        "culture → **cultural**; religion → **religious**; tradition → **traditional**; ceremony → **ceremonial**.",
+        "*Learner's dialogue.* It should name two speakers, start a new line for each speaker, and use correct punctuation and natural language.",
+        "*Learner's paragraph.* It should be one paragraph in the past tense, saying what the ceremony was, where and when it took place, what happened in order, and how the writer felt."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.7 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Marriage types: **cultural · religious · state**",
+        "Wedding words: bride · bridegroom · best man · matron of honour · bouquet · reception",
+        "Funeral words: widow · widower · orphan · mourner · coffin · shroud · condolences · heir",
+        "**Neither … nor** → singular verb · **Both … and** → plural verb",
+        "**prefer + -ing + to + -ing** (or *prefer to … rather than …*)",
+        "Emphatic pronouns: myself · himself · themselves (never \"hisself\" or \"theirselves\")",
+        "**few** = almost none · **a few** = some · Past perfect **had + p.p.** · Future perfect **will have + p.p.**"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A note on sources",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The topic title, sub-topics, vocabulary list, language structures, grammar items, competences and teacher guidance above were taken from the official **NCDC Primary Seven Curriculum, Set One** (topic outline page 30 and pages 62–66 of the PDF in `curriculum/`). The explanations, tables, order of events, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+      },
+      {
+       "t": "p",
+       "x": "The document gives **two different period counts** for this topic — 40 in the topic outline and 47 on the topic page. Both are reported above rather than choosing one."
+      },
+      {
+       "t": "p",
+       "x": "No NCDC **Teacher's Guide** was available, so the syllabus \"Guidance to the Teacher\" was used directly instead, including its instruction to handle the funeral sub-topic gently."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
