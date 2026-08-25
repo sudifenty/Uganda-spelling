@@ -785,6 +785,9 @@ p{margin:0}
   #views{display:flex;flex:1;min-height:0;overflow:hidden}
   #views>.screen.active{width:100%;min-height:0;height:100%;overflow-y:auto;overflow-x:hidden}
 }
+
+/* interactive notes */
+.learn-mission{background:linear-gradient(135deg,var(--purple-50),var(--sky-50));border:1.5px solid var(--purple-100);border-radius:var(--r-xl);padding:20px;margin:8px 0 16px}.mission-kicker{font-size:12px;font-weight:900;letter-spacing:.06em;color:var(--purple-ink)}.learn-mission h3{font-size:22px;margin-top:8px}.learn-mission p{color:var(--muted);margin:7px 0 13px}.mission-stats{display:flex;gap:8px;flex-wrap:wrap;font-size:12px;font-weight:800;color:var(--navy-2)}.learn-mission small{color:var(--muted);font-weight:700}.quick-check{padding-bottom:8px}.note-tools{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:15px 0}.note-tools .btn{font-size:15px;padding:0 10px}
 </style>
 </head>
 <body>
@@ -1118,7 +1121,7 @@ const TAB_OF = {home:'home',practice:'practice',subjects:'practice',subjects_top
   topics:'practice',papers:'papers',paperDetail:'papers',progress:'home',profile:'profile',
   notes:'notes',noteTopic:'notes',noteRead:'notes',
   exercises:'exercises',exTopic:'exercises',exDo:'exercises',exResult:'exercises',exMine:'exercises',
-  avatar:'profile',settings:'profile',offline:'profile',about:'profile', spelling:'home', spellDifficulty:'home', spellModes:'home', spellPractice:'home', spellResults:'home', spellMistakes:'home'};
+  avatar:'profile',settings:'profile',offline:'profile',about:'profile', spelling:'home', spellDifficulty:'home', spellModes:'home', spellPractice:'home', spellResults:'home', spellMistakes:'home', noteChallenge:'notes'};
 const FULLSCREEN = ['question','exam','results','review','archive','pquestion','spellPractice','spellResults'];
 
 function go(screen, push=true){
@@ -1286,6 +1289,22 @@ SCREENS.spellModes = () => {const c=state.spellClass||'P6',d=state.spellDiff||'E
 SCREENS.spellPractice = () => {const s=state.spell,w=spellCurrent(),n=s.i+1;let prompt='',body='';if(s.mode==='listen'){prompt='<b>Listen carefully</b><span class="spell-hidden">The word is hidden until you answer.</span>';body=`<button class="btn btn-soft spell-audio" onclick="spellSpeak('${w.word}')">🔊 PLAY WORD AGAIN</button><input id="spellInput" class="fillin spell-input" placeholder="Type what you hear" autocomplete="off" onkeydown="if(event.key==='Enter')spellSubmit()"><button class="btn btn-primary" onclick="spellSubmit()">CHECK SPELLING</button>`;}else if(s.mode==='choose'){prompt='<b>Which spelling is correct?</b>';body=`<div class="spell-options">${spellOptions(w).map(x=>`<button class="spell-option" onclick="spellChoice('${x}')">${x}</button>`).join('')}</div>`;}else{const shown=s.mode==='fix'?w.word.slice(0,Math.max(2,w.word.length-1)):(s.mode==='type'?w.word:'');prompt=s.mode==='fix'?`<b>Correct this spelling:</b><strong class="misspelled">${shown}</strong>`:'<b>Type the word you hear or see in the prompt.</b>';body=s.mode==='type'?`<div class="spell-word">${w.word}</div>`:'';body+=`<input id="spellInput" class="fillin spell-input" placeholder="Type the correct spelling" autocomplete="off" onkeydown="if(event.key==='Enter')spellSubmit()"><button class="btn btn-primary" onclick="spellSubmit()">CHECK SPELLING</button>`;}return `<div class="qbar"><div class="qbar-top"><button class="back" onclick="go('spellModes')" aria-label="Leave spelling">${I.x(20)}</button><div class="qcount">Word ${n} <em>of ${s.items.length}</em></div><span class="pill off">${s.correct} correct</span></div><div class="qprog"><i style="width:${n/s.items.length*100}%"></i></div></div><div class="spell-card"><div class="spell-tags"><span class="pill dl">${s.cls}</span><span class="pill ${s.diff==='Easy'?'off':s.diff==='Medium'?'time':'warn'}">${s.diff}</span><span>${w.category}</span></div><div class="spell-prompt">${prompt}</div></div>${body}<div id="spellFeedback" class="spell-feedback"></div><div class="spelling-next">${s.locked?`<button class="btn btn-green" onclick="spellNext()">${n===s.items.length?'SEE RESULTS':'NEXT WORD'} ${I.chev(18)}</button>`:''}</div>`;};
 SCREENS.spellResults = () => {const r=state.lastResult||{},bad=(r.detail||[]).filter(x=>!x.ok);return `<header class="pagehead"><div><h2>Your spelling results</h2><div class="sub">${r.cls} · ${r.diff}</div></div></header><div class="spell-score"><div class="score-big">${r.correct} / ${r.total}</div><b>${r.pct}%</b><p>${r.pct>=80?'Good work! Keep practising and you will improve.':'Keep going! Every practice word makes you stronger.'}</p></div><div class="card"><b>✓ Correct: ${r.correct}</b><br><b>✗ Incorrect: ${r.total-r.correct}</b>${bad.length?`<h3 style="margin-top:18px">Practise these words</h3><div class="spell-review">${bad.map(x=>`<div><b>${x.word}</b><span>Your answer: ${x.answer||'—'}</span></div>`).join('')}</div>`:''}</div><button class="btn btn-primary" onclick="go('spellModes')">PRACTISE AGAIN</button><button class="btn btn-ghost" style="margin-top:11px" onclick="go('spelling')">BACK TO SPELLING</button>`;};
 SCREENS.spellMistakes = () => {const m=spellMistakes();return `<header class="pagehead"><button class="back" onclick="go('spelling')">${I.back(22)}</button><div><h2>Words to practise</h2><div class="sub">Your saved spelling words</div></div></header>${m.length?`<div class="rows">${m.map(x=>`<div class="row"><span class="txt"><b>${x.word}</b><span>${x.classLevel}</span></span><button class="btn btn-soft" style="width:auto;min-height:44px;padding:0 14px" onclick="spellSpeak('${x.word}')">🔊</button></div>`).join('')}</div><button class="btn btn-primary" style="margin-top:16px" onclick="spellStartMistakes()">PRACTISE THESE WORDS</button>`:`<div class="card" style="text-align:center"><h3>Nothing saved yet</h3><p class="muted" style="margin-top:8px">Misspelled words will appear here for more practice.</p></div>`}`;};
+
+
+/* ============================================================
+   INTERACTIVE NOTES LAYER — uses the existing curriculum notes unchanged
+   ============================================================ */
+function learnLoad(){try{return JSON.parse(localStorage.getItem('smartple_notes_learning')||'{}');}catch(e){return{};}}
+function learnSave(d){try{localStorage.setItem('smartple_notes_learning',JSON.stringify(d));}catch(e){}}
+function learnTopic(t){const d=learnLoad();d[t.id]=d[t.id]||{xp:0,checks:0,challenge:0,mastery:0,weak:[]};return d[t.id];}
+function learnXP(t,n){const d=learnLoad(),x=d[t.id]||{xp:0,checks:0,challenge:0,mastery:0,weak:[]};x.xp+=n;d[t.id]=x;learnSave(d);toast('+'+n+' XP — keep learning!');}
+function noteMastery(t){const d=noteDone(t),x=learnTopic(t);return Math.min(100,Math.round(d.pct*.45+Math.min(100,x.checks/Math.max(1,d.total)*100)*.25+x.challenge*.30));}
+function noteMission(t){const mins=Math.max(3,Math.round((t.words||600)/180));const d=noteDone(t);return `<div class="learn-mission"><div class="mission-kicker">🎯 TODAY'S LEARNING MISSION</div><h3>${nEsc(t.title)}</h3><p>Work through ${t.sections.length} small sections, then check what you remember.</p><div class="mission-stats"><span>⏱ About ${mins} minutes</span><span>⭐ ${Math.max(25,t.sections.length*5)} XP available</span><span>🎯 ${noteMastery(t)}% mastery</span></div><div class="bar"><i style="width:0;background:var(--purple)" data-grow="${d.pct}%"></i></div><small>${d.read} of ${d.total} sections read</small></div>`;}
+function noteCheck(t){const i=Math.max(0,state.nsec||0),sec=t.sections[i],others=t.sections.map(x=>x.title).filter(x=>x!==sec.title);const opts=shuffle([sec.title,...shuffle(others).slice(0,2)]);openSheet(`<div class="grabber"></div><div class="quick-check"><div class="mission-kicker">🧠 QUICK CHECK</div><h3>What section have you just studied?</h3><p class="muted">Choose the heading that matches the notes you have just read.</p>${opts.map(o=>`<button class="btn btn-ghost" style="margin-top:10px" onclick="noteCheckAnswer('${o.replace(/'/g,"\\'")}','${sec.title.replace(/'/g,"\\'")}')">${nEsc(o)}</button>`).join('')}</div>`);}
+function noteCheckAnswer(given,right){closeSheet();const t=noteById(state.ntopic),x=learnTopic(t);x.checks=(x.checks||0)+1;if(given===right){learnXP(t,10);}else{if(!x.weak.includes(right))x.weak.push(right);learnSave(learnLoad());openSheet(`<div class="grabber"></div><h3>💡 Almost!</h3><p class="muted" style="margin:10px 0">Review <b>${nEsc(right)}</b>, then try the check again.</p><button class="btn btn-primary" onclick="closeSheet();readSection(${state.nsec})">REVIEW THIS SECTION</button>`);return;}learnSave(learnLoad());render();}
+function startNoteChallenge(){const t=noteById(state.ntopic);if(!t)return;state.noteChallenge={i:0,correct:0,items:shuffle(t.sections).slice(0,Math.min(5,t.sections.length))};go('noteChallenge');}
+SCREENS.noteChallenge=()=>{const t=noteById(state.ntopic),c=state.noteChallenge;if(!t||!c)return SCREENS.noteTopic();const sec=c.items[c.i],opts=shuffle([sec.title,...shuffle(t.sections.filter(x=>x.title!==sec.title)).slice(0,3).map(x=>x.title)]);return `<header class="pagehead"><button class="back" onclick="go('noteTopic')">${I.x(22)}</button><div><h2>⚡ Challenge Me</h2><div class="sub">${t.title} · ${c.i+1} of ${c.items.length}</div></div></header><div class="qprog"><i style="width:${(c.i+1)/c.items.length*100}%"></i></div><div class="spell-card"><div class="mission-kicker">WHAT DO THESE NOTES TEACH?</div><div class="spell-prompt"><b>Which section matches this topic?</b><strong>${nEsc(sec.title)}</strong></div></div><div class="rows">${opts.map(o=>`<button class="row" onclick="noteChallengeAnswer('${o.replace(/'/g,"\\'")}','${sec.title.replace(/'/g,"\\'")}')"><span class="txt"><b>${nEsc(o)}</b></span>${I.chev(20)}</button>`).join('')}</div>`;};
+function noteChallengeAnswer(given,right){const c=state.noteChallenge;if(given===right)c.correct++;if(c.i<c.items.length-1){c.i++;render();}else{const t=noteById(state.ntopic),score=Math.round(c.correct/c.items.length*100),d=learnLoad(),x=d[t.id]||{xp:0,checks:0,challenge:0,mastery:0,weak:[]};x.challenge=score;x.mastery=noteMastery(t);d[t.id]=x;learnSave(d);learnXP(t,20);openSheet(`<div class="grabber"></div><h3>🎉 Challenge complete!</h3><div class="spell-score"><div class="score-big">${c.correct} / ${c.items.length}</div><b>${score}%</b><p>${score>=80?'Excellent learning!':'Review the highlighted sections and try again.'}</p></div><button class="btn btn-primary" onclick="closeSheet();go('noteTopic')">CONTINUE</button>`);}}
 
 
 /* Class picker — the primary filter for everything */
@@ -2047,12 +2066,14 @@ SCREENS.noteTopic = () => {
       <div><h2>Notes</h2></div></header>
       <div class="card">That topic is not available.</div>`; }
   const d = noteDone(t);
+  const mission = noteMission(t);
   return `
   <header class="pagehead">
     <button class="back" onclick="tabTo('notes')" aria-label="Go back">${I.back(22)}</button>
     <div><h2>Topic ${t.topic_no}</h2>
       <div class="sub">${state.klass} ${NOTE_SUBJECTS.find(s=>s.id===t.subject).name}</div></div>
   </header>
+  ${mission}
   <div class="card" style="background:var(--purple-50);border-color:var(--purple-100)">
     <h3 style="font-size:20px">${nEsc(t.title)}</h3>
     <div class="muted" style="margin-top:7px">
@@ -2098,6 +2119,7 @@ SCREENS.noteRead = () => {
     <h3 class="nt-h1">${nEsc(sec.title)}</h3>
     ${sec.blocks.map(noteBlock).join('')}
   </article>
+  <div class="note-tools"><button class="btn btn-soft" onclick="noteCheck(noteById(state.ntopic))">🧠 QUICK CHECK</button><button class="btn btn-yellow" onclick="startNoteChallenge()">⚡ CHALLENGE ME</button></div>
   <div class="nt-foot">
     <button class="btn btn-ghost" ${i===0?'disabled style="opacity:.45"':''} onclick="noteMove(-1)">Back</button>
     ${i===t.sections.length-1
@@ -2105,6 +2127,7 @@ SCREENS.noteRead = () => {
       : `<button class="btn btn-primary" onclick="noteMove(1)">NEXT ${I.chev(18)}</button>`}
   </div>
   <div class="spacer"></div>
+  <div class="note-tools"><button class="btn btn-soft" onclick="noteCheck(noteById(state.ntopic))">🧠 QUICK CHECK</button><button class="btn btn-yellow" onclick="startNoteChallenge()">⚡ CHALLENGE ME</button></div>
   <button class="btn btn-soft" onclick="go('noteTopic')">${I.topics(18)} All parts of this topic</button>`;
 };
 
@@ -2120,7 +2143,8 @@ function openNoteTopic(id){
 function readSection(i){ state.nsec=i; markSeen(); go('noteRead'); }
 function markSeen(){
   const t=noteById(state.ntopic); if(!t) return;
-  state.noteSeen[t.id+':'+state.nsec]=true;
+  const k=t.id+':'+state.nsec,was=!!state.noteSeen[k]; state.noteSeen[k]=true;
+  if(!was) learnXP(t,5);
 }
 function noteMove(d){
   const t=noteById(state.ntopic); if(!t) return;
@@ -3854,6 +3878,6 @@ render = function(){
 
 render();
 </script>
-<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f"}' crossorigin="anonymous"></script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30e09dd68a44edb',t:'MTc4NzY5Njk5Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30e22978cca1380',t:'MTc4NzY5ODAxMA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f"}' crossorigin="anonymous"></script>
+</body>
 </html>
