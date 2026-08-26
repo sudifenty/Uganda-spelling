@@ -3847,6 +3847,9 @@ function spTry(uri){
 }
 function spUse(uri){ spSetVoice(uri); spSheet(); toast('Voice changed'); }
 
+const AUDIO_TEST_URL='audio/test-voice.mp3';
+function audioDiagnostic(){openSheet(`<h3>🔊 Audio Test</h3><p class="muted" style="margin:8px 0">This test uses one real generated MP3 from the standard narrator.</p><audio id="audioTest" controls preload="metadata" style="width:100%;margin:12px 0" src="${AUDIO_TEST_URL}"></audio><div id="audioStatus" class="hint-strip">Ready to test. Tap Play.</div><button class="btn btn-primary" style="margin-top:12px" onclick="runAudioTest()">▶ PLAY TEST VOICE</button><button class="btn btn-ghost" style="margin-top:10px" onclick="closeSheet()">CLOSE</button>`);}
+function runAudioTest(){const a=document.getElementById('audioTest'),s=document.getElementById('audioStatus');if(!a||!s)return;a.playbackRate=1.0;s.innerHTML='🔄 Loading audio…';a.onloadedmetadata=()=>{s.innerHTML=`🟢 Audio ready · ${Math.round(a.duration)} seconds · playback 1×`;};a.onerror=()=>{s.innerHTML='🔴 Audio file could not be loaded or decoded.';};const p=a.play();if(p&&p.then)p.then(()=>{s.innerHTML=`🟢 Audio is playing · ${Math.round(a.duration||0)} seconds · playback 1×`;}).catch(()=>{s.innerHTML='🟡 Playback was blocked. Tap Play again.';});}
 function spSheet(){
   const rate = parseFloat(localStorage.getItem('ple_rate')) || 1;
   const cur = spBest();
@@ -3896,6 +3899,8 @@ function spSheet(){
             : 'Download the standard narrator once. The app will not silently switch to a device voice.'}</p>
 
     ${natural}
+
+    <button class="btn btn-soft" style="margin-top:12px" onclick="audioDiagnostic()">🔊 Test standard narrator audio</button>
 
     <div class="sp-srow" style="margin-top:16px"><span class="sp-lab">Speed</span>
       ${[0.75,1,1.25,1.5].map(r=>`<button class="sp-chip ${rate===r?'on':''}"
@@ -3957,6 +3962,6 @@ render = function(){
 
 render();
 </script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30e8b105feac6ca',t:'MTc4NzcwMjI4OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f"}' crossorigin="anonymous"></script>
-</body>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f"}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30e99a4f9c273ae',t:'MTc4NzcwMjg4Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
