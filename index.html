@@ -757,6 +757,49 @@ p{margin:0}
   border-radius:0 14px 14px 0;padding:12px 14px;margin:0 0 13px;font-weight:700}
 .nt-foot{display:flex;gap:11px;margin-top:15px}
 .nt-foot .btn{flex:1}
+
+/* spelling section */
+.spell-hero{display:flex;gap:14px;align-items:center;background:var(--sky-50);border:1.5px solid var(--sky-100);border-radius:var(--r-lg);padding:18px;margin:8px 0}.spell-hero p,.spell-mistake p{color:var(--muted);font-size:14px;margin-top:4px}.spell-emoji{font-size:38px}.spell-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.spell-pick{min-height:92px;border:1.5px solid var(--line);border-radius:var(--r-md);background:#fff;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:16px;box-shadow:var(--sh-1)}.spell-pick b{font-size:25px}.spell-pick span{color:var(--muted);font-size:13px}.spell-mistake{margin-top:18px}.spell-levels{display:grid;gap:12px}.spell-level{display:flex;align-items:center;gap:12px;text-align:left;background:#fff;border:1.5px solid var(--line);border-radius:var(--r-md);padding:17px;min-height:76px;box-shadow:var(--sh-1)}.spell-level b{flex:1}.spell-card{background:#fff;border:1.5px solid var(--line);border-radius:var(--r-lg);padding:22px 18px;margin:16px 0;text-align:center}.spell-tags{display:flex;gap:8px;justify-content:center;align-items:center;color:var(--muted);font-size:13px}.spell-prompt{display:flex;flex-direction:column;gap:12px;font-size:20px;margin:24px 0 4px}.spell-hidden{font-size:14px;color:var(--muted)}.spell-word{font-size:32px;font-weight:900;letter-spacing:.02em;color:var(--sky-ink);margin:12px}.misspelled{font-size:32px;color:var(--coral-ink);text-decoration:line-through}.spell-input{margin:0 0 12px;min-height:62px;text-align:center;font-size:22px}.spell-audio{margin-bottom:12px}.spell-options{display:grid;gap:12px;margin-bottom:15px}.spell-option{background:#fff;border:1.5px solid var(--line);border-radius:var(--r-md);min-height:60px;text-align:left;padding:0 18px;font-weight:800;font-size:19px}.spell-feedback{min-height:30px;text-align:center;color:var(--coral-ink);font-weight:800;margin:10px}.spelling-next{margin-top:8px}.spell-score{text-align:center;background:linear-gradient(135deg,var(--green-50),var(--sky-50));border-radius:var(--r-xl);padding:26px;margin:14px 0 18px}.score-big{font-size:42px;font-weight:900}.spell-score>b{font-size:25px;color:var(--green-ink)}.spell-score p{margin-top:10px;color:var(--muted)}.spell-review{margin-top:12px;display:grid;gap:8px}.spell-review div{background:var(--coral-50);padding:11px 13px;border-radius:12px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}.spell-review span{color:var(--muted);font-size:13px}
+
+/* Laptop and desktop layout: keep the same simple mobile flow, with comfortable use of the extra width. */
+@media (min-width:1024px){
+  body{padding:32px 0}
+  #app{max-width:1100px;min-height:calc(100dvh - 64px);height:calc(100dvh - 64px);border-radius:var(--r-xl)}
+  .screen{padding-left:42px;padding-right:42px}
+  .tiles{grid-template-columns:repeat(3,1fr);gap:16px}
+  .tile{min-height:112px}
+  .rows{max-width:920px}
+  .spell-grid{grid-template-columns:repeat(4,1fr)}
+  .spell-levels{grid-template-columns:repeat(3,1fr)}
+  .spell-level{min-height:150px;align-items:flex-start;flex-direction:column}
+  .spell-level svg{margin-top:auto;align-self:flex-end}
+  .spell-card{max-width:760px;margin-left:auto;margin-right:auto}
+  .spell-options{grid-template-columns:1fr 1fr;max-width:760px;margin-left:auto;margin-right:auto}
+  .spell-input{max-width:680px;margin-left:auto;margin-right:auto;display:block}
+  .spell-practice-body{max-width:760px;margin-left:auto;margin-right:auto}
+}
+@media (min-width:1400px){#app{max-width:1200px}.screen{padding-left:64px;padding-right:64px}}
+
+/* Keep long pages scrollable inside the laptop app frame. */
+@media (min-width:1024px){
+  #views{display:flex;flex:1;min-height:0;overflow:hidden}
+  #views>.screen.active{width:100%;min-height:0;height:100%;overflow-y:auto;overflow-x:hidden}
+}
+
+/* interactive notes */
+.learn-mission{background:linear-gradient(135deg,var(--purple-50),var(--sky-50));border:1.5px solid var(--purple-100);border-radius:var(--r-xl);padding:20px;margin:8px 0 16px}.mission-kicker{font-size:12px;font-weight:900;letter-spacing:.06em;color:var(--purple-ink)}.learn-mission h3{font-size:22px;margin-top:8px}.learn-mission p{color:var(--muted);margin:7px 0 13px}.mission-stats{display:flex;gap:8px;flex-wrap:wrap;font-size:12px;font-weight:800;color:var(--navy-2)}.learn-mission small{color:var(--muted);font-weight:700}.quick-check{padding-bottom:8px}.note-tools{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:15px 0}.note-tools .btn{font-size:15px;padding:0 10px}
+
+.challenge-dots{text-align:center;color:var(--purple-ink);font-size:20px;letter-spacing:4px;margin:8px 0}.challenge-feedback{display:flex;flex-direction:column;gap:4px;border-radius:var(--r-md);padding:14px;margin:12px 0;font-weight:800}.challenge-feedback.good{background:var(--green-50);color:var(--green-ink)}.challenge-feedback.bad{background:var(--coral-50);color:var(--coral-ink)}.challenge-feedback small{font-weight:600;color:var(--muted)}.row.correct{background:var(--green-50);border-color:var(--green)}.row.dim{opacity:.55}
+
+/* lightweight learning companion */
+.companion{display:flex;align-items:center;gap:10px;background:var(--card-warm);border:1.5px solid var(--line-warm);border-radius:var(--r-lg);padding:10px 13px;margin:10px 0}.companion svg{width:58px;height:58px;flex:none}.companion b{display:block}.companion span{display:block;color:var(--muted);font-size:13px;margin-top:2px}.companion.compact{padding:8px 12px}.companion.compact svg{width:48px;height:48px}.dino-bounce{transform-origin:50% 90%;animation:dinoBreathe 3.8s ease-in-out infinite}@keyframes dinoBreathe{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-1px) rotate(.5deg)}}
+
+/* floating dinosaur companion */
+.companion-float{position:fixed;right:max(14px,calc((100vw - 1100px)/2 + 14px));bottom:calc(var(--nav-h) + 14px);z-index:45;display:flex;align-items:center;gap:7px;transition:transform .25s var(--ease),opacity .25s,filter .25s;pointer-events:auto}.companion-float.scrolling{transform:scale(.78);opacity:.72}.companion-float .dino-button{width:62px;height:62px;border-radius:50%;background:var(--card-warm);border:2px solid var(--line-warm);box-shadow:var(--sh-2);display:grid;place-items:center;padding:0}.companion-float .dino-button svg{width:52px;height:52px}.companion-float.minimized .dino-button{width:48px;height:48px}.companion-float.minimized .dino-button svg{width:38px;height:38px}.companion-bubble{max-width:180px;background:#fff;border:1.5px solid var(--line);border-radius:16px;padding:8px 10px;box-shadow:var(--sh-2);font-size:12px;font-weight:800}.companion-bubble button{font-size:12px;font-weight:900;color:var(--muted);float:right;padding:0 2px}.companion-panel{position:absolute;right:0;bottom:70px;width:230px;background:#fff;border:1.5px solid var(--line);border-radius:20px;padding:12px;box-shadow:var(--sh-3)}.companion-panel h4{margin-bottom:8px}.companion-panel .btn{min-height:44px;font-size:14px;margin-top:7px;padding:0 10px}.companion-panel small{color:var(--muted)}
+@media(max-width:600px){.companion-float{right:10px;bottom:calc(var(--nav-h) + 10px)}.companion-bubble{display:none}.companion-panel{width:210px}}
+.spell-speak{font-size:42px;line-height:1;cursor:pointer}.spell-option.spell-wrong{background:var(--coral-50);border-color:var(--coral);color:var(--coral-ink)}.spell-option.spell-right{background:var(--green-50);border-color:var(--green);color:var(--green-ink)}.spell-option.spell-dim{opacity:.55}
+.auth-card{background:#fff;border:1.5px solid var(--line);border-radius:var(--r-xl);padding:24px 18px;margin-top:14px;text-align:center}.auth-mark{font-size:42px}.auth-label{display:block;text-align:left;font-weight:800;font-size:14px;margin-top:15px}.auth-input{display:block;width:100%;min-height:54px;margin-top:6px;border:1.5px solid var(--line);border-radius:14px;padding:0 14px;font:inherit;color:var(--navy);outline:none}.auth-input:focus{border-color:var(--sky-edge);box-shadow:0 0 0 3px var(--sky-50)}.auth-error{background:var(--coral-50);border:1px solid var(--coral-100);color:var(--coral-ink);border-radius:12px;padding:10px;margin-top:14px;font-size:14px}.auth-switch{color:var(--sky-ink);font-weight:800;font-size:14px;margin-top:15px;text-decoration:underline}.auth-status{display:flex;align-items:center;gap:10px;background:var(--green-50);border:1.5px solid var(--green-100);border-radius:var(--r-md);padding:12px;margin-top:12px}.auth-status>span{font-size:24px}.auth-status div{flex:1;text-align:left;min-width:0}.auth-status b,.auth-status small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.auth-status small{color:var(--muted);font-size:12px}.auth-status button{background:#fff;border:1px solid var(--line);border-radius:10px;padding:9px;font-weight:800;font-size:12px}
+.auth-loading{text-align:center;margin:auto;padding:30px}.auth-loading:first-letter{font-size:42px}.auth-loading h2{margin-top:14px;font-size:20px}.auth-loading p{color:var(--muted);margin-top:7px}
 </style>
 </head>
 <body>
@@ -774,6 +817,7 @@ p{margin:0}
   <div class="scrim" id="scrim"><div class="sheet" id="sheet"></div></div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
 /* ============================================================
    ICONS — rounded stroke set, always paired with a text label
@@ -1063,7 +1107,7 @@ const state = {
   klass:'P6', psubject:'SST', progress:{}, ptopic:null,
   nsubject:'SST', ntopic:null, nsec:0, noteSeen:{},
   exsubject:'MATH', exTid:null, exRun:null,
-  timerId:null,
+  timerId:null, spellClass:'P6', spellDiff:'Easy', spell:null, authUser:null, authReady:false, authMode:'signin', authError:'',
 };
 
 /* Colour helpers — every colour comes from the 6-hue system */
@@ -1090,20 +1134,23 @@ const TAB_OF = {home:'home',practice:'practice',subjects:'practice',subjects_top
   topics:'practice',papers:'papers',paperDetail:'papers',progress:'home',profile:'profile',
   notes:'notes',noteTopic:'notes',noteRead:'notes',
   exercises:'exercises',exTopic:'exercises',exDo:'exercises',exResult:'exercises',exMine:'exercises',
-  avatar:'profile',settings:'profile',offline:'profile',about:'profile'};
-const FULLSCREEN = ['question','exam','results','review','archive','pquestion'];
+  avatar:'profile',settings:'profile',offline:'profile',about:'profile', auth:'profile', spelling:'home', spellDifficulty:'home', spellModes:'home', spellPractice:'home', spellResults:'home', spellMistakes:'home', noteChallenge:'notes'};
+const FULLSCREEN = ['question','exam','results','review','archive','pquestion','spellPractice','spellResults'];
 
 function go(screen, push=true){
+  if(!state.authUser && screen!=='auth'){state.screen='auth';render();return;}
   if(push && state.screen!==screen) state.stack.push(state.screen);
-  state.screen = screen; render();
+  state.screen = screen; trackActivity('screen_view',{screen}); render();
   const v=document.getElementById('views'); if(v) v.scrollTop=0; window.scrollTo(0,0);
 }
 function back(){ state.screen = state.stack.pop() || 'home'; render(); }
-function tabTo(id){ state.stack=[]; state.tab=id; go(id,false); }
+function tabTo(id){ if(!state.authUser){state.screen='auth';render();return;} state.stack=[]; state.tab=id; go(id,false); }
 
 function render(){
+  const locked = !state.authReady || (!state.authUser && state.screen!=='auth');
+  const screenHtml = !state.authReady ? `<div class="auth-loading">🔐<h2>Checking your account…</h2><p>Just a moment.</p></div>` : (locked ? SCREENS.auth() : SCREENS[state.screen]());
   document.getElementById('views').innerHTML =
-    `<section class="screen active ${FULLSCREEN.includes(state.screen)?'no-nav':''}">${SCREENS[state.screen]()}</section>`;
+    `<section class="screen active ${FULLSCREEN.includes(state.screen)?'no-nav':''}">${screenHtml}</section>`;
   const bar = document.getElementById('tabbar');
   bar.classList.toggle('hidden', FULLSCREEN.includes(state.screen));
   const active = TAB_OF[state.screen];
@@ -1162,6 +1209,10 @@ SCREENS.home = () => `
       <span class="ic">${I.book(26)}</span>
       <span><b>Study Notes</b><br><span>Read topic by topic</span></span>
     </button>
+    <button class="tile t-practice" onclick="go('spelling')">
+      <span class="ic">🔤</span>
+      <span><b>Spelling</b><br><span>P4–P7 spelling practice</span></span>
+    </button>
   </div>
 
   <div class="spacer"></div>
@@ -1216,6 +1267,136 @@ SCREENS.practice = () => {
     <span>Only <b>${cls} ${SUBJ_META[state.psubject].name}</b> questions are used. Other classes and subjects are never mixed in.</span></div>
 `;
 };
+
+/* ============================================================
+   SPELLING PRACTICE — P4 to P7, offline-first
+   ============================================================ */
+const SPELLING_BANK = {
+ P4:{Easy:['school','teacher','pencil','garden','family','market','water','friend','morning','window','animal','village'],Medium:['because','beautiful','country','children','January','kitchen','library','people','picture','weather','answer','yellow'],Hard:['accident','afternoon','bicycle','carefully','different','elephant','important','medicine','remember','together','umbrella','vegetable']},
+ P5:{Easy:['Africa','Uganda','farmer','harvest','health','letter','journey','forest','village','simple','message','number'],Medium:['community','exercise','language','February','knowledge','straight','surprise','traffic','calendar','neighbour','ordinary','possible'],Hard:['adventure','agriculture','environment','government','necessary','opportunity','population','temperature','transportation','responsibility','communication','comfortable']},
+ P6:{Easy:['energy','culture','district','market','nature','subject','library','island','minute','science','service','victory'],Medium:['ancient','continent','dictionary','electricity','equipment','government','paragraph','physical','sentence','separate','similar','through'],Hard:['achievement','circulation','competition','conservation','development','independence','information','preparation','pronunciation','questionnaire','responsible','vegetation']},
+ P7:{Easy:['education','health','history','language','nation','resource','society','subject','teacher','vocabulary','weather','wisdom'],Medium:['accurate','argument','atmosphere','boundary','confidence','democracy','especially','experiment','familiar','parliament','population','successful'],Hard:['accommodation','announcement','environmental','extraordinary','independence','misunderstanding','pronunciation','recommendation','refrigerator','representative','responsibility','unnecessary']}
+};
+const SPELLING_CATS = ['Everyday words','School words','Environment','Science','Community','Commonly misspelled'];
+const spellWords = (cls,diff) => (SPELLING_BANK[cls]&&SPELLING_BANK[cls][diff]||[]).map((word,i)=>({word,classLevel:cls,difficulty:diff,category:SPELLING_CATS[i%SPELLING_CATS.length],mistakes:[]}));
+function spellLoad(){ try{return JSON.parse(localStorage.getItem('smartple_spelling')||'{}');}catch(e){return{};} }
+function spellSave(d){try{localStorage.setItem('smartple_spelling',JSON.stringify(d));}catch(e){}}
+function spellMistakes(){return spellLoad().mistakes||[];}
+function spellRemember(word,cls){const d=spellLoad();d.mistakes=d.mistakes||[];if(!d.mistakes.some(x=>x.word===word&&x.classLevel===cls)) d.mistakes.push({word,classLevel:cls});spellSave(d);}
+function spellForget(word,cls){const d=spellLoad();d.mistakes=(d.mistakes||[]).filter(x=>!(x.word===word&&x.classLevel===cls));spellSave(d);}
+function spellSpeak(word){if('speechSynthesis' in window){speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(word);u.lang='en-UG';u.rate=.82;speechSynthesis.speak(u);}else toast('Audio is not available on this device');}
+function spellStart(cls,diff,mode){const pool=spellWords(cls,diff);if(!pool.length)return;state.spell={kind:'spelling',cls,diff,mode,items:shuffle(pool).slice(0,10),i:0,correct:0,attempt:0,detail:[],locked:false,t0:Date.now()};go('spellPractice');}
+function spellStartMistakes(){const m=spellMistakes();if(!m.length){toast('No saved words yet');return;}const cls=m[0].classLevel;state.spell={kind:'spelling',cls,diff:'Review',mode:'choose',items:shuffle(m).slice(0,10).map(x=>({word:x.word,classLevel:x.classLevel,difficulty:'Review',category:'Words to practise',mistakes:[]})),i:0,correct:0,attempt:0,detail:[],locked:false,t0:Date.now()};go('spellPractice');}
+function spellCurrent(){return state.spell&&state.spell.items[state.spell.i];}
+function spellFinishItem(ok,answer){const s=state.spell,w=spellCurrent();if(s.locked)return;s.locked=true;if(ok){s.correct++;spellForget(w.word,s.cls);}else spellRemember(w.word,s.cls);s.detail.push({word:w.word,answer:answer||'',ok});render();}
+function spellNext(){const s=state.spell;if(s.i>=s.items.length-1){state.lastResult={kind:'spelling',correct:s.correct,total:s.items.length,pct:Math.round(s.correct/s.items.length*100),detail:s.detail,cls:s.cls,diff:s.diff};go('spellResults');return;}s.i++;s.attempt=0;s.locked=false;render();}
+function spellSubmit(){const s=state.spell,w=spellCurrent(),el=document.getElementById('spellInput');const given=normAns(el&&el.value);if(!given){toast('Type an answer first');return;}if(given===normAns(w.word)){spellFinishItem(true,given);return;}s.attempt++;if(s.attempt<2){const f=document.getElementById('spellFeedback');if(f)f.innerHTML='<b>Try again!</b> Check the letters and listen once more.';if(el){el.value='';el.focus();}return;}spellFinishItem(false,given);}
+function spellChoice(word){const s=state.spell,w=spellCurrent();if(s.locked)return;s.lastAnswer=word;spellFinishItem(normAns(word)===normAns(w.word),word);}
+function spellOptions(w){const wrong=spellWords(w.classLevel,w.difficulty).filter(x=>x.word!==w.word).map(x=>x.word);return shuffle([w.word,...shuffle(wrong).slice(0,3)]);}
+function spellStats(){const m=spellMistakes();return m.length?m.map(x=>x.word).join(', '):'None yet — keep it up!';}
+
+SCREENS.spelling = () => `
+ <header class="pagehead"><button class="back" onclick="back()" aria-label="Go back">${I.back(22)}</button><div><h2>Spelling</h2><div class="sub">Primary ${state.klass[1]} · choose a level</div></div></header>
+ <div class="spell-hero"><div class="spell-emoji">🔤</div><div><h3>Ready to spell?</h3><p>Pick a level and start straight away.</p></div></div>
+ <div class="section-title">Difficulty</div><div class="spell-levels">${[['Easy','Familiar everyday and school words','green'],['Medium','Words that need extra attention','yellow'],['Hard','Challenging primary-level words','coral']].map(x=>`<button class="spell-level" onclick="spellStart('${state.klass}','${x[0]}','choose')"><span class="pill ${x[2]==='green'?'off':x[2]==='yellow'?'time':'warn'}">${x[0]}</span><b>${x[1]}</b>${I.chev(21)}</button>`).join('')}</div>
+ <div class="spell-mistake card"><b>Words to practise again</b><p>${spellStats()}</p>${spellMistakes().length?`<button class="btn btn-soft" style="margin-top:12px" onclick="spellStartMistakes()">PRACTISE MY WORDS</button>`:''}</div>`;
+
+SCREENS.spellDifficulty = () => SCREENS.spelling;
+
+SCREENS.spellModes = () => {const c=state.spellClass||'P6',d=state.spellDiff||'Easy';return `<header class="pagehead"><button class="back" onclick="go('spellDifficulty')">${I.back(22)}</button><div><h2>${c} · ${d}</h2><div class="sub">Choose how to practise</div></div></header><div class="rows">${[['type','Type the word','See a prompt and type the spelling','book','sky'],['listen','Listen and spell','Hear the word, then type it','play','purple'],['fix','Fix the spelling','Correct a word with a mistake','refresh','orange'],['choose','Choose the correct spelling','Pick the correctly spelled word','check','green'],['challenge','Spelling challenge','Ten words with a final score','medal','coral']].map(x=>`<button class="row" onclick="spellStart('${c}','${d}','${x[0]}')">${iconBox(x[3],x[4],26)}<span class="txt"><b>${x[1]}</b><span>${x[2]}</span></span><span class="chev">${I.chev(22)}</span></button>`).join('')}</div><div class="hint-strip cream">${I.info(18)} <span>Words are selected for ${c} and are available offline.</span></div>`;};
+SCREENS.spellPractice = () => {const s=state.spell,w=spellCurrent(),n=s.i+1;let prompt='',body='';if(s.mode==='listen'){prompt='<b>Listen carefully</b><span class="spell-hidden">The word is hidden until you answer.</span>';body=`<button class="btn btn-soft spell-audio" onclick="spellSpeak('${w.word}')">🔊 PLAY WORD AGAIN</button><input id="spellInput" class="fillin spell-input" placeholder="Type what you hear" autocomplete="off" onkeydown="if(event.key==='Enter')spellSubmit()"><button class="btn btn-primary" onclick="spellSubmit()">CHECK SPELLING</button>`;}else if(s.mode==='choose'){prompt=`<button class="spell-speak" onclick="spellSpeak('${w.word}')" aria-label="Hear word">🔊</button>`;body=`<div class="spell-options">${spellOptions(w).map(x=>`<button class="spell-option ${s.locked?(x===w.word?'spell-right':x===s.lastAnswer?'spell-wrong':'spell-dim'):''}" ${s.locked?'disabled':''} onclick="spellChoice('${x}')">${x}${s.locked&&x===w.word?' ✓':''}${s.locked&&x===s.lastAnswer&&x!==w.word?' ✕':''}</button>`).join('')}</div>`;}else{const shown=s.mode==='fix'?w.word.slice(0,Math.max(2,w.word.length-1)):(s.mode==='type'?w.word:'');prompt=s.mode==='fix'?`<b>Correct this spelling:</b><strong class="misspelled">${shown}</strong>`:'<b>Type the word you hear or see in the prompt.</b>';body=s.mode==='type'?`<div class="spell-word">${w.word}</div>`:'';body+=`<input id="spellInput" class="fillin spell-input" placeholder="Type the correct spelling" autocomplete="off" onkeydown="if(event.key==='Enter')spellSubmit()"><button class="btn btn-primary" onclick="spellSubmit()">CHECK SPELLING</button>`;}return `<div class="qbar"><div class="qbar-top"><button class="back" onclick="go('spelling')" aria-label="Leave spelling">${I.x(20)}</button><div class="qcount">Word ${n} <em>of ${s.items.length}</em></div><span class="pill off">${s.correct} correct</span></div><div class="qprog"><i style="width:${n/s.items.length*100}%"></i></div></div><div class="spell-card"><div class="spell-tags"><span class="pill dl">${s.cls}</span><span class="pill ${s.diff==='Easy'?'off':s.diff==='Medium'?'time':'warn'}">${s.diff}</span><span>${w.category}</span></div><div class="spell-prompt">${prompt}</div></div>${body}<div id="spellFeedback" class="spell-feedback"></div><div class="spelling-next">${s.locked?`<button class="btn btn-green" onclick="spellNext()">${n===s.items.length?'SEE RESULTS':'NEXT WORD'} ${I.chev(18)}</button>`:''}</div>`;};
+SCREENS.spellResults = () => {const r=state.lastResult||{},bad=(r.detail||[]).filter(x=>!x.ok);return `<header class="pagehead"><div><h2>Your spelling results</h2><div class="sub">${r.cls} · ${r.diff}</div></div></header><div class="spell-score"><div class="score-big">${r.correct} / ${r.total}</div><b>${r.pct}%</b><p>${r.pct>=80?'Good work! Keep practising and you will improve.':'Keep going! Every practice word makes you stronger.'}</p></div><div class="card"><b>✓ Correct: ${r.correct}</b><br><b>✗ Incorrect: ${r.total-r.correct}</b>${bad.length?`<h3 style="margin-top:18px">Practise these words</h3><div class="spell-review">${bad.map(x=>`<div><b>${x.word}</b><span>Your answer: ${x.answer||'—'}</span></div>`).join('')}</div>`:''}</div><button class="btn btn-primary" onclick="go('spelling')">PRACTISE AGAIN</button><button class="btn btn-ghost" style="margin-top:11px" onclick="go('spelling')">BACK TO SPELLING</button>`;};
+SCREENS.spellMistakes = () => {const m=spellMistakes();return `<header class="pagehead"><button class="back" onclick="go('spelling')">${I.back(22)}</button><div><h2>Words to practise</h2><div class="sub">Your saved spelling words</div></div></header>${m.length?`<div class="rows">${m.map(x=>`<div class="row"><span class="txt"><b>${x.word}</b><span>${x.classLevel}</span></span><button class="btn btn-soft" style="width:auto;min-height:44px;padding:0 14px" onclick="spellSpeak('${x.word}')">🔊</button></div>`).join('')}</div><button class="btn btn-primary" style="margin-top:16px" onclick="spellStartMistakes()">PRACTISE THESE WORDS</button>`:`<div class="card" style="text-align:center"><h3>Nothing saved yet</h3><p class="muted" style="margin-top:8px">Misspelled words will appear here for more practice.</p></div>`}`;};
+
+
+/* ============================================================
+   INTERACTIVE NOTES LAYER — uses the existing curriculum notes unchanged
+   ============================================================ */
+function learnLoad(){try{return JSON.parse(localStorage.getItem('smartple_notes_learning')||'{}');}catch(e){return{};}}
+function learnSave(d){try{localStorage.setItem('smartple_notes_learning',JSON.stringify(d));}catch(e){}}
+function learnTopic(t){const d=learnLoad();d[t.id]=d[t.id]||{xp:0,checks:0,challenge:0,mastery:0,weak:[]};return d[t.id];}
+function learnXP(t,n){const d=learnLoad(),x=d[t.id]||{xp:0,checks:0,challenge:0,mastery:0,weak:[]};x.xp+=n;d[t.id]=x;learnSave(d);toast('+'+n+' XP — keep learning!');}
+function noteMastery(t){const d=noteDone(t),x=learnTopic(t);return Math.min(100,Math.round(d.pct*.45+Math.min(100,x.checks/Math.max(1,d.total)*100)*.25+x.challenge*.30));}
+function noteMission(t){const mins=Math.max(3,Math.round((t.words||600)/180));const d=noteDone(t);return `<div class="learn-mission"><div class="mission-kicker">🎯 TODAY'S LEARNING MISSION</div><h3>${nEsc(t.title)}</h3><p>Work through ${noteSections(t).length} small sections, then check what you remember.</p><div class="mission-stats"><span>⏱ About ${mins} minutes</span><span>⭐ ${Math.max(25,noteSections(t).length*5)} XP available</span><span>🎯 ${noteMastery(t)}% mastery</span></div><div class="bar"><i style="width:0;background:var(--purple)" data-grow="${d.pct}%"></i></div><small>${d.read} of ${d.total} sections read</small></div>`;}
+function noteCheck(t){const i=Math.max(0,state.nsec||0),sec=noteSections(t)[i],others=noteSections(t).map(x=>x.title).filter(x=>x!==sec.title);const opts=shuffle([sec.title,...shuffle(others).slice(0,2)]);openSheet(`<div class="grabber"></div>${companionSheet('Hmm... I think I understand that. Do you?')}<div class="quick-check"><div class="mission-kicker">🧠 QUICK CHECK</div><h3>What section have you just studied?</h3><p class="muted">Choose the heading that matches the notes you have just read.</p>${opts.map(o=>`<button class="btn btn-ghost" style="margin-top:10px" onclick="noteCheckAnswer('${o.replace(/'/g,"\\'")}','${sec.title.replace(/'/g,"\\'")}')">${nEsc(o)}</button>`).join('')}</div>`);}
+function noteCheckAnswer(given,right){closeSheet();const t=noteById(state.ntopic),x=learnTopic(t);x.checks=(x.checks||0)+1;if(given===right){learnXP(t,10);}else{if(!x.weak.includes(right))x.weak.push(right);learnSave(learnLoad());openSheet(`<div class="grabber"></div><h3>💡 Almost!</h3><p class="muted" style="margin:10px 0">Review <b>${nEsc(right)}</b>, then try the check again.</p><button class="btn btn-primary" onclick="closeSheet();readSection(${state.nsec})">REVIEW THIS SECTION</button>`);return;}learnSave(learnLoad());render();}
+function cleanEdu(x){return String(x==null?'':x).replace(/<svg[\s\S]*?<\/svg>/gi,' ').replace(/<[^>]*>/g,' ').replace(/\b(?:svg|html|javascript|onclick|class=|data-[\w-]+)\b/gi,' ').replace(/https?:\/\/\S+/gi,' ').replace(/[{}<>]/g,' ').replace(/\s+/g,' ').trim();}
+function naturalNotePrompt(term,title,head){
+  const t=cleanEdu(term),h=cleanEdu(head).toLowerCase(),name=cleanEdu(title).replace(/^\d+\.\s*/,'');
+  if(/country/.test(h)&&/capital/.test(h)) return `What is the capital city of ${t}?`;
+  if(/country/.test(h)&&/language/.test(h)) return `Which language is associated with ${t}?`;
+  if(/place|location/.test(h)&&/capital|city/.test(h)) return `Where is ${t} found?`;
+  if(/full meaning|full name|short form/.test(h)) return `What is the full meaning of ${t}?`;
+  if(/function|role|work|does/.test(h)||/function|role of/.test(name.toLowerCase())) return `What is one function of ${t}?`;
+  if(/use|importance|benefit/.test(h)||/importance|uses|benefits/.test(name.toLowerCase())) return `What is one importance or use of ${t}?`;
+  if(/cause|reason/.test(h)||/causes|reasons/.test(name.toLowerCase())) return `State one cause or reason related to ${t}.`;
+  if(/example|type|kind/.test(h)||/examples|types|kinds/.test(name.toLowerCase())) return `Give one example of ${t}.`;
+  return `What is ${t}?`;
+}
+function naturalListPrompt(title){
+  const n=cleanEdu(title).replace(/^\d+\.\s*/,''),l=n.toLowerCase();
+  if(/^(about this topic|introduction|quick revision|important facts|common mistakes|examination points|revision questions|answers)/.test(l)) return null;
+  const m=n.match(/^(Causes?|Reasons?)\s+(?:of|for)\s+(.+)/i);if(m)return `State one cause of ${m[2]}.`;
+  const f=n.match(/^(Functions?|Roles?)\s+(?:of|for)\s+(.+)/i);if(f)return `State one function of ${f[2]}.`;
+  const u=n.match(/^(Uses?|Importance|Benefits?)\s+(?:of|for)\s+(.+)/i);if(u)return `State one importance or use of ${u[2]}.`;
+  const e=n.match(/^(Examples?|Types?|Kinds?)\s+(?:of|for)\s+(.+)/i);if(e)return `Give one example of ${e[2]}.`;
+  const w=n.match(/^(Ways?|Methods?)\s+(?:of|to|for)\s+(.+)/i);if(w)return `Mention one way of ${w[2]}.`;
+  if(/what|how|why|where|when|name|state|give|mention|explain|importance|function|cause|uses/i.test(n))return `${n.replace(/[.?!]+$/,'')}.`;
+  return null;
+}
+function noteFacts(t){
+  const facts=[];
+  (noteSections(t)||[]).forEach((sec,si)=>{
+    (sec.blocks||[]).forEach(b=>{
+      if(b.t==='table'&&b.rows&&b.rows.length>=2){
+        const head=cleanEdu((b.head||[]).join(' ')), rows=b.rows.map(r=>({term:cleanEdu(r[0]),answer:cleanEdu(r[1])})).filter(r=>r.term&&r.answer);
+        if(rows.length>=2) rows.forEach(row=>{const opts=rows.filter(r=>r.answer!==row.answer).map(r=>r.answer);facts.push({kind:'meaning',section:si,sectionTitle:cleanEdu(sec.title),term:row.term,answer:row.answer,prompt:naturalNotePrompt(row.term,sec.title,head),options:[row.answer,...opts].slice(0,4),explanation:row.answer});});
+      }
+      if((b.t==='ul'||b.t==='ol')&&b.items&&b.items.length>=3){
+        const prompt=naturalListPrompt(sec.title);if(!prompt)return;
+        const items=b.items.map(cleanEdu).filter(Boolean).slice(0,6);
+        items.forEach(answer=>facts.push({kind:'point',section:si,sectionTitle:cleanEdu(sec.title),term:answer,answer,prompt,options:items.slice(0,4),explanation:answer}));
+      }
+    });
+  });
+  return facts.filter(f=>f.prompt&&f.options&&f.options.length>=2&&f.options.includes(f.answer)&&!/[<>]|\bsvg\b|javascript|onclick|data-[\w-]+/i.test(f.prompt+' '+f.options.join(' ')));
+}
+
+function noteChallengePool(t){
+  const facts=noteFacts(t),pool=[];
+  facts.forEach(f=>{if(!pool.some(x=>x.answer===f.answer&&x.section===f.section))pool.push(f);});
+  return pool.filter(f=>f.options.length>=2).slice(0,30);
+}
+function startNoteChallenge(){
+  const t=noteById(state.ntopic); if(!t)return;
+  const pool=noteChallengePool(t),count=Math.min(5,pool.length);
+  if(count<4){toast('This topic needs a little more content before a challenge can be made.');return;}
+  state.noteChallenge={i:0,correct:0,items:shuffle(pool).slice(0,count),locked:false,detail:[]};go('noteChallenge');
+}
+SCREENS.noteChallenge=()=>{
+  const t=noteById(state.ntopic),c=state.noteChallenge;
+  if(!t||!c)return SCREENS.noteTopic();
+  const q=c.items[c.i], options=shuffle(q.options||[q.answer]);
+  const progress=Array.from({length:c.items.length},(_,i)=>i<c.i?'●':i===c.i?'◉':'○').join(' ');
+  return `<header class="pagehead"><button class="back" onclick="go('noteTopic')">${I.x(22)}</button><div><h2>⚡ Challenge Me</h2><div class="sub">${nEsc(t.title)} · Question ${c.i+1} of ${c.items.length}</div></div></header>${companionSheet(c.i===0?'Okay... challenge time! Let us crack this one!':'Keep going — you have got this!')}<div class="challenge-dots">${progress}</div><div class="qprog"><i style="width:${(c.i+1)/c.items.length*100}%"></i></div><div class="spell-card"><div class="mission-kicker">TEST WHAT YOU HAVE JUST LEARNED</div><div class="spell-prompt"><b>${nEsc(q.prompt)}</b></div></div><div class="rows">${options.map(o=>`<button class="row ${c.locked?(o===q.answer?'correct':'dim'):''}" ${c.locked?'disabled':''} onclick="noteChallengeAnswer('${o.replace(/'/g,"\\'")}','${q.answer.replace(/'/g,"\\'")}','${q.section}')"><span class="txt"><b>${nEsc(o)}</b></span>${c.locked&&o===q.answer?I.check(20):I.chev(20)}</button>`).join('')}</div>${c.locked?`${companionSheet(c.detail[c.detail.length-1].ok?'Yes! You got it!':'Oops! That is okay. Let us review it together.')}<div class="challenge-feedback ${c.detail[c.detail.length-1].ok?'good':'bad'}"><b>${c.detail[c.detail.length-1].ok?'🎉 Correct!':'❌ Not quite.'}</b><span>${c.detail[c.detail.length-1].ok?'+10 XP':'Correct answer: '+nEsc(q.answer)}</span><small>${nEsc(q.answer)}</small></div><button class="btn btn-primary" onclick="noteChallengeNext()">${c.i===c.items.length-1?'SEE RESULTS':'NEXT QUESTION'} ${I.chev(18)}</button>`:''}`;
+};
+function noteChallengeAnswer(given,right,section){const c=state.noteChallenge;if(!c||c.locked)return;const ok=given===right;c.locked=true;c.detail.push({ok,right,section});if(ok)c.correct++;else{const t=noteById(state.ntopic),d=learnLoad(),x=d[t.id]||{xp:0,checks:0,challenge:0,mastery:0,weak:[]};x.weak=x.weak||[];if(!x.weak.includes(section))x.weak.push(section);d[t.id]=x;learnSave(d);}render();}
+function noteChallengeNext(){const c=state.noteChallenge;if(c.i<c.items.length-1){c.i++;c.locked=false;render();return;}const t=noteById(state.ntopic),score=Math.round(c.correct/c.items.length*100),d=learnLoad(),x=d[t.id]||{xp:0,checks:0,challenge:0,mastery:0,weak:[]};x.challenge=score;x.xp=(x.xp||0)+20;x.mastery=noteMastery(t);d[t.id]=x;learnSave(d);openSheet(`<div class="grabber"></div>${companionSheet(score===100?'You smashed it!':'Good effort! Let us work on the tricky ones.')}<h3>🎉 Challenge complete!</h3><div class="spell-score"><div class="score-big">${c.correct} / ${c.items.length}</div><b>${score}%</b><p>${score>=80?'Excellent learning!':'Review the recommended section and try again.'}</p></div>${c.detail.some(x=>!x.ok)?`<div class="hint-strip amber">📚 Review recommended: <b>${nEsc(c.detail.find(x=>!x.ok).section)}</b></div>`:''}<button class="btn btn-primary" onclick="closeSheet();go('noteTopic')">CONTINUE LEARNING</button>`);}
+
+const dinoSVG=(mood='happy')=>`<svg class="dino-art" viewBox="0 0 160 132" role="img" aria-label="Friendly young T-Rex learning companion"><defs><linearGradient id="dinoSkin" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#A9E29B"/><stop offset="1" stop-color="#65B878"/></linearGradient><linearGradient id="dinoBelly" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E6F2C5"/><stop offset="1" stop-color="#C7DF9B"/></linearGradient></defs><g class="dino-bounce"><!-- balanced young T-Rex silhouette --><path d="M42 75C25 73 12 64 7 52c-3-8 1-14 8-14 9 0 17 8 28 14 4-19 16-32 34-35 16-3 31 3 39 14 7 10 5 22-2 29-7 7-17 9-26 6-3 12-10 22-23 27-10 4-20 3-23-2z" fill="url(#dinoSkin)" stroke="#397957" stroke-width="2.5" stroke-linejoin="round"/><path d="M80 35c10 0 20 4 24 12 2 5 0 10-4 13-6 4-16 3-24-1-6-3-9-9-7-15 1-5 5-8 11-9z" fill="#B9E19E" opacity=".9"/><path d="M102 27c5-7 12-9 19-6 7 2 10 9 8 15-2 6-8 10-15 9-6-1-10-6-12-10z" fill="url(#dinoSkin)" stroke="#397957" stroke-width="2.5"/><path d="M110 25l3-10 6 8 7-10 2 12" fill="#FF9AAF" stroke="#A94C68" stroke-width="2" stroke-linejoin="round"/><path d="M118 34c3-2 7-2 10 0" fill="none" stroke="#397957" stroke-width="2" stroke-linecap="round"/><ellipse cx="116" cy="32" rx="3.2" ry="4" fill="#FFFDF7"/><circle cx="117" cy="33" r="1.6" fill="#294458"/><path d="M126 45c-4 4-9 5-14 2" fill="none" stroke="#397957" stroke-width="2.2" stroke-linecap="round"/><path d="M83 48c-1 7 0 17 5 25 4 7 9 10 15 12" fill="none" stroke="#397957" stroke-width="2.5" stroke-linecap="round"/><path d="M70 61c-7 4-9 10-7 16 2 5 7 7 12 4l6-6" fill="none" stroke="#397957" stroke-width="4" stroke-linecap="round"/><path d="M78 62l-5 7M83 65l-5 7" stroke="#397957" stroke-width="2" stroke-linecap="round"/><path d="M56 86c-3 10-2 20 5 25 5 4 12 4 18 0" fill="none" stroke="#397957" stroke-width="5" stroke-linecap="round"/><path d="M80 106c-4 4-11 7-18 5M80 106c4 4 11 6 17 4" fill="none" stroke="#397957" stroke-width="3" stroke-linecap="round"/><path d="M43 84c-5 8-4 17 1 23 5 5 12 6 18 2" fill="none" stroke="#397957" stroke-width="5" stroke-linecap="round"/><path d="M59 107c-5 4-12 5-18 1M59 107c4 4 10 5 16 2" fill="none" stroke="#397957" stroke-width="3" stroke-linecap="round"/><path d="M42 69c12-5 27-3 36 4 5 4 7 10 5 17-2 7-7 12-14 14-8 2-17-2-22-9-5-7-7-17-5-26z" fill="url(#dinoBelly)" opacity=".72"/><circle cx="53" cy="53" r="2.3" fill="#4A9C6D"/><circle cx="64" cy="47" r="2" fill="#4A9C6D"/><circle cx="75" cy="43" r="1.8" fill="#4A9C6D"/><path d="M31 72c-5-3-10-4-15-2" fill="none" stroke="#397957" stroke-width="2.5" stroke-linecap="round"/></g></svg>`;
+function companionText(t){const d=noteDone(t);if(d.pct>=100)return 'You made it! Great learning today!';if(d.pct>=75)return 'Almost there! Keep going!';if(d.pct>=50)return 'Halfway there — you have got this!';if(d.pct>=25)return 'You are doing great!';return `Ready to learn ${cleanEdu(t.title)}?`;}
+function companionCard(t,compact=false){return `<div class="companion ${compact?'compact':''}">${dinoSVG()}<div><b>🦖 Study Buddy</b><span>${nEsc(companionText(t))}</span></div></div>`;}
+function companionSheet(message){return `<div class="companion compact">${dinoSVG()}<div><b>🦖 Study Buddy</b><span>${nEsc(message)}</span></div></div>`;}
+
+function companionHidden(){return localStorage.getItem('smartple_companion_hidden')==='1';}
+function companionToggle(){if(companionHidden())localStorage.removeItem('smartple_companion_hidden');else localStorage.setItem('smartple_companion_hidden','1');render();}
+function companionExplain(){const t=noteById(state.ntopic),sec=noteSections(t)[state.nsec]||noteSections(t)[0];const text=(sec.blocks||[]).map(b=>b.x||(b.items||[]).slice(0,2).join('. ')).filter(Boolean).map(cleanEdu).filter(Boolean).slice(0,2).join(' ');openSheet(`<div class="grabber"></div>${companionSheet('Here is a simpler way to think about it.')}<h3>💡 Explain Simply</h3><p class="muted" style="margin-top:10px">${nEsc(text||'Read this section carefully and look for its main idea.')}</p><button class="btn btn-primary" style="margin-top:14px" onclick="closeSheet()">GOT IT</button>`);}
+function companionListen(){const t=noteById(state.ntopic),sec=noteSections(t)[state.nsec]||noteSections(t)[0];const text=(sec.blocks||[]).map(b=>b.x||(b.items||[]).join('. ')).filter(Boolean).map(cleanEdu).join('. ');if('speechSynthesis' in window){speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='en-UG';u.rate=.85;speechSynthesis.speak(u);toast('Listening…');}else toast('Audio is not available on this device');}
+function companionKeys(){const t=noteById(state.ntopic),sec=noteSections(t)[state.nsec]||noteSections(t)[0],points=[];(sec.blocks||[]).forEach(b=>{if(b.t==='ul'||b.t==='ol')points.push(...b.items.slice(0,3).map(cleanEdu));if(b.t==='table')points.push(...b.rows.slice(0,3).map(r=>cleanEdu(r.join(' — '))));});openSheet(`<div class="grabber"></div>${companionSheet('These are useful points to remember.')}<h3>📌 Key Points</h3><ul class="nt-ul">${points.slice(0,5).map(x=>`<li>${nEsc(x)}</li>`).join('')||'<li>Read the section once more and identify its main ideas.</li>'}</ul><button class="btn btn-primary" style="margin-top:14px" onclick="closeSheet()">CLOSE</button>`);}
+function companionPanel(){const t=noteById(state.ntopic);if(!t)return '';return `<div id="companionFloat" class="companion-float ${companionHidden()?'minimized':''}"><div class="companion-panel" id="companionPanel" hidden><h4>🦖 Study Buddy</h4><small>${nEsc(t.title)}</small><button class="btn btn-soft" onclick="companionExplain()">💡 Explain This</button><button class="btn btn-soft" onclick="companionListen()">🔊 Listen</button><button class="btn btn-soft" onclick="closeCompanionPanel();startNoteChallenge()">🧠 Test Me</button><button class="btn btn-soft" onclick="companionKeys()">📌 Key Points</button><button class="btn btn-ghost" onclick="companionToggle()">Companion: ON</button></div><div class="companion-bubble"><button onclick="companionToggle()" aria-label="Minimize companion">×</button>${nEsc(companionText(t))}</div><button class="dino-button" onclick="toggleCompanionPanel()" aria-label="Open learning companion">${dinoSVG()}</button></div>`;}
+function toggleCompanionPanel(){const p=document.getElementById('companionPanel');if(p)p.hidden=!p.hidden;}
+function closeCompanionPanel(){const p=document.getElementById('companionPanel');if(p)p.hidden=true;}
+function wireCompanion(){const v=document.getElementById('views');if(!v||state.screen!=='noteRead'||companionHidden())return;let timer;v.onscroll=()=>{const el=document.getElementById('companionFloat');if(!el)return;el.classList.add('scrolling');clearTimeout(timer);timer=setTimeout(()=>el.classList.remove('scrolling'),450);};}
 
 /* Class picker — the primary filter for everything */
 SCREENS.classPick = () => `
@@ -1767,11 +1948,22 @@ SCREENS.progress = () => {
   </div>`;
 };
 
+const SUPABASE_URL='https://ftykmafgfyqvniacguyi.supabase.co';
+const SUPABASE_PUBLISHABLE_KEY='sb_publishable_bmOSdzyRyFtaJhDbukpKbA_qiAqYafg';
+let supabaseClient=null;
+async function authInit(){try{if(!window.supabase){state.authError='Login service could not load.';return;}supabaseClient=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);const {data}=await supabaseClient.auth.getSession();state.authUser=data.session?data.session.user:null;supabaseClient.auth.onAuthStateChange((_e,session)=>{state.authUser=session?session.user:null;if(!state.authUser){state.stack=[];state.screen='auth';}if(state.screen==='auth'||state.screen==='profile'||!state.authUser)render();});}catch(e){console.warn('Supabase auth unavailable',e);state.authError='Login service is unavailable.';}finally{state.authReady=true;if(!state.authUser&&state.screen!=='auth')state.screen='auth';render();}}
+async function trackActivity(type,details={}){if(!supabaseClient||!state.authUser)return;try{await supabaseClient.from('learning_events').insert({user_id:state.authUser.id,event_type:type,details});}catch(e){console.warn('Activity was not saved',e);}}
+function authMessage(){return state.authMode==='signup'?'Create your account to save your learning progress.':'Welcome back. Sign in to continue learning.';}
+SCREENS.auth=()=>`<header class="pagehead"><button class="back" onclick="go('profile')">${I.back(22)}</button><div><h2>${state.authMode==='signup'?'Create account':'Sign in'}</h2><div class="sub">Smart PLE learner account</div></div></header><div class="auth-card"><div class="auth-mark">📚</div><h3>${state.authMode==='signup'?'Join Smart PLE':'Welcome back'}</h3><p class="muted" style="margin-top:7px">${authMessage()}</p>${state.authError?`<div class="auth-error">${nEsc(state.authError)}</div>`:''}<label class="auth-label">Email<input id="authEmail" class="auth-input" type="email" autocomplete="email" placeholder="you@example.com"></label><label class="auth-label">Password<input id="authPassword" class="auth-input" type="password" autocomplete="${state.authMode==='signup'?'new-password':'current-password'}" placeholder="At least 6 characters"></label><button class="btn btn-primary" style="margin-top:14px" onclick="authSubmit()">${state.authMode==='signup'?'CREATE ACCOUNT':'SIGN IN'}</button><button class="auth-switch" onclick="state.authMode='${state.authMode==='signup'?'signin':'signup'}';state.authError='';render()">${state.authMode==='signup'?'Already have an account? Sign in':'Need an account? Create one'}</button></div>`;
+async function authSubmit(){state.authError='';const email=(document.getElementById('authEmail')||{}).value?.trim(),password=(document.getElementById('authPassword')||{}).value||'';if(!email||!password){state.authError='Enter your email and password.';render();return;}if(password.length<6){state.authError='Your password must be at least 6 characters.';render();return;}if(!supabaseClient){state.authError='Login service is not available. Check your internet connection and try again.';render();return;}const result=state.authMode==='signup'?await supabaseClient.auth.signUp({email,password}):await supabaseClient.auth.signInWithPassword({email,password});if(result.error){state.authError=result.error.message;render();return;}state.authUser=result.data.user||null;toast(state.authMode==='signup'?'Account created!':'Signed in successfully!');state.stack=[];go('home',false);}
+async function authSignOut(){if(supabaseClient)await supabaseClient.auth.signOut();state.authUser=null;state.stack=[];state.screen='auth';toast('You have signed out');render();}
+
 SCREENS.profile = () => `
   <header class="appbar">
     <div class="brand"><span class="logo" style="background:var(--coral-100)">${I.profile(24)}</span>
       <span><div class="brand-name">My Profile</div><div class="brand-sub">Your learning space</div></span></div>
   </header>
+  ${state.authUser?`<div class="auth-status"><span>✅</span><div><b>${nEsc(state.authUser.email||"Signed in")}</b><small>Your account is connected</small></div><button onclick="authSignOut()">Sign out</button></div>`:`<div class="auth-status"><span>🔐</span><div><b>Save your learning progress</b><small>Sign in with email and password</small></div><button onclick="go('auth')">Sign in</button></div>`}
   <div class="profile-hero">
     <div class="big-avatar">${state.avatar}</div>
     <div class="p-name">${state.name}</div>
@@ -1881,9 +2073,10 @@ const noteById = id => {
   const b = notesFor(state.klass, state.nsubject);
   return b ? b.topics.find(t=>t.id===id) : null;
 };
+function noteSections(t){return (t.sections||[]).filter(sec=>!/^about\s+this\s+topic\b/i.test(String(sec.title||'').trim()));}
 function noteDone(t){
-  let n=0; t.sections.forEach((_,i)=>{ if(state.noteSeen[t.id+':'+i]) n++; });
-  return {read:n, total:t.sections.length, pct:Math.round(n/t.sections.length*100)};
+  let n=0; noteSections(t).forEach((_,i)=>{ if(state.noteSeen[t.id+':'+i]) n++; });
+  return {read:n, total:noteSections(t).length, pct:Math.round(n/noteSections(t).length*100)};
 }
 const nEsc = x => String(x==null?'':x)
   .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
@@ -1959,7 +2152,7 @@ SCREENS.notes = () => {
       return `<button class="note-card" onclick="openNoteTopic('${t.id}')">
         <span class="num">${t.topic_no}</span>
         <span class="tt"><b>${nEsc(t.title)}</b>
-          <span>${t.sections.length} parts${t.periods?` · ${t.periods} periods`:''}${d.read?` · ${d.pct}% read`:''}</span></span>
+          <span>${noteSections(t).length} parts${t.periods?` · ${t.periods} periods`:''}${d.read?` · ${d.pct}% read`:''}</span></span>
         <span class="go">${I.chev(20)}</span>
       </button>`;}).join('')}
   </div>
@@ -1985,7 +2178,7 @@ SCREENS.noteTopic = () => {
   <div class="card" style="background:var(--purple-50);border-color:var(--purple-100)">
     <h3 style="font-size:20px">${nEsc(t.title)}</h3>
     <div class="muted" style="margin-top:7px">
-      ${t.sections.length} parts · ${t.words.toLocaleString()} words${t.periods?` · ${t.periods} periods in the syllabus`:''}</div>
+      ${noteSections(t).length} parts · ${t.words.toLocaleString()} words${t.periods?` · ${t.periods} periods in the syllabus`:''}</div>
     <div class="bar" style="margin-top:12px"><i style="width:0;background:var(--purple)" data-grow="${d.pct}%"></i></div>
     <div class="muted" style="margin-top:7px">${d.read} of ${d.total} parts read</div>
     <div style="height:14px"></div>
@@ -1994,7 +2187,7 @@ SCREENS.noteTopic = () => {
   </div>
   <div class="section-title">Contents</div>
   <div class="rows">
-    ${t.sections.map((sec,i)=>`
+    ${noteSections(t).map((sec,i)=>`
       <button class="sec-btn ${state.noteSeen[t.id+':'+i]?'read':''}" onclick="readSection(${i})">
         <span class="dot">${state.noteSeen[t.id+':'+i]?I.check(13):i+1}</span>
         <span style="flex:1">${nEsc(sec.title)}</span>${I.chev(17)}
@@ -2012,28 +2205,30 @@ SCREENS.noteTopic = () => {
 SCREENS.noteRead = () => {
   const t = noteById(state.ntopic);
   if(!t) return SCREENS.noteTopic();
-  const i = Math.max(0, Math.min(state.nsec, t.sections.length-1));
-  const sec = t.sections[i];
+  const i = Math.max(0, Math.min(state.nsec, noteSections(t).length-1));
+  const sec = noteSections(t)[i];
   return `
   <header class="pagehead">
     <button class="back" onclick="go('noteTopic')" aria-label="Back to contents">${I.back(22)}</button>
     <div style="flex:1;min-width:0"><h2 style="font-size:18px">${nEsc(t.title)}</h2>
-      <div class="sub">Part ${i+1} of ${t.sections.length}</div></div>
+      <div class="sub">Part ${i+1} of ${noteSections(t).length}</div></div>
     ${spBarHTML()}
   </header>
   <div class="bar" style="margin-bottom:14px">
-    <i style="width:0;background:var(--purple)" data-grow="${Math.round((i+1)/t.sections.length*100)}%"></i></div>
+    <i style="width:0;background:var(--purple)" data-grow="${Math.round((i+1)/noteSections(t).length*100)}%"></i></div>
   <article class="nt">
     <h3 class="nt-h1">${nEsc(sec.title)}</h3>
     ${sec.blocks.map(noteBlock).join('')}
   </article>
   <div class="nt-foot">
     <button class="btn btn-ghost" ${i===0?'disabled style="opacity:.45"':''} onclick="noteMove(-1)">Back</button>
-    ${i===t.sections.length-1
+    ${i===noteSections(t).length-1
       ? `<button class="btn btn-green" onclick="finishNote()">${I.check(19)} FINISH</button>`
       : `<button class="btn btn-primary" onclick="noteMove(1)">NEXT ${I.chev(18)}</button>`}
   </div>
   <div class="spacer"></div>
+  <div class="note-tools"><button class="btn btn-soft" onclick="noteCheck(noteById(state.ntopic))">🧠 QUICK CHECK</button><button class="btn btn-yellow" onclick="startNoteChallenge()">⚡ CHALLENGE ME</button></div>
+  ${companionPanel()}
   <button class="btn btn-soft" onclick="go('noteTopic')">${I.topics(18)} All parts of this topic</button>`;
 };
 
@@ -2042,19 +2237,20 @@ function setNoteSubject(id){ state.nsubject=id; state.ntopic=null; go('notes',fa
 function openNoteTopic(id){
   state.ntopic=id; state.nsec=0;
   const t=noteById(id);
-  if(t){ const first=t.sections.findIndex((_,i)=>!state.noteSeen[id+':'+i]);
+  if(t){ const first=noteSections(t).findIndex((_,i)=>!state.noteSeen[id+':'+i]);
          state.nsec = first<0?0:first; }
   go('noteTopic');
 }
 function readSection(i){ state.nsec=i; markSeen(); go('noteRead'); }
 function markSeen(){
   const t=noteById(state.ntopic); if(!t) return;
-  state.noteSeen[t.id+':'+state.nsec]=true;
+  const k=t.id+':'+state.nsec,was=!!state.noteSeen[k]; state.noteSeen[k]=true;
+  if(!was) learnXP(t,5);
 }
 function noteMove(d){
   const t=noteById(state.ntopic); if(!t) return;
   const n=state.nsec+d;
-  if(n<0||n>=t.sections.length) return;
+  if(n<0||n>=noteSections(t).length) return;
   state.nsec=n; markSeen(); render();
   const v=document.getElementById('views'); if(v) v.scrollTop=0; window.scrollTo(0,0);
 }
@@ -3014,10 +3210,8 @@ SCREENS.exMine = () => {
                 by the browser. After that it needs no internet and
                 no server: the text never leaves the phone.
 
-   If anything at all goes wrong — no WebAssembly, too little
-   memory, a failed download, an offline first run — it falls back
-   to the device voice and says so plainly. The notes are never
-   blocked.
+   If the controlled narrator is not installed or cannot play, the app reports that clearly
+   instead of silently switching to a different device voice.
    ============================================================ */
 
 const NV_CDN = 'https://cdn.jsdelivr.net/npm/@mintplex-labs/piper-tts-web@1.0.4/+esm';
@@ -3026,14 +3220,7 @@ const NV_CDN = 'https://cdn.jsdelivr.net/npm/@mintplex-labs/piper-tts-web@1.0.4/
 /* Sizes checked against the catalogue the library itself downloads from
    (huggingface.co/diffusionstudio/piper-voices/voices.json) on 17 Aug 2026.
    They are all about the same size — there is no small option. */
-const NV_VOICES = [
-  {id:'en_GB-jenny_dioco-medium', name:'Jenny \u00b7 British',  mb:60,
-   note:'Warm and clear. Best for reading lessons aloud.'},
-  {id:'en_US-hfc_female-medium',  name:'Clara \u00b7 American', mb:60,
-   note:'Very clear pronunciation.'},
-  {id:'en_GB-alba-medium',        name:'Alba \u00b7 Scottish',  mb:60,
-   note:'Gentle and unhurried.'},
-];
+const NV_VOICES = [{id:'en_GB-jenny_dioco-medium', name:'Jenny · Standard narrator', mb:60, note:'Warm, clear and consistent across supported devices.'}];
 const NV_DEFAULT = 'en_GB-jenny_dioco-medium';
 
 const NV = {
@@ -3050,7 +3237,8 @@ const nvChosen = () => NV_VOICES.find(v => v.id === NV.voiceId) || NV_VOICES[0];
 
 /* which engine is in use */
 function nvMode(){
-  return localStorage.getItem('ple_engine') === 'natural' ? 'natural' : 'device';
+  /* One controlled narrator is the production default. Device TTS is never silently selected. */
+  return localStorage.getItem('ple_engine') === 'device' ? 'device' : 'natural';
 }
 function nvSetMode(m){
   localStorage.setItem('ple_engine', m);
@@ -3062,8 +3250,7 @@ function nvSetMode(m){
 /* ---------- can this device run it at all? ---------- */
 function nvCapable(){
   if(typeof WebAssembly === 'undefined') return 'This browser has no WebAssembly.';
-  const mem = navigator.deviceMemory;
-  if(mem && mem < 2) return 'This phone has under 2 GB of memory, so the natural voice would be too slow. The phone voice is used instead.';
+  /* Low-memory devices may take longer, but must not silently change narrator. */
   return '';
 }
 
@@ -3174,8 +3361,9 @@ if(typeof window !== 'undefined'){
 /* ============================================================
    READ ALOUD — offline voice reading for the Notes section.
 
-   The voice comes from the device's own speech engine through the
-   browser's speechSynthesis API. Once the device has an English voice
+   The controlled narrator uses the downloaded Piper voice model. The browser only
+   plays the resulting audio; it does not choose the narrator. The device voice is
+   available only as an explicitly labelled fallback test option. Once the model
    installed, this works with no internet at all: no audio is fetched
    and no text is ever sent anywhere.
 
@@ -3404,7 +3592,7 @@ function spInit(){
 }
 
 /* class-appropriate reading speed — P.4 slower, P.7 confident */
-const SP_RATE_FOR = {P4:0.82, P5:0.90, P6:0.97, P7:1.03};
+const SP_RATE_FOR = {P4:0.78, P5:0.82, P6:0.86, P7:0.90}; // calm teacher pace
 function spRate(){
   const saved = parseFloat(localStorage.getItem('ple_rate'));
   const mult = Number.isFinite(saved) ? saved : 1;
@@ -3442,22 +3630,29 @@ function devSpeak(text){
 }
 /* one call, whichever engine is in use */
 function spSpeak(text){
-  if(nvMode() === 'natural' && NV.ready){
+  if(nvMode() === 'natural'){
+    if(!NV.ready){
+      NV.error = 'The standard narrator is not installed on this device. Open Voice settings and download it once over wi-fi.';
+      spBar();
+      return Promise.reject(new Error(NV.error));
+    }
     return nvSpeak(text).catch(err => {
-      /* never leave the learner in silence — drop back to the phone voice */
-      NV.error = 'The natural voice stopped working, so the phone voice is being used.';
-      localStorage.setItem('ple_engine', 'device');
-      return devSpeak(text);
+      NV.error = 'The standard narrator could not play this part. Please try again or check the downloaded voice.';
+      spBar();
+      return Promise.reject(err);
     });
   }
+  /* Explicit device mode remains available only as a clearly labelled test option. */
   return devSpeak(text);
 }
 /* say a single word out loud — used by "hear a word" and Repeat */
 function spWord(w){
   spStopAudio();
   const say = spSay(w);
-  if(nvMode() === 'natural' && NV.ready){ nvSpeak(say).catch(()=>devSpeak(say)); }
-  else devSpeakOne(say, {rate: Math.max(0.6, spRate() - 0.15)});
+  if(nvMode() === 'natural'){
+    if(NV.ready) nvSpeak(say).catch(()=>{ NV.error='The standard narrator could not play this word.'; spBar(); });
+    else { NV.error='Download the standard narrator before listening.'; spBar(); }
+  } else devSpeakOne(say, {rate: Math.max(0.6, spRate() - 0.15)});
 }
 function spStopAudio(){
   if('speechSynthesis' in window) speechSynthesis.cancel();
@@ -3631,8 +3826,8 @@ function spBar(){
   if(el) el.outerHTML = spBarHTML();
 }
 function spBarHTML(){
-  if(!('speechSynthesis' in window))
-    return `<span id="spBar" class="sp-in"></span>`;
+  if(!('speechSynthesis' in window) && !(nvMode()==='natural' && NV.ready))
+    return `<span id="spBar" class="sp-in"><button class="sp-i" onclick="spSheet()" aria-label="Voice settings">⚙</button></span>`;
   if(!SP_READY)
     return `<span id="spBar" class="sp-in">
       <button class="sp-i" onclick="spSheet()" aria-label="Voice settings">\u2699</button></span>`;
@@ -3672,6 +3867,9 @@ function spTry(uri){
 }
 function spUse(uri){ spSetVoice(uri); spSheet(); toast('Voice changed'); }
 
+const AUDIO_TEST_URL='audio/test-voice.mp3';
+function audioDiagnostic(){openSheet(`<h3>🔊 Audio Test</h3><p class="muted" style="margin:8px 0">This test uses one real generated MP3 from the standard narrator.</p><audio id="audioTest" controls preload="metadata" style="width:100%;margin:12px 0" src="${AUDIO_TEST_URL}"></audio><div id="audioStatus" class="hint-strip">Ready to test. Tap Play.</div><button class="btn btn-primary" style="margin-top:12px" onclick="runAudioTest()">▶ PLAY TEST VOICE</button><button class="btn btn-ghost" style="margin-top:10px" onclick="closeSheet()">CLOSE</button>`);}
+function runAudioTest(){const a=document.getElementById('audioTest'),s=document.getElementById('audioStatus');if(!a||!s)return;a.playbackRate=1.0;s.innerHTML='🔄 Loading audio…';a.onloadedmetadata=()=>{s.innerHTML=`🟢 Audio ready · ${Math.round(a.duration)} seconds · playback 1×`;};a.onerror=()=>{s.innerHTML='🔴 Audio file could not be loaded or decoded.';};const p=a.play();if(p&&p.then)p.then(()=>{s.innerHTML=`🟢 Audio is playing · ${Math.round(a.duration||0)} seconds · playback 1×`;}).catch(()=>{s.innerHTML='🟡 Playback was blocked. Tap Play again.';});}
 function spSheet(){
   const rate = parseFloat(localStorage.getItem('ple_rate')) || 1;
   const cur = spBest();
@@ -3701,9 +3899,7 @@ function spSheet(){
           <div class="nv-pct">Downloading <span id="nvPct">${NV.progress}%</span> \u2014 keep this page open</div>`
         : NV.ready ? `
           <div class="nv-row">
-            <button class="btn ${nat?'btn-soft':'btn-primary'}"
-              onclick="nvSetMode('${nat?'device':'natural'}');spSheet()">
-              ${nat ? 'Switch back to the phone voice' : 'Use the natural voice'}</button>
+            <span class="nv-tag">Standard narrator active</span>
             <button class="nv-del" onclick="nvRemove()">Remove</button>
           </div>`
         : `<button class="btn btn-primary" onclick="nvDownload()">
@@ -3719,10 +3915,12 @@ function spSheet(){
   openSheet(`
     <h3 style="margin-bottom:3px">Voice</h3>
     <p class="muted" style="font-size:12.5px;margin-bottom:13px">
-      ${nat ? 'The natural voice is being used.'
-            : 'The phone voice is being used. For a human-sounding voice, install the natural voice below.'}</p>
+      ${nat ? 'The same standard narrator is used on every device.'
+            : 'Download the standard narrator once. The app will not silently switch to a device voice.'}</p>
 
     ${natural}
+
+    <button class="btn btn-soft" style="margin-top:12px" onclick="audioDiagnostic()">🔊 Test standard narrator audio</button>
 
     <div class="sp-srow" style="margin-top:16px"><span class="sp-lab">Speed</span>
       ${[0.75,1,1.25,1.5].map(r=>`<button class="sp-chip ${rate===r?'on':''}"
@@ -3768,11 +3966,13 @@ function spSetVoice(uri){ localStorage.setItem('ple_voice', uri);
   if(SP.on){ const i=SP.i; spStopAudio(); SP.i=i; spNext(); } spBar(); }
 
 spInit();
+authInit();
 
 /* keep the voice tied to the reading screen */
 const _renderBase = render;
 render = function(){
   _renderBase();
+  wireCompanion();
   if(state.screen === 'noteRead'){
     if(typeof spPrepare === 'function') spPrepare();
   }else if(typeof spStop === 'function' && (SP.on || SP.paused)){
@@ -3783,6 +3983,6 @@ render = function(){
 
 render();
 </script>
-<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f"}' crossorigin="anonymous"></script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3153013dcd273a7',t:'MTc4Nzc3MTk2Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a31552e2fef6ada1',t:'MTc4Nzc3MzM4OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f"}' crossorigin="anonymous"></script>
+</body>
 </html>
