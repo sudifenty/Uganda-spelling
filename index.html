@@ -788,6 +788,15 @@ p{margin:0}
 
 /* interactive notes */
 .learn-mission{background:linear-gradient(135deg,var(--purple-50),var(--sky-50));border:1.5px solid var(--purple-100);border-radius:var(--r-xl);padding:20px;margin:8px 0 16px}.mission-kicker{font-size:12px;font-weight:900;letter-spacing:.06em;color:var(--purple-ink)}.learn-mission h3{font-size:22px;margin-top:8px}.learn-mission p{color:var(--muted);margin:7px 0 13px}.mission-stats{display:flex;gap:8px;flex-wrap:wrap;font-size:12px;font-weight:800;color:var(--navy-2)}.learn-mission small{color:var(--muted);font-weight:700}.quick-check{padding-bottom:8px}.note-tools{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:15px 0}.note-tools .btn{font-size:15px;padding:0 10px}
+
+.challenge-dots{text-align:center;color:var(--purple-ink);font-size:20px;letter-spacing:4px;margin:8px 0}.challenge-feedback{display:flex;flex-direction:column;gap:4px;border-radius:var(--r-md);padding:14px;margin:12px 0;font-weight:800}.challenge-feedback.good{background:var(--green-50);color:var(--green-ink)}.challenge-feedback.bad{background:var(--coral-50);color:var(--coral-ink)}.challenge-feedback small{font-weight:600;color:var(--muted)}.row.correct{background:var(--green-50);border-color:var(--green)}.row.dim{opacity:.55}
+
+/* lightweight learning companion */
+.companion{display:flex;align-items:center;gap:10px;background:var(--card-warm);border:1.5px solid var(--line-warm);border-radius:var(--r-lg);padding:10px 13px;margin:10px 0}.companion svg{width:58px;height:58px;flex:none}.companion b{display:block}.companion span{display:block;color:var(--muted);font-size:13px;margin-top:2px}.companion.compact{padding:8px 12px}.companion.compact svg{width:48px;height:48px}.dino-bounce{transform-origin:50% 90%;animation:dinoBreathe 3.8s ease-in-out infinite}@keyframes dinoBreathe{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-1px) rotate(.5deg)}}
+
+/* floating dinosaur companion */
+.companion-float{position:fixed;right:max(14px,calc((100vw - 1100px)/2 + 14px));bottom:calc(var(--nav-h) + 14px);z-index:45;display:flex;align-items:center;gap:7px;transition:transform .25s var(--ease),opacity .25s,filter .25s;pointer-events:auto}.companion-float.scrolling{transform:scale(.78);opacity:.72}.companion-float .dino-button{width:62px;height:62px;border-radius:50%;background:var(--card-warm);border:2px solid var(--line-warm);box-shadow:var(--sh-2);display:grid;place-items:center;padding:0}.companion-float .dino-button svg{width:52px;height:52px}.companion-float.minimized .dino-button{width:48px;height:48px}.companion-float.minimized .dino-button svg{width:38px;height:38px}.companion-bubble{max-width:180px;background:#fff;border:1.5px solid var(--line);border-radius:16px;padding:8px 10px;box-shadow:var(--sh-2);font-size:12px;font-weight:800}.companion-bubble button{font-size:12px;font-weight:900;color:var(--muted);float:right;padding:0 2px}.companion-panel{position:absolute;right:0;bottom:70px;width:230px;background:#fff;border:1.5px solid var(--line);border-radius:20px;padding:12px;box-shadow:var(--sh-3)}.companion-panel h4{margin-bottom:8px}.companion-panel .btn{min-height:44px;font-size:14px;margin-top:7px;padding:0 10px}.companion-panel small{color:var(--muted)}
+@media(max-width:600px){.companion-float{right:10px;bottom:calc(var(--nav-h) + 10px)}.companion-bubble{display:none}.companion-panel{width:210px}}
 </style>
 </head>
 <body>
@@ -1299,13 +1308,86 @@ function learnSave(d){try{localStorage.setItem('smartple_notes_learning',JSON.st
 function learnTopic(t){const d=learnLoad();d[t.id]=d[t.id]||{xp:0,checks:0,challenge:0,mastery:0,weak:[]};return d[t.id];}
 function learnXP(t,n){const d=learnLoad(),x=d[t.id]||{xp:0,checks:0,challenge:0,mastery:0,weak:[]};x.xp+=n;d[t.id]=x;learnSave(d);toast('+'+n+' XP — keep learning!');}
 function noteMastery(t){const d=noteDone(t),x=learnTopic(t);return Math.min(100,Math.round(d.pct*.45+Math.min(100,x.checks/Math.max(1,d.total)*100)*.25+x.challenge*.30));}
-function noteMission(t){const mins=Math.max(3,Math.round((t.words||600)/180));const d=noteDone(t);return `<div class="learn-mission"><div class="mission-kicker">🎯 TODAY'S LEARNING MISSION</div><h3>${nEsc(t.title)}</h3><p>Work through ${t.sections.length} small sections, then check what you remember.</p><div class="mission-stats"><span>⏱ About ${mins} minutes</span><span>⭐ ${Math.max(25,t.sections.length*5)} XP available</span><span>🎯 ${noteMastery(t)}% mastery</span></div><div class="bar"><i style="width:0;background:var(--purple)" data-grow="${d.pct}%"></i></div><small>${d.read} of ${d.total} sections read</small></div>`;}
-function noteCheck(t){const i=Math.max(0,state.nsec||0),sec=t.sections[i],others=t.sections.map(x=>x.title).filter(x=>x!==sec.title);const opts=shuffle([sec.title,...shuffle(others).slice(0,2)]);openSheet(`<div class="grabber"></div><div class="quick-check"><div class="mission-kicker">🧠 QUICK CHECK</div><h3>What section have you just studied?</h3><p class="muted">Choose the heading that matches the notes you have just read.</p>${opts.map(o=>`<button class="btn btn-ghost" style="margin-top:10px" onclick="noteCheckAnswer('${o.replace(/'/g,"\\'")}','${sec.title.replace(/'/g,"\\'")}')">${nEsc(o)}</button>`).join('')}</div>`);}
+function noteMission(t){const mins=Math.max(3,Math.round((t.words||600)/180));const d=noteDone(t);return `<div class="learn-mission"><div class="mission-kicker">🎯 TODAY'S LEARNING MISSION</div><h3>${nEsc(t.title)}</h3><p>Work through ${noteSections(t).length} small sections, then check what you remember.</p><div class="mission-stats"><span>⏱ About ${mins} minutes</span><span>⭐ ${Math.max(25,noteSections(t).length*5)} XP available</span><span>🎯 ${noteMastery(t)}% mastery</span></div><div class="bar"><i style="width:0;background:var(--purple)" data-grow="${d.pct}%"></i></div><small>${d.read} of ${d.total} sections read</small></div>`;}
+function noteCheck(t){const i=Math.max(0,state.nsec||0),sec=noteSections(t)[i],others=noteSections(t).map(x=>x.title).filter(x=>x!==sec.title);const opts=shuffle([sec.title,...shuffle(others).slice(0,2)]);openSheet(`<div class="grabber"></div>${companionSheet('Hmm... I think I understand that. Do you?')}<div class="quick-check"><div class="mission-kicker">🧠 QUICK CHECK</div><h3>What section have you just studied?</h3><p class="muted">Choose the heading that matches the notes you have just read.</p>${opts.map(o=>`<button class="btn btn-ghost" style="margin-top:10px" onclick="noteCheckAnswer('${o.replace(/'/g,"\\'")}','${sec.title.replace(/'/g,"\\'")}')">${nEsc(o)}</button>`).join('')}</div>`);}
 function noteCheckAnswer(given,right){closeSheet();const t=noteById(state.ntopic),x=learnTopic(t);x.checks=(x.checks||0)+1;if(given===right){learnXP(t,10);}else{if(!x.weak.includes(right))x.weak.push(right);learnSave(learnLoad());openSheet(`<div class="grabber"></div><h3>💡 Almost!</h3><p class="muted" style="margin:10px 0">Review <b>${nEsc(right)}</b>, then try the check again.</p><button class="btn btn-primary" onclick="closeSheet();readSection(${state.nsec})">REVIEW THIS SECTION</button>`);return;}learnSave(learnLoad());render();}
-function startNoteChallenge(){const t=noteById(state.ntopic);if(!t)return;state.noteChallenge={i:0,correct:0,items:shuffle(t.sections).slice(0,Math.min(5,t.sections.length))};go('noteChallenge');}
-SCREENS.noteChallenge=()=>{const t=noteById(state.ntopic),c=state.noteChallenge;if(!t||!c)return SCREENS.noteTopic();const sec=c.items[c.i],opts=shuffle([sec.title,...shuffle(t.sections.filter(x=>x.title!==sec.title)).slice(0,3).map(x=>x.title)]);return `<header class="pagehead"><button class="back" onclick="go('noteTopic')">${I.x(22)}</button><div><h2>⚡ Challenge Me</h2><div class="sub">${t.title} · ${c.i+1} of ${c.items.length}</div></div></header><div class="qprog"><i style="width:${(c.i+1)/c.items.length*100}%"></i></div><div class="spell-card"><div class="mission-kicker">WHAT DO THESE NOTES TEACH?</div><div class="spell-prompt"><b>Which section matches this topic?</b><strong>${nEsc(sec.title)}</strong></div></div><div class="rows">${opts.map(o=>`<button class="row" onclick="noteChallengeAnswer('${o.replace(/'/g,"\\'")}','${sec.title.replace(/'/g,"\\'")}')"><span class="txt"><b>${nEsc(o)}</b></span>${I.chev(20)}</button>`).join('')}</div>`;};
-function noteChallengeAnswer(given,right){const c=state.noteChallenge;if(given===right)c.correct++;if(c.i<c.items.length-1){c.i++;render();}else{const t=noteById(state.ntopic),score=Math.round(c.correct/c.items.length*100),d=learnLoad(),x=d[t.id]||{xp:0,checks:0,challenge:0,mastery:0,weak:[]};x.challenge=score;x.mastery=noteMastery(t);d[t.id]=x;learnSave(d);learnXP(t,20);openSheet(`<div class="grabber"></div><h3>🎉 Challenge complete!</h3><div class="spell-score"><div class="score-big">${c.correct} / ${c.items.length}</div><b>${score}%</b><p>${score>=80?'Excellent learning!':'Review the highlighted sections and try again.'}</p></div><button class="btn btn-primary" onclick="closeSheet();go('noteTopic')">CONTINUE</button>`);}}
+function cleanEdu(x){return String(x==null?'':x).replace(/<svg[\s\S]*?<\/svg>/gi,' ').replace(/<[^>]*>/g,' ').replace(/\b(?:svg|html|javascript|onclick|class=|data-[\w-]+)\b/gi,' ').replace(/https?:\/\/\S+/gi,' ').replace(/[{}<>]/g,' ').replace(/\s+/g,' ').trim();}
+function naturalNotePrompt(term,title,head){
+  const t=cleanEdu(term),h=cleanEdu(head).toLowerCase(),name=cleanEdu(title).replace(/^\d+\.\s*/,'');
+  if(/country/.test(h)&&/capital/.test(h)) return `What is the capital city of ${t}?`;
+  if(/country/.test(h)&&/language/.test(h)) return `Which language is associated with ${t}?`;
+  if(/place|location/.test(h)&&/capital|city/.test(h)) return `Where is ${t} found?`;
+  if(/full meaning|full name|short form/.test(h)) return `What is the full meaning of ${t}?`;
+  if(/function|role|work|does/.test(h)||/function|role of/.test(name.toLowerCase())) return `What is one function of ${t}?`;
+  if(/use|importance|benefit/.test(h)||/importance|uses|benefits/.test(name.toLowerCase())) return `What is one importance or use of ${t}?`;
+  if(/cause|reason/.test(h)||/causes|reasons/.test(name.toLowerCase())) return `State one cause or reason related to ${t}.`;
+  if(/example|type|kind/.test(h)||/examples|types|kinds/.test(name.toLowerCase())) return `Give one example of ${t}.`;
+  return `What is ${t}?`;
+}
+function naturalListPrompt(title){
+  const n=cleanEdu(title).replace(/^\d+\.\s*/,''),l=n.toLowerCase();
+  if(/^(about this topic|introduction|quick revision|important facts|common mistakes|examination points|revision questions|answers)/.test(l)) return null;
+  const m=n.match(/^(Causes?|Reasons?)\s+(?:of|for)\s+(.+)/i);if(m)return `State one cause of ${m[2]}.`;
+  const f=n.match(/^(Functions?|Roles?)\s+(?:of|for)\s+(.+)/i);if(f)return `State one function of ${f[2]}.`;
+  const u=n.match(/^(Uses?|Importance|Benefits?)\s+(?:of|for)\s+(.+)/i);if(u)return `State one importance or use of ${u[2]}.`;
+  const e=n.match(/^(Examples?|Types?|Kinds?)\s+(?:of|for)\s+(.+)/i);if(e)return `Give one example of ${e[2]}.`;
+  const w=n.match(/^(Ways?|Methods?)\s+(?:of|to|for)\s+(.+)/i);if(w)return `Mention one way of ${w[2]}.`;
+  if(/what|how|why|where|when|name|state|give|mention|explain|importance|function|cause|uses/i.test(n))return `${n.replace(/[.?!]+$/,'')}.`;
+  return null;
+}
+function noteFacts(t){
+  const facts=[];
+  (noteSections(t)||[]).forEach((sec,si)=>{
+    (sec.blocks||[]).forEach(b=>{
+      if(b.t==='table'&&b.rows&&b.rows.length>=2){
+        const head=cleanEdu((b.head||[]).join(' ')), rows=b.rows.map(r=>({term:cleanEdu(r[0]),answer:cleanEdu(r[1])})).filter(r=>r.term&&r.answer);
+        if(rows.length>=2) rows.forEach(row=>{const opts=rows.filter(r=>r.answer!==row.answer).map(r=>r.answer);facts.push({kind:'meaning',section:si,sectionTitle:cleanEdu(sec.title),term:row.term,answer:row.answer,prompt:naturalNotePrompt(row.term,sec.title,head),options:[row.answer,...opts].slice(0,4),explanation:row.answer});});
+      }
+      if((b.t==='ul'||b.t==='ol')&&b.items&&b.items.length>=3){
+        const prompt=naturalListPrompt(sec.title);if(!prompt)return;
+        const items=b.items.map(cleanEdu).filter(Boolean).slice(0,6);
+        items.forEach(answer=>facts.push({kind:'point',section:si,sectionTitle:cleanEdu(sec.title),term:answer,answer,prompt,options:items.slice(0,4),explanation:answer}));
+      }
+    });
+  });
+  return facts.filter(f=>f.prompt&&f.options&&f.options.length>=2&&f.options.includes(f.answer)&&!/[<>]|\bsvg\b|javascript|onclick|data-[\w-]+/i.test(f.prompt+' '+f.options.join(' ')));
+}
 
+function noteChallengePool(t){
+  const facts=noteFacts(t),pool=[];
+  facts.forEach(f=>{if(!pool.some(x=>x.answer===f.answer&&x.section===f.section))pool.push(f);});
+  return pool.filter(f=>f.options.length>=2).slice(0,30);
+}
+function startNoteChallenge(){
+  const t=noteById(state.ntopic); if(!t)return;
+  const pool=noteChallengePool(t),count=Math.min(5,pool.length);
+  if(count<4){toast('This topic needs a little more content before a challenge can be made.');return;}
+  state.noteChallenge={i:0,correct:0,items:shuffle(pool).slice(0,count),locked:false,detail:[]};go('noteChallenge');
+}
+SCREENS.noteChallenge=()=>{
+  const t=noteById(state.ntopic),c=state.noteChallenge;
+  if(!t||!c)return SCREENS.noteTopic();
+  const q=c.items[c.i], options=shuffle(q.options||[q.answer]);
+  const progress=Array.from({length:c.items.length},(_,i)=>i<c.i?'●':i===c.i?'◉':'○').join(' ');
+  return `<header class="pagehead"><button class="back" onclick="go('noteTopic')">${I.x(22)}</button><div><h2>⚡ Challenge Me</h2><div class="sub">${nEsc(t.title)} · Question ${c.i+1} of ${c.items.length}</div></div></header>${companionSheet(c.i===0?'Okay... challenge time! Let us crack this one!':'Keep going — you have got this!')}<div class="challenge-dots">${progress}</div><div class="qprog"><i style="width:${(c.i+1)/c.items.length*100}%"></i></div><div class="spell-card"><div class="mission-kicker">TEST WHAT YOU HAVE JUST LEARNED</div><div class="spell-prompt"><b>${nEsc(q.prompt)}</b></div></div><div class="rows">${options.map(o=>`<button class="row ${c.locked?(o===q.answer?'correct':'dim'):''}" ${c.locked?'disabled':''} onclick="noteChallengeAnswer('${o.replace(/'/g,"\\'")}','${q.answer.replace(/'/g,"\\'")}','${q.section}')"><span class="txt"><b>${nEsc(o)}</b></span>${c.locked&&o===q.answer?I.check(20):I.chev(20)}</button>`).join('')}</div>${c.locked?`${companionSheet(c.detail[c.detail.length-1].ok?'Yes! You got it!':'Oops! That is okay. Let us review it together.')}<div class="challenge-feedback ${c.detail[c.detail.length-1].ok?'good':'bad'}"><b>${c.detail[c.detail.length-1].ok?'🎉 Correct!':'❌ Not quite.'}</b><span>${c.detail[c.detail.length-1].ok?'+10 XP':'Correct answer: '+nEsc(q.answer)}</span><small>${nEsc(q.answer)}</small></div><button class="btn btn-primary" onclick="noteChallengeNext()">${c.i===c.items.length-1?'SEE RESULTS':'NEXT QUESTION'} ${I.chev(18)}</button>`:''}`;
+};
+function noteChallengeAnswer(given,right,section){const c=state.noteChallenge;if(!c||c.locked)return;const ok=given===right;c.locked=true;c.detail.push({ok,right,section});if(ok)c.correct++;else{const t=noteById(state.ntopic),d=learnLoad(),x=d[t.id]||{xp:0,checks:0,challenge:0,mastery:0,weak:[]};x.weak=x.weak||[];if(!x.weak.includes(section))x.weak.push(section);d[t.id]=x;learnSave(d);}render();}
+function noteChallengeNext(){const c=state.noteChallenge;if(c.i<c.items.length-1){c.i++;c.locked=false;render();return;}const t=noteById(state.ntopic),score=Math.round(c.correct/c.items.length*100),d=learnLoad(),x=d[t.id]||{xp:0,checks:0,challenge:0,mastery:0,weak:[]};x.challenge=score;x.xp=(x.xp||0)+20;x.mastery=noteMastery(t);d[t.id]=x;learnSave(d);openSheet(`<div class="grabber"></div>${companionSheet(score===100?'You smashed it!':'Good effort! Let us work on the tricky ones.')}<h3>🎉 Challenge complete!</h3><div class="spell-score"><div class="score-big">${c.correct} / ${c.items.length}</div><b>${score}%</b><p>${score>=80?'Excellent learning!':'Review the recommended section and try again.'}</p></div>${c.detail.some(x=>!x.ok)?`<div class="hint-strip amber">📚 Review recommended: <b>${nEsc(c.detail.find(x=>!x.ok).section)}</b></div>`:''}<button class="btn btn-primary" onclick="closeSheet();go('noteTopic')">CONTINUE LEARNING</button>`);}
+
+const dinoSVG=(mood='happy')=>`<svg class="dino-art" viewBox="0 0 160 132" role="img" aria-label="Friendly young T-Rex learning companion"><defs><linearGradient id="dinoSkin" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#A9E29B"/><stop offset="1" stop-color="#65B878"/></linearGradient><linearGradient id="dinoBelly" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#E6F2C5"/><stop offset="1" stop-color="#C7DF9B"/></linearGradient></defs><g class="dino-bounce"><!-- balanced young T-Rex silhouette --><path d="M42 75C25 73 12 64 7 52c-3-8 1-14 8-14 9 0 17 8 28 14 4-19 16-32 34-35 16-3 31 3 39 14 7 10 5 22-2 29-7 7-17 9-26 6-3 12-10 22-23 27-10 4-20 3-23-2z" fill="url(#dinoSkin)" stroke="#397957" stroke-width="2.5" stroke-linejoin="round"/><path d="M80 35c10 0 20 4 24 12 2 5 0 10-4 13-6 4-16 3-24-1-6-3-9-9-7-15 1-5 5-8 11-9z" fill="#B9E19E" opacity=".9"/><path d="M102 27c5-7 12-9 19-6 7 2 10 9 8 15-2 6-8 10-15 9-6-1-10-6-12-10z" fill="url(#dinoSkin)" stroke="#397957" stroke-width="2.5"/><path d="M110 25l3-10 6 8 7-10 2 12" fill="#FF9AAF" stroke="#A94C68" stroke-width="2" stroke-linejoin="round"/><path d="M118 34c3-2 7-2 10 0" fill="none" stroke="#397957" stroke-width="2" stroke-linecap="round"/><ellipse cx="116" cy="32" rx="3.2" ry="4" fill="#FFFDF7"/><circle cx="117" cy="33" r="1.6" fill="#294458"/><path d="M126 45c-4 4-9 5-14 2" fill="none" stroke="#397957" stroke-width="2.2" stroke-linecap="round"/><path d="M83 48c-1 7 0 17 5 25 4 7 9 10 15 12" fill="none" stroke="#397957" stroke-width="2.5" stroke-linecap="round"/><path d="M70 61c-7 4-9 10-7 16 2 5 7 7 12 4l6-6" fill="none" stroke="#397957" stroke-width="4" stroke-linecap="round"/><path d="M78 62l-5 7M83 65l-5 7" stroke="#397957" stroke-width="2" stroke-linecap="round"/><path d="M56 86c-3 10-2 20 5 25 5 4 12 4 18 0" fill="none" stroke="#397957" stroke-width="5" stroke-linecap="round"/><path d="M80 106c-4 4-11 7-18 5M80 106c4 4 11 6 17 4" fill="none" stroke="#397957" stroke-width="3" stroke-linecap="round"/><path d="M43 84c-5 8-4 17 1 23 5 5 12 6 18 2" fill="none" stroke="#397957" stroke-width="5" stroke-linecap="round"/><path d="M59 107c-5 4-12 5-18 1M59 107c4 4 10 5 16 2" fill="none" stroke="#397957" stroke-width="3" stroke-linecap="round"/><path d="M42 69c12-5 27-3 36 4 5 4 7 10 5 17-2 7-7 12-14 14-8 2-17-2-22-9-5-7-7-17-5-26z" fill="url(#dinoBelly)" opacity=".72"/><circle cx="53" cy="53" r="2.3" fill="#4A9C6D"/><circle cx="64" cy="47" r="2" fill="#4A9C6D"/><circle cx="75" cy="43" r="1.8" fill="#4A9C6D"/><path d="M31 72c-5-3-10-4-15-2" fill="none" stroke="#397957" stroke-width="2.5" stroke-linecap="round"/></g></svg>`;
+function companionText(t){const d=noteDone(t);if(d.pct>=100)return 'You made it! Great learning today!';if(d.pct>=75)return 'Almost there! Keep going!';if(d.pct>=50)return 'Halfway there — you have got this!';if(d.pct>=25)return 'You are doing great!';return `Ready to learn ${cleanEdu(t.title)}?`;}
+function companionCard(t,compact=false){return `<div class="companion ${compact?'compact':''}">${dinoSVG()}<div><b>🦖 Study Buddy</b><span>${nEsc(companionText(t))}</span></div></div>`;}
+function companionSheet(message){return `<div class="companion compact">${dinoSVG()}<div><b>🦖 Study Buddy</b><span>${nEsc(message)}</span></div></div>`;}
+
+function companionHidden(){return localStorage.getItem('smartple_companion_hidden')==='1';}
+function companionToggle(){if(companionHidden())localStorage.removeItem('smartple_companion_hidden');else localStorage.setItem('smartple_companion_hidden','1');render();}
+function companionExplain(){const t=noteById(state.ntopic),sec=noteSections(t)[state.nsec]||noteSections(t)[0];const text=(sec.blocks||[]).map(b=>b.x||(b.items||[]).slice(0,2).join('. ')).filter(Boolean).map(cleanEdu).filter(Boolean).slice(0,2).join(' ');openSheet(`<div class="grabber"></div>${companionSheet('Here is a simpler way to think about it.')}<h3>💡 Explain Simply</h3><p class="muted" style="margin-top:10px">${nEsc(text||'Read this section carefully and look for its main idea.')}</p><button class="btn btn-primary" style="margin-top:14px" onclick="closeSheet()">GOT IT</button>`);}
+function companionListen(){const t=noteById(state.ntopic),sec=noteSections(t)[state.nsec]||noteSections(t)[0];const text=(sec.blocks||[]).map(b=>b.x||(b.items||[]).join('. ')).filter(Boolean).map(cleanEdu).join('. ');if('speechSynthesis' in window){speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='en-UG';u.rate=.85;speechSynthesis.speak(u);toast('Listening…');}else toast('Audio is not available on this device');}
+function companionKeys(){const t=noteById(state.ntopic),sec=noteSections(t)[state.nsec]||noteSections(t)[0],points=[];(sec.blocks||[]).forEach(b=>{if(b.t==='ul'||b.t==='ol')points.push(...b.items.slice(0,3).map(cleanEdu));if(b.t==='table')points.push(...b.rows.slice(0,3).map(r=>cleanEdu(r.join(' — '))));});openSheet(`<div class="grabber"></div>${companionSheet('These are useful points to remember.')}<h3>📌 Key Points</h3><ul class="nt-ul">${points.slice(0,5).map(x=>`<li>${nEsc(x)}</li>`).join('')||'<li>Read the section once more and identify its main ideas.</li>'}</ul><button class="btn btn-primary" style="margin-top:14px" onclick="closeSheet()">CLOSE</button>`);}
+function companionPanel(){const t=noteById(state.ntopic);if(!t)return '';return `<div id="companionFloat" class="companion-float ${companionHidden()?'minimized':''}"><div class="companion-panel" id="companionPanel" hidden><h4>🦖 Study Buddy</h4><small>${nEsc(t.title)}</small><button class="btn btn-soft" onclick="companionExplain()">💡 Explain This</button><button class="btn btn-soft" onclick="companionListen()">🔊 Listen</button><button class="btn btn-soft" onclick="closeCompanionPanel();startNoteChallenge()">🧠 Test Me</button><button class="btn btn-soft" onclick="companionKeys()">📌 Key Points</button><button class="btn btn-ghost" onclick="companionToggle()">Companion: ON</button></div><div class="companion-bubble"><button onclick="companionToggle()" aria-label="Minimize companion">×</button>${nEsc(companionText(t))}</div><button class="dino-button" onclick="toggleCompanionPanel()" aria-label="Open learning companion">${dinoSVG()}</button></div>`;}
+function toggleCompanionPanel(){const p=document.getElementById('companionPanel');if(p)p.hidden=!p.hidden;}
+function closeCompanionPanel(){const p=document.getElementById('companionPanel');if(p)p.hidden=true;}
+function wireCompanion(){const v=document.getElementById('views');if(!v||state.screen!=='noteRead'||companionHidden())return;let timer;v.onscroll=()=>{const el=document.getElementById('companionFloat');if(!el)return;el.classList.add('scrolling');clearTimeout(timer);timer=setTimeout(()=>el.classList.remove('scrolling'),450);};}
 
 /* Class picker — the primary filter for everything */
 SCREENS.classPick = () => `
@@ -1971,9 +2053,10 @@ const noteById = id => {
   const b = notesFor(state.klass, state.nsubject);
   return b ? b.topics.find(t=>t.id===id) : null;
 };
+function noteSections(t){return (t.sections||[]).filter(sec=>!/^about\s+this\s+topic\b/i.test(String(sec.title||'').trim()));}
 function noteDone(t){
-  let n=0; t.sections.forEach((_,i)=>{ if(state.noteSeen[t.id+':'+i]) n++; });
-  return {read:n, total:t.sections.length, pct:Math.round(n/t.sections.length*100)};
+  let n=0; noteSections(t).forEach((_,i)=>{ if(state.noteSeen[t.id+':'+i]) n++; });
+  return {read:n, total:noteSections(t).length, pct:Math.round(n/noteSections(t).length*100)};
 }
 const nEsc = x => String(x==null?'':x)
   .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
@@ -2049,7 +2132,7 @@ SCREENS.notes = () => {
       return `<button class="note-card" onclick="openNoteTopic('${t.id}')">
         <span class="num">${t.topic_no}</span>
         <span class="tt"><b>${nEsc(t.title)}</b>
-          <span>${t.sections.length} parts${t.periods?` · ${t.periods} periods`:''}${d.read?` · ${d.pct}% read`:''}</span></span>
+          <span>${noteSections(t).length} parts${t.periods?` · ${t.periods} periods`:''}${d.read?` · ${d.pct}% read`:''}</span></span>
         <span class="go">${I.chev(20)}</span>
       </button>`;}).join('')}
   </div>
@@ -2066,18 +2149,16 @@ SCREENS.noteTopic = () => {
       <div><h2>Notes</h2></div></header>
       <div class="card">That topic is not available.</div>`; }
   const d = noteDone(t);
-  const mission = noteMission(t);
   return `
   <header class="pagehead">
     <button class="back" onclick="tabTo('notes')" aria-label="Go back">${I.back(22)}</button>
     <div><h2>Topic ${t.topic_no}</h2>
       <div class="sub">${state.klass} ${NOTE_SUBJECTS.find(s=>s.id===t.subject).name}</div></div>
   </header>
-  ${mission}
   <div class="card" style="background:var(--purple-50);border-color:var(--purple-100)">
     <h3 style="font-size:20px">${nEsc(t.title)}</h3>
     <div class="muted" style="margin-top:7px">
-      ${t.sections.length} parts · ${t.words.toLocaleString()} words${t.periods?` · ${t.periods} periods in the syllabus`:''}</div>
+      ${noteSections(t).length} parts · ${t.words.toLocaleString()} words${t.periods?` · ${t.periods} periods in the syllabus`:''}</div>
     <div class="bar" style="margin-top:12px"><i style="width:0;background:var(--purple)" data-grow="${d.pct}%"></i></div>
     <div class="muted" style="margin-top:7px">${d.read} of ${d.total} parts read</div>
     <div style="height:14px"></div>
@@ -2086,7 +2167,7 @@ SCREENS.noteTopic = () => {
   </div>
   <div class="section-title">Contents</div>
   <div class="rows">
-    ${t.sections.map((sec,i)=>`
+    ${noteSections(t).map((sec,i)=>`
       <button class="sec-btn ${state.noteSeen[t.id+':'+i]?'read':''}" onclick="readSection(${i})">
         <span class="dot">${state.noteSeen[t.id+':'+i]?I.check(13):i+1}</span>
         <span style="flex:1">${nEsc(sec.title)}</span>${I.chev(17)}
@@ -2104,30 +2185,30 @@ SCREENS.noteTopic = () => {
 SCREENS.noteRead = () => {
   const t = noteById(state.ntopic);
   if(!t) return SCREENS.noteTopic();
-  const i = Math.max(0, Math.min(state.nsec, t.sections.length-1));
-  const sec = t.sections[i];
+  const i = Math.max(0, Math.min(state.nsec, noteSections(t).length-1));
+  const sec = noteSections(t)[i];
   return `
   <header class="pagehead">
     <button class="back" onclick="go('noteTopic')" aria-label="Back to contents">${I.back(22)}</button>
     <div style="flex:1;min-width:0"><h2 style="font-size:18px">${nEsc(t.title)}</h2>
-      <div class="sub">Part ${i+1} of ${t.sections.length}</div></div>
+      <div class="sub">Part ${i+1} of ${noteSections(t).length}</div></div>
     ${spBarHTML()}
   </header>
   <div class="bar" style="margin-bottom:14px">
-    <i style="width:0;background:var(--purple)" data-grow="${Math.round((i+1)/t.sections.length*100)}%"></i></div>
+    <i style="width:0;background:var(--purple)" data-grow="${Math.round((i+1)/noteSections(t).length*100)}%"></i></div>
   <article class="nt">
     <h3 class="nt-h1">${nEsc(sec.title)}</h3>
     ${sec.blocks.map(noteBlock).join('')}
   </article>
-  <div class="note-tools"><button class="btn btn-soft" onclick="noteCheck(noteById(state.ntopic))">🧠 QUICK CHECK</button><button class="btn btn-yellow" onclick="startNoteChallenge()">⚡ CHALLENGE ME</button></div>
   <div class="nt-foot">
     <button class="btn btn-ghost" ${i===0?'disabled style="opacity:.45"':''} onclick="noteMove(-1)">Back</button>
-    ${i===t.sections.length-1
+    ${i===noteSections(t).length-1
       ? `<button class="btn btn-green" onclick="finishNote()">${I.check(19)} FINISH</button>`
       : `<button class="btn btn-primary" onclick="noteMove(1)">NEXT ${I.chev(18)}</button>`}
   </div>
   <div class="spacer"></div>
   <div class="note-tools"><button class="btn btn-soft" onclick="noteCheck(noteById(state.ntopic))">🧠 QUICK CHECK</button><button class="btn btn-yellow" onclick="startNoteChallenge()">⚡ CHALLENGE ME</button></div>
+  ${companionPanel()}
   <button class="btn btn-soft" onclick="go('noteTopic')">${I.topics(18)} All parts of this topic</button>`;
 };
 
@@ -2136,7 +2217,7 @@ function setNoteSubject(id){ state.nsubject=id; state.ntopic=null; go('notes',fa
 function openNoteTopic(id){
   state.ntopic=id; state.nsec=0;
   const t=noteById(id);
-  if(t){ const first=t.sections.findIndex((_,i)=>!state.noteSeen[id+':'+i]);
+  if(t){ const first=noteSections(t).findIndex((_,i)=>!state.noteSeen[id+':'+i]);
          state.nsec = first<0?0:first; }
   go('noteTopic');
 }
@@ -2149,7 +2230,7 @@ function markSeen(){
 function noteMove(d){
   const t=noteById(state.ntopic); if(!t) return;
   const n=state.nsec+d;
-  if(n<0||n>=t.sections.length) return;
+  if(n<0||n>=noteSections(t).length) return;
   state.nsec=n; markSeen(); render();
   const v=document.getElementById('views'); if(v) v.scrollTop=0; window.scrollTo(0,0);
 }
@@ -3109,10 +3190,8 @@ SCREENS.exMine = () => {
                 by the browser. After that it needs no internet and
                 no server: the text never leaves the phone.
 
-   If anything at all goes wrong — no WebAssembly, too little
-   memory, a failed download, an offline first run — it falls back
-   to the device voice and says so plainly. The notes are never
-   blocked.
+   If the controlled narrator is not installed or cannot play, the app reports that clearly
+   instead of silently switching to a different device voice.
    ============================================================ */
 
 const NV_CDN = 'https://cdn.jsdelivr.net/npm/@mintplex-labs/piper-tts-web@1.0.4/+esm';
@@ -3121,14 +3200,7 @@ const NV_CDN = 'https://cdn.jsdelivr.net/npm/@mintplex-labs/piper-tts-web@1.0.4/
 /* Sizes checked against the catalogue the library itself downloads from
    (huggingface.co/diffusionstudio/piper-voices/voices.json) on 17 Aug 2026.
    They are all about the same size — there is no small option. */
-const NV_VOICES = [
-  {id:'en_GB-jenny_dioco-medium', name:'Jenny \u00b7 British',  mb:60,
-   note:'Warm and clear. Best for reading lessons aloud.'},
-  {id:'en_US-hfc_female-medium',  name:'Clara \u00b7 American', mb:60,
-   note:'Very clear pronunciation.'},
-  {id:'en_GB-alba-medium',        name:'Alba \u00b7 Scottish',  mb:60,
-   note:'Gentle and unhurried.'},
-];
+const NV_VOICES = [{id:'en_GB-jenny_dioco-medium', name:'Jenny · Standard narrator', mb:60, note:'Warm, clear and consistent across supported devices.'}];
 const NV_DEFAULT = 'en_GB-jenny_dioco-medium';
 
 const NV = {
@@ -3145,7 +3217,8 @@ const nvChosen = () => NV_VOICES.find(v => v.id === NV.voiceId) || NV_VOICES[0];
 
 /* which engine is in use */
 function nvMode(){
-  return localStorage.getItem('ple_engine') === 'natural' ? 'natural' : 'device';
+  /* One controlled narrator is the production default. Device TTS is never silently selected. */
+  return localStorage.getItem('ple_engine') === 'device' ? 'device' : 'natural';
 }
 function nvSetMode(m){
   localStorage.setItem('ple_engine', m);
@@ -3157,8 +3230,7 @@ function nvSetMode(m){
 /* ---------- can this device run it at all? ---------- */
 function nvCapable(){
   if(typeof WebAssembly === 'undefined') return 'This browser has no WebAssembly.';
-  const mem = navigator.deviceMemory;
-  if(mem && mem < 2) return 'This phone has under 2 GB of memory, so the natural voice would be too slow. The phone voice is used instead.';
+  /* Low-memory devices may take longer, but must not silently change narrator. */
   return '';
 }
 
@@ -3269,8 +3341,9 @@ if(typeof window !== 'undefined'){
 /* ============================================================
    READ ALOUD — offline voice reading for the Notes section.
 
-   The voice comes from the device's own speech engine through the
-   browser's speechSynthesis API. Once the device has an English voice
+   The controlled narrator uses the downloaded Piper voice model. The browser only
+   plays the resulting audio; it does not choose the narrator. The device voice is
+   available only as an explicitly labelled fallback test option. Once the model
    installed, this works with no internet at all: no audio is fetched
    and no text is ever sent anywhere.
 
@@ -3499,7 +3572,7 @@ function spInit(){
 }
 
 /* class-appropriate reading speed — P.4 slower, P.7 confident */
-const SP_RATE_FOR = {P4:0.82, P5:0.90, P6:0.97, P7:1.03};
+const SP_RATE_FOR = {P4:0.78, P5:0.82, P6:0.86, P7:0.90}; // calm teacher pace
 function spRate(){
   const saved = parseFloat(localStorage.getItem('ple_rate'));
   const mult = Number.isFinite(saved) ? saved : 1;
@@ -3537,22 +3610,29 @@ function devSpeak(text){
 }
 /* one call, whichever engine is in use */
 function spSpeak(text){
-  if(nvMode() === 'natural' && NV.ready){
+  if(nvMode() === 'natural'){
+    if(!NV.ready){
+      NV.error = 'The standard narrator is not installed on this device. Open Voice settings and download it once over wi-fi.';
+      spBar();
+      return Promise.reject(new Error(NV.error));
+    }
     return nvSpeak(text).catch(err => {
-      /* never leave the learner in silence — drop back to the phone voice */
-      NV.error = 'The natural voice stopped working, so the phone voice is being used.';
-      localStorage.setItem('ple_engine', 'device');
-      return devSpeak(text);
+      NV.error = 'The standard narrator could not play this part. Please try again or check the downloaded voice.';
+      spBar();
+      return Promise.reject(err);
     });
   }
+  /* Explicit device mode remains available only as a clearly labelled test option. */
   return devSpeak(text);
 }
 /* say a single word out loud — used by "hear a word" and Repeat */
 function spWord(w){
   spStopAudio();
   const say = spSay(w);
-  if(nvMode() === 'natural' && NV.ready){ nvSpeak(say).catch(()=>devSpeak(say)); }
-  else devSpeakOne(say, {rate: Math.max(0.6, spRate() - 0.15)});
+  if(nvMode() === 'natural'){
+    if(NV.ready) nvSpeak(say).catch(()=>{ NV.error='The standard narrator could not play this word.'; spBar(); });
+    else { NV.error='Download the standard narrator before listening.'; spBar(); }
+  } else devSpeakOne(say, {rate: Math.max(0.6, spRate() - 0.15)});
 }
 function spStopAudio(){
   if('speechSynthesis' in window) speechSynthesis.cancel();
@@ -3726,8 +3806,8 @@ function spBar(){
   if(el) el.outerHTML = spBarHTML();
 }
 function spBarHTML(){
-  if(!('speechSynthesis' in window))
-    return `<span id="spBar" class="sp-in"></span>`;
+  if(!('speechSynthesis' in window) && !(nvMode()==='natural' && NV.ready))
+    return `<span id="spBar" class="sp-in"><button class="sp-i" onclick="spSheet()" aria-label="Voice settings">⚙</button></span>`;
   if(!SP_READY)
     return `<span id="spBar" class="sp-in">
       <button class="sp-i" onclick="spSheet()" aria-label="Voice settings">\u2699</button></span>`;
@@ -3796,9 +3876,7 @@ function spSheet(){
           <div class="nv-pct">Downloading <span id="nvPct">${NV.progress}%</span> \u2014 keep this page open</div>`
         : NV.ready ? `
           <div class="nv-row">
-            <button class="btn ${nat?'btn-soft':'btn-primary'}"
-              onclick="nvSetMode('${nat?'device':'natural'}');spSheet()">
-              ${nat ? 'Switch back to the phone voice' : 'Use the natural voice'}</button>
+            <span class="nv-tag">Standard narrator active</span>
             <button class="nv-del" onclick="nvRemove()">Remove</button>
           </div>`
         : `<button class="btn btn-primary" onclick="nvDownload()">
@@ -3814,8 +3892,8 @@ function spSheet(){
   openSheet(`
     <h3 style="margin-bottom:3px">Voice</h3>
     <p class="muted" style="font-size:12.5px;margin-bottom:13px">
-      ${nat ? 'The natural voice is being used.'
-            : 'The phone voice is being used. For a human-sounding voice, install the natural voice below.'}</p>
+      ${nat ? 'The same standard narrator is used on every device.'
+            : 'Download the standard narrator once. The app will not silently switch to a device voice.'}</p>
 
     ${natural}
 
@@ -3868,6 +3946,7 @@ spInit();
 const _renderBase = render;
 render = function(){
   _renderBase();
+  wireCompanion();
   if(state.screen === 'noteRead'){
     if(typeof spPrepare === 'function') spPrepare();
   }else if(typeof spStop === 'function' && (SP.on || SP.paused)){
@@ -3878,6 +3957,6 @@ render = function(){
 
 render();
 </script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30e22978cca1380',t:'MTc4NzY5ODAxMA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f"}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a30e8b105feac6ca',t:'MTc4NzcwMjI4OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f"}' crossorigin="anonymous"></script>
 </body>
 </html>
