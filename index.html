@@ -1108,7 +1108,7 @@ const state = {
   klass:'P6', psubject:'SST', progress:{}, ptopic:null,
   nsubject:'SST', ntopic:null, nsec:0, noteSeen:{},
   exsubject:'MATH', exTid:null, exRun:null,
-  timerId:null, spellClass:'P6', spellDiff:'Easy', spell:null, authUser:null, authReady:false, authMode:'signin', authError:'',
+  timerId:null, spellClass:'P6', spellDiff:'Easy', spell:null, authUser:null, authReady:false, classLocked:false, authMode:'signin', authError:'',
 };
 
 /* Colour helpers — every colour comes from the 6-hue system */
@@ -1405,8 +1405,9 @@ SCREENS.classPick = () => `
     <button class="back" onclick="back()" aria-label="Go back">${I.back(22)}</button>
     <div><h2>Choose your class</h2><div class="sub">Each class has its own questions</div></div>
   </header>
+  ${state.classLocked?`<div class="hint-strip green">🔒 Your account is assigned to <b>${state.klass}</b>. Only this class's learning content is available.</div>`:``}
   <div class="rows">
-    ${CLASSES.map(c=>{
+    ${classOptions().map(c=>{
       const n=pbAll(c).length, p=state.progress[c];
       return `
       <button class="row ${c===state.klass?'':''}" onclick="setClass('${c}')"
@@ -1954,11 +1955,13 @@ const SUPABASE_PUBLISHABLE_KEY='sb_publishable_bmOSdzyRyFtaJhDbukpKbA_qiAqYafg';
 let supabaseClient=null;
 async function authInit(){try{if(!window.supabase){state.authError='Login service could not load.';return;}supabaseClient=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});const {data}=await supabaseClient.auth.getSession();state.authUser=data.session?data.session.user:null;if(state.authUser)applyUserProfile(state.authUser);supabaseClient.auth.onAuthStateChange((_e,session)=>{state.authUser=session?session.user:null;if(state.authUser)applyUserProfile(state.authUser);if(!state.authUser){state.stack=[];state.screen='auth';}if(state.screen==='auth'||state.screen==='profile'||!state.authUser)render();});}catch(e){console.warn('Supabase auth unavailable',e);state.authError='Login service is unavailable.';}finally{state.authReady=true;if(!state.authUser&&state.screen!=='auth')state.screen='auth';render();}}
 async function trackActivity(type,details={}){if(!supabaseClient||!state.authUser)return;try{await supabaseClient.from('learning_events').insert({user_id:state.authUser.id,event_type:type,details});}catch(e){console.warn('Activity was not saved',e);}}
-function applyUserProfile(user){const m=user?.user_metadata||{};if(m.full_name)state.name=m.full_name;if(['P4','P5','P6','P7'].includes(m.class_level))state.klass=m.class_level;}
+function applyUserProfile(user){const m=user?.user_metadata||{};if(m.full_name)state.name=m.full_name;if(['P4','P5','P6','P7'].includes(m.class_level)){state.klass=m.class_level;state.classLocked=true;}else state.classLocked=false;}
+function classOptions(){return state.classLocked?[state.klass]:CLASSES;}
+function checkClassAccess(c){if(state.classLocked&&c!==state.klass){toast('Your account is set to '+state.klass);return false;}return true;}
 function authMessage(){return state.authMode==='signup'?'Create your account to save your learning progress.':'Welcome back. Sign in to continue learning.';}
 SCREENS.auth=()=>`<header class="pagehead"><button class="back" onclick="go('profile')">${I.back(22)}</button><div><h2>${state.authMode==='signup'?'Create account':'Sign in'}</h2><div class="sub">Smart PLE learner account</div></div></header><div class="auth-card"><div class="auth-mark">📚</div><h3>${state.authMode==='signup'?'Join Smart PLE':'Welcome back'}</h3><p class="muted" style="margin-top:7px">${authMessage()}</p>${state.authMode==='signup'?`<label class="auth-label">Your name<input id="authName" class="auth-input" type="text" autocomplete="name" placeholder="Enter your name"></label><label class="auth-label">Your class<select id="authClass" class="auth-input"><option value="P4">Primary 4</option><option value="P5">Primary 5</option><option value="P6" selected>Primary 6</option><option value="P7">Primary 7</option></select></label>`:''}${state.authError?`<div class="auth-error">${nEsc(state.authError)}</div>`:''}<label class="auth-label">Email<input id="authEmail" class="auth-input" type="email" autocomplete="email" placeholder="you@example.com"></label><label class="auth-label">Password<input id="authPassword" class="auth-input" type="password" autocomplete="${state.authMode==='signup'?'new-password':'current-password'}" placeholder="At least 6 characters"></label><button class="btn btn-primary" style="margin-top:14px" onclick="authSubmit()">${state.authMode==='signup'?'CREATE ACCOUNT':'SIGN IN'}</button><button class="auth-switch" onclick="state.authMode='${state.authMode==='signup'?'signin':'signup'}';state.authError='';render()">${state.authMode==='signup'?'Already have an account? Sign in':'Need an account? Create one'}</button></div>`;
 async function authSubmit(){state.authError='';const email=(document.getElementById('authEmail')||{}).value?.trim(),password=(document.getElementById('authPassword')||{}).value||'',fullName=(document.getElementById('authName')||{}).value?.trim()||'',classLevel=(document.getElementById('authClass')||{}).value||'P6';if(!email||!password||(state.authMode==='signup'&&!fullName)){state.authError=state.authMode==='signup'?'Enter your name, email and password.':'Enter your email and password.';render();return;}if(password.length<6){state.authError='Your password must be at least 6 characters.';render();return;}if(!supabaseClient){state.authError='Login service is not available. Check your internet connection and try again.';render();return;}const result=state.authMode==='signup'?await supabaseClient.auth.signUp({email,password,options:{data:{full_name:fullName,class_level:classLevel}}}):await supabaseClient.auth.signInWithPassword({email,password});if(result.error){const msg=String(result.error.message||'');state.authError=/rate limit|too many requests|email rate/i.test(msg)?'Supabase has temporarily limited email requests. Wait a while before trying again, or sign in if this account already exists.':msg;render();return;}state.authUser=result.data.user||null;if(state.authUser)applyUserProfile(state.authUser);toast(state.authMode==='signup'?'Account created!':'Signed in successfully!');state.stack=[];go('home',false);}
-async function authSignOut(){if(supabaseClient)await supabaseClient.auth.signOut();state.authUser=null;state.stack=[];state.screen='auth';toast('You have signed out');render();}
+async function authSignOut(){if(supabaseClient)await supabaseClient.auth.signOut();state.authUser=null;state.classLocked=false;state.stack=[];state.screen='auth';toast('You have signed out');render();}
 
 SCREENS.profile = () => `
   <header class="appbar">
@@ -2114,7 +2117,7 @@ SCREENS.notes = () => {
       <div class="sub">${cls} · ${meta.name} · read without internet</div></div>
   </header>
   <div class="chips">
-    ${CLASSES.map(c=>`<button class="chip ${c===cls?'on':''}" onclick="setNoteClass('${c}')">${c}</button>`).join('')}
+    ${classOptions().map(c=>`<button class="chip ${c===cls?'on':''}" onclick="setNoteClass('${c}')">${c}</button>`).join('')}
   </div>
   <div class="chips">
     ${NOTE_SUBJECTS.map(x=>`<button class="chip ${x.id===state.nsubject?'on':''}"
@@ -2234,7 +2237,7 @@ SCREENS.noteRead = () => {
   <button class="btn btn-soft" onclick="go('noteTopic')">${I.topics(18)} All parts of this topic</button>`;
 };
 
-function setNoteClass(c){ state.klass=c; state.ntopic=null; go('notes',false); }
+function setNoteClass(c){if(!checkClassAccess(c))return;state.klass=c;state.ntopic=null;go('notes',false);}
 function setNoteSubject(id){ state.nsubject=id; state.ntopic=null; go('notes',false); }
 function openNoteTopic(id){
   state.ntopic=id; state.nsec=0;
@@ -2270,7 +2273,7 @@ function practiseFromNotes(){
 /* ============================================================
    SST PRACTICE ENGINE — mcq / true-false / typed / matching
    ============================================================ */
-function setClass(c){ state.klass=c; state.stack=[]; go('practice',false); toast(`Class ${c} selected`); }
+function setClass(c){if(!checkClassAccess(c))return;state.klass=c;state.stack=[];go('practice',false);toast(`Class ${c} selected`);}
 function setPSubject(sid){ state.psubject=sid; state.ptopic=null; render();
   toast(SUBJ_META[sid].name+' selected'); }
 
@@ -2979,7 +2982,7 @@ function exReviewWrong(){
 }
 
 /* ---- navigation helpers ---- */
-function setExClass(c){ state.klass=c; state.exTid=null; go('exercises',false); }
+function setExClass(c){if(!checkClassAccess(c))return;state.klass=c;state.exTid=null;go('exercises',false);}
 function setExSubject(id){ state.exsubject=id; state.exTid=null; go('exercises',false); }
 function openExTopic(tid){ state.exTid=tid; go('exTopic'); }
 function exGoQ(i){ if(state.exRun){ state.exRun.i=i; render(); } }
@@ -3001,7 +3004,7 @@ SCREENS.exercises = () => {
     <div><h2>Written Exercises</h2>
       <div class="sub">${cls} · ${meta.name} · answers stay hidden until you submit</div></div>
   </header>
-  <div class="chips">${CLASSES.map(c=>`
+  <div class="chips">${classOptions().map(c=>`
     <button class="chip ${c.id===cls?'on':''}" onclick="setExClass('${c.id}')">${c.id}</button>`).join('')}</div>
   <div class="chips">${EX_SUBJECTS.map(s=>`
     <button class="chip ${s.id===subj?'on':''}" onclick="setExSubject('${s.id}')">${s.label}</button>`).join('')}</div>`;
@@ -3985,6 +3988,5 @@ render = function(){
 
 render();
 </script>
-<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f"}' crossorigin="anonymous"></script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a315b4ba1d812fcb',t:'MTc4Nzc3NzM5Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a31a49556f82a09e',t:'MTc4NzgyNTQyNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
