@@ -1263,14 +1263,18 @@ function mathMode(q){
   if(q.options&&q.options.length)return 'mcq';
   return null;
 }
+/* Mathematics is practice, not definitions: term-recall questions are
+   excluded from every math flow (they remain safely in the data bank). */
+function mathIsDef(q){return /^\s*(which|what)\s+(term|is the term|do we call|is meant)/i.test(String(q.question||''));}
 function mathPool(cls,topic){
-  let qs=(MATH_BANK[cls]&&MATH_BANK[cls].questions||[]).filter(q=>mathMode(q));
+  let qs=(MATH_BANK[cls]&&MATH_BANK[cls].questions||[]).filter(q=>mathMode(q)&&!mathIsDef(q));
   if(topic)qs=qs.filter(q=>q.topic===topic);
   return qs;
 }
 function mathTopicsOf(cls){
   const seen=[];
-  (MATH_BANK[cls]&&MATH_BANK[cls].questions||[]).forEach(q=>{if(!seen.includes(q.topic))seen.push(q.topic);});
+  (MATH_BANK[cls]&&MATH_BANK[cls].questions||[]).forEach(q=>{
+    if(!seen.includes(q.topic)&&!mathIsDef(q)&&mathMode(q))seen.push(q.topic);});
   return seen;
 }
 function mathNorm(s){return String(s==null?'':s).replace(/[,\s]/g,'').replace('−','-');}
@@ -1435,7 +1439,7 @@ SCREENS.mathHome = () => {
   <div class="mx-classes">${CLS.map(c=>`
     <button class="mx-class mx-${c[3]} ${cls===c[0]?'on':''}" ${allowed.includes(c[0])?'':'disabled style="opacity:.4"'} onclick="mathPickClass('${c[0]}')">
       <span class="mx-class-ic">${c[2]}</span><b>${c[1]}</b>
-      <span class="mx-class-sub">${(MATH_BANK[c[0]]&&MATH_BANK[c[0]].total)||0} questions</span>
+      <span class="mx-class-sub">${mathPool(c[0]).length} practice questions</span>
     </button>`).join('')}</div>
   <div class="mx-tabs" role="tablist">
     <button class="mx-tab ${state.mtab==='learn'?'on':''}" onclick="mathTab('learn')">📘 Learn</button>
@@ -1530,27 +1534,39 @@ SCREENS.mathPlay = () => {
    test yourself → exam tips → done. The note content itself
    is untouched: the very same sections, blocks and renderer.
    ============================================================ */
+/* Practice questions from the bank that MATCH this note's topic
+   (keyword overlap). No cross-topic filler: practice must be on-topic. */
+function mathLessonBank(t){
+  const words=String(t.title||'').toLowerCase().split(/[^a-z]+/).filter(w=>w.length>3);
+  const qs=mathPool(t.class).filter(q=>{
+    const tq=String(q.topic||'').toLowerCase();
+    return words.some(w=>tq.includes(w));
+  });
+  return shuffle(qs);
+}
 function mathLessonBuild(t){
   const secs=noteSections(t), steps=[];
   const core=[],tail={};
   secs.forEach(sec=>{
     const title=String(sec.title||'').trim();
-    if(/^\d/.test(title)||/^key definitions$/i.test(title))core.push(sec);
+    if(/^\d/.test(title))core.push(sec);          /* definitions section is NOT part of the lesson */
     else tail[String(title).toUpperCase()]=sec;
   });
   steps.push({type:'intro',list:core.map(s=>s.title)});
-  const pool=shuffle(noteChallengePool(t)).map(q=>({...q,options:shuffle(q.options.slice())}));let qi=0;
+  const bankQs=mathLessonBank(t);let bi=0;
+  const revQs=[];if(tail['REVISION QUESTIONS'])(tail['REVISION QUESTIONS'].blocks||[]).forEach(b=>{if(b.t==='ol'&&b.items)revQs.push(...b.items);});
+  const ans=[];if(tail['ANSWERS TO REVISION QUESTIONS'])(tail['ANSWERS TO REVISION QUESTIONS'].blocks||[]).forEach(b=>{if(b.t==='ol'&&b.items)ans.push(...b.items);});
+  let ri=0;
   core.forEach((sec,idx)=>{
     steps.push({type:'read',sec:sec,secIndex:secs.indexOf(sec)});
-    if((idx+1)%2===0&&qi<pool.length)steps.push({type:'check',q:pool[qi++]});
+    if((idx+1)%2===0){
+      /* checkpoint = a real problem: bank computation question if the topic
+         has one, otherwise the note's own revision question */
+      if(bi<bankQs.length)steps.push({type:'check',q:bankQs[bi++]});
+      else if(ri<revQs.length){ri++;steps.push({type:'recall',q:revQs[ri-1],a:ans[ri-1]||null,n:ri});}
+    }
   });
-  const rev=tail['REVISION QUESTIONS'];
-  if(rev){
-    const qs=[];(rev.blocks||[]).forEach(b=>{if(b.t==='ol'&&b.items)qs.push(...b.items);});
-    const ansSec=tail['ANSWERS TO REVISION QUESTIONS'];const ans=[];
-    if(ansSec)(ansSec.blocks||[]).forEach(b=>{if(b.t==='ol'&&b.items)ans.push(...b.items);});
-    qs.slice(0,6).forEach((q,i)=>steps.push({type:'recall',q:q,a:ans[i]||null,n:i+1}));
-  }
+  while(ri<revQs.length&&ri<6){ri++;steps.push({type:'recall',q:revQs[ri-1],a:ans[ri-1]||null,n:ri});}
   const tipBlocks=[];
   ['IMPORTANT FACTS TO REMEMBER','EXAMINATION POINTS','COMMON MISTAKES TO AVOID','P.7 QUICK REVISION'].forEach(k=>{
     if(tail[k])(tail[k].blocks||[]).forEach(b=>tipBlocks.push(b));
@@ -1562,7 +1578,7 @@ function mathLessonBuild(t){
 function mathLessonStart(id){
   const t=noteById(id);if(!t)return;
   state.ntopic=id;state.nsec=0;
-  state.mlesson={tid:id,steps:mathLessonBuild(t),i:0,checks:0,checkOk:0,recallGot:0,xp:0,fb:null};
+  state.mlesson={tid:id,steps:mathLessonBuild(t),i:0,checks:0,checkOk:0,recallGot:0,xp:0,fb:null,pad:''};
   recordLast({kind:'notes',klass:t.class,nsubject:'MATH',ntopic:id,nsec:0,
     label:t.title,sub:'Math lesson',meta:'Lesson player',pct:0});
   go('mathLesson');
@@ -1590,18 +1606,28 @@ function mathLessonCheck(idx){
   const L=state.mlesson;if(!L||L.fb)return;
   const st=L.steps[L.i];if(!st||st.type!=='check')return;
   const t=noteById(L.tid),q=st.q;
-  const ok=idx>=0&&idx<q.options.length&&q.options[idx]===q.answer;
+  let ok=false;
+  if(mathMode(q)==='numpad'){
+    const val=(q.answerValue!=null&&String(q.answerValue).trim()!=='')?q.answerValue:q.answers[0];
+    ok=mathNorm(L.pad)===mathNorm(val)||(isFinite(L.pad)&&isFinite(val)&&parseFloat(L.pad)===parseFloat(val));
+  }else{
+    ok=idx==='ABCD'.indexOf(q.correctAnswer);
+  }
   L.checks++;if(ok)L.checkOk++;
   if(ok){learnXP(t,10);L.xp+=10;mathChime(true);}
   else mathChime(false);
   L.fb={type:'check',ok:ok,done:false,step:0};
   render();
 }
-function mathLessonStepsForQ(q){
-  const s=[['Question',q.prompt]];
-  s.push(['Correct answer',q.answer]);
-  if(q.section)s.push(['From the notes',q.section]);
-  return s;
+function mathLessonSubmit(){mathLessonCheck(-1);}
+function mathLessonKey(k){
+  const L=state.mlesson;if(!L||L.fb)return;
+  if(k==='C')L.pad='';
+  else if(k==='⌫')L.pad=L.pad.slice(0,-1);
+  else if(k==='−')L.pad=L.pad.startsWith('-')?L.pad.slice(1):'-'+L.pad;
+  else if(k==='.'){if(!L.pad.includes('.'))L.pad=(L.pad||'0')+'.';}
+  else{if(L.pad.replace(/[-.]/g,'').length<9)L.pad+=k;}
+  render();
 }
 function mathLessonStepNext(){const L=state.mlesson;if(L&&L.fb){L.fb.step=(L.fb.step||0)+1;render();}}
 function mathLessonCheckDone(){const L=state.mlesson;if(L&&L.fb){L.fb.done=true;render();}}
@@ -1618,7 +1644,7 @@ function mathLessonFinish(){
   x.challenge=Math.max(x.challenge||0,L.checks?Math.round(100*L.checkOk/L.checks):0);
   learnSave(d);L.finished=true;render();
 }
-function mathLessonSpeak(){const L=state.mlesson;if(!L)return;const st=L.steps[L.i];if(st&&st.type==='read')mathSpeak(mathLessonText(st.sec));else if(st&&st.type==='check')mathSpeak(st.q.prompt);}
+function mathLessonSpeak(){const L=state.mlesson;if(!L)return;const st=L.steps[L.i];if(st&&st.type==='read')mathSpeak(mathLessonText(st.sec));else if(st&&st.type==='check')mathSpeak(st.q.question);}
 
 SCREENS.mathLesson = () => {
   const L=state.mlesson;if(!L)return SCREENS.notes;
@@ -1645,25 +1671,35 @@ SCREENS.mathLesson = () => {
       </div>`;
   }
   else if(st.type==='check'){
-    const fb=L.fb,steps=fb?mathLessonStepsForQ(st.q):[],shown=fb?steps.slice(0,fb.step):[];
+    const q=st.q,mode=mathMode(q),fb=L.fb;
+    const steps=mathStepsFor(q),shown=fb?steps.slice(0,fb.step):[];
     body=`<div class="mx-card">
         <button class="mx-speak" onclick="mathLessonSpeak()" aria-label="Read aloud">🔊</button>
         <div class="mx-topic">Quick practice 🧠</div>
-        <div class="mx-qtext" style="font-size:clamp(20px,5.5vw,30px)">${nEsc(st.q.prompt)}</div>
+        <div class="mx-qtext" style="font-size:clamp(20px,5.5vw,30px)">${nEsc(q.question)}</div>
       </div>
+      ${mode==='numpad'?`
+      <div class="mx-answer">${nEsc(L.pad)||'?'}</div>
+      <div class="mx-pad">
+        ${['1','2','3','4','5','6','7','8','9','.','0','−'].map(k=>`<button class="mx-key" onclick="mathLessonKey('${k}')">${k}</button>`).join('')}
+        <div class="mx-pad-actions">
+          <button class="mx-clear" onclick="mathLessonKey('⌫')">⌫ CLEAR</button>
+          <button class="mx-submit" onclick="mathLessonSubmit()">SUBMIT ✓</button>
+        </div>
+      </div>`:`
       <div class="mx-mcq" style="grid-template-columns:1fr">
-        ${st.q.options.map((o,idx)=>`<button class="mx-opt mx-opt${idx%4}" ${fb?'disabled':''} onclick="mathLessonCheck(${idx})">
-          <span class="mx-opt-let">${String.fromCharCode(65+idx)}</span><span>${nEsc(o)}</span></button>`).join('')}
-      </div>
+        ${(q.options||[]).map((o,idx)=>`<button class="mx-opt mx-opt${idx%4}" ${fb?'disabled':''} onclick="mathLessonCheck(${idx})">
+          <span class="mx-opt-let">${'ABCD'[idx]}</span><span>${nEsc(String(o).replace(/^[A-D]\.\s*/,''))}</span></button>`).join('')}
+      </div>`}
       ${fb?`
       <div class="mx-fb" role="dialog" aria-modal="true">
         ${fb.ok?mathConfetti():''}
         <div class="mx-fb-emoji">${fb.ok?'✅':'❌'}</div>
         <h2>${fb.ok?'Excellent!':'Not quite'}</h2>
         ${fb.ok?`<div class="mx-fb-pts">+10 points ⭐</div>`:`
-          <div class="mx-fb-correct">The correct answer is <b>${nEsc(st.q.answer)}</b></div>
+          <div class="mx-fb-correct">The correct answer is <b>${nEsc(mathCorrectText(q))}</b></div>
           ${shown.length?`<div class="mx-fb-steps">${shown.map(s=>`<div class="mx-fb-step"><b>${nEsc(s[0])}</b><span>${nEsc(s[1])}</span></div>`).join('')}</div>`:''}
-          ${fb.step<steps.length?`<button class="btn btn-ghost" onclick="mathLessonStepNext()">📖 ${fb.step===0?'SHOW WHY':'NEXT STEP'} (${fb.step}/${steps.length})</button>`:''}
+          ${fb.step<steps.length?`<button class="btn btn-ghost" onclick="mathLessonStepNext()">📖 ${fb.step===0?'SHOW WORKING STEPS':'NEXT STEP'} (${fb.step}/${steps.length})</button>`:''}
         `}
         <button class="btn btn-primary mx-fb-next" onclick="mathLessonCheckDone();mathLessonNext()">CONTINUE ➜</button>
       </div>`:''}`;
