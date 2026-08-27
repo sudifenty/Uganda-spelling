@@ -136,6 +136,7 @@ function nvPrefetch(i){
 
 let NV_AUDIO = null;
 function nvSpeak(text){
+  if(typeof afxMuted==='function'&&afxMuted())return;
   return new Promise((resolve, reject) => {
     nvWav(text).then(url => {
       if(!SP.on){ resolve(); return; }

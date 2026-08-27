@@ -254,6 +254,7 @@ function spStop(){
   spBar();
 }
 function devSpeakOne(text, opts){
+  if(typeof afxMuted==='function'&&afxMuted())return;
   const u = new SpeechSynthesisUtterance(text);
   const v = spBest(); if(v){ u.voice = v; u.lang = v.lang; } else { u.lang = 'en-GB'; }
   u.rate = spRate(); u.pitch = 1.04; u.volume = spVolume();
@@ -262,6 +263,7 @@ function devSpeakOne(text, opts){
   return u;
 }
 function devSpeak(text){
+  if(typeof afxMuted==='function'&&afxMuted())return;
   return new Promise((resolve, reject) => {
     const u = devSpeakOne(text);
     u.onend = () => resolve();
@@ -277,6 +279,7 @@ function spDeviceNotice(){
 }
 /* one call, whichever engine is in use */
 function spSpeak(text){
+  if(typeof afxMuted==='function'&&afxMuted())return;
   if(nvMode() === 'natural'){
     if(!NV.ready){ spDeviceNotice(); return devSpeak(text); }
     return nvSpeak(text).catch(err => {
@@ -290,6 +293,7 @@ function spSpeak(text){
 }
 /* say a single word out loud — used by "hear a word" and Repeat */
 function spWord(w){
+  if(typeof afxMuted==='function'&&afxMuted())return;
   spStopAudio();
   const say = spSay(w);
   if(nvMode() === 'natural'){
