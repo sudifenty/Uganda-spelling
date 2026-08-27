@@ -30,13 +30,16 @@ def load_papers():
     return {"sst": years}, meta
 
 
-def load_practice(prefix):
+def load_practice(prefix, keep_calc=False):
     bank = {}
     for f in sorted(glob.glob(f"data/practice/{prefix}-p*.json")):
         d = json.load(open(f, encoding="utf-8"))
         qs = []
         for q in d["questions"]:
-            qs.append({k: v for k, v in q.items() if k not in BUILD_ONLY})
+            # Maths keeps calc + answerValue: the Maths Adventure UI shows
+            # step-by-step working and the number pad from them.
+            drop = () if (keep_calc and prefix == "math") else BUILD_ONLY
+            qs.append({k: v for k, v in q.items() if k not in drop})
         bank[d["class"]] = {"class": d["class"], "topics": d["topics"],
                             "total": d["total"], "questions": qs}
     return bank
@@ -111,7 +114,7 @@ def main():
 
     papers, meta = load_papers()
     practice = load_practice("sst")
-    maths = load_practice("math")
+    maths = load_practice("math", keep_calc=True)
     sci = load_practice("sci")
     notes = load_notes()
     exercises = load_exercises()
