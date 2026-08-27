@@ -84,6 +84,7 @@ HOOK = """
 const _renderBase = render;
 render = function(){
   _renderBase();
+  wireCompanion();
   if(state.screen === 'noteRead'){
     if(typeof spPrepare === 'function') spPrepare();
   }else if(typeof spStop === 'function' && (SP.on || SP.paused)){

@@ -1,8 +1,9 @@
 /* ============================================================
    READ ALOUD — offline voice reading for the Notes section.
 
-   The voice comes from the device's own speech engine through the
-   browser's speechSynthesis API. Once the device has an English voice
+   The controlled narrator uses the downloaded Piper voice model. The browser only
+   plays the resulting audio; it does not choose the narrator. The device voice is
+   available only as an explicitly labelled fallback test option. Once the model
    installed, this works with no internet at all: no audio is fetched
    and no text is ever sent anywhere.
 
@@ -231,7 +232,7 @@ function spInit(){
 }
 
 /* class-appropriate reading speed — P.4 slower, P.7 confident */
-const SP_RATE_FOR = {P4:0.82, P5:0.90, P6:0.97, P7:1.03};
+const SP_RATE_FOR = {P4:0.78, P5:0.82, P6:0.86, P7:0.90}; // calm teacher pace
 function spRate(){
   const saved = parseFloat(localStorage.getItem('ple_rate'));
   const mult = Number.isFinite(saved) ? saved : 1;
@@ -269,22 +270,29 @@ function devSpeak(text){
 }
 /* one call, whichever engine is in use */
 function spSpeak(text){
-  if(nvMode() === 'natural' && NV.ready){
+  if(nvMode() === 'natural'){
+    if(!NV.ready){
+      NV.error = 'The standard narrator is not installed on this device. Open Voice settings and download it once over wi-fi.';
+      spBar();
+      return Promise.reject(new Error(NV.error));
+    }
     return nvSpeak(text).catch(err => {
-      /* never leave the learner in silence — drop back to the phone voice */
-      NV.error = 'The natural voice stopped working, so the phone voice is being used.';
-      localStorage.setItem('ple_engine', 'device');
-      return devSpeak(text);
+      NV.error = 'The standard narrator could not play this part. Please try again or check the downloaded voice.';
+      spBar();
+      return Promise.reject(err);
     });
   }
+  /* Explicit device mode remains available only as a clearly labelled test option. */
   return devSpeak(text);
 }
 /* say a single word out loud — used by "hear a word" and Repeat */
 function spWord(w){
   spStopAudio();
   const say = spSay(w);
-  if(nvMode() === 'natural' && NV.ready){ nvSpeak(say).catch(()=>devSpeak(say)); }
-  else devSpeakOne(say, {rate: Math.max(0.6, spRate() - 0.15)});
+  if(nvMode() === 'natural'){
+    if(NV.ready) nvSpeak(say).catch(()=>{ NV.error='The standard narrator could not play this word.'; spBar(); });
+    else { NV.error='Download the standard narrator before listening.'; spBar(); }
+  } else devSpeakOne(say, {rate: Math.max(0.6, spRate() - 0.15)});
 }
 function spStopAudio(){
   if('speechSynthesis' in window) speechSynthesis.cancel();
@@ -458,8 +466,8 @@ function spBar(){
   if(el) el.outerHTML = spBarHTML();
 }
 function spBarHTML(){
-  if(!('speechSynthesis' in window))
-    return `<span id="spBar" class="sp-in"></span>`;
+  if(!('speechSynthesis' in window) && !(nvMode()==='natural' && NV.ready))
+    return `<span id="spBar" class="sp-in"><button class="sp-i" onclick="spSheet()" aria-label="Voice settings">⚙</button></span>`;
   if(!SP_READY)
     return `<span id="spBar" class="sp-in">
       <button class="sp-i" onclick="spSheet()" aria-label="Voice settings">\u2699</button></span>`;
@@ -499,6 +507,9 @@ function spTry(uri){
 }
 function spUse(uri){ spSetVoice(uri); spSheet(); toast('Voice changed'); }
 
+const AUDIO_TEST_URL='audio/test-voice.mp3';
+function audioDiagnostic(){openSheet(`<h3>🔊 Audio Test</h3><p class="muted" style="margin:8px 0">This test uses one real generated MP3 from the standard narrator.</p><audio id="audioTest" controls preload="metadata" style="width:100%;margin:12px 0" src="${AUDIO_TEST_URL}"></audio><div id="audioStatus" class="hint-strip">Ready to test. Tap Play.</div><button class="btn btn-primary" style="margin-top:12px" onclick="runAudioTest()">▶ PLAY TEST VOICE</button><button class="btn btn-ghost" style="margin-top:10px" onclick="closeSheet()">CLOSE</button>`);}
+function runAudioTest(){const a=document.getElementById('audioTest'),s=document.getElementById('audioStatus');if(!a||!s)return;a.playbackRate=1.0;s.innerHTML='🔄 Loading audio…';a.onloadedmetadata=()=>{s.innerHTML=`🟢 Audio ready · ${Math.round(a.duration)} seconds · playback 1×`;};a.onerror=()=>{s.innerHTML='🔴 Audio file could not be loaded or decoded.';};const p=a.play();if(p&&p.then)p.then(()=>{s.innerHTML=`🟢 Audio is playing · ${Math.round(a.duration||0)} seconds · playback 1×`;}).catch(()=>{s.innerHTML='🟡 Playback was blocked. Tap Play again.';});}
 function spSheet(){
   const rate = parseFloat(localStorage.getItem('ple_rate')) || 1;
   const cur = spBest();
@@ -528,9 +539,7 @@ function spSheet(){
           <div class="nv-pct">Downloading <span id="nvPct">${NV.progress}%</span> \u2014 keep this page open</div>`
         : NV.ready ? `
           <div class="nv-row">
-            <button class="btn ${nat?'btn-soft':'btn-primary'}"
-              onclick="nvSetMode('${nat?'device':'natural'}');spSheet()">
-              ${nat ? 'Switch back to the phone voice' : 'Use the natural voice'}</button>
+            <span class="nv-tag">Standard narrator active</span>
             <button class="nv-del" onclick="nvRemove()">Remove</button>
           </div>`
         : `<button class="btn btn-primary" onclick="nvDownload()">
@@ -546,10 +555,12 @@ function spSheet(){
   openSheet(`
     <h3 style="margin-bottom:3px">Voice</h3>
     <p class="muted" style="font-size:12.5px;margin-bottom:13px">
-      ${nat ? 'The natural voice is being used.'
-            : 'The phone voice is being used. For a human-sounding voice, install the natural voice below.'}</p>
+      ${nat ? 'The same standard narrator is used on every device.'
+            : 'Download the standard narrator once. The app will not silently switch to a device voice.'}</p>
 
     ${natural}
+
+    <button class="btn btn-soft" style="margin-top:12px" onclick="audioDiagnostic()">🔊 Test standard narrator audio</button>
 
     <div class="sp-srow" style="margin-top:16px"><span class="sp-lab">Speed</span>
       ${[0.75,1,1.25,1.5].map(r=>`<button class="sp-chip ${rate===r?'on':''}"
@@ -595,3 +606,4 @@ function spSetVoice(uri){ localStorage.setItem('ple_voice', uri);
   if(SP.on){ const i=SP.i; spStopAudio(); SP.i=i; spNext(); } spBar(); }
 
 spInit();
+authInit();

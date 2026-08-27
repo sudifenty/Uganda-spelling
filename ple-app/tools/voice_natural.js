@@ -13,10 +13,8 @@
                 by the browser. After that it needs no internet and
                 no server: the text never leaves the phone.
 
-   If anything at all goes wrong — no WebAssembly, too little
-   memory, a failed download, an offline first run — it falls back
-   to the device voice and says so plainly. The notes are never
-   blocked.
+   If the controlled narrator is not installed or cannot play, the app reports that clearly
+   instead of silently switching to a different device voice.
    ============================================================ */
 
 const NV_CDN = 'https://cdn.jsdelivr.net/npm/@mintplex-labs/piper-tts-web@1.0.4/+esm';
@@ -25,14 +23,7 @@ const NV_CDN = 'https://cdn.jsdelivr.net/npm/@mintplex-labs/piper-tts-web@1.0.4/
 /* Sizes checked against the catalogue the library itself downloads from
    (huggingface.co/diffusionstudio/piper-voices/voices.json) on 17 Aug 2026.
    They are all about the same size — there is no small option. */
-const NV_VOICES = [
-  {id:'en_GB-jenny_dioco-medium', name:'Jenny \u00b7 British',  mb:60,
-   note:'Warm and clear. Best for reading lessons aloud.'},
-  {id:'en_US-hfc_female-medium',  name:'Clara \u00b7 American', mb:60,
-   note:'Very clear pronunciation.'},
-  {id:'en_GB-alba-medium',        name:'Alba \u00b7 Scottish',  mb:60,
-   note:'Gentle and unhurried.'},
-];
+const NV_VOICES = [{id:'en_GB-jenny_dioco-medium', name:'Jenny · Standard narrator', mb:60, note:'Warm, clear and consistent across supported devices.'}];
 const NV_DEFAULT = 'en_GB-jenny_dioco-medium';
 
 const NV = {
@@ -49,7 +40,8 @@ const nvChosen = () => NV_VOICES.find(v => v.id === NV.voiceId) || NV_VOICES[0];
 
 /* which engine is in use */
 function nvMode(){
-  return localStorage.getItem('ple_engine') === 'natural' ? 'natural' : 'device';
+  /* One controlled narrator is the production default. Device TTS is never silently selected. */
+  return localStorage.getItem('ple_engine') === 'device' ? 'device' : 'natural';
 }
 function nvSetMode(m){
   localStorage.setItem('ple_engine', m);
@@ -61,8 +53,7 @@ function nvSetMode(m){
 /* ---------- can this device run it at all? ---------- */
 function nvCapable(){
   if(typeof WebAssembly === 'undefined') return 'This browser has no WebAssembly.';
-  const mem = navigator.deviceMemory;
-  if(mem && mem < 2) return 'This phone has under 2 GB of memory, so the natural voice would be too slow. The phone voice is used instead.';
+  /* Low-memory devices may take longer, but must not silently change narrator. */
   return '';
 }
 

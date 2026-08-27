@@ -225,7 +225,7 @@ function exReviewWrong(){
 }
 
 /* ---- navigation helpers ---- */
-function setExClass(c){ state.klass=c; state.exTid=null; go('exercises',false); }
+function setExClass(c){if(!checkClassAccess(c))return;state.klass=c;state.exTid=null;go('exercises',false);}
 function setExSubject(id){ state.exsubject=id; state.exTid=null; go('exercises',false); }
 function openExTopic(tid){ state.exTid=tid; go('exTopic'); }
 function exGoQ(i){ if(state.exRun){ state.exRun.i=i; render(); } }
@@ -247,7 +247,7 @@ SCREENS.exercises = () => {
     <div><h2>Written Exercises</h2>
       <div class="sub">${cls} · ${meta.name} · answers stay hidden until you submit</div></div>
   </header>
-  <div class="chips">${CLASSES.map(c=>`
+  <div class="chips">${classOptions().map(c=>`
     <button class="chip ${c.id===cls?'on':''}" onclick="setExClass('${c.id}')">${c.id}</button>`).join('')}</div>
   <div class="chips">${EX_SUBJECTS.map(s=>`
     <button class="chip ${s.id===subj?'on':''}" onclick="setExSubject('${s.id}')">${s.label}</button>`).join('')}</div>`;
