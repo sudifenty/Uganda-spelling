@@ -268,14 +268,17 @@ function devSpeak(text){
     u.onerror = () => reject(new Error('device voice failed'));
   });
 }
+/* First run before the 60 MB narrator download: speak with the phone voice
+   and SAY SO once. A learner on a slow network is never left in silence. */
+let SP_FALLBACK_NOTED=false;
+function spDeviceNotice(){
+  if(SP_FALLBACK_NOTED)return;SP_FALLBACK_NOTED=true;
+  toast('Using the phone voice for now \u2014 download the natural voice in Voice settings when you have wi-fi.');
+}
 /* one call, whichever engine is in use */
 function spSpeak(text){
   if(nvMode() === 'natural'){
-    if(!NV.ready){
-      NV.error = 'The standard narrator is not installed on this device. Open Voice settings and download it once over wi-fi.';
-      spBar();
-      return Promise.reject(new Error(NV.error));
-    }
+    if(!NV.ready){ spDeviceNotice(); return devSpeak(text); }
     return nvSpeak(text).catch(err => {
       NV.error = 'The standard narrator could not play this part. Please try again or check the downloaded voice.';
       spBar();
@@ -291,7 +294,7 @@ function spWord(w){
   const say = spSay(w);
   if(nvMode() === 'natural'){
     if(NV.ready) nvSpeak(say).catch(()=>{ NV.error='The standard narrator could not play this word.'; spBar(); });
-    else { NV.error='Download the standard narrator before listening.'; spBar(); }
+    else { spDeviceNotice(); devSpeakOne(say, {rate: Math.max(0.6, spRate() - 0.15)}); }
   } else devSpeakOne(say, {rate: Math.max(0.6, spRate() - 0.15)});
 }
 function spStopAudio(){
