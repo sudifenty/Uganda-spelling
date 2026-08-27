@@ -227,7 +227,7 @@ function exReviewWrong(){
 /* ---- navigation helpers ---- */
 function setExClass(c){if(!checkClassAccess(c))return;state.klass=c;state.exTid=null;go('exercises',false);}
 function setExSubject(id){ state.exsubject=id; state.exTid=null; go('exercises',false); }
-function openExTopic(tid){ state.exTid=tid; go('exTopic'); }
+function openExTopic(tid){ state.exTid=tid; const eb=EXERCISE_BANK[state.klass]&&EXERCISE_BANK[state.klass][state.exsubject]; const T=eb&&eb.topics&&eb.topics.find(t=>t.topic_id===tid); const p=EXDB.prog[tid]; recordLast({kind:'exercises',klass:state.klass,exsubject:state.exsubject,tid:tid,label:T?T.title:'Exercises',sub:'Written exercises',meta:T&&T.sets?T.sets.length+' sets':'',pct:p&&p.attempted?Math.round(100*p.correct/Math.max(1,p.attempted)):null}); go('exTopic'); }
 function exGoQ(i){ if(state.exRun){ state.exRun.i=i; render(); } }
 function exMove(d){
   const r=state.exRun; if(!r) return;
