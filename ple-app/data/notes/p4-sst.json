@@ -3,7 +3,7 @@
  "subject": "SST",
  "subject_name": "Social Studies",
  "total": 6,
- "words": 11457,
+ "words": 10415,
  "topics": [
   {
    "id": "P4_SST_T01",
@@ -15,18 +15,18 @@
    "slug": "location-of-our-district-in-uganda",
    "periods": 16,
    "curriculum_pages": "17–20",
-   "words": 1846,
+   "words": 1326,
    "sections": [
     {
      "title": "About this topic",
      "blocks": [
       {
        "t": "p",
-       "x": "*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term I, Topic 1, 16 periods (`curriculum/P4-SOCIAL-STUDIES-2010.pdf`, pages 17–20).*"
+       "x": "*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term I, Topic 1 (16 periods, pages 17–20).*"
       },
       {
        "t": "p",
-       "x": "**How to use this topic.** The syllabus is about **your own district** — and every learner is in a different district. So these notes teach you **what to look for and how to find it**, and you fill in the answers for your own district. Where you see a blank like *(your district)*, write in your own answer."
+       "x": "**How to use this topic.** The syllabus is about **your own district** — every learner is in a different district. Where you see a blank like *(your district)*, write in your own answer."
       },
       {
        "t": "p",
@@ -46,19 +46,11 @@
      ]
     },
     {
-     "title": "1. WHAT A DISTRICT IS",
+     "title": "1. What is a district?",
      "blocks": [
       {
        "t": "p",
-       "x": "In P.3 you learnt about your **sub-county**. A district is bigger."
-      },
-      {
-       "t": "p",
-       "x": "Uganda is divided into **districts** so that government can bring services nearer to the people. Your district is then divided into smaller parts:"
-      },
-      {
-       "t": "pre",
-       "x": "UGANDA\n  └── DISTRICT\n        └── COUNTY  (or MUNICIPALITY in a town)\n              └── SUB-COUNTY  (or DIVISION in a town)\n                    └── PARISH  (or WARD)\n                          └── VILLAGE  (or CELL)"
+       "x": "A district is a **large part of Uganda with its own local government**. Uganda is divided into **districts** so that government can bring services nearer to the people."
       },
       {
        "t": "note",
@@ -71,31 +63,83 @@
      ]
     },
     {
-     "title": "2. THE COMPASS POINTS",
+     "title": "2. Name the parts of a district, from the biggest to the smallest.",
+     "blocks": [
+      {
+       "t": "pre",
+       "x": "UGANDA\n  └── DISTRICT\n        └── COUNTY  (or MUNICIPALITY in a town)\n              └── SUB-COUNTY  (or DIVISION in a town)\n                    └── PARISH  (or WARD)\n                          └── VILLAGE  (or CELL)"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Part",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**County**",
+         "A large part of a district in the countryside"
+        ],
+        [
+         "**Municipality**",
+         "A large town with its own council"
+        ],
+        [
+         "**Sub-county**",
+         "A part of a county"
+        ],
+        [
+         "**Division**",
+         "A part of a municipality or city"
+        ],
+        [
+         "**Parish**",
+         "A part of a sub-county"
+        ],
+        [
+         "**Village**",
+         "The smallest administrative unit"
+        ]
+       ]
+      },
+      {
+       "t": "note",
+       "x": "You are **not** asked to learn every sub-county by heart. The syllabus says you should know **the ones near you** and be able to find the rest by asking or by reading a map."
+      }
+     ]
+    },
+    {
+     "title": "3. What is a compass?",
      "blocks": [
       {
        "t": "p",
-       "x": "A **compass** shows direction. You revise this from P.3."
-      },
+       "x": "A compass is an **instrument that shows direction**."
+      }
+     ]
+    },
+    {
+     "title": "4. Name the four cardinal points.",
+     "blocks": [
       {
-       "t": "h3",
-       "x": "The four cardinal points"
+       "t": "p",
+       "x": "The four cardinal points are **North, East, South and West**."
       },
       {
        "t": "pre",
        "x": "                 NORTH\n                   |\n                   |\n    WEST ----------+---------- EAST\n                   |\n                   |\n                 SOUTH"
       },
       {
-       "t": "p",
+       "t": "note",
        "x": "**A way to remember them, going clockwise from the top:** **N**ever · **E**at · **S**our · **W**atermelon → **N, E, S, W**."
-      },
-      {
-       "t": "h3",
-       "x": "The four semi-cardinal points"
-      },
+      }
+     ]
+    },
+    {
+     "title": "5. Name the four semi-cardinal points.",
+     "blocks": [
       {
        "t": "p",
-       "x": "These lie **between** the cardinal points."
+       "x": "The semi-cardinal points lie **between** the cardinal points."
       },
       {
        "t": "pre",
@@ -125,11 +169,12 @@
          "North West"
         ]
        ]
-      },
-      {
-       "t": "h3",
-       "x": "Finding direction without a compass"
-      },
+      }
+     ]
+    },
+    {
+     "title": "6. How can you find direction without a compass?",
+     "blocks": [
       {
        "t": "table",
        "head": [
@@ -154,12 +199,8 @@
      ]
     },
     {
-     "title": "3. FINDING YOUR DISTRICT ON THE MAP OF UGANDA",
+     "title": "7. How do you find your district on the map of Uganda?",
      "blocks": [
-      {
-       "t": "p",
-       "x": "**Steps to follow**"
-      },
       {
        "t": "ol",
        "items": [
@@ -207,49 +248,7 @@
      ]
     },
     {
-     "title": "4. THE PARTS OF YOUR DISTRICT",
-     "blocks": [
-      {
-       "t": "table",
-       "head": [
-        "Word",
-        "Meaning"
-       ],
-       "rows": [
-        [
-         "**County**",
-         "A large part of a district in the countryside"
-        ],
-        [
-         "**Municipality**",
-         "A large town with its own council"
-        ],
-        [
-         "**Sub-county**",
-         "A part of a county"
-        ],
-        [
-         "**Division**",
-         "A part of a municipality or city"
-        ],
-        [
-         "**Parish**",
-         "A part of a sub-county"
-        ],
-        [
-         "**Village**",
-         "The smallest part"
-        ]
-       ]
-      },
-      {
-       "t": "p",
-       "x": "You are **not** asked to learn every sub-county by heart. The syllabus says you should know **the ones near you** and be able to find the rest by asking or by reading a map."
-      }
-     ]
-    },
-    {
-     "title": "5. THE SIZE OF YOUR DISTRICT",
+     "title": "8. How is the size of a district measured?",
      "blocks": [
       {
        "t": "p",
@@ -257,7 +256,7 @@
       },
       {
        "t": "p",
-       "x": "**How to compare sizes on a map**"
+       "x": "To compare sizes on a map:"
       },
       {
        "t": "ol",
@@ -297,12 +296,8 @@
      ]
     },
     {
-     "title": "6. IMPORTANT PLACES IN YOUR DISTRICT",
+     "title": "9. Name the kinds of important places found in a district.",
      "blocks": [
-      {
-       "t": "p",
-       "x": "Every district has places that matter to the people. Look for these in yours:"
-      },
       {
        "t": "table",
        "head": [
@@ -347,12 +342,17 @@
      ]
     },
     {
-     "title": "7. DRAWING A MAP OF YOUR DISTRICT",
+     "title": "10. What is a map?",
      "blocks": [
       {
        "t": "p",
-       "x": "A good map has these five things:"
-      },
+       "x": "A map is a **drawing of a place as seen from above**."
+      }
+     ]
+    },
+    {
+     "title": "11. What must every good map have?",
+     "blocks": [
       {
        "t": "table",
        "head": [
@@ -383,108 +383,12 @@
        ]
       },
       {
-       "t": "p",
+       "t": "note",
+       "x": "The **key** is the part of a map that explains the symbols. The **scale** is what a distance on the map stands for on the ground."
+      },
+      {
+       "t": "note",
        "x": "**A way to remember: T · K · C · S · F** — Title, Key, Compass, Scale, Frame."
-      }
-     ]
-    },
-    {
-     "title": "KEY DEFINITIONS",
-     "blocks": [
-      {
-       "t": "table",
-       "head": [
-        "Term",
-        "Meaning"
-       ],
-       "rows": [
-        [
-         "District",
-         "A large part of Uganda with its own local government"
-        ],
-        [
-         "County",
-         "A large part of a district"
-        ],
-        [
-         "Municipality",
-         "A large town with its own council"
-        ],
-        [
-         "Sub-county",
-         "A part of a county"
-        ],
-        [
-         "Parish",
-         "A part of a sub-county"
-        ],
-        [
-         "Village",
-         "The smallest administrative unit"
-        ],
-        [
-         "Compass",
-         "An instrument that shows direction"
-        ],
-        [
-         "Cardinal points",
-         "North, East, South and West"
-        ],
-        [
-         "Semi-cardinal points",
-         "North East, South East, South West, North West"
-        ],
-        [
-         "Map",
-         "A drawing of a place as seen from above"
-        ],
-        [
-         "Key",
-         "The part of a map that explains the symbols"
-        ],
-        [
-         "Scale",
-         "What a distance on the map stands for on the ground"
-        ],
-        [
-         "Border",
-         "The line where two districts meet"
-        ]
-       ]
-      }
-     ]
-    },
-    {
-     "title": "IMPORTANT FACTS TO REMEMBER",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "The four **cardinal points** are **North, East, South and West**.",
-        "The four **semi-cardinal points** are **NE, SE, SW and NW**.",
-        "The sun rises in the **East** and sets in the **West**.",
-        "Uganda is divided into **districts**; a district has counties or municipalities, then sub-counties or divisions, then parishes, then villages.",
-        "Every map needs a **title, key, compass, scale and frame**.",
-        "Size of land is measured in **square kilometres**.",
-        "The number of districts in Uganda **keeps changing** — ask your teacher for this year's number."
-       ]
-      }
-     ]
-    },
-    {
-     "title": "EXAMINATION POINTS",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "Name the four cardinal points of a compass.",
-        "Give the short form of North East — **NE**.",
-        "In which direction does the sun rise? **East.**",
-        "Name the smallest administrative unit in a district — the **village**.",
-        "Name any two things found on a good map.",
-        "Name your own district and any two districts that border it.",
-        "Which is bigger, your district or the one next to it?"
-       ]
       }
      ]
     },
@@ -565,43 +469,6 @@
        "start": 1
       }
      ]
-    },
-    {
-     "title": "P.4 QUICK REVISION",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "**N · E · S · W** — *Never Eat Sour Watermelon*",
-        "Between them: **NE · SE · SW · NW**",
-        "Sun rises **East**, sets **West**",
-        "District → county/municipality → sub-county/division → parish → village",
-        "Map needs **T K C S F** — Title, Key, Compass, Scale, Frame",
-        "Know **your** district, **your** neighbours, **your** important places"
-       ]
-      }
-     ]
-    },
-    {
-     "title": "A note on sources",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "The topic title, the period allocation (16 periods), the content list (revision of the cardinal and semi-cardinal compass points; location of our district, sub-counties, counties and municipality; size of our district), the competences and the suggested activities were taken from the official **NCDC Primary Four Social Studies Syllabus** (© NCDC 2010, ISBN 978-9970-117-49-9; pages 17–20 of the PDF in `curriculum/`), downloaded from **ncdc.go.ug**. The syllabus's own warning that counties are not part of the administrative structure of every district is repeated above. The explanations, tables, diagrams, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
-      },
-      {
-       "t": "p",
-       "x": "**This topic is about the learner's own district, and no district is named in the syllabus.** No facts about any particular district have been invented here. Where an answer depends on the learner's district, the notes say so and leave the answer to the learner."
-      },
-      {
-       "t": "p",
-       "x": "The remark that Uganda now has over 130 districts is **newer than the syllabus**. Published sources give **different totals** because new districts keep being created, so no single figure is stated as fact; the learner is told to ask the teacher for the current number."
-      },
-      {
-       "t": "p",
-       "x": "No NCDC **Teacher's Guide** for P.4 was available, so the syllabus's own guidance was used directly instead."
-      }
-     ]
     }
    ]
   },
@@ -615,14 +482,14 @@
    "slug": "physical-features-in-our-district",
    "periods": 20,
    "curriculum_pages": "20–23",
-   "words": 1911,
+   "words": 1389,
    "sections": [
     {
      "title": "About this topic",
      "blocks": [
       {
        "t": "p",
-       "x": "*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term I, Topic 2, 20 periods (`curriculum/P4-SOCIAL-STUDIES-2010.pdf`, pages 20–23).*"
+       "x": "*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term I, Topic 2 (20 periods, pages 20–23).*"
       },
       {
        "t": "p",
@@ -645,7 +512,7 @@
      ]
     },
     {
-     "title": "1. WHAT PHYSICAL FEATURES ARE",
+     "title": "1. What are physical features?",
      "blocks": [
       {
        "t": "p",
@@ -679,7 +546,7 @@
      ]
     },
     {
-     "title": "2. THE PHYSICAL FEATURES IN THE SYLLABUS",
+     "title": "2. Name the physical features in the syllabus and what each one is.",
      "blocks": [
       {
        "t": "table",
@@ -727,8 +594,8 @@
        "x": "**Others you may see in your district:** swamps, forests, islands, waterfalls, rocks and springs."
       },
       {
-       "t": "h3",
-       "x": "Fill this in for your own district"
+       "t": "p",
+       "x": "**Fill this in for your own district**"
       },
       {
        "t": "table",
@@ -773,11 +640,20 @@
      ]
     },
     {
-     "title": "3. USES OF PHYSICAL FEATURES",
+     "title": "3. What is a swamp?",
      "blocks": [
       {
        "t": "p",
-       "x": "The syllabus says learners should see that physical features are **natural resources which people use to earn a living**."
+       "x": "A swamp is **wet land covered with water and water plants**."
+      }
+     ]
+    },
+    {
+     "title": "4. What are physical features used for?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Physical features are **natural resources which people use to earn a living**."
       },
       {
        "t": "table",
@@ -819,7 +695,7 @@
      ]
     },
     {
-     "title": "4. DANGERS OF PHYSICAL FEATURES",
+     "title": "5. What dangers come from physical features?",
      "blocks": [
       {
        "t": "p",
@@ -853,11 +729,12 @@
          "Dangerous animals and snakes · people get lost · bush fires"
         ]
        ]
-      },
-      {
-       "t": "p",
-       "x": "**Keeping safe**"
-      },
+      }
+     ]
+    },
+    {
+     "title": "6. How can we keep safe near physical features?",
+     "blocks": [
       {
        "t": "ul",
        "items": [
@@ -871,7 +748,7 @@
      ]
     },
     {
-     "title": "5. CARING FOR PHYSICAL FEATURES",
+     "title": "7. How do we care for physical features?",
      "blocks": [
       {
        "t": "table",
@@ -905,11 +782,12 @@
          "Practise **crop rotation** and mulching · avoid over-grazing"
         ]
        ]
-      },
-      {
-       "t": "p",
-       "x": "**Words to know**"
-      },
+      }
+     ]
+    },
+    {
+     "title": "8. Words to know",
+     "blocks": [
       {
        "t": "table",
        "head": [
@@ -946,7 +824,7 @@
      ]
     },
     {
-     "title": "6. HOW PHYSICAL FEATURES AFFECT PEOPLE",
+     "title": "9. How do physical features affect people?",
      "blocks": [
       {
        "t": "ul",
@@ -956,102 +834,6 @@
         "Physical features decide the **work** people do — fishing at a lake, farming on a plain, quarrying on a hill.",
         "Mountains **help rain to form**, so their slopes are usually green and good for crops.",
         "Rivers and lakes can be **boundaries** between districts."
-       ]
-      }
-     ]
-    },
-    {
-     "title": "KEY DEFINITIONS",
-     "blocks": [
-      {
-       "t": "table",
-       "head": [
-        "Term",
-        "Meaning"
-       ],
-       "rows": [
-        [
-         "Physical feature",
-         "A natural thing on the earth's surface"
-        ],
-        [
-         "River",
-         "Water flowing in a channel"
-        ],
-        [
-         "Lake",
-         "A large body of water surrounded by land"
-        ],
-        [
-         "Dam",
-         "A wall built across a river to hold back water"
-        ],
-        [
-         "Hill",
-         "Raised land, lower than a mountain"
-        ],
-        [
-         "Mountain",
-         "Very high raised land"
-        ],
-        [
-         "Valley",
-         "Low land between hills"
-        ],
-        [
-         "Rift valley",
-         "A long, deep, wide valley formed when land sank"
-        ],
-        [
-         "Plain",
-         "Flat or gently sloping land"
-        ],
-        [
-         "Swamp",
-         "Wet land covered with water and water plants"
-        ],
-        [
-         "Soil erosion",
-         "The carrying away of soil by water or wind"
-        ],
-        [
-         "Conservation",
-         "Protecting something so that it lasts"
-        ]
-       ]
-      }
-     ]
-    },
-    {
-     "title": "IMPORTANT FACTS TO REMEMBER",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "Physical features are **natural**; a dam, a road and a bridge are **made by people**.",
-        "Rivers and lakes give **water, fish and transport**, but they cause **drowning and floods**.",
-        "Mountains and hills cause **landslides** and **soil erosion** when trees are cut.",
-        "Swamps breed **mosquitoes**, which spread **malaria**.",
-        "**Terracing** and **tree planting** protect hill slopes.",
-        "**Afforestation** = planting new trees. **Deforestation** = cutting trees without replacing them.",
-        "People settle most where the land is **flat and there is water**."
-       ]
-      }
-     ]
-    },
-    {
-     "title": "EXAMINATION POINTS",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "What is a physical feature? A natural thing on the earth's surface.",
-        "Give one use of a swamp — papyrus for mats (or clay, or growing rice).",
-        "Give one danger of a river — drowning (or floods, or bilharzia).",
-        "Name the disease spread by mosquitoes from a swamp — **malaria**.",
-        "Give one way of caring for a hill — plant trees, or dig terraces.",
-        "Which physical feature is made by people? A **dam**.",
-        "Name a physical feature found in your own district."
        ]
       }
      ]
@@ -1131,43 +913,6 @@
         "*(Your own answer.)*"
        ],
        "start": 1
-      }
-     ]
-    },
-    {
-     "title": "P.4 QUICK REVISION",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "Physical feature = **natural**, not made by people",
-        "River · lake · dam · hill · mountain · valley · rift valley · plain",
-        "Uses: water · fish · transport · farming · timber · stones · tourism",
-        "Dangers: **drowning · floods · landslides · malaria**",
-        "Care: plant trees · terrace slopes · keep rubbish out of water",
-        "**Afforestation** plant new · **reafforestation** plant again · **deforestation** cut and don't replace"
-       ]
-      }
-     ]
-    },
-    {
-     "title": "A note on sources",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "The topic title, the period allocation (20 periods), the content list (location of physical features in our district — rivers, lakes and dams, hills, mountains, valleys, rift valleys and plains; their uses; their dangers; and ways of caring for them), the competences and the suggested activities were taken from the official **NCDC Primary Four Social Studies Syllabus** (© NCDC 2010, ISBN 978-9970-117-49-9; pages 20–23 of the PDF in `curriculum/`), downloaded from **ncdc.go.ug**. The syllabus's own examples — growing food, growing cash crops, homes of many living things, landslides, and protecting water sources such as lakes, rivers, ponds and wells — are used above. The explanations, tables, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
-      },
-      {
-       "t": "p",
-       "x": "**This topic is about the learner's own district.** No facts about any particular district have been invented; where an answer depends on the learner's district, the notes leave the answer to the learner."
-      },
-      {
-       "t": "p",
-       "x": "The water-safety line (\"call an adult, do not jump in yourself\") is ordinary safety advice. **No NCDC guidance document on child safety was available**, and none is claimed here."
-      },
-      {
-       "t": "p",
-       "x": "No NCDC **Teacher's Guide** for P.4 was available, so the syllabus's own guidance was used directly instead."
       }
      ]
     }

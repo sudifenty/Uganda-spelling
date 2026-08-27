@@ -4,8 +4,7 @@
 
 # TOPIC 2: PHYSICAL FEATURES IN OUR DISTRICT
 
-*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term I, Topic 2,
-20 periods (`curriculum/P4-SOCIAL-STUDIES-2010.pdf`, pages 20–23).*
+*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term I, Topic 2 (20 periods, pages 20–23).*
 
 **How to use this topic.** The syllabus asks about the physical features of **your own
 district**. These notes teach you what each feature is, what it is used for and how to care
@@ -21,7 +20,7 @@ for it. You then name the ones found in your district.
 
 ---
 
-## 1. WHAT PHYSICAL FEATURES ARE
+## 1. What are physical features?
 
 **Physical features** are the **natural things on the earth's surface** — things that were
 not made by people.
@@ -37,7 +36,7 @@ not made by people.
 
 ---
 
-## 2. THE PHYSICAL FEATURES IN THE SYLLABUS
+## 2. Name the physical features in the syllabus and what each one is.
 
 | Feature | What it is |
 |---|---|
@@ -53,7 +52,7 @@ not made by people.
 **Others you may see in your district:** swamps, forests, islands, waterfalls, rocks and
 springs.
 
-### Fill this in for your own district
+**Fill this in for your own district**
 
 | Feature | Found in my district? | Name |
 |---|---|---|
@@ -66,10 +65,15 @@ springs.
 
 ---
 
-## 3. USES OF PHYSICAL FEATURES
+## 3. What is a swamp?
 
-The syllabus says learners should see that physical features are **natural resources which
-people use to earn a living**.
+A swamp is **wet land covered with water and water plants**.
+
+---
+
+## 4. What are physical features used for?
+
+Physical features are **natural resources which people use to earn a living**.
 
 | Feature | How people use it |
 |---|---|
@@ -83,7 +87,7 @@ people use to earn a living**.
 
 ---
 
-## 4. DANGERS OF PHYSICAL FEATURES
+## 5. What dangers come from physical features?
 
 Physical features are useful, but they can also cause harm.
 
@@ -95,7 +99,9 @@ Physical features are useful, but they can also cause harm.
 | **Swamps** | Mosquitoes that spread **malaria** · people can sink and drown |
 | **Forests** | Dangerous animals and snakes · people get lost · bush fires |
 
-**Keeping safe**
+---
+
+## 6. How can we keep safe near physical features?
 
 - Do not swim in a lake or river without a grown-up who can swim.
 - Do not build a house at the bottom of a very steep slope.
@@ -106,7 +112,7 @@ Physical features are useful, but they can also cause harm.
 
 ---
 
-## 5. CARING FOR PHYSICAL FEATURES
+## 7. How do we care for physical features?
 
 | Feature | How to care for it |
 |---|---|
@@ -117,7 +123,9 @@ Physical features are useful, but they can also cause harm.
 | **Forests** | Plant more trees · cut only mature trees · avoid bush burning |
 | **Soil and land** | Practise **crop rotation** and mulching · avoid over-grazing |
 
-**Words to know**
+---
+
+## 8. Words to know
 
 | Word | Meaning |
 |---|---|
@@ -130,7 +138,7 @@ Physical features are useful, but they can also cause harm.
 
 ---
 
-## 6. HOW PHYSICAL FEATURES AFFECT PEOPLE
+## 9. How do physical features affect people?
 
 - People **settle** where there is water and good flat land, so plains and lake shores are
   crowded.
@@ -143,52 +151,7 @@ Physical features are useful, but they can also cause harm.
 
 ---
 
-# KEY DEFINITIONS
-
-| Term | Meaning |
-|---|---|
-| Physical feature | A natural thing on the earth's surface |
-| River | Water flowing in a channel |
-| Lake | A large body of water surrounded by land |
-| Dam | A wall built across a river to hold back water |
-| Hill | Raised land, lower than a mountain |
-| Mountain | Very high raised land |
-| Valley | Low land between hills |
-| Rift valley | A long, deep, wide valley formed when land sank |
-| Plain | Flat or gently sloping land |
-| Swamp | Wet land covered with water and water plants |
-| Soil erosion | The carrying away of soil by water or wind |
-| Conservation | Protecting something so that it lasts |
-
----
-
-# IMPORTANT FACTS TO REMEMBER
-
-- Physical features are **natural**; a dam, a road and a bridge are **made by people**.
-- Rivers and lakes give **water, fish and transport**, but they cause **drowning and
-  floods**.
-- Mountains and hills cause **landslides** and **soil erosion** when trees are cut.
-- Swamps breed **mosquitoes**, which spread **malaria**.
-- **Terracing** and **tree planting** protect hill slopes.
-- **Afforestation** = planting new trees. **Deforestation** = cutting trees without
-  replacing them.
-- People settle most where the land is **flat and there is water**.
-
----
-
-# EXAMINATION POINTS
-
-- What is a physical feature? A natural thing on the earth's surface.
-- Give one use of a swamp — papyrus for mats (or clay, or growing rice).
-- Give one danger of a river — drowning (or floods, or bilharzia).
-- Name the disease spread by mosquitoes from a swamp — **malaria**.
-- Give one way of caring for a hill — plant trees, or dig terraces.
-- Which physical feature is made by people? A **dam**.
-- Name a physical feature found in your own district.
-
----
-
-# COMMON MISTAKES TO AVOID
+## COMMON MISTAKES TO AVOID
 
 - Calling a road, a bridge or a building a physical feature.
 - Saying a hill and a mountain are the same — a **mountain is much higher**.
@@ -199,7 +162,7 @@ Physical features are useful, but they can also cause harm.
 
 ---
 
-# REVISION QUESTIONS
+## REVISION QUESTIONS
 
 1. What are physical features?
 2. Give any four examples of physical features.
@@ -224,7 +187,7 @@ Physical features are useful, but they can also cause harm.
 
 ---
 
-# ANSWERS TO REVISION QUESTIONS
+## ANSWERS TO REVISION QUESTIONS
 
 1. **Natural things found on the earth's surface** that were not made by people.
 2. Any four of **hills, mountains, valleys, plains, rivers, lakes, swamps, forests, rocks, islands**
@@ -246,39 +209,3 @@ Physical features are useful, but they can also cause harm.
 18. *(Your own answer — a feature really found in your district.)*
 19. *(Your own answer.)*
 20. *(Your own answer.)*
-
----
-
-# P.4 QUICK REVISION
-
-- Physical feature = **natural**, not made by people
-- River · lake · dam · hill · mountain · valley · rift valley · plain
-- Uses: water · fish · transport · farming · timber · stones · tourism
-- Dangers: **drowning · floods · landslides · malaria**
-- Care: plant trees · terrace slopes · keep rubbish out of water
-- **Afforestation** plant new · **reafforestation** plant again · **deforestation** cut and don't replace
-
----
-
-## A note on sources
-
-The topic title, the period allocation (20 periods), the content list (location of physical
-features in our district — rivers, lakes and dams, hills, mountains, valleys, rift valleys
-and plains; their uses; their dangers; and ways of caring for them), the competences and the
-suggested activities were taken from the official **NCDC Primary Four Social Studies
-Syllabus** (© NCDC 2010, ISBN 978-9970-117-49-9; pages 20–23 of the PDF in `curriculum/`),
-downloaded from **ncdc.go.ug**. The syllabus's own examples — growing food, growing cash
-crops, homes of many living things, landslides, and protecting water sources such as lakes,
-rivers, ponds and wells — are used above. The explanations, tables, exercises and answers
-are original teaching material written for the learner; they are **not** copied from the
-curriculum document or from any textbook.
-
-**This topic is about the learner's own district.** No facts about any particular district
-have been invented; where an answer depends on the learner's district, the notes leave the
-answer to the learner.
-
-The water-safety line ("call an adult, do not jump in yourself") is ordinary safety advice.
-**No NCDC guidance document on child safety was available**, and none is claimed here.
-
-No NCDC **Teacher's Guide** for P.4 was available, so the syllabus's own guidance was used
-directly instead.
