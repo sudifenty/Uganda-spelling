@@ -1176,7 +1176,7 @@ const state = {
   klass:'P6', psubject:'SST', progress:{}, ptopic:null,
   nsubject:'SST', ntopic:null, nsec:0, noteSeen:{},
   exsubject:'MATH', exTid:null, exRun:null,
-  timerId:null, spellClass:'P6', spellDiff:'Easy', spell:null, mtab:'learn', mclass:null, mrun:null, mlearn:null, authUser:null, authReady:false, classLocked:false, authMode:'signin', authError:'',
+  timerId:null, spellClass:'P6', spellDiff:'Easy', spell:null, mtab:'learn', mclass:null, mrun:null, mlearn:null, mlesson:null, authUser:null, authReady:false, classLocked:false, authMode:'signin', authError:'',
 };
 
 /* Colour helpers — every colour comes from the 6-hue system */
@@ -1203,7 +1203,7 @@ const TAB_OF = {home:'home',practice:'practice',subjects:'practice',subjects_top
   topics:'practice',papers:'papers',paperDetail:'papers',progress:'home',profile:'profile',
   notes:'notes',noteTopic:'notes',noteRead:'notes',
   exercises:'exercises',exTopic:'exercises',exDo:'exercises',exResult:'exercises',exMine:'exercises',
-  avatar:'profile',settings:'profile',offline:'profile',about:'profile', auth:'profile', spelling:'home', spellDifficulty:'home', spellModes:'home', spellPractice:'home', spellResults:'home', spellMistakes:'home', noteChallenge:'notes', mathHome:'practice', mathLearn:'practice', mathPlay:'practice'};
+  avatar:'profile',settings:'profile',offline:'profile',about:'profile', auth:'profile', spelling:'home', spellDifficulty:'home', spellModes:'home', spellPractice:'home', spellResults:'home', spellMistakes:'home', noteChallenge:'notes', mathHome:'practice', mathLearn:'practice', mathPlay:'practice', mathLesson:'notes'};
 const FULLSCREEN = ['question','exam','results','review','archive','pquestion','spellPractice','spellResults','mathPlay'];
 
 function go(screen, push=true){
@@ -1520,6 +1520,195 @@ SCREENS.mathPlay = () => {
         <button class="btn btn-primary mx-fb-next" onclick="mathContinue()">${r.i<r.items.length-1?'NEXT QUESTION →':'SEE MY SCORE 🎉'}</button>
       </div>`:''}
   </div>`;
+};
+
+
+/* ============================================================
+   MATH LESSON PLAYER — the math notes, restructured.
+   Instead of a table of contents the learner is walked
+   through: read a little → practise → read → practise →
+   test yourself → exam tips → done. The note content itself
+   is untouched: the very same sections, blocks and renderer.
+   ============================================================ */
+function mathLessonBuild(t){
+  const secs=noteSections(t), steps=[];
+  const core=[],tail={};
+  secs.forEach(sec=>{
+    const title=String(sec.title||'').trim();
+    if(/^\d/.test(title)||/^key definitions$/i.test(title))core.push(sec);
+    else tail[String(title).toUpperCase()]=sec;
+  });
+  steps.push({type:'intro',list:core.map(s=>s.title)});
+  const pool=shuffle(noteChallengePool(t)).map(q=>({...q,options:shuffle(q.options.slice())}));let qi=0;
+  core.forEach((sec,idx)=>{
+    steps.push({type:'read',sec:sec,secIndex:secs.indexOf(sec)});
+    if((idx+1)%2===0&&qi<pool.length)steps.push({type:'check',q:pool[qi++]});
+  });
+  const rev=tail['REVISION QUESTIONS'];
+  if(rev){
+    const qs=[];(rev.blocks||[]).forEach(b=>{if(b.t==='ol'&&b.items)qs.push(...b.items);});
+    const ansSec=tail['ANSWERS TO REVISION QUESTIONS'];const ans=[];
+    if(ansSec)(ansSec.blocks||[]).forEach(b=>{if(b.t==='ol'&&b.items)ans.push(...b.items);});
+    qs.slice(0,6).forEach((q,i)=>steps.push({type:'recall',q:q,a:ans[i]||null,n:i+1}));
+  }
+  const tipBlocks=[];
+  ['IMPORTANT FACTS TO REMEMBER','EXAMINATION POINTS','COMMON MISTAKES TO AVOID','P.7 QUICK REVISION'].forEach(k=>{
+    if(tail[k])(tail[k].blocks||[]).forEach(b=>tipBlocks.push(b));
+  });
+  if(tipBlocks.length)steps.push({type:'tips',blocks:tipBlocks});
+  steps.push({type:'done'});
+  return steps;
+}
+function mathLessonStart(id){
+  const t=noteById(id);if(!t)return;
+  state.ntopic=id;state.nsec=0;
+  state.mlesson={tid:id,steps:mathLessonBuild(t),i:0,checks:0,checkOk:0,recallGot:0,xp:0,fb:null};
+  recordLast({kind:'notes',klass:t.class,nsubject:'MATH',ntopic:id,nsec:0,
+    label:t.title,sub:'Math lesson',meta:'Lesson player',pct:0});
+  go('mathLesson');
+}
+function mathLessonText(sec){
+  const parts=[String(sec.title||'')];
+  (sec.blocks||[]).forEach(b=>{if(b.x)parts.push(b.x);else if(b.items)parts.push(b.items.join('. '));});
+  return parts.filter(Boolean).join('. ');
+}
+function mathLessonSeen(){
+  const L=state.mlesson;if(!L)return;
+  const t=noteById(L.tid),st=L.steps[L.i];
+  if(!t||!st||st.type!=='read')return;
+  const k=t.id+':'+st.secIndex;
+  if(!state.noteSeen[k]){state.noteSeen[k]=true;learnXP(t,5);L.xp+=5;}
+}
+function mathLessonNext(){
+  const L=state.mlesson;if(!L)return;
+  if(L.fb&&L.fb.type==='check'&&!L.fb.done){/* must finish checkpoint first */return;}
+  mathLessonSeen();            /* mark the section read: XP + mastery stay accurate */
+  if(L.i<L.steps.length-1){L.i++;L.fb=null;render();return;}
+  render();
+}
+function mathLessonCheck(idx){
+  const L=state.mlesson;if(!L||L.fb)return;
+  const st=L.steps[L.i];if(!st||st.type!=='check')return;
+  const t=noteById(L.tid),q=st.q;
+  const ok=idx>=0&&idx<q.options.length&&q.options[idx]===q.answer;
+  L.checks++;if(ok)L.checkOk++;
+  if(ok){learnXP(t,10);L.xp+=10;mathChime(true);}
+  else mathChime(false);
+  L.fb={type:'check',ok:ok,done:false,step:0};
+  render();
+}
+function mathLessonStepsForQ(q){
+  const s=[['Question',q.prompt]];
+  s.push(['Correct answer',q.answer]);
+  if(q.section)s.push(['From the notes',q.section]);
+  return s;
+}
+function mathLessonStepNext(){const L=state.mlesson;if(L&&L.fb){L.fb.step=(L.fb.step||0)+1;render();}}
+function mathLessonCheckDone(){const L=state.mlesson;if(L&&L.fb){L.fb.done=true;render();}}
+function mathLessonReveal(){const L=state.mlesson;if(L&&L.steps[L.i]&&L.steps[L.i].type==='recall'){L.fb={type:'recall'};render();}}
+function mathLessonSelf(ok){
+  const L=state.mlesson;if(!L)return;
+  const t=noteById(L.tid);
+  if(ok){learnXP(t,5);L.xp+=5;L.recallGot++;}
+  L.fb=null;mathLessonNext();
+}
+function mathLessonFinish(){
+  const L=state.mlesson;if(!L)return;
+  const t=noteById(L.tid),d=learnLoad(),x=learnTopic(t);
+  x.challenge=Math.max(x.challenge||0,L.checks?Math.round(100*L.checkOk/L.checks):0);
+  learnSave(d);L.finished=true;render();
+}
+function mathLessonSpeak(){const L=state.mlesson;if(!L)return;const st=L.steps[L.i];if(st&&st.type==='read')mathSpeak(mathLessonText(st.sec));else if(st&&st.type==='check')mathSpeak(st.q.prompt);}
+
+SCREENS.mathLesson = () => {
+  const L=state.mlesson;if(!L)return SCREENS.notes;
+  const t=noteById(L.tid);if(!t)return SCREENS.notes;
+  if(L.i>=L.steps.length)L.i=L.steps.length-1;
+  const st=L.steps[L.i],n=L.i+1,total=L.steps.length;
+  let body='';
+  if(st.type==='intro'){
+    body=`<div class="mx-card"><div class="mx-topic">${nEsc(t.title)}</div>
+      <div class="mx-qtext" style="font-size:clamp(22px,6vw,32px)">Let's learn this step by step 🎯</div></div>
+      <div class="hint-strip cream" style="margin:10px 0">${I.info(18)} <span>You will read a little, then practise right away. ${st.list.length} parts, quick questions, and exam tips at the end.</span></div>
+      ${st.list.map(s=>`<div class="mx-fb-step" style="margin-bottom:8px"><b>Part</b><span>${nEsc(String(s).replace(/^\d+\.\s*/,''))}</span></div>`).join('')}
+      <div style="display:grid;gap:10px;margin-top:14px">
+        <button class="btn btn-primary" onclick="mathLessonNext()">START THE LESSON ➜</button>
+        <button class="btn btn-ghost" onclick="go('noteTopic')">PREFER TO JUST READ? OPEN THE FULL NOTES</button>
+      </div>`;
+  }
+  else if(st.type==='read'){
+    body=`<article class="nt"><h3 class="nt-h1">${nEsc(st.sec.title)}</h3>
+      ${(st.sec.blocks||[]).map(noteBlock).join('')}</article>
+      <div style="display:grid;gap:10px;margin-top:14px">
+        <button class="btn btn-primary" onclick="mathLessonNext()">I'VE READ IT — NEXT ➜</button>
+        <button class="btn btn-ghost" onclick="mathLessonSpeak()">🔊 READ THIS PART TO ME</button>
+      </div>`;
+  }
+  else if(st.type==='check'){
+    const fb=L.fb,steps=fb?mathLessonStepsForQ(st.q):[],shown=fb?steps.slice(0,fb.step):[];
+    body=`<div class="mx-card">
+        <button class="mx-speak" onclick="mathLessonSpeak()" aria-label="Read aloud">🔊</button>
+        <div class="mx-topic">Quick practice 🧠</div>
+        <div class="mx-qtext" style="font-size:clamp(20px,5.5vw,30px)">${nEsc(st.q.prompt)}</div>
+      </div>
+      <div class="mx-mcq" style="grid-template-columns:1fr">
+        ${st.q.options.map((o,idx)=>`<button class="mx-opt mx-opt${idx%4}" ${fb?'disabled':''} onclick="mathLessonCheck(${idx})">
+          <span class="mx-opt-let">${String.fromCharCode(65+idx)}</span><span>${nEsc(o)}</span></button>`).join('')}
+      </div>
+      ${fb?`
+      <div class="mx-fb" role="dialog" aria-modal="true">
+        ${fb.ok?mathConfetti():''}
+        <div class="mx-fb-emoji">${fb.ok?'✅':'❌'}</div>
+        <h2>${fb.ok?'Excellent!':'Not quite'}</h2>
+        ${fb.ok?`<div class="mx-fb-pts">+10 points ⭐</div>`:`
+          <div class="mx-fb-correct">The correct answer is <b>${nEsc(st.q.answer)}</b></div>
+          ${shown.length?`<div class="mx-fb-steps">${shown.map(s=>`<div class="mx-fb-step"><b>${nEsc(s[0])}</b><span>${nEsc(s[1])}</span></div>`).join('')}</div>`:''}
+          ${fb.step<steps.length?`<button class="btn btn-ghost" onclick="mathLessonStepNext()">📖 ${fb.step===0?'SHOW WHY':'NEXT STEP'} (${fb.step}/${steps.length})</button>`:''}
+        `}
+        <button class="btn btn-primary mx-fb-next" onclick="mathLessonCheckDone();mathLessonNext()">CONTINUE ➜</button>
+      </div>`:''}`;
+  }
+  else if(st.type==='recall'){
+    const fb=L.fb;
+    body=`<div class="mx-card"><div class="mx-topic">Test yourself · Question ${st.n}</div>
+      <div class="mx-qtext" style="font-size:clamp(20px,5.5vw,30px)">${nEsc(st.q)}</div></div>
+      ${!fb?`<div style="display:grid;gap:10px;margin-top:12px">
+          <button class="btn btn-primary" onclick="mathLessonReveal()">THINK FIRST, THEN SHOW THE ANSWER 👀</button>
+        </div>`
+      :`<div class="mx-fb-steps" style="max-width:none"><div class="mx-fb-step"><b>Answer</b><span>${nEsc(st.a||'Check the full answers in the notes.')}</span></div></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px">
+          <button class="btn btn-primary" onclick="mathLessonSelf(true)">I GOT IT ✅</button>
+          <button class="btn btn-ghost" onclick="mathLessonSelf(false)">NOT YET ❌</button>
+        </div>`}`;
+  }
+  else if(st.type==='tips'){
+    body=`<article class="nt"><h3 class="nt-h1">EXAM TIPS &amp; FACTS</h3>
+      ${st.blocks.map(noteBlock).join('')}</article>
+      <button class="btn btn-primary" style="margin-top:14px" onclick="mathLessonNext()">FINISH THE LESSON 🎉</button>`;
+  }
+  else if(st.type==='done'){
+    if(!L.finished){/* finish writes mastery once */}
+    const score=L.checks?Math.round(100*L.checkOk/L.checks):null;
+    body=`<div class="mx-done">
+      <div class="mx-done-emoji">🏆</div>
+      <h2>Lesson complete!</h2>
+      <div class="mx-score">+${L.xp} XP</div>
+      <div class="mx-stars-row">${'⭐'.repeat(Math.min(8,Math.ceil((score==null?100:score)/20)))}</div>
+      <p class="muted">${score==null?'You worked through the whole topic.':`Checkpoint score: ${L.checkOk}/${L.checks} correct (${score}%).`}${L.recallGot?` · ${L.recallGot} revision question${L.recallGot===1?'':'s'} you felt sure of.`:''}</p>
+      <button class="btn btn-primary" onclick="go('notes')">BACK TO NOTES</button>
+      <button class="btn btn-ghost" style="margin-top:6px" onclick="mathLessonStart(state.mlesson.tid)">DO THE LESSON AGAIN</button>
+      <button class="btn btn-ghost" style="margin-top:6px" onclick="go('noteTopic')">READ THE FULL NOTES</button>
+    </div>`;
+    if(!L.finished){setTimeout(mathLessonFinish,0);}
+  }
+  return `<header class="pagehead">
+    <button class="back" onclick="go('notes')" aria-label="Leave lesson">${I.x(22)}</button>
+    <div style="flex:1;min-width:0"><h2 style="font-size:18px">${nEsc(t.title)}</h2>
+      <div class="sub">Math lesson · Step ${n} of ${total}</div></div>
+    <span class="pill on">⭐ ${L.xp} XP</span>
+  </header>
+  <div class="bar" style="margin-bottom:14px"><i style="width:${(L.i/L.steps.length)*100}%;background:var(--purple)"></i></div>
+  ${body}`;
 };
 
 /* ---- Continue where you stopped: remembers the learner's last activity ---- */
@@ -2661,6 +2850,8 @@ SCREENS.noteRead = () => {
 function setNoteClass(c){if(!checkClassAccess(c))return;state.klass=c;state.ntopic=null;go('notes',false);}
 function setNoteSubject(id){ state.nsubject=id; state.ntopic=null; go('notes',false); }
 function openNoteTopic(id){
+  const _t0=noteById(id);
+  if(_t0&&_t0.subject==='MATH'){mathLessonStart(id);return;}
   state.ntopic=id; state.nsec=0;
   const t=noteById(id);
   if(t){ const first=noteSections(t).findIndex((_,i)=>!state.noteSeen[id+':'+i]);
