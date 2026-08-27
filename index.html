@@ -1307,7 +1307,7 @@ function spellFinishItem(ok,answer){const s=state.spell,w=spellCurrent();if(s.lo
 function spellNext(){const s=state.spell;if(s.i>=s.items.length-1){state.lastResult={kind:'spelling',correct:s.correct,total:s.items.length,pct:Math.round(s.correct/s.items.length*100),detail:s.detail,cls:s.cls,diff:s.diff};go('spellResults');return;}s.i++;s.attempt=0;s.locked=false;render();}
 function spellSubmit(){const s=state.spell,w=spellCurrent(),el=document.getElementById('spellInput');const given=normAns(el&&el.value);if(!given){toast('Type an answer first');return;}if(given===normAns(w.word)){spellFinishItem(true,given);return;}s.attempt++;if(s.attempt<2){const f=document.getElementById('spellFeedback');if(f)f.innerHTML='<b>Try again!</b> Check the letters and listen once more.';if(el){el.value='';el.focus();}return;}spellFinishItem(false,given);}
 function spellChoice(word){const s=state.spell,w=spellCurrent();if(s.locked)return;s.lastAnswer=word;spellFinishItem(normAns(word)===normAns(w.word),word);}
-function spellOptions(w){const wrong=spellWords(w.classLevel,w.difficulty).filter(x=>x.word!==w.word).map(x=>x.word);return shuffle([w.word,...shuffle(wrong).slice(0,3)]);}
+function spellOptions(w){let wrong=spellWords(w.classLevel,w.difficulty).filter(x=>x.word!==w.word).map(x=>x.word);if(wrong.length<3){/* Review mode: pull wrong options from every level of the class */const bank=SPELLING_BANK[w.classLevel]||{};Object.keys(bank).forEach(d=>bank[d].forEach(x=>{if(x!==w.word&&!wrong.includes(x))wrong.push(x);}));}return shuffle([w.word,...shuffle(wrong).slice(0,3)]);}
 function spellStats(){const m=spellMistakes();return m.length?m.map(x=>x.word).join(', '):'None yet — keep it up!';}
 
 SCREENS.spelling = () => `
@@ -4027,5 +4027,6 @@ render = function(){
 
 render();
 </script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a31a49556f82a09e',t:'MTc4NzgyNTQyNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<!-- (Cloudflare injects its own challenge script at serve time; nothing is baked into the source.) -->
+</body>
 </html>
