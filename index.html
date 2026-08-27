@@ -1972,7 +1972,12 @@ const SUPABASE_CACHE_KEY='sb-ftykmafgfyqvniacguyi-auth-token';
 /* A learner who signed in before keeps working offline from the cached session. */
 function supabaseCachedUser(){try{const raw=localStorage.getItem(SUPABASE_CACHE_KEY);if(!raw)return null;let d=JSON.parse(raw);if(Array.isArray(d))d=d[0];return(d&&d.user)||null;}catch(e){return null;}}
 function supabaseLoadLib(timeout){if(window.supabase)return Promise.resolve(true);return new Promise(resolve=>{let done=false;const fin=ok=>{if(!done){done=true;resolve(!!ok);}};try{const s=document.createElement('script');s.src=SUPABASE_LIB;s.onload=()=>fin(window.supabase);s.onerror=()=>fin(false);document.head.appendChild(s);}catch(e){fin(false);}setTimeout(()=>fin(window.supabase),timeout||10000);});}
-async function authInit(){try{
+/* authInit runs once at boot, and again whenever the internet returns
+   after an offline start — that reconnection is what keeps a learner's
+   login token refreshing, so they stay signed in on their own device
+   for as long as they keep using the app. */
+let AUTH_BUSY=false;
+async function authInit(){if(AUTH_BUSY)return;AUTH_BUSY=true;try{
   const libOK=await supabaseLoadLib(10000);
   if(!libOK){const u=supabaseCachedUser();
     if(u){state.authUser=u;applyUserProfile(u);state.offlineGrace=true;}
@@ -1981,10 +1986,16 @@ async function authInit(){try{
   supabaseClient=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
   const {data}=await supabaseClient.auth.getSession();
   state.authUser=data.session?data.session.user:null;
+  if(state.authUser)state.offlineGrace=false;
   if(!state.authUser){const u=supabaseCachedUser();if(u){state.authUser=u;state.offlineGrace=true;}}
   if(state.authUser)applyUserProfile(state.authUser);
   supabaseClient.auth.onAuthStateChange((evt,session)=>{state.authUser=session?session.user:null;if(state.authUser){applyUserProfile(state.authUser);state.offlineGrace=false;}if(!state.authUser){state.stack=[];state.screen='auth';}if(evt==='PASSWORD_RECOVERY'&&state.authUser){state.stack=[];state.screen='profile';setTimeout(authNewPassword,60);}if(state.screen==='auth'||state.screen==='profile'||!state.authUser)render();});
-}catch(e){console.warn('Supabase auth unavailable',e);const u=supabaseCachedUser();if(u&&!state.authUser){state.authUser=u;applyUserProfile(u);state.offlineGrace=true;}else state.authError='Login service is unavailable.';}finally{state.authReady=true;if(!state.authUser&&state.screen!=='auth')state.screen='auth';render();if(state.offlineGrace)toast('Offline \u2014 you are still signed in on this device.');}}
+}catch(e){console.warn('Supabase auth unavailable',e);const u=supabaseCachedUser();if(u&&!state.authUser){state.authUser=u;applyUserProfile(u);state.offlineGrace=true;}else state.authError='Login service is unavailable.';}finally{AUTH_BUSY=false;state.authReady=true;if(!state.authUser&&state.screen!=='auth')state.screen='auth';render();if(state.offlineGrace)toast('Offline \u2014 you are still signed in on this device.');}}
+/* If the app started offline (signed in from the saved session) and the
+   internet comes back, silently reconnect the REAL login session so the
+   token keeps refreshing. Without this, a learner who opens the app
+   offline could let their session expire unnoticed — and be logged out. */
+window.addEventListener('online',()=>{ if(!supabaseClient) setTimeout(()=>authInit(),500); });
 /* Activity tracking — built for millions of learners.
    One insert per screen view would flood the database (30M+ rows/day at 1M
    daily users). So: screen_view is sampled 1-in-8, events queue in memory,
