@@ -3,7 +3,7 @@
  "subject": "SST",
  "subject_name": "Social Studies",
  "total": 6,
- "words": 10415,
+ "words": 8029,
  "topics": [
   {
    "id": "P4_SST_T01",
@@ -928,18 +928,18 @@
    "slug": "vegetation-in-our-district",
    "periods": 25,
    "curriculum_pages": "23–26",
-   "words": 1763,
+   "words": 1185,
    "sections": [
     {
      "title": "About this topic",
      "blocks": [
       {
        "t": "p",
-       "x": "*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term II, Topic 3, 25 periods (`curriculum/P4-SOCIAL-STUDIES-2010.pdf`, pages 23–26).*"
+       "x": "*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term II, Topic 3 (25 periods, pages 23–26).*"
       },
       {
        "t": "p",
-       "x": "**How to use this topic.** The syllabus asks about the vegetation of **your own district**. These notes teach you the types of vegetation, their uses, how people damage them and how to care for them. You name the ones found where you live."
+       "x": "**How to use this topic.** The syllabus asks about the vegetation of **your own district**. You name the types of vegetation found where you live."
       },
       {
        "t": "p",
@@ -959,7 +959,7 @@
      ]
     },
     {
-     "title": "1. WHAT VEGETATION IS",
+     "title": "1. What is vegetation?",
      "blocks": [
       {
        "t": "p",
@@ -972,12 +972,8 @@
      ]
     },
     {
-     "title": "2. TYPES OF VEGETATION",
+     "title": "2. Name the five types of vegetation.",
      "blocks": [
-      {
-       "t": "p",
-       "x": "The syllabus names these five:"
-      },
       {
        "t": "table",
        "head": [
@@ -1010,7 +1006,7 @@
      ]
     },
     {
-     "title": "3. NATURAL AND PLANTED VEGETATION",
+     "title": "3. What is the difference between natural and planted vegetation?",
      "blocks": [
       {
        "t": "table",
@@ -1048,18 +1044,14 @@
        ]
       },
       {
-       "t": "p",
+       "t": "note",
        "x": "**A quick test:** if the trees stand in **straight rows**, people planted them."
       }
      ]
     },
     {
-     "title": "4. USES OF VEGETATION",
+     "title": "4. What are the uses of vegetation?",
      "blocks": [
-      {
-       "t": "p",
-       "x": "The syllabus lists these uses:"
-      },
       {
        "t": "table",
        "head": [
@@ -1115,12 +1107,8 @@
      ]
     },
     {
-     "title": "5. HOW PEOPLE AFFECT VEGETATION",
+     "title": "5. Which activities of people damage vegetation?",
      "blocks": [
-      {
-       "t": "p",
-       "x": "The syllabus lists these activities:"
-      },
       {
        "t": "table",
        "head": [
@@ -1157,11 +1145,12 @@
          "Land is cleared for homes and factories"
         ]
        ]
-      },
-      {
-       "t": "p",
-       "x": "**What happens when vegetation is destroyed**"
-      },
+      }
+     ]
+    },
+    {
+     "title": "6. What happens when vegetation is destroyed?",
+     "blocks": [
       {
        "t": "ul",
        "items": [
@@ -1177,7 +1166,7 @@
      ]
     },
     {
-     "title": "6. CARING FOR VEGETATION",
+     "title": "7. How do we care for vegetation?",
      "blocks": [
       {
        "t": "table",
@@ -1227,103 +1216,6 @@
       {
        "t": "p",
        "x": "**What a pupil can do:** plant a tree at home and at school, water it, put a small fence round it, and never break young plants."
-      }
-     ]
-    },
-    {
-     "title": "KEY DEFINITIONS",
-     "blocks": [
-      {
-       "t": "table",
-       "head": [
-        "Term",
-        "Meaning"
-       ],
-       "rows": [
-        [
-         "Vegetation",
-         "All the plants growing in a place"
-        ],
-        [
-         "Natural vegetation",
-         "Vegetation that grew on its own"
-        ],
-        [
-         "Planted vegetation",
-         "Vegetation planted and cared for by people"
-        ],
-        [
-         "Forest",
-         "Many tall trees growing close together"
-        ],
-        [
-         "Swamp",
-         "Wet land covered with water plants"
-        ],
-        [
-         "Shrub",
-         "A short woody plant or bush"
-        ],
-        [
-         "Deforestation",
-         "Cutting down trees without replacing them"
-        ],
-        [
-         "Afforestation",
-         "Planting trees where there were none"
-        ],
-        [
-         "Reafforestation",
-         "Planting trees again where they were cut"
-        ],
-        [
-         "Over grazing",
-         "Keeping too many animals on the same land"
-        ],
-        [
-         "Over cultivation",
-         "Growing crops on the same land until the soil is worn out"
-        ],
-        [
-         "Gazetting",
-         "Marking off land by law so that it is protected"
-        ]
-       ]
-      }
-     ]
-    },
-    {
-     "title": "IMPORTANT FACTS TO REMEMBER",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "Vegetation means **all the plants growing in a place**.",
-        "The five types in the syllabus are **forests, swamps, shrubs, grass and crops**.",
-        "**Natural** vegetation grows on its own; **planted** vegetation is put there by people and usually grows in **straight lines**.",
-        "Plants give us **oxygen**, and they **help rain to form**.",
-        "Roots of plants **hold the soil** and stop **soil erosion**.",
-        "**Deforestation** leads to soil erosion, less rain and drought.",
-        "**Afforestation** = new trees. **Reafforestation** = trees again.",
-        "Cutting **only mature trees** is called **selective cutting**."
-       ]
-      }
-     ]
-    },
-    {
-     "title": "EXAMINATION POINTS",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "What is vegetation? All the plants growing in a place.",
-        "Name any three types of vegetation — forests, swamps, shrubs, grass, crops.",
-        "Give one difference between natural and planted vegetation.",
-        "Give two uses of vegetation — firewood, medicine, food, oxygen, timber, shade.",
-        "Name two activities of people that destroy vegetation — bush burning, deforestation.",
-        "Give two ways of caring for vegetation — planting trees, avoiding bush burning.",
-        "What gas do plants give to people? **Oxygen.**"
-       ]
       }
      ]
     },
@@ -1404,39 +1296,6 @@
        "start": 1
       }
      ]
-    },
-    {
-     "title": "P.4 QUICK REVISION",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "Vegetation = **all the plants in a place**",
-        "Types: **forests · swamps · shrubs · grass · crops**",
-        "**Natural** grows on its own · **planted** grows in straight lines",
-        "Uses: firewood · medicine · food · **oxygen** · rain · stops erosion · beauty",
-        "Destroyed by: bush burning · over cultivation · over grazing · deforestation · bricks · roads · building",
-        "Cared for by: **afforestation · reafforestation** · selective cutting · no bush burning · gazetting"
-       ]
-      }
-     ]
-    },
-    {
-     "title": "A note on sources",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "The topic title, the period allocation (25 periods), the content list (examples of vegetation — forests, swamps, shrubs, grass and crops; uses of vegetation — herbs for medicine, firewood, food, oxygen, support in rain formation, control of soil erosion and wind, and beauty; how people affect vegetation — burning bushes, over cultivation, over grazing, deforestation, making bricks, construction of roads and building houses for settlement and industries; and caring for the vegetation, which the syllabus marks as **new input**), the competences and the suggested activities — including comparing natural and planted forests and making crafts such as mats and carpets — were taken from the official **NCDC Primary Four Social Studies Syllabus** (© NCDC 2010, ISBN 978-9970-117-49-9; pages 23–26 of the PDF in `curriculum/`), downloaded from **ncdc.go.ug**. The explanations, tables, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
-      },
-      {
-       "t": "p",
-       "x": "**This topic is about the learner's own district.** No facts about any particular district have been invented; where an answer depends on the learner's district, the notes leave the answer to the learner."
-      },
-      {
-       "t": "p",
-       "x": "No NCDC **Teacher's Guide** for P.4 was available, so the syllabus's own guidance was used directly instead."
-      }
-     ]
     }
    ]
   },
@@ -1450,18 +1309,18 @@
    "slug": "people-in-our-district",
    "periods": 15,
    "curriculum_pages": "26–31",
-   "words": 2017,
+   "words": 1419,
    "sections": [
     {
      "title": "About this topic",
      "blocks": [
       {
        "t": "p",
-       "x": "*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term II, Topic 4, 15 periods (`curriculum/P4-SOCIAL-STUDIES-2010.pdf`, pages 26–31).*"
+       "x": "*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term II, Topic 4 (15 periods, pages 26–31).*"
       },
       {
        "t": "p",
-       "x": "**How to use this topic.** The syllabus asks about the people of **your own district** — their origin, why they settled there and the work they do. These notes teach you the ideas and the words. You fill in the tribes, clans and jobs of your own district."
+       "x": "**How to use this topic.** The syllabus asks about the people of **your own district** — their origin, why they settled there and the work they do. You fill in the tribes, clans and jobs of your own district."
       },
       {
        "t": "p",
@@ -1481,7 +1340,7 @@
      ]
     },
     {
-     "title": "1. THE SOCIAL ENVIRONMENT",
+     "title": "1. What is the social environment?",
      "blocks": [
       {
        "t": "p",
@@ -1507,7 +1366,7 @@
      ]
     },
     {
-     "title": "2. TRIBES AND CLANS",
+     "title": "2. What is a tribe? What is a clan? What is a totem?",
      "blocks": [
       {
        "t": "table",
@@ -1574,15 +1433,11 @@
      ]
     },
     {
-     "title": "3. LEGENDS",
+     "title": "3. What is a legend? Name the three legends in the syllabus.",
      "blocks": [
       {
        "t": "p",
        "x": "A **legend** is an **old story handed down by word of mouth**, telling how a group of people began. Legends are told by elders. They are not history that can be proved, but they teach a people about themselves."
-      },
-      {
-       "t": "p",
-       "x": "The syllabus gives these three examples:"
       },
       {
        "t": "table",
@@ -1612,7 +1467,7 @@
      ]
     },
     {
-     "title": "4. MIGRATION",
+     "title": "4. What is migration? What do immigration and emigration mean?",
      "blocks": [
       {
        "t": "table",
@@ -1644,13 +1499,14 @@
        ]
       },
       {
-       "t": "p",
+       "t": "note",
        "x": "**A way to remember: I**mmigration = coming **I**n."
-      },
-      {
-       "t": "h3",
-       "x": "Causes of migration (from the syllabus)"
-      },
+      }
+     ]
+    },
+    {
+     "title": "5. What causes migration?",
+     "blocks": [
       {
        "t": "table",
        "head": [
@@ -1687,15 +1543,33 @@
      ]
     },
     {
-     "title": "5. SETTLEMENT PATTERNS",
+     "title": "6. What is a drought? What is an epidemic?",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**Drought**",
+         "A long time without rain"
+        ],
+        [
+         "**Epidemic**",
+         "A disease that attacks very many people at once"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "7. What is a settlement pattern? What makes people settle in a place?",
      "blocks": [
       {
        "t": "p",
        "x": "A **settlement pattern** is **the way people's homes are arranged in a place** — whether they are close together or far apart."
-      },
-      {
-       "t": "h3",
-       "x": "Factors that make people settle in a place (from the syllabus)"
       },
       {
        "t": "table",
@@ -1735,8 +1609,8 @@
        ]
       },
       {
-       "t": "h3",
-       "x": "Why some places have few people"
+       "t": "p",
+       "x": "**Why some places have few people**"
       },
       {
        "t": "p",
@@ -1745,12 +1619,8 @@
      ]
     },
     {
-     "title": "6. TYPES OF WORK PEOPLE DO",
+     "title": "8. What types of work do people do? Why do people work?",
      "blocks": [
-      {
-       "t": "p",
-       "x": "The syllabus lists these:"
-      },
       {
        "t": "table",
        "head": [
@@ -1794,17 +1664,17 @@
       },
       {
        "t": "p",
+       "x": "An **occupation** is the work a person does to earn a living."
+      },
+      {
+       "t": "p",
        "x": "**Why people work:** to get food, to get money, to pay school fees, to buy clothes and medicine, to build a home, and to serve others."
       }
      ]
     },
     {
-     "title": "7. PROBLEMS PEOPLE FACE IN THEIR WORK",
+     "title": "9. What problems do people face in their work?",
      "blocks": [
-      {
-       "t": "p",
-       "x": "The syllabus lists these:"
-      },
       {
        "t": "table",
        "head": [
@@ -1835,8 +1705,8 @@
        "x": "**Other problems you should also know:** bad weather · poor prices · pests and crop diseases · lack of money to start · lack of skills · too few tools · theft."
       },
       {
-       "t": "h3",
-       "x": "Suggested solutions"
+       "t": "p",
+       "x": "**Suggested solutions**"
       },
       {
        "t": "ul",
@@ -1848,102 +1718,6 @@
         "**Save** money and join a savings group",
         "Learn **skills** at a technical school",
         "Store crops well and sell when the price is fair"
-       ]
-      }
-     ]
-    },
-    {
-     "title": "KEY DEFINITIONS",
-     "blocks": [
-      {
-       "t": "table",
-       "head": [
-        "Term",
-        "Meaning"
-       ],
-       "rows": [
-        [
-         "Social environment",
-         "People and the things people make"
-        ],
-        [
-         "Tribe",
-         "A large group sharing one language, culture and origin"
-        ],
-        [
-         "Clan",
-         "A smaller group in a tribe with one ancestor"
-        ],
-        [
-         "Totem",
-         "An animal or plant a clan respects and does not eat"
-        ],
-        [
-         "Legend",
-         "An old story handed down by word of mouth"
-        ],
-        [
-         "Migration",
-         "The movement of people to settle in another place"
-        ],
-        [
-         "Immigration",
-         "Moving into a place"
-        ],
-        [
-         "Emigration",
-         "Moving out of a place"
-        ],
-        [
-         "Settlement pattern",
-         "The way people's homes are arranged in a place"
-        ],
-        [
-         "Occupation",
-         "The work a person does to earn a living"
-        ],
-        [
-         "Drought",
-         "A long time without rain"
-        ],
-        [
-         "Epidemic",
-         "A disease that attacks very many people at once"
-        ]
-       ]
-      }
-     ]
-    },
-    {
-     "title": "IMPORTANT FACTS TO REMEMBER",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "A **tribe** is made up of many **clans**.",
-        "A **legend** is an old story told by elders; it is not proved history.",
-        "**Immigration** = coming **in**. **Emigration** = going **out**.",
-        "People settle where there is **fertile soil, water, peace, jobs and social services**.",
-        "Few people live where there is **poor soil, little rain, insecurity or no services**.",
-        "The main types of work in the syllabus are **fishing, farming, pottery, brick laying, craft working, trading, teaching and office work**.",
-        "Problems in work include **insecurity, animal diseases, poor health and poor transport**."
-       ]
-      }
-     ]
-    },
-    {
-     "title": "EXAMINATION POINTS",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "What is a clan? A smaller group in a tribe whose members came from one ancestor.",
-        "Name the legend of the Baganda — **Kintu and Nambi**.",
-        "Name the legend told in Bugisu — **Mundu and Sera**.",
-        "Give the meaning of immigration — moving into a place.",
-        "Give two causes of migration — drought, war, looking for jobs, epidemics.",
-        "Give three factors that attract people to settle — fertile soil, peace, jobs.",
-        "Name two problems people face in their work — insecurity, poor transport."
        ]
       }
      ]
@@ -2025,47 +1799,6 @@
        "start": 1
       }
      ]
-    },
-    {
-     "title": "P.4 QUICK REVISION",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "Tribe = big · **clan** = small part of a tribe · **totem** = the clan's animal or plant",
-        "Legends: **Kintu and Nambi** (Baganda) · **Mundu and Sera** (Bagisu) · **Labong and Gipir** (Luo)",
-        "**I**mmigration = coming **i**n · emigration = going out",
-        "People settle where there is: fertile soil · rain · peace · jobs · trade · services",
-        "Work: fishing · farming · pottery · brick laying · crafts · trading · teaching · office work",
-        "Problems: insecurity · animal diseases · poor health · poor transport"
-       ]
-      }
-     ]
-    },
-    {
-     "title": "A note on sources",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "The topic title, the period allocation (15 periods), the content list (origin of the people in our district — legends of some tribes, tribes found in our district, and clans that form tribes, all marked **new input** in the syllabus; causes of immigration; factors influencing settlement patterns; types of work; and problems faced by people as they work), the competences and the suggested activities — including modelling and weaving pots, mats and baskets, and discussing with parents why some places have more people than others — were taken from the official **NCDC Primary Four Social Studies Syllabus** (© NCDC 2010, ISBN 978-9970-117-49-9; pages 26–31 of the PDF in `curriculum/`), downloaded from **ncdc.go.ug**. The three legends named above — **Mundu and Sera**, **Labong and Gipir**, and **Kintu and Nambi** — are the syllabus's own examples."
-      },
-      {
-       "t": "p",
-       "x": "**The syllabus names those legends but does not print the stories**, and no version of any of them has been written out here, because no source document containing them is held. The learner is asked to get the story from an elder, the teacher or the library."
-      },
-      {
-       "t": "p",
-       "x": "**This topic is about the learner's own district.** No tribe, clan or totem has been assigned to any district here; where an answer depends on the learner's district, the notes leave the answer to the learner."
-      },
-      {
-       "t": "p",
-       "x": "The explanations, tables, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
-      },
-      {
-       "t": "p",
-       "x": "No NCDC **Teacher's Guide** for P.4 was available, so the syllabus's own guidance was used directly instead."
-      }
-     ]
     }
    ]
   },
@@ -2079,18 +1812,18 @@
    "slug": "our-leaders-in-the-district",
    "periods": 25,
    "curriculum_pages": "31–35",
-   "words": 1913,
+   "words": 1272,
    "sections": [
     {
      "title": "About this topic",
      "blocks": [
       {
        "t": "p",
-       "x": "*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term III, Topic 5, 25 periods (`curriculum/P4-SOCIAL-STUDIES-2010.pdf`, pages 31–35).*"
+       "x": "*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term III, Topic 5 (25 periods, pages 31–35).*"
       },
       {
        "t": "p",
-       "x": "**How to use this topic.** The syllabus asks about the leaders of **your own district**. These notes teach you the **groups of leaders**, what each does and how leaders are chosen. You fill in the names of the leaders where you live."
+       "x": "**How to use this topic.** The syllabus asks about the leaders of **your own district**. You fill in the names of the leaders where you live."
       },
       {
        "t": "p",
@@ -2110,7 +1843,7 @@
      ]
     },
     {
-     "title": "1. WHAT A LEADER IS",
+     "title": "1. Who is a leader? Why do we need leaders?",
      "blocks": [
       {
        "t": "p",
@@ -2123,19 +1856,15 @@
      ]
     },
     {
-     "title": "2. THE FOUR GROUPS OF LEADERS",
+     "title": "2. Name the four groups of leaders in a district.",
      "blocks": [
-      {
-       "t": "p",
-       "x": "The syllabus puts the leaders of a district into **four groups**."
-      },
       {
        "t": "h3",
        "x": "(a) Political leaders"
       },
       {
        "t": "p",
-       "x": "Chosen by the people, or appointed by government, to govern."
+       "x": "Chosen by the people, or appointed by government, to govern. **LC** means **Local Council**."
       },
       {
        "t": "table",
@@ -2271,12 +2000,8 @@
      ]
     },
     {
-     "title": "3. HOW LEADERS ARE CHOSEN",
+     "title": "3. How are leaders chosen?",
      "blocks": [
-      {
-       "t": "p",
-       "x": "The syllabus gives **four** ways:"
-      },
       {
        "t": "table",
        "head": [
@@ -2310,7 +2035,7 @@
      ]
     },
     {
-     "title": "4. HOW AN ELECTION IS CARRIED OUT",
+     "title": "4. How is an election carried out?",
      "blocks": [
       {
        "t": "table",
@@ -2397,7 +2122,7 @@
      ]
     },
     {
-     "title": "5. WHAT MAKES A GOOD LEADER",
+     "title": "5. What makes a good leader?",
      "blocks": [
       {
        "t": "table",
@@ -2437,8 +2162,8 @@
        ]
       },
       {
-       "t": "h3",
-       "x": "Duties of the people towards their leaders"
+       "t": "p",
+       "x": "**Duties of the people towards their leaders**"
       },
       {
        "t": "p",
@@ -2447,7 +2172,7 @@
      ]
     },
     {
-     "title": "6. PREFECTS — LEADERS AT SCHOOL",
+     "title": "6. How are prefects chosen at school?",
      "blocks": [
       {
        "t": "p",
@@ -2480,107 +2205,6 @@
          "Dining hall prefect",
          "Keeps order at meals"
         ]
-       ]
-      }
-     ]
-    },
-    {
-     "title": "KEY DEFINITIONS",
-     "blocks": [
-      {
-       "t": "table",
-       "head": [
-        "Term",
-        "Meaning"
-       ],
-       "rows": [
-        [
-         "Leader",
-         "A person who guides and organises other people"
-        ],
-        [
-         "Political leader",
-         "A leader chosen or appointed to govern"
-        ],
-        [
-         "Civic leader",
-         "A trained government officer appointed to a district post"
-        ],
-        [
-         "Religious leader",
-         "A person who leads people in worship"
-        ],
-        [
-         "Voluntary leader",
-         "A person who leads without being paid"
-        ],
-        [
-         "LC",
-         "Local Council"
-        ],
-        [
-         "RDC",
-         "Resident District Commissioner, who represents the President"
-        ],
-        [
-         "CAO",
-         "Chief Administrative Officer, head of civil servants in the district"
-        ],
-        [
-         "Election",
-         "Choosing a leader by voting"
-        ],
-        [
-         "Appointment",
-         "Choosing a leader by naming him or her to a post"
-        ],
-        [
-         "Inheritance",
-         "Receiving leadership from one's family line"
-        ],
-        [
-         "Candidate",
-         "A person standing for a post"
-        ],
-        [
-         "Ballot box",
-         "The box in which ballot papers are put"
-        ]
-       ]
-      }
-     ]
-    },
-    {
-     "title": "IMPORTANT FACTS TO REMEMBER",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "The four groups of leaders: **political, civic, religious and voluntary**.",
-        "The councils run **LC1 (village) → LC2 (parish) → LC3 (sub-county) → LC4 (county) → LC5 (district)**.",
-        "The **LC5 chairperson** heads the district council; the **CAO** heads the civil servants.",
-        "The **RDC represents the President** in the district.",
-        "Leaders are chosen **by election, by appointment, through inheritance or by volunteering**.",
-        "Voting today is by **secret ballot**.",
-        "A good leader is **honest, fair, hard-working** and **keeps promises**."
-       ]
-      }
-     ]
-    },
-    {
-     "title": "EXAMINATION POINTS",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "Name the four groups of leaders in a district.",
-        "Who heads the local council at village level? The **LC1 chairperson**.",
-        "Who represents the President in a district? The **RDC**.",
-        "Give the full meaning of CAO — **Chief Administrative Officer**.",
-        "Give the full meaning of DISO — **District Internal Security Officer**.",
-        "Name two voluntary organisations given in the syllabus — **UWESO** and **TASO**.",
-        "Give two ways in which leaders are chosen.",
-        "Name two qualities of a good leader."
        ]
       }
      ]
@@ -2662,47 +2286,6 @@
        "start": 1
       }
      ]
-    },
-    {
-     "title": "P.4 QUICK REVISION",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "Four groups: **political · civic · religious · voluntary**",
-        "**LC1** village → **LC2** parish → **LC3** sub-county → **LC4** county → **LC5** district",
-        "**RDC** = President's man · **CAO** = head of civil servants · **DPC** = head of police",
-        "Chosen by: **election · appointment · inheritance · volunteering**",
-        "Election steps: register → nominate → campaign → **vote** → count → declare → swear in",
-        "Good leader: honest · fair · listens · keeps promises · hard-working"
-       ]
-      }
-     ]
-    },
-    {
-     "title": "A note on sources",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "The topic title, the period allocation (25 periods), the content list (types of leaders in our district — political leaders LC1 to LC5, the RDC and the DISO; civic leaders including the CAO, District Health Officer, District Agricultural Officer, magistrates and the District Police Commander; religious leaders — bishops, priests, reverends, sheikhs, pastors and khadis; and voluntary leaders — Scouts, Guides and leaders of NGOs such as UWESO, TASO and the Red Cross; together with how leaders are chosen — by election, by appointment, through inheritance and by volunteering), the competences and the suggested activities — including role-playing an LC1 meeting, role-playing election procedures, drawing election posters, modelling a ballot paper and demonstrating campaigning to be prefects — were taken from the official **NCDC Primary Four Social Studies Syllabus** (© NCDC 2010, ISBN 978-9970-117-49-9; pages 31–35 of the PDF in `curriculum/`), downloaded from **ncdc.go.ug**."
-      },
-      {
-       "t": "p",
-       "x": "The **steps of an election** and the **qualities of a good leader** are set out here as ordinary teaching material to explain the syllabus's own content; the syllabus lists the activities but does not print a numbered procedure."
-      },
-      {
-       "t": "p",
-       "x": "**This topic is about the learner's own district.** No leader of any district is named here; where an answer depends on the learner's district, the notes leave the answer to the learner. Office-holders change, so no names are given."
-      },
-      {
-       "t": "p",
-       "x": "The explanations, tables, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
-      },
-      {
-       "t": "p",
-       "x": "No NCDC **Teacher's Guide** for P.4 was available, so the syllabus's own guidance was used directly instead."
-      }
-     ]
     }
    ]
   },
@@ -2716,18 +2299,18 @@
    "slug": "how-to-meet-peoples-needs-in-our-district",
    "periods": 25,
    "curriculum_pages": "35–40",
-   "words": 2007,
+   "words": 1438,
    "sections": [
     {
      "title": "About this topic",
      "blocks": [
       {
        "t": "p",
-       "x": "*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term III, Topic 6, 25 periods (`curriculum/P4-SOCIAL-STUDIES-2010.pdf`, pages 35–40).*"
+       "x": "*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term III, Topic 6 (25 periods, pages 35–40).*"
       },
       {
        "t": "p",
-       "x": "**How to use this topic.** In P.3 you were briefly shown social services at the **sub-county**. Now you look at the whole **district**. These notes teach you the services, who provides them, the problems met and the solutions. You name the actual centres in your own district."
+       "x": "**How to use this topic.** These notes teach you the services, who provides them, the problems met and the solutions. You name the actual centres in your own district."
       },
       {
        "t": "p",
@@ -2747,7 +2330,7 @@
      ]
     },
     {
-     "title": "1. WHAT SOCIAL SERVICES ARE",
+     "title": "1. What are social services? Who provides them?",
      "blocks": [
       {
        "t": "p",
@@ -2760,12 +2343,8 @@
      ]
     },
     {
-     "title": "2. TYPES OF SOCIAL SERVICES",
+     "title": "2. Name the types of social services.",
      "blocks": [
-      {
-       "t": "p",
-       "x": "The syllabus lists these:"
-      },
       {
        "t": "table",
        "head": [
@@ -2833,11 +2412,11 @@
      ]
     },
     {
-     "title": "3. THE PEOPLE WHO PROVIDE SOCIAL SERVICES",
+     "title": "3. Who provides social services?",
      "blocks": [
       {
        "t": "p",
-       "x": "The syllabus lists these providers:"
+       "x": "A **service provider** is a person or group that gives a service."
       },
       {
        "t": "table",
@@ -2903,12 +2482,8 @@
      ]
     },
     {
-     "title": "4. PROBLEMS MET IN PROVIDING SOCIAL SERVICES",
+     "title": "4. What problems are met in providing social services?",
      "blocks": [
-      {
-       "t": "p",
-       "x": "The syllabus lists these:"
-      },
       {
        "t": "table",
        "head": [
@@ -2961,7 +2536,7 @@
      ]
     },
     {
-     "title": "5. SOLUTIONS TO THE PROBLEMS",
+     "title": "5. What are the solutions to these problems?",
      "blocks": [
       {
        "t": "table",
@@ -3015,11 +2590,11 @@
      ]
     },
     {
-     "title": "6. CARING FOR SOCIAL SERVICE CENTRES",
+     "title": "6. How do we care for social service centres?",
      "blocks": [
       {
        "t": "p",
-       "x": "Social service centres belong to **all of us**. Caring for them is everybody's work."
+       "x": "Social service centres belong to **all of us** — they are **public property**. Caring for them is everybody's work."
       },
       {
        "t": "table",
@@ -3060,87 +2635,40 @@
       },
       {
        "t": "p",
-       "x": "**Road safety:** the syllabus asks learners to practise **safe ways of crossing the road** — **stop, look right, look left, look right again, and cross when it is clear**. Use a zebra crossing where there is one."
+       "x": "**Road safety:** practise **safe ways of crossing the road** — **stop, look right, look left, look right again, and cross when it is clear**. Use a zebra crossing where there is one."
       }
      ]
     },
     {
-     "title": "KEY DEFINITIONS",
+     "title": "7. Words to know",
      "blocks": [
       {
        "t": "table",
        "head": [
-        "Term",
+        "Word",
         "Meaning"
        ],
        "rows": [
         [
-         "Social services",
-         "Things provided to help people live well"
-        ],
-        [
-         "Service provider",
-         "A person or group that gives a service"
-        ],
-        [
-         "Poverty",
+         "**Poverty**",
          "Lack of enough money and basic things"
         ],
         [
-         "Corruption",
+         "**Corruption**",
          "Dishonest use of a position for personal gain"
         ],
         [
-         "Veterinary officer",
-         "A person who treats animals"
-        ],
-        [
-         "Population",
+         "**Population**",
          "The number of people living in a place"
         ],
         [
-         "Public property",
+         "**Public property**",
          "Property that belongs to everybody"
         ],
         [
-         "Maintenance",
+         "**Maintenance**",
          "Keeping something in good working order"
         ]
-       ]
-      }
-     ]
-    },
-    {
-     "title": "IMPORTANT FACTS TO REMEMBER",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "**Government has the main responsibility** for providing social services.",
-        "Religious groups, private medical practitioners and business people also provide services **on government's behalf**.",
-        "The main services are **education, medical, security, transport, water, electricity, housing, road maintenance, banking, and postal and communication**.",
-        "A **veterinary officer** treats **animals**; a **doctor** treats **people**.",
-        "The biggest problems listed are **poverty, corruption, theft, high population and a poor attitude to work**.",
-        "Social service centres are **public property** and must be cared for by everybody.",
-        "Crossing a road: **stop, look right, left, right again, then cross**."
-       ]
-      }
-     ]
-    },
-    {
-     "title": "EXAMINATION POINTS",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "What are social services? Things provided to help people live well.",
-        "Name any four social services in your district.",
-        "Who provides education? **Teachers.**",
-        "Who treats animals? A **veterinary officer**.",
-        "Name three problems met in providing social services.",
-        "Give one solution to corruption.",
-        "Give two ways of caring for a borehole.",
-        "Who has the main responsibility of providing social services? **The government.**"
        ]
       }
      ]
@@ -3220,47 +2748,6 @@
         "*(Your own answer — two centres really found in your district.)*"
        ],
        "start": 1
-      }
-     ]
-    },
-    {
-     "title": "P.4 QUICK REVISION",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "Social services = things that help people live well · **government** provides them",
-        "Education · medical · security · transport · water · electricity · housing · roads · banking · communication",
-        "Providers: teachers · doctors · nurses · **vets** · police · drivers · bankers · farmers · **parents**",
-        "Problems: poverty · bad weather · theft · **corruption** · laziness · high population",
-        "Care: keep clean · do not damage · report damage · they are **public property**",
-        "Crossing a road: **stop · right · left · right · cross**"
-       ]
-      }
-     ]
-    },
-    {
-     "title": "A note on sources",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "The topic title, the period allocation (25 periods), the content list (an explanation of what social services are; the types of social services — education, medical, security, transport, water, electricity and housing services, road maintenance, banking, and postal and communication such as telephones, faxes, e-mail and the websites; the people who provide them — local leaders, teachers, doctors, veterinary officers, nurses, police officers, farmers, drivers, carpenters, bankers, chiefs, parents, shopkeepers and army officers; the problems met — poverty, bad weather, shortage of food, theft, corruption, irresponsibility, laziness, idleness, high population and poor attitude to work; suggested solutions; and caring for social service centres, which the syllabus marks as **new input**), the competences and the suggested activities — including practising safe ways of crossing roads, cleaning the roads leading to school and home, visiting the market, drawing social service centres, listening to a resource person from the police, and composing songs and poems against bad practices — were taken from the official **NCDC Primary Four Social Studies Syllabus** (© NCDC 2010, ISBN 978-9970-117-49-9; pages 35–40 of the PDF in `curriculum/`), downloaded from **ncdc.go.ug**."
-      },
-      {
-       "t": "p",
-       "x": "The syllabus's mention of **faxes** is **older than present-day practice**, and this is flagged in the text above rather than presented as current."
-      },
-      {
-       "t": "p",
-       "x": "**This topic is about the learner's own district.** No service centre of any district is named here; where an answer depends on the learner's district, the notes leave the answer to the learner."
-      },
-      {
-       "t": "p",
-       "x": "The explanations, tables, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
-      },
-      {
-       "t": "p",
-       "x": "No NCDC **Teacher's Guide** for P.4 was available, so the syllabus's own guidance was used directly instead."
       }
      ]
     }

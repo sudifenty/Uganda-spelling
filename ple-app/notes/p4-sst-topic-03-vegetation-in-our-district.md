@@ -4,12 +4,10 @@
 
 # TOPIC 3: VEGETATION IN OUR DISTRICT
 
-*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term II, Topic 3,
-25 periods (`curriculum/P4-SOCIAL-STUDIES-2010.pdf`, pages 23–26).*
+*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term II, Topic 3 (25 periods, pages 23–26).*
 
 **How to use this topic.** The syllabus asks about the vegetation of **your own district**.
-These notes teach you the types of vegetation, their uses, how people damage them and how to
-care for them. You name the ones found where you live.
+You name the types of vegetation found where you live.
 
 **By the end of this topic you should be able to:**
 
@@ -22,7 +20,7 @@ care for them. You name the ones found where you live.
 
 ---
 
-## 1. WHAT VEGETATION IS
+## 1. What is vegetation?
 
 **Vegetation** means **all the plants growing in a place**. It is sometimes called the
 **land cover**, because plants cover the land.
@@ -32,9 +30,7 @@ water.
 
 ---
 
-## 2. TYPES OF VEGETATION
-
-The syllabus names these five:
+## 2. Name the five types of vegetation.
 
 | Type | What it looks like |
 |---|---|
@@ -46,7 +42,7 @@ The syllabus names these five:
 
 ---
 
-## 3. NATURAL AND PLANTED VEGETATION
+## 3. What is the difference between natural and planted vegetation?
 
 | | **Natural vegetation** | **Planted vegetation** |
 |---|---|---|
@@ -56,13 +52,11 @@ The syllabus names these five:
 | Care | Nobody weeds it | People weed, prune and water it |
 | Examples | Natural forest, natural swamp, wild grassland, bushes | A pine or eucalyptus plantation, a banana garden, a tea or sugar-cane estate, trees planted at school |
 
-**A quick test:** if the trees stand in **straight rows**, people planted them.
+> **A quick test:** if the trees stand in **straight rows**, people planted them.
 
 ---
 
-## 4. USES OF VEGETATION
-
-The syllabus lists these uses:
+## 4. What are the uses of vegetation?
 
 | Use | How it helps |
 |---|---|
@@ -85,9 +79,7 @@ The syllabus lists these uses:
 
 ---
 
-## 5. HOW PEOPLE AFFECT VEGETATION
-
-The syllabus lists these activities:
+## 5. Which activities of people damage vegetation?
 
 | Activity | What it does |
 |---|---|
@@ -99,7 +91,9 @@ The syllabus lists these activities:
 | **Construction of roads** | Trees and grass are cleared for the road |
 | **Building houses for settlement and industries** | Land is cleared for homes and factories |
 
-**What happens when vegetation is destroyed**
+---
+
+## 6. What happens when vegetation is destroyed?
 
 - **Soil erosion** — nothing holds the soil, so rain washes it away
 - **Less rain** — fewer trees means less water vapour in the air
@@ -111,7 +105,7 @@ The syllabus lists these activities:
 
 ---
 
-## 6. CARING FOR VEGETATION
+## 7. How do we care for vegetation?
 
 | Way | What to do |
 |---|---|
@@ -130,52 +124,7 @@ round it, and never break young plants.
 
 ---
 
-# KEY DEFINITIONS
-
-| Term | Meaning |
-|---|---|
-| Vegetation | All the plants growing in a place |
-| Natural vegetation | Vegetation that grew on its own |
-| Planted vegetation | Vegetation planted and cared for by people |
-| Forest | Many tall trees growing close together |
-| Swamp | Wet land covered with water plants |
-| Shrub | A short woody plant or bush |
-| Deforestation | Cutting down trees without replacing them |
-| Afforestation | Planting trees where there were none |
-| Reafforestation | Planting trees again where they were cut |
-| Over grazing | Keeping too many animals on the same land |
-| Over cultivation | Growing crops on the same land until the soil is worn out |
-| Gazetting | Marking off land by law so that it is protected |
-
----
-
-# IMPORTANT FACTS TO REMEMBER
-
-- Vegetation means **all the plants growing in a place**.
-- The five types in the syllabus are **forests, swamps, shrubs, grass and crops**.
-- **Natural** vegetation grows on its own; **planted** vegetation is put there by people and
-  usually grows in **straight lines**.
-- Plants give us **oxygen**, and they **help rain to form**.
-- Roots of plants **hold the soil** and stop **soil erosion**.
-- **Deforestation** leads to soil erosion, less rain and drought.
-- **Afforestation** = new trees. **Reafforestation** = trees again.
-- Cutting **only mature trees** is called **selective cutting**.
-
----
-
-# EXAMINATION POINTS
-
-- What is vegetation? All the plants growing in a place.
-- Name any three types of vegetation — forests, swamps, shrubs, grass, crops.
-- Give one difference between natural and planted vegetation.
-- Give two uses of vegetation — firewood, medicine, food, oxygen, timber, shade.
-- Name two activities of people that destroy vegetation — bush burning, deforestation.
-- Give two ways of caring for vegetation — planting trees, avoiding bush burning.
-- What gas do plants give to people? **Oxygen.**
-
----
-
-# COMMON MISTAKES TO AVOID
+## COMMON MISTAKES TO AVOID
 
 - Saying vegetation means only trees — grass and crops are vegetation too.
 - Calling a planted forest a **natural** forest.
@@ -186,7 +135,7 @@ round it, and never break young plants.
 
 ---
 
-# REVISION QUESTIONS
+## REVISION QUESTIONS
 
 1. What is vegetation?
 2. Name the five types of vegetation given in the syllabus.
@@ -211,7 +160,7 @@ round it, and never break young plants.
 
 ---
 
-# ANSWERS TO REVISION QUESTIONS
+## ANSWERS TO REVISION QUESTIONS
 
 1. **All the plants growing in a place**
 2. **Forests, swamps, shrubs, grass and crops**
@@ -233,38 +182,3 @@ round it, and never break young plants.
 18. It means the government **marks it off by law** as a protected reserve.
 19. *(Your own answer — the vegetation really found in your district.)*
 20. Any correct answer, for example: **plant a tree at school or at home and take care of it**, or **never set fire to the bush**.
-
----
-
-# P.4 QUICK REVISION
-
-- Vegetation = **all the plants in a place**
-- Types: **forests · swamps · shrubs · grass · crops**
-- **Natural** grows on its own · **planted** grows in straight lines
-- Uses: firewood · medicine · food · **oxygen** · rain · stops erosion · beauty
-- Destroyed by: bush burning · over cultivation · over grazing · deforestation · bricks · roads · building
-- Cared for by: **afforestation · reafforestation** · selective cutting · no bush burning · gazetting
-
----
-
-## A note on sources
-
-The topic title, the period allocation (25 periods), the content list (examples of
-vegetation — forests, swamps, shrubs, grass and crops; uses of vegetation — herbs for
-medicine, firewood, food, oxygen, support in rain formation, control of soil erosion and
-wind, and beauty; how people affect vegetation — burning bushes, over cultivation, over
-grazing, deforestation, making bricks, construction of roads and building houses for
-settlement and industries; and caring for the vegetation, which the syllabus marks as **new
-input**), the competences and the suggested activities — including comparing natural and
-planted forests and making crafts such as mats and carpets — were taken from the official
-**NCDC Primary Four Social Studies Syllabus** (© NCDC 2010, ISBN 978-9970-117-49-9; pages
-23–26 of the PDF in `curriculum/`), downloaded from **ncdc.go.ug**. The explanations,
-tables, exercises and answers are original teaching material written for the learner; they
-are **not** copied from the curriculum document or from any textbook.
-
-**This topic is about the learner's own district.** No facts about any particular district
-have been invented; where an answer depends on the learner's district, the notes leave the
-answer to the learner.
-
-No NCDC **Teacher's Guide** for P.4 was available, so the syllabus's own guidance was used
-directly instead.

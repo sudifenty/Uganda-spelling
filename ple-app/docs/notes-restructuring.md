@@ -42,6 +42,8 @@ standard. Status lives at the bottom.
 
 | Batch | Topics | State |
 |---|---|---|
-| P4 SST 1–2 (pilot) | 2 | ✅ restructured (this commit) |
-| P4 SST 3–6 | 4 | ⬜ next |
-| P5–P7 all subjects | 115 | ⬜ pending, batch per subject |
+| P4 SST (all 6 topics) | 6 | ✅ restructured & pushed |
+| P5 ENG (8) | 8 | ⬜ next |
+| P5 SCI (12), P5 MATH (12), P5 SST (12) | 36 | ⬜ pending |
+| P6 ENG (6), P6 SST (5), P6 SCI (12), P6 MATH (12) | 35 | ⬜ pending |
+| P7 ENG (7), P7 MATH (11), P7 SCI (8), P7 SST (10) | 36 | ⬜ pending |
