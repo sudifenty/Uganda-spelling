@@ -1626,6 +1626,7 @@ function mathLessonSeen(){
 function mathLessonNext(){
   const L=state.mlesson;if(!L)return;
   if(L.fb&&L.fb.type==='check'&&!L.fb.done){/* must finish checkpoint first */return;}
+  try{ if(typeof spStop==='function') spStop(); }catch(e){}
   mathLessonSeen();            /* mark the section read: XP + mastery stay accurate */
   if(L.i<L.steps.length-1){L.i++;L.fb=null;render();return;}
   render();
@@ -1672,7 +1673,9 @@ function mathLessonFinish(){
   x.challenge=Math.max(x.challenge||0,L.checks?Math.round(100*L.checkOk/L.checks):0);
   learnSave(d);L.finished=true;render();
 }
-function mathLessonSpeak(){const L=state.mlesson;if(!L)return;const st=L.steps[L.i];if(st&&st.type==='read')mathSpeak(mathLessonText(st.sec));else if(st&&st.type==='check')mathSpeak(st.q.question);}
+function mathLessonSpeak(){const L=state.mlesson;if(!L)return;const st=L.steps[L.i];
+  if(st&&st.type==='read'){state.nsec=st.secIndex;try{spPlay();return;}catch(e){}}
+  if(st&&st.type==='check')mathSpeak(st.q.question);}
 
 SCREENS.mathLesson = () => {
   const L=state.mlesson;if(!L)return SCREENS.notes;
@@ -1841,6 +1844,7 @@ function njSeen(){
 function njNext(){
   const J=state.njourney;if(!J)return;
   if(J.fb&&!J.fb.done)return;               /* finish the checkpoint first */
+  try{ if(typeof spStop==='function') spStop(); }catch(e){}
   njSeen();
   if(J.i<J.steps.length-1){J.i++;J.fb=null;render();window.scrollTo(0,0);return;}
   render();
@@ -1864,12 +1868,13 @@ function njSelf(ok){
   J.fb=null;njNext();
 }
 function njSpeak(){
+  /* Route through the reading machine: it plays the RECORDING when one
+     exists, otherwise reads SENTENCE BY SENTENCE (highlighting, pause,
+     stop). One giant narration request would freeze the app. */
   const J=state.njourney;if(!J)return;
   const st=J.steps[J.i];if(!st||st.type!=='read')return;
-  const key=J.tid+':'+st.secIndex;
-  const url=(typeof LESSON_AUDIO!=='undefined')&&LESSON_AUDIO[key];
-  if(url){try{spFilePlay(key,url,()=>{mathSpeak(mathLessonText(st.sec));});return;}catch(e){}}
-  mathSpeak(mathLessonText(st.sec));
+  state.nsec=st.secIndex;
+  try{ spPlay(); }catch(e){ toast('The standard narrator is still downloading.'); }
 }
 function njGoPractice(){
   const t=njTopic();
@@ -1889,6 +1894,7 @@ SCREENS.noteJourney = () => {
   const t=njTopic();if(!t)return SCREENS.notes;
   if(J.i>=J.steps.length)J.i=J.steps.length-1;
   const st=J.steps[J.i],n=J.i+1,total=J.steps.length;
+  if(st.type==='read')state.nsec=st.secIndex;   /* keeps recordings + reading machine in sync */
   const nextTitle=J.steps[J.i+1]&&J.steps[J.i+1].type==='read'
     ?String(J.steps[J.i+1].sec.title).replace(/^\d+\.\s*/,''):null;
   let body='';
@@ -1977,6 +1983,7 @@ SCREENS.noteJourney = () => {
     <div style="flex:1;min-width:0"><h2 style="font-size:18px">${nEsc(t.title)}</h2>
       <div class="sub">Learning journey \u00B7 Step ${n} of ${total}</div></div>
     <span class="pill on">\u2B50 ${J.xp} XP</span>
+    ${spBarHTML()}
   </header>
   <div class="bar" style="margin-bottom:14px"><i style="width:${(J.i/J.steps.length)*100}%;background:var(--purple)"></i></div>
   ${body}`;
@@ -2220,7 +2227,7 @@ function companionSheet(message){return `<div class="companion compact">${dinoSV
 function companionHidden(){return localStorage.getItem('smartple_companion_hidden')==='1';}
 function companionToggle(){if(companionHidden())localStorage.removeItem('smartple_companion_hidden');else localStorage.setItem('smartple_companion_hidden','1');render();}
 function companionExplain(){const t=noteById(state.ntopic),sec=noteSections(t)[state.nsec]||noteSections(t)[0];const text=(sec.blocks||[]).map(b=>b.x||(b.items||[]).slice(0,2).join('. ')).filter(Boolean).map(cleanEdu).filter(Boolean).slice(0,2).join(' ');openSheet(`<div class="grabber"></div>${companionSheet('Here is a simpler way to think about it.')}<h3>💡 Explain Simply</h3><p class="muted" style="margin-top:10px">${nEsc(text||'Read this section carefully and look for its main idea.')}</p><button class="btn btn-primary" style="margin-top:14px" onclick="closeSheet()">GOT IT</button>`);}
-function companionListen(){const t=noteById(state.ntopic),sec=noteSections(t)[state.nsec]||noteSections(t)[0];const text=(sec.blocks||[]).map(b=>b.x||(b.items||[]).join('. ')).filter(Boolean).map(cleanEdu).join('. ');try{if(typeof spSpeak==='function'){spSpeak(text);toast('Listening…');return;}}catch(e){}toast('The standard narrator is still downloading.');}
+function companionListen(){try{if(typeof spPlay==='function'){spPlay();toast('Listening…');return;}}catch(e){}toast('The standard narrator is still downloading.');}
 function companionKeys(){const t=noteById(state.ntopic),sec=noteSections(t)[state.nsec]||noteSections(t)[0],points=[];(sec.blocks||[]).forEach(b=>{if(b.t==='ul'||b.t==='ol')points.push(...b.items.slice(0,3).map(cleanEdu));if(b.t==='table')points.push(...b.rows.slice(0,3).map(r=>cleanEdu(r.join(' — '))));});openSheet(`<div class="grabber"></div>${companionSheet('These are useful points to remember.')}<h3>📌 Key Points</h3><ul class="nt-ul">${points.slice(0,5).map(x=>`<li>${nEsc(x)}</li>`).join('')||'<li>Read the section once more and identify its main ideas.</li>'}</ul><button class="btn btn-primary" style="margin-top:14px" onclick="closeSheet()">CLOSE</button>`);}
 function companionPanel(){const t=noteById(state.ntopic);if(!t)return '';return `<div id="companionFloat" class="companion-float ${companionHidden()?'minimized':''}"><div class="companion-panel" id="companionPanel" hidden><h4>🦖 Study Buddy</h4><small>${nEsc(t.title)}</small><button class="btn btn-soft" onclick="companionExplain()">💡 Explain This</button><button class="btn btn-soft" onclick="companionListen()">🔊 Listen</button><button class="btn btn-soft" onclick="closeCompanionPanel();startNoteChallenge()">🧠 Test Me</button><button class="btn btn-soft" onclick="companionKeys()">📌 Key Points</button><button class="btn btn-ghost" onclick="companionToggle()">Companion: ON</button></div><div class="companion-bubble"><button onclick="companionToggle()" aria-label="Minimize companion">×</button>${nEsc(companionText(t))}</div><button class="dino-button" onclick="toggleCompanionPanel()" aria-label="Open learning companion">${dinoSVG()}</button></div>`;}
 function toggleCompanionPanel(){const p=document.getElementById('companionPanel');if(p)p.hidden=!p.hidden;}
@@ -4269,6 +4276,21 @@ function nvPrefetch(i){
 let NV_AUDIO = null;
 function nvSpeak(text){
   if(typeof afxMuted==='function'&&afxMuted())return;
+  const _t=String(text==null?'':text);
+  /* ONE neural inference on a long text BLOCKS the UI (the synthesis
+     runs on the main thread). Long texts are spoken sentence by
+     sentence instead — the app never freezes. */
+  if(_t.length>220){
+    const parts=(_t.match(/[^.!?]+[.!?]*/g)||[_t]).map(x=>x.trim()).filter(Boolean);
+    let chain=Promise.resolve();
+    parts.forEach(pt=>{
+      chain=chain.then(()=>{ if(!SP.on && !NV_AUDIO) return null; return nvSpeakOne(pt); });
+    });
+    return chain;
+  }
+  return nvSpeakOne(_t);
+}
+function nvSpeakOne(text){
   return new Promise((resolve, reject) => {
     nvWav(text).then(url => {
       if(!SP.on){ resolve(); return; }
@@ -4630,7 +4652,7 @@ const FILEAUD = { key:'', url:'', el:null, state:'idle' };   /* idle|loading|pla
 function spFileFor(key){ return LESSON_AUDIO[key] || null; }
 function spCurrentSectionKey(){
   try{
-    if(state.screen !== 'noteRead' && state.screen !== 'mathLesson') return null;
+    if(state.screen !== 'noteRead' && state.screen !== 'mathLesson' && state.screen !== 'noteJourney') return null;
     const t = typeof noteById === 'function' ? noteById(state.ntopic) : null;
     if(!t) return null;
     return t.id + ':' + (state.nsec || 0);
@@ -4979,7 +5001,7 @@ const _renderBase = render;
 render = function(){
   _renderBase();
   wireCompanion();
-  if(state.screen === 'noteRead'){
+  if(state.screen === 'noteRead' || state.screen === 'noteJourney' || state.screen === 'mathLesson'){
     if(typeof spPrepare === 'function') spPrepare();
   }else if(typeof spStop === 'function' && (SP.on || SP.paused)){
     spStop();

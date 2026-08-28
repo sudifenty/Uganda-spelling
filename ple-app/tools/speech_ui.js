@@ -334,7 +334,7 @@ const FILEAUD = { key:'', url:'', el:null, state:'idle' };   /* idle|loading|pla
 function spFileFor(key){ return LESSON_AUDIO[key] || null; }
 function spCurrentSectionKey(){
   try{
-    if(state.screen !== 'noteRead' && state.screen !== 'mathLesson') return null;
+    if(state.screen !== 'noteRead' && state.screen !== 'mathLesson' && state.screen !== 'noteJourney') return null;
     const t = typeof noteById === 'function' ? noteById(state.ntopic) : null;
     if(!t) return null;
     return t.id + ':' + (state.nsec || 0);

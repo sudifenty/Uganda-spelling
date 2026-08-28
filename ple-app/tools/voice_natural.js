@@ -158,6 +158,21 @@ function nvPrefetch(i){
 let NV_AUDIO = null;
 function nvSpeak(text){
   if(typeof afxMuted==='function'&&afxMuted())return;
+  const _t=String(text==null?'':text);
+  /* ONE neural inference on a long text BLOCKS the UI (the synthesis
+     runs on the main thread). Long texts are spoken sentence by
+     sentence instead — the app never freezes. */
+  if(_t.length>220){
+    const parts=(_t.match(/[^.!?]+[.!?]*/g)||[_t]).map(x=>x.trim()).filter(Boolean);
+    let chain=Promise.resolve();
+    parts.forEach(pt=>{
+      chain=chain.then(()=>{ if(!SP.on && !NV_AUDIO) return null; return nvSpeakOne(pt); });
+    });
+    return chain;
+  }
+  return nvSpeakOne(_t);
+}
+function nvSpeakOne(text){
   return new Promise((resolve, reject) => {
     nvWav(text).then(url => {
       if(!SP.on){ resolve(); return; }

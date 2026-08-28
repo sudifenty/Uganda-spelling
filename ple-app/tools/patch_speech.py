@@ -85,7 +85,7 @@ const _renderBase = render;
 render = function(){
   _renderBase();
   wireCompanion();
-  if(state.screen === 'noteRead'){
+  if(state.screen === 'noteRead' || state.screen === 'noteJourney' || state.screen === 'mathLesson'){
     if(typeof spPrepare === 'function') spPrepare();
   }else if(typeof spStop === 'function' && (SP.on || SP.paused)){
     spStop();
