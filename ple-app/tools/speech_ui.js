@@ -253,64 +253,107 @@ function spStop(){
   spClearMark();
   spBar();
 }
-function devSpeakOne(text, opts){
-  if(typeof afxMuted==='function'&&afxMuted())return;
-  const u = new SpeechSynthesisUtterance(text);
-  const v = spBest(); if(v){ u.voice = v; u.lang = v.lang; } else { u.lang = 'en-GB'; }
-  u.rate = spRate(); u.pitch = 1.04; u.volume = spVolume();
-  Object.assign(u, opts||{});
-  speechSynthesis.speak(u);
-  return u;
-}
-function devSpeak(text){
-  if(typeof afxMuted==='function'&&afxMuted())return;
-  return new Promise((resolve, reject) => {
-    const u = devSpeakOne(text);
-    u.onend = () => resolve();
-    u.onerror = () => reject(new Error('device voice failed'));
-  });
-}
-/* First run before the 60 MB narrator download: speak with the phone voice
-   and SAY SO once. A learner on a slow network is never left in silence. */
+/* The narrator is the ONE voice of this app — identical on every device.
+   If it is still downloading, the learner is told; a DIFFERENT (device)
+   voice is never used, so the app never sounds different from phone to
+   phone. */
 let SP_FALLBACK_NOTED=false;
-function spDeviceNotice(){
+function spNarratorNotice(){
   if(SP_FALLBACK_NOTED)return;SP_FALLBACK_NOTED=true;
-  toast('Using the phone voice for now \u2014 download the natural voice in Voice settings when you have wi-fi.');
+  toast('The standard narrator is still downloading \u2014 it will be ready in a few minutes.');
 }
 /* one call, whichever engine is in use */
 function spSpeak(text){
   if(typeof afxMuted==='function'&&afxMuted())return;
-  if(nvMode() === 'natural'){
-    if(!NV.ready){ spDeviceNotice(); return devSpeak(text); }
-    return nvSpeak(text).catch(err => {
-      NV.error = 'The standard narrator could not play this part. Please try again or check the downloaded voice.';
-      spBar();
-      return Promise.reject(err);
-    });
-  }
-  /* Explicit device mode remains available only as a clearly labelled test option. */
-  return devSpeak(text);
+  if(!NV.ready){ spNarratorNotice(); return Promise.reject(new Error('narrator not ready')); }
+  return nvSpeak(text).catch(err => {
+    NV.error = 'The standard narrator could not play this part. Please try again or check the downloaded voice.';
+    spBar();
+    return Promise.reject(err);
+  });
 }
 /* say a single word out loud — used by "hear a word" and Repeat */
 function spWord(w){
   if(typeof afxMuted==='function'&&afxMuted())return;
   spStopAudio();
   const say = spSay(w);
-  if(nvMode() === 'natural'){
-    if(NV.ready) nvSpeak(say).catch(()=>{ NV.error='The standard narrator could not play this word.'; spBar(); });
-    else { spDeviceNotice(); devSpeakOne(say, {rate: Math.max(0.6, spRate() - 0.15)}); }
-  } else devSpeakOne(say, {rate: Math.max(0.6, spRate() - 0.15)});
+  if(NV.ready) nvSpeak(say).catch(()=>{ NV.error='The standard narrator could not play this word.'; spBar(); });
+  else spNarratorNotice();
 }
 function spStopAudio(){
-  if('speechSynthesis' in window) speechSynthesis.cancel();
   nvStop();
+  spFileStop();
+}
+/* ============================================================
+   PRE-GENERATED LESSON RECORDINGS — one voice, recorded once,
+   played on every device. The device NEVER generates narration.
+   When a section has a recording it is played directly; sections
+   without one are read by the standard narrator (the same voice
+   everywhere). Files live at /audio/<subject>/<class>/t<NN>/ and
+   are cached by the service worker on first play (offline after
+   that). Registry key: "<topicId>:<sectionIndex>".
+   ============================================================ */
+const LESSON_AUDIO = {
+  'P4_SST_T01:0': './audio/sst/p4/t01/sec-01.mp3',
+  'P4_SST_T01:1': './audio/sst/p4/t01/sec-02.mp3',
+  'P4_SST_T01:2': './audio/sst/p4/t01/sec-03.mp3',
+  'P4_SST_T01:3': './audio/sst/p4/t01/sec-04.mp3',
+  'P4_SST_T01:4': './audio/sst/p4/t01/sec-05.mp3',
+  'P4_SST_T01:5': './audio/sst/p4/t01/sec-06.mp3',
+  'P4_SST_T01:6': './audio/sst/p4/t01/sec-07.mp3',
+  'P4_SST_T01:7': './audio/sst/p4/t01/sec-08.mp3',
+  'P4_SST_T01:8': './audio/sst/p4/t01/sec-09.mp3',
+  'P4_SST_T01:9': './audio/sst/p4/t01/sec-10.mp3',
+};
+const FILEAUD = { key:'', url:'', el:null, state:'idle' };   /* idle|loading|playing|paused|error */
+function spFileFor(key){ return LESSON_AUDIO[key] || null; }
+function spCurrentSectionKey(){
+  try{
+    if(state.screen !== 'noteRead' && state.screen !== 'mathLesson') return null;
+    const t = typeof noteById === 'function' ? noteById(state.ntopic) : null;
+    if(!t) return null;
+    return t.id + ':' + (state.nsec || 0);
+  }catch(e){ return null; }
+}
+function spFileStop(){
+  if(FILEAUD.el){ try{ FILEAUD.el.pause(); }catch(e){} }
+  FILEAUD.state = 'idle'; FILEAUD.key = ''; spBar();
+}
+function spFileRetry(){ if(FILEAUD.key && FILEAUD.url) spFilePlay(FILEAUD.key, FILEAUD.url); }
+function spFileToggle(){
+  if(!FILEAUD.el) return;
+  if(FILEAUD.el.paused){ FILEAUD.el.play().catch(()=>{ FILEAUD.state='error'; spBar(); toast('Could not play the recording. Check your connection and try again.'); }); FILEAUD.state='playing'; }
+  else { FILEAUD.el.pause(); FILEAUD.state='paused'; }
+  spBar();
+}
+function spFilePlay(key, url){
+  spStopAudio();
+  FILEAUD.key = key; FILEAUD.url = url; FILEAUD.state = 'loading'; spBar();
+  try{
+    if(!FILEAUD.el){
+      FILEAUD.el = document.createElement('audio');
+      FILEAUD.el.preload = 'auto';
+      FILEAUD.el.onplaying = () => { FILEAUD.state = 'playing'; spBar(); };
+      FILEAUD.el.onpause  = () => { if(FILEAUD.state === 'playing'){ FILEAUD.state = 'paused'; spBar(); } };
+      FILEAUD.el.onended  = () => { FILEAUD.state = 'idle'; SP.on = false; SP.paused = false; spBar(); };
+      FILEAUD.el.onerror  = () => { FILEAUD.state = 'error'; spBar(); toast('The recording could not be loaded. Tap the speaker to retry.'); };
+    }
+    FILEAUD.el.src = url;
+    const p = FILEAUD.el.play();
+    if(p && p.catch) p.catch(()=>{ FILEAUD.state='error'; spBar(); });
+  }catch(e){ FILEAUD.state = 'error'; spBar(); }
 }
 function spPlay(){
   if(SP.paused){
-    if(nvMode() === 'natural' && NV.ready) nvResume();
-    else speechSynthesis.resume();
+    if(FILEAUD.state === 'playing' || FILEAUD.state === 'paused'){
+      spFileToggle(); SP.paused = false; SP.on = true; spBar(); return;
+    }
+    if(NV.ready) nvResume();
     SP.paused = false; SP.on = true; spBar(); return;
   }
+  const fkey = spCurrentSectionKey();
+  const furl = fkey && spFileFor(fkey);
+  if(furl){ SP.on = true; SP.paused = false; spBar(); spFilePlay(fkey, furl); return; }
   SP.chunks = spCollect();
   if(!SP.chunks.length) return;
   SP.on = true; SP.i = 0;
@@ -342,8 +385,8 @@ function spRepeat(){
 }
 function spPause(){
   if(!SP.on) return;
-  if(nvMode() === 'natural' && NV.ready) nvPause();
-  else speechSynthesis.pause();
+  if(FILEAUD.state === 'playing'){ spFileToggle(); SP.paused = true; spBar(); return; }
+  if(NV.ready) nvPause();
   SP.paused = true; spBar();
 }
 function spSkip(d){
@@ -473,7 +516,7 @@ function spBar(){
   if(el) el.outerHTML = spBarHTML();
 }
 function spBarHTML(){
-  if(!('speechSynthesis' in window) && !(nvMode()==='natural' && NV.ready))
+  if(!SP_READY)
     return `<span id="spBar" class="sp-in"><button class="sp-i" onclick="spSheet()" aria-label="Voice settings">⚙</button></span>`;
   if(!SP_READY)
     return `<span id="spBar" class="sp-in">
@@ -504,15 +547,11 @@ const SP_SAMPLE = 'Good morning. Today we are learning about fractions. ' +
                   'Three quarters plus one quarter equals one.';
 
 function spTry(uri){
-  const v = SP_VOICES.find(x => x.voiceURI === uri);
-  if(!v) return;
-  speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(SP_SAMPLE);
-  u.voice = v; u.lang = v.lang;
-  u.rate = spRate(); u.pitch = 1.04; u.volume = spVolume();
-  speechSynthesis.speak(u);
+  /* One voice everywhere: the sample is the app's own narrator sample. */
+  try{ if(typeof spSpeak==='function' && NV.ready){ spSpeak(SP_SAMPLE); return; } }catch(e){}
+  toast('The standard narrator is still downloading.');
 }
-function spUse(uri){ spSetVoice(uri); spSheet(); toast('Voice changed'); }
+function spUse(uri){ spSheet(); toast('This app uses one standard narrator voice on every device.'); }
 
 /* Embedded from ple-app/docs/test-voice.mp3 (58 KB) so the app stays one
    self-contained file and the audio test works fully offline. */

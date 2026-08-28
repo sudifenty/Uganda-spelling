@@ -33,7 +33,7 @@ self.addEventListener('activate', (e) => {
   e.waitUntil((async () => {
     const names = await caches.keys();
     await Promise.all(
-      names.filter(n => n.startsWith('smart-ple-') && n !== CACHE)
+      names.filter(n => n.startsWith('smart-ple-') && n !== CACHE && n !== 'smart-ple-audio')
            .map(n => caches.delete(n)));
     await self.clients.claim();
   })());
@@ -45,6 +45,12 @@ self.addEventListener('fetch', (e) => {
   const url = new URL(req.url);
   if (url.origin !== location.origin) return;          // Supabase/CDN: network
   if (url.pathname.endsWith('sw.js')) return;          // never cache the worker
+  if (url.pathname.includes('/audio/')) {
+    /* lesson recordings: cached once on first play, kept across app
+       updates (they are content, not app shell), refreshed by revalidation */
+    e.respondWith(swrInto(req, 'smart-ple-audio'));
+    return;
+  }
   const isDoc = req.mode === 'navigate' ||
                 (req.headers.get('accept') || '').includes('text/html');
   const target = isDoc ? new Request('./', { cache: 'reload' }) : req;
@@ -52,6 +58,18 @@ self.addEventListener('fetch', (e) => {
 });
 
 /* Serve the cached copy immediately, refresh it in the background. */
+async function swrInto(req, cacheName) {
+  const cache = await caches.open(cacheName);
+  const cached = await cache.match(req);
+  const fresh = fetch(req).then(async (res) => {
+    if (res && res.ok) await cache.put(req, res.clone());
+    return res;
+  }).catch(() => null);
+  if (cached) return cached;
+  const res = await fresh;
+  if (res) return res;
+  return new Response('Offline and not yet cached.', { status: 503 });
+}
 async function staleWhileRevalidate(req) {
   const cache = await caches.open(CACHE);
   const cached = await cache.match(req);

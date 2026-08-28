@@ -40,8 +40,8 @@ const nvChosen = () => NV_VOICES.find(v => v.id === NV.voiceId) || NV_VOICES[0];
 
 /* which engine is in use */
 function nvMode(){
-  /* One controlled narrator is the production default. Device TTS is never silently selected. */
-  return localStorage.getItem('ple_engine') === 'device' ? 'device' : 'natural';
+  /* ONE narrator for every device. Device TTS is never used for narration. */
+  return 'natural';
 }
 function nvSetMode(m){
   localStorage.setItem('ple_engine', m);
