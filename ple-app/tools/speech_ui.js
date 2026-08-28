@@ -351,9 +351,10 @@ function spFileToggle(){
   else { FILEAUD.el.pause(); FILEAUD.state='paused'; }
   spBar();
 }
-function spFilePlay(key, url){
+function spFilePlay(key, url, onFail){
   if(typeof afxMuted==='function'&&afxMuted()){ spMutedNotice(); return; }
   spStopAudio();
+  FILEAUD.onFail = onFail || null;
   FILEAUD.key = key; FILEAUD.url = url; FILEAUD.state = 'loading'; spBar();
   try{
     if(!FILEAUD.el){
@@ -362,7 +363,7 @@ function spFilePlay(key, url){
       FILEAUD.el.onplaying = () => { FILEAUD.state = 'playing'; spBar(); };
       FILEAUD.el.onpause  = () => { if(FILEAUD.state === 'playing'){ FILEAUD.state = 'paused'; spBar(); } };
       FILEAUD.el.onended  = () => { FILEAUD.state = 'idle'; SP.on = false; SP.paused = false; spBar(); };
-      FILEAUD.el.onerror  = () => { FILEAUD.state = 'error'; spBar(); toast('The recording could not be loaded. Tap the speaker to retry.'); };
+      FILEAUD.el.onerror  = () => { FILEAUD.state = 'error'; spBar(); toast('The recording could not be loaded. Tap the speaker to retry.'); if(FILEAUD.onFail){ const f = FILEAUD.onFail; FILEAUD.onFail = null; try{ f(); }catch(e){} } };
     }
     FILEAUD.el.src = url;
     const p = FILEAUD.el.play();

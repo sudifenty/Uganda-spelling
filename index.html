@@ -1184,7 +1184,7 @@ const state = {
   klass:'P6', psubject:'SST', progress:{}, ptopic:null,
   nsubject:'SST', ntopic:null, nsec:0, noteSeen:{},
   exsubject:'MATH', exTid:null, exRun:null,
-  timerId:null, spellClass:'P6', spellDiff:'Easy', spell:null, mtab:'learn', mclass:null, mrun:null, mlearn:null, mlesson:null, authUser:null, authReady:false, classLocked:false, authMode:'signin', authError:'',
+  timerId:null, spellClass:'P6', spellDiff:'Easy', spell:null, mtab:'learn', mclass:null, mrun:null, mlearn:null, mlesson:null, njourney:null, authUser:null, authReady:false, classLocked:false, authMode:'signin', authError:'',
 };
 
 /* Colour helpers — every colour comes from the 6-hue system */
@@ -1211,7 +1211,7 @@ const TAB_OF = {home:'home',practice:'practice',subjects:'practice',subjects_top
   topics:'practice',papers:'papers',paperDetail:'papers',progress:'home',profile:'profile',
   notes:'notes',noteTopic:'notes',noteRead:'notes',
   exercises:'exercises',exTopic:'exercises',exDo:'exercises',exResult:'exercises',exMine:'exercises',
-  avatar:'profile',settings:'profile',offline:'profile',about:'profile', auth:'profile', spelling:'home', spellDifficulty:'home', spellModes:'home', spellPractice:'home', spellResults:'home', spellMistakes:'home', noteChallenge:'notes', mathHome:'practice', mathLearn:'practice', mathPlay:'practice', mathLesson:'notes'};
+  avatar:'profile',settings:'profile',offline:'profile',about:'profile', auth:'profile', spelling:'home', spellDifficulty:'home', spellModes:'home', spellPractice:'home', spellResults:'home', spellMistakes:'home', noteChallenge:'notes', mathHome:'practice', mathLearn:'practice', mathPlay:'practice', mathLesson:'notes', noteJourney:'notes'};
 const FULLSCREEN = ['question','exam','results','review','archive','pquestion','spellPractice','spellResults','mathPlay'];
 
 function go(screen, push=true){
@@ -1772,6 +1772,213 @@ SCREENS.mathLesson = () => {
     <span class="pill on">⭐ ${L.xp} XP</span>
   </header>
   <div class="bar" style="margin-bottom:14px"><i style="width:${(L.i/L.steps.length)*100}%;background:var(--purple)"></i></div>
+  ${body}`;
+};
+
+
+/* ============================================================
+   THE NOTES LEARNING JOURNEY — every subject.
+   HOOK -> READ -> CHECKPOINT -> ... -> WATCH OUT -> QUICK
+   MEMORY -> QUICK CHECK -> TEST YOURSELF -> CELEBRATION.
+   Pure presentation: every read step renders the EXISTING
+   section content verbatim; every question comes from the
+   note's own content. Nothing is invented, nothing deleted.
+   ============================================================ */
+function njHook(t){
+  const emoji={SST:'\U0001F30D',SCI:'\U0001F52C',ENG:'\U0001F4D6',MATH:'\U00002797'}[t.subject]||'\U0001F50E';
+  const openers=[
+    emoji+' Ever wondered about \u201c'+t.title+'\u201d? There is more to it than you think. Let\u2019s find out!',
+    emoji+' '+t.title+' \u2014 sounds like a big topic? It is simpler than it looks. Ready to discover it?',
+    emoji+' Look around you. '+t.title+' is closer to your everyday life than you think. Shall we explore it?'
+  ];
+  return openers[(t.topic_no||1)%openers.length];
+}
+function noteJourneyBuild(t){
+  const secs=noteSections(t),steps=[];
+  const core=[],tail={};
+  const KNOWN_TAIL=/^(KEY DEFINITIONS|IMPORTANT FACTS TO REMEMBER|EXAMINATION POINTS|COMMON MISTAKES TO AVOID|REVISION QUESTIONS|ANSWERS TO REVISION QUESTIONS|P\.\d QUICK REVISION|A NOTE ON SOURCES)$/i;
+  secs.forEach(sec=>{
+    const title=String(sec.title||'').trim();
+    if(/^\d/.test(title)||!KNOWN_TAIL.test(title))core.push(sec);
+    if(KNOWN_TAIL.test(title))tail[String(title).toUpperCase()]=sec;
+  });
+  steps.push({type:'hook',list:core.map(s=>String(s.title).replace(/^\d+\.\s*/,''))});
+  const pool=shuffle(noteChallengePool(t)).map(q=>({...q,options:shuffle(q.options.slice())}));
+  let qi=0;
+  core.forEach((sec,idx)=>{
+    steps.push({type:'read',sec:sec,secIndex:secs.indexOf(sec)});
+    if((idx+1)%2===0&&qi<pool.length)steps.push({type:'check',q:pool[qi++],quick:false});
+  });
+  if(tail['COMMON MISTAKES TO AVOID'])steps.push({type:'watch',sec:tail['COMMON MISTAKES TO AVOID']});
+  const facts=noteFacts(t).slice(0,6);
+  if(facts.length)steps.push({type:'memory',facts:facts});
+  for(let k=0;k<3&&qi<pool.length;k++)steps.push({type:'check',q:pool[qi++],quick:true});
+  const rev=tail['REVISION QUESTIONS'],ans=tail['ANSWERS TO REVISION QUESTIONS'];
+  if(rev){
+    const qs=[];(rev.blocks||[]).forEach(b=>{if(b.t==='ol'&&b.items)qs.push(...b.items);});
+    const answers=[];if(ans)(ans.blocks||[]).forEach(b=>{if(b.t==='ol'&&b.items)answers.push(...b.items);});
+    qs.slice(0,3).forEach((q,i)=>steps.push({type:'recall',q:q,a:answers[i]||null,n:i+1}));
+  }
+  steps.push({type:'done'});
+  return steps;
+}
+function noteJourneyStart(id){
+  const t=noteById(id);if(!t)return;
+  state.ntopic=id;state.nsec=0;
+  state.njourney={tid:id,steps:noteJourneyBuild(t),i:0,checks:0,checkOk:0,recallGot:0,xp:0,fb:null,pad:null};
+  recordLast({kind:'notes',klass:t.class,nsubject:t.subject,ntopic:id,nsec:0,
+    label:t.title,sub:'Learning journey',meta:'Notes journey',pct:0});
+  go('noteJourney');
+}
+function njTopic(){return noteById(state.njourney&&state.njourney.tid);}
+function njSeen(){
+  const J=state.njourney;if(!J)return;
+  const t=njTopic(),st=J.steps[J.i];
+  if(!t||!st||st.type!=='read')return;
+  const k=t.id+':'+st.secIndex;
+  if(!state.noteSeen[k]){state.noteSeen[k]=true;learnXP(t,5);J.xp+=5;}
+}
+function njNext(){
+  const J=state.njourney;if(!J)return;
+  if(J.fb&&!J.fb.done)return;               /* finish the checkpoint first */
+  njSeen();
+  if(J.i<J.steps.length-1){J.i++;J.fb=null;render();window.scrollTo(0,0);return;}
+  render();
+}
+function njCheck(idx){
+  const J=state.njourney;if(!J||J.fb)return;
+  const st=J.steps[J.i];if(!st||st.type!=='check')return;
+  const t=njTopic(),q=st.q;
+  const ok=idx>=0&&idx<q.options.length&&q.options[idx]===q.answer;
+  J.checks++;if(ok)J.checkOk++;
+  if(ok){learnXP(t,10);J.xp+=10;afxPlay('correct');}else afxPlay('wrong');
+  J.fb={ok:ok,done:false};
+  render();
+}
+function njCheckDone(){const J=state.njourney;if(J&&J.fb){J.fb.done=true;render();}}
+function njReveal(){const J=state.njourney;if(J&&J.steps[J.i]&&J.steps[J.i].type==='recall'){J.fb={type:'recall'};render();}}
+function njSelf(ok){
+  const J=state.njourney;if(!J)return;
+  const t=njTopic();
+  if(ok){learnXP(t,5);J.xp+=5;J.recallGot++;}
+  J.fb=null;njNext();
+}
+function njSpeak(){
+  const J=state.njourney;if(!J)return;
+  const st=J.steps[J.i];if(!st||st.type!=='read')return;
+  const key=J.tid+':'+st.secIndex;
+  const url=(typeof LESSON_AUDIO!=='undefined')&&LESSON_AUDIO[key];
+  if(url){try{spFilePlay(key,url,()=>{mathSpeak(mathLessonText(st.sec));});return;}catch(e){}}
+  mathSpeak(mathLessonText(st.sec));
+}
+function njGoPractice(){
+  const t=njTopic();
+  if(t){const map={SST:'SST',SCI:'SCI',ENG:'ENG',Mathematics:'MATH'};state.psubject=map[t.subject]||state.psubject;}
+  state.ptopic=null;
+  go('practice');
+}
+function njFinish(){
+  const J=state.njourney;if(!J)return;
+  const t=njTopic(),d=learnLoad(),x=learnTopic(t);
+  x.challenge=Math.max(x.challenge||0,J.checks?Math.round(100*J.checkOk/J.checks):0);
+  learnSave(d);J.finished=true;render();
+}
+
+SCREENS.noteJourney = () => {
+  const J=state.njourney;if(!J)return SCREENS.notes;
+  const t=njTopic();if(!t)return SCREENS.notes;
+  if(J.i>=J.steps.length)J.i=J.steps.length-1;
+  const st=J.steps[J.i],n=J.i+1,total=J.steps.length;
+  const nextTitle=J.steps[J.i+1]&&J.steps[J.i+1].type==='read'
+    ?String(J.steps[J.i+1].sec.title).replace(/^\d+\.\s*/,''):null;
+  let body='';
+  if(st.type==='hook'){
+    body=`<div class="mx-card">
+        <div class="mx-topic">${nEsc(t.title)}</div>
+        <div class="mx-qtext" style="font-size:clamp(20px,5.5vw,30px)">${nEsc(njHook(t))}</div>
+      </div>
+      <div class="hint-strip cream" style="margin:10px 0">${I.info(18)} <span>Your journey through this topic \u2014 ${st.list.length} small parts, quick questions along the way, and a mini test at the end.</span></div>
+      ${st.list.map(s=>`<div class="mx-fb-step" style="margin-bottom:8px"><b>Discover</b><span>${nEsc(s)}</span></div>`).join('')}
+      <div style="display:grid;gap:10px;margin-top:14px">
+        <button class="btn btn-primary" onclick="njNext()">LET\u2019S FIND OUT \u27A1</button>
+        <button class="btn btn-ghost" onclick="go('noteTopic')">PREFER TO JUST READ? OPEN THE FULL NOTES</button>
+      </div>`;
+  }
+  else if(st.type==='read'){
+    body=`<article class="nt"><h3 class="nt-h1">${nEsc(st.sec.title)}</h3>
+      ${(st.sec.blocks||[]).map(noteBlock).join('')}</article>
+      ${nextTitle?`<div class="hint-strip cream" style="margin:12px 0">${I.info(18)} <span><b>One more thing\u2026</b> coming up next: ${nEsc(nextTitle)}</span></div>`:''}
+      <div style="display:grid;gap:10px;margin-top:14px">
+        <button class="btn btn-primary" onclick="njNext()">I\u2019VE READ IT \u2014 NEXT \u27A1</button>
+        <button class="btn btn-ghost" onclick="njSpeak()">\U0001F50A READ THIS PART TO ME</button>
+      </div>`;
+  }
+  else if(st.type==='check'){
+    const q=st.q,fb=J.fb;
+    body=`<div class="mx-card">
+        <div class="mx-topic">${st.quick?'\U0001F3AF Quick check':'\U0001F9E0 Checkpoint'}</div>
+        <div class="mx-qtext" style="font-size:clamp(20px,5.5vw,30px)">${nEsc(q.prompt)}</div>
+      </div>
+      <div class="mx-mcq" style="grid-template-columns:1fr">
+        ${(q.options||[]).map((o,idx)=>`<button class="mx-opt mx-opt${idx%4}" ${fb?'disabled':''} onclick="njCheck(${idx})">
+          <span class="mx-opt-let">${'ABCD'[idx]}</span><span>${nEsc(o)}</span></button>`).join('')}
+      </div>
+      ${fb?`
+      <div class="mx-fb" role="dialog" aria-modal="true">
+        ${fb.ok?mathConfetti():''}
+        <div class="mx-fb-emoji">${fb.ok?'\u2705':'\u274C'}</div>
+        <h2>${fb.ok?'Excellent!':'Not quite'}</h2>
+        ${fb.ok?`<div class="mx-fb-pts">+10 points \u2B50</div>`:`
+          <div class="mx-fb-correct">The correct answer is <b>${nEsc(q.answer)}</b></div>
+          <div class="mx-fb-steps" style="max-width:none"><div class="mx-fb-step"><b>\U0001F9E0 Remember</b><span>${nEsc(q.answer)}</span></div></div>`}
+        <button class="btn btn-primary mx-fb-next" onclick="njCheckDone();njNext()">CONTINUE \u27A1</button>
+      </div>`:''}`;
+  }
+  else if(st.type==='watch'){
+    body=`<article class="nt"><h3 class="nt-h1">\u26A0\uFE0F WATCH OUT! COMMON MISTAKES</h3>
+      ${(st.sec.blocks||[]).map(noteBlock).join('')}</article>
+      <button class="btn btn-primary" style="margin-top:14px" onclick="njNext()">GOT IT \u2014 KEEP GOING \u27A1</button>`;
+  }
+  else if(st.type==='memory'){
+    body=`<div class="mx-card"><div class="mx-topic">\U0001F9E0 Quick memory</div>
+        <div class="mx-qtext" style="font-size:clamp(20px,5.5vw,30px)">Remember these \u2014 they are the heart of this topic.</div></div>
+      <div class="mx-fb-steps" style="max-width:none">
+        ${st.facts.map(f=>`<div class="mx-fb-step"><b>${nEsc(f.term)}</b><span>${nEsc(f.answer)}</span></div>`).join('')}
+      </div>
+      <button class="btn btn-primary" style="margin-top:14px" onclick="njNext()">I\u2019LL REMEMBER \u2014 NEXT \u27A1</button>`;
+  }
+  else if(st.type==='recall'){
+    const fb=J.fb;
+    body=`<div class="mx-card"><div class="mx-topic">\U0001F9EA Test yourself \u00B7 ${st.n}</div>
+      <div class="mx-qtext" style="font-size:clamp(20px,5.5vw,30px)">${nEsc(st.q)}</div></div>
+      ${!fb?`<button class="btn btn-primary" style="margin-top:12px" onclick="njReveal()">THINK FIRST, THEN SHOW THE ANSWER \U0001F440</button>`
+        :`<div class="mx-fb-steps" style="max-width:none"><div class="mx-fb-step"><b>Answer</b><span>${nEsc(st.a||'Check the full notes for the answer.')}</span></div></div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px">
+            <button class="btn btn-primary" onclick="njSelf(true)">I GOT IT \u2705</button>
+            <button class="btn btn-ghost" onclick="njSelf(false)">NOT YET \u274C</button>
+          </div>`}`;
+  }
+  else if(st.type==='done'){
+    const score=J.checks?Math.round(100*J.checkOk/J.checks):null;
+    body=`<div class="mx-done">
+      <div class="mx-done-emoji">\U0001F389</div>
+      <h2>Topic complete!</h2>
+      <div class="mx-score">+${J.xp} XP</div>
+      <div class="mx-stars-row">${'\u2B50'.repeat(Math.min(8,Math.ceil((score==null?100:score)/20)))}</div>
+      <p class="muted">${score==null?'You worked through the whole topic.':`You answered ${J.checkOk} of ${J.checks} checkpoint questions correctly (${score}%).`}${J.recallGot?` \u00B7 ${J.recallGot} answer${J.recallGot===1?'':'s'} you felt sure of.`:''}</p>
+      <button class="btn btn-primary" onclick="njGoPractice()">\U0001F3AF GO TO PRACTICE</button>
+      <button class="btn btn-ghost" style="margin-top:6px" onclick="go('noteTopic')">READ THE FULL NOTES</button>
+      <button class="btn btn-ghost" style="margin-top:6px" onclick="go('notes')">BACK TO NOTES</button>
+    </div>`;
+    if(!J.finished){setTimeout(njFinish,0);}
+  }
+  return `<header class="pagehead">
+    <button class="back" onclick="go('notes')" aria-label="Leave journey">${I.x(22)}</button>
+    <div style="flex:1;min-width:0"><h2 style="font-size:18px">${nEsc(t.title)}</h2>
+      <div class="sub">Learning journey \u00B7 Step ${n} of ${total}</div></div>
+    <span class="pill on">\u2B50 ${J.xp} XP</span>
+  </header>
+  <div class="bar" style="margin-bottom:14px"><i style="width:${(J.i/J.steps.length)*100}%;background:var(--purple)"></i></div>
   ${body}`;
 };
 
@@ -2914,16 +3121,23 @@ SCREENS.noteRead = () => {
 
 function setNoteClass(c){if(!checkClassAccess(c))return;state.klass=c;state.ntopic=null;go('notes',false);}
 function setNoteSubject(id){ state.nsubject=id; state.ntopic=null; go('notes',false); }
+function noteFindAnywhere(id){
+  for(const cls of Object.keys(NOTES_BANK))
+    for(const subj of Object.keys(NOTES_BANK[cls]))
+      for(const t of NOTES_BANK[cls][subj].topics)
+        if(t.id===id)return t;
+  return null;
+}
 function openNoteTopic(id){
-  const _t0=noteById(id);
-  if(_t0&&_t0.subject==='MATH'){mathLessonStart(id);return;}
-  state.ntopic=id; state.nsec=0;
-  const t=noteById(id);
-  if(t){ const first=noteSections(t).findIndex((_,i)=>!state.noteSeen[id+':'+i]);
-         state.nsec = first<0?0:first;
-         recordLast({kind:'notes',klass:t.class,nsubject:t.subject,ntopic:id,nsec:state.nsec,
-                     label:t.title,sub:'Study notes',meta:noteSections(t).length+' sections',pct:noteDone(t).pct}); }
-  go('noteTopic');
+  /* any note, from anywhere: the journey player (or the Math lesson
+     player) takes over; the classic reader stays one tap away inside */
+  const _t0=noteFindAnywhere(id);
+  if(!_t0)return;
+  if(state.klass!==_t0.class&&checkClassAccess(_t0.class))state.klass=_t0.class;
+  state.nsubject=_t0.subject;
+  if(_t0.subject==='MATH'){mathLessonStart(id);return;}
+  noteJourneyStart(id);
+  return;
 }
 function readSection(i){ state.nsec=i; markSeen(); const t=noteById(state.ntopic); if(t){recordLast({ntopic:state.ntopic,nsec:i,pct:noteDone(t).pct,meta:(i+1)+' of '+noteSections(t).length+' sections read'});} go('noteRead'); }
 function markSeen(){
@@ -4433,9 +4647,10 @@ function spFileToggle(){
   else { FILEAUD.el.pause(); FILEAUD.state='paused'; }
   spBar();
 }
-function spFilePlay(key, url){
+function spFilePlay(key, url, onFail){
   if(typeof afxMuted==='function'&&afxMuted()){ spMutedNotice(); return; }
   spStopAudio();
+  FILEAUD.onFail = onFail || null;
   FILEAUD.key = key; FILEAUD.url = url; FILEAUD.state = 'loading'; spBar();
   try{
     if(!FILEAUD.el){
@@ -4444,7 +4659,7 @@ function spFilePlay(key, url){
       FILEAUD.el.onplaying = () => { FILEAUD.state = 'playing'; spBar(); };
       FILEAUD.el.onpause  = () => { if(FILEAUD.state === 'playing'){ FILEAUD.state = 'paused'; spBar(); } };
       FILEAUD.el.onended  = () => { FILEAUD.state = 'idle'; SP.on = false; SP.paused = false; spBar(); };
-      FILEAUD.el.onerror  = () => { FILEAUD.state = 'error'; spBar(); toast('The recording could not be loaded. Tap the speaker to retry.'); };
+      FILEAUD.el.onerror  = () => { FILEAUD.state = 'error'; spBar(); toast('The recording could not be loaded. Tap the speaker to retry.'); if(FILEAUD.onFail){ const f = FILEAUD.onFail; FILEAUD.onFail = null; try{ f(); }catch(e){} } };
     }
     FILEAUD.el.src = url;
     const p = FILEAUD.el.play();
