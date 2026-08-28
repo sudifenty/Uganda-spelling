@@ -1,0 +1,15 @@
+{
+  "name": "Smart PLE — Upper Primary Practice",
+  "short_name": "Smart PLE",
+  "description": "Practice, notes, lessons and spelling for Ugandan Upper Primary learners (P.4–P.7). Works offline.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F4F7FB",
+  "theme_color": "#2D4159",
+  "icons": [
+    { "src": "./icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}

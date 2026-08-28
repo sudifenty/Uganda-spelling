@@ -1,0 +1,9 @@
+# Cloudflare Pages — let the browser always revalidate the files that
+# carry the version. ETag makes revalidation cheap (no re-download when
+# unchanged). Everything else keeps the platform default caching.
+/sw.js
+  Cache-Control: no-cache, must-revalidate
+/index.html
+  Cache-Control: no-cache, must-revalidate
+/manifest.webmanifest
+  Cache-Control: no-cache

@@ -17,7 +17,7 @@ jobs:
         run: python3 tools/build_all.py
       - name: Fail if the committed app is out of sync with its sources
         run: |
-          git diff --exit-code -- index.html ple-app/index.html ple-app/data || {
+          git diff --exit-code -- index.html sw.js ple-app/index.html ple-app/data || {
             echo "::error::The committed index.html / data files do not match a fresh build."
             echo "Run 'cd ple-app && python3 tools/build_all.py' and commit the result."
             exit 1;

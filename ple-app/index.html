@@ -6,6 +6,9 @@
 <meta name="theme-color" content="#6CC7F6" />
 <title>Smart PLE — Upper Primary Practice (P4–P7)</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦉</text></svg>">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./icon.png">
+<meta name="theme-color" content="#2D4159">
 
 <!-- Nunito when online; a rounded system font is used as fallback so the app still
      looks right offline. Delete these two lines for a 100% offline-pure build. -->
@@ -4712,6 +4715,36 @@ function appRecover(){
 }
 window.addEventListener('error',e=>{if(e&&e.error)appRecover();});
 window.addEventListener('unhandledrejection',e=>{if(e&&e.reason)appRecover();});
+
+/* ============================================================
+   PWA — installable app with automatic updates.
+   The service worker caches the one-file app for instant offline
+   launch, and every deployment ships a newly stamped sw.js, so
+   installed PWAs update themselves. Reload only happens when it
+   is safe: never during an exam, practice run, lesson or exercise.
+   ============================================================ */
+if('serviceWorker' in navigator && /^https?:$/.test(location.protocol)){
+  window.addEventListener('load',()=>{
+    navigator.serviceWorker.register('./sw.js').then(reg=>{
+      const check=()=>reg.update().catch(()=>{});
+      check();                                          /* every launch: check for a new version */
+      window.addEventListener('online',check);          /* returning online */
+      setInterval(check,6*60*60*1000);                  /* quiet 6-hourly check */
+    }).catch(()=>{/* PWA features simply unavailable */ });
+  });
+  let __swRefreshed=false;
+  const __hadController=!!navigator.serviceWorker.controller;
+  navigator.serviceWorker.addEventListener('controllerchange',()=>{
+    if(__swRefreshed||!__hadController)return;          /* no reload on first install */
+    if(state.session||state.mrun||state.mlesson||state.exRun||state.spell){
+      toast('A new version is ready — it will load after this exercise');
+      window.__swPendingUpdate=true;
+      return;
+    }
+    __swRefreshed=true;
+    location.reload();
+  });
+}
 </script>
 <!-- (Cloudflare injects its own challenge script at serve time; nothing is baked into the source.) -->
 </body>
