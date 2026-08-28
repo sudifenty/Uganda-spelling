@@ -1348,7 +1348,6 @@ function mathStepsFor(q){
   return steps;
 }
 function mathSpeak(text){
-  if(afxMuted())return;
   const t=String(text||'').replace(/^[A-D]\.\s*/,'');
   try{ if(typeof spSpeak==='function'){ spSpeak(t); return; } }catch(e){}
   toast('The standard narrator is still downloading.');
@@ -1907,7 +1906,7 @@ function spellSave(d){try{localStorage.setItem('smartple_spelling',JSON.stringif
 function spellMistakes(){return spellLoad().mistakes||[];}
 function spellRemember(word,cls){const d=spellLoad();d.mistakes=d.mistakes||[];if(!d.mistakes.some(x=>x.word===word&&x.classLevel===cls)) d.mistakes.push({word,classLevel:cls});spellSave(d);}
 function spellForget(word,cls){const d=spellLoad();d.mistakes=(d.mistakes||[]).filter(x=>!(x.word===word&&x.classLevel===cls));spellSave(d);}
-function spellSpeak(word){if(afxMuted())return;if(typeof spWord==='function'){try{spWord(word);return;}catch(e){}}toast('The standard narrator is still downloading.');}
+function spellSpeak(word){if(typeof spWord==='function'){try{spWord(word);return;}catch(e){}}toast('The standard narrator is still downloading.');}
 function spellStart(cls,diff,mode){const pool=spellWords(cls,diff);if(!pool.length){toast('No words for this level yet');return;}state.spell={kind:'spelling',cls,diff,mode,items:shuffle(pool).slice(0,10),i:0,correct:0,attempt:0,detail:[],locked:false,t0:Date.now()};recordLast({kind:'spelling',cls:cls,diff:diff,mode:mode,label:'Spelling \u00b7 '+cls+' '+diff,sub:'Spelling practice',meta:'10 words',pct:null});go('spellPractice');}
 function spellStartMistakes(){const m=spellMistakes();if(!m.length){toast('No saved words yet');return;}const cls=m[0].classLevel;state.spell={kind:'spelling',cls,diff:'Review',mode:'choose',items:shuffle(m).slice(0,10).map(x=>({word:x.word,classLevel:x.classLevel,difficulty:'Review',category:'Words to practise',mistakes:[]})),i:0,correct:0,attempt:0,detail:[],locked:false,t0:Date.now()};go('spellPractice');}
 function spellCurrent(){return state.spell&&state.spell.items[state.spell.i];}
@@ -2014,7 +2013,7 @@ function companionSheet(message){return `<div class="companion compact">${dinoSV
 function companionHidden(){return localStorage.getItem('smartple_companion_hidden')==='1';}
 function companionToggle(){if(companionHidden())localStorage.removeItem('smartple_companion_hidden');else localStorage.setItem('smartple_companion_hidden','1');render();}
 function companionExplain(){const t=noteById(state.ntopic),sec=noteSections(t)[state.nsec]||noteSections(t)[0];const text=(sec.blocks||[]).map(b=>b.x||(b.items||[]).slice(0,2).join('. ')).filter(Boolean).map(cleanEdu).filter(Boolean).slice(0,2).join(' ');openSheet(`<div class="grabber"></div>${companionSheet('Here is a simpler way to think about it.')}<h3>💡 Explain Simply</h3><p class="muted" style="margin-top:10px">${nEsc(text||'Read this section carefully and look for its main idea.')}</p><button class="btn btn-primary" style="margin-top:14px" onclick="closeSheet()">GOT IT</button>`);}
-function companionListen(){if(afxMuted())return;const t=noteById(state.ntopic),sec=noteSections(t)[state.nsec]||noteSections(t)[0];const text=(sec.blocks||[]).map(b=>b.x||(b.items||[]).join('. ')).filter(Boolean).map(cleanEdu).join('. ');try{if(typeof spSpeak==='function'){spSpeak(text);toast('Listening…');return;}}catch(e){}toast('The standard narrator is still downloading.');}
+function companionListen(){const t=noteById(state.ntopic),sec=noteSections(t)[state.nsec]||noteSections(t)[0];const text=(sec.blocks||[]).map(b=>b.x||(b.items||[]).join('. ')).filter(Boolean).map(cleanEdu).join('. ');try{if(typeof spSpeak==='function'){spSpeak(text);toast('Listening…');return;}}catch(e){}toast('The standard narrator is still downloading.');}
 function companionKeys(){const t=noteById(state.ntopic),sec=noteSections(t)[state.nsec]||noteSections(t)[0],points=[];(sec.blocks||[]).forEach(b=>{if(b.t==='ul'||b.t==='ol')points.push(...b.items.slice(0,3).map(cleanEdu));if(b.t==='table')points.push(...b.rows.slice(0,3).map(r=>cleanEdu(r.join(' — '))));});openSheet(`<div class="grabber"></div>${companionSheet('These are useful points to remember.')}<h3>📌 Key Points</h3><ul class="nt-ul">${points.slice(0,5).map(x=>`<li>${nEsc(x)}</li>`).join('')||'<li>Read the section once more and identify its main ideas.</li>'}</ul><button class="btn btn-primary" style="margin-top:14px" onclick="closeSheet()">CLOSE</button>`);}
 function companionPanel(){const t=noteById(state.ntopic);if(!t)return '';return `<div id="companionFloat" class="companion-float ${companionHidden()?'minimized':''}"><div class="companion-panel" id="companionPanel" hidden><h4>🦖 Study Buddy</h4><small>${nEsc(t.title)}</small><button class="btn btn-soft" onclick="companionExplain()">💡 Explain This</button><button class="btn btn-soft" onclick="companionListen()">🔊 Listen</button><button class="btn btn-soft" onclick="closeCompanionPanel();startNoteChallenge()">🧠 Test Me</button><button class="btn btn-soft" onclick="companionKeys()">📌 Key Points</button><button class="btn btn-ghost" onclick="companionToggle()">Companion: ON</button></div><div class="companion-bubble"><button onclick="companionToggle()" aria-label="Minimize companion">×</button>${nEsc(companionText(t))}</div><button class="dino-button" onclick="toggleCompanionPanel()" aria-label="Open learning companion">${dinoSVG()}</button></div>`;}
 function toggleCompanionPanel(){const p=document.getElementById('companionPanel');if(p)p.hidden=!p.hidden;}
@@ -3932,6 +3931,9 @@ const NV = {
   progress:0,
   error:'',
   cache:new Map(),   // sentence -> object URL, so Repeat is instant
+  pending:null,      // text to speak automatically once the narrator finishes downloading
+  pendingResolve:null,  // releases the sentence that is waiting for the download
+  lastAuto:0,        // throttle: auto-download at most once every 30 s
 };
 
 const nvChosen = () => NV_VOICES.find(v => v.id === NV.voiceId) || NV_VOICES[0];
@@ -3974,10 +3976,17 @@ async function nvCheckStored(){
   return NV.ready;
 }
 
-/* ---------- the one-time download ---------- */
-async function nvDownload(){
+/* ---------- the one-time download ----------
+   showSheet=true  : opened from Voice settings (progress shown in the sheet)
+   showSheet=false : auto-started because the learner pressed Listen —
+                     the download runs in the background, and whatever they
+                     asked to hear is SPOKEN AUTOMATICALLY when it finishes.
+                     A learner who presses Play always ends up with sound. */
+async function nvDownload(showSheet){
   if(NV.busy) return;
-  NV.busy = true; NV.error = ''; NV.progress = 0; spSheet();
+  NV.busy = true; NV.error = ''; NV.progress = 0;
+  if(showSheet !== false) spSheet();
+  else toast('Downloading the standard narrator \u2014 one time, about 60 MB. Your audio will start when it is ready.');
   try{
     const lib = await nvLoad();
     await lib.download(NV.voiceId, p => {
@@ -3987,17 +3996,28 @@ async function nvDownload(){
         if(el){ el.style.width = NV.progress + '%'; }
         const t = document.getElementById('nvPct');
         if(t) t.textContent = NV.progress + '%';
+        if(showSheet === false && NV.progress % 25 === 0) toast('Narrator download ' + NV.progress + '%');
       }
     });
     NV.ready = true;
     localStorage.setItem('ple_engine', 'natural');
-    toast('Natural voice ready \u2014 it now works offline');
+    toast('Standard narrator ready \u2014 it now works offline');
   }catch(e){
     NV.error = (e && e.message) || 'The download did not finish.';
     NV.ready = false;
+    if(showSheet === false) toast('The narrator download failed. Check your connection and tap Listen again.');
+    NV.pending = null;
+    const r = NV.pendingResolve; NV.pendingResolve = null;
+    if(r) r();
   }
   NV.busy = false;
   spSheet(); spBar();
+  /* speak what the learner asked for, THEN release the reading machine
+     so it continues from the NEXT sentence with correct pacing */
+  const pending = NV.pending; NV.pending = null;
+  const resolver = NV.pendingResolve; NV.pendingResolve = null;
+  try{ if(pending && NV.ready) await nvSpeak(pending); }catch(e){}
+  if(resolver) resolver();
 }
 async function nvRemove(){
   try{ const lib = await nvLoad(); await lib.remove(NV.voiceId); }catch(e){}
@@ -4284,13 +4304,9 @@ function spBest(){
   return vs.slice().sort((a,b)=>spScore(b)-spScore(a))[0];
 }
 function spInit(){
-  if(!('speechSynthesis' in window)) return;
-  SP_VOICES = spVoices();
-  SP_READY = SP_VOICES.length > 0;
-  if(!SP_READY) speechSynthesis.onvoiceschanged = () => {
-    SP_VOICES = spVoices();
-    if(SP_VOICES.length && !SP_READY){ SP_READY = true; if(state.screen==='noteRead') render(); }
-  };
+  /* The Listen button is always available: the voice is the app's own
+     narrator (plus recorded files), never the device's voices. */
+  SP_READY = true;
 }
 
 /* class-appropriate reading speed — P.4 slower, P.7 confident */
@@ -4319,28 +4335,57 @@ function spStop(){
    If it is still downloading, the learner is told; a DIFFERENT (device)
    voice is never used, so the app never sounds different from phone to
    phone. */
-let SP_FALLBACK_NOTED=false;
+let SP_DL_NOTED=0;
 function spNarratorNotice(){
-  if(SP_FALLBACK_NOTED)return;SP_FALLBACK_NOTED=true;
-  toast('The standard narrator is still downloading \u2014 it will be ready in a few minutes.');
+  const now=Date.now();
+  if(now-SP_DL_NOTED<4000)return;
+  SP_DL_NOTED=now;
+  toast('The standard narrator is downloading \u2014 your audio will start when it is ready.');
+}
+let SP_MUTE_NOTED=0;
+function spMutedNotice(){
+  const now=Date.now();
+  if(now-SP_MUTE_NOTED<4000)return;
+  SP_MUTE_NOTED=now;
+  toast('Sound is muted \u2014 tap the \u{1F507} button (bottom left) to unmute.');
 }
 /* one call, whichever engine is in use */
 function spSpeak(text){
-  if(typeof afxMuted==='function'&&afxMuted())return;
-  if(!NV.ready){ spNarratorNotice(); return Promise.reject(new Error('narrator not ready')); }
+  /* Muted and still-downloading are NOT errors: the learner is told what
+     is happening, so these resolve quietly — a rejected promise here would
+     ripple out as an unhandled error and wrongly trigger the safety net. */
+  if(typeof afxMuted==='function'&&afxMuted()){ spMutedNotice(); return Promise.resolve(); }
+  if(!NV.ready){
+    /* THE FIX: pressing Listen starts the one-time narrator download.
+       This promise resolves only after the text has actually been
+       spoken, so the sentence reader keeps its natural pacing instead
+       of racing ahead through the whole section. */
+    NV.pending = text;
+    spNarratorNotice();
+    const canStart = !NV.busy && Date.now()-(NV.lastAuto||0) > 30000;
+    if(canStart){ NV.lastAuto = Date.now(); try{ nvDownload(false); }catch(e){} }
+    if(canStart || NV.busy){
+      return new Promise(res => {
+        const prev = NV.pendingResolve; NV.pendingResolve = res;
+        if(prev) prev();               /* release an earlier waiter cleanly */
+      });
+    }
+    return new Promise(res => setTimeout(res, 1200));   /* a recent attempt failed: move on gently */
+  }
   return nvSpeak(text).catch(err => {
     NV.error = 'The standard narrator could not play this part. Please try again or check the downloaded voice.';
     spBar();
-    return Promise.reject(err);
+    toast('Audio could not be played. Please try again.');
+    return null;                    /* the failure has been reported to the learner */
   });
 }
 /* say a single word out loud — used by "hear a word" and Repeat */
 function spWord(w){
-  if(typeof afxMuted==='function'&&afxMuted())return;
+  if(typeof afxMuted==='function'&&afxMuted()){ spMutedNotice(); return; }
   spStopAudio();
   const say = spSay(w);
   if(NV.ready) nvSpeak(say).catch(()=>{ NV.error='The standard narrator could not play this word.'; spBar(); });
-  else spNarratorNotice();
+  else { NV.pending = say; spNarratorNotice(); if(!NV.busy){ try{ nvDownload(false); }catch(e){} } }
 }
 function spStopAudio(){
   nvStop();
@@ -4389,6 +4434,7 @@ function spFileToggle(){
   spBar();
 }
 function spFilePlay(key, url){
+  if(typeof afxMuted==='function'&&afxMuted()){ spMutedNotice(); return; }
   spStopAudio();
   FILEAUD.key = key; FILEAUD.url = url; FILEAUD.state = 'loading'; spBar();
   try{
@@ -4578,11 +4624,6 @@ function spBar(){
   if(el) el.outerHTML = spBarHTML();
 }
 function spBarHTML(){
-  if(!SP_READY)
-    return `<span id="spBar" class="sp-in"><button class="sp-i" onclick="spSheet()" aria-label="Voice settings">⚙</button></span>`;
-  if(!SP_READY)
-    return `<span id="spBar" class="sp-in">
-      <button class="sp-i" onclick="spSheet()" aria-label="Voice settings">\u2699</button></span>`;
 
   const total = SP.chunks.length;
   const pos = total ? Math.min(SP.i + 1, total) : 0;

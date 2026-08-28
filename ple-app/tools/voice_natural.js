@@ -34,6 +34,9 @@ const NV = {
   progress:0,
   error:'',
   cache:new Map(),   // sentence -> object URL, so Repeat is instant
+  pending:null,      // text to speak automatically once the narrator finishes downloading
+  pendingResolve:null,  // releases the sentence that is waiting for the download
+  lastAuto:0,        // throttle: auto-download at most once every 30 s
 };
 
 const nvChosen = () => NV_VOICES.find(v => v.id === NV.voiceId) || NV_VOICES[0];
@@ -76,10 +79,17 @@ async function nvCheckStored(){
   return NV.ready;
 }
 
-/* ---------- the one-time download ---------- */
-async function nvDownload(){
+/* ---------- the one-time download ----------
+   showSheet=true  : opened from Voice settings (progress shown in the sheet)
+   showSheet=false : auto-started because the learner pressed Listen —
+                     the download runs in the background, and whatever they
+                     asked to hear is SPOKEN AUTOMATICALLY when it finishes.
+                     A learner who presses Play always ends up with sound. */
+async function nvDownload(showSheet){
   if(NV.busy) return;
-  NV.busy = true; NV.error = ''; NV.progress = 0; spSheet();
+  NV.busy = true; NV.error = ''; NV.progress = 0;
+  if(showSheet !== false) spSheet();
+  else toast('Downloading the standard narrator \u2014 one time, about 60 MB. Your audio will start when it is ready.');
   try{
     const lib = await nvLoad();
     await lib.download(NV.voiceId, p => {
@@ -89,17 +99,28 @@ async function nvDownload(){
         if(el){ el.style.width = NV.progress + '%'; }
         const t = document.getElementById('nvPct');
         if(t) t.textContent = NV.progress + '%';
+        if(showSheet === false && NV.progress % 25 === 0) toast('Narrator download ' + NV.progress + '%');
       }
     });
     NV.ready = true;
     localStorage.setItem('ple_engine', 'natural');
-    toast('Natural voice ready \u2014 it now works offline');
+    toast('Standard narrator ready \u2014 it now works offline');
   }catch(e){
     NV.error = (e && e.message) || 'The download did not finish.';
     NV.ready = false;
+    if(showSheet === false) toast('The narrator download failed. Check your connection and tap Listen again.');
+    NV.pending = null;
+    const r = NV.pendingResolve; NV.pendingResolve = null;
+    if(r) r();
   }
   NV.busy = false;
   spSheet(); spBar();
+  /* speak what the learner asked for, THEN release the reading machine
+     so it continues from the NEXT sentence with correct pacing */
+  const pending = NV.pending; NV.pending = null;
+  const resolver = NV.pendingResolve; NV.pendingResolve = null;
+  try{ if(pending && NV.ready) await nvSpeak(pending); }catch(e){}
+  if(resolver) resolver();
 }
 async function nvRemove(){
   try{ const lib = await nvLoad(); await lib.remove(NV.voiceId); }catch(e){}

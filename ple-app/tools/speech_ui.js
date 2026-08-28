@@ -222,13 +222,9 @@ function spBest(){
   return vs.slice().sort((a,b)=>spScore(b)-spScore(a))[0];
 }
 function spInit(){
-  if(!('speechSynthesis' in window)) return;
-  SP_VOICES = spVoices();
-  SP_READY = SP_VOICES.length > 0;
-  if(!SP_READY) speechSynthesis.onvoiceschanged = () => {
-    SP_VOICES = spVoices();
-    if(SP_VOICES.length && !SP_READY){ SP_READY = true; if(state.screen==='noteRead') render(); }
-  };
+  /* The Listen button is always available: the voice is the app's own
+     narrator (plus recorded files), never the device's voices. */
+  SP_READY = true;
 }
 
 /* class-appropriate reading speed — P.4 slower, P.7 confident */
@@ -257,28 +253,57 @@ function spStop(){
    If it is still downloading, the learner is told; a DIFFERENT (device)
    voice is never used, so the app never sounds different from phone to
    phone. */
-let SP_FALLBACK_NOTED=false;
+let SP_DL_NOTED=0;
 function spNarratorNotice(){
-  if(SP_FALLBACK_NOTED)return;SP_FALLBACK_NOTED=true;
-  toast('The standard narrator is still downloading \u2014 it will be ready in a few minutes.');
+  const now=Date.now();
+  if(now-SP_DL_NOTED<4000)return;
+  SP_DL_NOTED=now;
+  toast('The standard narrator is downloading \u2014 your audio will start when it is ready.');
+}
+let SP_MUTE_NOTED=0;
+function spMutedNotice(){
+  const now=Date.now();
+  if(now-SP_MUTE_NOTED<4000)return;
+  SP_MUTE_NOTED=now;
+  toast('Sound is muted \u2014 tap the \u{1F507} button (bottom left) to unmute.');
 }
 /* one call, whichever engine is in use */
 function spSpeak(text){
-  if(typeof afxMuted==='function'&&afxMuted())return;
-  if(!NV.ready){ spNarratorNotice(); return Promise.reject(new Error('narrator not ready')); }
+  /* Muted and still-downloading are NOT errors: the learner is told what
+     is happening, so these resolve quietly — a rejected promise here would
+     ripple out as an unhandled error and wrongly trigger the safety net. */
+  if(typeof afxMuted==='function'&&afxMuted()){ spMutedNotice(); return Promise.resolve(); }
+  if(!NV.ready){
+    /* THE FIX: pressing Listen starts the one-time narrator download.
+       This promise resolves only after the text has actually been
+       spoken, so the sentence reader keeps its natural pacing instead
+       of racing ahead through the whole section. */
+    NV.pending = text;
+    spNarratorNotice();
+    const canStart = !NV.busy && Date.now()-(NV.lastAuto||0) > 30000;
+    if(canStart){ NV.lastAuto = Date.now(); try{ nvDownload(false); }catch(e){} }
+    if(canStart || NV.busy){
+      return new Promise(res => {
+        const prev = NV.pendingResolve; NV.pendingResolve = res;
+        if(prev) prev();               /* release an earlier waiter cleanly */
+      });
+    }
+    return new Promise(res => setTimeout(res, 1200));   /* a recent attempt failed: move on gently */
+  }
   return nvSpeak(text).catch(err => {
     NV.error = 'The standard narrator could not play this part. Please try again or check the downloaded voice.';
     spBar();
-    return Promise.reject(err);
+    toast('Audio could not be played. Please try again.');
+    return null;                    /* the failure has been reported to the learner */
   });
 }
 /* say a single word out loud — used by "hear a word" and Repeat */
 function spWord(w){
-  if(typeof afxMuted==='function'&&afxMuted())return;
+  if(typeof afxMuted==='function'&&afxMuted()){ spMutedNotice(); return; }
   spStopAudio();
   const say = spSay(w);
   if(NV.ready) nvSpeak(say).catch(()=>{ NV.error='The standard narrator could not play this word.'; spBar(); });
-  else spNarratorNotice();
+  else { NV.pending = say; spNarratorNotice(); if(!NV.busy){ try{ nvDownload(false); }catch(e){} } }
 }
 function spStopAudio(){
   nvStop();
@@ -327,6 +352,7 @@ function spFileToggle(){
   spBar();
 }
 function spFilePlay(key, url){
+  if(typeof afxMuted==='function'&&afxMuted()){ spMutedNotice(); return; }
   spStopAudio();
   FILEAUD.key = key; FILEAUD.url = url; FILEAUD.state = 'loading'; spBar();
   try{
@@ -516,11 +542,6 @@ function spBar(){
   if(el) el.outerHTML = spBarHTML();
 }
 function spBarHTML(){
-  if(!SP_READY)
-    return `<span id="spBar" class="sp-in"><button class="sp-i" onclick="spSheet()" aria-label="Voice settings">⚙</button></span>`;
-  if(!SP_READY)
-    return `<span id="spBar" class="sp-in">
-      <button class="sp-i" onclick="spSheet()" aria-label="Voice settings">\u2699</button></span>`;
 
   const total = SP.chunks.length;
   const pos = total ? Math.min(SP.i + 1, total) : 0;
