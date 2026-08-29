@@ -55,6 +55,7 @@
 
 *,*::before,*::after{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{height:100%}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}   /* stop iOS inflating text so nothing overflows */
 body{
   margin:0; font-family:var(--font); color:var(--navy);
   background:var(--bg); font-size:17px; line-height:1.45;
@@ -70,6 +71,7 @@ p{margin:0}
   position:relative; width:100%; max-width:480px; margin:0 auto;
   min-height:100dvh; background:var(--bg); overflow:hidden;
   display:flex; flex-direction:column;
+  padding-top:env(safe-area-inset-top,0px);   /* never under the notch */
 }
 .screen{
   display:none; flex-direction:column; flex:1;
@@ -196,6 +198,7 @@ p{margin:0}
 .hero-banner .hb-text{flex:1;min-width:0}
 .hero-banner .hb-name{font-size:30px;font-weight:900;color:#1F2937;letter-spacing:-.5px;line-height:1.02}
 .hero-banner .hb-sub{font-size:13.5px;font-weight:800;color:#4B5563;margin-top:5px;line-height:1.35}
+@media(max-width:379px){.hero-banner img{width:104px;height:86px}.hero-banner .hb-name{font-size:26px}}
 .hero-banner img{width:124px;height:100px;object-fit:contain;flex:none;filter:drop-shadow(0 4px 0 rgba(0,0,0,.14));animation:hbWave 2.6s ease-in-out infinite;transform-origin:70% 85%}
 @keyframes hbWave{0%,100%{transform:rotate(0)}30%{transform:rotate(-3.5deg)}60%{transform:rotate(2.5deg)}}
 .bigcards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
@@ -203,7 +206,7 @@ p{margin:0}
 .bigcard{background:#fff;border:2.5px solid #111827;border-radius:20px;box-shadow:6px 6px 0 rgba(17,24,39,1);overflow:hidden;display:flex;flex-direction:column;text-align:left;transition:transform .12s var(--ease),box-shadow .12s}
 .bigcard:active{transform:translate(4px,4px);box-shadow:2px 2px 0 rgba(17,24,39,1)}
 .bigcard .bc-img{height:102px;width:100%;object-fit:cover;display:block;border-bottom:2.5px solid #111827;background:#fff}
-.bigcard .bc-body{padding:12px 8px 13px;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:3px}
+.bigcard .bc-body{padding:12px 6px 13px;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:3px}
 .bigcard .bc-body b{font-size:24px;font-weight:900;color:#000;letter-spacing:-.5px;line-height:1.05;text-transform:uppercase;white-space:nowrap}
 .bigcard .bc-body b.bc-long{font-size:21px}
 @media(max-width:379px){.bigcard .bc-body b.bc-long{font-size:18.5px}.bigcard .bc-body b{font-size:22px}}
@@ -6235,6 +6238,33 @@ render = function(){
   }
 };
 /* === READ ALOUD MODULE END === */
+
+/* ============================================================
+   PHONE-PROOF TITLES. CSS sizes are only the starting point:
+   whatever font the phone actually loads (Nunito online, a wider
+   system font offline), every card title is measured after render
+   and gently shrunk until it truly fits on ONE centred line.
+   A child on any phone never sees a clipped word again.
+   ============================================================ */
+function pleFitTitles(){
+  document.querySelectorAll('.bigcard .bc-body b, .bigsub .bs-body b').forEach(b=>{
+    b.style.fontSize='';
+    const parent=b.parentElement;
+    if(!parent)return;
+    let size=parseFloat(getComputedStyle(b).fontSize)||24;
+    let guard=0;
+    while(guard++<30){
+      const range=document.createRange();range.selectNodeContents(b);
+      const w=range.getBoundingClientRect().width;
+      if(w<=parent.clientWidth-6||size<=14.5)break;
+      size-=0.5;b.style.fontSize=size+'px';
+    }
+  });
+}
+const _renderFitBase=render;
+render=function(){_renderFitBase();try{setTimeout(pleFitTitles,0);}catch(e){}};
+try{if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>{try{pleFitTitles();}catch(e){}});}catch(e){}
+window.addEventListener('resize',()=>{try{pleFitTitles();}catch(e){}});
 
 render();
 
