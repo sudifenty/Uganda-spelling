@@ -43,7 +43,13 @@ standard. Status lives at the bottom.
 | Batch | Topics | State |
 |---|---|---|
 | P4 SST (all 6 topics) | 6 | ✅ restructured & pushed |
+| P4 MATH T01 Place Value | 1 | ✅ NEW — written from the NCDC P4 Mathematics syllabus (pages 6–7); sub-topic 1 runs the C-P-A See–Touch–Do flow (`CPA_MATH` registry in index.html) |
 | P5 ENG (8) | 8 | ⬜ next |
 | P5 SCI (12), P5 MATH (12), P5 SST (12) | 36 | ⬜ pending |
 | P6 ENG (6), P6 SST (5), P6 SCI (12), P6 MATH (12) | 35 | ⬜ pending |
 | P7 ENG (7), P7 MATH (11), P7 SCI (8), P7 SST (10) | 36 | ⬜ pending |
+
+P4 Mathematics notes are being added topic by topic from
+`curriculum/P4-MATHEMATICS.pdf` (decode: `tools/decode_p4_math.py`). A
+C-P-A entry (`visual_data`, `touch_task`, `do_question`) is only added when
+the owner supplies the data — the flow appears only where an entry exists.

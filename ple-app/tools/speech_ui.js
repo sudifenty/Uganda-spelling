@@ -687,3 +687,6 @@ function spSetVoice(uri){ localStorage.setItem('ple_voice', uri);
 
 spInit();
 authInit();
+seenLoad();   /* restore the learning-path progress saved on this device —
+                 without this, every completed sub-topic appeared locked
+                 again the next time the app was opened */
