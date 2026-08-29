@@ -681,6 +681,20 @@ p{margin:0}
 .cpa-steplab{font-size:12px;font-weight:900;color:#2563EB;letter-spacing:.05em}
 .cpa-confetti-host{position:relative}
 
+/* ---------- C-P-A SETS: fruit baskets & subset cards ---------- */
+.cpa-basket-full{display:flex;flex-direction:column;align-items:center;gap:5px;background:#FFFBEB;border:2px solid #FDE68A;border-radius:20px;padding:12px 14px;margin:14px 0 4px;position:relative}
+.cpa-basket-full .cpa-fruitrow{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.cpa-fruit{background:#fff;border:2px solid #FDE68A;border-radius:12px;padding:7px 10px;font-size:16px;font-weight:900;color:#92400E;display:flex;align-items:center;gap:5px}
+.cpa-house.cpa-basket{flex-direction:row;flex-wrap:wrap;width:100%;min-height:118px;border-color:#F59E0B;background:#FFFBEB;gap:8px}
+.cpa-house.cpa-basket.right{background:#F0FDF4;border-color:#22C55E}
+.cpa-subgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:14px 0 2px}
+.cpa-subcard{background:#fff;border:2px solid #E2E8F0;border-radius:14px;padding:9px 6px;min-height:66px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;animation:mxBump .25s ease}
+.cpa-subcard:nth-child(odd){animation-delay:.04s}
+.cpa-sub-emo{font-size:21px;line-height:1.15}
+.cpa-sub-txt{font-size:13px;font-weight:900;color:#334155;line-height:1.3;word-break:break-word;text-align:center}
+.cpa-mini{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.cpa-mini span{background:#fff;border:1.5px solid #FED7AA;border-radius:999px;padding:4px 11px;font-size:15px;font-weight:900;color:#7C2D12}
+
 /* ---------- LEARNING PATH (Duolingo-style vertical path) ---------- */
 /* ---------- LEARNING PATH (Duolingo-style vertical path) ---------- */
 .lp-wrap{position:relative;padding:6px 0 30px}
@@ -2369,7 +2383,36 @@ const CPA_MATH={
 function cpaFor(t,i){
   if(!t||t.subject!=='MATH')return null;            /* maths only, by design */
   const d=CPA_MATH[t.id+':'+i];
-  return (d&&d.visual_data&&d.touch_task&&d.do_question)?d:null;
+  if(d&&d.visual_data&&d.touch_task&&d.do_question)return d;
+  return cpaFallbackFor((noteSections(t)[i]||{}).title);
+}
+/* ---------- the owner's fallback rule, exactly as specified ----------
+   A maths sub-topic must never fall through to raw note text. If the
+   sub-topic is about subsets and carries no C-P-A data of its own, the
+   fruit-basket data below is generated for it — ALWAYS. This is what
+   keeps "8 subsets. 8 subsets." and "Number of subsets = 2ⁿ" off the
+   screen and puts fruit baskets in their place. */
+const CPA_EMO={Mango:'\u{1F96D}',Orange:'\u{1F34A}',Apple:'\u{1F34E}'};
+function cpaEmo(x){return CPA_EMO[x]||'\u{1F535}';}
+function cpaFallbackFor(secTitle){
+  if(!/subset/i.test(String(secTitle||'')))return null;
+  return {
+    visual_data:{
+      set:["Mango","Orange","Apple"],
+      all_subsets:[[],["Mango"],["Orange"],["Apple"],["Mango","Orange"],["Mango","Apple"],["Orange","Apple"],["Mango","Orange","Apple"]],
+      example_text:"At the market basket with Mango, Orange and Apple, you can carry home 8 different bunches — even nothing at all!"
+    },
+    touch_task:{
+      instruction:"Drag Mango to make a subset {Mango}",
+      target_item:"Mango"
+    },
+    do_question:{
+      question:"How many groups can you make from {A, B}?",
+      options:["2","4","8"],
+      correct_answer:"4",
+      explanation:"From {A, B} you can make 4 groups: { }, {A}, {B}, {A, B}. Two things make 4 groups!"
+    }
+  };
 }
 function cpaSaved(key){try{return (JSON.parse(localStorage.getItem(CPA_KEY)||'{}')[key])||0;}catch(e){return 0;}}
 function cpaSaveStep(key,step){
@@ -2390,9 +2433,8 @@ function cpaGo(step){
 }
 function cpaRetry(){const c=state.cpa;if(c){c.answered=null;c.pick=null;render();}}
 function cpaAnswer(idx){
-  const c=state.cpa;if(!c)return;
-  const cpa=CPA_MATH[c.key];if(!cpa)return;
-  const q=cpa.do_question;
+  const c=state.cpa;if(!c||!c.data)return;
+  const q=c.data.do_question;if(!q)return;
   c.pick=idx;
   if(String(q.options[idx])===String(q.correct_answer)){c.answered='right';afxPlay('star');}
   else{c.answered='wrong';afxPlay('wrong');}
@@ -2405,7 +2447,7 @@ function cpaComplete(){
   state.noteSeen[t.id+':'+i]=true;seenSave();
   if(first){learnXP(t,5);mathRecord(t.class||state.klass,true);}   /* +10 points, once */
   try{trackActivity('subtopic_complete',{topic:t.id,section:i,title:sec.title,cpa:true});}catch(e){}
-  try{trackActivity('cpa_complete',{topic:t.id,section:i,number:(CPA_MATH[state.cpa.key]||{}).visual_data&&CPA_MATH[state.cpa.key].visual_data.number});}catch(e){}
+  try{trackActivity('cpa_complete',{topic:t.id,section:i});}catch(e){}
   if(state.cpa)cpaSaveStep(state.cpa.key,0);
   afxPlay('star');
   const {subs}=pathState(t);
@@ -2416,8 +2458,8 @@ function cpaComplete(){
       <div style="font-size:56px">🏆</div>
       <h3 style="margin-top:6px">Sub-topic complete!${first?' <span style="color:#D97706">+10 points ⭐</span>':''}</h3>
       <p class="muted" style="margin:8px 0 4px">${next?'Next up: <b>'+nEsc(nextTitle)+'</b>':'You finished this topic!'}</p>
-      <button class="btn btn-primary" style="margin-top:12px;min-height:54px" onclick="closeSheet();cpaPractice()">GO TO PRACTICE 🎮</button>
-      ${next?`<button class="btn btn-ghost" style="margin-top:8px" onclick="closeSheet();state.nsec=${i+1};go('noteSub')">CONTINUE ▶</button>`:''}
+      ${next?`<button class="btn btn-primary" style="margin-top:12px;min-height:54px" onclick="closeSheet();state.nsec=${i+1};go('noteSub')">CONTINUE ▶</button>`:''}
+      <button class="btn btn-ghost" style="margin-top:8px" onclick="closeSheet();cpaPractice()">GO TO PRACTICE 🎮</button>
       <button class="btn btn-ghost" style="margin-top:8px" onclick="closeSheet();go('notePath')">BACK TO THE PATH</button>
     </div>`);
   render();
@@ -2430,16 +2472,18 @@ function cpaPractice(){
   go('mathHome');
 }
 
-/* ---- the drag itself: one pointer engine for finger AND mouse ---- */
+/* ---- the drag itself: one pointer engine for finger AND mouse ----
+   An item is either a place-value DIGIT (number) or a SETS fruit (string). */
 let CPA_DRAG=null;
-function cpaGrab(e,digit){
+function cpaGrab(e,item){
   if(CPA_DRAG)return;
   if(e.pointerType==='mouse'&&e.button!==0)return;
   e.preventDefault();
   const g=document.createElement('div');
-  g.className='cpa-drag';g.textContent=digit;
+  g.className='cpa-drag';
+  g.textContent=(typeof item==='number')?item:(cpaEmo(item)+' '+item);
   document.body.appendChild(g);
-  CPA_DRAG={digit,g,over:null};
+  CPA_DRAG={item,g,over:null};
   window.addEventListener('pointermove',cpaMove,{passive:false});
   window.addEventListener('pointerup',cpaUp);
   window.addEventListener('pointercancel',cpaUp);
@@ -2472,25 +2516,44 @@ function cpaUp(e){
   if(d.over)d.over.classList.remove('over');
   const x=(e.clientX||0),y=(e.clientY||0);
   const h=cpaHouseAt(x,y);
-  if(!h)return;                                     /* dropped outside: digit goes home */
-  cpaDrop(d.digit,h.dataset.place,h);
+  if(!h)return;                                     /* dropped outside: item goes home */
+  cpaDrop(d.item,h);
 }
-function cpaDrop(digit,place,house){
-  const c=state.cpa;if(!c)return;
-  const cpa=CPA_MATH[c.key];if(!cpa)return;
-  const v=cpa.visual_data,tt=cpa.touch_task;
-  const b=(v.breakdown||[]).find(x=>x.digit===digit);
+function cpaDrop(item,house){
+  const c=state.cpa;if(!c||!c.data)return;
+  const v=c.data.visual_data,tt=c.data.touch_task;
+  /* ---- SETS: drop the target fruit into the empty basket ---- */
+  if(v.set){
+    if(item===tt.target_item){
+      c.placed.basket=item;
+      c.targetDone=true;c.msgOk=true;
+      c.msg='Yes! {'+item+'} is a subset!';
+      afxPlay('correct');
+      render();
+    }else{
+      c.msgOk=false;
+      c.msg='Try again! Drag '+tt.target_item+' '+cpaEmo(tt.target_item)+' into the basket';
+      afxPlay('wrong');
+      house.classList.add('wrong');
+      setTimeout(()=>{try{house.classList.remove('wrong');}catch(e){}},500);
+      const m=document.getElementById('cpaMsg');
+      if(m){m.textContent=c.msg;m.style.color='#DC2626';}
+    }
+    return;
+  }
+  /* ---- PLACE VALUE: drop the digit into its house ---- */
+  const place=house.dataset.place;
+  const b=(v.breakdown||[]).find(x=>x.digit===item);
   if(!b)return;
-  const label=b.label||(b.place.charAt(0).toUpperCase()+b.place.slice(1));
   if(b.place===place){                              /* correct house */
-    c.placed[place]=digit;
-    if(tt.target_digit===digit&&tt.correct_place===place)c.targetDone=true;
-    c.msg='Correct! '+digit+' '+b.place+' = '+b.value;
+    c.placed[place]=item;
+    if(tt.target_digit===item&&tt.correct_place===place)c.targetDone=true;
+    c.msg='Correct! '+item+' '+b.place+' = '+b.value;
     c.msgOk=true;
     afxPlay('correct');
     render();
   }else{                                            /* wrong house: shake, digit returns */
-    c.msg='Not there! '+digit+' is '+digit+' '+b.place+', try again';
+    c.msg='Not there! '+item+' is '+item+' '+b.place+', try again';
     c.msgOk=false;
     afxPlay('wrong');
     house.classList.add('wrong');
@@ -2509,10 +2572,12 @@ function cpaScreen(t,i,sec,cpa){
   const key=t.id+':'+i;
   if(!state.cpa||state.cpa.key!==key){
     const saved=Math.min(3,Math.max(1,cpaSaved(key)||1));   /* resume where they stopped */
-    state.cpa={key,step:saved,placed:{},targetDone:false,pick:null,answered:null,msg:'',msgOk:true};
+    state.cpa={key,step:saved,placed:{},targetDone:false,pick:null,answered:null,msg:'',msgOk:true,data:cpa};
   }
+  state.cpa.data=cpa;                                   /* registry entry or generated fallback */
   const c=state.cpa,v=cpa.visual_data,tt=cpa.touch_task,q=cpa.do_question;
-  const steps=['SEE IT','TOUCH IT','DO IT'];
+  const isSets=!!v.set;                                 /* fruit baskets (Sets) vs houses (Place Value) */
+  const steps=['SEE IT \u{1F440}','TOUCH IT \u{1F446}','DO IT \u{270F}\u{FE0F}'];
   const remaining=3-c.step;
   const encourage=c.step===1?'Let\u2019s start! \u{1F680}'
     :c.step===2?'Good job! 2 more steps! \u{1F4AA}'
@@ -2523,6 +2588,29 @@ function cpaScreen(t,i,sec,cpa){
   let body='';
   if(c.step===1){
     /* ---------- STEP 1 · SEE IT (pictorial) ---------- */
+    if(isSets){
+      /* fruit basket: the whole set, then every subset as a small card */
+      const setItems=v.set||[];
+      const fullBasket=`<div class="cpa-basket-full">
+        <div style="font-size:30px">\u{1F9FA}</div>
+        <div class="cpa-fruitrow">${setItems.map(x=>`<span class="cpa-fruit">${cpaEmo(x)} ${nEsc(x)}</span>`).join('')}</div>
+        <div style="font-size:15px;font-weight:900;color:#92400E">{${setItems.join(', ')}}</div>
+      </div>`;
+      const subCards=(v.all_subsets||[]).map(sub=>{
+        const emo=sub.length?sub.map(cpaEmo).join(''):'\u{1F6AB}';
+        const txt=sub.length?('{'+sub.join(', ')+'}'):'{ } nothing';
+        return `<div class="cpa-subcard"><div class="cpa-sub-emo">${emo}</div><div class="cpa-sub-txt">${nEsc(txt)}</div></div>`;
+      }).join('');
+      body=`<div class="cpa-card">
+        <div class="cpa-title">\u{1F440} ${setItems.length} Fruits = How many small baskets?</div>
+        <div class="cpa-sub">Every small basket below is a group made from the big basket.</div>
+        ${fullBasket}
+        <div class="cpa-subgrid">${subCards}</div>
+        <div class="cpa-body">${setItems.length} things make ${(v.all_subsets||[]).length} small groups!</div>
+        <div class="cpa-example">\u{1F6D2} Example: ${nEsc(v.example_text||'')}</div>
+        <button class="cpa-next" onclick="cpaGo(2)">I see it! Next \u27A1</button>
+      </div>`;
+    }else{
     const visual=(v.breakdown||[]).map(b=>{
       const n=Math.max(1,Math.min(b.count||1,12));
       const blocks=Array.from({length:n},()=>`<i class="${cpaBlockClass(b.place)}" style="background:${b.color}"></i>`).join('');
@@ -2541,8 +2629,36 @@ function cpaScreen(t,i,sec,cpa){
       <div class="cpa-example">\u{1F4B4} Example: ${nEsc(v.example_text||'')}</div>
       <button class="cpa-next" onclick="cpaGo(2)">I see it! Next \u27A1</button>
     </div>`;
+    }
   }else if(c.step===2){
     /* ---------- STEP 2 · TOUCH IT (drag & drop) ---------- */
+    if(isSets){
+      /* the full basket on top, one empty basket as the drop zone, fruit chips below */
+      const setItems=v.set||[];
+      const placedFruit=c.placed.basket;
+      const target=tt.target_item;
+      const fullBasket=`<div class="cpa-basket-full">
+        <div style="font-size:26px">\u{1F9FA}</div>
+        <div class="cpa-fruitrow">${setItems.map(x=>`<span class="cpa-fruit">${cpaEmo(x)} ${nEsc(x)}</span>`).join('')}</div>
+      </div>`;
+      const basket=`<div class="cpa-house cpa-basket ${placedFruit?'right':''}" data-place="basket">
+        ${placedFruit
+          ?`<span class="cpa-fruit" style="border-color:#22C55E;background:#F0FDF4">${cpaEmo(placedFruit)} ${nEsc(placedFruit)}</span><div style="font-size:14px;font-weight:900;color:#16A34A">{${nEsc(placedFruit)}}</div>`
+          :`<div style="font-size:26px">\u{1F9FA}</div><div class="cpa-house-name" style="color:#B45309">Empty basket</div><div class="cpa-house-slot">?</div>`}
+      </div>`;
+      const chips=setItems.filter(x=>x!==placedFruit)
+        .map(x=>`<div class="cpa-pill" onpointerdown="cpaGrab(event,'${nEsc(x)}')">${cpaEmo(x)} ${nEsc(x)}</div>`).join('');
+      body=`<div class="cpa-card">
+        <div class="cpa-title">\u{1F446} ${nEsc(tt.instruction||'Drag the fruit to make a subset')}!</div>
+        <div class="cpa-sub">Use your finger (or the mouse). Drop the fruit in the empty basket.</div>
+        ${fullBasket}
+        <div class="cpa-houses" style="margin-top:2px">${basket}</div>
+        <div class="cpa-tray">${chips||'<span style="font-size:15px;font-weight:800;color:#16A34A">The subset is ready! \u2705</span>'}</div>
+        <div class="cpa-msg" id="cpaMsg" style="color:${c.msgOk?'#16A34A':'#DC2626'}">${c.msg||(c.targetDone?'\u{1F389} You made a subset!':'')}</div>
+        ${c.targetDone?`<div class="cpa-confetti-host">${mathConfetti()}</div>`:''}
+        <button class="cpa-next" ${c.targetDone?'':'disabled'} onclick="cpaGo(3)">${c.targetDone?'Next \u27A1':'Drag '+nEsc(target)+' into the basket to continue'}</button>
+      </div>`;
+    }else{
     const houses=(v.breakdown||[]).map(b=>{
       const placedVal=c.placed[b.place];
       const isTarget=tt.target_digit===placedVal&&tt.correct_place===b.place;
@@ -2565,6 +2681,7 @@ function cpaScreen(t,i,sec,cpa){
       ${c.targetDone?`<div class="cpa-confetti-host">${mathConfetti()}</div>`:''}
       <button class="cpa-next" ${c.targetDone?'':'disabled'} onclick="cpaGo(3)">${c.targetDone?'Next \u27A1':'Drag '+tt.target_digit+' to its house to continue'}</button>
     </div>`;
+    }
   }else{
     /* ---------- STEP 3 · DO IT (one quick check) ---------- */
     const opts=(q.options||[]).map((o,j)=>{
@@ -2580,9 +2697,13 @@ function cpaScreen(t,i,sec,cpa){
         <h3>\u{1F389} Sharp! You got it!</h3>
         <div style="font-size:18px;font-weight:900;color:#D97706;margin-top:4px">+10 points \u2B50</div>
       </div>
-      <button class="cpa-next" onclick="cpaComplete()">\u2713 MARK AS COMPLETE &amp; GO TO PRACTICE \u27A1</button>`;
+      <button class="cpa-next" onclick="cpaComplete()">\u2713 MARK AS COMPLETE &amp; CONTINUE \u25B6</button>`;
     }else if(c.answered==='wrong'){
-      after=`<div class="cpa-explain">\u{1F4A1} <b>Remember:</b> ${nEsc(q.explanation||'')}</div>
+      /* the explanation comes back WITH THE PICTURE, never just "wrong" */
+      const picture=isSets
+        ?`<div class="cpa-mini">${['{ }','{A}','{B}','{A, B}'].map(x=>`<span>${x}</span>`).join('')}</div>`
+        :`<div class="cpa-mini">${(v.breakdown||[]).map(b=>`<span>${b.digit} \u{2192} ${cpaPlaceLabel(b)} = ${b.value}</span>`).join('')}</div>`;
+      after=`<div class="cpa-explain">\u{1F4A1} <b>Remember:</b> ${nEsc(q.explanation||'')}${picture}</div>
       <button class="cpa-ghost" onclick="cpaRetry()">\u{1F504} Try again</button>`;
     }
     body=`<div class="cpa-card">

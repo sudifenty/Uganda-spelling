@@ -51,5 +51,10 @@ standard. Status lives at the bottom.
 
 P4 Mathematics notes are being added topic by topic from
 `curriculum/P4-MATHEMATICS.pdf` (decode: `tools/decode_p4_math.py`). A
-C-P-A entry (`visual_data`, `touch_task`, `do_question`) is only added when
-the owner supplies the data — the flow appears only where an entry exists.
+C-P-A entry (`visual_data`, `touch_task`, `do_question`) comes from the
+owner's registry or from the owner's title-based fallback rule:
+any maths sub-topic whose title contains "subset" ALWAYS gets the
+fruit-basket data (Mango/Orange/Apple, 8 subset cards, drag Mango into
+the empty basket, "How many groups can you make from {A, B}?" → 4) —
+P6 MATH T01 §3 and P7 MATH T01 §2 are covered this way. Raw note text is
+never rendered on those sub-topics.
