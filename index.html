@@ -602,6 +602,38 @@ p{margin:0}
 .afx-mute:active{transform:scale(.92)}
 @media (max-width:600px){.afx-mute{left:8px;bottom:calc(var(--nav-h) + 8px);width:42px;height:42px;font-size:18px}}
 
+/* ---------- KID CARD READER (one idea per card, big and friendly) ---------- */
+.kid-bg{background:#EFF6FF !important;min-height:calc(100dvh - var(--nav-h));border-radius:0;flex:1;margin:-14px -14px 0}
+.kid-head{position:sticky;top:0;z-index:20;background:#EFF6FF;padding:10px 14px 8px;display:flex;align-items:center;gap:10px}
+.kid-head h2{font-size:16px;font-weight:900;color:#2D4159;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.kid-dots{display:flex;gap:5px;flex:none}
+.kid-dots i{width:9px;height:9px;border-radius:50%;background:#C7DBF5;transition:background .2s,transform .2s}
+.kid-dots i.on{background:#22c55e;transform:scale(1.25)}
+.kid-dots i.done{background:#93C5FD}
+.kid-stage{display:flex;flex-direction:column;align-items:center;padding:10px 14px 120px;min-height:60vh}
+.kid-card{width:100%;max-width:480px;background:#fff;border-radius:28px;border:2px solid #DBEAFE;padding:26px 22px;box-shadow:0 8px 30px rgba(30,64,175,.08);text-align:center;animation:kidIn .3s ease}
+@keyframes kidIn{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:none}}
+.kid-emoji{font-size:56px;line-height:1;margin-bottom:12px}
+.kid-title{font-size:26px;font-weight:900;color:#1E3A5F;line-height:1.3;margin-bottom:10px}
+.kid-text{font-size:20px;color:#2D4159;line-height:1.8;font-weight:600}
+.kid-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+.kid-listen{background:#FDE047;border:none;border-radius:999px;padding:12px 22px;font-size:16px;font-weight:900;color:#713F12;box-shadow:0 3px 10px rgba(250,204,21,.3)}
+.kid-listen:active{transform:scale(.95)}
+.kid-chip{font-size:14px;background:#DCFCE7;color:#166534;padding:9px 14px;border-radius:999px;font-weight:800;max-width:220px;line-height:1.4}
+.kid-next{position:fixed;right:16px;bottom:calc(var(--nav-h) + 16px);z-index:30;background:#22c55e;color:#fff;border:none;border-radius:999px;padding:16px 32px;font-size:18px;font-weight:900;box-shadow:0 6px 20px rgba(34,197,94,.4)}
+.kid-next:active{transform:scale(.95)}
+.kid-next:disabled{background:#D1D5DB;box-shadow:none;color:#6B7280}
+.kid-flip{perspective:1000px;width:100%;max-width:480px;min-height:260px;cursor:pointer}
+.kid-flip-inner{position:relative;width:100%;height:100%;min-height:260px;transition:transform .55s cubic-bezier(.4,.0,.2,1);transform-style:preserve-3d}
+.kid-flip.flipped .kid-flip-inner{transform:rotateY(180deg)}
+.kid-flip-face{position:absolute;inset:0;backface-visibility:hidden;background:#fff;border-radius:28px;border:2px solid #DBEAFE;box-shadow:0 8px 30px rgba(30,64,175,.08);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center}
+.kid-flip-back{transform:rotateY(180deg);background:#FFF7ED;border-color:#FED7AA}
+.kid-flip-hint{font-size:13px;color:#94A3B8;font-weight:800;margin-top:14px;letter-spacing:.04em;text-transform:uppercase}
+.kid-celebration{width:100%;max-width:480px;background:#fff;border-radius:28px;border:2px solid #BBF7D0;padding:34px 24px;text-align:center;box-shadow:0 8px 30px rgba(34,197,94,.12)}
+.kid-celebration h2{font-size:28px;font-weight:900;color:#166534}
+.kid-encourage{font-size:15px;font-weight:900;color:#2563EB;background:#DBEAFE;padding:8px 14px;border-radius:999px;margin-top:12px;display:inline-block}
+
+/* ---------- LEARNING PATH (Duolingo-style vertical path) ---------- */
 /* ---------- LEARNING PATH (Duolingo-style vertical path) ---------- */
 .lp-wrap{position:relative;padding:6px 0 30px}
 .lp-rail{position:absolute;left:27px;top:20px;bottom:30px;width:4px;border-radius:2px;background:var(--line);overflow:hidden}
@@ -2137,6 +2169,126 @@ SCREENS.notePath = () => {
   <div class="spacer"></div>`;
 };
 
+
+/* ============================================================
+   KID CARD READER — one idea per card, big and friendly.
+   The notes' own words become cards: paragraphs split into
+   sentences, table rows become flip cards ("What is X?" tap
+   to reveal), list items each get their own card. Nothing is
+   rewritten — the structure becomes kid-sized.
+   ============================================================ */
+function kidStrip(s){return String(s||'').replace(/\*\*(.+?)\*\*/g,'$1').replace(/\*(.+?)\*/g,'$1').replace(/`([^`]*)`/g,'').replace(/\s+/g,' ').trim();}
+function kidSplitSentence(s){
+  /* split very long sentences at natural pauses — same words, smaller bites */
+  const parts=[];
+  let cur='';
+  const words=kidStrip(s).split(' ');
+  for(const w of words){
+    cur+=(cur?' ':'')+w;
+    if(cur.split(' ').length>=18&&/[;:—-]\s*$/.test(cur)){parts.push(cur.trim());cur='';}
+    else if(cur.split(' ').length>=24&&/,\s+(and|but|so|or|then|because)\s/.test(cur+' '+w)){
+      parts.push(cur.trim().replace(/,$/,''));cur='';
+    }
+  }
+  if(cur.trim())parts.push(cur.trim());
+  return parts.length?parts:[kidStrip(s)];
+}
+function kidEmoji(text){
+  const s=String(text).toLowerCase();
+  const M=[[/north|south|east|west|compass|direction/,'\u{1F9ED}'],[/map|africa|uganda|kenya|tanzania|location/,'\u{1F5FA}'],
+    [/district|village|county|parish|sub-county/,'\u{1F3D9}'],[/people|population|tribe|clan/,'\u{1F465}'],
+    [/leader|president|king|chief|chairperson|government/,'\u{1F451}'],[/election|vote|ballot/,'\u{1F5F3}'],
+    [/water|river|lake|ocean|sea|rain/,'\u{1F4A7}'],[/mountain|hill|valley|land|plain/,'\u26F0\uFE0F'],
+    [/forest|tree|plant|crop|veget|flower|leaf|seed/,'\u{1F333}'],[/animal|goat|cow|sheep|cattle|pig|dog|cat/,'\u{1F416}'],
+    [/bird|poultry|chicken|hen/,'\u{1F414}'],[/bee|honey|insect/,'\u{1F41D}'],[/fish/,'\u{1F41F}'],
+    [/food|eat|fruit|mango|banana|matooke|rice|maize/,'\u{1F34E}'],[/mouth|teeth|chew|tongue/,'\u{1F444}'],
+    [/stomach|belly|digest/,'\u{1F3E5}'],[/nose|breath|air|lung|inhale|exhale/,'\u{1FAC1}'],[/heart|blood|circulat/,'\u{2764}'],
+    [/bone|skeleton|muscle|joint/,'\u{1F9B4}'],[/eye|see|light/,'\u{1F441}'],[/ear|hear|sound/,'\u{1F442}'],
+    [/brain|think|mind/,'\u{1F9E0}'],[/skin|hair|nail/,'\u{1F9B1}'],[/wash|clean|soap|hygiene|sanitat/,'\u{1F9FC}'],
+    [/sick|disease|germ|bacteria|virus|fever|cough|malaria/,'\u{1F912}'],[/medicine|drug|hospital|doctor|nurse|treat/,'\u{1F48A}'],
+    [/energy|heat|electric|power|fuel/,'\u26A1'],[/machine|lever|pulley|wheel|tool/,'\u{1F527}'],
+    [/money|shilling|buy|sell|trade|market|bank/,'\u{1F4B0}'],[/school|learn|read|write|book|study/,'\u{1F4DA}'],
+    [/work|job|occupat|farm|fisherman|carpenter|teacher/,'\u{1F4BC}'],[/family|mother|father|child|home|parent/,'\u{1F46A}'],
+    [/friend|help|share|together|community/,'\u{1F91D}'],[/road|car|bus|bicycle|transport|travel/,'\u{1F697}'],
+    [/letter|write|message|post|email/,'\u{2709}'],[/radio|television|tv|news|phone|media/,'\u{1F4F1}'],
+    [/number|count|add|subtract|multiply|divide|math/,'\u{1F522}'],[/fraction|half|quarter|third/,'\u{1F522}'],
+    [/shape|circle|square|triangle|angle|line/,'\u{1F4D0}'],[/time|clock|hour|minute|day|week|month|year/,'\u{23F0}'],
+    [/weather|sun|cloud|wind|storm|climate/,'\u{26C5}'],[/soil|ground|earth|land|dirt/,'\u{1F30D}'],
+    [/protect|care|conserve|save|environment/,'\u{1F30F}'],[/war|fight|conflict|peace|security/,'\u{1F3F0}'],
+    [/law|rule|court|justice|police/,'\u2696\uFE0F'],[/flag|nation|country|independen|patriot/,'\u{1F1FA}\u{1F1EC}'],
+    [/grow|life|born|baby|reproduce/,'\u{1F331}'],[/change|state|solid|liquid|gas|melt|freeze|evaporat/,'\u{1FA7A}'],
+    [/group|set|member|element/,'\u{1F9EE}'],[/pattern|sequence|repeat/,'\u{1F517}']];
+  for(const [rx,ic] of M){try{if(new RegExp(rx,'i').test(s))return ic;}catch(e){}}
+  return '\u2728';
+}
+function kidTitleFor(text,secTitle){
+  const s=kidStrip(text);
+  const bold=(String(text).match(/\*\*(.+?)\*\*/)||[])[1];
+  if(bold&&bold.split(' ').length<=5)return kidStrip(bold);
+  const sec=String(secTitle||'').replace(/^\d+\.\s*/,'');
+  if(sec&&sec.split(' ').length<=4)return sec;
+  const words=s.split(' ').slice(0,4).join(' ');
+  return words||'';
+}
+function kidCardsFor(t,i){
+  const sec=noteSections(t)[i];if(!sec)return[];
+  const cards=[];
+  const blocks=sec.blocks||[];
+  for(const b of blocks){
+    if(b.t==='p'||b.t==='note'){
+      const sentences=(kidStrip(b.x)||'').split(/(?<=[.!?])\s+/).filter(Boolean);
+      for(const sen of sentences){
+        for(const piece of kidSplitSentence(sen)){
+          if(piece.split(' ').length<2&&cards.length)continue;   /* skip stray fragments */
+          cards.push({kind:'idea',emoji:kidEmoji(piece),title:kidTitleFor(b.x,sec.title),text:piece});
+        }
+      }
+    }else if(b.t==='ul'||b.t==='ol'){
+      (b.items||[]).forEach(it=>{
+        const txt=kidStrip(it);
+        if(txt)cards.push({kind:'idea',emoji:kidEmoji(txt),title:kidTitleFor(txt,sec.title),text:txt});
+      });
+    }else if(b.t==='table'&&b.head&&b.head.length>=2){
+      (b.rows||[]).forEach(r=>{
+        const term=kidStrip(r[0]),mean=kidStrip(r[1]);
+        if(term&&mean&&mean.split(' ').length>=2){
+          cards.push({kind:'flip',emoji:kidEmoji(term+' '+mean),front:'What is '+term+'?',back:mean});
+        }
+      });
+    }
+    /* pre blocks (diagrams) are already shown as diagrams */
+  }
+  return cards;
+}
+function kidSpeak(){
+  const t=noteById(state.ntopic)||noteFindAnywhere(state.ntopic);if(!t)return;
+  const cards=state.kcards||[];
+  const c=cards[state.ki||0];
+  if(!c)return;
+  const text=c.kind==='flip'?c.front+'. '+c.back:c.title+'. '+c.text;
+  try{spPlay();}catch(e){mathSpeak(text);}
+}
+function kidShow(i){
+  const t=noteById(state.ntopic)||noteFindAnywhere(state.ntopic);
+  const cards=state.kcards||[];
+  if(!t||!cards.length)return;
+  state.ki=Math.max(0,Math.min(i,cards.length));   /* cards.length = celebration */
+  render();
+  window.scrollTo(0,0);
+}
+function kidNext(){
+  const cards=state.kcards||[];
+  if(state.ki<cards.length){kidShow((state.ki||0)+1);}
+}
+function kidPrev(){
+  if((state.ki||0)>0)kidShow(state.ki-1);
+}
+function kidFlip(el){if(el)el.classList.toggle('flipped');}
+function kidFinish(){
+  const t=noteById(state.ntopic)||noteFindAnywhere(state.ntopic);if(!t)return;
+  lpComplete();
+}
+
 SCREENS.noteSub = () => {
   const t=noteById(state.ntopic)||noteFindAnywhere(state.ntopic);
   if(!t)return SCREENS.notePath;
@@ -2144,32 +2296,85 @@ SCREENS.noteSub = () => {
   const i=Math.max(0,Math.min(state.nsec||0,secs.length-1));
   const sec=secs[i];if(!sec)return SCREENS.notePath;
   const {cur}=pathState(t);
-  const done=pathDone(t,i);
-  if(i>cur){setTimeout(()=>{toast('Complete the previous sub-topic first');go('notePath');},0);return '';}
+  if(i>cur){setTimeout(()=>{toast('Finish the previous one first!');go('notePath');},0);return '';}
   if(state.nsec!==i)state.nsec=i;
+
+  const cards=kidCardsFor(t,i);
+  if(!state.kcards||state.kcards._for!==t.id+':'+i){
+    state.kcards=cards;state.kcards._for=t.id+':'+i;state.ki=0;
+  }
+  const ki=state.ki||0;
+  const isLast=ki>=cards.length;
+  const remaining=cards.length-ki;
+  const done=pathDone(t,i);
+
+  const dots=`<div class="kid-dots">${cards.map((c,j)=>`<i class="${j<ki?'done':j===ki?'on':''}"></i>`).join('')}</div>`;
+
+  let stage='';
+  if(isLast){
+    /* celebration card */
+    stage=`<div class="kid-celebration">
+      <div style="font-size:64px">\u{1F389}</div>
+      <h2>You finished!</h2>
+      <p style="font-size:18px;color:#4B5563;font-weight:700;margin-top:8px">You read all ${cards.length} cards. You are smart! \u{1F31F}</p>
+      <button class="btn btn-primary" style="margin-top:18px;min-height:54px;font-size:17px;background:#22c55e;border:none" onclick="kidFinish()">
+        \u2713 MARK AS COMPLETE & CONTINUE \u27A1
+      </button>
+    </div>`;
+  }else{
+    const c=cards[ki];
+    if(c.kind==='flip'){
+      stage=`<div class="kid-flip" onclick="kidFlip(this)" role="button" aria-label="Tap to flip">
+        <div class="kid-flip-inner">
+          <div class="kid-flip-face">
+            <div class="kid-emoji">${c.emoji}</div>
+            <div class="kid-title">${nEsc(c.front)}</div>
+            <div class="kid-flip-hint">\u{1F446} Tap me!</div>
+          </div>
+          <div class="kid-flip-face kid-flip-back">
+            <div class="kid-emoji">${c.emoji}</div>
+            <div class="kid-text" style="font-size:22px;font-weight:800;color:#1E3A5F">${nEsc(c.back)}</div>
+            <div class="kid-flip-hint">\u{1F446} Tap to flip back</div>
+          </div>
+        </div>
+      </div>
+      <div class="kid-actions">
+        <button class="kid-listen" onclick="kidSpeak()">\u{1F50A} Listen</button>
+      </div>`;
+    }else{
+      stage=`<div class="kid-card">
+        <div class="kid-emoji">${c.emoji}</div>
+        ${c.title?`<div class="kid-title">${nEsc(c.title)}</div>`:''}
+        <div class="kid-text">${nEsc(c.text)}</div>
+        <div class="kid-actions">
+          <button class="kid-listen" onclick="kidSpeak()">\u{1F50A} Listen</button>
+        </div>
+      </div>`;
+    }
+  }
+
+  const encourage=ki===0?'Let\u2019s start! \u{1F680}'
+    :isLast?'All done! \u{1F389}'
+    :remaining===1?'Good job! 1 more to go! \u{1F4AA}'
+    :`Good job! ${remaining} more to go! \u{1F4AA}`;
+
   return `
-  <header class="pagehead">
-    <button class="back" onclick="go('notePath')" aria-label="Back to the path">${I.back(22)}</button>
-    <div style="flex:1;min-width:0"><h2 style="font-size:17px">${nEsc(t.title)}</h2>
-      <div class="sub">Sub-topic ${i+1} of ${secs.length}${done?' \u00B7 completed':''}</div></div>
-    ${spBarHTML()}
-  </header>
-  <div class="bar" style="margin-bottom:14px"><i style="width:${((i+1)/secs.length)*100}%;background:var(--green)"></i></div>
-
-  <article class="nt">
-    <h3 class="nt-h1">${nEsc(sec.title)}</h3>
-    ${sec.blocks.map(noteBlock).join('')}
-  </article>
-  ${diagramHTML(t.id, sec.title)}
-
-  <div style="display:grid;gap:10px;margin-top:16px">
-    <button class="btn btn-primary" style="min-height:58px;font-size:17px" onclick="lpComplete()">
-      ${done?'\u2713 MARK AS COMPLETE & CONTINUE \u27A1':'\u2713 MARK AS COMPLETE & CONTINUE \u27A1'}
-    </button>
-    <button class="btn btn-ghost" onclick="try{spPlay();}catch(e){}">\U0001F50A READ THIS PART TO ME</button>
-  </div>
-  <div class="spacer"></div>`;
+  <div class="kid-bg">
+    <header class="kid-head">
+      <button class="back" onclick="go('notePath')" aria-label="Back" style="width:40px;height:40px">${I.back(20)}</button>
+      <h2>${nEsc(String(sec.title).replace(/^\d+\.\s*/,''))}</h2>
+      ${dots}
+    </header>
+    <div class="kid-stage" id="kidStage">
+      <div class="kid-encourage">${encourage}</div>
+      ${stage}
+    </div>
+    ${!isLast?`<button class="kid-next" onclick="kidNext()">Next \u27A1</button>`:''}
+    ${ki>0?`<button style="position:fixed;left:16px;bottom:calc(var(--nav-h) + 16px);z-index:30;background:#fff;border:2px solid #DBEAFE;border-radius:999px;padding:14px 20px;font-size:15px;font-weight:900;color:#2D4159" onclick="kidPrev()">\u2190 Back</button>`:''}
+  </div>`;
 };
+
+
 
 /* ============================================================
    THE NOTES LEARNING JOURNEY — every subject.
