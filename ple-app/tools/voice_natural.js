@@ -156,7 +156,13 @@ function nvPrefetch(i){
 }
 
 let NV_AUDIO = null;
-function nvSpeak(text){
+/* "machine" marks the reading machine's own playback. A one-shot request
+   (a single Listen button: a maths question, a spelling word, a kid card)
+   must ALWAYS play. The machine must drop its queued sentences the moment
+   the learner presses Stop — that is the only case where playback is skipped.
+   Before this flag, one-shot requests generated the audio and then threw it
+   away in silence: every Listen button outside the reading page was mute. */
+function nvSpeak(text, machine){
   if(typeof afxMuted==='function'&&afxMuted())return;
   const _t=String(text==null?'':text);
   /* ONE neural inference on a long text BLOCKS the UI (the synthesis
@@ -166,16 +172,16 @@ function nvSpeak(text){
     const parts=(_t.match(/[^.!?]+[.!?]*/g)||[_t]).map(x=>x.trim()).filter(Boolean);
     let chain=Promise.resolve();
     parts.forEach(pt=>{
-      chain=chain.then(()=>{ if(!SP.on && !NV_AUDIO) return null; return nvSpeakOne(pt); });
+      chain=chain.then(()=>{ if(machine && !SP.on && !NV_AUDIO) return null; return nvSpeakOne(pt, machine); });
     });
     return chain;
   }
-  return nvSpeakOne(_t);
+  return nvSpeakOne(_t, machine);
 }
-function nvSpeakOne(text){
+function nvSpeakOne(text, machine){
   return new Promise((resolve, reject) => {
     nvWav(text).then(url => {
-      if(!SP.on){ resolve(); return; }
+      if(machine && !SP.on){ resolve(); return; }
       const a = new Audio(url);
       NV_AUDIO = a;
       a.volume = spVolume();

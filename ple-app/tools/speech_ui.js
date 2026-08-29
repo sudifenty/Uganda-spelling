@@ -246,6 +246,9 @@ function spStop(){
   if(SP.timer){ clearTimeout(SP.timer); SP.timer = null; }
   spStopAudio();
   SP.on = false; SP.paused = false; SP.i = 0;
+  /* the learner asked for silence: anything still waiting for the narrator
+     download must not suddenly start speaking when the download completes */
+  try{ NV.pending = null; }catch(e){}
   spClearMark();
   spBar();
 }
@@ -268,7 +271,10 @@ function spMutedNotice(){
   toast('Sound is muted \u2014 tap the \u{1F507} button (bottom left) to unmute.');
 }
 /* one call, whichever engine is in use */
-function spSpeak(text){
+/* spSpeak(text, machine) — machine=true only when the sentence reader itself
+   is speaking one of its collected sentences; every direct Listen button is
+   a one-shot (machine unset) and must always be heard. */
+function spSpeak(text, machine){
   /* Muted and still-downloading are NOT errors: the learner is told what
      is happening, so these resolve quietly — a rejected promise here would
      ripple out as an unhandled error and wrongly trigger the safety net. */
@@ -290,7 +296,11 @@ function spSpeak(text){
     }
     return new Promise(res => setTimeout(res, 1200));   /* a recent attempt failed: move on gently */
   }
-  return nvSpeak(text).catch(err => {
+  /* A fresh one-shot request cuts off whatever is still playing, so a
+     learner who taps Listen twice never hears two voices overlapping.
+     The reading machine (machine=true) keeps its own gentle sequencing. */
+  if(!machine){ try{ if(typeof spStopAudio==='function') spStopAudio(); }catch(e){} }
+  return nvSpeak(text, machine).catch(err => {
     NV.error = 'The standard narrator could not play this part. Please try again or check the downloaded voice.';
     spBar();
     toast('Audio could not be played. Please try again.');
@@ -400,7 +410,7 @@ function spNext(){
     const gap = c.heading ? 520 : c.last ? 320 : 130;
     SP.timer = setTimeout(spNext, gap / Math.max(0.6, spRate()));
   };
-  spSpeak(c.say).then(step, step);
+  spSpeak(c.say, true).then(step, step);
 }
 /* say the current sentence again */
 function spRepeat(){

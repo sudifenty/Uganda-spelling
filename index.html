@@ -2265,8 +2265,14 @@ function kidSpeak(){
   const cards=state.kcards||[];
   const c=cards[state.ki||0];
   if(!c)return;
-  const text=c.kind==='flip'?c.front+'. '+c.back:c.title+'. '+c.text;
-  try{spPlay();}catch(e){mathSpeak(text);}
+  /* Speak THIS card's own words. spPlay() is the sentence machine for the
+     reading page — it finds nothing to read on the card screen and stayed
+     silent, so the Listen button did nothing at all. */
+  let text;
+  if(c.kind==='flip'){ text=c.front+' '+c.back; }
+  else{ text=(c.title?c.title+'. ':'')+c.text; }
+  try{ if(typeof spSpeak==='function'){ spSpeak(text); return; } }catch(e){}
+  mathSpeak(text);
 }
 function kidShow(i){
   const t=noteById(state.ntopic)||noteFindAnywhere(state.ntopic);
@@ -4881,7 +4887,13 @@ function nvPrefetch(i){
 }
 
 let NV_AUDIO = null;
-function nvSpeak(text){
+/* "machine" marks the reading machine's own playback. A one-shot request
+   (a single Listen button: a maths question, a spelling word, a kid card)
+   must ALWAYS play. The machine must drop its queued sentences the moment
+   the learner presses Stop — that is the only case where playback is skipped.
+   Before this flag, one-shot requests generated the audio and then threw it
+   away in silence: every Listen button outside the reading page was mute. */
+function nvSpeak(text, machine){
   if(typeof afxMuted==='function'&&afxMuted())return;
   const _t=String(text==null?'':text);
   /* ONE neural inference on a long text BLOCKS the UI (the synthesis
@@ -4891,16 +4903,16 @@ function nvSpeak(text){
     const parts=(_t.match(/[^.!?]+[.!?]*/g)||[_t]).map(x=>x.trim()).filter(Boolean);
     let chain=Promise.resolve();
     parts.forEach(pt=>{
-      chain=chain.then(()=>{ if(!SP.on && !NV_AUDIO) return null; return nvSpeakOne(pt); });
+      chain=chain.then(()=>{ if(machine && !SP.on && !NV_AUDIO) return null; return nvSpeakOne(pt, machine); });
     });
     return chain;
   }
-  return nvSpeakOne(_t);
+  return nvSpeakOne(_t, machine);
 }
-function nvSpeakOne(text){
+function nvSpeakOne(text, machine){
   return new Promise((resolve, reject) => {
     nvWav(text).then(url => {
-      if(!SP.on){ resolve(); return; }
+      if(machine && !SP.on){ resolve(); return; }
       const a = new Audio(url);
       NV_AUDIO = a;
       a.volume = spVolume();
@@ -5171,6 +5183,9 @@ function spStop(){
   if(SP.timer){ clearTimeout(SP.timer); SP.timer = null; }
   spStopAudio();
   SP.on = false; SP.paused = false; SP.i = 0;
+  /* the learner asked for silence: anything still waiting for the narrator
+     download must not suddenly start speaking when the download completes */
+  try{ NV.pending = null; }catch(e){}
   spClearMark();
   spBar();
 }
@@ -5193,7 +5208,10 @@ function spMutedNotice(){
   toast('Sound is muted \u2014 tap the \u{1F507} button (bottom left) to unmute.');
 }
 /* one call, whichever engine is in use */
-function spSpeak(text){
+/* spSpeak(text, machine) — machine=true only when the sentence reader itself
+   is speaking one of its collected sentences; every direct Listen button is
+   a one-shot (machine unset) and must always be heard. */
+function spSpeak(text, machine){
   /* Muted and still-downloading are NOT errors: the learner is told what
      is happening, so these resolve quietly — a rejected promise here would
      ripple out as an unhandled error and wrongly trigger the safety net. */
@@ -5215,7 +5233,11 @@ function spSpeak(text){
     }
     return new Promise(res => setTimeout(res, 1200));   /* a recent attempt failed: move on gently */
   }
-  return nvSpeak(text).catch(err => {
+  /* A fresh one-shot request cuts off whatever is still playing, so a
+     learner who taps Listen twice never hears two voices overlapping.
+     The reading machine (machine=true) keeps its own gentle sequencing. */
+  if(!machine){ try{ if(typeof spStopAudio==='function') spStopAudio(); }catch(e){} }
+  return nvSpeak(text, machine).catch(err => {
     NV.error = 'The standard narrator could not play this part. Please try again or check the downloaded voice.';
     spBar();
     toast('Audio could not be played. Please try again.');
@@ -5325,7 +5347,7 @@ function spNext(){
     const gap = c.heading ? 520 : c.last ? 320 : 130;
     SP.timer = setTimeout(spNext, gap / Math.max(0.6, spRate()));
   };
-  spSpeak(c.say).then(step, step);
+  spSpeak(c.say, true).then(step, step);
 }
 /* say the current sentence again */
 function spRepeat(){
@@ -5603,14 +5625,16 @@ function spSetVoice(uri){ localStorage.setItem('ple_voice', uri);
 spInit();
 authInit();
 
-/* keep the voice tied to the reading screen */
+/* keep the voice tied to the reading screen — and stop a one-shot Listen
+   (a card, a question, a word) the moment the learner moves on, so no
+   voice keeps talking over the next screen or after Stop + navigate */
 const _renderBase = render;
 render = function(){
   _renderBase();
   wireCompanion();
   if(state.screen === 'noteRead' || state.screen === 'noteJourney' || state.screen === 'mathLesson'){
     if(typeof spPrepare === 'function') spPrepare();
-  }else if(typeof spStop === 'function' && (SP.on || SP.paused)){
+  }else if(typeof spStop === 'function' && (SP.on || SP.paused || NV_AUDIO || (typeof NV!=='undefined' && NV.pending))){
     spStop();
   }
 };
