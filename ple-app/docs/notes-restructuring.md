@@ -58,3 +58,12 @@ fruit-basket data (Mango/Orange/Apple, 8 subset cards, drag Mango into
 the empty basket, "How many groups can you make from {A, B}?" → 4) —
 P6 MATH T01 §3 and P7 MATH T01 §2 are covered this way. Raw note text is
 never rendered on those sub-topics.
+
+MATHS NOTES LAYOUT (owner's rule, 2026-08): Mathematics sub-topics are
+never swipe cards and never separate steps — they are ONE single
+scrolling page with SEE IT + TOUCH IT + DO IT stacked together
+(`mathSinglePage` in index.html). Expanded-form sections build the page
+themselves from the section's own worked example ("4,835,269 = 4,000,000
++ ..." → coloured rows, drag boxes, question), verified digit by digit so
+nothing is invented. Other maths sections are one plain readable page.
+SST, Science and English keep the card reader.

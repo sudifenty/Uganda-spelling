@@ -695,6 +695,33 @@ p{margin:0}
 .cpa-mini{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
 .cpa-mini span{background:#fff;border:1.5px solid #FED7AA;border-radius:999px;padding:4px 11px;font-size:15px;font-weight:900;color:#7C2D12}
 
+/* ---------- MATH SINGLE PAGE (See · Touch · Do stacked, no cards) ---------- */
+.mp-chips{position:sticky;top:0;z-index:20;display:flex;gap:7px;justify-content:center;flex-wrap:wrap;padding:8px 12px;background:#EFF6FF}
+.mp-chip{font-size:12.5px;font-weight:900;padding:7px 12px;border-radius:999px;background:#fff;border:2px solid #DBEAFE;color:#64748B;letter-spacing:.02em}
+.mp-chip.done{background:#DCFCE7;border-color:#86EFAC;color:#166534}
+.mp-topic{font-size:11px;font-weight:800;color:#93A7C4;flex:none;max-width:90px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mp-wrap{padding:4px 14px 140px;max-width:600px;margin:0 auto}
+.mp-sec{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:900;color:#1D4ED8;letter-spacing:.06em;margin:20px 2px 10px;text-transform:uppercase}
+.mp-sec i{flex:1;height:2px;background:#BFDBFE;border-radius:1px}
+.mp-card{width:100%;background:#fff;border-radius:24px;border:2px solid #DBEAFE;padding:20px 14px;box-shadow:0 6px 22px rgba(30,64,175,.07);animation:kidIn .3s ease}
+.mp-title{font-size:26px;font-weight:900;color:#1E3A5F;text-align:center;line-height:1.3;margin-bottom:6px}
+.mp-sub{font-size:15px;font-weight:800;color:#64748B;text-align:center;margin-bottom:14px;line-height:1.4}
+.mp-row{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:14px;background:#F8FAFC;margin-bottom:8px;flex-wrap:wrap}
+.mp-row:last-child{margin-bottom:0}
+.mp-digit{min-width:46px;height:46px;border-radius:12px;display:grid;place-items:center;color:#fff;font-size:22px;font-weight:900;flex:none;box-shadow:inset 0 -4px 0 rgba(0,0,0,.15)}
+.mp-minis{display:flex;gap:3px;flex-wrap:wrap;flex:none;max-width:130px}
+.mp-minis i{width:10px;height:10px;border-radius:3px;opacity:.85}
+.mp-rowlab{font-size:18px;font-weight:700;color:#334155;flex:1;min-width:150px;line-height:1.35}
+.mp-rowlab b{font-weight:900}
+.mp-boxes{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:14px}
+@media(min-width:480px){.mp-boxes{grid-template-columns:repeat(3,1fr)}}
+.cpa-house.mp-box{min-height:84px;padding:8px 6px;gap:6px}
+.cpa-house.mp-box.full{border-style:solid;background:#F0FDF4}
+.mp-box-tpl{font-size:16.5px;font-weight:900;color:#334155;letter-spacing:.02em;text-align:center}
+.mp-box-place{font-size:10.5px;font-weight:900;text-transform:uppercase;letter-spacing:.04em;text-align:center;line-height:1.25}
+.mp-q{font-size:21px;font-weight:900;color:#1E3A5F;margin-bottom:14px;text-align:center;line-height:1.4}
+.mp-lock{font-size:16px;font-weight:900;color:#B45309;background:#FEF3C7;border:2px dashed #FCD34D;border-radius:14px;padding:10px 12px;text-align:center;margin-bottom:12px}
+
 /* ---------- LEARNING PATH (Duolingo-style vertical path) ---------- */
 /* ---------- LEARNING PATH (Duolingo-style vertical path) ---------- */
 .lp-wrap{position:relative;padding:6px 0 30px}
@@ -2358,19 +2385,21 @@ function kidFinish(){
 }
 
 /* ============================================================
-   C-P-A MATH FLOW — SEE IT · TOUCH IT · DO IT (Mathematics only).
-   For the weakest learners: a sub-topic with C-P-A data is not
-   just read — it is SEEN as a picture, TOUCHED by dragging the
-   digits to their houses, and then DONE as one question. No
-   skipping: the drag must be right before Do It opens, and the
-   question must be right before the sub-topic is complete.
+   MATH NOTES — ONE SINGLE SCROLLING PAGE (Mathematics only).
+   The owner's rule: maths is never split into swipe cards or
+   separate steps — SEE IT, TOUCH IT and DO IT are stacked on ONE
+   page, so the instruction and the answer are always on screen
+   together. SST, Science and English keep the card reader.
 
-   Scope: ONLY Mathematics. Every other subject — and every maths
-   section without an entry here — keeps the normal card reader,
-   completely unchanged. Data is keyed by topic id + section index
-   and uses the same field names as the planned database columns
-   (visual_data / touch_task / do_question), so it can move to a
-   server unchanged one day. Content is supplied by the owner.
+   Three kinds of maths sub-topic are understood here:
+     1. C-P-A registry data supplied by the owner (Place Value P4)
+     2. the owner's subsets fallback (fruit baskets)
+     3. sections that teach expanded form — the whole page is
+        DERIVED from the section's own worked examples in the notes,
+        so nothing is invented: the numbers are the note's numbers.
+   Every other maths section is one simple readable page (the
+   section's own content and diagrams) with Mark Complete at the
+   bottom — still one page, no cards, no Next.
    ============================================================ */
 const CPA_KEY='smartple_cpa';
 const CPA_MATH={
@@ -2389,9 +2418,7 @@ function cpaFor(t,i){
 /* ---------- the owner's fallback rule, exactly as specified ----------
    A maths sub-topic must never fall through to raw note text. If the
    sub-topic is about subsets and carries no C-P-A data of its own, the
-   fruit-basket data below is generated for it — ALWAYS. This is what
-   keeps "8 subsets. 8 subsets." and "Number of subsets = 2ⁿ" off the
-   screen and puts fruit baskets in their place. */
+   fruit-basket data below is generated for it — ALWAYS. */
 const CPA_EMO={Mango:'\u{1F96D}',Orange:'\u{1F34A}',Apple:'\u{1F34E}'};
 function cpaEmo(x){return CPA_EMO[x]||'\u{1F535}';}
 function cpaFallbackFor(secTitle){
@@ -2414,6 +2441,53 @@ function cpaFallbackFor(secTitle){
     }
   };
 }
+/* ---------- expanded-form pages, derived from the notes themselves ----------
+   The section's own worked example "4,835,269 = 4,000,000 + 800,000 + ..."
+   becomes the coloured rows, the drag boxes and the question. The sum is
+   re-checked digit by digit, so the page can only be built from a true
+   example that already exists in the notes. */
+const CPA_PLACES=['Ones','Tens','Hundreds','Thousands','Ten thousands','Hundred thousands','Millions','Ten millions'];
+const CPA_PLACE_COLORS={'ones':'#14b8a6','tens':'#ec4899','hundreds':'#a855f7','thousands':'#f59e0b','ten thousands':'#22c55e','hundred thousands':'#3b82f6','millions':'#ef4444','ten millions':'#dc2626'};
+function cpaPlaceColor(p){return CPA_PLACE_COLORS[String(p||'').toLowerCase()]||'#2563eb';}
+function cpaFmt(n){return Number(n).toLocaleString('en-US');}
+function cpaDerive(sec){
+  const texts=[];
+  (sec.blocks||[]).forEach(b=>{
+    if(b.t==='p'||b.t==='note'||b.t==='pre')texts.push(b.x||'');
+    if(b.t==='ul'||b.t==='ol')(b.items||[]).forEach(x=>texts.push(x));
+  });
+  const ex=[];
+  texts.forEach(t=>{
+    const s=String(t).replace(/\*\*/g,'');
+    const m=s.match(/(^|[\s(])([\d,]{3,})\s*=\s*([\d,]+(?:\s*\+\s*[\d,]+)+)/);
+    if(!m)return;
+    const num=Number(m[2].replace(/,/g,''));
+    const valsStr=m[3].split('+').map(x=>x.trim());
+    const vals=valsStr.map(x=>Number(x.replace(/,/g,'')));
+    if(!num||vals.length<2)return;
+    if(vals.reduce((a,b)=>a+b,0)!==num)return;      /* honesty check: the sum must equal the number */
+    ex.push({numStr:m[2],valsStr,vals,digits:String(num).split('').map(Number)});
+  });
+  const main=ex.find(e=>e.digits.length>=3&&e.digits.length===e.vals.length&&!e.digits.includes(0));
+  if(!main)return null;                              /* no clean example: plain page, nothing invented */
+  const doEx=ex.find(e=>e!==main)||main;
+  const rows=main.digits.map((d,k)=>{
+    const place=CPA_PLACES[main.digits.length-1-k];
+    return {digit:d,place,value:main.valsStr[k],color:cpaPlaceColor(place)};
+  });
+  const correctStr=doEx.valsStr.join(' + ');
+  const digitsStr=doEx.digits.join(' + ');
+  const shiftedFirst=doEx.vals[0]>=100?cpaFmt(doEx.vals[0]/10):cpaFmt(doEx.vals[doEx.vals.length-1]*10);
+  const shiftedStr=[shiftedFirst].concat(doEx.valsStr.slice(1)).join(' + ');
+  return {
+    derived:true,
+    visual_data:{number:main.numStr,rows},
+    touch_task:{type:'expand',instruction:'Drag each digit into its box',digits:main.digits,
+      boxes:rows.map(r=>({digit:r.digit,place:r.place,value:r.value,tpl:String(r.value).replace(String(r.digit),'_')}))},
+    do_question:{question:'Expand '+doEx.numStr+' = ?',options:[digitsStr,correctStr,shiftedStr],
+      correct_answer:correctStr,explanation:doEx.numStr+' = '+correctStr+'. Write the VALUE of each digit, not the digit itself.'}
+  };
+}
 function cpaSaved(key){try{return (JSON.parse(localStorage.getItem(CPA_KEY)||'{}')[key])||0;}catch(e){return 0;}}
 function cpaSaveStep(key,step){
   try{
@@ -2422,16 +2496,6 @@ function cpaSaveStep(key,step){
     localStorage.setItem(CPA_KEY,JSON.stringify(d));
   }catch(e){}
 }
-function cpaGo(step){
-  const c=state.cpa;if(!c)return;
-  if(step===3&&!c.targetDone)return;               /* Touch It cannot be skipped */
-  if(step===2&&c.step!==1)return;
-  c.step=step;c.msg='';
-  cpaSaveStep(c.key,step);                           /* resume here after closing */
-  afxPlay('correct');
-  render();window.scrollTo(0,0);
-}
-function cpaRetry(){const c=state.cpa;if(c){c.answered=null;c.pick=null;render();}}
 function cpaAnswer(idx){
   const c=state.cpa;if(!c||!c.data)return;
   const q=c.data.do_question;if(!q)return;
@@ -2440,6 +2504,7 @@ function cpaAnswer(idx){
   else{c.answered='wrong';afxPlay('wrong');}
   render();
 }
+function cpaRetry(){const c=state.cpa;if(c){c.answered=null;c.pick=null;render();}}
 function cpaComplete(){
   const t=noteById(state.ntopic)||noteFindAnywhere(state.ntopic);if(!t)return;
   const i=Math.max(0,state.nsec||0),sec=noteSections(t)[i];if(!sec)return;
@@ -2455,11 +2520,11 @@ function cpaComplete(){
   const nextTitle=next?String(next.title).replace(/^\d+\.\s*/,''):'';
   openSheet(`<div class="grabber"></div>
     <div style="text-align:center">${mathConfetti()}
-      <div style="font-size:56px">🏆</div>
-      <h3 style="margin-top:6px">Sub-topic complete!${first?' <span style="color:#D97706">+10 points ⭐</span>':''}</h3>
+      <div style="font-size:56px">\u{1F3C6}</div>
+      <h3 style="margin-top:6px">Sub-topic complete!${first?' <span style="color:#D97706">+10 points \u2B50</span>':''}</h3>
       <p class="muted" style="margin:8px 0 4px">${next?'Next up: <b>'+nEsc(nextTitle)+'</b>':'You finished this topic!'}</p>
-      ${next?`<button class="btn btn-primary" style="margin-top:12px;min-height:54px" onclick="closeSheet();state.nsec=${i+1};go('noteSub')">CONTINUE ▶</button>`:''}
-      <button class="btn btn-ghost" style="margin-top:8px" onclick="closeSheet();cpaPractice()">GO TO PRACTICE 🎮</button>
+      ${next?`<button class="btn btn-primary" style="margin-top:12px;min-height:54px" onclick="closeSheet();state.nsec=${i+1};go('noteSub')">CONTINUE \u25B6</button>`:''}
+      <button class="btn btn-ghost" style="margin-top:8px" onclick="closeSheet();cpaPractice()">GO TO PRACTICE \u{1F3AE}</button>
       <button class="btn btn-ghost" style="margin-top:8px" onclick="closeSheet();go('notePath')">BACK TO THE PATH</button>
     </div>`);
   render();
@@ -2468,12 +2533,12 @@ function cpaPractice(){
   const t=noteById(state.ntopic)||noteFindAnywhere(state.ntopic);
   const cls=t?(t.class||state.klass):state.klass;
   if(t&&checkClassAccess(t.class)){state.mclass=t.class;state.mtab='practice';}
-  recordLast({kind:'math',mclass:cls,label:'Maths · '+cls,sub:'Math practice',meta:'Maths Adventure',pct:null});
+  recordLast({kind:'math',mclass:cls,label:'Maths \u00b7 '+cls,sub:'Math practice',meta:'Maths Adventure',pct:null});
   go('mathHome');
 }
 
 /* ---- the drag itself: one pointer engine for finger AND mouse ----
-   An item is either a place-value DIGIT (number) or a SETS fruit (string). */
+   An item is a place-value DIGIT (number) or a SETS fruit (string). */
 let CPA_DRAG=null;
 function cpaGrab(e,item){
   if(CPA_DRAG)return;
@@ -2522,6 +2587,28 @@ function cpaUp(e){
 function cpaDrop(item,house){
   const c=state.cpa;if(!c||!c.data)return;
   const v=c.data.visual_data,tt=c.data.touch_task;
+  const wrong=(msg)=>{
+    c.msgOk=false;c.msg=msg;
+    afxPlay('wrong');
+    house.classList.add('wrong');
+    setTimeout(()=>{try{house.classList.remove('wrong');}catch(e){}},500);
+    const m=document.getElementById('cpaMsg');
+    if(m){m.textContent=c.msg;m.style.color='#DC2626';}
+  };
+  /* ---- EXPANDED FORM: drop the digit into its value box ---- */
+  if(tt.type==='expand'){
+    if(String(house.dataset.d)===String(item)){
+      c.placed[house.dataset.b]=item;
+      c.targetDone=Object.keys(c.placed).length>=tt.boxes.length;
+      c.msgOk=true;
+      c.msg=c.targetDone?'All digits found their boxes! \u{1F389}':'Correct! '+item+' \u{2192} '+house.dataset.v;
+      afxPlay('correct');
+      render();
+    }else{
+      wrong('Not the right box for '+item+' \u2014 try again!');
+    }
+    return;
+  }
   /* ---- SETS: drop the target fruit into the empty basket ---- */
   if(v.set){
     if(item===tt.target_item){
@@ -2531,13 +2618,7 @@ function cpaDrop(item,house){
       afxPlay('correct');
       render();
     }else{
-      c.msgOk=false;
-      c.msg='Try again! Drag '+tt.target_item+' '+cpaEmo(tt.target_item)+' into the basket';
-      afxPlay('wrong');
-      house.classList.add('wrong');
-      setTimeout(()=>{try{house.classList.remove('wrong');}catch(e){}},500);
-      const m=document.getElementById('cpaMsg');
-      if(m){m.textContent=c.msg;m.style.color='#DC2626';}
+      wrong('Try again! Drag '+tt.target_item+' '+cpaEmo(tt.target_item)+' into the basket');
     }
     return;
   }
@@ -2553,178 +2634,204 @@ function cpaDrop(item,house){
     afxPlay('correct');
     render();
   }else{                                            /* wrong house: shake, digit returns */
-    c.msg='Not there! '+item+' is '+item+' '+b.place+', try again';
-    c.msgOk=false;
-    afxPlay('wrong');
-    house.classList.add('wrong');
-    setTimeout(()=>{try{house.classList.remove('wrong');}catch(e){}},500);
-    const m=document.getElementById('cpaMsg');
-    if(m){m.textContent=c.msg;m.style.color='#DC2626';}
+    wrong('Not there! '+item+' is '+item+' '+b.place+', try again');
   }
 }
 
-/* ---- the three step cards ---- */
+/* ---- the three sections, stacked on ONE page ---- */
 function cpaPlaceLabel(b){return b.label||(b.place.charAt(0).toUpperCase()+b.place.slice(1));}
 function cpaBlockClass(place){
   return place==='hundreds'?'cpa-block-h':place==='tens'?'cpa-block-t':'cpa-block-o';
 }
-function cpaScreen(t,i,sec,cpa){
-  const key=t.id+':'+i;
-  if(!state.cpa||state.cpa.key!==key){
-    const saved=Math.min(3,Math.max(1,cpaSaved(key)||1));   /* resume where they stopped */
-    state.cpa={key,step:saved,placed:{},targetDone:false,pick:null,answered:null,msg:'',msgOk:true,data:cpa};
+function cpaSeeHTML(c){
+  const v=c.data.visual_data,tt=c.data.touch_task;
+  if(v.set){
+    const setItems=v.set||[];
+    const fullBasket=`<div class="cpa-basket-full">
+      <div style="font-size:30px">\u{1F9FA}</div>
+      <div class="cpa-fruitrow">${setItems.map(x=>`<span class="cpa-fruit">${cpaEmo(x)} ${nEsc(x)}</span>`).join('')}</div>
+      <div style="font-size:15px;font-weight:900;color:#92400E">{${setItems.join(', ')}}</div>
+    </div>`;
+    const subCards=(v.all_subsets||[]).map(sub=>{
+      const emo=sub.length?sub.map(cpaEmo).join(''):'\u{1F6AB}';
+      const txt=sub.length?('{'+sub.join(', ')+'}'):'{ } nothing';
+      return `<div class="cpa-subcard"><div class="cpa-sub-emo">${emo}</div><div class="cpa-sub-txt">${nEsc(txt)}</div></div>`;
+    }).join('');
+    return `<div class="mp-title">\u{1F440} ${setItems.length} Fruits = How many small baskets?</div>
+      <div class="mp-sub">Every small basket below is a group made from the big basket.</div>
+      ${fullBasket}
+      <div class="cpa-subgrid">${subCards}</div>
+      <div class="cpa-body">${setItems.length} things make ${(v.all_subsets||[]).length} small groups!</div>
+      <div class="cpa-example">\u{1F6D2} Example: ${nEsc(v.example_text||'')}</div>`;
   }
-  state.cpa.data=cpa;                                   /* registry entry or generated fallback */
-  const c=state.cpa,v=cpa.visual_data,tt=cpa.touch_task,q=cpa.do_question;
-  const isSets=!!v.set;                                 /* fruit baskets (Sets) vs houses (Place Value) */
-  const steps=['SEE IT \u{1F440}','TOUCH IT \u{1F446}','DO IT \u{270F}\u{FE0F}'];
-  const remaining=3-c.step;
-  const encourage=c.step===1?'Let\u2019s start! \u{1F680}'
-    :c.step===2?'Good job! 2 more steps! \u{1F4AA}'
-    :'Almost there! 1 more step! \u{1F3C1}';
-  const dots=`<div class="cpa-steps">${steps.map((s,j)=>`<i class="${j<c.step-1?'done':j===c.step-1?'on':''}"></i>`).join('')}
-    <span class="cpa-steplab">STEP ${c.step}/3 · ${steps[c.step-1]}</span></div>`;
+  if(v.rows){                                       /* expanded form, derived from the notes */
+    const rows=v.rows.map(r=>`<div class="mp-row">
+        <span class="mp-digit" style="background:${r.color}">${r.digit}</span>
+        <span class="mp-minis">${Array.from({length:Math.min(r.digit,9)},()=>`<i style="background:${r.color}"></i>`).join('')}</span>
+        <span class="mp-rowlab"><b style="color:${r.color}">${nEsc(r.place)}</b> = ${nEsc(String(r.value))}</span>
+      </div>`).join('');
+    return `<div class="mp-title">\u{1F440} Let's break ${nEsc(String(v.number))}</div>
+      <div class="mp-sub">Every digit has its own value. Scroll down \u2014 you will drag them yourself!</div>
+      ${rows}`;
+  }
+  /* place value with blocks (registry data) */
+  const visual=(v.breakdown||[]).map(b=>{
+    const n=Math.max(1,Math.min(b.count||1,12));
+    const blocks=Array.from({length:n},()=>`<i class="${cpaBlockClass(b.place)}" style="background:${b.color}"></i>`).join('');
+    return `<div class="cpa-vrow">
+      <div class="cpa-group">${blocks}</div>
+      <div class="cpa-vlabel" style="color:${b.color}">${b.count||n} ${cpaPlaceLabel(b)} = ${b.value}</div>
+    </div>`;
+  }).join('');
+  const sentences=(v.breakdown||[]).map(b=>
+    `<div>\u{1F3E0} ${b.digit} lives in the ${cpaPlaceLabel(b)} house, so it is ${b.value}.</div>`).join('');
+  return `<div class="mp-title">\u{1F440} Where does ${tt.target_digit} live in ${v.number}?</div>
+    <div class="mp-sub">Look at the picture. Every block shows what each digit is worth.</div>
+    <div class="cpa-visual">${visual}</div>
+    <div class="cpa-body">${sentences}</div>
+    <div class="cpa-example">\u{1F4B4} Example: ${nEsc(v.example_text||'')}</div>`;
+}
+function cpaTouchHTML(c){
+  const v=c.data.visual_data,tt=c.data.touch_task;
+  const msg=`<div class="cpa-msg" id="cpaMsg" style="color:${c.msgOk?'#16A34A':'#DC2626'}">${c.msg||(c.targetDone?'\u{1F389} You did it!':'')}</div>`;
+  const confetti=c.targetDone?`<div class="cpa-confetti-host">${mathConfetti()}</div>`:'';
+  if(tt.type==='expand'){
+    const used=Object.values(c.placed||{});
+    const pills=tt.digits.filter(d=>!used.includes(d))
+      .map(d=>`<div class="cpa-pill" onpointerdown="cpaGrab(event,${d})">${d}</div>`).join('');
+    const boxes=tt.boxes.map((bx,k)=>{
+      const placedD=c.placed[k];
+      return `<div class="cpa-house mp-box ${placedD?'right full':''}" data-d="${bx.digit}" data-b="${k}" data-v="${nEsc(bx.value)}" style="border-color:${placedD?'#22c55e':cpaPlaceColor(bx.place)}">
+        ${placedD
+          ?`<div class="mp-box-tpl" style="color:#16A34A">${placedD} \u{2192} ${nEsc(bx.value)}</div>`
+          :`<div class="mp-box-tpl">${nEsc(bx.tpl)}</div>`}
+        <div class="mp-box-place" style="color:${cpaPlaceColor(bx.place)}">${nEsc(bx.place)}</div>
+      </div>`;
+    }).join('');
+    return `<div class="mp-title">\u{1F446} Now you try \u2014 drag!</div>
+      <div class="mp-sub">Drop each digit into the box it belongs to.</div>
+      <div class="cpa-tray">${pills||'<span style="font-size:15px;font-weight:800;color:#16A34A">All digits are home! \u2705</span>'}</div>
+      <div class="mp-boxes">${boxes}</div>
+      ${msg}${confetti}`;
+  }
+  if(v.set){
+    const setItems=v.set||[];
+    const placedFruit=c.placed.basket;
+    const fullBasket=`<div class="cpa-basket-full">
+      <div style="font-size:26px">\u{1F9FA}</div>
+      <div class="cpa-fruitrow">${setItems.map(x=>`<span class="cpa-fruit">${cpaEmo(x)} ${nEsc(x)}</span>`).join('')}</div>
+    </div>`;
+    const basket=`<div class="cpa-house cpa-basket ${placedFruit?'right':''}" data-place="basket">
+      ${placedFruit
+        ?`<span class="cpa-fruit" style="border-color:#22C55E;background:#F0FDF4">${cpaEmo(placedFruit)} ${nEsc(placedFruit)}</span><div style="font-size:14px;font-weight:900;color:#16A34A">{${nEsc(placedFruit)}}</div>`
+        :`<div style="font-size:26px">\u{1F9FA}</div><div class="cpa-house-name" style="color:#B45309">Empty basket</div><div class="cpa-house-slot">?</div>`}
+    </div>`;
+    const chips=setItems.filter(x=>x!==placedFruit)
+      .map(x=>`<div class="cpa-pill" onpointerdown="cpaGrab(event,'${nEsc(x)}')">${cpaEmo(x)} ${nEsc(x)}</div>`).join('');
+    return `<div class="mp-title">\u{1F446} ${nEsc(tt.instruction||'Drag the fruit to make a subset')}!</div>
+      <div class="mp-sub">Use your finger (or the mouse). Drop the fruit in the empty basket.</div>
+      ${fullBasket}
+      <div class="cpa-houses" style="margin-top:2px">${basket}</div>
+      <div class="cpa-tray">${chips||'<span style="font-size:15px;font-weight:800;color:#16A34A">The subset is ready! \u2705</span>'}</div>
+      ${msg}${confetti}`;
+  }
+  /* place value houses (registry data) */
+  const houses=(v.breakdown||[]).map(b=>{
+    const placedVal=c.placed[b.place];
+    return `<div class="cpa-house ${placedVal?'right':''}" data-place="${b.place}" style="border-color:${placedVal?'#22c55e':b.color}">
+      <div style="font-size:24px">\u{1F3E0}</div>
+      <div class="cpa-house-name" style="color:${b.color}">${cpaPlaceLabel(b)} House</div>
+      ${placedVal?`<div class="cpa-house-digit" style="background:${b.color}">${placedVal}</div>`:`<div class="cpa-house-slot">?</div>`}
+    </div>`;
+  }).join('');
+  const used=Object.values(c.placed||{});
+  const pills=(tt.all_digits||[]).filter(d=>!used.includes(d))
+    .map(d=>`<div class="cpa-pill" onpointerdown="cpaGrab(event,${d})">${d}</div>`).join('');
+  return `<div class="mp-title">\u{1F446} ${nEsc(tt.instruction||'Drag the digit to the right house')}!</div>
+    <div class="mp-sub">Use your finger (or the mouse). Drop each digit in its own house.</div>
+    <div class="cpa-houses">${houses}</div>
+    <div class="cpa-tray">${pills||'<span style="font-size:15px;font-weight:800;color:#16A34A">All digits are home! \u2705</span>'}</div>
+    ${msg}${confetti}`;
+}
+function cpaDoHTML(c,locked){
+  const q=c.data.do_question;
+  const opts=(q.options||[]).map((o,j)=>{
+    let cls='';
+    if(c.answered==='right'&&String(o)===String(q.correct_answer))cls='right';
+    if(c.answered==='wrong'&&j===c.pick&&String(o)!==String(q.correct_answer))cls='wrong';
+    const dis=(c.answered==='right'||locked)?'disabled':'';
+    return `<button class="cpa-opt ${cls}" ${dis} onclick="cpaAnswer(${j})">${nEsc(String(o))}</button>`;
+  }).join('');
+  let after='';
+  if(c.answered==='right'){
+    after=`<div class="cpa-win">${mathConfetti()}
+      <h3>\u{1F389} Sharp! You got it!</h3>
+      <div style="font-size:18px;font-weight:900;color:#D97706;margin-top:4px">+10 points \u{2B50}</div>
+      <div style="font-size:16px;font-weight:700;color:#166534;margin-top:6px">${nEsc(q.explanation||'')}</div>
+    </div>`;
+  }else if(c.answered==='wrong'){
+    const picture=c.data.visual_data.rows
+      ?`<div class="cpa-mini">${c.data.visual_data.rows.map(r=>`<span>${r.digit} \u{2192} ${nEsc(String(r.value))}</span>`).join('')}</div>`
+      :c.data.visual_data.set
+        ?`<div class="cpa-mini">${['{ }','{A}','{B}','{A, B}'].map(x=>`<span>${x}</span>`).join('')}</div>`
+        :`<div class="cpa-mini">${(c.data.visual_data.breakdown||[]).map(b=>`<span>${b.digit} \u{2192} ${cpaPlaceLabel(b)} = ${b.value}</span>`).join('')}</div>`;
+    after=`<div class="cpa-explain">\u{1F4A1} <b>Remember:</b> ${nEsc(q.explanation||'')}${picture}</div>
+      <button class="cpa-ghost" onclick="cpaRetry()">\u{1F504} Try again</button>`;
+  }
+  return `<div class="mp-title">\u{270F}\u{FE0F} Your turn</div>
+    ${locked?`<div class="mp-lock">\u{1F512} Finish the drag above first \u2B06\u{FE0F}</div>`:''}
+    <div class="mp-q">${nEsc(q.question||'')}</div>
+    <div class="cpa-opts">${opts}</div>
+    ${after}`;
+}
+/* ---- THE MATH SINGLE PAGE: everything stacked, no Next, no cards ---- */
+function mathSinglePage(t,i,sec){
+  const key=t.id+':'+i;
+  const data=cpaFor(t,i)||cpaDerive(sec);
+  if(!state.cpa||state.cpa.key!==key){
+    state.cpa={key,placed:{},targetDone:false,pick:null,answered:null,msg:'',msgOk:true,data:data};
+  }
+  state.cpa.data=data;
+  const c=state.cpa;
+  const hasTouch=!!(data&&data.touch_task);
+  const hasDo=!!(data&&data.do_question);
+  const touchOK=!hasTouch||c.targetDone;
+  const doRight=!hasDo||c.answered==='right';
+  const secTitle=String(sec.title||'').replace(/^\d+\.\s*/,'');
+
+  const chips=hasTouch||hasDo?`<div class="mp-chips">
+    <span class="mp-chip done">\u{1F440} SEE \u2713</span>
+    <span class="mp-chip ${touchOK?'done':''}">\u{1F446} TOUCH ${touchOK?'\u2713':''}</span>
+    <span class="mp-chip ${doRight?'done':''}">\u{270F}\u{FE0F} DO ${doRight?'\u2713':''}</span>
+  </div>`:'';
 
   let body='';
-  if(c.step===1){
-    /* ---------- STEP 1 · SEE IT (pictorial) ---------- */
-    if(isSets){
-      /* fruit basket: the whole set, then every subset as a small card */
-      const setItems=v.set||[];
-      const fullBasket=`<div class="cpa-basket-full">
-        <div style="font-size:30px">\u{1F9FA}</div>
-        <div class="cpa-fruitrow">${setItems.map(x=>`<span class="cpa-fruit">${cpaEmo(x)} ${nEsc(x)}</span>`).join('')}</div>
-        <div style="font-size:15px;font-weight:900;color:#92400E">{${setItems.join(', ')}}</div>
-      </div>`;
-      const subCards=(v.all_subsets||[]).map(sub=>{
-        const emo=sub.length?sub.map(cpaEmo).join(''):'\u{1F6AB}';
-        const txt=sub.length?('{'+sub.join(', ')+'}'):'{ } nothing';
-        return `<div class="cpa-subcard"><div class="cpa-sub-emo">${emo}</div><div class="cpa-sub-txt">${nEsc(txt)}</div></div>`;
-      }).join('');
-      body=`<div class="cpa-card">
-        <div class="cpa-title">\u{1F440} ${setItems.length} Fruits = How many small baskets?</div>
-        <div class="cpa-sub">Every small basket below is a group made from the big basket.</div>
-        ${fullBasket}
-        <div class="cpa-subgrid">${subCards}</div>
-        <div class="cpa-body">${setItems.length} things make ${(v.all_subsets||[]).length} small groups!</div>
-        <div class="cpa-example">\u{1F6D2} Example: ${nEsc(v.example_text||'')}</div>
-        <button class="cpa-next" onclick="cpaGo(2)">I see it! Next \u27A1</button>
-      </div>`;
-    }else{
-    const visual=(v.breakdown||[]).map(b=>{
-      const n=Math.max(1,Math.min(b.count||1,12));
-      const blocks=Array.from({length:n},()=>`<i class="${cpaBlockClass(b.place)}" style="background:${b.color}"></i>`).join('');
-      return `<div class="cpa-vrow">
-        <div class="cpa-group">${blocks}</div>
-        <div class="cpa-vlabel" style="color:${b.color}">${b.count||n} ${cpaPlaceLabel(b)} = ${b.value}</div>
-      </div>`;
-    }).join('');
-    const sentences=(v.breakdown||[]).map(b=>
-      `<div>\u{1F3E0} ${b.digit} lives in the ${cpaPlaceLabel(b)} house, so it is ${b.value}.</div>`).join('');
-    body=`<div class="cpa-card">
-      <div class="cpa-title">\u{1F440} Where does ${tt.target_digit} live in ${v.number}?</div>
-      <div class="cpa-sub">Look at the picture. Every block shows what each digit is worth.</div>
-      <div class="cpa-visual">${visual}</div>
-      <div class="cpa-body">${sentences}</div>
-      <div class="cpa-example">\u{1F4B4} Example: ${nEsc(v.example_text||'')}</div>
-      <button class="cpa-next" onclick="cpaGo(2)">I see it! Next \u27A1</button>
-    </div>`;
-    }
-  }else if(c.step===2){
-    /* ---------- STEP 2 · TOUCH IT (drag & drop) ---------- */
-    if(isSets){
-      /* the full basket on top, one empty basket as the drop zone, fruit chips below */
-      const setItems=v.set||[];
-      const placedFruit=c.placed.basket;
-      const target=tt.target_item;
-      const fullBasket=`<div class="cpa-basket-full">
-        <div style="font-size:26px">\u{1F9FA}</div>
-        <div class="cpa-fruitrow">${setItems.map(x=>`<span class="cpa-fruit">${cpaEmo(x)} ${nEsc(x)}</span>`).join('')}</div>
-      </div>`;
-      const basket=`<div class="cpa-house cpa-basket ${placedFruit?'right':''}" data-place="basket">
-        ${placedFruit
-          ?`<span class="cpa-fruit" style="border-color:#22C55E;background:#F0FDF4">${cpaEmo(placedFruit)} ${nEsc(placedFruit)}</span><div style="font-size:14px;font-weight:900;color:#16A34A">{${nEsc(placedFruit)}}</div>`
-          :`<div style="font-size:26px">\u{1F9FA}</div><div class="cpa-house-name" style="color:#B45309">Empty basket</div><div class="cpa-house-slot">?</div>`}
-      </div>`;
-      const chips=setItems.filter(x=>x!==placedFruit)
-        .map(x=>`<div class="cpa-pill" onpointerdown="cpaGrab(event,'${nEsc(x)}')">${cpaEmo(x)} ${nEsc(x)}</div>`).join('');
-      body=`<div class="cpa-card">
-        <div class="cpa-title">\u{1F446} ${nEsc(tt.instruction||'Drag the fruit to make a subset')}!</div>
-        <div class="cpa-sub">Use your finger (or the mouse). Drop the fruit in the empty basket.</div>
-        ${fullBasket}
-        <div class="cpa-houses" style="margin-top:2px">${basket}</div>
-        <div class="cpa-tray">${chips||'<span style="font-size:15px;font-weight:800;color:#16A34A">The subset is ready! \u2705</span>'}</div>
-        <div class="cpa-msg" id="cpaMsg" style="color:${c.msgOk?'#16A34A':'#DC2626'}">${c.msg||(c.targetDone?'\u{1F389} You made a subset!':'')}</div>
-        ${c.targetDone?`<div class="cpa-confetti-host">${mathConfetti()}</div>`:''}
-        <button class="cpa-next" ${c.targetDone?'':'disabled'} onclick="cpaGo(3)">${c.targetDone?'Next \u27A1':'Drag '+nEsc(target)+' into the basket to continue'}</button>
-      </div>`;
-    }else{
-    const houses=(v.breakdown||[]).map(b=>{
-      const placedVal=c.placed[b.place];
-      const isTarget=tt.target_digit===placedVal&&tt.correct_place===b.place;
-      return `<div class="cpa-house ${placedVal?'right':''}" data-place="${b.place}" style="border-color:${placedVal?'#22c55e':b.color}">
-        <div style="font-size:24px">\u{1F3E0}</div>
-        <div class="cpa-house-name" style="color:${b.color}">${cpaPlaceLabel(b)} House</div>
-        ${placedVal?`<div class="cpa-house-digit" style="background:${b.color}">${placedVal}</div>`:`<div class="cpa-house-slot">?</div>`}
-        ${isTarget?`<div style="font-size:12.5px;font-weight:900;color:#16A34A">Correct!</div>`:''}
-      </div>`;
-    }).join('');
-    const used=Object.values(c.placed||{});
-    const pills=(tt.all_digits||[]).filter(d=>!used.includes(d))
-      .map(d=>`<div class="cpa-pill" onpointerdown="cpaGrab(event,${d})">${d}</div>`).join('');
-    body=`<div class="cpa-card">
-      <div class="cpa-title">\u{1F446} ${nEsc(tt.instruction||'Drag the digit to the right house')}!</div>
-      <div class="cpa-sub">Use your finger (or the mouse). Drop each digit in its own house.</div>
-      <div class="cpa-houses">${houses}</div>
-      <div class="cpa-tray">${pills||'<span style="font-size:15px;font-weight:800;color:#16A34A">All digits are home! \u2705</span>'}</div>
-      <div class="cpa-msg" id="cpaMsg" style="color:${c.msgOk?'#16A34A':'#DC2626'}">${c.msg||(c.targetDone?'\u{1F389} The digit found its house!':'')}</div>
-      ${c.targetDone?`<div class="cpa-confetti-host">${mathConfetti()}</div>`:''}
-      <button class="cpa-next" ${c.targetDone?'':'disabled'} onclick="cpaGo(3)">${c.targetDone?'Next \u27A1':'Drag '+tt.target_digit+' to its house to continue'}</button>
-    </div>`;
-    }
+  if(data){
+    body=`<div class="mp-sec">\u{1F440} SEE IT<i></i></div>
+      <div class="mp-card">${cpaSeeHTML(c)}</div>
+      ${hasTouch?`<div class="mp-sec">\u{1F446} TOUCH IT<i></i></div>
+      <div class="mp-card">${cpaTouchHTML(c)}</div>`:''}
+      ${hasDo?`<div class="mp-sec">\u{270F}\u{FE0F} DO IT<i></i></div>
+      <div class="mp-card">${cpaDoHTML(c,!touchOK)}</div>`:''}
+      <button class="cpa-next" ${doRight?'':'disabled'} onclick="cpaComplete()">${doRight?'\u{1F389} MARK COMPLETE \u25B6':'\u{1F512} Answer the question above to finish'}</button>`;
   }else{
-    /* ---------- STEP 3 · DO IT (one quick check) ---------- */
-    const opts=(q.options||[]).map((o,j)=>{
-      let cls='';
-      if(c.answered==='right'&&String(o)===String(q.correct_answer))cls='right';
-      if(c.answered==='wrong'&&j===c.pick&&String(o)!==String(q.correct_answer))cls='wrong';
-      const dis=c.answered==='right'?'disabled':'';
-      return `<button class="cpa-opt ${cls}" ${dis} onclick="cpaAnswer(${j})">${nEsc(String(o))}</button>`;
-    }).join('');
-    let after='';
-    if(c.answered==='right'){
-      after=`<div class="cpa-win">${mathConfetti()}
-        <h3>\u{1F389} Sharp! You got it!</h3>
-        <div style="font-size:18px;font-weight:900;color:#D97706;margin-top:4px">+10 points \u2B50</div>
-      </div>
-      <button class="cpa-next" onclick="cpaComplete()">\u2713 MARK AS COMPLETE &amp; CONTINUE \u25B6</button>`;
-    }else if(c.answered==='wrong'){
-      /* the explanation comes back WITH THE PICTURE, never just "wrong" */
-      const picture=isSets
-        ?`<div class="cpa-mini">${['{ }','{A}','{B}','{A, B}'].map(x=>`<span>${x}</span>`).join('')}</div>`
-        :`<div class="cpa-mini">${(v.breakdown||[]).map(b=>`<span>${b.digit} \u{2192} ${cpaPlaceLabel(b)} = ${b.value}</span>`).join('')}</div>`;
-      after=`<div class="cpa-explain">\u{1F4A1} <b>Remember:</b> ${nEsc(q.explanation||'')}${picture}</div>
-      <button class="cpa-ghost" onclick="cpaRetry()">\u{1F504} Try again</button>`;
-    }
-    body=`<div class="cpa-card">
-      <div class="cpa-title">\u{270F}\u{FE0F} Now you try!</div>
-      <div class="cpa-body" style="margin-top:6px">${nEsc(q.question||'')}</div>
-      <div class="cpa-opts">${opts}</div>
-      ${after}
-    </div>`;
+    /* a maths section without interactive data: one simple readable page */
+    body=`<div class="mp-card" style="text-align:left">
+      ${(sec.blocks||[]).map(noteBlock).join('')}
+    </div>
+    ${diagramHTML(t.id,sec.title)}
+    <button class="cpa-next" onclick="lpComplete()">\u2713 MARK AS COMPLETE \u{2192}</button>`;
   }
 
   return `
   <div class="kid-bg">
     <header class="kid-head">
       <button class="back" onclick="go('notePath')" aria-label="Back" style="width:40px;height:40px">${I.back(20)}</button>
-      <h2>${topicIcon(t)} ${nEsc(t.title)}</h2>
-      ${dots}
+      <h2>${topicIcon(t)} ${nEsc(secTitle)}</h2>
+      <span class="mp-topic">${nEsc(t.title)}</span>
     </header>
-    <div class="kid-stage">
-      <div class="kid-encourage">${encourage}</div>
-      ${body}
-    </div>
+    ${chips}
+    <div class="mp-wrap">${body}</div>
   </div>`;
 }
 
@@ -2738,11 +2845,10 @@ SCREENS.noteSub = () => {
   if(i>cur){setTimeout(()=>{toast('Finish the previous one first!');go('notePath');},0);return '';}
   if(state.nsec!==i)state.nsec=i;
 
-  /* C-P-A: a MATHEMATICS sub-topic with See–Touch–Do data gets the
-     three-step flow. Every other subject — and every maths section
-     without data — falls through to the normal card reader below. */
-  const cpa=cpaFor(t,i);
-  if(cpa)return cpaScreen(t,i,sec,cpa);
+  /* MATHEMATICS: ONE single scrolling page — See it, Touch it, Do it
+     stacked together, never swipe cards (owner's rule). Every other
+     subject keeps the card reader below, untouched. */
+  if(t.subject==='MATH')return mathSinglePage(t,i,sec);
 
   const cards=kidCardsFor(t,i);
   if(!state.kcards||state.kcards._for!==t.id+':'+i){
