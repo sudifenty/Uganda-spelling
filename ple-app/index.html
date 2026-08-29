@@ -602,6 +602,12 @@ p{margin:0}
 .afx-mute:active{transform:scale(.92)}
 @media (max-width:600px){.afx-mute{left:8px;bottom:calc(var(--nav-h) + 8px);width:42px;height:42px;font-size:18px}}
 
+/* ---------- EDUCATIONAL DIAGRAMS (responsive, never overflow) ---------- */
+.diag-box{width:100%;max-width:100%;overflow:hidden;background:#fff;border:1.5px solid var(--sky-100);border-radius:var(--r-lg);padding:12px 10px 8px;margin:14px 0;text-align:center}
+.diag-box svg{display:block;width:100%;height:auto;max-width:420px;margin:0 auto}
+.diag-cap{font-size:12px;font-weight:800;color:var(--muted);margin-top:6px}
+.diag-cap b{color:var(--sky-ink)}
+
 /* ---------- MATHS ADVENTURE (Prodigy / Khan Kids style) ---------- */
 .mx-classes{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0 4px}
 .mx-class{border:none;border-radius:20px;padding:16px 12px;display:flex;flex-direction:column;align-items:center;gap:3px;box-shadow:var(--sh-1);min-height:96px;justify-content:center}
@@ -1696,6 +1702,7 @@ SCREENS.mathLesson = () => {
   else if(st.type==='read'){
     body=`<article class="nt"><h3 class="nt-h1">${nEsc(st.sec.title)}</h3>
       ${(st.sec.blocks||[]).map(noteBlock).join('')}</article>
+      ${diagramHTML(L.tid, st.sec.title)}
       <div style="display:grid;gap:10px;margin-top:14px">
         <button class="btn btn-primary" onclick="mathLessonNext()">I'VE READ IT — NEXT ➜</button>
         <button class="btn btn-ghost" onclick="mathLessonSpeak()">🔊 READ THIS PART TO ME</button>
@@ -1779,6 +1786,178 @@ SCREENS.mathLesson = () => {
 };
 
 
+
+/* ============================================================
+   EDUCATIONAL DIAGRAMS — deterministic SVGs, hand-constructed
+   from the exact structures the notes name. Each diagram is
+   attached to ONE topic + section (matched by section title).
+   No diagram is invented for topics that do not need one; a
+   topic with no matching entry simply shows no diagram.
+   Embedded in the file: offline by design, zero loading.
+   ============================================================ */
+const NOTE_DIAGRAMS = [
+  { topic:'P4_SST_T01', match:/cardinal points/i, title:'The eight points of the compass',
+    svg:`<svg viewBox="0 0 320 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Compass with the eight compass points">
+      <circle cx="160" cy="165" r="112" fill="#E9F6FE" stroke="#2D4159" stroke-width="3"/>
+      <circle cx="160" cy="165" r="6" fill="#2D4159"/>
+      <g stroke="#2D4159" stroke-width="2.5">
+        <line x1="160" y1="165" x2="160" y2="58"/><line x1="160" y1="165" x2="235" y2="90"/>
+        <line x1="160" y1="165" x2="267" y2="165"/><line x1="160" y1="165" x2="235" y2="240"/>
+        <line x1="160" y1="165" x2="160" y2="272"/><line x1="160" y1="165" x2="85" y2="240"/>
+        <line x1="160" y1="165" x2="53" y2="165"/><line x1="160" y1="165" x2="85" y2="90"/>
+      </g>
+      <g font-family="sans-serif" font-size="20" font-weight="700" fill="#2D4159" text-anchor="middle">
+        <text x="160" y="40">N</text><text x="250" y="80">NE</text><text x="292" y="172">E</text><text x="250" y="268">SE</text>
+        <text x="160" y="302">S</text><text x="70" y="268">SW</text><text x="28" y="172">W</text><text x="70" y="80">NW</text>
+      </g>
+      <text x="160" y="192" font-family="sans-serif" font-size="13" fill="#5E7285" text-anchor="middle">the needle points N</text>
+    </svg>`},
+
+  { topic:'P5_MATH_T10', match:/parallel and perpendicular/i, title:'Parallel lines and perpendicular lines',
+    svg:`<svg viewBox="0 0 320 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Parallel lines and perpendicular lines">
+      <g stroke="#4FB2E4" stroke-width="3" fill="none">
+        <line x1="20" y1="40" x2="170" y2="40"/><polygon points="170,35 182,40 170,45" fill="#4FB2E4"/>
+        <line x1="20" y1="78" x2="170" y2="78"/><polygon points="170,73 182,78 170,83" fill="#4FB2E4"/>
+      </g>
+      <text x="20" y="24" font-family="sans-serif" font-size="15" font-weight="700" fill="#2D4159">Parallel lines \u2014 never meet</text>
+      <text x="20" y="103" font-family="sans-serif" font-size="14" fill="#5E7285">they stay the same distance apart</text>
+      <line x1="20" y1="150" x2="182" y2="150" stroke="#4FB2E4" stroke-width="3"/>
+      <line x1="100" y1="122" x2="100" y2="178" stroke="#2D4159" stroke-width="3"/>
+      <polyline points="100,150 118,150 118,132" points="100,150 118,150 118,132" fill="none" stroke="#2D4159" stroke-width="2"/>
+      <text x="20" y="115" font-family="sans-serif" font-size="15" font-weight="700" fill="#2D4159">Perpendicular lines \u2014 meet at 90\u00B0</text>
+    </svg>`},
+
+  { topic:'P5_MATH_T10', match:/^3\. ANGLES$/i, title:'Acute, right and obtuse angles',
+    svg:`<svg viewBox="0 0 320 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Acute, right and obtuse angles">
+      <g stroke="#2D4159" stroke-width="2.5" fill="none">
+        <line x1="20" y1="110" x2="100" y2="110"/><line x1="20" y1="110" x2="76" y2="45"/>
+        <path d="M 52 110 A 32 32 0 0 0 43 88" stroke="#4FB2E4" stroke-width="2.5"/>
+      </g>
+      <text x="55" y="100" font-family="sans-serif" font-size="14" fill="#136890">45\u00B0</text>
+      <text x="18" y="135" font-family="sans-serif" font-size="14" font-weight="700" fill="#2D4159">acute (&lt; 90\u00B0)</text>
+      <g stroke="#2D4159" stroke-width="2.5" fill="none">
+        <line x1="130" y1="110" x2="210" y2="110"/><line x1="130" y1="110" x2="130" y2="35"/>
+        <polyline points="130,95 145,95 145,110"/>
+      </g>
+      <text x="150" y="100" font-family="sans-serif" font-size="14" fill="#136890">90\u00B0</text>
+      <text x="128" y="135" font-family="sans-serif" font-size="14" font-weight="700" fill="#2D4159">right (= 90\u00B0)</text>
+      <g stroke="#2D4159" stroke-width="2.5" fill="none">
+        <line x1="240" y1="110" x2="312" y2="110"/><line x1="240" y1="110" x2="300" y2="55"/>
+        <path d="M 272 110 A 32 32 0 0 0 266 92" stroke="#4FB2E4" stroke-width="2.5"/>
+      </g>
+      <text x="270" y="100" font-family="sans-serif" font-size="14" fill="#136890">135\u00B0</text>
+      <text x="238" y="135" font-family="sans-serif" font-size="14" font-weight="700" fill="#2D4159">obtuse (&gt; 90\u00B0)</text>
+    </svg>`},
+
+  { topic:'P5_MATH_T10', match:/^4\. CIRCLES$/i, title:'Parts of a circle',
+    svg:`<svg viewBox="0 0 320 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Parts of a circle: centre, radius and diameter">
+      <circle cx="130" cy="95" r="70" fill="#E9F6FE" stroke="#2D4159" stroke-width="3"/>
+      <circle cx="130" cy="95" r="4" fill="#2D4159"/>
+      <line x1="130" y1="95" x2="200" y2="95" stroke="#4FB2E4" stroke-width="3"/>
+      <line x1="60" y1="95" x2="200" y2="95" stroke="#2D4159" stroke-width="1.5" stroke-dasharray="6 5"/>
+      <g font-family="sans-serif" font-size="15" font-weight="700" fill="#2D4159">
+        <text x="136" y="86">centre</text>
+        <text x="216" y="80" fill="#136890">radius</text>
+        <text x="82" y="180" fill="#136890">diameter = 2 \u00D7 radius</text>
+      </g>
+      <line x1="88" y1="152" x2="130" y2="118" stroke="#5E7285" stroke-width="1.5"/>
+    </svg>`},
+
+  { topic:'P5_MATH_T05', match:/^1\. WHAT FRACTIONS ARE$/i, title:'The fraction three-quarters',
+    svg:`<svg viewBox="0 0 320 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three quarters shown as a shaded bar and a shaded circle">
+      <g>
+        <rect x="20" y="30" width="60" height="44" fill="#4FB2E4"/><rect x="80" y="30" width="60" height="44" fill="#4FB2E4"/><rect x="140" y="30" width="60" height="44" fill="#4FB2E4"/>
+        <rect x="200" y="30" width="60" height="44" fill="#fff" stroke="#2D4159" stroke-width="2"/>
+        <rect x="20" y="30" width="180" height="44" fill="none" stroke="#2D4159" stroke-width="0"/>
+        <rect x="20" y="30" width="240" height="44" fill="none" stroke="#2D4159" stroke-width="2.5"/>
+      </g>
+      <text x="20" y="100" font-family="sans-serif" font-size="16" font-weight="700" fill="#2D4159">3 parts shaded out of 4  =  3/4</text>
+      <circle cx="260" cy="120" r="36" fill="none" stroke="#2D4159" stroke-width="2.5"/>
+      <path d="M 260 120 L 260 84 A 36 36 0 1 1 224 120 Z" fill="#4FB2E4" stroke="#2D4159" stroke-width="2"/>
+      <line x1="260" y1="120" x2="296" y2="120" stroke="#2D4159" stroke-width="2"/>
+      <line x1="260" y1="120" x2="260" y2="84" stroke="#2D4159" stroke-width="2"/>
+      <line x1="260" y1="120" x2="224" y2="120" stroke="#2D4159" stroke-width="2"/>
+    </svg>`},
+
+  { topic:'P5_SCI_T05', match:/ALIMENTARY CANAL/i, title:'The alimentary canal \u2014 the path food follows',
+    svg:`<svg viewBox="0 0 320 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Flow diagram of the alimentary canal from mouth to anus">
+      <g font-family="sans-serif" font-size="15" font-weight="700" text-anchor="middle">
+        <rect x="60" y="10" width="200" height="36" rx="10" fill="#E9F6FE" stroke="#2D4159" stroke-width="2"/><text x="160" y="34" fill="#2D4159">Mouth</text>
+        <rect x="60" y="70" width="200" height="36" rx="10" fill="#E9F6FE" stroke="#2D4159" stroke-width="2"/><text x="160" y="94" fill="#2D4159">Oesophagus (gullet)</text>
+        <rect x="60" y="130" width="200" height="36" rx="10" fill="#E9F6FE" stroke="#2D4159" stroke-width="2"/><text x="160" y="154" fill="#2D4159">Stomach</text>
+        <rect x="60" y="190" width="200" height="36" rx="10" fill="#E9F6FE" stroke="#2D4159" stroke-width="2"/><text x="160" y="214" fill="#2D4159">Small intestine</text>
+        <rect x="60" y="250" width="200" height="36" rx="10" fill="#E9F6FE" stroke="#2D4159" stroke-width="2"/><text x="160" y="274" fill="#2D4159">Large intestine</text>
+        <rect x="60" y="310" width="200" height="36" rx="10" fill="#E9F6FE" stroke="#2D4159" stroke-width="2"/><text x="160" y="334" fill="#2D4159">Rectum</text>
+        <rect x="60" y="370" width="200" height="36" rx="10" fill="#E9F6FE" stroke="#2D4159" stroke-width="2"/><text x="160" y="394" fill="#2D4159">Anus</text>
+      </g>
+      <g stroke="#4FB2E4" stroke-width="3" fill="#4FB2E4">
+        <line x1="160" y1="46" x2="160" y2="68"/><polygon points="155,66 160,76 165,66"/>
+        <line x1="160" y1="106" x2="160" y2="128"/><polygon points="155,126 160,136 165,126"/>
+        <line x1="160" y1="166" x2="160" y2="188"/><polygon points="155,186 160,196 165,186"/>
+        <line x1="160" y1="226" x2="160" y2="248"/><polygon points="155,246 160,256 165,246"/>
+        <line x1="160" y1="286" x2="160" y2="308"/><polygon points="155,306 160,316 165,306"/>
+        <line x1="160" y1="346" x2="160" y2="368"/><polygon points="155,366 160,376 165,366"/>
+      </g>
+    </svg>`},
+
+  { topic:'P6_SCI_T08', match:/RESPIRATORY ORGANS/i, title:'The path taken by air',
+    svg:`<svg viewBox="0 0 320 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Flow diagram of the path air takes from the nose to the alveoli">
+      <g font-family="sans-serif" font-size="15" font-weight="700" text-anchor="middle">
+        <rect x="55" y="10" width="210" height="36" rx="10" fill="#E9F6FE" stroke="#2D4159" stroke-width="2"/><text x="160" y="34" fill="#2D4159">Nose (nostrils)</text>
+        <rect x="55" y="70" width="210" height="36" rx="10" fill="#E9F6FE" stroke="#2D4159" stroke-width="2"/><text x="160" y="94" fill="#2D4159">Pharynx</text>
+        <rect x="55" y="130" width="210" height="36" rx="10" fill="#E9F6FE" stroke="#2D4159" stroke-width="2"/><text x="160" y="154" fill="#2D4159">Larynx</text>
+        <rect x="55" y="190" width="210" height="36" rx="10" fill="#E9F6FE" stroke="#2D4159" stroke-width="2"/><text x="160" y="214" fill="#2D4159">Trachea (windpipe)</text>
+        <rect x="55" y="250" width="210" height="36" rx="10" fill="#E9F6FE" stroke="#2D4159" stroke-width="2"/><text x="160" y="274" fill="#2D4159">Bronchi (two tubes)</text>
+        <rect x="55" y="310" width="210" height="36" rx="10" fill="#E9F6FE" stroke="#2D4159" stroke-width="2"/><text x="160" y="334" fill="#2D4159">Bronchioles</text>
+        <rect x="55" y="370" width="210" height="36" rx="10" fill="#D2ECFC" stroke="#2D4159" stroke-width="2"/><text x="160" y="390" fill="#136890">Alveoli \u2014 air sacs</text>
+      </g>
+      <g stroke="#4FB2E4" stroke-width="3" fill="#4FB2E4">
+        <line x1="160" y1="46" x2="160" y2="68"/><polygon points="155,66 160,76 165,66"/>
+        <line x1="160" y1="106" x2="160" y2="128"/><polygon points="155,126 160,136 165,126"/>
+        <line x1="160" y1="166" x2="160" y2="188"/><polygon points="155,186 160,196 165,186"/>
+        <line x1="160" y1="226" x2="160" y2="248"/><polygon points="155,246 160,256 165,246"/>
+        <line x1="160" y1="286" x2="160" y2="308"/><polygon points="155,306 160,316 165,306"/>
+        <line x1="160" y1="346" x2="160" y2="368"/><polygon points="155,366 160,376 165,366"/>
+      </g>
+      <text x="160" y="416" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#5E7285">gases pass between the alveoli and the blood</text>
+    </svg>`},
+
+  { topic:'P7_SCI_T02', match:/ELECTRIC CIRCUITS/i, title:'A simple electric circuit',
+    svg:`<svg viewBox="0 0 320 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Simple electric circuit with a cell, switch, wires and a bulb">
+      <g stroke="#2D4159" stroke-width="3" fill="none">
+        <rect x="40" y="30" width="240" height="130" rx="4"/>
+      </g>
+      <g stroke="#2D4159" stroke-width="3">
+        <line x1="40" y1="105" x2="22" y2="105"/><line x1="22" y1="105" x2="22" y2="88"/><line x1="22" y1="122" x2="22" y2="88"/><line x1="22" y1="122" x2="22" y2="105"/>
+        <line x1="14" y1="88" x2="30" y2="88"/><line x1="18" y1="95" x2="26" y2="95" stroke-width="5"/>
+      </g>
+      <g stroke="#2D4159" stroke-width="3" fill="none">
+        <circle cx="160" cy="30" r="16"/>
+        <line x1="149" y1="19" x2="171" y2="41"/><line x1="171" y1="19" x2="149" y2="41"/>
+      </g>
+      <g stroke="#2D4159" stroke-width="3" fill="none">
+        <line x1="230" y1="160" x2="268" y2="132"/><circle cx="226" cy="163" r="4" fill="#2D4159"/>
+      </g>
+      <g font-family="sans-serif" font-size="14" font-weight="700" fill="#2D4159">
+        <text x="8" y="150">cell</text>
+        <text x="136" y="14">bulb</text>
+        <text x="238" y="185">switch</text>
+        <text x="196" y="105" fill="#136890">connecting wires</text>
+      </g>
+      <g stroke="#4FB2E4" stroke-width="2.5" fill="#4FB2E4">
+        <polygon points="96,48 104,44 104,52"/><line x1="82" y1="48" x2="100" y2="48"/>
+        <text x="76" y="42" font-family="sans-serif" font-size="13" fill="#136890" stroke="none">current</text>
+      </g>
+    </svg>`},
+];
+function diagramHTML(topicId, secTitle){
+  const d = NOTE_DIAGRAMS.find(x => x.topic === topicId &&
+    (x.match.test(String(secTitle || '')) || x.match.test(String(secTitle || '').replace(/^\d+\.\s*/, ''))));
+  if(!d) return '';                       /* no diagram for this section: show nothing at all */
+  return `<figure class="diag-box"><div style="width:100%;max-width:100%;overflow:hidden">${d.svg}</div>
+    <figcaption class="diag-cap">\U0001F4C8 Diagram: <b>${nEsc(d.title)}</b></figcaption></figure>`;
+}
+
 /* ============================================================
    THE NOTES LEARNING JOURNEY — every subject.
    HOOK -> READ -> CHECKPOINT -> ... -> WATCH OUT -> QUICK
@@ -1833,7 +2012,7 @@ function noteJourneyStart(id){
     label:t.title,sub:'Learning journey',meta:'Notes journey',pct:0});
   go('noteJourney');
 }
-function njTopic(){return noteById(state.njourney&&state.njourney.tid);}
+function njTopic(){return noteFindAnywhere(state.njourney&&state.njourney.tid);}
 function njSeen(){
   const J=state.njourney;if(!J)return;
   const t=njTopic(),st=J.steps[J.i];
@@ -1913,6 +2092,7 @@ SCREENS.noteJourney = () => {
   else if(st.type==='read'){
     body=`<article class="nt"><h3 class="nt-h1">${nEsc(st.sec.title)}</h3>
       ${(st.sec.blocks||[]).map(noteBlock).join('')}</article>
+      ${diagramHTML(t.id, st.sec.title)}
       ${nextTitle?`<div class="hint-strip cream" style="margin:12px 0">${I.info(18)} <span><b>One more thing\u2026</b> coming up next: ${nEsc(nextTitle)}</span></div>`:''}
       <div style="display:grid;gap:10px;margin-top:14px">
         <button class="btn btn-primary" onclick="njNext()">I\u2019VE READ IT \u2014 NEXT \u27A1</button>
@@ -3114,6 +3294,7 @@ SCREENS.noteRead = () => {
     <h3 class="nt-h1">${nEsc(sec.title)}</h3>
     ${sec.blocks.map(noteBlock).join('')}
   </article>
+  ${diagramHTML(t.id, sec.title)}
   <div class="nt-foot">
     <button class="btn btn-ghost" ${i===0?'disabled style="opacity:.45"':''} onclick="noteMove(-1)">Back</button>
     ${i===noteSections(t).length-1
