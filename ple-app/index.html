@@ -602,6 +602,34 @@ p{margin:0}
 .afx-mute:active{transform:scale(.92)}
 @media (max-width:600px){.afx-mute{left:8px;bottom:calc(var(--nav-h) + 8px);width:42px;height:42px;font-size:18px}}
 
+/* ---------- LEARNING PATH (Duolingo-style vertical path) ---------- */
+.lp-wrap{position:relative;padding:6px 0 30px}
+.lp-rail{position:absolute;left:27px;top:20px;bottom:30px;width:4px;border-radius:2px;background:var(--line);overflow:hidden}
+.lp-rail i{display:block;width:100%;background:#22c55e;transition:height .4s}
+.lp-item{position:relative;display:flex;gap:14px;align-items:flex-start;padding:0 0 26px}
+.lp-dot{position:relative;z-index:2;width:56px;height:56px;flex:none;border-radius:50%;display:grid;place-items:center;font-size:22px;font-weight:900;border:3px solid #fff;box-shadow:0 2px 8px rgba(45,65,89,.18)}
+.lp-dot.done{background:#22c55e;color:#fff}
+.lp-dot.now{background:#eab308;color:#5c4700;animation:lpPulse 1.6s ease-in-out infinite}
+.lp-dot.lock{background:#d1d5db;color:#6b7280}
+@keyframes lpPulse{0%,100%{box-shadow:0 0 0 0 rgba(234,179,8,.55)}50%{box-shadow:0 0 0 12px rgba(234,179,8,0)}}
+.lp-card{flex:1;min-width:0;background:#fff;border:1.5px solid var(--line);border-radius:var(--r-lg);padding:13px 14px;box-shadow:var(--sh-1);text-align:left}
+.lp-card.lock{opacity:.62;background:var(--bg)}
+.lp-card b{display:block;font-size:16px;color:var(--navy)}
+.lp-status{font-size:12.5px;font-weight:800;margin-top:3px}
+.lp-status.done{color:#15803d}.lp-status.now{color:#a16207}.lp-status.lock{color:#6b7280}
+.lp-btn{margin-top:10px;min-height:44px;width:100%}
+.lp-head{display:flex;align-items:center;gap:12px;background:linear-gradient(135deg,var(--green-50),var(--sky-50));border-radius:var(--r-xl);padding:16px;margin:4px 0 14px}
+.lp-ring{--p:0;width:64px;height:64px;flex:none;border-radius:50%;background:conic-gradient(#22c55e calc(var(--p)*1%), var(--line) 0);display:grid;place-items:center}
+.lp-ring i{width:50px;height:50px;border-radius:50%;background:#fff;display:grid;place-items:center;font-weight:900;font-size:15px;color:var(--navy)}
+.tcard{display:flex;gap:14px;align-items:center;width:100%;background:#fff;border:1.5px solid var(--line);border-radius:var(--r-xl);padding:16px;min-height:92px;box-shadow:var(--sh-1);text-align:left;margin-bottom:13px}
+.tcard .tic{font-size:34px;width:56px;height:56px;flex:none;display:grid;place-items:center;background:var(--sky-50);border-radius:16px}
+.tcard b{font-size:17px;display:block;color:var(--navy)}
+.tcard .tsub{font-size:13px;color:var(--muted);font-weight:700;margin-top:2px;display:block}
+.tcard .tbar{height:8px;background:var(--sky-50);border-radius:999px;overflow:hidden;margin-top:9px}
+.tcard .tbar i{display:block;height:100%;background:#22c55e;border-radius:999px}
+.tcard .tmeta{font-size:12px;font-weight:800;color:var(--green-ink);margin-top:5px;display:block}
+@media(min-width:1024px){.lp-wrap{max-width:640px;margin:0 auto}}
+
 /* ---------- EDUCATIONAL DIAGRAMS (responsive, never overflow) ---------- */
 .diag-box{width:100%;max-width:100%;overflow:hidden;background:#fff;border:1.5px solid var(--sky-100);border-radius:var(--r-lg);padding:12px 10px 8px;margin:14px 0;text-align:center}
 .diag-box svg{display:block;width:100%;height:auto;max-width:420px;margin:0 auto}
@@ -1217,7 +1245,7 @@ const TAB_OF = {home:'home',practice:'practice',subjects:'practice',subjects_top
   topics:'practice',papers:'papers',paperDetail:'papers',progress:'home',profile:'profile',
   notes:'notes',noteTopic:'notes',noteRead:'notes',
   exercises:'exercises',exTopic:'exercises',exDo:'exercises',exResult:'exercises',exMine:'exercises',
-  avatar:'profile',settings:'profile',offline:'profile',about:'profile', auth:'profile', spelling:'home', spellDifficulty:'home', spellModes:'home', spellPractice:'home', spellResults:'home', spellMistakes:'home', noteChallenge:'notes', mathHome:'practice', mathLearn:'practice', mathPlay:'practice', mathLesson:'notes', noteJourney:'notes'};
+  avatar:'profile',settings:'profile',offline:'profile',about:'profile', auth:'profile', spelling:'home', spellDifficulty:'home', spellModes:'home', spellPractice:'home', spellResults:'home', spellMistakes:'home', noteChallenge:'notes', mathHome:'practice', mathLearn:'practice', mathPlay:'practice', mathLesson:'notes', noteJourney:'notes', notePath:'notes', noteSub:'notes'};
 const FULLSCREEN = ['question','exam','results','review','archive','pquestion','spellPractice','spellResults','mathPlay'];
 
 function go(screen, push=true){
@@ -1957,6 +1985,191 @@ function diagramHTML(topicId, secTitle){
   return `<figure class="diag-box"><div style="width:100%;max-width:100%;overflow:hidden">${d.svg}</div>
     <figcaption class="diag-cap">\U0001F4C8 Diagram: <b>${nEsc(d.title)}</b></figcaption></figure>`;
 }
+
+
+/* ============================================================
+   THE LEARNING PATH — Topics -> sub-topics as a vertical path
+   of circles (done / current / locked), exactly like a journey
+   map. Sub-topics are the topic's own numbered sections; the
+   content is the note itself, untouched. Completing a sub-topic
+   unlocks the next one. Progress persists on-device (offline)
+   and is reported through the existing learning_events table.
+   ============================================================ */
+function seenSave(){try{localStorage.setItem('smartple_seen',JSON.stringify(state.noteSeen));}catch(e){}}
+function seenLoad(){try{const d=JSON.parse(localStorage.getItem('smartple_seen')||'{}');if(d&&typeof d==='object')state.noteSeen=Object.assign({},d);}catch(e){}}
+function pathDone(t,i){return !!state.noteSeen[t.id+':'+i];}
+function pathSubs(t){return noteSections(t).map((sec,i)=>({sec,i,title:String(sec.title).replace(/^\d+\.\s*/,''),
+  mins:Math.max(1,Math.round(((sec.words||Math.round(JSON.stringify(sec.blocks).split(/\s+/).length/9))||120)/110))}));}
+function pathState(t){                     /* first locked index = current; before = done-or-done */
+  const subs=pathSubs(t);
+  let cur=subs.findIndex((s,i)=>!pathDone(t,i));
+  if(cur<0)cur=subs.length;                /* all done */
+  return {subs,cur};
+}
+function topicIcon(t){
+  const s=(t.title+' '+t.subject).toLowerCase();
+  const M=[[/digest|alimentar/,'🍉'],[/respirat|breath|lung/,'🫁'],[/circulat|heart|blood/,'❤\uFE0F'],
+    [/skelet|muscle|bone/,'🦴'],[/excret|kidney/,'🫧'],[/reproduct/,'🌱'],[/plant|crop|veget|forest|flow|classification of plants/,'🌿'],
+    [/animal|goat|sheep|pig|cattle|poultr|bee|insect/,'🐖'],[/electr|circuit|magnet/,'⚡'],[/light|optic/,'💡'],[/heat|energy/,'🔥'],
+    [/machine|friction/,'⚙\uFE0F'],[/state of matter|change/,'🩺'],[/bacteri|fungi|germ|immun|health|sanitat|disease/,'🦰'],
+    [/food|nutrit/,'🍎'],[/soil|environment|resource/,'🌍'],[/water/,'💧'],[/populat/,'📈'],
+    [/fraction|decimal|percent/,'🔢'],[/angle|geometr|construct|shape|line/,'📐'],[/set concept/,'🧮'],[/algebra/,'𝑥'],
+    [/integer|number|operation/,'🔢'],[/pattern|sequence/,'🔗'],[/data|graph/,'📊'],[/money/,'💶'],[/time|clock/,'⏲'],
+    [/length|mass|capacity|measure/,'⚖\uFE0F'],[/map|africa|uganda|location|east africa/,'🗺\uFE0F'],[/climate|weather/,'⛅'],
+    [/leader|government|independen|nation|politic/,'🏳\uFE0F'],[/people|populat|ethnic|communit/,'👥'],[/histor|colonial|foreign|nationalism/,'🏛\uFE0F'],
+    [/econom|trade|industr|develop/,'💹'],[/organis|world/,'🌏'],[/letter|writ/,'✉\uFE0F'],[/grammar|word|dictionar/,'📖'],
+    [/media|print|electronic/,'📰'],[/communic/,'📡'],[/travel|road|transport/,'🚗'],[/safe/,'🛡\uFE0F'],
+    [/culture|ceremon/,'🎪'],[/peac|right|freedom|responsib/,'🤝'],[/holiday|school|exam/,'🎓'],[/service|bank/,'🏦'],
+    [/occup|work|job/,'💼'],[/family|relation/,'👪'],[/hotel/,'🏨'],[/debat/,'💬'],[/reproduc/,'🌱'],[/poultry|bee/,'🐝'],
+    [/first aid|accident/,'🩹'],[/alcohol|smok|drug/,'⛔'],[/interdependen|ecosystem/,'🌳'],[/chang/,'🔄']];
+  for(const [rx,ic] of M){try{if(new RegExp(rx,'i').test(s))return ic;}catch(e){}}
+  return t.subject==='MATH'?'🔢':t.subject==='SCI'?'🔬':t.subject==='ENG'?'📖':'🌍';
+}
+function openNotePath(id){
+  const t=noteFindAnywhere(id);if(!t)return;
+  if(state.klass!==t.class&&checkClassAccess(t.class))state.klass=t.class;
+  state.nsubject=t.subject;state.ntopic=id;state.nsec=0;
+  state.njourney=null;
+  recordLast({kind:'notes',klass:t.class,nsubject:t.subject,ntopic:id,nsec:0,
+    label:t.title,sub:'Learning path',meta:'Notes path',pct:0});
+  go('notePath');
+}
+function lpOpen(i){                        /* tap a circle: enforce the unlock */
+  const t=noteById(state.ntopic)||noteFindAnywhere(state.ntopic);if(!t)return;
+  const {cur}=pathState(t);
+  if(i>cur){toast('Complete the previous sub-topic to unlock this one');return;}
+  state.nsec=i;
+  go('noteSub');
+}
+function lpComplete(){                     /* Mark as Complete & Continue */
+  const t=noteById(state.ntopic)||noteFindAnywhere(state.ntopic);if(!t)return;
+  const i=Math.max(0,state.nsec||0),sec=noteSections(t)[i];if(!sec)return;
+  const first=!state.noteSeen[t.id+':'+i];
+  state.noteSeen[t.id+':'+i]=true;
+  seenSave();
+  if(first){learnXP(t,5);}
+  try{trackActivity('subtopic_complete',{topic:t.id,section:i,title:sec.title});}catch(e){}
+  afxPlay('correct');
+  const {subs,cur}=pathState(t);
+  if(i===cur&&cur<subs.length){            /* advance the path */
+    openSheet(`<div class="grabber"></div>
+      <div style="text-align:center">${mathConfetti()}
+        <div style="font-size:56px">✅</div>
+        <h3 style="margin-top:6px">Sub-topic complete!</h3>
+        <p class="muted" style="margin:8px 0 4px">Next up: <b>${nEsc(subs[i+1]?String(subs[i+1].sec.title).replace(/^\\d+\\.\\s*/,''):'')}</b></p>
+        <button class="btn btn-primary" style="margin-top:12px" onclick="closeSheet();state.nsec=${i+1};go('noteSub')">CONTINUE \u27A1</button>
+        <button class="btn btn-ghost" style="margin-top:8px" onclick="closeSheet();go('notePath')">BACK TO THE PATH</button>
+      </div>`);
+    render();return;
+  }
+  /* topic finished */
+  openSheet(`<div class="grabber"></div>
+    <div style="text-align:center">${mathConfetti()}
+      <div style="font-size:56px">🏆</div>
+      <h3 style="margin-top:6px">Topic complete!</h3>
+      <p class="muted" style="margin:8px 0 4px">You finished every sub-topic of <b>${nEsc(t.title)}</b>.</p>
+      <button class="btn btn-primary" style="margin-top:12px" onclick="closeSheet();njGoPractice()">\U0001F3AF GO TO PRACTICE</button>
+      <button class="btn btn-ghost" style="margin-top:8px" onclick="closeSheet();go('notePath')">BACK TO THE PATH</button>
+    </div>`);
+  afxPlay('star');
+  render();
+}
+function lpSpeakCurrent(){
+  const t=noteById(state.ntopic)||noteFindAnywhere(state.ntopic);if(!t)return;
+  const sec=noteSections(t)[Math.max(0,state.nsec||0)];if(!sec)return;
+  try{spPlay();}catch(e){toast('The standard narrator is still downloading.');}
+}
+function lpPractice(){
+  const t=noteById(state.ntopic)||noteFindAnywhere(state.ntopic);if(!t)return;
+  njGoPractice();
+}
+
+SCREENS.notePath = () => {
+  const t=noteById(state.ntopic)||noteFindAnywhere(state.ntopic);
+  if(!t)return SCREENS.notes;
+  const {subs,cur}=pathState(t);
+  const doneCount=subs.filter((s,i)=>pathDone(t,i)).length;
+  const pct=subs.length?Math.round(100*doneCount/subs.length):0;
+  const totalMins=subs.reduce((a,s)=>a+s.mins,0);
+  const secs=noteSections(t);
+  return `
+  <header class="pagehead">
+    <button class="back" onclick="go('notes')" aria-label="Back to topics">${I.back(22)}</button>
+    <div style="flex:1;min-width:0"><h2 style="font-size:18px">${nEsc(t.title)}</h2>
+      <div class="sub">Learning path \u00B7 ${doneCount} of ${subs.length} sub-topics</div></div>
+    <button class="btn btn-ghost" style="min-height:40px;padding:0 12px;font-size:13px" onclick="openNoteTopic('${t.id}')">\U0001F3AE Quiz journey</button>
+  </header>
+
+  <div class="lp-head">
+    <div class="lp-ring" style="--p:${pct}"><i>${pct}%</i></div>
+    <div style="flex:1;min-width:0">
+      <b style="color:var(--navy)">${topicIcon(t)} ${nEsc(t.title)}</b>
+      <div class="sub" style="margin-top:3px">${subs.length} sub-topics \u00B7 about ${totalMins} minutes \u00B7 unlock as you go</div>
+    </div>
+  </div>
+
+  <div class="lp-wrap">
+    <div class="lp-rail"><i style="height:${pct}%"></i></div>
+    ${subs.map((s,i)=>{
+      const done=pathDone(t,i);
+      const isCur=i===cur;
+      const locked=i>cur;
+      return `
+      <div class="lp-item">
+        <div class="lp-dot ${done?'done':isCur?'now':'lock'}"
+             onclick="lpOpen(${i})" role="button" aria-label="${nEsc(s.title)}">
+          ${done?'\u2713':locked?'🔒':(i+1)}
+        </div>
+        <div class="lp-card ${locked?'lock':''}" onclick="lpOpen(${i})" role="button">
+          <b>${nEsc(s.title)}</b>
+          <span class="lp-status ${done?'done':isCur?'now':'lock'}">
+            ${done?`Completed \u00B7 ${s.mins} min`:isCur?`Current \u00B7 about ${s.mins} min`:'Locked'}
+          </span>
+          ${!locked?`<button class="btn ${isCur?'btn-primary':'btn-soft'} lp-btn" onclick="event.stopPropagation();lpOpen(${i})">${done?'REVIEW':'READ NOTES'} \u27A1</button>`
+            :`<span class="lp-status lock" style="display:block">Complete the previous one to unlock</span>`}
+        </div>
+      </div>`;}).join('')}
+  </div>
+
+  <div style="display:grid;gap:10px;margin-top:6px">
+    <button class="btn btn-soft" onclick="lpPractice()">\U0001F3AF Go to Practice for this topic</button>
+  </div>
+  <div class="spacer"></div>`;
+};
+
+SCREENS.noteSub = () => {
+  const t=noteById(state.ntopic)||noteFindAnywhere(state.ntopic);
+  if(!t)return SCREENS.notePath;
+  const secs=noteSections(t);
+  const i=Math.max(0,Math.min(state.nsec||0,secs.length-1));
+  const sec=secs[i];if(!sec)return SCREENS.notePath;
+  const {cur}=pathState(t);
+  const done=pathDone(t,i);
+  if(i>cur){setTimeout(()=>{toast('Complete the previous sub-topic first');go('notePath');},0);return '';}
+  if(state.nsec!==i)state.nsec=i;
+  return `
+  <header class="pagehead">
+    <button class="back" onclick="go('notePath')" aria-label="Back to the path">${I.back(22)}</button>
+    <div style="flex:1;min-width:0"><h2 style="font-size:17px">${nEsc(t.title)}</h2>
+      <div class="sub">Sub-topic ${i+1} of ${secs.length}${done?' \u00B7 completed':''}</div></div>
+    ${spBarHTML()}
+  </header>
+  <div class="bar" style="margin-bottom:14px"><i style="width:${((i+1)/secs.length)*100}%;background:var(--green)"></i></div>
+
+  <article class="nt">
+    <h3 class="nt-h1">${nEsc(sec.title)}</h3>
+    ${sec.blocks.map(noteBlock).join('')}
+  </article>
+  ${diagramHTML(t.id, sec.title)}
+
+  <div style="display:grid;gap:10px;margin-top:16px">
+    <button class="btn btn-primary" style="min-height:58px;font-size:17px" onclick="lpComplete()">
+      ${done?'\u2713 MARK AS COMPLETE & CONTINUE \u27A1':'\u2713 MARK AS COMPLETE & CONTINUE \u27A1'}
+    </button>
+    <button class="btn btn-ghost" onclick="try{spPlay();}catch(e){}">\U0001F50A READ THIS PART TO ME</button>
+  </div>
+  <div class="spacer"></div>`;
+};
 
 /* ============================================================
    THE NOTES LEARNING JOURNEY — every subject.
@@ -3220,13 +3433,21 @@ SCREENS.notes = () => {
       ${iconBox('check','green',20,42)}<b>${done}</b><span>Finished</span></div>
   </div>
   <div class="section-title">${bank.subject_name} topics</div>
-  <div class="rows">
+  <div>
     ${bank.topics.map(t=>{
       const d = noteDone(t);
-      return `<button class="note-card" onclick="openNoteTopic('${t.id}')">
-        <span class="num">${t.topic_no}</span>
-        <span class="tt"><b>${nEsc(t.title)}</b>
-          <span>${noteSections(t).length} parts${t.periods?` · ${t.periods} periods`:''}${d.read?` · ${d.pct}% read`:''}</span></span>
+      const {subs}=pathState(t);
+      const mins=subs.reduce((a,s)=>a+s.mins,0);
+      const doneN=subs.filter((s,i)=>pathDone(t,i)).length;
+      const pct=subs.length?Math.round(100*doneN/subs.length):0;
+      return `<button class="tcard" onclick="openNotePath('${t.id}')">
+        <span class="tic">${topicIcon(t)}</span>
+        <span style="flex:1;min-width:0">
+          <b>${nEsc(t.title)}</b>
+          <span class="tsub">${subs.length} sub-topics \u00B7 about ${mins} min</span>
+          <span class="tbar"><i style="width:${pct}%"></i></span>
+          <span class="tmeta">${doneN}/${subs.length} done${pct===100?' \u2014 complete! 🎉':''}</span>
+        </span>
         <span class="go">${I.chev(20)}</span>
       </button>`;}).join('')}
   </div>
@@ -3324,7 +3545,7 @@ function openNoteTopic(id){
   if(state.klass!==_t0.class&&checkClassAccess(_t0.class))state.klass=_t0.class;
   state.nsubject=_t0.subject;
   if(_t0.subject==='MATH'){mathLessonStart(id);return;}
-  noteJourneyStart(id);
+  openNotePath(id);
   return;
 }
 function readSection(i){ state.nsec=i; markSeen(); const t=noteById(state.ntopic); if(t){recordLast({ntopic:state.ntopic,nsec:i,pct:noteDone(t).pct,meta:(i+1)+' of '+noteSections(t).length+' sections read'});} go('noteRead'); }
