@@ -2744,6 +2744,34 @@ function kidAttrQuestion(term,subj,answer){
 
 const KID_FLAGS={uganda:'\u{1F1FA}\u{1F1EC}',kenya:'\u{1F1F0}\u{1F1EA}',tanzania:'\u{1F1F9}\u{1F1FF}',rwanda:'\u{1F1F7}\u{1F1FC}',burundi:'\u{1F1E7}\u{1F1EE}','d.r. congo':'\u{1F1E8}\u{1F1E9}','dr congo':'\u{1F1E8}\u{1F1E9}',congo:'\u{1F1E8}\u{1F1E9}','south sudan':'\u{1F1F8}\u{1F1F8}',sudan:'\u{1F1F8}\u{1F1E9}',ethiopia:'\u{1F1EA}\u{1F1EA}',somalia:'\u{1F1F8}\u{1F1F4}',ethiopia:'\u{1F1EA}\u{1F1EA}'};
 
+/* ---------- Kids-friendly benefit items (display only) ----------
+   Benefit lists read like an exam paper: "A wider market...",
+   "Cheaper services...". For P4-P7 they become story style:
+   "There was a wider market...", "There were cheaper services...".
+   Same content — only the opening words change, and only in lists
+   whose heading says benefits/advantages/gains. */
+function kidFriendlyItem(txt,header){
+  if(!/benefit|advantage|gain/i.test(String(header||'')))return txt;
+  const s=String(txt).replace(/\s+/g,' ').trim();
+  const end=/\.$/.test(s)?'.':'';
+  const body=s.replace(/\.$/,'');
+  const w=body.split(' ');
+  /* lower-case the first word when it is a plain word, never a name */
+  const low=(str)=>{
+    const first=w[0];
+    const plain=/^(a|an|the|free|more|cheaper|better|good|great|easy|safe|clean|new|old|big|small|wide)$/i.test(first)
+      ||/(er|ing|tion|ment|ness|ity|ship|ance|ence|s)$/i.test(first);
+    return plain?str.charAt(0).toLowerCase()+str.slice(1):str;
+  };
+  let out=null;
+  if(/^(a|an)\b/i.test(body)){out='There was '+low(body);}                 /* "A wider market" -> "There was a wider market" */
+  else if(/^free\b/i.test(body)){out='There was '+low(body);}              /* "Free movement" -> "There was free movement" */
+  else if(/er$/.test(w[0])&&/s[^a-z]*$/.test(w[1]||'')){out='There were '+low(body);}  /* "Cheaper services," -> "There were cheaper services," */
+  else if(/s[^a-z]*$/.test(w[0])&&!/ed$/.test(w[0])){out='There were '+low(body);}    /* plural noun first: "Jobs for..." */
+  else{out='There was '+low(body);}                                         /* "Employment...", "Sharing of...", "Better bargaining power..." */
+  return out+end;
+}
+
 /* ---------- Answer formatter (display only — the notes text is never changed) ----------
    Comma answers are hard to read: "Milton Obote (Uganda), Jomo Kenyatta
    (Kenya), Julius Nyerere (Tanzania)." becomes a stacked list with flags,
@@ -2830,7 +2858,7 @@ function kidCardsFor(t,i){
         /* ONE card per list: more than 4 items becomes a flip card
            (front 1-N, back N+1-M) — the heading is never repeated */
         cards.push({kind:'group',header:head,
-          items:items.map((txt,j)=>({n:j+1,text:txt,emoji:kidEmoji(txt)}))});
+          items:items.map((txt,j)=>({n:j+1,text:kidFriendlyItem(txt,head),emoji:kidEmoji(txt)}))});
       }else{
         items.forEach(txt=>cards.push({kind:'idea',emoji:kidEmoji(txt),title:kidTitleFor(txt,sec.title),text:txt}));
       }
