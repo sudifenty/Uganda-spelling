@@ -726,6 +726,10 @@ p{margin:0}
 .kid-card.kg-card{background:#FFFBEB;border:3px solid #111827;box-shadow:6px 6px 0 rgba(17,24,39,1);padding:18px 15px 16px;text-align:center}
 .kg-badge{display:inline-block;background:#FFC800;border:2px solid #111827;border-radius:999px;color:#111827;font-size:15.5px;font-weight:900;text-transform:uppercase;letter-spacing:.01em;padding:10px 16px;line-height:1.35;text-align:center;max-width:100%}
 .kg-part{font-size:11.5px;font-weight:900;color:#92400E;letter-spacing:.09em;margin-top:10px}
+.kg-more{margin-top:14px;background:#FFCC00;border:2px solid #111827;color:#4A3200;border-radius:20px;padding:9px 18px;font-size:13.5px;font-weight:900;letter-spacing:.03em;box-shadow:3px 3px 0 rgba(17,24,39,1);animation:kgPulse 1.7s ease-in-out infinite}
+.kg-more:active{transform:translate(1px,1px);box-shadow:1px 1px 0 rgba(17,24,39,1)}
+@keyframes kgPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}
+.kg-cont{font-size:11.5px;font-weight:900;color:#94A3B8;letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px}
 .kg-rows{display:flex;flex-direction:column;gap:10px;margin-top:14px;text-align:left}
 .kg-row{display:flex;gap:9px;align-items:flex-start;background:#fff;border:2px solid #111827;border-radius:16px;padding:11px 12px;box-shadow:3px 3px 0 rgba(17,24,39,1)}
 .kg-n{font-size:18px;font-weight:900;color:#111827;flex:none;line-height:1.35}
@@ -2823,13 +2827,10 @@ function kidCardsFor(t,i){
          and lists without a heading, keep one-card-per-item. */
       const items=(b.items||[]).map(kidStrip).filter(Boolean);
       if(head&&items.length>=3){
-        const parts=kidChunk(items,4);
-        let start=0;
-        parts.forEach((chunk,k)=>{
-          cards.push({kind:'group',header:head,part:k+1,parts:parts.length,
-            items:chunk.map((txt,j)=>({n:start+j+1,text:txt,emoji:kidEmoji(txt)}))});
-          start+=chunk.length;
-        });
+        /* ONE card per list: more than 4 items becomes a flip card
+           (front 1-N, back N+1-M) — the heading is never repeated */
+        cards.push({kind:'group',header:head,
+          items:items.map((txt,j)=>({n:j+1,text:txt,emoji:kidEmoji(txt)}))});
       }else{
         items.forEach(txt=>cards.push({kind:'idea',emoji:kidEmoji(txt),title:kidTitleFor(txt,sec.title),text:txt}));
       }
@@ -3735,12 +3736,31 @@ SCREENS.noteSub = () => {
           <button class="kid-listen" onclick="kidSpeak()">\u{1F50A} Listen</button>
         </div>
       </div>`;
+    }else if(c.kind==='group'&&c.items.length>4){
+      /* long list = a flip card: front holds the first half, the back is the
+         continuation (like turning a page) — the heading appears ONCE */
+      const half=Math.ceil(c.items.length/2);
+      const rows=list=>list.map(it=>`<div class="kg-row"><span class="kg-n">${it.n}.</span><span class="kg-emoji">${it.emoji}</span><span class="kg-txt">${nEsc(it.text)}</span></div>`).join('');
+      stage=`<div class="kid-flip" onclick="kidFlip(this)" role="button" aria-label="Tap to see more">
+        <div class="kid-flip-inner">
+          <div class="kid-flip-face kid-card kg-card">
+            <div class="kg-badge">${nEsc(c.header)}</div>
+            <div class="kg-rows">${rows(c.items.slice(0,half))}</div>
+            <button class="kg-more">\u{1F446} TAP TO SEE MORE (${c.items[half].n}\u2013${c.items[c.items.length-1].n})</button>
+          </div>
+          <div class="kid-flip-face kid-flip-back kid-card kg-card">
+            <div class="kg-cont">Continuation\u2026</div>
+            <div class="kg-rows">${rows(c.items.slice(half))}</div>
+            <button class="kg-more back">\u{1F446} TAP TO GO BACK (${c.items[0].n}\u2013${c.items[half-1].n})</button>
+          </div>
+        </div>
+      </div>
+      <div class="kid-actions">
+        <button class="kid-listen" onclick="kidSpeak()">\u{1F50A} Listen</button>
+      </div>`;
     }else if(c.kind==='group'){
-      /* a grouped list: the SAME header is repeated on every card so the
-         child always knows which question these reasons belong to */
       stage=`<div class="kid-card kg-card">
         <div class="kg-badge">${nEsc(c.header)}</div>
-        ${c.parts>1?`<div class="kg-part">PART ${c.part} OF ${c.parts} \u00b7 SAME QUESTION, KEEP GOING</div>`:''}
         <div class="kg-rows">
           ${c.items.map(it=>`<div class="kg-row"><span class="kg-n">${it.n}.</span><span class="kg-emoji">${it.emoji}</span><span class="kg-txt">${nEsc(it.text)}</span></div>`).join('')}
         </div>
@@ -3764,8 +3784,6 @@ SCREENS.noteSub = () => {
   const gc=cards[ki]&&cards[ki].kind==='group'?cards[ki]:null;
   const encourage=onEx
     ?'\u{1F4DD} Last step \u2014 test yourself!'
-    :gc
-    ?`${gc.parts>1?`Part ${gc.part} of ${gc.parts} \u00b7 `:''}${nEsc(gc.header)}`
     :ki===0?'Let\u2019s start! \u{1F680}'
     :isLast?'All done! \u{1F389}'
     :remaining===1?'Good job! 1 more to go! \u{1F4AA}'
