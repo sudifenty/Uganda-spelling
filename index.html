@@ -691,16 +691,19 @@ p{margin:0}
 .kbadge.lock{background:#DC2626}
 
 /* ---------- SUB-TOPIC EXERCISE card (objective + written) ---------- */
-.kid-card.kex-card{background:#fff;border:3px solid #111827;box-shadow:6px 6px 0 rgba(17,24,39,1);padding:18px 14px 16px;text-align:left}
+.kid-card.kex-card{background:#fff;border:3px solid #111827;box-shadow:6px 6px 0 rgba(17,24,39,1);padding:20px 18px 18px;text-align:left;width:100%;max-width:none;box-sizing:border-box}
+@media(min-width:1024px){.kid-card.kex-card{padding:26px 28px 24px}.kex-opt{font-size:17px;min-height:60px;padding:16px 18px}.kex-qt{font-size:18px}.kex-model{font-size:17px;padding:16px 18px}.kex-opts{gap:14px}}
 .kex-head{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:6px}
 .kex-badge{background:#FFC800;border:2px solid #111827;border-radius:999px;color:#111827;font-size:13.5px;font-weight:900;letter-spacing:.03em;padding:7px 13px}
 .kex-sub{font-size:12px;font-weight:800;color:#6B7280}
 .kex-count{display:inline-block;background:#111827;color:#fff;font-size:12px;font-weight:900;border-radius:999px;padding:5px 12px;margin:6px 0 4px}
-.kex-q{margin-top:14px;border-top:2px dashed #E5E7EB;padding-top:13px}
-.kex-qt{font-size:16px;font-weight:900;color:#111827;line-height:1.45;margin-bottom:9px}
+.kex-q{margin-top:16px;border-top:2px dashed #E5E7EB;padding-top:15px}
+.kex-qt{font-size:17px;font-weight:900;color:#111827;line-height:1.5;margin-bottom:12px}
 .kex-marks{font-size:11.5px;font-weight:800;color:#9CA3AF}
-.kex-opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.kex-opt{border:2px solid #111827;border-radius:12px;padding:10px 11px;font-size:14.5px;font-weight:800;color:#111827;text-align:left;background:#fff;box-shadow:2px 2px 0 rgba(17,24,39,1);line-height:1.35}
+.kex-opts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.kex-opt{border:2.5px solid #111827;border-radius:14px;padding:14px 16px;min-height:56px;font-size:16px;font-weight:800;color:#111827;text-align:left;background:#fff;box-shadow:2.5px 2.5px 0 rgba(17,24,39,1);line-height:1.4;display:flex;align-items:center;gap:8px}
+.kex-opt span.kex-letter{font-weight:900;color:#2563EB;flex:none}
+@media(max-width:379px){.kex-opts{grid-template-columns:1fr}}
 .kex-opt:active{transform:translate(1px,1px);box-shadow:1px 1px 0 rgba(17,24,39,1)}
 .kex-opt.kex-right{background:#86EFAC}
 .kex-opt.kex-wrong{background:#FCA5A5}
@@ -711,7 +714,7 @@ p{margin:0}
 .kex-bn{font-size:15px;font-weight:900;color:#111827;flex:none;width:20px}
 .kex-input{width:100%;min-height:52px;border:2px solid #111827;border-radius:12px;padding:11px 12px;font-size:15px;font-weight:700;font-family:inherit;color:#111827;background:#F9FAFB;box-sizing:border-box}
 .kex-show{margin-top:7px;background:#111827;color:#fff;border:none;border-radius:12px;padding:8px 13px;font-size:12px;font-weight:900;letter-spacing:.04em}
-.kex-model{margin-top:9px;background:#DCFCE7;border:2px solid #16A34A;border-radius:12px;padding:11px 12px;font-size:14.5px;font-weight:700;color:#14532D;line-height:1.5;white-space:pre-line}
+.kex-model{margin-top:12px;background:#DCFCE7;border:2.5px solid #16A34A;border-radius:14px;padding:14px 16px;font-size:16px;font-weight:700;color:#14532D;line-height:1.6;white-space:pre-line;position:relative;z-index:2}
 .kex-finish{margin-top:16px;text-align:center}
 .kex-tick{font-size:16.5px;font-weight:900;color:#166534;line-height:1.4}
 .kex-tick.off{color:#92400E;font-size:14px}
@@ -3808,7 +3811,7 @@ SCREENS.noteSub = () => {
               <p class="kex-qt">${qi+1}. ${nEsc(q.q)} <span class="kex-marks">(${q.marks} mk)</span></p>
               <div class="kex-opts">
                 ${q.options.map((o,oi)=>`<button class="kex-opt ${chosen!=null&&oi===chosen?('ABCD'[oi]===right?'kex-right':'kex-wrong'):''} ${chosen!=null&&'ABCD'[oi]===right&&oi!==chosen?'kex-reveal':''}"
-                  ${chosen!=null?'disabled':''} onclick="kexAnswer(${qi},${oi},'${right}')">${'ABCD'[oi]}. ${nEsc(o)}${chosen!=null&&'ABCD'[oi]===right?' \u2713':''}</button>`).join('')}
+                  ${chosen!=null?'disabled':''} onclick="kexAnswer(${qi},${oi},'${right}')"><span class="kex-letter">${'ABCD'[oi]}</span><span style="flex:1">${nEsc(o)}${chosen!=null&&'ABCD'[oi]===right?' \u2713':''}</span></button>`).join('')}
               </div>
               ${chosen!=null&&chosen!==right?`<div class="kex-note">The correct answer is ${right}.</div>`:''}
             </div>`;
