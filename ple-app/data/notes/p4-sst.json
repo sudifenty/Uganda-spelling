@@ -3,7 +3,7 @@
  "subject": "SST",
  "subject_name": "Social Studies",
  "total": 6,
- "words": 8029,
+ "words": 8027,
  "topics": [
   {
    "id": "P4_SST_T01",
@@ -15,7 +15,7 @@
    "slug": "location-of-our-district-in-uganda",
    "periods": 16,
    "curriculum_pages": "17–20",
-   "words": 1326,
+   "words": 1324,
    "sections": [
     {
      "title": "About this topic",
@@ -378,7 +378,7 @@
         ],
         [
          "**Frame**",
-         "The line drawn round the map"
+         "Encloses the map neatly"
         ]
        ]
       },

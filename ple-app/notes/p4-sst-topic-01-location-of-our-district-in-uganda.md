@@ -188,7 +188,7 @@ A map is a **drawing of a place as seen from above**.
 | **Key** | Explains the symbols used |
 | **Compass** | Shows which way is north |
 | **Scale** | Shows how map distance stands for real distance |
-| **Frame** | The line drawn round the map |
+| **Frame** | Encloses the map neatly |
 
 > The **key** is the part of a map that explains the symbols. The **scale** is what a
 > distance on the map stands for on the ground.

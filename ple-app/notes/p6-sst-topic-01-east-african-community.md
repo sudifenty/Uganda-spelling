@@ -53,15 +53,15 @@ Burundi are now counted as part of East Africa**.
 The three countries did not just cooperate in words — they ran these services together as
 ONE organisation:
 
-| Service | What it did |
+| Service | Its role |
 |---|---|
-| **East African Airways** | The joint airline that flew passengers and mail between the three countries and beyond |
-| **East African Railways and Harbours** | Ran the railways and the sea ports of Mombasa and Dar es Salaam |
-| **East African Posts and Telecommunications** | Carried letters, telegrams and telephone calls across the region |
-| **East African Customs and Excise** | Collected taxes on goods entering the region |
-| **The University of East Africa** | One university for all three countries, at Makerere, Nairobi and Dar es Salaam |
-| **East African Development Bank** | Lent money for development projects in the three countries |
-| **Common currency** | The East African shilling, used in all three countries |
+| **East African Airways** | East African Airways was the joint airline of the three countries. Its role was to fly passengers, cargo and mail between them and beyond |
+| **East African Railways and Harbours** | Its role was to run the railways and the sea ports of Mombasa and Dar es Salaam |
+| **East African Posts and Telecommunications** | Its role was to carry letters, handle telegrams and manage telephone calls across the region |
+| **East African Customs and Excise** | Its role was to collect taxes on goods entering the region |
+| **The University of East Africa** | Its role was to run one university for all three countries, at Makerere, Nairobi and Dar es Salaam |
+| **East African Development Bank** | Its role was to lend money for development projects in the three countries |
+| **Common currency** | Its role was to provide one money for all three countries — the East African shilling |
 
 ### Organs of the old Community
 
