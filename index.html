@@ -732,6 +732,8 @@ p{margin:0}
 .kg-cont{font-size:11.5px;font-weight:900;color:#94A3B8;letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px}
 .kg-rows{display:flex;flex-direction:column;gap:10px;margin-top:14px;text-align:left}
 .kg-row{display:flex;gap:9px;align-items:flex-start;background:#fff;border:2px solid #111827;border-radius:16px;padding:11px 12px;box-shadow:3px 3px 0 rgba(17,24,39,1)}
+.kg-info{margin-left:auto;flex:none;width:26px;height:26px;border-radius:50%;background:#DBEAFE;border:2px solid #1E40AF;color:#1E40AF;font-size:13px;font-weight:900;font-style:italic;display:grid;place-items:center;font-family:Georgia,serif;line-height:1}
+.kg-info:active{transform:scale(.9)}
 .kg-n{font-size:18px;font-weight:900;color:#111827;flex:none;line-height:1.35}
 .kg-emoji{font-size:21px;flex:none;line-height:1.25}
 .kg-txt{font-size:17px;font-weight:800;color:#111827;line-height:1.45}
@@ -2744,6 +2746,36 @@ function kidAttrQuestion(term,subj,answer){
 
 const KID_FLAGS={uganda:'\u{1F1FA}\u{1F1EC}',kenya:'\u{1F1F0}\u{1F1EA}',tanzania:'\u{1F1F9}\u{1F1FF}',rwanda:'\u{1F1F7}\u{1F1FC}',burundi:'\u{1F1E7}\u{1F1EE}','d.r. congo':'\u{1F1E8}\u{1F1E9}','dr congo':'\u{1F1E8}\u{1F1E9}',congo:'\u{1F1E8}\u{1F1E9}','south sudan':'\u{1F1F8}\u{1F1F8}',sudan:'\u{1F1F8}\u{1F1E9}',ethiopia:'\u{1F1EA}\u{1F1EA}',somalia:'\u{1F1F8}\u{1F1F4}',ethiopia:'\u{1F1EA}\u{1F1EA}'};
 
+/* ---------- PLE outline style (owner's rule) ----------
+   Reason/benefit/problem lists must show CRAMMING POINTS on the card,
+   not paragraphs: "Differences in political ideologies" — the
+   explanation ("Tanzania followed socialism...") hides behind a small
+   (i) the learner can tap. Fast kids cram outlines; slower kids tap
+   for the explanation. */
+const KID_OUTLINE_HEAD=/reason|collapse|benefit|advantage|problem|challenge|cause/i;
+function kidOutlineItem(txt,header){
+  if(!KID_OUTLINE_HEAD.test(String(header||'')))return {text:txt,detail:null};
+  const s=String(txt).trim();
+  let m=s.match(/^(.+?)\s*\u2014\s*(.+)$/);                       /* split at the em-dash */
+  if(!m)m=s.match(/^(.+?),\s*((?:especially|which|after which|so that|because|ending in|leading to|causing)\b.+)$/i);
+  if(!m)return {text:s,detail:null};
+  const outline=m[1].replace(/[,;:]$/,'').trim();
+  const detail=m[2].replace(/\.$/,'').trim();
+  if(outline.split(' ').length<3||detail.split(' ').length<3)return {text:s,detail:null};
+  return {text:outline,detail:detail};
+}
+function kidDetail(idx){
+  const c=state.kcards&&state.kcards[state.ki];
+  if(!c||c.kind!=='group')return;
+  const it=c.items[idx];if(!it||!it.detail)return;
+  openSheet(`<div class="grabber"></div>
+    <div style="text-align:left">
+      <h3 style="font-size:19px;line-height:1.35">${nEsc(it.text)}</h3>
+      <p style="margin-top:10px;font-size:17px;line-height:1.65;color:#334155;font-weight:600">${nEsc(it.detail)}.</p>
+      <button class="btn btn-primary" style="margin-top:14px;min-height:48px" onclick="closeSheet()">GOT IT</button>
+    </div>`);
+}
+
 /* ---------- Kids-friendly benefit items (display only) ----------
    Benefit lists read like an exam paper: "A wider market...",
    "Cheaper services...". For P4-P7 they become story style:
@@ -2858,7 +2890,10 @@ function kidCardsFor(t,i){
         /* ONE card per list: more than 4 items becomes a flip card
            (front 1-N, back N+1-M) — the heading is never repeated */
         cards.push({kind:'group',header:head,
-          items:items.map((txt,j)=>({n:j+1,text:kidFriendlyItem(txt,head),emoji:kidEmoji(txt)}))});
+          items:items.map((txt,j)=>{
+            const o=kidOutlineItem(kidFriendlyItem(txt,head),head);
+            return {n:j+1,text:o.text,detail:o.detail,emoji:kidEmoji(txt)};
+          })});
       }else{
         items.forEach(txt=>cards.push({kind:'idea',emoji:kidEmoji(txt),title:kidTitleFor(txt,sec.title),text:txt}));
       }
@@ -2911,7 +2946,7 @@ function kidSpeak(){
      silent, so the Listen button did nothing at all. */
   let text;
   if(c.kind==='flip'){ text=String(c.front+' '+c.back+(c.tiles&&c.tiles.length?' '+c.tiles.map(x=>x.txt).join(', '):'')).replace(/\*\*/g,''); }
-  else if(c.kind==='group'){ text=String(c.header+'. '+c.items.map(it=>it.n+'. '+it.text).join('. ')).replace(/\*\*/g,''); }
+  else if(c.kind==='group'){ text=String(c.header+'. '+c.items.map(it=>it.n+'. '+it.text+(it.detail?': '+it.detail:'')).join('. ')).replace(/\*\*/g,''); }
   else if(c.kind==='defex'){ text=String(c.def+'. Examples: '+c.examples.map(x=>x.txt).join(', ')).replace(/\*\*/g,''); }
   else{ text=String((c.title?c.title+'. ':'')+c.text).replace(/\*\*/g,''); }
   try{ if(typeof spSpeak==='function'){ spSpeak(text); return; } }catch(e){}
@@ -3768,7 +3803,7 @@ SCREENS.noteSub = () => {
       /* long list = a flip card: front holds the first half, the back is the
          continuation (like turning a page) — the heading appears ONCE */
       const half=Math.ceil(c.items.length/2);
-      const rows=list=>list.map(it=>`<div class="kg-row"><span class="kg-n">${it.n}.</span><span class="kg-emoji">${it.emoji}</span><span class="kg-txt">${nEsc(it.text)}</span></div>`).join('');
+      const rows=list=>list.map(it=>`<div class="kg-row"><span class="kg-n">${it.n}.</span><span class="kg-emoji">${it.emoji}</span><span class="kg-txt">${nEsc(it.text)}</span>${it.detail?`<button class="kg-info" onclick="event.stopPropagation();kidDetail(${it.n-1})" aria-label="Show the explanation">i</button>`:''}</div>`).join('');
       stage=`<div class="kid-flip" onclick="kidFlip(this)" role="button" aria-label="Tap to see more">
         <div class="kid-flip-inner">
           <div class="kid-flip-face kid-card kg-card">
@@ -3790,7 +3825,7 @@ SCREENS.noteSub = () => {
       stage=`<div class="kid-card kg-card">
         <div class="kg-badge">${nEsc(c.header)}</div>
         <div class="kg-rows">
-          ${c.items.map(it=>`<div class="kg-row"><span class="kg-n">${it.n}.</span><span class="kg-emoji">${it.emoji}</span><span class="kg-txt">${nEsc(it.text)}</span></div>`).join('')}
+          ${c.items.map(it=>`<div class="kg-row"><span class="kg-n">${it.n}.</span><span class="kg-emoji">${it.emoji}</span><span class="kg-txt">${nEsc(it.text)}</span>${it.detail?`<button class="kg-info" onclick="kidDetail(${it.n-1})" aria-label="Show the explanation">i</button>`:''}</div>`).join('')}
         </div>
         <div class="kid-actions">
           <button class="kid-listen" onclick="kidSpeak()">\u{1F50A} Listen</button>
