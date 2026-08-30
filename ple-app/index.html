@@ -669,6 +669,16 @@ p{margin:0}
 .kbadge{font-size:11.5px;font-weight:900;letter-spacing:.06em;color:#fff;border-radius:999px;padding:5px 12px;border:2px solid #111827}
 .kbadge.lock{background:#DC2626}
 
+/* ---------- DEFINITION + EXAMPLES cards (big tiles, never a continuation) ---------- */
+.kid-card.kx-card{background:#fff;border:3px solid #111827;box-shadow:6px 6px 0 rgba(17,24,39,1);padding:18px 14px 16px;text-align:center}
+.kx-def{font-size:18px;font-weight:900;color:#111827;line-height:1.45;text-align:center}
+.kx-div{height:3px;background:#111827;border-radius:2px;margin:13px auto 12px;width:64%}
+.kx-label{display:inline-block;background:#111827;color:#FFC800;font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;border-radius:999px;padding:5px 14px;margin-bottom:11px}
+.kx-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}
+.kx-tile{border:3px solid #111827;border-radius:12px;padding:10px 6px 9px;text-align:center;box-shadow:3px 3px 0 rgba(17,24,39,1);display:flex;flex-direction:column;align-items:center;gap:4px}
+.kx-emo{font-size:24px;line-height:1}
+.kx-word{font-size:18px;font-weight:900;color:#111827;text-transform:uppercase;letter-spacing:.02em;line-height:1.15;word-break:break-word}
+
 /* ---------- GROUPED LIST CARDS (3-4 reasons per card, header repeated) ---------- */
 .kid-card.kg-card{background:#FFFBEB;border:3px solid #111827;box-shadow:6px 6px 0 rgba(17,24,39,1);padding:18px 15px 16px;text-align:center}
 .kg-badge{display:inline-block;background:#FFC800;border:2px solid #111827;border-radius:999px;color:#111827;font-size:15.5px;font-weight:900;text-transform:uppercase;letter-spacing:.01em;padding:10px 16px;line-height:1.35;text-align:center;max-width:100%}
@@ -2343,6 +2353,7 @@ function kidEmoji(text){
   const s=String(text).toLowerCase();
   const M=[[/landlocked/,'\u{1F512}'],[/ocean|sea coast|coastline|harbour|port/,'\u{1F30A}'],
     [/cooperat|together|unit(y|ed)|harmon/,'\u{1F91D}'],[/peace/,'\u{1F54A}'],[/voice|speak|talk/,'\u{1F5E3}'],
+    [/^land\b/,'\u{1F30D}'],[/mineral|copper|gold|limestone|wolfram|tin|diamond/,'\u{1F48E}'],[/wildlife|^animals?$/,'\u{1F991}'],[/climate|weather/,'\u2600\uFE0F'],[/vegetation/,'\u{1F33F}'],
     [/movement|travel|journey|transport/,'\u{1F6B6}'],[/war|fight|conflict|quarrel/,'\u2694\uFE0F'],
     [/market|trade|econom|export|import/,'\u{1F4B0}'],[/border/,'\u{1F6A7}'],[/collapse|break down|fail(ure|ed)?/,'\u{1F494}'],
     [/north|south|east|west|compass|direction/,'\u{1F9ED}'],[/map|africa|uganda|kenya|tanzania|location/,'\u{1F5FA}'],
@@ -2380,6 +2391,37 @@ function kidTitleFor(text,secTitle){
   const words=s.split(' ').slice(0,4).join(' ');
   return words||'';
 }
+/* ---------- Definition + EXAMPLES splitter (owner's rule, all subjects) ----------
+   "Natural resource: A resource provided by nature — land, water, minerals..."
+   must NOT read as one long sentence: the examples are cut out and shown as
+   BIG tiles under an EXAMPLES: badge, so a child instantly sees the difference
+   between the definition and its examples. Fires only when the right side is
+   a true list of 3-8 short items (1-3 words each, no brackets, no sentence
+   punctuation) — ordinary sentences are never broken up. */
+const KX_COLS=['#FFFBEB','#BFDBFE','#BBF7D0','#FBCFE8','#E9D5FF','#FED7AA','#FEE2E2'];
+function kidSplitDefEx(raw){
+  const s=String(raw||'').replace(/\*\*/g,'').replace(/\s+/g,' ').replace(/[.\s]+$/,'').trim();
+  if(!s||s.length<24)return null;
+  const tries=[];
+  const em=s.indexOf(' \u2014 ');if(em>0)tries.push(em+1);
+  const co=s.indexOf(': ');if(co>0)tries.push(co+1);
+  const ar=s.indexOf(' are ');if(ar>0)tries.push(ar+1);
+  for(const cut of tries){
+    const def=s.slice(0,cut).trim().replace(/[:\u2014]+$/,'').trim();
+    let list=s.slice(cut).replace(/^[\s:\u2014]+/,'').replace(/^are\s+/i,'').trim();
+    if(!def||def.length<12||def.length>90||def.endsWith('?')||list.length<10)continue;
+    if(/[()\u00b7;\u2014]/.test(def))continue;                     /* a definition is never a broken fragment */
+    if(/(,|and|or)$/i.test(def))continue;                          /* cut mid-sentence, not a definition */
+    if(/^(drop|add|mix|pour|take|put|write|draw|name|give|find|work|show|bring|cut|use|make|do|solve|place|cover|hold|heat|cool|boil|filter)\b/i.test(def))continue;  /* instructions are not definitions */
+    if(/[.?!;]/.test(list))continue;                 /* a list never carries sentence ends */
+    const items=list.split(/,|\sand\s|&/i).map(x=>x.trim()).filter(Boolean);
+    if(items.length<3||items.length>8)continue;
+    if(items.some(it=>!it||it.split(' ').length>3||it.length>24||/[()]/.test(it)))continue;
+    return {def:def,examples:items};
+  }
+  return null;
+}
+
 /* split a list into cards of at most `max` items, spread evenly (6 -> 3+3, 7 -> 4+3, 8 -> 4+4) */
 function kidChunk(items,max){
   const per=Math.max(1,Math.ceil(items.length/Math.ceil(items.length/max)));
@@ -2397,6 +2439,12 @@ function kidCardsFor(t,i){
     if(b.t==='p'||b.t==='note'){
       const sentences=(kidStrip(b.x)||'').split(/(?<=[.!?])\s+/).filter(Boolean);
       for(const sen of sentences){
+        const dx=kidSplitDefEx(sen);        /* examples become BIG tiles, never a continuation */
+        if(dx){
+          cards.push({kind:'defex',emoji:kidEmoji(dx.def+' '+dx.examples.join(' ')),def:dx.def,
+            examples:dx.examples.map(x=>({txt:x,emoji:kidEmoji(x)}))});
+          continue;
+        }
         for(const piece of kidSplitSentence(sen)){
           if(piece.split(' ').length<2&&cards.length)continue;   /* skip stray fragments */
           cards.push({kind:'idea',emoji:kidEmoji(piece),title:kidTitleFor(b.x,sec.title),text:piece});
@@ -2429,7 +2477,7 @@ function kidCardsFor(t,i){
         const term=kidStrip(r[0]),mean=String(r[1]||'').replace(/\s+/g,' ').trim();
         if(term&&mean&&mean.split(' ').length>=2){
           /* back keeps its **bold** markers: the flip back renders them as red highlights */
-          cards.push({kind:'flip',emoji:kidEmoji(term+' '+kidStrip(mean)),front:'What is '+term+'?',back:mean});
+          cards.push({kind:'flip',emoji:kidEmoji(term+' '+kidStrip(mean)),front:'What is '+term+'?',back:mean,backEx:kidSplitDefEx(mean)});
         }
       });
     }
@@ -2448,6 +2496,7 @@ function kidSpeak(){
   let text;
   if(c.kind==='flip'){ text=String(c.front+' '+c.back).replace(/\*\*/g,''); }
   else if(c.kind==='group'){ text=String(c.header+'. '+c.items.map(it=>it.n+'. '+it.text).join('. ')).replace(/\*\*/g,''); }
+  else if(c.kind==='defex'){ text=String(c.def+'. Examples: '+c.examples.map(x=>x.txt).join(', ')).replace(/\*\*/g,''); }
   else{ text=String((c.title?c.title+'. ':'')+c.text).replace(/\*\*/g,''); }
   try{ if(typeof spSpeak==='function'){ spSpeak(text); return; } }catch(e){}
   mathSpeak(text);
@@ -3213,12 +3262,33 @@ SCREENS.noteSub = () => {
           <div class="kid-flip-face kid-flip-back">
             <div class="kid-emoji">${c.emoji}</div>
             <div class="kid-text" style="font-size:22px;font-weight:800;color:#1E3A5F">${nMd(c.back)}</div>
+            ${c.backEx?`<div class="kx-div" style="width:60%;margin:12px auto 4px"></div><span class="kx-label" style="margin-top:6px">EXAMPLES:</span>
+              <div class="kx-grid" style="margin-top:8px">
+                ${c.backEx.examples.map((x,j)=>`<div class="kx-tile" style="background:${KX_COLS[j%KX_COLS.length]}">
+                  <span class="kx-emo">${kidEmoji(x)}</span><span class="kx-word">${nEsc(x)}</span>
+                </div>`).join('')}
+              </div>`:''}
             <div class="kid-flip-hint">\u{1F446} Tap to flip back</div>
           </div>
         </div>
       </div>
       <div class="kid-actions">
         <button class="kid-listen" onclick="kidSpeak()">\u{1F50A} Listen</button>
+      </div>`;
+    }else if(c.kind==='defex'){
+      /* definition on top, black divider, EXAMPLES: badge, then BIG bold tiles */
+      stage=`<div class="kid-card kx-card">
+        <div class="kx-def">${nEsc(c.def)}</div>
+        <div class="kx-div"></div>
+        <span class="kx-label">EXAMPLES:</span>
+        <div class="kx-grid">
+          ${c.examples.map((x,j)=>`<div class="kx-tile" style="background:${KX_COLS[j%KX_COLS.length]}">
+            <span class="kx-emo">${x.emoji}</span><span class="kx-word">${nEsc(x.txt)}</span>
+          </div>`).join('')}
+        </div>
+        <div class="kid-actions">
+          <button class="kid-listen" onclick="kidSpeak()">\u{1F50A} Listen</button>
+        </div>
       </div>`;
     }else if(c.kind==='group'){
       /* a grouped list: the SAME header is repeated on every card so the
