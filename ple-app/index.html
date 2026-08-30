@@ -726,7 +726,7 @@ p{margin:0}
 .kid-card.kg-card{background:#FFFBEB;border:3px solid #111827;box-shadow:6px 6px 0 rgba(17,24,39,1);padding:18px 15px 16px;text-align:center}
 .kg-badge{display:inline-block;background:#FFC800;border:2px solid #111827;border-radius:999px;color:#111827;font-size:15.5px;font-weight:900;text-transform:uppercase;letter-spacing:.01em;padding:10px 16px;line-height:1.35;text-align:center;max-width:100%}
 .kg-part{font-size:11.5px;font-weight:900;color:#92400E;letter-spacing:.09em;margin-top:10px}
-.kg-more{margin-top:14px;background:#FFCC00;border:2px solid #111827;color:#4A3200;border-radius:20px;padding:9px 18px;font-size:13.5px;font-weight:900;letter-spacing:.03em;box-shadow:3px 3px 0 rgba(17,24,39,1);animation:kgPulse 1.7s ease-in-out infinite}
+.kg-more{min-width:180px;height:auto;margin-top:14px;background:#FFCC00;border:2px solid #111827;color:#4A3200;border-radius:24px;padding:10px 20px;font-size:13.5px;font-weight:900;letter-spacing:.03em;box-shadow:3px 3px 0 rgba(17,24,39,1);display:inline-flex;align-items:center;justify-content:center;gap:6px;text-align:center;line-height:1.35;white-space:normal;animation:kgPulse 1.7s ease-in-out infinite}
 .kg-more:active{transform:translate(1px,1px);box-shadow:1px 1px 0 rgba(17,24,39,1)}
 @keyframes kgPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}
 .kg-cont{font-size:11.5px;font-weight:900;color:#94A3B8;letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px}
@@ -3751,11 +3751,11 @@ SCREENS.noteSub = () => {
           <div class="kid-flip-face kid-flip-back kid-card kg-card">
             <div class="kg-cont">Continuation\u2026</div>
             <div class="kg-rows">${rows(c.items.slice(half))}</div>
-            <button class="kg-more back">\u{1F446} TAP TO GO BACK (${c.items[0].n}\u2013${c.items[half-1].n})</button>
+            <button class="kg-more kg-back">\u{1F446} TAP TO GO BACK (${c.items[0].n}\u2013${c.items[half-1].n})</button>
           </div>
         </div>
       </div>
-      <div class="kid-actions">
+      <div class="kid-actions" style="display:flex;flex-direction:column;gap:12px;margin-top:12px">
         <button class="kid-listen" onclick="kidSpeak()">\u{1F50A} Listen</button>
       </div>`;
     }else if(c.kind==='group'){
