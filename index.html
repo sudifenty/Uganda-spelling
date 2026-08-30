@@ -2383,7 +2383,7 @@ SCREENS.notePath = () => {
    to reveal), list items each get their own card. Nothing is
    rewritten — the structure becomes kid-sized.
    ============================================================ */
-function kidStrip(s){return String(s||'').replace(/\*\*(.+?)\*\*/g,'$1').replace(/\*(.+?)\*/g,'$1').replace(/`([^`]*)`/g,'').replace(/\s+/g,' ').trim();}
+function kidStrip(s){return String(s||'').replace(/^[\u00b7\s]+/,'').replace(/\*\*(.+?)\*\*/g,'$1').replace(/\*(.+?)\*/g,'$1').replace(/`([^`]*)`/g,'').replace(/\s+/g,' ').trim();}
 function kidSplitSentence(s){
   /* split very long sentences at natural pauses — same words, smaller bites */
   const parts=[];
@@ -2750,6 +2750,19 @@ function kidAttrQuestion(term,subj,answer){
 
 const KID_FLAGS={uganda:'\u{1F1FA}\u{1F1EC}',kenya:'\u{1F1F0}\u{1F1EA}',tanzania:'\u{1F1F9}\u{1F1FF}',rwanda:'\u{1F1F7}\u{1F1FC}',burundi:'\u{1F1E7}\u{1F1EE}','d.r. congo':'\u{1F1E8}\u{1F1E9}','dr congo':'\u{1F1E8}\u{1F1E9}',congo:'\u{1F1E8}\u{1F1E9}','south sudan':'\u{1F1F8}\u{1F1F8}',sudan:'\u{1F1F8}\u{1F1E9}',ethiopia:'\u{1F1EA}\u{1F1EA}',somalia:'\u{1F1F8}\u{1F1F4}',ethiopia:'\u{1F1EA}\u{1F1EA}'};
 
+/* ---------- Dot lists (owner's rule) ----------
+   Answers written with " - " separators are hard to read as one
+   paragraph. Any card text or flip answer containing them becomes a
+   NUMBERED list of white pill boxes. */
+function kidDotList(text){
+  const s=String(text).replace(/\*\*/g,'').replace(/\s+/g,' ').trim();
+  if(!s.includes('\u00b7'))return null;
+  const parts=s.split(/\s*\u00b7\s*/).map(x=>x.replace(/^[\u2014-]\s*/,'').trim().replace(/[.;]$/,'')).filter(Boolean);
+  if(parts.length<2||parts.length>16)return null;
+  if(parts.some(p=>p.split(' ').length>30))return null;
+  return parts;
+}
+
 /* ---------- PLE outline style (owner's rule) ----------
    Reason/benefit/problem lists must show CRAMMING POINTS on the card,
    not paragraphs: "Differences in political ideologies" — the
@@ -2853,6 +2866,14 @@ function kidAnswerHTML(c){
         </div>`).join('')}
       </div>`;
   }
+  const dl=kidDotList(back);
+  if(dl){
+    const intro=/:$/.test(dl[0])?dl.shift():'';
+    return `${intro?`<div class="ans-intro">${nEsc(intro)}</div>`:''}
+      <div class="kg-rows" style="margin-top:8px;width:100%">
+        ${dl.map((it,j)=>`<div class="kg-row"><span class="kg-n">${j+1}.</span><span class="kg-emoji">${kidEmoji(it)}</span><span class="kg-txt">${nEsc(it)}</span></div>`).join('')}
+      </div>`;
+  }
   return `<div class="kid-text" style="font-size:22px;font-weight:800;color:#1E3A5F">${nMd(back)}</div>`;
 }
 
@@ -2873,6 +2894,17 @@ function kidCardsFor(t,i){
     if(b.t==='p'||b.t==='note'){
       const sentences=(kidStrip(b.x)||'').split(/(?<=[.!?])\s+/).filter(Boolean);
       for(const sen of sentences){
+        const dots=kidDotList(sen);          /* separator lists become numbered pills */
+        if(dots){
+          const title=kidTitleFor(b.x,sec.title);
+          const label=title.replace(/[:.]$/,'').toLowerCase();
+          if(label&&dots[0]&&dots[0].toLowerCase().startsWith(label)){
+            dots[0]=dots[0].slice(label.length).replace(/^[\s:—-]+/,'');
+            if(!dots[0])dots.shift();
+          }
+          cards.push({kind:'dots',emoji:kidEmoji(sen),title:title,items:dots});
+          continue;
+        }
         const dx=kidSplitDefEx(sen);        /* examples become BIG tiles, never a continuation */
         if(dx){
           cards.push({kind:'defex',emoji:kidEmoji(dx.def+' '+dx.examples.join(' ')),def:dx.def,
@@ -2952,6 +2984,7 @@ function kidSpeak(){
   if(c.kind==='flip'){ text=String(c.front+' '+c.back+(c.tiles&&c.tiles.length?' '+c.tiles.map(x=>x.txt).join(', '):'')).replace(/\*\*/g,''); }
   else if(c.kind==='group'){ text=String(c.header+'. '+c.items.map(it=>it.n+'. '+it.text+(it.detail?': '+it.detail:'')).join('. ')).replace(/\*\*/g,''); }
   else if(c.kind==='defex'){ text=String(c.def+'. Examples: '+c.examples.map(x=>x.txt).join(', ')).replace(/\*\*/g,''); }
+  else if(c.kind==='dots'){ text=String((c.title?c.title+'. ':'')+c.items.map((it,j)=>(j+1)+'. '+it).join('. ')).replace(/\*\*/g,''); }
   else{ text=String((c.title?c.title+'. ':'')+c.text).replace(/\*\*/g,''); }
   try{ if(typeof spSpeak==='function'){ spSpeak(text); return; } }catch(e){}
   mathSpeak(text);
@@ -3788,6 +3821,16 @@ SCREENS.noteSub = () => {
             :`<div class="kex-tick off">\u{1F4DD} Answer all ${ex.questions.length} questions to finish \u2014 ${ex.questions.length-answered} to go</div>`}
         </div>
       </div>`;
+    }else if(c.kind==='dots'){
+      stage=`<div class="kid-card kg-card">
+        <div class="kg-badge">${nEsc(c.title)}</div>
+        <div class="kg-rows">
+          ${c.items.map((it,j)=>`<div class="kg-row"><span class="kg-n">${j+1}.</span><span class="kg-emoji">${kidEmoji(it)}</span><span class="kg-txt">${nEsc(it)}</span></div>`).join('')}
+        </div>
+        <div class="kid-actions">
+          <button class="kid-listen" onclick="kidSpeak()">🔊 Listen</button>
+        </div>
+      </div>`;
     }else if(c.kind==='defex'){
       /* definition on top, black divider, EXAMPLES: badge, then BIG bold tiles */
       stage=`<div class="kid-card kx-card">
@@ -3836,11 +3879,15 @@ SCREENS.noteSub = () => {
         </div>
       </div>`;
     }else{
+      const dlist=kidDotList(c.text);
       stage=`<div class="kid-card">
-        <div class="kid-emoji">${c.emoji}</div>
         ${c.title?`<div class="kid-title">${nEsc(c.title)}</div>`:''}
+        ${dlist?`<div class="kg-rows" style="margin-top:10px;width:100%">
+            ${dlist.map((it,j)=>`<div class="kg-row"><span class="kg-n">${j+1}.</span><span class="kg-emoji">${kidEmoji(it)}</span><span class="kg-txt">${nEsc(it)}</span></div>`).join('')}
+          </div>`
+          :`<div class="kid-emoji">${c.emoji}</div>
         <div class="kid-text">${nEsc(c.text)}</div>
-        ${kidBadges(c.title+' '+c.text)}
+        ${kidBadges(c.title+' '+c.text)}`}
         <div class="kid-actions">
           <button class="kid-listen" onclick="kidSpeak()">\u{1F50A} Listen</button>
         </div>
