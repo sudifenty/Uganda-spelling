@@ -751,6 +751,14 @@ p{margin:0}
 .mp-q{font-size:21px;font-weight:900;color:#1E3A5F;margin-bottom:14px;text-align:center;line-height:1.4}
 .mp-lock{font-size:16px;font-weight:900;color:#B45309;background:#FEF3C7;border:2px dashed #FCD34D;border-radius:14px;padding:10px 12px;text-align:center;margin-bottom:12px}
 
+/* ---------- MORE EXAMPLES cards (maths sub-topics) ---------- */
+.mp-exwrap{display:flex;flex-direction:column;gap:12px}
+.mp-ex{background:#fff;border:2px solid #111827;border-radius:18px;box-shadow:4px 4px 0 rgba(17,24,39,1);padding:14px 14px 15px}
+.mp-ex-tag{display:inline-block;color:#fff;font-size:11.5px;font-weight:900;letter-spacing:.08em;border:2px solid #111827;border-radius:999px;padding:4px 12px;margin-bottom:9px}
+.mp-ex-q{font-size:18.5px;font-weight:900;color:#111827;line-height:1.45}
+.mp-ex-a{font-size:18px;font-weight:700;color:#166534;line-height:1.55;margin-top:7px;border-top:2px dashed #E5E7EB;padding-top:8px}
+.mp-ex-a b{font-weight:900;color:#15803D}
+
 /* ---------- LEARNING PATH (Duolingo-style vertical path) ---------- */
 /* ---------- LEARNING PATH (Duolingo-style vertical path) ---------- */
 .lp-wrap{position:relative;padding:6px 0 30px}
@@ -2517,6 +2525,227 @@ function cpaDerive(sec){
       correct_answer:correctStr,explanation:doEx.numStr+' = '+correctStr+'. Write the VALUE of each digit, not the digit itself.'}
   };
 }
+/* ---------- MORE EXAMPLES — extra worked examples for every maths
+   sub-topic, so a child who is still unsure sees the idea again in
+   new numbers. SAFETY RULE: every answer is COMPUTED in code, never
+   typed by hand, so the mathematics is always true. The numbers come
+   from a seeded generator, so a sub-topic always shows the SAME
+   examples — they never change between visits. Revision/reference
+   sections (definitions, questions, sources) are skipped. ---------- */
+function cpaHash(s){let h=1779033703;for(let i=0;i<s.length;i++){h=Math.imul(h^s.charCodeAt(i),3432918353);h=h<<13|h>>>19;}return h>>>0;}
+function cpaRng(seed){let a=cpaHash(String(seed));return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+function rni(rng,a,b){return a+Math.floor(rng()*(b-a+1));}
+function cpaDigits(rng,n){let s=String(rni(rng,1,9));for(let i=1;i<n;i++)s+=rni(rng,0,9);return Number(s);}
+const CPA_PLACES2=[['ones',1],['tens',10],['hundreds',100],['thousands',1000],['ten thousands',10000],['hundred thousands',100000],['millions',1000000]];
+function cpaPlaceAt(digitPosFromRight){return CPA_PLACES2[digitPosFromRight]||['ones',1];}
+function cpaExamplesFor(t,i,sec){
+  const title=String(sec.title||'').trim();
+  if(/^(key definitions|important facts|examination points|common mistakes|revision questions|answers to revision|p\.\s?\d|a note on sources|about this topic)/i.test(title))return [];
+  const rng=cpaRng(t.id+':'+i);
+  const T=(title+' | '+t.title).toLowerCase();
+  const ex=[];const add=(q,a)=>{if(ex.length<3)ex.push({q,a});};
+
+  if(/subset/.test(T)){
+    add('How many groups can you make from **{Mango, Orange}**?','{ }, {Mango}, {Orange}, {Mango, Orange} — that is **4 groups**.');
+    add('How many groups can you make from just **{Mango}**?','{ } and {Mango} — **2 groups**. One thing makes 2 groups!');
+    add('How many groups can you make from **{A, B, C}**?','2 × 2 × 2 = **8 groups**.');
+  }else if(/decimal/.test(T)){
+    const d=(rni(rng,1,9))+'.'+(rni(rng,1,9))+(rni(rng,0,9));
+    const first=Number(String(d).split('.')[1][0]);
+    add('In **'+d+'**, what is the value of **'+first+'**?','It is in the **tenths** place: '+first+' × 0.1 = **'+(first/10).toFixed(1)+'**.');
+    const e=rni(rng,1,9);
+    add('Write **0.'+e+'** as a fraction.','The digit '+e+' is in the tenths place, so 0.'+e+' = **'+e+'/10**.');
+  }else if(/place value|value of a digit|value of each digit|numbers up to|numerals/.test(T)){
+    const n=cpaDigits(rng,rni(rng,4,6));
+    for(let k=0;k<2;k++){
+      const pos=rni(rng,1,String(n).length-1);            /* not the leading digit */
+      const digit=Number(String(n)[String(n).length-1-pos]);
+      const pl=cpaPlaceAt(pos);
+      add('In **'+cpaFmt(n)+'**, what is the value of **'+digit+'**?','It is in the **'+pl[0]+'** place: '+digit+' × '+cpaFmt(pl[1])+' = **'+cpaFmt(digit*pl[1])+'**.');
+    }
+    const m=cpaDigits(rng,3);
+    add('Which place does the last digit of **'+cpaFmt(m)+'** hold?','The last digit is always in the **ones** place.');
+  }else if(/expand/.test(T)){
+    const a=rni(rng,2,9)*10000+rni(rng,1,9)*1000+rni(rng,1,9)*100+rni(rng,1,9)*10+rni(rng,1,9);
+    add('Expand **'+cpaFmt(a)+'**.',''+cpaFmt(Math.floor(a/10000)*10000)+' + '+cpaFmt(Math.floor(a%10000/1000)*1000)+' + '+cpaFmt(Math.floor(a%1000/100)*100)+' + '+cpaFmt(Math.floor(a%100/10)*10)+' + '+(a%10)+' = **'+cpaFmt(a)+'**.');
+    const b=rni(rng,1,9)*10000+rni(rng,1,9)*100+rni(rng,1,9);
+    add('Expand **'+cpaFmt(b)+'** (watch the empty places!).',''+cpaFmt(Math.floor(b/10000)*10000)+' + '+cpaFmt(Math.floor(b%1000/100)*100)+' + '+(b%10)+' = **'+cpaFmt(b)+'**. The empty places are held by 0.');
+  }else if(/in words|reading and writing/.test(T)){
+    add('Write **3,045** in words.','**Three thousand and forty-five.**');
+    add('Write **250,000** in words.','**Two hundred fifty thousand.**');
+  }else if(/roman/.test(T)){
+    add('Change **XIV** to our numbers.','X = 10 and IV = 4, so XIV = **14**.');
+    add('Change **25** to Roman numerals.','25 = XX + V = **XXV**.');
+    add('Change **XL** to our numbers.','XL means 50 − 10 = **40**. (X before L takes away!)');
+  }else if(/base five|binary|bases/.test(T)){
+    add('Change **23 in base five** to base ten.','2 × 5 + 3 = **13** in base ten.');
+    add('Change **1011 in base two** to base ten.','8 + 0 + 2 + 1 = **11** in base ten.');
+  }else if(/round/.test(T)){
+    const n=cpaDigits(rng,4);
+    add('Round **'+cpaFmt(n)+'** to the nearest 10.','The digit after the tens is '+(Math.floor(n/10)%10)+' — so the answer is **'+cpaFmt(Math.round(n/10)*10)+'**.');
+    add('Round **'+cpaFmt(n)+'** to the nearest 100.','Look at the tens digit — the answer is **'+cpaFmt(Math.round(n/100)*100)+'**.');
+  }else if(/clock arithmetic|modular/.test(T)){
+    add('On a 12-hour clock: **9 o\u2019clock + 6 hours**?','9 + 6 = 15, then 15 − 12 = **3 o\u2019clock**.');
+    add('On a 12-hour clock: **8 o\u2019clock + 7 hours**?','8 + 7 = 15, then 15 \u2212 12 = **3 o\u2019clock**.');
+    add('On a 12-hour clock: **11 o\u2019clock + 5 hours**?','11 + 5 = 16, then 16 \u2212 12 = **4 o\u2019clock**.');
+  }else if(/integer/.test(T)){
+    const a=rni(rng,2,9),b=rni(rng,1,8);
+    add('Put the right sign: **−'+a+' __ '+b+'**.','−'+a+' is below zero and '+b+' is above zero, so −'+a+' **<** '+b+'.');
+    add('Work out **−'+a+' + '+(a+b)+'**.','Start at −'+a+' and move '+(a+b)+' steps up: the answer is **'+b+'**.');
+    add('Work out **−'+a+' − '+b+'**.','Going down '+b+' more steps from −'+a+' gives **−'+(a+b)+'**.');
+  }else if(/fraction/.test(T)){
+    const d=rni(rng,3,9),a=rni(rng,1,d-1);
+    add('Work out **'+a+'/'+d+' + '+(d-a)+'/'+d+'**.','Same bottom number: add the tops. ('+a+' + '+(d-a)+')/'+d+' = **'+d+'/'+d+' = 1**.');
+    const w=rni(rng,2,9)*d;
+    add('Find **'+a+'/'+d+' of '+cpaFmt(w)+'**.','Divide by '+d+' then multiply by '+a+': '+cpaFmt(w)+' ÷ '+d+' = '+cpaFmt(w/d)+', and × '+a+' = **'+cpaFmt(w/d*a)+'**.');
+    add('**1/2 = ?/12**','Multiply top and bottom by 6: 1/2 = **6/12**.');
+  }else if(/ratio|proportion/.test(T)){
+    const a=rni(rng,2,5),b=rni(rng,2,6);
+    add('Simplify the ratio **'+(a*b)+':'+(b*b)+'**.','Divide both sides by '+b+': the ratio is **'+a+':'+b+'**.');
+    const total=(a+b)*rni(rng,2,5)*100;
+    add('Share **'+cpaFmt(total)+' UGX** in the ratio '+a+':'+b+'.','One part = '+cpaFmt(total/(a+b))+' UGX, so the shares are **'+cpaFmt(total/(a+b)*a)+' UGX and '+cpaFmt(total/(a+b)*b)+' UGX**.');
+  }else if(/percent/.test(T)){
+    const n=rni(rng,1,10)*200;
+    add('Find **25% of '+cpaFmt(n)+'**.','25% is one quarter: '+cpaFmt(n)+' ÷ 4 = **'+cpaFmt(n/4)+'**.');
+    const m=rni(rng,2,9)*500;
+    add('Find **10% of '+cpaFmt(m)+' UGX**.','10% is one tenth: '+cpaFmt(m)+' ÷ 10 = **'+cpaFmt(m/10)+' UGX**.');
+  }else if(/profit|loss|buying|cost|money|currency|exchange|shilling/.test(T)){
+    const cp=rni(rng,10,50)*100,sp=cp+rni(rng,2,10)*100;
+    add('A trader buys a book at **'+cpaFmt(cp)+' UGX** and sells it at **'+cpaFmt(sp)+' UGX**. Profit or loss?','Selling price is bigger, so: profit = '+cpaFmt(sp)+' − '+cpaFmt(cp)+' = **'+cpaFmt(sp-cp)+' UGX**.');
+    const q=rni(rng,2,6),p=rni(rng,5,20)*100;
+    add('Buy **'+q+' exercise books** at '+cpaFmt(p)+' UGX each.','Total = '+q+' × '+cpaFmt(p)+' = **'+cpaFmt(q*p)+' UGX**.');
+  }else if(/speed|travel|distance.?time/.test(T)){
+    const s=rni(rng,3,9)*10,h=rni(rng,2,4);
+    add('A bus travels at **'+s+' km/h** for **'+h+' hours**. How far?','Distance = speed × time = '+s+' × '+h+' = **'+(s*h)+' km**.');
+    add('A cyclist covers **'+(s*2)+' km** in **2 hours**. Speed?','Speed = distance ÷ time = '+(s*2)+' ÷ 2 = **'+s+' km/h**.');
+  }else if(/clock|duration|timetable|units of time|a\.m|24-hour|12-hour|telling time/.test(T)){
+    add('What time is **quarter past 3**?','**3:15** — a quarter of an hour is 15 minutes.');
+    add('Change **2 hours 30 minutes** to minutes.','2 × 60 + 30 = **150 minutes**.');
+    add('Change **3:00 p.m.** to 24-hour time.','Add 12 to the hours: **15 00 hours**.');
+  }else if(/mean|median|mode|average|statistic/.test(T)){
+    const m=rni(rng,2,8),d=rni(rng,2,6);
+    const nums=[m,m+d,m+2*d];
+    add('Find the **mean** of '+nums.join(', ')+'.','Add ('+nums.join(' + ')+') = '+(3*m+3*d)+', then ÷ 3 = **'+(m+d)+'**.');
+    add('Find the **range** of '+nums.join(', ')+'.','Biggest − smallest = '+nums[2]+' − '+nums[0]+' = **'+(nums[2]-nums[0])+'**.');
+  }else if(/perimeter|area|circumference|volume|capacity/.test(T)){
+    const l=rni(rng,4,12),w=rni(rng,2,l-1);
+    add('A rectangle is **'+l+' cm by '+w+' cm**. Find its perimeter.','P = 2 × ('+l+' + '+w+') = 2 × '+(l+w)+' = **'+(2*(l+w))+' cm**.');
+    add('Now find its **area**.','A = '+l+' × '+w+' = **'+(l*w)+' cm²**.');
+    const s=rni(rng,3,9);
+    add('A cube has edges of **'+s+' cm**. Its volume?','V = '+s+' × '+s+' × '+s+' = **'+(s*s*s)+' cm³**.');
+  }else if(/square/.test(T)){
+    const s=rni(rng,4,15);
+    add('Work out **'+s+'²**.',''+s+' × '+s+' = **'+(s*s)+'**.');
+    const r=rni(rng,4,13);
+    add('Find **√'+(r*r)+'**.','Which number times itself gives '+(r*r)+'? '+r+' × '+r+' = '+(r*r)+', so √'+(r*r)+' = **'+r+'**.');
+  }else if(/divisib/.test(T)){
+    add('Is **360** divisible by 2, 3 and 5?','Ends in 0 → divisible by **2** and **5**. Digits 3+6+0 = 9 (divisible by 3) → divisible by **3** too.');
+    const n=rni(rng,2,9)*100+rni(rng,1,9)*10+5;
+    add('Is **'+n+'** divisible by 5?','It ends in **5**, so **yes** — every number ending in 0 or 5 is divisible by 5.');
+  }else if(/factor|multiple|g\.?c\.?f|l\.?c\.?m/.test(T)){
+    add('List the **factors of 12**.','**1, 2, 3, 4, 6, 12** — they divide 12 exactly.');
+    add('List the first five **multiples of 4**.','**4, 8, 12, 16, 20**.');
+    add('Find the **G.C.F. of 12 and 18**.','Common factors: 1, 2, 3, 6. The greatest is **6**.');
+  }else if(/prime/.test(T)){
+    add('Is **17** a prime number?','**Yes** — only 1 and 17 divide it exactly.');
+    add('Is **15** a prime number?','**No** — 15 = 3 × 5, so it is composite.');
+  }else if(/types of numbers|whole number|number line/.test(T)){
+    add('Which is bigger: **4,050 or 4,500**?','Compare digit by digit — **4,500** is bigger.');
+    add('What is the smallest **whole number**?','**0** — we start counting whole numbers from zero.');
+  }else if(/pattern|sequence/.test(T)){
+    const s=rni(rng,2,6),d=rni(rng,2,5);
+    const a=s,b=s+d,c=s+2*d,e=s+3*d;
+    add('Find the next number: **'+a+', '+b+', '+c+', '+e+', …**','Each time we add '+d+': the next number is **'+(e+d)+'**.');
+    const s2=rni(rng,40,90),d2=rni(rng,3,7);
+    add('Find the next number: **'+s2+', '+(s2-d2)+', '+(s2-2*d2)+', '+(s2-3*d2)+', …**','Each time we take away '+d2+': the next number is **'+(s2-4*d2)+'**.');
+    add('A pattern adds **'+d+'** each time and starts at '+a+'. What is the 4th number?',''+a+', '+(a+d)+', '+(a+2*d)+' — so the 4th number is **'+(a+3*d)+'**.');
+  }else if(/standard form|indices|prime factorisation/.test(T)){
+    add('Write **34,000** in standard form.','**3.4 × 10⁴** — move the decimal point 4 places.');
+    add('Work out **10⁵**.','1 followed by 5 zeros = **100,000**.');
+    add('Write **12** as a product of prime factors.','12 = 2 × 2 × 3 = **2² × 3**.');
+  }else if(/pythagoras/.test(T)){
+    add('A right triangle has shorter sides **3 cm and 4 cm**. Find the longest side.','3² + 4² = 9 + 16 = 25, so the hypotenuse = √25 = **5 cm**.');
+    add('Shorter sides **6 cm and 8 cm** — find the hypotenuse.','6² + 8² = 36 + 64 = 100, so the hypotenuse = √100 = **10 cm**.');
+    add('Shorter sides **9 cm and 12 cm** — find the hypotenuse.','9² + 12² = 81 + 144 = 225, so the hypotenuse = √225 = **15 cm**.');
+  }else if(/bearing|scale/.test(T)){
+    add('What are the four main **bearings**?','North = **000°**, East = **090°**, South = **180°**, West = **270°**.');
+    add('What is the bearing of **North-East**?','Half-way between North (000°) and East (090°): **045°**.');
+    add('What is the bearing of **South-West**?','Half-way between South (180°) and West (270°): **225°**.');
+  }else if(/angle|line|polygon|construction|quadrilateral|circle|symmetry|prism|solid|hexagon/.test(T)){
+    const a=rni(rng,2,16)*10;
+    add('Two angles on a straight line: one is **'+a+'°**. Find the other.','Angles on a straight line add to 180°: 180 − '+a+' = **'+(180-a)+'°**.');
+    add('A triangle has angles **90° and 45°**. Find the third.','Angles in a triangle add to 180°: 180 − 90 − 45 = **45°**.');
+    add('How many sides has a **hexagon**, and what do its angles add to?','**6 sides**, and the angles add to **720°**.');
+  }else if(/length|mass|capacity|units and conversion|conversion/.test(T)){
+    add('Change **2 km** to metres.','1 km = 1,000 m, so 2 km = **2,000 m**.');
+    add('Change **1.5 kg** to grams.','1 kg = 1,000 g, so 1.5 kg = **1,500 g**.');
+    add('Change **500 ml** to litres.','1,000 ml = 1 litre, so 500 ml = **0.5 litres**.');
+  }else if(/algebra|equation|substitution|expression|inequal|terms/.test(T)){
+    const x=rni(rng,3,12),n=rni(rng,2,9);
+    add('Solve **x + '+n+' = '+(x+n)+'**.','Take away '+n+' from both sides: x = **'+x+'**.');
+    add('Simplify **2x + 3x**.','2 x\u2019s plus 3 x\u2019s = **5x**.');
+    const a=rni(rng,2,9),b=rni(rng,2,9);
+    add('If **a = '+a+'** and **b = '+b+'**, find a + b.','Substitute: '+a+' + '+b+' = **'+(a+b)+'**.');
+  }else if(/coordinate|ordered pair/.test(T)){
+    add('Where is the point **(3, 4)**?','Start at 0: go **3 steps right**, then **4 steps up**.');
+    add('Where is the point **(5, 2)**?','Go **5 steps right**, then **2 steps up**.');
+    add('In the point **(3, 4)**, what is the x-coordinate?','**3** — the first number always tells how far right to go.');
+  }else if(/probability/.test(T)){
+    add('A bag has **3 red** and **1 blue** ball. P(red)?','4 balls altogether, so P(red) = **3/4**.');
+    add('Tossing a coin, what is P(heads)?','One head out of 2 sides: P(heads) = **1/2**.');
+  }else if(/set|union|intersection|venn|complement/.test(T)){
+    add('A = {2, 4, 6}, B = {4, 6, 8}. Find **A ∪ B**.','Everything in both sets: **{2, 4, 6, 8}**.');
+    add('Now find **A ∩ B**.','Only what they share: **{4, 6}**.');
+    add('What is **n(A)** for A = {2, 4, 6}?','n(A) counts the members: **3**.');
+  }else if(/pie chart|bar graph|line graph|data|tabulat/.test(T)){
+    add('In a bar graph, **4 pupils** chose football and **2 chose netball**. Which bar is taller?','The football bar is taller — it is **2 times** the netball bar.');
+    add('Tally marks: ||||  ||||  |||  — how many is that?','Two fives and three = **13**.');
+  }else if(/word problem/.test(T)){
+    const p=rni(rng,3,9)*100,q=rni(rng,2,5);
+    add('A trader buys **'+q+' mangoes** at **'+p+' UGX** each. How much does he pay?',''+q+' × '+p+' = **'+cpaFmt(q*p)+' UGX**.');
+    add('A girl saves **'+p+' UGX** every week for **'+q+' weeks**. How much does she save?',''+q+' × '+p+' = **'+cpaFmt(q*p)+' UGX**.');
+    const eggs=rni(rng,3,9)*12,used=rni(rng,4,20);
+    add('A mother had **'+eggs+' eggs** and used **'+used+'**. How many remained?',''+eggs+' − '+used+' = **'+(eggs-used)+' eggs**.');
+  }else if(/bodmas|mixed operation/.test(T)){
+    add('Work out **2 + 3 × 4**.','Multiply first: 3 × 4 = 12, then 2 + 12 = **14**.');
+    add('Work out **(4 + 6) ÷ 2**.','Brackets first: 4 + 6 = 10, then 10 ÷ 2 = **5**.');
+  }else if(/division|divide/.test(T)){
+    const q=rni(rng,2,9),b=rni(rng,2,9),a=q*b;
+    add('Work out **'+a+' ÷ '+b+'**.',''+b+' × '+q+' = '+a+', so '+a+' ÷ '+b+' = **'+q+'**.');
+    const q2=rni(rng,2,9),b2=rni(rng,2,9),a2=q2*b2;
+    add('Work out **'+a2+' ÷ '+b2+'**.',''+b2+' × '+q2+' = '+a2+', so '+a2+' ÷ '+b2+' = **'+q2+'**.');
+    add('Share **'+cpaFmt(a2)+' UGX** equally among **'+b2+' children**.',''+cpaFmt(a2)+' ÷ '+b2+' = **'+cpaFmt(q2)+' UGX** each.');
+  }else if(/multiplication|multiply/.test(T)){
+    const a=rni(rng,12,49),b=rni(rng,3,9);
+    add('Work out **'+a+' × '+b+'**.',''+a+' × '+b+' = **'+cpaFmt(a*b)+'**.');
+    const a2=rni(rng,11,39),b2=rni(rng,3,9);
+    add('Work out **'+a2+' × '+b2+'**.',''+a2+' × '+b2+' = **'+cpaFmt(a2*b2)+'**.');
+  }else if(/subtraction|subtract/.test(T)){
+    const a=cpaDigits(rng,4),b=Math.floor(a/2);
+    add('Work out **'+cpaFmt(a)+' − '+cpaFmt(b)+'**.',''+cpaFmt(a)+' − '+cpaFmt(b)+' = **'+cpaFmt(a-b)+'**.');
+    const a2=cpaDigits(rng,4),b2=Math.floor(a2/3);
+    add('Work out **'+cpaFmt(a2)+' − '+cpaFmt(b2)+'**.',''+cpaFmt(a2)+' − '+cpaFmt(b2)+' = **'+cpaFmt(a2-b2)+'**.');
+  }else if(/addition|adding|add /.test(T)){
+    const a=cpaDigits(rng,4),b=cpaDigits(rng,3);
+    add('Work out **'+cpaFmt(a)+' + '+cpaFmt(b)+'**.',''+cpaFmt(a)+' + '+cpaFmt(b)+' = **'+cpaFmt(a+b)+'**.');
+    const a2=cpaDigits(rng,5),b2=cpaDigits(rng,4);
+    add('Work out **'+cpaFmt(a2)+' + '+cpaFmt(b2)+'**.',''+cpaFmt(a2)+' + '+cpaFmt(b2)+' = **'+cpaFmt(a2+b2)+'**.');
+  }
+  return ex;
+}
+function cpaExamplesHTML(t,i,sec){
+  const ex=cpaExamplesFor(t,i,sec);
+  if(!ex.length)return '';
+  const cols=['#2563EB','#EA580C','#16A34A','#7C3AED','#DB2777'];
+  return `<div class="mp-sec">\u{270F}\u{FE0F} MORE EXAMPLES<i></i></div>
+    <div class="mp-exwrap">${ex.map((e,k)=>`
+      <div class="mp-ex">
+        <span class="mp-ex-tag" style="background:${cols[k%cols.length]}">EXAMPLE ${k+1}</span>
+        <div class="mp-ex-q">${nMd(e.q)}</div>
+        <div class="mp-ex-a">${nMd(e.a)}</div>
+      </div>`).join('')}</div>`;
+}
+
 function cpaSaved(key){try{return (JSON.parse(localStorage.getItem(CPA_KEY)||'{}')[key])||0;}catch(e){return 0;}}
 function cpaSaveStep(key,step){
   try{
@@ -2842,6 +3071,7 @@ function mathSinglePage(t,i,sec){
       <div class="mp-card">${cpaTouchHTML(c)}</div>`:''}
       ${hasDo?`<div class="mp-sec">\u{270F}\u{FE0F} DO IT<i></i></div>
       <div class="mp-card">${cpaDoHTML(c,!touchOK)}</div>`:''}
+      ${cpaExamplesHTML(t,i,sec)}
       <button class="cpa-next" ${doRight?'':'disabled'} onclick="cpaComplete()">${doRight?'\u{1F389} MARK COMPLETE \u25B6':'\u{1F512} Answer the question above to finish'}</button>`;
   }else{
     /* a maths section without interactive data: one simple readable page */
@@ -2849,6 +3079,7 @@ function mathSinglePage(t,i,sec){
       ${(sec.blocks||[]).map(noteBlock).join('')}
     </div>
     ${diagramHTML(t.id,sec.title)}
+    ${cpaExamplesHTML(t,i,sec)}
     <button class="cpa-next" onclick="lpComplete()">\u2713 MARK AS COMPLETE \u{2192}</button>`;
   }
 
