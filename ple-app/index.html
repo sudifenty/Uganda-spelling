@@ -527,9 +527,13 @@ p{margin:0}
 .ex-qtext{font-size:15.5px;line-height:1.55;color:var(--navy);font-weight:600}
 .ex-lab{display:block;font-size:12px;font-weight:900;color:var(--muted);
   text-transform:uppercase;letter-spacing:.5px;margin:12px 0 6px}
-.ex-area{width:100%;border:1.5px solid var(--line);border-radius:var(--r-md);
-  padding:12px 13px;font:inherit;font-size:15px;color:var(--navy);background:#fff;
-  min-height:74px;resize:vertical;line-height:1.6}
+.ex-area{width:100%;border:2px solid #111827;border-radius:12px;
+  padding:12px 16px;font:inherit;font-size:16px;font-weight:600;color:var(--navy);background:#fff;
+  min-height:74px;resize:vertical;line-height:1.6;box-sizing:border-box}
+.ex-boxrow{display:flex;gap:8px;align-items:center;margin-bottom:10px}
+.ex-bn{background:#FFA500;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:14px;flex:none}
+.ex-binput{flex:1;min-height:52px;height:auto;padding:12px 16px;font-size:16px;font-weight:700;font-family:inherit;color:#111827;border:2px solid #111827;border-radius:12px;background:#fff;box-sizing:border-box}
+.ex-binput:focus{outline:none;border-color:#2563EB;box-shadow:0 0 0 3px #DBEAFE}
 .ex-area:focus{outline:none;border-color:var(--sky);box-shadow:0 0 0 3px var(--sky-100)}
 .ex-area.ex-big{min-height:132px}
 .ex-area.ex-work{min-height:118px;font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;font-size:14px}
@@ -5966,6 +5970,25 @@ function exLeave(){
   state.exRun = null;
   go('exTopic', false);
 }
+/* how many numbered answer boxes a written exercise needs:
+   "Give any 3..." -> 3; essay questions (explain/describe/why/how) -> 1
+   big box; otherwise the question's marks decide (2 mks -> 2 boxes) */
+function exBoxes(q){
+  const n=kexBoxCount(q);
+  if(n>1)return Math.min(n,5);
+  if(/^(explain|describe|discuss|narrate|outline|why|how)\b/i.test(String(q.q||'').trim()))return 1;
+  return Math.max(1,Math.min((q.marks||1),4));
+}
+/* per-box writing: each box keeps its own value, and the joined value
+   lands in the same field the marking already reads */
+function exWriteBox(qid,bi,v){
+  const r=state.exRun;if(!r)return;
+  r.given[qid+'__b'+bi]=v;
+  const n=parseInt(r.given[qid+'__bn']||'1',10)||1;
+  const parts=[];
+  for(let j=0;j<n;j++)parts.push(r.given[qid+'__b'+j]||'');
+  r.given[qid]=parts.filter(x=>x.trim()).join('\n');
+}
 function exWrite(qid, v){
   if(!state.exRun) return;
   state.exRun.given[qid] = v;
@@ -6146,10 +6169,23 @@ SCREENS.exDo = () => {
   ${q.working ? `<label class="ex-lab">Working</label>
     <textarea class="ex-area ex-work" id="exW" placeholder="Show your working here"
       oninput="exWrite('${q.id}__w', this.value)">${(r.given[q.id+'__w']||'').replace(/</g,'&lt;')}</textarea>` : ''}
-  <label class="ex-lab">${q.working?'Final answer':'Answer'}</label>
-  <textarea class="ex-area ${big&&!q.working?'ex-big':''}" id="exA"
-    placeholder="Write your answer here"
-    oninput="exWrite('${q.id}', this.value)">${val}</textarea>
+  <label class="ex-lab">${q.working?'Final answer':'Answer'}${exBoxes(q)>1?` \u00b7 ${exBoxes(q)} boxes (\u201c${q.marks} mks\u201d)`:''}</label>
+  ${(()=>{
+    const nb=exBoxes(q);
+    if(nb>1){
+      r.given[q.id+'__bn']=String(nb);
+      const joined=String(r.given[q.id]||'').split('\n');
+      return Array.from({length:nb},(_,bi)=>`<div class="ex-boxrow">
+        <span class="ex-bn">${bi+1}</span>
+        <input class="ex-binput" placeholder="Answer ${bi+1} of ${nb}"
+          value="${nEsc(String(r.given[q.id+'__b'+bi]!=null?r.given[q.id+'__b'+bi]:(joined[bi]||'')))}" oninput="exWriteBox('${q.id}',${bi},this.value)">
+      </div>`).join('');
+    }
+    return `<textarea class="ex-area ${big&&!q.working?'ex-big':''}" id="exA"
+      placeholder="Write your answer here"
+      oninput="exWrite('${q.id}', this.value)">${val}</textarea>`;
+  })()}
+  <div style="height:120px"></div>
   <div class="ex-grid">
     ${r.qids.map((id,i)=>`<button class="ex-dot ${i===r.i?'on':''} ${(r.given[id]||'').trim()?'fill':''}"
         onclick="exGoQ(${i})">${i+1}</button>`).join('')}
