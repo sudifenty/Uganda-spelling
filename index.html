@@ -669,6 +669,30 @@ p{margin:0}
 .kbadge{font-size:11.5px;font-weight:900;letter-spacing:.06em;color:#fff;border-radius:999px;padding:5px 12px;border:2px solid #111827}
 .kbadge.lock{background:#DC2626}
 
+/* ---------- SUB-TOPIC EXERCISE card (objective + written) ---------- */
+.kid-card.kex-card{background:#fff;border:3px solid #111827;box-shadow:6px 6px 0 rgba(17,24,39,1);padding:18px 14px 16px;text-align:left}
+.kex-head{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:6px}
+.kex-badge{background:#FFC800;border:2px solid #111827;border-radius:999px;color:#111827;font-size:13.5px;font-weight:900;letter-spacing:.03em;padding:7px 13px}
+.kex-sub{font-size:12px;font-weight:800;color:#6B7280}
+.kex-count{display:inline-block;background:#111827;color:#fff;font-size:12px;font-weight:900;border-radius:999px;padding:5px 12px;margin:6px 0 4px}
+.kex-q{margin-top:14px;border-top:2px dashed #E5E7EB;padding-top:13px}
+.kex-qt{font-size:16px;font-weight:900;color:#111827;line-height:1.45;margin-bottom:9px}
+.kex-marks{font-size:11.5px;font-weight:800;color:#9CA3AF}
+.kex-opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kex-opt{border:2px solid #111827;border-radius:12px;padding:10px 11px;font-size:14.5px;font-weight:800;color:#111827;text-align:left;background:#fff;box-shadow:2px 2px 0 rgba(17,24,39,1);line-height:1.35}
+.kex-opt:active{transform:translate(1px,1px);box-shadow:1px 1px 0 rgba(17,24,39,1)}
+.kex-opt.kex-right{background:#86EFAC}
+.kex-opt.kex-wrong{background:#FCA5A5}
+.kex-opt.kex-reveal{background:#86EFAC}
+.kex-opt:disabled{opacity:1}
+.kex-note{margin-top:7px;font-size:13px;font-weight:900;color:#B91C1C}
+.kex-input{width:100%;min-height:52px;border:2px solid #111827;border-radius:12px;padding:11px 12px;font-size:15px;font-weight:700;font-family:inherit;color:#111827;background:#F9FAFB;box-sizing:border-box}
+.kex-show{margin-top:7px;background:#111827;color:#fff;border:none;border-radius:12px;padding:8px 13px;font-size:12px;font-weight:900;letter-spacing:.04em}
+.kex-model{margin-top:9px;background:#DCFCE7;border:2px solid #16A34A;border-radius:12px;padding:11px 12px;font-size:14.5px;font-weight:700;color:#14532D;line-height:1.5;white-space:pre-line}
+.kex-finish{margin-top:16px;text-align:center}
+.kex-tick{font-size:16.5px;font-weight:900;color:#166534;line-height:1.4}
+.kex-tick.off{color:#92400E;font-size:14px}
+
 /* ---------- DEFINITION + EXAMPLES cards (big tiles, never a continuation) ---------- */
 .kid-card.kx-card{background:#fff;border:3px solid #111827;box-shadow:6px 6px 0 rgba(17,24,39,1);padding:18px 14px 16px;text-align:center}
 .kx-def{font-size:18px;font-weight:900;color:#111827;line-height:1.45;text-align:center}
@@ -2391,6 +2415,94 @@ function kidTitleFor(text,secTitle){
   const words=s.split(' ').slice(0,4).join(' ');
   return words||'';
 }
+/* ============================================================
+   SUB-TOPIC EXERCISE — every sub-topic ends with a few questions
+   (owner's rule): some objective (pick A, B, C or D) and some
+   written (type, then check the model answer). The questions are
+   REAL school-set questions already in the app, never invented:
+     - objective: the notes-practice questions, which are built from
+       these very notes in UNEB tone and tagged by topic
+     - written: first the section's own material (give any three
+       reasons... / what is...?), then the written exercises bank,
+       which was built from the notes' revision questions
+   Selection is seeded per sub-topic, so the same exercise comes
+   back every time. Revision-question sections are skipped: they
+   already are the exercise.
+   ============================================================ */
+function kidExerciseFor(t,i){
+  const sec=noteSections(t)[i];if(!sec)return null;
+  const stitle=String(sec.title||'').trim();
+  if(/^(revision questions|answers to revision|p\.\s?\d quick revision|a note on sources)/i.test(stitle))return null;
+  const rng=cpaRng(t.id+':ex'+i);
+  const qs=[];
+  /* ---- written questions from THIS section's own cards ---- */
+  const cards=kidCardsFor(t,i);
+  const groups=cards.filter(c=>c.kind==='group');
+  const defex=cards.filter(c=>c.kind==='defex');
+  const flips=cards.filter(c=>c.kind==='flip'&&c.front&&c.back);
+  const written=[];
+  if(groups.length){
+    const g=groups[0];
+    written.push({type:'written',marks:3,q:'Give any '+Math.min(3,g.items.length)+' '+String(g.header).toLowerCase().replace(/\.$/,'')+'.',
+      model:g.items.slice(0,3).map(x=>x.n+'. '+kidStrip(x.text)).join('\n')});
+  }
+  defex.slice(0,1).forEach(d=>{
+    const term=(String(d.def).split(':')[0]||d.def).replace(/\.$/,'').trim();
+    written.push({type:'written',marks:2,q:'What is '+term+'?',model:kidStrip(String(d.def))});
+  });
+  flips.slice(0,2).forEach(f=>{
+    const term=String(f.front).replace(/^What is /i,'').replace(/\?$/,'');
+    written.push({type:'written',marks:2,q:'What is '+term+'?',model:kidStrip(String(f.back)).replace(/\*\*/g,'')});
+  });
+  /* ---- objective questions from the topic's notes-practice bank ---- */
+  const meta=SUBJ_META[t.subject];
+  let bank=[];
+  try{
+    bank=((meta&&meta.bank()[t.class]||{}).questions||[])
+      .filter(q=>q.topic===t.title&&Array.isArray(q.options)&&q.options.length===4&&q.correctAnswer);
+  }catch(e){}
+  const pick=(arr,n)=>{const a=arr.slice();const out=[];while(out.length<n&&a.length)out.push(a.splice(Math.floor(rng()*a.length),1)[0]);return out;};
+  const objective=pick(bank,2).map(q=>({type:'objective',marks:1,q:q.question,
+    options:q.options.map(o=>String(o).replace(/^[A-D]\.\s*/,'')),correct:q.correctAnswer}));
+  /* ---- written fill from the exercises bank (model answers + marks) ---- */
+  let exq=[];
+  try{
+    const et=((EXERCISE_BANK[t.class]||{})[t.subject]||{topics:[]}).topics.find(x=>x.title===t.title);
+    if(et)exq=(et.questions||[]).filter(q=>q.q&&q.a);
+  }catch(e){}
+  const bankWritten=pick(exq,3).map(q=>({type:'written',marks:q.marks||2,q:q.q,model:q.a}));
+  /* ---- assemble: 2 objective + up to 3 written, 3-5 total ---- */
+  objective.slice(0,2).forEach(o=>qs.push(o));
+  const wantWritten=Math.max(2,5-qs.length);
+  written.slice(0,wantWritten).forEach(w=>qs.push(w));
+  bankWritten.forEach(w=>{if(qs.length<5)qs.push(w);});
+  while(qs.length<3&&bankWritten.length)qs.push(bankWritten.shift());
+  if(qs.length<3)return null;
+  return {title:stitle.replace(/^\d+\.\s*/,''),questions:qs.slice(0,5)};
+}
+function kexState(key){
+  if(!state.kex||state.kex.key!==key)state.kex={key:key,done:{},shown:{},texts:{}};
+  return state.kex;
+}
+function kexAnswer(qi,oi,correct){
+  const x=state.kex;if(!x)return;
+  if(x.done[qi]!=null)return;                    /* first tap counts */
+  x.done[qi]=oi;
+  afxPlay('ABCD'[oi]===correct?'correct':'wrong');
+  render();
+}
+function kexShow(qi){
+  const x=state.kex;if(!x)return;
+  x.shown[qi]=true;afxPlay('correct');render();
+}
+function kexText(qi,val){
+  const x=state.kex;if(!x)return;
+  x.texts[qi]=val;
+}
+function kexDone(x,qs){
+  return qs.every((q,i)=>q.type==='objective'?x.done[i]!=null:(x.shown[i]||String(x.texts[i]||'').trim().length>0));
+}
+
 /* ---------- Definition + EXAMPLES splitter (owner's rule, all subjects) ----------
    "Natural resource: A resource provided by nature — land, water, minerals..."
    must NOT read as one long sentence: the examples are cut out and shown as
@@ -3218,12 +3330,17 @@ SCREENS.noteSub = () => {
      subject keeps the card reader below, untouched. */
   if(t.subject==='MATH')return mathSinglePage(t,i,sec);
 
-  const cards=kidCardsFor(t,i);
+  let cards=kidCardsFor(t,i);
+  /* every sub-topic ends with a short exercise (owner's rule) */
+  const kex=kidExerciseFor(t,i);
+  if(kex)cards=cards.concat([{kind:'exercise',ex:kex}]);
   if(!state.kcards||state.kcards._for!==t.id+':'+i){
     state.kcards=cards;state.kcards._for=t.id+':'+i;state.ki=0;
   }
   const ki=state.ki||0;
-  const isLast=ki>=cards.length;
+  const hasEx=cards.length>0&&cards[cards.length-1].kind==='exercise';
+  const onEx=hasEx&&ki===cards.length-1;
+  const isLast=!hasEx&&ki>=cards.length;
   const remaining=cards.length-ki;
   const done=pathDone(t,i);
 
@@ -3275,6 +3392,45 @@ SCREENS.noteSub = () => {
       <div class="kid-actions">
         <button class="kid-listen" onclick="kidSpeak()">\u{1F50A} Listen</button>
       </div>`;
+    }else if(c.kind==='exercise'){
+      /* the sub-topic exercise: objective + written, REAL questions only */
+      const x=kexState(t.id+':'+i);
+      const ex=c.ex;
+      const answered=ex.questions.filter((q,qi)=>q.type==='objective'?x.done[qi]!=null:(x.shown[qi]||String(x.texts[qi]||'').trim().length>0)).length;
+      const allDone=answered>=ex.questions.length;
+      stage=`<div class="kid-card kex-card">
+        <div class="kex-head">
+          <span class="kex-badge">\u{1F4DD} EXERCISE</span>
+          <span class="kex-sub">Test yourself on ${nEsc(ex.title)}</span>
+        </div>
+        <div class="kex-count">${answered} of ${ex.questions.length} answered</div>
+        ${ex.questions.map((q,qi)=>{
+          if(q.type==='objective'){
+            const chosen=x.done[qi];
+            const right=q.correct;
+            return `<div class="kex-q">
+              <p class="kex-qt">${qi+1}. ${nEsc(q.q)} <span class="kex-marks">(${q.marks} mk)</span></p>
+              <div class="kex-opts">
+                ${q.options.map((o,oi)=>`<button class="kex-opt ${chosen!=null&&oi===chosen?('ABCD'[oi]===right?'kex-right':'kex-wrong'):''} ${chosen!=null&&'ABCD'[oi]===right&&oi!==chosen?'kex-reveal':''}"
+                  ${chosen!=null?'disabled':''} onclick="kexAnswer(${qi},${oi},'${right}')">${'ABCD'[oi]}. ${nEsc(o)}${chosen!=null&&'ABCD'[oi]===right?' \u2713':''}</button>`).join('')}
+              </div>
+              ${chosen!=null&&chosen!==right?`<div class="kex-note">The correct answer is ${right}.</div>`:''}
+            </div>`;
+          }
+          return `<div class="kex-q">
+            <p class="kex-qt">${qi+1}. ${nEsc(q.q)} <span class="kex-marks">(${q.marks} mks)</span></p>
+            <input class="kex-input" placeholder="Write your answer..." value="${nEsc(String(x.texts[qi]||''))}" oninput="kexText(${qi},this.value)">
+            <button class="kex-show" onclick="kexShow(${qi})">\u{1F4A1} SHOW MODEL ANSWER</button>
+            ${x.shown[qi]?`<div class="kex-model">\u2705 <b>Model answer:</b> ${nEsc(String(q.model))}</div>`:''}
+          </div>`;
+        }).join('')}
+        <div class="kex-finish ${allDone?'':'off'}">
+          ${allDone
+            ?`<div class="kex-tick">\u2705 Good job! You finished ${nEsc(ex.title)}</div>
+              <button class="cpa-next" onclick="kidFinish()">\u2713 MARK AS COMPLETE &amp; CONTINUE \u27A1</button>`
+            :`<div class="kex-tick off">\u{1F4DD} Answer all ${ex.questions.length} questions to finish \u2014 ${ex.questions.length-answered} to go</div>`}
+        </div>
+      </div>`;
     }else if(c.kind==='defex'){
       /* definition on top, black divider, EXAMPLES: badge, then BIG bold tiles */
       stage=`<div class="kid-card kx-card">
@@ -3317,7 +3473,9 @@ SCREENS.noteSub = () => {
   }
 
   const gc=cards[ki]&&cards[ki].kind==='group'?cards[ki]:null;
-  const encourage=gc
+  const encourage=onEx
+    ?'\u{1F4DD} Last step \u2014 test yourself!'
+    :gc
     ?`${gc.parts>1?`Part ${gc.part} of ${gc.parts} \u00b7 `:''}${nEsc(gc.header)}`
     :ki===0?'Let\u2019s start! \u{1F680}'
     :isLast?'All done! \u{1F389}'
@@ -3336,7 +3494,7 @@ SCREENS.noteSub = () => {
       ${prog}
       ${stage}
     </div>
-    ${!isLast?`<button class="kid-next" onclick="kidNext()">Next \u27A1</button>`:''}
+    ${!isLast&&!onEx?`<button class="kid-next" onclick="kidNext()">Next \u27A1</button>`:''}
     ${ki>0?`<button style="position:fixed;left:16px;bottom:calc(var(--nav-h) + 16px);z-index:30;background:#fff;border:2px solid #DBEAFE;border-radius:999px;padding:14px 20px;font-size:15px;font-weight:900;color:#2D4159" onclick="kidPrev()">\u2190 Back</button>`:''}
   </div>`;
 };
