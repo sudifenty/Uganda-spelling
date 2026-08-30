@@ -659,7 +659,7 @@ p{margin:0}
 .kid-flip-back{transform:rotateY(180deg);background:#FFF7ED;border-color:#FED7AA}
 .kid-flip-kind{display:inline-block;font-size:10.5px;font-weight:900;letter-spacing:.12em;border-radius:999px;padding:4px 11px;margin-bottom:8px;background:#DBEAFE;color:#1E40AF;border:2px solid #1E40AF}
 .kid-flip-kind.role{background:#FEF3C7;color:#92400E;border-color:#92400E}
-.kid-flip-kind.ctx{background:#DBEAFE;color:#1E40AF;border-color:#1E40AF;font-size:9.5px;letter-spacing:.06em;line-height:1.5;max-width:92%;text-transform:uppercase}
+.kid-flip-kind.ctx{background:#DBEAFE;color:#1E40AF;border-color:#1E40AF;font-size:11px;letter-spacing:.07em;line-height:1.4}
 .kid-flip-hint{font-size:13px;color:#94A3B8;font-weight:800;margin-top:14px;letter-spacing:.04em;text-transform:uppercase}
 .kid-celebration{width:100%;max-width:480px;background:#fff;border-radius:28px;border:2px solid #BBF7D0;padding:34px 24px;text-align:center;box-shadow:0 8px 30px rgba(34,197,94,.12)}
 .kid-celebration h2{font-size:28px;font-weight:900;color:#166534}
@@ -2643,15 +2643,19 @@ function kidFlipKind(head2,headRaw,term,mean,head0,subj){
   const ATTR_TERM=/^(headquarters|place|host|membership|secretariat|secretary-general|first secretary-general|date formed|year formed|year it collapsed|founder countries|founder members|personalities involved|special note|main meeting|capital city|capital|currency|area|population|size|formula)$/i.test(term.replace(/\*+/g,'').trim());
   if(FACTHead&&ATTR_TERM&&subj){
     const aq=kidAttrQuestion(term,subj,mean);
-    return {q:aq.q,back:aq.a,role:false,attr:true};
+    /* tiles: sentence intro + big bold tiles; plain answers stay sentences */
+    return {q:aq.q,back:aq.a||aq.text,role:false,attr:true,badge:aq.badge,tiles:aq.tiles||null};
   }
   /* FACTOR tables: "How does rainfall affect the climate of Uganda?" */
   const fm=String(subj||'').match(/factors?\s+(?:that\s+|which\s+)?(?:influence|influencing|affect(?:ing)?)\s+(.+)/i);
   if(fm&&/^(factor|cause|reason)s?$/i.test(String(head0||'').trim())){
-    const thing=fm[1].replace(/\.$/,'').trim();
+    const thingRaw=fm[1].replace(/\.$/,'').trim();
+    /* mid-sentence: lowercase the first word unless it is a proper noun (Uganda stays capital) */
+    const thing=thingRaw.replace(/^([A-Z][a-z])/,m=>m.toLowerCase());
     const factor=term.replace(/\*+/g,'').trim().toLowerCase();
-    if(/why it attracts/.test(head2))return{q:`Why does ${factor} attract people to settle?`,back:mean,role:true,attr:false};
-    return{q:`How does ${factor} affect ${thing}?`,back:mean,role:true,attr:false};
+    const doVerb=/[^s]s$/.test(factor)?'do':'does';
+    if(/why it attracts/.test(head2))return{q:`Why ${doVerb} ${factor} attract people to settle?`,back:mean,role:true,attr:false};
+    return{q:`How ${doVerb} ${factor} affect ${thing}?`,back:mean,role:true,attr:false};
   }
   const was=/\bdid\b/.test(head2)||KID_PAST_V.test(m)||/^its role was/i.test(m)||/\bwas\b/.test(m.slice(0,26));
   let role=false,q='What is '+term+'?',back=mean;
@@ -2697,23 +2701,31 @@ function kidAttrQuestion(term,subj,answer){
   const t=String(term).toLowerCase().replace(/\*+/g,'').trim();
   const A=String(answer).replace(/\*+/g,'').trim().replace(/\.$/,'');
   const the='the '+short;
-  if(/headquarters/.test(t))return{q:`Where ${was} the headquarters of ${the} located?`,a:`The headquarters of ${the} ${was} located in ${A}.`};
-  if(/^(date|year) (it was )?formed|^(date|year) of (formation|founding)/.test(t))return{q:`When ${was} ${the} formed?`,a:`${The} ${was} formed in ${A}.`};
-  if(/year it collapsed|year of collapse/.test(t))return{q:`When did ${the} collapse?`,a:`${The} collapsed in ${A}.`};
-  if(/founder countries/.test(t))return{q:`Which countries founded ${the}?`,a:`The founder countries of ${the} ${were} ${A}.`};
-  if(/founder members/.test(t))return{q:`Who ${were} the founder members of ${the}?`,a:`The founder members of ${the} ${were} ${A}.`};
-  if(/personalities involved/.test(t))return{q:`Who ${were} the personalities involved in ${the}?`,a:`The personalities involved in ${the} ${were} ${A}.`};
-  if(/^place$|^place formed|where it was formed/.test(t))return{q:`Where ${was} ${the} founded?`,a:`${The} ${was} founded at ${A}.`};
-  if(/^host$/.test(t))return{q:`Who hosted the formation of ${the}?`,a:`The formation of ${The} ${was} hosted by ${A}.`};
-  if(/first secretary-general|secretary-general$/.test(t))return{q:`Who ${was} the ${term.replace(/\*+/g,'').trim()} of ${the}?`,a:`The ${term.replace(/\*+/g,'').trim()} of ${The} ${was} ${A}.`};
-  if(/membership|members$/.test(t))return{q:`How many members ${past?'did':'does'} ${the} have?`,a:`${The} ${has} ${A}.`};
+  /* big bold tiles for list answers (founder countries with flags) */
+  const KID_FLAGS={uganda:'\u{1F1FA}\u{1F1EC}',kenya:'\u{1F1F0}\u{1F1EA}',tanzania:'\u{1F1F9}\u{1F1FF}',rwanda:'\u{1F1F7}\u{1F1FC}',burundi:'\u{1F1E7}\u{1F1EE}','d.r. congo':'\u{1F1E8}\u{1F1E9}','dr congo':'\u{1F1E8}\u{1F1E9}',congo:'\u{1F1E8}\u{1F1E9}','south sudan':'\u{1F1F8}\u{1F1F8}',sudan:'\u{1F1F8}\u{1F1E9}',ethiopia:'\u{1F1EA}\u{1F1EA}',somalia:'\u{1F1F8}\u{1F1F4}'};
+  const listTiles=(txt)=>{
+    const items=String(txt).split(/,|\sand\s/i).map(x=>x.replace(/\*+/g,'').trim()).filter(Boolean);
+    if(items.length<2||items.length>6)return null;
+    if(items.some(it=>it.split(' ').length>4||it.length>26))return null;
+    return items.map(it=>({txt:it,emoji:KID_FLAGS[it.toLowerCase()]||kidEmoji(it)}));
+  };
+  if(/headquarters/.test(t))return{q:`Where ${was} the headquarters of ${the} located?`,a:`The headquarters of ${the} ${was} located in ${A}.`,badge:'\u{1F4CD} HEADQUARTERS - LOCATION'};
+  if(/^(date|year) (it was )?formed|^(date|year) of (formation|founding)/.test(t))return{q:`When ${was} ${the} formed?`,a:`${The} ${was} formed in ${A}.`,badge:'\u{1F4C5} YEAR OF FORMATION - DATE'};
+  if(/year it collapsed|year of collapse/.test(t))return{q:`When did ${the} collapse?`,a:`${The} collapsed in ${A}.`,badge:'\u{1F4C5} YEAR OF COLLAPSE - DATE'};
+  if(/founder countries/.test(t)){const tl=listTiles(A);return{q:`Which countries founded ${the}?`,a:tl?`The founder countries of ${the} ${were}:`:null,tiles:tl,text:tl?null:`The founder countries of ${the} ${were} ${A}.`,badge:'\u{1F30D} FOUNDER COUNTRIES'};}
+  if(/founder members/.test(t)){const tl=listTiles(A);return{q:`Who ${were} the founder members of ${the}?`,a:tl?`The founder members of ${the} ${were}:`:null,tiles:tl,text:tl?null:`The founder members of ${the} ${were} ${A}.`,badge:'\u{1F30D} FOUNDER MEMBERS'};}
+  if(/personalities involved/.test(t))return{q:`Who ${were} the personalities involved in ${the}?`,a:`The personalities involved in ${the} ${were} ${A}.`,badge:'\u{1F465} PERSONALITIES INVOLVED - PEOPLE'};
+  if(/^place$|^place formed|where it was formed/.test(t))return{q:`Where ${was} ${the} founded?`,a:`${The} ${was} founded at ${A}.`,badge:'\u{1F3DB}\u{FE0F} PLACE OF FORMATION - LOCATION'};
+  if(/^host$/.test(t))return{q:`Who hosted the formation of ${the}?`,a:`The formation of ${The} ${was} hosted by ${A}.`,badge:'\u{1F451} HOST - PEOPLE'};
+  if(/first secretary-general|secretary-general$/.test(t))return{q:`Who ${was} the ${term.replace(/\*+/g,'').trim()} of ${the}?`,a:`The ${term.replace(/\*+/g,'').trim()} of ${The} ${was} ${A}.`,badge:'\u{1F4BC} SECRETARY-GENERAL - PEOPLE'};
+  if(/membership|members$/.test(t))return{q:`How many members ${past?'did':'does'} ${the} have?`,a:`${The} ${has} ${A}.`,badge:'\u{1F522} MEMBERSHIP - NUMBER'};
   if(/head of the/.test(t))return{q:`Who ${was} the ${term.replace(/\*+/g,'').trim()}?`,a:`The ${term.replace(/\*+/g,'').trim()} ${was} ${A}.`};
-  if(/secretariat/.test(t))return{q:`Where ${was} the secretariat of ${the}?`,a:`The secretariat of ${The} ${was} at ${A}.`};
-  if(/main meeting/.test(t))return{q:`What ${was} the main meeting of ${the}?`,a:`The main meeting of ${The} ${was} ${A}.`};
-  if(/special note/.test(t))return{q:`What ${was} special about ${the}?`,a:`${A}.`};
+  if(/secretariat/.test(t))return{q:`Where ${was} the secretariat of ${the}?`,a:`The secretariat of ${The} ${was} at ${A}.`,badge:'\u{1F3E2} SECRETARIAT - LOCATION'};
+  if(/main meeting/.test(t))return{q:`What ${was} the main meeting of ${the}?`,a:`The main meeting of ${The} ${was} ${A}.`,badge:'\u{1F91D} MAIN MEETING'};
+  if(/special note/.test(t))return{q:`What ${was} special about ${the}?`,a:`${A}.`,badge:'\u{2B50} SPECIAL NOTE'};
   if(/capital( city)?$/.test(t))return{q:`What ${was} the capital city of ${the}?`,a:`The capital city of ${The} ${was} ${A}.`};
   /* generic fact: keep the attribute but name the subject */
-  return{q:`What ${was} the ${t} of ${the}?`,a:`The ${t} of ${The} ${was} ${A}.`};
+  return{q:`What ${was} the ${t} of ${the}?`,a:`The ${t} of ${The} ${was} ${A}.`,badge:'\u{1F4CC} '+String(term).replace(/\*+/g,'').trim().toUpperCase()};
 }
 
 /* the bare term from any flip question, whatever its question word */
@@ -2790,7 +2802,7 @@ function kidCardsFor(t,i){
         if(term&&mean&&(mean.split(' ').length>=2||(isFactTable&&mean.length>=2))){
           /* the question word follows the column's meaning — role answers never hide behind "What is" */
           const kind=kidFlipKind(String(b.head[1]||'').toLowerCase(),b.head[1],term,mean,b.head[0],kidSubject(sec));
-          cards.push({kind:'flip',role:kind.role,attr:kind.attr,ctx:kind.attr?kidSubject(sec):null,emoji:kidEmoji(term+' '+kidStrip(mean)),front:kind.q,back:kind.back,backEx:kidSplitDefEx(mean)});
+          cards.push({kind:'flip',role:kind.role,attr:kind.attr,badge:kind.badge||null,tiles:kind.tiles||null,emoji:kidEmoji(term+' '+kidStrip(mean)),front:kind.q,back:kind.back,backEx:kidSplitDefEx(mean)});
         }
       });
     }
@@ -2809,7 +2821,7 @@ function kidSpeak(){
      reading page — it finds nothing to read on the card screen and stayed
      silent, so the Listen button did nothing at all. */
   let text;
-  if(c.kind==='flip'){ text=String(c.front+' '+c.back).replace(/\*\*/g,''); }
+  if(c.kind==='flip'){ text=String(c.front+' '+c.back+(c.tiles&&c.tiles.length?' '+c.tiles.map(x=>x.txt).join(', '):'')).replace(/\*\*/g,''); }
   else if(c.kind==='group'){ text=String(c.header+'. '+c.items.map(it=>it.n+'. '+it.text).join('. ')).replace(/\*\*/g,''); }
   else if(c.kind==='defex'){ text=String(c.def+'. Examples: '+c.examples.map(x=>x.txt).join(', ')).replace(/\*\*/g,''); }
   else{ text=String((c.title?c.title+'. ':'')+c.text).replace(/\*\*/g,''); }
@@ -3576,13 +3588,18 @@ SCREENS.noteSub = () => {
         <div class="kid-flip-inner">
           <div class="kid-flip-face">
             <div class="kid-emoji">${c.emoji}</div>
-            ${c.attr?`<div class="kid-flip-kind ctx">\u{1F4CD} ${nEsc(String(c.ctx).toUpperCase())} \u00b7 ${nEsc(kidFlipTerm(c.front).toUpperCase())}</div>`:`<div class="kid-flip-kind ${c.role?'role':''}">${c.role?'\u{1F527} ROLE':'\u{1F4D6} DEFINITION'}</div>`}
+            ${c.attr&&c.badge?`<div class="kid-flip-kind ctx">${nEsc(c.badge)}</div>`:`<div class="kid-flip-kind ${c.role?'role':''}">${c.role?'\u{1F527} ROLE':'\u{1F4D6} DEFINITION'}</div>`}
             <div class="kid-title">${nEsc(c.front)}</div>
             <div class="kid-flip-hint">\u{1F446} Tap me!</div>
           </div>
           <div class="kid-flip-face kid-flip-back">
             <div class="kid-emoji">${c.emoji}</div>
             <div class="kid-text" style="font-size:22px;font-weight:800;color:#1E3A5F">${nMd(c.back)}</div>
+            ${c.tiles&&c.tiles.length?`<div class="kx-grid" style="margin-top:14px">
+              ${c.tiles.map((x,j)=>`<div class="kx-tile" style="background:${KX_COLS[j%KX_COLS.length]}">
+                <span class="kx-emo">${x.emoji}</span><span class="kx-word">${nEsc(x.txt)}</span>
+              </div>`).join('')}
+            </div>`:''}
             ${c.backEx?`<div class="kx-div" style="width:60%;margin:12px auto 4px"></div><span class="kx-label" style="margin-top:6px">EXAMPLES:</span>
               <div class="kx-grid" style="margin-top:8px">
                 ${c.backEx.examples.map((x,j)=>`<div class="kx-tile" style="background:${KX_COLS[j%KX_COLS.length]}">
