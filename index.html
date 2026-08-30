@@ -664,6 +664,16 @@ p{margin:0}
 .kid-flip-kind{display:inline-block;font-size:10.5px;font-weight:900;letter-spacing:.12em;border-radius:999px;padding:4px 11px;margin-bottom:8px;background:#DBEAFE;color:#1E40AF;border:2px solid #1E40AF}
 .kid-flip-kind.role{background:#FEF3C7;color:#92400E;border-color:#92400E}
 .kid-flip-kind.ctx{background:#DBEAFE;color:#1E40AF;border-color:#1E40AF;font-size:11px;letter-spacing:.07em;line-height:1.4}
+/* ---------- formatted answers: stacked flag list + place pill ---------- */
+.ans-intro{font-size:15.5px;font-weight:800;color:#334155;line-height:1.45;margin-bottom:4px;text-align:center}
+.ans-list{display:flex;flex-direction:column;gap:9px;width:100%;margin-top:8px}
+.ans-item{display:flex;align-items:center;gap:8px;background:#fff;border:2px solid #111827;border-radius:12px;padding:10px 13px;box-shadow:3px 3px 0 rgba(17,24,39,1);text-align:left;min-width:0}
+.ans-flag{font-size:21px;flex:none;line-height:1}
+.ans-name{font-size:16px;font-weight:900;color:#111827;min-width:0}
+.ans-dash{color:#9CA3AF;font-weight:700;flex:none}
+.ans-country{font-size:14.5px;font-weight:800;color:#475569;flex:none}
+.ans-loc{display:inline-flex;align-items:center;gap:9px;background:#fff;border:2.5px solid #111827;border-radius:16px;padding:14px 20px;box-shadow:4px 4px 0 rgba(17,24,39,1);font-size:21px;font-weight:900;color:#111827;margin-top:6px}
+.ans-loc b{font-weight:900}
 .kid-flip-hint{font-size:13px;color:#94A3B8;font-weight:800;margin-top:14px;letter-spacing:.04em;text-transform:uppercase}
 .kid-celebration{width:100%;max-width:480px;background:#fff;border-radius:28px;border:2px solid #BBF7D0;padding:34px 24px;text-align:center;box-shadow:0 8px 30px rgba(34,197,94,.12)}
 .kid-celebration h2{font-size:28px;font-weight:900;color:#166534}
@@ -2703,7 +2713,6 @@ function kidAttrQuestion(term,subj,answer){
   const A=String(answer).replace(/\*+/g,'').trim().replace(/\.$/,'');
   const the='the '+short;
   /* big bold tiles for list answers (founder countries with flags) */
-  const KID_FLAGS={uganda:'\u{1F1FA}\u{1F1EC}',kenya:'\u{1F1F0}\u{1F1EA}',tanzania:'\u{1F1F9}\u{1F1FF}',rwanda:'\u{1F1F7}\u{1F1FC}',burundi:'\u{1F1E7}\u{1F1EE}','d.r. congo':'\u{1F1E8}\u{1F1E9}','dr congo':'\u{1F1E8}\u{1F1E9}',congo:'\u{1F1E8}\u{1F1E9}','south sudan':'\u{1F1F8}\u{1F1F8}',sudan:'\u{1F1F8}\u{1F1E9}',ethiopia:'\u{1F1EA}\u{1F1EA}',somalia:'\u{1F1F8}\u{1F1F4}'};
   const listTiles=(txt)=>{
     const items=String(txt).split(/,|\sand\s/i).map(x=>x.replace(/\*+/g,'').trim()).filter(Boolean);
     if(items.length<2||items.length>6)return null;
@@ -2727,6 +2736,56 @@ function kidAttrQuestion(term,subj,answer){
   if(/capital( city)?$/.test(t))return{q:`What ${was} the capital city of ${the}?`,a:`The capital city of ${The} ${was} ${A}.`};
   /* generic fact: keep the attribute but name the subject */
   return{q:`What ${was} the ${t} of ${the}?`,a:`The ${t} of ${The} ${was} ${A}.`,badge:'\u{1F4CC} '+String(term).replace(/\*+/g,'').trim().toUpperCase()};
+}
+
+const KID_FLAGS={uganda:'\u{1F1FA}\u{1F1EC}',kenya:'\u{1F1F0}\u{1F1EA}',tanzania:'\u{1F1F9}\u{1F1FF}',rwanda:'\u{1F1F7}\u{1F1FC}',burundi:'\u{1F1E7}\u{1F1EE}','d.r. congo':'\u{1F1E8}\u{1F1E9}','dr congo':'\u{1F1E8}\u{1F1E9}',congo:'\u{1F1E8}\u{1F1E9}','south sudan':'\u{1F1F8}\u{1F1F8}',sudan:'\u{1F1F8}\u{1F1E9}',ethiopia:'\u{1F1EA}\u{1F1EA}',somalia:'\u{1F1F8}\u{1F1F4}',ethiopia:'\u{1F1EA}\u{1F1EA}'};
+
+/* ---------- Answer formatter (display only — the notes text is never changed) ----------
+   Comma answers are hard to read: "Milton Obote (Uganda), Jomo Kenyatta
+   (Kenya), Julius Nyerere (Tanzania)." becomes a stacked list with flags,
+   and "was located in Arusha, Tanzania." becomes one big bold place pill. */
+function kidAnswerList(back){
+  const s=String(back).replace(/\*\*/g,'').replace(/\s+/g,' ').trim();
+  const m=s.match(/^(.*?)\b(were|are|was|is|:)\s+(.+)$/i);
+  if(!m)return null;
+  const intro=m[1].trim()+' '+m[2].toLowerCase()+':';
+  const listPart=m[3].replace(/[.:]$/,'').trim();
+  const items=listPart.split(/\s*,\s*|\s+and\s+/i).map(x=>x.trim()).filter(Boolean);
+  if(items.length<2||items.length>6)return null;
+  const parsed=items.map(it=>{
+    const pm=it.match(/\(([^)]+)\)\s*$/);          /* "Milton Obote (Uganda)" */
+    if(!pm)return null;
+    const country=pm[1].trim(),name=it.replace(/\s*\([^)]+\)\s*$/,'').trim();
+    return (name&&country&&country.split(' ').length<=4)?{name:name,country:country}:null;
+  });
+  if(parsed.some(p=>!p))return null;               /* every item must be Name (Place) */
+  return {intro:intro,items:parsed};
+}
+function kidAnswerHTML(c){
+  const back=String(c.back||'');
+  /* one big place pill: "was located in Arusha, Tanzania." */
+  const lm=back.replace(/\*\*/g,'').match(/(?:was|is) (?:located )?in ([^.]{3,42})\.?$|(?:was|is) at ([^.]{3,42})\.?$/);
+  if(lm){
+    const place=(lm[1]||lm[2]).trim();
+    const words=place.split(/\s+/);
+    const country=words.length>1?words[words.length-1].replace(/[.,]/g,''):'';
+    const flag=KID_FLAGS&&KID_FLAGS[country.toLowerCase()]||'';
+    return `<div class="ans-loc">\u{1F4CD} <b>${nEsc(place)}</b>${flag?' '+flag:''}</div>`;
+  }
+  /* stacked list with flags: "were Milton Obote (Uganda), Jomo Kenyatta (Kenya)..." */
+  const al=kidAnswerList(back);
+  if(al){
+    return `<div class="ans-intro">${nEsc(al.intro)}</div>
+      <div class="ans-list">
+        ${al.items.map(it=>`<div class="ans-item">
+          <span class="ans-flag">${KID_FLAGS&&KID_FLAGS[it.country.toLowerCase()]||'\u{1F310}'}</span>
+          <span class="ans-name">${nEsc(it.name)}</span>
+          <span class="ans-dash">\u2014</span>
+          <span class="ans-country">${nEsc(it.country)}</span>
+        </div>`).join('')}
+      </div>`;
+  }
+  return `<div class="kid-text" style="font-size:22px;font-weight:800;color:#1E3A5F">${nMd(back)}</div>`;
 }
 
 /* the bare term from any flip question, whatever its question word */
@@ -3598,7 +3657,7 @@ SCREENS.noteSub = () => {
           </div>
           <div class="kid-flip-face kid-flip-back">
             <div class="kid-emoji">${c.emoji}</div>
-            <div class="kid-text" style="font-size:22px;font-weight:800;color:#1E3A5F">${nMd(c.back)}</div>
+            ${kidAnswerHTML(c)}
             ${c.tiles&&c.tiles.length?`<div class="kx-grid" style="margin-top:14px">
               ${c.tiles.map((x,j)=>`<div class="kx-tile" style="background:${KX_COLS[j%KX_COLS.length]}">
                 <span class="kx-emo">${x.emoji}</span><span class="kx-word">${nEsc(x.txt)}</span>

@@ -18,7 +18,7 @@
      • only caches whose names start with 'smart-ple-' are ever
        deleted, so other applications are never affected
    ============================================================ */
-const VERSION = 'b879e3dffe7e';
+const VERSION = '037b7f6fb6fd';
 const CACHE = 'smart-ple-' + VERSION;
 
 self.addEventListener('install', (e) => {
