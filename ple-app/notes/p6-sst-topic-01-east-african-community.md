@@ -39,7 +39,7 @@ Burundi are now counted as part of East Africa**.
 | Personalities involved | **Milton Obote** (Uganda), **Jomo Kenyatta** (Kenya), **Julius Nyerere** (Tanzania) |
 | Year it collapsed | **1977** |
 
-### Objectives of the old EAC
+### Reasons why the old East African Community was created
 
 - To promote **cooperation** among the member states.
 - To run **common services** together and save money.

@@ -3,7 +3,7 @@
  "subject": "SST",
  "subject_name": "Social Studies",
  "total": 5,
- "words": 14317,
+ "words": 14321,
  "topics": [
   {
    "id": "P6_SST_T01",
@@ -15,7 +15,7 @@
    "slug": "east-african-community",
    "periods": 50,
    "curriculum_pages": "317–325",
-   "words": 3282,
+   "words": 3286,
    "sections": [
     {
      "title": "About this topic",
@@ -91,7 +91,7 @@
       },
       {
        "t": "h3",
-       "x": "Objectives of the old EAC"
+       "x": "Reasons why the old East African Community was created"
       },
       {
        "t": "ul",
