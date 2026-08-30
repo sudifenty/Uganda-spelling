@@ -655,8 +655,12 @@ p{margin:0}
 .kid-flip{perspective:1000px;width:100%;max-width:480px;min-height:260px;cursor:pointer}
 .kid-flip-inner{position:relative;width:100%;height:100%;min-height:260px;transition:transform .55s cubic-bezier(.4,.0,.2,1);transform-style:preserve-3d}
 .kid-flip.flipped .kid-flip-inner{transform:rotateY(180deg)}
-.kid-flip-face{position:absolute;inset:0;backface-visibility:hidden;background:#fff;border-radius:28px;border:2px solid #DBEAFE;box-shadow:0 8px 30px rgba(30,64,175,.08);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center}
+.kid-flip-face{position:absolute;inset:0;backface-visibility:hidden;background:#fff;border-radius:28px;border:2px solid #DBEAFE;box-shadow:0 8px 30px rgba(30,64,175,.08);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:22px 20px;text-align:center;overflow:visible}
 .kid-flip-back{transform:rotateY(180deg);background:#FFF7ED;border-color:#FED7AA}
+/* a lone last tile centres on its own row (TZ never hangs outside) */
+.kid-flip-back .kx-grid .kx-tile:nth-child(odd):last-child{grid-column:1/-1;justify-self:center;max-width:160px}
+/* the back's tap hint is a proper yellow button, clearly above Listen */
+.kid-flip-back .kid-flip-hint{background:#FFCC00;color:#4A3200;border-radius:20px;padding:9px 20px;font-size:13.5px;font-weight:900;margin-top:16px;letter-spacing:.05em}
 .kid-flip-kind{display:inline-block;font-size:10.5px;font-weight:900;letter-spacing:.12em;border-radius:999px;padding:4px 11px;margin-bottom:8px;background:#DBEAFE;color:#1E40AF;border:2px solid #1E40AF}
 .kid-flip-kind.role{background:#FEF3C7;color:#92400E;border-color:#92400E}
 .kid-flip-kind.ctx{background:#DBEAFE;color:#1E40AF;border-color:#1E40AF;font-size:11px;letter-spacing:.07em;line-height:1.4}
@@ -2840,7 +2844,10 @@ function kidNext(){
 function kidPrev(){
   if((state.ki||0)>0)kidShow(state.ki-1);
 }
-function kidFlip(el){if(el)el.classList.toggle('flipped');}
+function kidFlip(el){
+  if(el)el.classList.toggle('flipped');
+  try{setTimeout(pleFitFlips,0);}catch(e){}
+}
 /* small truth badges driven by the card's own words: landlocked vs sea coast */
 function kidBadges(text){
   const s=String(text||''),out=[];
@@ -7030,9 +7037,31 @@ function pleFitTitles(){
   });
 }
 const _renderFitBase=render;
-render=function(){_renderFitBase();try{setTimeout(pleFitTitles,0);}catch(e){}};
-try{if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>{try{pleFitTitles();}catch(e){}});}catch(e){}
-window.addEventListener('resize',()=>{try{pleFitTitles();}catch(e){}});
+render=function(){_renderFitBase();try{setTimeout(pleFitTitles,0);}catch(e){}try{setTimeout(pleFitFlips,0);}catch(e){}};
+/* a flip card must be as tall as its TALLEST face — the back (definition +
+   flag tiles) used to overflow the fixed 260px, so TANZANIA hung outside
+   the card and the tap hint landed on the Listen button */
+function pleFitFlips(){
+  document.querySelectorAll('.kid-flip').forEach(f=>{
+    const inner=f.querySelector('.kid-flip-inner');
+    if(!inner)return;
+    let h=0;
+    inner.querySelectorAll('.kid-flip-face').forEach(fc=>{
+      /* offsetTop/offsetHeight are pure layout: they ignore the 3D flip
+         rotation and late-loading fonts, unlike scrollHeight */
+      let maxBottom=0;
+      [...fc.children].forEach(ch=>{maxBottom=Math.max(maxBottom,ch.offsetTop+ch.offsetHeight);});
+      const pad=parseFloat(getComputedStyle(fc).paddingBottom)||0;
+      h=Math.max(h,maxBottom+pad);
+    });
+    if(!h)return;
+    h=Math.max(252,h+16);
+    f.style.minHeight='';f.style.height=h+'px';
+    inner.style.minHeight='';inner.style.height=h+'px';
+  });
+}
+try{if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>{try{pleFitTitles();pleFitFlips();}catch(e){}});}catch(e){}
+window.addEventListener('resize',()=>{try{pleFitTitles();pleFitFlips();}catch(e){}});
 
 render();
 
