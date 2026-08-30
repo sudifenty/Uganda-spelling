@@ -3,7 +3,7 @@
  "subject": "SST",
  "subject_name": "Social Studies",
  "total": 5,
- "words": 14202,
+ "words": 14317,
  "topics": [
   {
    "id": "P6_SST_T01",
@@ -15,7 +15,7 @@
    "slug": "east-african-community",
    "periods": 50,
    "curriculum_pages": "317–325",
-   "words": 3167,
+   "words": 3282,
    "sections": [
     {
      "title": "About this topic",
@@ -91,14 +91,6 @@
       },
       {
        "t": "h3",
-       "x": "Location of the founder countries"
-      },
-      {
-       "t": "p",
-       "x": "Uganda is **landlocked**, lying north-west of Lake Victoria. Kenya lies to the **east** of Uganda and touches the Indian Ocean. Tanzania lies to the **south** and also touches the Indian Ocean."
-      },
-      {
-       "t": "h3",
        "x": "Objectives of the old EAC"
       },
       {
@@ -155,7 +147,53 @@
      ]
     },
     {
-     "title": "2. THE REVIVAL OF THE EAST AFRICAN COMMUNITY",
+     "title": "2. LOCATION OF THE FOUNDER COUNTRIES",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Term",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**a landlocked country**",
+         "A landlocked country is a country that is **completely surrounded by land** and does **not have a sea coast or ocean**"
+        ]
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Countries that are landlocked** have no coast of their own — they are locked in by land:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "**Uganda** — landlocked, lying north-west of Lake Victoria.",
+        "**Rwanda** — landlocked, to the south-west of Uganda.",
+        "**South Sudan** — landlocked, to the north of Uganda.",
+        "**D.R. Congo** — landlocked, to the west of Uganda."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "Because Uganda is landlocked, it has no port of its own, so it uses the ports of **Mombasa** (Kenya) and **Dar es Salaam** (Tanzania)."
+      },
+      {
+       "t": "p",
+       "x": "**Countries that are NOT landlocked** touch the sea — they have a coast on the Indian Ocean:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "**Kenya** — lies to the **east** of Uganda and touches the Indian Ocean.",
+        "**Tanzania** — lies to the **south** of Uganda and also touches the Indian Ocean."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "3. THE REVIVAL OF THE EAST AFRICAN COMMUNITY",
      "blocks": [
       {
        "t": "h3",
@@ -307,7 +345,7 @@
      ]
     },
     {
-     "title": "3. THE PEOPLES OF EAST AFRICA",
+     "title": "4. THE PEOPLES OF EAST AFRICA",
      "blocks": [
       {
        "t": "h3",
@@ -438,7 +476,7 @@
      ]
     },
     {
-     "title": "4. SETTLEMENT AND POPULATION",
+     "title": "5. SETTLEMENT AND POPULATION",
      "blocks": [
       {
        "t": "h3",

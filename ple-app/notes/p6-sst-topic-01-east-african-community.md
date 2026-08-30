@@ -39,12 +39,6 @@ Burundi are now counted as part of East Africa**.
 | Personalities involved | **Milton Obote** (Uganda), **Jomo Kenyatta** (Kenya), **Julius Nyerere** (Tanzania) |
 | Year it collapsed | **1977** |
 
-### Location of the founder countries
-
-Uganda is **landlocked**, lying north-west of Lake Victoria. Kenya lies to the **east** of
-Uganda and touches the Indian Ocean. Tanzania lies to the **south** and also touches the
-Indian Ocean.
-
 ### Objectives of the old EAC
 
 - To promote **cooperation** among the member states.
@@ -82,7 +76,30 @@ African shilling) · the University of East Africa · joint research institutes.
 
 ---
 
-## 2. THE REVIVAL OF THE EAST AFRICAN COMMUNITY
+## 2. LOCATION OF THE FOUNDER COUNTRIES
+
+| Term | Meaning |
+|---|---|
+| **a landlocked country** | A landlocked country is a country that is **completely surrounded by land** and does **not have a sea coast or ocean** |
+
+**Countries that are landlocked** have no coast of their own — they are locked in by land:
+
+- **Uganda** — landlocked, lying north-west of Lake Victoria.
+- **Rwanda** — landlocked, to the south-west of Uganda.
+- **South Sudan** — landlocked, to the north of Uganda.
+- **D.R. Congo** — landlocked, to the west of Uganda.
+
+Because Uganda is landlocked, it has no port of its own, so it uses the ports of
+**Mombasa** (Kenya) and **Dar es Salaam** (Tanzania).
+
+**Countries that are NOT landlocked** touch the sea — they have a coast on the Indian Ocean:
+
+- **Kenya** — lies to the **east** of Uganda and touches the Indian Ocean.
+- **Tanzania** — lies to the **south** of Uganda and also touches the Indian Ocean.
+
+---
+
+## 3. THE REVIVAL OF THE EAST AFRICAN COMMUNITY
 
 ### How it came back
 
@@ -152,7 +169,7 @@ Every country also has a **national flag, a national anthem, a coat of arms** an
 
 ---
 
-## 3. THE PEOPLES OF EAST AFRICA
+## 4. THE PEOPLES OF EAST AFRICA
 
 ### The cradle of the people of East Africa
 
@@ -197,7 +214,7 @@ Uganda.
 
 ---
 
-## 4. SETTLEMENT AND POPULATION
+## 5. SETTLEMENT AND POPULATION
 
 ### Factors that influence settlement in East Africa
 
