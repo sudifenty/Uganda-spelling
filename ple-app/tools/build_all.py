@@ -33,6 +33,7 @@ STEPS = [
     ("Validate notes practice",   [[sys.executable, "tools/validate_notes_practice.py"]]),
     ("Build written exercises",   [[sys.executable, "tools/build_exercises.py"]]),
     ("Validate written exercises",[[sys.executable, "tools/validate_exercises.py"]]),
+    ("Audit notes completeness",  [[sys.executable, "tools/audit_notes_completeness.py"]]),
     ("Embed everything in index.html", [[sys.executable, "tools/inject.py"]]),
 ]
 

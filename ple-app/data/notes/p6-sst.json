@@ -3,7 +3,7 @@
  "subject": "SST",
  "subject_name": "Social Studies",
  "total": 5,
- "words": 14321,
+ "words": 14460,
  "topics": [
   {
    "id": "P6_SST_T01",
@@ -15,7 +15,7 @@
    "slug": "east-african-community",
    "periods": 50,
    "curriculum_pages": "317–325",
-   "words": 3286,
+   "words": 3425,
    "sections": [
     {
      "title": "About this topic",
@@ -110,7 +110,56 @@
       },
       {
        "t": "p",
-       "x": "East African Airways · East African Railways and Harbours · East African Posts and Telecommunications · the East African Development Bank · a common currency (the East African shilling) · the University of East Africa · joint research institutes."
+       "x": "The three countries did not just cooperate in words — they ran these services together as ONE organisation:"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Service",
+        "What it did"
+       ],
+       "rows": [
+        [
+         "**East African Airways**",
+         "The joint airline that flew passengers and mail between the three countries and beyond"
+        ],
+        [
+         "**East African Railways and Harbours**",
+         "Ran the railways and the sea ports of Mombasa and Dar es Salaam"
+        ],
+        [
+         "**East African Posts and Telecommunications**",
+         "Carried letters, telegrams and telephone calls across the region"
+        ],
+        [
+         "**East African Customs and Excise**",
+         "Collected taxes on goods entering the region"
+        ],
+        [
+         "**The University of East Africa**",
+         "One university for all three countries, at Makerere, Nairobi and Dar es Salaam"
+        ],
+        [
+         "**East African Development Bank**",
+         "Lent money for development projects in the three countries"
+        ],
+        [
+         "**Common currency**",
+         "The East African shilling, used in all three countries"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Organs of the old Community"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "**The Authority** — the three Heads of State; the top organ that gave the Community its direction.",
+        "**The Council of Ministers** — ministers from the three countries; it made the policies of the Community.",
+        "**The common services corporations** — the bodies that ran the shared services listed above."
+       ]
       },
       {
        "t": "h3",
