@@ -2574,6 +2574,17 @@ function kidExerciseFor(t,i){
   if(qs.length<3)return null;
   return {title:stitle.replace(/^\d+\.\s*/,''),questions:qs.slice(0,5)};
 }
+/* Re-render WITHOUT losing the learner's place. iOS Safari resets the
+   page scroll when a large DOM chunk is replaced — so in-place taps
+   (SHOW MODEL ANSWER, choosing an option, retry) restore the exact
+   scroll position, now and after the next layout pass. */
+function renderKeepScroll(){
+  const y=window.scrollY||window.pageYOffset||0;
+  render();
+  try{window.scrollTo(0,y);}catch(e){}
+  try{requestAnimationFrame(()=>{try{window.scrollTo(0,y);}catch(e){}});}catch(e){}
+  setTimeout(()=>{try{window.scrollTo(0,y);}catch(e){}},80);
+}
 function kexState(key){
   if(!state.kex||state.kex.key!==key)state.kex={key:key,done:{},shown:{},texts:{}};
   return state.kex;
@@ -2590,11 +2601,11 @@ function kexAnswer(qi,oi,correct){
   if(x.done[qi]!=null)return;                    /* first tap counts */
   x.done[qi]=oi;
   afxPlay('ABCD'[oi]===correct?'correct':'wrong');
-  render();
+  renderKeepScroll();
 }
 function kexShow(qi){
   const x=state.kex;if(!x)return;
-  x.shown[qi]=true;afxPlay('correct');render();
+  x.shown[qi]=true;afxPlay('correct');renderKeepScroll();
 }
 function kexText(qi,bi,val){
   const x=state.kex;if(!x)return;
@@ -3359,9 +3370,9 @@ function cpaAnswer(idx){
   c.pick=idx;
   if(String(q.options[idx])===String(q.correct_answer)){c.answered='right';afxPlay('star');}
   else{c.answered='wrong';afxPlay('wrong');}
-  render();
+  renderKeepScroll();
 }
-function cpaRetry(){const c=state.cpa;if(c){c.answered=null;c.pick=null;render();}}
+function cpaRetry(){const c=state.cpa;if(c){c.answered=null;c.pick=null;renderKeepScroll();}}
 function cpaComplete(){
   const t=noteById(state.ntopic)||noteFindAnywhere(state.ntopic);if(!t)return;
   const i=Math.max(0,state.nsec||0),sec=noteSections(t)[i];if(!sec)return;
