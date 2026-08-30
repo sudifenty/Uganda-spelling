@@ -821,6 +821,8 @@ p{margin:0}
 /* ---------- LEARNING PATH (Duolingo-style vertical path) ---------- */
 /* ---------- LEARNING PATH (Duolingo-style vertical path) ---------- */
 .lp-wrap{position:relative;padding:6px 0 30px}
+.path-back{position:fixed;top:calc(10px + env(safe-area-inset-top,0px));left:12px;z-index:50;width:40px;height:40px;border-radius:50%;background:#fff;border:2px solid #DBEAFE;box-shadow:0 3px 12px rgba(30,64,175,.18);display:grid;place-items:center}
+.path-back:active{transform:scale(.92)}
 .lp-rail{position:absolute;left:27px;top:20px;bottom:30px;width:4px;border-radius:2px;background:var(--line);overflow:hidden}
 .lp-rail i{display:block;width:100%;background:#22c55e;transition:height .4s}
 .lp-item{position:relative;display:flex;gap:14px;align-items:flex-start;padding:0 0 26px}
@@ -835,7 +837,7 @@ p{margin:0}
 .lp-status{font-size:12.5px;font-weight:800;margin-top:3px}
 .lp-status.done{color:#15803d}.lp-status.now{color:#a16207}.lp-status.lock{color:#6b7280}
 .lp-btn{margin-top:10px;min-height:44px;width:100%}
-.lp-head{display:flex;align-items:center;gap:12px;background:linear-gradient(135deg,var(--green-50),var(--sky-50));border-radius:var(--r-xl);padding:16px;margin:4px 0 14px}
+.lp-head{display:flex;align-items:center;gap:12px;background:linear-gradient(135deg,var(--green-50),var(--sky-50));border-radius:var(--r-xl);padding:16px;margin:48px 0 14px}
 .lp-ring{--p:0;width:64px;height:64px;flex:none;border-radius:50%;background:conic-gradient(#22c55e calc(var(--p)*1%), var(--line) 0);display:grid;place-items:center}
 .lp-ring i{width:50px;height:50px;border-radius:50%;background:#fff;display:grid;place-items:center;font-weight:900;font-size:15px;color:var(--navy)}
 .tcard{display:flex;gap:14px;align-items:center;width:100%;background:#fff;border:1.5px solid var(--line);border-radius:var(--r-xl);padding:16px;min-height:92px;box-shadow:var(--sh-1);text-align:left;margin-bottom:13px}
@@ -2200,7 +2202,7 @@ function diagramHTML(topicId, secTitle){
     (x.match.test(String(secTitle || '')) || x.match.test(String(secTitle || '').replace(/^\d+\.\s*/, ''))));
   if(!d) return '';                       /* no diagram for this section: show nothing at all */
   return `<figure class="diag-box"><div style="width:100%;max-width:100%;overflow:hidden">${d.svg}</div>
-    <figcaption class="diag-cap">\U0001F4C8 Diagram: <b>${nEsc(d.title)}</b></figcaption></figure>`;
+    <figcaption class="diag-cap">\u{01F4C8} Diagram: <b>${nEsc(d.title)}</b></figcaption></figure>`;
 }
 
 
@@ -2285,7 +2287,7 @@ function lpComplete(){                     /* Mark as Complete & Continue */
       <div style="font-size:56px">🏆</div>
       <h3 style="margin-top:6px">Topic complete!</h3>
       <p class="muted" style="margin:8px 0 4px">You finished every sub-topic of <b>${nEsc(t.title)}</b>.</p>
-      <button class="btn btn-primary" style="margin-top:12px" onclick="closeSheet();njGoPractice()">\U0001F3AF GO TO PRACTICE</button>
+      <button class="btn btn-primary" style="margin-top:12px" onclick="closeSheet();njGoPractice()">\u{01F3AF} GO TO PRACTICE</button>
       <button class="btn btn-ghost" style="margin-top:8px" onclick="closeSheet();go('notePath')">BACK TO THE PATH</button>
     </div>`);
   afxPlay('star');
@@ -2310,12 +2312,7 @@ SCREENS.notePath = () => {
   const totalMins=subs.reduce((a,s)=>a+s.mins,0);
   const secs=noteSections(t);
   return `
-  <header class="pagehead">
-    <button class="back" onclick="go('notes')" aria-label="Back to topics">${I.back(22)}</button>
-    <div style="flex:1;min-width:0"><h2 style="font-size:18px">${nEsc(t.title)}</h2>
-      <div class="sub">Learning path \u00B7 ${doneCount} of ${subs.length} sub-topics</div></div>
-    <button class="btn btn-ghost" style="min-height:40px;padding:0 12px;font-size:13px" onclick="openNoteTopic('${t.id}')">\U0001F3AE Quiz journey</button>
-  </header>
+<button class="path-back" onclick="go('notes')" aria-label="Back to topics">${I.back(20)}</button>
 
   <div class="lp-head">
     <div class="lp-ring" style="--p:${pct}"><i>${pct}%</i></div>
@@ -2349,7 +2346,7 @@ SCREENS.notePath = () => {
   </div>
 
   <div style="display:grid;gap:10px;margin-top:6px">
-    <button class="btn btn-soft" onclick="lpPractice()">\U0001F3AF Go to Practice for this topic</button>
+    <button class="btn btn-soft" onclick="lpPractice()">\u{01F3AF} Go to Practice for this topic</button>
   </div>
   <div class="spacer"></div>`;
 };
@@ -3736,7 +3733,7 @@ SCREENS.noteSub = () => {
    note's own content. Nothing is invented, nothing deleted.
    ============================================================ */
 function njHook(t){
-  const emoji={SST:'\U0001F30D',SCI:'\U0001F52C',ENG:'\U0001F4D6',MATH:'\U00002797'}[t.subject]||'\U0001F50E';
+  const emoji={SST:'\u{01F30D}',SCI:'\u{01F52C}',ENG:'\u{01F4D6}',MATH:'\u{002797}'}[t.subject]||'\u{01F50E}';
   const openers=[
     emoji+' Ever wondered about \u201c'+t.title+'\u201d? There is more to it than you think. Let\u2019s find out!',
     emoji+' '+t.title+' \u2014 sounds like a big topic? It is simpler than it looks. Ready to discover it?',
@@ -3865,13 +3862,13 @@ SCREENS.noteJourney = () => {
       ${nextTitle?`<div class="hint-strip cream" style="margin:12px 0">${I.info(18)} <span><b>One more thing\u2026</b> coming up next: ${nEsc(nextTitle)}</span></div>`:''}
       <div style="display:grid;gap:10px;margin-top:14px">
         <button class="btn btn-primary" onclick="njNext()">I\u2019VE READ IT \u2014 NEXT \u27A1</button>
-        <button class="btn btn-ghost" onclick="njSpeak()">\U0001F50A READ THIS PART TO ME</button>
+        <button class="btn btn-ghost" onclick="njSpeak()">\u{01F50A} READ THIS PART TO ME</button>
       </div>`;
   }
   else if(st.type==='check'){
     const q=st.q,fb=J.fb;
     body=`<div class="mx-card">
-        <div class="mx-topic">${st.quick?'\U0001F3AF Quick check':'\U0001F9E0 Checkpoint'}</div>
+        <div class="mx-topic">${st.quick?'\u{01F3AF} Quick check':'\u{01F9E0} Checkpoint'}</div>
         <div class="mx-qtext" style="font-size:clamp(20px,5.5vw,30px)">${nEsc(q.prompt)}</div>
       </div>
       <div class="mx-mcq" style="grid-template-columns:1fr">
@@ -3885,7 +3882,7 @@ SCREENS.noteJourney = () => {
         <h2>${fb.ok?'Excellent!':'Not quite'}</h2>
         ${fb.ok?`<div class="mx-fb-pts">+10 points \u2B50</div>`:`
           <div class="mx-fb-correct">The correct answer is <b>${nEsc(q.answer)}</b></div>
-          <div class="mx-fb-steps" style="max-width:none"><div class="mx-fb-step"><b>\U0001F9E0 Remember</b><span>${nEsc(q.answer)}</span></div></div>`}
+          <div class="mx-fb-steps" style="max-width:none"><div class="mx-fb-step"><b>\u{01F9E0} Remember</b><span>${nEsc(q.answer)}</span></div></div>`}
         <button class="btn btn-primary mx-fb-next" onclick="njCheckDone();njNext()">CONTINUE \u27A1</button>
       </div>`:''}`;
   }
@@ -3895,7 +3892,7 @@ SCREENS.noteJourney = () => {
       <button class="btn btn-primary" style="margin-top:14px" onclick="njNext()">GOT IT \u2014 KEEP GOING \u27A1</button>`;
   }
   else if(st.type==='memory'){
-    body=`<div class="mx-card"><div class="mx-topic">\U0001F9E0 Quick memory</div>
+    body=`<div class="mx-card"><div class="mx-topic">\u{01F9E0} Quick memory</div>
         <div class="mx-qtext" style="font-size:clamp(20px,5.5vw,30px)">Remember these \u2014 they are the heart of this topic.</div></div>
       <div class="mx-fb-steps" style="max-width:none">
         ${st.facts.map(f=>`<div class="mx-fb-step"><b>${nEsc(f.term)}</b><span>${nEsc(f.answer)}</span></div>`).join('')}
@@ -3904,9 +3901,9 @@ SCREENS.noteJourney = () => {
   }
   else if(st.type==='recall'){
     const fb=J.fb;
-    body=`<div class="mx-card"><div class="mx-topic">\U0001F9EA Test yourself \u00B7 ${st.n}</div>
+    body=`<div class="mx-card"><div class="mx-topic">\u{01F9EA} Test yourself \u00B7 ${st.n}</div>
       <div class="mx-qtext" style="font-size:clamp(20px,5.5vw,30px)">${nEsc(st.q)}</div></div>
-      ${!fb?`<button class="btn btn-primary" style="margin-top:12px" onclick="njReveal()">THINK FIRST, THEN SHOW THE ANSWER \U0001F440</button>`
+      ${!fb?`<button class="btn btn-primary" style="margin-top:12px" onclick="njReveal()">THINK FIRST, THEN SHOW THE ANSWER \u{01F440}</button>`
         :`<div class="mx-fb-steps" style="max-width:none"><div class="mx-fb-step"><b>Answer</b><span>${nEsc(st.a||'Check the full notes for the answer.')}</span></div></div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px">
             <button class="btn btn-primary" onclick="njSelf(true)">I GOT IT \u2705</button>
@@ -3916,12 +3913,12 @@ SCREENS.noteJourney = () => {
   else if(st.type==='done'){
     const score=J.checks?Math.round(100*J.checkOk/J.checks):null;
     body=`<div class="mx-done">
-      <div class="mx-done-emoji">\U0001F389</div>
+      <div class="mx-done-emoji">\u{01F389}</div>
       <h2>Topic complete!</h2>
       <div class="mx-score">+${J.xp} XP</div>
       <div class="mx-stars-row">${'\u2B50'.repeat(Math.min(8,Math.ceil((score==null?100:score)/20)))}</div>
       <p class="muted">${score==null?'You worked through the whole topic.':`You answered ${J.checkOk} of ${J.checks} checkpoint questions correctly (${score}%).`}${J.recallGot?` \u00B7 ${J.recallGot} answer${J.recallGot===1?'':'s'} you felt sure of.`:''}</p>
-      <button class="btn btn-primary" onclick="njGoPractice()">\U0001F3AF GO TO PRACTICE</button>
+      <button class="btn btn-primary" onclick="njGoPractice()">\u{01F3AF} GO TO PRACTICE</button>
       <button class="btn btn-ghost" style="margin-top:6px" onclick="go('noteTopic')">READ THE FULL NOTES</button>
       <button class="btn btn-ghost" style="margin-top:6px" onclick="go('notes')">BACK TO NOTES</button>
     </div>`;
