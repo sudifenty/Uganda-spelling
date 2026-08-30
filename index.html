@@ -659,6 +659,7 @@ p{margin:0}
 .kid-flip-back{transform:rotateY(180deg);background:#FFF7ED;border-color:#FED7AA}
 .kid-flip-kind{display:inline-block;font-size:10.5px;font-weight:900;letter-spacing:.12em;border-radius:999px;padding:4px 11px;margin-bottom:8px;background:#DBEAFE;color:#1E40AF;border:2px solid #1E40AF}
 .kid-flip-kind.role{background:#FEF3C7;color:#92400E;border-color:#92400E}
+.kid-flip-kind.ctx{background:#DBEAFE;color:#1E40AF;border-color:#1E40AF;font-size:9.5px;letter-spacing:.06em;line-height:1.5;max-width:92%;text-transform:uppercase}
 .kid-flip-hint{font-size:13px;color:#94A3B8;font-weight:800;margin-top:14px;letter-spacing:.04em;text-transform:uppercase}
 .kid-celebration{width:100%;max-width:480px;background:#fff;border-radius:28px;border:2px solid #BBF7D0;padding:34px 24px;text-align:center;box-shadow:0 8px 30px rgba(34,197,94,.12)}
 .kid-celebration h2{font-size:28px;font-weight:900;color:#166534}
@@ -2502,7 +2503,7 @@ function kidExerciseFor(t,i){
   /* (c) from definition cards of THIS section: which term means this? (up to 2) */
   for(let fi=0;objQs.length<2&&fi<flips.length;fi++){
     const f=flips[fi];
-    if(f.role)continue;                       /* "which term means" asks about definitions only */
+    if(f.role||f.attr)continue;              /* "which term means" asks about plain definitions only */
     const term=kidFlipTerm(f.front);
     const others=topicFlips.filter(x=>x.sec!==i&&!x.f.role).map(x=>kidFlipTerm(x.f.front))
       .filter(x=>x&&x!==term&&x.length<=34);
@@ -2634,8 +2635,24 @@ function kidChunk(items,max){
    columns (capital city, currency) get their own question words too. */
 const KID_PAST_V=/^(ran|carried|controlled|managed|promoted|provided|collected|flew|handled|lent|supplied|transported|delivered|supervised|maintained|operated|ensured|served|worked|used to|used for)\b/i;
 const KID_PRES_V=/^(shows?|makes?|provides?|helps?|represents?|protects?|prevents?|carries|forms?|connects?|serves?|supplies|controls?|manages?|promotes?|collects?|handles?|runs?|used to|used for|responsible for)\b/i;
-function kidFlipKind(head2,headRaw,term,mean){
+function kidFlipKind(head2,headRaw,term,mean,head0,subj){
   const m=kidStrip(mean);
+  /* FACT tables (Fact|Detail) and known attribute names become full
+     standalone questions: WHERE for places, WHEN for years, WHO for people */
+  const FACTHead=/^(fact|detail)s?$|^attribute$/i.test(String(head0||'').trim())||/^(fact|detail)s?$/i.test(String(headRaw||'').trim());
+  const ATTR_TERM=/^(headquarters|place|host|membership|secretariat|secretary-general|first secretary-general|date formed|year formed|year it collapsed|founder countries|founder members|personalities involved|special note|main meeting|capital city|capital|currency|area|population|size|formula)$/i.test(term.replace(/\*+/g,'').trim());
+  if(FACTHead&&ATTR_TERM&&subj){
+    const aq=kidAttrQuestion(term,subj,mean);
+    return {q:aq.q,back:aq.a,role:false,attr:true};
+  }
+  /* FACTOR tables: "How does rainfall affect the climate of Uganda?" */
+  const fm=String(subj||'').match(/factors?\s+(?:that\s+|which\s+)?(?:influence|influencing|affect(?:ing)?)\s+(.+)/i);
+  if(fm&&/^(factor|cause|reason)s?$/i.test(String(head0||'').trim())){
+    const thing=fm[1].replace(/\.$/,'').trim();
+    const factor=term.replace(/\*+/g,'').trim().toLowerCase();
+    if(/why it attracts/.test(head2))return{q:`Why does ${factor} attract people to settle?`,back:mean,role:true,attr:false};
+    return{q:`How does ${factor} affect ${thing}?`,back:mean,role:true,attr:false};
+  }
   const was=/\bdid\b/.test(head2)||KID_PAST_V.test(m)||/^its role was/i.test(m)||/\bwas\b/.test(m.slice(0,26));
   let role=false,q='What is '+term+'?',back=mean;
   const it=(mm)=>{const v=mm.split(' ')[0];return 'It '+v.toLowerCase()+mm.slice(v.length);};
@@ -2655,6 +2672,50 @@ function kidFlipKind(head2,headRaw,term,mean){
   }
   return {q:q,back:back,role:role};
 }
+/* ---------- Standalone question rule (owner's rule) ----------
+   A question on a card must make sense ALONE: it names its subject
+   ("... of the Old East African Community") and its question word
+   matches the answer (a PLACE is asked with WHERE, a year with WHEN,
+   people with WHO). Fact tables and factor tables are rebuilt into
+   full PLE-style questions. */
+function kidTitleCase(s){
+  const small=new Set(['of','the','and','in','a','an','to','for','on','at','by','with']);
+  return String(s||'').split(/(\([^)]*\))/).map(part=>{
+    if(part.startsWith('('))return part;
+    return part.split(' ').map((w,i)=>i&&small.has(w.toLowerCase())?w.toLowerCase():(w?w[0].toUpperCase()+w.slice(1).toLowerCase():w)).join(' ');
+  }).join('');
+}
+function kidSubject(sec){
+  return kidTitleCase(String(sec.title||'').replace(/^\d+\.\s*/,'').trim());
+}
+function kidSubjShort(subj){return String(subj||'').replace(/^the\s+/i,'').trim();}
+const KID_HIST=/\(\s*(19|20)\d{2}|old |organisation of african unity|league of nations/i;
+function kidAttrQuestion(term,subj,answer){
+  const short=kidSubjShort(subj),The='The '+short;
+  const past=KID_HIST.test(subj)||/\b(19|20)\d{2}\b/.test(String(answer));
+  const was=past?'was':'is',were=past?'were':'are',did=past?'did':'does',has=past?'had':'has';
+  const t=String(term).toLowerCase().replace(/\*+/g,'').trim();
+  const A=String(answer).replace(/\*+/g,'').trim().replace(/\.$/,'');
+  const the='the '+short;
+  if(/headquarters/.test(t))return{q:`Where ${was} the headquarters of ${the} located?`,a:`The headquarters of ${the} ${was} located in ${A}.`};
+  if(/^(date|year) (it was )?formed|^(date|year) of (formation|founding)/.test(t))return{q:`When ${was} ${the} formed?`,a:`${The} ${was} formed in ${A}.`};
+  if(/year it collapsed|year of collapse/.test(t))return{q:`When did ${the} collapse?`,a:`${The} collapsed in ${A}.`};
+  if(/founder countries/.test(t))return{q:`Which countries founded ${the}?`,a:`The founder countries of ${the} ${were} ${A}.`};
+  if(/founder members/.test(t))return{q:`Who ${were} the founder members of ${the}?`,a:`The founder members of ${the} ${were} ${A}.`};
+  if(/personalities involved/.test(t))return{q:`Who ${were} the personalities involved in ${the}?`,a:`The personalities involved in ${the} ${were} ${A}.`};
+  if(/^place$|^place formed|where it was formed/.test(t))return{q:`Where ${was} ${the} founded?`,a:`${The} ${was} founded at ${A}.`};
+  if(/^host$/.test(t))return{q:`Who hosted the formation of ${the}?`,a:`The formation of ${The} ${was} hosted by ${A}.`};
+  if(/first secretary-general|secretary-general$/.test(t))return{q:`Who ${was} the ${term.replace(/\*+/g,'').trim()} of ${the}?`,a:`The ${term.replace(/\*+/g,'').trim()} of ${The} ${was} ${A}.`};
+  if(/membership|members$/.test(t))return{q:`How many members ${past?'did':'does'} ${the} have?`,a:`${The} ${has} ${A}.`};
+  if(/head of the/.test(t))return{q:`Who ${was} the ${term.replace(/\*+/g,'').trim()}?`,a:`The ${term.replace(/\*+/g,'').trim()} ${was} ${A}.`};
+  if(/secretariat/.test(t))return{q:`Where ${was} the secretariat of ${the}?`,a:`The secretariat of ${The} ${was} at ${A}.`};
+  if(/main meeting/.test(t))return{q:`What ${was} the main meeting of ${the}?`,a:`The main meeting of ${The} ${was} ${A}.`};
+  if(/special note/.test(t))return{q:`What ${was} special about ${the}?`,a:`${A}.`};
+  if(/capital( city)?$/.test(t))return{q:`What ${was} the capital city of ${the}?`,a:`The capital city of ${The} ${was} ${A}.`};
+  /* generic fact: keep the attribute but name the subject */
+  return{q:`What ${was} the ${t} of ${the}?`,a:`The ${t} of ${The} ${was} ${A}.`};
+}
+
 /* the bare term from any flip question, whatever its question word */
 function kidFlipTerm(front){
   return String(front||'').replace(/^what (is|was|are) (the (role|importance|use|uses|capital city|currency|formula|size|perimeter|area) of |an example of |an example )?/i,'').replace(/\?$/,'').trim();
@@ -2705,13 +2766,31 @@ function kidCardsFor(t,i){
         const txt=kidStrip(it);
         if(txt)cards.push({kind:'idea',emoji:kidEmoji(txt),title:kidTitleFor(txt,sec.title),text:txt});
       });
-    }else if(b.t==='table'&&b.head&&b.head.length>=2){
+    }else if(b.t==='table'&&b.head&&b.head.length>=3){
+      /* comparison tables (3+ columns) become complete idea cards: every
+         column is kept — nothing is squeezed into a misleading flip card */
+      const heads=b.head.map(h=>kidStrip(h));
+      (b.rows||[]).forEach(r=>{
+        const label=kidStrip(r[0]);
+        const parts=[];
+        for(let ci=1;ci<r.length&&ci<heads.length;ci++){
+          const v=kidStrip(r[ci]);
+          if(v)parts.push((heads[ci]||'Column '+ci)+' \u2014 '+v);
+        }
+        if(label&&parts.length){
+          cards.push({kind:'idea',emoji:kidEmoji(label+' '+parts.join(' ')),title:kidTitleFor(label,sec.title),text:label+': '+parts.join('; ')});
+        }
+      });
+    }else if(b.t==='table'&&b.head&&b.head.length===2){
+      const isFactTable=/^(fact|detail)s?$/i.test(String(b.head[0]||'').trim())||/^(fact|detail)s?$/i.test(String(b.head[1]||'').trim());
       (b.rows||[]).forEach(r=>{
         const term=kidStrip(r[0]),mean=String(r[1]||'').replace(/\s+/g,' ').trim();
-        if(term&&mean&&mean.split(' ').length>=2){
+        /* fact tables may carry one-word answers (1967, Arusha, Tanzania) —
+           they become full WHEN/WHERE questions, so short answers are fine */
+        if(term&&mean&&(mean.split(' ').length>=2||(isFactTable&&mean.length>=2))){
           /* the question word follows the column's meaning — role answers never hide behind "What is" */
-          const kind=kidFlipKind(String(b.head[1]||'').toLowerCase(),b.head[1],term,mean);
-          cards.push({kind:'flip',role:kind.role,emoji:kidEmoji(term+' '+kidStrip(mean)),front:kind.q,back:kind.back,backEx:kidSplitDefEx(mean)});
+          const kind=kidFlipKind(String(b.head[1]||'').toLowerCase(),b.head[1],term,mean,b.head[0],kidSubject(sec));
+          cards.push({kind:'flip',role:kind.role,attr:kind.attr,ctx:kind.attr?kidSubject(sec):null,emoji:kidEmoji(term+' '+kidStrip(mean)),front:kind.q,back:kind.back,backEx:kidSplitDefEx(mean)});
         }
       });
     }
@@ -3497,7 +3576,7 @@ SCREENS.noteSub = () => {
         <div class="kid-flip-inner">
           <div class="kid-flip-face">
             <div class="kid-emoji">${c.emoji}</div>
-            <div class="kid-flip-kind ${c.role?'role':''}">${c.role?'\u{1F527} ROLE':'\u{1F4D6} DEFINITION'}</div>
+            ${c.attr?`<div class="kid-flip-kind ctx">\u{1F4CD} ${nEsc(String(c.ctx).toUpperCase())} \u00b7 ${nEsc(kidFlipTerm(c.front).toUpperCase())}</div>`:`<div class="kid-flip-kind ${c.role?'role':''}">${c.role?'\u{1F527} ROLE':'\u{1F4D6} DEFINITION'}</div>`}
             <div class="kid-title">${nEsc(c.front)}</div>
             <div class="kid-flip-hint">\u{1F446} Tap me!</div>
           </div>
