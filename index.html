@@ -2949,16 +2949,70 @@ const KID_PINNED={
    the exercise question ("Give any 3 places where..."). */
 function kidPinKey(s){return String(s||'').toUpperCase().replace(/[^A-Z0-9]+/g,' ').trim();}
 const KID_PINNED_SUB={
-  'P7_SST_T04|G MONTANE MOUNTAIN VEGETATION':[
+  'P6_SST_T02|A PLANTS VEGETATION':[
+    /* owner's rule: WHAT IS IT? = definition, EXAMPLES = where it is found.
+       The old cards showed the WHERE list as the definition — swapped. */
+    {kind:'pinned',q:'What is Tropical rain forest?',type:'definition',
+     def:'Tropical rain forest is a thick forest that receives heavy rainfall throughout the year. Trees are tall, evergreen and grow close together.'},
+    {kind:'pinned',q:'Where is Tropical rain forest found? For example?',type:'list',
+     items:[
+      {text:'Mabira forest (Uganda)',emoji:'\u{1F333}'},
+      {text:'Budongo forest (Uganda)',emoji:'\u{1F333}'},
+      {text:'Kakamega forest (Kenya)',emoji:'\u{1F333}'},
+      {text:'Shores of Lake Kivu (Rwanda)',emoji:'\u{1F30A}'}]},
+    {kind:'pinned',q:'What is Savannah grassland?',type:'definition',
+     def:'Savannah grassland is tropical grassland with tall grasses and scattered trees. It has dry and wet seasons.'},
+    {kind:'pinned',q:'Where is Savannah grassland found? For example?',type:'list',
+     items:[
+      {text:'Covers most of the region — the largest area',emoji:'\u{1F33E}'},
+      {text:'Queen Elizabeth National Park (Uganda)',emoji:'\u{1F981}'},
+      {text:'Serengeti Plains (Tanzania)',emoji:'\u{1F981}'},
+      {text:'Masai Mara (Kenya)',emoji:'\u{1F981}'}]},
     {kind:'pinned',q:'What is Montane vegetation?',type:'definition',
-     def:'Montane vegetation is vegetation that grows on mountain slopes and highland areas.'},
+     def:'Montane vegetation is vegetation that grows on mountain slopes and highland areas. It changes as you go higher due to altitude.'},
     {kind:'pinned',q:'Where is Montane vegetation found? For example?',type:'list',
      exHeader:'places where Montane vegetation is found',
      items:[
       {text:'Slopes of Mt Kilimanjaro',emoji:'\u{1F3D4}\u{FE0F}'},
-      {text:'Mt Kenya',emoji:'\u{1F30B}'},
-      {text:'Mt Elgon',emoji:'\u{1F30B}'},
-      {text:'Rwenzori Mountains',emoji:'\u{1F3D4}\u{FE0F}'}]}
+      {text:'Slopes of Mt Kenya',emoji:'\u{1F3D4}\u{FE0F}'},
+      {text:'Slopes of Mt Elgon',emoji:'\u{1F3D4}\u{FE0F}'},
+      {text:'Slopes of Rwenzori Mountains',emoji:'\u{1F3D4}\u{FE0F}'}]},
+    {kind:'pinned',q:'What is Semi-desert vegetation?',type:'definition',
+     def:'Semi-desert vegetation is made up of scattered thorny bushes, cactus and short tough grass. The plants have long roots and thick stems that store water.'},
+    {kind:'pinned',q:'Where is Semi-desert vegetation found? For example?',type:'list',
+     exHeader:'places where Semi-desert vegetation is found',
+     items:[
+      {text:'Karamoja',emoji:'\u{1F335}'},
+      {text:'Northern Kenya',emoji:'\u{1F335}'},
+      {text:'Central Tanzania',emoji:'\u{1F335}'}]},
+    {kind:'pinned',q:'What is Mangrove forest?',type:'definition',
+     def:'Mangrove forest is short salt-tolerant trees growing along muddy coasts, with stilt roots that stand above the water.'},
+    {kind:'pinned',q:'Where is Mangrove forest found? For example?',type:'list',
+     exHeader:'places where Mangrove forest is found',
+     items:[
+      {text:'Indian Ocean coast of Kenya',emoji:'\u{1F30A}'},
+      {text:'Indian Ocean coast of Tanzania',emoji:'\u{1F30A}'}]},
+    {kind:'pinned',q:'What is Swamp vegetation?',type:'definition',
+     def:'Swamp vegetation is papyrus, reeds and water lilies growing in waterlogged land.'},
+    {kind:'pinned',q:'Where is Swamp vegetation found? For example?',type:'list',
+     items:[
+      {text:'The Sudd edge (South Sudan)',emoji:'\u{1F33F}'},
+      {text:'Lake Kyoga area (Uganda)',emoji:'\u{1F33F}'},
+      {text:'Kilombero (Tanzania)',emoji:'\u{1F33F}'}]},
+    /* uses of plants — kept from the notes as numbered pills */
+    {kind:'dots',title:'Uses of plants (vegetation)',
+     items:['timber, poles, firewood and charcoal','medicine','pasture','raw materials for paper and furniture','protection of soil and water catchments','homes for wild animals','tourist attractions']}
+  ],
+  'P7_SST_T04|G MONTANE MOUNTAIN VEGETATION':[
+    {kind:'pinned',q:'What is Montane vegetation?',type:'definition',
+     def:'Montane vegetation is vegetation that grows on mountain slopes and highland areas. It changes as you go higher due to altitude.'},
+    {kind:'pinned',q:'Where is Montane vegetation found? For example?',type:'list',
+     exHeader:'places where Montane vegetation is found',
+     items:[
+      {text:'Slopes of Mt Kilimanjaro',emoji:'\u{1F3D4}\u{FE0F}'},
+      {text:'Slopes of Mt Kenya',emoji:'\u{1F3D4}\u{FE0F}'},
+      {text:'Slopes of Mt Elgon',emoji:'\u{1F3D4}\u{FE0F}'},
+      {text:'Slopes of Rwenzori Mountains',emoji:'\u{1F3D4}\u{FE0F}'}]}
   ],
   'P7_SST_T04|B SAVANNAH VEGETATION':[
     {kind:'pinned',q:'What is Savannah vegetation?',type:'definition',
