@@ -2483,10 +2483,10 @@ function kidExerciseFor(t,i){
      pinned list acts as a grouped list, a pinned definition as a flip card */
   const pinGroups=cards.filter(c=>c.kind==='pinned'&&c.type==='list'&&c.items.length>=2
     &&c.items.every(x=>String(x.text||'').split(' ').length<=4))
-    .map(c=>({header:String(c.q).replace(/[?.!]+$/,''),items:c.items.map((it,j)=>({n:j+1,text:it.text}))}));
+    .map(c=>({header:(c.exHeader||String(c.q).replace(/[?.!]+$/,'')),items:c.items.map((it,j)=>({n:j+1,text:it.text}))}));
   const pinDefs=cards.filter(c=>c.kind==='pinned'&&c.type==='definition')
     .map(c=>({front:c.q,back:c.def,role:false,attr:false}));
-  const allGroups=groups.concat(pinGroups);
+  const allGroups=pinGroups.concat(groups);   /* the owner's pinned lists lead the exercise */
   const allFlips=flips.concat(pinDefs);
   const written=[];
   allGroups.slice(0,2).forEach(g=>{
@@ -2942,6 +2942,38 @@ const KID_PINNED={
       {text:'Kenya and Tanzania are not landlocked — they touch the Indian Ocean',emoji:'\u{1F30A}'}]}
   ]
 };
+/* ---------- Sub-section pins (owner's rule) ----------
+   Like KID_PINNED, but for ONE "###" group inside a bigger section: only
+   that group's cards are replaced — every other group in the section keeps
+   its generated cards, so no content is lost. exHeader names the list for
+   the exercise question ("Give any 3 places where..."). */
+function kidPinKey(s){return String(s||'').toUpperCase().replace(/[^A-Z0-9]+/g,' ').trim();}
+const KID_PINNED_SUB={
+  'P7_SST_T04|G MONTANE MOUNTAIN VEGETATION':[
+    {kind:'pinned',q:'What is Montane vegetation?',type:'definition',
+     def:'Montane vegetation is vegetation that grows on mountain slopes and highland areas.'},
+    {kind:'pinned',q:'Where is Montane vegetation found? For example?',type:'list',
+     exHeader:'places where Montane vegetation is found',
+     items:[
+      {text:'Slopes of Mt Kilimanjaro',emoji:'\u{1F3D4}\u{FE0F}'},
+      {text:'Mt Kenya',emoji:'\u{1F30B}'},
+      {text:'Mt Elgon',emoji:'\u{1F30B}'},
+      {text:'Rwenzori Mountains',emoji:'\u{1F3D4}\u{FE0F}'}]}
+  ],
+  'P7_SST_T04|B SAVANNAH VEGETATION':[
+    {kind:'pinned',q:'What is Savannah vegetation?',type:'definition',
+     def:'Savannah vegetation is made up of tall or short grass with scattered, umbrella-shaped deciduous trees.'},
+    {kind:'pinned',q:'Where is Savannah vegetation found? For example?',type:'list',
+     exHeader:'countries where Savannah vegetation is found',
+     items:[
+      {text:'Uganda',emoji:'\u{1F1FA}\u{1F1EC}'},
+      {text:'Kenya',emoji:'\u{1F1F0}\u{1F1EA}'},
+      {text:'Tanzania',emoji:'\u{1F1F9}\u{1F1FF}'},
+      {text:'Northern Nigeria',emoji:'\u{1F1F3}\u{1F1EC}'},
+      {text:'Zambia',emoji:'\u{1F1FF}\u{1F1F2}'},
+      {text:'Zimbabwe',emoji:'\u{1F1FF}\u{1F1FC}'}]}
+  ]
+};
 function kidCardsFor(t,i){
   const ckey=(t&&t.id)+':'+i;
   if(KIDCARDS_CACHE[ckey])return KIDCARDS_CACHE[ckey];
@@ -2953,8 +2985,16 @@ function kidCardsFor(t,i){
   const cards=[];
   const blocks=sec.blocks||[];
   let head=null;                        /* the nearest sub-heading above the current block */
+  let pinSkip=false;                    /* inside an owner-pinned ### group: its blocks are replaced */
   for(const b of blocks){
-    if(b.t==='h3'){head=kidStrip(b.x)||head;continue;}   /* headings become group headers */
+    if(b.t==='h3'){
+      head=kidStrip(b.x)||head;         /* headings become group headers */
+      const subPin=KID_PINNED_SUB[t.id+'|'+kidPinKey(head)];
+      pinSkip=!!subPin;
+      if(subPin)subPin.forEach(pc=>cards.push(pc));  /* pinned cards take this group's place */
+      continue;
+    }
+    if(pinSkip)continue;                /* the replaced group's own bullets are skipped */
     if(b.t==='p'||b.t==='note'){
       const sentences=(kidStrip(b.x)||'').split(/(?<=[.!?])\s+/).filter(Boolean);
       for(const sen of sentences){
@@ -3791,12 +3831,13 @@ SCREENS.noteSub = () => {
   const dots=`<div class="kid-dots">${cards.map((c,j)=>`<i class="${j<ki?'done':j===ki?'on':''}"></i>`).join('')}</div>`;
   /* NCDC progression: WHAT is it (definition cards) comes before EXAMPLES & facts.
      Shown only when the sub-topic actually has definition cards. */
-  const hasFlips=cards.some(c=>c.kind==='flip');
+  const isDefStage=c=>!!c&&(c.kind==='flip'||(c.kind==='pinned'&&c.type==='definition'));
+  const hasFlips=cards.some(isDefStage);
   const curCard=cards[ki]||{};
   const prog=hasFlips?`<div class="kid-prog">
-      <span class="${curCard.kind==='flip'?'on':''}">1 \u2753 WHAT IS IT?</span>
+      <span class="${isDefStage(curCard)?'on':''}">1 \u2753 WHAT IS IT?</span>
       <i>\u2192</i>
-      <span class="${curCard.kind!=='flip'?'on':''}">2 \u{1F4A1} EXAMPLES</span>
+      <span class="${!isDefStage(curCard)?'on':''}">2 \u{1F4A1} EXAMPLES</span>
     </div>`:'';
 
   let stage='';
