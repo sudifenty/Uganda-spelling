@@ -3,7 +3,7 @@
  "subject": "SST",
  "subject_name": "Social Studies",
  "total": 5,
- "words": 13169,
+ "words": 12054,
  "topics": [
   {
    "id": "P6_SST_T01",
@@ -484,7 +484,7 @@
    "slug": "major-resources",
    "periods": 30,
    "curriculum_pages": "326–331",
-   "words": 2806,
+   "words": 1691,
    "sections": [
     {
      "title": "About this topic",
@@ -495,7 +495,7 @@
       },
       {
        "t": "p",
-       "x": "**What you already know:** In P.5 you studied the resources of **Uganda**. In P.6 you study the resources of the **whole of East Africa** — the land, the minerals, the water and the fishing industry."
+       "x": "**What you already know:** In P.5 you studied the resources of **Uganda**. In P.6 you study the major resources of the **whole of East Africa** — land, water, forests, wildlife, minerals, soil, fish, climate and human resources."
       },
       {
        "t": "p",
@@ -504,669 +504,310 @@
       {
        "t": "ul",
        "items": [
-        "name the major resources of East Africa and locate them",
-        "describe land as a resource: plants, animals, cultivation and tourism",
-        "name the minerals of East Africa, the types of mining and where minerals are found",
-        "describe the drainage of East Africa and the uses of water",
-        "describe fishing methods, preservation, importance, problems and solutions"
+        "explain what a resource and a natural resource are",
+        "explain the importance of land, water, forests, wildlife, minerals, soil, fish, climate and human resources",
+        "state the importance of major resources to East Africa",
+        "explain conservation and how each resource can be conserved",
+        "state the problems caused by misuse of natural resources",
+        "locate the major water bodies of East Africa on a map"
        ]
+      },
+      {
+       "t": "p",
+       "x": "**A note on sources.** The teaching content of this topic — the definitions, lists and examination questions — was supplied by the app's owner from the P.6 lesson material. The revision questions and the answers to revision questions are found together in the last section of this topic, where every question carries its own answer on the same card."
       }
      ]
     },
     {
-     "title": "1. WHAT RESOURCES ARE",
+     "title": "1. What is a resource?",
      "blocks": [
       {
-       "t": "h3",
-       "x": "Definitions"
+       "t": "p",
+       "x": "**Resource:** A resource is anything that people use to satisfy their needs."
       },
       {
        "t": "p",
-       "x": "**Resource:** Anything found in the environment that people use to satisfy their needs."
-      },
-      {
-       "t": "p",
-       "x": "**Natural resource:** A resource provided by nature — land, water, minerals, vegetation, animals and climate."
-      },
-      {
-       "t": "p",
-       "x": "The major resources of East Africa are **land, minerals, water, vegetation, wildlife, climate and the people themselves**."
+       "x": "**Natural resources:** Natural resources are things provided by nature that people use to satisfy their needs. Examples of natural resources found in East Africa include land, water, forests, wildlife, minerals, fish and soils."
       }
      ]
     },
     {
-     "title": "2. LAND AS A RESOURCE",
+     "title": "2. Why is land an important resource?",
      "blocks": [
       {
-       "t": "h3",
-       "x": "(a) Plants (vegetation)"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Vegetation type",
-        "Where in East Africa"
-       ],
-       "rows": [
-        [
-         "Tropical rain forest",
-         "Mabira and Budongo (Uganda), Kakamega (Kenya), Kivu shores"
-        ],
-        [
-         "Savannah grassland",
-         "Most of the region — the largest area"
-        ],
-        [
-         "Montane vegetation",
-         "Slopes of Kilimanjaro, Mt Kenya, Elgon and Rwenzori"
-        ],
-        [
-         "Semi-desert",
-         "Karamoja, northern Kenya, central Tanzania"
-        ],
-        [
-         "Mangrove forest",
-         "The Indian Ocean coast of Kenya and Tanzania"
-        ],
-        [
-         "Swamp vegetation",
-         "The Sudd edge, Lake Kyoga area, Kilombero"
-        ]
-       ]
+       "t": "p",
+       "x": "Land is important because people use it for farming, settlement, mining, transport, industries and other activities. Land is used for crop growing, keeping animals, settlement, mining, building industries, transport, tourism and forestry."
       },
       {
        "t": "p",
-       "x": "**Uses:** timber, poles, firewood and charcoal · medicine · pasture · raw materials for paper and furniture · protection of soil and water catchments · homes for wild animals · tourist attractions."
-      },
-      {
-       "t": "h3",
-       "x": "(b) Animals — domestic and wild"
-      },
-      {
-       "t": "p",
-       "x": "**Domestic animals:** cattle, goats, sheep, pigs, poultry, donkeys. Breeds of cattle include the local **Ankole long-horned** and **Zebu**, and the exotic **Friesian, Jersey and Guernsey**. They give meat, milk, hides and skins, manure, transport and money."
-      },
-      {
-       "t": "p",
-       "x": "**Wild animals:** elephants, lions, buffaloes, giraffes, zebras, antelopes, rhinos, gorillas and chimpanzees. They attract **tourists**, are used for research and education, and are part of our heritage."
-      },
-      {
-       "t": "h3",
-       "x": "(c) Cultivation — cash and food crops"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Crop type",
-        "Examples and where they are grown"
-       ],
-       "rows": [
-        [
-         "**Cash crops**",
-         "Coffee (Uganda, Kenya, Tanzania), tea (Kericho in Kenya, Fort Portal in Uganda), cotton (eastern Uganda, Tanzania), sugar cane (Kakira, Kinyara, Mumias), sisal (Tanga in Tanzania), pyrethrum (Kenya highlands), tobacco (West Nile), cloves (**Zanzibar and Pemba**), cashew nuts (southern Tanzania), vanilla (Uganda)"
-        ],
-        [
-         "**Food crops**",
-         "Matooke, maize, millet, sorghum, cassava, sweet potatoes, beans, groundnuts, rice, wheat"
-        ]
-       ]
-      },
-      {
-       "t": "p",
-       "x": "**Factors favouring crop growing:** fertile soils · reliable rainfall · suitable climate · availability of land and labour · markets and transport."
-      },
-      {
-       "t": "h3",
-       "x": "(d) Tourism"
-      },
-      {
-       "t": "p",
-       "x": "**Tourism:** Travelling to visit places of interest for pleasure, study or rest."
-      },
-      {
-       "t": "table",
-       "head": [
-        "Attraction",
-        "Examples"
-       ],
-       "rows": [
-        [
-         "Game parks and reserves",
-         "**Serengeti, Ngorongoro** (Tanzania); **Maasai Mara, Tsavo, Amboseli** (Kenya); **Murchison Falls, Queen Elizabeth, Kidepo, Bwindi** (Uganda); **Akagera** (Rwanda); **Ruvubu** (Burundi)"
-        ],
-        [
-         "Mountains",
-         "Kilimanjaro, Mt Kenya, Rwenzori, Elgon, Virunga volcanoes"
-        ],
-        [
-         "Water features",
-         "Lake Victoria, the source of the Nile at Jinja, Murchison Falls, the Indian Ocean beaches"
-        ],
-        [
-         "Culture and history",
-         "Kasubi Tombs, Fort Jesus in Mombasa, Bagamoyo, traditional dances, the Kigali Genocide Memorial"
-        ]
-       ]
-      },
-      {
-       "t": "p",
-       "x": "**Importance of tourism:** foreign exchange · employment · government revenue · market for crafts and food · development of roads, hotels and airports · international friendship."
-      },
-      {
-       "t": "p",
-       "x": "**Problems of tourism:** poaching · insecurity and political unrest · poor roads to some parks · high cost of travel · destruction of habitats · few skilled guides · animals raiding gardens near parks."
+       "x": "Examples of crops grown on land in East Africa include maize, beans, bananas, coffee, tea and cotton."
       }
      ]
     },
     {
-     "title": "3. MINERALS",
+     "title": "3. Why is water an important resource?",
      "blocks": [
       {
-       "t": "h3",
-       "x": "Definitions"
+       "t": "p",
+       "x": "Water is important because people, animals and plants need it for survival and many other activities."
       },
       {
        "t": "p",
-       "x": "**Mineral:** A useful substance obtained from the earth by mining."
+       "x": "Sources of water in East Africa include lakes, rivers, springs, wells, rainfall and oceans. Water is used for drinking, cooking, washing, irrigation, fishing, transport, producing electricity and industrial activities."
       },
       {
        "t": "p",
-       "x": "**Mining:** The process of removing minerals from the earth."
-      },
-      {
-       "t": "h3",
-       "x": "Minerals of East Africa and where they are found"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Country",
-        "Minerals"
-       ],
-       "rows": [
-        [
-         "**Uganda**",
-         "Copper (**Kilembe**), cobalt, limestone (**Hima, Tororo**), gold (Karamoja, Busia), salt (**Katwe**), iron ore (Muko), phosphates (Sukulu), oil (**Albertine Graben**)"
-        ],
-        [
-         "**Kenya**",
-         "Soda ash (**Lake Magadi**), fluorspar (Kerio Valley), limestone (Athi River), titanium (Kwale), gemstones, salt"
-        ],
-        [
-         "**Tanzania**",
-         "Diamonds (**Mwadui**), gold (**Geita**), **tanzanite** (Mererani), natural gas (Songo Songo), coal (Kiwira), tin, phosphates"
-        ],
-        [
-         "**Rwanda**",
-         "Cassiterite (tin), coltan, wolfram, gold"
-        ],
-        [
-         "**Burundi**",
-         "Nickel, gold, cassiterite, peat"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Types of mining"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Type",
-        "How it is done"
-       ],
-       "rows": [
-        [
-         "**Traditional**",
-         "Simple tools — hoes, pangas, pans and baskets; panning gold in river sand; digging shallow pits by hand"
-        ],
-        [
-         "**Modern (open cast)**",
-         "Removing the soil above and scooping the mineral with machines, as at Mwadui and Hima"
-        ],
-        [
-         "**Modern (shaft / underground)**",
-         "Digging deep shafts and tunnels, as at Kilembe"
-        ],
-        [
-         "**Drilling**",
-         "Boring deep holes for oil and natural gas"
-        ],
-        [
-         "**Dredging / alluvial**",
-         "Scooping minerals from river or lake beds"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Minerals as a source of income"
-      },
-      {
-       "t": "p",
-       "x": "They earn **foreign exchange** when exported · provide **employment** · give government **taxes and royalties** · provide **raw materials** for industries such as cement and steel · lead to the growth of **towns and roads** where mines are opened."
-      },
-      {
-       "t": "h3",
-       "x": "Problems of the mining industry"
-      },
-      {
-       "t": "p",
-       "x": "Shortage of **capital** and modern machinery · **low level of technology** and few skilled people · minerals in **remote areas** with poor roads · **accidents** and mine collapses · **pollution** and land degradation · minerals in **small scattered deposits** · unstable **world prices** · **smuggling** and illegal mining · displacement of people."
-      },
-      {
-       "t": "p",
-       "x": "**Solutions:** attract investment, train people in mining skills, improve roads to mining areas, enforce safety and environmental laws, add value by processing minerals at home, and fight smuggling."
+       "x": "Major lakes in East Africa include Lake Victoria, Lake Kyoga, Lake Albert, Lake Edward, Lake Tanganyika and Lake Turkana. Major rivers include the River Nile, River Tana, River Athi and River Rufiji."
       }
      ]
     },
     {
-     "title": "4. WATER AND DRAINAGE",
+     "title": "4. Why are forests important resources?",
      "blocks": [
       {
-       "t": "h3",
-       "x": "Definition"
+       "t": "p",
+       "x": "Forests provide useful products and help to protect the environment. People get products such as timber, firewood, charcoal, fruits, medicines and poles from forests."
       },
       {
        "t": "p",
-       "x": "**Drainage:** The way water is held and carried in an area by lakes, rivers, swamps, seas and oceans."
-      },
-      {
-       "t": "h3",
-       "x": "Lakes of East Africa"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Lake",
-        "Notes"
-       ],
-       "rows": [
-        [
-         "**Lake Victoria**",
-         "The largest in Africa; shared by Uganda, Kenya and Tanzania"
-        ],
-        [
-         "**Lake Tanganyika**",
-         "The deepest in Africa; Tanzania, D.R. Congo, Burundi, Zambia"
-        ],
-        [
-         "**Lake Albert, Edward, George, Kyoga, Wamala**",
-         "Uganda"
-        ],
-        [
-         "**Lake Turkana, Naivasha, Nakuru, Baringo, Magadi**",
-         "Kenya"
-        ],
-        [
-         "**Lake Natron, Eyasi, Manyara, Rukwa, Nyasa (Malawi)**",
-         "Tanzania"
-        ],
-        [
-         "**Lake Kivu**",
-         "Rwanda and D.R. Congo"
-        ],
-        [
-         "**Lake Rweru and Cohoha**",
-         "Burundi"
-        ]
-       ]
+       "x": "Forests protect soil from erosion, provide homes for wild animals, help to maintain rainfall, provide fresh air and help to conserve the environment."
       },
       {
        "t": "p",
-       "x": "Lakes are of different kinds: **rift valley** lakes (Tanganyika, Albert, Turkana), **depression** lakes (Victoria, Kyoga), **crater** lakes (Katwe, Nyamunuka) and **man-made** lakes (behind dams)."
-      },
-      {
-       "t": "h3",
-       "x": "Rivers of East Africa"
-      },
-      {
-       "t": "p",
-       "x": "**River Nile** (from Lake Victoria at Jinja, flowing north) · **Kagera** (the longest feeder of Lake Victoria) · **Tana** and **Athi–Galana** (Kenya) · **Rufiji, Pangani, Ruvuma, Ruaha** (Tanzania) · **Katonga, Semliki, Aswa** (Uganda) · **Ruvubu and Ruzizi** (Burundi and Rwanda)."
-      },
-      {
-       "t": "p",
-       "x": "**Other water bodies:** the **Indian Ocean** on the eastern side, and swamps such as those of Lake Kyoga, the Kilombero valley and Rwanda's Rugezi."
-      },
-      {
-       "t": "h3",
-       "x": "Uses of water in East Africa"
-      },
-      {
-       "t": "p",
-       "x": "Drinking and domestic use · **irrigation** (Mubuku, Doho, Mwea in Kenya) · **hydro-electric power** (Nalubaale, Kiira, Bujagali, Isimba, Karuma, Owen Falls; Kidatu in Tanzania) · **fishing** · **water transport** on lakes, rivers and the ocean · **tourism and sport** · industry · watering animals."
-      },
-      {
-       "t": "p",
-       "x": "**Problems:** pollution from factories and towns · water hyacinth · silting · drying up of lakes and wetlands · floods · water-borne diseases · water shortage in dry areas."
+       "x": "**Forestry** is the growing, caring for and using of trees and forests."
       }
      ]
     },
     {
-     "title": "5. FISHING",
+     "title": "5. Why is wildlife an important resource?",
      "blocks": [
       {
-       "t": "h3",
-       "x": "Definition"
+       "t": "p",
+       "x": "**Wildlife** refers to animals and plants that live in their natural environment. Wildlife is important because it provides income through tourism and provides employment to some people."
       },
       {
        "t": "p",
-       "x": "**Fishing:** The catching of fish and other water animals for food and for sale."
-      },
-      {
-       "t": "h3",
-       "x": "Fishing grounds"
+       "x": "Examples of wild animals found in East Africa include lions, elephants, giraffes, zebras, buffaloes, rhinoceroses and leopards. Many wild animals are protected in game parks and game reserves."
       },
       {
        "t": "p",
-       "x": "Lake Victoria (the biggest) · Lakes Kyoga, Albert, Edward and George · Lake Tanganyika · Lake Turkana · the **Indian Ocean** coast · fish ponds on farms."
+       "x": "**Tourism** is the activity of travelling to places for leisure, learning or other purposes. Wild animals attract tourists who visit East Africa to see and enjoy them."
       },
       {
        "t": "p",
-       "x": "Common fish: **Nile perch (mputa), tilapia (ngege), silver fish (mukene), tuna, catfish, lungfish, sardines (dagaa)**."
-      },
-      {
-       "t": "h3",
-       "x": "Fishing methods"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Traditional",
-        "Modern"
-       ],
-       "rows": [
-        [
-         "Hooks and lines",
-         "Trawling with large nets pulled by boats"
-        ],
-        [
-         "Baskets and traps",
-         "Purse seining"
-        ],
-        [
-         "Spears and harpoons",
-         "Gill nets and long lines from motor boats"
-        ],
-        [
-         "Weirs and fences across streams",
-         "Fish farming in ponds and cages"
-        ],
-        [
-         "Poisoning and stunning (now illegal)",
-         "Use of echo sounders and refrigerated boats"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Preservation of fish"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Traditional",
-        "Modern"
-       ],
-       "rows": [
-        [
-         "Sun drying",
-         "Refrigeration and freezing"
-        ],
-        [
-         "Smoking",
-         "Canning"
-        ],
-        [
-         "Salting",
-         "Filleting and cold storage"
-        ],
-        [
-         "Deep frying",
-         "Modern processing factories, as at Jinja and Kisumu"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Importance of fishing to the people of East Africa"
-      },
-      {
-       "t": "p",
-       "x": "**Food** rich in protein · **employment** for fishermen, traders and factory workers · **income** for families · **foreign exchange** from exported Nile perch fillets · **raw materials** for fish-processing and animal-feed industries · government **revenue** through licences and taxes · growth of **landing sites and towns**."
-      },
-      {
-       "t": "h3",
-       "x": "Problems of the fishing industry"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "**Over-fishing** and use of **undersized nets**, which catch immature fish.",
-        "Use of **poison and explosives**, which kill all life in the water.",
-        "**Water hyacinth** blocking landing sites.",
-        "**Water pollution** from factories, towns and farms.",
-        "**Poor preservation and transport**, so fish goes bad.",
-        "**Lack of capital** for modern boats and equipment.",
-        "**Accidents and storms** on the lakes; many fishermen cannot swim.",
-        "**Insecurity** and theft of nets and engines.",
-        "**Diseases** such as bilharzia at landing sites.",
-        "**Low prices** paid to the fishermen by middlemen."
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Solutions"
-      },
-      {
-       "t": "p",
-       "x": "Enforce laws on **net sizes and closed seasons** · ban poison and explosives · encourage **fish farming** in ponds and cages · remove water hyacinth · build **cold rooms** and improve roads to landing sites · give **loans and training** to fishermen · provide life jackets and weather warnings · form **fishermen's cooperatives** so they get fair prices · patrol the lakes."
+       "x": "Wildlife benefits East African countries because it brings income through tourism, provides employment, attracts visitors from other countries, provides foreign exchange and promotes conservation."
       }
      ]
     },
     {
-     "title": "KEY DEFINITIONS",
+     "title": "6. What are minerals?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Minerals** are useful substances found in or under the ground. Examples of minerals found in East Africa include gold, copper, iron ore, limestone, salt, tin and diamond."
+      },
+      {
+       "t": "p",
+       "x": "Minerals are important because they provide raw materials for industries and income through mining and trade. **Mining** is the activity of removing minerals from the ground."
+      },
+      {
+       "t": "p",
+       "x": "Mining provides employment, provides income, provides raw materials for industries and provides minerals for export. Poor mining practices can destroy land, pollute water, destroy vegetation and leave open pits."
+      }
+     ]
+    },
+    {
+     "title": "7. Why is soil an important resource?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Soil is important because it supports the growth of crops and natural vegetation. Activities that depend on soil include crop growing, livestock keeping, forestry and settlement. Fertile soil helps crops to grow well and produce good yields."
+      },
+      {
+       "t": "p",
+       "x": "Loss of soil fertility can be caused by continuous cultivation, soil erosion, overgrazing, bush burning and poor farming methods. Soil can be conserved by planting trees, practising crop rotation, using manure, controlling soil erosion and avoiding overgrazing."
+      }
+     ]
+    },
+    {
+     "title": "8. Why is fish an important resource?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Fish provides food and income to many people. Fishing is mainly carried out in lakes, rivers and the ocean. Important fishing areas in East Africa include Lake Victoria, Lake Kyoga, Lake Albert, Lake Tanganyika and the Indian Ocean."
+      },
+      {
+       "t": "p",
+       "x": "Fishing provides food, provides employment, provides income and provides fish for trade. Fishing can be affected by overfishing, water pollution, destruction of breeding areas and the use of illegal fishing methods."
+      }
+     ]
+    },
+    {
+     "title": "9. Why is climate important to people?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Climate affects activities such as farming, livestock keeping and tourism. Rainfall and suitable temperatures provide conditions needed for crops to grow. Favourable weather can attract tourists to visit different places."
+      }
+     ]
+    },
+    {
+     "title": "10. What are human resources?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Human resources** are people and their skills, knowledge and abilities that are used to produce goods and services. People use their knowledge, skills and abilities to carry out different activities and develop their communities and countries."
+      },
+      {
+       "t": "p",
+       "x": "Examples of people who provide important skills and services include teachers, doctors, nurses, farmers, engineers, drivers, builders and traders. People can improve their skills through education, training and practice."
+      }
+     ]
+    },
+    {
+     "title": "11. Why are natural resources important to East Africa?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Natural resources are important to East African countries because they provide food, provide raw materials, provide employment, provide income, promote trade, promote tourism, support industries and provide government revenue."
+      },
+      {
+       "t": "p",
+       "x": "People get jobs in activities such as farming, fishing, mining, forestry and tourism. People and countries buy and sell products obtained from resources such as crops, fish, minerals and forest products. Resources provide the raw materials needed by industries."
+      }
+     ]
+    },
+    {
+     "title": "12. What is conservation of resources?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Conservation** is the proper use and protection of resources. Resources should be conserved so that they can continue benefiting people now and in the future."
+      },
+      {
+       "t": "p",
+       "x": "Land can be conserved by planting trees, controlling soil erosion and avoiding overgrazing. Forests can be conserved by planting trees, controlling unnecessary cutting of trees, preventing forest fires and protecting forests. Wildlife can be conserved by protecting game parks and reserves, preventing poaching, protecting animal habitats and enforcing wildlife laws."
+      },
+      {
+       "t": "p",
+       "x": "Water can be conserved by preventing water pollution, protecting water sources and avoiding unnecessary wastage of water. Fish can be conserved by controlling overfishing, using legal fishing methods, protecting fish breeding areas and preventing water pollution. Minerals can be conserved by using them carefully and controlling mining activities to reduce environmental damage."
+      }
+     ]
+    },
+    {
+     "title": "13. What happens when resources are misused?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Misuse of resources can lead to environmental destruction, soil erosion, loss of forests, loss of wildlife, water pollution, loss of fertile soil and shortage of resources."
+      },
+      {
+       "t": "p",
+       "x": "**Environmental destruction** is the damage caused to the natural environment by human activities. People should avoid destroying natural resources because they depend on them for food, income, employment and other needs."
+      }
+     ]
+    },
+    {
+     "title": "14. MAP WORK",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A P.6 learner should be able to locate important areas where major resources are found and used. The major water bodies a learner should practise locating are Lake Victoria, Lake Kyoga, Lake Albert, Lake Edward, Lake Tanganyika, Lake Turkana and the Indian Ocean. The Indian Ocean borders East Africa, and the major river a learner should be able to locate is the River Nile."
+      }
+     ]
+    },
+    {
+     "title": "15. KEY DEFINITIONS",
      "blocks": [
       {
        "t": "table",
        "head": [
-        "Term",
+        "Word",
         "Meaning"
        ],
        "rows": [
         [
-         "Resource",
-         "Anything in the environment used to satisfy human needs"
+         "**Resource**",
+         "Anything that people use to satisfy their needs"
         ],
         [
-         "Mineral",
-         "A useful substance obtained from the earth"
+         "**Natural resource**",
+         "Something provided by nature that people use to satisfy their needs"
         ],
         [
-         "Mining",
-         "The removal of minerals from the earth"
+         "**Forestry**",
+         "The growing, caring for and using of trees and forests"
         ],
         [
-         "Open cast mining",
-         "Mining by removing the soil above the mineral"
+         "**Wildlife**",
+         "Animals and plants that live in their natural environment"
         ],
         [
-         "Shaft mining",
-         "Mining by sinking deep shafts underground"
+         "**Minerals**",
+         "Useful substances found in or under the ground"
         ],
         [
-         "Drainage",
-         "The way water is carried and held in an area"
+         "**Mining**",
+         "The activity of removing minerals from the ground"
         ],
         [
-         "Tourism",
-         "Travelling to visit places of interest"
+         "**Conservation**",
+         "The proper use and protection of resources"
         ],
         [
-         "Cash crop",
-         "A crop grown mainly for sale"
-        ],
-        [
-         "Food crop",
-         "A crop grown mainly for eating"
-        ],
-        [
-         "Over-fishing",
-         "Catching too many fish so that the stock cannot recover"
+         "**Human resources**",
+         "People and their skills, knowledge and abilities that are used to produce goods and services"
         ]
        ]
       }
      ]
     },
     {
-     "title": "IMPORTANT FACTS TO REMEMBER",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "Copper is mined at **Kilembe** in Uganda; diamonds at **Mwadui** and gold at **Geita** in Tanzania; soda ash at **Lake Magadi** in Kenya.",
-        "**Tanzanite** is found only in Tanzania.",
-        "Cloves are the main cash crop of **Zanzibar and Pemba**; pyrethrum is grown in the **Kenya highlands**; sisal at **Tanga**.",
-        "**Lake Victoria** is the largest lake in Africa; **Lake Tanganyika** is the deepest.",
-        "The **River Nile** starts from Lake Victoria at Jinja and flows **north**.",
-        "Main fish: **Nile perch, tilapia and mukene**.",
-        "Traditional preservation: sun drying, smoking, salting. Modern: refrigeration and canning.",
-        "The biggest problem of the fishing industry is **over-fishing and the use of wrong fishing gear**."
-       ]
-      }
-     ]
-    },
-    {
-     "title": "EXAMINATION POINTS",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "Mineral mined at Kilembe — copper. At Mwadui — diamonds. At Lake Magadi — soda ash.",
-        "Type of mining used at Kilembe — shaft (underground) mining.",
-        "Cash crop grown on the slopes of Mt Kilimanjaro — coffee.",
-        "Largest lake in East Africa — Lake Victoria.",
-        "Longest river that feeds Lake Victoria — River Kagera.",
-        "One modern method of fishing — trawling (or use of gill nets).",
-        "One traditional way of preserving fish — smoking (or sun drying, salting).",
-        "One way of solving over-fishing — using recommended net sizes and fish farming."
-       ]
-      }
-     ]
-    },
-    {
-     "title": "MAP WORK",
+     "title": "16. IMPORTANT FACTS TO REMEMBER",
      "blocks": [
       {
        "t": "p",
-       "x": "On a map of East Africa you should be able to locate and label:"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "**Lake Victoria, Tanganyika, Turkana, Albert, Kyoga, Kivu** and the **Indian Ocean**",
-        "**River Nile, Kagera, Tana, Rufiji, Pangani**",
-        "Mining centres: **Kilembe, Hima, Katwe, Mwadui, Geita, Magadi, Mererani**",
-        "Game parks: **Serengeti, Maasai Mara, Murchison Falls, Queen Elizabeth, Akagera**",
-        "Cash-crop areas: coffee, tea, cotton, sisal and cloves"
-       ]
-      },
-      {
-       "t": "p",
-       "x": "**Practice activity:** Draw the map of East Africa and use one symbol for minerals, one for game parks and one for fishing grounds. Add a key at the corner."
+       "x": "The major resources of East Africa are land, water, forests, wildlife, minerals, soil, fish, climate and human resources. Resources are important because they provide food, employment, income, raw materials and support economic development. Resources should be conserved so that they can continue benefiting people now and in the future."
       }
      ]
     },
     {
-     "title": "REVISION QUESTIONS",
+     "title": "17. EXAMINATION QUESTIONS AND REVISION QUESTIONS",
      "blocks": [
       {
        "t": "ol",
        "items": [
-        "What is a natural resource? Name any five natural resources of East Africa.",
-        "Give any four uses of vegetation to the people of East Africa.",
-        "Name any four cash crops of East Africa and where each is grown.",
-        "Give any four factors that favour crop growing in East Africa.",
-        "What is tourism? Name any four tourist attractions in East Africa.",
-        "Give any four importances of tourism to East Africa.",
-        "Give any three problems facing the tourism industry.",
-        "Name the mineral mined at each of these places: Kilembe, Mwadui, Lake Magadi, Geita.",
-        "Give the difference between traditional and modern mining.",
-        "Name any two types of modern mining and give one example of each.",
-        "Give any four problems facing the mining industry in East Africa.",
-        "Name any four lakes and any three rivers of East Africa.",
-        "Give any five uses of water in East Africa.",
-        "Name any three traditional and three modern methods of fishing.",
-        "Give three traditional and two modern ways of preserving fish.",
-        "Give any five importances of fishing to the people of East Africa.",
-        "Give any five problems facing the fishing industry.",
-        "Suggest any five solutions to the problems of the fishing industry.",
-        "Why are minerals said to be a source of income to a country?",
-        "Draw the map of East Africa and mark on it Lake Victoria, the River Nile and Kilembe."
+        "Mention six major resources of East Africa. — Land, water, forests, wildlife, minerals, fish.",
+        "Give five uses of water. — Drinking, cooking, irrigation, fishing, transport.",
+        "Mention five products obtained from forests. — Timber, firewood, charcoal, fruits, medicines.",
+        "Mention five benefits of wildlife. — It promotes tourism; it provides employment; it provides income; it provides foreign exchange; it promotes conservation.",
+        "Give four examples of minerals found in East Africa. — Gold, copper, iron ore, limestone.",
+        "Mention four benefits of mining. — It provides employment; it provides income; it provides raw materials; it provides minerals for export.",
+        "Mention four ways of conserving natural resources. — Planting trees; preventing pollution; protecting wildlife; using resources wisely.",
+        "Mention four problems caused by misuse of natural resources. — Soil erosion; water pollution; deforestation; loss of wildlife."
        ],
        "start": 1
       }
      ]
     },
     {
-     "title": "ANSWERS TO REVISION QUESTIONS",
-     "blocks": [
-      {
-       "t": "ol",
-       "items": [
-        "A natural resource is a resource provided by nature. Any five of: land, water, minerals, vegetation, wildlife, climate, people.",
-        "Any four of: timber and poles, firewood and charcoal, medicine, pasture, raw materials for industry, protection of soil and water catchments, homes for wild animals, tourist attraction.",
-        "Any four, for example: coffee — Uganda and the slopes of Kilimanjaro; tea — Kericho in Kenya and Fort Portal in Uganda; cotton — eastern Uganda; sisal — Tanga in Tanzania; cloves — Zanzibar and Pemba; pyrethrum — the Kenya highlands.",
-        "Any four of: fertile soils, reliable rainfall, suitable climate, enough land, available labour, markets and good transport.",
-        "Tourism is travelling to visit places of interest for pleasure, study or rest. Attractions: Serengeti, Murchison Falls, Mt Kilimanjaro, the source of the Nile, the Indian Ocean beaches, the Kasubi Tombs (any four).",
-        "Any four of: it earns foreign exchange; it creates employment; it earns government revenue; it provides a market for crafts and food; it leads to development of roads, hotels and airports; it promotes international friendship.",
-        "Any three of: poaching, insecurity, poor roads to parks, high travel costs, destruction of habitats, shortage of skilled guides.",
-        "Kilembe — **copper**; Mwadui — **diamonds**; Lake Magadi — **soda ash**; Geita — **gold**.",
-        "Traditional mining uses simple hand tools such as hoes, pans and baskets and digs shallow pits, while modern mining uses machines, deep shafts, drilling and dredging, and produces much larger amounts.",
-        "Any two of: **open cast** — Hima limestone or Mwadui diamonds; **shaft (underground)** — Kilembe copper; **drilling** — oil in the Albertine Graben; **dredging** — minerals from river beds.",
-        "Any four of: shortage of capital, low technology and few skilled workers, remote deposits with poor roads, accidents, pollution, small scattered deposits, unstable world prices, smuggling.",
-        "Lakes: Victoria, Tanganyika, Albert, Kyoga, Turkana, Kivu (any four). Rivers: Nile, Kagera, Tana, Rufiji, Pangani (any three).",
-        "Any five of: drinking and domestic use, irrigation, hydro-electric power, fishing, transport, tourism and sport, industry, watering animals.",
-        "**Traditional:** hooks and lines, baskets and traps, spears, weirs (any three). **Modern:** trawling, purse seining, gill nets from motor boats, fish farming (any three).",
-        "**Traditional:** sun drying, smoking, salting. **Modern:** refrigeration and freezing, canning.",
-        "Any five of: it provides food rich in protein; employment; income for families; foreign exchange from exports; raw materials for industries; government revenue; growth of landing sites and towns.",
-        "Any five of: over-fishing; use of undersized nets; poison and explosives; water hyacinth; pollution; poor preservation and transport; lack of capital; accidents on the lakes; insecurity; low prices from middlemen.",
-        "Any five of: enforce laws on net sizes and closed seasons; ban poison and explosives; encourage fish farming; remove water hyacinth; build cold rooms and improve roads; give loans and training; provide life jackets; form cooperatives; patrol the lakes.",
-        "Because minerals are sold both at home and abroad, earning **foreign exchange**; they provide employment and wages; the government collects taxes and royalties from mining companies; and they supply raw materials for industries, which creates more income and jobs.",
-        "*Learner's map.* Lake Victoria in the middle of the region, the River Nile flowing north from Jinja, and Kilembe in western Uganda near the Rwenzori."
-       ],
-       "start": 1
-      }
-     ]
-    },
-    {
-     "title": "P.6 QUICK REVISION",
+     "title": "18. ANSWERS TO REVISION QUESTIONS — P.6 QUICK REVISION",
      "blocks": [
       {
        "t": "ul",
        "items": [
-        "Resources: **land · minerals · water · vegetation · wildlife · climate · people**",
-        "Kilembe **copper** · Mwadui **diamonds** · Geita **gold** · Magadi **soda ash** · Mererani **tanzanite**",
-        "Mining: traditional (hand tools) · open cast · shaft · drilling · dredging",
-        "Victoria = largest · Tanganyika = deepest · Nile starts at **Jinja**",
-        "Fishing: traditional traps and spears · modern trawling and gill nets",
-        "Preserve: sun drying, smoking, salting → refrigeration, canning",
-        "Biggest fishing problem = **over-fishing and bad gear** → laws + fish farming"
+        "A resource is anything that people use to satisfy their needs.",
+        "Natural resources are things provided by nature that people use to satisfy their needs.",
+        "Four major resources of East Africa are land, water, forests and wildlife.",
+        "Land is important because it provides space for farming, settlement, mining and other activities.",
+        "Water is important because people, animals and plants need it for survival and other activities.",
+        "Forests are important because they provide useful products and help protect the environment.",
+        "Wildlife is important because it promotes tourism and provides income and employment.",
+        "Minerals are important because they provide raw materials, income and employment.",
+        "Fish is important because it provides food, income and employment.",
+        "Conservation is the proper use and protection of resources.",
+        "Resources should be conserved so that they can continue benefiting people now and in the future."
        ]
-      }
-     ]
-    },
-    {
-     "title": "A note on sources",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "The topic title, sub-topics, competences and teacher guidance above were taken from the official **NCDC Primary Six Curriculum, Set One** (© NCDC 2010; topic outline page 312 and pages 326–331 of the PDF in `curriculum/`). The explanations, tables, examples, revision questions and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
-      },
-      {
-       "t": "p",
-       "x": "No NCDC **Teacher's Guide** for P.6 was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
       }
      ]
     }
