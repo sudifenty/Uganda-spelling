@@ -7,435 +7,334 @@
 *Curriculum reference: NCDC Primary Six Curriculum, Set One, Social Studies Topic 1,
 50 periods (`curriculum/P6-SET-ONE-2010.pdf`, topic outline page 311 and pages 317–325).*
 
-**What you already know:** In P.5 you studied **Uganda** — its people, their origin and
-their settlement. In P.6 you widen the picture to the whole of **East Africa**. The
-curriculum says plainly that, with the rebirth of the East African Community, **Rwanda and
-Burundi are now counted as part of East Africa**.
+**What you already know:** In P.5 you studied Uganda — its people and their settlement.
+In P.6 you widen the picture to the whole of East Africa working together.
 
 **By the end of this topic you should be able to:**
 
-- describe the historical background of the East African Community (1967–1977)
-- give the reasons why the old Community collapsed
-- describe the revival of the Community and its benefits today
-- name the national symbols of the member countries and the symbols of the EAC
-- describe the peoples of East Africa, their cradle land and their ethnic groups
-- explain the factors that influence settlement, and population growth, distribution and density
+- explain what the East African Community is and what regional cooperation means
+- name the member countries of the East African Community
+- describe the formation, collapse and revival of the former East African Community
+- state the objectives and benefits of the East African Community
+- name the organs of the East African Community and their roles
+- state the challenges facing the East African Community and how they can be reduced
+- explain trade and the common market in the EAC
+- name the symbols of the East African Community
+
+**A note on sources.** The teaching content of this topic — the definitions, lists,
+dates and examination points — was supplied by the app's owner from the P.6 lesson
+material. The revision questions and the answers to revision questions are found
+together in the P.6 Quick Revision section at the end of this topic, where every
+question carries its own answer on the same card.
 
 ---
 
-## 1. THE OLD EAST AFRICAN COMMUNITY (1967–1977)
+## 1. What is the East African Community?
 
-### Definition
+**East African Community (EAC):** The East African Community (EAC) is a regional
+organisation formed by countries of East Africa to work together for the benefit of
+their people. EAC stands for East African Community.
 
-**East African Community (EAC):** An inter-governmental organisation of East African countries that work together for their political, economic and social development.
+**Regional cooperation:** Regional cooperation is when countries in the same region
+work together to achieve common goals. East African countries cooperate to promote
+peace, trade, development and good relations among their people.
 
-### Formation
+---
 
-| Fact | Detail |
+## 2. Which countries are members of the EAC?
+
+The original East African Community was formed by **Uganda, Kenya and Tanzania**.
+Rwanda and Burundi later joined the East African Community.
+
+The members of the East African Community today are **eight** countries: Burundi, the
+Democratic Republic of the Congo, Kenya, Rwanda, Somalia, South Sudan, Tanzania and
+Uganda. Somalia became a member of the East African Community in 2024, so Somalia is
+the newest member of the EAC.
+
+---
+
+## 3. How did the former EAC and common services work?
+
+The former East African Community was formed in **1967** by Uganda, Kenya and Tanzania.
+They formed the Community to work together and provide common services and promote
+development in East Africa.
+
+**East African Common Services Organisation:** The East African Common Services
+Organisation was an organisation through which Uganda, Kenya and Tanzania provided and
+managed common services before the formation of the former EAC.
+
+**East African High Commission:** The East African High Commission was an organisation
+through which Uganda, Kenya and Tanganyika worked together to manage common services
+before the East African Common Services Organisation.
+
+**Common services:** Common services are services that are provided and used by more
+than one country. Examples of common services that were provided through cooperation
+among East African countries are railways, harbours, postal services,
+telecommunications, airways and research services. They helped the East African
+countries to share services and resources and reduce the cost of providing some
+services separately.
+
+---
+
+## 4. What are the objectives and benefits of the EAC?
+
+The objectives of the East African Community are:
+
+- Promoting economic cooperation.
+- Promoting trade among member countries.
+- Promoting peace and security.
+- Improving the welfare of the people.
+- Promoting social and cultural cooperation.
+- Encouraging development among member countries.
+- Strengthening cooperation among member states.
+
+The EAC promotes trade by encouraging member countries to buy and sell goods and
+services from one another. The EAC encourages member countries to work together and
+solve problems peacefully. The EAC promotes development by encouraging member countries
+to work together in areas such as trade, transport, education, health and
+infrastructure.
+
+The benefits of the East African Community are:
+
+- Promoting trade.
+- Promoting peace and security.
+- Creating a larger market for goods and services.
+- Promoting movement of people.
+- Promoting tourism.
+- Encouraging cooperation in education.
+- Encouraging cooperation in health.
+- Improving transport and communication.
+- Creating employment opportunities.
+- Promoting social and cultural relations.
+
+The EAC provides traders with a larger market where they can sell their goods and buy
+goods from other member countries. The EAC promotes tourism by encouraging people to
+visit different countries in East Africa. The EAC promotes cooperation in education and
+allows learners to learn about the people, cultures and countries of East Africa. The
+EAC brings East African countries together so that they can work towards common goals.
+
+---
+
+## 5. Why did the former EAC collapse?
+
+The former East African Community collapsed in **1977**. The collapse of the EAC means
+that the former member countries stopped working together under the organisation.
+
+Some of the causes of the collapse of the former EAC were:
+
+- Political differences among member countries.
+- Economic differences among member countries.
+- Different national interests.
+- Disagreements over how resources and benefits should be shared.
+- Poor cooperation among the member countries.
+- Differences in economic policies.
+
+Political differences made it difficult for the member countries to agree on important
+matters. The countries had different economic conditions and interests, which caused
+disagreements about how benefits should be shared.
+
+The effects of the collapse of the former EAC were:
+
+- Common services were separated.
+- Trade among the three countries was affected.
+- Cooperation among the countries reduced.
+- Some regional organisations and services stopped operating together.
+- People experienced difficulties in using some common services.
+- The countries lost some of the benefits of working together.
+
+The collapse was a problem because it reduced cooperation among Uganda, Kenya and
+Tanzania and made it harder for the countries to enjoy the benefits of working
+together.
+
+---
+
+## 6. Why was the EAC revived?
+
+The East African Community was revived in **2000**. Uganda, Kenya and Tanzania revived
+the East African Community. It was revived because the countries recognised the
+importance of working together for economic and social development.
+
+Some reasons for the revival of the EAC are:
+
+- To promote trade.
+- To promote economic development.
+- To strengthen cooperation.
+- To promote peace and security.
+- To improve relations among East African countries.
+- To create a larger market.
+- To improve the welfare of the people.
+
+---
+
+## 7. How has the EAC expanded?
+
+Expansion of the EAC means increasing the number of countries that belong to the
+Community. Rwanda and Burundi joined in 2007, South Sudan joined in 2016, the
+Democratic Republic of the Congo joined in 2022, and Somalia joined in 2024.
+
+The EAC has expanded because more countries want to benefit from regional cooperation,
+trade, peace and development. More member countries provide a larger market, more
+opportunities for trade and stronger regional cooperation.
+
+There are **eight** member countries of the EAC.
+
+- Uganda, Rwanda, Burundi, South Sudan and the Democratic Republic of the Congo are
+  landlocked EAC member countries.
+- Kenya, Tanzania and Somalia have coastlines on the Indian Ocean.
+
+---
+
+## 8. What are the organs of the EAC?
+
+An organ of the EAC is a body responsible for carrying out particular duties of the
+Community. The organs of the East African Community are:
+
+- The Summit
+- The Council of Ministers
+- The East African Legislative Assembly
+- The East African Court of Justice
+- The Secretariat
+
+**The Summit** is made up of the Heads of State of the EAC partner countries. The
+Summit gives overall direction and guidance to the EAC.
+
+**The Council of Ministers** is made up of ministers from the partner countries who are
+responsible for EAC matters. It makes decisions and gives direction on matters
+concerning the EAC.
+
+**The East African Legislative Assembly** is the legislative organ of the EAC. It makes
+laws for the EAC and performs other duties given to it by the EAC Treaty.
+
+**The East African Court of Justice** is the judicial organ of the EAC. It helps to
+interpret and apply the EAC Treaty and promotes justice within the Community.
+
+**The Secretariat** is the executive and administrative organ of the EAC. The EAC
+Secretariat is headed by the Secretary General.
+
+---
+
+## 9. What challenges face the EAC?
+
+Some challenges facing the East African Community are:
+
+- Political differences.
+- Conflicts among member countries.
+- Different national interests.
+- Differences in economic development.
+- Trade disagreements.
+- Poor infrastructure in some areas.
+- Insecurity in some parts of the region.
+- Differences in policies and laws.
+
+The challenges facing the EAC can be reduced by:
+
+- Promoting dialogue among member countries.
+- Solving conflicts peacefully.
+- Improving transport and communication.
+- Promoting fair trade.
+- Following EAC agreements.
+- Strengthening cooperation among member countries.
+
+---
+
+## 10. How does the EAC promote trade?
+
+**Trade** is the buying and selling of goods and services. The EAC promotes trade by
+encouraging member countries to trade with one another and by reducing barriers to
+trade.
+
+**Common market:** A common market is an arrangement where member countries allow the
+freer movement of goods, services, people, labour and capital among them. A common
+market is important to EAC countries because it provides a larger market and makes it
+easier for people and businesses to trade and work across member countries.
+
+---
+
+## 11. What are the symbols of the EAC?
+
+The symbols of the East African Community are:
+
+- The EAC flag
+- The EAC emblem
+- The EAC anthem
+- The EAC motto
+
+The EAC flag is a symbol of unity and identity among the member countries. The EAC
+motto is **One People, One Destiny**. It means that the people of East Africa should
+work together as one people towards a common future. The EAC anthem promotes unity,
+cooperation and a sense of belonging among the people of East Africa.
+
+The EAC promotes unity by encouraging people from different East African countries to
+work, trade, study and interact together. The EAC encourages people to appreciate and
+share the different cultures of East Africa. Cooperation helps the countries to solve
+common problems, promote development and improve the lives of their people.
+
+---
+
+## 12. Where are the EAC countries on the map?
+
+A P.6 learner should be able to locate the EAC member countries on a map of East
+Africa. The EAC countries a learner should be able to locate are Uganda, Kenya,
+Tanzania, Rwanda, Burundi, South Sudan, the Democratic Republic of the Congo and
+Somalia.
+
+The EAC countries that border Uganda are:
+
+- Kenya
+- South Sudan
+- Democratic Republic of the Congo
+- Rwanda
+- Tanzania
+
+Kenya, Tanzania and Somalia have access to the Indian Ocean.
+
+---
+
+## 13. IMPORTANT DATES TO REMEMBER
+
+- The former EAC was formed in **1967**.
+- The former EAC collapsed in **1977**.
+- The EAC was revived in **2000**.
+- Rwanda and Burundi joined the EAC in **2007**.
+- South Sudan joined the EAC in **2016**.
+- The Democratic Republic of the Congo joined the EAC in **2022**.
+- Somalia joined the EAC in **2024**.
+
+---
+
+## 14. KEY DEFINITIONS
+
+| Word | Meaning |
 |---|---|
-| Year formed | **1967** |
-| Founder countries | **Uganda, Kenya and Tanzania** |
-| Headquarters | **Arusha, Tanzania** |
-| Personalities involved | **Milton Obote** (Uganda), **Jomo Kenyatta** (Kenya), **Julius Nyerere** (Tanzania) |
-| Year it collapsed | **1977** |
-
-### Reasons why the old East African Community was created
-
-- To promote **cooperation** among the member states.
-- To run **common services** together and save money.
-- To create a **common market** for the goods of member states.
-- To allow **free movement** of people, goods and services.
-- To promote **peace and unity** in the region.
-- To speak with **one voice** in world affairs.
-
-### Common services they shared
-
-The three countries did not just cooperate in words — they ran these services together as
-ONE organisation:
-
-| Service | Its role |
-|---|---|
-| **East African Airways** | East African Airways was the joint airline of the three countries. Its role was to fly passengers, cargo and mail between them and beyond |
-| **East African Railways and Harbours** | Its role was to run the railways and the sea ports of Mombasa and Dar es Salaam |
-| **East African Posts and Telecommunications** | Its role was to carry letters, handle telegrams and manage telephone calls across the region |
-| **East African Customs and Excise** | Its role was to collect taxes on goods entering the region |
-| **The University of East Africa** | Its role was to run one university for all three countries, at Makerere, Nairobi and Dar es Salaam |
-| **East African Development Bank** | Its role was to lend money for development projects in the three countries |
-| **Common currency** | Its role was to provide one money for all three countries — the East African shilling |
-
-### Organs of the old Community
-
-- **The Authority** — the three Heads of State; the top organ that gave the Community its direction.
-- **The Council of Ministers** — ministers from the three countries; it made the policies of the Community.
-- **The common services corporations** — the bodies that ran the shared services listed above.
-
-### Benefits of the old Community
-
-- A **wider market** for goods produced in the region.
-- **Cheaper services**, because the three countries shared the cost.
-- **Free movement** of people and goods across the borders.
-- **Employment** for East Africans in the common services.
-- **Sharing of skills, ideas and research**.
-- Better **bargaining power** in world trade.
-
-### Reasons for the collapse of the EAC in 1977
-
-- **Differences in political ideologies** — Tanzania followed socialism (*Ujamaa*) while Kenya followed capitalism.
-- **Unequal sharing of benefits** — Kenya had more industries and gained the most, which the others resented.
-- **Personal differences between the leaders**, especially between Idi Amin and Julius Nyerere.
-- The **military coup in Uganda in 1971**, after which some members refused to recognise the new government.
-- **Lack of funds** and failure by members to pay their contributions.
-- **Nationalism and mistrust** — each state began to protect only its own interests.
-- Each country started its **own airline, currency and services**.
-- **Border closures and quarrels**, ending in the Uganda–Tanzania war of 1978–79.
+| **East African Community** | A regional organisation formed by countries of East Africa to work together for the benefit of their people |
+| **Regional cooperation** | When countries in the same region work together to achieve common goals |
+| **Trade** | The buying and selling of goods and services |
+| **Common market** | An arrangement where member countries allow the freer movement of goods, services, people, labour and capital among them |
+| **Organ of the EAC** | A body responsible for carrying out particular duties of the Community |
 
 ---
 
-## 2. LOCATION OF THE FOUNDER COUNTRIES
+## 15. EXAMINATION POINTS AND REVISION QUESTIONS
 
-| Term | Meaning |
-|---|---|
-| **a landlocked country** | A landlocked country is a country that is **completely surrounded by land** and does **not have a sea coast or ocean** |
-
-**Countries that are landlocked** have no coast of their own — they are locked in by land:
-
-- **Uganda** — landlocked, lying north-west of Lake Victoria.
-- **Rwanda** — landlocked, to the south-west of Uganda.
-- **South Sudan** — landlocked, to the north of Uganda.
-- **D.R. Congo** — landlocked, to the west of Uganda.
-
-Because Uganda is landlocked, it has no port of its own, so it uses the ports of
-**Mombasa** (Kenya) and **Dar es Salaam** (Tanzania).
-
-**Countries that are NOT landlocked** touch the sea — they have a coast on the Indian Ocean:
-
-- **Kenya** — lies to the **east** of Uganda and touches the Indian Ocean.
-- **Tanzania** — lies to the **south** of Uganda and also touches the Indian Ocean.
+- EAC stands for **East African Community**.
+- The three countries that formed the former EAC in 1967 were **Uganda, Kenya and Tanzania**.
+- Five objectives of the EAC: to promote trade; to promote peace and security; to promote economic development; to promote social and cultural cooperation; to improve the welfare of the people.
+- Five benefits of the EAC: it promotes trade; it promotes peace; it creates a larger market; it promotes tourism; it encourages cooperation among member countries.
+- Four causes of the collapse of the former EAC: political differences; economic differences; different national interests; disagreements among member countries.
+- Four reasons for the revival of the EAC: to promote trade; to promote economic development; to strengthen cooperation; to promote peace and security.
+- The current EAC member countries are **Burundi, the Democratic Republic of the Congo, Kenya, Rwanda, Somalia, South Sudan, Tanzania and Uganda**.
+- Four organs of the EAC: The Summit; The Council of Ministers; The East African Legislative Assembly; The East African Court of Justice.
+- The motto of the EAC is **One People, One Destiny**.
+- The EAC is a regional organisation through which East African countries work together.
 
 ---
 
-## 3. THE REVIVAL OF THE EAST AFRICAN COMMUNITY
-
-### How it came back
-
-The three countries signed a new treaty in **Arusha in 1999**, and the new Community was
-officially launched in **2001**. **Rwanda and Burundi joined in 2007**, making five member
-states at the time this syllabus was written.
-
-**Note for today:** the Community has continued to grow. **South Sudan** joined in 2016,
-the **Democratic Republic of Congo** in 2022 and **Somalia** in 2024, so the EAC now has
-**eight member states**. Your syllabus was written when it had five, so both answers should
-be explained carefully in an examination.
-
-### Personalities involved in the revival
-
-**Yoweri Museveni** (Uganda), **Daniel arap Moi** (Kenya) and **Benjamin Mkapa**
-(Tanzania) signed the treaty of 1999.
-
-### Objectives of the present EAC
-
-- To build a **customs union**, a **common market**, a **monetary union** and finally a **political federation**.
-- To promote **trade and investment** among members.
-- To allow **free movement** of people, labour, goods, services and capital.
-- To develop **joint infrastructure** — roads, railways, power lines, airports.
-- To keep **peace and security** in the region.
-- To improve the **standard of living** of East Africans.
-
-### Organs of the EAC
-
-| Organ | Work |
-|---|---|
-| **The Summit** | The heads of state; gives general direction |
-| **The Council of Ministers** | The main policy-making body |
-| **The Co-ordination Committee** | Coordinates the work of the sectoral committees |
-| **Sectoral Committees** | Prepare programmes in particular areas |
-| **East African Court of Justice** | Settles disputes about the treaty |
-| **East African Legislative Assembly (EALA)** | Makes the laws of the Community |
-| **The Secretariat** | The office in Arusha that runs the daily work |
-
-### Benefits of the present EAC
-
-A **large market** of over 300 million people · easier and cheaper **cross-border trade** ·
-**free movement** using national identity cards and the **East African passport** ·
-**joint projects** such as roads, railways and power lines · **peace-keeping** and joint
-security · **employment** and business opportunities · **sharing of education** — East
-African students pay lower fees in one another's universities.
-
-### Symbols of the East African Community
-
-- The **EAC flag** — blue, black, green, gold and white with a map of East Africa in the middle.
-- The **EAC emblem (coat of arms)**.
-- The **EAC anthem** — *Wimbo wa Jumuiya ya Afrika Mashariki*.
-- The **East African passport**.
-- **Kiswahili**, the language that unites the region.
-
-### National symbols of the member countries
-
-| Country | Capital city | Currency | One well-known symbol |
-|---|---|---|---|
-| Uganda | Kampala | Uganda shilling | The **crested crane** |
-| Kenya | Nairobi | Kenya shilling | The **shield and two spears** |
-| Tanzania | Dodoma | Tanzanian shilling | The **Uhuru torch** |
-| Rwanda | Kigali | Rwandan franc | The **crowned crane** on its emblem |
-| Burundi | Gitega | Burundian franc | The **lion** and three stars |
-
-Every country also has a **national flag, a national anthem, a coat of arms** and a
-**national motto**.
-
----
-
-## 4. THE PEOPLES OF EAST AFRICA
-
-### The cradle of the people of East Africa
-
-**Cradle land:** The place where a people or a group first lived.
-
-East Africa is often called **the cradle of mankind**, because some of the oldest remains
-of early human beings have been found here — at **Olduvai Gorge** in Tanzania, at
-**Koobi Fora** and **Nariokotome** near Lake Turkana in Kenya, and at **Nsongezi** in
-Uganda.
-
-### Ethnic groups of East Africa
-
-| Ethnic group | Cradle land | Examples of tribes |
-|---|---|---|
-| **Bantu** | Congo–Cameroon region of West/Central Africa | Baganda, Banyankole, Bagisu, Bakiga (Uganda); Kikuyu, Luhya (Kenya); Chagga, Sukuma (Tanzania); Banyarwanda, Barundi |
-| **River–Lake Nilotes (Nilotics)** | Bahr-el-Ghazal, southern Sudan | Acholi, Langi, Alur, Japadhola (Uganda); Luo (Kenya) |
-| **Plain Nilotes (Nilo-Hamites)** | Ethiopian border area | Karimojong, Iteso, Kakwa (Uganda); Maasai, Turkana (Kenya) |
-| **Highland Nilotes** | Southern Ethiopia | Sebei (Uganda); Kalenjin, Nandi, Pokot (Kenya) |
-| **Cushites (Hamites)** | Ethiopian Highlands | Somali, Oromo, Borana (Kenya); Iraqw (Tanzania) |
-| **Pygmies (Batwa)** | Equatorial forests of Central Africa | Batwa of south-western Uganda, Rwanda and Burundi |
-
-### Visitors to East Africa and their contributions
-
-| Visitors | Contributions |
-|---|---|
-| **Arabs** | Trade, Islam, Kiswahili words and coastal towns; but also the slave trade |
-| **Persians (Shirazi)** | Coastal settlements, mosques, coins and building styles |
-| **Indians / Asians** | Trade and shops, the railway workforce, industries, Hinduism |
-| **Portuguese** | New crops such as maize, cassava, pawpaw and sweet potatoes; Fort Jesus in Mombasa |
-| **European explorers** | Mapped the interior and reported it to Europe |
-| **Missionaries** | Christianity, schools, hospitals, writing of local languages |
-| **Colonialists** | Roads, railways, towns, cash crops and new systems of administration; but Africans lost their independence |
-
-### Organisation long ago and today
-
-| Then | Now |
-|---|---|
-| **Centralised societies** with kings — Buganda (Kabaka), Bunyoro (Omukama), Ankole (Omugabe), Rwanda and Burundi (Umwami), Wanga in Kenya (Nabongo) | **Republics** headed by presidents, with parliaments, courts and local governments |
-| **Decentralised societies** with clan elders — Acholi, Karimojong, Kikuyu, Maasai | Districts, counties, sub-counties, parishes and villages (LCs) |
-| Economy: subsistence farming, cattle keeping, barter trade, iron working | Money economy, cash crops, industry, services and international trade |
-| Religion: traditional beliefs, gods and ancestors | Christianity, Islam and traditional beliefs together |
-
----
-
-## 5. SETTLEMENT AND POPULATION
-
-### Factors that influence settlement in East Africa
-
-- **Fertile soils** for farming — the slopes of Mt Elgon, Kilimanjaro and the Lake Victoria basin.
-- **Reliable rainfall** and a good climate.
-- **Availability of water** — lakes, rivers and springs.
-- **Security** from enemies and from wild animals.
-- **Good transport** — roads, railways and lake ports.
-- **Employment** in towns, mines, plantations and industries.
-- **Absence of pests and diseases** such as tsetse flies and mosquitoes.
-- **Gentle relief** — flat and gently sloping land.
-- **Minerals**, which attract mining towns.
-- **Government policy**, such as resettlement schemes.
-
-### Population: three words you must not mix up
-
-| Term | Meaning |
-|---|---|
-| **Population growth** | The increase in the number of people in an area over a period of time |
-| **Population distribution** | The way people are spread over an area |
-| **Population density** | The number of people living in one square kilometre |
-
-**Population density = total population ÷ total area (km²)**
-
-*Example:* a district with 240,000 people and an area of 3,000 km² has a density of
-240,000 ÷ 3,000 = **80 people per km²**.
-
-### Population figures
-
-| Country | Latest national census | Population counted |
-|---|---|---|
-| Uganda | 2024 | about **45.9 million** |
-| Kenya | 2019 | about 47.6 million |
-| Tanzania | 2022 | about 61.7 million |
-| Rwanda | 2022 | about 13.2 million |
-| Burundi | 2008 (with later estimates) | about 12–13 million |
-
-**Census:** The official counting of all the people in a country. Uganda holds one about every ten years, and the 2024 census was the first digital one.
-
-### Causes of rapid population growth
-
-High birth rate · early marriages · polygamy · better health services and immunisation ·
-falling death rate · better food supply · religious and cultural beliefs about big families ·
-low use of family planning · immigration and refugees.
-
-### Areas of dense and sparse population
-
-| Densely populated | Sparsely populated |
-|---|---|
-| Lake Victoria basin (Kampala, Kisumu, Mwanza) | Karamoja and northern Kenya (dry) |
-| Slopes of Mt Elgon, Kilimanjaro and Mt Kenya | Miombo woodlands of central Tanzania (tsetse flies) |
-| Kigezi and Rwanda highlands | Lake Turkana area (very hot and dry) |
-| Big towns — Nairobi, Kampala, Dar es Salaam | Swampy and forested areas |
-
-### Problems associated with high population density
-
-Shortage of land and land conflicts · overcrowding and slums · unemployment · pressure on
-schools, hospitals and water · food shortage · poor sanitation and fast spread of disease ·
-soil exhaustion and erosion · destruction of forests and wetlands · traffic congestion ·
-increase in crime.
-
-### Solutions
-
-Family planning education and services · educating girls and discouraging early marriage ·
-creating jobs and supporting small businesses · resettling people in less crowded areas ·
-building more schools, hospitals and houses · improving farming methods so that less land
-feeds more people · developing rural areas so that fewer people move to towns · planning
-towns properly.
-
----
-
-# KEY DEFINITIONS
-
-| Term | Meaning |
-|---|---|
-| East African Community | An inter-governmental organisation of East African states |
-| Common market | An arrangement where member states trade freely with one another |
-| Cradle land | The place where a group of people first lived |
-| Ethnic group | A large group of people sharing origin, language family and customs |
-| Centralised society | A society ruled by one leader such as a king |
-| Decentralised society | A society ruled by clan elders, with no single king |
-| Population growth | The increase in the number of people over time |
-| Population distribution | The way people are spread over an area |
-| Population density | The number of people per square kilometre |
-| Census | The official counting of all people in a country |
-
----
-
-# IMPORTANT FACTS TO REMEMBER
-
-- The old EAC was formed in **1967** by **Uganda, Kenya and Tanzania**, and collapsed in **1977**.
-- Its headquarters was and still is **Arusha, Tanzania**.
-- The founder leaders were **Obote, Kenyatta and Nyerere**.
-- The EAC was revived in **2001**; **Rwanda and Burundi joined in 2007**.
-- The law-making organ of the EAC is **EALA**; the top organ is the **Summit**.
-- East Africa is called the **cradle of mankind**; remains were found at **Olduvai Gorge**.
-- The main ethnic groups: **Bantu, River–Lake Nilotes, Plain Nilotes, Highland Nilotes, Cushites**.
-- **Population density = population ÷ area**.
-- Uganda's 2024 census counted about **45.9 million** people.
-
----
-
-# EXAMINATION POINTS
-
-- Year the EAC was formed — 1967. Year it collapsed — 1977. Year it was revived — 2001.
-- Headquarters of the EAC — Arusha, Tanzania.
-- One reason for the collapse of the old EAC — differences in political ideologies (or unequal sharing of benefits).
-- Two countries that joined the EAC in 2007 — Rwanda and Burundi.
-- Language that unites East Africa — Kiswahili.
-- Site where remains of early man were found in Tanzania — Olduvai Gorge.
-- The largest ethnic group in East Africa — the Bantu.
-- Official counting of people — a census.
-- One problem of a densely populated area — land shortage (or unemployment).
-
----
-
-# MAP WORK
-
-On a map of East Africa you should be able to:
-
-- draw and label **Uganda, Kenya, Tanzania, Rwanda and Burundi** and their capital cities
-- mark **Arusha** and label it "EAC headquarters"
-- shade the **densely populated areas** around Lake Victoria and the mountain slopes
-- shade the **sparsely populated areas** of Karamoja and northern Kenya
-- mark **Olduvai Gorge** in Tanzania
-
-**Practice activity:** Draw the map of East Africa. Write inside each country its capital
-city and the year it became independent. Then shade in one colour the three founder members
-of the EAC and in another colour the two that joined in 2007.
-
----
-
-# REVISION QUESTIONS
-
-1. What is the East African Community?
-2. Name the three countries that formed the EAC in 1967 and the leader of each.
-3. Where are the headquarters of the EAC?
-4. Give any four reasons why the old East African Community collapsed.
-5. In which year was the EAC revived, and which two countries joined it in 2007?
-6. Name any four organs of the East African Community.
-7. Give any four benefits of the present East African Community.
-8. Name any three symbols of the East African Community.
-9. Give the capital city and currency of each of the five East African countries named in the syllabus.
-10. Why is East Africa called the cradle of mankind? Name one site where evidence was found.
-11. Name the main ethnic groups of East Africa and give one tribe in each.
-12. Give any four contributions of the Arabs and the missionaries to East Africa.
-13. Give the difference between a centralised and a decentralised society, with one example of each.
-14. Give any five factors that influence where people settle in East Africa.
-15. Define population density. A district has 360,000 people and covers 4,500 km². Find its population density.
-16. Give any four causes of rapid population growth in East Africa.
-17. Name two densely populated and two sparsely populated areas of East Africa, giving a reason for each.
-18. Give any five problems caused by a high population density.
-19. Suggest any four solutions to the problems of a high population.
-20. Draw the map of East Africa and mark the five countries of the syllabus and their capital cities.
-
----
-
-# ANSWERS TO REVISION QUESTIONS
-
-1. The East African Community is an inter-governmental organisation of East African countries that work together for their political, economic and social development.
-2. Uganda — Milton Obote; Kenya — Jomo Kenyatta; Tanzania — Julius Nyerere.
-3. Arusha, in Tanzania.
-4. Any four of: differences in political ideologies; unequal sharing of benefits; personal differences between leaders; the 1971 coup in Uganda; lack of funds; nationalism and mistrust; each state starting its own services; border closures and war.
-5. It was revived in **2001**; **Rwanda and Burundi** joined in **2007**.
-6. Any four of: the Summit, the Council of Ministers, the Co-ordination Committee, Sectoral Committees, the East African Court of Justice, the East African Legislative Assembly, the Secretariat.
-7. Any four of: a large market; cheaper cross-border trade; free movement of people and goods; joint projects such as roads and railways; peace and security; employment; lower university fees for East Africans.
-8. Any three of: the EAC flag, the EAC emblem, the EAC anthem, the East African passport.
-9. Uganda — Kampala, Uganda shilling; Kenya — Nairobi, Kenya shilling; Tanzania — Dodoma, Tanzanian shilling; Rwanda — Kigali, Rwandan franc; Burundi — Gitega, Burundian franc.
-10. Because some of the oldest remains of early human beings have been found here. One site is **Olduvai Gorge** in Tanzania (also Koobi Fora in Kenya or Nsongezi in Uganda).
-11. Bantu — Baganda; River–Lake Nilotes — Acholi; Plain Nilotes — Karimojong; Highland Nilotes — Sebei; Cushites — Somali. (Any correct tribe for each group.)
-12. **Arabs:** brought trade, Islam, Kiswahili and built coastal towns. **Missionaries:** brought Christianity, started schools and hospitals, and wrote down local languages. (Any four points in total.)
-13. A **centralised** society is ruled by one leader such as a king, for example Buganda under the Kabaka. A **decentralised** society has no single ruler and is led by clan elders, for example the Acholi or the Karimojong.
-14. Any five of: fertile soils, reliable rainfall, availability of water, security, good transport, employment, absence of pests and diseases, gentle relief, minerals, government policy.
-15. Population density is the number of people living in one square kilometre. 360,000 ÷ 4,500 = **80 people per km²**.
-16. Any four of: high birth rate, early marriages, polygamy, improved health services, falling death rate, better food supply, cultural and religious beliefs, low use of family planning, immigration.
-17. **Dense:** the Lake Victoria basin — fertile soils and reliable rainfall; the slopes of Mt Elgon or Kilimanjaro — fertile volcanic soils and relief rainfall. **Sparse:** Karamoja — too dry with little pasture and water; central Tanzania's miombo woodland — tsetse flies and poor soils.
-18. Any five of: land shortage and conflicts; overcrowding and slums; unemployment; pressure on schools, hospitals and water; food shortage; poor sanitation and disease; soil exhaustion and erosion; destruction of forests and wetlands; traffic congestion; crime.
-19. Any four of: family planning education and services; educating girls and discouraging early marriage; creating jobs; resettling people; building more social services; improving farming methods; developing rural areas; proper town planning.
-20. *Learner's map.* Uganda — Kampala; Kenya — Nairobi; Tanzania — Dodoma; Rwanda — Kigali; Burundi — Gitega.
-
----
-
-# P.6 QUICK REVISION
-
-- Old EAC **1967–1977**: Uganda, Kenya, Tanzania · Obote, Kenyatta, Nyerere · HQ **Arusha**
-- Collapse: ideologies · unequal benefits · leaders quarrelled · no funds
-- Revived **2001**; Rwanda and Burundi **2007** (today eight members)
-- Organs: Summit · Council of Ministers · **EALA** · Court of Justice · Secretariat
-- East Africa = **cradle of mankind** (Olduvai Gorge)
-- Groups: Bantu · River–Lake Nilotes · Plain Nilotes · Highland Nilotes · Cushites
-- **Density = population ÷ area** · Uganda 2024 census ≈ 45.9 million
-
----
-
-## A note on sources
-
-The topic title, sub-topics, competences and teacher guidance above were taken from the
-official **NCDC Primary Six Curriculum, Set One** (© NCDC 2010; topic outline page 311 and
-pages 317–325 of the PDF in `curriculum/`). The explanations, tables, examples, revision
-questions and answers are original teaching material written for the learner; they are
-**not** copied from the curriculum document or from any textbook.
-
-Two figures are **newer than the 2010 syllabus** and are marked as such in the notes: the
-current EAC membership of eight states, and Uganda's 2024 census population of about 45.9
-million (Uganda Bureau of Statistics). The syllabus itself was written when the EAC had
-five members.
-
-No NCDC **Teacher's Guide** for P.6 was available, so the syllabus "Guidance to the
-Teacher" was used directly instead.
+## 16. ANSWERS TO REVISION QUESTIONS — P.6 QUICK REVISION
+
+- The former EAC was formed in **1967** and collapsed in **1977**; it was revived in **2000**.
+- The three original members were **Uganda, Kenya and Tanzania**.
+- There are currently **eight** member countries of the EAC.
+- The EAC motto is **One People, One Destiny**.
+- Two benefits of the EAC: it promotes trade and cooperation among member countries.
+- Two challenges facing the EAC: political differences and conflicts among member countries.
+- The EAC is important because it helps East African countries work together for peace, trade, development and the welfare of their people.
