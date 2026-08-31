@@ -744,6 +744,16 @@ p{margin:0}
 .kg-n{font-size:18px;font-weight:900;color:#111827;flex:none;line-height:1.35}
 .kg-emoji{font-size:21px;flex:none;line-height:1.25}
 .kg-txt{font-size:17px;font-weight:800;color:#111827;line-height:1.45}
+
+/* ---------- Pinned card sets (owner's rule: FULL content, correct cards, NO over-breaking)
+   Used ONLY by owner-pinned sub-topics — no other card changes. */
+.kf-def{background:#FFFBEB;border:2.5px solid #111827;border-radius:16px;padding:12px 16px;font-size:18px;font-weight:800;color:#111827;line-height:1.55;text-align:center}
+.kf-rows{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.kf-pill{display:flex;align-items:center;justify-content:center;gap:10px;background:#fff;border:2.5px solid #111827;border-radius:16px;padding:12px 16px;font-size:18px;font-weight:800;color:#111827;line-height:1.45;text-align:center;box-shadow:3px 3px 0 rgba(17,24,39,1)}
+.kf-pill:active{transform:translate(1px,1px);box-shadow:1px 1px 0 rgba(17,24,39,1)}
+.kf-n{font-weight:900;color:#1E3A5F;flex:none}
+.kf-emoji{font-size:22px;flex:none;line-height:1.2}
+.kf-txt{flex:1;min-width:0}
 .kid-encourage.wide{white-space:normal;line-height:1.35;font-size:13px;max-width:92%;border-radius:16px}
 .kbadge.sea{background:#2563EB}
 .kid-flip-back .kid-text b{color:#DC2626;font-weight:900}
@@ -2469,9 +2479,18 @@ function kidExerciseFor(t,i){
   const groups=cards.filter(c=>c.kind==='group');
   const defex=cards.filter(c=>c.kind==='defex');
   const flips=cards.filter(c=>c.kind==='flip'&&c.front&&c.back);
+  /* pinned cards join the exercise like their classic cousins: a short-name
+     pinned list acts as a grouped list, a pinned definition as a flip card */
+  const pinGroups=cards.filter(c=>c.kind==='pinned'&&c.type==='list'&&c.items.length>=2
+    &&c.items.every(x=>String(x.text||'').split(' ').length<=4))
+    .map(c=>({header:String(c.q).replace(/[?.!]+$/,''),items:c.items.map((it,j)=>({n:j+1,text:it.text}))}));
+  const pinDefs=cards.filter(c=>c.kind==='pinned'&&c.type==='definition')
+    .map(c=>({front:c.q,back:c.def,role:false,attr:false}));
+  const allGroups=groups.concat(pinGroups);
+  const allFlips=flips.concat(pinDefs);
   const written=[];
-  groups.slice(0,2).forEach(g=>{
-    written.push({type:'written',marks:3,q:'Give any '+Math.min(3,g.items.length)+' '+String(g.header).toLowerCase().replace(/\.$/,'')+'.',
+  allGroups.slice(0,2).forEach(g=>{
+    written.push({type:'written',marks:Math.min(3,g.items.length),q:'Give any '+Math.min(3,g.items.length)+' '+String(g.header).toLowerCase().replace(/\.$/,'')+'.',
       model:g.items.slice(0,3).map(x=>x.n+'. '+kidStrip(x.text)).join('\n')});
   });
   defex.slice(0,1).forEach(d=>{
@@ -2480,10 +2499,9 @@ function kidExerciseFor(t,i){
     if(d.examples.length>=2)written.push({type:'written',marks:2,q:'Give any two examples of '+term+'.',
       model:d.examples.slice(0,2).map(x=>x.txt).join(' and ')});
   });
-  flips.slice(0,3).forEach(f=>{
+  allFlips.slice(0,3).forEach(f=>{
     written.push({type:'written',marks:2,q:String(f.front),model:kidStrip(String(f.back)).replace(/\*\*/g,'')});
-  });
-  const pick=(arr,n)=>{const a=arr.slice();const out=[];while(out.length<n&&a.length)out.push(a.splice(Math.floor(rng()*a.length),1)[0]);return out;};
+  });  const pick=(arr,n)=>{const a=arr.slice();const out=[];while(out.length<n&&a.length)out.push(a.splice(Math.floor(rng()*a.length),1)[0]);return out;};
   /* ---- objective questions built from THIS section's own material ---- */
   const objQs=[];
   const topicGroups=[],topicDefEx=[],topicFlips=[];
@@ -2499,8 +2517,8 @@ function kidExerciseFor(t,i){
     return {options:opts,correct:'ABCD'[opts.indexOf(correct)]};
   };
   /* (a) from a grouped list of THIS section: which one belongs to the group? */
-  if(groups.length){
-    const g=groups[0];
+  if(allGroups.length){
+    const g=allGroups[0];
     const mine=g.items.map(x=>kidStrip(x.text)).filter(shortItem);
     const others=topicGroups.filter(x=>x.sec!==i).flatMap(x=>x.g.items.map(y=>kidStrip(y.text))).filter(x=>shortItem(x)&&!mine.includes(x));
     if(mine.length&&others.length>=3){
@@ -2525,8 +2543,8 @@ function kidExerciseFor(t,i){
     }
   }
   /* (c) from definition cards of THIS section: which term means this? (up to 2) */
-  for(let fi=0;objQs.length<2&&fi<flips.length;fi++){
-    const f=flips[fi];
+  for(let fi=0;objQs.length<2&&fi<allFlips.length;fi++){
+    const f=allFlips[fi];
     if(f.role||f.attr)continue;              /* "which term means" asks about plain definitions only */
     const term=kidFlipTerm(f.front);
     const others=topicFlips.filter(x=>x.sec!==i&&!x.f.role).map(x=>kidFlipTerm(x.f.front))
@@ -2797,7 +2815,7 @@ function kidOutlineItem(txt,header){
 }
 function kidDetail(idx){
   const c=state.kcards&&state.kcards[state.ki];
-  if(!c||c.kind!=='group')return;
+  if(!c||(c.kind!=='group'&&c.kind!=='pinned'))return;
   const it=c.items[idx];if(!it||!it.detail)return;
   openSheet(`<div class="grabber"></div>
     <div style="text-align:left">
@@ -2896,10 +2914,42 @@ function kidFlipTerm(front){
   return String(front||'').replace(/^what (is|was|are) (the (role|importance|use|uses|capital city|currency|formula|size|perimeter|area) of |an example of |an example )?/i,'').replace(/\?$/,'').trim();
 }
 const KIDCARDS_CACHE={};
+/* ---------- Pinned card sets (owner's rule) ----------
+   Some sub-topics must show EXACTLY the cards the owner lists — full
+   content, correct cards, no over-breaking into one card per item.
+   Keyed by topic id + section title (numbering stripped) so a pinned
+   set survives note edits. Sections NOT in this registry are built
+   exactly as before — no other topic is touched. */
+const KID_PINNED={
+  'P6_SST_T01|LOCATION OF THE FOUNDER COUNTRIES':[
+    {kind:'pinned',q:'What is a landlocked country?',type:'definition',
+     def:'A landlocked country is a country that has no coast of its own. It is locked in by land. It has no sea port.'},
+    {kind:'pinned',q:'Examples of landlocked countries?',type:'list',
+     items:[
+      {text:'Uganda',emoji:'\u{1F1FA}\u{1F1EC}',detail:'Uganda is landlocked — it lies north-west of Lake Victoria'},
+      {text:'Rwanda',emoji:'\u{1F1F7}\u{1F1FC}',detail:'Rwanda is landlocked — it lies south-west of Uganda'},
+      {text:'South Sudan',emoji:'\u{1F1F8}\u{1F1F8}',detail:'South Sudan is landlocked — it lies north of Uganda'},
+      {text:'D.R. Congo',emoji:'\u{1F1E8}\u{1F1E9}',detail:'D.R. Congo is landlocked — it lies west of Uganda'}]},
+    {kind:'pinned',q:'Examples of countries that are NOT landlocked?',type:'list',
+     items:[
+      {text:'Kenya',emoji:'\u{1F1F0}\u{1F1EA}',detail:'Kenya lies east of Uganda and touches the Indian Ocean'},
+      {text:'Tanzania',emoji:'\u{1F1F9}\u{1F1FF}',detail:'Tanzania lies south of Uganda and also touches the Indian Ocean'}]},
+    {kind:'pinned',q:'Why do landlocked countries use Mombasa and Dar-es-Salaam ports?',type:'list',
+     items:[
+      {text:'Uganda is landlocked, it has no sea port',emoji:'\u{1F1FA}\u{1F1EC}'},
+      {text:'It uses Mombasa port in Kenya to transport its goods',emoji:'\u2693'},
+      {text:'It also uses Dar-es-Salaam port in Tanzania',emoji:'\u2693'},
+      {text:'Kenya and Tanzania are not landlocked — they touch the Indian Ocean',emoji:'\u{1F30A}'}]}
+  ]
+};
 function kidCardsFor(t,i){
   const ckey=(t&&t.id)+':'+i;
   if(KIDCARDS_CACHE[ckey])return KIDCARDS_CACHE[ckey];
   const sec=noteSections(t)[i];if(!sec)return[];
+  /* owner-pinned set? It replaces the generated cards for THIS section only */
+  const pinKey=t.id+'|'+String(sec.title||'').replace(/^\d+\.\s*/,'').trim().toUpperCase();
+  const pinned=KID_PINNED[pinKey];
+  if(pinned){KIDCARDS_CACHE[ckey]=pinned;return pinned;}
   const cards=[];
   const blocks=sec.blocks||[];
   let head=null;                        /* the nearest sub-heading above the current block */
@@ -2999,6 +3049,7 @@ function kidSpeak(){
   else if(c.kind==='group'){ text=String(c.header+'. '+c.items.map(it=>it.n+'. '+it.text+(it.detail?': '+it.detail:'')).join('. ')).replace(/\*\*/g,''); }
   else if(c.kind==='defex'){ text=String(c.def+'. Examples: '+c.examples.map(x=>x.txt).join(', ')).replace(/\*\*/g,''); }
   else if(c.kind==='dots'){ text=String((c.title?c.title+'. ':'')+c.items.map((it,j)=>(j+1)+'. '+it).join('. ')).replace(/\*\*/g,''); }
+  else if(c.kind==='pinned'){ text=String(String(c.q).replace(/[?.!]+\s*$/,'')+'? '+(c.type==='definition'?c.def:c.items.map((it,j)=>(j+1)+'. '+it.text).join('. '))).replace(/\*\*/g,''); }
   else{ text=String((c.title?c.title+'. ':'')+c.text).replace(/\*\*/g,''); }
   try{ if(typeof spSpeak==='function'){ spSpeak(text); return; } }catch(e){}
   mathSpeak(text);
@@ -3841,6 +3892,24 @@ SCREENS.noteSub = () => {
         <div class="kg-rows">
           ${c.items.map((it,j)=>`<div class="kg-row"><span class="kg-n">${j+1}.</span><span class="kg-emoji">${kidEmoji(it)}</span><span class="kg-txt">${nEsc(it)}</span></div>`).join('')}
         </div>
+        <div class="kid-actions">
+          <button class="kid-listen" onclick="kidSpeak()">🔊 Listen</button>
+        </div>
+      </div>`;
+    }else if(c.kind==='pinned'){
+      /* owner-pinned card: one paper, full content, exact styling */
+      stage=`<div class="kid-card ${c.type==='definition'?'':'kg-card'}">
+        <div class="kg-badge">${nEsc(c.q)}</div>
+        ${c.type==='definition'
+          ?`<div class="kf-def" style="margin-top:14px">${nEsc(c.def)}</div>`
+          :`<div class="kf-rows">
+              ${c.items.map((it,j)=>`<div class="kf-pill">
+                <span class="kf-n">${j+1}.</span>
+                ${it.emoji?`<span class="kf-emoji">${it.emoji}</span>`:''}
+                <span class="kf-txt">${nEsc(it.text)}</span>
+                ${it.detail?`<button class="kg-info" onclick="event.stopPropagation();kidDetail(${j})" aria-label="Show more about ${nEsc(it.text)}">i</button>`:''}
+              </div>`).join('')}
+            </div>`}
         <div class="kid-actions">
           <button class="kid-listen" onclick="kidSpeak()">🔊 Listen</button>
         </div>
