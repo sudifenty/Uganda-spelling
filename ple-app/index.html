@@ -640,6 +640,7 @@ p{margin:0}
 .kid-head{position:sticky;top:0;z-index:20;background:#EFF6FF;padding:10px 14px 8px;display:flex;align-items:center;gap:10px}
 .kid-head h2{font-size:16px;font-weight:900;color:#2D4159;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .kid-dots{display:flex;gap:5px;flex:none}
+.kid-count-pill{flex:none;background:#111827;color:#fff;font-size:12.5px;font-weight:900;border-radius:999px;padding:6px 12px;letter-spacing:.02em}
 .kid-dots i{width:9px;height:9px;border-radius:50%;background:#C7DBF5;transition:background .2s,transform .2s}
 .kid-dots i.on{background:#22c55e;transform:scale(1.25)}
 .kid-dots i.done{background:#93C5FD}
@@ -2920,7 +2921,78 @@ const KIDCARDS_CACHE={};
    Keyed by topic id + section title (numbering stripped) so a pinned
    set survives note edits. Sections NOT in this registry are built
    exactly as before — no other topic is touched. */
+/* one definition card / one list card (white pills, one per line) */
+const kpD=(q,d)=>({kind:'pinned',q:q,type:'definition',def:d});
+const kpL=(q,items,ex)=>({kind:'pinned',q:q,type:'list',exHeader:ex||null,items:items.map(x=>({text:x}))});
 const KID_PINNED={
+  /* P.6 LAND AS A RESOURCE — the owner's own 64 cards, word for word,
+     in the owner's order 1-64. Nothing generated, nothing reworded. */
+  'P6_SST_T02|LAND AS A RESOURCE':[
+    kpD('What is land?','Land is the part of the earth\u2019s surface that is not covered by water.'),
+    kpD('Why is land important to people?','Land is important because people use it for many activities that satisfy their needs.'),
+    kpL('What things can be found on or under land?',['Soil','Plants','Animals','Minerals','Rocks'],'things that can be found on or under land'),
+    kpD('What is a resource?','A resource is anything that people use to satisfy their needs.'),
+    kpD('Why is land called a resource?','Land is called a resource because people use it for many activities that help them to live and earn a living.'),
+    kpL('What are some of the activities carried out on land?',['Farming','Livestock keeping','Mining','Settlement','Construction','Transport','Tourism','Forestry','Industrial activities','Recreation'],'activities carried out on land'),
+    kpL('What are the main uses of land?',['Crop growing','Keeping animals','Settlement','Mining','Transport','Building industries','Tourism','Recreation','Forestry','Burial'],'main uses of land'),
+    kpD('How is land used for crop growing?','People use land to grow crops for food and income.'),
+    kpL('Give examples of crops grown on land.',['Maize','Beans','Bananas','Coffee','Tea','Cotton'],'crops grown on land'),
+    kpD('How is land used for keeping animals?','People use land to provide space and pasture for keeping animals.'),
+    kpL('Name some animals kept on land.',['Cattle','Goats','Sheep','Pigs'],'animals kept on land'),
+    kpD('How is land used for settlement?','People use land to build homes and other buildings where they live and work.'),
+    kpL('What buildings can be constructed on land?',['Houses','Schools','Hospitals','Markets','Offices'],'buildings that can be constructed on land'),
+    kpD('How is land used for mining?','People use land to obtain minerals found under the ground.'),
+    kpL('Give examples of minerals obtained from land.',['Gold','Copper','Iron ore','Limestone'],'minerals obtained from land'),
+    kpD('How is land used for transport?','Roads, railways and airports are constructed on land.'),
+    kpD('How is land used for tourism?','People use land for tourism because many tourist attractions are found on land.'),
+    kpL('Give examples of tourist attractions found on land.',['Game parks','Mountains','Forests','Cultural sites'],'tourist attractions found on land'),
+    kpD('How is land used for recreation?','People use land for recreational activities such as sports and playing games.'),
+    kpL('Give examples of recreational activities carried out on land.',['Playing football','Sports activities','Using playgrounds'],'recreational activities carried out on land'),
+    kpD('How does land provide income to people?','People earn income from land through activities such as farming, mining, tourism, renting and selling land.'),
+    kpL('What are some of the problems affecting land?',['Soil erosion','Soil exhaustion','Land pollution','Overgrazing','Deforestation','Bush burning','Poor farming methods','Poor mining practices'],'problems affecting land'),
+    kpD('What is soil erosion?','Soil erosion is the removal of top fertile soil by agents such as running water and wind.'),
+    kpL('What are the effects of soil erosion?',['Removes fertile top soil.','Reduces soil fertility.','Makes land less productive.'],'effects of soil erosion'),
+    kpD('What is soil exhaustion?','Soil exhaustion is the loss of soil fertility.'),
+    kpD('How can soil exhaustion occur?','Soil exhaustion can occur when the same piece of land is continuously cultivated without restoring its fertility.'),
+    kpD('What is land pollution?','Land pollution is the contamination of land by harmful materials.'),
+    kpL('What can cause land pollution?',['Plastic waste','Chemicals','Rubbish','Industrial waste'],'causes of land pollution'),
+    kpD('What is overgrazing?','Overgrazing occurs when too many animals feed on the same piece of land.'),
+    kpD('How does overgrazing affect land?','Overgrazing destroys vegetation and exposes the soil to erosion.'),
+    kpD('What is deforestation?','Deforestation is the cutting down of trees without replacing them.'),
+    kpD('How does deforestation affect land?','Deforestation can leave land bare and increase soil erosion.'),
+    kpD('How does bush burning affect land?','Uncontrolled bush burning destroys vegetation and may reduce soil fertility.'),
+    kpD('How can poor farming methods affect land?','Some poor farming methods expose soil to erosion and reduce soil fertility.'),
+    kpD('What is land conservation?','Land conservation is the proper use and protection of land.'),
+    kpD('Why should land be conserved?','Land should be conserved so that it remains useful and productive for present and future generations.'),
+    kpL('How can land be conserved?',['Planting trees','Practising agroforestry','Avoiding overgrazing','Practising crop rotation','Using manure','Avoiding unnecessary bush burning','Controlling mining','Properly disposing of waste','Using appropriate farming methods'],'ways land can be conserved'),
+    kpD('How does planting trees help to conserve land?','Trees help to protect the soil from erosion and prevent land from becoming bare.'),
+    kpD('What is agroforestry?','Agroforestry is the growing of trees together with crops or keeping animals on the same piece of land.'),
+    kpD('How does agroforestry help to conserve land?','Agroforestry helps to protect the soil and provides useful products such as food, firewood and timber.'),
+    kpL('How can farmers avoid soil exhaustion?',['Practising crop rotation','Using manure','Avoiding continuous cultivation of the same crop','Using good farming methods'],'ways farmers can avoid soil exhaustion'),
+    kpD('How can overgrazing be controlled?','Overgrazing can be controlled by avoiding keeping too many animals on a small piece of land and allowing grazing land to recover.'),
+    kpD('How can land pollution be prevented?','Land pollution can be prevented by disposing of waste properly and avoiding dumping harmful materials on land.'),
+    kpD('How does land contribute to the development of a country?','Land contributes to development by providing space for farming, settlement, industries, transport, mining and other economic activities.'),
+    kpD('Why should people use land wisely?','People should use land wisely so that it remains productive and useful for a long time.'),
+    kpL('Mention five uses of land.',['Crop growing','Keeping animals','Settlement','Mining','Transport'],'uses of land'),
+    kpL('Mention five problems affecting land.',['Soil erosion','Soil exhaustion','Land pollution','Overgrazing','Deforestation'],'problems affecting land'),
+    kpL('Mention five ways of conserving land.',['Planting trees','Practising crop rotation','Using manure','Avoiding overgrazing','Proper disposal of waste'],'ways of conserving land'),
+    kpL('Give four examples of crops grown on land.',['Maize','Beans','Bananas','Coffee'],'crops grown on land'),
+    kpL('Give four examples of animals kept on land.',['Cattle','Goats','Sheep','Pigs'],'animals kept on land'),
+    kpD('Which part of Africa is Uganda found in?','Uganda is found in East Africa.'),
+    kpL('Name the three East African countries commonly studied with Uganda.',['Uganda','Kenya','Tanzania'],'East African countries commonly studied with Uganda'),
+    kpD('What should a P.6 learner be able to locate on a map when studying land resources?','A learner should be able to locate important agricultural areas, mining areas and other major areas related to land resources that are studied in the syllabus.'),
+    kpL('What are the most important facts to remember about land as a resource?',['Land is a natural resource.','Land is used for many activities.','Farming is one of the major activities carried out on land.','Land is used for settlement, mining, transport and tourism.','Soil erosion removes fertile top soil.','Soil exhaustion means loss of soil fertility.','Overgrazing can destroy vegetation.','Deforestation can increase soil erosion.','Planting trees helps to conserve land.','Land should be used wisely.'],'important facts to remember about land as a resource'),
+    kpD('What is land? (Quick Revision)','Land is the part of the earth\u2019s surface that is not covered by water.'),
+    kpD('What is a resource? (Quick Revision)','A resource is anything that people use to satisfy their needs.'),
+    kpD('What is soil erosion? (Quick Revision)','Soil erosion is the removal of top fertile soil by agents such as running water and wind.'),
+    kpD('What is soil exhaustion? (Quick Revision)','Soil exhaustion is the loss of soil fertility.'),
+    kpD('What is overgrazing? (Quick Revision)','Overgrazing occurs when too many animals feed on the same piece of land.'),
+    kpD('What is deforestation? (Quick Revision)','Deforestation is the cutting down of trees without replacing them.'),
+    kpD('What is land conservation? (Quick Revision)','Land conservation is the proper use and protection of land.'),
+    kpD('Give one important way of conserving land.','Planting trees.'),
+    kpD('What is the main activity carried out on land by many people?','Farming.'),
+    kpD('Why should land be protected?','Land should be protected so that it remains useful and productive for present and future generations.')
+  ],
   'P6_SST_T01|LOCATION OF THE FOUNDER COUNTRIES':[
     {kind:'pinned',q:'What is a landlocked country?',type:'definition',
      def:'A landlocked country is a country that has no coast of its own. It is locked in by land. It has no sea port.'},
@@ -2949,60 +3021,6 @@ const KID_PINNED={
    the exercise question ("Give any 3 places where..."). */
 function kidPinKey(s){return String(s||'').toUpperCase().replace(/[^A-Z0-9]+/g,' ').trim();}
 const KID_PINNED_SUB={
-  'P6_SST_T02|A PLANTS VEGETATION':[
-    /* owner's rule: WHAT IS IT? = definition, EXAMPLES = where it is found.
-       The old cards showed the WHERE list as the definition — swapped. */
-    {kind:'pinned',q:'What is Tropical rain forest?',type:'definition',
-     def:'Tropical rain forest is a thick forest that receives heavy rainfall throughout the year. Trees are tall, evergreen and grow close together.'},
-    {kind:'pinned',q:'Where is Tropical rain forest found? For example?',type:'list',
-     items:[
-      {text:'Mabira forest (Uganda)',emoji:'\u{1F333}'},
-      {text:'Budongo forest (Uganda)',emoji:'\u{1F333}'},
-      {text:'Kakamega forest (Kenya)',emoji:'\u{1F333}'},
-      {text:'Shores of Lake Kivu (Rwanda)',emoji:'\u{1F30A}'}]},
-    {kind:'pinned',q:'What is Savannah grassland?',type:'definition',
-     def:'Savannah grassland is tropical grassland with tall grasses and scattered trees. It has dry and wet seasons.'},
-    {kind:'pinned',q:'Where is Savannah grassland found? For example?',type:'list',
-     items:[
-      {text:'Covers most of the region — the largest area',emoji:'\u{1F33E}'},
-      {text:'Queen Elizabeth National Park (Uganda)',emoji:'\u{1F981}'},
-      {text:'Serengeti Plains (Tanzania)',emoji:'\u{1F981}'},
-      {text:'Masai Mara (Kenya)',emoji:'\u{1F981}'}]},
-    {kind:'pinned',q:'What is Montane vegetation?',type:'definition',
-     def:'Montane vegetation is vegetation that grows on mountain slopes and highland areas. It changes as you go higher due to altitude.'},
-    {kind:'pinned',q:'Where is Montane vegetation found? For example?',type:'list',
-     exHeader:'places where Montane vegetation is found',
-     items:[
-      {text:'Slopes of Mt Kilimanjaro',emoji:'\u{1F3D4}\u{FE0F}'},
-      {text:'Slopes of Mt Kenya',emoji:'\u{1F3D4}\u{FE0F}'},
-      {text:'Slopes of Mt Elgon',emoji:'\u{1F3D4}\u{FE0F}'},
-      {text:'Slopes of Rwenzori Mountains',emoji:'\u{1F3D4}\u{FE0F}'}]},
-    {kind:'pinned',q:'What is Semi-desert vegetation?',type:'definition',
-     def:'Semi-desert vegetation is made up of scattered thorny bushes, cactus and short tough grass. The plants have long roots and thick stems that store water.'},
-    {kind:'pinned',q:'Where is Semi-desert vegetation found? For example?',type:'list',
-     exHeader:'places where Semi-desert vegetation is found',
-     items:[
-      {text:'Karamoja',emoji:'\u{1F335}'},
-      {text:'Northern Kenya',emoji:'\u{1F335}'},
-      {text:'Central Tanzania',emoji:'\u{1F335}'}]},
-    {kind:'pinned',q:'What is Mangrove forest?',type:'definition',
-     def:'Mangrove forest is short salt-tolerant trees growing along muddy coasts, with stilt roots that stand above the water.'},
-    {kind:'pinned',q:'Where is Mangrove forest found? For example?',type:'list',
-     exHeader:'places where Mangrove forest is found',
-     items:[
-      {text:'Indian Ocean coast of Kenya',emoji:'\u{1F30A}'},
-      {text:'Indian Ocean coast of Tanzania',emoji:'\u{1F30A}'}]},
-    {kind:'pinned',q:'What is Swamp vegetation?',type:'definition',
-     def:'Swamp vegetation is papyrus, reeds and water lilies growing in waterlogged land.'},
-    {kind:'pinned',q:'Where is Swamp vegetation found? For example?',type:'list',
-     items:[
-      {text:'The Sudd edge (South Sudan)',emoji:'\u{1F33F}'},
-      {text:'Lake Kyoga area (Uganda)',emoji:'\u{1F33F}'},
-      {text:'Kilombero (Tanzania)',emoji:'\u{1F33F}'}]},
-    /* uses of plants — kept from the notes as numbered pills */
-    {kind:'dots',title:'Uses of plants (vegetation)',
-     items:['timber, poles, firewood and charcoal','medicine','pasture','raw materials for paper and furniture','protection of soil and water catchments','homes for wild animals','tourist attractions']}
-  ],
   'P7_SST_T04|G MONTANE MOUNTAIN VEGETATION':[
     {kind:'pinned',q:'What is Montane vegetation?',type:'definition',
      def:'Montane vegetation is vegetation that grows on mountain slopes and highland areas. It changes as you go higher due to altitude.'},
@@ -3882,7 +3900,12 @@ SCREENS.noteSub = () => {
   const remaining=cards.length-ki;
   const done=pathDone(t,i);
 
-  const dots=`<div class="kid-dots">${cards.map((c,j)=>`<i class="${j<ki?'done':j===ki?'on':''}"></i>`).join('')}</div>`;
+  /* 64-card sub-topics: a tidy counter instead of 65 tiny dots.
+     The exercise step at the end is not counted — it shows 64 / 64. */
+  const kTotal=cards.length-(hasEx?1:0);
+  const dots=cards.length>30
+    ?`<div class="kid-count-pill">${Math.min((ki||0)+1,kTotal)} / ${kTotal}</div>`
+    :`<div class="kid-dots">${cards.map((c,j)=>`<i class="${j<ki?'done':j===ki?'on':''}"></i>`).join('')}</div>`;
   /* NCDC progression: WHAT is it (definition cards) comes before EXAMPLES & facts.
      Shown only when the sub-topic actually has definition cards. */
   const isDefStage=c=>!!c&&(c.kind==='flip'||(c.kind==='pinned'&&c.type==='definition'));
