@@ -4,13 +4,10 @@
 
 # TOPIC 1: LOCATION OF OUR DISTRICT IN UGANDA
 
-*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term I, Topic 1,
-16 periods (`curriculum/P4-SOCIAL-STUDIES-2010.pdf`, pages 17–20).*
+*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term I, Topic 1 (16 periods, pages 17–20).*
 
-**How to use this topic.** The syllabus is about **your own district** — and every learner is
-in a different district. So these notes teach you **what to look for and how to find it**,
-and you fill in the answers for your own district. Where you see a blank like
-*(your district)*, write in your own answer.
+**How to use this topic.** The syllabus is about **your own district** — every learner is in
+a different district. Where you see a blank like *(your district)*, write in your own answer.
 
 **By the end of this topic you should be able to:**
 
@@ -23,21 +20,10 @@ and you fill in the answers for your own district. Where you see a blank like
 
 ---
 
-## 1. WHAT A DISTRICT IS
+## 1. What is a district?
 
-In P.3 you learnt about your **sub-county**. A district is bigger.
-
-Uganda is divided into **districts** so that government can bring services nearer to the
-people. Your district is then divided into smaller parts:
-
-```
-UGANDA
-  └── DISTRICT
-        └── COUNTY  (or MUNICIPALITY in a town)
-              └── SUB-COUNTY  (or DIVISION in a town)
-                    └── PARISH  (or WARD)
-                          └── VILLAGE  (or CELL)
-```
+A district is a **large part of Uganda with its own local government**. Uganda is divided
+into **districts** so that government can bring services nearer to the people.
 
 > **Note from the syllabus:** counties are **not** part of the main administrative structure
 > of every district. In some places they exist and in others they do not.
@@ -50,11 +36,40 @@ UGANDA
 
 ---
 
-## 2. THE COMPASS POINTS
+## 2. Name the parts of a district, from the biggest to the smallest.
 
-A **compass** shows direction. You revise this from P.3.
+```
+UGANDA
+  └── DISTRICT
+        └── COUNTY  (or MUNICIPALITY in a town)
+              └── SUB-COUNTY  (or DIVISION in a town)
+                    └── PARISH  (or WARD)
+                          └── VILLAGE  (or CELL)
+```
 
-### The four cardinal points
+| Part | Meaning |
+|---|---|
+| **County** | A large part of a district in the countryside |
+| **Municipality** | A large town with its own council |
+| **Sub-county** | A part of a county |
+| **Division** | A part of a municipality or city |
+| **Parish** | A part of a sub-county |
+| **Village** | The smallest administrative unit |
+
+> You are **not** asked to learn every sub-county by heart. The syllabus says you should
+> know **the ones near you** and be able to find the rest by asking or by reading a map.
+
+---
+
+## 3. What is a compass?
+
+A compass is an **instrument that shows direction**.
+
+---
+
+## 4. Name the four cardinal points.
+
+The four cardinal points are **North, East, South and West**.
 
 ```
                  NORTH
@@ -66,12 +81,14 @@ A **compass** shows direction. You revise this from P.3.
                  SOUTH
 ```
 
-**A way to remember them, going clockwise from the top:**
-**N**ever · **E**at · **S**our · **W**atermelon → **N, E, S, W**.
+> **A way to remember them, going clockwise from the top:**
+> **N**ever · **E**at · **S**our · **W**atermelon → **N, E, S, W**.
 
-### The four semi-cardinal points
+---
 
-These lie **between** the cardinal points.
+## 5. Name the four semi-cardinal points.
+
+The semi-cardinal points lie **between** the cardinal points.
 
 ```
       NW        N        NE
@@ -90,7 +107,9 @@ These lie **between** the cardinal points.
 | SW | South West |
 | NW | North West |
 
-### Finding direction without a compass
+---
+
+## 6. How can you find direction without a compass?
 
 | Way | How it works |
 |---|---|
@@ -100,9 +119,7 @@ These lie **between** the cardinal points.
 
 ---
 
-## 3. FINDING YOUR DISTRICT ON THE MAP OF UGANDA
-
-**Steps to follow**
+## 7. How do you find your district on the map of Uganda?
 
 1. Get a **map of Uganda** showing the districts.
 2. Look at the **key** to see what the lines and colours mean.
@@ -122,27 +139,11 @@ These lie **between** the cardinal points.
 
 ---
 
-## 4. THE PARTS OF YOUR DISTRICT
-
-| Word | Meaning |
-|---|---|
-| **County** | A large part of a district in the countryside |
-| **Municipality** | A large town with its own council |
-| **Sub-county** | A part of a county |
-| **Division** | A part of a municipality or city |
-| **Parish** | A part of a sub-county |
-| **Village** | The smallest part |
-
-You are **not** asked to learn every sub-county by heart. The syllabus says you should know
-**the ones near you** and be able to find the rest by asking or by reading a map.
-
----
-
-## 5. THE SIZE OF YOUR DISTRICT
+## 8. How is the size of a district measured?
 
 **Size** means how much land a district covers. It is measured in **square kilometres (km²)**.
 
-**How to compare sizes on a map**
+To compare sizes on a map:
 
 1. Use a **ruler** to measure across your district on the map.
 2. Measure across a neighbouring district in the same way.
@@ -158,9 +159,7 @@ You are **not** asked to learn every sub-county by heart. The syllabus says you 
 
 ---
 
-## 6. IMPORTANT PLACES IN YOUR DISTRICT
-
-Every district has places that matter to the people. Look for these in yours:
+## 9. Name the kinds of important places found in a district.
 
 | Kind of place | Examples to look for |
 |---|---|
@@ -175,9 +174,13 @@ Every district has places that matter to the people. Look for these in yours:
 
 ---
 
-## 7. DRAWING A MAP OF YOUR DISTRICT
+## 10. What is a map?
 
-A good map has these five things:
+A map is a **drawing of a place as seen from above**.
+
+---
+
+## 11. What must every good map have?
 
 | Part | What it does |
 |---|---|
@@ -185,59 +188,16 @@ A good map has these five things:
 | **Key** | Explains the symbols used |
 | **Compass** | Shows which way is north |
 | **Scale** | Shows how map distance stands for real distance |
-| **Frame** | The line drawn round the map |
+| **Frame** | Encloses the map neatly |
 
-**A way to remember: T · K · C · S · F** — Title, Key, Compass, Scale, Frame.
+> The **key** is the part of a map that explains the symbols. The **scale** is what a
+> distance on the map stands for on the ground.
 
----
-
-# KEY DEFINITIONS
-
-| Term | Meaning |
-|---|---|
-| District | A large part of Uganda with its own local government |
-| County | A large part of a district |
-| Municipality | A large town with its own council |
-| Sub-county | A part of a county |
-| Parish | A part of a sub-county |
-| Village | The smallest administrative unit |
-| Compass | An instrument that shows direction |
-| Cardinal points | North, East, South and West |
-| Semi-cardinal points | North East, South East, South West, North West |
-| Map | A drawing of a place as seen from above |
-| Key | The part of a map that explains the symbols |
-| Scale | What a distance on the map stands for on the ground |
-| Border | The line where two districts meet |
+> **A way to remember: T · K · C · S · F** — Title, Key, Compass, Scale, Frame.
 
 ---
 
-# IMPORTANT FACTS TO REMEMBER
-
-- The four **cardinal points** are **North, East, South and West**.
-- The four **semi-cardinal points** are **NE, SE, SW and NW**.
-- The sun rises in the **East** and sets in the **West**.
-- Uganda is divided into **districts**; a district has counties or municipalities, then
-  sub-counties or divisions, then parishes, then villages.
-- Every map needs a **title, key, compass, scale and frame**.
-- Size of land is measured in **square kilometres**.
-- The number of districts in Uganda **keeps changing** — ask your teacher for this year's
-  number.
-
----
-
-# EXAMINATION POINTS
-
-- Name the four cardinal points of a compass.
-- Give the short form of North East — **NE**.
-- In which direction does the sun rise? **East.**
-- Name the smallest administrative unit in a district — the **village**.
-- Name any two things found on a good map.
-- Name your own district and any two districts that border it.
-- Which is bigger, your district or the one next to it?
-
----
-
-# COMMON MISTAKES TO AVOID
+## COMMON MISTAKES TO AVOID
 
 - Saying the sun rises in the west.
 - Putting the semi-cardinal points in the wrong order between the cardinal points.
@@ -248,7 +208,7 @@ A good map has these five things:
 
 ---
 
-# REVISION QUESTIONS
+## REVISION QUESTIONS
 
 1. Name the four cardinal points of a compass.
 2. Name the four semi-cardinal points.
@@ -273,7 +233,7 @@ A good map has these five things:
 
 ---
 
-# ANSWERS TO REVISION QUESTIONS
+## ANSWERS TO REVISION QUESTIONS
 
 1. **North, East, South and West**
 2. **North East, South East, South West and North West**
@@ -295,39 +255,3 @@ A good map has these five things:
 18. **A part of a municipality or city** (like a sub-county in a town)
 19. Any one of: **use the sun**, **use shadows**, **face the sunrise and use your body** — East in front, West behind, North on the left, South on the right.
 20. *(Your own drawing — it should show N, NE, E, SE, S, SW, W and NW in the correct places.)*
-
----
-
-# P.4 QUICK REVISION
-
-- **N · E · S · W** — *Never Eat Sour Watermelon*
-- Between them: **NE · SE · SW · NW**
-- Sun rises **East**, sets **West**
-- District → county/municipality → sub-county/division → parish → village
-- Map needs **T K C S F** — Title, Key, Compass, Scale, Frame
-- Know **your** district, **your** neighbours, **your** important places
-
----
-
-## A note on sources
-
-The topic title, the period allocation (16 periods), the content list (revision of the
-cardinal and semi-cardinal compass points; location of our district, sub-counties, counties
-and municipality; size of our district), the competences and the suggested activities were
-taken from the official **NCDC Primary Four Social Studies Syllabus** (© NCDC 2010, ISBN
-978-9970-117-49-9; pages 17–20 of the PDF in `curriculum/`), downloaded from **ncdc.go.ug**.
-The syllabus's own warning that counties are not part of the administrative structure of
-every district is repeated above. The explanations, tables, diagrams, exercises and answers
-are original teaching material written for the learner; they are **not** copied from the
-curriculum document or from any textbook.
-
-**This topic is about the learner's own district, and no district is named in the syllabus.**
-No facts about any particular district have been invented here. Where an answer depends on
-the learner's district, the notes say so and leave the answer to the learner.
-
-The remark that Uganda now has over 130 districts is **newer than the syllabus**. Published
-sources give **different totals** because new districts keep being created, so no single
-figure is stated as fact; the learner is told to ask the teacher for the current number.
-
-No NCDC **Teacher's Guide** for P.4 was available, so the syllabus's own guidance was used
-directly instead.

@@ -80,13 +80,16 @@ CSS = """
 """
 
 HOOK = """
-/* keep the voice tied to the reading screen */
+/* keep the voice tied to the reading screen — and stop a one-shot Listen
+   (a card, a question, a word) the moment the learner moves on, so no
+   voice keeps talking over the next screen or after Stop + navigate */
 const _renderBase = render;
 render = function(){
   _renderBase();
-  if(state.screen === 'noteRead'){
+  wireCompanion();
+  if(state.screen === 'noteRead' || state.screen === 'noteJourney' || state.screen === 'mathLesson'){
     if(typeof spPrepare === 'function') spPrepare();
-  }else if(typeof spStop === 'function' && (SP.on || SP.paused)){
+  }else if(typeof spStop === 'function' && (SP.on || SP.paused || NV_AUDIO || (typeof NV!=='undefined' && NV.pending))){
     spStop();
   }
 };

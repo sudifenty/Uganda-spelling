@@ -13,17 +13,37 @@ Rules enforced:
   5. Every option must be non-empty and distinct.
   6. No duplicate question ids and no duplicate stems inside a file.
   7. Every question must say where it came from, and must never claim UNEB.
-  8. Every class+subject that has notes must reach the 100-question target.
+  8. Every class+subject that has notes must reach its question target. The
+     full target of 100 assumes a full set of notes; notes are added topic
+     by topic, so the minimum grows with the material — 25 questions per
+     note topic, up to the full 100. One new topic cannot honestly carry
+     100 distinct questions.
 
 Usage: python3 tools/validate_notes_practice.py
 """
 import json, glob, re, sys
 
 TARGET = 100
+PER_TOPIC = 25
 LETTERS = "ABCD"
 # a claim of UNEB origin is banned; the standard disclaimer is not a claim
 DISCLAIMER = "not a UNEB past paper"
 BANNED = re.compile(r"\buneb\b|according to (the )?(teacher'?s guide|mk )", re.I)
+
+
+def target_for(f):
+    """Question minimum for one notes-practice file, scaled to how many
+    note topics exist for that class+subject."""
+    m = re.match(r"data/practice/notes-([a-z]+)-(p[4-7])\.json$", f)
+    if not m:
+        return TARGET
+    notes = f"data/notes/{m.group(2)}-{m.group(1)}.json"
+    try:
+        d = json.load(open(notes, encoding="utf-8"))
+        n = len(d.get("topics", []))
+    except Exception:
+        return TARGET
+    return max(1, min(TARGET, PER_TOPIC * n))
 
 
 def main():
@@ -102,11 +122,12 @@ def main():
             if BANNED.search(blob):
                 errors.append(f"{tag}: claims a source that is not held")
 
-        short = "" if len(d["questions"]) >= TARGET else \
-                f"  BELOW TARGET ({len(d['questions'])}/{TARGET})"
-        if short:
+        short = ""
+        tgt = target_for(f)
+        if len(d["questions"]) < tgt:
+            short = f"  BELOW TARGET ({len(d['questions'])}/{tgt})"
             errors.append(f"{f}: only {len(d['questions'])} questions, "
-                          f"target is {TARGET}")
+                          f"target is {tgt} ({tgt} of {TARGET})")
         print(f"  {f}: {len(d['questions'])} questions — checked{short}")
 
     if errors:

@@ -169,6 +169,25 @@ function exLeave(){
   state.exRun = null;
   go('exTopic', false);
 }
+/* how many numbered answer boxes a written exercise needs:
+   "Give any 3..." -> 3; essay questions (explain/describe/why/how) -> 1
+   big box; otherwise the question's marks decide (2 mks -> 2 boxes) */
+function exBoxes(q){
+  const n=kexBoxCount(q);
+  if(n>1)return Math.min(n,5);
+  if(/^(explain|describe|discuss|narrate|outline|why|how)\b/i.test(String(q.q||'').trim()))return 1;
+  return Math.max(1,Math.min((q.marks||1),4));
+}
+/* per-box writing: each box keeps its own value, and the joined value
+   lands in the same field the marking already reads */
+function exWriteBox(qid,bi,v){
+  const r=state.exRun;if(!r)return;
+  r.given[qid+'__b'+bi]=v;
+  const n=parseInt(r.given[qid+'__bn']||'1',10)||1;
+  const parts=[];
+  for(let j=0;j<n;j++)parts.push(r.given[qid+'__b'+j]||'');
+  r.given[qid]=parts.filter(x=>x.trim()).join('\n');
+}
 function exWrite(qid, v){
   if(!state.exRun) return;
   state.exRun.given[qid] = v;
@@ -225,9 +244,9 @@ function exReviewWrong(){
 }
 
 /* ---- navigation helpers ---- */
-function setExClass(c){ state.klass=c; state.exTid=null; go('exercises',false); }
+function setExClass(c){if(!checkClassAccess(c))return;state.klass=c;state.exTid=null;go('exercises',false);}
 function setExSubject(id){ state.exsubject=id; state.exTid=null; go('exercises',false); }
-function openExTopic(tid){ state.exTid=tid; go('exTopic'); }
+function openExTopic(tid){ state.exTid=tid; const eb=EXERCISE_BANK[state.klass]&&EXERCISE_BANK[state.klass][state.exsubject]; const T=eb&&eb.topics&&eb.topics.find(t=>t.topic_id===tid); const p=EXDB.prog[tid]; recordLast({kind:'exercises',klass:state.klass,exsubject:state.exsubject,tid:tid,label:T?T.title:'Exercises',sub:'Written exercises',meta:T&&T.sets?T.sets.length+' sets':'',pct:p&&p.attempted?Math.round(100*p.correct/Math.max(1,p.attempted)):null}); go('exTopic'); }
 function exGoQ(i){ if(state.exRun){ state.exRun.i=i; render(); } }
 function exMove(d){
   const r=state.exRun; if(!r) return;
@@ -247,7 +266,7 @@ SCREENS.exercises = () => {
     <div><h2>Written Exercises</h2>
       <div class="sub">${cls} · ${meta.name} · answers stay hidden until you submit</div></div>
   </header>
-  <div class="chips">${CLASSES.map(c=>`
+  <div class="chips">${classOptions().map(c=>`
     <button class="chip ${c.id===cls?'on':''}" onclick="setExClass('${c.id}')">${c.id}</button>`).join('')}</div>
   <div class="chips">${EX_SUBJECTS.map(s=>`
     <button class="chip ${s.id===subj?'on':''}" onclick="setExSubject('${s.id}')">${s.label}</button>`).join('')}</div>`;
@@ -349,10 +368,23 @@ SCREENS.exDo = () => {
   ${q.working ? `<label class="ex-lab">Working</label>
     <textarea class="ex-area ex-work" id="exW" placeholder="Show your working here"
       oninput="exWrite('${q.id}__w', this.value)">${(r.given[q.id+'__w']||'').replace(/</g,'&lt;')}</textarea>` : ''}
-  <label class="ex-lab">${q.working?'Final answer':'Answer'}</label>
-  <textarea class="ex-area ${big&&!q.working?'ex-big':''}" id="exA"
-    placeholder="Write your answer here"
-    oninput="exWrite('${q.id}', this.value)">${val}</textarea>
+  <label class="ex-lab">${q.working?'Final answer':'Answer'}${exBoxes(q)>1?` \u00b7 ${exBoxes(q)} boxes (\u201c${q.marks} mks\u201d)`:''}</label>
+  ${(()=>{
+    const nb=exBoxes(q);
+    if(nb>1){
+      r.given[q.id+'__bn']=String(nb);
+      const joined=String(r.given[q.id]||'').split('\n');
+      return Array.from({length:nb},(_,bi)=>`<div class="ex-boxrow">
+        <span class="ex-bn">${bi+1}</span>
+        <input class="ex-binput" placeholder="Answer ${bi+1} of ${nb}"
+          value="${nEsc(String(r.given[q.id+'__b'+bi]!=null?r.given[q.id+'__b'+bi]:(joined[bi]||'')))}" oninput="exWriteBox('${q.id}',${bi},this.value)">
+      </div>`).join('');
+    }
+    return `<textarea class="ex-area ${big&&!q.working?'ex-big':''}" id="exA"
+      placeholder="Write your answer here"
+      oninput="exWrite('${q.id}', this.value)">${val}</textarea>`;
+  })()}
+  <div style="height:120px"></div>
   <div class="ex-grid">
     ${r.qids.map((id,i)=>`<button class="ex-dot ${i===r.i?'on':''} ${(r.given[id]||'').trim()?'fill':''}"
         onclick="exGoQ(${i})">${i+1}</button>`).join('')}

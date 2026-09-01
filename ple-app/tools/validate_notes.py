@@ -82,9 +82,21 @@ def main():
                 errors.append(f"{tag}: only {t['words']} words — too thin")
 
             titles = " | ".join(s["title"] for s in t["sections"])
-            for name, rx in REQUIRED:
-                if not rx.search(titles):
-                    errors.append(f"{tag}: missing the '{name}' section")
+            # Two note formats exist:
+            #   classic     — full textbook structure (definitions/facts/exam/sources)
+            #   restructured— UNEB revision format: numbered question sections,
+            #                 no duplicated summary sections (owner's restructuring rules)
+            q_sections = [s for s in t["sections"]
+                          if re.match(r"^\d+\.\s+.*\?$", s["title"].strip())]
+            if len(q_sections) >= 3:
+                for name, rx in (("questions", re.compile(r"revision questions", re.I)),
+                                 ("answers",   re.compile(r"answers to revision", re.I))):
+                    if not rx.search(titles):
+                        errors.append(f"{tag}: missing the '{name}' section")
+            else:
+                for name, rx in REQUIRED:
+                    if not rx.search(titles):
+                        errors.append(f"{tag}: missing the '{name}' section")
 
             body = text_of(t)
             for rx, why in BANNED:

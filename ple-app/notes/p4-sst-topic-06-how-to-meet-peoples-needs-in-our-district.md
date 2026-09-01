@@ -4,13 +4,10 @@
 
 # TOPIC 6: HOW TO MEET PEOPLE'S NEEDS IN OUR DISTRICT
 
-*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term III, Topic 6,
-25 periods (`curriculum/P4-SOCIAL-STUDIES-2010.pdf`, pages 35–40).*
+*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term III, Topic 6 (25 periods, pages 35–40).*
 
-**How to use this topic.** In P.3 you were briefly shown social services at the
-**sub-county**. Now you look at the whole **district**. These notes teach you the services,
-who provides them, the problems met and the solutions. You name the actual centres in your
-own district.
+**How to use this topic.** These notes teach you the services, who provides them, the
+problems met and the solutions. You name the actual centres in your own district.
 
 **By the end of this topic you should be able to:**
 
@@ -23,7 +20,7 @@ own district.
 
 ---
 
-## 1. WHAT SOCIAL SERVICES ARE
+## 1. What are social services? Who provides them?
 
 **Social services** are the **things provided to help people live well**, which people cannot
 easily provide for themselves alone.
@@ -34,9 +31,7 @@ practitioners and business people**.
 
 ---
 
-## 2. TYPES OF SOCIAL SERVICES
-
-The syllabus lists these:
+## 2. Name the types of social services.
 
 | Service | What it provides | Where it is found |
 |---|---|---|
@@ -58,9 +53,9 @@ The syllabus lists these:
 
 ---
 
-## 3. THE PEOPLE WHO PROVIDE SOCIAL SERVICES
+## 3. Who provides social services?
 
-The syllabus lists these providers:
+A **service provider** is a person or group that gives a service.
 
 | Provider | Service they give |
 |---|---|
@@ -82,9 +77,7 @@ animals.* *A carpenter* → *makes doors, desks and furniture.*
 
 ---
 
-## 4. PROBLEMS MET IN PROVIDING SOCIAL SERVICES
-
-The syllabus lists these:
+## 4. What problems are met in providing social services?
 
 | Problem | What it causes |
 |---|---|
@@ -101,7 +94,7 @@ The syllabus lists these:
 
 ---
 
-## 5. SOLUTIONS TO THE PROBLEMS
+## 5. What are the solutions to these problems?
 
 | Problem | Suggested solution |
 |---|---|
@@ -121,9 +114,10 @@ crops and draw posters on increasing food production.
 
 ---
 
-## 6. CARING FOR SOCIAL SERVICE CENTRES
+## 6. How do we care for social service centres?
 
-Social service centres belong to **all of us**. Caring for them is everybody's work.
+Social service centres belong to **all of us** — they are **public property**. Caring for
+them is everybody's work.
 
 | Centre | How to care for it |
 |---|---|
@@ -137,56 +131,25 @@ Social service centres belong to **all of us**. Caring for them is everybody's w
 **What a P.4 pupil can do:** take part in cleaning the school and the road to it, report
 damage to a teacher, use water carefully, and tell others why these places matter.
 
-**Road safety:** the syllabus asks learners to practise **safe ways of crossing the road** —
-**stop, look right, look left, look right again, and cross when it is clear**. Use a zebra
-crossing where there is one.
+**Road safety:** practise **safe ways of crossing the road** — **stop, look right, look
+left, look right again, and cross when it is clear**. Use a zebra crossing where there is
+one.
 
 ---
 
-# KEY DEFINITIONS
+## 7. Words to know
 
-| Term | Meaning |
+| Word | Meaning |
 |---|---|
-| Social services | Things provided to help people live well |
-| Service provider | A person or group that gives a service |
-| Poverty | Lack of enough money and basic things |
-| Corruption | Dishonest use of a position for personal gain |
-| Veterinary officer | A person who treats animals |
-| Population | The number of people living in a place |
-| Public property | Property that belongs to everybody |
-| Maintenance | Keeping something in good working order |
+| **Poverty** | Lack of enough money and basic things |
+| **Corruption** | Dishonest use of a position for personal gain |
+| **Population** | The number of people living in a place |
+| **Public property** | Property that belongs to everybody |
+| **Maintenance** | Keeping something in good working order |
 
 ---
 
-# IMPORTANT FACTS TO REMEMBER
-
-- **Government has the main responsibility** for providing social services.
-- Religious groups, private medical practitioners and business people also provide services
-  **on government's behalf**.
-- The main services are **education, medical, security, transport, water, electricity,
-  housing, road maintenance, banking, and postal and communication**.
-- A **veterinary officer** treats **animals**; a **doctor** treats **people**.
-- The biggest problems listed are **poverty, corruption, theft, high population and a poor
-  attitude to work**.
-- Social service centres are **public property** and must be cared for by everybody.
-- Crossing a road: **stop, look right, left, right again, then cross**.
-
----
-
-# EXAMINATION POINTS
-
-- What are social services? Things provided to help people live well.
-- Name any four social services in your district.
-- Who provides education? **Teachers.**
-- Who treats animals? A **veterinary officer**.
-- Name three problems met in providing social services.
-- Give one solution to corruption.
-- Give two ways of caring for a borehole.
-- Who has the main responsibility of providing social services? **The government.**
-
----
-
-# COMMON MISTAKES TO AVOID
+## COMMON MISTAKES TO AVOID
 
 - Saying a **doctor** treats animals — that is a **veterinary officer**.
 - Naming a service centre that is **not** in your own district.
@@ -197,7 +160,7 @@ crossing where there is one.
 
 ---
 
-# REVISION QUESTIONS
+## REVISION QUESTIONS
 
 1. What are social services?
 2. Who has the main responsibility of providing social services?
@@ -222,7 +185,7 @@ crossing where there is one.
 
 ---
 
-# ANSWERS TO REVISION QUESTIONS
+## ANSWERS TO REVISION QUESTIONS
 
 1. **Things provided to help people live well**, which people cannot easily provide alone
 2. The **government**
@@ -244,47 +207,3 @@ crossing where there is one.
 18. Any two of **keep the surroundings clean, repair the handle, do not wash clothes at the source, keep animals away, fence it**
 19. **Stop · look right · look left · look right again · cross when the road is clear** (use a zebra crossing where there is one)
 20. *(Your own answer — two centres really found in your district.)*
-
----
-
-# P.4 QUICK REVISION
-
-- Social services = things that help people live well · **government** provides them
-- Education · medical · security · transport · water · electricity · housing · roads · banking · communication
-- Providers: teachers · doctors · nurses · **vets** · police · drivers · bankers · farmers · **parents**
-- Problems: poverty · bad weather · theft · **corruption** · laziness · high population
-- Care: keep clean · do not damage · report damage · they are **public property**
-- Crossing a road: **stop · right · left · right · cross**
-
----
-
-## A note on sources
-
-The topic title, the period allocation (25 periods), the content list (an explanation of what
-social services are; the types of social services — education, medical, security, transport,
-water, electricity and housing services, road maintenance, banking, and postal and
-communication such as telephones, faxes, e-mail and the websites; the people who provide
-them — local leaders, teachers, doctors, veterinary officers, nurses, police officers,
-farmers, drivers, carpenters, bankers, chiefs, parents, shopkeepers and army officers; the
-problems met — poverty, bad weather, shortage of food, theft, corruption, irresponsibility,
-laziness, idleness, high population and poor attitude to work; suggested solutions; and
-caring for social service centres, which the syllabus marks as **new input**), the
-competences and the suggested activities — including practising safe ways of crossing roads,
-cleaning the roads leading to school and home, visiting the market, drawing social service
-centres, listening to a resource person from the police, and composing songs and poems
-against bad practices — were taken from the official **NCDC Primary Four Social Studies
-Syllabus** (© NCDC 2010, ISBN 978-9970-117-49-9; pages 35–40 of the PDF in `curriculum/`),
-downloaded from **ncdc.go.ug**.
-
-The syllabus's mention of **faxes** is **older than present-day practice**, and this is
-flagged in the text above rather than presented as current.
-
-**This topic is about the learner's own district.** No service centre of any district is
-named here; where an answer depends on the learner's district, the notes leave the answer to
-the learner.
-
-The explanations, tables, exercises and answers are original teaching material written for
-the learner; they are **not** copied from the curriculum document or from any textbook.
-
-No NCDC **Teacher's Guide** for P.4 was available, so the syllabus's own guidance was used
-directly instead.

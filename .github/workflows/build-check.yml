@@ -1,0 +1,24 @@
+name: build-check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build-and-verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Rebuild everything and validate all datasets
+        working-directory: ple-app
+        run: python3 tools/build_all.py
+      - name: Fail if the committed app is out of sync with its sources
+        run: |
+          git diff --exit-code -- index.html sw.js ple-app/index.html ple-app/data || {
+            echo "::error::The committed index.html / data files do not match a fresh build."
+            echo "Run 'cd ple-app && python3 tools/build_all.py' and commit the result."
+            exit 1;
+          }

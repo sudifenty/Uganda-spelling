@@ -3,7 +3,7 @@
  "subject": "SST",
  "subject_name": "Social Studies",
  "total": 5,
- "words": 14202,
+ "words": 11397,
  "topics": [
   {
    "id": "P6_SST_T01",
@@ -15,7 +15,7 @@
    "slug": "east-african-community",
    "periods": 50,
    "curriculum_pages": "317–325",
-   "words": 3167,
+   "words": 2134,
    "sections": [
     {
      "title": "About this topic",
@@ -26,7 +26,7 @@
       },
       {
        "t": "p",
-       "x": "**What you already know:** In P.5 you studied **Uganda** — its people, their origin and their settlement. In P.6 you widen the picture to the whole of **East Africa**. The curriculum says plainly that, with the rebirth of the East African Community, **Rwanda and Burundi are now counted as part of East Africa**."
+       "x": "**What you already know:** In P.5 you studied Uganda — its people and their settlement. In P.6 you widen the picture to the whole of East Africa working together."
       },
       {
        "t": "p",
@@ -35,769 +35,440 @@
       {
        "t": "ul",
        "items": [
-        "describe the historical background of the East African Community (1967–1977)",
-        "give the reasons why the old Community collapsed",
-        "describe the revival of the Community and its benefits today",
-        "name the national symbols of the member countries and the symbols of the EAC",
-        "describe the peoples of East Africa, their cradle land and their ethnic groups",
-        "explain the factors that influence settlement, and population growth, distribution and density"
+        "explain what the East African Community is and what regional cooperation means",
+        "name the member countries of the East African Community",
+        "describe the formation, collapse and revival of the former East African Community",
+        "state the objectives and benefits of the East African Community",
+        "name the organs of the East African Community and their roles",
+        "state the challenges facing the East African Community and how they can be reduced",
+        "explain trade and the common market in the EAC",
+        "name the symbols of the East African Community"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**A note on sources.** The teaching content of this topic — the definitions, lists, dates and examination points — was supplied by the app's owner from the P.6 lesson material. The revision questions and the answers to revision questions are found together in the P.6 Quick Revision section at the end of this topic, where every question carries its own answer on the same card."
+      }
+     ]
+    },
+    {
+     "title": "1. What is the East African Community?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**East African Community (EAC):** The East African Community (EAC) is a regional organisation formed by countries of East Africa to work together for the benefit of their people. EAC stands for East African Community."
+      },
+      {
+       "t": "p",
+       "x": "**Regional cooperation:** Regional cooperation is when countries in the same region work together to achieve common goals. East African countries cooperate to promote peace, trade, development and good relations among their people."
+      }
+     ]
+    },
+    {
+     "title": "2. Which countries are members of the EAC?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The original East African Community was formed by **Uganda, Kenya and Tanzania**. Rwanda and Burundi later joined the East African Community."
+      },
+      {
+       "t": "p",
+       "x": "The members of the East African Community today are **eight** countries: Burundi, the Democratic Republic of the Congo, Kenya, Rwanda, Somalia, South Sudan, Tanzania and Uganda. Somalia became a member of the East African Community in 2024, so Somalia is the newest member of the EAC."
+      }
+     ]
+    },
+    {
+     "title": "3. How did the former EAC and common services work?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The former East African Community was formed in **1967** by Uganda, Kenya and Tanzania. They formed the Community to work together and provide common services and promote development in East Africa."
+      },
+      {
+       "t": "p",
+       "x": "**East African Common Services Organisation:** The East African Common Services Organisation was an organisation through which Uganda, Kenya and Tanzania provided and managed common services before the formation of the former EAC."
+      },
+      {
+       "t": "p",
+       "x": "**East African High Commission:** The East African High Commission was an organisation through which Uganda, Kenya and Tanganyika worked together to manage common services before the East African Common Services Organisation."
+      },
+      {
+       "t": "p",
+       "x": "**Common services:** Common services are services that are provided and used by more than one country. Examples of common services that were provided through cooperation among East African countries are railways, harbours, postal services, telecommunications, airways and research services. They helped the East African countries to share services and resources and reduce the cost of providing some services separately."
+      }
+     ]
+    },
+    {
+     "title": "4. What are the objectives and benefits of the EAC?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The objectives of the East African Community are:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Promoting economic cooperation.",
+        "Promoting trade among member countries.",
+        "Promoting peace and security.",
+        "Improving the welfare of the people.",
+        "Promoting social and cultural cooperation.",
+        "Encouraging development among member countries.",
+        "Strengthening cooperation among member states."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "The EAC promotes trade by encouraging member countries to buy and sell goods and services from one another. The EAC encourages member countries to work together and solve problems peacefully. The EAC promotes development by encouraging member countries to work together in areas such as trade, transport, education, health and infrastructure."
+      },
+      {
+       "t": "p",
+       "x": "The benefits of the East African Community are:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Promoting trade.",
+        "Promoting peace and security.",
+        "Creating a larger market for goods and services.",
+        "Promoting movement of people.",
+        "Promoting tourism.",
+        "Encouraging cooperation in education.",
+        "Encouraging cooperation in health.",
+        "Improving transport and communication.",
+        "Creating employment opportunities.",
+        "Promoting social and cultural relations."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "The EAC provides traders with a larger market where they can sell their goods and buy goods from other member countries. The EAC promotes tourism by encouraging people to visit different countries in East Africa. The EAC promotes cooperation in education and allows learners to learn about the people, cultures and countries of East Africa. The EAC brings East African countries together so that they can work towards common goals."
+      }
+     ]
+    },
+    {
+     "title": "5. Why did the former EAC collapse?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The former East African Community collapsed in **1977**. The collapse of the EAC means that the former member countries stopped working together under the organisation."
+      },
+      {
+       "t": "p",
+       "x": "Some of the causes of the collapse of the former EAC were:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Political differences among member countries.",
+        "Economic differences among member countries.",
+        "Different national interests.",
+        "Disagreements over how resources and benefits should be shared.",
+        "Poor cooperation among the member countries.",
+        "Differences in economic policies."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "Political differences made it difficult for the member countries to agree on important matters. The countries had different economic conditions and interests, which caused disagreements about how benefits should be shared."
+      },
+      {
+       "t": "p",
+       "x": "The effects of the collapse of the former EAC were:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Common services were separated.",
+        "Trade among the three countries was affected.",
+        "Cooperation among the countries reduced.",
+        "Some regional organisations and services stopped operating together.",
+        "People experienced difficulties in using some common services.",
+        "The countries lost some of the benefits of working together."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "The collapse was a problem because it reduced cooperation among Uganda, Kenya and Tanzania and made it harder for the countries to enjoy the benefits of working together."
+      }
+     ]
+    },
+    {
+     "title": "6. Why was the EAC revived?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The East African Community was revived in **2000**. Uganda, Kenya and Tanzania revived the East African Community. It was revived because the countries recognised the importance of working together for economic and social development."
+      },
+      {
+       "t": "p",
+       "x": "Some reasons for the revival of the EAC are:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "To promote trade.",
+        "To promote economic development.",
+        "To strengthen cooperation.",
+        "To promote peace and security.",
+        "To improve relations among East African countries.",
+        "To create a larger market.",
+        "To improve the welfare of the people."
        ]
       }
      ]
     },
     {
-     "title": "1. THE OLD EAST AFRICAN COMMUNITY (1967–1977)",
+     "title": "7. How has the EAC expanded?",
      "blocks": [
       {
-       "t": "h3",
-       "x": "Definition"
+       "t": "p",
+       "x": "Expansion of the EAC means increasing the number of countries that belong to the Community. Rwanda and Burundi joined in 2007, South Sudan joined in 2016, the Democratic Republic of the Congo joined in 2022, and Somalia joined in 2024."
       },
       {
        "t": "p",
-       "x": "**East African Community (EAC):** An inter-governmental organisation of East African countries that work together for their political, economic and social development."
-      },
-      {
-       "t": "h3",
-       "x": "Formation"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Fact",
-        "Detail"
-       ],
-       "rows": [
-        [
-         "Year formed",
-         "**1967**"
-        ],
-        [
-         "Founder countries",
-         "**Uganda, Kenya and Tanzania**"
-        ],
-        [
-         "Headquarters",
-         "**Arusha, Tanzania**"
-        ],
-        [
-         "Personalities involved",
-         "**Milton Obote** (Uganda), **Jomo Kenyatta** (Kenya), **Julius Nyerere** (Tanzania)"
-        ],
-        [
-         "Year it collapsed",
-         "**1977**"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Location of the founder countries"
+       "x": "The EAC has expanded because more countries want to benefit from regional cooperation, trade, peace and development. More member countries provide a larger market, more opportunities for trade and stronger regional cooperation."
       },
       {
        "t": "p",
-       "x": "Uganda is **landlocked**, lying north-west of Lake Victoria. Kenya lies to the **east** of Uganda and touches the Indian Ocean. Tanzania lies to the **south** and also touches the Indian Ocean."
-      },
-      {
-       "t": "h3",
-       "x": "Objectives of the old EAC"
+       "x": "There are **eight** member countries of the EAC."
       },
       {
        "t": "ul",
        "items": [
-        "To promote **cooperation** among the member states.",
-        "To run **common services** together and save money.",
-        "To create a **common market** for the goods of member states.",
-        "To allow **free movement** of people, goods and services.",
-        "To promote **peace and unity** in the region.",
-        "To speak with **one voice** in world affairs."
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Common services they shared"
-      },
-      {
-       "t": "p",
-       "x": "East African Airways · East African Railways and Harbours · East African Posts and Telecommunications · the East African Development Bank · a common currency (the East African shilling) · the University of East Africa · joint research institutes."
-      },
-      {
-       "t": "h3",
-       "x": "Benefits of the old Community"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "A **wider market** for goods produced in the region.",
-        "**Cheaper services**, because the three countries shared the cost.",
-        "**Free movement** of people and goods across the borders.",
-        "**Employment** for East Africans in the common services.",
-        "**Sharing of skills, ideas and research**.",
-        "Better **bargaining power** in world trade."
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Reasons for the collapse of the EAC in 1977"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "**Differences in political ideologies** — Tanzania followed socialism (*Ujamaa*) while Kenya followed capitalism.",
-        "**Unequal sharing of benefits** — Kenya had more industries and gained the most, which the others resented.",
-        "**Personal differences between the leaders**, especially between Idi Amin and Julius Nyerere.",
-        "The **military coup in Uganda in 1971**, after which some members refused to recognise the new government.",
-        "**Lack of funds** and failure by members to pay their contributions.",
-        "**Nationalism and mistrust** — each state began to protect only its own interests.",
-        "Each country started its **own airline, currency and services**.",
-        "**Border closures and quarrels**, ending in the Uganda–Tanzania war of 1978–79."
+        "Uganda, Rwanda, Burundi, South Sudan and the Democratic Republic of the Congo are landlocked EAC member countries.",
+        "Kenya, Tanzania and Somalia have coastlines on the Indian Ocean."
        ]
       }
      ]
     },
     {
-     "title": "2. THE REVIVAL OF THE EAST AFRICAN COMMUNITY",
+     "title": "8. What are the organs of the EAC?",
      "blocks": [
       {
-       "t": "h3",
-       "x": "How it came back"
-      },
-      {
        "t": "p",
-       "x": "The three countries signed a new treaty in **Arusha in 1999**, and the new Community was officially launched in **2001**. **Rwanda and Burundi joined in 2007**, making five member states at the time this syllabus was written."
-      },
-      {
-       "t": "p",
-       "x": "**Note for today:** the Community has continued to grow. **South Sudan** joined in 2016, the **Democratic Republic of Congo** in 2022 and **Somalia** in 2024, so the EAC now has **eight member states**. Your syllabus was written when it had five, so both answers should be explained carefully in an examination."
-      },
-      {
-       "t": "h3",
-       "x": "Personalities involved in the revival"
-      },
-      {
-       "t": "p",
-       "x": "**Yoweri Museveni** (Uganda), **Daniel arap Moi** (Kenya) and **Benjamin Mkapa** (Tanzania) signed the treaty of 1999."
-      },
-      {
-       "t": "h3",
-       "x": "Objectives of the present EAC"
+       "x": "An organ of the EAC is a body responsible for carrying out particular duties of the Community. The organs of the East African Community are:"
       },
       {
        "t": "ul",
        "items": [
-        "To build a **customs union**, a **common market**, a **monetary union** and finally a **political federation**.",
-        "To promote **trade and investment** among members.",
-        "To allow **free movement** of people, labour, goods, services and capital.",
-        "To develop **joint infrastructure** — roads, railways, power lines, airports.",
-        "To keep **peace and security** in the region.",
-        "To improve the **standard of living** of East Africans."
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Organs of the EAC"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Organ",
-        "Work"
-       ],
-       "rows": [
-        [
-         "**The Summit**",
-         "The heads of state; gives general direction"
-        ],
-        [
-         "**The Council of Ministers**",
-         "The main policy-making body"
-        ],
-        [
-         "**The Co-ordination Committee**",
-         "Coordinates the work of the sectoral committees"
-        ],
-        [
-         "**Sectoral Committees**",
-         "Prepare programmes in particular areas"
-        ],
-        [
-         "**East African Court of Justice**",
-         "Settles disputes about the treaty"
-        ],
-        [
-         "**East African Legislative Assembly (EALA)**",
-         "Makes the laws of the Community"
-        ],
-        [
-         "**The Secretariat**",
-         "The office in Arusha that runs the daily work"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Benefits of the present EAC"
-      },
-      {
-       "t": "p",
-       "x": "A **large market** of over 300 million people · easier and cheaper **cross-border trade** · **free movement** using national identity cards and the **East African passport** · **joint projects** such as roads, railways and power lines · **peace-keeping** and joint security · **employment** and business opportunities · **sharing of education** — East African students pay lower fees in one another's universities."
-      },
-      {
-       "t": "h3",
-       "x": "Symbols of the East African Community"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "The **EAC flag** — blue, black, green, gold and white with a map of East Africa in the middle.",
-        "The **EAC emblem (coat of arms)**.",
-        "The **EAC anthem** — *Wimbo wa Jumuiya ya Afrika Mashariki*.",
-        "The **East African passport**.",
-        "**Kiswahili**, the language that unites the region."
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "National symbols of the member countries"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Country",
-        "Capital city",
-        "Currency",
-        "One well-known symbol"
-       ],
-       "rows": [
-        [
-         "Uganda",
-         "Kampala",
-         "Uganda shilling",
-         "The **crested crane**"
-        ],
-        [
-         "Kenya",
-         "Nairobi",
-         "Kenya shilling",
-         "The **shield and two spears**"
-        ],
-        [
-         "Tanzania",
-         "Dodoma",
-         "Tanzanian shilling",
-         "The **Uhuru torch**"
-        ],
-        [
-         "Rwanda",
-         "Kigali",
-         "Rwandan franc",
-         "The **crowned crane** on its emblem"
-        ],
-        [
-         "Burundi",
-         "Gitega",
-         "Burundian franc",
-         "The **lion** and three stars"
-        ]
+        "The Summit",
+        "The Council of Ministers",
+        "The East African Legislative Assembly",
+        "The East African Court of Justice",
+        "The Secretariat"
        ]
       },
       {
        "t": "p",
-       "x": "Every country also has a **national flag, a national anthem, a coat of arms** and a **national motto**."
+       "x": "**The Summit** is made up of the Heads of State of the EAC partner countries. The Summit gives overall direction and guidance to the EAC."
+      },
+      {
+       "t": "p",
+       "x": "**The Council of Ministers** is made up of ministers from the partner countries who are responsible for EAC matters. It makes decisions and gives direction on matters concerning the EAC."
+      },
+      {
+       "t": "p",
+       "x": "**The East African Legislative Assembly** is the legislative organ of the EAC. It makes laws for the EAC and performs other duties given to it by the EAC Treaty."
+      },
+      {
+       "t": "p",
+       "x": "**The East African Court of Justice** is the judicial organ of the EAC. It helps to interpret and apply the EAC Treaty and promotes justice within the Community."
+      },
+      {
+       "t": "p",
+       "x": "**The Secretariat** is the executive and administrative organ of the EAC. The EAC Secretariat is headed by the Secretary General."
       }
      ]
     },
     {
-     "title": "3. THE PEOPLES OF EAST AFRICA",
+     "title": "9. What challenges face the EAC?",
      "blocks": [
       {
-       "t": "h3",
-       "x": "The cradle of the people of East Africa"
-      },
-      {
        "t": "p",
-       "x": "**Cradle land:** The place where a people or a group first lived."
+       "x": "Some challenges facing the East African Community are:"
       },
       {
-       "t": "p",
-       "x": "East Africa is often called **the cradle of mankind**, because some of the oldest remains of early human beings have been found here — at **Olduvai Gorge** in Tanzania, at **Koobi Fora** and **Nariokotome** near Lake Turkana in Kenya, and at **Nsongezi** in Uganda."
-      },
-      {
-       "t": "h3",
-       "x": "Ethnic groups of East Africa"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Ethnic group",
-        "Cradle land",
-        "Examples of tribes"
-       ],
-       "rows": [
-        [
-         "**Bantu**",
-         "Congo–Cameroon region of West/Central Africa",
-         "Baganda, Banyankole, Bagisu, Bakiga (Uganda); Kikuyu, Luhya (Kenya); Chagga, Sukuma (Tanzania); Banyarwanda, Barundi"
-        ],
-        [
-         "**River–Lake Nilotes (Nilotics)**",
-         "Bahr-el-Ghazal, southern Sudan",
-         "Acholi, Langi, Alur, Japadhola (Uganda); Luo (Kenya)"
-        ],
-        [
-         "**Plain Nilotes (Nilo-Hamites)**",
-         "Ethiopian border area",
-         "Karimojong, Iteso, Kakwa (Uganda); Maasai, Turkana (Kenya)"
-        ],
-        [
-         "**Highland Nilotes**",
-         "Southern Ethiopia",
-         "Sebei (Uganda); Kalenjin, Nandi, Pokot (Kenya)"
-        ],
-        [
-         "**Cushites (Hamites)**",
-         "Ethiopian Highlands",
-         "Somali, Oromo, Borana (Kenya); Iraqw (Tanzania)"
-        ],
-        [
-         "**Pygmies (Batwa)**",
-         "Equatorial forests of Central Africa",
-         "Batwa of south-western Uganda, Rwanda and Burundi"
-        ]
+       "t": "ul",
+       "items": [
+        "Political differences.",
+        "Conflicts among member countries.",
+        "Different national interests.",
+        "Differences in economic development.",
+        "Trade disagreements.",
+        "Poor infrastructure in some areas.",
+        "Insecurity in some parts of the region.",
+        "Differences in policies and laws."
        ]
       },
       {
-       "t": "h3",
-       "x": "Visitors to East Africa and their contributions"
+       "t": "p",
+       "x": "The challenges facing the EAC can be reduced by:"
       },
       {
-       "t": "table",
-       "head": [
-        "Visitors",
-        "Contributions"
-       ],
-       "rows": [
-        [
-         "**Arabs**",
-         "Trade, Islam, Kiswahili words and coastal towns; but also the slave trade"
-        ],
-        [
-         "**Persians (Shirazi)**",
-         "Coastal settlements, mosques, coins and building styles"
-        ],
-        [
-         "**Indians / Asians**",
-         "Trade and shops, the railway workforce, industries, Hinduism"
-        ],
-        [
-         "**Portuguese**",
-         "New crops such as maize, cassava, pawpaw and sweet potatoes; Fort Jesus in Mombasa"
-        ],
-        [
-         "**European explorers**",
-         "Mapped the interior and reported it to Europe"
-        ],
-        [
-         "**Missionaries**",
-         "Christianity, schools, hospitals, writing of local languages"
-        ],
-        [
-         "**Colonialists**",
-         "Roads, railways, towns, cash crops and new systems of administration; but Africans lost their independence"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Organisation long ago and today"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Then",
-        "Now"
-       ],
-       "rows": [
-        [
-         "**Centralised societies** with kings — Buganda (Kabaka), Bunyoro (Omukama), Ankole (Omugabe), Rwanda and Burundi (Umwami), Wanga in Kenya (Nabongo)",
-         "**Republics** headed by presidents, with parliaments, courts and local governments"
-        ],
-        [
-         "**Decentralised societies** with clan elders — Acholi, Karimojong, Kikuyu, Maasai",
-         "Districts, counties, sub-counties, parishes and villages (LCs)"
-        ],
-        [
-         "Economy: subsistence farming, cattle keeping, barter trade, iron working",
-         "Money economy, cash crops, industry, services and international trade"
-        ],
-        [
-         "Religion: traditional beliefs, gods and ancestors",
-         "Christianity, Islam and traditional beliefs together"
-        ]
+       "t": "ul",
+       "items": [
+        "Promoting dialogue among member countries.",
+        "Solving conflicts peacefully.",
+        "Improving transport and communication.",
+        "Promoting fair trade.",
+        "Following EAC agreements.",
+        "Strengthening cooperation among member countries."
        ]
       }
      ]
     },
     {
-     "title": "4. SETTLEMENT AND POPULATION",
+     "title": "10. How does the EAC promote trade?",
      "blocks": [
       {
-       "t": "h3",
-       "x": "Factors that influence settlement in East Africa"
+       "t": "p",
+       "x": "**Trade** is the buying and selling of goods and services. The EAC promotes trade by encouraging member countries to trade with one another and by reducing barriers to trade."
+      },
+      {
+       "t": "p",
+       "x": "**Common market:** A common market is an arrangement where member countries allow the freer movement of goods, services, people, labour and capital among them. A common market is important to EAC countries because it provides a larger market and makes it easier for people and businesses to trade and work across member countries."
+      }
+     ]
+    },
+    {
+     "title": "11. What are the symbols of the EAC?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The symbols of the East African Community are:"
       },
       {
        "t": "ul",
        "items": [
-        "**Fertile soils** for farming — the slopes of Mt Elgon, Kilimanjaro and the Lake Victoria basin.",
-        "**Reliable rainfall** and a good climate.",
-        "**Availability of water** — lakes, rivers and springs.",
-        "**Security** from enemies and from wild animals.",
-        "**Good transport** — roads, railways and lake ports.",
-        "**Employment** in towns, mines, plantations and industries.",
-        "**Absence of pests and diseases** such as tsetse flies and mosquitoes.",
-        "**Gentle relief** — flat and gently sloping land.",
-        "**Minerals**, which attract mining towns.",
-        "**Government policy**, such as resettlement schemes."
+        "The EAC flag",
+        "The EAC emblem",
+        "The EAC anthem",
+        "The EAC motto"
        ]
       },
       {
-       "t": "h3",
-       "x": "Population: three words you must not mix up"
+       "t": "p",
+       "x": "The EAC flag is a symbol of unity and identity among the member countries. The EAC motto is **One People, One Destiny**. It means that the people of East Africa should work together as one people towards a common future. The EAC anthem promotes unity, cooperation and a sense of belonging among the people of East Africa."
       },
+      {
+       "t": "p",
+       "x": "The EAC promotes unity by encouraging people from different East African countries to work, trade, study and interact together. The EAC encourages people to appreciate and share the different cultures of East Africa. Cooperation helps the countries to solve common problems, promote development and improve the lives of their people."
+      }
+     ]
+    },
+    {
+     "title": "12. Where are the EAC countries on the map?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A P.6 learner should be able to locate the EAC member countries on a map of East Africa. The EAC countries a learner should be able to locate are Uganda, Kenya, Tanzania, Rwanda, Burundi, South Sudan, the Democratic Republic of the Congo and Somalia."
+      },
+      {
+       "t": "p",
+       "x": "The EAC countries that border Uganda are:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Kenya",
+        "South Sudan",
+        "Democratic Republic of the Congo",
+        "Rwanda",
+        "Tanzania"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "Kenya, Tanzania and Somalia have access to the Indian Ocean."
+      }
+     ]
+    },
+    {
+     "title": "13. IMPORTANT DATES TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "The former EAC was formed in **1967**.",
+        "The former EAC collapsed in **1977**.",
+        "The EAC was revived in **2000**.",
+        "Rwanda and Burundi joined the EAC in **2007**.",
+        "South Sudan joined the EAC in **2016**.",
+        "The Democratic Republic of the Congo joined the EAC in **2022**.",
+        "Somalia joined the EAC in **2024**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "14. KEY DEFINITIONS",
+     "blocks": [
       {
        "t": "table",
        "head": [
-        "Term",
+        "Word",
         "Meaning"
        ],
        "rows": [
         [
-         "**Population growth**",
-         "The increase in the number of people in an area over a period of time"
+         "**East African Community**",
+         "A regional organisation formed by countries of East Africa to work together for the benefit of their people"
         ],
         [
-         "**Population distribution**",
-         "The way people are spread over an area"
+         "**Regional cooperation**",
+         "When countries in the same region work together to achieve common goals"
         ],
         [
-         "**Population density**",
-         "The number of people living in one square kilometre"
-        ]
-       ]
-      },
-      {
-       "t": "p",
-       "x": "**Population density = total population ÷ total area (km²)**"
-      },
-      {
-       "t": "p",
-       "x": "*Example:* a district with 240,000 people and an area of 3,000 km² has a density of 240,000 ÷ 3,000 = **80 people per km²**."
-      },
-      {
-       "t": "h3",
-       "x": "Population figures"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Country",
-        "Latest national census",
-        "Population counted"
-       ],
-       "rows": [
-        [
-         "Uganda",
-         "2024",
-         "about **45.9 million**"
+         "**Trade**",
+         "The buying and selling of goods and services"
         ],
         [
-         "Kenya",
-         "2019",
-         "about 47.6 million"
+         "**Common market**",
+         "An arrangement where member countries allow the freer movement of goods, services, people, labour and capital among them"
         ],
         [
-         "Tanzania",
-         "2022",
-         "about 61.7 million"
-        ],
-        [
-         "Rwanda",
-         "2022",
-         "about 13.2 million"
-        ],
-        [
-         "Burundi",
-         "2008 (with later estimates)",
-         "about 12–13 million"
-        ]
-       ]
-      },
-      {
-       "t": "p",
-       "x": "**Census:** The official counting of all the people in a country. Uganda holds one about every ten years, and the 2024 census was the first digital one."
-      },
-      {
-       "t": "h3",
-       "x": "Causes of rapid population growth"
-      },
-      {
-       "t": "p",
-       "x": "High birth rate · early marriages · polygamy · better health services and immunisation · falling death rate · better food supply · religious and cultural beliefs about big families · low use of family planning · immigration and refugees."
-      },
-      {
-       "t": "h3",
-       "x": "Areas of dense and sparse population"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Densely populated",
-        "Sparsely populated"
-       ],
-       "rows": [
-        [
-         "Lake Victoria basin (Kampala, Kisumu, Mwanza)",
-         "Karamoja and northern Kenya (dry)"
-        ],
-        [
-         "Slopes of Mt Elgon, Kilimanjaro and Mt Kenya",
-         "Miombo woodlands of central Tanzania (tsetse flies)"
-        ],
-        [
-         "Kigezi and Rwanda highlands",
-         "Lake Turkana area (very hot and dry)"
-        ],
-        [
-         "Big towns — Nairobi, Kampala, Dar es Salaam",
-         "Swampy and forested areas"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Problems associated with high population density"
-      },
-      {
-       "t": "p",
-       "x": "Shortage of land and land conflicts · overcrowding and slums · unemployment · pressure on schools, hospitals and water · food shortage · poor sanitation and fast spread of disease · soil exhaustion and erosion · destruction of forests and wetlands · traffic congestion · increase in crime."
-      },
-      {
-       "t": "h3",
-       "x": "Solutions"
-      },
-      {
-       "t": "p",
-       "x": "Family planning education and services · educating girls and discouraging early marriage · creating jobs and supporting small businesses · resettling people in less crowded areas · building more schools, hospitals and houses · improving farming methods so that less land feeds more people · developing rural areas so that fewer people move to towns · planning towns properly."
-      }
-     ]
-    },
-    {
-     "title": "KEY DEFINITIONS",
-     "blocks": [
-      {
-       "t": "table",
-       "head": [
-        "Term",
-        "Meaning"
-       ],
-       "rows": [
-        [
-         "East African Community",
-         "An inter-governmental organisation of East African states"
-        ],
-        [
-         "Common market",
-         "An arrangement where member states trade freely with one another"
-        ],
-        [
-         "Cradle land",
-         "The place where a group of people first lived"
-        ],
-        [
-         "Ethnic group",
-         "A large group of people sharing origin, language family and customs"
-        ],
-        [
-         "Centralised society",
-         "A society ruled by one leader such as a king"
-        ],
-        [
-         "Decentralised society",
-         "A society ruled by clan elders, with no single king"
-        ],
-        [
-         "Population growth",
-         "The increase in the number of people over time"
-        ],
-        [
-         "Population distribution",
-         "The way people are spread over an area"
-        ],
-        [
-         "Population density",
-         "The number of people per square kilometre"
-        ],
-        [
-         "Census",
-         "The official counting of all people in a country"
+         "**Organ of the EAC**",
+         "A body responsible for carrying out particular duties of the Community"
         ]
        ]
       }
      ]
     },
     {
-     "title": "IMPORTANT FACTS TO REMEMBER",
+     "title": "15. EXAMINATION POINTS AND REVISION QUESTIONS",
      "blocks": [
       {
        "t": "ul",
        "items": [
-        "The old EAC was formed in **1967** by **Uganda, Kenya and Tanzania**, and collapsed in **1977**.",
-        "Its headquarters was and still is **Arusha, Tanzania**.",
-        "The founder leaders were **Obote, Kenyatta and Nyerere**.",
-        "The EAC was revived in **2001**; **Rwanda and Burundi joined in 2007**.",
-        "The law-making organ of the EAC is **EALA**; the top organ is the **Summit**.",
-        "East Africa is called the **cradle of mankind**; remains were found at **Olduvai Gorge**.",
-        "The main ethnic groups: **Bantu, River–Lake Nilotes, Plain Nilotes, Highland Nilotes, Cushites**.",
-        "**Population density = population ÷ area**.",
-        "Uganda's 2024 census counted about **45.9 million** people."
+        "EAC stands for **East African Community**.",
+        "The three countries that formed the former EAC in 1967 were **Uganda, Kenya and Tanzania**.",
+        "Five objectives of the EAC: to promote trade; to promote peace and security; to promote economic development; to promote social and cultural cooperation; to improve the welfare of the people.",
+        "Five benefits of the EAC: it promotes trade; it promotes peace; it creates a larger market; it promotes tourism; it encourages cooperation among member countries.",
+        "Four causes of the collapse of the former EAC: political differences; economic differences; different national interests; disagreements among member countries.",
+        "Four reasons for the revival of the EAC: to promote trade; to promote economic development; to strengthen cooperation; to promote peace and security.",
+        "The current EAC member countries are **Burundi, the Democratic Republic of the Congo, Kenya, Rwanda, Somalia, South Sudan, Tanzania and Uganda**.",
+        "Four organs of the EAC: The Summit; The Council of Ministers; The East African Legislative Assembly; The East African Court of Justice.",
+        "The motto of the EAC is **One People, One Destiny**.",
+        "The EAC is a regional organisation through which East African countries work together."
        ]
       }
      ]
     },
     {
-     "title": "EXAMINATION POINTS",
+     "title": "16. ANSWERS TO REVISION QUESTIONS — P.6 QUICK REVISION",
      "blocks": [
       {
        "t": "ul",
        "items": [
-        "Year the EAC was formed — 1967. Year it collapsed — 1977. Year it was revived — 2001.",
-        "Headquarters of the EAC — Arusha, Tanzania.",
-        "One reason for the collapse of the old EAC — differences in political ideologies (or unequal sharing of benefits).",
-        "Two countries that joined the EAC in 2007 — Rwanda and Burundi.",
-        "Language that unites East Africa — Kiswahili.",
-        "Site where remains of early man were found in Tanzania — Olduvai Gorge.",
-        "The largest ethnic group in East Africa — the Bantu.",
-        "Official counting of people — a census.",
-        "One problem of a densely populated area — land shortage (or unemployment)."
+        "The former EAC was formed in **1967** and collapsed in **1977**; it was revived in **2000**.",
+        "The three original members were **Uganda, Kenya and Tanzania**.",
+        "There are currently **eight** member countries of the EAC.",
+        "The EAC motto is **One People, One Destiny**.",
+        "Two benefits of the EAC: it promotes trade and cooperation among member countries.",
+        "Two challenges facing the EAC: political differences and conflicts among member countries.",
+        "The EAC is important because it helps East African countries work together for peace, trade, development and the welfare of their people."
        ]
-      }
-     ]
-    },
-    {
-     "title": "MAP WORK",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "On a map of East Africa you should be able to:"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "draw and label **Uganda, Kenya, Tanzania, Rwanda and Burundi** and their capital cities",
-        "mark **Arusha** and label it \"EAC headquarters\"",
-        "shade the **densely populated areas** around Lake Victoria and the mountain slopes",
-        "shade the **sparsely populated areas** of Karamoja and northern Kenya",
-        "mark **Olduvai Gorge** in Tanzania"
-       ]
-      },
-      {
-       "t": "p",
-       "x": "**Practice activity:** Draw the map of East Africa. Write inside each country its capital city and the year it became independent. Then shade in one colour the three founder members of the EAC and in another colour the two that joined in 2007."
-      }
-     ]
-    },
-    {
-     "title": "REVISION QUESTIONS",
-     "blocks": [
-      {
-       "t": "ol",
-       "items": [
-        "What is the East African Community?",
-        "Name the three countries that formed the EAC in 1967 and the leader of each.",
-        "Where are the headquarters of the EAC?",
-        "Give any four reasons why the old East African Community collapsed.",
-        "In which year was the EAC revived, and which two countries joined it in 2007?",
-        "Name any four organs of the East African Community.",
-        "Give any four benefits of the present East African Community.",
-        "Name any three symbols of the East African Community.",
-        "Give the capital city and currency of each of the five East African countries named in the syllabus.",
-        "Why is East Africa called the cradle of mankind? Name one site where evidence was found.",
-        "Name the main ethnic groups of East Africa and give one tribe in each.",
-        "Give any four contributions of the Arabs and the missionaries to East Africa.",
-        "Give the difference between a centralised and a decentralised society, with one example of each.",
-        "Give any five factors that influence where people settle in East Africa.",
-        "Define population density. A district has 360,000 people and covers 4,500 km². Find its population density.",
-        "Give any four causes of rapid population growth in East Africa.",
-        "Name two densely populated and two sparsely populated areas of East Africa, giving a reason for each.",
-        "Give any five problems caused by a high population density.",
-        "Suggest any four solutions to the problems of a high population.",
-        "Draw the map of East Africa and mark the five countries of the syllabus and their capital cities."
-       ],
-       "start": 1
-      }
-     ]
-    },
-    {
-     "title": "ANSWERS TO REVISION QUESTIONS",
-     "blocks": [
-      {
-       "t": "ol",
-       "items": [
-        "The East African Community is an inter-governmental organisation of East African countries that work together for their political, economic and social development.",
-        "Uganda — Milton Obote; Kenya — Jomo Kenyatta; Tanzania — Julius Nyerere.",
-        "Arusha, in Tanzania.",
-        "Any four of: differences in political ideologies; unequal sharing of benefits; personal differences between leaders; the 1971 coup in Uganda; lack of funds; nationalism and mistrust; each state starting its own services; border closures and war.",
-        "It was revived in **2001**; **Rwanda and Burundi** joined in **2007**.",
-        "Any four of: the Summit, the Council of Ministers, the Co-ordination Committee, Sectoral Committees, the East African Court of Justice, the East African Legislative Assembly, the Secretariat.",
-        "Any four of: a large market; cheaper cross-border trade; free movement of people and goods; joint projects such as roads and railways; peace and security; employment; lower university fees for East Africans.",
-        "Any three of: the EAC flag, the EAC emblem, the EAC anthem, the East African passport.",
-        "Uganda — Kampala, Uganda shilling; Kenya — Nairobi, Kenya shilling; Tanzania — Dodoma, Tanzanian shilling; Rwanda — Kigali, Rwandan franc; Burundi — Gitega, Burundian franc.",
-        "Because some of the oldest remains of early human beings have been found here. One site is **Olduvai Gorge** in Tanzania (also Koobi Fora in Kenya or Nsongezi in Uganda).",
-        "Bantu — Baganda; River–Lake Nilotes — Acholi; Plain Nilotes — Karimojong; Highland Nilotes — Sebei; Cushites — Somali. (Any correct tribe for each group.)",
-        "**Arabs:** brought trade, Islam, Kiswahili and built coastal towns. **Missionaries:** brought Christianity, started schools and hospitals, and wrote down local languages. (Any four points in total.)",
-        "A **centralised** society is ruled by one leader such as a king, for example Buganda under the Kabaka. A **decentralised** society has no single ruler and is led by clan elders, for example the Acholi or the Karimojong.",
-        "Any five of: fertile soils, reliable rainfall, availability of water, security, good transport, employment, absence of pests and diseases, gentle relief, minerals, government policy.",
-        "Population density is the number of people living in one square kilometre. 360,000 ÷ 4,500 = **80 people per km²**.",
-        "Any four of: high birth rate, early marriages, polygamy, improved health services, falling death rate, better food supply, cultural and religious beliefs, low use of family planning, immigration.",
-        "**Dense:** the Lake Victoria basin — fertile soils and reliable rainfall; the slopes of Mt Elgon or Kilimanjaro — fertile volcanic soils and relief rainfall. **Sparse:** Karamoja — too dry with little pasture and water; central Tanzania's miombo woodland — tsetse flies and poor soils.",
-        "Any five of: land shortage and conflicts; overcrowding and slums; unemployment; pressure on schools, hospitals and water; food shortage; poor sanitation and disease; soil exhaustion and erosion; destruction of forests and wetlands; traffic congestion; crime.",
-        "Any four of: family planning education and services; educating girls and discouraging early marriage; creating jobs; resettling people; building more social services; improving farming methods; developing rural areas; proper town planning.",
-        "*Learner's map.* Uganda — Kampala; Kenya — Nairobi; Tanzania — Dodoma; Rwanda — Kigali; Burundi — Gitega."
-       ],
-       "start": 1
-      }
-     ]
-    },
-    {
-     "title": "P.6 QUICK REVISION",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "Old EAC **1967–1977**: Uganda, Kenya, Tanzania · Obote, Kenyatta, Nyerere · HQ **Arusha**",
-        "Collapse: ideologies · unequal benefits · leaders quarrelled · no funds",
-        "Revived **2001**; Rwanda and Burundi **2007** (today eight members)",
-        "Organs: Summit · Council of Ministers · **EALA** · Court of Justice · Secretariat",
-        "East Africa = **cradle of mankind** (Olduvai Gorge)",
-        "Groups: Bantu · River–Lake Nilotes · Plain Nilotes · Highland Nilotes · Cushites",
-        "**Density = population ÷ area** · Uganda 2024 census ≈ 45.9 million"
-       ]
-      }
-     ]
-    },
-    {
-     "title": "A note on sources",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "The topic title, sub-topics, competences and teacher guidance above were taken from the official **NCDC Primary Six Curriculum, Set One** (© NCDC 2010; topic outline page 311 and pages 317–325 of the PDF in `curriculum/`). The explanations, tables, examples, revision questions and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
-      },
-      {
-       "t": "p",
-       "x": "Two figures are **newer than the 2010 syllabus** and are marked as such in the notes: the current EAC membership of eight states, and Uganda's 2024 census population of about 45.9 million (Uganda Bureau of Statistics). The syllabus itself was written when the EAC had five members."
-      },
-      {
-       "t": "p",
-       "x": "No NCDC **Teacher's Guide** for P.6 was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
       }
      ]
     }
@@ -813,7 +484,7 @@
    "slug": "major-resources",
    "periods": 30,
    "curriculum_pages": "326–331",
-   "words": 2806,
+   "words": 1691,
    "sections": [
     {
      "title": "About this topic",
@@ -824,7 +495,7 @@
       },
       {
        "t": "p",
-       "x": "**What you already know:** In P.5 you studied the resources of **Uganda**. In P.6 you study the resources of the **whole of East Africa** — the land, the minerals, the water and the fishing industry."
+       "x": "**What you already know:** In P.5 you studied the resources of **Uganda**. In P.6 you study the major resources of the **whole of East Africa** — land, water, forests, wildlife, minerals, soil, fish, climate and human resources."
       },
       {
        "t": "p",
@@ -833,669 +504,310 @@
       {
        "t": "ul",
        "items": [
-        "name the major resources of East Africa and locate them",
-        "describe land as a resource: plants, animals, cultivation and tourism",
-        "name the minerals of East Africa, the types of mining and where minerals are found",
-        "describe the drainage of East Africa and the uses of water",
-        "describe fishing methods, preservation, importance, problems and solutions"
+        "explain what a resource and a natural resource are",
+        "explain the importance of land, water, forests, wildlife, minerals, soil, fish, climate and human resources",
+        "state the importance of major resources to East Africa",
+        "explain conservation and how each resource can be conserved",
+        "state the problems caused by misuse of natural resources",
+        "locate the major water bodies of East Africa on a map"
        ]
+      },
+      {
+       "t": "p",
+       "x": "**A note on sources.** The teaching content of this topic — the definitions, lists and examination questions — was supplied by the app's owner from the P.6 lesson material. The revision questions and the answers to revision questions are found together in the last section of this topic, where every question carries its own answer on the same card."
       }
      ]
     },
     {
-     "title": "1. WHAT RESOURCES ARE",
+     "title": "1. What is a resource?",
      "blocks": [
       {
-       "t": "h3",
-       "x": "Definitions"
+       "t": "p",
+       "x": "**Resource:** A resource is anything that people use to satisfy their needs."
       },
       {
        "t": "p",
-       "x": "**Resource:** Anything found in the environment that people use to satisfy their needs."
-      },
-      {
-       "t": "p",
-       "x": "**Natural resource:** A resource provided by nature — land, water, minerals, vegetation, animals and climate."
-      },
-      {
-       "t": "p",
-       "x": "The major resources of East Africa are **land, minerals, water, vegetation, wildlife, climate and the people themselves**."
+       "x": "**Natural resources:** Natural resources are things provided by nature that people use to satisfy their needs. Examples of natural resources found in East Africa include land, water, forests, wildlife, minerals, fish and soils."
       }
      ]
     },
     {
-     "title": "2. LAND AS A RESOURCE",
+     "title": "2. Why is land an important resource?",
      "blocks": [
       {
-       "t": "h3",
-       "x": "(a) Plants (vegetation)"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Vegetation type",
-        "Where in East Africa"
-       ],
-       "rows": [
-        [
-         "Tropical rain forest",
-         "Mabira and Budongo (Uganda), Kakamega (Kenya), Kivu shores"
-        ],
-        [
-         "Savannah grassland",
-         "Most of the region — the largest area"
-        ],
-        [
-         "Montane vegetation",
-         "Slopes of Kilimanjaro, Mt Kenya, Elgon and Rwenzori"
-        ],
-        [
-         "Semi-desert",
-         "Karamoja, northern Kenya, central Tanzania"
-        ],
-        [
-         "Mangrove forest",
-         "The Indian Ocean coast of Kenya and Tanzania"
-        ],
-        [
-         "Swamp vegetation",
-         "The Sudd edge, Lake Kyoga area, Kilombero"
-        ]
-       ]
+       "t": "p",
+       "x": "Land is important because people use it for farming, settlement, mining, transport, industries and other activities. Land is used for crop growing, keeping animals, settlement, mining, building industries, transport, tourism and forestry."
       },
       {
        "t": "p",
-       "x": "**Uses:** timber, poles, firewood and charcoal · medicine · pasture · raw materials for paper and furniture · protection of soil and water catchments · homes for wild animals · tourist attractions."
-      },
-      {
-       "t": "h3",
-       "x": "(b) Animals — domestic and wild"
-      },
-      {
-       "t": "p",
-       "x": "**Domestic animals:** cattle, goats, sheep, pigs, poultry, donkeys. Breeds of cattle include the local **Ankole long-horned** and **Zebu**, and the exotic **Friesian, Jersey and Guernsey**. They give meat, milk, hides and skins, manure, transport and money."
-      },
-      {
-       "t": "p",
-       "x": "**Wild animals:** elephants, lions, buffaloes, giraffes, zebras, antelopes, rhinos, gorillas and chimpanzees. They attract **tourists**, are used for research and education, and are part of our heritage."
-      },
-      {
-       "t": "h3",
-       "x": "(c) Cultivation — cash and food crops"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Crop type",
-        "Examples and where they are grown"
-       ],
-       "rows": [
-        [
-         "**Cash crops**",
-         "Coffee (Uganda, Kenya, Tanzania), tea (Kericho in Kenya, Fort Portal in Uganda), cotton (eastern Uganda, Tanzania), sugar cane (Kakira, Kinyara, Mumias), sisal (Tanga in Tanzania), pyrethrum (Kenya highlands), tobacco (West Nile), cloves (**Zanzibar and Pemba**), cashew nuts (southern Tanzania), vanilla (Uganda)"
-        ],
-        [
-         "**Food crops**",
-         "Matooke, maize, millet, sorghum, cassava, sweet potatoes, beans, groundnuts, rice, wheat"
-        ]
-       ]
-      },
-      {
-       "t": "p",
-       "x": "**Factors favouring crop growing:** fertile soils · reliable rainfall · suitable climate · availability of land and labour · markets and transport."
-      },
-      {
-       "t": "h3",
-       "x": "(d) Tourism"
-      },
-      {
-       "t": "p",
-       "x": "**Tourism:** Travelling to visit places of interest for pleasure, study or rest."
-      },
-      {
-       "t": "table",
-       "head": [
-        "Attraction",
-        "Examples"
-       ],
-       "rows": [
-        [
-         "Game parks and reserves",
-         "**Serengeti, Ngorongoro** (Tanzania); **Maasai Mara, Tsavo, Amboseli** (Kenya); **Murchison Falls, Queen Elizabeth, Kidepo, Bwindi** (Uganda); **Akagera** (Rwanda); **Ruvubu** (Burundi)"
-        ],
-        [
-         "Mountains",
-         "Kilimanjaro, Mt Kenya, Rwenzori, Elgon, Virunga volcanoes"
-        ],
-        [
-         "Water features",
-         "Lake Victoria, the source of the Nile at Jinja, Murchison Falls, the Indian Ocean beaches"
-        ],
-        [
-         "Culture and history",
-         "Kasubi Tombs, Fort Jesus in Mombasa, Bagamoyo, traditional dances, the Kigali Genocide Memorial"
-        ]
-       ]
-      },
-      {
-       "t": "p",
-       "x": "**Importance of tourism:** foreign exchange · employment · government revenue · market for crafts and food · development of roads, hotels and airports · international friendship."
-      },
-      {
-       "t": "p",
-       "x": "**Problems of tourism:** poaching · insecurity and political unrest · poor roads to some parks · high cost of travel · destruction of habitats · few skilled guides · animals raiding gardens near parks."
+       "x": "Examples of crops grown on land in East Africa include maize, beans, bananas, coffee, tea and cotton."
       }
      ]
     },
     {
-     "title": "3. MINERALS",
+     "title": "3. Why is water an important resource?",
      "blocks": [
       {
-       "t": "h3",
-       "x": "Definitions"
+       "t": "p",
+       "x": "Water is important because people, animals and plants need it for survival and many other activities."
       },
       {
        "t": "p",
-       "x": "**Mineral:** A useful substance obtained from the earth by mining."
+       "x": "Sources of water in East Africa include lakes, rivers, springs, wells, rainfall and oceans. Water is used for drinking, cooking, washing, irrigation, fishing, transport, producing electricity and industrial activities."
       },
       {
        "t": "p",
-       "x": "**Mining:** The process of removing minerals from the earth."
-      },
-      {
-       "t": "h3",
-       "x": "Minerals of East Africa and where they are found"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Country",
-        "Minerals"
-       ],
-       "rows": [
-        [
-         "**Uganda**",
-         "Copper (**Kilembe**), cobalt, limestone (**Hima, Tororo**), gold (Karamoja, Busia), salt (**Katwe**), iron ore (Muko), phosphates (Sukulu), oil (**Albertine Graben**)"
-        ],
-        [
-         "**Kenya**",
-         "Soda ash (**Lake Magadi**), fluorspar (Kerio Valley), limestone (Athi River), titanium (Kwale), gemstones, salt"
-        ],
-        [
-         "**Tanzania**",
-         "Diamonds (**Mwadui**), gold (**Geita**), **tanzanite** (Mererani), natural gas (Songo Songo), coal (Kiwira), tin, phosphates"
-        ],
-        [
-         "**Rwanda**",
-         "Cassiterite (tin), coltan, wolfram, gold"
-        ],
-        [
-         "**Burundi**",
-         "Nickel, gold, cassiterite, peat"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Types of mining"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Type",
-        "How it is done"
-       ],
-       "rows": [
-        [
-         "**Traditional**",
-         "Simple tools — hoes, pangas, pans and baskets; panning gold in river sand; digging shallow pits by hand"
-        ],
-        [
-         "**Modern (open cast)**",
-         "Removing the soil above and scooping the mineral with machines, as at Mwadui and Hima"
-        ],
-        [
-         "**Modern (shaft / underground)**",
-         "Digging deep shafts and tunnels, as at Kilembe"
-        ],
-        [
-         "**Drilling**",
-         "Boring deep holes for oil and natural gas"
-        ],
-        [
-         "**Dredging / alluvial**",
-         "Scooping minerals from river or lake beds"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Minerals as a source of income"
-      },
-      {
-       "t": "p",
-       "x": "They earn **foreign exchange** when exported · provide **employment** · give government **taxes and royalties** · provide **raw materials** for industries such as cement and steel · lead to the growth of **towns and roads** where mines are opened."
-      },
-      {
-       "t": "h3",
-       "x": "Problems of the mining industry"
-      },
-      {
-       "t": "p",
-       "x": "Shortage of **capital** and modern machinery · **low level of technology** and few skilled people · minerals in **remote areas** with poor roads · **accidents** and mine collapses · **pollution** and land degradation · minerals in **small scattered deposits** · unstable **world prices** · **smuggling** and illegal mining · displacement of people."
-      },
-      {
-       "t": "p",
-       "x": "**Solutions:** attract investment, train people in mining skills, improve roads to mining areas, enforce safety and environmental laws, add value by processing minerals at home, and fight smuggling."
+       "x": "Major lakes in East Africa include Lake Victoria, Lake Kyoga, Lake Albert, Lake Edward, Lake Tanganyika and Lake Turkana. Major rivers include the River Nile, River Tana, River Athi and River Rufiji."
       }
      ]
     },
     {
-     "title": "4. WATER AND DRAINAGE",
+     "title": "4. Why are forests important resources?",
      "blocks": [
       {
-       "t": "h3",
-       "x": "Definition"
+       "t": "p",
+       "x": "Forests provide useful products and help to protect the environment. People get products such as timber, firewood, charcoal, fruits, medicines and poles from forests."
       },
       {
        "t": "p",
-       "x": "**Drainage:** The way water is held and carried in an area by lakes, rivers, swamps, seas and oceans."
-      },
-      {
-       "t": "h3",
-       "x": "Lakes of East Africa"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Lake",
-        "Notes"
-       ],
-       "rows": [
-        [
-         "**Lake Victoria**",
-         "The largest in Africa; shared by Uganda, Kenya and Tanzania"
-        ],
-        [
-         "**Lake Tanganyika**",
-         "The deepest in Africa; Tanzania, D.R. Congo, Burundi, Zambia"
-        ],
-        [
-         "**Lake Albert, Edward, George, Kyoga, Wamala**",
-         "Uganda"
-        ],
-        [
-         "**Lake Turkana, Naivasha, Nakuru, Baringo, Magadi**",
-         "Kenya"
-        ],
-        [
-         "**Lake Natron, Eyasi, Manyara, Rukwa, Nyasa (Malawi)**",
-         "Tanzania"
-        ],
-        [
-         "**Lake Kivu**",
-         "Rwanda and D.R. Congo"
-        ],
-        [
-         "**Lake Rweru and Cohoha**",
-         "Burundi"
-        ]
-       ]
+       "x": "Forests protect soil from erosion, provide homes for wild animals, help to maintain rainfall, provide fresh air and help to conserve the environment."
       },
       {
        "t": "p",
-       "x": "Lakes are of different kinds: **rift valley** lakes (Tanganyika, Albert, Turkana), **depression** lakes (Victoria, Kyoga), **crater** lakes (Katwe, Nyamunuka) and **man-made** lakes (behind dams)."
-      },
-      {
-       "t": "h3",
-       "x": "Rivers of East Africa"
-      },
-      {
-       "t": "p",
-       "x": "**River Nile** (from Lake Victoria at Jinja, flowing north) · **Kagera** (the longest feeder of Lake Victoria) · **Tana** and **Athi–Galana** (Kenya) · **Rufiji, Pangani, Ruvuma, Ruaha** (Tanzania) · **Katonga, Semliki, Aswa** (Uganda) · **Ruvubu and Ruzizi** (Burundi and Rwanda)."
-      },
-      {
-       "t": "p",
-       "x": "**Other water bodies:** the **Indian Ocean** on the eastern side, and swamps such as those of Lake Kyoga, the Kilombero valley and Rwanda's Rugezi."
-      },
-      {
-       "t": "h3",
-       "x": "Uses of water in East Africa"
-      },
-      {
-       "t": "p",
-       "x": "Drinking and domestic use · **irrigation** (Mubuku, Doho, Mwea in Kenya) · **hydro-electric power** (Nalubaale, Kiira, Bujagali, Isimba, Karuma, Owen Falls; Kidatu in Tanzania) · **fishing** · **water transport** on lakes, rivers and the ocean · **tourism and sport** · industry · watering animals."
-      },
-      {
-       "t": "p",
-       "x": "**Problems:** pollution from factories and towns · water hyacinth · silting · drying up of lakes and wetlands · floods · water-borne diseases · water shortage in dry areas."
+       "x": "**Forestry** is the growing, caring for and using of trees and forests."
       }
      ]
     },
     {
-     "title": "5. FISHING",
+     "title": "5. Why is wildlife an important resource?",
      "blocks": [
       {
-       "t": "h3",
-       "x": "Definition"
+       "t": "p",
+       "x": "**Wildlife** refers to animals and plants that live in their natural environment. Wildlife is important because it provides income through tourism and provides employment to some people."
       },
       {
        "t": "p",
-       "x": "**Fishing:** The catching of fish and other water animals for food and for sale."
-      },
-      {
-       "t": "h3",
-       "x": "Fishing grounds"
+       "x": "Examples of wild animals found in East Africa include lions, elephants, giraffes, zebras, buffaloes, rhinoceroses and leopards. Many wild animals are protected in game parks and game reserves."
       },
       {
        "t": "p",
-       "x": "Lake Victoria (the biggest) · Lakes Kyoga, Albert, Edward and George · Lake Tanganyika · Lake Turkana · the **Indian Ocean** coast · fish ponds on farms."
+       "x": "**Tourism** is the activity of travelling to places for leisure, learning or other purposes. Wild animals attract tourists who visit East Africa to see and enjoy them."
       },
       {
        "t": "p",
-       "x": "Common fish: **Nile perch (mputa), tilapia (ngege), silver fish (mukene), tuna, catfish, lungfish, sardines (dagaa)**."
-      },
-      {
-       "t": "h3",
-       "x": "Fishing methods"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Traditional",
-        "Modern"
-       ],
-       "rows": [
-        [
-         "Hooks and lines",
-         "Trawling with large nets pulled by boats"
-        ],
-        [
-         "Baskets and traps",
-         "Purse seining"
-        ],
-        [
-         "Spears and harpoons",
-         "Gill nets and long lines from motor boats"
-        ],
-        [
-         "Weirs and fences across streams",
-         "Fish farming in ponds and cages"
-        ],
-        [
-         "Poisoning and stunning (now illegal)",
-         "Use of echo sounders and refrigerated boats"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Preservation of fish"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Traditional",
-        "Modern"
-       ],
-       "rows": [
-        [
-         "Sun drying",
-         "Refrigeration and freezing"
-        ],
-        [
-         "Smoking",
-         "Canning"
-        ],
-        [
-         "Salting",
-         "Filleting and cold storage"
-        ],
-        [
-         "Deep frying",
-         "Modern processing factories, as at Jinja and Kisumu"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Importance of fishing to the people of East Africa"
-      },
-      {
-       "t": "p",
-       "x": "**Food** rich in protein · **employment** for fishermen, traders and factory workers · **income** for families · **foreign exchange** from exported Nile perch fillets · **raw materials** for fish-processing and animal-feed industries · government **revenue** through licences and taxes · growth of **landing sites and towns**."
-      },
-      {
-       "t": "h3",
-       "x": "Problems of the fishing industry"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "**Over-fishing** and use of **undersized nets**, which catch immature fish.",
-        "Use of **poison and explosives**, which kill all life in the water.",
-        "**Water hyacinth** blocking landing sites.",
-        "**Water pollution** from factories, towns and farms.",
-        "**Poor preservation and transport**, so fish goes bad.",
-        "**Lack of capital** for modern boats and equipment.",
-        "**Accidents and storms** on the lakes; many fishermen cannot swim.",
-        "**Insecurity** and theft of nets and engines.",
-        "**Diseases** such as bilharzia at landing sites.",
-        "**Low prices** paid to the fishermen by middlemen."
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Solutions"
-      },
-      {
-       "t": "p",
-       "x": "Enforce laws on **net sizes and closed seasons** · ban poison and explosives · encourage **fish farming** in ponds and cages · remove water hyacinth · build **cold rooms** and improve roads to landing sites · give **loans and training** to fishermen · provide life jackets and weather warnings · form **fishermen's cooperatives** so they get fair prices · patrol the lakes."
+       "x": "Wildlife benefits East African countries because it brings income through tourism, provides employment, attracts visitors from other countries, provides foreign exchange and promotes conservation."
       }
      ]
     },
     {
-     "title": "KEY DEFINITIONS",
+     "title": "6. What are minerals?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Minerals** are useful substances found in or under the ground. Examples of minerals found in East Africa include gold, copper, iron ore, limestone, salt, tin and diamond."
+      },
+      {
+       "t": "p",
+       "x": "Minerals are important because they provide raw materials for industries and income through mining and trade. **Mining** is the activity of removing minerals from the ground."
+      },
+      {
+       "t": "p",
+       "x": "Mining provides employment, provides income, provides raw materials for industries and provides minerals for export. Poor mining practices can destroy land, pollute water, destroy vegetation and leave open pits."
+      }
+     ]
+    },
+    {
+     "title": "7. Why is soil an important resource?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Soil is important because it supports the growth of crops and natural vegetation. Activities that depend on soil include crop growing, livestock keeping, forestry and settlement. Fertile soil helps crops to grow well and produce good yields."
+      },
+      {
+       "t": "p",
+       "x": "Loss of soil fertility can be caused by continuous cultivation, soil erosion, overgrazing, bush burning and poor farming methods. Soil can be conserved by planting trees, practising crop rotation, using manure, controlling soil erosion and avoiding overgrazing."
+      }
+     ]
+    },
+    {
+     "title": "8. Why is fish an important resource?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Fish provides food and income to many people. Fishing is mainly carried out in lakes, rivers and the ocean. Important fishing areas in East Africa include Lake Victoria, Lake Kyoga, Lake Albert, Lake Tanganyika and the Indian Ocean."
+      },
+      {
+       "t": "p",
+       "x": "Fishing provides food, provides employment, provides income and provides fish for trade. Fishing can be affected by overfishing, water pollution, destruction of breeding areas and the use of illegal fishing methods."
+      }
+     ]
+    },
+    {
+     "title": "9. Why is climate important to people?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Climate affects activities such as farming, livestock keeping and tourism. Rainfall and suitable temperatures provide conditions needed for crops to grow. Favourable weather can attract tourists to visit different places."
+      }
+     ]
+    },
+    {
+     "title": "10. What are human resources?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Human resources** are people and their skills, knowledge and abilities that are used to produce goods and services. People use their knowledge, skills and abilities to carry out different activities and develop their communities and countries."
+      },
+      {
+       "t": "p",
+       "x": "Examples of people who provide important skills and services include teachers, doctors, nurses, farmers, engineers, drivers, builders and traders. People can improve their skills through education, training and practice."
+      }
+     ]
+    },
+    {
+     "title": "11. Why are natural resources important to East Africa?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Natural resources are important to East African countries because they provide food, provide raw materials, provide employment, provide income, promote trade, promote tourism, support industries and provide government revenue."
+      },
+      {
+       "t": "p",
+       "x": "People get jobs in activities such as farming, fishing, mining, forestry and tourism. People and countries buy and sell products obtained from resources such as crops, fish, minerals and forest products. Resources provide the raw materials needed by industries."
+      }
+     ]
+    },
+    {
+     "title": "12. What is conservation of resources?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Conservation** is the proper use and protection of resources. Resources should be conserved so that they can continue benefiting people now and in the future."
+      },
+      {
+       "t": "p",
+       "x": "Land can be conserved by planting trees, controlling soil erosion and avoiding overgrazing. Forests can be conserved by planting trees, controlling unnecessary cutting of trees, preventing forest fires and protecting forests. Wildlife can be conserved by protecting game parks and reserves, preventing poaching, protecting animal habitats and enforcing wildlife laws."
+      },
+      {
+       "t": "p",
+       "x": "Water can be conserved by preventing water pollution, protecting water sources and avoiding unnecessary wastage of water. Fish can be conserved by controlling overfishing, using legal fishing methods, protecting fish breeding areas and preventing water pollution. Minerals can be conserved by using them carefully and controlling mining activities to reduce environmental damage."
+      }
+     ]
+    },
+    {
+     "title": "13. What happens when resources are misused?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Misuse of resources can lead to environmental destruction, soil erosion, loss of forests, loss of wildlife, water pollution, loss of fertile soil and shortage of resources."
+      },
+      {
+       "t": "p",
+       "x": "**Environmental destruction** is the damage caused to the natural environment by human activities. People should avoid destroying natural resources because they depend on them for food, income, employment and other needs."
+      }
+     ]
+    },
+    {
+     "title": "14. MAP WORK",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A P.6 learner should be able to locate important areas where major resources are found and used. The major water bodies a learner should practise locating are Lake Victoria, Lake Kyoga, Lake Albert, Lake Edward, Lake Tanganyika, Lake Turkana and the Indian Ocean. The Indian Ocean borders East Africa, and the major river a learner should be able to locate is the River Nile."
+      }
+     ]
+    },
+    {
+     "title": "15. KEY DEFINITIONS",
      "blocks": [
       {
        "t": "table",
        "head": [
-        "Term",
+        "Word",
         "Meaning"
        ],
        "rows": [
         [
-         "Resource",
-         "Anything in the environment used to satisfy human needs"
+         "**Resource**",
+         "Anything that people use to satisfy their needs"
         ],
         [
-         "Mineral",
-         "A useful substance obtained from the earth"
+         "**Natural resource**",
+         "Something provided by nature that people use to satisfy their needs"
         ],
         [
-         "Mining",
-         "The removal of minerals from the earth"
+         "**Forestry**",
+         "The growing, caring for and using of trees and forests"
         ],
         [
-         "Open cast mining",
-         "Mining by removing the soil above the mineral"
+         "**Wildlife**",
+         "Animals and plants that live in their natural environment"
         ],
         [
-         "Shaft mining",
-         "Mining by sinking deep shafts underground"
+         "**Minerals**",
+         "Useful substances found in or under the ground"
         ],
         [
-         "Drainage",
-         "The way water is carried and held in an area"
+         "**Mining**",
+         "The activity of removing minerals from the ground"
         ],
         [
-         "Tourism",
-         "Travelling to visit places of interest"
+         "**Conservation**",
+         "The proper use and protection of resources"
         ],
         [
-         "Cash crop",
-         "A crop grown mainly for sale"
-        ],
-        [
-         "Food crop",
-         "A crop grown mainly for eating"
-        ],
-        [
-         "Over-fishing",
-         "Catching too many fish so that the stock cannot recover"
+         "**Human resources**",
+         "People and their skills, knowledge and abilities that are used to produce goods and services"
         ]
        ]
       }
      ]
     },
     {
-     "title": "IMPORTANT FACTS TO REMEMBER",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "Copper is mined at **Kilembe** in Uganda; diamonds at **Mwadui** and gold at **Geita** in Tanzania; soda ash at **Lake Magadi** in Kenya.",
-        "**Tanzanite** is found only in Tanzania.",
-        "Cloves are the main cash crop of **Zanzibar and Pemba**; pyrethrum is grown in the **Kenya highlands**; sisal at **Tanga**.",
-        "**Lake Victoria** is the largest lake in Africa; **Lake Tanganyika** is the deepest.",
-        "The **River Nile** starts from Lake Victoria at Jinja and flows **north**.",
-        "Main fish: **Nile perch, tilapia and mukene**.",
-        "Traditional preservation: sun drying, smoking, salting. Modern: refrigeration and canning.",
-        "The biggest problem of the fishing industry is **over-fishing and the use of wrong fishing gear**."
-       ]
-      }
-     ]
-    },
-    {
-     "title": "EXAMINATION POINTS",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "Mineral mined at Kilembe — copper. At Mwadui — diamonds. At Lake Magadi — soda ash.",
-        "Type of mining used at Kilembe — shaft (underground) mining.",
-        "Cash crop grown on the slopes of Mt Kilimanjaro — coffee.",
-        "Largest lake in East Africa — Lake Victoria.",
-        "Longest river that feeds Lake Victoria — River Kagera.",
-        "One modern method of fishing — trawling (or use of gill nets).",
-        "One traditional way of preserving fish — smoking (or sun drying, salting).",
-        "One way of solving over-fishing — using recommended net sizes and fish farming."
-       ]
-      }
-     ]
-    },
-    {
-     "title": "MAP WORK",
+     "title": "16. IMPORTANT FACTS TO REMEMBER",
      "blocks": [
       {
        "t": "p",
-       "x": "On a map of East Africa you should be able to locate and label:"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "**Lake Victoria, Tanganyika, Turkana, Albert, Kyoga, Kivu** and the **Indian Ocean**",
-        "**River Nile, Kagera, Tana, Rufiji, Pangani**",
-        "Mining centres: **Kilembe, Hima, Katwe, Mwadui, Geita, Magadi, Mererani**",
-        "Game parks: **Serengeti, Maasai Mara, Murchison Falls, Queen Elizabeth, Akagera**",
-        "Cash-crop areas: coffee, tea, cotton, sisal and cloves"
-       ]
-      },
-      {
-       "t": "p",
-       "x": "**Practice activity:** Draw the map of East Africa and use one symbol for minerals, one for game parks and one for fishing grounds. Add a key at the corner."
+       "x": "The major resources of East Africa are land, water, forests, wildlife, minerals, soil, fish, climate and human resources. Resources are important because they provide food, employment, income, raw materials and support economic development. Resources should be conserved so that they can continue benefiting people now and in the future."
       }
      ]
     },
     {
-     "title": "REVISION QUESTIONS",
+     "title": "17. EXAMINATION QUESTIONS AND REVISION QUESTIONS",
      "blocks": [
       {
        "t": "ol",
        "items": [
-        "What is a natural resource? Name any five natural resources of East Africa.",
-        "Give any four uses of vegetation to the people of East Africa.",
-        "Name any four cash crops of East Africa and where each is grown.",
-        "Give any four factors that favour crop growing in East Africa.",
-        "What is tourism? Name any four tourist attractions in East Africa.",
-        "Give any four importances of tourism to East Africa.",
-        "Give any three problems facing the tourism industry.",
-        "Name the mineral mined at each of these places: Kilembe, Mwadui, Lake Magadi, Geita.",
-        "Give the difference between traditional and modern mining.",
-        "Name any two types of modern mining and give one example of each.",
-        "Give any four problems facing the mining industry in East Africa.",
-        "Name any four lakes and any three rivers of East Africa.",
-        "Give any five uses of water in East Africa.",
-        "Name any three traditional and three modern methods of fishing.",
-        "Give three traditional and two modern ways of preserving fish.",
-        "Give any five importances of fishing to the people of East Africa.",
-        "Give any five problems facing the fishing industry.",
-        "Suggest any five solutions to the problems of the fishing industry.",
-        "Why are minerals said to be a source of income to a country?",
-        "Draw the map of East Africa and mark on it Lake Victoria, the River Nile and Kilembe."
+        "Mention six major resources of East Africa. — Land, water, forests, wildlife, minerals, fish.",
+        "Give five uses of water. — Drinking, cooking, irrigation, fishing, transport.",
+        "Mention five products obtained from forests. — Timber, firewood, charcoal, fruits, medicines.",
+        "Mention five benefits of wildlife. — It promotes tourism; it provides employment; it provides income; it provides foreign exchange; it promotes conservation.",
+        "Give four examples of minerals found in East Africa. — Gold, copper, iron ore, limestone.",
+        "Mention four benefits of mining. — It provides employment; it provides income; it provides raw materials; it provides minerals for export.",
+        "Mention four ways of conserving natural resources. — Planting trees; preventing pollution; protecting wildlife; using resources wisely.",
+        "Mention four problems caused by misuse of natural resources. — Soil erosion; water pollution; deforestation; loss of wildlife."
        ],
        "start": 1
       }
      ]
     },
     {
-     "title": "ANSWERS TO REVISION QUESTIONS",
-     "blocks": [
-      {
-       "t": "ol",
-       "items": [
-        "A natural resource is a resource provided by nature. Any five of: land, water, minerals, vegetation, wildlife, climate, people.",
-        "Any four of: timber and poles, firewood and charcoal, medicine, pasture, raw materials for industry, protection of soil and water catchments, homes for wild animals, tourist attraction.",
-        "Any four, for example: coffee — Uganda and the slopes of Kilimanjaro; tea — Kericho in Kenya and Fort Portal in Uganda; cotton — eastern Uganda; sisal — Tanga in Tanzania; cloves — Zanzibar and Pemba; pyrethrum — the Kenya highlands.",
-        "Any four of: fertile soils, reliable rainfall, suitable climate, enough land, available labour, markets and good transport.",
-        "Tourism is travelling to visit places of interest for pleasure, study or rest. Attractions: Serengeti, Murchison Falls, Mt Kilimanjaro, the source of the Nile, the Indian Ocean beaches, the Kasubi Tombs (any four).",
-        "Any four of: it earns foreign exchange; it creates employment; it earns government revenue; it provides a market for crafts and food; it leads to development of roads, hotels and airports; it promotes international friendship.",
-        "Any three of: poaching, insecurity, poor roads to parks, high travel costs, destruction of habitats, shortage of skilled guides.",
-        "Kilembe — **copper**; Mwadui — **diamonds**; Lake Magadi — **soda ash**; Geita — **gold**.",
-        "Traditional mining uses simple hand tools such as hoes, pans and baskets and digs shallow pits, while modern mining uses machines, deep shafts, drilling and dredging, and produces much larger amounts.",
-        "Any two of: **open cast** — Hima limestone or Mwadui diamonds; **shaft (underground)** — Kilembe copper; **drilling** — oil in the Albertine Graben; **dredging** — minerals from river beds.",
-        "Any four of: shortage of capital, low technology and few skilled workers, remote deposits with poor roads, accidents, pollution, small scattered deposits, unstable world prices, smuggling.",
-        "Lakes: Victoria, Tanganyika, Albert, Kyoga, Turkana, Kivu (any four). Rivers: Nile, Kagera, Tana, Rufiji, Pangani (any three).",
-        "Any five of: drinking and domestic use, irrigation, hydro-electric power, fishing, transport, tourism and sport, industry, watering animals.",
-        "**Traditional:** hooks and lines, baskets and traps, spears, weirs (any three). **Modern:** trawling, purse seining, gill nets from motor boats, fish farming (any three).",
-        "**Traditional:** sun drying, smoking, salting. **Modern:** refrigeration and freezing, canning.",
-        "Any five of: it provides food rich in protein; employment; income for families; foreign exchange from exports; raw materials for industries; government revenue; growth of landing sites and towns.",
-        "Any five of: over-fishing; use of undersized nets; poison and explosives; water hyacinth; pollution; poor preservation and transport; lack of capital; accidents on the lakes; insecurity; low prices from middlemen.",
-        "Any five of: enforce laws on net sizes and closed seasons; ban poison and explosives; encourage fish farming; remove water hyacinth; build cold rooms and improve roads; give loans and training; provide life jackets; form cooperatives; patrol the lakes.",
-        "Because minerals are sold both at home and abroad, earning **foreign exchange**; they provide employment and wages; the government collects taxes and royalties from mining companies; and they supply raw materials for industries, which creates more income and jobs.",
-        "*Learner's map.* Lake Victoria in the middle of the region, the River Nile flowing north from Jinja, and Kilembe in western Uganda near the Rwenzori."
-       ],
-       "start": 1
-      }
-     ]
-    },
-    {
-     "title": "P.6 QUICK REVISION",
+     "title": "18. ANSWERS TO REVISION QUESTIONS — P.6 QUICK REVISION",
      "blocks": [
       {
        "t": "ul",
        "items": [
-        "Resources: **land · minerals · water · vegetation · wildlife · climate · people**",
-        "Kilembe **copper** · Mwadui **diamonds** · Geita **gold** · Magadi **soda ash** · Mererani **tanzanite**",
-        "Mining: traditional (hand tools) · open cast · shaft · drilling · dredging",
-        "Victoria = largest · Tanganyika = deepest · Nile starts at **Jinja**",
-        "Fishing: traditional traps and spears · modern trawling and gill nets",
-        "Preserve: sun drying, smoking, salting → refrigeration, canning",
-        "Biggest fishing problem = **over-fishing and bad gear** → laws + fish farming"
+        "A resource is anything that people use to satisfy their needs.",
+        "Natural resources are things provided by nature that people use to satisfy their needs.",
+        "Four major resources of East Africa are land, water, forests and wildlife.",
+        "Land is important because it provides space for farming, settlement, mining and other activities.",
+        "Water is important because people, animals and plants need it for survival and other activities.",
+        "Forests are important because they provide useful products and help protect the environment.",
+        "Wildlife is important because it promotes tourism and provides income and employment.",
+        "Minerals are important because they provide raw materials, income and employment.",
+        "Fish is important because it provides food, income and employment.",
+        "Conservation is the proper use and protection of resources.",
+        "Resources should be conserved so that they can continue benefiting people now and in the future."
        ]
-      }
-     ]
-    },
-    {
-     "title": "A note on sources",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "The topic title, sub-topics, competences and teacher guidance above were taken from the official **NCDC Primary Six Curriculum, Set One** (© NCDC 2010; topic outline page 312 and pages 326–331 of the PDF in `curriculum/`). The explanations, tables, examples, revision questions and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
-      },
-      {
-       "t": "p",
-       "x": "No NCDC **Teacher's Guide** for P.6 was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
       }
      ]
     }
@@ -1511,18 +823,18 @@
    "slug": "transport-and-communication",
    "periods": 25,
    "curriculum_pages": "332–336",
-   "words": 2477,
+   "words": 1820,
    "sections": [
     {
      "title": "About this topic",
      "blocks": [
       {
        "t": "p",
-       "x": "*Curriculum reference: NCDC Primary Six Curriculum, Set One, Social Studies Topic 3, 25 periods (`curriculum/P6-SET-ONE-2010.pdf`, topic outline page 313 and pages 332–336).*"
+       "x": "*Curriculum reference: NCDC Primary Six Curriculum, Set One, Social Studies Topic 3,* *25 periods (`curriculum/P6-SET-ONE-2010.pdf`, topic outline page 313 and pages 332–336).*"
       },
       {
        "t": "p",
-       "x": "**What you already know:** You know how people in your village send messages and move from place to place. In P.6 you study **communication and transport in the whole of East Africa** — how they were done long ago, how they are done today, and the good and bad side of each."
+       "x": "**What you already know:** You know how people in your village send messages and move from place to place. In P.6 you study **transport and communication in the whole of East Africa** — the different types of transport, the means of communication, and the part both play in trade, farming, tourism and development."
       },
       {
        "t": "p",
@@ -1531,308 +843,582 @@
       {
        "t": "ul",
        "items": [
-        "define communication and transport",
-        "describe traditional means of communication and their challenges",
-        "describe modern means of communication, their challenges and solutions",
-        "describe traditional and modern means of transport in East Africa",
-        "give the advantages and disadvantages of the different forms of transport"
+        "define transport and communication",
+        "name the main types of transport and give their advantages and disadvantages",
+        "name important railway lines, ports, airports, lakes and water bodies",
+        "describe traditional and modern means of communication",
+        "describe the problems facing transport and communication and how they can be improved",
+        "explain how transport and communication promote trade and development"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**A note on sources.** The teaching content of this topic — the definitions, lists and examination questions — was supplied by the app's owner from the P.6 lesson material. The key definitions, important facts, examination points and quick revision questions are found together in the last sections of this topic, where every question carries its own answer on the same card."
+      }
+     ]
+    },
+    {
+     "title": "1. What is transport?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Transport is the movement of people and goods from one place to another."
+      },
+      {
+       "t": "p",
+       "x": "Transport helps people and goods to move from one place to another."
+      },
+      {
+       "t": "ul",
+       "items": [
+        "People",
+        "Goods"
+       ]
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Road transport",
+        "Railway transport",
+        "Water transport",
+        "Air transport",
+        "Pipeline transport"
        ]
       }
      ]
     },
     {
-     "title": "1. COMMUNICATION",
+     "title": "2. What is road transport?",
      "blocks": [
       {
-       "t": "h3",
-       "x": "Definition"
-      },
-      {
        "t": "p",
-       "x": "**Communication:** The sending and receiving of messages, information or ideas from one person or place to another."
-      },
-      {
-       "t": "h3",
-       "x": "Traditional means of communication"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Means",
-        "How it was used"
-       ],
-       "rows": [
-        [
-         "**Drums**",
-         "Different beats announced war, death, a meeting, a ceremony or danger"
-        ],
-        [
-         "**Alarms and screaming**",
-         "To call for help when there was danger, a thief or a fire"
-        ],
-        [
-         "**Horns and trumpets**",
-         "Blown to call people to a meeting, to hunt or to war"
-        ],
-        [
-         "**Whistles**",
-         "Used by hunters, herdsmen and leaders"
-        ],
-        [
-         "**Smoke signals**",
-         "Smoke from a fire on a hill warned of danger or called people"
-        ],
-        [
-         "**Specialised messengers**",
-         "Trusted runners carried word from the chief to the people"
-        ],
-        [
-         "**Rock pictures and signs**",
-         "Drawings and marks left to pass on messages, as at Nyero rock paintings"
-        ],
-        [
-         "**Fire and torches at night**",
-         "Warned of danger or guided people"
-        ],
-        [
-         "**Word of mouth and town criers**",
-         "Announcements made in the village"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Challenges of traditional communication"
+       "x": "Road transport is the movement of people and goods from one place to another using roads."
       },
       {
        "t": "ul",
        "items": [
-        "Messages could be **misunderstood** or wrongly interpreted.",
-        "They covered a **short distance** only.",
-        "They were **slow**.",
-        "They needed a person who knew the **code** or the language.",
-        "Smoke and drums could not be used in **bad weather** or in war time secrecy.",
-        "The **enemy could hear** the drums and know the plan.",
-        "**No record** was kept of the message.",
-        "Messengers were attacked by wild animals or enemies, or got tired."
+        "Buses",
+        "Cars",
+        "Lorries",
+        "Taxis",
+        "Motorcycles",
+        "Bicycles"
        ]
-      },
-      {
-       "t": "h3",
-       "x": "Modern means of communication"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Group",
-        "Examples"
-       ],
-       "rows": [
-        [
-         "**Postal services**",
-         "Letters, parcels, telegrams, post office boxes"
-        ],
-        [
-         "**Telephones**",
-         "Mobile phones and landlines; mobile money"
-        ],
-        [
-         "**Radio calls**",
-         "Used by police, health workers and organisations in remote places"
-        ],
-        [
-         "**Broadcasting**",
-         "Radio and television"
-        ],
-        [
-         "**Print media**",
-         "Newspapers, magazines, posters, notice boards, billboards"
-        ],
-        [
-         "**Electronic media**",
-         "The internet, e-mail, websites, social media, video calls"
-        ],
-        [
-         "**Others**",
-         "Fax machines, neon signs, sirens, church and school bells"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Advantages of modern communication"
-      },
-      {
-       "t": "p",
-       "x": "It is **fast** — a message reaches another country in seconds · it covers **long distances** · a **record** can be kept (letters, e-mails, recordings) · it carries **detail and pictures** · it can reach **many people at once** through radio and television · it creates **employment** and supports business."
-      },
-      {
-       "t": "h3",
-       "x": "Challenges in modern communication"
       },
       {
        "t": "ul",
        "items": [
-        "It is **expensive** — phones, airtime, data and computers cost money.",
-        "Many rural areas have **no electricity** and poor **network coverage**.",
-        "**Illiteracy** — some people cannot read letters, newspapers or the internet.",
-        "**Language barriers**.",
-        "Poor **roads** delay the postal service.",
-        "**Breakdowns**, power cuts and network failures.",
-        "**Theft, fraud and con artists** using phones and the internet.",
-        "Spread of **false information (rumours)** and harmful content.",
-        "**Loss of privacy**."
+        "Provides door-to-door services.",
+        "Can reach many places.",
+        "Is suitable for short distances.",
+        "Can carry people and goods.",
+        "Is easily available in many areas."
        ]
       },
       {
-       "t": "h3",
-       "x": "Solutions to the challenges"
+       "t": "ul",
+       "items": [
+        "Can be affected by traffic jams.",
+        "Can cause road accidents.",
+        "Can be expensive for long distances.",
+        "Can be affected by poor roads.",
+        "Causes air pollution through vehicle smoke."
+       ]
       },
       {
-       "t": "p",
-       "x": "Extend **electricity and network masts** to rural areas · encourage **adult literacy** and teach ICT in schools · make phones, data and airtime **cheaper** · improve **roads** for postal services · use **solar power** where there is no mains electricity · train people to check information before believing it · make and enforce **laws against fraud and cyber crime** · use local languages on radio."
+       "t": "ul",
+       "items": [
+        "Poor roads.",
+        "Traffic congestion.",
+        "Road accidents.",
+        "High cost of road construction and maintenance.",
+        "Vehicle breakdowns."
+       ]
       }
      ]
     },
     {
-     "title": "2. TRANSPORT",
+     "title": "3. What is railway transport?",
      "blocks": [
       {
-       "t": "h3",
-       "x": "Definition"
-      },
-      {
        "t": "p",
-       "x": "**Transport:** The movement of people and goods from one place to another."
+       "x": "Railway transport is the movement of people and goods using trains on railway lines."
       },
       {
-       "t": "h3",
-       "x": "Traditional means of transport"
+       "t": "ul",
+       "items": [
+        "Carries many people.",
+        "Carries large amounts of goods.",
+        "Is suitable for long distances.",
+        "Can reduce pressure on roads."
+       ]
       },
       {
-       "t": "table",
-       "head": [
-        "Group",
-        "Examples"
-       ],
-       "rows": [
-        [
-         "**Human**",
-         "Walking on foot, head porterage, carrying on the back, stretchers, hammocks"
-        ],
-        [
-         "**Animals**",
-         "Donkeys, camels, oxen, horses; ox carts and sledges"
-        ],
-        [
-         "**Water**",
-         "Canoes made from tree trunks, rafts, **dhows** on the coast"
-        ],
-        [
-         "**Bridges**",
-         "Rope bridges, logs across streams, stepping stones"
-        ]
+       "t": "ul",
+       "items": [
+        "Is expensive to construct.",
+        "Cannot reach places without railway lines.",
+        "May be slow compared with air transport.",
+        "Requires regular maintenance."
        ]
       },
       {
        "t": "p",
-       "x": "**Challenges:** slow · only small loads · tiring · dangerous (wild animals, robbers, drowning) · could not go far · goods such as milk and fish went bad on the way."
+       "x": "The Kenya-Uganda railway is an important railway connection between Kenya and Uganda."
       },
       {
-       "t": "h3",
-       "x": "Modern means of transport"
+       "t": "p",
+       "x": "It helps to transport goods between Uganda and the Kenyan coast."
+      }
+     ]
+    },
+    {
+     "title": "4. What is water transport?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Water transport is the movement of people and goods by using water bodies."
       },
       {
-       "t": "table",
-       "head": [
-        "Type",
-        "Examples in East Africa"
-       ],
-       "rows": [
-        [
-         "**Road**",
-         "Bicycles, motorcycles (boda boda), cars, buses, lorries, trailers"
-        ],
-        [
-         "**Railway**",
-         "The old metre-gauge Kenya–Uganda railway (Mombasa–Kisumu, built 1896–1901), the Central Line in Tanzania (Dar es Salaam–Kigoma), **TAZARA** to Zambia, and the new **Standard Gauge Railway** in Kenya"
-        ],
-        [
-         "**Air**",
-         "Entebbe International Airport, Jomo Kenyatta International Airport (Nairobi), Julius Nyerere International Airport (Dar es Salaam), Kigali International Airport"
-        ],
-        [
-         "**Water**",
-         "Ferries and steamers on Lake Victoria (Port Bell, Jinja, Kisumu, Mwanza, Bukoba); ships at the ports of **Mombasa, Dar es Salaam and Tanga**"
-        ],
-        [
-         "**Pipeline**",
-         "The Eldoret–Mombasa oil pipeline; the crude-oil pipeline from Hoima being built to Tanga"
-        ]
+       "t": "ul",
+       "items": [
+        "Lakes",
+        "Rivers",
+        "Seas",
+        "Oceans"
        ]
       },
       {
-       "t": "h3",
-       "x": "Advantages and disadvantages of each form of transport"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Form",
-        "Advantages",
-        "Disadvantages"
-       ],
-       "rows": [
-        [
-         "**Road**",
-         "Reaches almost everywhere, door to door; flexible; cheap for short distances",
-         "Accidents; traffic jams; roads damaged by rain; expensive for heavy loads over long distances"
-        ],
-        [
-         "**Railway**",
-         "Carries very heavy and bulky goods cheaply; few accidents; not affected by traffic jams",
-         "Very expensive to build; fixed routes only; slow; cannot reach every village"
-        ],
-        [
-         "**Air**",
-         "The **fastest**; good for perishables such as fish, flowers and medicine; reaches remote places",
-         "The **most expensive**; carries small loads; affected by bad weather; few airports"
-        ],
-        [
-         "**Water**",
-         "Cheapest for very heavy goods over long distances; carries bulky cargo",
-         "Very slow; only where there is water; storms and accidents; needs ports"
-        ],
-        [
-         "**Pipeline**",
-         "Carries oil, gas and water safely and continuously; low running cost; no traffic",
-         "Very costly to lay; carries liquids and gases only; leaks pollute the environment"
-        ]
+       "t": "ul",
+       "items": [
+        "Boats",
+        "Canoes",
+        "Ferries",
+        "Ships",
+        "Steamers"
        ]
       },
       {
-       "t": "h3",
-       "x": "Importance of transport and communication"
+       "t": "ul",
+       "items": [
+        "Can carry large amounts of goods.",
+        "Is useful for long distances.",
+        "Is suitable for bulky goods.",
+        "Can be cheaper than some other forms of transport."
+       ]
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Is slower than air transport.",
+        "Can be affected by storms and bad weather.",
+        "Cannot be used in places without navigable water.",
+        "Accidents can lead to loss of lives and property."
+       ]
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Lake Victoria",
+        "Lake Tanganyika",
+        "Lake Albert",
+        "Lake Kyoga",
+        "Indian Ocean"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "5. What is a port?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A port is a place on the coast or a water body where ships and boats load and unload people and goods."
       },
       {
        "t": "p",
-       "x": "They carry **goods to markets** and raw materials to industries · they take people to **school, work and hospital** · they help **trade** within East Africa and with the world · they create **employment** · they spread **news and knowledge** · they help government services and **security** reach the people · they promote **unity and tourism** in the region."
-      },
-      {
-       "t": "h3",
-       "x": "Problems facing transport in East Africa"
+       "x": "The Port of Mombasa in Kenya is an important seaport serving East African countries."
       },
       {
        "t": "p",
-       "x": "**Poor roads**, especially in rural areas and during the rains · **traffic jams** in big towns · **accidents** caused by careless driving and bad vehicles · **high fuel costs** · **old vehicles and trains** · **insecurity** and road robbery · rivers, mountains and swamps that make road building hard · being **landlocked**, as Uganda, Rwanda and Burundi are · shortage of funds for building and repair."
+       "x": "It provides Uganda, a landlocked country, with an important route for importing and exporting goods through the Indian Ocean."
+      }
+     ]
+    },
+    {
+     "title": "6. What is air transport?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Air transport is the movement of people and goods by aircraft."
       },
       {
-       "t": "h3",
-       "x": "Solutions"
+       "t": "ul",
+       "items": [
+        "Aeroplanes",
+        "Helicopters"
+       ]
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Is the fastest means of transport.",
+        "Is suitable for long distances.",
+        "Can reach distant places quickly.",
+        "Is useful for transporting urgent goods.",
+        "Is useful for international travel."
+       ]
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Is expensive.",
+        "Carries less bulky goods than ships and some trains.",
+        "Can be affected by bad weather.",
+        "Requires airports and special equipment."
+       ]
       },
       {
        "t": "p",
-       "x": "Tarmac and repair the roads · widen roads and build by-passes in towns · enforce **traffic laws** and vehicle inspection · rebuild and extend the **railway** · improve lake ports and ferries · train drivers · strengthen regional cooperation through the **EAC** so that goods cross borders quickly · build pipelines for fuel · attract investment in transport."
+       "x": "An airport is a place where aircraft take off and land."
+      },
+      {
+       "t": "p",
+       "x": "Entebbe International Airport is an important international airport in Uganda."
+      }
+     ]
+    },
+    {
+     "title": "7. What is pipeline transport?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Pipeline transport is the movement of liquids or gases through pipes from one place to another."
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Petroleum products",
+        "Water",
+        "Natural gas"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "It can transport liquids continuously over long distances."
+      },
+      {
+       "t": "p",
+       "x": "It is expensive to construct and maintain."
+      }
+     ]
+    },
+    {
+     "title": "8. What is communication?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Communication is the sending and receiving of information from one person to another."
+      },
+      {
+       "t": "p",
+       "x": "Communication helps people to share information, ideas and messages."
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Telephone",
+        "Radio",
+        "Television",
+        "Newspapers",
+        "Letters",
+        "Internet",
+        "Postal services",
+        "Face-to-face communication"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "9. What is telephone communication?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Telephone communication is the sending and receiving of information using telephones or mobile phones."
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Is fast.",
+        "Allows people to communicate over long distances.",
+        "Can be used to send messages.",
+        "Allows people to speak directly to one another."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "10. What is radio communication?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Radio communication is the sending of information through radio waves."
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Reaches many people.",
+        "Provides news and information.",
+        "Provides education.",
+        "Provides entertainment.",
+        "Can be used in many rural areas."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "11. What is television communication?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Television communication is the sharing of information through television programmes."
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Provides news.",
+        "Provides education.",
+        "Provides entertainment.",
+        "Allows people to see and hear information."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "12. What is a newspaper?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A newspaper is a printed publication containing news and other information."
+      },
+      {
+       "t": "ul",
+       "items": [
+        "News",
+        "Sports",
+        "Business information",
+        "Government information",
+        "Advertisements"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "13. What is the Internet?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The Internet is a worldwide system that allows people to share and access information using connected computers and other devices."
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Communication",
+        "Education",
+        "Business",
+        "Research",
+        "Entertainment",
+        "Sharing information"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "14. What are traditional means of communication?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Traditional means of communication are ways of passing information that were commonly used before modern communication methods became common."
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Drums",
+        "Horns",
+        "Messengers",
+        "Smoke signals",
+        "Whistling",
+        "Storytelling"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "Drums were used to send messages to people over distances, especially in communities where people understood the different drum sounds."
+      },
+      {
+       "t": "p",
+       "x": "Messengers carried information from one person or place to another."
+      }
+     ]
+    },
+    {
+     "title": "15. What is modern communication?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Modern communication is the use of modern methods and technology to send and receive information."
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Mobile phones",
+        "Radio",
+        "Television",
+        "Internet",
+        "Email",
+        "Social media"
+       ]
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Is fast.",
+        "Allows information to reach many people.",
+        "Makes communication over long distances easier.",
+        "Helps people to share information quickly.",
+        "Supports business and education."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "16. Why are transport and communication important?",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Transport and communication are important because they help people, goods and information to move from one place to another."
+      },
+      {
+       "t": "p",
+       "x": "Transport helps traders to move goods from places where they are produced to places where they are needed."
+      },
+      {
+       "t": "p",
+       "x": "Communication helps traders to obtain information about goods, prices, customers and markets."
+      },
+      {
+       "t": "p",
+       "x": "They help people to move, trade, share information and carry out different economic activities."
+      },
+      {
+       "t": "p",
+       "x": "Transport helps farmers to take farm products to markets and bring farm inputs to their farms."
+      },
+      {
+       "t": "p",
+       "x": "Communication helps farmers to receive information about weather, markets, prices and farming methods."
+      },
+      {
+       "t": "p",
+       "x": "Transport enables tourists to travel to tourist attractions."
+      },
+      {
+       "t": "p",
+       "x": "Communication allows tourists to obtain information about tourist attractions, accommodation and travel services."
+      }
+     ]
+    },
+    {
+     "title": "17. What problems affect transport and communication?",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Poor roads.",
+        "Traffic congestion.",
+        "Road accidents.",
+        "High transport costs.",
+        "Poor railway networks.",
+        "Bad weather.",
+        "Lack of enough transport facilities."
+       ]
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Poor network coverage.",
+        "High cost of communication.",
+        "Lack of electricity in some areas.",
+        "Lack of communication equipment.",
+        "Poor Internet services in some areas."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "Poor transport makes it difficult and expensive to move people and goods."
+      },
+      {
+       "t": "p",
+       "x": "Poor communication makes it difficult for people to share information quickly."
+      }
+     ]
+    },
+    {
+     "title": "18. How can transport and communication be improved?",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Constructing and maintaining good roads.",
+        "Improving railway networks.",
+        "Improving water transport.",
+        "Improving airports.",
+        "Improving road safety."
+       ]
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Expanding telephone networks.",
+        "Improving Internet services.",
+        "Increasing access to electricity.",
+        "Building more communication facilities.",
+        "Making communication services more affordable."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "19. MAP WORK",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A learner should be able to locate important roads, railway lines, ports, airports, lakes and other transport routes studied in the syllabus."
+      },
+      {
+       "t": "p",
+       "x": "The Port of Mombasa."
+      },
+      {
+       "t": "p",
+       "x": "The Indian Ocean."
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Lake Victoria",
+        "Lake Tanganyika",
+        "Lake Albert",
+        "Lake Kyoga"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "Entebbe International Airport."
+      },
+      {
+       "t": "p",
+       "x": "The Kenya-Uganda railway."
       }
      ]
     },
@@ -1842,45 +1428,45 @@
       {
        "t": "table",
        "head": [
-        "Term",
+        "Word",
         "Meaning"
        ],
        "rows": [
         [
-         "Communication",
-         "The sending and receiving of messages or information"
-        ],
-        [
-         "Transport",
+         "**Transport**",
          "The movement of people and goods from one place to another"
         ],
         [
-         "Traditional means",
-         "Ways used long ago, using local materials and skills"
+         "**Communication**",
+         "The sending and receiving of information from one person to another"
         ],
         [
-         "Modern means",
-         "Ways that use present-day machines and technology"
+         "**Road transport**",
+         "The movement of people and goods from one place to another using roads"
         ],
         [
-         "Head porterage",
-         "Carrying goods on the head"
+         "**Railway transport**",
+         "The movement of people and goods using trains on railway lines"
         ],
         [
-         "Dhow",
-         "A wooden sailing boat used on the Indian Ocean coast"
+         "**Water transport**",
+         "The movement of people and goods by using water bodies"
         ],
         [
-         "Pipeline",
-         "A line of pipes for carrying oil, gas or water"
+         "**Air transport**",
+         "The movement of people and goods by aircraft"
         ],
         [
-         "Landlocked country",
-         "A country with no coastline of its own"
+         "**Pipeline transport**",
+         "The movement of liquids or gases through pipes from one place to another"
         ],
         [
-         "Perishable goods",
-         "Goods that go bad quickly, such as fish, milk and flowers"
+         "**Port**",
+         "A place where ships and boats load and unload people and goods"
+        ],
+        [
+         "**Airport**",
+         "A place where aircraft take off and land"
         ]
        ]
       }
@@ -1892,151 +1478,84 @@
       {
        "t": "ul",
        "items": [
-        "Traditional communication: **drums, horns, whistles, smoke, messengers, alarms, rock signs**.",
-        "The biggest weakness of traditional communication is that it covered **only a short distance** and could be **misunderstood**.",
-        "Modern communication is **fast, keeps records and reaches far**, but it is costly and needs power and network.",
-        "The Kenya–Uganda railway was built from **Mombasa** and reached **Kisumu** in 1901.",
-        "The main sea ports of East Africa are **Mombasa (Kenya)** and **Dar es Salaam (Tanzania)**.",
-        "**Air transport** is the fastest but the most expensive; **water transport** is the cheapest for heavy goods but the slowest.",
-        "**Uganda, Rwanda and Burundi are landlocked** and depend on Mombasa and Dar es Salaam.",
-        "**Pipelines** carry only liquids and gases."
+        "The main types of transport are **road, railway, water, air and pipeline transport**.",
+        "The main means of communication are **telephone, radio, television, newspapers, letters, postal services and the Internet**.",
+        "The fastest means of transport is **air transport**.",
+        "**Railway and water transport** can carry large and bulky goods.",
+        "The Port of Mombasa provides an important route for **Uganda's imports and exports** through the Indian Ocean.",
+        "Transport and communication help people, goods and information to move from one place to another and **promote trade and development**."
        ]
       }
      ]
     },
     {
-     "title": "EXAMINATION POINTS",
+     "title": "EXAMINATION POINTS AND REVISION QUESTIONS",
      "blocks": [
       {
        "t": "ul",
        "items": [
-        "One traditional means of communication — drums (or horns, smoke, messengers).",
-        "One challenge of traditional communication — the message could be misunderstood.",
-        "The fastest means of transport — air.",
-        "The cheapest means of transport for heavy goods over a long distance — water.",
-        "Main port used by Uganda — Mombasa.",
-        "Country in East Africa with no coastline — Uganda (also Rwanda and Burundi).",
-        "Means of transport used to carry oil — pipeline.",
-        "One cause of road accidents — careless driving (or poor roads, old vehicles)."
+        "**Transport is the movement of people and goods from one place to another.**",
+        "**Communication is the sending and receiving of information from one person to another.**",
+        "Five types of transport are **road, railway, water, air and pipeline transport**.",
+        "Four advantages of road transport: **it provides door-to-door services; it can reach many places; it is suitable for short distances; it carries people and goods**.",
+        "Three disadvantages of road transport: **it can cause traffic jams; it can cause road accidents; it can be affected by poor roads**.",
+        "Four advantages of water transport: **it can carry large amounts of goods; it is suitable for bulky goods; it is useful for long distances; it can be cheaper than some other forms of transport**.",
+        "Four means of communication are **telephone, radio, television and the Internet**.",
+        "Four advantages of modern communication: **it is fast; it allows information to reach many people; it makes long-distance communication easier; it helps people to share information quickly**.",
+        "Four problems affecting transport in East Africa: **poor roads; traffic congestion; road accidents; high transport costs**.",
+        "Three problems affecting communication: **poor network coverage; high cost of communication; lack of electricity in some areas**.",
+        "Four traditional means of communication are **drums, horns, messengers and smoke signals**.",
+        "Four ways transport and communication promote development: **they promote trade; they help farmers take products to markets; they promote tourism; they help people share information**."
        ]
       }
      ]
     },
     {
-     "title": "MAP WORK",
+     "title": "ANSWERS TO REVISION QUESTIONS — P.6 QUICK REVISION",
      "blocks": [
       {
        "t": "p",
-       "x": "On a map of East Africa you should be able to locate and label:"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "the ports of **Mombasa, Dar es Salaam and Tanga**",
-        "the lake ports of **Port Bell, Jinja, Kisumu, Mwanza and Bukoba**",
-        "**Entebbe, Nairobi (JKIA), Dar es Salaam and Kigali** international airports",
-        "the **Kenya–Uganda railway line** from Mombasa through Nairobi to Kampala",
-        "the **Central Line** and **TAZARA** in Tanzania"
-       ]
+       "x": "The movement of people and goods from one place to another."
       },
       {
        "t": "p",
-       "x": "**Practice activity:** Draw the map of East Africa and use one colour for railway lines, one for the main roads to the coast, and dots for airports. Then write two sentences saying why Uganda depends on Mombasa and Dar es Salaam."
-      }
-     ]
-    },
-    {
-     "title": "REVISION QUESTIONS",
-     "blocks": [
-      {
-       "t": "ol",
-       "items": [
-        "Define communication and transport.",
-        "Name any five traditional means of communication.",
-        "Give any four challenges of traditional communication.",
-        "Name any six modern means of communication.",
-        "Give any four advantages of modern communication.",
-        "Give any four challenges facing modern communication in East Africa.",
-        "Suggest any four solutions to the challenges of modern communication.",
-        "Name any four traditional means of transport.",
-        "Give any three challenges of traditional transport.",
-        "Name the five modern forms of transport used in East Africa.",
-        "Give two advantages and two disadvantages of road transport.",
-        "Give two advantages and two disadvantages of air transport.",
-        "Why is water transport preferred for very heavy goods?",
-        "Name the two main sea ports used by the East African countries.",
-        "Name the three landlocked countries of East Africa.",
-        "Which means of transport is used to carry oil over long distances, and give one of its advantages?",
-        "Give any five importances of transport and communication in East Africa.",
-        "Give any five problems facing transport in East Africa.",
-        "Suggest any five solutions to the transport problems of East Africa.",
-        "Draw the map of East Africa and mark on it Mombasa, Dar es Salaam and Entebbe."
-       ],
-       "start": 1
-      }
-     ]
-    },
-    {
-     "title": "ANSWERS TO REVISION QUESTIONS",
-     "blocks": [
-      {
-       "t": "ol",
-       "items": [
-        "**Communication** is the sending and receiving of messages, information or ideas. **Transport** is the movement of people and goods from one place to another.",
-        "Any five of: drums, horns, trumpets, whistles, smoke signals, specialised messengers, alarms and screaming, rock pictures and signs, town criers.",
-        "Any four of: messages could be misunderstood; they covered short distances; they were slow; one needed to know the code; the enemy could also hear them; no record was kept; messengers faced danger.",
-        "Any six of: letters and telegrams through the post office, telephones (mobile and landline), radio calls, radio, television, newspapers, notice boards and billboards, the internet, e-mail, fax.",
-        "Any four of: it is very fast; it covers long distances; records can be kept; it carries pictures and detail; it reaches many people at once; it supports business and creates jobs.",
-        "Any four of: high cost of phones, airtime and data; no electricity or network in rural areas; illiteracy; language barriers; poor roads delaying post; breakdowns and power cuts; fraud and con artists; false information.",
-        "Any four of: extend electricity and network masts to rural areas; promote adult literacy and ICT in schools; reduce the cost of airtime and data; improve roads; use solar power; enforce laws against fraud; broadcast in local languages.",
-        "Any four of: walking on foot, head porterage, stretchers, donkeys, camels, oxen and ox carts, canoes, rafts, dhows.",
-        "Any three of: it was slow; only small loads could be carried; it was tiring; it was dangerous because of wild animals, robbers and drowning; goods went bad on the way.",
-        "Road, railway, air, water and pipeline.",
-        "**Advantages:** it reaches almost everywhere, door to door, and it is flexible and cheap for short distances. **Disadvantages:** accidents and traffic jams; roads are damaged by rain and it is costly for heavy loads over long distances.",
-        "**Advantages:** it is the fastest and it is good for perishable goods and remote places. **Disadvantages:** it is the most expensive and it carries only small loads (it is also affected by bad weather).",
-        "Because it is the **cheapest** way of moving very heavy and bulky goods over long distances, and ships can carry huge amounts at once, even though it is slow.",
-        "**Mombasa** in Kenya and **Dar es Salaam** in Tanzania.",
-        "**Uganda, Rwanda and Burundi.**",
-        "A **pipeline**. It carries oil continuously and safely, with a low running cost and no traffic jams or accidents on the road.",
-        "Any five of: carrying goods to markets and raw materials to industries; taking people to school, work and hospital; promoting trade; creating employment; spreading news and knowledge; helping government services and security; promoting unity and tourism.",
-        "Any five of: poor roads; traffic jams; accidents; high fuel costs; old vehicles and trains; insecurity; difficult physical features such as swamps and mountains; being landlocked; shortage of funds.",
-        "Any five of: tarmac and repair roads; widen roads and build by-passes; enforce traffic laws and vehicle inspection; rebuild and extend the railway; improve lake ports and ferries; train drivers; strengthen EAC cooperation at borders; build pipelines; attract investment.",
-        "*Learner's map.* Mombasa and Dar es Salaam on the Indian Ocean coast, and Entebbe on the northern shore of Lake Victoria in Uganda."
-       ],
-       "start": 1
-      }
-     ]
-    },
-    {
-     "title": "P.6 QUICK REVISION",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "Traditional communication: **drums · horns · whistles · smoke · messengers** — short distance, easily misunderstood",
-        "Modern communication: post · phone · radio · TV · internet — fast but costly, needs power and network",
-        "Traditional transport: foot · head porterage · animals · canoes · dhows",
-        "Modern transport: **road · rail · air · water · pipeline**",
-        "**Air = fastest and dearest** · **Water = cheapest for bulky goods but slowest**",
-        "Ports: **Mombasa** and **Dar es Salaam** · landlocked: **Uganda, Rwanda, Burundi**"
-       ]
-      }
-     ]
-    },
-    {
-     "title": "A note on sources",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "The topic title, sub-topics, competences and teacher guidance above were taken from the official **NCDC Primary Six Curriculum, Set One** (© NCDC 2010; topic outline page 313 and pages 332–336 of the PDF in `curriculum/`). The explanations, tables, examples, revision questions and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
+       "x": "The sending and receiving of information from one person to another."
       },
       {
        "t": "p",
-       "x": "The Standard Gauge Railway and the crude-oil pipeline mentioned in the notes are **newer than the 2010 syllabus** and are described as recent developments, not as syllabus content."
+       "x": "Road, railway, water, air and pipeline transport."
       },
       {
        "t": "p",
-       "x": "No NCDC **Teacher's Guide** for P.6 was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+       "x": "Air transport."
+      },
+      {
+       "t": "p",
+       "x": "Drums, horns, messengers and smoke signals."
+      },
+      {
+       "t": "p",
+       "x": "Mobile phones, radio, television and the Internet."
+      },
+      {
+       "t": "p",
+       "x": "The Port of Mombasa."
+      },
+      {
+       "t": "p",
+       "x": "Entebbe International Airport."
+      },
+      {
+       "t": "p",
+       "x": "The Kenya-Uganda railway."
+      },
+      {
+       "t": "p",
+       "x": "The Indian Ocean."
+      },
+      {
+       "t": "p",
+       "x": "They help people, goods and information to move from one place to another and promote trade and development."
       }
      ]
     }

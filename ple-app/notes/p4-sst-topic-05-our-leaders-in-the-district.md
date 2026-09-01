@@ -4,11 +4,9 @@
 
 # TOPIC 5: OUR LEADERS IN THE DISTRICT
 
-*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term III, Topic 5,
-25 periods (`curriculum/P4-SOCIAL-STUDIES-2010.pdf`, pages 31–35).*
+*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term III, Topic 5 (25 periods, pages 31–35).*
 
 **How to use this topic.** The syllabus asks about the leaders of **your own district**.
-These notes teach you the **groups of leaders**, what each does and how leaders are chosen.
 You fill in the names of the leaders where you live.
 
 **By the end of this topic you should be able to:**
@@ -22,7 +20,7 @@ You fill in the names of the leaders where you live.
 
 ---
 
-## 1. WHAT A LEADER IS
+## 1. Who is a leader? Why do we need leaders?
 
 A **leader** is a person who **guides, plans and organises other people** so that work is
 done well and people live in peace.
@@ -33,13 +31,11 @@ government.
 
 ---
 
-## 2. THE FOUR GROUPS OF LEADERS
-
-The syllabus puts the leaders of a district into **four groups**.
+## 2. Name the four groups of leaders in a district.
 
 ### (a) Political leaders
 
-Chosen by the people, or appointed by government, to govern.
+Chosen by the people, or appointed by government, to govern. **LC** means **Local Council**.
 
 | Leader | Where they work |
 |---|---|
@@ -91,9 +87,7 @@ Cross**.
 
 ---
 
-## 3. HOW LEADERS ARE CHOSEN
-
-The syllabus gives **four** ways:
+## 3. How are leaders chosen?
 
 | Way | What it means | Example |
 |---|---|---|
@@ -104,7 +98,7 @@ The syllabus gives **four** ways:
 
 ---
 
-## 4. HOW AN ELECTION IS CARRIED OUT
+## 4. How is an election carried out?
 
 | Step | What happens |
 |---|---|
@@ -133,7 +127,7 @@ The syllabus gives **four** ways:
 
 ---
 
-## 5. WHAT MAKES A GOOD LEADER
+## 5. What makes a good leader?
 
 | A good leader | A bad leader |
 |---|---|
@@ -145,14 +139,14 @@ The syllabus gives **four** ways:
 | Is **humble and patient** | Is proud and rude |
 | Is **educated enough** for the work | Cannot read the papers of the office |
 
-### Duties of the people towards their leaders
+**Duties of the people towards their leaders**
 
 Obey the law · pay taxes · attend meetings · vote wisely · respect leaders · report wrong
 acts · take part in community work.
 
 ---
 
-## 6. PREFECTS — LEADERS AT SCHOOL
+## 6. How are prefects chosen at school?
 
 Your school is like a small district. Prefects are chosen the same way — by **nomination,
 campaigning and voting**.
@@ -167,54 +161,7 @@ campaigning and voting**.
 
 ---
 
-# KEY DEFINITIONS
-
-| Term | Meaning |
-|---|---|
-| Leader | A person who guides and organises other people |
-| Political leader | A leader chosen or appointed to govern |
-| Civic leader | A trained government officer appointed to a district post |
-| Religious leader | A person who leads people in worship |
-| Voluntary leader | A person who leads without being paid |
-| LC | Local Council |
-| RDC | Resident District Commissioner, who represents the President |
-| CAO | Chief Administrative Officer, head of civil servants in the district |
-| Election | Choosing a leader by voting |
-| Appointment | Choosing a leader by naming him or her to a post |
-| Inheritance | Receiving leadership from one's family line |
-| Candidate | A person standing for a post |
-| Ballot box | The box in which ballot papers are put |
-
----
-
-# IMPORTANT FACTS TO REMEMBER
-
-- The four groups of leaders: **political, civic, religious and voluntary**.
-- The councils run **LC1 (village) → LC2 (parish) → LC3 (sub-county) → LC4 (county) →
-  LC5 (district)**.
-- The **LC5 chairperson** heads the district council; the **CAO** heads the civil servants.
-- The **RDC represents the President** in the district.
-- Leaders are chosen **by election, by appointment, through inheritance or by
-  volunteering**.
-- Voting today is by **secret ballot**.
-- A good leader is **honest, fair, hard-working** and **keeps promises**.
-
----
-
-# EXAMINATION POINTS
-
-- Name the four groups of leaders in a district.
-- Who heads the local council at village level? The **LC1 chairperson**.
-- Who represents the President in a district? The **RDC**.
-- Give the full meaning of CAO — **Chief Administrative Officer**.
-- Give the full meaning of DISO — **District Internal Security Officer**.
-- Name two voluntary organisations given in the syllabus — **UWESO** and **TASO**.
-- Give two ways in which leaders are chosen.
-- Name two qualities of a good leader.
-
----
-
-# COMMON MISTAKES TO AVOID
+## COMMON MISTAKES TO AVOID
 
 - Saying the **RDC** is elected — the RDC is **appointed**.
 - Mixing up the **LC5 chairperson** (political, elected) with the **CAO** (civic, appointed).
@@ -225,7 +172,7 @@ campaigning and voting**.
 
 ---
 
-# REVISION QUESTIONS
+## REVISION QUESTIONS
 
 1. Who is a leader?
 2. Give any three reasons why we need leaders.
@@ -250,7 +197,7 @@ campaigning and voting**.
 
 ---
 
-# ANSWERS TO REVISION QUESTIONS
+## ANSWERS TO REVISION QUESTIONS
 
 1. **A person who guides, plans and organises other people**
 2. Any three of **to keep law and order, to plan development, to settle quarrels, to speak for the people, to look after public property, to represent people to government**
@@ -272,44 +219,3 @@ campaigning and voting**.
 18. **Voting in a way that nobody else can see** whom you have chosen
 19. Any four of **honest, fair, listens to people, keeps promises, hard-working, humble, patient, educated enough**
 20. Any three of **obey the law, pay taxes, attend meetings, vote wisely, respect leaders, report wrong acts, take part in community work**
-
----
-
-# P.4 QUICK REVISION
-
-- Four groups: **political · civic · religious · voluntary**
-- **LC1** village → **LC2** parish → **LC3** sub-county → **LC4** county → **LC5** district
-- **RDC** = President's man · **CAO** = head of civil servants · **DPC** = head of police
-- Chosen by: **election · appointment · inheritance · volunteering**
-- Election steps: register → nominate → campaign → **vote** → count → declare → swear in
-- Good leader: honest · fair · listens · keeps promises · hard-working
-
----
-
-## A note on sources
-
-The topic title, the period allocation (25 periods), the content list (types of leaders in
-our district — political leaders LC1 to LC5, the RDC and the DISO; civic leaders including
-the CAO, District Health Officer, District Agricultural Officer, magistrates and the
-District Police Commander; religious leaders — bishops, priests, reverends, sheikhs, pastors
-and khadis; and voluntary leaders — Scouts, Guides and leaders of NGOs such as UWESO, TASO
-and the Red Cross; together with how leaders are chosen — by election, by appointment,
-through inheritance and by volunteering), the competences and the suggested activities —
-including role-playing an LC1 meeting, role-playing election procedures, drawing election
-posters, modelling a ballot paper and demonstrating campaigning to be prefects — were taken
-from the official **NCDC Primary Four Social Studies Syllabus** (© NCDC 2010, ISBN
-978-9970-117-49-9; pages 31–35 of the PDF in `curriculum/`), downloaded from **ncdc.go.ug**.
-
-The **steps of an election** and the **qualities of a good leader** are set out here as
-ordinary teaching material to explain the syllabus's own content; the syllabus lists the
-activities but does not print a numbered procedure.
-
-**This topic is about the learner's own district.** No leader of any district is named here;
-where an answer depends on the learner's district, the notes leave the answer to the learner.
-Office-holders change, so no names are given.
-
-The explanations, tables, exercises and answers are original teaching material written for
-the learner; they are **not** copied from the curriculum document or from any textbook.
-
-No NCDC **Teacher's Guide** for P.4 was available, so the syllabus's own guidance was used
-directly instead.

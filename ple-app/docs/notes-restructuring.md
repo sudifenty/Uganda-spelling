@@ -1,0 +1,69 @@
+# Notes Restructuring Standard — UNEB Revision Format
+
+The owner's restructuring rules (27 Aug 2026) turn every topic into a direct
+revision guide: **remove words, not knowledge.** This document is the working
+standard. Status lives at the bottom.
+
+## The format
+
+- Sections are **numbered questions**: `## 1. What is a district?` …
+  (numbering keeps the Math Lesson Player working).
+- The answer follows immediately: the existing definition/facts, preserved.
+- Tables, diagrams, syllabus notes: kept as they are (they are already perfect
+  revision format).
+- Tail sections kept: `COMMON MISTAKES TO AVOID`, `REVISION QUESTIONS`,
+  `ANSWERS TO REVISION QUESTIONS` — verbatim.
+- `About this topic` keeps the one-line curriculum reference (it feeds
+  `curriculum_pages` and the provenance check) + learning objectives +
+  the short "how to use" line.
+
+## What is removed (and why it is safe)
+
+| Removed | Why |
+|---|---|
+| `KEY DEFINITIONS` table | merged into the Q&A sections — every meaning must appear in a Q&A first (checked mechanically) |
+| `IMPORTANT FACTS TO REMEMBER` | every bullet must already exist in a Q&A (verified per topic before dropping) |
+| `EXAMINATION POINTS` | same — question-style prompts of knowledge already in the Q&As |
+| `P.X QUICK REVISION` | a summary of what is already presented = duplication |
+| `A note on sources` | provenance metadata, not learner knowledge; the originals remain in git history and `curriculum/SOURCES.md` |
+
+## The validation that gates every batch
+
+1. `validate_notes.py` is format-aware: restructured topics (≥3 numbered
+   question sections) must have REVISION QUESTIONS + ANSWERS + curriculum
+   pages; classic topics keep the full classic checks.
+2. A mechanical preservation check compares old vs new: every old table cell
+   and every old KEY-DEFINITIONS meaning must still exist in the new file
+   (modulo bold markers/whitespace). Run it before committing each batch.
+3. Any definition whose only home was the KEY DEFINITIONS table gets its own
+   Q&A section, wording preserved.
+
+## Status
+
+| Batch | Topics | State |
+|---|---|---|
+| P4 SST (all 6 topics) | 6 | ✅ restructured & pushed |
+| P4 MATH T01 Place Value | 1 | ✅ NEW — written from the NCDC P4 Mathematics syllabus (pages 6–7); sub-topic 1 runs the C-P-A See–Touch–Do flow (`CPA_MATH` registry in index.html) |
+| P5 ENG (8) | 8 | ⬜ next |
+| P5 SCI (12), P5 MATH (12), P5 SST (12) | 36 | ⬜ pending |
+| P6 ENG (6), P6 SST (5), P6 SCI (12), P6 MATH (12) | 35 | ⬜ pending |
+| P7 ENG (7), P7 MATH (11), P7 SCI (8), P7 SST (10) | 36 | ⬜ pending |
+
+P4 Mathematics notes are being added topic by topic from
+`curriculum/P4-MATHEMATICS.pdf` (decode: `tools/decode_p4_math.py`). A
+C-P-A entry (`visual_data`, `touch_task`, `do_question`) comes from the
+owner's registry or from the owner's title-based fallback rule:
+any maths sub-topic whose title contains "subset" ALWAYS gets the
+fruit-basket data (Mango/Orange/Apple, 8 subset cards, drag Mango into
+the empty basket, "How many groups can you make from {A, B}?" → 4) —
+P6 MATH T01 §3 and P7 MATH T01 §2 are covered this way. Raw note text is
+never rendered on those sub-topics.
+
+MATHS NOTES LAYOUT (owner's rule, 2026-08): Mathematics sub-topics are
+never swipe cards and never separate steps — they are ONE single
+scrolling page with SEE IT + TOUCH IT + DO IT stacked together
+(`mathSinglePage` in index.html). Expanded-form sections build the page
+themselves from the section's own worked example ("4,835,269 = 4,000,000
++ ..." → coloured rows, drag boxes, question), verified digit by digit so
+nothing is invented. Other maths sections are one plain readable page.
+SST, Science and English keep the card reader.

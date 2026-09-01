@@ -1,0 +1,16 @@
+# Keep text files on LF so builds stay byte-reproducible (a CRLF index.html
+# used to produce a phantom 7,576-line diff on every rebuild).
+*.html text eol=lf
+*.js   text eol=lf
+*.css  text eol=lf
+*.py   text eol=lf
+*.md   text eol=lf
+*.json text eol=lf
+*.txt  text eol=lf
+*.yml  text eol=lf
+# Binaries must never be touched
+*.mp3  binary
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+*.ico  binary

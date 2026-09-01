@@ -4,12 +4,11 @@
 
 # TOPIC 4: PEOPLE IN OUR DISTRICT
 
-*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term II, Topic 4,
-15 periods (`curriculum/P4-SOCIAL-STUDIES-2010.pdf`, pages 26–31).*
+*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term II, Topic 4 (15 periods, pages 26–31).*
 
 **How to use this topic.** The syllabus asks about the people of **your own district** —
-their origin, why they settled there and the work they do. These notes teach you the ideas
-and the words. You fill in the tribes, clans and jobs of your own district.
+their origin, why they settled there and the work they do. You fill in the tribes, clans and
+jobs of your own district.
 
 **By the end of this topic you should be able to:**
 
@@ -22,7 +21,7 @@ and the words. You fill in the tribes, clans and jobs of your own district.
 
 ---
 
-## 1. THE SOCIAL ENVIRONMENT
+## 1. What is the social environment?
 
 The environment has two parts:
 
@@ -34,7 +33,7 @@ This topic is about the **social environment**: the people.
 
 ---
 
-## 2. TRIBES AND CLANS
+## 2. What is a tribe? What is a clan? What is a totem?
 
 | Word | Meaning |
 |---|---|
@@ -57,13 +56,11 @@ A **tribe is made up of many clans**. Each clan usually has its own **totem**.
 
 ---
 
-## 3. LEGENDS
+## 3. What is a legend? Name the three legends in the syllabus.
 
 A **legend** is an **old story handed down by word of mouth**, telling how a group of people
 began. Legends are told by elders. They are not history that can be proved, but they teach a
 people about themselves.
-
-The syllabus gives these three examples:
 
 | Legend | People it belongs to |
 |---|---|
@@ -77,7 +74,7 @@ The syllabus gives these three examples:
 
 ---
 
-## 4. MIGRATION
+## 4. What is migration? What do immigration and emigration mean?
 
 | Word | Meaning |
 |---|---|
@@ -87,9 +84,11 @@ The syllabus gives these three examples:
 | **Immigrant** | A person who moves into a place |
 | **Emigrant** | A person who moves out of a place |
 
-**A way to remember: I**mmigration = coming **I**n.
+> **A way to remember: I**mmigration = coming **I**n.
 
-### Causes of migration (from the syllabus)
+---
+
+## 5. What causes migration?
 
 | Cause | Why people move |
 |---|---|
@@ -102,12 +101,19 @@ The syllabus gives these three examples:
 
 ---
 
-## 5. SETTLEMENT PATTERNS
+## 6. What is a drought? What is an epidemic?
+
+| Word | Meaning |
+|---|---|
+| **Drought** | A long time without rain |
+| **Epidemic** | A disease that attacks very many people at once |
+
+---
+
+## 7. What is a settlement pattern? What makes people settle in a place?
 
 A **settlement pattern** is **the way people's homes are arranged in a place** — whether they
 are close together or far apart.
-
-### Factors that make people settle in a place (from the syllabus)
 
 | Factor | Why it attracts people |
 |---|---|
@@ -119,16 +125,14 @@ are close together or far apart.
 | **Good security and peace** | People feel safe |
 | **Social services** | Schools, water, good roads and health care are near |
 
-### Why some places have few people
+**Why some places have few people**
 
 Poor or rocky soil · too little rain · steep slopes · thick forests · big swamps ·
 insecurity · pests and diseases · no roads, schools or water.
 
 ---
 
-## 6. TYPES OF WORK PEOPLE DO
-
-The syllabus lists these:
+## 8. What types of work do people do? Why do people work?
 
 | Work | What the person does |
 |---|---|
@@ -141,14 +145,14 @@ The syllabus lists these:
 | **Teaching** | Teaches learners in a school |
 | **Office work** | Works in an office, writing and keeping records |
 
+An **occupation** is the work a person does to earn a living.
+
 **Why people work:** to get food, to get money, to pay school fees, to buy clothes and
 medicine, to build a home, and to serve others.
 
 ---
 
-## 7. PROBLEMS PEOPLE FACE IN THEIR WORK
-
-The syllabus lists these:
+## 9. What problems do people face in their work?
 
 | Problem | What it does |
 |---|---|
@@ -160,7 +164,7 @@ The syllabus lists these:
 **Other problems you should also know:** bad weather · poor prices · pests and crop diseases
 · lack of money to start · lack of skills · too few tools · theft.
 
-### Suggested solutions
+**Suggested solutions**
 
 - Keep **peace and security** and report wrong acts
 - **Vaccinate** and treat animals; spray against pests
@@ -172,51 +176,7 @@ The syllabus lists these:
 
 ---
 
-# KEY DEFINITIONS
-
-| Term | Meaning |
-|---|---|
-| Social environment | People and the things people make |
-| Tribe | A large group sharing one language, culture and origin |
-| Clan | A smaller group in a tribe with one ancestor |
-| Totem | An animal or plant a clan respects and does not eat |
-| Legend | An old story handed down by word of mouth |
-| Migration | The movement of people to settle in another place |
-| Immigration | Moving into a place |
-| Emigration | Moving out of a place |
-| Settlement pattern | The way people's homes are arranged in a place |
-| Occupation | The work a person does to earn a living |
-| Drought | A long time without rain |
-| Epidemic | A disease that attacks very many people at once |
-
----
-
-# IMPORTANT FACTS TO REMEMBER
-
-- A **tribe** is made up of many **clans**.
-- A **legend** is an old story told by elders; it is not proved history.
-- **Immigration** = coming **in**. **Emigration** = going **out**.
-- People settle where there is **fertile soil, water, peace, jobs and social services**.
-- Few people live where there is **poor soil, little rain, insecurity or no services**.
-- The main types of work in the syllabus are **fishing, farming, pottery, brick laying,
-  craft working, trading, teaching and office work**.
-- Problems in work include **insecurity, animal diseases, poor health and poor transport**.
-
----
-
-# EXAMINATION POINTS
-
-- What is a clan? A smaller group in a tribe whose members came from one ancestor.
-- Name the legend of the Baganda — **Kintu and Nambi**.
-- Name the legend told in Bugisu — **Mundu and Sera**.
-- Give the meaning of immigration — moving into a place.
-- Give two causes of migration — drought, war, looking for jobs, epidemics.
-- Give three factors that attract people to settle — fertile soil, peace, jobs.
-- Name two problems people face in their work — insecurity, poor transport.
-
----
-
-# COMMON MISTAKES TO AVOID
+## COMMON MISTAKES TO AVOID
 
 - Mixing up **immigration** (in) with **emigration** (out).
 - Saying a clan is bigger than a tribe — it is **smaller**.
@@ -227,7 +187,7 @@ The syllabus lists these:
 
 ---
 
-# REVISION QUESTIONS
+## REVISION QUESTIONS
 
 1. What is the social environment?
 2. What is a tribe?
@@ -252,7 +212,7 @@ The syllabus lists these:
 
 ---
 
-# ANSWERS TO REVISION QUESTIONS
+## ANSWERS TO REVISION QUESTIONS
 
 1. **People and the things that people make**
 2. **A large group of people who share one language, one culture and one origin**
@@ -274,43 +234,3 @@ The syllabus lists these:
 18. Any three of **insecurity and wars, diseases of animals and birds, poor health, poor transport, bad weather, poor prices, lack of money**
 19. **Repair the roads** (or use better vehicles, or build bridges)
 20. *(Your own answer — the tribe really found in your district.)*
-
----
-
-# P.4 QUICK REVISION
-
-- Tribe = big · **clan** = small part of a tribe · **totem** = the clan's animal or plant
-- Legends: **Kintu and Nambi** (Baganda) · **Mundu and Sera** (Bagisu) · **Labong and Gipir** (Luo)
-- **I**mmigration = coming **i**n · emigration = going out
-- People settle where there is: fertile soil · rain · peace · jobs · trade · services
-- Work: fishing · farming · pottery · brick laying · crafts · trading · teaching · office work
-- Problems: insecurity · animal diseases · poor health · poor transport
-
----
-
-## A note on sources
-
-The topic title, the period allocation (15 periods), the content list (origin of the people
-in our district — legends of some tribes, tribes found in our district, and clans that form
-tribes, all marked **new input** in the syllabus; causes of immigration; factors influencing
-settlement patterns; types of work; and problems faced by people as they work), the
-competences and the suggested activities — including modelling and weaving pots, mats and
-baskets, and discussing with parents why some places have more people than others — were
-taken from the official **NCDC Primary Four Social Studies Syllabus** (© NCDC 2010, ISBN
-978-9970-117-49-9; pages 26–31 of the PDF in `curriculum/`), downloaded from **ncdc.go.ug**.
-The three legends named above — **Mundu and Sera**, **Labong and Gipir**, and **Kintu and
-Nambi** — are the syllabus's own examples.
-
-**The syllabus names those legends but does not print the stories**, and no version of any
-of them has been written out here, because no source document containing them is held. The
-learner is asked to get the story from an elder, the teacher or the library.
-
-**This topic is about the learner's own district.** No tribe, clan or totem has been assigned
-to any district here; where an answer depends on the learner's district, the notes leave the
-answer to the learner.
-
-The explanations, tables, exercises and answers are original teaching material written for
-the learner; they are **not** copied from the curriculum document or from any textbook.
-
-No NCDC **Teacher's Guide** for P.4 was available, so the syllabus's own guidance was used
-directly instead.

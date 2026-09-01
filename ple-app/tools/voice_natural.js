@@ -13,10 +13,8 @@
                 by the browser. After that it needs no internet and
                 no server: the text never leaves the phone.
 
-   If anything at all goes wrong — no WebAssembly, too little
-   memory, a failed download, an offline first run — it falls back
-   to the device voice and says so plainly. The notes are never
-   blocked.
+   If the controlled narrator is not installed or cannot play, the app reports that clearly
+   instead of silently switching to a different device voice.
    ============================================================ */
 
 const NV_CDN = 'https://cdn.jsdelivr.net/npm/@mintplex-labs/piper-tts-web@1.0.4/+esm';
@@ -25,14 +23,7 @@ const NV_CDN = 'https://cdn.jsdelivr.net/npm/@mintplex-labs/piper-tts-web@1.0.4/
 /* Sizes checked against the catalogue the library itself downloads from
    (huggingface.co/diffusionstudio/piper-voices/voices.json) on 17 Aug 2026.
    They are all about the same size — there is no small option. */
-const NV_VOICES = [
-  {id:'en_GB-jenny_dioco-medium', name:'Jenny \u00b7 British',  mb:60,
-   note:'Warm and clear. Best for reading lessons aloud.'},
-  {id:'en_US-hfc_female-medium',  name:'Clara \u00b7 American', mb:60,
-   note:'Very clear pronunciation.'},
-  {id:'en_GB-alba-medium',        name:'Alba \u00b7 Scottish',  mb:60,
-   note:'Gentle and unhurried.'},
-];
+const NV_VOICES = [{id:'en_GB-jenny_dioco-medium', name:'Jenny · Standard narrator', mb:60, note:'Warm, clear and consistent across supported devices.'}];
 const NV_DEFAULT = 'en_GB-jenny_dioco-medium';
 
 const NV = {
@@ -43,13 +34,17 @@ const NV = {
   progress:0,
   error:'',
   cache:new Map(),   // sentence -> object URL, so Repeat is instant
+  pending:null,      // text to speak automatically once the narrator finishes downloading
+  pendingResolve:null,  // releases the sentence that is waiting for the download
+  lastAuto:0,        // throttle: auto-download at most once every 30 s
 };
 
 const nvChosen = () => NV_VOICES.find(v => v.id === NV.voiceId) || NV_VOICES[0];
 
 /* which engine is in use */
 function nvMode(){
-  return localStorage.getItem('ple_engine') === 'natural' ? 'natural' : 'device';
+  /* ONE narrator for every device. Device TTS is never used for narration. */
+  return 'natural';
 }
 function nvSetMode(m){
   localStorage.setItem('ple_engine', m);
@@ -61,8 +56,7 @@ function nvSetMode(m){
 /* ---------- can this device run it at all? ---------- */
 function nvCapable(){
   if(typeof WebAssembly === 'undefined') return 'This browser has no WebAssembly.';
-  const mem = navigator.deviceMemory;
-  if(mem && mem < 2) return 'This phone has under 2 GB of memory, so the natural voice would be too slow. The phone voice is used instead.';
+  /* Low-memory devices may take longer, but must not silently change narrator. */
   return '';
 }
 
@@ -85,10 +79,17 @@ async function nvCheckStored(){
   return NV.ready;
 }
 
-/* ---------- the one-time download ---------- */
-async function nvDownload(){
+/* ---------- the one-time download ----------
+   showSheet=true  : opened from Voice settings (progress shown in the sheet)
+   showSheet=false : auto-started because the learner pressed Listen —
+                     the download runs in the background, and whatever they
+                     asked to hear is SPOKEN AUTOMATICALLY when it finishes.
+                     A learner who presses Play always ends up with sound. */
+async function nvDownload(showSheet){
   if(NV.busy) return;
-  NV.busy = true; NV.error = ''; NV.progress = 0; spSheet();
+  NV.busy = true; NV.error = ''; NV.progress = 0;
+  if(showSheet !== false) spSheet();
+  else toast('Downloading the standard narrator \u2014 one time, about 60 MB. Your audio will start when it is ready.');
   try{
     const lib = await nvLoad();
     await lib.download(NV.voiceId, p => {
@@ -98,17 +99,28 @@ async function nvDownload(){
         if(el){ el.style.width = NV.progress + '%'; }
         const t = document.getElementById('nvPct');
         if(t) t.textContent = NV.progress + '%';
+        if(showSheet === false && NV.progress % 25 === 0) toast('Narrator download ' + NV.progress + '%');
       }
     });
     NV.ready = true;
     localStorage.setItem('ple_engine', 'natural');
-    toast('Natural voice ready \u2014 it now works offline');
+    toast('Standard narrator ready \u2014 it now works offline');
   }catch(e){
     NV.error = (e && e.message) || 'The download did not finish.';
     NV.ready = false;
+    if(showSheet === false) toast('The narrator download failed. Check your connection and tap Listen again.');
+    NV.pending = null;
+    const r = NV.pendingResolve; NV.pendingResolve = null;
+    if(r) r();
   }
   NV.busy = false;
   spSheet(); spBar();
+  /* speak what the learner asked for, THEN release the reading machine
+     so it continues from the NEXT sentence with correct pacing */
+  const pending = NV.pending; NV.pending = null;
+  const resolver = NV.pendingResolve; NV.pendingResolve = null;
+  try{ if(pending && NV.ready) await nvSpeak(pending); }catch(e){}
+  if(resolver) resolver();
 }
 async function nvRemove(){
   try{ const lib = await nvLoad(); await lib.remove(NV.voiceId); }catch(e){}
@@ -144,10 +156,32 @@ function nvPrefetch(i){
 }
 
 let NV_AUDIO = null;
-function nvSpeak(text){
+/* "machine" marks the reading machine's own playback. A one-shot request
+   (a single Listen button: a maths question, a spelling word, a kid card)
+   must ALWAYS play. The machine must drop its queued sentences the moment
+   the learner presses Stop — that is the only case where playback is skipped.
+   Before this flag, one-shot requests generated the audio and then threw it
+   away in silence: every Listen button outside the reading page was mute. */
+function nvSpeak(text, machine){
+  if(typeof afxMuted==='function'&&afxMuted())return;
+  const _t=String(text==null?'':text);
+  /* ONE neural inference on a long text BLOCKS the UI (the synthesis
+     runs on the main thread). Long texts are spoken sentence by
+     sentence instead — the app never freezes. */
+  if(_t.length>220){
+    const parts=(_t.match(/[^.!?]+[.!?]*/g)||[_t]).map(x=>x.trim()).filter(Boolean);
+    let chain=Promise.resolve();
+    parts.forEach(pt=>{
+      chain=chain.then(()=>{ if(machine && !SP.on && !NV_AUDIO) return null; return nvSpeakOne(pt, machine); });
+    });
+    return chain;
+  }
+  return nvSpeakOne(_t, machine);
+}
+function nvSpeakOne(text, machine){
   return new Promise((resolve, reject) => {
     nvWav(text).then(url => {
-      if(!SP.on){ resolve(); return; }
+      if(machine && !SP.on){ resolve(); return; }
       const a = new Audio(url);
       NV_AUDIO = a;
       a.volume = spVolume();

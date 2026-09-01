@@ -43,6 +43,10 @@ SUBJ_NAME = {"SST": "SST", "MATH": "Mathematics",
 
 SKIP = re.compile(r"your own|\(your |\(name\)|\(list them\)|draw |your district", re.I)
 NUMISH = re.compile(r"^[\d,.\s%°/-]+$")
+# A table is a source of term->meaning questions when its SECOND column is
+# definitional ("Meaning", "What it is", "How it helps", ...). This harvests
+# both the classic KEY DEFINITIONS tables and the restructured Q&A tables.
+DEF_HEAD = re.compile(r"^(meaning$|what |how |why |danger|full name|service |work$|suggested solution)", re.I)
 
 
 def clean(s):
@@ -111,6 +115,28 @@ def collect(pack):
                         term, mean = clean(r[0]), clean(r[1])
                         if term and mean and not SKIP.search(term + mean) \
                            and len(mean.split()) >= 3:
+                            defs.append((tno, title, term, mean))
+        # restructured Q&A notes (and classic body tables): every
+        # definitional two-column table in every section is material.
+        # ROLE columns are skipped: "What is meant by X?" must never ask
+        # for a role (owner's wording rule) — roles are asked in the notes
+        # exercises as "What was the role of X?" instead.
+        ROLE_HEAD = re.compile(r"what (it|the person) does|what it did|\brole\b|^work$|function|duty|responsib|importance|why it matters|how it helps|^uses?$|used for", re.I)
+        ROLE_ANS = re.compile(r"^(ran|carried|controlled|managed|promoted|provided|collected|flew|handled|lent|supplied|transported|delivered|supervised|maintained|operated|ensured|served|worked|used to|used for|shows?|makes?|provides?|helps?|represents?|protects?|prevents?|carries|forms?|connects?|serves?|supplies|controls?|manages?|promotes?|collects?|handles?|runs?|responsible for)\b", re.I)
+        for s_ in t["sections"]:
+            for b in s_["blocks"]:
+                if b["t"] == "table" and len(b.get("head", [])) == 2 \
+                   and DEF_HEAD.match(b["head"][1].strip()) \
+                   and not ROLE_HEAD.search(b["head"][1].strip()):
+                    for r in b["rows"]:
+                        if len(r) < 2:
+                            continue
+                        term, mean = clean(r[0]), clean(r[1])
+                        if term and mean and not SKIP.search(term + mean) \
+                           and 3 <= len(mean.split()) <= 15 \
+                           and 1 <= len(term.split()) <= 5 \
+                           and not NUMISH.match(mean) \
+                           and not ROLE_ANS.match(mean):
                             defs.append((tno, title, term, mean))
         for name in (r"^important facts", r"^examination points"):
             s = sec(t, name)

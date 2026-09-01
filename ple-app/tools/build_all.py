@@ -33,6 +33,7 @@ STEPS = [
     ("Validate notes practice",   [[sys.executable, "tools/validate_notes_practice.py"]]),
     ("Build written exercises",   [[sys.executable, "tools/build_exercises.py"]]),
     ("Validate written exercises",[[sys.executable, "tools/validate_exercises.py"]]),
+    ("Audit notes completeness",  [[sys.executable, "tools/audit_notes_completeness.py"]]),
     ("Embed everything in index.html", [[sys.executable, "tools/inject.py"]]),
 ]
 
@@ -58,6 +59,16 @@ def main():
     # ONE file to download, always at the same place
     shutil.copy2("index.html", "../index.html")
     size = os.path.getsize("../index.html")
+
+    # PWA: stamp the service worker with THIS build's version (content hash
+    # of the app file), so every deployment is a new version automatically.
+    import hashlib
+    ver = hashlib.sha256(open("index.html", "rb").read()).hexdigest()[:12]
+    sw = open("sw.js", encoding="utf-8").read()
+    open("../sw.js", "w", encoding="utf-8").write(sw.replace("__SW_VERSION__", ver))
+    shutil.copy2("manifest.webmanifest", "../manifest.webmanifest")
+    shutil.copy2("icons/icon.png", "../icon.png")
+    print(f"  PWA: service worker v{ver} + manifest + icon -> repo root")
     print("\n" + "=" * 62)
     print(f"BUILD OK — index.html ready ({size:,} bytes)")
     print("Download that one file. Nothing else is needed.")
