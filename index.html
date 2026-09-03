@@ -724,6 +724,10 @@ p{margin:0}
 .kex-finish{margin-top:16px;text-align:center}
 .kex-tick{font-size:16.5px;font-weight:900;color:#166534;line-height:1.4}
 .kex-tick.off{color:#92400E;font-size:14px}
+/* CHECK MY ANSWERS — yellow step before the green NEXT, same chunky kid style */
+.kex-check{width:100%;min-height:54px;margin-top:14px;border:2.5px solid #111827;border-radius:16px;background:#FFCC00;color:#4A3200;font-size:16.5px;font-weight:900;letter-spacing:.03em;box-shadow:4px 4px 0 rgba(17,24,39,1)}
+.kex-check:active{transform:scale(.97)}
+.kex-finish .cpa-next{margin-top:10px}
 
 /* ---------- DEFINITION + EXAMPLES cards (big tiles, never a continuation) ---------- */
 .kid-card.kx-card{background:#fff;border:3px solid #111827;box-shadow:6px 6px 0 rgba(17,24,39,1);padding:18px 14px 16px;text-align:center}
@@ -2638,6 +2642,7 @@ function kexText(qi,bi,val){
   const x=state.kex;if(!x)return;
   if(!Array.isArray(x.texts[qi]))x.texts[qi]=[];
   x.texts[qi][bi]=val;
+  kexRefreshFinish();          /* live count + buttons, without losing typing focus */
 }
 function kexFilled(x,qi){
   const v=x.texts[qi];
@@ -2646,6 +2651,45 @@ function kexFilled(x,qi){
 }
 function kexDone(x,qs){
   return qs.every((q,i)=>q.type==='objective'?x.done[i]!=null:(x.shown[i]||kexFilled(x,i)));
+}
+/* ---------- Exercise finish area: CHECK MY ANSWERS, then NEXT ----------
+   Two clear steps once every question is answered: CHECK MY ANSWERS
+   reveals every model answer at once so the learner can compare, and
+   NEXT ➡ completes the sub-topic and moves to the next step.
+   kexRefreshFinish patches this area live while the learner types — a
+   full re-render on every keystroke would steal the keyboard focus. */
+function kexFinishHTML(ex,answered){
+  const total=ex.questions.length,allDone=answered>=total;
+  return allDone
+    ?`<div class="kex-tick">\u2705 Good job! You finished ${nEsc(ex.title)}</div>
+      <button class="kex-check" onclick="kexCheckAll()">\u{1F50D} CHECK MY ANSWERS</button>
+      <button class="cpa-next" onclick="kidFinish()">NEXT \u27A1</button>`
+    :`<div class="kex-tick off">\u{1F4DD} Answer all ${total} questions to finish \u2014 ${total-answered} to go</div>`;
+}
+function kexAnsweredCount(c,x){
+  return c.ex.questions.filter((q,qi)=>q.type==='objective'?x.done[qi]!=null:(x.shown[qi]||kexFilled(x,qi))).length;
+}
+function kexRefreshFinish(){
+  const c=(state.kcards||[])[state.ki||0];
+  if(!c||c.kind!=='exercise')return;
+  const x=state.kex;if(!x)return;
+  const total=c.ex.questions.length,answered=kexAnsweredCount(c,x),allDone=answered>=total;
+  const cnt=document.querySelector('.kex-count');
+  if(cnt)cnt.textContent=answered+' of '+total+' answered';
+  const box=document.querySelector('.kex-finish');
+  if(box){   /* safe to rewrite: the inputs live outside this box, so focus is never lost */
+    box.classList.toggle('off',!allDone);
+    box.innerHTML=kexFinishHTML(c.ex,answered);
+  }
+}
+function kexCheckAll(){
+  const c=(state.kcards||[])[state.ki||0];
+  if(!c||c.kind!=='exercise')return;
+  const x=state.kex;if(!x)return;
+  c.ex.questions.forEach((q,qi)=>{if(q.type!=='objective')x.shown[qi]=true;});
+  afxPlay('correct');
+  render();
+  try{const el=document.querySelector('.kex-card');if(el)el.scrollIntoView({behavior:'smooth',block:'start'});}catch(e){}
 }
 
 /* ---------- Definition + EXAMPLES splitter (owner's rule, all subjects) ----------
@@ -4381,10 +4425,7 @@ SCREENS.noteSub = () => {
           </div>`;
         }).join('')}
         <div class="kex-finish ${allDone?'':'off'}">
-          ${allDone
-            ?`<div class="kex-tick">\u2705 Good job! You finished ${nEsc(ex.title)}</div>
-              <button class="cpa-next" onclick="kidFinish()">\u2713 MARK AS COMPLETE &amp; CONTINUE \u27A1</button>`
-            :`<div class="kex-tick off">\u{1F4DD} Answer all ${ex.questions.length} questions to finish \u2014 ${ex.questions.length-answered} to go</div>`}
+          ${kexFinishHTML(ex,answered)}
         </div>
       </div>`;
     }else if(c.kind==='dots'){
