@@ -1180,6 +1180,37 @@ p{margin:0}
 .auth-card{background:#fff;border:1.5px solid var(--line);border-radius:var(--r-xl);padding:24px 18px;margin-top:14px;text-align:center}.auth-mark{font-size:42px}.auth-label{display:block;text-align:left;font-weight:800;font-size:14px;margin-top:15px}.auth-input{display:block;width:100%;min-height:54px;margin-top:6px;border:1.5px solid var(--line);border-radius:14px;padding:0 14px;font:inherit;color:var(--navy);outline:none}.auth-input:focus{border-color:var(--sky-edge);box-shadow:0 0 0 3px var(--sky-50)}.auth-error{background:var(--coral-50);border:1px solid var(--coral-100);color:var(--coral-ink);border-radius:12px;padding:10px;margin-top:14px;font-size:14px}.auth-switch{color:var(--sky-ink);font-weight:800;font-size:14px;margin-top:15px;text-decoration:underline}.auth-status{display:flex;align-items:center;gap:10px;background:var(--green-50);border:1.5px solid var(--green-100);border-radius:var(--r-md);padding:12px;margin-top:12px}.auth-status>span{font-size:24px}.auth-status div{flex:1;text-align:left;min-width:0}.auth-status b,.auth-status small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.auth-status small{color:var(--muted);font-size:12px}.auth-status button{background:#fff;border:1px solid var(--line);border-radius:10px;padding:9px;font-weight:800;font-size:12px}
 .auth-loading{text-align:center;margin:auto;padding:30px}.auth-loading:first-letter{font-size:42px}.auth-loading h2{margin-top:14px;font-size:20px}.auth-loading p{color:var(--muted);margin-top:7px}
 .auth-input{background:#fff}.auth-input select{appearance:auto}
+
+/* ===== NEW KID-FRIENDLY FLASHCARDS - LOVED FORMAT - SAME AS LOCATION OF AFRICA ===== */
+.kid-flip{perspective:1200px;width:100%;max-width:520px;min-height:380px;cursor:pointer;margin:0 auto}
+.kid-flip-inner{position:relative;width:100%;height:100%;min-height:380px;transition:transform .6s cubic-bezier(.34,1.26,.64,1);transform-style:preserve-3d}
+.kid-flip.flipped .kid-flip-inner{transform:rotateY(180deg)}
+.kid-flip-face{position:absolute;inset:0;backface-visibility:hidden;background:#FFFFFF;border-radius:28px;border:3px solid #111827;box-shadow:6px 6px 0 rgba(17,24,39,1);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px 24px;text-align:center;overflow:hidden;min-height:380px}
+.kid-flip-back{transform:rotateY(180deg);background:#FFFBEB;border-color:#111827;justify-content:flex-start;padding-top:26px;overflow:auto}
+.kfc-question{font-family:'Poppins',Nunito,sans-serif;font-size:clamp(22px,5.8vw,30px);font-weight:800;line-height:1.25;color:#111827;text-align:center;max-width:92%;letter-spacing:-.02em}
+.kfc-back-title{font-family:'Poppins',sans-serif;font-size:13px;font-weight:900;letter-spacing:.12em;color:#6B7280;text-transform:uppercase;margin-bottom:14px}
+.kfc-answers{width:100%;display:flex;flex-direction:column;gap:10px;margin-top:4px}
+.kfc-ans{width:100%;background:#fff;border:2.5px solid #111827;border-radius:16px;padding:14px 16px;box-shadow:3px 3px 0 rgba(17,24,39,1);font-family:'Poppins',sans-serif;font-size:17px;font-weight:700;color:#111827;text-align:left;display:flex;align-items:center;gap:10px;line-height:1.3}
+.kfc-ans-n{flex:none;width:28px;height:28px;border-radius:50%;background:#FFCC00;border:2px solid #111827;display:grid;place-items:center;font-size:13px;font-weight:900}
+.tap-flip-btn{display:inline-flex;align-items:center;gap:6px;background:#FFCC00;color:#111827;border:2.5px solid #111827;border-radius:999px;padding:10px 20px;font-family:'Poppins',sans-serif;font-size:14px;font-weight:900;letter-spacing:.02em;box-shadow:3px 3px 0 rgba(17,24,39,1);margin-top:22px;transition:transform .12s}
+.tap-flip-btn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 #111827}
+.kid-flip{margin-top:6px}
+/* ===== END NEW ===== */
+
+.kid-finish-btn{transition:transform .12s}
+.kid-finish-btn:active{transform:translate(2px,2px);box-shadow:2px 2px 0 rgba(17,24,39,1) !important}
+.kid-next:active{transform:translate(2px,2px);box-shadow:2px 2px 0 rgba(17,24,39,1) !important}
+.kfc-question{font-family:'Poppins',sans-serif;font-size:clamp(22px,5.8vw,30px);font-weight:800}
+.kfc-answers{width:100%;display:flex;flex-direction:column;gap:10px}
+.kfc-ans{border:2.5px solid #111827;border-radius:16px;padding:14px;box-shadow:3px 3px 0 #111827;display:flex;gap:10px}
+.kfc-ans-n{background:#FFCC00;border:2px solid #111827;border-radius:50%;width:28px;height:28px;display:grid;place-items:center;font-weight:900}
+.tap-flip-btn{background:#FFCC00;border:2.5px solid #111827;border-radius:999px;padding:10px 20px;font-weight:900;box-shadow:3px 3px 0 #111827}
+.kid-flip{perspective:1200px;max-width:520px;min-height:380px;margin:0 auto;cursor:pointer}
+.kid-flip-inner{position:relative;min-height:380px;transition:transform .6s cubic-bezier(.34,1.26,.64,1);transform-style:preserve-3d}
+.kid-flip.flipped .kid-flip-inner{transform:rotateY(180deg)}
+.kid-flip-face{position:absolute;inset:0;backface-visibility:hidden;background:#fff;border-radius:28px;border:3px solid #111827;box-shadow:6px 6px 0 #111827;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px}
+.kid-flip-back{transform:rotateY(180deg);background:#FFFBEB;justify-content:flex-start;padding-top:26px;overflow:auto}
+
 </style>
 </head>
 <body>
@@ -3242,31 +3273,123 @@ const KID_PINNED_SUB={
       {text:'Zimbabwe',emoji:'\u{1F1FF}\u{1F1FC}'}]}
   ]
 };
+
 function kidCardsFor(t,i){
   const ckey=(t&&t.id)+':'+i;
   if(KIDCARDS_CACHE[ckey])return KIDCARDS_CACHE[ckey];
   const sec=noteSections(t)[i];if(!sec)return[];
-  /* owner-pinned set? It replaces the generated cards for THIS section only */
   const pinKey=t.id+'|'+String(sec.title||'').replace(/^\d+\.\s*/,'').trim().toUpperCase();
   const pinned=KID_PINNED[pinKey];
   if(pinned){KIDCARDS_CACHE[ckey]=pinned;return pinned;}
   const cards=[];
   const blocks=sec.blocks||[];
-  let head=null;                        /* the nearest sub-heading above the current block */
-  let pinSkip=false;                    /* inside an owner-pinned ### group: its blocks are replaced */
-  for(const b of blocks){
+  let head=null;
+  let pinSkip=false;
+  let lastQuestion=null; // NEW: track last Question to group answers together
+  let pendingQuestion=null; // stores extracted question text
+  
+  function extractQuestion(txt){
+    const s=kidStrip(txt)||'';
+    // Match **Question X:** What is... or **Question:** ...
+    let m=s.match(/Question\s*\d*\s*:?\s*(.+)/i);
+    if(m) return m[1].replace(/\*\*/g,'').trim();
+    if(/What is|Name|Which|Why|How many|Where|Mention|List|State|Give/i.test(s) && s.length>10 && s.length<200 && s.includes('?')){
+      return s.replace(/\*\*/g,'').replace(/^Question\s*\d*\s*:?/i,'').trim();
+    }
+    return null;
+  }
+  function extractAnswer(txt){
+    const s=kidStrip(txt)||'';
+    let m=s.match(/Answer\s*:?\s*(.+)/i);
+    if(m) return m[1].replace(/\*\*/g,'').trim();
+    return null;
+  }
+
+  for(let bi=0; bi<blocks.length; bi++){
+    const b=blocks[bi];
     if(b.t==='h3'){
-      head=kidStrip(b.x)||head;         /* headings become group headers */
+      head=kidStrip(b.x)||head;
       const subPin=KID_PINNED_SUB[t.id+'|'+kidPinKey(head)];
       pinSkip=!!subPin;
-      if(subPin)subPin.forEach(pc=>cards.push(pc));  /* pinned cards take this group's place */
+      if(subPin)subPin.forEach(pc=>cards.push(pc));
       continue;
     }
-    if(pinSkip)continue;                /* the replaced group's own bullets are skipped */
+    if(pinSkip)continue;
     if(b.t==='p'||b.t==='note'){
-      const sentences=(kidStrip(b.x)||'').split(/(?<=[.!?])\s+/).filter(Boolean);
+      const raw=kidStrip(b.x)||'';
+      const q=extractQuestion(raw);
+      const a=extractAnswer(raw);
+      
+      if(q){
+        // This block is a question
+        pendingQuestion=q;
+        lastQuestion=q;
+        continue; // wait for answer block or list
+      }
+      if(a){
+        // This is an answer
+        if(pendingQuestion){
+          // Check if next block is a list -> answers will be merged there
+          const next=blocks[bi+1];
+          if(next && (next.t==='ul'||next.t==='ol')){
+            // Don't create card yet, let list handler use pendingQuestion
+            // But if answer text is meaningful and not empty, keep it as part of question context
+            if(a.length>3 && !/^\s*$/.test(a)){
+              // If answer is like "There are seven continents" etc, we may still want to keep
+              // We'll create a note but continue
+            }
+            continue;
+          }
+          // Single answer -> create flip card with Q and one answer
+          if(a.length>=2){
+            cards.push({kind:'flip',role:null,attr:null,badge:null,tiles:null,emoji:'📚',front:pendingQuestion,back:a,question:pendingQuestion,answers:[a]});
+          }
+          pendingQuestion=null;
+        } else {
+          // Answer without question? treat as idea
+          const sentences=(raw||'').split(/(?<=[.!?])\s+/).filter(Boolean);
+          for(const sen of sentences){
+            const dots=kidDotList(sen);
+            if(dots){
+              const title=kidTitleFor(b.x,sec.title);
+              const label=title.replace(/[:.]$/,'').toLowerCase();
+              if(label&&dots[0]&&dots[0].toLowerCase().startsWith(label)){
+                dots[0]=dots[0].slice(label.length).replace(/^[\s:—-]+/,'');
+                if(!dots[0])dots.shift();
+              }
+              cards.push({kind:'dots',emoji:kidEmoji(sen),title:title,items:dots});
+              continue;
+            }
+            const dx=kidSplitDefEx(sen);
+            if(dx){
+              cards.push({kind:'defex',emoji:kidEmoji(dx.def+' '+dx.examples.join(' ')),def:dx.def,
+                examples:dx.examples.map(x=>({txt:x,emoji:kidEmoji(x)}))});
+              continue;
+            }
+            for(const piece of kidSplitSentence(sen)){
+              if(piece.split(' ').length<2&&cards.length)continue;
+              cards.push({kind:'idea',emoji:kidEmoji(piece),title:kidTitleFor(b.x,sec.title),text:piece});
+            }
+          }
+        }
+        continue;
+      }
+      // Regular paragraph (definition etc)
+      // If it looks like a standalone answer after a question (like "There are seven continents...")
+      if(pendingQuestion && raw.length>5 && raw.length<300){
+        // This is answer paragraph without Answer: prefix (as in Location of Africa topic)
+        // But if next block is list, merge
+        const next=blocks[bi+1];
+        if(next && (next.t==='ul'||next.t==='ol')){
+          continue; // let list handler create card
+        }
+        cards.push({kind:'flip',role:null,attr:null,badge:null,tiles:null,emoji:'📚',front:pendingQuestion,back:raw,question:pendingQuestion,answers:[raw]});
+        pendingQuestion=null;
+        continue;
+      }
+      const sentences=(raw||'').split(/(?<=[.!?])\s+/).filter(Boolean);
       for(const sen of sentences){
-        const dots=kidDotList(sen);          /* separator lists become numbered pills */
+        const dots=kidDotList(sen);
         if(dots){
           const title=kidTitleFor(b.x,sec.title);
           const label=title.replace(/[:.]$/,'').toLowerCase();
@@ -3277,49 +3400,59 @@ function kidCardsFor(t,i){
           cards.push({kind:'dots',emoji:kidEmoji(sen),title:title,items:dots});
           continue;
         }
-        const dx=kidSplitDefEx(sen);        /* examples become BIG tiles, never a continuation */
+        const dx=kidSplitDefEx(sen);
         if(dx){
           cards.push({kind:'defex',emoji:kidEmoji(dx.def+' '+dx.examples.join(' ')),def:dx.def,
             examples:dx.examples.map(x=>({txt:x,emoji:kidEmoji(x)}))});
           continue;
         }
         for(const piece of kidSplitSentence(sen)){
-          if(piece.split(' ').length<2&&cards.length)continue;   /* skip stray fragments */
+          if(piece.split(' ').length<2&&cards.length)continue;
           cards.push({kind:'idea',emoji:kidEmoji(piece),title:kidTitleFor(b.x,sec.title),text:piece});
         }
       }
-    }else if(b.t==='ul'){
-      /* A bullet list of 3+ under a sub-heading is ONE question answered in groups:
-         3-4 reasons per card, same header repeated on every card, so the child
-         never meets a floating "To promote..." with no context. Shorter lists,
-         and lists without a heading, keep one-card-per-item. */
+    }else if(b.t==='ul' || b.t==='ol'){
       const items=(b.items||[]).map(kidStrip).filter(Boolean);
+      if(!items.length) continue;
+      
+      // NEW LOGIC: If we have a pending question, this list IS the answer - ALL items together on ONE card
+      if(pendingQuestion){
+        cards.push({kind:'group',header:pendingQuestion,
+          items:items.map((txt,j)=>{
+            const o=kidOutlineItem(kidFriendlyItem(txt,head),pendingQuestion);
+            return {n:j+1,text:o.text||txt,detail:o.detail,emoji:kidEmoji(txt)};
+          })});
+        pendingQuestion=null;
+        lastQuestion=null;
+        continue;
+      }
+      // Old logic for lists under sub-heading
       if(head&&items.length>=3){
-        /* ONE card per list: more than 4 items becomes a flip card
-           (front 1-N, back N+1-M) — the heading is never repeated */
         cards.push({kind:'group',header:head,
           items:items.map((txt,j)=>{
             const o=kidOutlineItem(kidFriendlyItem(txt,head),head);
             return {n:j+1,text:o.text,detail:o.detail,emoji:kidEmoji(txt)};
           })});
       }else{
-        items.forEach(txt=>cards.push({kind:'idea',emoji:kidEmoji(txt),title:kidTitleFor(txt,sec.title),text:txt}));
+        // For small lists without pending question, if head exists, make one card
+        if(head && items.length>1){
+          cards.push({kind:'group',header:head,
+            items:items.map((txt,j)=>{
+              const o=kidOutlineItem(kidFriendlyItem(txt,head),head);
+              return {n:j+1,text:o.text,detail:o.detail,emoji:kidEmoji(txt)};
+            })});
+        } else {
+          items.forEach(txt=>cards.push({kind:'idea',emoji:kidEmoji(txt),title:kidTitleFor(txt,sec.title),text:txt}));
+        }
       }
-    }else if(b.t==='ol'){
-      (b.items||[]).forEach(it=>{
-        const txt=kidStrip(it);
-        if(txt)cards.push({kind:'idea',emoji:kidEmoji(txt),title:kidTitleFor(txt,sec.title),text:txt});
-      });
     }else if(b.t==='table'&&b.head&&b.head.length>=3){
-      /* comparison tables (3+ columns) become complete idea cards: every
-         column is kept — nothing is squeezed into a misleading flip card */
       const heads=b.head.map(h=>kidStrip(h));
       (b.rows||[]).forEach(r=>{
         const label=kidStrip(r[0]);
         const parts=[];
         for(let ci=1;ci<r.length&&ci<heads.length;ci++){
           const v=kidStrip(r[ci]);
-          if(v)parts.push((heads[ci]||'Column '+ci)+' \u2014 '+v);
+          if(v)parts.push((heads[ci]||'Column '+ci)+' — '+v);
         }
         if(label&&parts.length){
           cards.push({kind:'idea',emoji:kidEmoji(label+' '+parts.join(' ')),title:kidTitleFor(label,sec.title),text:label+': '+parts.join('; ')});
@@ -3329,21 +3462,18 @@ function kidCardsFor(t,i){
       const isFactTable=/^(fact|detail)s?$/i.test(String(b.head[0]||'').trim())||/^(fact|detail)s?$/i.test(String(b.head[1]||'').trim());
       (b.rows||[]).forEach(r=>{
         const term=kidStrip(r[0]),mean=String(r[1]||'').replace(/\s+/g,' ').trim();
-        /* fact tables may carry one-word answers (1967, Arusha, Tanzania) —
-           they become full WHEN/WHERE questions, so short answers are fine */
         if(term&&mean&&(mean.split(' ').length>=2||(isFactTable&&mean.length>=2))){
-          /* the question word follows the column's meaning — role answers never hide behind "What is" */
           const kind=kidFlipKind(String(b.head[1]||'').toLowerCase(),b.head[1],term,mean,b.head[0],kidSubject(sec));
-          cards.push({kind:'flip',role:kind.role,attr:kind.attr,badge:kind.badge||null,tiles:kind.tiles||null,emoji:kidEmoji(term+' '+kidStrip(mean)),front:kind.q,back:kind.back,backEx:kidSplitDefEx(mean)});
+          cards.push({kind:'flip',role:kind.role,attr:kind.attr,badge:kind.badge||null,tiles:kind.tiles||null,emoji:kidEmoji(term+' '+kidStrip(mean)),front:kind.q,back:kind.back,question:kind.q,answers:kind.tiles&&kind.tiles.length?kind.tiles.map(x=>x.txt):[kind.back],backEx:kidSplitDefEx(mean)});
         }
       });
     }
-    /* pre blocks (diagrams) are already shown as diagrams */
   }
   if(Object.keys(KIDCARDS_CACHE).length>600)Object.keys(KIDCARDS_CACHE).forEach(k=>delete KIDCARDS_CACHE[k]);
   KIDCARDS_CACHE[ckey]=cards;
   return cards;
 }
+
 function kidSpeak(){
   const t=noteById(state.ntopic)||noteFindAnywhere(state.ntopic);if(!t)return;
   const cards=state.kcards||[];
@@ -4312,8 +4442,8 @@ SCREENS.noteSub = () => {
       ${prog}
       ${stage}
     </div>
-    ${!isLast&&!onEx?`<button class="kid-next" onclick="kidNext()">Next \u27A1</button>`:''}
-    ${ki>0?`<button style="position:fixed;left:16px;bottom:calc(var(--nav-h) + 16px);z-index:30;background:#fff;border:2px solid #DBEAFE;border-radius:999px;padding:14px 20px;font-size:15px;font-weight:900;color:#2D4159" onclick="kidPrev()">\u2190 Back</button>`:''}
+    ${!isLast&&!onEx?`<button class="kid-next" onclick="kidNext()" style="position:fixed;right:16px;bottom:calc(var(--nav-h) + 20px);z-index:40;background:#111827;color:#fff;border:2.5px solid #111827;border-radius:999px;padding:14px 24px;font-family:'Poppins',sans-serif;font-size:15px;font-weight:900;box-shadow:4px 4px 0 rgba(17,24,39,1);cursor:pointer">Next ➡</button>`:''}
+    ${ki>0&&!isLast?`<button style="position:fixed;left:16px;bottom:calc(var(--nav-h) + 20px);z-index:40;background:#fff;border:2.5px solid #111827;border-radius:999px;padding:14px 20px;font-family:'Poppins',sans-serif;font-size:15px;font-weight:900;color:#111827;box-shadow:4px 4px 0 rgba(17,24,39,1);cursor:pointer" onclick="kidPrev()">← Back</button>`:''}
   </div>`;
 };
 
