@@ -766,6 +766,11 @@ p{margin:0}
 .kg-n{font-size:18px;font-weight:900;color:#111827;flex:none;line-height:1.35}
 .kg-emoji{font-size:21px;flex:none;line-height:1.25}
 .kg-txt{font-size:17px;font-weight:800;color:#111827;line-height:1.45}
+/* single-idea cards get the same decorated paper as every other card:
+   yellow badge header + white bordered pill, weight 800 like kg-txt */
+.ki-row{display:flex;gap:10px;align-items:flex-start;background:#fff;border:2px solid #111827;border-radius:16px;padding:13px 14px;box-shadow:3px 3px 0 rgba(17,24,39,1);margin-top:14px;width:100%;box-sizing:border-box;text-align:left}
+.ki-row .kg-emoji{font-size:26px}
+.ki-txt{font-size:17.5px;font-weight:800;color:#111827;line-height:1.5}
 
 /* ---------- Pinned card sets (owner's rule: FULL content, correct cards, NO over-breaking)
    Used ONLY by owner-pinned sub-topics — no other card changes. */
@@ -4584,14 +4589,18 @@ SCREENS.noteSub = () => {
         </div>
       </div>`;
     }else{
+      /* idea card — same decorated design as the other cards: kg-card paper,
+         yellow badge title, content in a white bordered pill (weight 800) */
       const dlist=kidDotList(c.text);
-      stage=`<div class="kid-card">
-        ${c.title?`<div class="kid-title">${nEsc(c.title)}</div>`:''}
+      stage=`<div class="kid-card kg-card">
+        ${c.title?`<div class="kg-badge">${nEsc(c.title)}</div>`:''}
         ${dlist?`<div class="kg-rows" style="margin-top:10px;width:100%">
             ${dlist.map((it,j)=>`<div class="kg-row"><span class="kg-n">${j+1}.</span><span class="kg-emoji">${kidEmoji(it)}</span><span class="kg-txt">${nEsc(it)}</span></div>`).join('')}
           </div>`
-          :`<div class="kid-emoji">${c.emoji}</div>
-        <div class="kid-text">${nEsc(c.text)}</div>
+          :`<div class="ki-row">
+            <span class="kg-emoji">${c.emoji}</span>
+            <span class="ki-txt">${nEsc(c.text)}</span>
+          </div>
         ${kidBadges(c.title+' '+c.text)}`}
         <div class="kid-actions">
           <button class="kid-listen" onclick="kidSpeak()">\u{1F50A} Listen</button>
