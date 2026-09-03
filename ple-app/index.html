@@ -3497,7 +3497,30 @@ function kidCardsFor(t,i){
   const blocks=sec.blocks||[];
   let head=null;                        /* the nearest sub-heading above the current block */
   let pinSkip=false;                    /* inside an owner-pinned ### group: its blocks are replaced */
-  for(const b of blocks){
+  let pendingQuestion=null;             /* a "Question: ..." paragraph waiting for its answer */
+  /* "Question:"/"Answer:" paragraphs in the notes become dedicated Q&A flip
+     cards — question in front, answer behind (restored from the old deploy
+     file into the source, so a rebuild can never drop it again) */
+  function extractQuestion(txt){
+    const s=kidStrip(txt)||'';
+    /* anchored: the paragraph must START with "Question:"/"Questions:"/"Question 2:" —
+       a mid-sentence mention ("questions and answers are...") is never a question card */
+    let m=s.match(/^\s*Questions?\s*\d*\s*:\s*(.+)/i);
+    if(m) return m[1].replace(/\*\*/g,'').trim();
+    if(/What is|Name|Which|Why|How many|Where|Mention|List|State|Give/i.test(s) && s.length>10 && s.length<200 && s.includes('?')){
+      return s.replace(/\*\*/g,'').replace(/^Question\s*\d*\s*:?/i,'').trim();
+    }
+    return null;
+  }
+  function extractAnswer(txt){
+    const s=kidStrip(txt)||'';
+    /* anchored, same as extractQuestion: "Answer:"/"Answers:" at the start only */
+    let m=s.match(/^\s*Answers?\s*:\s*(.+)/i);
+    if(m) return m[1].replace(/\*\*/g,'').trim();
+    return null;
+  }
+  for(let bi=0; bi<blocks.length; bi++){
+    const b=blocks[bi];
     if(b.t==='h3'){
       head=kidStrip(b.x)||head;         /* headings become group headers */
       const subPin=KID_PINNED_SUB[t.id+'|'+kidPinKey(head)];
@@ -3507,7 +3530,28 @@ function kidCardsFor(t,i){
     }
     if(pinSkip)continue;                /* the replaced group's own bullets are skipped */
     if(b.t==='p'||b.t==='note'){
-      const sentences=(kidStrip(b.x)||'').split(/(?<=[.!?])\s+/).filter(Boolean);
+      const raw=kidStrip(b.x)||'';
+      const q=extractQuestion(raw);
+      const a=extractAnswer(raw);
+      if(q){pendingQuestion=q;continue;}                    /* wait for the answer paragraph or list */
+      if(a){
+        if(pendingQuestion){
+          const next=blocks[bi+1];
+          if(next&&(next.t==='ul'||next.t==='ol'))continue;  /* the list handler builds the card */
+          if(a.length>=2)cards.push({kind:'flip',role:null,attr:null,badge:null,tiles:null,emoji:'\u{1F4DA}',front:pendingQuestion,back:a,question:pendingQuestion,answers:[a]});
+          pendingQuestion=null;
+          continue;
+        }
+        /* an answer with no pending question: fall through to normal sentences */
+      }else if(pendingQuestion&&raw.length>5&&raw.length<300){
+        /* a bare answer paragraph with no "Answer:" prefix */
+        const next=blocks[bi+1];
+        if(next&&(next.t==='ul'||next.t==='ol'))continue;
+        cards.push({kind:'flip',role:null,attr:null,badge:null,tiles:null,emoji:'\u{1F4DA}',front:pendingQuestion,back:raw,question:pendingQuestion,answers:[raw]});
+        pendingQuestion=null;
+        continue;
+      }
+      const sentences=raw.split(/(?<=[.!?])\s+/).filter(Boolean);
       for(const sen of sentences){
         const dots=kidDotList(sen);          /* separator lists become numbered pills */
         if(dots){
@@ -3532,6 +3576,18 @@ function kidCardsFor(t,i){
         }
       }
     }else if(b.t==='ul'){
+      if(pendingQuestion){                                  /* this list IS the answer — one card */
+        const qItems=(b.items||[]).map(kidStrip).filter(Boolean);
+        if(qItems.length){
+          cards.push({kind:'group',header:pendingQuestion,
+            items:qItems.map((txt,j)=>{
+              const o=kidOutlineItem(kidFriendlyItem(txt,head),pendingQuestion);
+              return {n:j+1,text:o.text||txt,detail:o.detail,emoji:kidEmoji(txt)};
+            })});
+          pendingQuestion=null;
+          continue;
+        }
+      }
       /* A bullet list of 3+ under a sub-heading is ONE question answered in groups:
          3-4 reasons per card, same header repeated on every card, so the child
          never meets a floating "To promote..." with no context. Shorter lists,
@@ -3549,6 +3605,18 @@ function kidCardsFor(t,i){
         items.forEach(txt=>cards.push({kind:'idea',emoji:kidEmoji(txt),title:kidTitleFor(txt,sec.title),text:txt}));
       }
     }else if(b.t==='ol'){
+      if(pendingQuestion){                                  /* numbered list answers the question too */
+        const qItems=(b.items||[]).map(kidStrip).filter(Boolean);
+        if(qItems.length){
+          cards.push({kind:'group',header:pendingQuestion,
+            items:qItems.map((txt,j)=>{
+              const o=kidOutlineItem(kidFriendlyItem(txt,head),pendingQuestion);
+              return {n:j+1,text:o.text||txt,detail:o.detail,emoji:kidEmoji(txt)};
+            })});
+          pendingQuestion=null;
+          continue;
+        }
+      }
       (b.items||[]).forEach(it=>{
         const txt=kidStrip(it);
         if(txt)cards.push({kind:'idea',emoji:kidEmoji(txt),title:kidTitleFor(txt,sec.title),text:txt});
