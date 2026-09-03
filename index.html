@@ -1252,6 +1252,33 @@ body::before{
   radial-gradient(circle at 50% 88%, rgba(255,138,174,.24), transparent 46%),
   #fff}
 
+/* 12 · topic names take the stage: subject chips (SST, MATH…) bigger,
+   bolder, centred and colourful; topic headings and topic rows follow */
+.chips{justify-content:center;margin:8px 0 6px}
+.chip{font-size:16.5px;font-weight:900;padding:12px 22px;min-width:72px;text-align:center;border-width:2px;letter-spacing:.02em}
+.chips .chip:nth-child(5n+1){background:var(--yellow-50);border-color:var(--yellow-100);color:var(--yellow-ink)}
+.chips .chip:nth-child(5n+2){background:var(--sky-50);border-color:var(--sky-100);color:var(--sky-ink)}
+.chips .chip:nth-child(5n+3){background:var(--green-50);border-color:var(--green-100);color:var(--green-ink)}
+.chips .chip:nth-child(5n+4){background:var(--coral-50);border-color:var(--coral-100);color:var(--coral-ink)}
+.chips .chip:nth-child(5n+5){background:var(--purple-50);border-color:var(--purple-100);color:var(--purple-ink)}
+/* the chosen chip stands proud: solid colour with a chunky underside */
+.chips .chip.on{background:var(--purple);border-color:var(--purple-edge);color:#fff;box-shadow:0 3px 0 var(--purple-edge);transform:translateY(-1px)}
+.chip:active{transform:scale(.95)}
+
+/* the heading above every topic list: big, centred, gradient ink */
+.section-title{
+  font-size:19px;font-weight:900;text-align:center;letter-spacing:.03em;
+  margin:24px 2px 14px;
+  background:linear-gradient(92deg,#136890,#2D4159 55%,#5B44B5);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+
+/* topic rows in notes and exercises read louder */
+.tcard b{font-size:19px;font-weight:900;letter-spacing:-.01em}
+.sec-btn{font-size:17px;font-weight:800}
+.sec-btn .dot{width:30px;height:30px;font-size:13.5px;background:var(--yellow-100);color:#7C5B06;border:1.5px solid var(--yellow-edge)}
+.sec-btn.read .dot{background:var(--green-100);color:var(--green-ink);border-color:var(--green-edge)}
+
 /* 11 · children who prefer calm screens get the paint without the motion */
 @media (prefers-reduced-motion:reduce){
   body::before,.hero-banner::before,.hero-banner::after,.tab.on .ic{animation:none}
