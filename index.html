@@ -2794,6 +2794,12 @@ function kidFlipKind(head2,headRaw,term,mean,head0,subj){
   }else if(/^(capital city|currency|size|perimeter|formula|area|population|height|length|width|found)$/.test(head2)){
     q='What is the '+String(headRaw||head2).toLowerCase()+' of '+term+'?';
   }
+  /* plain "What is X?" cards answer in a full sentence, the way pupils
+     write it: "Latitude is imaginary lines running west to east." */
+  if(q==='What is '+term+'?'){
+    const ds=kidDefSentence(term,back);
+    if(ds)back=ds;
+  }
   return {q:q,back:back,role:role};
 }
 /* ---------- Standalone question rule (owner's rule) ----------
@@ -3490,6 +3496,62 @@ const KID_PINNED_SUB={
       {text:'Zimbabwe',emoji:'\u{1F1FF}\u{1F1FC}'}]}
   ]
 };
+/* Full-sentence definitions, the way primary pupils write them in their
+   exercise books: "Lines of longitude are imaginary lines drawn on a map."
+   Returns null when merging would not read safely — instructions
+   ("Remember: the..."), heading-style labels, meanings that already carry
+   a verb ("the Equator is the most important..."), proper nouns — so the
+   card simply keeps its old shape instead of reading badly. */
+function kidDefSentence(term,mean,strict){
+  const t=String(term||'').replace(/\*+/g,'').replace(/\s+/g,' ').trim().replace(/[:;.,]+$/,'');
+  const m=String(mean||'').replace(/\s+/g,' ').trim();
+  if(!t||!m||t.length<3||t.length>60)return null;
+  if(/[?:]$/.test(t))return null;
+  /* labels that are instructions or headings, not terms */
+  if(/^(what|why|how|when|where|who|which|whose|fill|remember|important|note|notes|tip|example|examples|curriculum|key|activity|work|try|think|discuss|do|don'?t|make|use|keep|your|you|we|always|never|rule|rules|answer|answers|question|questions|others|this|that|these|those|it|its|on|in|at|of|for|to|if|then|about)\b/i.test(t))return null;
+  if(strict){
+    /* paragraph text is messy — exercises and instructions live here too,
+       so only plain terms with article-style definitions may merge */
+    if(t.split(/\s+/).length>5)return null;
+    if(/[,()\/\u2192\u2014\u2013]/.test(t))return null;
+    if(/[()\/\u2192]/.test(m)||/_{2,}/.test(m)||m.includes(';'))return null;
+    if(/\.\s+\S/.test(m.replace(/[.?!]+$/,'')))return null;      /* one sentence only */
+    if(/\b(read|write|match|complete|change|say|find|draw|name|give|state|list|mention|explain|choose|pick|correct|put|look|see|turn|rewrite|add|subtract|multiply|divide|solve|calculate|count|copy|translate|join|careful|also|than|any|has|have|is|are)\b/i.test(t))return null;
+    if(/^(a|an)\s+(note|tip|rule|way|reminder|word|words)\b/i.test(t))return null;
+    if(!/^(a|an|the|imaginary|used|made)\b/i.test(m))return null;
+    /* article-style meanings must not be their own little sentence:
+       "An egg sinks in fresh water..." is an experiment, not a definition.
+       The tell is a verb in third slot (article + noun + verb); a plural
+       noun there ("the numbered lines on a map") is fine. Unknown words
+       fail safe: the card keeps its old shape. */
+    if(/^(a|an|the)\b/i.test(m)){
+      if(/,\s+(but|so|yet|while|whereas)\b/i.test(m))return null;
+      const x=(m.split(/\s+/)[2]||'').replace(/[^a-z]/gi,'');
+      const OK3=/^(of|in|on|at|to|for|from|by|with|and|or|that|which|who|whom|a|an|the|as|than|usually|often|always|never|very|more|most|it|its|lines|numbers|things|people|places|animals|plants|words|names|parts|kinds|types|groups|sets|bodies|forms|areas|ways|units|marks|signs|symbols|members|materials|tools|machines|instruments|organs|systems|processes|rocks|soils|crops|fruits|vegetables|goods|items|examples|reasons|uses|causes|effects|results|steps|stages|methods|sources)\b/i;
+      if(/s$/i.test(x)&&!OK3.test(x))return null;
+    }
+  }else{
+    /* table meanings are definitions by construction — but still: no bare
+       adjectives (dialogue tables say "Good morning"), and the meaning must
+       not simply repeat the term ("The sun | The sun rises..." is a sentence) */
+    if(!/^(a|an|the|any|every|each|all|some|many|several|one|two|three|four|five|six|seven|eight|nine|ten|imaginary|used|made|lines?|people|places?|things?|animals?|plants?|trees?|birds?|numbers?|words?)\b/i.test(m))return null;
+    const tl=t.toLowerCase(),ml=m.toLowerCase();
+    if(ml.startsWith(tl+' ')||ml.startsWith(tl+'s '))return null;
+  }
+  /* a defining phrase carries no verb of its own early on */
+  if(/\b(is|are|was|were|has|have|had|means|gives|helps|causes)\b/i.test(m.split(/\s+/).slice(0,8).join(' ')))return null;
+  const low=m.charAt(0).toLowerCase()+m.slice(1);
+  /* the head noun may sit first ("Lines of longitude") or last ("Uganda's neighbours") */
+  const ws=t.split(/\s+/);
+  const pluralish=w=>/s$/i.test(w)&&!/(ss|us|is|as)$/i.test(w);
+  const plural=pluralish(ws[0])||pluralish(ws[ws.length-1]);
+  return t+' '+(plural?'are':'is')+' '+low;
+}
+/* same thing for one "Term: definition" text block (strict: paragraph text) */
+function kidDefPiece(text){
+  const m=String(text||'').match(/^([A-Z][^:]{1,60}):\s*(.+)$/);
+  return m?kidDefSentence(m[1],m[2],true):null;
+}
 function kidCardsFor(t,i){
   const ckey=(t&&t.id)+':'+i;
   if(KIDCARDS_CACHE[ckey])return KIDCARDS_CACHE[ckey];
@@ -3577,6 +3639,11 @@ function kidCardsFor(t,i){
         }
         for(const piece of kidSplitSentence(sen)){
           if(piece.split(' ').length<2&&cards.length)continue;   /* skip stray fragments */
+          /* "Lines of longitude: Imaginary lines ..." becomes the full
+             sentence "Lines of longitude are imaginary lines ..." — the
+             label badge would only repeat it, so sentence cards drop it */
+          const ds=kidDefPiece(piece);
+          if(ds){cards.push({kind:'idea',emoji:kidEmoji(piece),title:null,text:ds});continue;}
           cards.push({kind:'idea',emoji:kidEmoji(piece),title:kidTitleFor(b.x,sec.title),text:piece});
         }
       }
@@ -3607,7 +3674,11 @@ function kidCardsFor(t,i){
             return {n:j+1,text:o.text,detail:o.detail,emoji:kidEmoji(txt)};
           })});
       }else{
-        items.forEach(txt=>cards.push({kind:'idea',emoji:kidEmoji(txt),title:kidTitleFor(txt,sec.title),text:txt}));
+        items.forEach(txt=>{
+          const ds=kidDefPiece(txt);   /* list items may be "Term: definition" too */
+          if(ds)cards.push({kind:'idea',emoji:kidEmoji(txt),title:null,text:ds});
+          else cards.push({kind:'idea',emoji:kidEmoji(txt),title:kidTitleFor(txt,sec.title),text:txt});
+        });
       }
     }else if(b.t==='ol'){
       if(pendingQuestion){                                  /* numbered list answers the question too */
@@ -3624,7 +3695,10 @@ function kidCardsFor(t,i){
       }
       (b.items||[]).forEach(it=>{
         const txt=kidStrip(it);
-        if(txt)cards.push({kind:'idea',emoji:kidEmoji(txt),title:kidTitleFor(txt,sec.title),text:txt});
+        if(!txt)return;
+        const ds=kidDefPiece(txt);     /* "Term: definition" items become sentences */
+        if(ds)cards.push({kind:'idea',emoji:kidEmoji(txt),title:null,text:ds});
+        else cards.push({kind:'idea',emoji:kidEmoji(txt),title:kidTitleFor(txt,sec.title),text:txt});
       });
     }else if(b.t==='table'&&b.head&&b.head.length>=3){
       /* comparison tables (3+ columns) become complete idea cards: every
