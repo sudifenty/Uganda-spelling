@@ -1364,6 +1364,44 @@ body::before{
 .feedback.save .fb-txt b{color:var(--sky-ink)}
 .feedback.save .fb-ic{background:var(--sky-50)}
 
+/* 16 · learning path party: banner with the owl, confetti air,
+   cheer strip, glowing current step, smiling padlocks */
+.lp-fun{position:relative;padding:12px 14px 8px;border-radius:22px;
+  background:
+   radial-gradient(rgba(240,112,143,.15) 2px, transparent 2.6px) 8px 12px/96px 84px,
+   radial-gradient(rgba(108,199,246,.17) 2px, transparent 2.6px) 40px 52px/120px 96px,
+   radial-gradient(rgba(255,209,102,.24) 2.4px, transparent 3px) 70px 24px/140px 110px,
+   radial-gradient(rgba(141,213,138,.17) 2px, transparent 2.6px) 20px 76px/110px 90px}
+.lp-banner{position:relative;margin:52px 2px 0;background:linear-gradient(95deg,#12B3A6,#0FA093);
+  border-radius:18px;padding:13px 88px 13px 14px;display:flex;align-items:center;gap:10px;
+  box-shadow:0 5px 0 rgba(15,120,110,.35)}
+.lp-banner .lp-flag{font-size:26px;line-height:1}
+.lp-banner b{color:#fff;font-size:14.5px;font-weight:900;letter-spacing:.04em;line-height:1.3;
+  text-transform:uppercase}
+.lp-owl{position:absolute;right:2px;top:-30px;width:86px;height:80px;object-fit:contain;
+  filter:drop-shadow(0 5px 10px rgba(45,65,89,.28))}
+.lp-cheer{margin:16px auto 14px;width:fit-content;max-width:100%;text-align:center;
+  background:#FFE3B0;border:1.5px solid var(--yellow-edge);color:#9C5227;
+  font-weight:800;font-size:12.5px;padding:8px 14px;border-radius:999px}
+.lp-wrap{padding:10px 0 30px}
+.lp-item:not(:last-child)::before{content:"\2B50";position:absolute;left:19px;bottom:0;
+  font-size:12px;z-index:1;opacity:.9}
+.lp-dot{border:4px solid #fff}
+.lp-dot.done{background:var(--green);box-shadow:0 0 0 2px var(--green-edge),0 3px 10px rgba(45,65,89,.18)}
+.lp-dot.now{background:var(--yellow);color:var(--navy);
+  box-shadow:0 0 0 3px var(--yellow-edge),0 0 20px rgba(255,209,102,.65)}
+.lp-dot.lock{background:#FFF6E0;box-shadow:0 0 0 2px var(--yellow-100),0 3px 10px rgba(45,65,89,.12)}
+.lp-card{border-radius:20px;padding:15px 16px}
+.lp-card.c-now{background:linear-gradient(180deg,#5FC0F7,#38A5EC);border-color:#2D9BE0;
+  box-shadow:0 0 0 5px rgba(108,199,246,.25),0 6px 16px rgba(30,136,229,.25)}
+.lp-card.c-now b{color:#fff;font-size:17px}
+.lp-card.c-now .lp-status{color:#FFE9C4}
+.lp-card.c-lock{background:#EEF1F4;border-color:#E3E8ED;opacity:.85}
+.lp-card.c-lock b{color:var(--navy-2)}
+.lp-review{background:var(--sky-100);color:var(--sky-ink);border:none;box-shadow:0 3px 0 var(--sky-edge)}
+.lp-read{background:#1E88E5;color:#fff;border:none;
+  box-shadow:0 0 0 4px rgba(255,255,255,.35),0 4px 0 #136890}
+
 /* 11 · children who prefer calm screens get the paint without the motion */
 @media (prefers-reduced-motion:reduce){
   body::before,.hero-banner::before,.hero-banner::after,.tab.on .ic{animation:none}
@@ -2542,52 +2580,68 @@ function lpPractice(){
   njGoPractice();
 }
 
+/* cute smiling padlock for locked steps */
+const LOCK_SVG = `<svg viewBox="0 0 40 40" width="26" height="26" aria-hidden="true">
+  <path d="M12 18v-5a8 8 0 0 1 16 0v5" fill="none" stroke="#9AA7B4" stroke-width="4" stroke-linecap="round"/>
+  <rect x="8" y="16" width="24" height="18" rx="6" fill="#FFD166" stroke="#EFBC4B" stroke-width="2"/>
+  <circle cx="16" cy="24" r="1.8" fill="#5B44B5"/><circle cx="24" cy="24" r="1.8" fill="#5B44B5"/>
+  <path d="M16 29c2 2 6 2 8 0" stroke="#5B44B5" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>`;
+
 SCREENS.notePath = () => {
   const t=noteById(state.ntopic)||noteFindAnywhere(state.ntopic);
   if(!t)return SCREENS.notes;
   const {subs,cur}=pathState(t);
   const doneCount=subs.filter((s,i)=>pathDone(t,i)).length;
   const pct=subs.length?Math.round(100*doneCount/subs.length):0;
-  const totalMins=subs.reduce((a,s)=>a+s.mins,0);
-  const secs=noteSections(t);
+  const cheer = doneCount===subs.length
+    ? `\u{1F389} All ${subs.length} complete \u2014 amazing! \u{1F389}`
+    : doneCount>0
+    ? `\u2B50 You are doing great! ${doneCount} of ${subs.length} complete \u2B50`
+    : `\u2B50 A new adventure! ${subs.length} lessons await \u2B50`;
   return `
-<button class="path-back" onclick="go('notes')" aria-label="Back to topics">${I.back(20)}</button>
+  <div class="lp-fun">
+    <button class="path-back" onclick="go('notes')" aria-label="Back to topics">${I.back(20)}</button>
 
-  <div class="lp-head">
-    <div class="lp-ring" style="--p:${pct}"><i>${pct}%</i></div>
-    <div style="flex:1;min-width:0">
-      <b style="color:var(--navy)">${topicIcon(t)} ${nEsc(t.title)}</b>
-      <div class="sub" style="margin-top:3px">${subs.length} sub-topics \u00B7 about ${totalMins} minutes \u00B7 unlock as you go</div>
+    <div class="lp-banner">
+      <span class="lp-flag" aria-hidden="true">\u{1F1FA}\u{1F1EC}</span>
+      <b>Learning Path \u00B7 ${state.klass} \u00B7 ${nEsc(String(t.subject))}</b>
+      <img src="${PLE_ART.owlHero}" alt="" class="lp-owl">
     </div>
-  </div>
 
-  <div class="lp-wrap">
-    <div class="lp-rail"><i style="height:${pct}%"></i></div>
-    ${subs.map((s,i)=>{
-      const done=pathDone(t,i);
-      const isCur=i===cur;
-      const locked=i>cur;
-      return `
-      <div class="lp-item">
-        <div class="lp-dot ${done?'done':isCur?'now':'lock'}"
-             onclick="lpOpen(${i})" role="button" aria-label="${nEsc(s.title)}">
-          ${done?'\u2713':locked?'🔒':(i+1)}
-        </div>
-        <div class="lp-card ${locked?'lock':''}" onclick="lpOpen(${i})" role="button">
-          <b>${nEsc(s.title)}</b>
-          <span class="lp-status ${done?'done':isCur?'now':'lock'}">
-            ${done?`Completed \u00B7 ${s.mins} min`:isCur?`Current \u00B7 about ${s.mins} min`:'Locked'}
-          </span>
-          ${!locked?`<button class="btn ${isCur?'btn-primary':'btn-soft'} lp-btn" onclick="event.stopPropagation();lpOpen(${i})">${done?'REVIEW':'READ NOTES'} \u27A1</button>`
-            :`<span class="lp-status lock" style="display:block">Complete the previous one to unlock</span>`}
-        </div>
-      </div>`;}).join('')}
-  </div>
+    <div class="lp-cheer">${cheer}</div>
 
-  <div style="display:grid;gap:10px;margin-top:6px">
-    <button class="btn btn-soft" onclick="lpPractice()">\u{01F3AF} Go to Practice for this topic</button>
-  </div>
-  <div class="spacer"></div>`;
+    <div class="lp-wrap">
+      <div class="lp-rail"><i style="height:${pct}%"></i></div>
+      ${subs.map((s,i)=>{
+        const done=pathDone(t,i);
+        const isCur=i===cur;
+        const locked=i>cur;
+        return `
+        <div class="lp-item">
+          <div class="lp-dot ${done?'done':isCur?'now':'lock'}"
+               onclick="lpOpen(${i})" role="button" aria-label="${nEsc(s.title)}">
+            ${done?'\u2713':locked?LOCK_SVG:(i+1)}
+          </div>
+          <div class="lp-card ${done?'c-done':isCur?'c-now':'c-lock'}" onclick="lpOpen(${i})" role="button">
+            <b>${nEsc(s.title)}</b>
+            <span class="lp-status ${done?'done':isCur?'now':'lock'}">
+              ${done?`Completed \u00B7 ${s.mins} min \u2705`
+                :isCur?`Current \u00B7 about ${s.mins} min \u{1F680}`
+                :(i===cur+1?`Locked \u00B7 complete the previous to unlock \u{1F512}`
+                           :`Locked \u00B7 earn stars to unlock \u{1F512}`)}
+            </span>
+            ${done?`<button class="btn lp-btn lp-review" onclick="event.stopPropagation();lpOpen(${i})">REVIEW \u2B50 \u27A1</button>`
+              :!locked?`<button class="btn lp-btn lp-read" onclick="event.stopPropagation();lpOpen(${i})">READ NOTES \u2728 \u27A1</button>`:''}
+          </div>
+        </div>`;}).join('')}
+    </div>
+
+    <div style="display:grid;gap:10px;margin-top:6px">
+      <button class="btn btn-soft" onclick="lpPractice()">\u{1F3AF} Go to Practice for this topic</button>
+    </div>
+    <div class="spacer"></div>
+  </div>`;
 };
 
 
