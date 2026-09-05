@@ -5272,6 +5272,25 @@ ${(()=>{const L=lastLoad();if(!L)return '';const pct=(L.pct==null||isNaN(L.pct))
   <div class="hint-strip green">${I.download(20)} <span>4 subjects are saved on your phone. You can practise without internet.</span></div>
 `;
 
+/* ---- Practice Mode screen helpers ---- */
+function pmSubject(id){
+  state.psubject=id; state.exsubject=id;
+  state.ptopic=null; state.exTid=null;
+  render(); toast(SUBJ_META[id].name+' selected');
+}
+function pmNoAnswers(){
+  /* straight into written exercises: questions that demand answers,
+     answers stay hidden until the learner checks them */
+  const cls=state.klass;
+  let subj=state.exsubject, eb=exFor(cls,subj);
+  if(!eb){
+    const alt=['SST','MATH','SCI','ENG'].find(s=>exFor(cls,s));
+    if(!alt){ toast('No written exercises for '+cls+' yet'); return; }
+    subj=alt; state.exsubject=subj; eb=exFor(cls,subj);
+  }
+  const t=eb.topics[0];
+  exStart(cls,subj,t.topic_id,null,'random');
+}
 SCREENS.practice = () => {
   const cls = state.klass;
   const nq = ['SST','MATH','SCI','ENG'].reduce((a,s)=>{
@@ -5296,7 +5315,7 @@ SCREENS.practice = () => {
       <button class="sp-pill" onclick="go('classPick')" aria-label="Change class">Primary ${cls.slice(1)} \u00B7 change</button>
     </div>
     <div class="chips pm-chips">
-      ${['SST','SCI','ENG','MATH'].map(s=>`<button class="chip ${state.psubject===s?'on':''}" onclick="setPSubject('${s}')">${s}</button>`).join('')}
+      ${['SST','SCI','ENG','MATH'].map(s=>`<button class="chip ${state.psubject===s?'on':''}" onclick="pmSubject('${s}')">${s}</button>`).join('')}
     </div>
     <div class="pm-choose">Choose how you want to practice today</div>
 
@@ -5306,7 +5325,7 @@ SCREENS.practice = () => {
       <span class="pm-chev">${I.chev(20)}</span>
     </button>
 
-    <button class="pm-card pm-no" onclick="startPractice('exam')">
+    <button class="pm-card pm-no" onclick="pmNoAnswers()">
       <span class="pm-ic pm-ic-blue">
         <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <rect x="5" y="4" width="14" height="17" rx="2.5"/>
