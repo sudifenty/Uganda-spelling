@@ -1402,6 +1402,56 @@ body::before{
 .lp-read{background:#1E88E5;color:#fff;border:none;
   box-shadow:0 0 0 4px rgba(255,255,255,.35),0 4px 0 #136890}
 
+/* 17 · practice question celebration: flag banner with the owl,
+   big blue question, pastel answer pills, green tap bar */
+.pq-wrap{position:relative;padding:12px 14px 84px;
+  background:
+   radial-gradient(rgba(240,112,143,.14) 2px, transparent 2.6px) 8px 12px/96px 84px,
+   radial-gradient(rgba(108,199,246,.16) 2px, transparent 2.6px) 40px 52px/120px 96px,
+   radial-gradient(rgba(255,209,102,.22) 2.4px, transparent 3px) 70px 24px/140px 110px,
+   radial-gradient(rgba(141,213,138,.16) 2px, transparent 2.6px) 20px 76px/110px 90px}
+.pq-quit{position:fixed;top:calc(10px + env(safe-area-inset-top,0px));left:12px;z-index:50;
+  width:42px;height:42px;border-radius:50%;background:#fff;border:2px solid var(--line);
+  box-shadow:0 3px 12px rgba(45,65,89,.18);display:grid;place-items:center;color:var(--navy)}
+.pq-banner{position:relative;margin:46px 0 12px;background:#FFFDF6;border:1.5px solid var(--yellow-100);
+  border-radius:18px;padding:12px 90px 12px 12px;display:flex;gap:10px;align-items:center;box-shadow:var(--sh-1)}
+.pq-flag{width:44px;height:44px;flex:none;border-radius:12px;background:#fff;border:1.5px solid var(--line);
+  display:grid;place-items:center;font-size:26px}
+.pq-banner b{font-size:14px;font-weight:900;color:#6B4A2B;line-height:1.35}
+.pq-owl{position:absolute;right:2px;top:-34px;width:82px;height:76px;object-fit:contain;
+  filter:drop-shadow(0 5px 10px rgba(45,65,89,.28))}
+.pq-progress{background:#FFFDF6;border:1.5px solid var(--line);border-radius:16px;padding:12px 14px;
+  margin-bottom:14px;box-shadow:var(--sh-1)}
+.pq-ptop{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.pq-ptop b{font-size:19px;font-weight:900;color:#4A2E1A}
+.pq-ptop b em{font-style:normal;font-size:15px;color:var(--muted)}
+.pq-ptop>span{font-size:15px;font-weight:900;color:#6B4A2B}
+.pq-exam{background:var(--orange-50);border:1.5px solid var(--orange-100);color:var(--orange-ink);
+  border-radius:999px;padding:3px 10px;font-size:11.5px;font-weight:900}
+.pq-bar{height:10px;background:#EFE7D6;border-radius:999px;margin-top:9px;overflow:hidden}
+.pq-bar i{display:block;height:100%;background:#12B3A6;border-radius:999px;transition:width .3s}
+.pq-qcard{position:relative;background:#FFFDF6;border:1.5px solid var(--line);border-radius:24px;
+  padding:20px 16px 18px;box-shadow:var(--sh-1)}
+.pq-qcard .qtext{font-size:24px;font-weight:900;color:#1E88E5;text-align:center;line-height:1.28}
+.pq-sub{margin:8px 0 16px;font-size:13.5px;font-weight:800;color:#6B4A2B;text-align:center}
+.pq-qcard .matchbox,.pq-qcard .fillbox{text-align:left}
+/* answer pills: one pastel per letter, big warm letters */
+.answers .ans{border-radius:999px;background:var(--abg,var(--card-warm));border-color:transparent;min-height:70px}
+.answers .ans .let{border-radius:50%;background:var(--alet,var(--sky-50));color:#fff;width:42px;height:42px}
+.answers .ans .lab{font-size:20px;font-weight:900;color:#4A2E1A}
+.answers .ans:nth-child(4n+1){--abg:#FCD9A8;--alet:#F09468}
+.answers .ans:nth-child(4n+2){--abg:#F6B6C0;--alet:#E86A85}
+.answers .ans:nth-child(4n+3){--abg:#A8C8F0;--alet:#3E7FCB}
+.answers .ans:nth-child(4n+4){--abg:#BCE3B4;--alet:#5BA85A}
+.answers .ans.correct{--abg:var(--green-100);--alet:var(--green-edge);border-color:var(--green-edge);
+  box-shadow:0 0 0 4px rgba(141,213,138,.35)}
+.answers .ans.wrong{--abg:var(--coral-100);--alet:var(--coral-edge);border-color:var(--coral-edge)}
+.answers .ans.dim{opacity:.55}
+.answers .ans.picked{--abg:var(--sky-100);--alet:var(--sky-edge);border-color:var(--sky-edge)}
+.pq-cta{position:fixed;left:0;right:0;bottom:0;z-index:40;text-align:center;
+  background:linear-gradient(90deg,#5BA85A,#71C36E);color:#FFF6E0;font-weight:900;font-size:15px;
+  padding:13px 12px calc(13px + env(safe-area-inset-bottom,0px))}
+
 /* 11 · children who prefer calm screens get the paint without the motion */
 @media (prefers-reduced-motion:reduce){
   body::before,.hero-banner::before,.hero-banner::after,.tab.on .ic{animation:none}
@@ -6553,28 +6603,38 @@ SCREENS.pquestion = () => {
   }
 
   return `
-  <div class="qbar">
-    <div class="qbar-top">
-      <button class="back" onclick="confirmQuit()" aria-label="Leave practice" style="width:46px;height:46px">${I.x(20)}</button>
-      <div class="qcount">Question ${n} <em>of ${s.total}</em></div>
-      ${s.hide?`<span class="pill time">EXAM MODE</span>`:`<span class="pill off">${I.check(13)} ${s.correct}</span>`}
-    </div>
-    <div class="qprog" role="progressbar" aria-valuenow="${n}" aria-valuemin="1" aria-valuemax="${s.total}">
-      <i style="width:${n/s.total*100}%"></i></div>
-  </div>
+  <div class="pq-wrap">
+    <button class="pq-quit" onclick="confirmQuit()" aria-label="Leave practice">${I.x(20)}</button>
 
-  <div class="qcard" style="position:relative">
-    <button class="mx-speak" onclick="speakPQ()" aria-label="Read the question aloud">🔊</button>
-    <div class="qtag" style="flex-wrap:wrap;gap:7px">
-      <span class="pill dl">${s.cls} ${SUBJ_META[state.psubject].label}</span>
-      <span class="pill ${diffHue==='green'?'off':diffHue==='yellow'?'time':'warn'}">${q.difficulty}</span>
-      <span style="color:var(--muted)">${q.topic} · ${q.subtopic}</span>
+    <div class="pq-banner">
+      <span class="pq-flag" aria-hidden="true">\u{1F1FA}\u{1F1EC}</span>
+      <b>${s.cls} ${SUBJ_META[state.psubject].label} \u00B7 ${q.difficulty} \u00B7 ${nEsc(q.topic)} \u00B7 ${nEsc(q.subtopic)}</b>
+      <img src="${PLE_ART.owlHero}" alt="" class="pq-owl">
     </div>
-    <div class="qtext">${q.question}</div>
+
+    <div class="pq-progress">
+      <div class="pq-ptop">
+        <b>Question ${n} <em>of ${s.total}</em></b>
+        ${s.hide?`<span class="pq-exam">EXAM MODE</span>`:`<span>${n}/${s.total}</span>`}
+      </div>
+      <div class="pq-bar" role="progressbar" aria-valuenow="${n}" aria-valuemin="1" aria-valuemax="${s.total}">
+        <i style="width:${n/s.total*100}%"></i></div>
+    </div>
+
+    <div class="pq-qcard">
+      <button class="mx-speak" onclick="speakPQ()" aria-label="Read the question aloud">\u{1F50A}</button>
+      <div class="qtext">${q.question}</div>
+      <div class="pq-sub">${q.renderAs==='fill'?'Type your answer below'
+        :q.renderAs==='match'?'Match every pair below, then press CHECK'
+        :'Choose the correct answer below'}</div>
+      ${body}
+    </div>
+
+    <div class="t-meta" style="justify-content:center">${I.info(13)} ${q.id}</div>
+    <div class="pq-cta">${q.renderAs==='mcq'||q.renderAs==='tf'
+      ?'Tap an answer to continue \u27A1'
+      :'Answer, then press CHECK \u27A1'}</div>
   </div>
-  ${body}
-  <div class="spacer"></div>
-  <div class="t-meta" style="justify-content:center">${I.info(13)} ${q.id}</div>
 `;
 };
 
