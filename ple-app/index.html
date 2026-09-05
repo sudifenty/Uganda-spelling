@@ -1472,6 +1472,37 @@ body::before{
 .nt-kids{margin:10px 0 4px;text-align:center}
 .nt-kids img{height:120px;border-radius:18px;box-shadow:var(--sh-1)}
 
+/* 19 · STRICT KIDS RULE on every screen: cream sky #FFF8E7 with tiny
+   star/confetti dots, owl top-right, girl+boy peeking bottom corners,
+   icons beside options, 24px rounded cards, big blue questions */
+body{background:#FFF8E7 fixed}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;
+  background-image:
+   radial-gradient(rgba(240,112,143,.20) 1.6px, transparent 2.2px),
+   radial-gradient(rgba(108,199,246,.22) 1.6px, transparent 2.2px),
+   radial-gradient(rgba(255,193,77,.30) 2px, transparent 2.6px),
+   radial-gradient(rgba(141,213,138,.20) 1.6px, transparent 2.2px);
+  background-size:150px 130px,180px 160px,210px 180px,170px 150px;
+  background-position:12px 24px,64px 88px,116px 44px,32px 116px}
+#decoOwl{position:fixed;top:6px;right:8px;width:58px;height:54px;object-fit:contain;
+  object-position:top;z-index:35;pointer-events:none;
+  filter:drop-shadow(0 3px 6px rgba(45,65,89,.22))}
+#decoKidL,#decoKidR{position:fixed;bottom:calc(72px + env(safe-area-inset-bottom,0px));
+  width:66px;height:80px;object-fit:cover;object-position:top;z-index:35;pointer-events:none;
+  border-radius:16px 16px 0 0;box-shadow:0 -2px 10px rgba(45,65,89,.12)}
+#decoKidL{left:6px}
+#decoKidR{right:6px}
+/* screens that already carry the owl on their banner keep just one owl */
+body[data-screen="pquestion"] #decoOwl,body[data-screen="notePath"] #decoOwl{display:none}
+/* keep the fixed owl clear of header buttons */
+.appbar{padding-right:64px}
+/* big blue questions, icons beside every option, chunky rounded cards */
+.pq-qcard .qtext{font-size:28px}
+.ans{min-height:70px}
+.ans-emo{font-size:24px;flex:none}
+.sl-emo{font-size:24px;flex:none}
+.tcard,.sc-card,.pm-card,.card,.pq-qcard,.nh-card,.lp-card{border-radius:24px}
+
 /* 11 · children who prefer calm screens get the paint without the motion */
 @media (prefers-reduced-motion:reduce){
   body::before,.hero-banner::before,.hero-banner::after,.tab.on .ic{animation:none}
@@ -1636,6 +1667,7 @@ const SUBJ_META = {
   ENG:  {bank:()=>ENG_BANK,      tag:'_ENG_',  name:'English',     label:'English'},
 };
 const activeBank = () => SUBJ_META[state.psubject].bank();
+const SUBJ_EMO = {SST:'\u{1F30D}',MATH:'\u{1F522}',SCI:'\u{1F9EA}',ENG:'\u{1F4D6}'};
 
 function pbAll(cls){
   const m = SUBJ_META[state.psubject];
@@ -1824,6 +1856,7 @@ function back(){ state.screen = state.stack.pop() || 'home'; render(); }
 function tabTo(id){ if(!state.authUser){state.screen='auth';render();return;} state.stack=[]; state.tab=id; go(id,false); }
 
 function render(){
+  document.body.dataset.screen=state.screen;
   const locked = !state.authReady || (!state.authUser && state.screen!=='auth');
   const screenHtml = !state.authReady ? `<div class="auth-loading"><img src="${PLE_ART.owlHero}" alt="Owl" style="width:120px;height:100px;object-fit:contain;animation:hbWave 1.6s ease-in-out infinite"><h2>Checking your account…</h2><p>Just a moment.</p></div>` : (locked ? SCREENS.auth() : SCREENS[state.screen]());
   document.getElementById('views').innerHTML =
@@ -2707,7 +2740,6 @@ SCREENS.notePath = () => {
         </div>`;}).join('')}
     </div>
 
-    <div class="lp-kids"><img src="${PLE_SUBJ_ART[({'Social Studies':'sst','Mathematics':'math','Science':'sci','English':'eng'})[t.subject]||'sst']}" alt="Your study buddy"></div>
     <div style="display:grid;gap:10px;margin-top:6px">
       <button class="btn btn-soft" onclick="lpPractice()">\u{1F3AF} Go to Practice for this topic</button>
     </div>
@@ -5295,7 +5327,6 @@ SCREENS.home = () => `
       <span class="nh-txt"><b>PRACTICE</b><span>Review questions &amp; quizzes</span></span>
     </button>
 
-    <div class="hm-kids"><img src="${PLE_ART.kidsjumping}" alt="Happy learners cheering you on"></div>
     <div class="nh-foot">Safe <i>\u2022</i> Fun <i>\u2022</i> Offline Ready</div>
     <div class="nh-dots" aria-hidden="true"><i></i><i></i><i></i></div>
   </div>
@@ -5349,9 +5380,6 @@ SCREENS.start = () => {
     <div class="sc-more">
       <button class="btn btn-soft" onclick="go('spelling')">\u{1F524} Spelling games</button>
       <button class="btn btn-soft" onclick="go('pprogress')">\u{1F4C8} My progress</button>
-    </div>
-    <div class="sc-kids" aria-hidden="true">
-      <img src="${PLE_SUBJ_ART.sst}" alt=""><img src="${PLE_SUBJ_ART.eng}" alt=""><img src="${PLE_SUBJ_ART.sci}" alt=""><img src="${PLE_SUBJ_ART.math}" alt="">
     </div>
     <div class="sp-foot">Tap a subject to start its learning path \u00B7 ${nq} practice questions ready for ${cls}</div>
   </div>`;
@@ -5444,7 +5472,7 @@ SCREENS.practice = () => {
       <button class="sp-pill" onclick="go('classPick')" aria-label="Change class">Primary ${cls.slice(1)} \u00B7 change</button>
     </div>
     <div class="chips pm-chips">
-      ${['SST','SCI','ENG','MATH'].map(s=>`<button class="chip ${state.psubject===s?'on':''}" onclick="pmSubject('${s}')">${s}</button>`).join('')}
+      ${['SST','SCI','ENG','MATH'].map(s=>`<button class="chip ${state.psubject===s?'on':''}" onclick="pmSubject('${s}')">${SUBJ_EMO[s]} ${s}</button>`).join('')}
     </div>
     <div class="pm-choose">Choose how you want to practice today</div>
 
@@ -5468,7 +5496,6 @@ SCREENS.practice = () => {
 
     <div class="pm-tip"><span aria-hidden="true">\u{1F4A1}</span>
       <span>Tip: Use \u201CPractice WITH Answers\u201D to learn, then try \u201CPractice NO Answers\u201D when you're ready for the real exam!</span></div>
-    <div class="pm-kids"><img src="${PLE_ART.kidsjumping}" alt="Happy learners cheering you on"></div>
     <div class="sp-foot">PLE = Primary Leaving Examination \u00B7 ${nq} questions available for ${cls}</div>
   </div>`;
 };
@@ -5503,8 +5530,7 @@ function spellStats(){const m=spellMistakes();return m.length?m.map(x=>x.word).j
 SCREENS.spelling = () => `
  <header class="pagehead"><button class="back" onclick="back()" aria-label="Go back">${I.back(22)}</button><div><h2>Spelling</h2><div class="sub">Primary ${state.klass[1]} · choose a level</div></div></header>
  <div class="spell-hero"><div class="spell-emoji">🔤</div><div><h3>Ready to spell?</h3><p>Pick a level and start straight away.</p></div></div>
- <div class="sp-kids"><img src="${PLE_ART.spellingkid}" alt="A young learner playing with words"></div>
- <div class="section-title">Difficulty</div><div class="spell-levels">${[['Easy','Familiar everyday and school words','green'],['Medium','Words that need extra attention','yellow'],['Hard','Challenging primary-level words','coral']].map(x=>`<button class="spell-level" onclick="spellStart('${state.klass}','${x[0]}','choose')"><span class="pill ${x[2]==='green'?'off':x[2]==='yellow'?'time':'warn'}">${x[0]}</span><b>${x[1]}</b>${I.chev(21)}</button>`).join('')}</div>
+ <div class="section-title">Difficulty</div><div class="spell-levels">${[['Easy','Familiar everyday and school words','green','\u{1F331}'],['Medium','Words that need extra attention','yellow','\u2B50'],['Hard','Challenging primary-level words','coral','\u{1F525}']].map(x=>`<button class="spell-level" onclick="spellStart('${state.klass}','${x[0]}','choose')"><span class="sl-emo" aria-hidden="true">${x[3]}</span><span class="pill ${x[2]==='green'?'off':x[2]==='yellow'?'time':'warn'}">${x[0]}</span><b>${x[1]}</b>${I.chev(21)}</button>`).join('')}</div>
  <div class="spell-mistake card"><b>Words to practise again</b><p>${spellStats()}</p>${spellMistakes().length?`<button class="btn btn-soft" style="margin-top:12px" onclick="spellStartMistakes()">PRACTISE MY WORDS</button>`:''}</div>`;
 
 SCREENS.spellDifficulty = () => SCREENS.spelling();
@@ -6047,7 +6073,6 @@ SCREENS.results = () => {
     <div class="score-big" id="scoreBig">0%</div>
     <div class="score-frac">${r.correct} / ${r.total}</div>
   </div>
-  <div class="rs-kids"><img src="${PLE_ART.kidsjumping}" alt="Kids celebrating with you"></div>
   <div class="stats">
     <div class="stat">${iconBox('check','green',20,44)}<span><b>${r.correct}</b><span>Correct</span></span></div>
     <div class="stat">${iconBox('refresh','coral',20,44)}<span><b>${r.total-r.correct}</b><span>To try again</span></span></div>
@@ -6434,7 +6459,6 @@ SCREENS.notes = () => {
         <span class="go">${I.chev(20)}</span>
       </button>`;}).join('')}
   </div>
-  <div class="nt-kids"><img src="${PLE_SUBJ_ART[state.nsubject.toLowerCase()]||PLE_SUBJ_ART.sst}" alt="Your study buddy"></div>
   <div class="spacer"></div>
   <div class="hint-strip green">${I.download(20)}
     <span>These notes follow the NCDC ${cls} syllabus and work with no internet.</span></div>`;
@@ -6605,6 +6629,7 @@ SCREENS.pquestion = () => {
       ${q.options.map((o,i)=>`
         <button class="ans" data-i="${i}" onclick="pAnswer(${i})">
           <span class="let">${'ABCD'[i]}</span>
+          <span class="ans-emo" aria-hidden="true">${SUBJ_EMO[state.psubject]||'\u2B50'}</span>
           <span class="lab">${o.replace(/^[A-D]\.\s*/,'')}</span>
           <span class="mark">${I.check(22)}</span>
         </button>`).join('')}
@@ -6659,7 +6684,6 @@ SCREENS.pquestion = () => {
       ${body}
     </div>
 
-    <div class="pq-kids" aria-hidden="true"><img src="${PLE_ART.kidsjumping}" alt=""></div>
     <div class="t-meta" style="justify-content:center">${I.info(13)} ${q.id}</div>
     <div class="pq-cta">${q.renderAs==='mcq'||q.renderAs==='tf'
       ?'Tap an answer to continue \u27A1'
@@ -6935,6 +6959,16 @@ document.getElementById('fbNext').onclick = () => {
   if(state.session.kind==='sst') pNext();
   else if(state.session.kind==='practice') nextQuestion();
 };
+
+/* STRICT KIDS RULE: the same three mascots on EVERY screen —
+   owl top-right, girl peeking bottom-left, boy peeking bottom-right */
+(function(){
+  const host=document.getElementById('app')||document.body;
+  const mk=(id,src)=>{const im=document.createElement('img');im.id=id;im.alt='';im.src=src;host.appendChild(im);};
+  mk('decoOwl',PLE_ART.owlHero);
+  mk('decoKidL',PLE_ART.englishkid);
+  mk('decoKidR',PLE_ART.sstkid);
+})();
 
 function finish(){
   const s=state.session, time=Math.max(5,Math.round((Date.now()-s.t0)/1000));
