@@ -1575,6 +1575,22 @@ body{background:#FFF8E7 fixed url("data:image/svg+xml,%3Csvg xmlns='http://www.w
 .pq-banner .pq-cardowl{top:-12px;right:-4px;width:48px;height:44px;z-index:10}
 .pq-qcard .qtext{padding:8px 0 0}
 
+/* 23 · FAIL POPUP: the answer line is big and bold enough for a kid, and a
+   wrong-answer popup sticks until the learner closes it with the ✕ button */
+.fb-txt b{font-size:21px}
+.fb-txt span{font-size:17px;font-weight:800;color:#0A2F4F;line-height:1.4}
+.fb-close{width:40px;height:40px;border-radius:50%;background:#fff;border:1.5px solid var(--line);
+  color:var(--navy);font-size:16px;font-weight:900;flex:none;display:none;
+  align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,.12)}
+.feedback.stick .fb-close{display:flex}
+/* sticky popup: text gets the whole first row, ✕ + NEXT sit on a second row */
+.feedback.stick{flex-wrap:wrap;row-gap:10px}
+.feedback.stick .fb-txt{flex:1 1 calc(100% - 71px)}
+.feedback.stick .fb-close{order:3;margin-left:auto}
+.feedback.stick .fb-next{order:4}
+.pq-cta .cta-next{width:100%;background:transparent;color:inherit;font-weight:900;
+  font-size:17px;letter-spacing:.4px;padding:4px 0}
+
 /* 11 · children who prefer calm screens get the paint without the motion */
 @media (prefers-reduced-motion:reduce){
   body::before,.hero-banner::before,.hero-banner::after,.tab.on .ic{animation:none}
@@ -1589,6 +1605,7 @@ body{background:#FFF8E7 fixed url("data:image/svg+xml,%3Csvg xmlns='http://www.w
   <div class="feedback" id="feedback" role="status" aria-live="polite">
     <div class="fb-ic" id="fbIcon"></div>
     <div class="fb-txt"><b id="fbTitle">Well done!</b><span id="fbSub">That is correct.</span></div>
+    <button class="fb-close" id="fbClose" aria-label="Close this message">&#10005;</button>
     <button class="fb-next" id="fbNext">NEXT</button>
   </div>
 
@@ -6813,7 +6830,11 @@ function pFinishItem(ok, q){
   clearTimeout(state.autoT);
   if(s.hide){ showSaved(); return; }
   showExplain(ok, q.explanation);
-  if(state.auto) state.autoT = setTimeout(pNext, ok?1600:3200);
+  /* a wrong answer stays on screen until the learner dismisses it —
+     only a correct one may auto-advance */
+  if(state.auto && ok) state.autoT = setTimeout(pNext, 1600);
+  const cta=document.querySelector('.pq-cta');
+  if(cta) cta.innerHTML=`<button class="cta-next" onclick="pNext()">NEXT \u27A1</button>`;
 }
 function showSaved(){
   const f=document.getElementById('feedback');
@@ -6899,7 +6920,8 @@ function pNext(){
 
 function showExplain(ok, text){
   const f=document.getElementById('feedback');
-  f.className='feedback show '+(ok?'good':'soft');
+  /* stick = the popup waits for the learner's own dismiss */
+  f.className='feedback show '+(ok?'good':'soft stick');
   document.getElementById('fbIcon').innerHTML = ok?ART.owl(50):ART.owl(50,'think');
   document.getElementById('fbTitle').textContent = ok?'Correct!':'Not quite.';
   document.getElementById('fbSub').textContent = text||'';
@@ -7066,6 +7088,7 @@ function showFeedback(ok){
   document.getElementById('fbSub').textContent = ok?'That is the correct answer.':'The green one is the correct answer.';
 }
 function hideFeedback(){ const f=document.getElementById('feedback'); if(f) f.className='feedback'; }
+document.getElementById('fbClose').onclick = () => hideFeedback();
 document.getElementById('fbNext').innerHTML = `NEXT ${I.chev(18)}`;
 document.getElementById('fbNext').onclick = () => {
   if(!state.session) return;
