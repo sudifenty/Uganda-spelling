@@ -1279,6 +1279,30 @@ body::before{
 .sec-btn .dot{width:30px;height:30px;font-size:13.5px;background:var(--yellow-100);color:#7C5B06;border:1.5px solid var(--yellow-edge)}
 .sec-btn.read .dot{background:var(--green-100);color:var(--green-ink);border-color:var(--green-edge)}
 
+/* 13 · simple welcome home: two big doors, just like the picture */
+.newhome{padding:30px 20px 10px;text-align:center}
+.nh-logo{display:flex;align-items:center;justify-content:center;gap:10px}
+.nh-logo b{font-size:33px;font-weight:900;color:#1E88E5;letter-spacing:-.015em}
+.nh-tag{margin-top:7px;font-size:12.5px;font-weight:700;color:var(--muted)}
+.nh-hello{margin:34px 0 26px;font-size:23px;font-weight:900;color:#6C97DC}
+.nh-card{width:100%;display:flex;align-items:center;gap:18px;text-align:left;
+  border:none;border-radius:28px;padding:28px 24px;min-height:158px;cursor:pointer;
+  box-shadow:0 6px 0 rgba(45,65,89,.10);transition:transform .12s}
+.nh-card:active{transform:scale(.97)}
+.nh-card img{width:96px;height:88px;object-fit:contain;flex:none}
+.nh-card svg{flex:none}
+.nh-txt b{display:block;font-size:34px;font-weight:900;color:#16243A;letter-spacing:.01em}
+.nh-txt span{display:block;margin-top:6px;font-size:14.5px;font-weight:700;color:#16243A;opacity:.82}
+.nh-start{background:#F7C51E;margin-bottom:22px}
+.nh-practice{background:#7EB3F2}
+.nh-foot{margin-top:34px;font-size:13px;font-weight:700;color:var(--muted)}
+.nh-foot i{font-style:normal;color:#8DD58A;padding:0 4px}
+.nh-dots{display:flex;gap:7px;justify-content:center;margin-top:12px}
+.nh-dots i{width:7px;height:7px;border-radius:50%}
+.nh-dots i:nth-child(1){background:#8DD58A}
+.nh-dots i:nth-child(2){background:#6CC7F6}
+.nh-dots i:nth-child(3){background:#FFD166}
+
 /* 11 · children who prefer calm screens get the paint without the motion */
 @media (prefers-reduced-motion:reduce){
   body::before,.hero-banner::before,.hero-banner::after,.tab.on .ic{animation:none}
@@ -1614,7 +1638,7 @@ const TABS = [
   {id:'exercises',label:'Exercises',icon:'target'},
   {id:'papers',label:'Papers',icon:'papers'},{id:'profile',label:'Profile',icon:'profile'},
 ];
-const TAB_OF = {home:'home',practice:'practice',subjects:'practice',subjects_topics:'home',years:'papers',archive:'papers',classPick:'practice',ptopics:'practice',pprogress:'home',
+const TAB_OF = {home:'home',hub:'home',practice:'practice',subjects:'practice',subjects_topics:'home',years:'papers',archive:'papers',classPick:'practice',ptopics:'practice',pprogress:'home',
   topics:'practice',papers:'papers',paperDetail:'papers',progress:'home',profile:'profile',
   notes:'notes',noteTopic:'notes',noteRead:'notes',
   exercises:'exercises',exTopic:'exercises',exDo:'exercises',exResult:'exercises',exMine:'exercises',
@@ -5054,7 +5078,43 @@ function pleBigCard(img,title,sub,onclick){
   </button>`;
 }
 
+/* ---- simple welcome home: two big doors, just like the picture ---- */
 SCREENS.home = () => `
+  <div class="newhome">
+    <div class="nh-logo">
+      <svg viewBox="0 0 48 40" width="44" height="37" aria-hidden="true">
+        <path d="M24 7C19 2 9 1 4 4v30c5-3 15-2 20 3z" fill="#8DD58A" stroke="#2D4159" stroke-width="2.4" stroke-linejoin="round"/>
+        <path d="M24 7c5-5 15-6 20-3v30c-5-3-15-2-20 3z" fill="#FFD166" stroke="#2D4159" stroke-width="2.4" stroke-linejoin="round"/>
+        <path d="M24 7v30" stroke="#2D4159" stroke-width="2.4" stroke-linecap="round"/>
+      </svg>
+      <b>Smart PLE</b>
+    </div>
+    <div class="nh-tag">Ugandan Kids Learning \u00B7 Primary Leaving Examination</div>
+    <div class="nh-hello">Let's learn together!</div>
+
+    <button class="nh-card nh-start" onclick="go('hub')" aria-label="Start learning">
+      <img src="${PLE_ART.owlHero}" alt="The Smart PLE owl in a graduation cap">
+      <span class="nh-txt"><b>START</b><span>Begin your learning journey</span></span>
+    </button>
+
+    <button class="nh-card nh-practice" onclick="go('practice')" aria-label="Practice">
+      <svg viewBox="0 0 64 44" width="72" height="50" fill="none" stroke="#16324F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M16 8c-4-3-10-3-13-1v28c3-2 9-2 13 1z"/>
+        <path d="M16 8c4-3 10-3 13-1v28c-3-2-9-2-13 1z"/>
+        <path d="M16 8v28"/>
+        <rect x="38" y="6" width="22" height="34" rx="4"/>
+        <rect x="45" y="2.5" width="8" height="7" rx="2.5"/>
+        <path d="M44 17h10M44 24h10M44 31h6"/>
+      </svg>
+      <span class="nh-txt"><b>PRACTICE</b><span>Review questions &amp; quizzes</span></span>
+    </button>
+
+    <div class="nh-foot">Safe <i>\u2022</i> Fun <i>\u2022</i> Offline Ready</div>
+    <div class="nh-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+  </div>
+`;
+
+SCREENS.hub = () => `
   <header class="appbar">
     <div class="brand">
       <span class="logo">${ART.owl(40)}</span>
