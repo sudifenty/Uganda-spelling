@@ -1452,6 +1452,17 @@ body::before{
   background:linear-gradient(90deg,#5BA85A,#71C36E);color:#FFF6E0;font-weight:900;font-size:15px;
   padding:13px 12px calc(13px + env(safe-area-inset-bottom,0px))}
 
+/* 18 · the kids join in: cheer squads on the main screens */
+.sc-kids{display:flex;justify-content:center;align-items:flex-end;gap:8px;margin:14px 0 2px}
+.sc-kids img{height:70px;width:56px;object-fit:cover;object-position:top;border-radius:14px;
+  box-shadow:var(--sh-1)}
+.pm-kids{margin:8px 0 2px;text-align:center}
+.pm-kids img{width:min(330px,84%);border-radius:18px;box-shadow:var(--sh-1)}
+.pq-kids{margin:16px 0 4px;text-align:center}
+.pq-kids img{width:min(340px,86%);border-radius:18px;box-shadow:var(--sh-1)}
+.lp-kids{text-align:center;margin:2px 0 12px}
+.lp-kids img{height:120px;border-radius:18px;box-shadow:var(--sh-1)}
+
 /* 11 · children who prefer calm screens get the paint without the motion */
 @media (prefers-reduced-motion:reduce){
   body::before,.hero-banner::before,.hero-banner::after,.tab.on .ic{animation:none}
@@ -2687,6 +2698,7 @@ SCREENS.notePath = () => {
         </div>`;}).join('')}
     </div>
 
+    <div class="lp-kids"><img src="${PLE_SUBJ_ART[({'Social Studies':'sst','Mathematics':'math','Science':'sci','English':'eng'})[t.subject]||'sst']}" alt="Your study buddy"></div>
     <div style="display:grid;gap:10px;margin-top:6px">
       <button class="btn btn-soft" onclick="lpPractice()">\u{1F3AF} Go to Practice for this topic</button>
     </div>
@@ -5328,6 +5340,9 @@ SCREENS.start = () => {
       <button class="btn btn-soft" onclick="go('spelling')">\u{1F524} Spelling games</button>
       <button class="btn btn-soft" onclick="go('pprogress')">\u{1F4C8} My progress</button>
     </div>
+    <div class="sc-kids" aria-hidden="true">
+      <img src="${PLE_SUBJ_ART.sst}" alt=""><img src="${PLE_SUBJ_ART.eng}" alt=""><img src="${PLE_SUBJ_ART.sci}" alt=""><img src="${PLE_SUBJ_ART.math}" alt="">
+    </div>
     <div class="sp-foot">Tap a subject to start its learning path \u00B7 ${nq} practice questions ready for ${cls}</div>
   </div>`;
 };
@@ -5443,6 +5458,7 @@ SCREENS.practice = () => {
 
     <div class="pm-tip"><span aria-hidden="true">\u{1F4A1}</span>
       <span>Tip: Use \u201CPractice WITH Answers\u201D to learn, then try \u201CPractice NO Answers\u201D when you're ready for the real exam!</span></div>
+    <div class="pm-kids"><img src="${PLE_ART.kidsjumping}" alt="Happy learners cheering you on"></div>
     <div class="sp-foot">PLE = Primary Leaving Examination \u00B7 ${nq} questions available for ${cls}</div>
   </div>`;
 };
@@ -6630,6 +6646,7 @@ SCREENS.pquestion = () => {
       ${body}
     </div>
 
+    <div class="pq-kids" aria-hidden="true"><img src="${PLE_ART.kidsjumping}" alt=""></div>
     <div class="t-meta" style="justify-content:center">${I.info(13)} ${q.id}</div>
     <div class="pq-cta">${q.renderAs==='mcq'||q.renderAs==='tf'
       ?'Tap an answer to continue \u27A1'
