@@ -5149,7 +5149,15 @@ SCREENS.home = () => `
 function startSubject(id){
   state.psubject=id; state.nsubject=id; state.exsubject=id;
   state.ptopic=null; state.ntopic=null; state.exTid=null;
-  go('practice');
+  /* straight into the learning path: first not-finished topic */
+  const bank = notesFor(state.klass, id);
+  if(bank && bank.topics && bank.topics.length){
+    const t = bank.topics.find(x=>noteDone(x).pct<100) || bank.topics[0];
+    state.ntopic = t.id;
+    go('notePath');
+  } else {
+    go('notes');
+  }
 }
 SCREENS.start = () => {
   const cls = state.klass;
@@ -5186,7 +5194,7 @@ SCREENS.start = () => {
       <button class="btn btn-soft" onclick="go('spelling')">\u{1F524} Spelling games</button>
       <button class="btn btn-soft" onclick="go('pprogress')">\u{1F4C8} My progress</button>
     </div>
-    <div class="sp-foot">Tap a subject to start practice \u00B7 ${nq} questions ready for ${cls}</div>
+    <div class="sp-foot">Tap a subject to start its learning path \u00B7 ${nq} practice questions ready for ${cls}</div>
   </div>`;
 };
 
