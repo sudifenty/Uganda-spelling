@@ -1567,6 +1567,14 @@ body{background:#FFF8E7 fixed url("data:image/svg+xml,%3Csvg xmlns='http://www.w
 .answers .ans.ans-long .ans-emo{display:none}
 .answers .ans.ans-long .lab{font-size:16px}
 
+/* 22 · speaker + owl live on the BANNER — no icon may ever cover question
+   text. The banner already reserves 90px of right padding for them. */
+.pq-banner{margin:16px 0 12px}
+.pq-banner .mx-speak{top:50%;right:50px;transform:translateY(-50%);width:36px;height:36px;
+  background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.15);z-index:15;font-size:17px}
+.pq-banner .pq-cardowl{top:-12px;right:-4px;width:48px;height:44px;z-index:10}
+.pq-qcard .qtext{padding:8px 0 0}
+
 /* 11 · children who prefer calm screens get the paint without the motion */
 @media (prefers-reduced-motion:reduce){
   body::before,.hero-banner::before,.hero-banner::after,.tab.on .ic{animation:none}
@@ -6766,6 +6774,8 @@ SCREENS.pquestion = () => {
     <div class="pq-banner">
       <span class="pq-flag" aria-hidden="true">\u{1F1FA}\u{1F1EC}</span>
       <b>${s.cls} ${SUBJ_META[state.psubject].label} \u00B7 ${q.difficulty} \u00B7 ${nEsc(q.topic)} \u00B7 ${nEsc(q.subtopic)}</b>
+      <button class="mx-speak" onclick="speakPQ()" aria-label="Read the question aloud">\u{1F50A}</button>
+      <img class="pq-cardowl" src="${PLE_ART.owlHero}" alt="">
     </div>
 
     <div class="pq-progress">
@@ -6778,8 +6788,6 @@ SCREENS.pquestion = () => {
     </div>
 
     <div class="pq-qcard">
-      <img class="pq-cardowl" src="${PLE_ART.owlHero}" alt="">
-      <button class="mx-speak" onclick="speakPQ()" aria-label="Read the question aloud">\u{1F50A}</button>
       <div class="qtext">${q.question}</div>
       <div class="pq-sub">${q.renderAs==='fill'?'Type your answer below'
         :q.renderAs==='match'?'Match every pair below, then press CHECK'
