@@ -1334,6 +1334,36 @@ body::before{
 .sc-more .btn{flex:1;min-height:46px}
 .sp-foot{margin:16px 0 6px;text-align:center;font-size:12.5px;font-weight:700;color:var(--muted)}
 
+/* 15 · Practice Mode screen: two doors, like the picture */
+.pmode{padding:22px 18px 8px}
+.pm-head{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.pm-head h2{font-size:27px;font-weight:900;color:var(--navy);letter-spacing:-.01em}
+.pm-brand{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:12px;
+  font-size:13px;font-weight:800;color:#2F6B3A}
+.pm-brand .sp-pill{margin-left:auto}
+.pm-chips{margin:2px 0 12px}
+.pm-choose{font-size:15px;font-weight:800;color:var(--navy-2);margin:4px 0 14px}
+.pm-card{width:100%;display:flex;align-items:center;gap:16px;text-align:left;border-radius:22px;
+  padding:24px 18px;margin-bottom:18px;border:2px solid;transition:transform .12s}
+.pm-card:active{transform:scale(.98)}
+.pm-with{background:#DFF2DC;border-color:#71C36E}
+.pm-no{background:#C4DDF8;border-color:#4FB2E4}
+.pm-ic{width:58px;height:58px;flex:none;border-radius:50%;display:grid;place-items:center;color:#fff}
+.pm-ic-green{background:#5BA85A}
+.pm-ic-blue{background:#1E88E5}
+.pm-txt{flex:1;min-width:0}
+.pm-txt b{display:block;font-size:22px;font-weight:900;line-height:1.15}
+.pm-with .pm-txt b{color:#187A33}
+.pm-no .pm-txt b{color:#16324F}
+.pm-txt span{display:block;margin-top:6px;font-size:13.5px;font-weight:700;color:var(--navy-2)}
+.pm-with .pm-chev{color:#5BA85A}
+.pm-no .pm-chev{color:#1E88E5}
+.pm-tip{display:flex;gap:10px;align-items:flex-start;background:#FBF3D0;border:1.5px solid var(--yellow-100);
+  border-radius:14px;padding:12px 14px;font-size:12.5px;font-weight:700;color:#6B5A1E}
+/* exam style: neutral "answer saved" sheet, no right/wrong colours */
+.feedback.save .fb-txt b{color:var(--sky-ink)}
+.feedback.save .fb-ic{background:var(--sky-50)}
+
 /* 11 · children who prefer calm screens get the paint without the motion */
 @media (prefers-reduced-motion:reduce){
   body::before,.hero-banner::before,.hero-banner::after,.tab.on .ic{animation:none}
@@ -5243,52 +5273,55 @@ ${(()=>{const L=lastLoad();if(!L)return '';const pct=(L.pct==null||isNaN(L.pct))
 `;
 
 SCREENS.practice = () => {
-  const cls = state.klass, n = pbAll(cls).length, p = prog(cls);
-  const modes = [
-    ['quick',  'Quick Practice',  '10 questions',                'bolt',    'yellow'],
-    ['topic',  'Topic Practice',  'Choose one topic',            'topics',  'purple'],
-    ['class',  'Class Practice',  `All ${cls} questions`,        'book',    'sky'],
-    ['weak',   'Weak Topic Practice','Topics you find hard',     'target',  'coral'],
-    ['revision','Revision Mode',  'Mixed questions',             'refresh', 'green'],
-    ['exam',   'Exam Practice',   '20 questions, longer test',   'clock',   'orange'],
-  ];
-  if(cls==='P7') modes.push(['ple','PLE Preparation','Exam-style questions','medal','purple']);
+  const cls = state.klass;
+  const nq = ['SST','MATH','SCI','ENG'].reduce((a,s)=>{
+    const m=SUBJ_META[s], d=m.bank()[cls];
+    return a + (d ? d.questions.filter(q=>q.class===cls && q.subject===m.name &&
+      String(q.id).startsWith(cls+m.tag)).length : 0);
+  },0);
   return `
-  <header class="appbar">
-    <div class="brand"><span class="logo">${ART.owl(40)}</span>
-      <span><div class="brand-name">${SUBJ_META[state.psubject].label} Practice</div>
-        <div class="brand-sub">${n} questions for ${cls}</div></span></div>
-  </header>
+  <div class="pmode">
+    <div class="pm-head">
+      <button class="sp-back" onclick="back()" aria-label="Back to home">${I.back(24)}</button>
+      <h2>Practice Mode</h2>
+    </div>
+    <div class="pm-brand">
+      <svg viewBox="0 0 48 40" width="28" height="24" aria-hidden="true">
+        <path d="M24 7C19 2 9 1 4 4v30c5-3 15-2 20 3z" fill="#8DD58A" stroke="#2D4159" stroke-width="2.4" stroke-linejoin="round"/>
+        <path d="M24 7c5-5 15-6 20-3v30c-5-3-15-2-20 3z" fill="#FFD166" stroke="#2D4159" stroke-width="2.4" stroke-linejoin="round"/>
+        <path d="M24 7v30" stroke="#2D4159" stroke-width="2.4" stroke-linecap="round"/>
+      </svg>
+      <span>Smart PLE \u00B7 Ugandan kids app</span>
+      <span aria-hidden="true">\u{1F1FA}\u{1F1EC}</span>
+      <button class="sp-pill" onclick="go('classPick')" aria-label="Change class">Primary ${cls.slice(1)} \u00B7 change</button>
+    </div>
+    <div class="chips pm-chips">
+      ${['SST','SCI','ENG','MATH'].map(s=>`<button class="chip ${state.psubject===s?'on':''}" onclick="setPSubject('${s}')">${s}</button>`).join('')}
+    </div>
+    <div class="pm-choose">Choose how you want to practice today</div>
 
-  <div class="faith-switch" style="margin-bottom:13px" role="group" aria-label="Choose subject">
-    ${SUBJECTS_P.map(sb=>`<button class="fsw ${state.psubject===sb.id?'on':''}"
-      onclick="setPSubject('${sb.id}')" aria-pressed="${state.psubject===sb.id}">${sb.name}</button>`).join('')}
-  </div>
+    <button class="pm-card pm-with" onclick="startPractice('quick')">
+      <span class="pm-ic pm-ic-green">${I.check(30)}</span>
+      <span class="pm-txt"><b>Practice WITH Answers</b><span>Learn with explanations</span></span>
+      <span class="pm-chev">${I.chev(20)}</span>
+    </button>
 
-  <button class="row" onclick="go('classPick')" style="background:var(--purple-50);border-color:var(--purple-100)">
-    ${iconBox('profile','purple',24)}
-    <span class="txt"><b>Class ${cls}</b><span>Tap to change class</span></span>
-    <span class="chev">${I.chev(22)}</span>
-  </button>
+    <button class="pm-card pm-no" onclick="startPractice('exam')">
+      <span class="pm-ic pm-ic-blue">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="5" y="4" width="14" height="17" rx="2.5"/>
+          <rect x="9" y="2.5" width="6" height="4" rx="1.5"/>
+          <path d="M9 11h6M9 15h6"/>
+        </svg>
+      </span>
+      <span class="pm-txt"><b>Practice NO Answers</b><span>Test yourself like PLE exam</span></span>
+      <span class="pm-chev">${I.chev(20)}</span>
+    </button>
 
-  ${n===0?`<div class="hint-strip amber" style="margin-top:13px">${I.info(18)}
-    <span>No ${SUBJ_META[state.psubject].name} questions for ${cls} yet. Try another class or subject.</span></div>`:''}
-  ${p.attempted?`<div class="hint-strip green" style="margin-top:13px">${I.check(18)}
-    <span>${cls} so far: ${p.correct} of ${p.attempted} correct (${pct(p.correct,p.attempted)}%)</span></div>`:''}
-
-  <div class="section-title">Choose practice</div>
-  <div class="rows">
-    ${modes.map(m=>`
-      <button class="row" onclick="startPractice('${m[0]}')">
-        ${iconBox(m[3],m[4],26)}
-        <span class="txt"><b>${m[1]}</b><span>${m[2]}</span></span>
-        <span class="chev">${I.chev(22)}</span>
-      </button>`).join('')}
-  </div>
-  <div class="spacer"></div>
-  <div class="hint-strip cream"><span style="flex:none">${ART.owl(52)}</span>
-    <span>Only <b>${cls} ${SUBJ_META[state.psubject].name}</b> questions are used. Other classes and subjects are never mixed in.</span></div>
-`;
+    <div class="pm-tip"><span aria-hidden="true">\u{1F4A1}</span>
+      <span>Tip: Use \u201CPractice WITH Answers\u201D to learn, then try \u201CPractice NO Answers\u201D when you're ready for the real exam!</span></div>
+    <div class="sp-foot">PLE = Primary Leaving Examination \u00B7 ${nq} questions available for ${cls}</div>
+  </div>`;
 };
 
 /* ============================================================
@@ -6405,7 +6438,8 @@ function startPractice(mode, topic){
   items = items.filter(q=>q.class===cls);
 
   state.session = {kind:'sst', mode, cls, total:items.length, i:0, correct:0,
-    items, label, detail:[], t0:Date.now(), locked:false, picked:null, matches:{}};
+    items, label, detail:[], t0:Date.now(), locked:false, picked:null, matches:{},
+    hide:mode==='exam'||mode==='ple'};
   go('pquestion');
 }
 
@@ -6450,7 +6484,7 @@ SCREENS.pquestion = () => {
     <div class="qbar-top">
       <button class="back" onclick="confirmQuit()" aria-label="Leave practice" style="width:46px;height:46px">${I.x(20)}</button>
       <div class="qcount">Question ${n} <em>of ${s.total}</em></div>
-      <span class="pill off">${I.check(13)} ${s.correct}</span>
+      ${s.hide?`<span class="pill time">EXAM MODE</span>`:`<span class="pill off">${I.check(13)} ${s.correct}</span>`}
     </div>
     <div class="qprog" role="progressbar" aria-valuenow="${n}" aria-valuemin="1" aria-valuemax="${s.total}">
       <i style="width:${n/s.total*100}%"></i></div>
@@ -6477,14 +6511,31 @@ function pFinishItem(ok, q){
   if(ok) s.correct++;
   recordAnswer(s.cls, q, ok);
   s.locked = true;
-  showExplain(ok, q.explanation);
   clearTimeout(state.autoT);
+  if(s.hide){ showSaved(); return; }
+  showExplain(ok, q.explanation);
   if(state.auto) state.autoT = setTimeout(pNext, ok?1600:3200);
+}
+function showSaved(){
+  const f=document.getElementById('feedback');
+  f.className='feedback show save';
+  document.getElementById('fbIcon').innerHTML = ART.owl(50);
+  document.getElementById('fbTitle').textContent = 'Answer saved';
+  document.getElementById('fbSub').textContent = 'Keep going \u2014 you will see your results at the end.';
 }
 
 function pAnswer(i){
   const s=state.session, q=s.items[s.i];
   if(s.locked) return;
+  if(s.hide){
+    /* exam style: save the pick, reveal nothing until the end */
+    const ok = i==='ABCD'.indexOf(q.correctAnswer);
+    document.querySelectorAll('.ans').forEach(b=>{
+      const k=+b.dataset.i; b.disabled=true;
+      if(k===i) b.classList.add('picked');
+    });
+    pFinishItem(ok,q); return;
+  }
   afxPlay(i==='ABCD'.indexOf(q.correctAnswer)?'correct':'wrong');
   const right = 'ABCD'.indexOf(q.correctAnswer);
   const ok = i===right;
@@ -6504,6 +6555,7 @@ function pFill(){
   const given=normAns(el.value);
   if(!given){ toast('Type your answer first'); return; }
   const ok = (q.answers||[]).some(a=>normAns(a)===given);
+  if(s.hide){ el.disabled=true; pFinishItem(ok,q); return; }
   afxPlay(ok?'correct':'wrong');
   el.disabled=true;
   el.classList.add(ok?'good':'bad');
@@ -6523,6 +6575,10 @@ function pMatchCheck(){
   if(Object.keys(s.matches).length < q.pairs.length){ toast('Match every item first'); return; }
   let ok = true;
   q.pairs.forEach((pr,i)=>{ if(s.matches[i]!==pr[1]) ok=false; });
+  if(s.hide){
+    document.querySelectorAll('.matchrow .mchip').forEach(b=>{ b.disabled=true; });
+    pFinishItem(ok,q); return;
+  }
   afxPlay(ok?'correct':'wrong');
   document.querySelectorAll('.matchrow').forEach((row,i)=>{
     const good = s.matches[i]===q.pairs[i][1];
