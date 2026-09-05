@@ -167,7 +167,21 @@ function exStart(cls, subj, tid, setId, mode){
 /* leaving an exercise throws the attempt away on purpose */
 function exLeave(){
   state.exRun = null;
-  go('exTopic', false);
+  exExit();
+}
+/* Where do leaving or finishing an exercise go? Normally the exercise's
+   topic screen — but when the learner jumped straight into questions
+   (Practice -> NO answers mode) that screen was never shown, so pop back
+   to wherever they came from instead. */
+function exExit(){
+  if(state.stack.includes('exTopic')) go('exTopic', false);
+  else {
+    /* drop any exercise screens still on the stack (exDo after submit,
+       exResult after review) so back() lands where the learner came from */
+    while(state.stack.length && ['exDo','exResult'].includes(state.stack[state.stack.length-1]))
+      state.stack.pop();
+    back();
+  }
 }
 /* how many numbered answer boxes a written exercise needs:
    "Give any 3..." -> 3; essay questions (explain/describe/why/how) -> 1
@@ -228,7 +242,7 @@ function exFinish(){
   EXDB.att = EXDB.att.slice(0,60);
   exSave(EXDB);
   toast(`Saved — ${got} of ${max} marks`);
-  go('exTopic', false);
+  exExit();
 }
 function exRetry(){
   const r = state.exRun; if(!r) return;

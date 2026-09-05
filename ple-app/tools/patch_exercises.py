@@ -29,7 +29,7 @@ CSS = """
   border-radius:var(--r-lg);padding:15px 15px 16px;margin-bottom:14px}
 .ex-qno{font-size:11.5px;font-weight:900;color:var(--sky-ink);letter-spacing:.5px;
   text-transform:uppercase;margin-bottom:6px}
-.ex-qtext{font-size:15.5px;line-height:1.55;color:var(--navy);font-weight:600}
+.ex-qtext{font-size:19px;line-height:1.5;color:var(--navy);font-weight:800}
 .ex-lab{display:block;font-size:12px;font-weight:900;color:var(--muted);
   text-transform:uppercase;letter-spacing:.5px;margin:12px 0 6px}
 .ex-area{width:100%;border:1.5px solid var(--line);border-radius:var(--r-md);

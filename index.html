@@ -536,7 +536,7 @@ p{margin:0}
   border-radius:var(--r-lg);padding:15px 15px 16px;margin-bottom:14px}
 .ex-qno{font-size:11.5px;font-weight:900;color:var(--sky-ink);letter-spacing:.5px;
   text-transform:uppercase;margin-bottom:6px}
-.ex-qtext{font-size:15.5px;line-height:1.55;color:var(--navy);font-weight:600}
+.ex-qtext{font-size:19px;line-height:1.5;color:var(--navy);font-weight:800}
 .ex-lab{display:block;font-size:12px;font-weight:900;color:var(--muted);
   text-transform:uppercase;letter-spacing:.5px;margin:12px 0 6px}
 .ex-area{width:100%;border:2px solid #111827;border-radius:12px;
@@ -7357,7 +7357,21 @@ function exStart(cls, subj, tid, setId, mode){
 /* leaving an exercise throws the attempt away on purpose */
 function exLeave(){
   state.exRun = null;
-  go('exTopic', false);
+  exExit();
+}
+/* Where do leaving or finishing an exercise go? Normally the exercise's
+   topic screen — but when the learner jumped straight into questions
+   (Practice -> NO answers mode) that screen was never shown, so pop back
+   to wherever they came from instead. */
+function exExit(){
+  if(state.stack.includes('exTopic')) go('exTopic', false);
+  else {
+    /* drop any exercise screens still on the stack (exDo after submit,
+       exResult after review) so back() lands where the learner came from */
+    while(state.stack.length && ['exDo','exResult'].includes(state.stack[state.stack.length-1]))
+      state.stack.pop();
+    back();
+  }
 }
 /* how many numbered answer boxes a written exercise needs:
    "Give any 3..." -> 3; essay questions (explain/describe/why/how) -> 1
@@ -7418,7 +7432,7 @@ function exFinish(){
   EXDB.att = EXDB.att.slice(0,60);
   exSave(EXDB);
   toast(`Saved — ${got} of ${max} marks`);
-  go('exTopic', false);
+  exExit();
 }
 function exRetry(){
   const r = state.exRun; if(!r) return;
