@@ -1463,6 +1463,15 @@ body::before{
 .lp-kids{text-align:center;margin:2px 0 12px}
 .lp-kids img{height:120px;border-radius:18px;box-shadow:var(--sh-1)}
 
+.hm-kids{margin:22px 0 0;text-align:center}
+.hm-kids img{width:min(300px,80%);border-radius:18px;box-shadow:var(--sh-1)}
+.rs-kids{margin:14px 0 2px;text-align:center}
+.rs-kids img{width:min(300px,80%);border-radius:18px;box-shadow:var(--sh-1)}
+.sp-kids{margin:14px 0 2px;text-align:center}
+.sp-kids img{height:130px;border-radius:18px;box-shadow:var(--sh-1)}
+.nt-kids{margin:10px 0 4px;text-align:center}
+.nt-kids img{height:120px;border-radius:18px;box-shadow:var(--sh-1)}
+
 /* 11 · children who prefer calm screens get the paint without the motion */
 @media (prefers-reduced-motion:reduce){
   body::before,.hero-banner::before,.hero-banner::after,.tab.on .ic{animation:none}
@@ -5286,6 +5295,7 @@ SCREENS.home = () => `
       <span class="nh-txt"><b>PRACTICE</b><span>Review questions &amp; quizzes</span></span>
     </button>
 
+    <div class="hm-kids"><img src="${PLE_ART.kidsjumping}" alt="Happy learners cheering you on"></div>
     <div class="nh-foot">Safe <i>\u2022</i> Fun <i>\u2022</i> Offline Ready</div>
     <div class="nh-dots" aria-hidden="true"><i></i><i></i><i></i></div>
   </div>
@@ -5493,6 +5503,7 @@ function spellStats(){const m=spellMistakes();return m.length?m.map(x=>x.word).j
 SCREENS.spelling = () => `
  <header class="pagehead"><button class="back" onclick="back()" aria-label="Go back">${I.back(22)}</button><div><h2>Spelling</h2><div class="sub">Primary ${state.klass[1]} · choose a level</div></div></header>
  <div class="spell-hero"><div class="spell-emoji">🔤</div><div><h3>Ready to spell?</h3><p>Pick a level and start straight away.</p></div></div>
+ <div class="sp-kids"><img src="${PLE_ART.spellingkid}" alt="A young learner playing with words"></div>
  <div class="section-title">Difficulty</div><div class="spell-levels">${[['Easy','Familiar everyday and school words','green'],['Medium','Words that need extra attention','yellow'],['Hard','Challenging primary-level words','coral']].map(x=>`<button class="spell-level" onclick="spellStart('${state.klass}','${x[0]}','choose')"><span class="pill ${x[2]==='green'?'off':x[2]==='yellow'?'time':'warn'}">${x[0]}</span><b>${x[1]}</b>${I.chev(21)}</button>`).join('')}</div>
  <div class="spell-mistake card"><b>Words to practise again</b><p>${spellStats()}</p>${spellMistakes().length?`<button class="btn btn-soft" style="margin-top:12px" onclick="spellStartMistakes()">PRACTISE MY WORDS</button>`:''}</div>`;
 
@@ -6036,6 +6047,7 @@ SCREENS.results = () => {
     <div class="score-big" id="scoreBig">0%</div>
     <div class="score-frac">${r.correct} / ${r.total}</div>
   </div>
+  <div class="rs-kids"><img src="${PLE_ART.kidsjumping}" alt="Kids celebrating with you"></div>
   <div class="stats">
     <div class="stat">${iconBox('check','green',20,44)}<span><b>${r.correct}</b><span>Correct</span></span></div>
     <div class="stat">${iconBox('refresh','coral',20,44)}<span><b>${r.total-r.correct}</b><span>To try again</span></span></div>
@@ -6422,6 +6434,7 @@ SCREENS.notes = () => {
         <span class="go">${I.chev(20)}</span>
       </button>`;}).join('')}
   </div>
+  <div class="nt-kids"><img src="${PLE_SUBJ_ART[state.nsubject.toLowerCase()]||PLE_SUBJ_ART.sst}" alt="Your study buddy"></div>
   <div class="spacer"></div>
   <div class="hint-strip green">${I.download(20)}
     <span>These notes follow the NCDC ${cls} syllabus and work with no internet.</span></div>`;
