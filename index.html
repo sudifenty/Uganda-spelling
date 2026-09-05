@@ -1303,6 +1303,37 @@ body::before{
 .nh-dots i:nth-child(2){background:#6CC7F6}
 .nh-dots i:nth-child(3){background:#FFD166}
 
+/* 14 · "Choose Subject": big friendly subject cards like the picture */
+.subpick{padding:22px 18px 8px}
+.sp-head{display:flex;gap:14px;align-items:flex-start;margin-bottom:20px}
+.sp-back{width:52px;height:52px;flex:none;border:none;border-radius:16px;background:#fff;
+  box-shadow:var(--sh-1);display:grid;place-items:center;color:var(--navy)}
+.sp-back:active{transform:scale(.94)}
+.sp-head h2{font-size:26px;font-weight:900;color:var(--navy);letter-spacing:-.01em}
+.sp-sub{font-size:13px;font-weight:700;color:var(--muted);margin-top:3px}
+.sp-row{display:flex;align-items:center;gap:10px;margin-top:8px;font-size:16px}
+.sp-pill{border:none;background:#ECEFF3;color:var(--navy-2);font-weight:800;font-size:12.5px;
+  padding:7px 12px;border-radius:999px}
+.sc-card{position:relative;overflow:hidden;display:flex;align-items:center;gap:15px;width:100%;
+  background:#fff;border:none;border-radius:20px;padding:18px 16px 18px 24px;margin-bottom:16px;
+  box-shadow:var(--sh-1);text-align:left;transition:transform .12s}
+.sc-card:active{transform:scale(.98)}
+.sc-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:7px;background:var(--sc)}
+.sc-yellow{--sc:var(--yellow)} .sc-green{--sc:var(--green)}
+.sc-purple{--sc:var(--purple)} .sc-orange{--sc:var(--orange)}
+.sc-ic{width:62px;height:62px;flex:none;border-radius:50%;display:grid;place-items:center}
+.sc-yellow .sc-ic{background:var(--yellow-100);color:var(--yellow-ink)}
+.sc-green  .sc-ic{background:var(--green-100); color:var(--green-ink)}
+.sc-purple .sc-ic{background:var(--purple-100);color:var(--purple-ink)}
+.sc-orange .sc-ic{background:var(--orange-100);color:var(--orange-ink)}
+.sc-txt{flex:1;min-width:0}
+.sc-txt b{display:block;font-size:26px;font-weight:900;color:var(--navy);letter-spacing:.01em}
+.sc-txt span{display:block;font-size:13.5px;font-weight:700;color:var(--muted);margin-top:2px}
+.sc-chev{color:var(--muted);flex:none}
+.sc-more{display:flex;gap:10px;justify-content:center;margin:6px 0 2px}
+.sc-more .btn{flex:1;min-height:46px}
+.sp-foot{margin:16px 0 6px;text-align:center;font-size:12.5px;font-weight:700;color:var(--muted)}
+
 /* 11 · children who prefer calm screens get the paint without the motion */
 @media (prefers-reduced-motion:reduce){
   body::before,.hero-banner::before,.hero-banner::after,.tab.on .ic{animation:none}
@@ -1638,7 +1669,7 @@ const TABS = [
   {id:'exercises',label:'Exercises',icon:'target'},
   {id:'papers',label:'Papers',icon:'papers'},{id:'profile',label:'Profile',icon:'profile'},
 ];
-const TAB_OF = {home:'home',hub:'home',practice:'practice',subjects:'practice',subjects_topics:'home',years:'papers',archive:'papers',classPick:'practice',ptopics:'practice',pprogress:'home',
+const TAB_OF = {home:'home',hub:'home',start:'home',practice:'practice',subjects:'practice',subjects_topics:'home',years:'papers',archive:'papers',classPick:'practice',ptopics:'practice',pprogress:'home',
   topics:'practice',papers:'papers',paperDetail:'papers',progress:'home',profile:'profile',
   notes:'notes',noteTopic:'notes',noteRead:'notes',
   exercises:'exercises',exTopic:'exercises',exDo:'exercises',exResult:'exercises',exMine:'exercises',
@@ -5092,7 +5123,7 @@ SCREENS.home = () => `
     <div class="nh-tag">Ugandan Kids Learning \u00B7 Primary Leaving Examination</div>
     <div class="nh-hello">Let's learn together!</div>
 
-    <button class="nh-card nh-start" onclick="go('hub')" aria-label="Start learning">
+    <button class="nh-card nh-start" onclick="go('start')" aria-label="Start learning">
       <img src="${PLE_ART.owlHero}" alt="The Smart PLE owl in a graduation cap">
       <span class="nh-txt"><b>START</b><span>Begin your learning journey</span></span>
     </button>
@@ -5113,6 +5144,51 @@ SCREENS.home = () => `
     <div class="nh-dots" aria-hidden="true"><i></i><i></i><i></i></div>
   </div>
 `;
+
+/* ---- "Choose Subject": the screen START opens, like the picture ---- */
+function startSubject(id){
+  state.psubject=id; state.nsubject=id; state.exsubject=id;
+  state.ptopic=null; state.ntopic=null; state.exTid=null;
+  go('practice');
+}
+SCREENS.start = () => {
+  const cls = state.klass;
+  const nq = ['SST','MATH','SCI','ENG'].reduce((a,s)=>{
+    const m=SUBJ_META[s], d=m.bank()[cls];
+    return a + (d ? d.questions.filter(q=>q.class===cls && q.subject===m.name &&
+      String(q.id).startsWith(cls+m.tag)).length : 0);
+  },0);
+  const cards=[
+    ['SST','Social Studies &amp; History','yellow','globe'],
+    ['SCI','Science &amp; Nature','green','flask'],
+    ['ENG','English &amp; Grammar','purple','book'],
+    ['MATH','Mathematics &amp; Numbers','orange','calc'],
+  ];
+  return `
+  <div class="subpick">
+    <div class="sp-head">
+      <button class="sp-back" onclick="back()" aria-label="Back to home">${I.back(24)}</button>
+      <div>
+        <h2>Choose Subject</h2>
+        <div class="sp-sub">Smart PLE \u00B7 PLE Prep for Ugandan Kids</div>
+        <div class="sp-row">\u{1F1FA}\u{1F1EC}
+          <button class="sp-pill" onclick="go('classPick')" aria-label="Change class">Primary ${cls.slice(1)} \u00B7 change</button>
+        </div>
+      </div>
+    </div>
+    ${cards.map(c=>`
+    <button class="sc-card sc-${c[2]}" onclick="startSubject('${c[0]}')">
+      <span class="sc-ic">${I[c[3]](30)}</span>
+      <span class="sc-txt"><b>${c[0]}</b><span>${c[1]}</span></span>
+      <span class="sc-chev">${I.chev(20)}</span>
+    </button>`).join('')}
+    <div class="sc-more">
+      <button class="btn btn-soft" onclick="go('spelling')">\u{1F524} Spelling games</button>
+      <button class="btn btn-soft" onclick="go('pprogress')">\u{1F4C8} My progress</button>
+    </div>
+    <div class="sp-foot">Tap a subject to start practice \u00B7 ${nq} questions ready for ${cls}</div>
+  </div>`;
+};
 
 SCREENS.hub = () => `
   <header class="appbar">
