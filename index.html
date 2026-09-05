@@ -1484,17 +1484,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;
    radial-gradient(rgba(141,213,138,.20) 1.6px, transparent 2.2px);
   background-size:150px 130px,180px 160px,210px 180px,170px 150px;
   background-position:12px 24px,64px 88px,116px 44px,32px 116px}
-#decoOwl{position:fixed;top:6px;right:8px;width:58px;height:54px;object-fit:contain;
-  object-position:top;z-index:35;pointer-events:none;
-  filter:drop-shadow(0 3px 6px rgba(45,65,89,.22))}
-#decoKidL,#decoKidR{position:fixed;bottom:calc(72px + env(safe-area-inset-bottom,0px));
-  width:66px;height:80px;object-fit:cover;object-position:top;z-index:35;pointer-events:none;
-  border-radius:16px 16px 0 0;box-shadow:0 -2px 10px rgba(45,65,89,.12)}
-#decoKidL{left:6px}
-#decoKidR{right:6px}
-/* screens that already carry the owl on their banner keep just one owl */
-body[data-screen="pquestion"] #decoOwl,body[data-screen="notePath"] #decoOwl{display:none}
-/* keep the fixed owl clear of header buttons */
+/* keep header buttons clear of the top-right corner */
 .appbar{padding-right:64px}
 /* big blue questions, icons beside every option, chunky rounded cards */
 .pq-qcard .qtext{font-size:28px}
@@ -1502,6 +1492,10 @@ body[data-screen="pquestion"] #decoOwl,body[data-screen="notePath"] #decoOwl{dis
 .ans-emo{font-size:24px;flex:none}
 .sl-emo{font-size:24px;flex:none}
 .tcard,.sc-card,.pm-card,.card,.pq-qcard,.nh-card,.lp-card{border-radius:24px}
+
+/* the two kids cheer under the question card, like the picture */
+.pq-kids{display:flex;justify-content:center;align-items:flex-end;gap:10px;margin:16px 0 4px}
+.pq-kids img{height:108px;border-radius:20px;box-shadow:var(--sh-1)}
 
 /* 11 · children who prefer calm screens get the paint without the motion */
 @media (prefers-reduced-motion:reduce){
@@ -1856,7 +1850,6 @@ function back(){ state.screen = state.stack.pop() || 'home'; render(); }
 function tabTo(id){ if(!state.authUser){state.screen='auth';render();return;} state.stack=[]; state.tab=id; go(id,false); }
 
 function render(){
-  document.body.dataset.screen=state.screen;
   const locked = !state.authReady || (!state.authUser && state.screen!=='auth');
   const screenHtml = !state.authReady ? `<div class="auth-loading"><img src="${PLE_ART.owlHero}" alt="Owl" style="width:120px;height:100px;object-fit:contain;animation:hbWave 1.6s ease-in-out infinite"><h2>Checking your account…</h2><p>Just a moment.</p></div>` : (locked ? SCREENS.auth() : SCREENS[state.screen]());
   document.getElementById('views').innerHTML =
@@ -6684,6 +6677,10 @@ SCREENS.pquestion = () => {
       ${body}
     </div>
 
+    <div class="pq-kids" aria-hidden="true">
+      <img src="${PLE_ART.englishkid}" alt="">
+      <img src="${PLE_ART.sstkid}" alt="">
+    </div>
     <div class="t-meta" style="justify-content:center">${I.info(13)} ${q.id}</div>
     <div class="pq-cta">${q.renderAs==='mcq'||q.renderAs==='tf'
       ?'Tap an answer to continue \u27A1'
@@ -6959,16 +6956,6 @@ document.getElementById('fbNext').onclick = () => {
   if(state.session.kind==='sst') pNext();
   else if(state.session.kind==='practice') nextQuestion();
 };
-
-/* STRICT KIDS RULE: the same three mascots on EVERY screen —
-   owl top-right, girl peeking bottom-left, boy peeking bottom-right */
-(function(){
-  const host=document.getElementById('app')||document.body;
-  const mk=(id,src)=>{const im=document.createElement('img');im.id=id;im.alt='';im.src=src;host.appendChild(im);};
-  mk('decoOwl',PLE_ART.owlHero);
-  mk('decoKidL',PLE_ART.englishkid);
-  mk('decoKidR',PLE_ART.sstkid);
-})();
 
 function finish(){
   const s=state.session, time=Math.max(5,Math.round((Date.now()-s.t0)/1000));
