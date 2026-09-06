@@ -3,7 +3,7 @@
  "subject": "ENG",
  "subject_name": "English",
  "total": 6,
- "words": 9975,
+ "words": 9135,
  "topics": [
   {
    "id": "P6_ENG_T01",
@@ -1981,18 +1981,18 @@
    "slug": "hotels",
    "periods": 35,
    "curriculum_pages": "47–51",
-   "words": 2019,
+   "words": 1179,
    "sections": [
     {
      "title": "About this topic",
      "blocks": [
       {
        "t": "p",
-       "x": "*Curriculum reference: NCDC Primary Six Curriculum, Set One, English Topic 5, 35 periods (`curriculum/P6-SET-ONE-2010.pdf`, topic outline page 24 and pages 47–51).*"
+       "x": "*Curriculum reference: NCDC Primary Six Curriculum, Set One, English Topic 5, 35 periods (`curriculum/P6-SET-ONE-2010.pdf`, pages 47–51). The study content below was provided by the app owner and replaces the earlier version of this topic.*"
       },
       {
        "t": "p",
-       "x": "**What you already know:** You have seen hotels, restaurants and lodges in your town. In P.6 you learn the **English used in a hotel** — the workers, the rooms, the meals, the menu, and the polite structures used when asking for service."
+       "x": "**What you already know:** Travellers need a place to stay, eat and rest. In P.6 you learn the **vocabulary of the hotel** — what a hotel is, who works there, what services it offers, the types of hotels and the rules guests follow."
       },
       {
        "t": "p",
@@ -2001,419 +2001,124 @@
       {
        "t": "ul",
        "items": [
-        "use hotel vocabulary correctly",
-        "name the workers in a hotel and their duties",
-        "read and write a **menu** and a hotel **advertisement**",
-        "ask for service politely using *May I …?*",
-        "use *may*, *no sooner … than*, adjectives and direct speech",
-        "act out dialogues that take place in a hotel"
+        "say what a hotel, a guest and accommodation are",
+        "name the hotel workers and the work of each",
+        "state the services hotels offer, the types of hotels and their importance",
+        "give the rules hotel guests should follow"
        ]
       }
      ]
     },
     {
-     "title": "1. HOTEL VOCABULARY",
+     "title": "MEANING OF A HOTEL",
      "blocks": [
       {
-       "t": "h3",
-       "x": "The people"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Word",
-        "Meaning"
-       ],
-       "rows": [
-        [
-         "**waiter / waitress**",
-         "The man / woman who serves food and drinks at table"
-        ],
-        [
-         "**chef**",
-         "The person who cooks the food"
-        ],
-        [
-         "**receptionist**",
-         "The person at the reception who receives guests and books rooms"
-        ],
-        [
-         "**customer / guest**",
-         "The person who buys the service"
-        ],
-        [
-         "**manager**",
-         "The person in charge of the hotel"
-        ],
-        [
-         "**porter**",
-         "The person who carries guests' luggage"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "The places"
+       "t": "p",
+       "x": "A **hotel** is a building or establishment where people pay to stay, eat and receive other services while away from home."
       },
       {
        "t": "p",
-       "x": "**reception** · **restaurant** · **dining room** · **lounge** · **bar** · **pub** · **conference room** · **washrooms / restrooms** · **gym** · **sauna** · **swimming pool** · **balcony** · **counter** · **kitchen** · **bedroom with a shower**."
-      },
-      {
-       "t": "h3",
-       "x": "The things and the service"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Word",
-        "Meaning"
-       ],
-       "rows": [
-        [
-         "**menu**",
-         "The list of food and drinks a hotel offers, with prices"
-        ],
-        [
-         "**order**",
-         "To ask for the food you want"
-        ],
-        [
-         "**serve**",
-         "To bring the food to the customer"
-        ],
-        [
-         "**bill**",
-         "The paper showing how much a customer must pay"
-        ],
-        [
-         "**receipt**",
-         "The paper showing that payment has been made"
-        ],
-        [
-         "**cutlery**",
-         "Knives, forks and spoons"
-        ],
-        [
-         "**serviette / napkin**",
-         "The cloth or paper used to wipe the mouth and hands"
-        ],
-        [
-         "**table mat**",
-         "The mat placed under a plate"
-        ],
-        [
-         "**tooth pick**",
-         "The small stick used to remove food from between the teeth"
-        ],
-        [
-         "**booking**",
-         "Arranging a room or table in advance"
-        ],
-        [
-         "**check in / check out**",
-         "To arrive and register / to leave and pay"
-        ],
-        [
-         "**air conditioner / fan**",
-         "Machines that cool a room"
-        ],
-        [
-         "**table manners**",
-         "The correct way of behaving at table"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "The meals and the courses"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Meal",
-        "When it is taken"
-       ],
-       "rows": [
-        [
-         "**Breakfast**",
-         "In the morning"
-        ],
-        [
-         "**Lunch**",
-         "In the middle of the day"
-        ],
-        [
-         "**Supper**",
-         "In the evening"
-        ],
-        [
-         "**Dinner**",
-         "The main meal of the day, usually in the evening"
-        ]
-       ]
-      },
-      {
-       "t": "p",
-       "x": "**The parts of a meal:** **soup** or **salad** first, then the **main course** with a **sauce**, then **dessert** — **pudding**, **jelly** or **fruit**."
+       "x": "A **hotel guest** is a person who stays in a hotel."
       }
      ]
     },
     {
-     "title": "2. A MENU",
+     "title": "WHY PEOPLE STAY IN HOTELS",
      "blocks": [
       {
        "t": "p",
-       "x": "A menu shows what is available and how much it costs, usually in groups."
-      },
-      {
-       "t": "table",
-       "head": [
-        "**KAMPALA VIEW HOTEL — LUNCH MENU**",
-        "**Price (UGX)**"
-       ],
-       "rows": [
-        [
-         "**Soups**",
-         ""
-        ],
-        [
-         "Vegetable soup",
-         "4,000"
-        ],
-        [
-         "**Main dishes**",
-         ""
-        ],
-        [
-         "Matooke with groundnut sauce",
-         "10,000"
-        ],
-        [
-         "Rice with beef stew",
-         "12,000"
-        ],
-        [
-         "Chicken with chips",
-         "15,000"
-        ],
-        [
-         "**Desserts**",
-         ""
-        ],
-        [
-         "Fresh fruit salad",
-         "5,000"
-        ],
-        [
-         "Jelly",
-         "4,000"
-        ],
-        [
-         "**Drinks**",
-         ""
-        ],
-        [
-         "Soda",
-         "2,500"
-        ],
-        [
-         "Bottled water",
-         "1,500"
-        ]
-       ]
+       "x": "People stay in hotels to get accommodation, food, drinks and other services when they are away from home."
       },
       {
        "t": "p",
-       "x": "**When you write a menu:** put the name of the hotel and the meal at the top · group the items (soups, main dishes, desserts, drinks) · write the **price** against each item · spell the dishes correctly · keep it neat."
+       "x": "**Accommodation** is a place where people stay or live temporarily."
       }
      ]
     },
     {
-     "title": "3. POLITE LANGUAGE IN A HOTEL",
+     "title": "SERVICES OFFERED BY HOTELS",
      "blocks": [
       {
-       "t": "table",
-       "head": [
-        "Situation",
-        "What to say"
-       ],
-       "rows": [
-        [
-         "Asking for the menu",
-         "*\"**May I** have the menu, please?\"*"
-        ],
-        [
-         "Ordering",
-         "*\"I would like rice and beef stew, please.\"*"
-        ],
-        [
-         "Asking the price",
-         "*\"How much is the chicken, please?\"*"
-        ],
-        [
-         "Calling the waiter",
-         "*\"Excuse me, please.\"*"
-        ],
-        [
-         "Asking for the bill",
-         "*\"**May I** have the bill, please?\"*"
-        ],
-        [
-         "Thanking",
-         "*\"Thank you very much.\"*"
-        ],
-        [
-         "Booking a room",
-         "*\"I would like to book a single room for two nights.\"*"
-        ]
+       "t": "ul",
+       "items": [
+        "Accommodation",
+        "Food and drinks",
+        "Laundry services",
+        "Room cleaning",
+        "Internet services"
        ]
-      },
-      {
-       "t": "h3",
-       "x": "Table manners"
-      },
-      {
-       "t": "p",
-       "x": "Wash your hands before eating · sit upright · put the **serviette** on your lap · use the **cutlery** properly, starting from the outside · do not talk with your mouth full · chew with your mouth closed · do not make noise with the cutlery · say *please* and *thank you* · ask to be excused before leaving the table."
       }
      ]
     },
     {
-     "title": "4. LANGUAGE STRUCTURES",
+     "title": "PEOPLE WHO WORK IN A HOTEL",
      "blocks": [
       {
-       "t": "table",
-       "head": [
-        "Structure",
-        "Example"
-       ],
-       "rows": [
-        [
-         "**May I …?**",
-         "***May I** have the menu, please?*"
-        ],
-        [
-         "**… may …**",
-         "*Amuria Primary School **may** hold their end of year party in the hotel conference room.*"
-        ],
-        [
-         "**… no sooner … than …**",
-         "***No sooner had** the boss paid for his breakfast **than** he left the hotel.*"
-        ]
+       "t": "ul",
+       "items": [
+        "**Hotel manager** – supervises the activities of the hotel.",
+        "**Receptionist** – welcomes guests, records their details and helps them with accommodation.",
+        "**Chef** – prepares food for hotel guests.",
+        "**Waiter or waitress** – serves food and drinks to guests.",
+        "**Housekeeper** – keeps hotel rooms and other areas clean and tidy.",
+        "**Security guard** – protects the hotel, workers and guests from danger.",
+        "**Gardener** – maintains flowers, lawns, trees and other plants around the hotel."
        ]
-      },
-      {
-       "t": "p",
-       "x": "**Note on *no sooner*:** when the sentence begins with **No sooner**, the verb comes **before** the subject (*No sooner **had he** finished…*), and the second part uses **than**, never \"when\"."
       }
      ]
     },
     {
-     "title": "5. GRAMMAR",
+     "title": "TYPES OF HOTELS",
      "blocks": [
       {
-       "t": "h3",
-       "x": "(a) Forming adjectives"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Noun / verb",
-        "Adjective"
-       ],
-       "rows": [
-        [
-         "comfort",
-         "**comfortable**"
-        ],
-        [
-         "enjoy",
-         "**enjoyable**"
-        ],
-        [
-         "beauty",
-         "**beautiful**"
-        ],
-        [
-         "care",
-         "**careful / careless**"
-        ],
-        [
-         "attract",
-         "**attractive**"
-        ],
-        [
-         "expense",
-         "**expensive**"
-        ],
-        [
-         "taste",
-         "**tasty**"
-        ],
-        [
-         "use",
-         "**useful / useless**"
-        ]
+       "t": "ul",
+       "items": [
+        "Budget hotels",
+        "Luxury hotels",
+        "Resort hotels",
+        "Business hotels"
        ]
-      },
-      {
-       "t": "p",
-       "x": "*Example:* *The hotel has **comfortable** beds and an **attractive** garden, and the food is **tasty** but rather **expensive**.*"
-      },
-      {
-       "t": "h3",
-       "x": "(b) Direct speech and its punctuation"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Rule",
-        "Example"
-       ],
-       "rows": [
-        [
-         "Put the exact words in **quotation marks**",
-         "*\"May I have the menu, please?\"*"
-        ],
-        [
-         "Begin the spoken words with a **capital letter**",
-         "*The guest said, **\"T**he food is delicious.\"*"
-        ],
-        [
-         "Put a **comma** before the quotation when the saying part comes first",
-         "*He said, \"Bring the bill.\"*"
-        ],
-        [
-         "The **question mark or full stop goes inside** the quotation marks",
-         "*\"Is the room ready?\" he asked.*"
-        ],
-        [
-         "Start a **new line** for each new speaker in a dialogue",
-         ""
-        ]
-       ]
-      },
-      {
-       "t": "p",
-       "x": "**A short dialogue**"
-      },
-      {
-       "t": "note",
-       "x": "**Waiter:** Good afternoon, madam. May I take your order? **Guest:** Yes, please. May I have the menu first? **Waiter:** Here it is, madam. **Guest:** I would like rice with beef stew and a bottle of water. **Waiter:** Very well, madam. Your order will be ready in ten minutes."
       }
      ]
     },
     {
-     "title": "6. A HOTEL ADVERTISEMENT",
+     "title": "IMPORTANCE OF HOTELS",
      "blocks": [
       {
        "t": "p",
-       "x": "An advertisement should have a **name and a catchy line**, the **services offered**, the **price or special offer**, the **location**, and the **contact**."
+       "x": "Hotels are important because they:"
       },
       {
-       "t": "note",
-       "x": "**RWENZORI GARDEN HOTEL** *Where every guest is family.* Clean self-contained rooms · free Wi-Fi · a swimming pool and a gym · a conference room for 200 people · tasty local and international dishes. **Rooms from 60,000/= a night. Book two nights and get breakfast free.** Opposite the main market, Fort Portal. Tel: 0700 000 000."
+       "t": "ul",
+       "items": [
+        "Provide accommodation, food and other services to travellers.",
+        "Provide employment — they employ managers, receptionists, chefs, waiters, housekeepers and security guards.",
+        "Promote tourism — they provide accommodation and other services to tourists, making it easier for them to visit and stay in different places.",
+        "Contribute to the development of a country — they create employment, generate income, pay taxes and support other businesses."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "RULES FOR HOTEL GUESTS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Hotel guests should:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Keep hotel rooms clean.",
+        "Respect hotel workers and other guests.",
+        "Avoid damaging hotel property.",
+        "Pay for services received.",
+        "Follow hotel rules."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "Guests who damage hotel property may be required to pay for the damaged property and may face other action according to hotel rules."
       }
      ]
     },
@@ -2429,43 +2134,43 @@
        "rows": [
         [
          "Hotel",
-         "A place where travellers pay for meals and accommodation"
+         "A building or establishment where people pay to stay, eat and receive other services while away from home."
         ],
         [
-         "Waiter / waitress",
-         "A person who serves food and drinks at table"
+         "Hotel guest",
+         "A person who stays in a hotel."
         ],
         [
-         "Chef",
-         "The person who cooks the food"
+         "Accommodation",
+         "A place where people stay or live temporarily."
+        ],
+        [
+         "Hotel manager",
+         "A person who supervises the activities of a hotel."
         ],
         [
          "Receptionist",
-         "The person who receives guests and books rooms"
+         "A hotel worker who welcomes guests, records their details and helps them with accommodation."
         ],
         [
-         "Menu",
-         "The list of food and drinks with their prices"
+         "Chef",
+         "A person who prepares food for hotel guests."
         ],
         [
-         "Bill",
-         "The paper showing how much a customer must pay"
+         "Waiter or waitress",
+         "A person who serves food and drinks to guests."
         ],
         [
-         "Receipt",
-         "The paper showing that payment has been made"
+         "Housekeeper",
+         "A person who keeps hotel rooms and other areas clean and tidy."
         ],
         [
-         "Cutlery",
-         "Knives, forks and spoons"
+         "Security guard",
+         "A person who protects the hotel, workers and guests from danger."
         ],
         [
-         "Booking",
-         "Arranging a room or table in advance"
-        ],
-        [
-         "Table manners",
-         "The correct way of behaving at table"
+         "Gardener",
+         "A person who maintains flowers, lawns, trees and other plants around the hotel."
         ]
        ]
       }
@@ -2477,13 +2182,12 @@
       {
        "t": "ul",
        "items": [
-        "**Waiter** serves; **chef** cooks; **receptionist** books rooms and receives guests.",
-        "A **menu** lists the food; a **bill** shows what you owe; a **receipt** proves you paid.",
-        "**Check in** on arrival; **check out** when leaving.",
-        "**May I …?** is the polite way to ask for anything.",
-        "**No sooner … than …**, with the verb before the subject at the start of the sentence.",
-        "Dessert comes **last**: pudding, jelly or fruit.",
-        "Direct speech: quotation marks, capital letter, comma, and the full stop or question mark **inside**."
+        "A hotel is where people **pay** to stay, eat and receive services **while away from home**.",
+        "Hotels offer **accommodation, food and drinks, laundry, room cleaning and internet services**.",
+        "The **manager** supervises; the **receptionist** welcomes guests; the **chef** prepares food; the **waiter/waitress** serves it; the **housekeeper** cleans; the **guard** protects; the **gardener** cares for the plants.",
+        "The four types of hotels are **budget, luxury, resort and business** hotels.",
+        "Hotels **provide employment, promote tourism, generate income and pay taxes**.",
+        "Guests must **keep rooms clean, respect people and property, pay for services and follow the hotel's rules**; damaging property means paying for it and other action."
        ]
       }
      ]
@@ -2494,29 +2198,10 @@
       {
        "t": "ul",
        "items": [
-        "The person who cooks in a hotel → the **chef**.",
-        "The list of food and prices → the **menu**.",
-        "The paper showing what a customer must pay → the **bill**.",
-        "Knives, forks and spoons → **cutlery**.",
-        "Cloth used to wipe the mouth at table → a **serviette (napkin)**.",
-        "*____ I have the menu, please?* → **May**",
-        "*No sooner had he paid ____ he left.* → **than**",
-        "Adjective from *comfort* → **comfortable**."
-       ]
-      }
-     ]
-    },
-    {
-     "title": "COMMON MISTAKES TO AVOID",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "Writing *\"No sooner had he paid **when** he left\"* — it must be **than**.",
-        "Confusing **bill** (what you owe) with **receipt** (proof of payment).",
-        "Writing *\"Can I have the menu\"* in a formal test where **May I** is expected.",
-        "Forgetting quotation marks and the comma in direct speech.",
-        "Spelling: **restaurant, serviette, cutlery, receipt, conference**."
+        "Definition questions love **hotel, guest, accommodation, receptionist, chef, housekeeper** — learn the KEY DEFINITIONS word for word.",
+        "\"Work of…\" questions must name the **exact job**: receptionist welcomes and records guests; housekeeper cleans; guard protects; gardener maintains plants.",
+        "List five **services**, five **hotel workers**, four **types of hotels**, five **guest rules** — keep each list ready.",
+        "Importance answers should cover **travellers, employment, tourism and national development** (income, taxes, other businesses)."
        ]
       }
      ]
@@ -2527,21 +2212,26 @@
       {
        "t": "ol",
        "items": [
-        "Name any five workers in a hotel and give the duty of each.",
-        "Give the meaning of: menu, bill, receipt, cutlery, serviette.",
-        "Give the difference between checking in and checking out.",
-        "Name any six places found in a big hotel.",
-        "Name the four meals mentioned in the syllabus and say when each is taken.",
-        "What is a dessert? Give three examples.",
-        "Write a short lunch menu for a hotel, with at least five items and their prices.",
-        "Complete: *____ I have the bill, please?*",
-        "Complete: *No sooner had the guest finished eating ____ he asked for the bill.*",
-        "Complete: *The school ____ hold its party in the hotel conference room.*",
-        "Give the adjectives formed from: comfort, enjoy, beauty, expense, taste.",
-        "Punctuate correctly: *may i have the menu please said the guest*",
-        "Write a four-line dialogue between a waiter and a customer ordering a meal.",
-        "Give any six good table manners.",
-        "Write a short advertisement (about four lines) for a hotel in your town."
+        "What is a hotel?",
+        "Who is a hotel guest?",
+        "Why do people stay in hotels?",
+        "Mention five services offered by hotels.",
+        "What is accommodation?",
+        "Who is a hotel manager?",
+        "Who is a receptionist?",
+        "What is the work of a chef?",
+        "What is the work of a waiter or waitress?",
+        "What is the work of a housekeeper?",
+        "What is the work of a security guard in a hotel?",
+        "What is the work of a gardener in a hotel?",
+        "Mention five people who work in a hotel.",
+        "Mention four types of hotels.",
+        "Why are hotels important?",
+        "How do hotels provide employment?",
+        "How do hotels promote tourism?",
+        "How do hotels contribute to the development of a country?",
+        "Mention five rules that hotel guests should follow.",
+        "What can happen if hotel guests damage hotel property?"
        ],
        "start": 1
       }
@@ -2553,53 +2243,37 @@
       {
        "t": "ol",
        "items": [
-        "Any five: **waiter/waitress** — serves food and drinks at table; **chef** — cooks the food; **receptionist** — receives guests and books rooms; **manager** — is in charge of the hotel; **porter** — carries guests' luggage.",
-        "**Menu** — the list of food and drinks with prices; **bill** — the paper showing how much a customer must pay; **receipt** — the paper showing that payment has been made; **cutlery** — knives, forks and spoons; **serviette** — the cloth or paper used to wipe the mouth and hands.",
-        "**Checking in** is arriving at a hotel and registering for a room; **checking out** is leaving the hotel and paying the bill.",
-        "Any six of: reception, restaurant, dining room, lounge, bar, conference room, washrooms, gym, sauna, swimming pool, kitchen, balcony.",
-        "**Breakfast** — in the morning; **lunch** — in the middle of the day; **supper** — in the evening; **dinner** — the main meal, usually in the evening.",
-        "A **dessert** is the sweet dish taken at the end of a meal. Examples: fruit, jelly, pudding (also ice cream, cake).",
-        "*Learner's menu.* It should have the hotel name and meal at the top, at least five items grouped sensibly, and a price against each.",
-        "**May**",
-        "**than**",
-        "**may**",
-        "comfort → **comfortable**; enjoy → **enjoyable**; beauty → **beautiful**; expense → **expensive**; taste → **tasty**.",
-        "***\"May I have the menu, please?\" said the guest.***",
-        "*Learner's dialogue.* It must name each speaker, start a new line for each, use quotation marks or the play format consistently, and use polite language such as *May I …, please*.",
-        "Any six of: wash hands before eating; sit upright; place the serviette on your lap; use the cutlery properly; do not talk with your mouth full; chew with your mouth closed; do not make noise with the cutlery; say please and thank you; ask to be excused before leaving the table.",
-        "*Learner's advertisement.* It should have the hotel name, a catchy line, the services, the price or an offer, the location and a contact."
+        "A hotel is a building or establishment where people pay to stay, eat and receive other services while away from home.",
+        "A hotel guest is a person who stays in a hotel.",
+        "People stay in hotels to get accommodation, food, drinks and other services when they are away from home.",
+        "Any five: accommodation, food and drinks, laundry services, room cleaning, internet services.",
+        "Accommodation is a place where people stay or live temporarily.",
+        "A hotel manager is a person who supervises the activities of a hotel.",
+        "A receptionist is a hotel worker who welcomes guests, records their details and helps them with accommodation.",
+        "A chef prepares food for hotel guests.",
+        "A waiter or waitress serves food and drinks to guests.",
+        "A housekeeper keeps hotel rooms and other areas clean and tidy.",
+        "A security guard protects the hotel, workers and guests from danger.",
+        "A gardener maintains flowers, lawns, trees and other plants around the hotel.",
+        "Any five: hotel manager, receptionist, chef, waiter or waitress, housekeeper, security guard, gardener.",
+        "Budget hotels, luxury hotels, resort hotels and business hotels.",
+        "Because they provide accommodation, food and other services to travellers.",
+        "Hotels employ people such as managers, receptionists, chefs, waiters, housekeepers and security guards.",
+        "Hotels provide accommodation and other services to tourists, making it easier for them to visit and stay in different places.",
+        "Hotels create employment, generate income, pay taxes and support other businesses.",
+        "Keep hotel rooms clean; respect hotel workers and other guests; avoid damaging hotel property; pay for services received; follow hotel rules.",
+        "They may be required to pay for the damaged property and may face other action according to hotel rules."
        ],
        "start": 1
       }
      ]
     },
     {
-     "title": "P.6 QUICK REVISION",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "**Waiter** serves · **Chef** cooks · **Receptionist** books rooms",
-        "**Menu** (list) · **Bill** (what you owe) · **Receipt** (proof of payment)",
-        "**Check in** on arrival · **check out** when leaving",
-        "Polite: **May I … , please?**",
-        "**No sooner had he paid than he left** (never \"when\")",
-        "Direct speech: quotation marks · capital · comma · stop **inside**",
-        "Table manners: wash hands, serviette on the lap, no talking with a full mouth"
-       ]
-      }
-     ]
-    },
-    {
-     "title": "A note on sources",
+     "title": "A NOTE ON SOURCES",
      "blocks": [
       {
        "t": "p",
-       "x": "The topic title, vocabulary list, language structures (*May I …?*, *may*, *no sooner … than*), grammar items (formation of adjectives and direct speech), competences and teacher guidance above were taken from the official **NCDC Primary Six Curriculum, Set One** (© NCDC 2010; topic outline page 24 and pages 47–51 of the PDF in `curriculum/`), including its instruction that learners write menus according to their localities and write advertisements. The sample menu, advertisement, dialogue, explanations, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook. The prices in the sample menu are made-up teaching figures."
-      },
-      {
-       "t": "p",
-       "x": "No NCDC **Teacher's Guide** for P.6 was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+       "x": "*The study content of this topic was provided by the app owner for the P.6 theme Hotels (NCDC Primary Six Curriculum, Set One, English Topic 5, pages 47–51). All revision answers above are drawn from that owner-provided content.*"
       }
      ]
     }
