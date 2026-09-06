@@ -3,7 +3,7 @@
  "subject": "ENG",
  "subject_name": "English",
  "total": 6,
- "words": 14364,
+ "words": 17737,
  "topics": [
   {
    "id": "P6_ENG_T01",
@@ -3006,7 +3006,7 @@
    "slug": "family-relationships",
    "periods": 24,
    "curriculum_pages": "33–36",
-   "words": 1183,
+   "words": 4556,
    "sections": [
     {
      "title": "About this topic",
@@ -3017,7 +3017,7 @@
       },
       {
        "t": "p",
-       "x": "**What you already know:** You can name the members of your family. In P.6 you learn the **full family vocabulary in English** — the types of families, every family member and relationship, what a family does, and how good relationships are built and kept."
+       "x": "**What you already know:** You can name the members of your family. In this topic you master the **full family vocabulary in English** — every relationship including marriage, step and half relationships, twins and multiple births — plus family size, family trees, good relationships, values, culture, safety, and the grammar and language structures of family talk."
       },
       {
        "t": "p",
@@ -3026,238 +3026,1803 @@
       {
        "t": "ul",
        "items": [
-        "say what a family is and name the four types of families",
-        "name the family members and say how each is related to you",
-        "state the importance of a family",
-        "explain how good family relationships are promoted, what causes poor relationships and what poor relationships lead to"
+        "describe family relationships appropriately and differentiate family members",
+        "interpret family trees",
+        "use prepositions, verbs, adverbs and adjectives correctly",
+        "use the structures **rather…than, too…to, just, such…that** and **is…but…is**"
        ]
       }
      ]
     },
     {
-     "title": "MEANING OF A FAMILY",
+     "title": "A. INTRODUCTION TO FAMILY RELATIONSHIPS",
      "blocks": [
       {
        "t": "p",
-       "x": "A **family** is a group of people related by blood, marriage or adoption who live together or care for one another."
+       "x": "**1. What is a family?**"
+      },
+      {
+       "t": "p",
+       "x": "A family is a group of people who are related to one another by birth, marriage or adoption."
+      },
+      {
+       "t": "p",
+       "x": "**2. What is a family relationship?**"
+      },
+      {
+       "t": "p",
+       "x": "A family relationship is the connection between members of a family."
+      },
+      {
+       "t": "p",
+       "x": "**3. Why are family relationships important?**"
+      },
+      {
+       "t": "p",
+       "x": "Family relationships are important because family members provide love, care, support, guidance and protection to one another."
+      },
+      {
+       "t": "p",
+       "x": "**4. What makes a good family relationship?**"
+      },
+      {
+       "t": "p",
+       "x": "A good family relationship is built on love, care, respect, trust, forgiveness, cooperation and good communication."
+      },
+      {
+       "t": "p",
+       "x": "**5. What is a family member?**"
+      },
+      {
+       "t": "p",
+       "x": "A family member is a person who belongs to a particular family."
+      },
+      {
+       "t": "p",
+       "x": "**6. What is a nuclear family?**"
+      },
+      {
+       "t": "p",
+       "x": "A nuclear family is a family consisting mainly of parents and their children."
+      },
+      {
+       "t": "p",
+       "x": "**7. What is an extended family?**"
+      },
+      {
+       "t": "p",
+       "x": "An extended family is a family that includes other relatives such as grandparents, uncles, aunts, cousins, nephews and nieces in addition to the immediate family."
+      },
+      {
+       "t": "p",
+       "x": "**8. What is an immediate family?**"
+      },
+      {
+       "t": "p",
+       "x": "An immediate family normally consists of one's parents, brothers and sisters, and children where applicable."
+      },
+      {
+       "t": "p",
+       "x": "**9. What is a relative?**"
+      },
+      {
+       "t": "p",
+       "x": "A relative is a person who is related to another person by birth, marriage or adoption."
       }
      ]
     },
     {
-     "title": "TYPES OF FAMILIES",
+     "title": "B. FAMILY MEMBERS AND RELATIONSHIPS",
      "blocks": [
       {
-       "t": "h3",
-       "x": "1. Nuclear Family"
+       "t": "p",
+       "x": "**10. Who is a father?**"
       },
       {
        "t": "p",
-       "x": "A **nuclear family** consists of a father, mother and their children."
-      },
-      {
-       "t": "h3",
-       "x": "2. Extended Family"
+       "x": "A father is a male parent."
       },
       {
        "t": "p",
-       "x": "An **extended family** consists of parents, children and other relatives such as grandparents, uncles, aunts, nephews, nieces and cousins."
-      },
-      {
-       "t": "h3",
-       "x": "3. Single-parent Family"
+       "x": "**11. Who is a mother?**"
       },
       {
        "t": "p",
-       "x": "A **single-parent family** is a family in which children are raised by one parent."
-      },
-      {
-       "t": "h3",
-       "x": "4. Child-headed Family"
+       "x": "A mother is a female parent."
       },
       {
        "t": "p",
-       "x": "A **child-headed family** is a family where children live without adult parents or guardians and the oldest child takes responsibility for the younger children."
+       "x": "**12. Who is a son?**"
+      },
+      {
+       "t": "p",
+       "x": "A son is a male child of a parent or parents."
+      },
+      {
+       "t": "p",
+       "x": "**13. Who is a daughter?**"
+      },
+      {
+       "t": "p",
+       "x": "A daughter is a female child of a parent or parents."
+      },
+      {
+       "t": "p",
+       "x": "**14. Who is a brother?**"
+      },
+      {
+       "t": "p",
+       "x": "A brother is a male child of the same parent or parents as another person."
+      },
+      {
+       "t": "p",
+       "x": "**15. Who is a sister?**"
+      },
+      {
+       "t": "p",
+       "x": "A sister is a female child of the same parent or parents as another person."
+      },
+      {
+       "t": "p",
+       "x": "**16. Who is a husband?**"
+      },
+      {
+       "t": "p",
+       "x": "A husband is a married man in relation to his wife."
+      },
+      {
+       "t": "p",
+       "x": "**17. Who is a wife?**"
+      },
+      {
+       "t": "p",
+       "x": "A wife is a married woman in relation to her husband."
+      },
+      {
+       "t": "p",
+       "x": "**18. Who is a grandfather?**"
+      },
+      {
+       "t": "p",
+       "x": "A grandfather is the father of one's father or mother."
+      },
+      {
+       "t": "p",
+       "x": "**19. Who is a grandmother?**"
+      },
+      {
+       "t": "p",
+       "x": "A grandmother is the mother of one's father or mother."
+      },
+      {
+       "t": "p",
+       "x": "**20. Who is a grandparent?**"
+      },
+      {
+       "t": "p",
+       "x": "A grandparent is either a grandfather or grandmother."
+      },
+      {
+       "t": "p",
+       "x": "**21. Who is an uncle?**"
+      },
+      {
+       "t": "p",
+       "x": "An uncle is the brother of one's father or mother, or a man who is an uncle through marriage."
+      },
+      {
+       "t": "p",
+       "x": "**22. Who is an auntie?**"
+      },
+      {
+       "t": "p",
+       "x": "An auntie is the sister of one's father or mother, or a woman who is an aunt through marriage."
+      },
+      {
+       "t": "p",
+       "x": "**23. Who is a cousin?**"
+      },
+      {
+       "t": "p",
+       "x": "A cousin is the child of one's uncle or aunt."
+      },
+      {
+       "t": "p",
+       "x": "**24. Who is a nephew?**"
+      },
+      {
+       "t": "p",
+       "x": "A nephew is the son of one's brother or sister."
+      },
+      {
+       "t": "p",
+       "x": "**25. Who is a niece?**"
+      },
+      {
+       "t": "p",
+       "x": "A niece is the daughter of one's brother or sister."
       }
      ]
     },
     {
-     "title": "FAMILY MEMBERS AND THEIR RELATIONSHIPS",
+     "title": "C. RELATIONSHIPS THROUGH MARRIAGE",
      "blocks": [
+      {
+       "t": "p",
+       "x": "**26. Who is a stepmother?**"
+      },
+      {
+       "t": "p",
+       "x": "A stepmother is a woman married to one's father who is not one's biological mother."
+      },
+      {
+       "t": "p",
+       "x": "**27. Who is a stepfather?**"
+      },
+      {
+       "t": "p",
+       "x": "A stepfather is a man married to one's mother who is not one's biological father."
+      },
+      {
+       "t": "p",
+       "x": "**28. Who is a stepbrother?**"
+      },
+      {
+       "t": "p",
+       "x": "A stepbrother is the son of one's step-parent or, depending on the family situation, a boy who becomes one's brother through a parent's marriage."
+      },
+      {
+       "t": "p",
+       "x": "**29. Who is a stepsister?**"
+      },
+      {
+       "t": "p",
+       "x": "A stepsister is the daughter of one's step-parent or a girl who becomes one's sister through a parent's marriage."
+      },
+      {
+       "t": "p",
+       "x": "**30. Who is a mother-in-law?**"
+      },
+      {
+       "t": "p",
+       "x": "A mother-in-law is the mother of one's husband or wife."
+      },
+      {
+       "t": "p",
+       "x": "**31. Who is a father-in-law?**"
+      },
+      {
+       "t": "p",
+       "x": "A father-in-law is the father of one's husband or wife."
+      },
+      {
+       "t": "p",
+       "x": "**32. Who is a brother-in-law?**"
+      },
+      {
+       "t": "p",
+       "x": "A brother-in-law is the brother of one's husband or wife, or a man married to one's sister."
+      },
+      {
+       "t": "p",
+       "x": "**33. Who is a sister-in-law?**"
+      },
+      {
+       "t": "p",
+       "x": "A sister-in-law is the sister of one's husband or wife, or a woman married to one's brother."
+      },
+      {
+       "t": "p",
+       "x": "**34. What does \"in-law\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "\"In-law\" refers to a relationship created through marriage."
+      }
+     ]
+    },
+    {
+     "title": "D. HALF-BROTHERS AND HALF-SISTERS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**35. Who is a half-brother?**"
+      },
+      {
+       "t": "p",
+       "x": "A half-brother is a brother who shares only one biological parent with another person."
+      },
+      {
+       "t": "p",
+       "x": "**36. Who is a half-sister?**"
+      },
+      {
+       "t": "p",
+       "x": "A half-sister is a sister who shares only one biological parent with another person."
+      },
+      {
+       "t": "p",
+       "x": "**37. What is the difference between a brother and a half-brother?**"
+      },
+      {
+       "t": "p",
+       "x": "A brother may share both biological parents with you, while a half-brother shares only one biological parent with you."
+      },
+      {
+       "t": "p",
+       "x": "**38. What is the difference between a sister and a half-sister?**"
+      },
+      {
+       "t": "p",
+       "x": "A sister may share both biological parents with you, while a half-sister shares only one biological parent with you."
+      }
+     ]
+    },
+    {
+     "title": "E. TWINS AND MULTIPLE BIRTHS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**39. Who are twins?**"
+      },
+      {
+       "t": "p",
+       "x": "Twins are two children born to the same mother at the same birth."
+      },
+      {
+       "t": "p",
+       "x": "**40. Who are triplets?**"
+      },
+      {
+       "t": "p",
+       "x": "Triplets are three children born to the same mother at the same birth."
+      },
+      {
+       "t": "p",
+       "x": "**41. Who are quadruplets?**"
+      },
+      {
+       "t": "p",
+       "x": "Quadruplets are four children born to the same mother at the same birth."
+      },
+      {
+       "t": "p",
+       "x": "**42. What is a multiple birth?**"
+      },
+      {
+       "t": "p",
+       "x": "A multiple birth is when two or more babies are born from the same pregnancy."
+      },
+      {
+       "t": "p",
+       "x": "**43. What is the difference between twins and triplets?**"
+      },
+      {
+       "t": "p",
+       "x": "Twins are two babies born at the same birth, while triplets are three."
+      },
+      {
+       "t": "p",
+       "x": "**44. What is the difference between triplets and quadruplets?**"
+      },
+      {
+       "t": "p",
+       "x": "Triplets are three babies born at the same birth, while quadruplets are four."
+      }
+     ]
+    },
+    {
+     "title": "F. AGE AND FAMILY RELATIONSHIPS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**45. What does \"young\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Young means having lived for a relatively short time or being at an early stage of life."
+      },
+      {
+       "t": "p",
+       "x": "**46. What does \"old\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Old means having lived for a long time or having existed for a long period."
+      },
+      {
+       "t": "p",
+       "x": "**47. What does \"elder\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Elder means older than another person, especially when referring to members of a family or group."
+      },
+      {
+       "t": "p",
+       "x": "**48. What does \"eldest\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Eldest means the oldest among two or more people."
+      },
+      {
+       "t": "p",
+       "x": "**49. What is the difference between \"elder\" and \"eldest\"?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Elder\" is used to compare a person with another person, while \"eldest\" refers to the oldest person in a group."
+      },
+      {
+       "t": "p",
+       "x": "**50. Give a sentence using \"elder\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"My elder brother is in Primary Seven.\""
+      },
+      {
+       "t": "p",
+       "x": "**51. Give a sentence using \"eldest\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"Sarah is the eldest child in our family.\""
+      }
+     ]
+    },
+    {
+     "title": "G. MARRIAGE AND CHILDBIRTH",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**52. What does \"marry\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To marry means to enter into a legally or socially recognised marriage with another person."
+      },
+      {
+       "t": "p",
+       "x": "**53. What does \"married\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Married means being joined to another person in marriage."
+      },
+      {
+       "t": "p",
+       "x": "**54. Give a sentence using \"marry\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"Many adults choose to marry when they are ready for marriage.\""
+      },
+      {
+       "t": "p",
+       "x": "**55. What does \"give birth to\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Give birth to\" means to produce a baby through childbirth."
+      },
+      {
+       "t": "p",
+       "x": "**56. Give a sentence using \"give birth to\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"My aunt has given birth to a baby girl.\""
+      },
+      {
+       "t": "p",
+       "x": "**57. What is childbirth?**"
+      },
+      {
+       "t": "p",
+       "x": "Childbirth is the process through which a baby is born."
+      }
+     ]
+    },
+    {
+     "title": "H. FAMILY SIZE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**58. What is family size?**"
+      },
+      {
+       "t": "p",
+       "x": "Family size is the number of people in a family."
+      },
+      {
+       "t": "p",
+       "x": "**59. What is a small family?**"
+      },
+      {
+       "t": "p",
+       "x": "A small family has relatively few members."
+      },
+      {
+       "t": "p",
+       "x": "**60. What is a large family?**"
+      },
+      {
+       "t": "p",
+       "x": "A large family has many members."
+      },
+      {
+       "t": "p",
+       "x": "**61. What is a populated family?**"
+      },
+      {
+       "t": "p",
+       "x": "A populated family is a family that has people living in it."
+      },
+      {
+       "t": "p",
+       "x": "**62. What does \"populated\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Populated means having people living in a particular place."
+      },
+      {
+       "t": "p",
+       "x": "**63. What does \"scarcely populated\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Scarcely populated means having very few people living in a place or area."
+      },
+      {
+       "t": "p",
+       "x": "**64. What does \"densely populated\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Densely populated means having many people living closely together in a particular area."
+      },
+      {
+       "t": "p",
+       "x": "**65. What is population?**"
+      },
+      {
+       "t": "p",
+       "x": "Population is the number of people living in a particular place at a particular time."
+      },
+      {
+       "t": "p",
+       "x": "**66. What is population density?**"
+      },
+      {
+       "t": "p",
+       "x": "Population density is the number of people living in a given area of land."
+      },
+      {
+       "t": "p",
+       "x": "**67. What is an overcrowded family?**"
+      },
+      {
+       "t": "p",
+       "x": "An overcrowded family is a family in which too many people live in a limited amount of space or resources."
+      },
+      {
+       "t": "p",
+       "x": "**68. What can cause overcrowding in a family?**"
+      },
+      {
+       "t": "p",
+       "x": "Overcrowding may result from having many children or many relatives living together in a small home."
+      },
+      {
+       "t": "p",
+       "x": "**69. What are some advantages of a manageable family size?**"
+      },
+      {
+       "t": "p",
+       "x": "A manageable family size can make it easier for parents or guardians to provide:"
+      },
       {
        "t": "ul",
        "items": [
-        "**Father** – a male parent.",
-        "**Mother** – a female parent.",
-        "**Son** – a male child.",
-        "**Daughter** – a female child.",
-        "**Brother** – a male child of the same parents.",
-        "**Sister** – a female child of the same parents.",
-        "**Grandfather** – the father of one's father or mother.",
-        "**Grandmother** – the mother of one's father or mother.",
-        "**Uncle** – the brother of one's father or mother.",
-        "**Aunt** – the sister of one's father or mother.",
-        "**Cousin** – a child of one's uncle or aunt.",
-        "**Nephew** – a son of one's brother or sister.",
-        "**Niece** – a daughter of one's brother or sister."
+        "food;",
+        "clothing;",
+        "education;",
+        "healthcare;",
+        "shelter;",
+        "love and attention."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**70. What are some challenges of a very large family?**"
+      },
+      {
+       "t": "p",
+       "x": "A very large family may experience difficulties such as:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "inadequate food;",
+        "limited living space;",
+        "difficulty paying school fees;",
+        "inadequate healthcare;",
+        "limited parental attention;",
+        "insufficient clothing and other necessities."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**71. Why is family planning important?**"
+      },
+      {
+       "t": "p",
+       "x": "Family planning helps parents make informed decisions about the number and spacing of children so that they can better care for their family."
+      }
+     ]
+    },
+    {
+     "title": "I. FAMILY TREE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**72. What is a family tree?**"
+      },
+      {
+       "t": "p",
+       "x": "A family tree is a diagram that shows how members of a family are related to one another."
+      },
+      {
+       "t": "p",
+       "x": "**73. Why is a family tree important?**"
+      },
+      {
+       "t": "p",
+       "x": "It helps people understand and identify family relationships."
+      },
+      {
+       "t": "p",
+       "x": "**74. What information can be shown on a family tree?**"
+      },
+      {
+       "t": "p",
+       "x": "A family tree can show:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "parents;",
+        "children;",
+        "grandparents;",
+        "brothers and sisters;",
+        "uncles and aunts;",
+        "cousins;",
+        "other relatives."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**75. How can you identify a person's parents on a family tree?**"
+      },
+      {
+       "t": "p",
+       "x": "The parents are normally shown above their children and connected to them by lines."
+      },
+      {
+       "t": "p",
+       "x": "**76. How can you identify brothers and sisters?**"
+      },
+      {
+       "t": "p",
+       "x": "Children who have the same parents on the family tree are brothers and sisters."
+      },
+      {
+       "t": "p",
+       "x": "**77. How can you identify cousins?**"
+      },
+      {
+       "t": "p",
+       "x": "Cousins are usually the children of one's uncles and aunts."
+      },
+      {
+       "t": "p",
+       "x": "**78. Why should learners be able to interpret a family tree?**"
+      },
+      {
+       "t": "p",
+       "x": "It helps them identify and describe relationships between different family members."
+      },
+      {
+       "t": "p",
+       "x": "**79. What does it mean to interpret a family tree?**"
+      },
+      {
+       "t": "p",
+       "x": "It means to study the diagram and correctly explain the relationships shown in it."
+      }
+     ]
+    },
+    {
+     "title": "J. GOOD FAMILY RELATIONSHIPS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**80. What is a good family relationship?**"
+      },
+      {
+       "t": "p",
+       "x": "It is a relationship in which family members care for, respect, support and communicate well with one another."
+      },
+      {
+       "t": "p",
+       "x": "**81. How can family members show love?**"
+      },
+      {
+       "t": "p",
+       "x": "They can show love by:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "caring for one another;",
+        "helping one another;",
+        "listening to one another;",
+        "sharing;",
+        "protecting one another;",
+        "showing kindness."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**82. How can family members show care?**"
+      },
+      {
+       "t": "p",
+       "x": "They can provide food, shelter, clothing, education, healthcare and emotional support."
+      },
+      {
+       "t": "p",
+       "x": "**83. Why is respect important in a family?**"
+      },
+      {
+       "t": "p",
+       "x": "Respect helps family members live together peacefully."
+      },
+      {
+       "t": "p",
+       "x": "**84. Why is communication important in a family?**"
+      },
+      {
+       "t": "p",
+       "x": "Communication helps family members understand one another and solve problems."
+      },
+      {
+       "t": "p",
+       "x": "**85. Why is forgiveness important in a family?**"
+      },
+      {
+       "t": "p",
+       "x": "Forgiveness helps family members overcome disagreements and restore good relationships."
+      },
+      {
+       "t": "p",
+       "x": "**86. What does it mean to forgive?**"
+      },
+      {
+       "t": "p",
+       "x": "To forgive means to stop blaming or being angry with someone for a wrong they have done."
+      },
+      {
+       "t": "p",
+       "x": "**87. Why should family members cooperate?**"
+      },
+      {
+       "t": "p",
+       "x": "Cooperation helps family members accomplish tasks and solve problems together."
+      },
+      {
+       "t": "p",
+       "x": "**88. What can cause disagreements in a family?**"
+      },
+      {
+       "t": "p",
+       "x": "Disagreements may result from:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "misunderstandings;",
+        "lack of communication;",
+        "jealousy;",
+        "unfair treatment;",
+        "failure to share responsibilities;",
+        "differences in opinions."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**89. How can family disagreements be solved?**"
+      },
+      {
+       "t": "p",
+       "x": "They can be solved through:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "discussion;",
+        "listening;",
+        "forgiveness;",
+        "apology;",
+        "compromise;",
+        "seeking advice from responsible adults."
        ]
       }
      ]
     },
     {
-     "title": "IMPORTANCE OF FAMILY",
+     "title": "K. FAMILY VALUES",
      "blocks": [
       {
        "t": "p",
-       "x": "A family is important because it:"
+       "x": "**90. What is love?**"
       },
+      {
+       "t": "p",
+       "x": "Love is a strong feeling of care and affection for another person."
+      },
+      {
+       "t": "p",
+       "x": "**91. What is care?**"
+      },
+      {
+       "t": "p",
+       "x": "Care means giving attention, help and protection to someone."
+      },
+      {
+       "t": "p",
+       "x": "**92. What is appreciation?**"
+      },
+      {
+       "t": "p",
+       "x": "Appreciation means recognising and valuing the good qualities or efforts of someone."
+      },
+      {
+       "t": "p",
+       "x": "**93. Why should children appreciate their parents and guardians?**"
+      },
+      {
+       "t": "p",
+       "x": "They should appreciate them because parents and guardians provide care, guidance, protection and support."
+      },
+      {
+       "t": "p",
+       "x": "**94. What is respect?**"
+      },
+      {
+       "t": "p",
+       "x": "Respect means treating people with consideration and recognising their rights and worth."
+      },
+      {
+       "t": "p",
+       "x": "**95. Why should children respect older family members?**"
+      },
+      {
+       "t": "p",
+       "x": "They should respect older family members because they have experience and can provide guidance and support."
+      }
+     ]
+    },
+    {
+     "title": "L. FAMILY AND CULTURE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**96. What is culture?**"
+      },
+      {
+       "t": "p",
+       "x": "Culture is the way of life of a particular group of people."
+      },
+      {
+       "t": "p",
+       "x": "**97. How can families teach children culture?**"
+      },
+      {
+       "t": "p",
+       "x": "Families teach culture through:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "language;",
+        "traditions;",
+        "customs;",
+        "stories;",
+        "ceremonies;",
+        "food;",
+        "dressing;",
+        "behaviour."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**98. Why is it important to know one's culture?**"
+      },
+      {
+       "t": "p",
+       "x": "Knowing one's culture helps a person understand their identity, traditions and community."
+      },
+      {
+       "t": "p",
+       "x": "**99. What is a tribe?**"
+      },
+      {
+       "t": "p",
+       "x": "A tribe is a social group of people who share common ancestry, traditions, culture or identity."
+      },
+      {
+       "t": "p",
+       "x": "**100. Why should we respect other people's cultures?**"
+      },
+      {
+       "t": "p",
+       "x": "We should respect other people's cultures because people have different traditions and ways of life."
+      }
+     ]
+    },
+    {
+     "title": "M. FAMILY SAFETY AND PROTECTION",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**101. What is defilement?**"
+      },
+      {
+       "t": "p",
+       "x": "Defilement is a serious sexual offence involving a child."
+      },
+      {
+       "t": "p",
+       "x": "**102. What is rape?**"
+      },
+      {
+       "t": "p",
+       "x": "Rape is a serious sexual offence involving sexual activity without a person's consent."
+      },
+      {
+       "t": "p",
+       "x": "**103. What is incest?**"
+      },
+      {
+       "t": "p",
+       "x": "Incest is sexual activity between close relatives where such a relationship is prohibited by law or social rules."
+      },
+      {
+       "t": "p",
+       "x": "**104. Why are defilement, rape and incest serious issues?**"
+      },
+      {
+       "t": "p",
+       "x": "They can cause serious physical, emotional, psychological and social harm to victims and are serious offences."
+      },
+      {
+       "t": "p",
+       "x": "**105. What should a child do if someone makes them feel unsafe?**"
+      },
+      {
+       "t": "p",
+       "x": "The child should move to a safe place and tell a trusted adult such as a parent, guardian, teacher or another responsible person."
+      },
+      {
+       "t": "p",
+       "x": "**106. Why should children speak out about abuse?**"
+      },
+      {
+       "t": "p",
+       "x": "Speaking out can help them receive protection, support and appropriate help."
+      }
+     ]
+    },
+    {
+     "title": "N. GRAMMAR: PREPOSITIONS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**107. What is a preposition?**"
+      },
+      {
+       "t": "p",
+       "x": "A preposition is a word that shows the relationship between a noun or pronoun and another word in a sentence."
+      },
+      {
+       "t": "p",
+       "x": "**108. Give examples of prepositions.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include: in, on, at, under, beside, between, behind, near, with, from, to."
+      },
+      {
+       "t": "p",
+       "x": "**109. Give a family-related sentence using \"in\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"Sarah is in the family.\""
+      },
+      {
+       "t": "p",
+       "x": "**110. Give a sentence using \"with\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"I live with my parents.\""
+      },
+      {
+       "t": "p",
+       "x": "**111. Give a sentence using \"from\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"My uncle is from Kampala.\""
+      },
+      {
+       "t": "p",
+       "x": "**112. Give a sentence using \"to\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"My mother went to visit my grandmother.\""
+      },
+      {
+       "t": "p",
+       "x": "**113. Give a sentence using \"between\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"The relationship between the two sisters is good.\""
+      }
+     ]
+    },
+    {
+     "title": "O. ADVERBS: JUST AND ALREADY",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**114. What is an adverb?**"
+      },
+      {
+       "t": "p",
+       "x": "An adverb is a word that gives more information about a verb, adjective or another adverb."
+      },
+      {
+       "t": "p",
+       "x": "**115. How is \"just\" used?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Just\" can show that something happened a very short time ago."
+      },
+      {
+       "t": "p",
+       "x": "**116. Give a sentence using \"just\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"My aunt has just given birth to a baby.\""
+      },
+      {
+       "t": "p",
+       "x": "**117. How is \"already\" used?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Already\" shows that something has happened before now or earlier than expected."
+      },
+      {
+       "t": "p",
+       "x": "**118. Give a sentence using \"already\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"My grandmother has already arrived.\""
+      },
+      {
+       "t": "p",
+       "x": "**119. What is the difference between \"just\" and \"already\"?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Just\" often shows that something happened very recently, while \"already\" shows that something has happened before the present time or earlier than expected."
+      }
+     ]
+    },
+    {
+     "title": "P. VERBS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**120. What is a verb?**"
+      },
+      {
+       "t": "p",
+       "x": "A verb is a word that shows an action, state or occurrence."
+      },
+      {
+       "t": "p",
+       "x": "**121. Give examples of verbs related to family relationships.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include: marry, care, love, help, respect, forgive, give, live, visit, support."
+      },
+      {
+       "t": "p",
+       "x": "**122. Use \"care\" in a sentence.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Parents care for their children.\""
+      },
+      {
+       "t": "p",
+       "x": "**123. Use \"respect\" in a sentence.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Children should respect their parents.\""
+      },
+      {
+       "t": "p",
+       "x": "**124. Use \"forgive\" in a sentence.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Family members should forgive one another.\""
+      }
+     ]
+    },
+    {
+     "title": "Q. ADJECTIVES: YOUNG AND OLD",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**125. What is an adjective?**"
+      },
+      {
+       "t": "p",
+       "x": "An adjective is a word that describes a noun or pronoun."
+      },
+      {
+       "t": "p",
+       "x": "**126. Give examples of adjectives used when describing family members.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include: young, old, elder, eldest."
+      },
+      {
+       "t": "p",
+       "x": "**127. Give a sentence using \"young\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"My youngest sister is very young.\""
+      },
+      {
+       "t": "p",
+       "x": "**128. Give a sentence using \"old\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"My grandfather is old.\""
+      },
+      {
+       "t": "p",
+       "x": "**129. Give a sentence using \"elder\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"My elder brother helps me with homework.\""
+      },
+      {
+       "t": "p",
+       "x": "**130. Give a sentence using \"eldest\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"My eldest sister is a doctor.\""
+      }
+     ]
+    },
+    {
+     "title": "R. LANGUAGE STRUCTURE: RATHER...THAN",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**131. What does \"rather...than\" express?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Rather...than\" is used to show a preference for one thing over another."
+      },
+      {
+       "t": "p",
+       "x": "**132. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"I would rather have twins than triplets.\""
+      },
+      {
+       "t": "p",
+       "x": "**133. Complete the sentence: \"I would rather live with my parents ______ live alone.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"I would rather live with my parents than live alone.\""
+      },
+      {
+       "t": "p",
+       "x": "**134. Make a sentence using \"rather...than\" about family.**"
+      },
+      {
+       "t": "p",
+       "x": "\"I would rather visit my grandmother than stay at home.\""
+      }
+     ]
+    },
+    {
+     "title": "S. LANGUAGE STRUCTURE: TOO...TO",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**135. What does \"too...to\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Too...to\" shows that something is more than is suitable or possible for a particular action."
+      },
+      {
+       "t": "p",
+       "x": "**136. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Your niece is too young to get married.\""
+      },
+      {
+       "t": "p",
+       "x": "**137. Complete the sentence: \"The baby is too young ______ walk.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"The baby is too young to walk.\""
+      },
+      {
+       "t": "p",
+       "x": "**138. Make a family-related sentence using \"too...to\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"My little brother is too young to go to school alone.\""
+      }
+     ]
+    },
+    {
+     "title": "T. LANGUAGE STRUCTURE: JUST",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**139. Make a sentence using \"just\" about childbirth.**"
+      },
+      {
+       "t": "p",
+       "x": "\"My aunt has just given birth to her baby.\""
+      },
+      {
+       "t": "p",
+       "x": "**140. Make a sentence using \"just\" about visiting a relative.**"
+      },
+      {
+       "t": "p",
+       "x": "\"My uncle has just arrived.\""
+      },
+      {
+       "t": "p",
+       "x": "**141. Complete the sentence: \"My grandmother has just ______.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"My grandmother has just arrived.\""
+      }
+     ]
+    },
+    {
+     "title": "U. LANGUAGE STRUCTURE: SUCH...THAT",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**142. What does \"such...that\" show?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Such...that\" is used to show that something has a particular quality to such a degree that it causes a result."
+      },
+      {
+       "t": "p",
+       "x": "**143. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"My cousin was such a beautiful girl that many people admired her.\""
+      },
+      {
+       "t": "p",
+       "x": "**144. Complete the sentence: \"It was such a large family ______ everyone had to help.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"It was such a large family that everyone had to help.\""
+      },
+      {
+       "t": "p",
+       "x": "**145. Make a family-related sentence using \"such...that\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"They were such caring parents that their children trusted them.\""
+      }
+     ]
+    },
+    {
+     "title": "V. LANGUAGE STRUCTURE: IS...BUT...IS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**146. What does \"is...but...is\" show?**"
+      },
+      {
+       "t": "p",
+       "x": "It is used to contrast two related facts or people."
+      },
+      {
+       "t": "p",
+       "x": "**147. Give the NCDC-style example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Hawa is my niece but her brother is my nephew.\""
+      },
+      {
+       "t": "p",
+       "x": "**148. Give another example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"John is my cousin but Mary is my sister.\""
+      },
+      {
+       "t": "p",
+       "x": "**149. Complete the sentence: \"Sarah is my niece but Peter ______ my nephew.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"Sarah is my niece but Peter is my nephew.\""
+      }
+     ]
+    },
+    {
+     "title": "W. COMPARING FAMILY MEMBERS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**150. Who is older: an elder brother or a younger brother?**"
+      },
+      {
+       "t": "p",
+       "x": "An elder brother is older than a younger brother."
+      },
+      {
+       "t": "p",
+       "x": "**151. What is the difference between older and younger?**"
+      },
+      {
+       "t": "p",
+       "x": "Older means having more age, while younger means having less age."
+      },
+      {
+       "t": "p",
+       "x": "**152. Complete the sentence: \"Mary is ______ than her sister.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"Mary is older than her sister.\""
+      },
+      {
+       "t": "p",
+       "x": "**153. Complete the sentence: \"John is ______ than his elder brother.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"John is younger than his elder brother.\""
+      }
+     ]
+    },
+    {
+     "title": "X. FAMILY RELATIONSHIP QUESTIONS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**154. Who is your father's brother?**"
+      },
+      {
+       "t": "p",
+       "x": "My father's brother is my uncle."
+      },
+      {
+       "t": "p",
+       "x": "**155. Who is your mother's sister?**"
+      },
+      {
+       "t": "p",
+       "x": "My mother's sister is my auntie."
+      },
+      {
+       "t": "p",
+       "x": "**156. Who is your mother's brother?**"
+      },
+      {
+       "t": "p",
+       "x": "My mother's brother is my uncle."
+      },
+      {
+       "t": "p",
+       "x": "**157. Who is your father's sister?**"
+      },
+      {
+       "t": "p",
+       "x": "My father's sister is my auntie."
+      },
+      {
+       "t": "p",
+       "x": "**158. Who is your uncle's son?**"
+      },
+      {
+       "t": "p",
+       "x": "My uncle's son is my cousin."
+      },
+      {
+       "t": "p",
+       "x": "**159. Who is your auntie's daughter?**"
+      },
+      {
+       "t": "p",
+       "x": "My auntie's daughter is my cousin."
+      },
+      {
+       "t": "p",
+       "x": "**160. Who is your sister's son?**"
+      },
+      {
+       "t": "p",
+       "x": "My sister's son is my nephew."
+      },
+      {
+       "t": "p",
+       "x": "**161. Who is your brother's daughter?**"
+      },
+      {
+       "t": "p",
+       "x": "My brother's daughter is my niece."
+      },
+      {
+       "t": "p",
+       "x": "**162. Who is your mother's mother?**"
+      },
+      {
+       "t": "p",
+       "x": "My mother's mother is my grandmother."
+      },
+      {
+       "t": "p",
+       "x": "**163. Who is your father's father?**"
+      },
+      {
+       "t": "p",
+       "x": "My father's father is my grandfather."
+      },
+      {
+       "t": "p",
+       "x": "**164. Who is your husband's mother?**"
+      },
+      {
+       "t": "p",
+       "x": "My husband's mother is my mother-in-law."
+      },
+      {
+       "t": "p",
+       "x": "**165. Who is your wife's father?**"
+      },
+      {
+       "t": "p",
+       "x": "My wife's father is my father-in-law."
+      },
+      {
+       "t": "p",
+       "x": "**166. Who is your sister's husband?**"
+      },
+      {
+       "t": "p",
+       "x": "My sister's husband is my brother-in-law."
+      },
+      {
+       "t": "p",
+       "x": "**167. Who is your brother's wife?**"
+      },
+      {
+       "t": "p",
+       "x": "My brother's wife is my sister-in-law."
+      }
+     ]
+    },
+    {
+     "title": "Y. DESCRIBING FAMILY RELATIONSHIPS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**168. How can you describe a family relationship?**"
+      },
+      {
+       "t": "p",
+       "x": "You can describe it by stating how one person is related to another."
+      },
+      {
+       "t": "p",
+       "x": "**169. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Marsha is Maria's sister.\""
+      },
+      {
+       "t": "p",
+       "x": "**170. Give another example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Peter is John's uncle.\""
+      },
+      {
+       "t": "p",
+       "x": "**171. Give another example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Sarah is David's cousin.\""
+      },
+      {
+       "t": "p",
+       "x": "**172. Give another example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Mary is James's niece.\""
+      },
+      {
+       "t": "p",
+       "x": "**173. Why is it important to describe relationships correctly?**"
+      },
+      {
+       "t": "p",
+       "x": "Correct descriptions help people understand how family members are connected."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS (KEY VOCABULARY)",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Grandparent",
+         "Grandfather or grandmother"
+        ],
+        [
+         "Stepmother",
+         "Father's wife who is not one's biological mother"
+        ],
+        [
+         "Stepfather",
+         "Mother's husband who is not one's biological father"
+        ],
+        [
+         "Stepbrother",
+         "Brother through a step-family relationship"
+        ],
+        [
+         "Stepsister",
+         "Sister through a step-family relationship"
+        ],
+        [
+         "Auntie",
+         "Sister of one's parent or a female relative through marriage"
+        ],
+        [
+         "Uncle",
+         "Brother of one's parent or a male relative through marriage"
+        ],
+        [
+         "Cousin",
+         "Child of one's uncle or aunt"
+        ],
+        [
+         "Nephew",
+         "Son of one's brother or sister"
+        ],
+        [
+         "Niece",
+         "Daughter of one's brother or sister"
+        ],
+        [
+         "Mother-in-law",
+         "Mother of one's husband or wife"
+        ],
+        [
+         "Father-in-law",
+         "Father of one's husband or wife"
+        ],
+        [
+         "Brother-in-law",
+         "Brother of one's husband/wife or husband of one's sister"
+        ],
+        [
+         "Sister-in-law",
+         "Sister of one's husband/wife or wife of one's brother"
+        ],
+        [
+         "Half-brother",
+         "Brother sharing one biological parent"
+        ],
+        [
+         "Half-sister",
+         "Sister sharing one biological parent"
+        ],
+        [
+         "Twins",
+         "Two babies born at the same birth"
+        ],
+        [
+         "Triplets",
+         "Three babies born at the same birth"
+        ],
+        [
+         "Quadruplets",
+         "Four babies born at the same birth"
+        ],
+        [
+         "Young",
+         "Having a relatively small age"
+        ],
+        [
+         "Old",
+         "Having lived for a long time"
+        ],
+        [
+         "Elder",
+         "Older than another person"
+        ],
+        [
+         "Eldest",
+         "Oldest in a group"
+        ],
+        [
+         "Populated",
+         "Having people living in an area"
+        ],
+        [
+         "Scarcely populated",
+         "Having very few people"
+        ],
+        [
+         "Densely populated",
+         "Having many people living closely together"
+        ],
+        [
+         "Marry",
+         "To enter into marriage"
+        ],
+        [
+         "Give birth to",
+         "To produce a baby through childbirth"
+        ],
+        [
+         "Defile",
+         "To sexually abuse a child"
+        ],
+        [
+         "Rape",
+         "A serious sexual offence involving sexual activity without consent"
+        ],
+        [
+         "Incest",
+         "Sexual activity between close relatives where prohibited"
+        ],
+        [
+         "Tribe",
+         "A social group sharing common ancestry, culture or traditions"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "LANGUAGE STRUCTURES TO MASTER",
+     "blocks": [
       {
        "t": "ol",
        "items": [
-        "Provides love and care.",
-        "Provides food and shelter.",
-        "Provides education and guidance.",
-        "Protects children from danger.",
-        "Teaches children good behaviour.",
-        "Provides emotional support.",
-        "Provides basic needs.",
-        "Helps members during difficult times.",
-        "Promotes unity and cooperation.",
-        "Teaches cultural values and traditions."
+        "**Rather...than** - \"I would rather have twins than triplets.\"",
+        "**Too...to** - \"The child is too young to get married.\"",
+        "**Just** - \"My aunt has just given birth.\"",
+        "**Such...that** - \"They were such caring parents that everyone respected them.\"",
+        "**Is...but...is** - \"Hawa is my niece but her brother is my nephew.\""
        ],
        "start": 1
       }
      ]
     },
     {
-     "title": "GOOD FAMILY RELATIONSHIPS",
+     "title": "MAIN GRAMMAR AREAS",
      "blocks": [
       {
        "t": "p",
-       "x": "Good family relationships are promoted by:"
+       "x": "The NCDC curriculum requires learners to practise:"
       },
       {
        "t": "ul",
        "items": [
-        "Respecting one another.",
-        "Loving one another.",
-        "Sharing responsibilities.",
-        "Helping one another.",
-        "Communicating openly.",
-        "Forgiving one another.",
-        "Solving disagreements peacefully.",
-        "Caring for elderly and vulnerable family members.",
-        "Spending time together.",
-        "Being honest with one another."
+        "**Prepositions**",
+        "**Adverbs:** just, already",
+        "**Verbs**",
+        "**Adjectives:** young, old"
        ]
       }
      ]
     },
     {
-     "title": "CAUSES OF POOR FAMILY RELATIONSHIPS",
+     "title": "MAIN COMPETENCIES",
      "blocks": [
       {
        "t": "p",
-       "x": "Poor family relationships may be caused by:"
+       "x": "By the end of this topic, the learner should be able to:"
       },
       {
-       "t": "ul",
+       "t": "ol",
        "items": [
-        "Lack of communication.",
-        "Poverty.",
-        "Domestic violence.",
-        "Alcohol and drug abuse.",
-        "Disrespect.",
-        "Neglect.",
-        "Dishonesty.",
-        "Quarrels.",
-        "Separation of parents.",
-        "Failure to provide basic needs."
-       ]
-      }
-     ]
-    },
-    {
-     "title": "EFFECTS OF POOR FAMILY RELATIONSHIPS",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "They may lead to:"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "Family conflicts.",
-        "Stress and unhappiness.",
-        "Poor academic performance.",
-        "Child neglect.",
-        "Domestic violence.",
-        "Separation of family members.",
-        "Loss of trust.",
-        "School dropout.",
-        "Children engaging in bad behaviour."
-       ]
-      }
-     ]
-    },
-    {
-     "title": "KEY DEFINITIONS",
-     "blocks": [
-      {
-       "t": "table",
-       "head": [
-        "Term",
-        "Meaning"
+        "Describe family relationships appropriately.",
+        "Differentiate between family members.",
+        "Read texts related to family relationships.",
+        "Interpret family trees.",
+        "Spell family-related vocabulary correctly.",
+        "Explain the merits and demerits of families that are over-populated or scarcely populated.",
+        "Write texts about family relationships.",
+        "Ask and answer questions about family relationships.",
+        "Use appropriate prepositions, verbs, adverbs and adjectives.",
+        "Use the language structures **rather...than**, **too...to**, **just**, **such...that**, and **is...but...is** correctly.",
+        "Discuss family relationships respectfully.",
+        "Appreciate the importance of love, care and good family relationships."
        ],
-       "rows": [
-        [
-         "Family",
-         "A group of people related by blood, marriage or adoption who live together or care for one another."
-        ],
-        [
-         "Nuclear family",
-         "A family that consists of a father, mother and their children."
-        ],
-        [
-         "Extended family",
-         "A family that consists of parents, children and other relatives such as grandparents, uncles, aunts, nephews, nieces and cousins."
-        ],
-        [
-         "Single-parent family",
-         "A family in which children are raised by one parent."
-        ],
-        [
-         "Child-headed family",
-         "A family where children live without adult parents or guardians and the oldest child takes responsibility for the younger children."
-        ],
-        [
-         "Uncle",
-         "The brother of one's father or mother."
-        ],
-        [
-         "Aunt",
-         "The sister of one's father or mother."
-        ],
-        [
-         "Cousin",
-         "A child of one's uncle or aunt."
-        ],
-        [
-         "Nephew",
-         "A son of one's brother or sister."
-        ],
-        [
-         "Niece",
-         "A daughter of one's brother or sister."
-        ],
-        [
-         "Grandfather",
-         "The father of one's father or mother."
-        ],
-        [
-         "Grandmother",
-         "The mother of one's father or mother."
-        ]
-       ]
+       "start": 1
       }
      ]
     },
@@ -3267,13 +4832,17 @@
       {
        "t": "ul",
        "items": [
-        "There are **four types of families**: nuclear, extended, single-parent and child-headed.",
-        "A **nuclear family** is only father, mother and children; an **extended family** adds grandparents, uncles, aunts, cousins, nephews and nieces.",
-        "In a **child-headed family** the **oldest child** cares for the younger children.",
-        "Your **uncle's or aunt's child** is your **cousin**; your **brother's or sister's son** is your **nephew** and their **daughter** is your **niece**.",
-        "The family provides **love, food, shelter, protection, education, guidance and emotional support**.",
-        "Good relationships grow from **respect, love, honesty, open communication, forgiveness and sharing responsibilities**.",
-        "Poor relationships come from **lack of communication, poverty, domestic violence, alcohol and drug abuse, disrespect, neglect and dishonesty**, and they lead to **conflicts, stress, child neglect, loss of trust and school dropout**."
+        "A **family** is related by **birth, marriage or adoption**; a **nuclear family** is parents and children; an **extended family** adds grandparents, uncles, aunts, cousins, nephews and nieces.",
+        "**In-law** relationships come through **marriage**: mother-in-law, father-in-law, brother-in-law, sister-in-law.",
+        "A **half-brother/half-sister** shares **only one** biological parent.",
+        "**Twins = 2, triplets = 3, quadruplets = 4** babies at the same birth.",
+        "**Elder** compares one person with another; **eldest** names the oldest in a group.",
+        "On a family tree, **parents sit above their children**, connected by lines; cousins are the children of uncles and aunts.",
+        "A good relationship is built on **love, care, respect, trust, forgiveness, cooperation and communication**; disagreements are solved through discussion, listening, forgiveness, apology and compromise.",
+        "A manageable family size eases **food, clothing, education, healthcare, shelter and attention**; family planning helps parents decide the **number and spacing** of children.",
+        "**Just** = very recently; **already** = before now or earlier than expected.",
+        "Structures: **rather…than** (preference), **too…to** (beyond suitable), **such…that** (degree and result), **is…but…is** (contrast).",
+        "If a child feels unsafe: **move to a safe place and tell a trusted adult**."
        ]
       }
      ]
@@ -3284,10 +4853,12 @@
       {
        "t": "ul",
        "items": [
-        "Definition questions love **family, nuclear family, extended family, single-parent family, child-headed family, cousin, nephew, niece** — learn the KEY DEFINITIONS word for word.",
-        "Relationship questions are asked the other way round too: \"Who is the son of your brother?\" (nephew) — practise both directions.",
-        "List questions expect **five importance of a family**, **five ways of promoting good relationships**, **four causes** and **four effects** of poor relationships — keep the lists separate in your head.",
-        "Match a cause with its effect in answers where you can (lack of communication → loss of trust) to show understanding."
+        "Learn the KEY DEFINITIONS table word for word — **stepmother, half-brother, cousin, nephew, niece, in-law, twins, triplets, quadruplets, elder, eldest** are the favourites.",
+        "\"Who is your…?\" questions are guaranteed (father's brother = uncle; sister's son = nephew; husband's mother = mother-in-law) — practise both directions.",
+        "Elder vs eldest and just vs already are classic difference questions — give the contrast, then an example sentence.",
+        "Complete-the-sentence items must use the exact structure: **rather…than, too…to, such…that, is…but…is**.",
+        "Family-size questions: advantages of manageable size vs challenges of a very large family — keep the two lists separate.",
+        "Safety questions: the correct answer is always **move to safety and tell a trusted adult**."
        ]
       }
      ]
@@ -3299,15 +4870,36 @@
        "t": "ol",
        "items": [
         "What is a family?",
-        "Mention four types of families.",
-        "What is a nuclear family?",
-        "What is an extended family?",
-        "Who is a cousin?",
+        "What is a relative?",
+        "Who is a grandparent?",
+        "Who is an auntie?",
         "Who is an uncle?",
-        "State five importance of a family.",
-        "Give five ways of promoting good family relationships.",
-        "Mention four causes of poor family relationships.",
-        "State four effects of poor family relationships."
+        "Who is a cousin?",
+        "Who is a nephew?",
+        "Who is a niece?",
+        "Who is a stepmother?",
+        "Who is a stepfather?",
+        "Who is a half-brother?",
+        "Who is a half-sister?",
+        "Who are twins?",
+        "Who are triplets?",
+        "Who are quadruplets?",
+        "What does \"elder\" mean?",
+        "What does \"eldest\" mean?",
+        "What does \"scarcely populated\" mean?",
+        "What does \"densely populated\" mean?",
+        "What does \"marry\" mean?",
+        "What does \"give birth to\" mean?",
+        "What is a family tree?",
+        "Why is a family tree important?",
+        "What is a good family relationship based on?",
+        "What is a preposition?",
+        "What does \"just\" mean when used as an adverb?",
+        "What does \"already\" mean?",
+        "What does \"rather...than\" show?",
+        "What does \"too...to\" show?",
+        "What does \"such...that\" show?",
+        "What does \"but\" show in a sentence?"
        ],
        "start": 1
       }
@@ -3319,16 +4911,37 @@
       {
        "t": "ol",
        "items": [
-        "A family is a group of people related by blood, marriage or adoption who live together or care for one another.",
-        "Nuclear family, extended family, single-parent family and child-headed family.",
-        "A nuclear family consists of a father, mother and their children.",
-        "An extended family consists of parents, children and other relatives such as grandparents, uncles, aunts, nephews, nieces and cousins.",
-        "A cousin is a child of one's uncle or aunt.",
-        "An uncle is the brother of one's father or mother.",
-        "Any five: it provides love and care; food and shelter; education and guidance; protection from danger; it teaches good behaviour; it gives emotional support; it helps members in difficult times; it promotes unity and cooperation; it teaches cultural values.",
-        "Any five: respecting one another; loving one another; sharing responsibilities; helping one another; communicating openly; forgiving one another; solving disagreements peacefully; caring for the elderly; spending time together; being honest.",
-        "Any four: lack of communication; poverty; domestic violence; alcohol and drug abuse; disrespect; neglect; dishonesty; quarrels; separation of parents.",
-        "Any four: family conflicts; stress and unhappiness; poor academic performance; child neglect; domestic violence; separation of family members; loss of trust; school dropout."
+        "A family is a group of people related by birth, marriage or adoption.",
+        "A relative is a person related to another person.",
+        "A grandparent is a grandfather or grandmother.",
+        "An auntie is the sister of one's parent or a woman related through marriage.",
+        "An uncle is the brother of one's parent or a man related through marriage.",
+        "A cousin is the child of one's uncle or aunt.",
+        "A nephew is the son of one's brother or sister.",
+        "A niece is the daughter of one's brother or sister.",
+        "A stepmother is a woman married to one's father who is not one's biological mother.",
+        "A stepfather is a man married to one's mother who is not one's biological father.",
+        "A half-brother shares one biological parent with another person.",
+        "A half-sister shares one biological parent with another person.",
+        "Twins are two children born at the same birth.",
+        "Triplets are three children born at the same birth.",
+        "Quadruplets are four children born at the same birth.",
+        "Elder means older than another person.",
+        "Eldest means the oldest among a group.",
+        "It means having very few people living in an area.",
+        "It means having many people living closely together in an area.",
+        "It means to enter into marriage.",
+        "It means to produce a baby through childbirth.",
+        "A family tree is a diagram showing family relationships.",
+        "It helps us understand how family members are related.",
+        "It is based on love, care, respect, trust, forgiveness, cooperation and communication.",
+        "A preposition is a word that shows a relationship between words in a sentence.",
+        "It can show that something happened very recently.",
+        "It shows that something has happened before the present time.",
+        "It shows preference.",
+        "It shows that something is beyond the suitable or possible degree for an action.",
+        "It shows a strong degree of something and its resulting effect.",
+        "\"But\" shows contrast."
        ],
        "start": 1
       }
