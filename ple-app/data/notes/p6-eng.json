@@ -3,7 +3,7 @@
  "subject": "ENG",
  "subject_name": "English",
  "total": 6,
- "words": 13865,
+ "words": 14364,
  "topics": [
   {
    "id": "P6_ENG_T01",
@@ -1164,12 +1164,12 @@
    "class": "P6",
    "subject": "ENG",
    "topic_no": 2,
-   "title": "Debate",
-   "heading": "TOPIC 2: DEBATE",
+   "title": "Debating",
+   "heading": "TOPIC 2: DEBATING",
    "slug": "debating",
    "periods": 36,
    "curriculum_pages": "30–32",
-   "words": 3892,
+   "words": 4391,
    "sections": [
     {
      "title": "About this topic",
@@ -1180,7 +1180,7 @@
       },
       {
        "t": "p",
-       "x": "**What you already know:** You have already met the debate. In P.6 you now master it fully — the people and their duties, the debate vocabulary, how to prepare and argue, the language structures of debate talk, and the skills of a good debater."
+       "x": "**What you already know:** You have already met the debate. In this topic you master debating fully — the people and their duties, the rules, the important terms, preparing and arguing, direct and indirect speech, the language structures, note-making, motions, and the life skills and values debating builds."
       },
       {
        "t": "p",
@@ -1189,17 +1189,16 @@
       {
        "t": "ul",
        "items": [
-        "explain a debate, a motion and the roles of everyone who takes part",
-        "use the debate vocabulary: argument, point, opinion, point of order, point of information, point of inquiry",
-        "prepare for a debate, interpret and formulate motions, and rebut arguments",
-        "use the structures **even though, although, if, whereas** and direct and indirect speech in debate talk",
-        "make notes during a debate and give a good salutation"
+        "use appropriate debating vocabulary and structures",
+        "respond appropriately to arguments and interpret and formulate motions",
+        "make notes during a debate",
+        "argue issues fluently, confidently and convincingly"
        ]
       }
      ]
     },
     {
-     "title": "MEANING OF A DEBATE",
+     "title": "A. INTRODUCTION TO DEBATING",
      "blocks": [
       {
        "t": "p",
@@ -1207,71 +1206,136 @@
       },
       {
        "t": "p",
-       "x": "A debate is a formal discussion in which people present arguments for or against a particular motion or topic."
+       "x": "A debate is a formal discussion in which two sides give different opinions or arguments about a particular topic or motion."
       },
       {
        "t": "p",
-       "x": "**2. What is a motion?**"
+       "x": "**2. What is debating?**"
       },
       {
        "t": "p",
-       "x": "A motion is a statement or proposal that is presented for discussion in a debate."
+       "x": "Debating is the activity of discussing a topic by giving arguments for or against it."
       },
       {
        "t": "p",
-       "x": "**3. Give an example of a motion.**"
+       "x": "**3. Why do people debate?**"
       },
       {
        "t": "p",
-       "x": "\"Pupils should be allowed to use mobile phones at school.\""
+       "x": "People debate to express their opinions, give reasons for their views, listen to other people's views and try to convince others."
+      },
+      {
+       "t": "p",
+       "x": "**4. What is the main purpose of a debate?**"
+      },
+      {
+       "t": "p",
+       "x": "The main purpose of a debate is to present and defend arguments about a given motion."
+      },
+      {
+       "t": "p",
+       "x": "**5. What is an argument?**"
+      },
+      {
+       "t": "p",
+       "x": "An argument is a reason or set of reasons given to support or oppose an idea."
+      },
+      {
+       "t": "p",
+       "x": "**6. What does it mean to argue?**"
+      },
+      {
+       "t": "p",
+       "x": "To argue means to give reasons for or against an idea."
+      },
+      {
+       "t": "p",
+       "x": "**7. What is an opinion?**"
+      },
+      {
+       "t": "p",
+       "x": "An opinion is what a person thinks or believes about something."
+      },
+      {
+       "t": "p",
+       "x": "**8. What is a point in a debate?**"
+      },
+      {
+       "t": "p",
+       "x": "A point is an idea or reason given by a speaker to support or oppose a motion."
+      },
+      {
+       "t": "p",
+       "x": "**9. What is a motion?**"
+      },
+      {
+       "t": "p",
+       "x": "A motion is the statement or topic that is put forward for discussion in a debate."
+      },
+      {
+       "t": "p",
+       "x": "**10. Give an example of a motion.**"
+      },
+      {
+       "t": "p",
+       "x": "\"School uniforms should be compulsory.\""
+      },
+      {
+       "t": "p",
+       "x": "**11. What does a motion normally require?**"
+      },
+      {
+       "t": "p",
+       "x": "A motion normally requires people to either support or oppose it."
+      },
+      {
+       "t": "p",
+       "x": "**12. What does it mean to support a motion?**"
+      },
+      {
+       "t": "p",
+       "x": "To support a motion means to agree with it and give reasons why it should be accepted."
+      },
+      {
+       "t": "p",
+       "x": "**13. What does it mean to oppose a motion?**"
+      },
+      {
+       "t": "p",
+       "x": "To oppose a motion means to disagree with it and give reasons why it should not be accepted."
       }
      ]
     },
     {
-     "title": "PEOPLE IN A DEBATE AND THEIR DUTIES",
+     "title": "B. PEOPLE INVOLVED IN A DEBATE",
      "blocks": [
       {
        "t": "p",
-       "x": "**4. What are the two main sides in a debate?**"
+       "x": "**14. Who is a speaker?**"
       },
       {
        "t": "p",
-       "x": "The two main sides are:"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "The **proposing side**",
-        "The **opposing side**"
-       ]
+       "x": "A speaker is a person who presents arguments during a debate."
       },
       {
        "t": "p",
-       "x": "**5. Who is a proposer?**"
+       "x": "**15. Who is a proposer?**"
       },
       {
        "t": "p",
-       "x": "A proposer is a person who supports and argues in favour of the motion."
+       "x": "A proposer is a speaker who supports the motion."
       },
       {
        "t": "p",
-       "x": "**6. Who is an opposer?**"
+       "x": "**16. Who is an opposer?**"
       },
       {
        "t": "p",
-       "x": "An opposer is a person who disagrees with the motion and argues against it."
+       "x": "An opposer is a speaker who disagrees with or opposes the motion."
       },
       {
        "t": "p",
-       "x": "**7. What is a speaker?**"
-      },
-      {
-       "t": "p",
-       "x": "A speaker is a person who presents arguments or ideas during a debate."
-      },
-      {
-       "t": "p",
-       "x": "**8. Who is the chairperson?**"
+       "x": "**17. Who is the chairperson?**"
       },
       {
        "t": "p",
@@ -1279,7 +1343,7 @@
       },
       {
        "t": "p",
-       "x": "**9. What are the duties of a chairperson?**"
+       "x": "**18. What are the duties of the chairperson?**"
       },
       {
        "t": "p",
@@ -1288,27 +1352,28 @@
       {
        "t": "ul",
        "items": [
-        "Introduces the motion.",
-        "Introduces the speakers.",
-        "Gives speakers permission to speak.",
-        "Maintains order.",
-        "Ensures that the rules of the debate are followed.",
-        "Controls the proceedings of the debate.",
-        "Gives speakers their turns.",
-        "Announces the end of the debate."
+        "introduces the motion;",
+        "introduces the speakers;",
+        "gives speakers permission to speak;",
+        "keeps order;",
+        "makes sure speakers follow the rules;",
+        "controls the debate;",
+        "allows appropriate points to be raised;",
+        "ensures that speakers do not exceed their time;",
+        "announces the conclusion of the debate."
        ]
       },
       {
        "t": "p",
-       "x": "**10. Who is a secretary in a debate?**"
+       "x": "**19. Who is the secretary?**"
       },
       {
        "t": "p",
-       "x": "A secretary is the person responsible for keeping records and taking important notes during the debate."
+       "x": "The secretary is the person who keeps records and notes of what happens during the debate."
       },
       {
        "t": "p",
-       "x": "**11. What are the duties of a secretary?**"
+       "x": "**20. What are the duties of the secretary?**"
       },
       {
        "t": "p",
@@ -1317,23 +1382,24 @@
       {
        "t": "ul",
        "items": [
-        "Records important points.",
-        "Takes notes during the debate.",
-        "Records the names of speakers where necessary.",
-        "Keeps the records of the debate."
+        "records important points;",
+        "records the names of speakers;",
+        "takes notes during the debate;",
+        "keeps records of the proceedings;",
+        "records the final result where necessary."
        ]
       },
       {
        "t": "p",
-       "x": "**12. Who is a timekeeper?**"
+       "x": "**21. Who is the timekeeper?**"
       },
       {
        "t": "p",
-       "x": "A timekeeper is a person who keeps track of the time given to each speaker."
+       "x": "The timekeeper is the person who keeps track of the time given to each speaker."
       },
       {
        "t": "p",
-       "x": "**13. What is the role of a timekeeper?**"
+       "x": "**22. What are the duties of the timekeeper?**"
       },
       {
        "t": "p",
@@ -1342,436 +1408,1147 @@
       {
        "t": "ul",
        "items": [
-        "Keeps track of speaking time.",
-        "Warns speakers when their time is nearly over.",
-        "Signals when the speaker's time has ended."
+        "watches the time;",
+        "tells speakers when their time is nearly finished;",
+        "signals when the speaker's time has ended;",
+        "helps the debate keep to its timetable."
        ]
       },
       {
        "t": "p",
-       "x": "**14. Who is the audience?**"
+       "x": "**23. Who is the audience?**"
       },
       {
        "t": "p",
-       "x": "The audience consists of the people who listen to the debate."
+       "x": "The audience is the group of people listening to the debate."
       },
       {
        "t": "p",
-       "x": "**15. What is the role of the audience?**"
+       "x": "**24. What is the role of the audience?**"
       },
       {
        "t": "p",
-       "x": "The audience listens to the arguments, follows the debate and may take part in voting or responding when allowed."
+       "x": "The audience listens carefully, follows the arguments and may participate according to the rules of the debate."
+      },
+      {
+       "t": "p",
+       "x": "**25. Why are different roles important in a debate?**"
+      },
+      {
+       "t": "p",
+       "x": "Different roles help the debate to run in an organised and orderly way."
       }
      ]
     },
     {
-     "title": "DEBATE VOCABULARY",
+     "title": "C. ROLES OF THE SIDES",
      "blocks": [
       {
        "t": "p",
-       "x": "**16. What is an argument?**"
+       "x": "**26. What are the two main sides in a debate?**"
       },
       {
        "t": "p",
-       "x": "An argument is a reason or set of reasons given to support or oppose an idea."
+       "x": "The two main sides are:"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "the proposing side;",
+        "the opposing side."
+       ],
+       "start": 1
       },
       {
        "t": "p",
-       "x": "**17. What is a point?**"
+       "x": "**27. What does the proposing side do?**"
       },
       {
        "t": "p",
-       "x": "A point is an idea or reason given by a speaker to support an argument."
+       "x": "The proposing side supports the motion and gives arguments in its favour."
       },
       {
        "t": "p",
-       "x": "**18. What does it mean to argue?**"
+       "x": "**28. What does the opposing side do?**"
       },
       {
        "t": "p",
-       "x": "To argue means to give reasons to support or oppose an idea."
+       "x": "The opposing side rejects the motion and gives arguments against it."
       },
       {
        "t": "p",
-       "x": "**19. What is an opinion?**"
+       "x": "**29. What should a speaker do before presenting an argument?**"
       },
       {
        "t": "p",
-       "x": "An opinion is a person's belief, view or judgement about something."
+       "x": "A speaker should understand the motion, research the topic and prepare strong points."
       },
       {
        "t": "p",
-       "x": "**20. What does \"conclude\" mean?**"
+       "x": "**30. What makes a good argument?**"
       },
       {
        "t": "p",
-       "x": "To conclude means to bring something to an end or give a final statement."
+       "x": "A good argument should be clear, relevant, logical and supported by good reasons or evidence."
       },
       {
        "t": "p",
-       "x": "**21. What does \"previous\" mean?**"
+       "x": "**31. Should a speaker insult another speaker?**"
       },
       {
        "t": "p",
-       "x": "Previous means something that happened or was mentioned earlier."
+       "x": "No. A speaker should attack the argument, not insult the person."
       },
       {
        "t": "p",
-       "x": "**22. What does \"current\" mean?**"
+       "x": "**32. How should speakers respond to opposing views?**"
       },
       {
        "t": "p",
-       "x": "Current means something that is happening or existing now."
-      },
-      {
-       "t": "p",
-       "x": "**23. What is a point of order?**"
-      },
-      {
-       "t": "p",
-       "x": "A point of order is a formal interruption made by a speaker to draw attention to a rule or procedure that is not being followed."
-      },
-      {
-       "t": "p",
-       "x": "**24. What is a point of information?**"
-      },
-      {
-       "t": "p",
-       "x": "A point of information is a brief question or piece of information directed to a speaker during a debate according to the rules of the debate."
-      },
-      {
-       "t": "p",
-       "x": "**25. What is a point of inquiry?**"
-      },
-      {
-       "t": "p",
-       "x": "A point of inquiry is a question raised to seek clarification or further information about something being discussed."
+       "x": "They should respond politely, clearly and respectfully."
       }
      ]
     },
     {
-     "title": "PEOPLE AND THEIR ROLES IN A DEBATE",
+     "title": "D. RULES OF DEBATING",
      "blocks": [
       {
        "t": "p",
-       "x": "**26. Mention the people who may take part in a debate.**"
+       "x": "**33. Why are rules important in a debate?**"
       },
       {
        "t": "p",
-       "x": "They may include:"
+       "x": "Rules help the debate to remain orderly, fair and respectful."
+      },
+      {
+       "t": "p",
+       "x": "**34. How should a speaker behave during a debate?**"
+      },
+      {
+       "t": "p",
+       "x": "A speaker should:"
       },
       {
        "t": "ul",
        "items": [
-        "Chairperson",
-        "Proposers",
-        "Opposers",
-        "Secretary",
-        "Timekeeper",
-        "Audience"
+        "speak clearly;",
+        "listen carefully;",
+        "respect other speakers;",
+        "remain calm;",
+        "use polite language;",
+        "stay on the topic;",
+        "give relevant arguments;",
+        "observe the time limit."
        ]
       },
       {
        "t": "p",
-       "x": "**27. What is the role of the proposer?**"
+       "x": "**35. Should speakers interrupt one another?**"
       },
       {
        "t": "p",
-       "x": "The proposer supports the motion and gives arguments explaining why the motion should be accepted."
+       "x": "No. Speakers should not interrupt unless the rules of the debate allow an appropriate point to be raised."
       },
       {
        "t": "p",
-       "x": "**28. What is the role of the opposer?**"
+       "x": "**36. Should a speaker shout at other speakers?**"
       },
       {
        "t": "p",
-       "x": "The opposer disagrees with the motion and gives arguments explaining why it should not be accepted."
+       "x": "No. A speaker should speak clearly and confidently without shouting unnecessarily."
       },
       {
        "t": "p",
-       "x": "**29. Why should speakers research before a debate?**"
+       "x": "**37. Why should a speaker listen to other speakers?**"
       },
       {
        "t": "p",
-       "x": "Speakers should research so that they can collect accurate information and give strong arguments."
+       "x": "Listening helps the speaker understand opposing arguments and respond appropriately."
       },
       {
        "t": "p",
-       "x": "**30. Why should speakers prepare points before debating?**"
+       "x": "**38. What should a speaker do when he or she disagrees with another speaker?**"
       },
       {
        "t": "p",
-       "x": "Preparation helps speakers organise their ideas and present clear and convincing arguments."
+       "x": "The speaker should politely explain why the argument is not convincing and give a better reason."
+      },
+      {
+       "t": "p",
+       "x": "**39. Why should a speaker remain on the topic?**"
+      },
+      {
+       "t": "p",
+       "x": "Remaining on the topic keeps the debate relevant and meaningful."
       }
      ]
     },
     {
-     "title": "HOW TO PREPARE FOR A DEBATE",
+     "title": "E. IMPORTANT DEBATE TERMS",
      "blocks": [
       {
        "t": "p",
-       "x": "**31. How should a learner prepare for a debate?**"
+       "x": "**40. What is a point of order?**"
       },
       {
        "t": "p",
-       "x": "A learner should:"
+       "x": "A point of order is a formal interruption made when a speaker believes that the rules or proper procedure of the debate are not being followed."
+      },
+      {
+       "t": "p",
+       "x": "**41. Give an example of a point of order.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Point of order, Madam Chairperson. The speaker has moved away from the motion.\""
+      },
+      {
+       "t": "p",
+       "x": "**42. What is a point of information?**"
+      },
+      {
+       "t": "p",
+       "x": "A point of information is a brief question or piece of information directed to a speaker according to the rules of the debate."
+      },
+      {
+       "t": "p",
+       "x": "**43. Give an example of a point of information.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Point of information: Can the speaker explain where that information came from?\""
+      },
+      {
+       "t": "p",
+       "x": "**44. What is a point of inquiry?**"
+      },
+      {
+       "t": "p",
+       "x": "A point of inquiry is a request for clarification or further information about something being discussed."
+      },
+      {
+       "t": "p",
+       "x": "**45. Give an example of a point of inquiry.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Point of inquiry: What does the speaker mean by this statement?\""
+      },
+      {
+       "t": "p",
+       "x": "**46. What is the difference between a point of order and a point of information?**"
+      },
+      {
+       "t": "p",
+       "x": "A point of order concerns the rules or procedure of the debate, while a point of information seeks or gives information."
+      },
+      {
+       "t": "p",
+       "x": "**47. What is the difference between a point of information and a point of inquiry?**"
+      },
+      {
+       "t": "p",
+       "x": "A point of information provides or asks for relevant information, while a point of inquiry mainly seeks clarification or explanation."
+      }
+     ]
+    },
+    {
+     "title": "F. PREVIOUS AND CURRENT",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**48. What does \"previous\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Previous means something that happened or existed before the present time."
+      },
+      {
+       "t": "p",
+       "x": "**49. Give a sentence using \"previous\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"The previous speaker gave a strong argument.\""
+      },
+      {
+       "t": "p",
+       "x": "**50. What does \"current\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Current means something that is happening or existing at the present time."
+      },
+      {
+       "t": "p",
+       "x": "**51. Give a sentence using \"current\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"The current speaker is presenting his final point.\""
+      },
+      {
+       "t": "p",
+       "x": "**52. What is a previous speaker?**"
+      },
+      {
+       "t": "p",
+       "x": "A previous speaker is someone who spoke before the person who is currently speaking."
+      },
+      {
+       "t": "p",
+       "x": "**53. What is the current speaker?**"
+      },
+      {
+       "t": "p",
+       "x": "The current speaker is the person who is speaking at the present time."
+      }
+     ]
+    },
+    {
+     "title": "G. CONCLUDING A DEBATE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**54. What does \"conclude\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To conclude means to bring something to an end."
+      },
+      {
+       "t": "p",
+       "x": "**55. What does it mean to conclude a debate?**"
+      },
+      {
+       "t": "p",
+       "x": "To conclude a debate means to bring the discussion to an end after the arguments have been presented."
+      },
+      {
+       "t": "p",
+       "x": "**56. Who may conclude a debate?**"
+      },
+      {
+       "t": "p",
+       "x": "The chairperson may formally conclude the debate."
+      },
+      {
+       "t": "p",
+       "x": "**57. What should a speaker do when concluding an argument?**"
+      },
+      {
+       "t": "p",
+       "x": "The speaker should briefly summarise the main points and show why the motion should be supported or rejected."
+      },
+      {
+       "t": "p",
+       "x": "**58. Why is a conclusion important?**"
+      },
+      {
+       "t": "p",
+       "x": "A conclusion reminds the audience of the main arguments and brings the speaker's presentation to an end."
+      }
+     ]
+    },
+    {
+     "title": "H. PREPARING FOR A DEBATE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**59. What should you do before a debate?**"
+      },
+      {
+       "t": "p",
+       "x": "You should:"
       },
       {
        "t": "ol",
        "items": [
-        "Understand the motion.",
-        "Know which side they are supporting.",
-        "Research the topic.",
-        "Identify strong points.",
-        "Find examples to support the points.",
-        "Think about possible arguments from the other side.",
-        "Prepare responses to opposing arguments.",
-        "Organise the points logically.",
-        "Practise speaking clearly.",
-        "Keep within the given time."
+        "understand the motion;",
+        "identify whether you are supporting or opposing it;",
+        "research the topic;",
+        "collect useful information;",
+        "prepare your points;",
+        "arrange your points logically;",
+        "prepare examples or evidence;",
+        "practise speaking."
        ],
        "start": 1
       },
       {
        "t": "p",
-       "x": "**32. Why should a debater understand the motion?**"
+       "x": "**60. Why should a speaker research a motion?**"
       },
       {
        "t": "p",
-       "x": "Understanding the motion helps the debater give relevant arguments instead of discussing unrelated ideas."
+       "x": "Research helps the speaker obtain correct information and strong arguments."
       },
       {
        "t": "p",
-       "x": "**33. What should a debater do before choosing points?**"
+       "x": "**61. Why should points be arranged logically?**"
       },
       {
        "t": "p",
-       "x": "The debater should understand the meaning of the motion and research the topic."
+       "x": "Logical arrangement makes arguments easier to understand and follow."
       },
       {
        "t": "p",
-       "x": "**34. Why should arguments be supported with examples?**"
+       "x": "**62. Why should a speaker practise before a debate?**"
       },
       {
        "t": "p",
-       "x": "Examples make arguments clearer and more convincing."
+       "x": "Practice improves confidence, fluency, pronunciation and audibility."
+      },
+      {
+       "t": "p",
+       "x": "**63. What is audibility?**"
+      },
+      {
+       "t": "p",
+       "x": "Audibility is the ability to speak loudly and clearly enough for listeners to hear."
+      },
+      {
+       "t": "p",
+       "x": "**64. What is fluency?**"
+      },
+      {
+       "t": "p",
+       "x": "Fluency is the ability to speak smoothly and confidently without unnecessary hesitation."
+      },
+      {
+       "t": "p",
+       "x": "**65. What is articulation?**"
+      },
+      {
+       "t": "p",
+       "x": "Articulation is the clear pronunciation of words when speaking."
       }
      ]
     },
     {
-     "title": "RULES OF DEBATING",
+     "title": "I. HOW TO GIVE GOOD ARGUMENTS",
      "blocks": [
       {
        "t": "p",
-       "x": "**35. Mention some rules that should be followed during a debate.**"
+       "x": "**66. What should a good speaker do when giving an argument?**"
+      },
+      {
+       "t": "p",
+       "x": "A good speaker should:"
       },
       {
        "t": "ul",
        "items": [
-        "Listen carefully to other speakers.",
-        "Do not insult other speakers.",
-        "Do not interrupt unnecessarily.",
-        "Respect different opinions.",
-        "Speak clearly.",
-        "Remain relevant to the motion.",
-        "Follow the chairperson's instructions.",
-        "Keep within the time given.",
-        "Use polite language.",
-        "Give reasons for your opinions."
+        "state the point clearly;",
+        "explain the point;",
+        "give a reason;",
+        "give an example or evidence where appropriate;",
+        "connect the argument to the motion."
        ]
       },
       {
        "t": "p",
-       "x": "**36. Why should a debater listen to other speakers?**"
+       "x": "**67. Why are examples useful in a debate?**"
       },
       {
        "t": "p",
-       "x": "Listening helps the debater understand opposing arguments and respond appropriately."
+       "x": "Examples help the audience understand and believe an argument."
       },
       {
        "t": "p",
-       "x": "**37. Why should debaters respect one another?**"
+       "x": "**68. Why is evidence useful?**"
       },
       {
        "t": "p",
-       "x": "Respect promotes peaceful discussion and allows everyone to express their views freely."
+       "x": "Evidence provides support for an argument."
       },
       {
        "t": "p",
-       "x": "**38. Why should a speaker keep within the time given?**"
+       "x": "**69. What is a strong argument?**"
       },
       {
        "t": "p",
-       "x": "A speaker should keep within the time so that all participants get an opportunity to speak."
-      }
-     ]
-    },
-    {
-     "title": "ARGUING FOR AND AGAINST A MOTION",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "**39. What does it mean to argue for a motion?**"
+       "x": "A strong argument is one that is clear, relevant, logical and well supported."
       },
       {
        "t": "p",
-       "x": "It means giving reasons why the motion should be accepted."
+       "x": "**70. What is a weak argument?**"
       },
       {
        "t": "p",
-       "x": "**40. What does it mean to argue against a motion?**"
+       "x": "A weak argument is one that is unclear, irrelevant, unsupported or illogical."
       },
       {
        "t": "p",
-       "x": "It means giving reasons why the motion should not be accepted."
+       "x": "**71. What should a speaker avoid during a debate?**"
       },
       {
        "t": "p",
-       "x": "**41. What is a supporting argument?**"
+       "x": "A speaker should avoid:"
       },
       {
-       "t": "p",
-       "x": "A supporting argument is a reason that agrees with and strengthens a particular position."
-      },
-      {
-       "t": "p",
-       "x": "**42. What is an opposing argument?**"
-      },
-      {
-       "t": "p",
-       "x": "An opposing argument is a reason that disagrees with another person's position."
-      },
-      {
-       "t": "p",
-       "x": "**43. What is a counterargument?**"
-      },
-      {
-       "t": "p",
-       "x": "A counterargument is an argument given in response to an opposing argument."
-      },
-      {
-       "t": "p",
-       "x": "**44. What is rebuttal?**"
-      },
-      {
-       "t": "p",
-       "x": "A rebuttal is a response that challenges or disproves an argument presented by the other side."
-      },
-      {
-       "t": "p",
-       "x": "**45. Why is rebuttal important in a debate?**"
-      },
-      {
-       "t": "p",
-       "x": "Rebuttal allows a speaker to respond to opposing ideas and defend their position."
-      }
-     ]
-    },
-    {
-     "title": "EXAMPLE OF A MOTION",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "**46. Consider the motion:**"
-      },
-      {
-       "t": "p",
-       "x": "\"Pupils should be given homework every day.\""
-      },
-      {
-       "t": "p",
-       "x": "**47. Give points for the motion.**"
-      },
-      {
-       "t": "p",
-       "x": "Points for the motion may include:"
-      },
-      {
-       "t": "ol",
+       "t": "ul",
        "items": [
-        "Homework helps pupils practise what they learn.",
-        "Homework helps pupils revise their lessons.",
-        "Homework can improve pupils' academic performance.",
-        "Homework encourages pupils to study independently.",
-        "Homework helps teachers identify areas where pupils need help."
-       ],
-       "start": 1
-      },
-      {
-       "t": "p",
-       "x": "**48. Give points against the motion.**"
-      },
-      {
-       "t": "p",
-       "x": "Points against the motion may include:"
-      },
-      {
-       "t": "ol",
-       "items": [
-        "Too much homework may make pupils tired.",
-        "Pupils need time to rest and play.",
-        "Some pupils may not have help at home.",
-        "Too much homework may reduce time for family activities.",
-        "Pupils may become stressed by excessive homework."
-       ],
-       "start": 1
+        "insults;",
+        "unnecessary repetition;",
+        "irrelevant points;",
+        "false information;",
+        "shouting;",
+        "personal attacks;",
+        "interrupting improperly;",
+        "going beyond the time allowed."
+       ]
       }
      ]
     },
     {
-     "title": "INTERPRETING A MOTION",
+     "title": "J. RESPONDING TO ARGUMENTS",
      "blocks": [
       {
        "t": "p",
-       "x": "**49. What does it mean to interpret a motion?**"
+       "x": "**72. What does it mean to respond to an argument?**"
       },
       {
        "t": "p",
-       "x": "To interpret a motion means to understand exactly what the statement being debated means."
+       "x": "It means to answer, challenge or comment on an argument made by another speaker."
       },
       {
        "t": "p",
-       "x": "**50. Why is it important to interpret a motion correctly?**"
+       "x": "**73. How can you politely disagree with a speaker?**"
       },
       {
        "t": "p",
-       "x": "It helps speakers give arguments that are directly related to the motion."
+       "x": "You can say:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "\"I respectfully disagree with that point.\"",
+        "\"I do not agree with the argument because…\"",
+        "\"The previous speaker has overlooked the fact that…\""
+       ]
       },
       {
        "t": "p",
-       "x": "**51. What should a learner ask when interpreting a motion?**"
+       "x": "**74. How can you agree with a speaker?**"
       },
       {
        "t": "p",
-       "x": "The learner should ask:"
+       "x": "You can say:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "\"I agree with the previous speaker.\"",
+        "\"That is a good point.\"",
+        "\"I support that argument because…\""
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**75. How can you challenge an argument?**"
+      },
+      {
+       "t": "p",
+       "x": "You can explain why the argument is weak and provide another reason or evidence."
+      },
+      {
+       "t": "p",
+       "x": "**76. Should you respect an opposing speaker?**"
+      },
+      {
+       "t": "p",
+       "x": "Yes. Debating requires learners to listen to and respect different opinions."
+      },
+      {
+       "t": "p",
+       "x": "**77. Why is respect important in debating?**"
+      },
+      {
+       "t": "p",
+       "x": "Respect allows people with different opinions to discuss issues peacefully and constructively."
+      }
+     ]
+    },
+    {
+     "title": "K. OPINIONS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**78. What is an opinion?**"
+      },
+      {
+       "t": "p",
+       "x": "An opinion is a personal belief, view or judgement about something."
+      },
+      {
+       "t": "p",
+       "x": "**79. How can you introduce your opinion in a debate?**"
+      },
+      {
+       "t": "p",
+       "x": "You can say:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "\"In my opinion…\"",
+        "\"I believe that…\"",
+        "\"I think that…\"",
+        "\"In my view…\""
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**80. Is an opinion always a fact?**"
+      },
+      {
+       "t": "p",
+       "x": "No. An opinion is a person's view, while a fact is something that can be shown to be true."
+      },
+      {
+       "t": "p",
+       "x": "**81. Why should an opinion be supported by reasons?**"
+      },
+      {
+       "t": "p",
+       "x": "Reasons make an opinion more convincing."
+      }
+     ]
+    },
+    {
+     "title": "L. DIRECT AND INDIRECT SPEECH",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The Primary Six curriculum includes the use of **direct and indirect speech** in debating."
+      },
+      {
+       "t": "p",
+       "x": "**82. What is direct speech?**"
+      },
+      {
+       "t": "p",
+       "x": "Direct speech gives the exact words spoken by a person."
+      },
+      {
+       "t": "p",
+       "x": "**83. Give an example of direct speech.**"
+      },
+      {
+       "t": "p",
+       "x": "John said, \"I support the motion.\""
+      },
+      {
+       "t": "p",
+       "x": "**84. What punctuation is commonly used in direct speech?**"
+      },
+      {
+       "t": "p",
+       "x": "Quotation marks are used to show the exact words spoken."
+      },
+      {
+       "t": "p",
+       "x": "**85. What is indirect speech?**"
+      },
+      {
+       "t": "p",
+       "x": "Indirect speech reports what someone said without using the person's exact words."
+      },
+      {
+       "t": "p",
+       "x": "**86. Give an example of indirect speech.**"
+      },
+      {
+       "t": "p",
+       "x": "John said that he supported the motion."
+      },
+      {
+       "t": "p",
+       "x": "**87. Change this sentence into indirect speech: Mary said, \"I support the motion.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: Mary said that she supported the motion."
+      },
+      {
+       "t": "p",
+       "x": "**88. Change this sentence into indirect speech: Peter said, \"The motion is important.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: Peter said that the motion was important."
+      },
+      {
+       "t": "p",
+       "x": "**89. Change this sentence into direct speech: Sarah said that she supported the motion.**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: Sarah said, \"I support the motion.\""
+      },
+      {
+       "t": "p",
+       "x": "**90. Why is direct speech useful in debating?**"
+      },
+      {
+       "t": "p",
+       "x": "It can show the exact words spoken by a person."
+      },
+      {
+       "t": "p",
+       "x": "**91. Why is indirect speech useful in debating?**"
+      },
+      {
+       "t": "p",
+       "x": "It can be used to report what another speaker said."
+      }
+     ]
+    },
+    {
+     "title": "M. LANGUAGE STRUCTURE: EVEN THOUGH",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**92. What does \"even though\" show?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Even though\" shows contrast between two ideas."
+      },
+      {
+       "t": "p",
+       "x": "**93. Give an example using \"even though\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"Even though the previous speaker gave many points, I disagree with the motion.\""
+      },
+      {
+       "t": "p",
+       "x": "**94. Complete the sentence: \"Even though she was nervous, ______.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"Even though she was nervous, she presented her argument confidently.\""
+      },
+      {
+       "t": "p",
+       "x": "**95. Make a sentence using \"even though\" and \"debate\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"Even though the debate was difficult, the speaker remained confident.\""
+      }
+     ]
+    },
+    {
+     "title": "N. LANGUAGE STRUCTURE: ALTHOUGH",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**96. What does \"although\" show?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Although\" also shows contrast between two ideas."
+      },
+      {
+       "t": "p",
+       "x": "**97. Give an example using \"although\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"She presented strong arguments although some people disagreed with her.\""
+      },
+      {
+       "t": "p",
+       "x": "**98. Complete the sentence: \"Although he was young, ______.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"Although he was young, he gave a strong argument.\""
+      },
+      {
+       "t": "p",
+       "x": "**99. Make a sentence using \"although\" about a debate.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Although the opposing side disagreed, the proposer continued to defend the motion.\""
+      }
+     ]
+    },
+    {
+     "title": "O. LANGUAGE STRUCTURE: IF",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**100. What does \"if\" show?**"
+      },
+      {
+       "t": "p",
+       "x": "\"If\" introduces a condition."
+      },
+      {
+       "t": "p",
+       "x": "**101. Give a sentence using \"if\" in a debate.**"
+      },
+      {
+       "t": "p",
+       "x": "\"If I were the chairperson, I would give every speaker enough time.\""
+      },
+      {
+       "t": "p",
+       "x": "**102. Complete the sentence: \"If I were the speaker, ______.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"If I were the speaker, I would explain my argument clearly.\""
+      },
+      {
+       "t": "p",
+       "x": "**103. Complete the sentence: \"If I were the chairperson, ______.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"If I were the chairperson, I would keep the debate orderly.\""
+      }
+     ]
+    },
+    {
+     "title": "P. LANGUAGE STRUCTURE: WHEREAS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**104. What does \"whereas\" show?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Whereas\" is used to show a contrast between two people, things or ideas."
+      },
+      {
+       "t": "p",
+       "x": "**105. Give an example using \"whereas\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"The proposer supports the motion, whereas the opposer rejects it.\""
+      },
+      {
+       "t": "p",
+       "x": "**106. Complete the sentence: \"John supports the motion, whereas ______.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"John supports the motion, whereas Peter opposes it.\""
+      },
+      {
+       "t": "p",
+       "x": "**107. Make a sentence using \"if\" and \"whereas\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"If I were the chairperson, I would allow both sides to speak, whereas some chairpersons may be too strict.\""
+      }
+     ]
+    },
+    {
+     "title": "Q. COMBINING DEBATE LANGUAGE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**108. Make a sentence using \"even though\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"Even though the previous speaker disagreed with me, I respect his opinion.\""
+      },
+      {
+       "t": "p",
+       "x": "**109. Make a sentence using \"although\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"Although the motion was difficult, the speakers presented strong arguments.\""
+      },
+      {
+       "t": "p",
+       "x": "**110. Make a sentence using \"if\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"If I were the proposer, I would explain the motion carefully.\""
+      },
+      {
+       "t": "p",
+       "x": "**111. Make a sentence using \"whereas\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"The proposer supports the motion, whereas the opposer rejects it.\""
+      },
+      {
+       "t": "p",
+       "x": "**112. Make a sentence using \"previous\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"The previous speaker made an important point.\""
+      },
+      {
+       "t": "p",
+       "x": "**113. Make a sentence using \"current\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"The current speaker is giving an argument.\""
+      },
+      {
+       "t": "p",
+       "x": "**114. Make a sentence using \"conclude\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"The chairperson will conclude the debate after all the speakers have spoken.\""
+      },
+      {
+       "t": "p",
+       "x": "**115. Make a sentence using \"opinion\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"In my opinion, every learner should participate in debates.\""
+      },
+      {
+       "t": "p",
+       "x": "**116. Make a sentence using \"argument\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"The speaker gave a strong argument.\""
+      },
+      {
+       "t": "p",
+       "x": "**117. Make a sentence using \"audience\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"The audience listened carefully to the speakers.\""
+      }
+     ]
+    },
+    {
+     "title": "R. HOW A DEBATE CAN BE CONDUCTED",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**118. What is the first step in conducting a debate?**"
+      },
+      {
+       "t": "p",
+       "x": "A motion is selected and clearly stated."
+      },
+      {
+       "t": "p",
+       "x": "**119. What happens after the motion is stated?**"
+      },
+      {
+       "t": "p",
+       "x": "The chairperson introduces the debate and the speakers."
+      },
+      {
+       "t": "p",
+       "x": "**120. What does the proposer do?**"
+      },
+      {
+       "t": "p",
+       "x": "The proposer presents arguments supporting the motion."
+      },
+      {
+       "t": "p",
+       "x": "**121. What does the opposer do?**"
+      },
+      {
+       "t": "p",
+       "x": "The opposer presents arguments against the motion."
+      },
+      {
+       "t": "p",
+       "x": "**122. What happens as the debate continues?**"
+      },
+      {
+       "t": "p",
+       "x": "Speakers from both sides present their arguments and respond to opposing views."
+      },
+      {
+       "t": "p",
+       "x": "**123. What does the chairperson do throughout the debate?**"
+      },
+      {
+       "t": "p",
+       "x": "The chairperson controls the debate, maintains order and ensures that the rules are followed."
+      },
+      {
+       "t": "p",
+       "x": "**124. What does the secretary do during the debate?**"
+      },
+      {
+       "t": "p",
+       "x": "The secretary makes important notes and keeps records."
+      },
+      {
+       "t": "p",
+       "x": "**125. What does the timekeeper do?**"
+      },
+      {
+       "t": "p",
+       "x": "The timekeeper monitors the time used by each speaker."
+      },
+      {
+       "t": "p",
+       "x": "**126. What does the audience do?**"
+      },
+      {
+       "t": "p",
+       "x": "The audience listens to the arguments and follows the debate."
+      },
+      {
+       "t": "p",
+       "x": "**127. How does a debate end?**"
+      },
+      {
+       "t": "p",
+       "x": "The speakers finish presenting their arguments and the chairperson concludes the debate according to the rules."
+      }
+     ]
+    },
+    {
+     "title": "S. MAKING NOTES DURING A DEBATE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**128. Why should learners make notes during a debate?**"
+      },
+      {
+       "t": "p",
+       "x": "Notes help learners remember the important arguments and information presented."
+      },
+      {
+       "t": "p",
+       "x": "**129. What should you write when making debate notes?**"
+      },
+      {
+       "t": "p",
+       "x": "You should write:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "the motion;",
+        "the names or sides of speakers;",
+        "important arguments;",
+        "supporting evidence;",
+        "opposing arguments;",
+        "important responses;",
+        "the conclusion."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**130. Should you write every word spoken?**"
+      },
+      {
+       "t": "p",
+       "x": "No. You should record the important points rather than every word."
+      },
+      {
+       "t": "p",
+       "x": "**131. What is a good way of making debate notes?**"
+      },
+      {
+       "t": "p",
+       "x": "Use short points, key words and brief phrases."
+      }
+     ]
+    },
+    {
+     "title": "T. INTERPRETING A MOTION",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**132. What does it mean to interpret a motion?**"
+      },
+      {
+       "t": "p",
+       "x": "It means to understand clearly what the motion is saying."
+      },
+      {
+       "t": "p",
+       "x": "**133. Why should a speaker understand a motion?**"
+      },
+      {
+       "t": "p",
+       "x": "Understanding the motion helps the speaker give relevant arguments."
+      },
+      {
+       "t": "p",
+       "x": "**134. What should you ask yourself when interpreting a motion?**"
+      },
+      {
+       "t": "p",
+       "x": "Ask:"
       },
       {
        "t": "ul",
        "items": [
         "What is the motion about?",
-        "What does each important word mean?",
+        "What does it mean?",
         "Am I supporting or opposing it?",
-        "What reasons can support my position?",
+        "What reasons support my side?",
         "What arguments might the other side give?"
        ]
+      },
+      {
+       "t": "p",
+       "x": "**135. Give an example of a motion.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Children should help with work at home.\""
+      },
+      {
+       "t": "p",
+       "x": "**136. What would the proposer do with this motion?**"
+      },
+      {
+       "t": "p",
+       "x": "The proposer would give reasons why children should help with work at home."
+      },
+      {
+       "t": "p",
+       "x": "**137. What would the opposer do?**"
+      },
+      {
+       "t": "p",
+       "x": "The opposer would give reasons why children should not be required to help with work at home, or would challenge the way the motion is stated."
       }
      ]
     },
     {
-     "title": "FORMULATING A MOTION",
+     "title": "U. FORMULATING A MOTION",
      "blocks": [
       {
        "t": "p",
-       "x": "**52. What does it mean to formulate a motion?**"
+       "x": "**138. What does it mean to formulate a motion?**"
       },
       {
        "t": "p",
-       "x": "To formulate a motion means to create or write a statement that can be debated."
+       "x": "It means to create or prepare a statement for discussion in a debate."
       },
       {
        "t": "p",
-       "x": "**53. What makes a good motion?**"
+       "x": "**139. What makes a good motion?**"
       },
       {
        "t": "p",
@@ -1780,778 +2557,323 @@
       {
        "t": "ul",
        "items": [
-        "Be clear.",
-        "Be understandable.",
-        "Have two possible sides.",
-        "Be suitable for discussion.",
-        "Be relevant to the learners or community.",
-        "Allow people to give arguments for and against it."
+        "be clear;",
+        "be understandable;",
+        "be suitable for debate;",
+        "allow people to support or oppose it;",
+        "concern an issue that can be discussed."
        ]
       },
       {
        "t": "p",
-       "x": "**54. Give examples of suitable debate motions.**"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "Pupils should wear school uniforms.",
-        "School children should be given homework.",
-        "Children should help with housework.",
-        "Television is more useful than radio.",
-        "Every child should learn how to use a computer."
-       ]
-      }
-     ]
-    },
-    {
-     "title": "RESPONDING TO ARGUMENTS",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "**55. How should a learner respond to an argument?**"
-      },
-      {
-       "t": "p",
-       "x": "A learner should listen carefully, understand the argument and respond politely with a relevant reason or counterargument."
-      },
-      {
-       "t": "p",
-       "x": "**56. What should a learner avoid when responding to an argument?**"
-      },
-      {
-       "t": "p",
-       "x": "A learner should avoid:"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "Insults.",
-        "Personal attacks.",
-        "Irrelevant points.",
-        "Shouting.",
-        "Interrupting unnecessarily.",
-        "Giving unsupported claims."
-       ]
-      },
-      {
-       "t": "p",
-       "x": "**57. Give an example of a polite response to an opposing argument.**"
-      },
-      {
-       "t": "p",
-       "x": "\"Although the previous speaker has made a good point, I disagree because...\""
-      }
-     ]
-    },
-    {
-     "title": "MAKING NOTES DURING A DEBATE",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "**58. Why should a learner make notes during a debate?**"
-      },
-      {
-       "t": "p",
-       "x": "Notes help the learner remember important arguments and respond to points made by other speakers."
-      },
-      {
-       "t": "p",
-       "x": "**59. What should a learner write down during a debate?**"
-      },
-      {
-       "t": "p",
-       "x": "A learner may write:"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "Main points.",
-        "Important examples.",
-        "Arguments from the opposing side.",
-        "Points that need to be challenged.",
-        "Useful facts.",
-        "Important conclusions."
-       ]
-      },
-      {
-       "t": "p",
-       "x": "**60. What should good debate notes be like?**"
-      },
-      {
-       "t": "p",
-       "x": "Good debate notes should be:"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "Short.",
-        "Clear.",
-        "Relevant.",
-        "Well organised.",
-        "Easy to understand."
-       ]
-      }
-     ]
-    },
-    {
-     "title": "SALUTATIONS IN A DEBATE",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "**61. What is a salutation?**"
-      },
-      {
-       "t": "p",
-       "x": "A salutation is a polite form of greeting or addressing people."
-      },
-      {
-       "t": "p",
-       "x": "**62. How can a speaker begin a formal debate?**"
-      },
-      {
-       "t": "p",
-       "x": "A speaker may say:"
-      },
-      {
-       "t": "p",
-       "x": "\"Mr/Madam Chairperson, members of the panel, fellow debaters and members of the audience...\""
-      },
-      {
-       "t": "p",
-       "x": "**63. Why are salutations important in a debate?**"
-      },
-      {
-       "t": "p",
-       "x": "They show respect and help the speaker begin the debate in a formal and polite way."
-      }
-     ]
-    },
-    {
-     "title": "DIRECT AND INDIRECT SPEECH",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "**64. What is direct speech?**"
-      },
-      {
-       "t": "p",
-       "x": "Direct speech gives the exact words spoken by a person."
-      },
-      {
-       "t": "p",
-       "x": "**65. Give an example of direct speech.**"
-      },
-      {
-       "t": "p",
-       "x": "The speaker said, \"I support the motion.\""
-      },
-      {
-       "t": "p",
-       "x": "**66. What punctuation is commonly used in direct speech?**"
-      },
-      {
-       "t": "p",
-       "x": "Quotation marks are used to show the exact words spoken."
-      },
-      {
-       "t": "p",
-       "x": "**67. What is indirect speech?**"
-      },
-      {
-       "t": "p",
-       "x": "Indirect speech reports what someone said without using their exact words."
-      },
-      {
-       "t": "p",
-       "x": "**68. Give an example of indirect speech.**"
-      },
-      {
-       "t": "p",
-       "x": "The speaker said that he supported the motion."
-      },
-      {
-       "t": "p",
-       "x": "**69. Change this sentence into indirect speech: The teacher said, \"The debate will begin at ten o'clock.\"**"
-      },
-      {
-       "t": "p",
-       "x": "Answer: The teacher said that the debate would begin at ten o'clock."
-      },
-      {
-       "t": "p",
-       "x": "**70. Change this sentence into direct speech: The speaker said that she supported the motion.**"
-      },
-      {
-       "t": "p",
-       "x": "Answer: The speaker said, \"I support the motion.\""
-      }
-     ]
-    },
-    {
-     "title": "LANGUAGE STRUCTURE: EVEN THOUGH",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "**71. How is \"even though\" used?**"
-      },
-      {
-       "t": "p",
-       "x": "**Even though** is used to show a contrast between two ideas."
-      },
-      {
-       "t": "p",
-       "x": "**72. Give an example using \"even though\".**"
-      },
-      {
-       "t": "p",
-       "x": "Even though the previous speaker made a good point, I disagree with the argument."
-      },
-      {
-       "t": "p",
-       "x": "**73. Complete the sentence: \"Even though the speaker was nervous, ______.\"**"
-      },
-      {
-       "t": "p",
-       "x": "Answer: he presented his points clearly."
-      }
-     ]
-    },
-    {
-     "title": "LANGUAGE STRUCTURE: ALTHOUGH",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "**74. How is \"although\" used?**"
-      },
-      {
-       "t": "p",
-       "x": "**Although** is used to show a contrast between two ideas."
-      },
-      {
-       "t": "p",
-       "x": "**75. Give an example using \"although\".**"
-      },
-      {
-       "t": "p",
-       "x": "She argued out her points although the audience did not agree with her."
-      },
-      {
-       "t": "p",
-       "x": "**76. Complete the sentence: \"Although the speaker disagreed with me, ______.\"**"
-      },
-      {
-       "t": "p",
-       "x": "Answer: I respected her opinion."
-      }
-     ]
-    },
-    {
-     "title": "LANGUAGE STRUCTURE: IF",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "**77. What does \"if\" express?**"
-      },
-      {
-       "t": "p",
-       "x": "**If** is used to introduce a condition."
-      },
-      {
-       "t": "p",
-       "x": "**78. Give an example using \"if\" in a debate.**"
-      },
-      {
-       "t": "p",
-       "x": "If I were the chairperson, I would allow the speaker to continue."
-      },
-      {
-       "t": "p",
-       "x": "**79. Complete the sentence: \"If I were the chairperson, ______.\"**"
-      },
-      {
-       "t": "p",
-       "x": "Answer: I would maintain order in the debate."
-      }
-     ]
-    },
-    {
-     "title": "LANGUAGE STRUCTURE: WHEREAS",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "**80. What does \"whereas\" mean?**"
-      },
-      {
-       "t": "p",
-       "x": "**Whereas** is used to show a contrast between two people, things or ideas."
-      },
-      {
-       "t": "p",
-       "x": "**81. Give an example using \"whereas\".**"
-      },
-      {
-       "t": "p",
-       "x": "The proposer supports the motion, whereas the opposer disagrees with it."
-      },
-      {
-       "t": "p",
-       "x": "**82. Complete the sentence: \"The proposer supports the motion, whereas ______.\"**"
-      },
-      {
-       "t": "p",
-       "x": "Answer: the opposer disagrees with it."
-      }
-     ]
-    },
-    {
-     "title": "COMBINING IF AND WHEREAS",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "**83. Give a sentence using \"if\" and \"whereas\".**"
-      },
-      {
-       "t": "p",
-       "x": "If I were the chairperson, I would allow both sides to speak, whereas some chairpersons may give more time to one side."
-      }
-     ]
-    },
-    {
-     "title": "GOOD DEBATING SKILLS",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "**84. What makes a good debater?**"
-      },
-      {
-       "t": "p",
-       "x": "A good debater:"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "Understands the motion.",
-        "Researches the topic.",
-        "Gives clear arguments.",
-        "Uses relevant examples.",
-        "Listens carefully.",
-        "Responds appropriately.",
-        "Speaks confidently.",
-        "Respects other speakers.",
-        "Uses polite language.",
-        "Keeps within the time."
-       ]
-      },
-      {
-       "t": "p",
-       "x": "**85. Why is confidence important in debating?**"
-      },
-      {
-       "t": "p",
-       "x": "Confidence helps a speaker present arguments clearly and effectively."
-      },
-      {
-       "t": "p",
-       "x": "**86. Why is research important in debating?**"
-      },
-      {
-       "t": "p",
-       "x": "Research gives a speaker information and evidence that can be used to support arguments."
-      },
-      {
-       "t": "p",
-       "x": "**87. Why is clear speech important?**"
-      },
-      {
-       "t": "p",
-       "x": "Clear speech enables the audience and other debaters to understand the speaker's ideas."
-      },
-      {
-       "t": "p",
-       "x": "**88. Why should a debater remain relevant to the motion?**"
-      },
-      {
-       "t": "p",
-       "x": "Remaining relevant ensures that the arguments directly address the topic being debated."
-      }
-     ]
-    },
-    {
-     "title": "BENEFITS OF DEBATING",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "**89. How does debating help learners?**"
-      },
-      {
-       "t": "p",
-       "x": "Debating helps learners to:"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "Develop confidence.",
-        "Improve speaking skills.",
-        "Improve listening skills.",
-        "Develop critical thinking.",
-        "Improve reasoning skills.",
-        "Develop research skills.",
-        "Improve vocabulary.",
-        "Learn to express opinions.",
-        "Learn to respect different opinions.",
-        "Develop leadership skills."
-       ]
-      },
-      {
-       "t": "p",
-       "x": "**90. How does debating improve communication?**"
-      },
-      {
-       "t": "p",
-       "x": "It gives learners opportunities to speak, listen, explain ideas and respond to others."
-      },
-      {
-       "t": "p",
-       "x": "**91. How does debating develop critical thinking?**"
-      },
-      {
-       "t": "p",
-       "x": "Learners have to examine different ideas, identify strong and weak arguments and make reasoned responses."
-      },
-      {
-       "t": "p",
-       "x": "**92. How does debating develop leadership?**"
-      },
-      {
-       "t": "p",
-       "x": "Learners practise speaking confidently, organising ideas, making decisions and taking responsibility."
-      }
-     ]
-    },
-    {
-     "title": "SAMPLE DEBATE",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "**93. What is the motion for this sample debate?**"
-      },
-      {
-       "t": "p",
-       "x": "\"Children should help with housework.\""
-      },
-      {
-       "t": "p",
-       "x": "**94. Give points for the motion.**"
+       "x": "**140. Give examples of suitable debate motions for Primary Six.**"
       },
       {
        "t": "ol",
        "items": [
-        "Housework teaches children responsibility.",
-        "It helps children develop useful skills.",
-        "It teaches children to work with others.",
-        "It reduces the workload of parents.",
-        "It prepares children for independent living."
+        "\"School uniforms should be compulsory.\"",
+        "\"Children should help with housework.\"",
+        "\"Homework should be given every day.\"",
+        "\"All schools should have libraries.\"",
+        "\"Pupils should not carry mobile phones to school.\""
        ],
        "start": 1
       },
       {
        "t": "p",
-       "x": "**95. Give points against the motion.**"
-      },
-      {
-       "t": "ol",
-       "items": [
-        "Too much housework may interfere with schoolwork.",
-        "Children need time to rest and play.",
-        "Some household tasks may be dangerous for children.",
-        "Young children may not have the skills to perform certain tasks.",
-        "Parents should ensure that children are not overworked."
-       ],
-       "start": 1
+       "x": "**141. Why should a motion be clear?**"
       },
       {
        "t": "p",
-       "x": "**96. Give an example of a conclusion for the debate.**"
-      },
-      {
-       "t": "p",
-       "x": "In conclusion, children can benefit from helping with suitable household tasks, provided that the work is safe, reasonable and does not interfere with their education and health."
+       "x": "A clear motion prevents confusion about what is being debated."
       }
      ]
     },
     {
-     "title": "IMPORTANT DEBATE WORDS",
+     "title": "V. LIFE SKILLS AND VALUES IN DEBATING",
      "blocks": [
       {
        "t": "p",
-       "x": "**97. What does \"motion\" mean?**"
+       "x": "**142. What life skills are developed through debating?**"
       },
       {
        "t": "p",
-       "x": "A statement presented for debate."
+       "x": "Debating develops:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "effective communication;",
+        "fluency;",
+        "audibility;",
+        "articulation;",
+        "confidence;",
+        "responding to questions;",
+        "self-esteem;",
+        "assertiveness."
+       ]
       },
       {
        "t": "p",
-       "x": "**98. What does \"proposer\" mean?**"
+       "x": "**143. How does debating improve communication?**"
       },
       {
        "t": "p",
-       "x": "A person who supports the motion."
+       "x": "It teaches learners to express ideas clearly and listen to others."
       },
       {
        "t": "p",
-       "x": "**99. What does \"opposer\" mean?**"
+       "x": "**144. How does debating build confidence?**"
       },
       {
        "t": "p",
-       "x": "A person who argues against the motion."
+       "x": "It gives learners opportunities to speak before other people."
       },
       {
        "t": "p",
-       "x": "**100. What does \"argument\" mean?**"
+       "x": "**145. What is self-esteem?**"
       },
       {
        "t": "p",
-       "x": "A reason given to support or oppose an idea."
+       "x": "Self-esteem is the way a person values and feels about himself or herself."
       },
       {
        "t": "p",
-       "x": "**101. What does \"point\" mean?**"
+       "x": "**146. How does debating develop self-esteem?**"
       },
       {
        "t": "p",
-       "x": "An idea or reason presented by a speaker."
+       "x": "It gives learners opportunities to express their ideas and opinions."
       },
       {
        "t": "p",
-       "x": "**102. What does \"chairperson\" mean?**"
+       "x": "**147. What is assertiveness?**"
       },
       {
        "t": "p",
-       "x": "The person who controls the debate."
+       "x": "Assertiveness is the ability to express your views and rights confidently and respectfully."
       },
       {
        "t": "p",
-       "x": "**103. What does \"secretary\" mean?**"
+       "x": "**148. How does debating develop assertiveness?**"
       },
       {
        "t": "p",
-       "x": "The person who keeps records and takes notes."
+       "x": "Learners practise expressing their points of view and responding to questions."
       },
       {
        "t": "p",
-       "x": "**104. What does \"timekeeper\" mean?**"
+       "x": "**149. What values are developed through debating?**"
       },
       {
        "t": "p",
-       "x": "The person who keeps track of speaking time."
+       "x": "Debating develops values such as:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "respect;",
+        "appreciation;",
+        "tolerance;",
+        "confidence;",
+        "fairness;",
+        "listening to others."
+       ]
       },
       {
        "t": "p",
-       "x": "**105. What does \"audience\" mean?**"
+       "x": "**150. Why should we respect people with different opinions?**"
       },
       {
        "t": "p",
-       "x": "The people who listen to the debate."
-      },
-      {
-       "t": "p",
-       "x": "**106. What does \"opinion\" mean?**"
-      },
-      {
-       "t": "p",
-       "x": "A person's view or belief about something."
-      },
-      {
-       "t": "p",
-       "x": "**107. What does \"conclude\" mean?**"
-      },
-      {
-       "t": "p",
-       "x": "To bring something to an end or give a final statement."
-      },
-      {
-       "t": "p",
-       "x": "**108. What does \"previous\" mean?**"
-      },
-      {
-       "t": "p",
-       "x": "Something that happened or was mentioned earlier."
-      },
-      {
-       "t": "p",
-       "x": "**109. What does \"current\" mean?**"
-      },
-      {
-       "t": "p",
-       "x": "Something that is happening or existing now."
-      },
-      {
-       "t": "p",
-       "x": "**110. What does \"point of order\" mean?**"
-      },
-      {
-       "t": "p",
-       "x": "A formal interruption concerning the rules or procedure of the debate."
-      },
-      {
-       "t": "p",
-       "x": "**111. What does \"point of information\" mean?**"
-      },
-      {
-       "t": "p",
-       "x": "A brief question or piece of information raised during a debate according to its rules."
-      },
-      {
-       "t": "p",
-       "x": "**112. What does \"point of inquiry\" mean?**"
-      },
-      {
-       "t": "p",
-       "x": "A question raised to seek clarification or information."
+       "x": "People have different experiences and views. Respect allows them to discuss their differences peacefully."
       }
      ]
     },
     {
-     "title": "KEY DEFINITIONS",
+     "title": "KEY DEFINITIONS (KEY DEBATE VOCABULARY)",
      "blocks": [
       {
        "t": "table",
        "head": [
-        "Term",
+        "Word",
         "Meaning"
        ],
        "rows": [
         [
          "Debate",
-         "A formal discussion in which people present arguments for or against a particular motion or topic."
+         "A formal discussion of an issue"
+        ],
+        [
+         "Debating",
+         "The activity of discussing an issue formally"
         ],
         [
          "Motion",
-         "A statement or proposal that is presented for discussion in a debate."
-        ],
-        [
-         "Proposer",
-         "A person who supports and argues in favour of the motion."
-        ],
-        [
-         "Opposer",
-         "A person who disagrees with the motion and argues against it."
+         "A statement presented for discussion"
         ],
         [
          "Speaker",
-         "A person who presents arguments or ideas during a debate."
+         "A person who speaks in a debate"
+        ],
+        [
+         "Proposer",
+         "A person who supports the motion"
+        ],
+        [
+         "Opposer",
+         "A person who opposes the motion"
         ],
         [
          "Chairperson",
-         "The person who controls and guides the debate."
+         "The person who controls the debate"
         ],
         [
          "Secretary",
-         "The person responsible for keeping records and taking important notes during the debate."
+         "The person who keeps records and notes"
         ],
         [
          "Timekeeper",
-         "A person who keeps track of the time given to each speaker."
+         "The person who keeps track of time"
         ],
         [
          "Audience",
-         "The people who listen to the debate."
-        ],
-        [
-         "Argument",
-         "A reason or set of reasons given to support or oppose an idea."
+         "People listening to the debate"
         ],
         [
          "Point",
-         "An idea or reason given by a speaker to support an argument."
+         "An idea or reason presented by a speaker"
+        ],
+        [
+         "Argument",
+         "A reason given to support or oppose an idea"
         ],
         [
          "Argue",
-         "To give reasons to support or oppose an idea."
+         "To give reasons for or against an idea"
         ],
         [
          "Opinion",
-         "A person's belief, view or judgement about something."
-        ],
-        [
-         "Conclude",
-         "To bring something to an end or give a final statement."
-        ],
-        [
-         "Previous",
-         "Something that happened or was mentioned earlier."
-        ],
-        [
-         "Current",
-         "Something that is happening or existing now."
+         "A person's belief or view"
         ],
         [
          "Point of order",
-         "A formal interruption made by a speaker to draw attention to a rule or procedure that is not being followed."
+         "A formal issue concerning debate rules or procedure"
         ],
         [
          "Point of information",
-         "A brief question or piece of information directed to a speaker during a debate according to the rules of the debate."
+         "A brief request for or provision of information"
         ],
         [
          "Point of inquiry",
-         "A question raised to seek clarification or further information about something being discussed."
+         "A request for clarification or information"
         ],
         [
-         "Supporting argument",
-         "A reason that agrees with and strengthens a particular position."
+         "Previous",
+         "Something that happened before"
         ],
         [
-         "Opposing argument",
-         "A reason that disagrees with another person's position."
+         "Current",
+         "Something happening now"
         ],
         [
-         "Counterargument",
-         "An argument given in response to an opposing argument."
+         "Conclude",
+         "To bring something to an end"
         ],
         [
-         "Rebuttal",
-         "A response that challenges or disproves an argument presented by the other side."
+         "Role",
+         "The duty or responsibility of a person"
         ],
         [
-         "Interpret a motion",
-         "To understand exactly what the statement being debated means."
+         "Respect",
+         "To treat someone's views or rights properly"
         ],
         [
-         "Formulate a motion",
-         "To create or write a statement that can be debated."
+         "Evidence",
+         "Information used to support an argument"
         ],
         [
-         "Salutation",
-         "A polite form of greeting or addressing people."
+         "Audibility",
+         "The ability to speak loudly and clearly enough for listeners to hear"
         ],
         [
-         "Direct speech",
-         "Speech that gives the exact words spoken by a person."
+         "Fluency",
+         "The ability to speak smoothly and confidently without unnecessary hesitation"
         ],
         [
-         "Indirect speech",
-         "Speech that reports what someone said without using their exact words."
+         "Articulation",
+         "The clear pronunciation of words when speaking"
         ],
         [
-         "Even though",
-         "A structure used to show a contrast between two ideas."
+         "Self-esteem",
+         "The way a person values and feels about himself or herself"
         ],
         [
-         "Although",
-         "A structure used to show a contrast between two ideas."
-        ],
-        [
-         "If",
-         "A structure used to introduce a condition."
-        ],
-        [
-         "Whereas",
-         "A structure used to show a contrast between two people, things or ideas."
+         "Assertiveness",
+         "The ability to express your views and rights confidently and respectfully"
         ]
        ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT LANGUAGE STRUCTURES",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "**Even though + clause** - \"Even though the previous speaker disagreed, I respect his opinion.\"",
+        "**Although + clause** - \"Although the argument was strong, I do not support the motion.\"",
+        "**If + clause + would** - \"If I were the chairperson, I would allow both sides to speak.\"",
+        "**Whereas** - \"The proposer supports the motion, whereas the opposer rejects it.\""
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT GRAMMAR",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Direct speech:**"
+      },
+      {
+       "t": "p",
+       "x": "John said, \"I support the motion.\""
+      },
+      {
+       "t": "p",
+       "x": "**Indirect speech:**"
+      },
+      {
+       "t": "p",
+       "x": "John said that he supported the motion."
+      }
+     ]
+    },
+    {
+     "title": "MAIN COMPETENCIES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "By the end of the topic, the learner should be able to:"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Use appropriate debating vocabulary and structures.",
+        "Respond appropriately to arguments.",
+        "Read texts related to debate.",
+        "Read and interpret motions.",
+        "Write arguments based on given motions.",
+        "Make notes during a debate.",
+        "Use appropriate language when reacting to other people's views.",
+        "Argue issues fluently, confidently and convincingly.",
+        "Respect people whose opinions are different from their own.",
+        "Express a point of view clearly and respectfully."
+       ],
+       "start": 1
       }
      ]
     },
@@ -2561,16 +2883,16 @@
       {
        "t": "ul",
        "items": [
-        "A debate is a **formal discussion** with two sides: the **proposing side** and the **opposing side**.",
-        "The **chairperson** controls the debate; the **secretary** keeps records; the **timekeeper** watches the time; the **audience** listens and may vote.",
-        "A **point of order** concerns the **rules**; a **point of information** is a brief question **allowed by the rules**; a **point of inquiry** seeks **clarification**.",
-        "A **counterargument** answers an opposing argument; a **rebuttal** challenges or disproves it.",
-        "**Interpret** a motion before arguing: understand what it means and which side you are on.",
-        "A good motion is **clear, understandable, has two possible sides** and allows arguments for and against.",
-        "Begin formally with a **salutation**: \"Mr/Madam Chairperson, members of the panel, fellow debaters and members of the audience…\"",
+        "A **debate** is a formal discussion; **debating** is the activity of arguing for or against a motion.",
+        "People in a debate: **speaker, proposer, opposer, chairperson, secretary, timekeeper, audience** — know each role and duty.",
+        "The three formal points: **point of order** (rules), **point of information** (information), **point of inquiry** (clarification).",
+        "**Previous** = before now; **current** = happening now; **conclude** = bring to an end.",
+        "Preparation: understand the motion, research, collect information, prepare and arrange points logically, prepare examples, practise speaking (**audibility, fluency, articulation**).",
+        "A good argument is **clear, relevant, logical and well supported**; attack the **argument**, never the person.",
         "**Even though / although** show contrast; **if** introduces a condition; **whereas** contrasts two people or things.",
         "**Direct speech** quotes exact words in quotation marks; **indirect speech** reports without them (\"said that he supported the motion\").",
-        "Good debate notes are **short, clear, relevant, well organised and easy to understand**."
+        "Debate notes use **short points, key words and brief phrases** — never every word.",
+        "Debating builds **communication, confidence, self-esteem, assertiveness** and values of **respect, tolerance and fairness**."
        ]
       }
      ]
@@ -2581,12 +2903,12 @@
       {
        "t": "ul",
        "items": [
-        "Learn the KEY DEFINITIONS word for word — **debate, motion, proposer, opposer, chairperson, secretary, timekeeper, point of order, point of information, point of inquiry, rebuttal** are the favourites.",
-        "\"Duties/roles\" questions: give **five** duties of the chairperson, **four** responsibilities of the secretary, **three** tasks of the timekeeper.",
-        "Direct/indirect speech conversions are guaranteed — remember: quotation marks disappear and tenses shift back (\"will begin\" → \"would begin\").",
-        "Structure items must use the exact connector: **even though / although** (contrast), **if** (condition), **whereas** (contrast between two sides).",
-        "Be ready with **five rules of debating**, **five qualities of a good debater** and the **ten steps** of preparation.",
-        "For/against motion questions: pick one side and keep every point on **that** side."
+        "Learn the KEY DEFINITIONS table word for word — **debate, motion, proposer, opposer, chairperson, secretary, timekeeper, point of order, point of information, point of inquiry** are the favourites.",
+        "\"Who…?\" role questions: the **chairperson** controls, the **secretary** keeps records, the **timekeeper** watches time, the **audience** listens.",
+        "Direct/indirect speech conversions are guaranteed — quotation marks disappear and tenses shift back (\"is important\" → \"was important\").",
+        "Structure items must use the exact connector: **even though / although** (contrast), **if…would** (condition), **whereas** (two sides).",
+        "Be ready with the **duties lists** (chairperson nine, secretary five, timekeeper four) and what makes a **strong vs weak argument**.",
+        "Interpret-before-argue: always ask what the motion means and which side you are on."
        ]
       }
      ]
@@ -2597,29 +2919,31 @@
       {
        "t": "ol",
        "items": [
-        "Define a debate.",
+        "What is debating?",
+        "Who supports a motion?",
+        "Who opposes a motion?",
+        "Who controls a debate?",
+        "Who keeps records during a debate?",
+        "Who keeps track of time?",
+        "Who listens to the debate?",
         "What is a motion?",
-        "Who is a proposer?",
-        "Who is an opposer?",
-        "State five roles of a chairperson.",
-        "Mention four responsibilities of a secretary.",
-        "What is the work of a timekeeper?",
-        "Mention five debate vocabulary words.",
+        "What is an argument?",
+        "What is an opinion?",
         "What is a point of order?",
         "What is a point of information?",
         "What is a point of inquiry?",
-        "Give five qualities of a good debater.",
-        "State five rules of debating.",
-        "Why should learners research debate topics?",
-        "Why should learners make notes during a debate?",
+        "What does \"previous\" mean?",
+        "What does \"current\" mean?",
+        "What does \"conclude\" mean?",
         "What is direct speech?",
         "What is indirect speech?",
-        "Write one sentence using \"even though\".",
-        "Write one sentence using \"although\".",
-        "Write one sentence using \"if\".",
-        "Write one sentence using \"whereas\".",
-        "Why should speakers respond appropriately to arguments?",
-        "Why is debating important to learners?"
+        "What does \"even though\" express?",
+        "What does \"although\" express?",
+        "What does \"if\" express?",
+        "What does \"whereas\" express?",
+        "Why should speakers listen to one another?",
+        "Why should speakers respect one another?",
+        "What makes a good debater?"
        ],
        "start": 1
       }
@@ -2631,29 +2955,31 @@
       {
        "t": "ol",
        "items": [
-        "A debate is a formal discussion in which people give arguments for or against a motion.",
-        "A motion is a statement or proposal presented for discussion in a debate.",
-        "A proposer is a person who supports the motion.",
-        "An opposer is a person who argues against the motion.",
-        "The chairperson introduces the motion, controls the debate, gives speakers turns, maintains order and ensures that rules are followed.",
-        "The secretary takes notes, records important points, records information about the debate and keeps the debate records.",
-        "A timekeeper keeps track of the time given to speakers.",
-        "Motion, proposer, opposer, argument and chairperson.",
-        "It is a formal interruption concerning the rules or procedure of the debate.",
-        "It is a brief question or piece of information directed to a speaker according to the rules of the debate.",
-        "It is a question raised to seek clarification or information.",
-        "A good debater should be confident, well prepared, respectful, clear in speech and a good listener.",
-        "Speakers should listen to others, respect other views, avoid insults, speak clearly and keep within the given time.",
-        "Research helps learners obtain information and prepare strong arguments.",
-        "Notes help learners remember important arguments and respond appropriately.",
+        "Debating is the formal discussion of a motion in which people give arguments for or against it.",
+        "The proposer supports the motion.",
+        "The opposer opposes the motion.",
+        "The chairperson controls the debate.",
+        "The secretary keeps records.",
+        "The timekeeper keeps track of time.",
+        "The audience listens to the debate.",
+        "A motion is a statement or topic presented for debate.",
+        "An argument is a reason given to support or oppose an idea.",
+        "An opinion is a person's belief or view about something.",
+        "It is a formal interruption concerning the rules or procedure of a debate.",
+        "It is a brief request for or provision of relevant information during a debate.",
+        "It is a request for clarification or further information.",
+        "It means something that happened before.",
+        "It means something happening or existing now.",
+        "It means to bring something to an end.",
         "Direct speech gives the exact words spoken by a person.",
         "Indirect speech reports what someone said without giving the exact words.",
-        "Even though the speaker disagreed with me, I respected her opinion.",
-        "Although the argument was interesting, it was not supported by facts.",
-        "If I were the chairperson, I would give both sides equal opportunities to speak.",
-        "The proposer supports the motion, whereas the opposer rejects it.",
-        "They should respond appropriately so that the debate remains respectful, relevant and meaningful.",
-        "Debating develops communication, confidence, critical thinking, research, reasoning and leadership skills."
+        "It expresses contrast.",
+        "It expresses contrast.",
+        "It introduces a condition.",
+        "It expresses contrast between two ideas, people or things.",
+        "They listen so that they can understand and respond appropriately to different arguments.",
+        "Respect makes the debate peaceful, fair and productive.",
+        "A good debater understands the motion, researches the topic, prepares strong points, speaks clearly, listens carefully, responds appropriately, respects other people's opinions, remains confident and keeps within the time limit."
        ],
        "start": 1
       }
@@ -2664,7 +2990,7 @@
      "blocks": [
       {
        "t": "p",
-       "x": "*The study content of this topic was provided by the app owner for the P.6 theme Debate (NCDC Primary Six Curriculum, Set One, English Topic 2, pages 30–32). All revision answers above are drawn from that owner-provided content.*"
+       "x": "*The study content of this topic was provided by the app owner for the P.6 theme Debating (NCDC Primary Six Curriculum, Set One, English Topic 2, pages 30–32). All revision answers above are drawn from that owner-provided content.*"
       }
      ]
     }
