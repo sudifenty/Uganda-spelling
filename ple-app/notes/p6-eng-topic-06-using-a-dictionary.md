@@ -3,302 +3,195 @@
 # TOPIC 6: USING A DICTIONARY
 
 *Curriculum reference: NCDC Primary Six Curriculum, Set One, English Topic 6, 25 periods
-(`curriculum/P6-SET-ONE-2010.pdf`, topic outline page 24 and pages 52–55).*
+(`curriculum/P6-SET-ONE-2010.pdf`, pages 52–55). The study content below was provided
+by the app owner and replaces the earlier version of this topic.*
 
-**What you already know:** You have seen a dictionary in class. In P.6 you learn **how to
-use it properly** — alphabetical order, guide words, meanings, pronunciation, abbreviations
-and labels — and the grammar of **question tags, opposites and superlatives**.
+**What you already know:** When you meet a new word in a story, you want to know what
+it means and how it is spelled. In P.6 you learn the **dictionary** — how its words
+are arranged, what each part of a dictionary page does, and how to look a word up
+quickly.
 
 **By the end of this topic you should be able to:**
 
+- say what a dictionary, a headword and guide words are
 - arrange words in alphabetical order
-- use guide words to find a word quickly
-- find the meaning, spelling, pronunciation and part of speech of a word
-- understand the abbreviations and labels used in a dictionary
-- use a thesaurus to find words of similar meaning
-- use question tags, opposites and superlative forms
+- say the information a dictionary gives and its uses
+- explain the dictionary abbreviations **n., v., adj., adv.**
+- look up an unfamiliar word correctly
 
----
+## MEANING OF A DICTIONARY
 
-## 1. WHAT A DICTIONARY IS
+A **dictionary** is a reference book that contains words arranged in alphabetical
+order together with their meanings and other information about them.
 
-**Dictionary:** A book that lists words in alphabetical order and gives their meanings, spellings, pronunciations and other information.
+## ALPHABETICAL ORDER
 
-### What a dictionary tells you about a word
+**Alphabetical order** is the arrangement of words according to the order of the
+letters in the alphabet.
 
-- Its **spelling**
-- Its **meaning** (sometimes several meanings)
-- Its **pronunciation** and the **stress** — which part is said more strongly
-- Its **part of speech** — noun, verb, adjective and so on
-- Its **plural** or other forms
-- Its **origin**, and sometimes an **example sentence**
+Words in a dictionary are arranged alphabetically to make it easy for users to find
+them quickly.
 
-**Thesaurus:** A book that gives words of **similar meaning (synonyms)** and opposite meaning (antonyms).
+The first five letters of the English alphabet are **A, B, C, D and E**.
 
----
+When arranging words that begin with the same letter, you compare their **second
+letters**. If the second letters are also the same, compare the **third letters**.
 
-## 2. ALPHABETICAL ORDER
+Example: banana, bag, ball, basket arrange as **bag → ball → banana → basket**.
 
-The dictionary follows the **alphabet: A B C D E … Z**.
+Example: cat, can, car, call arrange as **call → can → car → cat**.
 
-**The rule:** compare the **first letters**. If they are the same, compare the **second**,
-then the **third**, and so on.
+## PARTS OF A DICTIONARY PAGE
 
-### Worked examples
+### Headword
 
-| Given words | In alphabetical order |
-|---|---|
-| mango, banana, apple, orange | **apple, banana, mango, orange** |
-| pear, peach, people, pen | **peach, pear, pen, people** |
-| stand, star, stamp, state | **stamp, stand, star, state** |
-| child, chief, chalk, chair | **chair, chalk, chief, child** |
+A **headword** is the word being explained in a dictionary.
 
-*Notice:* **peach** comes **before** **people**, and **people** comes **after** **peach**,
-because *pea…* comes before *peo…* (a before o).
+### Guide Words
 
----
+**Guide words** are words printed at the top of dictionary pages to help users find
+words quickly. Guide words help users know the **range of words** found on a
+particular dictionary page.
 
-## 3. GUIDE WORDS
+## INFORMATION FOUND IN A DICTIONARY
 
-**Guide words:** The two words printed at the top of a dictionary page. The one on the left is the **first** word on that page, and the one on the right is the **last**.
+A dictionary may provide:
 
-**How to use them:** if the guide words are **market — mask**, then *marry, marsh* and
-*martin* are on that page, but *marble* (before) and *mast* (after) are not.
+- The meaning of a word
+- Pronunciation
+- Spelling
+- Part of speech
+- Example sentences
+- Different meanings of a word
 
-### Practice
+**Pronunciation** is the way a word is spoken.
 
-| Guide words | Is the word on the page? |
-|---|---|
-| **father — feather** | *feast* → **yes** · *fast* → no · *feed* → no |
-| **paint — palm** | *pair* → **yes** · *pack* → no · *panic* → no |
+A **part of speech** is the grammatical group to which a word belongs. The parts of
+speech shown in a dictionary include **noun, verb, adjective and adverb**.
 
----
-
-## 4. OTHER THINGS IN A DICTIONARY ENTRY
-
-### Parts of speech and their short forms
+## DICTIONARY ABBREVIATIONS
 
 | Abbreviation | Meaning |
 |---|---|
-| **n.** | noun |
-| **v.** | verb |
-| **adj.** | adjective |
-| **adv.** | adverb |
-| **prep.** | preposition |
-| **conj.** | conjunction |
-| **pron.** | pronoun |
-| **pl.** | plural |
-| **sing.** | singular |
-| **syn.** | synonym · **ant.** — antonym |
+| n. | noun |
+| v. | verb |
+| adj. | adjective |
+| adv. | adverb |
 
-### A sample entry
+## USES OF A DICTIONARY
 
-> **kind** /kaɪnd/ *adj.* 1. gentle and caring towards others: *She is **kind** to animals.*
-> 2. *n.* a type or sort: *What **kind** of book is it?* — **kindly** *adv.* · **kindness** *n.*
+- To find the meaning of a word.
+- To check the spelling of a word.
+- To find the pronunciation of a word.
+- To identify the part of speech of a word.
+- To improve vocabulary.
 
-From this entry you learn the spelling, the pronunciation, that the word can be an
-**adjective** or a **noun**, two meanings, an example, and two related words.
+## HOW TO FIND A WORD IN A DICTIONARY
 
-### Labels you may meet
+1. Look at the **first letter** of the word.
+2. Open the dictionary near that letter.
+3. Compare the other letters until you find the word.
 
-**formal / informal** · **old-fashioned** · **British / American** · **slang** ·
-**foreign words** taken into English, such as *safari*, *veranda*, *matooke* and *sauna*.
+Knowing the alphabet helps a person find words quickly and correctly.
 
-### Acronyms and abbreviations
+## HOW A DICTIONARY HELPS LEARNERS
 
-An **acronym** is a word made from the first letters of other words: **UNEB**, **NEMA**,
-**UWA**, **NGO**, **AIDS**. Many dictionaries list them too.
+A dictionary helps learners understand unfamiliar words and improve **spelling,
+pronunciation, vocabulary, reading and writing** skills. It shows the correct
+spelling of words so that you can check and correct your own spelling, and it
+introduces you to new words and explains their meanings and uses.
 
----
-
-## 5. GRAMMAR
-
-### (a) Question tags
-
-A short question added to a statement. **Positive statement → negative tag; negative
-statement → positive tag.**
-
-| Statement | Tag |
-|---|---|
-| A dictionary gives meanings, | **doesn't it?** |
-| You have found the word, | **haven't you?** |
-| She isn't using a thesaurus, | **is she?** |
-| We shall check the spelling, | **shan't we?** |
-| I am right, | **aren't I?** |
-| Let us look it up, | **shall we?** |
-
-### (b) Opposites (antonyms)
-
-| Word | Opposite | Word | Opposite |
-|---|---|---|---|
-| big | small | ancient | modern |
-| cheap | expensive | shallow | deep |
-| arrive | depart | remember | forget |
-| polite | rude | full | empty |
-| ancient | modern | accept | refuse |
-
-**By adding a prefix:** happy → **unhappy** · possible → **impossible** · legal →
-**illegal** · regular → **irregular** · agree → **disagree** · behave → **misbehave**.
-
-### (c) Superlative forms
-
-| Type | Adjective | Comparative | Superlative |
-|---|---|---|---|
-| Short words | tall | taller | **tallest** |
-| | big | bigger | **biggest** |
-| | happy | happier | **happiest** |
-| Long words | expensive | more expensive | **most expensive** |
-| | beautiful | more beautiful | **most beautiful** |
-| Irregular | good | better | **best** |
-| | bad | worse | **worst** |
-| | many/much | more | **most** |
-| | little | less | **least** |
-
-**The rule:** use **-est** or **most** with **the**: *the **tallest** boy*, *the **most
-useful** book*. Never write "more taller" or "most tallest".
-
-### (d) Language structures from the syllabus
-
-| Structure | Example |
-|---|---|
-| **… before …** | *Peach comes **before** people in the dictionary.* |
-| **… after …** | *The word people comes **after** peach in the dictionary.* |
-
----
-
-## 6. WHY A DICTIONARY MATTERS
-
-It gives the **correct spelling** · it explains **new words** you meet in reading ·
-it shows how a word is **pronounced** · it tells you the **part of speech**, so you use the
-word correctly · it improves your **vocabulary and composition** · it settles arguments
-about meaning · a **thesaurus** helps you avoid repeating the same word.
-
----
-
-# KEY DEFINITIONS
+## KEY DEFINITIONS
 
 | Term | Meaning |
 |---|---|
-| Dictionary | A book of words in alphabetical order with their meanings |
-| Alphabetical order | Arrangement following the order of the alphabet |
-| Guide words | The first and last words on a dictionary page |
-| Entry | A word and all the information given about it |
-| Pronunciation | The way a word is said |
-| Stress | The part of a word said more strongly |
-| Abbreviation | A short form of a word |
-| Acronym | A word formed from the first letters of other words |
-| Synonym / antonym | A word of similar meaning / opposite meaning |
-| Thesaurus | A book of synonyms and antonyms |
+| Dictionary | A reference book that contains words arranged in alphabetical order together with their meanings and other information about them. |
+| Alphabetical order | The arrangement of words according to the order of the letters in the alphabet. |
+| Headword | The word being explained in a dictionary. |
+| Guide words | Words printed at the top of dictionary pages to help users find words quickly. |
+| Pronunciation | The way a word is spoken. |
+| Part of speech | The grammatical group to which a word belongs. |
+| n. | An abbreviation for noun. |
+| v. | An abbreviation for verb. |
+| adj. | An abbreviation for adjective. |
+| adv. | An abbreviation for adverb. |
 
----
+## IMPORTANT FACTS TO REMEMBER
 
-# IMPORTANT FACTS TO REMEMBER
+- A dictionary arranges words **alphabetically** so users can find them **quickly**.
+- For words with the same first letter, compare the **second letters**, then the **third letters**, and so on.
+- **bag → ball → banana → basket** and **call → can → car → cat** — practise arranging like this.
+- The **headword** is the word being explained; **guide words** at the top of the page show the **range of words** on that page.
+- A dictionary gives the **meaning, pronunciation, spelling, part of speech, example sentences** and **different meanings**.
+- Remember the abbreviations: **n. = noun, v. = verb, adj. = adjective, adv. = adverb**.
+- To look up a word: first letter → open near that letter → compare the other letters until you find it.
 
-- Compare **letter by letter** when arranging words alphabetically.
-- **Guide words** show the first and last words on a page.
-- **n.** noun · **v.** verb · **adj.** adjective · **adv.** adverb.
-- A **thesaurus** gives words of similar meaning.
-- Positive statement → **negative** tag; negative statement → **positive** tag.
-- *I am…,* **aren't I?**
-- Superlatives take **-est** or **most**, always with **the** — never both together.
-- *peach* comes **before** *people*; *people* comes **after** *peach*.
+## EXAMINATION POINTS
 
----
+- Definition questions love **dictionary, alphabetical order, headword, guide words, pronunciation, part of speech** — learn the KEY DEFINITIONS word for word.
+- Alphabetical-arrangement questions are common (e.g. arrange cat, can, car, call) — work letter by letter and double-check the second letters.
+- Be ready with **five uses of a dictionary** and the **information a dictionary provides**.
+- "What does n./v./adj./adv. mean?" — answer with the full part of speech: noun, verb, adjective, adverb.
+- "How do you find a word?" answers must give the **steps** (first letter, open near it, compare other letters).
 
-# EXAMINATION POINTS
+## REVISION QUESTIONS
 
-- Arrange in alphabetical order: peach, pen, people, pear → **peach, pear, pen, people**.
-- Guide words *market — mask*: is *marry* on the page? → **yes**.
-- What does **adj.** stand for? → adjective.
-- Book giving words of similar meaning → a **thesaurus**.
-- *A dictionary helps us, ____?* → **doesn't it?**
-- Opposite of *ancient* → **modern**. Of *shallow* → **deep**.
-- Superlative of *good* → **best**; of *bad* → **worst**; of *beautiful* → **most beautiful**.
+1. What is a dictionary?
+2. Why are words in a dictionary arranged alphabetically?
+3. What is alphabetical order?
+4. Mention the first five letters of the English alphabet.
+5. What should you consider when arranging words that begin with the same letter?
+6. Arrange these words alphabetically: banana, bag, ball, basket.
+7. What is a headword?
+8. What are guide words?
+9. What information can be found in a dictionary?
+10. Mention five uses of a dictionary.
+11. What is pronunciation?
+12. What is a part of speech?
+13. Mention four parts of speech that may be shown in a dictionary.
+14. What does "n." mean in a dictionary?
+15. What does "v." mean in a dictionary?
+16. What does "adj." mean in a dictionary?
+17. What does "adv." mean in a dictionary?
+18. How do you find an unfamiliar word in a dictionary?
+19. How does a dictionary help learners?
+20. What is the importance of guide words?
+21. Why is it important to know the alphabet when using a dictionary?
+22. Arrange these words alphabetically: cat, can, car, call.
+23. What is the meaning of the word "honest"?
+24. How can a dictionary help you improve your spelling?
+25. How can a dictionary help you improve your vocabulary?
 
----
+## ANSWERS TO REVISION QUESTIONS
 
-# COMMON MISTAKES TO AVOID
+1. A dictionary is a reference book that contains words arranged in alphabetical order together with their meanings and other information about them.
+2. Words are arranged alphabetically to make it easy for users to find them quickly.
+3. Alphabetical order is the arrangement of words according to the order of the letters in the alphabet.
+4. A, B, C, D and E.
+5. You compare their second letters. If the second letters are also the same, compare the third letters.
+6. Bag → ball → banana → basket.
+7. A headword is the word being explained in a dictionary.
+8. Guide words are words printed at the top of dictionary pages to help users find words quickly.
+9. A dictionary may provide the meaning of a word, pronunciation, spelling, part of speech, example sentences and different meanings of a word.
+10. To find the meaning of a word; to check the spelling of a word; to find the pronunciation of a word; to identify the part of speech of a word; to improve vocabulary.
+11. Pronunciation is the way a word is spoken.
+12. A part of speech is the grammatical group to which a word belongs.
+13. Noun, verb, adjective and adverb.
+14. "n." means noun.
+15. "v." means verb.
+16. "adj." means adjective.
+17. "adv." means adverb.
+18. First, look at the first letter of the word. Then open the dictionary near that letter and compare the other letters until you find the word.
+19. A dictionary helps learners understand unfamiliar words, improve spelling, pronunciation, vocabulary, reading and writing skills.
+20. Guide words help users know the range of words found on a particular dictionary page.
+21. Knowing the alphabet helps a person find words quickly and correctly.
+22. Call → can → car → cat.
+23. Honest means truthful and not likely to cheat or deceive others.
+24. It shows the correct spelling of words so that you can check and correct your spelling.
+25. It introduces you to new words and explains their meanings and uses.
 
-- Looking only at the **first letter** when arranging words.
-- Writing *"more better"* or *"most tallest"*.
-- Writing *"amn't I?"* instead of **aren't I?**
-- Mixing up a **dictionary** (meanings) with a **thesaurus** (similar words).
-- Ignoring the **guide words** and searching the whole page.
+## A NOTE ON SOURCES
 
----
-
-# REVISION QUESTIONS
-
-1. What is a dictionary? Give any four things it tells you about a word.
-2. What is a thesaurus, and how is it different from a dictionary?
-3. Arrange in alphabetical order: orange, apple, mango, banana, pear.
-4. Arrange in alphabetical order: stand, stamp, state, star, stay.
-5. Arrange in alphabetical order: chief, chair, child, chalk, cheese.
-6. What are guide words?
-7. If the guide words on a page are *father — feather*, which of these words are on that page: fast, feast, feed, fault?
-8. What do these abbreviations stand for: n., v., adj., adv., pl.?
-9. Write out what this entry tells you: **quick** /kwɪk/ *adj.* fast; taking a short time.
-10. Give one word for: a word formed from the first letters of other words, and give two examples.
-11. Add question tags: *A dictionary gives meanings, ____?* · *She isn't reading, ____?* · *I am late, ____?*
-12. Give the opposites of: cheap, arrive, polite, shallow, ancient.
-13. Give the opposites by adding a prefix: happy, possible, legal, agree, behave.
-14. Give the comparative and superlative of: tall, big, happy, expensive, good, bad.
-15. Complete: *Peach comes ____ people in the dictionary, and people comes ____ peach.*
-16. Give any five reasons why a dictionary is important to a P.6 learner.
-17. Which word would come first in a dictionary: *market* or *marble*? Give a reason.
-18. Use *most useful* correctly in a sentence.
-19. Find and write any three words in this note that would appear on a dictionary page with the guide words *sound — spelling*.
-20. Write a short paragraph (about five sentences) explaining to a P.4 pupil how to look up a word in a dictionary.
-
----
-
-# ANSWERS TO REVISION QUESTIONS
-
-1. A dictionary is a book that lists words in alphabetical order and gives information about them. Any four of: spelling, meaning, pronunciation, stress, part of speech, plural form, origin, example sentence.
-2. A **thesaurus** is a book that gives words of **similar meaning (synonyms)** and opposites. A dictionary explains **what a word means**, while a thesaurus offers **other words you could use instead**.
-3. apple, banana, mango, orange, pear
-4. stamp, stand, star, state, stay
-5. chair, chalk, cheese, chief, child
-6. Guide words are the two words at the top of a dictionary page: the **first** word on that page and the **last** word on that page.
-7. **feast** is on that page. *Fast* comes before *father*, and *feed* and *fault* fall outside the range.
-8. **n.** — noun; **v.** — verb; **adj.** — adjective; **adv.** — adverb; **pl.** — plural.
-9. It tells you the **spelling** (quick), the **pronunciation** /kwɪk/, that it is an **adjective**, and its **meaning** — fast, taking a short time.
-10. An **acronym**. Examples: **UNEB**, **NEMA** (also UWA, NGO, AIDS).
-11. **doesn't it?** · **is she?** · **aren't I?**
-12. cheap → **expensive**; arrive → **depart**; polite → **rude**; shallow → **deep**; ancient → **modern**.
-13. happy → **unhappy**; possible → **impossible**; legal → **illegal**; agree → **disagree**; behave → **misbehave**.
-14. tall — taller — **tallest**; big — bigger — **biggest**; happy — happier — **happiest**; expensive — more expensive — **most expensive**; good — better — **best**; bad — worse — **worst**.
-15. Peach comes **before** people, and people comes **after** peach.
-16. Any five of: it gives correct spellings; it explains new words; it shows pronunciation; it gives the part of speech; it improves vocabulary and composition; it settles arguments about meaning; it helps in reading and research.
-17. **Marble**, because after *mar-* we compare the fourth letter: **b** comes before **k**.
-18. *Learner's sentence,* for example: *A dictionary is the **most useful** book in the classroom.*
-19. Any three words falling between *sound* and *spelling* alphabetically, for example **sounds, speech, spell** (also *speaker, special*).
-20. *Learner's paragraph.* It should tell the pupil to know the first letter of the word, open the dictionary near that letter, use the **guide words** at the top of the page, follow the letters one by one, and then read the meaning and the part of speech.
-
----
-
-# P.6 QUICK REVISION
-
-- Alphabetical order: compare **letter by letter**
-- **Guide words** = first and last word on the page
-- **n. v. adj. adv. pl.** · **thesaurus** = similar words
-- Tags: positive → negative, negative → positive · *I am…,* **aren't I?**
-- Opposites by prefix: **un-, im-, il-, ir-, dis-, mis-**
-- Superlative: **-est** or **most**, with **the** — never both
-- *peach* **before** *people* · *people* **after** *peach*
-
----
-
-## A note on sources
-
-The topic title, vocabulary list, language structures (*before* and *after* in dictionary
-order), grammar items (question tags, opposites and superlative forms), competences and
-teacher guidance above were taken from the official **NCDC Primary Six Curriculum, Set One**
-(© NCDC 2010; topic outline page 24 and pages 52–55 of the PDF in `curriculum/`), including
-its instruction that learners use a thesaurus and identify words with opposite meanings.
-The explanations, tables, sample entry, exercises and answers are original teaching material
-written for the learner; they are **not** copied from the curriculum document or from any
-textbook.
-
-No NCDC **Teacher's Guide** for P.6 was available, so the syllabus "Guidance to the
-Teacher" was used directly instead.
+*The study content of this topic was provided by the app owner for the P.6 theme
+Using a Dictionary (NCDC Primary Six Curriculum, Set One, English Topic 6, pages
+52–55). All revision answers above are drawn from that owner-provided content.*

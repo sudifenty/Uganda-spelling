@@ -3,7 +3,7 @@
  "subject": "ENG",
  "subject_name": "English",
  "total": 6,
- "words": 9135,
+ "words": 8573,
  "topics": [
   {
    "id": "P6_ENG_T01",
@@ -2289,18 +2289,18 @@
    "slug": "using-a-dictionary",
    "periods": 25,
    "curriculum_pages": "52–55",
-   "words": 1963,
+   "words": 1401,
    "sections": [
     {
      "title": "About this topic",
      "blocks": [
       {
        "t": "p",
-       "x": "*Curriculum reference: NCDC Primary Six Curriculum, Set One, English Topic 6, 25 periods (`curriculum/P6-SET-ONE-2010.pdf`, topic outline page 24 and pages 52–55).*"
+       "x": "*Curriculum reference: NCDC Primary Six Curriculum, Set One, English Topic 6, 25 periods (`curriculum/P6-SET-ONE-2010.pdf`, pages 52–55). The study content below was provided by the app owner and replaces the earlier version of this topic.*"
       },
       {
        "t": "p",
-       "x": "**What you already know:** You have seen a dictionary in class. In P.6 you learn **how to use it properly** — alphabetical order, guide words, meanings, pronunciation, abbreviations and labels — and the grammar of **question tags, opposites and superlatives**."
+       "x": "**What you already know:** When you meet a new word in a story, you want to know what it means and how it is spelled. In P.6 you learn the **dictionary** — how its words are arranged, what each part of a dictionary page does, and how to look a word up quickly."
       },
       {
        "t": "p",
@@ -2309,131 +2309,105 @@
       {
        "t": "ul",
        "items": [
+        "say what a dictionary, a headword and guide words are",
         "arrange words in alphabetical order",
-        "use guide words to find a word quickly",
-        "find the meaning, spelling, pronunciation and part of speech of a word",
-        "understand the abbreviations and labels used in a dictionary",
-        "use a thesaurus to find words of similar meaning",
-        "use question tags, opposites and superlative forms"
+        "say the information a dictionary gives and its uses",
+        "explain the dictionary abbreviations **n., v., adj., adv.**",
+        "look up an unfamiliar word correctly"
        ]
       }
      ]
     },
     {
-     "title": "1. WHAT A DICTIONARY IS",
+     "title": "MEANING OF A DICTIONARY",
      "blocks": [
       {
        "t": "p",
-       "x": "**Dictionary:** A book that lists words in alphabetical order and gives their meanings, spellings, pronunciations and other information."
+       "x": "A **dictionary** is a reference book that contains words arranged in alphabetical order together with their meanings and other information about them."
+      }
+     ]
+    },
+    {
+     "title": "ALPHABETICAL ORDER",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Alphabetical order** is the arrangement of words according to the order of the letters in the alphabet."
+      },
+      {
+       "t": "p",
+       "x": "Words in a dictionary are arranged alphabetically to make it easy for users to find them quickly."
+      },
+      {
+       "t": "p",
+       "x": "The first five letters of the English alphabet are **A, B, C, D and E**."
+      },
+      {
+       "t": "p",
+       "x": "When arranging words that begin with the same letter, you compare their **second letters**. If the second letters are also the same, compare the **third letters**."
+      },
+      {
+       "t": "p",
+       "x": "Example: banana, bag, ball, basket arrange as **bag → ball → banana → basket**."
+      },
+      {
+       "t": "p",
+       "x": "Example: cat, can, car, call arrange as **call → can → car → cat**."
+      }
+     ]
+    },
+    {
+     "title": "PARTS OF A DICTIONARY PAGE",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Headword"
+      },
+      {
+       "t": "p",
+       "x": "A **headword** is the word being explained in a dictionary."
       },
       {
        "t": "h3",
-       "x": "What a dictionary tells you about a word"
+       "x": "Guide Words"
+      },
+      {
+       "t": "p",
+       "x": "**Guide words** are words printed at the top of dictionary pages to help users find words quickly. Guide words help users know the **range of words** found on a particular dictionary page."
+      }
+     ]
+    },
+    {
+     "title": "INFORMATION FOUND IN A DICTIONARY",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A dictionary may provide:"
       },
       {
        "t": "ul",
        "items": [
-        "Its **spelling**",
-        "Its **meaning** (sometimes several meanings)",
-        "Its **pronunciation** and the **stress** — which part is said more strongly",
-        "Its **part of speech** — noun, verb, adjective and so on",
-        "Its **plural** or other forms",
-        "Its **origin**, and sometimes an **example sentence**"
+        "The meaning of a word",
+        "Pronunciation",
+        "Spelling",
+        "Part of speech",
+        "Example sentences",
+        "Different meanings of a word"
        ]
       },
       {
        "t": "p",
-       "x": "**Thesaurus:** A book that gives words of **similar meaning (synonyms)** and opposite meaning (antonyms)."
+       "x": "**Pronunciation** is the way a word is spoken."
+      },
+      {
+       "t": "p",
+       "x": "A **part of speech** is the grammatical group to which a word belongs. The parts of speech shown in a dictionary include **noun, verb, adjective and adverb**."
       }
      ]
     },
     {
-     "title": "2. ALPHABETICAL ORDER",
+     "title": "DICTIONARY ABBREVIATIONS",
      "blocks": [
-      {
-       "t": "p",
-       "x": "The dictionary follows the **alphabet: A B C D E … Z**."
-      },
-      {
-       "t": "p",
-       "x": "**The rule:** compare the **first letters**. If they are the same, compare the **second**, then the **third**, and so on."
-      },
-      {
-       "t": "h3",
-       "x": "Worked examples"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Given words",
-        "In alphabetical order"
-       ],
-       "rows": [
-        [
-         "mango, banana, apple, orange",
-         "**apple, banana, mango, orange**"
-        ],
-        [
-         "pear, peach, people, pen",
-         "**peach, pear, pen, people**"
-        ],
-        [
-         "stand, star, stamp, state",
-         "**stamp, stand, star, state**"
-        ],
-        [
-         "child, chief, chalk, chair",
-         "**chair, chalk, chief, child**"
-        ]
-       ]
-      },
-      {
-       "t": "p",
-       "x": "*Notice:* **peach** comes **before** **people**, and **people** comes **after** **peach**, because *pea…* comes before *peo…* (a before o)."
-      }
-     ]
-    },
-    {
-     "title": "3. GUIDE WORDS",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "**Guide words:** The two words printed at the top of a dictionary page. The one on the left is the **first** word on that page, and the one on the right is the **last**."
-      },
-      {
-       "t": "p",
-       "x": "**How to use them:** if the guide words are **market — mask**, then *marry, marsh* and *martin* are on that page, but *marble* (before) and *mast* (after) are not."
-      },
-      {
-       "t": "h3",
-       "x": "Practice"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Guide words",
-        "Is the word on the page?"
-       ],
-       "rows": [
-        [
-         "**father — feather**",
-         "*feast* → **yes** · *fast* → no · *feed* → no"
-        ],
-        [
-         "**paint — palm**",
-         "*pair* → **yes** · *pack* → no · *panic* → no"
-        ]
-       ]
-      }
-     ]
-    },
-    {
-     "title": "4. OTHER THINGS IN A DICTIONARY ENTRY",
-     "blocks": [
-      {
-       "t": "h3",
-       "x": "Parts of speech and their short forms"
-      },
       {
        "t": "table",
        "head": [
@@ -2442,272 +2416,64 @@
        ],
        "rows": [
         [
-         "**n.**",
+         "n.",
          "noun"
         ],
         [
-         "**v.**",
+         "v.",
          "verb"
         ],
         [
-         "**adj.**",
+         "adj.",
          "adjective"
         ],
         [
-         "**adv.**",
+         "adv.",
          "adverb"
-        ],
-        [
-         "**prep.**",
-         "preposition"
-        ],
-        [
-         "**conj.**",
-         "conjunction"
-        ],
-        [
-         "**pron.**",
-         "pronoun"
-        ],
-        [
-         "**pl.**",
-         "plural"
-        ],
-        [
-         "**sing.**",
-         "singular"
-        ],
-        [
-         "**syn.**",
-         "synonym · **ant.** — antonym"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "A sample entry"
-      },
-      {
-       "t": "note",
-       "x": "**kind** /kaɪnd/ *adj.* 1. gentle and caring towards others: *She is **kind** to animals.* 2. *n.* a type or sort: *What **kind** of book is it?* — **kindly** *adv.* · **kindness** *n.*"
-      },
-      {
-       "t": "p",
-       "x": "From this entry you learn the spelling, the pronunciation, that the word can be an **adjective** or a **noun**, two meanings, an example, and two related words."
-      },
-      {
-       "t": "h3",
-       "x": "Labels you may meet"
-      },
-      {
-       "t": "p",
-       "x": "**formal / informal** · **old-fashioned** · **British / American** · **slang** · **foreign words** taken into English, such as *safari*, *veranda*, *matooke* and *sauna*."
-      },
-      {
-       "t": "h3",
-       "x": "Acronyms and abbreviations"
-      },
-      {
-       "t": "p",
-       "x": "An **acronym** is a word made from the first letters of other words: **UNEB**, **NEMA**, **UWA**, **NGO**, **AIDS**. Many dictionaries list them too."
-      }
-     ]
-    },
-    {
-     "title": "5. GRAMMAR",
-     "blocks": [
-      {
-       "t": "h3",
-       "x": "(a) Question tags"
-      },
-      {
-       "t": "p",
-       "x": "A short question added to a statement. **Positive statement → negative tag; negative statement → positive tag.**"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Statement",
-        "Tag"
-       ],
-       "rows": [
-        [
-         "A dictionary gives meanings,",
-         "**doesn't it?**"
-        ],
-        [
-         "You have found the word,",
-         "**haven't you?**"
-        ],
-        [
-         "She isn't using a thesaurus,",
-         "**is she?**"
-        ],
-        [
-         "We shall check the spelling,",
-         "**shan't we?**"
-        ],
-        [
-         "I am right,",
-         "**aren't I?**"
-        ],
-        [
-         "Let us look it up,",
-         "**shall we?**"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "(b) Opposites (antonyms)"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Word",
-        "Opposite",
-        "Word",
-        "Opposite"
-       ],
-       "rows": [
-        [
-         "big",
-         "small",
-         "ancient",
-         "modern"
-        ],
-        [
-         "cheap",
-         "expensive",
-         "shallow",
-         "deep"
-        ],
-        [
-         "arrive",
-         "depart",
-         "remember",
-         "forget"
-        ],
-        [
-         "polite",
-         "rude",
-         "full",
-         "empty"
-        ],
-        [
-         "ancient",
-         "modern",
-         "accept",
-         "refuse"
-        ]
-       ]
-      },
-      {
-       "t": "p",
-       "x": "**By adding a prefix:** happy → **unhappy** · possible → **impossible** · legal → **illegal** · regular → **irregular** · agree → **disagree** · behave → **misbehave**."
-      },
-      {
-       "t": "h3",
-       "x": "(c) Superlative forms"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Type",
-        "Adjective",
-        "Comparative",
-        "Superlative"
-       ],
-       "rows": [
-        [
-         "Short words",
-         "tall",
-         "taller",
-         "**tallest**"
-        ],
-        [
-         "",
-         "big",
-         "bigger",
-         "**biggest**"
-        ],
-        [
-         "",
-         "happy",
-         "happier",
-         "**happiest**"
-        ],
-        [
-         "Long words",
-         "expensive",
-         "more expensive",
-         "**most expensive**"
-        ],
-        [
-         "",
-         "beautiful",
-         "more beautiful",
-         "**most beautiful**"
-        ],
-        [
-         "Irregular",
-         "good",
-         "better",
-         "**best**"
-        ],
-        [
-         "",
-         "bad",
-         "worse",
-         "**worst**"
-        ],
-        [
-         "",
-         "many/much",
-         "more",
-         "**most**"
-        ],
-        [
-         "",
-         "little",
-         "less",
-         "**least**"
-        ]
-       ]
-      },
-      {
-       "t": "p",
-       "x": "**The rule:** use **-est** or **most** with **the**: *the **tallest** boy*, *the **most useful** book*. Never write \"more taller\" or \"most tallest\"."
-      },
-      {
-       "t": "h3",
-       "x": "(d) Language structures from the syllabus"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Structure",
-        "Example"
-       ],
-       "rows": [
-        [
-         "**… before …**",
-         "*Peach comes **before** people in the dictionary.*"
-        ],
-        [
-         "**… after …**",
-         "*The word people comes **after** peach in the dictionary.*"
         ]
        ]
       }
      ]
     },
     {
-     "title": "6. WHY A DICTIONARY MATTERS",
+     "title": "USES OF A DICTIONARY",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "To find the meaning of a word.",
+        "To check the spelling of a word.",
+        "To find the pronunciation of a word.",
+        "To identify the part of speech of a word.",
+        "To improve vocabulary."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "HOW TO FIND A WORD IN A DICTIONARY",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Look at the **first letter** of the word.",
+        "Open the dictionary near that letter.",
+        "Compare the other letters until you find the word."
+       ],
+       "start": 1
+      },
+      {
+       "t": "p",
+       "x": "Knowing the alphabet helps a person find words quickly and correctly."
+      }
+     ]
+    },
+    {
+     "title": "HOW A DICTIONARY HELPS LEARNERS",
      "blocks": [
       {
        "t": "p",
-       "x": "It gives the **correct spelling** · it explains **new words** you meet in reading · it shows how a word is **pronounced** · it tells you the **part of speech**, so you use the word correctly · it improves your **vocabulary and composition** · it settles arguments about meaning · a **thesaurus** helps you avoid repeating the same word."
+       "x": "A dictionary helps learners understand unfamiliar words and improve **spelling, pronunciation, vocabulary, reading and writing** skills. It shows the correct spelling of words so that you can check and correct your own spelling, and it introduces you to new words and explains their meanings and uses."
       }
      ]
     },
@@ -2723,43 +2489,43 @@
        "rows": [
         [
          "Dictionary",
-         "A book of words in alphabetical order with their meanings"
+         "A reference book that contains words arranged in alphabetical order together with their meanings and other information about them."
         ],
         [
          "Alphabetical order",
-         "Arrangement following the order of the alphabet"
+         "The arrangement of words according to the order of the letters in the alphabet."
+        ],
+        [
+         "Headword",
+         "The word being explained in a dictionary."
         ],
         [
          "Guide words",
-         "The first and last words on a dictionary page"
-        ],
-        [
-         "Entry",
-         "A word and all the information given about it"
+         "Words printed at the top of dictionary pages to help users find words quickly."
         ],
         [
          "Pronunciation",
-         "The way a word is said"
+         "The way a word is spoken."
         ],
         [
-         "Stress",
-         "The part of a word said more strongly"
+         "Part of speech",
+         "The grammatical group to which a word belongs."
         ],
         [
-         "Abbreviation",
-         "A short form of a word"
+         "n.",
+         "An abbreviation for noun."
         ],
         [
-         "Acronym",
-         "A word formed from the first letters of other words"
+         "v.",
+         "An abbreviation for verb."
         ],
         [
-         "Synonym / antonym",
-         "A word of similar meaning / opposite meaning"
+         "adj.",
+         "An abbreviation for adjective."
         ],
         [
-         "Thesaurus",
-         "A book of synonyms and antonyms"
+         "adv.",
+         "An abbreviation for adverb."
         ]
        ]
       }
@@ -2771,14 +2537,13 @@
       {
        "t": "ul",
        "items": [
-        "Compare **letter by letter** when arranging words alphabetically.",
-        "**Guide words** show the first and last words on a page.",
-        "**n.** noun · **v.** verb · **adj.** adjective · **adv.** adverb.",
-        "A **thesaurus** gives words of similar meaning.",
-        "Positive statement → **negative** tag; negative statement → **positive** tag.",
-        "*I am…,* **aren't I?**",
-        "Superlatives take **-est** or **most**, always with **the** — never both together.",
-        "*peach* comes **before** *people*; *people* comes **after** *peach*."
+        "A dictionary arranges words **alphabetically** so users can find them **quickly**.",
+        "For words with the same first letter, compare the **second letters**, then the **third letters**, and so on.",
+        "**bag → ball → banana → basket** and **call → can → car → cat** — practise arranging like this.",
+        "The **headword** is the word being explained; **guide words** at the top of the page show the **range of words** on that page.",
+        "A dictionary gives the **meaning, pronunciation, spelling, part of speech, example sentences** and **different meanings**.",
+        "Remember the abbreviations: **n. = noun, v. = verb, adj. = adjective, adv. = adverb**.",
+        "To look up a word: first letter → open near that letter → compare the other letters until you find it."
        ]
       }
      ]
@@ -2789,28 +2554,11 @@
       {
        "t": "ul",
        "items": [
-        "Arrange in alphabetical order: peach, pen, people, pear → **peach, pear, pen, people**.",
-        "Guide words *market — mask*: is *marry* on the page? → **yes**.",
-        "What does **adj.** stand for? → adjective.",
-        "Book giving words of similar meaning → a **thesaurus**.",
-        "*A dictionary helps us, ____?* → **doesn't it?**",
-        "Opposite of *ancient* → **modern**. Of *shallow* → **deep**.",
-        "Superlative of *good* → **best**; of *bad* → **worst**; of *beautiful* → **most beautiful**."
-       ]
-      }
-     ]
-    },
-    {
-     "title": "COMMON MISTAKES TO AVOID",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "Looking only at the **first letter** when arranging words.",
-        "Writing *\"more better\"* or *\"most tallest\"*.",
-        "Writing *\"amn't I?\"* instead of **aren't I?**",
-        "Mixing up a **dictionary** (meanings) with a **thesaurus** (similar words).",
-        "Ignoring the **guide words** and searching the whole page."
+        "Definition questions love **dictionary, alphabetical order, headword, guide words, pronunciation, part of speech** — learn the KEY DEFINITIONS word for word.",
+        "Alphabetical-arrangement questions are common (e.g. arrange cat, can, car, call) — work letter by letter and double-check the second letters.",
+        "Be ready with **five uses of a dictionary** and the **information a dictionary provides**.",
+        "\"What does n./v./adj./adv. mean?\" — answer with the full part of speech: noun, verb, adjective, adverb.",
+        "\"How do you find a word?\" answers must give the **steps** (first letter, open near it, compare other letters)."
        ]
       }
      ]
@@ -2821,26 +2569,31 @@
       {
        "t": "ol",
        "items": [
-        "What is a dictionary? Give any four things it tells you about a word.",
-        "What is a thesaurus, and how is it different from a dictionary?",
-        "Arrange in alphabetical order: orange, apple, mango, banana, pear.",
-        "Arrange in alphabetical order: stand, stamp, state, star, stay.",
-        "Arrange in alphabetical order: chief, chair, child, chalk, cheese.",
+        "What is a dictionary?",
+        "Why are words in a dictionary arranged alphabetically?",
+        "What is alphabetical order?",
+        "Mention the first five letters of the English alphabet.",
+        "What should you consider when arranging words that begin with the same letter?",
+        "Arrange these words alphabetically: banana, bag, ball, basket.",
+        "What is a headword?",
         "What are guide words?",
-        "If the guide words on a page are *father — feather*, which of these words are on that page: fast, feast, feed, fault?",
-        "What do these abbreviations stand for: n., v., adj., adv., pl.?",
-        "Write out what this entry tells you: **quick** /kwɪk/ *adj.* fast; taking a short time.",
-        "Give one word for: a word formed from the first letters of other words, and give two examples.",
-        "Add question tags: *A dictionary gives meanings, ____?* · *She isn't reading, ____?* · *I am late, ____?*",
-        "Give the opposites of: cheap, arrive, polite, shallow, ancient.",
-        "Give the opposites by adding a prefix: happy, possible, legal, agree, behave.",
-        "Give the comparative and superlative of: tall, big, happy, expensive, good, bad.",
-        "Complete: *Peach comes ____ people in the dictionary, and people comes ____ peach.*",
-        "Give any five reasons why a dictionary is important to a P.6 learner.",
-        "Which word would come first in a dictionary: *market* or *marble*? Give a reason.",
-        "Use *most useful* correctly in a sentence.",
-        "Find and write any three words in this note that would appear on a dictionary page with the guide words *sound — spelling*.",
-        "Write a short paragraph (about five sentences) explaining to a P.4 pupil how to look up a word in a dictionary."
+        "What information can be found in a dictionary?",
+        "Mention five uses of a dictionary.",
+        "What is pronunciation?",
+        "What is a part of speech?",
+        "Mention four parts of speech that may be shown in a dictionary.",
+        "What does \"n.\" mean in a dictionary?",
+        "What does \"v.\" mean in a dictionary?",
+        "What does \"adj.\" mean in a dictionary?",
+        "What does \"adv.\" mean in a dictionary?",
+        "How do you find an unfamiliar word in a dictionary?",
+        "How does a dictionary help learners?",
+        "What is the importance of guide words?",
+        "Why is it important to know the alphabet when using a dictionary?",
+        "Arrange these words alphabetically: cat, can, car, call.",
+        "What is the meaning of the word \"honest\"?",
+        "How can a dictionary help you improve your spelling?",
+        "How can a dictionary help you improve your vocabulary?"
        ],
        "start": 1
       }
@@ -2852,58 +2605,42 @@
       {
        "t": "ol",
        "items": [
-        "A dictionary is a book that lists words in alphabetical order and gives information about them. Any four of: spelling, meaning, pronunciation, stress, part of speech, plural form, origin, example sentence.",
-        "A **thesaurus** is a book that gives words of **similar meaning (synonyms)** and opposites. A dictionary explains **what a word means**, while a thesaurus offers **other words you could use instead**.",
-        "apple, banana, mango, orange, pear",
-        "stamp, stand, star, state, stay",
-        "chair, chalk, cheese, chief, child",
-        "Guide words are the two words at the top of a dictionary page: the **first** word on that page and the **last** word on that page.",
-        "**feast** is on that page. *Fast* comes before *father*, and *feed* and *fault* fall outside the range.",
-        "**n.** — noun; **v.** — verb; **adj.** — adjective; **adv.** — adverb; **pl.** — plural.",
-        "It tells you the **spelling** (quick), the **pronunciation** /kwɪk/, that it is an **adjective**, and its **meaning** — fast, taking a short time.",
-        "An **acronym**. Examples: **UNEB**, **NEMA** (also UWA, NGO, AIDS).",
-        "**doesn't it?** · **is she?** · **aren't I?**",
-        "cheap → **expensive**; arrive → **depart**; polite → **rude**; shallow → **deep**; ancient → **modern**.",
-        "happy → **unhappy**; possible → **impossible**; legal → **illegal**; agree → **disagree**; behave → **misbehave**.",
-        "tall — taller — **tallest**; big — bigger — **biggest**; happy — happier — **happiest**; expensive — more expensive — **most expensive**; good — better — **best**; bad — worse — **worst**.",
-        "Peach comes **before** people, and people comes **after** peach.",
-        "Any five of: it gives correct spellings; it explains new words; it shows pronunciation; it gives the part of speech; it improves vocabulary and composition; it settles arguments about meaning; it helps in reading and research.",
-        "**Marble**, because after *mar-* we compare the fourth letter: **b** comes before **k**.",
-        "*Learner's sentence,* for example: *A dictionary is the **most useful** book in the classroom.*",
-        "Any three words falling between *sound* and *spelling* alphabetically, for example **sounds, speech, spell** (also *speaker, special*).",
-        "*Learner's paragraph.* It should tell the pupil to know the first letter of the word, open the dictionary near that letter, use the **guide words** at the top of the page, follow the letters one by one, and then read the meaning and the part of speech."
+        "A dictionary is a reference book that contains words arranged in alphabetical order together with their meanings and other information about them.",
+        "Words are arranged alphabetically to make it easy for users to find them quickly.",
+        "Alphabetical order is the arrangement of words according to the order of the letters in the alphabet.",
+        "A, B, C, D and E.",
+        "You compare their second letters. If the second letters are also the same, compare the third letters.",
+        "Bag → ball → banana → basket.",
+        "A headword is the word being explained in a dictionary.",
+        "Guide words are words printed at the top of dictionary pages to help users find words quickly.",
+        "A dictionary may provide the meaning of a word, pronunciation, spelling, part of speech, example sentences and different meanings of a word.",
+        "To find the meaning of a word; to check the spelling of a word; to find the pronunciation of a word; to identify the part of speech of a word; to improve vocabulary.",
+        "Pronunciation is the way a word is spoken.",
+        "A part of speech is the grammatical group to which a word belongs.",
+        "Noun, verb, adjective and adverb.",
+        "\"n.\" means noun.",
+        "\"v.\" means verb.",
+        "\"adj.\" means adjective.",
+        "\"adv.\" means adverb.",
+        "First, look at the first letter of the word. Then open the dictionary near that letter and compare the other letters until you find the word.",
+        "A dictionary helps learners understand unfamiliar words, improve spelling, pronunciation, vocabulary, reading and writing skills.",
+        "Guide words help users know the range of words found on a particular dictionary page.",
+        "Knowing the alphabet helps a person find words quickly and correctly.",
+        "Call → can → car → cat.",
+        "Honest means truthful and not likely to cheat or deceive others.",
+        "It shows the correct spelling of words so that you can check and correct your spelling.",
+        "It introduces you to new words and explains their meanings and uses."
        ],
        "start": 1
       }
      ]
     },
     {
-     "title": "P.6 QUICK REVISION",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "Alphabetical order: compare **letter by letter**",
-        "**Guide words** = first and last word on the page",
-        "**n. v. adj. adv. pl.** · **thesaurus** = similar words",
-        "Tags: positive → negative, negative → positive · *I am…,* **aren't I?**",
-        "Opposites by prefix: **un-, im-, il-, ir-, dis-, mis-**",
-        "Superlative: **-est** or **most**, with **the** — never both",
-        "*peach* **before** *people* · *people* **after** *peach*"
-       ]
-      }
-     ]
-    },
-    {
-     "title": "A note on sources",
+     "title": "A NOTE ON SOURCES",
      "blocks": [
       {
        "t": "p",
-       "x": "The topic title, vocabulary list, language structures (*before* and *after* in dictionary order), grammar items (question tags, opposites and superlative forms), competences and teacher guidance above were taken from the official **NCDC Primary Six Curriculum, Set One** (© NCDC 2010; topic outline page 24 and pages 52–55 of the PDF in `curriculum/`), including its instruction that learners use a thesaurus and identify words with opposite meanings. The explanations, tables, sample entry, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
-      },
-      {
-       "t": "p",
-       "x": "No NCDC **Teacher's Guide** for P.6 was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+       "x": "*The study content of this topic was provided by the app owner for the P.6 theme Using a Dictionary (NCDC Primary Six Curriculum, Set One, English Topic 6, pages 52–55). All revision answers above are drawn from that owner-provided content.*"
       }
      ]
     }
