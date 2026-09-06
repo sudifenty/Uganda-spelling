@@ -3,7 +3,7 @@
  "subject": "ENG",
  "subject_name": "English",
  "total": 6,
- "words": 11356,
+ "words": 9975,
  "topics": [
   {
    "id": "P6_ENG_T01",
@@ -1475,18 +1475,18 @@
    "slug": "occupations",
    "periods": 36,
    "curriculum_pages": "37–46",
-   "words": 2587,
+   "words": 1206,
    "sections": [
     {
      "title": "About this topic",
      "blocks": [
       {
        "t": "p",
-       "x": "*Curriculum reference: NCDC Primary Six Curriculum, Set One, English Topic 4, 36 periods (`curriculum/P6-SET-ONE-2010.pdf`, topic outline page 24 and pages 37–46). Sub-topics: **4A Carpentry (7)**, **4B Tailoring (9)**, **4C Baking (11)** and **4D Keeping Animals (9)**.*"
+       "x": "*Curriculum reference: NCDC Primary Six Curriculum, Set One, English Topic 4, 36 periods (`curriculum/P6-SET-ONE-2010.pdf`, pages 37–46). The study content below was provided by the app owner and replaces the earlier version of this topic.*"
       },
       {
        "t": "p",
-       "x": "**What you already know:** You see carpenters, tailors, bakers and farmers in your community. In P.6 you learn the **English of these four trades** — their tools, their processes and the structures used to describe them."
+       "x": "**What you already know:** You know the work different people in your community do — the farmer, the teacher, the trader. In P.6 you learn what an **occupation** is, the main occupations of Uganda with what each provides, and how people choose one."
       },
       {
        "t": "p",
@@ -1495,567 +1495,322 @@
       {
        "t": "ul",
        "items": [
-        "name the tools and materials used in carpentry, tailoring and baking",
-        "describe a process in the correct order using *first, next, then, finally*",
-        "use *… is used for …*, *… prefer … to …*, *be careful when …*, *not only … but also …*",
-        "use the passive voice, the perfect tense and the \"to\" infinitive",
-        "talk and write about animal care using *should* and *should not*"
+        "say what an occupation is and give examples",
+        "describe the main types of occupations and their importance",
+        "say the factors to consider when choosing an occupation"
        ]
       }
      ]
     },
     {
-     "title": "SUB-TOPIC 4A: CARPENTRY",
+     "title": "MEANING OF AN OCCUPATION",
      "blocks": [
       {
-       "t": "h3",
-       "x": "Vocabulary and tools"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Word",
-        "Meaning / use"
-       ],
-       "rows": [
-        [
-         "**carpenter**",
-         "A person who makes things out of wood"
-        ],
-        [
-         "**saw**",
-         "Used for cutting wood"
-        ],
-        [
-         "**plane**",
-         "Used for smoothing wood"
-        ],
-        [
-         "**hammer**",
-         "Used for driving in nails"
-        ],
-        [
-         "**drill**",
-         "Used for making holes"
-        ],
-        [
-         "**screwdriver**",
-         "Used for driving in screws"
-        ],
-        [
-         "**sandpaper**",
-         "Used for smoothing a surface"
-        ],
-        [
-         "**bench**",
-         "The strong table a carpenter works on"
-        ],
-        [
-         "**plank / timber**",
-         "Sawn pieces of wood"
-        ],
-        [
-         "**wood glue**",
-         "Used for sticking pieces of wood together"
-        ],
-        [
-         "**varnish / polish**",
-         "Put on wood to make it shine and last"
-        ],
-        [
-         "**saw dust**",
-         "The powder left after sawing"
-        ]
-       ]
+       "t": "p",
+       "x": "An **occupation** is the work that a person does regularly to earn a living or provide a service."
       },
       {
        "t": "p",
-       "x": "**Products:** chairs, tables, beds, doors, windows, cupboards, shelves, coffins."
-      },
-      {
-       "t": "h3",
-       "x": "Describing the process"
-      },
-      {
-       "t": "p",
-       "x": "*First* you measure and mark the wood, *next* you cut it with a saw, *then* you plane it smooth, *after that* you join the pieces with nails or wood glue, and *finally* you sand it and apply varnish."
-      },
-      {
-       "t": "h3",
-       "x": "Language structures"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Structure",
-        "Example"
-       ],
-       "rows": [
-        [
-         "**… is used for …**",
-         "*A saw **is used for** cutting wood.*"
-        ],
-        [
-         "**First … next … then …**",
-         "***First** you plane the wood, **next** you cut it into pieces, **then** you use wood glue to fix them.*"
-        ],
-        [
-         "**… besides …**",
-         "*The carpenter made a chair **besides** a table.*"
-        ],
-        [
-         "**Though …**",
-         "***Though** John is not a trained carpenter, he makes good chairs.*"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Grammar focus: the passive voice"
-      },
-      {
-       "t": "p",
-       "x": "In the **active** voice the doer comes first; in the **passive** the thing done comes first."
-      },
-      {
-       "t": "table",
-       "head": [
-        "Active",
-        "Passive"
-       ],
-       "rows": [
-        [
-         "The carpenter **cuts** the wood.",
-         "The wood **is cut** by the carpenter. *(present simple)*"
-        ],
-        [
-         "The carpenter **is making** a table.",
-         "A table **is being made** by the carpenter. *(present continuous)*"
-        ],
-        [
-         "The carpenter **has finished** the chair.",
-         "The chair **has been finished** by the carpenter. *(present perfect)*"
-        ]
-       ]
-      },
-      {
-       "t": "p",
-       "x": "**The pattern:** the right form of **be** + the **past participle**."
-      }
-     ]
-    },
-    {
-     "title": "SUB-TOPIC 4B: TAILORING",
-     "blocks": [
-      {
-       "t": "h3",
-       "x": "Vocabulary and tools"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Word",
-        "Meaning / use"
-       ],
-       "rows": [
-        [
-         "**tailor / seamstress**",
-         "A person who makes and mends clothes (a woman who sews is often called a seamstress)"
-        ],
-        [
-         "**sewing machine**",
-         "The machine used for stitching"
-        ],
-        [
-         "**needle**",
-         "Used for hand sewing"
-        ],
-        [
-         "**thread**",
-         "The line used in sewing"
-        ],
-        [
-         "**bobbin**",
-         "The small reel holding the lower thread in a machine"
-        ],
-        [
-         "**tape measure**",
-         "Used for taking measurements"
-        ],
-        [
-         "**scissors**",
-         "Used for cutting cloth"
-        ],
-        [
-         "**thimble**",
-         "Worn on a finger to protect it when hand sewing"
-        ],
-        [
-         "**seam**",
-         "The line where two pieces of cloth are joined"
-        ],
-        [
-         "**hemming**",
-         "Turning and stitching the edge of cloth"
-        ],
-        [
-         "**button hole**",
-         "The hole through which a button passes"
-        ],
-        [
-         "**patch**",
-         "A piece of cloth used to mend a hole"
-        ],
-        [
-         "**zip**",
-         "A fastener with two rows of teeth"
-        ],
-        [
-         "**texture**",
-         "How a material feels"
-        ],
-        [
-         "**garment**",
-         "A piece of clothing"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Describing the process"
-      },
-      {
-       "t": "p",
-       "x": "*First* the tailor takes the customer's **measurements**, *next* he chooses and cuts the **material** to a **design**, *then* he **stitches** the pieces on the sewing machine, *after that* he does the **hemming** and makes the **button holes**, and *finally* he presses the **garment** with an iron."
-      },
-      {
-       "t": "h3",
-       "x": "Language structures"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Structure",
-        "Example"
-       ],
-       "rows": [
-        [
-         "**Be careful when …**",
-         "***Be careful when** stitching the cloth, because you may hurt your finger.*"
-        ],
-        [
-         "**… prefer … to …**",
-         "*Robert **prefers** sewing **to** knitting.*"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Grammar focus: the perfect tense and adverbs"
+       "x": "Examples of occupations include:"
       },
       {
        "t": "ul",
        "items": [
-        "**Present perfect:** *has/have + past participle* — *The tailor **has finished** my dress.*",
-        "**Past perfect:** *had + past participle* — *He **had cut** the cloth before I arrived.*",
-        "**Adverbs:** *carefully, quickly, neatly, well* — *She sews **neatly**.*",
-        "**Conjunctions:** *and, but, because, when, although* join the ideas together."
+        "Farming",
+        "Teaching",
+        "Fishing",
+        "Trading",
+        "Carpentry",
+        "Nursing",
+        "Driving",
+        "Building",
+        "Tailoring",
+        "Banking"
        ]
       }
      ]
     },
     {
-     "title": "SUB-TOPIC 4C: BAKING",
+     "title": "TYPES OF OCCUPATIONS",
      "blocks": [
       {
        "t": "h3",
-       "x": "Vocabulary and ingredients"
+       "x": "1. Farming"
       },
       {
-       "t": "table",
-       "head": [
-        "Word",
-        "Meaning / use"
-       ],
-       "rows": [
-        [
-         "**baker / bakery**",
-         "The person who bakes / the place where baking is done"
-        ],
-        [
-         "**oven**",
-         "Used for baking"
-        ],
-        [
-         "**baking tin**",
-         "The container in which cakes and bread are baked"
-        ],
-        [
-         "**baking flour**",
-         "The main ingredient"
-        ],
-        [
-         "**yeast**",
-         "Makes the dough rise"
-        ],
-        [
-         "**dough**",
-         "The soft mixture of flour and water before baking"
-        ],
-        [
-         "**knead**",
-         "To press and fold the dough with the hands"
-        ],
-        [
-         "**sieve**",
-         "Used for sifting the flour"
-        ],
-        [
-         "**roll out**",
-         "To flatten dough with a rolling pin"
-        ],
-        [
-         "**cookie cutter**",
-         "Used for cutting shapes out of dough"
-        ],
-        [
-         "**icing sugar**",
-         "Fine sugar used for decorating cakes"
-        ],
-        [
-         "**food colour / flavour**",
-         "Used to colour and to give taste"
-        ],
-        [
-         "**ingredients**",
-         "All the items used to make something"
-        ],
-        [
-         "**recipe**",
-         "The instructions for making a dish"
-        ],
-        [
-         "**a pinch of**",
-         "A very small amount held between two fingers"
-        ],
-        [
-         "**tier**",
-         "One layer of a cake standing above another"
-        ]
+       "t": "p",
+       "x": "**Farming** is the growing of crops and keeping of animals for food, raw materials and income."
+      },
+      {
+       "t": "p",
+       "x": "Examples of farmers:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Crop farmers",
+        "Poultry farmers",
+        "Dairy farmers",
+        "Fish farmers",
+        "Pig farmers"
        ]
       },
       {
        "t": "p",
-       "x": "**Products:** bread, buns, cakes, biscuits, cookies, a wedding cake, doughnuts."
+       "x": "Importance of farming:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Provides food.",
+        "Provides employment.",
+        "Provides raw materials for industries.",
+        "Provides income.",
+        "Provides goods for export.",
+        "Supports other businesses."
+       ]
       },
       {
        "t": "h3",
-       "x": "A simple recipe (written as instructions)"
+       "x": "2. Fishing"
+      },
+      {
+       "t": "p",
+       "x": "**Fishing** is the catching or rearing of fish for food and income."
+      },
+      {
+       "t": "p",
+       "x": "Importance of fishing:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Provides food.",
+        "Provides employment.",
+        "Provides income.",
+        "Provides fish for export.",
+        "Provides raw materials for some industries."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "3. Trading"
+      },
+      {
+       "t": "p",
+       "x": "**Trading** is the buying and selling of goods and services."
+      },
+      {
+       "t": "p",
+       "x": "Examples of traders:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Shopkeepers",
+        "Wholesalers",
+        "Retailers",
+        "Market vendors"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "Importance of trading:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Provides goods and services.",
+        "Creates employment.",
+        "Provides income.",
+        "Connects producers with consumers.",
+        "Generates government revenue through taxes."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "4. Teaching"
+      },
+      {
+       "t": "p",
+       "x": "**Teaching** is the process of helping people acquire knowledge, skills and good behaviour."
+      },
+      {
+       "t": "p",
+       "x": "A person who teaches is called a **teacher**."
+      },
+      {
+       "t": "p",
+       "x": "Importance of teaching:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Provides education.",
+        "Develops people's skills.",
+        "Prepares people for different occupations.",
+        "Promotes good behaviour.",
+        "Contributes to national development."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "5. Medicine and Nursing"
+      },
+      {
+       "t": "p",
+       "x": "A **doctor** is a trained person who diagnoses and treats diseases."
+      },
+      {
+       "t": "p",
+       "x": "A **nurse** is a trained health worker who cares for sick and injured people."
+      },
+      {
+       "t": "p",
+       "x": "Importance:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Treats sick people.",
+        "Prevents diseases.",
+        "Saves lives.",
+        "Promotes good health.",
+        "Provides health education."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "6. Carpentry"
+      },
+      {
+       "t": "p",
+       "x": "**Carpentry** is the occupation of making and repairing things mainly from wood."
+      },
+      {
+       "t": "p",
+       "x": "A person who does carpentry is called a **carpenter**."
+      },
+      {
+       "t": "p",
+       "x": "Examples of products made by carpenters:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Chairs",
+        "Tables",
+        "Beds",
+        "Doors",
+        "Cupboards"
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "7. Building"
+      },
+      {
+       "t": "p",
+       "x": "**Building** is the occupation of constructing houses and other structures."
+      },
+      {
+       "t": "p",
+       "x": "People involved may include:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Builders",
+        "Bricklayers",
+        "Plumbers",
+        "Electricians",
+        "Engineers",
+        "Architects"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "Importance:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Provides houses and other buildings.",
+        "Creates employment.",
+        "Provides income.",
+        "Supports economic development."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "8. Transport"
+      },
+      {
+       "t": "p",
+       "x": "**Transport** involves moving people and goods from one place to another."
+      },
+      {
+       "t": "p",
+       "x": "Examples of transport occupations:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Driver",
+        "Pilot",
+        "Sailor",
+        "Mechanic",
+        "Motorcycle rider"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "FACTORS TO CONSIDER WHEN CHOOSING AN OCCUPATION",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "A person may consider:"
       },
       {
        "t": "ol",
        "items": [
-        "**Sieve** the flour into a bowl and add a **pinch** of salt.",
-        "Mix the **margarine** and sugar until soft.",
-        "Add the eggs and **flavour**, then mix in the flour.",
-        "**Knead** the dough and **roll it out**.",
-        "Cut shapes with a **cookie cutter** and place them in a greased **baking tin**.",
-        "Bake in a hot **oven** for about twenty minutes.",
-        "**Turn off** the oven, remove the tin and let the cakes cool.",
-        "Decorate with **icing sugar**."
+        "Ability and talent.",
+        "Level of education.",
+        "Personal interests.",
+        "Skills.",
+        "Availability of employment.",
+        "Income expected.",
+        "Working conditions.",
+        "Availability of training.",
+        "Demand for the occupation.",
+        "Health and physical ability."
        ],
        "start": 1
-      },
-      {
-       "t": "h3",
-       "x": "Language structures"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Structure",
-        "Example"
-       ],
-       "rows": [
-        [
-         "**\"to\" infinitive**",
-         "*Don't forget **to shut** the oven.*"
-        ],
-        [
-         "**… used to …**",
-         "*I **used to** bake cakes when I was young.*"
-        ],
-        [
-         "**… used for …**",
-         "*A spoon **is used for** mixing butter and sugar.*"
-        ],
-        [
-         "**… prefers … to …**",
-         "*Musa **prefers** cakes **to** bread.*"
-        ]
-       ]
-      },
-      {
-       "t": "p",
-       "x": "**Careful:** *used to* (past habit) is different from *is used for* (purpose) and from *is used to* (is accustomed to)."
-      },
-      {
-       "t": "h3",
-       "x": "Grammar focus: forming nouns"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Verb",
-        "Noun",
-        "Verb",
-        "Noun"
-       ],
-       "rows": [
-        [
-         "bake",
-         "baker / bakery / baking",
-         "sew",
-         "sewing / sewer"
-        ],
-        [
-         "mix",
-         "mixture",
-         "measure",
-         "measurement"
-        ],
-        [
-         "decorate",
-         "decoration",
-         "build",
-         "builder / building"
-        ],
-        [
-         "teach",
-         "teacher",
-         "cook",
-         "cook / cooking"
-        ]
-       ]
       }
      ]
     },
     {
-     "title": "SUB-TOPIC 4D: KEEPING ANIMALS",
+     "title": "IMPORTANCE OF OCCUPATIONS",
      "blocks": [
       {
-       "t": "h3",
-       "x": "Vocabulary from the syllabus"
+       "t": "p",
+       "x": "Occupations are important because they:"
       },
       {
-       "t": "table",
-       "head": [
-        "Word",
-        "Meaning"
-       ],
-       "rows": [
-        [
-         "**welfare**",
-         "The good condition and comfort of an animal"
-        ],
-        [
-         "**husbandry**",
-         "The care and management of animals"
-        ],
-        [
-         "**veterinary**",
-         "To do with the treatment of animals"
-        ],
-        [
-         "**dip**",
-         "To put an animal into a liquid that kills ticks"
-        ],
-        [
-         "**tether**",
-         "To tie an animal with a rope to a peg"
-        ],
-        [
-         "**dock**",
-         "To cut short an animal's tail"
-        ],
-        [
-         "**stray**",
-         "An animal wandering with no owner"
-        ],
-        [
-         "**cruelty**",
-         "Deliberately causing pain to an animal"
-        ],
-        [
-         "**torture**",
-         "Causing severe pain"
-        ],
-        [
-         "**misery / sorrow / anxiety**",
-         "Suffering and distress"
-        ],
-        [
-         "**comfort / discomfort**",
-         "Being at ease / not being at ease"
-        ],
-        [
-         "**body signs**",
-         "The way an animal shows how it feels"
-        ],
-        [
-         "**slaughter**",
-         "To kill an animal for meat"
-        ]
+       "t": "ul",
+       "items": [
+        "Provide income.",
+        "Provide employment.",
+        "Provide goods and services.",
+        "Improve people's standards of living.",
+        "Promote economic development.",
+        "Help people meet their basic needs.",
+        "Generate government revenue.",
+        "Promote self-reliance.",
+        "Develop people's skills.",
+        "Contribute to national development."
        ]
-      },
-      {
-       "t": "h3",
-       "x": "Caring for animals"
-      },
-      {
-       "t": "p",
-       "x": "Give **clean water and enough feed** · build a **clean, dry shelter** · **treat and vaccinate** them · **dip or spray** against ticks · handle them **gently** · give them **space and company** · protect them from thieves and bad weather · never overwork or beat them · call a **veterinary officer** when they are sick."
-      },
-      {
-       "t": "h3",
-       "x": "How animals show how they feel (body signs and sounds)"
-      },
-      {
-       "t": "p",
-       "x": "A dog **wags its tail** when happy and **growls** when angry · a cow **lows (moos)** when hungry or looking for its calf · a hen **clucks** to call its chicks · a goat **bleats** · a cat **purrs** when content and **hisses** when frightened. A sick animal is **quiet, dull, off its feed** and keeps apart from the others."
-      },
-      {
-       "t": "h3",
-       "x": "Language structures"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Structure",
-        "Example"
-       ],
-       "rows": [
-        [
-         "**You should …**",
-         "*You **should** mind about the welfare of animals.*"
-        ],
-        [
-         "**You should not …**",
-         "*You **should not** dock dogs, because it hurts them.*"
-        ],
-        [
-         "**Not only … but also …**",
-         "***Not only** should you feed animals **but also** treat them when they are sick.*"
-        ],
-        [
-         "**If 2 conditional**",
-         "*If I **had** a cow, I **would** build it a shed.*"
-        ]
-       ]
-      },
-      {
-       "t": "p",
-       "x": "**Note:** after *Not only* at the beginning of a sentence, the verb comes **before** the subject: *Not only **should you** feed them…*"
       }
      ]
     },
@@ -2071,43 +1826,51 @@
        "rows": [
         [
          "Occupation",
-         "The work a person does to earn a living"
+         "The work that a person does regularly to earn a living or provide a service."
+        ],
+        [
+         "Farming",
+         "The growing of crops and keeping of animals for food, raw materials and income."
+        ],
+        [
+         "Fishing",
+         "The catching or rearing of fish for food and income."
+        ],
+        [
+         "Trading",
+         "The buying and selling of goods and services."
+        ],
+        [
+         "Teaching",
+         "The process of helping people acquire knowledge, skills and good behaviour."
+        ],
+        [
+         "Teacher",
+         "A person who teaches."
+        ],
+        [
+         "Doctor",
+         "A trained person who diagnoses and treats diseases."
+        ],
+        [
+         "Nurse",
+         "A trained health worker who cares for sick and injured people."
+        ],
+        [
+         "Carpentry",
+         "The occupation of making and repairing things mainly from wood."
         ],
         [
          "Carpenter",
-         "A person who makes things out of wood"
+         "A person who does carpentry."
         ],
         [
-         "Tailor",
-         "A person who makes and mends clothes"
+         "Building",
+         "The occupation of constructing houses and other structures."
         ],
         [
-         "Seam",
-         "The line where two pieces of cloth are joined"
-        ],
-        [
-         "Baker",
-         "A person who bakes bread and cakes"
-        ],
-        [
-         "Dough",
-         "The soft mixture of flour and water before baking"
-        ],
-        [
-         "Ingredients",
-         "All the items used to make a dish"
-        ],
-        [
-         "Recipe",
-         "The instructions for making a dish"
-        ],
-        [
-         "Welfare",
-         "The good condition and comfort of an animal"
-        ],
-        [
-         "Veterinary officer",
-         "A person trained to treat animals"
+         "Transport",
+         "The occupation of moving people and goods from one place to another."
         ]
        ]
       }
@@ -2119,14 +1882,14 @@
       {
        "t": "ul",
        "items": [
-        "**… is used for + verb-ing:** *A saw is used **for cutting** wood.*",
-        "Order words: **first, next, then, after that, finally**.",
-        "Passive = the right form of **be + past participle**.",
-        "**prefer … to …** — *He prefers sewing **to** knitting.*",
-        "**used to** = a past habit; **is used for** = purpose.",
-        "After **Not only** at the start, the verb comes **before** the subject.",
-        "**Yeast** makes dough rise; **kneading** is pressing and folding the dough.",
-        "**Docking** is cutting an animal's tail short — the syllabus says you **should not** do it."
+        "An occupation is done **regularly** — to **earn a living** or **provide a service**.",
+        "Farmers come in types: **crop, poultry, dairy, fish and pig** farmers.",
+        "Traders include **shopkeepers, wholesalers, retailers and market vendors**.",
+        "Carpenters make things **mainly from wood**: chairs, tables, beds, doors, cupboards.",
+        "Building brings together **builders, bricklayers, plumbers, electricians, engineers and architects**.",
+        "Transport occupations include **driver, pilot, sailor, mechanic and motorcycle rider**.",
+        "When choosing an occupation, consider **ability, education, interests, skills, employment, income, working conditions, training, demand and health**.",
+        "All occupations **provide income and employment, goods and services**, and help **economic and national development**."
        ]
       }
      ]
@@ -2137,30 +1900,10 @@
       {
        "t": "ul",
        "items": [
-        "A saw is used ____ cutting wood → **for**.",
-        "A person who makes clothes → a **tailor**.",
-        "Tool used for taking measurements → a **tape measure**.",
-        "What makes dough rise → **yeast**.",
-        "Fine sugar used for decorating cakes → **icing sugar**.",
-        "Robert prefers sewing ____ knitting → **to**.",
-        "Change to passive: *The carpenter cuts the wood.* → *The wood **is cut** by the carpenter.*",
-        "Cutting an animal's tail short → **docking**."
-       ]
-      }
-     ]
-    },
-    {
-     "title": "COMMON MISTAKES TO AVOID",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "Writing *\"used for cut\"* — after **for** use the **-ing** form.",
-        "Writing *\"prefers sewing than knitting\"* — it is **prefer … to …**.",
-        "Confusing **used to** (past habit) with **is used for** (purpose).",
-        "Forgetting the **be** verb in the passive: *\"The wood cut by the carpenter.\"*",
-        "Writing *\"Not only you should feed…\"* — the verb comes first: *Not only **should you** feed…*",
-        "Spelling: **scissors, thimble, bakery, veterinary, carpenter**."
+        "Learn the KEY DEFINITIONS word for word — **occupation, farming, fishing, trading, teaching, doctor, nurse, carpentry, building** are the favourites.",
+        "\"Importance\" questions must say **what the occupation provides** (food, income, employment, raw materials, export goods…) — never \"it is good\" alone.",
+        "Keep the **examples lists** ready: five types of farmers, four types of traders, five carpentry products, five transport occupations.",
+        "Choosing-occupation questions accept any reasonable factor — give **five** and use the words from the notes."
        ]
       }
      ]
@@ -2171,26 +1914,21 @@
       {
        "t": "ol",
        "items": [
-        "Name any six tools used by a carpenter and say what each is used for.",
-        "Describe, using *first, next, then* and *finally*, how a carpenter makes a stool.",
-        "Change to the passive: *The carpenter is making a table.*",
-        "Change to the passive: *The tailor has finished my shirt.*",
-        "Name any six items used by a tailor and say what each is used for.",
-        "Give one word for: the line where two pieces of cloth are joined.",
-        "Give one word for: the small object worn on a finger to protect it when sewing.",
-        "Complete: *Be careful ____ stitching the cloth, because you may hurt your finger.*",
-        "Complete: *Robert prefers sewing ____ knitting.*",
-        "Name any six things used in baking and say what each is used for.",
-        "What is the work of yeast in baking? What does *knead* mean?",
-        "Write out five steps of baking cakes, in order.",
-        "Complete: *Don't forget ____ ____ the oven.* (two words)",
-        "Give the difference between *used to* and *is used for*, with an example of each.",
-        "Form nouns from: bake, mix, decorate, measure, teach.",
-        "Give any six ways of caring for animals.",
-        "Give the meaning of: welfare, docking, tethering, stray.",
-        "Complete: *Not only ____ ____ feed animals but also treat them when they are sick.*",
-        "Give three ways in which animals show how they feel.",
-        "Write a short paragraph (about six sentences) about an occupation you would like to do when you grow up."
+        "What is an occupation?",
+        "Give five examples of occupations.",
+        "What is farming?",
+        "Mention four types of farmers.",
+        "State four importance of farming.",
+        "What is trading?",
+        "Mention three examples of traders.",
+        "Who is a teacher?",
+        "Who is a carpenter?",
+        "Mention four products made by carpenters.",
+        "State five factors considered when choosing an occupation.",
+        "Give five importance of occupations.",
+        "What is fishing?",
+        "Mention three occupations related to transport.",
+        "Why are occupations important to a country?"
        ],
        "start": 1
       }
@@ -2202,58 +1940,32 @@
       {
        "t": "ol",
        "items": [
-        "Any six: **saw** — cutting wood; **plane** — smoothing wood; **hammer** — driving in nails; **drill** — making holes; **screwdriver** — driving in screws; **sandpaper** — smoothing a surface; **tape measure** — measuring.",
-        "*Learner's answer,* for example: **First** he measures and marks the wood, **next** he cuts it with a saw, **then** he planes it smooth and joins the pieces with nails, and **finally** he sands it and applies varnish.",
-        "*A table **is being made** by the carpenter.*",
-        "*My shirt **has been finished** by the tailor.*",
-        "Any six: **sewing machine** — stitching; **needle** — hand sewing; **thread** — sewing; **tape measure** — taking measurements; **scissors** — cutting cloth; **thimble** — protecting the finger; **bobbin** — holding the lower thread.",
-        "A **seam**.",
-        "A **thimble**.",
-        "**when**",
-        "**to**",
-        "Any six: **oven** — baking; **baking tin** — holding the dough; **sieve** — sifting flour; **rolling pin** — rolling out dough; **cookie cutter** — cutting shapes; **yeast** — making dough rise; **icing sugar** — decorating.",
-        "**Yeast** makes the dough **rise** so that the bread or cake is soft and light. To **knead** is to press and fold the dough with the hands until it is smooth.",
-        "*Learner's answer,* for example: sieve the flour → mix the margarine and sugar → add eggs and flour and knead → put the dough in a greased tin → bake in a hot oven, then cool and decorate.",
-        "**to shut**",
-        "**Used to** shows a habit in the past: *I **used to** bake cakes when I was young.* **Is used for** shows purpose: *A spoon **is used for** mixing butter and sugar.*",
-        "bake → **baker/bakery/baking**; mix → **mixture**; decorate → **decoration**; measure → **measurement**; teach → **teacher/teaching**.",
-        "Any six of: give clean water and enough feed; build a clean dry shelter; treat and vaccinate them; dip or spray against ticks; handle them gently; give them space; protect them from thieves and bad weather; never beat or overwork them; call a veterinary officer when they are sick.",
-        "**Welfare** — the good condition and comfort of an animal; **docking** — cutting short an animal's tail; **tethering** — tying an animal with a rope to a peg; **stray** — an animal wandering with no owner.",
-        "**should you**",
-        "Any three, for example: a dog **wags its tail** when happy and **growls** when angry; a cow **lows** when hungry or looking for its calf; a hen **clucks** to call its chicks; a sick animal becomes **dull and quiet and refuses to eat**.",
-        "*Learner's paragraph.* It should name the occupation, give reasons for the choice, mention some of its tools or activities, and be written in one paragraph with correct punctuation."
+        "An occupation is the work that a person does regularly to earn a living or provide a service.",
+        "Any five: farming, teaching, fishing, trading, carpentry, nursing, driving, building, tailoring, banking.",
+        "Farming is the growing of crops and keeping of animals for food, raw materials and income.",
+        "Any four: crop farmers, poultry farmers, dairy farmers, fish farmers, pig farmers.",
+        "Any four: it provides food; provides employment; provides raw materials for industries; provides income; provides goods for export; supports other businesses.",
+        "Trading is the buying and selling of goods and services.",
+        "Any three: shopkeepers, wholesalers, retailers, market vendors.",
+        "A teacher is a person who teaches — one who helps people acquire knowledge, skills and good behaviour.",
+        "A carpenter is a person who does carpentry — making and repairing things mainly from wood.",
+        "Any four: chairs, tables, beds, doors, cupboards.",
+        "Any five: ability and talent; level of education; personal interests; skills; availability of employment; income expected; working conditions; availability of training; demand for the occupation; health and physical ability.",
+        "Any five: they provide income; provide employment; provide goods and services; improve standards of living; promote economic development; generate government revenue; promote self-reliance; develop people's skills.",
+        "Fishing is the catching or rearing of fish for food and income.",
+        "Any three: driver, pilot, sailor, mechanic, motorcycle rider.",
+        "Because they provide income and employment, provide goods and services, promote economic development, generate government revenue and contribute to national development."
        ],
        "start": 1
       }
      ]
     },
     {
-     "title": "P.6 QUICK REVISION",
-     "blocks": [
-      {
-       "t": "ul",
-       "items": [
-        "**… is used for + -ing** · order words **first, next, then, finally**",
-        "Passive = **be + past participle**",
-        "**prefer … to …** · **used to** (past habit) ≠ **used for** (purpose)",
-        "Carpenter: saw, plane, hammer, drill · Tailor: machine, needle, thimble, tape measure",
-        "Baker: oven, yeast, dough, knead, icing sugar",
-        "Animals: **welfare · husbandry · dip · tether** · you **should not dock**",
-        "**Not only + verb + subject … but also …**"
-       ]
-      }
-     ]
-    },
-    {
-     "title": "A note on sources",
+     "title": "A NOTE ON SOURCES",
      "blocks": [
       {
        "t": "p",
-       "x": "The topic title, the four sub-topics, the vocabulary lists, language structures, grammar items (present tense and the passive, the perfect tense, adverbs and conjunctions, formation of nouns, adjectives and If 2), competences and teacher guidance above were taken from the official **NCDC Primary Six Curriculum, Set One** (© NCDC 2010; topic outline page 24 and pages 37–46 of the PDF in `curriculum/`). The explanations, tables, sample recipe and process descriptions, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
-      },
-      {
-       "t": "p",
-       "x": "No NCDC **Teacher's Guide** for P.6 was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+       "x": "*The study content of this topic was provided by the app owner for the P.6 theme Occupations (NCDC Primary Six Curriculum, Set One, English Topic 4, pages 37–46). All revision answers above are drawn from that owner-provided content.*"
       }
      ]
     }
