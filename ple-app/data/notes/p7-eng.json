@@ -3,7 +3,7 @@
  "subject": "ENG",
  "subject_name": "English",
  "total": 7,
- "words": 15509,
+ "words": 19248,
  "topics": [
   {
    "id": "P7_ENG_T01",
@@ -15,18 +15,31 @@
    "slug": "school-holidays",
    "periods": 30,
    "curriculum_pages": "32–35",
-   "words": 2023,
+   "words": 5762,
    "sections": [
     {
      "title": "About this topic",
      "blocks": [
       {
        "t": "p",
-       "x": "*Curriculum reference: NCDC Primary Seven Curriculum, Set One, English Topic 1, 30 periods (`curriculum/PRIMARY-SEVEN-SET-ONE.pdf`, topic outline page 30 and pages 32–35). Sub-topics: **1A Holiday Plans** and **1B Holiday Activities**.*"
+       "x": "*Curriculum reference: NCDC Primary Seven Curriculum, Set One, English Topic 1 — School Holidays, 30 periods (`curriculum/PRIMARY-SEVEN-SET-ONE.pdf`, pages 32–35), sub-topics **1A Holiday Plans** and **1B Holiday Activities**. The question-and-answer content of this topic was supplied by the app owner and follows the syllabus vocabulary, structures, grammar, skills and values for this topic.*"
+      }
+     ]
+    },
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Seven Curriculum, Set One, English Topic 1 — School Holidays, 30 periods (pages 32–35). This app topic covers sub-topics 1A Holiday Plans and 1B Holiday Activities using the owner's question-and-answer notes.*"
       },
       {
        "t": "p",
-       "x": "**What you already know:** You have talked and written about your holidays before. In P.7 you learn the **vocabulary, language structures and grammar** that let you describe plans and activities correctly."
+       "x": "**Background:** During school holidays children meet different people whom they interact with at varying levels, and they carry out various activities. This topic equips learners with language skills and values to enable them to interact effectively with others."
+      },
+      {
+       "t": "p",
+       "x": "**Main purpose of the topic:** It equips learners with language skills and values that help them interact effectively with others during holiday situations."
       },
       {
        "t": "p",
@@ -35,565 +48,2064 @@
       {
        "t": "ul",
        "items": [
-        "use holiday vocabulary correctly in speech and writing",
-        "use \"going to\" for the near future and form question tags",
-        "change direct speech into reported speech",
-        "use participles and the third conditional (If 3)",
-        "form adjectives and use the active voice",
-        "write compositions, stories and poems about holiday plans and activities"
+        "describe holiday plans and holiday activities using appropriate language",
+        "narrate, read and write texts, stories, poems and dialogues about holidays",
+        "use the near future (**am/is/are going to + verb**) correctly",
+        "use **question tags**, **reported speech**, **participles**, **adjectives**, the **active voice** and the **third conditional** correctly",
+        "spell holiday vocabulary correctly and present ideas logically",
+        "demonstrate responsibility, cooperation, sharing, care, respect and love"
        ]
       }
      ]
     },
     {
-     "title": "SUB-TOPIC 1A: HOLIDAY PLANS",
+     "title": "A. Understanding school holidays",
      "blocks": [
       {
-       "t": "h3",
-       "x": "Vocabulary from the syllabus"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Word",
-        "Meaning"
-       ],
-       "rows": [
-        [
-         "holiday",
-         "A period when school is closed and learners rest at home"
-        ],
-        [
-         "travel",
-         "To move from one place to another"
-        ],
-        [
-         "plan",
-         "An arrangement made in advance"
-        ],
-        [
-         "break off",
-         "To stop; to close for the holidays"
-        ],
-        [
-         "prepare for",
-         "To get ready for something"
-        ],
-        [
-         "pick",
-         "To collect somebody or something"
-        ],
-        [
-         "remedial classes",
-         "Extra lessons to help learners who are behind"
-        ],
-        [
-         "end of vacation",
-         "The last part of the holiday"
-        ],
-        [
-         "relatives",
-         "People in your family — uncles, aunts, cousins"
-        ],
-        [
-         "pen pal",
-         "A friend you write letters to but may never have met"
-        ],
-        [
-         "up-country",
-         "Away from the city, in the villages"
-        ],
-        [
-         "urban",
-         "To do with a town or city"
-        ],
-        [
-         "rural",
-         "To do with the countryside"
-        ],
-        [
-         "commence",
-         "To begin"
-        ],
-        [
-         "board",
-         "To get into a bus, train or plane"
-        ],
-        [
-         "programme",
-         "A plan showing what will be done and when"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Language structures"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Structure",
-        "Example",
-        "When it is used"
-       ],
-       "rows": [
-        [
-         "**… going to …** (near future)",
-         "*I am going to visit my grandmother next holiday.*",
-         "For a plan already decided"
-        ],
-        [
-         "**Question tags**",
-         "*You will go to the village next week, **won't you**?*",
-         "To ask for agreement"
-        ],
-        [
-         "**Reported speech**",
-         "*She said that she was going to travel.*",
-         "To report what someone said"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Grammar focus 1: Question tags"
+       "t": "p",
+       "x": "**1. What is a school holiday?**"
       },
       {
        "t": "p",
-       "x": "A question tag is a short question added at the end of a statement."
+       "x": "A school holiday is a period when learners do not attend their normal school lessons."
       },
       {
        "t": "p",
-       "x": "**The rule:** positive statement → **negative** tag; negative statement → **positive** tag. The tag uses the same auxiliary verb and a pronoun."
-      },
-      {
-       "t": "table",
-       "head": [
-        "Statement",
-        "Tag"
-       ],
-       "rows": [
-        [
-         "You are travelling tomorrow,",
-         "**aren't you?**"
-        ],
-        [
-         "She isn't coming,",
-         "**is she?**"
-        ],
-        [
-         "We shall visit Jinja,",
-         "**shan't we?**"
-        ],
-        [
-         "They went home,",
-         "**didn't they?**"
-        ],
-        [
-         "Peter can swim,",
-         "**can't he?**"
-        ],
-        [
-         "Let us go,",
-         "**shall we?**"
-        ],
-        [
-         "Open the window,",
-         "**will you?**"
-        ],
-        [
-         "I am late,",
-         "**aren't I?**"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Grammar focus 2: Reported speech"
+       "x": "**2. Why do schools have holidays?**"
       },
       {
        "t": "p",
-       "x": "**Direct speech** gives the exact words in quotation marks. **Reported (indirect) speech** tells what was said, without quotation marks."
+       "x": "Schools have holidays to give learners and teachers time to rest and to take part in other useful activities."
       },
       {
        "t": "p",
-       "x": "**When reporting, the tense moves one step back:**"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Direct",
-        "Reported"
-       ],
-       "rows": [
-        [
-         "present simple →",
-         "past simple"
-        ],
-        [
-         "present continuous →",
-         "past continuous"
-        ],
-        [
-         "past simple →",
-         "past perfect"
-        ],
-        [
-         "will →",
-         "would · can → could · may → might"
-        ]
-       ]
+       "x": "**3. What can learners do during school holidays?**"
       },
       {
        "t": "p",
-       "x": "Words also change: *today → that day · tomorrow → the following day · here → there · this → that · now → then · I → he/she.*"
-      },
-      {
-       "t": "p",
-       "x": "**Examples**"
+       "x": "Learners can:"
       },
       {
        "t": "ul",
        "items": [
-        "Direct: *\"I am going to the village,\" said Ann.* Reported: *Ann said that **she was going** to the village.*",
-        "Direct: *\"We shall write to our pen pals,\" the pupils said.* Reported: *The pupils said that **they would write** to their pen pals.*",
-        "Direct: *\"Did you pick her from the park?\" he asked.* Reported: *He asked **whether I had picked** her from the park.*"
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Grammar focus 3: Forming adjectives"
-      },
-      {
-       "t": "table",
-       "head": [
-        "From a noun",
-        "Adjective",
-        "From a verb",
-        "Adjective"
-       ],
-       "rows": [
-        [
-         "danger",
-         "dangerous",
-         "enjoy",
-         "enjoyable"
-        ],
-        [
-         "beauty",
-         "beautiful",
-         "excite",
-         "exciting / excited"
-        ],
-        [
-         "care",
-         "careful / careless",
-         "interest",
-         "interesting / interested"
-        ],
-        [
-         "friend",
-         "friendly",
-         "tire",
-         "tiring / tired"
-        ],
-        [
-         "child",
-         "childish",
-         "bore",
-         "boring / bored"
-        ]
+        "visit relatives.",
+        "travel.",
+        "study.",
+        "attend remedial classes.",
+        "help with housework.",
+        "work on the family farm.",
+        "visit friends.",
+        "go on trips and tours.",
+        "attend camps.",
+        "take part in sports.",
+        "attend concerts and shows.",
+        "revise school work.",
+        "learn new skills."
        ]
       },
       {
        "t": "p",
-       "x": "**Careful:** *-ing* describes the thing (*the journey was **tiring***); *-ed* describes the person (*I was **tired***)."
+       "x": "**4. What is a holiday plan?**"
+      },
+      {
+       "t": "p",
+       "x": "A holiday plan is an arrangement of activities that a person intends to carry out during a holiday."
+      },
+      {
+       "t": "p",
+       "x": "**5. Why should learners make holiday plans?**"
+      },
+      {
+       "t": "p",
+       "x": "Learners should make holiday plans so that they can use their holiday time properly and productively."
+      },
+      {
+       "t": "p",
+       "x": "**6. What should a good holiday plan contain?**"
+      },
+      {
+       "t": "p",
+       "x": "A good holiday plan should contain:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "activities to be done.",
+        "places to visit.",
+        "people to visit.",
+        "time for each activity.",
+        "study or revision time.",
+        "household responsibilities.",
+        "recreation and rest."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**7. Why is planning important during a holiday?**"
+      },
+      {
+       "t": "p",
+       "x": "Planning helps a learner organise time, avoid wasting time and accomplish useful activities."
+      },
+      {
+       "t": "p",
+       "x": "**8. What is a holiday activity?**"
+      },
+      {
+       "t": "p",
+       "x": "A holiday activity is something a person does during a school holiday."
+      },
+      {
+       "t": "p",
+       "x": "**9. What is the difference between a holiday plan and a holiday activity?**"
+      },
+      {
+       "t": "p",
+       "x": "A holiday plan describes what someone intends to do, while a holiday activity is something actually done during the holiday."
       }
      ]
     },
     {
-     "title": "SUB-TOPIC 1B: HOLIDAY ACTIVITIES",
+     "title": "B. Holiday plans",
      "blocks": [
       {
-       "t": "h3",
-       "x": "Vocabulary from the syllabus"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Word",
-        "Meaning"
-       ],
-       "rows": [
-        [
-         "tour",
-         "A journey visiting several places"
-        ],
-        [
-         "camp",
-         "To stay in tents away from home"
-        ],
-        [
-         "concert",
-         "A show of music, dance and drama"
-        ],
-        [
-         "revise",
-         "To go over work already learnt"
-        ],
-        [
-         "chores",
-         "Small jobs done at home"
-        ],
-        [
-         "routine",
-         "The usual order of doing things each day"
-        ],
-        [
-         "vacation",
-         "A holiday period"
-        ],
-        [
-         "fare",
-         "Money paid for a journey"
-        ],
-        [
-         "bash",
-         "A party or celebration"
-        ],
-        [
-         "trip",
-         "A short journey to a place and back"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Language structures"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Structure",
-        "Example"
-       ],
-       "rows": [
-        [
-         "**Participle tense**",
-         "*Having finished my chores, I went to play.*"
-        ],
-        [
-         "**If 3 (third conditional)**",
-         "*If I had seen him in the holiday, he would have given me money.*"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Grammar focus 4: Participles"
+       "t": "p",
+       "x": "**10. What is a holiday plan?**"
       },
       {
        "t": "p",
-       "x": "A **participle** is a form of a verb used with a helping verb or as an adjective."
-      },
-      {
-       "t": "table",
-       "head": [
-        "Type",
-        "Form",
-        "Example"
-       ],
-       "rows": [
-        [
-         "Present participle",
-         "verb + **-ing**",
-         "*We were **swimming** in the lake.*"
-        ],
-        [
-         "Past participle",
-         "usually verb + **-ed**, or an irregular form",
-         "*We have **eaten**. The **broken** cup…*"
-        ],
-        [
-         "Perfect participle",
-         "**having** + past participle",
-         "***Having washed** the plates, she rested.*"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Grammar focus 5: The third conditional (If 3)"
+       "x": "A holiday plan is a list or arrangement of activities that a learner intends to carry out during the holiday."
       },
       {
        "t": "p",
-       "x": "**If 3** talks about something in the **past that did not happen**."
+       "x": "**11. What should a learner consider when making a holiday plan?**"
       },
       {
        "t": "p",
-       "x": "**If + past perfect , would have + past participle**"
+       "x": "A learner should consider:"
       },
       {
        "t": "ul",
        "items": [
-        "*If I **had known**, I **would have come** earlier.*",
-        "*If we **had saved** money, we **would have travelled** to Mombasa.*",
-        "*If she **had revised**, she **would have passed**.*"
+        "the length of the holiday.",
+        "available resources.",
+        "family responsibilities.",
+        "personal interests.",
+        "study needs.",
+        "places to visit.",
+        "people to visit.",
+        "time available."
        ]
       },
       {
        "t": "p",
-       "x": "Compare the three conditionals:"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Type",
-        "Structure",
-        "Example"
-       ],
-       "rows": [
-        [
-         "If 1 (real, future)",
-         "If + present simple, will + verb",
-         "*If it rains, we **will stay** indoors.*"
-        ],
-        [
-         "If 2 (unreal, present)",
-         "If + past simple, would + verb",
-         "*If I **had** money, I would buy a bicycle.*"
-        ],
-        [
-         "If 3 (unreal, past)",
-         "If + past perfect, would have + past participle",
-         "*If I **had had** money, I would have bought a bicycle.*"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Grammar focus 6: Active voice"
+       "x": "**12. Why should holiday plans suit the family setting?**"
       },
       {
        "t": "p",
-       "x": "In the **active voice** the subject does the action; in the **passive** it receives it."
+       "x": "Holiday plans should suit the family setting because families have different responsibilities, resources, needs and circumstances."
+      },
+      {
+       "t": "p",
+       "x": "**13. What is a programme?**"
+      },
+      {
+       "t": "p",
+       "x": "A programme is a planned list of activities and the times when they will take place."
+      },
+      {
+       "t": "p",
+       "x": "**14. How can a programme help a learner during a holiday?**"
+      },
+      {
+       "t": "p",
+       "x": "It helps the learner organise activities and use time effectively."
+      },
+      {
+       "t": "p",
+       "x": "**15. What is travel?**"
+      },
+      {
+       "t": "p",
+       "x": "Travel is the act of moving from one place to another."
+      },
+      {
+       "t": "p",
+       "x": "**16. Why might learners travel during holidays?**"
+      },
+      {
+       "t": "p",
+       "x": "They may travel to:"
       },
       {
        "t": "ul",
        "items": [
-        "Active: **Mother cooked** the food. → Passive: The food **was cooked** by mother.",
-        "Active: **The pupils cleaned** the compound. → Passive: The compound **was cleaned** by the pupils."
+        "visit relatives.",
+        "visit friends.",
+        "attend celebrations.",
+        "go on tours.",
+        "go to the countryside.",
+        "attend camps.",
+        "visit interesting places."
        ]
       },
       {
        "t": "p",
-       "x": "The syllabus asks you to use the **active voice** when telling stories, because it is shorter and livelier."
-      },
-      {
-       "t": "h3",
-       "x": "Writing practice"
+       "x": "**17. What does \"prepare for\" mean?**"
       },
       {
        "t": "p",
-       "x": "**A holiday composition should have:** an interesting **title**, an **introduction** saying when and where, a **body** in proper paragraphs telling what happened in order, and a **conclusion** saying how you felt. Use the **past tense**, joining words (*first, then, after that, finally*), and correct punctuation."
+       "x": "\"Prepare for\" means to get ready for something."
+      },
+      {
+       "t": "p",
+       "x": "**18. Make a sentence using \"prepare for\".**"
+      },
+      {
+       "t": "p",
+       "x": "I am preparing for my holiday trip."
+      },
+      {
+       "t": "p",
+       "x": "**19. What does \"break off\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Break off\" means to stop or end something."
+      },
+      {
+       "t": "p",
+       "x": "**20. What does \"pick\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Pick\" can mean to choose or collect something."
+      },
+      {
+       "t": "p",
+       "x": "**21. Make a sentence using \"pick\".**"
+      },
+      {
+       "t": "p",
+       "x": "I will pick some fruits from the garden."
+      },
+      {
+       "t": "p",
+       "x": "**22. What are remedial classes?**"
+      },
+      {
+       "t": "p",
+       "x": "Remedial classes are additional lessons intended to help learners improve areas in which they have difficulties."
+      },
+      {
+       "t": "p",
+       "x": "**23. Why might a learner attend remedial classes during a holiday?**"
+      },
+      {
+       "t": "p",
+       "x": "A learner may attend remedial classes to improve performance in subjects or areas that need more practice."
+      },
+      {
+       "t": "p",
+       "x": "**24. What does \"end vacation\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "It means to finish the holiday period and prepare to return to school."
+      },
+      {
+       "t": "p",
+       "x": "**25. Who are relatives?**"
+      },
+      {
+       "t": "p",
+       "x": "Relatives are members of a person's family."
+      },
+      {
+       "t": "p",
+       "x": "**26. Who are pen pals?**"
+      },
+      {
+       "t": "p",
+       "x": "Pen pals are people who regularly communicate with each other by writing letters or messages, often while living in different places."
+      },
+      {
+       "t": "p",
+       "x": "**27. What does \"up-country\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "In the Ugandan context, \"up-country\" refers to places outside the main town or city where a person lives, especially other parts of the country."
+      },
+      {
+       "t": "p",
+       "x": "**28. What is a town?**"
+      },
+      {
+       "t": "p",
+       "x": "A town is a built-up settlement that is larger than a village but generally smaller than a city."
+      },
+      {
+       "t": "p",
+       "x": "**29. What does \"urban\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Urban refers to areas associated with towns and cities."
+      },
+      {
+       "t": "p",
+       "x": "**30. What does \"rural\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Rural refers to areas in the countryside, usually away from large towns and cities."
+      },
+      {
+       "t": "p",
+       "x": "**31. What is the difference between urban and rural areas?**"
+      },
+      {
+       "t": "p",
+       "x": "Urban areas are mainly towns and cities, while rural areas are mainly countryside areas and villages."
+      },
+      {
+       "t": "p",
+       "x": "**32. What does \"commence\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Commence\" means to begin or start."
+      },
+      {
+       "t": "p",
+       "x": "**33. Make a sentence using \"commence\".**"
+      },
+      {
+       "t": "p",
+       "x": "The holiday programme will commence on Monday."
+      },
+      {
+       "t": "p",
+       "x": "**34. What does \"board\" mean in travelling?**"
+      },
+      {
+       "t": "p",
+       "x": "To board means to get onto a bus, train, aeroplane, boat or other means of transport."
+      },
+      {
+       "t": "p",
+       "x": "**35. Make a sentence using \"board\".**"
+      },
+      {
+       "t": "p",
+       "x": "We will board the bus at seven o'clock."
+      },
+      {
+       "t": "p",
+       "x": "**36. What is a birthday?**"
+      },
+      {
+       "t": "p",
+       "x": "A birthday is the day on which a person was born, celebrated each year."
+      },
+      {
+       "t": "p",
+       "x": "**37. Why might a birthday appear in a holiday programme?**"
+      },
+      {
+       "t": "p",
+       "x": "A learner may plan to attend or celebrate a birthday during the holiday."
       }
      ]
     },
     {
-     "title": "KEY DEFINITIONS",
+     "title": "C. Talking about holiday plans",
      "blocks": [
       {
-       "t": "table",
-       "head": [
-        "Term",
-        "Meaning"
-       ],
-       "rows": [
-        [
-         "Question tag",
-         "A short question added at the end of a statement"
-        ],
-        [
-         "Direct speech",
-         "The exact words spoken, written in quotation marks"
-        ],
-        [
-         "Reported speech",
-         "Telling what someone said without using their exact words"
-        ],
-        [
-         "Participle",
-         "A verb form ending in -ing or -ed used with a helping verb or as an adjective"
-        ],
-        [
-         "Conditional sentence",
-         "A sentence with \"if\", showing that one thing depends on another"
-        ],
-        [
-         "Active voice",
-         "A sentence in which the subject does the action"
-        ],
-        [
-         "Passive voice",
-         "A sentence in which the subject receives the action"
-        ],
-        [
-         "Adjective",
-         "A word that describes a noun"
-        ],
-        [
-         "Pen pal",
-         "A friend one writes letters to"
-        ]
+       "t": "p",
+       "x": "**38. How can a learner talk about a future holiday plan?**"
+      },
+      {
+       "t": "p",
+       "x": "A learner can use the structure:"
+      },
+      {
+       "t": "p",
+       "x": "**am/is/are going to + verb**"
+      },
+      {
+       "t": "p",
+       "x": "**39. What does \"going to\" express in this topic?**"
+      },
+      {
+       "t": "p",
+       "x": "It is used to talk about a planned or intended future action."
+      },
+      {
+       "t": "p",
+       "x": "**40. Give an example using \"going to\".**"
+      },
+      {
+       "t": "p",
+       "x": "I am going to visit my parents next holiday."
+      },
+      {
+       "t": "p",
+       "x": "**41. Give another example.**"
+      },
+      {
+       "t": "p",
+       "x": "We are going to travel up-country during the holiday."
+      },
+      {
+       "t": "p",
+       "x": "**42. Make a sentence using \"is going to\".**"
+      },
+      {
+       "t": "p",
+       "x": "Sarah is going to attend remedial classes."
+      },
+      {
+       "t": "p",
+       "x": "**43. Make a sentence using \"are going to\".**"
+      },
+      {
+       "t": "p",
+       "x": "The children are going to visit their grandparents."
+      },
+      {
+       "t": "p",
+       "x": "**44. Make a sentence using \"am going to\".**"
+      },
+      {
+       "t": "p",
+       "x": "I am going to revise Mathematics during the holiday."
+      },
+      {
+       "t": "p",
+       "x": "**45. How do we form a negative sentence using \"going to\"?**"
+      },
+      {
+       "t": "p",
+       "x": "We use:"
+      },
+      {
+       "t": "p",
+       "x": "**am/is/are + not + going to + verb**"
+      },
+      {
+       "t": "p",
+       "x": "**46. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "I am not going to travel this holiday."
+      },
+      {
+       "t": "p",
+       "x": "**47. Give another example.**"
+      },
+      {
+       "t": "p",
+       "x": "They are not going to attend the concert."
+      },
+      {
+       "t": "p",
+       "x": "**48. How do we ask a question using \"going to\"?**"
+      },
+      {
+       "t": "p",
+       "x": "We place the appropriate form of **be** before the subject."
+      },
+      {
+       "t": "p",
+       "x": "**49. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "Are you going to visit your relatives?"
+      },
+      {
+       "t": "p",
+       "x": "**50. Give another example.**"
+      },
+      {
+       "t": "p",
+       "x": "Is Mary going to attend the camp?"
+      }
+     ]
+    },
+    {
+     "title": "D. Question tags",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**51. What is a question tag?**"
+      },
+      {
+       "t": "p",
+       "x": "A question tag is a short question added to the end of a statement to confirm information or seek agreement."
+      },
+      {
+       "t": "p",
+       "x": "**52. Give an example of a question tag about a holiday.**"
+      },
+      {
+       "t": "p",
+       "x": "You will go to the village next week, won't you?"
+      },
+      {
+       "t": "p",
+       "x": "**53. What is the question tag in \"You will visit your aunt, won't you?\"?**"
+      },
+      {
+       "t": "p",
+       "x": "The question tag is **\"won't you?\"**"
+      },
+      {
+       "t": "p",
+       "x": "**54. What is the main statement in \"You will visit your aunt, won't you?\"?**"
+      },
+      {
+       "t": "p",
+       "x": "The main statement is **\"You will visit your aunt.\"**"
+      },
+      {
+       "t": "p",
+       "x": "**55. What is the general rule for question tags?**"
+      },
+      {
+       "t": "p",
+       "x": "A positive statement normally takes a negative question tag, while a negative statement normally takes a positive question tag."
+      },
+      {
+       "t": "p",
+       "x": "**56. Give a positive statement with a negative tag.**"
+      },
+      {
+       "t": "p",
+       "x": "You are going to travel, aren't you?"
+      },
+      {
+       "t": "p",
+       "x": "**57. Give a negative statement with a positive tag.**"
+      },
+      {
+       "t": "p",
+       "x": "You aren't going to travel, are you?"
+      },
+      {
+       "t": "p",
+       "x": "**58. Add the correct question tag: John will visit his grandmother, ______?**"
+      },
+      {
+       "t": "p",
+       "x": "won't he?"
+      },
+      {
+       "t": "p",
+       "x": "**59. Add the correct question tag: Mary is going to Kampala, ______?**"
+      },
+      {
+       "t": "p",
+       "x": "isn't she?"
+      },
+      {
+       "t": "p",
+       "x": "**60. Add the correct question tag: They will travel tomorrow, ______?**"
+      },
+      {
+       "t": "p",
+       "x": "won't they?"
+      }
+     ]
+    },
+    {
+     "title": "E. Reported speech in holiday plans",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**61. What is reported speech?**"
+      },
+      {
+       "t": "p",
+       "x": "Reported speech is used to tell someone what another person said without using the speaker's exact words."
+      },
+      {
+       "t": "p",
+       "x": "**62. What is direct speech?**"
+      },
+      {
+       "t": "p",
+       "x": "Direct speech gives the exact words spoken by a person."
+      },
+      {
+       "t": "p",
+       "x": "**63. Give an example of direct speech about a holiday.**"
+      },
+      {
+       "t": "p",
+       "x": "Peter said, \"I am going to visit my uncle.\""
+      },
+      {
+       "t": "p",
+       "x": "**64. Change into reported speech: Peter said, \"I am going to visit my uncle.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Peter said that he was going to visit his uncle."
+      },
+      {
+       "t": "p",
+       "x": "**65. Why do we use reported speech?**"
+      },
+      {
+       "t": "p",
+       "x": "We use reported speech to tell another person what someone said."
+      },
+      {
+       "t": "p",
+       "x": "**66. Change into reported speech: Mary said, \"I am going to travel.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Mary said that she was going to travel."
+      },
+      {
+       "t": "p",
+       "x": "**67. Change into reported speech: John said, \"I will visit my grandmother.\"**"
+      },
+      {
+       "t": "p",
+       "x": "John said that he would visit his grandmother."
+      },
+      {
+       "t": "p",
+       "x": "**68. Change into direct speech: Sarah said that she was going to attend remedial classes.**"
+      },
+      {
+       "t": "p",
+       "x": "Sarah said, \"I am going to attend remedial classes.\""
+      },
+      {
+       "t": "p",
+       "x": "**69. What happens to pronouns when changing direct speech into reported speech?**"
+      },
+      {
+       "t": "p",
+       "x": "Pronouns may change according to who is reporting the speech."
+      },
+      {
+       "t": "p",
+       "x": "**70. What happens to some verb tenses when direct speech is changed into reported speech?**"
+      },
+      {
+       "t": "p",
+       "x": "Some verb tenses normally change to agree with the reporting verb and the time of reporting."
+      }
+     ]
+    },
+    {
+     "title": "F. Participle tense",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**71. What is a participle?**"
+      },
+      {
+       "t": "p",
+       "x": "A participle is a form of a verb that can be used in verb phrases or as an adjective."
+      },
+      {
+       "t": "p",
+       "x": "**72. What is the present participle?**"
+      },
+      {
+       "t": "p",
+       "x": "The present participle is usually formed by adding **-ing** to a verb."
+      },
+      {
+       "t": "p",
+       "x": "**73. Give examples of present participles.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "travelling.",
+        "visiting.",
+        "studying.",
+        "preparing.",
+        "cooking.",
+        "playing.",
+        "revising."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**74. Make a sentence using a present participle.**"
+      },
+      {
+       "t": "p",
+       "x": "The children are travelling to the village."
+      },
+      {
+       "t": "p",
+       "x": "**75. What is the past participle?**"
+      },
+      {
+       "t": "p",
+       "x": "The past participle is a form of a verb commonly used with auxiliary verbs to form perfect tenses and passive constructions."
+      },
+      {
+       "t": "p",
+       "x": "**76. Give examples of past participles.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "visited.",
+        "travelled.",
+        "prepared.",
+        "written.",
+        "eaten.",
+        "gone.",
+        "seen."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**77. Make a sentence using a past participle.**"
+      },
+      {
+       "t": "p",
+       "x": "I have visited my grandmother."
+      }
+     ]
+    },
+    {
+     "title": "G. Formation of adjectives",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**78. What is an adjective?**"
+      },
+      {
+       "t": "p",
+       "x": "An adjective is a word that describes a noun or gives more information about it."
+      },
+      {
+       "t": "p",
+       "x": "**79. Give examples of adjectives that can describe a holiday.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "enjoyable.",
+        "interesting.",
+        "exciting.",
+        "memorable.",
+        "wonderful.",
+        "tiring.",
+        "pleasant."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**80. How can some adjectives be formed from nouns?**"
+      },
+      {
+       "t": "p",
+       "x": "Some adjectives are formed by adding suitable suffixes to nouns."
+      },
+      {
+       "t": "p",
+       "x": "**81. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "**Care → careful**"
+      },
+      {
+       "t": "p",
+       "x": "**82. Give another example.**"
+      },
+      {
+       "t": "p",
+       "x": "**Excitement → exciting**"
+      },
+      {
+       "t": "p",
+       "x": "**83. Give another example.**"
+      },
+      {
+       "t": "p",
+       "x": "**Interest → interesting**"
+      },
+      {
+       "t": "p",
+       "x": "**84. Make a sentence using \"interesting\".**"
+      },
+      {
+       "t": "p",
+       "x": "We visited an interesting place during the holiday."
+      },
+      {
+       "t": "p",
+       "x": "**85. Make a sentence using \"exciting\".**"
+      },
+      {
+       "t": "p",
+       "x": "The trip was exciting."
+      }
+     ]
+    },
+    {
+     "title": "H. Holiday activities",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**86. What are holiday activities?**"
+      },
+      {
+       "t": "p",
+       "x": "Holiday activities are things that learners do during their school holidays."
+      },
+      {
+       "t": "p",
+       "x": "**87. Mention five educational activities learners can do during holidays.**"
+      },
+      {
+       "t": "p",
+       "x": "They can:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "study.",
+        "revise school work.",
+        "attend remedial classes.",
+        "read books.",
+        "write stories."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**88. Mention five recreational activities learners can do during holidays.**"
+      },
+      {
+       "t": "p",
+       "x": "They can:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "play games.",
+        "go on trips.",
+        "attend shows.",
+        "attend concerts.",
+        "visit interesting places."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**89. What is a farm?**"
+      },
+      {
+       "t": "p",
+       "x": "A farm is a place where crops and/or animals are kept for production."
+      },
+      {
+       "t": "p",
+       "x": "**90. Why might learners visit or work on a farm during a holiday?**"
+      },
+      {
+       "t": "p",
+       "x": "They may learn farming skills, help their families and gain practical experience."
+      },
+      {
+       "t": "p",
+       "x": "**91. What is a tour?**"
+      },
+      {
+       "t": "p",
+       "x": "A tour is a journey made to visit and see different places."
+      },
+      {
+       "t": "p",
+       "x": "**92. What is a camp?**"
+      },
+      {
+       "t": "p",
+       "x": "A camp is a place or organised activity where people stay temporarily, often for learning, recreation or other purposes."
+      },
+      {
+       "t": "p",
+       "x": "**93. What is a visit?**"
+      },
+      {
+       "t": "p",
+       "x": "A visit is an occasion when someone goes to see a person or place."
+      },
+      {
+       "t": "p",
+       "x": "**94. What does \"begin\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Begin\" means to start."
+      },
+      {
+       "t": "p",
+       "x": "**95. What is a concert?**"
+      },
+      {
+       "t": "p",
+       "x": "A concert is a public performance of music."
+      },
+      {
+       "t": "p",
+       "x": "**96. What is a show?**"
+      },
+      {
+       "t": "p",
+       "x": "A show is an organised performance or event presented for people to watch."
+      },
+      {
+       "t": "p",
+       "x": "**97. What does \"cook\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To cook means to prepare food by heating it."
+      },
+      {
+       "t": "p",
+       "x": "**98. What does \"revise\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To revise means to study something again, especially in preparation for an examination."
+      },
+      {
+       "t": "p",
+       "x": "**99. Why should learners revise during holidays?**"
+      },
+      {
+       "t": "p",
+       "x": "They should revise to remember what they learnt and prepare for the next term or examinations."
+      },
+      {
+       "t": "p",
+       "x": "**100. What is housework?**"
+      },
+      {
+       "t": "p",
+       "x": "Housework is work done to maintain and manage a home."
+      },
+      {
+       "t": "p",
+       "x": "**101. Give examples of housework.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "sweeping.",
+        "washing clothes.",
+        "cleaning the house.",
+        "washing utensils.",
+        "fetching water.",
+        "arranging rooms."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**102. What is a trip?**"
+      },
+      {
+       "t": "p",
+       "x": "A trip is a journey to a place and usually back again."
+      },
+      {
+       "t": "p",
+       "x": "**103. What does \"enjoy\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To enjoy means to get pleasure from something."
+      },
+      {
+       "t": "p",
+       "x": "**104. Make a sentence using \"enjoy\".**"
+      },
+      {
+       "t": "p",
+       "x": "I enjoyed visiting my grandparents."
+      },
+      {
+       "t": "p",
+       "x": "**105. What does \"nice\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Nice\" means pleasant, enjoyable or pleasing."
+      },
+      {
+       "t": "p",
+       "x": "**106. What does \"interesting\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Interesting\" means attracting attention because it is unusual, enjoyable or informative."
+      },
+      {
+       "t": "p",
+       "x": "**107. What does \"exciting\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Exciting\" means causing great interest, happiness or enthusiasm."
+      },
+      {
+       "t": "p",
+       "x": "**108. What is a report?**"
+      },
+      {
+       "t": "p",
+       "x": "A report is a written or spoken account that gives information about something that happened or that was investigated."
+      },
+      {
+       "t": "p",
+       "x": "**109. What is a vacation?**"
+      },
+      {
+       "t": "p",
+       "x": "A vacation is a period when a person is away from normal work or school activities."
+      }
+     ]
+    },
+    {
+     "title": "I. Household chores and responsibilities",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**110. What are chores?**"
+      },
+      {
+       "t": "p",
+       "x": "Chores are small regular jobs that must be done, especially at home."
+      },
+      {
+       "t": "p",
+       "x": "**111. Give examples of holiday chores.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "sweeping.",
+        "washing utensils.",
+        "cleaning the compound.",
+        "fetching water.",
+        "washing clothes.",
+        "looking after animals.",
+        "helping on the family farm."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**112. Why should learners help with chores during holidays?**"
+      },
+      {
+       "t": "p",
+       "x": "They should help because it develops responsibility, cooperation and useful life skills."
+      },
+      {
+       "t": "p",
+       "x": "**113. What is a routine?**"
+      },
+      {
+       "t": "p",
+       "x": "A routine is a regular way of doing things or a regular pattern of activities."
+      },
+      {
+       "t": "p",
+       "x": "**114. Why should a learner have a holiday routine?**"
+      },
+      {
+       "t": "p",
+       "x": "A routine helps a learner balance study, work, rest and recreation."
+      },
+      {
+       "t": "p",
+       "x": "**115. What does responsibility mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Responsibility means having a duty to do something and being accountable for it."
+      },
+      {
+       "t": "p",
+       "x": "**116. How can a learner show responsibility during a holiday?**"
+      },
+      {
+       "t": "p",
+       "x": "A learner can show responsibility by:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "completing assigned chores.",
+        "following family rules.",
+        "studying.",
+        "caring for younger children when appropriate.",
+        "looking after property.",
+        "keeping the environment clean."
        ]
       }
      ]
     },
     {
-     "title": "IMPORTANT FACTS TO REMEMBER",
+     "title": "J. If 3 conditional",
      "blocks": [
+      {
+       "t": "p",
+       "x": "**117. What is the third conditional?**"
+      },
+      {
+       "t": "p",
+       "x": "The third conditional is used to talk about an unreal or imagined situation in the past and its possible result."
+      },
+      {
+       "t": "p",
+       "x": "**118. What is the basic structure of the third conditional?**"
+      },
+      {
+       "t": "p",
+       "x": "**If + past perfect tense, would have + past participle**"
+      },
+      {
+       "t": "p",
+       "x": "**119. Give the example used in the topic.**"
+      },
+      {
+       "t": "p",
+       "x": "If I had seen him in the holiday, he would have given me money."
+      },
+      {
+       "t": "p",
+       "x": "**120. What does the sentence mean?**"
+      },
+      {
+       "t": "p",
+       "x": "It means that the speaker did not see him during the holiday, so the possible result did not happen."
+      },
+      {
+       "t": "p",
+       "x": "**121. Give another example of the third conditional.**"
+      },
+      {
+       "t": "p",
+       "x": "If I had travelled to the village, I would have visited my grandmother."
+      },
+      {
+       "t": "p",
+       "x": "**122. Give another example.**"
+      },
+      {
+       "t": "p",
+       "x": "If Mary had studied during the holiday, she would have performed better."
+      },
+      {
+       "t": "p",
+       "x": "**123. Complete: If I had gone to the farm, I ______ have helped my father.**"
+      },
+      {
+       "t": "p",
+       "x": "would"
+      },
+      {
+       "t": "p",
+       "x": "**124. Complete: If John had visited us, we would ______ welcomed him.**"
+      },
+      {
+       "t": "p",
+       "x": "have"
+      },
+      {
+       "t": "p",
+       "x": "**125. Complete: If she had revised, she ______ have passed the test.**"
+      },
+      {
+       "t": "p",
+       "x": "would"
+      }
+     ]
+    },
+    {
+     "title": "K. Active voice",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**126. What is active voice?**"
+      },
+      {
+       "t": "p",
+       "x": "Active voice is a sentence structure in which the subject performs the action."
+      },
+      {
+       "t": "p",
+       "x": "**127. Give an example of active voice.**"
+      },
+      {
+       "t": "p",
+       "x": "Peter cleaned the house."
+      },
+      {
+       "t": "p",
+       "x": "**128. Identify the subject in \"Peter cleaned the house.\"**"
+      },
+      {
+       "t": "p",
+       "x": "The subject is **Peter**."
+      },
+      {
+       "t": "p",
+       "x": "**129. Identify the action in \"Peter cleaned the house.\"**"
+      },
+      {
+       "t": "p",
+       "x": "The action is **cleaned**."
+      },
+      {
+       "t": "p",
+       "x": "**130. Give another example of active voice related to holidays.**"
+      },
+      {
+       "t": "p",
+       "x": "Sarah visited her grandmother."
+      },
+      {
+       "t": "p",
+       "x": "**131. Change into active voice: \"The farm was visited by John.\"**"
+      },
+      {
+       "t": "p",
+       "x": "John visited the farm."
+      },
+      {
+       "t": "p",
+       "x": "**132. Why is active voice useful?**"
+      },
+      {
+       "t": "p",
+       "x": "It makes it clear who performs an action."
+      }
+     ]
+    },
+    {
+     "title": "L. Holiday travel",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**133. Why do learners travel during holidays?**"
+      },
+      {
+       "t": "p",
+       "x": "They may travel to visit relatives, attend celebrations, go on tours, attend camps or visit other places."
+      },
+      {
+       "t": "p",
+       "x": "**134. What should a learner consider before travelling?**"
+      },
+      {
+       "t": "p",
+       "x": "The learner should consider:"
+      },
       {
        "t": "ul",
        "items": [
-        "Positive statement takes a **negative** tag; negative statement takes a **positive** tag.",
-        "*I am late,* **aren't I?** (not \"amn't I\")",
-        "In reported speech the tense moves **one step back** and time words change.",
-        "**If 3** = *If + had + past participle , would have + past participle.*",
-        "*-ing* adjectives describe the **thing**; *-ed* adjectives describe the **person**.",
-        "\"Going to\" is used for a plan already made.",
-        "Use the **past tense** in a holiday composition."
+        "the destination.",
+        "means of transport.",
+        "travel time.",
+        "cost.",
+        "safety.",
+        "necessary items.",
+        "people travelling with them."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**135. What does \"fare\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Fare is the amount of money paid for travelling in a vehicle or other means of transport."
+      },
+      {
+       "t": "p",
+       "x": "**136. Make a sentence using \"fare\".**"
+      },
+      {
+       "t": "p",
+       "x": "The bus fare to the village was affordable."
+      },
+      {
+       "t": "p",
+       "x": "**137. What does \"board\" mean when travelling?**"
+      },
+      {
+       "t": "p",
+       "x": "It means to get onto a vehicle, train, plane, boat or other means of transport."
+      },
+      {
+       "t": "p",
+       "x": "**138. Make a sentence using \"board\".**"
+      },
+      {
+       "t": "p",
+       "x": "We will board the bus at the main stage."
+      },
+      {
+       "t": "p",
+       "x": "**139. What should learners do when travelling?**"
+      },
+      {
+       "t": "p",
+       "x": "They should:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "obey safety rules.",
+        "stay with responsible adults where necessary.",
+        "take care of their belongings.",
+        "use safe means of transport.",
+        "behave responsibly."
        ]
       }
      ]
     },
     {
-     "title": "EXAMINATION POINTS",
+     "title": "M. Holiday entertainment",
      "blocks": [
+      {
+       "t": "p",
+       "x": "**140. What is entertainment?**"
+      },
+      {
+       "t": "p",
+       "x": "Entertainment is an activity that provides enjoyment or amusement."
+      },
+      {
+       "t": "p",
+       "x": "**141. What entertainment activities can learners take part in during holidays?**"
+      },
+      {
+       "t": "p",
+       "x": "They can:"
+      },
       {
        "t": "ul",
        "items": [
-        "*You will travel tomorrow, ____?* → **won't you**",
-        "*\"I am tired,\" said John.* → *John said that **he was tired**.*",
-        "*If I had gone early, I ____ (meet) her.* → **would have met**",
-        "Form the adjective from *danger* → **dangerous**; from *enjoy* → **enjoyable**.",
-        "Change to the active voice: *The letter was written by Ann.* → *Ann wrote the letter.*",
-        "One word for \"a friend one writes to but has never met\" → **pen pal**."
+        "attend concerts.",
+        "watch shows.",
+        "play games.",
+        "participate in sports.",
+        "listen to music.",
+        "attend suitable cultural events."
        ]
+      },
+      {
+       "t": "p",
+       "x": "**142. What is a bash?**"
+      },
+      {
+       "t": "p",
+       "x": "A bash is an informal party or celebration."
+      },
+      {
+       "t": "p",
+       "x": "**143. Make a sentence using \"bash\".**"
+      },
+      {
+       "t": "p",
+       "x": "We attended a birthday bash during the holiday."
+      },
+      {
+       "t": "p",
+       "x": "**144. Why should learners choose suitable entertainment?**"
+      },
+      {
+       "t": "p",
+       "x": "They should choose activities that are safe, responsible and appropriate for their age."
       }
      ]
     },
     {
-     "title": "COMMON MISTAKES TO AVOID",
+     "title": "N. Holiday plans and family relationships",
      "blocks": [
+      {
+       "t": "p",
+       "x": "**145. Why are relatives important during holidays?**"
+      },
+      {
+       "t": "p",
+       "x": "Holidays give learners opportunities to visit, interact with and strengthen relationships with relatives."
+      },
+      {
+       "t": "p",
+       "x": "**146. How can learners show care for relatives during holidays?**"
+      },
+      {
+       "t": "p",
+       "x": "They can:"
+      },
       {
        "t": "ul",
        "items": [
-        "Writing *\"amn't I?\"* instead of **aren't I?**",
-        "Keeping the present tense in reported speech: *She said she **is** going* → *She said she **was** going.*",
-        "Mixing conditionals: *If I would have known…* → *If I **had** known…*",
-        "Saying *I was very boring* when you mean *I was very **bored***.",
-        "Forgetting the comma before the question tag."
+        "visit them.",
+        "help them.",
+        "communicate politely.",
+        "share with them.",
+        "listen to them.",
+        "spend time with them."
        ]
+      },
+      {
+       "t": "p",
+       "x": "**147. How can holidays strengthen friendship?**"
+      },
+      {
+       "t": "p",
+       "x": "Learners can visit friends, play together, share experiences and work together during holidays."
+      },
+      {
+       "t": "p",
+       "x": "**148. Why is sharing important during holidays?**"
+      },
+      {
+       "t": "p",
+       "x": "Sharing promotes friendship, cooperation and good relationships."
+      },
+      {
+       "t": "p",
+       "x": "**149. Why is forgiveness important?**"
+      },
+      {
+       "t": "p",
+       "x": "Forgiveness helps people maintain peaceful and healthy relationships."
+      }
+     ]
+    },
+    {
+     "title": "O. Writing about holiday plans",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**150. What should a learner include when writing a holiday plan?**"
+      },
+      {
+       "t": "p",
+       "x": "The learner should include:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "the activities planned.",
+        "when they will take place.",
+        "where they will take place.",
+        "people involved.",
+        "study time.",
+        "responsibilities.",
+        "recreation."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**151. Write a short holiday plan.**"
+      },
+      {
+       "t": "p",
+       "x": "**MY HOLIDAY PLAN**"
+      },
+      {
+       "t": "p",
+       "x": "During the holiday, I am going to visit my grandparents up-country. I am going to help them with some farm work. I am also going to revise my school work every morning. In the afternoon, I will play with my cousins. I am going to return home before the holiday ends."
+      },
+      {
+       "t": "p",
+       "x": "**152. Why should a holiday plan be organised logically?**"
+      },
+      {
+       "t": "p",
+       "x": "A logical plan makes it easy to understand the order and timing of activities."
+      },
+      {
+       "t": "p",
+       "x": "**153. What should a learner do after writing a holiday plan?**"
+      },
+      {
+       "t": "p",
+       "x": "The learner should read it again and correct spelling, grammar and punctuation mistakes."
+      }
+     ]
+    },
+    {
+     "title": "P. Writing about holiday activities",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**154. What is a holiday composition?**"
+      },
+      {
+       "t": "p",
+       "x": "A holiday composition is a piece of writing describing what happened or what someone did during a holiday."
+      },
+      {
+       "t": "p",
+       "x": "**155. What should a good holiday composition contain?**"
+      },
+      {
+       "t": "p",
+       "x": "It should contain:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "an introduction.",
+        "activities carried out.",
+        "places visited.",
+        "people met.",
+        "experiences.",
+        "a conclusion."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**156. Why should events be presented in order?**"
+      },
+      {
+       "t": "p",
+       "x": "Presenting events in order makes the story clear and easy to follow."
+      },
+      {
+       "t": "p",
+       "x": "**157. Write a short composition about a holiday activity.**"
+      },
+      {
+       "t": "p",
+       "x": "During the last holiday, I visited my grandparents in the village. I helped my grandfather on the farm and assisted my grandmother with housework. In the afternoon, I played football with my cousins. I also revised my school work every evening. I enjoyed the holiday because I learnt many useful things and spent time with my family."
+      }
+     ]
+    },
+    {
+     "title": "Q. Reading and comprehension",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**158. What should a learner do when reading a text about holiday activities?**"
+      },
+      {
+       "t": "p",
+       "x": "The learner should read carefully, identify the main ideas and pay attention to important details."
+      },
+      {
+       "t": "p",
+       "x": "**159. What questions can be asked about a holiday text?**"
+      },
+      {
+       "t": "p",
+       "x": "Questions can ask about:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "who travelled.",
+        "where someone went.",
+        "what activities were done.",
+        "when activities happened.",
+        "why an activity was done.",
+        "how someone felt.",
+        "what happened."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**160. Why should learners read holiday stories and articles?**"
+      },
+      {
+       "t": "p",
+       "x": "Reading improves vocabulary, comprehension, fluency and understanding of different experiences."
+      }
+     ]
+    },
+    {
+     "title": "R. Listening and speaking about holidays",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**161. What should a learner do when listening to a holiday story?**"
+      },
+      {
+       "t": "p",
+       "x": "The learner should listen carefully and identify important information."
+      },
+      {
+       "t": "p",
+       "x": "**162. What makes a good spoken holiday story?**"
+      },
+      {
+       "t": "p",
+       "x": "A good story should have:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "clear ideas.",
+        "correct language.",
+        "logical order.",
+        "good pronunciation.",
+        "appropriate vocabulary.",
+        "confidence."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**163. What does fluency mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Fluency is the ability to speak smoothly and easily."
+      },
+      {
+       "t": "p",
+       "x": "**164. What does confidence mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Confidence is belief in one's ability to do something successfully."
+      },
+      {
+       "t": "p",
+       "x": "**165. What does accuracy mean in speaking?**"
+      },
+      {
+       "t": "p",
+       "x": "Accuracy means using correct grammar, vocabulary and pronunciation."
+      },
+      {
+       "t": "p",
+       "x": "**166. Why is logical presentation important?**"
+      },
+      {
+       "t": "p",
+       "x": "It helps listeners understand the message easily."
+      }
+     ]
+    },
+    {
+     "title": "S. Poems and dialogues about holidays",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**167. What is a poem?**"
+      },
+      {
+       "t": "p",
+       "x": "A poem is a piece of writing in which ideas and feelings are expressed in a special style, often using rhythm and carefully chosen words."
+      },
+      {
+       "t": "p",
+       "x": "**168. What can a holiday poem describe?**"
+      },
+      {
+       "t": "p",
+       "x": "It can describe:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "travelling.",
+        "visiting relatives.",
+        "playing.",
+        "studying.",
+        "family life.",
+        "exciting experiences."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**169. What is a dialogue?**"
+      },
+      {
+       "t": "p",
+       "x": "A dialogue is a conversation between two or more people."
+      },
+      {
+       "t": "p",
+       "x": "**170. Give an example of a short holiday dialogue.**"
+      },
+      {
+       "t": "p",
+       "x": "**Amina:** What are you going to do during the holiday?"
+      },
+      {
+       "t": "p",
+       "x": "**John:** I am going to visit my grandparents."
+      },
+      {
+       "t": "p",
+       "x": "**Amina:** Are you going to study too?"
+      },
+      {
+       "t": "p",
+       "x": "**John:** Yes. I am going to revise every morning."
+      },
+      {
+       "t": "p",
+       "x": "**Amina:** That sounds like a good plan."
+      },
+      {
+       "t": "p",
+       "x": "**John:** What about you?"
+      },
+      {
+       "t": "p",
+       "x": "**Amina:** I am going to attend a holiday camp."
+      }
+     ]
+    },
+    {
+     "title": "T. Holiday reports",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**171. What is a holiday report?**"
+      },
+      {
+       "t": "p",
+       "x": "A holiday report is a written or spoken account of activities or experiences during a holiday."
+      },
+      {
+       "t": "p",
+       "x": "**172. What can a holiday report contain?**"
+      },
+      {
+       "t": "p",
+       "x": "It can contain:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "the places visited.",
+        "activities carried out.",
+        "people met.",
+        "experiences.",
+        "lessons learnt.",
+        "challenges faced."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**173. Why should a report be clear?**"
+      },
+      {
+       "t": "p",
+       "x": "A clear report helps the reader understand what happened."
+      },
+      {
+       "t": "p",
+       "x": "**174. Why should a learner check a report before presenting it?**"
+      },
+      {
+       "t": "p",
+       "x": "The learner should check it for spelling, grammar, punctuation and accuracy."
+      }
+     ]
+    },
+    {
+     "title": "U. Holiday values and life skills",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**175. What responsibility can learners develop during holidays?**"
+      },
+      {
+       "t": "p",
+       "x": "They can develop responsibility by completing chores, studying and caring for property."
+      },
+      {
+       "t": "p",
+       "x": "**176. What is cooperation?**"
+      },
+      {
+       "t": "p",
+       "x": "Cooperation is working together with others to achieve a common goal."
+      },
+      {
+       "t": "p",
+       "x": "**177. How can learners show cooperation during holidays?**"
+      },
+      {
+       "t": "p",
+       "x": "They can work together during household activities, farming, games and group activities."
+      },
+      {
+       "t": "p",
+       "x": "**178. What is care?**"
+      },
+      {
+       "t": "p",
+       "x": "Care means showing concern for the wellbeing of other people or things."
+      },
+      {
+       "t": "p",
+       "x": "**179. How can learners show care?**"
+      },
+      {
+       "t": "p",
+       "x": "They can help family members, care for animals, protect property and keep the environment clean."
+      },
+      {
+       "t": "p",
+       "x": "**180. What is respect?**"
+      },
+      {
+       "t": "p",
+       "x": "Respect is showing consideration and good manners towards other people."
+      },
+      {
+       "t": "p",
+       "x": "**181. How can learners show respect during holidays?**"
+      },
+      {
+       "t": "p",
+       "x": "They can listen to elders, speak politely, obey reasonable rules and treat others well."
+      },
+      {
+       "t": "p",
+       "x": "**182. What is love?**"
+      },
+      {
+       "t": "p",
+       "x": "Love is a strong feeling of care and affection for another person."
+      },
+      {
+       "t": "p",
+       "x": "**183. How can holidays promote friendship?**"
+      },
+      {
+       "t": "p",
+       "x": "They give learners opportunities to share, play, work and communicate with others."
+      }
+     ]
+    },
+    {
+     "title": "V. Holiday vocabulary",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**184. What does \"holiday\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "A period when learners are away from their normal school activities."
+      },
+      {
+       "t": "p",
+       "x": "**185. What does \"vacation\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "A period away from normal school or work activities."
+      },
+      {
+       "t": "p",
+       "x": "**186. What does \"travel\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To move from one place to another."
+      },
+      {
+       "t": "p",
+       "x": "**187. What does \"plan\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "An arrangement of what someone intends to do."
+      },
+      {
+       "t": "p",
+       "x": "**188. What does \"prepare\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To get ready for something."
+      },
+      {
+       "t": "p",
+       "x": "**189. What does \"relative\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "A member of one's family."
+      },
+      {
+       "t": "p",
+       "x": "**190. What does \"pen pal\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "A person with whom one regularly communicates through letters or messages."
+      },
+      {
+       "t": "p",
+       "x": "**191. What does \"urban\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Related to a town or city."
+      },
+      {
+       "t": "p",
+       "x": "**192. What does \"rural\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Related to the countryside."
+      },
+      {
+       "t": "p",
+       "x": "**193. What does \"commence\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To begin."
+      },
+      {
+       "t": "p",
+       "x": "**194. What does \"board\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To get onto a means of transport."
+      },
+      {
+       "t": "p",
+       "x": "**195. What does \"programme\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "A planned list or schedule of activities."
+      },
+      {
+       "t": "p",
+       "x": "**196. What does \"farm\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Land used for growing crops or keeping animals."
+      },
+      {
+       "t": "p",
+       "x": "**197. What does \"tour\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "A journey made to visit different places."
+      },
+      {
+       "t": "p",
+       "x": "**198. What does \"camp\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "A place or organised activity where people stay temporarily."
+      },
+      {
+       "t": "p",
+       "x": "**199. What does \"concert\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "A public musical performance."
+      },
+      {
+       "t": "p",
+       "x": "**200. What does \"revise\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To study something again."
+      },
+      {
+       "t": "p",
+       "x": "**201. What does \"chores\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Regular small jobs that need to be done, especially at home."
+      },
+      {
+       "t": "p",
+       "x": "**202. What does \"routine\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "A regular pattern of activities."
+      },
+      {
+       "t": "p",
+       "x": "**203. What does \"fare\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "The money paid for travelling."
+      },
+      {
+       "t": "p",
+       "x": "**204. What does \"exciting\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Causing great interest or enthusiasm."
+      },
+      {
+       "t": "p",
+       "x": "**205. What does \"interesting\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Attracting attention because something is enjoyable or informative."
+      },
+      {
+       "t": "p",
+       "x": "**206. What does \"enjoy\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To get pleasure from something."
       }
      ]
     },
@@ -603,26 +2115,45 @@
       {
        "t": "ol",
        "items": [
-        "Add a correct question tag: *You are travelling to Gulu tomorrow, ____?*",
-        "Add a correct question tag: *She didn't attend the concert, ____?*",
-        "Add a correct question tag: *Let us begin the journey, ____?*",
-        "Change to reported speech: *\"I am going to visit my aunt,\" said Maria.*",
-        "Change to reported speech: *\"We shall board the bus at six o'clock,\" the children said.*",
-        "Change to direct speech: *He said that he had enjoyed the trip.*",
-        "Complete with the correct form: *If I ____ (know) about the party, I would have come.*",
-        "Complete: *If she had revised well, she ____ (pass) the examination.*",
-        "Give the adjective formed from each: care, beauty, friend, excite.",
-        "Fill in: *The journey was very ____ (tire) and we were all ____ (tire) when we arrived.*",
-        "Change to the active voice: *The compound was swept by the pupils.*",
-        "Rewrite using \"going to\": *I intend to visit my grandparents next holiday.*",
-        "Give one word for: a friend you write letters to but may never have met.",
-        "Give one word for: extra lessons given to help a learner who is behind.",
-        "Use the word *commence* in a sentence of your own.",
-        "Rewrite beginning with the words given: *He finished his chores and then went to play.* — **Having** …",
-        "Give the meaning of *up-country* and use it in a sentence.",
-        "Write four sentences describing your plans for the next holiday, using \"going to\" in each.",
-        "Write a short paragraph (about six sentences) about the most interesting thing you did last holiday. Use the past tense.",
-        "Give two differences between direct speech and reported speech."
+        "What are the two sub-topics under School Holidays in Primary Seven?",
+        "What is the main purpose of the School Holidays topic?",
+        "What is a holiday plan?",
+        "Mention five things that can be included in a holiday plan.",
+        "What is a programme?",
+        "What is a remedial class?",
+        "What is the difference between urban and rural?",
+        "What does \"commence\" mean?",
+        "What does \"board\" mean?",
+        "What is a holiday activity?",
+        "Mention six holiday activities.",
+        "What are chores?",
+        "Why should learners help with chores?",
+        "What is a routine?",
+        "What is a tour?",
+        "What is a concert?",
+        "What is a bash?",
+        "What is fare?",
+        "What is the structure used to talk about planned future actions?",
+        "Make a sentence using \"going to\".",
+        "What is a question tag?",
+        "Add the correct question tag: You will travel tomorrow, ______?",
+        "What is reported speech?",
+        "Change into reported speech: John said, \"I am going to visit my uncle.\"",
+        "What is a present participle?",
+        "Give two present participles.",
+        "What is active voice?",
+        "Give an example of active voice.",
+        "What is the third conditional used for?",
+        "Give the structure of the third conditional.",
+        "Complete: If I had seen him, he ______ have helped me.",
+        "What is an adjective?",
+        "Give three adjectives that can describe a holiday.",
+        "What is cooperation?",
+        "Mention the values emphasised in the School Holidays topic.",
+        "Mention the life skills developed through the topic.",
+        "What communication skills should learners develop?",
+        "What critical-thinking skills are developed?",
+        "What friendship skills are developed?"
        ],
        "start": 1
       }
@@ -634,57 +2165,311 @@
       {
        "t": "ol",
        "items": [
-        "**aren't you?**",
-        "**did she?**",
-        "**shall we?**",
-        "Maria said that **she was going to visit her aunt**.",
-        "The children said that **they would board the bus at six o'clock**.",
-        "*\"I enjoyed the trip,\"* **he said**. (Also acceptable: *\"I have enjoyed the trip,\" he said.*)",
-        "**had known**",
-        "**would have passed**",
-        "care → **careful** (or careless); beauty → **beautiful**; friend → **friendly**; excite → **exciting** (or excited).",
-        "The journey was very **tiring** and we were all **tired**.",
-        "**The pupils swept the compound.**",
-        "**I am going to visit my grandparents next holiday.**",
-        "A **pen pal**.",
-        "**Remedial classes.**",
-        "*Learner's sentence,* for example: *The lessons will **commence** at eight o'clock.*",
-        "**Having finished his chores, he went to play.**",
-        "*Up-country* means away from the city, in the villages. Example: *My father travelled **up-country** to see his parents.*",
-        "*Learner's answer.* Each sentence must use \"am/is/are going to\" + verb, for example: *I **am going to** help my mother in the garden.*",
-        "*Learner's paragraph.* It should be in the **past tense**, in one paragraph, with a topic sentence, correct punctuation and capital letters.",
-        "In **direct speech** the exact words are used and put in quotation marks, while in **reported speech** the words are not exact and there are no quotation marks; in reported speech the **tense moves one step back** and words such as *today, here, this* change to *that day, there, that*."
+        "Holiday Plans and Holiday Activities.",
+        "It equips learners with language skills and values that help them interact effectively with others during holiday situations.",
+        "An arrangement of activities a learner intends to carry out during a holiday.",
+        "Study, visiting relatives, travelling, household chores and recreation.",
+        "A planned list of activities and their times.",
+        "An additional lesson designed to help learners improve areas where they have difficulties.",
+        "Urban refers to towns and cities, while rural refers to countryside areas.",
+        "To begin.",
+        "To get onto a means of transport.",
+        "Something a learner does during a school holiday.",
+        "Studying, visiting relatives, farming, travelling, cooking and playing games.",
+        "Regular small jobs that need to be done.",
+        "To develop responsibility, cooperation and useful life skills.",
+        "A regular pattern of activities.",
+        "A journey made to visit different places.",
+        "A public performance of music.",
+        "An informal party or celebration.",
+        "Money paid for travelling.",
+        "am/is/are going to + verb.",
+        "I am going to visit my aunt next holiday.",
+        "A short question added to the end of a statement.",
+        "won't you?",
+        "It is used to report what someone said without giving the exact words.",
+        "John said that he was going to visit his uncle.",
+        "A verb form usually ending in -ing.",
+        "Travelling and studying.",
+        "A sentence structure in which the subject performs the action.",
+        "Mary cleaned the house.",
+        "It is used to talk about unreal or imagined past situations and their possible results.",
+        "If + past perfect, would have + past participle.",
+        "would.",
+        "A word that describes a noun.",
+        "Interesting, exciting and enjoyable.",
+        "Working together to achieve a common goal.",
+        "Responsibility, cooperation, sharing, care, respect and love.",
+        "Effective communication, creative thinking, critical thinking, interpersonal relationships and friendship formation.",
+        "Fluency, confidence, accuracy and logical presentation of ideas.",
+        "Responding appropriately to questions, giving reasons for actions, making good use of available information and analysing statements.",
+        "Sharing, playing with others and working in groups."
        ],
        "start": 1
       }
      ]
     },
     {
-     "title": "P.7 QUICK REVISION",
+     "title": "KEY DEFINITIONS",
      "blocks": [
       {
-       "t": "ul",
-       "items": [
-        "Question tags: **positive → negative**, negative → positive · *I am…, **aren't I?***",
-        "Reported speech: tense **one step back**, change time and place words",
-        "**If 3**: *If + had + p.p. , would have + p.p.* (about the past that did not happen)",
-        "Participles: **-ing** (present) · **-ed / irregular** (past) · **having + p.p.** (perfect)",
-        "**-ing** describes the thing · **-ed** describes the person",
-        "Holiday composition: title · introduction · body in paragraphs · conclusion · past tense"
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Holiday",
+         "A period away from normal school activities"
+        ],
+        [
+         "Vacation",
+         "A period away from normal school or work"
+        ],
+        [
+         "Travel",
+         "To move from one place to another"
+        ],
+        [
+         "Plan",
+         "An arrangement of what one intends to do"
+        ],
+        [
+         "Prepare",
+         "To get ready for something"
+        ],
+        [
+         "Relatives",
+         "Members of one's family"
+        ],
+        [
+         "Pen pals",
+         "People who communicate regularly through letters or messages"
+        ],
+        [
+         "Up-country",
+         "Places outside the main town or city where one lives"
+        ],
+        [
+         "Town",
+         "A built-up settlement larger than a village"
+        ],
+        [
+         "Urban",
+         "Related to towns and cities"
+        ],
+        [
+         "Rural",
+         "Related to the countryside"
+        ],
+        [
+         "Commence",
+         "To begin or start"
+        ],
+        [
+         "Board",
+         "To get onto a means of transport"
+        ],
+        [
+         "Programme",
+         "A planned list of activities and their times"
+        ],
+        [
+         "Birthday",
+         "The yearly celebration of the day a person was born"
+        ],
+        [
+         "Farm",
+         "Land used for crops or animals"
+        ],
+        [
+         "Tour",
+         "A journey to visit different places"
+        ],
+        [
+         "Camp",
+         "A place or organised activity where people stay temporarily"
+        ],
+        [
+         "Concert",
+         "A public musical performance"
+        ],
+        [
+         "Show",
+         "An organised performance or event"
+        ],
+        [
+         "Revise",
+         "To study something again"
+        ],
+        [
+         "Housework",
+         "Work done to maintain a home"
+        ],
+        [
+         "Trip",
+         "A journey to a place and usually back again"
+        ],
+        [
+         "Enjoy",
+         "To get pleasure from something"
+        ],
+        [
+         "Interesting",
+         "Attracting attention because something is enjoyable"
+        ],
+        [
+         "Exciting",
+         "Causing great interest or enthusiasm"
+        ],
+        [
+         "Report",
+         "An account giving information about something"
+        ],
+        [
+         "Chores",
+         "Regular small jobs done especially at home"
+        ],
+        [
+         "Routine",
+         "A regular pattern of activities"
+        ],
+        [
+         "Bash",
+         "An informal party or celebration"
+        ],
+        [
+         "Fare",
+         "Money paid for travelling"
+        ],
+        [
+         "Remedial classes",
+         "Extra lessons to help learners improve"
+        ]
        ]
       }
      ]
     },
     {
-     "title": "A note on sources",
+     "title": "IMPORTANT LANGUAGE AREAS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Holiday plans",
+        "Holiday activities",
+        "Near future using **going to**",
+        "Question tags",
+        "Reported speech",
+        "Participle tense",
+        "Formation of adjectives",
+        "Active voice",
+        "Third conditional",
+        "Holiday vocabulary",
+        "Asking and answering questions",
+        "Listening comprehension",
+        "Reading comprehension",
+        "Storytelling",
+        "Dialogue",
+        "Poetry",
+        "Guided composition",
+        "Spelling",
+        "Logical presentation of ideas",
+        "Appropriate use of vocabulary and structures"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "A **holiday plan** is what a person **intends** to do; a **holiday activity** is what is **actually done** during the holiday.",
+        "The near future structure is **am/is/are going to + verb**; negative: **am/is/are + not + going to + verb**.",
+        "A **positive statement** takes a **negative tag**; a **negative statement** takes a **positive tag**.",
+        "*You will go to the village next week, **won't you?*** is the topic's question-tag example.",
+        "**Reported speech** repeats what someone said without the exact words; **\"am going to\"** becomes **\"was going to\"** in reported speech.",
+        "The **present participle** ends in **-ing** (travelling, revising); the **past participle** (visited, written) forms perfect tenses and passive voice.",
+        "Adjectives are formed by suffixes: **care → careful**, **interest → interesting**, **excitement → exciting**.",
+        "In the **active voice** the **subject performs the action**: *Peter cleaned the house.*",
+        "The **third conditional** = **If + past perfect, would have + past participle** — an unreal past.",
+        "**Up-country** = places outside the main town or city; **urban** = towns and cities; **rural** = countryside.",
+        "**Remedial classes** are **additional lessons** for learners who need more practice.",
+        "The values of the topic are **responsibility, cooperation, sharing, care, respect and love**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Expect **question-tag** gaps: *John will visit his grandmother, **won't he?** / They will travel tomorrow, **won't they?***",
+        "Expect **reported speech** changes: *\"I am going to visit my uncle\"* → **he was going to visit his uncle**; *\"I will visit\"* → **he would visit**.",
+        "Expect **going to** in the three forms: positive (*is going to attend*), negative (*am not going to travel*), question (*Are you going to visit…?*).",
+        "Expect **participle** naming: present participles end in **-ing** (travelling, studying); past participles include **written, eaten, gone, seen**.",
+        "Expect **adjective formation**: care → **careful**, interest → **interesting**, excitement → **exciting**.",
+        "Expect **active voice** changes: *\"The farm was visited by John.\"* → **John visited the farm.**",
+        "Expect **If 3** gaps filled with **would** or **have**.",
+        "Expect **vocabulary meanings**: commence = **to begin**, fare = **money paid for travelling**, bash = **an informal party**, chores = **regular small jobs**.",
+        "Question words to expect: **Mention… State… Give… Make a sentence… Change… Complete… Add the correct tag… Identify…**"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "MAIN SKILLS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Describe holiday plans.",
+        "Use appropriate language when talking about holiday plans.",
+        "Narrate stories about holiday plans.",
+        "Read texts about holiday plans.",
+        "Write texts about holiday plans.",
+        "Describe holiday activities.",
+        "Use appropriate language to describe activities and actions.",
+        "Narrate holiday stories fluently and intelligently.",
+        "Read texts about holiday activities.",
+        "Write texts about holiday activities.",
+        "Ask and answer questions about holidays.",
+        "Listen to and answer questions about holiday texts.",
+        "Spell holiday vocabulary correctly.",
+        "Write and recite poems about holidays.",
+        "Act dialogues about holidays.",
+        "Write holiday plans.",
+        "Write guided compositions about holiday activities.",
+        "Complete puzzles and riddles related to holidays.",
+        "Write and tell stories about holiday plans.",
+        "Write and tell stories about holiday activities.",
+        "Use the near future correctly.",
+        "Use question tags correctly.",
+        "Use reported speech correctly.",
+        "Use participles correctly.",
+        "Form and use adjectives correctly.",
+        "Use the active voice correctly.",
+        "Use the third conditional correctly.",
+        "Demonstrate responsibility and cooperation.",
+        "Share and care for others.",
+        "Show respect and love in relationships."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "A NOTE ON SOURCES",
      "blocks": [
       {
        "t": "p",
-       "x": "The topic title, sub-topics, vocabulary list, language structures, grammar items, competences and teacher guidance above were taken from the official **NCDC Primary Seven Curriculum, Set One** (topic outline page 30 and pages 32–35 of the PDF in `curriculum/`). The explanations, tables, examples, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
-      },
-      {
-       "t": "p",
-       "x": "No NCDC **Teacher's Guide** was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+       "x": "The question-and-answer content of this topic (sections A–V, the revision questions and answers, the key vocabulary, language areas and main skills) was supplied by the app owner as the authoritative notes for **Topic 1: School Holidays** and is reproduced here in the app's format with its continuous numbering (1–245) preserved. The topic aligns with the official **NCDC Primary Seven Curriculum, Set One**, English Topic 1 — School Holidays, 30 periods (`curriculum/PRIMARY-SEVEN-SET-ONE.pdf`, pages 32–35): the syllabus vocabulary, the structures *going to*, question tags and reported speech, the grammar items (participles, adjectives, active voice, third conditional) and the values and life skills all match the syllabus table, and the example *\"If I had seen him in the holiday, he would have given me money\"* is the syllabus's own. No additional curriculum content has been invented."
       }
      ]
     }
