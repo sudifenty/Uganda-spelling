@@ -3,268 +3,359 @@
 # TOPIC 1: SAFETY ON THE ROAD
 
 *Curriculum reference: NCDC Primary Six Curriculum, Set One, English Topic 1, 36 periods
-(`curriculum/P6-SET-ONE-2010.pdf`, topic outline page 24 and pages 26–29).
-Sub-topics: **1A Safety on the Road (18 periods)** and **1B Traffic Dangers (18 periods)**.*
+(`curriculum/P6-SET-ONE-2010.pdf`, pages 26–29). The study content below was provided
+by the app owner and replaces the earlier version of this topic.*
 
-**What you already know:** In P.1 and P.2 you learnt about accidents, safety and transport.
-In P.6 you learn the **English used to talk about road safety** — the vocabulary, the
-must/should structures, adjectives and adverbs, and the conjunctions *when, because* and
-*so … that*.
+**What you already know:** In P.1 and P.2 you learnt about accidents, safety and
+transport. In P.6 you study **Safety on the Road** — who uses the road, how each road
+user stays safe, the main road signs, traffic lights, safe crossing, and how road
+accidents are caused, prevented and why road safety matters.
 
 **By the end of this topic you should be able to:**
 
-- use road-safety vocabulary correctly
-- describe how to use the road safely
-- pronounce and write words with the **'l'** and **'r'** sounds correctly
-- use *must, mustn't … unless, should not, as soon as, may, should always*
-- use *because, when, so … that* to give reasons
-- read and write texts, poems and dialogues about road safety
+- say what road safety and a road user are
+- name the road users and the safety rules for each of them
+- name and describe the three main types of road signs
+- say what the red, yellow and green traffic lights mean
+- describe a safe way of crossing a road
+- state the causes and effects of road accidents and how to prevent them
 
----
+## MEANING OF ROAD SAFETY
 
-## SUB-TOPIC 1A: SAFETY ON THE ROAD
+**Road safety** refers to the measures taken to prevent accidents and protect people
+using roads.
 
-### Vocabulary from the syllabus
+People who use roads are called **road users**.
 
-| Word | Meaning |
-|---|---|
-| pedestrian | A person walking along or crossing a road |
-| zebra crossing | The black and white stripes where pedestrians cross |
-| traffic | The vehicles and people moving on a road |
-| traffic jam | A long line of vehicles that can hardly move |
-| cyclist | A person riding a bicycle |
-| motorist | A person driving a motor vehicle |
-| signal | A sign given to show what one is about to do |
-| sign post | A board at the roadside giving information or warning |
-| rail crossing | The place where a road crosses a railway line |
-| black spot | A place where accidents happen very often |
-| seat belt | The belt that holds a person safely in a vehicle |
-| helmet | The hard hat worn by a rider for protection |
+Examples of road users:
 
-### Rules for using the road safely
+- Pedestrians
+- Drivers
+- Passengers
+- Cyclists
+- Motorcyclists
+- Animal handlers
 
-Walk on the **right-hand side** facing oncoming traffic where there is no pavement · use a
-**side path or pavement** where there is one · **look right, look left and look right
-again** before crossing · cross at the **zebra crossing** or where you can see clearly ·
-never cross in front of or behind a parked vehicle · never play or run in the road · wear
-**bright clothing** at night · obey the **traffic police** and the traffic lights · wear a
-**seat belt** in a vehicle and a **helmet** on a motorcycle · never board or leave a moving
-vehicle · do not put your hand or head out of a moving vehicle.
+## ROAD USERS
 
-### Language structures
+### 1. Pedestrians
 
-| Structure | Example |
-|---|---|
-| **… as soon as …** | *The boy crossed the road **as soon as** it was clear.* |
-| **… must …** | *Drivers **must** signal at junctions.* |
-| **… should not …** | *Children **should not** play in the road.* |
-| **… mustn't … unless …** | *You **mustn't** cross the road **unless** it is clear.* |
+A **pedestrian** is a person who walks along or crosses a road.
 
-**Note:** *must* shows a **strong duty or rule**; *mustn't* is a **prohibition**;
-*should not* is strong advice. After *unless* we use the **positive** form —
-*unless it **is** clear*, never "unless it isn't clear".
+Safety rules for pedestrians:
 
-### Grammar focus 1: adjectives and adverbs
+- Walk on the **right side of the road** where there is no footpath, facing oncoming traffic.
+- Use a **footpath or pavement** where it is provided.
+- Cross the road at a **zebra crossing, pedestrian crossing or other safe place**.
+- Look **right, left and right again** before crossing where traffic approaches from the right.
+- Do not run across the road.
+- Do not play on the road.
+- Obey traffic lights and road signs.
+- Wear bright or reflective clothing when walking at night.
+- Avoid using a phone or wearing earphones while crossing the road.
+- Hold young children's hands when crossing busy roads.
 
-| Adjective (describes a noun) | Adverb (describes a verb) |
-|---|---|
-| a **careless** driver | he drove **carelessly** |
-| a **quick** cyclist | she rode **quickly** |
-| a **heavy** lorry | it moved **heavily** |
-| a **good** driver | he drives **well** |
-| a **fast** vehicle | it moves **fast** |
+### 2. Drivers
 
-### Grammar focus 2: the 'l' and 'r' sounds
+A **driver** is a person who controls and operates a vehicle.
 
-Many learners confuse these two sounds. Practise the pairs aloud:
+Safety rules for drivers:
 
-| 'l' | 'r' |
-|---|---|
-| light | right |
-| lane | rain |
-| load | road |
-| collect | correct |
-| play | pray |
-| glass | grass |
-| lice | rice |
-| belly | berry |
+- Obey traffic rules and road signs.
+- Drive at a safe speed.
+- Do not drive when drunk or under the influence of drugs.
+- Do not use a mobile phone while driving.
+- Wear a seat belt.
+- Keep the vehicle in good mechanical condition.
+- Do not overload the vehicle.
+- Give way to pedestrians at designated crossings.
+- Keep a safe distance from other vehicles.
+- Do not overtake where it is dangerous.
+- Use indicators when turning or changing lanes.
 
-*Practice sentence:* **"The lorry driver turned right at the rail crossing and lit his
-lights."**
+### 3. Passengers
 
----
+A **passenger** is a person travelling in a vehicle but is not controlling it.
 
-## SUB-TOPIC 1B: TRAFFIC DANGERS
+Safety rules for passengers:
 
-### Vocabulary from the syllabus
+- Wear a seat belt where one is provided.
+- Sit properly in the vehicle.
+- Do not distract the driver.
+- Do not put your head or hands outside the vehicle.
+- Do not jump on or off a moving vehicle.
+- Do not stand in a moving vehicle unless the vehicle is designed for standing passengers.
+- Do not overload the vehicle.
+- Children should use appropriate child restraints where available.
 
-| Word | Meaning |
-|---|---|
-| cross road | A place where two roads cross each other |
-| roundabout | A circular junction round which traffic moves |
-| junction | A place where roads meet |
-| traffic lights | The red, amber and green lights controlling traffic |
-| side path | The path at the side of the road for pedestrians |
-| island | The raised part in the middle of a road where pedestrians can wait |
-| road humps | Raised bars across the road to slow vehicles |
-| Highway Code | The book of rules for using roads |
-| first aid | The first help given to an injured person |
-| careless / careful | Without care / with care |
+### 4. Cyclists
 
-### The traffic lights
+A **cyclist** is a person who rides a bicycle.
 
-| Light | Meaning |
-|---|---|
-| **Red** | **Stop** |
-| **Amber (yellow)** | Get ready — stop if you can, or prepare to move |
-| **Green** | **Go**, if the way is clear |
+Safety rules for cyclists:
 
-### Causes of road accidents
+- Wear a properly fitted helmet.
+- Ride on the correct side of the road.
+- Obey traffic signs and signals.
+- Use hand signals when turning.
+- Keep the bicycle in good condition.
+- Use lights or reflectors when riding at night.
+- Do not carry too many passengers.
+- Do not ride while using a mobile phone.
+- Avoid riding at excessive speed.
+- Keep both hands available for controlling the bicycle when necessary.
 
-Careless and **over-speeding** drivers · **drunken driving** · using a phone while driving ·
-**poor vehicles** — bad brakes and worn tyres · **bad roads** with potholes, no humps or no
-markings · careless pedestrians crossing without looking · children playing in the road ·
-overloading vehicles · driving at night without lights · animals straying onto the road ·
-riding without a helmet · ignoring road signs and traffic lights.
+### 5. Motorcyclists
 
-### What to do at the scene of an accident
+A **motorcyclist** is a person who rides a motorcycle.
 
-Keep calm and **call for help** — shout, or ring the police or an ambulance · do not crowd
-around the injured · give **first aid** if you know how · do not move a badly injured person
-carelessly · take the injured to hospital quickly · report to the **police**.
+Safety rules for motorcyclists:
 
-### Language structures
+- Wear a properly fitted helmet.
+- Obey traffic rules and road signs.
+- Ride at a safe speed.
+- Keep the motorcycle in good condition.
+- Do not ride under the influence of alcohol or drugs.
+- Do not use a mobile phone while riding.
+- Do not carry more passengers than the motorcycle is designed to carry.
+- Use indicators when turning.
+- Wear visible or reflective clothing, especially at night.
 
-| Structure | Example |
-|---|---|
-| **… so … that …** | *The driver was **so** careless **that** he caused the accident.* |
-| **… so …** | *It became dark, **so** he turned on the headlights.* |
-| **… because …** | *Trudy was knocked down by the car **because** she crossed the road carelessly.* |
-| **… may …** | *You **may** get an accident if you don't use a side path.* |
-| **… should always …** | *We **should always** be aware of the Highway Code.* |
+## ROAD SIGNS
 
-### Grammar focus 3: conjunctions *when* and *because*
+**Road signs** are signs placed along roads to give information, warnings or
+instructions to road users.
 
-- **When** joins ideas by **time**: *He stopped **when** the light turned red.*
-- **Because** gives the **reason**: *He stopped **because** the light turned red.*
+### 1. Warning signs
 
-**Careful:** write one sentence, not two. *"He stopped. Because the light was red."* is
-wrong — join them: *He stopped **because** the light was red.*
+These signs warn road users about possible dangers ahead.
 
----
+Examples:
 
-# KEY DEFINITIONS
+- Sharp bend
+- Dangerous junction
+- Children crossing
+- Pedestrian crossing
+- Road works
+- Hump ahead
+- Railway crossing
+
+### 2. Regulatory signs
+
+These signs give instructions or restrictions that road users must obey.
+
+Examples:
+
+- Stop
+- No entry
+- No parking
+- Speed limit
+- No overtaking
+- Give way
+
+### 3. Information signs
+
+These signs provide useful information to road users.
+
+Examples:
+
+- Hospital
+- Bus stop
+- Parking area
+- Telephone
+- Petrol station
+
+## TRAFFIC LIGHTS
+
+**Traffic lights** are signals used to control the movement of road users.
+
+**Red light** — **STOP.**
+
+**Yellow/amber light** — **Prepare to stop** or proceed only according to the
+applicable traffic signal.
+
+**Green light** — **GO** when the way is clear and it is safe to proceed.
+
+## SAFE ROAD CROSSING
+
+A safe way of crossing a road is:
+
+1. Stop at the edge of the road.
+2. Look **right**.
+3. Look **left**.
+4. Look **right again**.
+5. Listen for approaching vehicles.
+6. Cross when the road is clear and it is safe.
+7. Keep looking and listening while crossing.
+8. Cross directly without running.
+
+Places where pedestrians can cross:
+
+- Zebra crossings
+- Pedestrian crossings
+- Footbridges
+- Pedestrian underpasses
+- Traffic-light controlled crossings
+
+## CAUSES OF ROAD ACCIDENTS
+
+Road accidents may be caused by:
+
+- Over-speeding
+- Driving while drunk
+- Reckless driving
+- Using a mobile phone while driving
+- Overtaking in dangerous places
+- Failure to obey traffic rules
+- Poorly maintained vehicles
+- Poor road conditions
+- Crossing roads carelessly
+- Overloading vehicles
+- Driving while tired or sleepy
+- Poor visibility
+- Failure to use safety equipment such as helmets and seat belts
+
+## EFFECTS OF ROAD ACCIDENTS
+
+Road accidents can lead to:
+
+- Death
+- Injuries
+- Disability
+- Damage to vehicles
+- Damage to property
+- Loss of income
+- Loss of family members
+- High medical expenses
+- Traffic congestion
+- Emotional suffering
+
+## WAYS OF PREVENTING ROAD ACCIDENTS
+
+Road accidents can be reduced by:
+
+- Obeying traffic rules.
+- Avoiding over-speeding.
+- Avoiding drunk driving.
+- Wearing seat belts.
+- Wearing helmets when riding motorcycles and bicycles.
+- Maintaining vehicles properly.
+- Avoiding mobile-phone use while driving or crossing roads.
+- Using pedestrian crossings.
+- Providing proper road signs.
+- Improving road conditions.
+- Avoiding overloading.
+- Educating road users about road safety.
+- Ensuring drivers are properly trained and licensed.
+- Providing street lighting in appropriate places.
+
+## IMPORTANCE OF ROAD SAFETY
+
+Road safety is important because it:
+
+- Prevents road accidents.
+- Saves people's lives.
+- Reduces injuries and disabilities.
+- Protects property.
+- Reduces medical expenses.
+- Reduces traffic congestion caused by accidents.
+- Helps people use roads safely.
+- Promotes responsible behaviour among road users.
+
+## KEY DEFINITIONS (IMPORTANT TERMS)
 
 | Term | Meaning |
 |---|---|
-| Pedestrian | A person walking along or crossing a road |
-| Zebra crossing | The striped place where pedestrians cross |
-| Junction | A place where roads meet |
-| Roundabout | A circular junction round which traffic moves |
-| Black spot | A place where accidents happen very often |
-| Highway Code | The book of rules for using the road |
-| First aid | The first help given to an injured person |
-| Adjective | A word that describes a noun |
-| Adverb | A word that tells how, when or where an action is done |
-| Conjunction | A word that joins parts of a sentence |
+| Road safety | Measures taken to prevent road accidents and protect road users. |
+| Road user | Any person who uses a road. |
+| Pedestrian | A person who walks along or crosses a road. |
+| Driver | A person who operates a vehicle. |
+| Passenger | A person travelling in a vehicle without controlling it. |
+| Cyclist | A person who rides a bicycle. |
+| Motorcyclist | A person who rides a motorcycle. |
+| Road accident | An unexpected event involving road users or vehicles that may cause injury, death or damage. |
+| Road sign | A sign placed on or near a road to give warnings, instructions or information. |
+| Traffic lights | Signals used to control the movement of road users and vehicles. |
+| Zebra crossing | A marked part of a road where pedestrians can cross safely. |
+| Helmet | Protective headgear worn by cyclists and motorcyclists. |
+| Seat belt | A safety device used to secure a person in a vehicle. |
 
----
+## IMPORTANT FACTS TO REMEMBER
 
-# IMPORTANT FACTS TO REMEMBER
+- Road safety protects **all** road users: pedestrians, drivers, passengers, cyclists, motorcyclists and animal handlers.
+- A pedestrian with no footpath walks on the **right side**, facing oncoming traffic.
+- The safe crossing drill is: **stop, look right, look left, look right again, listen, then cross** without running.
+- Road signs come in three types: **warning**, **regulatory** and **information** signs.
+- Traffic lights mean: **red — stop**, **yellow/amber — prepare to stop**, **green — go** when safe.
+- Helmets protect the heads of cyclists and motorcyclists; seat belts secure drivers and passengers.
+- Most road accidents come from human mistakes such as over-speeding, drunk driving and phone use, so most can be prevented.
 
-- **Red = stop · Amber = get ready · Green = go** when clear.
-- **Look right, left and right again** before crossing.
-- Walk facing **oncoming traffic** where there is no pavement.
-- **Must** = a rule; **mustn't** = forbidden; **should** = strong advice.
-- After **unless**, use the **positive** form.
-- Adjectives describe **nouns**; adverbs describe **verbs** and usually end in **-ly**.
-- **Because** gives a reason; **when** gives the time.
-- The book of road rules is the **Highway Code**.
+## EXAMINATION POINTS
 
----
+- Expect definition questions on **road safety, road user, pedestrian, zebra crossing, traffic lights** — learn the KEY DEFINITIONS word for word.
+- List questions love **safety rules**: be ready to give four rules each for pedestrians, drivers, passengers and cyclists.
+- Classify any named sign as **warning, regulatory or information** — e.g. *Stop* is regulatory, *Sharp bend* is warning, *Hospital* is information.
+- For causes, effects and prevention of accidents, write one point per line and match each cause with its prevention (drunk driving → avoid drunk driving).
+- In a crossing question, the order of looking (**right, left, right again**) earns marks — do not change it.
 
-# EXAMINATION POINTS
+## REVISION QUESTIONS
 
-- *You mustn't cross the road ____ it is clear.* → **unless**
-- *The driver was so careless ____ he caused an accident.* → **that**
-- *Trudy was knocked down ____ she crossed carelessly.* → **because**
-- Give one word for: a place where accidents happen very often → **black spot**.
-- Give one word for: a person walking on the road → **pedestrian**.
-- Adverb from *careless* → **carelessly**; from *good* → **well**.
-- What the amber light means → get ready to stop or move.
+1. What is road safety?
+2. Who is a road user?
+3. Mention four examples of road users.
+4. Who is a pedestrian?
+5. State four safety rules for pedestrians.
+6. Why should pedestrians avoid playing on the road?
+7. Who is a driver?
+8. Give four safety rules for drivers.
+9. Why should drivers avoid using mobile phones while driving?
+10. Who is a passenger?
+11. State four safety rules for passengers.
+12. Mention four safety rules for cyclists.
+13. Why should motorcyclists wear helmets?
+14. What are road signs?
+15. Name the three main types of road signs.
+16. Give three examples of warning signs.
+17. Give three examples of regulatory signs.
+18. Give three examples of information signs.
+19. What does a red traffic light mean?
+20. What does a green traffic light mean?
+21. Mention four causes of road accidents.
+22. State four effects of road accidents.
+23. Give five ways of preventing road accidents.
+24. Why is road safety important?
+25. What is a zebra crossing?
 
----
+## ANSWERS TO REVISION QUESTIONS
 
-# COMMON MISTAKES TO AVOID
+1. Road safety is the measures taken to prevent accidents and protect people using roads.
+2. A road user is any person who uses a road, such as a pedestrian, driver, passenger, cyclist, motorcyclist or animal handler.
+3. Pedestrians, drivers, passengers and cyclists (also motorcyclists and animal handlers).
+4. A pedestrian is a person who walks along or crosses a road.
+5. Any four: walk on the right side facing traffic where there is no footpath; use a footpath where provided; cross at a zebra crossing; look right, left and right again; do not run or play on the road; obey traffic lights and signs; wear bright clothing at night.
+6. Because a child playing on the road is not watching traffic and can easily be knocked down by a vehicle; roads are for vehicles, not for games.
+7. A driver is a person who controls and operates a vehicle.
+8. Any four: obey traffic rules and signs; drive at a safe speed; do not drive when drunk; do not use a mobile phone; wear a seat belt; keep the vehicle in good condition; do not overload.
+9. Because a mobile phone takes the driver's attention off the road and can cause an accident.
+10. A passenger is a person travelling in a vehicle but not controlling it.
+11. Any four: wear a seat belt; sit properly; do not distract the driver; do not put the head or hands outside; do not jump on or off a moving vehicle.
+12. Any four: wear a properly fitted helmet; ride on the correct side; obey traffic signs; use hand signals when turning; keep the bicycle in good condition; use lights at night.
+13. To protect the head from injury if an accident happens.
+14. Road signs are signs placed along roads to give information, warnings or instructions to road users.
+15. Warning signs, regulatory signs and information signs.
+16. Any three: sharp bend, dangerous junction, children crossing, pedestrian crossing, road works, hump ahead, railway crossing.
+17. Any three: stop, no entry, no parking, speed limit, no overtaking, give way.
+18. Any three: hospital, bus stop, parking area, telephone, petrol station.
+19. A red light means STOP.
+20. A green light means GO when the way is clear and it is safe to proceed.
+21. Any four: over-speeding; driving while drunk; reckless driving; using a mobile phone while driving; overtaking in dangerous places; poorly maintained vehicles; crossing roads carelessly; overloading.
+22. Any four: death; injuries; disability; damage to vehicles and property; loss of income; high medical expenses; traffic congestion; emotional suffering.
+23. Any five: obeying traffic rules; avoiding over-speeding and drunk driving; wearing seat belts and helmets; maintaining vehicles; using pedestrian crossings; providing proper road signs; improving road conditions; avoiding overloading.
+24. Because it prevents accidents, saves lives, reduces injuries and medical expenses, protects property and helps people use roads safely.
+25. A zebra crossing is a marked part of a road where pedestrians can cross safely.
 
-- Writing *"unless it isn't clear"* — after **unless** use the positive.
-- Using an adjective for an adverb: *"He drove careless"* → *he drove **carelessly***.
-- Starting a sentence with *Because* and leaving it incomplete.
-- Confusing **l** and **r**: *"lice"* for *rice*, *"pray"* for *play*.
-- Writing *"traffic jam"* when you mean *traffic lights*.
+## A NOTE ON SOURCES
 
----
-
-# REVISION QUESTIONS
-
-1. Give the meaning of: pedestrian, zebra crossing, black spot, Highway Code.
-2. What do the red, amber and green traffic lights mean?
-3. Give any six rules of using the road safely.
-4. Give any six causes of road accidents.
-5. Say what should be done at the scene of an accident.
-6. Complete: *You mustn't cross the road ____ it is clear.*
-7. Complete: *The boy crossed the road ____ ____ ____ it was clear.* (three words)
-8. Complete: *Drivers ____ signal at junctions.*
-9. Join using *because*: *Trudy was knocked down by a car. She crossed carelessly.*
-10. Join using *so … that*: *The driver was very careless. He caused an accident.*
-11. Join using *when*: *He stopped. The light turned red.*
-12. Give the adverbs formed from: careless, quick, heavy, good, angry.
-13. Write the pairs correctly: l____ and r____ (light/right); g____ and g____ (glass/grass).
-14. Use *should always* in a sentence about the Highway Code.
-15. Write a short paragraph (about six sentences) advising P.3 pupils on how to cross the road safely.
-
----
-
-# ANSWERS TO REVISION QUESTIONS
-
-1. **Pedestrian** — a person walking along or crossing a road; **zebra crossing** — the striped place where pedestrians cross; **black spot** — a place where accidents happen very often; **Highway Code** — the book of rules for using roads.
-2. **Red** — stop; **amber** — get ready, stop if you can or prepare to move; **green** — go if the way is clear.
-3. Any six of: walk on a side path or facing oncoming traffic; look right, left and right again before crossing; cross at the zebra crossing; never cross in front of a parked vehicle; never play in the road; wear bright clothes at night; obey the traffic police and lights; wear a seat belt and a helmet; never board a moving vehicle.
-4. Any six of: over-speeding; drunken driving; using a phone while driving; bad brakes and worn tyres; potholed roads; careless pedestrians; children playing in the road; overloading; driving without lights; stray animals; ignoring road signs.
-5. Keep calm and call for help (police or ambulance); do not crowd round the injured; give first aid if you know how; do not move a badly injured person carelessly; take the injured to hospital quickly; report to the police.
-6. **unless**
-7. **as soon as**
-8. **must**
-9. *Trudy was knocked down by a car **because** she crossed carelessly.*
-10. *The driver was **so** careless **that** he caused an accident.*
-11. *He stopped **when** the light turned red.*
-12. careless → **carelessly**; quick → **quickly**; heavy → **heavily**; good → **well**; angry → **angrily**.
-13. **light** and **right**; **glass** and **grass**.
-14. *Learner's sentence,* for example: *We **should always** obey the Highway Code when using the road.*
-15. *Learner's paragraph.* It should be one paragraph, in the present tense, with clear advice such as: stop at the edge, look right, look left and right again, listen, cross quickly but do not run, use the zebra crossing, and never cross in front of a parked vehicle.
-
----
-
-# P.6 QUICK REVISION
-
-- **Red stop · Amber get ready · Green go** · Look **right, left, right**
-- **must** rule · **mustn't … unless (positive)** · **should not** advice
-- Adjective → noun · **Adverb → verb (-ly)**
-- **because** = reason · **when** = time · **so … that** = result
-- Practise **l / r**: light–right, glass–grass, play–pray
-- Accident scene: call for help, first aid, do not crowd, report to police
-
----
-
-## A note on sources
-
-The topic title, sub-topics, vocabulary lists, language structures, grammar items,
-competences and teacher guidance above were taken from the official **NCDC Primary Six
-Curriculum, Set One** (© NCDC 2010; topic outline page 24 and pages 26–29 of the PDF in
-`curriculum/`), including its instruction to teach the difference between the **'l' and
-'r'** sounds. The explanations, tables, examples, exercises and answers are original
-teaching material written for the learner; they are **not** copied from the curriculum
-document or from any textbook.
-
-No NCDC **Teacher's Guide** for P.6 was available, so the syllabus "Guidance to the
-Teacher" was used directly instead.
+*The study content of this topic was provided by the app owner for the P.6 theme
+Safety on the Road (NCDC Primary Six Curriculum, Set One, English Topic 1, pages
+26–29). All revision answers above are drawn from that owner-provided content.*
