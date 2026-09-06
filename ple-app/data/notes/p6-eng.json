@@ -3,7 +3,7 @@
  "subject": "ENG",
  "subject_name": "English",
  "total": 6,
- "words": 17737,
+ "words": 24042,
  "topics": [
   {
    "id": "P6_ENG_T01",
@@ -4968,7 +4968,7 @@
    "slug": "occupations",
    "periods": 36,
    "curriculum_pages": "37–46",
-   "words": 1206,
+   "words": 7511,
    "sections": [
     {
      "title": "About this topic",
@@ -4979,7 +4979,7 @@
       },
       {
        "t": "p",
-       "x": "**What you already know:** You know the work different people in your community do — the farmer, the teacher, the trader. In P.6 you learn what an **occupation** is, the main occupations of Uganda with what each provides, and how people choose one."
+       "x": "**What you already know:** You know the work different people in your community do. In this topic you master the four occupations of the P.6 syllabus — **carpentry, tailoring, baking and keeping animals** — with their tools, processes, vocabulary, language structures and grammar."
       },
       {
        "t": "p",
@@ -4988,298 +4988,2561 @@
       {
        "t": "ul",
        "items": [
-        "say what an occupation is and give examples",
-        "describe the main types of occupations and their importance",
-        "say the factors to consider when choosing an occupation"
+        "describe the four occupations, their tools, materials and processes",
+        "use the vocabulary and language structures of each occupation",
+        "explain the importance of occupations and respect for honest work"
        ]
       }
      ]
     },
     {
-     "title": "MEANING OF AN OCCUPATION",
+     "title": "INTRODUCTION",
      "blocks": [
       {
        "t": "p",
-       "x": "An **occupation** is the work that a person does regularly to earn a living or provide a service."
+       "x": "**1. What is an occupation?**"
       },
       {
        "t": "p",
-       "x": "Examples of occupations include:"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "Farming",
-        "Teaching",
-        "Fishing",
-        "Trading",
-        "Carpentry",
-        "Nursing",
-        "Driving",
-        "Building",
-        "Tailoring",
-        "Banking"
-       ]
-      }
-     ]
-    },
-    {
-     "title": "TYPES OF OCCUPATIONS",
-     "blocks": [
-      {
-       "t": "h3",
-       "x": "1. Farming"
+       "x": "An occupation is a job or activity that a person does regularly to earn a living."
       },
       {
        "t": "p",
-       "x": "**Farming** is the growing of crops and keeping of animals for food, raw materials and income."
+       "x": "**2. What is a profession?**"
       },
       {
        "t": "p",
-       "x": "Examples of farmers:"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "Crop farmers",
-        "Poultry farmers",
-        "Dairy farmers",
-        "Fish farmers",
-        "Pig farmers"
-       ]
+       "x": "A profession is a type of occupation that usually requires specialised education, training or skills."
       },
       {
        "t": "p",
-       "x": "Importance of farming:"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "Provides food.",
-        "Provides employment.",
-        "Provides raw materials for industries.",
-        "Provides income.",
-        "Provides goods for export.",
-        "Supports other businesses."
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "2. Fishing"
+       "x": "**3. What is livelihood?**"
       },
       {
        "t": "p",
-       "x": "**Fishing** is the catching or rearing of fish for food and income."
+       "x": "Livelihood is the way a person earns money or obtains what is needed to live."
       },
       {
        "t": "p",
-       "x": "Importance of fishing:"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "Provides food.",
-        "Provides employment.",
-        "Provides income.",
-        "Provides fish for export.",
-        "Provides raw materials for some industries."
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "3. Trading"
+       "x": "**4. Why do people work?**"
       },
       {
        "t": "p",
-       "x": "**Trading** is the buying and selling of goods and services."
+       "x": "People work to earn a living and to provide for their needs and those of their families."
       },
       {
        "t": "p",
-       "x": "Examples of traders:"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "Shopkeepers",
-        "Wholesalers",
-        "Retailers",
-        "Market vendors"
-       ]
+       "x": "**5. Why is it important to respect different occupations?**"
       },
       {
        "t": "p",
-       "x": "Importance of trading:"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "Provides goods and services.",
-        "Creates employment.",
-        "Provides income.",
-        "Connects producers with consumers.",
-        "Generates government revenue through taxes."
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "4. Teaching"
+       "x": "Every honest occupation contributes to individuals, families and the development of the community."
       },
       {
        "t": "p",
-       "x": "**Teaching** is the process of helping people acquire knowledge, skills and good behaviour."
+       "x": "**6. What occupations are mainly covered under Primary Six Occupations?**"
       },
       {
        "t": "p",
-       "x": "A person who teaches is called a **teacher**."
-      },
-      {
-       "t": "p",
-       "x": "Importance of teaching:"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "Provides education.",
-        "Develops people's skills.",
-        "Prepares people for different occupations.",
-        "Promotes good behaviour.",
-        "Contributes to national development."
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "5. Medicine and Nursing"
-      },
-      {
-       "t": "p",
-       "x": "A **doctor** is a trained person who diagnoses and treats diseases."
-      },
-      {
-       "t": "p",
-       "x": "A **nurse** is a trained health worker who cares for sick and injured people."
-      },
-      {
-       "t": "p",
-       "x": "Importance:"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "Treats sick people.",
-        "Prevents diseases.",
-        "Saves lives.",
-        "Promotes good health.",
-        "Provides health education."
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "6. Carpentry"
-      },
-      {
-       "t": "p",
-       "x": "**Carpentry** is the occupation of making and repairing things mainly from wood."
-      },
-      {
-       "t": "p",
-       "x": "A person who does carpentry is called a **carpenter**."
-      },
-      {
-       "t": "p",
-       "x": "Examples of products made by carpenters:"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "Chairs",
-        "Tables",
-        "Beds",
-        "Doors",
-        "Cupboards"
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "7. Building"
-      },
-      {
-       "t": "p",
-       "x": "**Building** is the occupation of constructing houses and other structures."
-      },
-      {
-       "t": "p",
-       "x": "People involved may include:"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "Builders",
-        "Bricklayers",
-        "Plumbers",
-        "Electricians",
-        "Engineers",
-        "Architects"
-       ]
-      },
-      {
-       "t": "p",
-       "x": "Importance:"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "Provides houses and other buildings.",
-        "Creates employment.",
-        "Provides income.",
-        "Supports economic development."
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "8. Transport"
-      },
-      {
-       "t": "p",
-       "x": "**Transport** involves moving people and goods from one place to another."
-      },
-      {
-       "t": "p",
-       "x": "Examples of transport occupations:"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "Driver",
-        "Pilot",
-        "Sailor",
-        "Mechanic",
-        "Motorcycle rider"
-       ]
-      }
-     ]
-    },
-    {
-     "title": "FACTORS TO CONSIDER WHEN CHOOSING AN OCCUPATION",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "A person may consider:"
+       "x": "They are:"
       },
       {
        "t": "ol",
        "items": [
-        "Ability and talent.",
-        "Level of education.",
-        "Personal interests.",
-        "Skills.",
-        "Availability of employment.",
-        "Income expected.",
-        "Working conditions.",
-        "Availability of training.",
-        "Demand for the occupation.",
-        "Health and physical ability."
+        "Carpentry",
+        "Tailoring",
+        "Baking",
+        "Keeping Animals"
        ],
        "start": 1
+      },
+      {
+       "t": "p",
+       "x": "**7. Which other professions may be discussed under occupations?**"
+      },
+      {
+       "t": "p",
+       "x": "Other professions include teaching, medicine and law."
+      },
+      {
+       "t": "p",
+       "x": "**8. What should we appreciate about occupations?**"
+      },
+      {
+       "t": "p",
+       "x": "We should appreciate the skills, effort and services provided by people in different occupations."
+      }
+     ]
+    },
+    {
+     "title": "PART A: CARPENTRY — INTRODUCTION",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**9. What is carpentry?**"
+      },
+      {
+       "t": "p",
+       "x": "Carpentry is the occupation or skill of making and repairing things mainly from wood."
+      },
+      {
+       "t": "p",
+       "x": "**10. Who is a carpenter?**"
+      },
+      {
+       "t": "p",
+       "x": "A carpenter is a person who makes or repairs wooden objects."
+      },
+      {
+       "t": "p",
+       "x": "**11. What materials does a carpenter mainly work with?**"
+      },
+      {
+       "t": "p",
+       "x": "A carpenter mainly works with wood or timber."
+      },
+      {
+       "t": "p",
+       "x": "**12. What products can a carpenter make?**"
+      },
+      {
+       "t": "p",
+       "x": "A carpenter can make: chairs, tables, beds, doors, windows, cupboards, desks, benches, shelves and stools."
+      },
+      {
+       "t": "p",
+       "x": "**13. What is furniture?**"
+      },
+      {
+       "t": "p",
+       "x": "Furniture refers to movable objects such as chairs, tables, beds and cupboards that are used in homes, offices and other places."
+      },
+      {
+       "t": "p",
+       "x": "**14. What is timber?**"
+      },
+      {
+       "t": "p",
+       "x": "Timber is wood that has been prepared for use in construction or making wooden objects."
+      },
+      {
+       "t": "p",
+       "x": "**15. What is a plank?**"
+      },
+      {
+       "t": "p",
+       "x": "A plank is a long, flat piece of wood."
+      }
+     ]
+    },
+    {
+     "title": "TOOLS USED IN CARPENTRY",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**16. What is a saw?**"
+      },
+      {
+       "t": "p",
+       "x": "A saw is a tool with a toothed blade used for cutting wood."
+      },
+      {
+       "t": "p",
+       "x": "**17. What is a plane?**"
+      },
+      {
+       "t": "p",
+       "x": "A plane is a carpentry tool used for making the surface of wood smooth and even."
+      },
+      {
+       "t": "p",
+       "x": "**18. What is a drill?**"
+      },
+      {
+       "t": "p",
+       "x": "A drill is a tool used for making holes in wood and other materials."
+      },
+      {
+       "t": "p",
+       "x": "**19. What is a hammer?**"
+      },
+      {
+       "t": "p",
+       "x": "A hammer is a tool used mainly for driving nails into wood and for other tasks."
+      },
+      {
+       "t": "p",
+       "x": "**20. What are nails?**"
+      },
+      {
+       "t": "p",
+       "x": "Nails are small metal objects with pointed ends used for joining pieces of wood."
+      },
+      {
+       "t": "p",
+       "x": "**21. What is wood glue?**"
+      },
+      {
+       "t": "p",
+       "x": "Wood glue is an adhesive used to join pieces of wood."
+      },
+      {
+       "t": "p",
+       "x": "**22. What is sandpaper?**"
+      },
+      {
+       "t": "p",
+       "x": "Sandpaper is a rough material used for smoothing wooden surfaces."
+      },
+      {
+       "t": "p",
+       "x": "**23. What is a screwdriver?**"
+      },
+      {
+       "t": "p",
+       "x": "A screwdriver is a tool used for driving or removing screws."
+      },
+      {
+       "t": "p",
+       "x": "**24. What is polish?**"
+      },
+      {
+       "t": "p",
+       "x": "Polish is a substance used to improve the appearance and finish of a surface."
+      },
+      {
+       "t": "p",
+       "x": "**25. What is varnish?**"
+      },
+      {
+       "t": "p",
+       "x": "Varnish is a liquid coating applied to wood to protect it and give it a smooth or shiny finish."
+      },
+      {
+       "t": "p",
+       "x": "**26. What is sawdust?**"
+      },
+      {
+       "t": "p",
+       "x": "Sawdust is the fine waste produced when wood is cut or worked on."
+      },
+      {
+       "t": "p",
+       "x": "**27. What is a workbench?**"
+      },
+      {
+       "t": "p",
+       "x": "A workbench is a strong table on which a carpenter works."
+      },
+      {
+       "t": "p",
+       "x": "**28. Why does a carpenter use a saw?**"
+      },
+      {
+       "t": "p",
+       "x": "A carpenter uses a saw for cutting wood."
+      },
+      {
+       "t": "p",
+       "x": "**29. Why does a carpenter use a plane?**"
+      },
+      {
+       "t": "p",
+       "x": "A carpenter uses a plane for smoothing wood."
+      },
+      {
+       "t": "p",
+       "x": "**30. Why does a carpenter use a hammer?**"
+      },
+      {
+       "t": "p",
+       "x": "A carpenter uses a hammer for driving nails and carrying out other tasks."
+      },
+      {
+       "t": "p",
+       "x": "**31. Why does a carpenter use sandpaper?**"
+      },
+      {
+       "t": "p",
+       "x": "A carpenter uses sandpaper for smoothing wooden surfaces."
+      },
+      {
+       "t": "p",
+       "x": "**32. Why does a carpenter use a screwdriver?**"
+      },
+      {
+       "t": "p",
+       "x": "A carpenter uses a screwdriver for fixing and removing screws."
+      }
+     ]
+    },
+    {
+     "title": "PROCESSES IN CARPENTRY",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**33. What is the first thing a carpenter should do before making an object?**"
+      },
+      {
+       "t": "p",
+       "x": "The carpenter should plan and measure the materials needed."
+      },
+      {
+       "t": "p",
+       "x": "**34. Why does a carpenter measure wood?**"
+      },
+      {
+       "t": "p",
+       "x": "A carpenter measures wood to obtain the correct sizes for the object being made."
+      },
+      {
+       "t": "p",
+       "x": "**35. What happens after measuring the wood?**"
+      },
+      {
+       "t": "p",
+       "x": "The carpenter marks the wood and cuts it into the required pieces."
+      },
+      {
+       "t": "p",
+       "x": "**36. What is done to rough wooden surfaces?**"
+      },
+      {
+       "t": "p",
+       "x": "They are smoothed using a plane and sandpaper."
+      },
+      {
+       "t": "p",
+       "x": "**37. How can pieces of wood be joined?**"
+      },
+      {
+       "t": "p",
+       "x": "They can be joined using nails, screws, wood glue or other suitable methods."
+      },
+      {
+       "t": "p",
+       "x": "**38. Why is wood polished?**"
+      },
+      {
+       "t": "p",
+       "x": "Wood is polished to improve its appearance."
+      },
+      {
+       "t": "p",
+       "x": "**39. Why is varnish applied to wood?**"
+      },
+      {
+       "t": "p",
+       "x": "Varnish helps protect the wood and gives it a good finish."
+      },
+      {
+       "t": "p",
+       "x": "**40. Arrange these activities correctly: cutting, planning, measuring.**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: Measuring, planning/marking and then cutting."
+      },
+      {
+       "t": "p",
+       "x": "**41. What should a carpenter do after assembling a wooden object?**"
+      },
+      {
+       "t": "p",
+       "x": "The carpenter should check it, smooth rough parts and give it a suitable finish."
+      }
+     ]
+    },
+    {
+     "title": "CARPENTRY LANGUAGE STRUCTURES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**42. How is \"used for\" used?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Used for\" is used to explain the purpose of something."
+      },
+      {
+       "t": "p",
+       "x": "**43. Give an example using \"used for\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"A saw is used for cutting wood.\""
+      },
+      {
+       "t": "p",
+       "x": "**44. Complete the sentence: \"A hammer is used for ______.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"A hammer is used for driving nails.\""
+      },
+      {
+       "t": "p",
+       "x": "**45. Complete the sentence: \"Sandpaper is used for ______.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"Sandpaper is used for smoothing wood.\""
+      },
+      {
+       "t": "p",
+       "x": "**46. What is the purpose of \"first, next, then\"?**"
+      },
+      {
+       "t": "p",
+       "x": "These words are used to show the order in which activities happen."
+      },
+      {
+       "t": "p",
+       "x": "**47. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"First you plane the wood, next you cut it into pieces, then you use wood glue to fix them.\""
+      },
+      {
+       "t": "p",
+       "x": "**48. Why are these words useful in carpentry?**"
+      },
+      {
+       "t": "p",
+       "x": "They help us explain a process in the correct order."
+      },
+      {
+       "t": "p",
+       "x": "**49. What does \"besides\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Besides\" means in addition to or apart from."
+      },
+      {
+       "t": "p",
+       "x": "**50. Give a sentence using \"besides\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"The carpenter made a chair besides a table.\""
+      },
+      {
+       "t": "p",
+       "x": "**51. Complete the sentence: \"The carpenter made a bed besides ______.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"The carpenter made a bed besides a table.\""
+      },
+      {
+       "t": "p",
+       "x": "**52. What does \"though\" show?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Though\" is used to show contrast."
+      },
+      {
+       "t": "p",
+       "x": "**53. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Though John is not a trained carpenter, he makes good chairs.\""
+      },
+      {
+       "t": "p",
+       "x": "**54. Complete the sentence: \"Though the carpenter was tired, ______.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"Though the carpenter was tired, he continued working.\""
+      }
+     ]
+    },
+    {
+     "title": "ACTIVE AND PASSIVE VOICE IN CARPENTRY",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**55. What is active voice?**"
+      },
+      {
+       "t": "p",
+       "x": "Active voice is a sentence in which the subject performs the action."
+      },
+      {
+       "t": "p",
+       "x": "**56. Give an example of active voice.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Angela makes good chairs.\""
+      },
+      {
+       "t": "p",
+       "x": "**57. What is passive voice?**"
+      },
+      {
+       "t": "p",
+       "x": "Passive voice is a sentence in which the subject receives the action."
+      },
+      {
+       "t": "p",
+       "x": "**58. Change this sentence into passive voice: \"Angela makes good chairs.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"Good chairs are made by Angela.\""
+      },
+      {
+       "t": "p",
+       "x": "**59. Change this sentence into passive voice: \"The carpenter repairs the table.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"The table is repaired by the carpenter.\""
+      },
+      {
+       "t": "p",
+       "x": "**60. Change this sentence into active voice: \"The chair is made by Peter.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"Peter makes the chair.\""
+      }
+     ]
+    },
+    {
+     "title": "CARPENTRY GRAMMAR",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**61. What tense is commonly used to describe regular carpentry activities?**"
+      },
+      {
+       "t": "p",
+       "x": "The present tense is commonly used."
+      },
+      {
+       "t": "p",
+       "x": "**62. Give a present-tense sentence about carpentry.**"
+      },
+      {
+       "t": "p",
+       "x": "\"A carpenter makes furniture.\""
+      },
+      {
+       "t": "p",
+       "x": "**63. What is the passive voice?**"
+      },
+      {
+       "t": "p",
+       "x": "It is a form of sentence in which the receiver of the action becomes the focus."
+      },
+      {
+       "t": "p",
+       "x": "**64. Which passive forms are included in this topic?**"
+      },
+      {
+       "t": "p",
+       "x": "The curriculum includes present, simple, continuous and perfect passive forms."
+      }
+     ]
+    },
+    {
+     "title": "PART B: TAILORING — INTRODUCTION",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**65. What is tailoring?**"
+      },
+      {
+       "t": "p",
+       "x": "Tailoring is the occupation or skill of making, repairing and altering clothes and other garments."
+      },
+      {
+       "t": "p",
+       "x": "**66. Who is a tailor?**"
+      },
+      {
+       "t": "p",
+       "x": "A tailor is a person who makes or repairs clothes."
+      },
+      {
+       "t": "p",
+       "x": "**67. Who is a seamstress?**"
+      },
+      {
+       "t": "p",
+       "x": "A seamstress is a woman who sews clothes professionally."
+      },
+      {
+       "t": "p",
+       "x": "**68. What is a garment?**"
+      },
+      {
+       "t": "p",
+       "x": "A garment is an item of clothing."
+      },
+      {
+       "t": "p",
+       "x": "**69. What is tailoring used for?**"
+      },
+      {
+       "t": "p",
+       "x": "Tailoring is used for making, repairing, decorating and altering clothes."
+      },
+      {
+       "t": "p",
+       "x": "**70. What materials can be used in tailoring?**"
+      },
+      {
+       "t": "p",
+       "x": "Materials include cloth, thread, buttons, zips and other sewing materials."
+      }
+     ]
+    },
+    {
+     "title": "TAILORING TOOLS AND MATERIALS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**71. What is a tape measure?**"
+      },
+      {
+       "t": "p",
+       "x": "A tape measure is a flexible measuring tool used for taking body or cloth measurements."
+      },
+      {
+       "t": "p",
+       "x": "**72. Why does a tailor use a tape measure?**"
+      },
+      {
+       "t": "p",
+       "x": "A tailor uses it to take accurate measurements."
+      },
+      {
+       "t": "p",
+       "x": "**73. What is a needle?**"
+      },
+      {
+       "t": "p",
+       "x": "A needle is a thin pointed tool with an eye through which thread is passed."
+      },
+      {
+       "t": "p",
+       "x": "**74. What are scissors?**"
+      },
+      {
+       "t": "p",
+       "x": "Scissors are cutting tools used for cutting cloth and other materials."
+      },
+      {
+       "t": "p",
+       "x": "**75. What is a sewing machine?**"
+      },
+      {
+       "t": "p",
+       "x": "A sewing machine is a machine used for joining pieces of cloth with thread."
+      },
+      {
+       "t": "p",
+       "x": "**76. What is a bobbin?**"
+      },
+      {
+       "t": "p",
+       "x": "A bobbin is a small spool that holds thread in a sewing machine."
+      },
+      {
+       "t": "p",
+       "x": "**77. What is a thimble?**"
+      },
+      {
+       "t": "p",
+       "x": "A thimble is a small protective covering worn on a finger when sewing by hand."
+      },
+      {
+       "t": "p",
+       "x": "**78. What is a thread?**"
+      },
+      {
+       "t": "p",
+       "x": "Thread is a thin strand used for sewing or joining pieces of cloth."
+      },
+      {
+       "t": "p",
+       "x": "**79. What is a button?**"
+      },
+      {
+       "t": "p",
+       "x": "A button is a small object attached to clothing and used for fastening it."
+      },
+      {
+       "t": "p",
+       "x": "**80. What is a zip?**"
+      },
+      {
+       "t": "p",
+       "x": "A zip is a fastening device used on clothes, bags and other items."
+      },
+      {
+       "t": "p",
+       "x": "**81. What is a patch?**"
+      },
+      {
+       "t": "p",
+       "x": "A patch is a piece of material used to cover or repair a hole or damaged part of clothing."
+      },
+      {
+       "t": "p",
+       "x": "**82. What is a seam?**"
+      },
+      {
+       "t": "p",
+       "x": "A seam is a line where two pieces of cloth are joined."
+      },
+      {
+       "t": "p",
+       "x": "**83. What is a buttonhole?**"
+      },
+      {
+       "t": "p",
+       "x": "A buttonhole is a small opening made in cloth through which a button passes."
+      },
+      {
+       "t": "p",
+       "x": "**84. What is cloth?**"
+      },
+      {
+       "t": "p",
+       "x": "Cloth is woven or knitted material used for making clothes and other items."
+      },
+      {
+       "t": "p",
+       "x": "**85. What is material?**"
+      },
+      {
+       "t": "p",
+       "x": "Material is the substance used for making something."
+      }
+     ]
+    },
+    {
+     "title": "TAILORING PROCESSES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**86. What is stitching?**"
+      },
+      {
+       "t": "p",
+       "x": "Stitching is joining pieces of cloth with thread."
+      },
+      {
+       "t": "p",
+       "x": "**87. What does \"sew\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To sew means to join pieces of material using a needle and thread or a sewing machine."
+      },
+      {
+       "t": "p",
+       "x": "**88. What does \"mend\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To mend means to repair something that is damaged or torn."
+      },
+      {
+       "t": "p",
+       "x": "**89. What does \"weave\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To weave means to make cloth by interlacing threads."
+      },
+      {
+       "t": "p",
+       "x": "**90. What is hemming?**"
+      },
+      {
+       "t": "p",
+       "x": "Hemming is folding and sewing the edge of a piece of cloth to make it neat and prevent it from fraying."
+      },
+      {
+       "t": "p",
+       "x": "**91. What is knitting?**"
+      },
+      {
+       "t": "p",
+       "x": "Knitting is making fabric by interlocking loops of yarn using needles or a machine."
+      },
+      {
+       "t": "p",
+       "x": "**92. What is a design?**"
+      },
+      {
+       "t": "p",
+       "x": "A design is a plan or pattern showing how something will look."
+      },
+      {
+       "t": "p",
+       "x": "**93. What is texture?**"
+      },
+      {
+       "t": "p",
+       "x": "Texture is the way a material feels or looks on its surface."
+      },
+      {
+       "t": "p",
+       "x": "**94. What is an article in tailoring?**"
+      },
+      {
+       "t": "p",
+       "x": "An article is an item made by a tailor or from cloth."
+      },
+      {
+       "t": "p",
+       "x": "**95. What is a seamstress's first important task when making clothes for a customer?**"
+      },
+      {
+       "t": "p",
+       "x": "She should take the customer's measurements accurately."
+      },
+      {
+       "t": "p",
+       "x": "**96. Why are measurements important in tailoring?**"
+      },
+      {
+       "t": "p",
+       "x": "They help the tailor make clothes that fit properly."
+      },
+      {
+       "t": "p",
+       "x": "**97. What happens after measurements are taken?**"
+      },
+      {
+       "t": "p",
+       "x": "The measurements are used to prepare and cut the cloth according to the required design."
+      },
+      {
+       "t": "p",
+       "x": "**98. What happens after the cloth is cut?**"
+      },
+      {
+       "t": "p",
+       "x": "The pieces are stitched together according to the design."
+      },
+      {
+       "t": "p",
+       "x": "**99. What is done after sewing?**"
+      },
+      {
+       "t": "p",
+       "x": "The garment may be checked, fitted, finished, ironed and decorated."
+      }
+     ]
+    },
+    {
+     "title": "TAILORING LANGUAGE STRUCTURES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**100. What does \"be careful when\" express?**"
+      },
+      {
+       "t": "p",
+       "x": "It gives a warning or advice to take care while doing something."
+      },
+      {
+       "t": "p",
+       "x": "**101. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Be careful when stitching the cloth because you may hurt your finger.\""
+      },
+      {
+       "t": "p",
+       "x": "**102. Complete the sentence: \"Be careful when using the scissors because ______.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"Be careful when using the scissors because you may cut yourself.\""
+      },
+      {
+       "t": "p",
+       "x": "**103. What does \"prefer...to\" express?**"
+      },
+      {
+       "t": "p",
+       "x": "It expresses a preference for one thing over another."
+      },
+      {
+       "t": "p",
+       "x": "**104. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Robert prefers sewing to knitting.\""
+      },
+      {
+       "t": "p",
+       "x": "**105. Complete the sentence: \"Mary prefers sewing ______ knitting.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"Mary prefers sewing to knitting.\""
+      },
+      {
+       "t": "p",
+       "x": "**106. What is \"What is/are...used for?\" used for?**"
+      },
+      {
+       "t": "p",
+       "x": "It is used to ask about the purpose of a tool or object."
+      },
+      {
+       "t": "p",
+       "x": "**107. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"What are scissors used for?\""
+      },
+      {
+       "t": "p",
+       "x": "**108. Give the answer.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Scissors are used for cutting cloth.\""
+      },
+      {
+       "t": "p",
+       "x": "**109. What is a sewing machine used for?**"
+      },
+      {
+       "t": "p",
+       "x": "A sewing machine is used for joining pieces of cloth with thread."
+      },
+      {
+       "t": "p",
+       "x": "**110. What does \"as soon as\" show?**"
+      },
+      {
+       "t": "p",
+       "x": "It shows that one action happens immediately after another."
+      },
+      {
+       "t": "p",
+       "x": "**111. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"As soon as he bought a piece of cloth, he took it to the tailor.\""
+      },
+      {
+       "t": "p",
+       "x": "**112. Complete the sentence: \"As soon as the tailor finished sewing, ______.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"As soon as the tailor finished sewing, she checked the garment.\""
+      },
+      {
+       "t": "p",
+       "x": "**113. What does \"immediately\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Immediately means at once or without delay."
+      },
+      {
+       "t": "p",
+       "x": "**114. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Musa patched his shorts immediately they got torn.\""
+      },
+      {
+       "t": "p",
+       "x": "**115. Complete the sentence: \"Immediately the cloth was cut, ______.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"Immediately the cloth was cut, the tailor began sewing.\""
+      },
+      {
+       "t": "p",
+       "x": "**116. What does \"but\" show?**"
+      },
+      {
+       "t": "p",
+       "x": "\"But\" shows contrast between two ideas."
+      },
+      {
+       "t": "p",
+       "x": "**117. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"He had a thimble on his thumb but still cut his finger.\""
+      },
+      {
+       "t": "p",
+       "x": "**118. What does \"and\" do?**"
+      },
+      {
+       "t": "p",
+       "x": "\"And\" joins words, phrases or ideas."
+      },
+      {
+       "t": "p",
+       "x": "**119. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Sarah and Peter made good designs.\""
+      }
+     ]
+    },
+    {
+     "title": "TAILORING GRAMMAR",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**120. What is a verb?**"
+      },
+      {
+       "t": "p",
+       "x": "A verb is a word that shows an action, state or occurrence."
+      },
+      {
+       "t": "p",
+       "x": "**121. Give examples of verbs used in tailoring.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include: sew, mend, stitch, weave, knit, cut, measure, design."
+      },
+      {
+       "t": "p",
+       "x": "**122. What is the perfect tense?**"
+      },
+      {
+       "t": "p",
+       "x": "The perfect tense describes an action that has been completed or has a connection with the present."
+      },
+      {
+       "t": "p",
+       "x": "**123. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"The tailor has finished the dress.\""
+      },
+      {
+       "t": "p",
+       "x": "**124. What is an adverb?**"
+      },
+      {
+       "t": "p",
+       "x": "An adverb is a word that gives more information about an action or another word."
+      },
+      {
+       "t": "p",
+       "x": "**125. Give a tailoring sentence containing an adverb.**"
+      },
+      {
+       "t": "p",
+       "x": "\"The tailor carefully measured the cloth.\""
+      },
+      {
+       "t": "p",
+       "x": "**126. What is a conjunction?**"
+      },
+      {
+       "t": "p",
+       "x": "A conjunction is a word used to join words, phrases or clauses."
+      },
+      {
+       "t": "p",
+       "x": "**127. Give examples of conjunctions used in tailoring.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include: and, but, because."
+      }
+     ]
+    },
+    {
+     "title": "PART C: BAKING — INTRODUCTION",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**128. What is baking?**"
+      },
+      {
+       "t": "p",
+       "x": "Baking is the process of cooking food using dry heat, usually in an oven."
+      },
+      {
+       "t": "p",
+       "x": "**129. Who is a baker?**"
+      },
+      {
+       "t": "p",
+       "x": "A baker is a person who makes bread, cakes, biscuits and other baked products."
+      },
+      {
+       "t": "p",
+       "x": "**130. What is a bakery?**"
+      },
+      {
+       "t": "p",
+       "x": "A bakery is a place where bread, cakes and other baked products are made or sold."
+      },
+      {
+       "t": "p",
+       "x": "**131. What products can be made by a baker?**"
+      },
+      {
+       "t": "p",
+       "x": "A baker can make: bread, cakes, biscuits, cookies, buns, wedding cakes and other baked products."
+      }
+     ]
+    },
+    {
+     "title": "BAKING EQUIPMENT",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**132. What is an oven?**"
+      },
+      {
+       "t": "p",
+       "x": "An oven is an appliance used for baking and cooking food."
+      },
+      {
+       "t": "p",
+       "x": "**133. What is a baking tin?**"
+      },
+      {
+       "t": "p",
+       "x": "A baking tin is a container used for holding food while it is baked."
+      },
+      {
+       "t": "p",
+       "x": "**134. What is a cookie cutter?**"
+      },
+      {
+       "t": "p",
+       "x": "A cookie cutter is a tool used to cut cookie dough into different shapes."
+      },
+      {
+       "t": "p",
+       "x": "**135. What is a sieve?**"
+      },
+      {
+       "t": "p",
+       "x": "A sieve is a utensil used for separating fine materials from larger particles, such as removing lumps from flour."
+      },
+      {
+       "t": "p",
+       "x": "**136. What is a rolling pin?**"
+      },
+      {
+       "t": "p",
+       "x": "A rolling pin is a cylindrical tool used for flattening dough."
+      },
+      {
+       "t": "p",
+       "x": "**137. What is a pinch?**"
+      },
+      {
+       "t": "p",
+       "x": "A pinch is a very small amount of an ingredient."
+      },
+      {
+       "t": "p",
+       "x": "**138. What is icing sugar?**"
+      },
+      {
+       "t": "p",
+       "x": "Icing sugar is very finely powdered sugar commonly used for decorating cakes and other foods."
+      },
+      {
+       "t": "p",
+       "x": "**139. What is food colour?**"
+      },
+      {
+       "t": "p",
+       "x": "Food colour is a substance used to give food a particular colour."
+      },
+      {
+       "t": "p",
+       "x": "**140. What is yeast?**"
+      },
+      {
+       "t": "p",
+       "x": "Yeast is an organism used in baking to make dough rise."
+      },
+      {
+       "t": "p",
+       "x": "**141. What is margarine?**"
+      },
+      {
+       "t": "p",
+       "x": "Margarine is a spreadable fat used in cooking and baking."
+      },
+      {
+       "t": "p",
+       "x": "**142. What is baking flour?**"
+      },
+      {
+       "t": "p",
+       "x": "Baking flour is flour used as an ingredient in making baked products."
+      }
+     ]
+    },
+    {
+     "title": "BAKING INGREDIENTS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**143. What are ingredients?**"
+      },
+      {
+       "t": "p",
+       "x": "Ingredients are the substances or foods used to prepare a particular food."
+      },
+      {
+       "t": "p",
+       "x": "**144. What ingredients may be used in baking?**"
+      },
+      {
+       "t": "p",
+       "x": "Depending on the recipe, ingredients may include: flour, sugar, salt, butter or margarine, eggs, milk, yeast, water and flavouring."
+      },
+      {
+       "t": "p",
+       "x": "**145. What is a recipe?**"
+      },
+      {
+       "t": "p",
+       "x": "A recipe is a set of instructions showing how to prepare a particular food."
+      },
+      {
+       "t": "p",
+       "x": "**146. Why is a recipe important?**"
+      },
+      {
+       "t": "p",
+       "x": "It tells the baker the ingredients, quantities and steps needed to prepare the food."
+      },
+      {
+       "t": "p",
+       "x": "**147. What is flavour?**"
+      },
+      {
+       "t": "p",
+       "x": "Flavour is the particular taste or smell of food."
+      },
+      {
+       "t": "p",
+       "x": "**148. What is dough?**"
+      },
+      {
+       "t": "p",
+       "x": "Dough is a mixture of flour and other ingredients prepared for making bread, cakes or other baked products."
+      }
+     ]
+    },
+    {
+     "title": "BAKING PROCESSES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**149. What does \"mix\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To mix means to combine ingredients together."
+      },
+      {
+       "t": "p",
+       "x": "**150. What does \"knead\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To knead means to press and fold dough repeatedly to develop it and make it suitable for baking."
+      },
+      {
+       "t": "p",
+       "x": "**151. What does \"roll out\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To roll out means to flatten dough using a rolling pin."
+      },
+      {
+       "t": "p",
+       "x": "**152. What does \"sprinkle\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To sprinkle means to scatter small amounts of something over a surface."
+      },
+      {
+       "t": "p",
+       "x": "**153. What does \"slice\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To slice means to cut something into thin pieces."
+      },
+      {
+       "t": "p",
+       "x": "**154. What does \"bake\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To bake means to cook food using dry heat, usually in an oven."
+      },
+      {
+       "t": "p",
+       "x": "**155. What does \"turn off\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To turn off means to stop an appliance from operating."
+      },
+      {
+       "t": "p",
+       "x": "**156. What is a loaf?**"
+      },
+      {
+       "t": "p",
+       "x": "A loaf is a shaped quantity of bread baked as one piece."
+      },
+      {
+       "t": "p",
+       "x": "**157. What is a bun?**"
+      },
+      {
+       "t": "p",
+       "x": "A bun is a small rounded bread product."
+      },
+      {
+       "t": "p",
+       "x": "**158. What is a tier?**"
+      },
+      {
+       "t": "p",
+       "x": "A tier is one level or layer of a multi-layered cake."
+      },
+      {
+       "t": "p",
+       "x": "**159. What is a wedding cake?**"
+      },
+      {
+       "t": "p",
+       "x": "A wedding cake is a special cake prepared for a wedding ceremony."
+      }
+     ]
+    },
+    {
+     "title": "STEPS IN BAKING",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**160. What should a baker do before baking?**"
+      },
+      {
+       "t": "p",
+       "x": "The baker should prepare the ingredients, equipment and recipe."
+      },
+      {
+       "t": "p",
+       "x": "**161. Why should ingredients be measured?**"
+      },
+      {
+       "t": "p",
+       "x": "They should be measured to obtain the correct quantities required by the recipe."
+      },
+      {
+       "t": "p",
+       "x": "**162. What happens after the ingredients are measured?**"
+      },
+      {
+       "t": "p",
+       "x": "They are mixed or prepared according to the recipe."
+      },
+      {
+       "t": "p",
+       "x": "**163. What happens to dough before some bread products are baked?**"
+      },
+      {
+       "t": "p",
+       "x": "The dough may be allowed to rise, depending on the recipe."
+      },
+      {
+       "t": "p",
+       "x": "**164. What happens after the food is prepared?**"
+      },
+      {
+       "t": "p",
+       "x": "It is placed in the oven and baked at the appropriate temperature."
+      },
+      {
+       "t": "p",
+       "x": "**165. Why should a baker follow a recipe?**"
+      },
+      {
+       "t": "p",
+       "x": "Following a recipe helps the baker produce the desired product correctly."
+      },
+      {
+       "t": "p",
+       "x": "**166. Why should an oven be handled carefully?**"
+      },
+      {
+       "t": "p",
+       "x": "An oven can become very hot and may cause burns or fires if handled carelessly."
+      }
+     ]
+    },
+    {
+     "title": "BAKING LANGUAGE STRUCTURES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**167. What is a \"to\" infinitive?**"
+      },
+      {
+       "t": "p",
+       "x": "A \"to\" infinitive is formed using **to + the base form of a verb**."
+      },
+      {
+       "t": "p",
+       "x": "**168. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Don't forget to shut the oven.\""
+      },
+      {
+       "t": "p",
+       "x": "**169. Complete the sentence: \"Remember to ______ the oven.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"Remember to turn off the oven.\""
+      },
+      {
+       "t": "p",
+       "x": "**170. What does \"used to\" show?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Used to\" describes a past habit or situation that is no longer true or no longer happens."
+      },
+      {
+       "t": "p",
+       "x": "**171. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"I used to bake cakes when I was young.\""
+      },
+      {
+       "t": "p",
+       "x": "**172. Make a sentence using \"used to\".**"
+      },
+      {
+       "t": "p",
+       "x": "\"My grandmother used to bake bread.\""
+      },
+      {
+       "t": "p",
+       "x": "**173. What does \"used for\" show?**"
+      },
+      {
+       "t": "p",
+       "x": "It explains the purpose of something."
+      },
+      {
+       "t": "p",
+       "x": "**174. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"A spoon is used for mixing butter and sugar.\""
+      },
+      {
+       "t": "p",
+       "x": "**175. Complete the sentence: \"An oven is used for ______.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"An oven is used for baking food.\""
+      },
+      {
+       "t": "p",
+       "x": "**176. What does \"prefers...to\" show?**"
+      },
+      {
+       "t": "p",
+       "x": "It shows that someone likes one thing more than another."
+      },
+      {
+       "t": "p",
+       "x": "**177. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Musa prefers cakes to bread.\""
+      },
+      {
+       "t": "p",
+       "x": "**178. Complete the sentence: \"Sarah prefers bread ______ biscuits.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"Sarah prefers bread to biscuits.\""
+      },
+      {
+       "t": "p",
+       "x": "**179. What does \"neither...nor\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "It shows that two things or people are both not included or not involved."
+      },
+      {
+       "t": "p",
+       "x": "**180. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Neither Kadoma nor Juma eat biscuits.\""
+      },
+      {
+       "t": "p",
+       "x": "**181. Give another example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Inzikuru bakes neither cakes nor cookies.\""
+      },
+      {
+       "t": "p",
+       "x": "**182. What does \"even though\" show?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Even though\" shows contrast."
+      },
+      {
+       "t": "p",
+       "x": "**183. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"The cake was not tasty even though she had used all the ingredients.\""
+      },
+      {
+       "t": "p",
+       "x": "**184. Complete the sentence: \"Even though the cake looked good, ______.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"Even though the cake looked good, it did not taste good.\""
+      }
+     ]
+    },
+    {
+     "title": "NOUN FORMATION",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**185. What is a noun?**"
+      },
+      {
+       "t": "p",
+       "x": "A noun is a word that names a person, place, thing or idea."
+      },
+      {
+       "t": "p",
+       "x": "**186. Give examples of nouns related to baking.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include: baker, bakery, bread, cake, oven, recipe, ingredients, dough."
+      },
+      {
+       "t": "p",
+       "x": "**187. What is noun formation?**"
+      },
+      {
+       "t": "p",
+       "x": "Noun formation is the process of forming nouns from other words."
+      },
+      {
+       "t": "p",
+       "x": "**188. Give an example of a noun formed from a verb.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Bake\" can form the noun \"baker\" when referring to a person who bakes."
+      },
+      {
+       "t": "p",
+       "x": "**189. Give another example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Bake\" can also form \"bakery,\" referring to a place where baking products are made or sold."
+      }
+     ]
+    },
+    {
+     "title": "PART D: KEEPING ANIMALS — INTRODUCTION",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**190. What is animal keeping?**"
+      },
+      {
+       "t": "p",
+       "x": "Animal keeping is the practice of caring for and managing animals."
+      },
+      {
+       "t": "p",
+       "x": "**191. Why do people keep animals?**"
+      },
+      {
+       "t": "p",
+       "x": "People keep animals for: food, income, companionship, security, breeding, transport and agricultural purposes."
+      },
+      {
+       "t": "p",
+       "x": "**192. What is animal welfare?**"
+      },
+      {
+       "t": "p",
+       "x": "Animal welfare refers to the well-being and proper treatment of animals."
+      },
+      {
+       "t": "p",
+       "x": "**193. Why is animal welfare important?**"
+      },
+      {
+       "t": "p",
+       "x": "It helps animals remain healthy, safe and free from unnecessary suffering."
+      },
+      {
+       "t": "p",
+       "x": "**194. What animals can people keep?**"
+      },
+      {
+       "t": "p",
+       "x": "People can keep animals such as: cattle, goats, sheep, pigs, chickens, dogs, cats and rabbits."
+      }
+     ]
+    },
+    {
+     "title": "ANIMAL CARE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**195. What is proper animal care?**"
+      },
+      {
+       "t": "p",
+       "x": "Proper animal care means providing animals with suitable food, water, shelter, health care, protection and clean surroundings."
+      },
+      {
+       "t": "p",
+       "x": "**196. Why should animals be given food?**"
+      },
+      {
+       "t": "p",
+       "x": "Animals need food for growth, energy and good health."
+      },
+      {
+       "t": "p",
+       "x": "**197. Why should animals be given clean water?**"
+      },
+      {
+       "t": "p",
+       "x": "Animals need water to survive and remain healthy."
+      },
+      {
+       "t": "p",
+       "x": "**198. Why should animals have shelter?**"
+      },
+      {
+       "t": "p",
+       "x": "Shelter protects animals from harsh weather, predators and other dangers."
+      },
+      {
+       "t": "p",
+       "x": "**199. Why should animal shelters be kept clean?**"
+      },
+      {
+       "t": "p",
+       "x": "Clean shelters reduce disease and help animals remain healthy."
+      },
+      {
+       "t": "p",
+       "x": "**200. What is veterinary care?**"
+      },
+      {
+       "t": "p",
+       "x": "Veterinary care is medical care provided to animals by animal-health professionals."
+      },
+      {
+       "t": "p",
+       "x": "**201. Who is a veterinary professional?**"
+      },
+      {
+       "t": "p",
+       "x": "A veterinary professional is a person trained to provide healthcare to animals."
+      },
+      {
+       "t": "p",
+       "x": "**202. Why should sick animals receive treatment?**"
+      },
+      {
+       "t": "p",
+       "x": "Treatment helps them recover and prevents diseases from becoming worse or spreading."
+      }
+     ]
+    },
+    {
+     "title": "ANIMAL WELFARE VOCABULARY",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**203. What is a pet?**"
+      },
+      {
+       "t": "p",
+       "x": "A pet is an animal kept mainly for companionship."
+      },
+      {
+       "t": "p",
+       "x": "**204. What does \"misery\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Misery is a state of great suffering or unhappiness."
+      },
+      {
+       "t": "p",
+       "x": "**205. What is comfort?**"
+      },
+      {
+       "t": "p",
+       "x": "Comfort is a state of being free from pain, distress or discomfort."
+      },
+      {
+       "t": "p",
+       "x": "**206. What is discomfort?**"
+      },
+      {
+       "t": "p",
+       "x": "Discomfort is a feeling of uneasiness or lack of comfort."
+      },
+      {
+       "t": "p",
+       "x": "**207. What does \"anxious\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Anxious means worried, nervous or uneasy."
+      },
+      {
+       "t": "p",
+       "x": "**208. What is anxiety?**"
+      },
+      {
+       "t": "p",
+       "x": "Anxiety is a feeling of worry, nervousness or uneasiness."
+      },
+      {
+       "t": "p",
+       "x": "**209. What is cruelty?**"
+      },
+      {
+       "t": "p",
+       "x": "Cruelty is behaviour that causes unnecessary suffering or pain."
+      },
+      {
+       "t": "p",
+       "x": "**210. What is a stray animal?**"
+      },
+      {
+       "t": "p",
+       "x": "A stray animal is an animal that is lost, abandoned or living without proper ownership or care."
+      },
+      {
+       "t": "p",
+       "x": "**211. What is sorrow?**"
+      },
+      {
+       "t": "p",
+       "x": "Sorrow is a feeling of sadness."
+      },
+      {
+       "t": "p",
+       "x": "**212. What does \"cruel\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Cruel means causing pain or suffering deliberately or without concern."
+      },
+      {
+       "t": "p",
+       "x": "**213. What are body signs in animals?**"
+      },
+      {
+       "t": "p",
+       "x": "Body signs are physical actions or changes that may show how an animal feels or whether it is healthy."
+      },
+      {
+       "t": "p",
+       "x": "**214. What is torture?**"
+      },
+      {
+       "t": "p",
+       "x": "Torture is deliberately causing severe pain or suffering."
+      },
+      {
+       "t": "p",
+       "x": "**215. What is animal husbandry?**"
+      },
+      {
+       "t": "p",
+       "x": "Animal husbandry is the care, breeding and management of domestic animals."
+      },
+      {
+       "t": "p",
+       "x": "**216. What is dipping?**"
+      },
+      {
+       "t": "p",
+       "x": "Dipping is treating animals with a suitable chemical solution to control external parasites such as ticks."
+      },
+      {
+       "t": "p",
+       "x": "**217. What does \"slaughter\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Slaughter means killing an animal, especially for food."
+      },
+      {
+       "t": "p",
+       "x": "**218. What does \"tether\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To tether an animal means to tie it with a rope or other restraint so that it cannot move freely beyond a certain area."
+      },
+      {
+       "t": "p",
+       "x": "**219. What is mistreatment?**"
+      },
+      {
+       "t": "p",
+       "x": "Mistreatment is treating someone or an animal badly or improperly."
+      },
+      {
+       "t": "p",
+       "x": "**220. What is a dock?**"
+      },
+      {
+       "t": "p",
+       "x": "In animal care, docking refers to cutting or shortening part of an animal's tail or another body part. It should only be carried out where appropriate and by properly trained people under accepted animal-welfare practices."
+      }
+     ]
+    },
+    {
+     "title": "ANIMAL SOUNDS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**221. Why is it important to know animal sounds?**"
+      },
+      {
+       "t": "p",
+       "x": "Animal sounds can help people identify animals and understand some of their behaviour."
+      },
+      {
+       "t": "p",
+       "x": "**222. What sound does a dog make?**"
+      },
+      {
+       "t": "p",
+       "x": "A dog barks."
+      },
+      {
+       "t": "p",
+       "x": "**223. What sound does a cat make?**"
+      },
+      {
+       "t": "p",
+       "x": "A cat meows."
+      },
+      {
+       "t": "p",
+       "x": "**224. What sound does a cow make?**"
+      },
+      {
+       "t": "p",
+       "x": "A cow moos."
+      },
+      {
+       "t": "p",
+       "x": "**225. What sound does a goat make?**"
+      },
+      {
+       "t": "p",
+       "x": "A goat bleats."
+      },
+      {
+       "t": "p",
+       "x": "**226. What sound does a sheep make?**"
+      },
+      {
+       "t": "p",
+       "x": "A sheep bleats."
+      },
+      {
+       "t": "p",
+       "x": "**227. What sound does a pig make?**"
+      },
+      {
+       "t": "p",
+       "x": "A pig grunts."
+      },
+      {
+       "t": "p",
+       "x": "**228. What sound does a hen make?**"
+      },
+      {
+       "t": "p",
+       "x": "A hen clucks."
+      },
+      {
+       "t": "p",
+       "x": "**229. What sound does a cock make?**"
+      },
+      {
+       "t": "p",
+       "x": "A cock crows."
+      },
+      {
+       "t": "p",
+       "x": "**230. What sound does a horse make?**"
+      },
+      {
+       "t": "p",
+       "x": "A horse neighs."
+      },
+      {
+       "t": "p",
+       "x": "**231. What can animal sounds tell us?**"
+      },
+      {
+       "t": "p",
+       "x": "They may communicate needs, danger, fear, hunger or other forms of behaviour."
+      }
+     ]
+    },
+    {
+     "title": "GOOD PRACTICES IN KEEPING ANIMALS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**232. What are good practices in keeping animals?**"
+      },
+      {
+       "t": "p",
+       "x": "Good practices include:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "giving animals enough food;",
+        "providing clean water;",
+        "providing shelter;",
+        "keeping shelters clean;",
+        "treating sick animals;",
+        "protecting animals from cruelty;",
+        "providing enough space;",
+        "handling animals carefully."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**233. Why should animals not be tortured?**"
+      },
+      {
+       "t": "p",
+       "x": "Animals should not be tortured because torture causes unnecessary pain and suffering."
+      },
+      {
+       "t": "p",
+       "x": "**234. Why should animals not be treated cruelly?**"
+      },
+      {
+       "t": "p",
+       "x": "Animals should be treated humanely and responsibly."
+      },
+      {
+       "t": "p",
+       "x": "**235. Why should animals be protected from disease?**"
+      },
+      {
+       "t": "p",
+       "x": "Disease can cause suffering, death and economic loss."
+      },
+      {
+       "t": "p",
+       "x": "**236. Why should farmers observe animals closely?**"
+      },
+      {
+       "t": "p",
+       "x": "Observation helps them notice signs of illness, injury, discomfort or unusual behaviour."
+      },
+      {
+       "t": "p",
+       "x": "**237. What should you do if an animal is sick?**"
+      },
+      {
+       "t": "p",
+       "x": "The animal should be cared for appropriately and, where necessary, taken to a veterinary professional."
+      }
+     ]
+    },
+    {
+     "title": "KEEPING ANIMALS AS A BUSINESS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**238. Can keeping animals be a business?**"
+      },
+      {
+       "t": "p",
+       "x": "Yes. Animals can be kept as a source of income."
+      },
+      {
+       "t": "p",
+       "x": "**239. How can keeping animals provide income?**"
+      },
+      {
+       "t": "p",
+       "x": "People may earn money by selling: animals, meat, milk, eggs, hides and skins and other animal products."
+      },
+      {
+       "t": "p",
+       "x": "**240. What is rearing?**"
+      },
+      {
+       "t": "p",
+       "x": "Rearing means raising and caring for animals or birds."
+      },
+      {
+       "t": "p",
+       "x": "**241. What is livestock?**"
+      },
+      {
+       "t": "p",
+       "x": "Livestock are domesticated animals kept by people, especially for farming or commercial purposes."
+      },
+      {
+       "t": "p",
+       "x": "**242. What is poultry?**"
+      },
+      {
+       "t": "p",
+       "x": "Poultry are domesticated birds kept by people, especially chickens and other birds kept for eggs or meat."
+      },
+      {
+       "t": "p",
+       "x": "**243. What are the advantages of keeping animals?**"
+      },
+      {
+       "t": "p",
+       "x": "Keeping animals can: provide food, provide income, create employment, provide manure, provide useful products, provide companionship and contribute to household livelihoods."
+      }
+     ]
+    },
+    {
+     "title": "KEEPING ANIMALS LANGUAGE STRUCTURES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**244. What does \"you should\" express?**"
+      },
+      {
+       "t": "p",
+       "x": "It gives advice about what is advisable or right to do."
+      },
+      {
+       "t": "p",
+       "x": "**245. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"You should mind about the welfare of animals.\""
+      },
+      {
+       "t": "p",
+       "x": "**246. Complete the sentence: \"You should ______ animals properly.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"You should care for animals properly.\""
+      },
+      {
+       "t": "p",
+       "x": "**247. What does \"you should not\" express?**"
+      },
+      {
+       "t": "p",
+       "x": "It gives advice about something that should be avoided."
+      },
+      {
+       "t": "p",
+       "x": "**248. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"You should not dock dogs because it hurts them.\""
+      },
+      {
+       "t": "p",
+       "x": "**249. Complete the sentence: \"You should not ______ animals.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"You should not mistreat animals.\""
+      },
+      {
+       "t": "p",
+       "x": "**250. What does \"not only...but also\" express?**"
+      },
+      {
+       "t": "p",
+       "x": "It is used to add another related idea and show that both things are true or important."
+      },
+      {
+       "t": "p",
+       "x": "**251. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"Not only should you feed animals but also treat them when they are sick.\""
+      },
+      {
+       "t": "p",
+       "x": "**252. Complete the sentence: \"Not only should farmers feed animals but also ______.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"Not only should farmers feed animals but also provide them with clean water.\""
+      },
+      {
+       "t": "p",
+       "x": "**253. What does \"need not\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Need not\" means that something is not necessary."
+      },
+      {
+       "t": "p",
+       "x": "**254. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"We need not be cruel to animals because they are our friends.\""
+      },
+      {
+       "t": "p",
+       "x": "**255. Complete the sentence: \"We need not ______ animals.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"We need not mistreat animals.\""
+      },
+      {
+       "t": "p",
+       "x": "**256. What does \"if...would\" express?**"
+      },
+      {
+       "t": "p",
+       "x": "It expresses a condition and its possible result."
+      },
+      {
+       "t": "p",
+       "x": "**257. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "\"If animals were people, they would complain about being tortured.\""
+      },
+      {
+       "t": "p",
+       "x": "**258. Complete the sentence: \"If animals were able to speak, they would ______.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"If animals were able to speak, they would complain when they were mistreated.\""
+      }
+     ]
+    },
+    {
+     "title": "CONDITIONAL SENTENCES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**259. What is a conditional sentence?**"
+      },
+      {
+       "t": "p",
+       "x": "A conditional sentence expresses a condition and its possible result."
+      },
+      {
+       "t": "p",
+       "x": "**260. Give an example related to animals.**"
+      },
+      {
+       "t": "p",
+       "x": "\"If animals were hungry, they would look for food.\""
+      },
+      {
+       "t": "p",
+       "x": "**261. Complete the sentence: \"If a farmer does not give animals water, ______.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Answer: \"If a farmer does not give animals water, they may become dehydrated and unhealthy.\""
+      },
+      {
+       "t": "p",
+       "x": "**262. Why are conditional sentences useful when discussing animal care?**"
+      },
+      {
+       "t": "p",
+       "x": "They help us explain what may happen when certain actions are taken or not taken."
+      }
+     ]
+    },
+    {
+     "title": "ADJECTIVES AND NOUNS IN ANIMAL CARE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**263. What is an adjective?**"
+      },
+      {
+       "t": "p",
+       "x": "An adjective describes a noun."
+      },
+      {
+       "t": "p",
+       "x": "**264. Give adjectives used in animal care.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include: cruel, anxious, healthy, sick, comfortable, uncomfortable."
+      },
+      {
+       "t": "p",
+       "x": "**265. What is a noun?**"
+      },
+      {
+       "t": "p",
+       "x": "A noun names a person, place, thing or idea."
+      },
+      {
+       "t": "p",
+       "x": "**266. Give nouns related to animal care.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include: welfare, anxiety, cruelty, discomfort, misery, sorrow, husbandry, mistreatment."
+      },
+      {
+       "t": "p",
+       "x": "**267. Give the noun form of \"anxious\".**"
+      },
+      {
+       "t": "p",
+       "x": "The noun is **anxiety**."
+      },
+      {
+       "t": "p",
+       "x": "**268. Give the noun form of \"cruel\".**"
+      },
+      {
+       "t": "p",
+       "x": "The noun is **cruelty**."
+      },
+      {
+       "t": "p",
+       "x": "**269. Give the noun form of \"mistreat\".**"
+      },
+      {
+       "t": "p",
+       "x": "The noun is **mistreatment**."
+      }
+     ]
+    },
+    {
+     "title": "LIVELIHOOD AND OCCUPATIONS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**270. What is an activity?**"
+      },
+      {
+       "t": "p",
+       "x": "An activity is something that a person does."
+      },
+      {
+       "t": "p",
+       "x": "**271. What is earning?**"
+      },
+      {
+       "t": "p",
+       "x": "Earning means receiving money for work or services."
+      },
+      {
+       "t": "p",
+       "x": "**272. What is business?**"
+      },
+      {
+       "t": "p",
+       "x": "Business is an activity involving the production, buying or selling of goods or services, usually to make money."
+      },
+      {
+       "t": "p",
+       "x": "**273. What is farming?**"
+      },
+      {
+       "t": "p",
+       "x": "Farming is the growing of crops and/or keeping of animals."
+      },
+      {
+       "t": "p",
+       "x": "**274. How does farming provide a livelihood?**"
+      },
+      {
+       "t": "p",
+       "x": "Farmers can earn money by selling crops, animals and animal products."
+      },
+      {
+       "t": "p",
+       "x": "**275. What are common livelihood activities in a community?**"
+      },
+      {
+       "t": "p",
+       "x": "They may include: farming, fishing, trading, carpentry, tailoring, baking, teaching, building, transport and keeping animals."
+      },
+      {
+       "t": "p",
+       "x": "**276. What is a verb?**"
+      },
+      {
+       "t": "p",
+       "x": "A verb is a word that shows an action, state or occurrence."
+      },
+      {
+       "t": "p",
+       "x": "**277. Give verbs related to occupations.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include: farm, trade, build, sew, bake, rear, sell, teach, treat, make."
+      }
+     ]
+    },
+    {
+     "title": "ADVERBS IN OCCUPATIONS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**278. What is an adverb?**"
+      },
+      {
+       "t": "p",
+       "x": "An adverb is a word that gives more information about a verb, adjective or another adverb."
+      },
+      {
+       "t": "p",
+       "x": "**279. What is an adverb of manner?**"
+      },
+      {
+       "t": "p",
+       "x": "An adverb of manner tells us how an action is performed."
+      },
+      {
+       "t": "p",
+       "x": "**280. Give examples of adverbs of manner.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include: carefully, quickly, slowly, neatly, skillfully."
+      },
+      {
+       "t": "p",
+       "x": "**281. Give a sentence with an adverb of manner.**"
+      },
+      {
+       "t": "p",
+       "x": "\"The tailor carefully measured the cloth.\""
+      },
+      {
+       "t": "p",
+       "x": "**282. What is an adverb of time?**"
+      },
+      {
+       "t": "p",
+       "x": "An adverb of time tells us when an action happens."
+      },
+      {
+       "t": "p",
+       "x": "**283. Give examples of adverbs of time.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include: today, yesterday, soon, immediately, later."
+      },
+      {
+       "t": "p",
+       "x": "**284. Give a sentence with an adverb of time.**"
+      },
+      {
+       "t": "p",
+       "x": "\"The baker arrived early.\""
+      },
+      {
+       "t": "p",
+       "x": "**285. What is an adverb of place?**"
+      },
+      {
+       "t": "p",
+       "x": "An adverb of place tells us where an action happens."
+      },
+      {
+       "t": "p",
+       "x": "**286. Give examples of adverbs of place.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include: here, there, outside, inside, nearby."
+      },
+      {
+       "t": "p",
+       "x": "**287. Give a sentence with an adverb of place.**"
+      },
+      {
+       "t": "p",
+       "x": "\"The carpenter works outside.\""
+      },
+      {
+       "t": "p",
+       "x": "**288. What is an adverb of emphasis?**"
+      },
+      {
+       "t": "p",
+       "x": "An adverb of emphasis gives extra force or importance to a statement."
+      },
+      {
+       "t": "p",
+       "x": "**289. Give examples of adverbs of emphasis.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include: very, really, certainly, definitely."
+      },
+      {
+       "t": "p",
+       "x": "**290. Give a sentence with an adverb of emphasis.**"
+      },
+      {
+       "t": "p",
+       "x": "\"The carpenter is very skilled.\""
+      },
+      {
+       "t": "p",
+       "x": "**291. What is an adverb of quality?**"
+      },
+      {
+       "t": "p",
+       "x": "An adverb of quality describes the quality or manner in which something is done."
+      },
+      {
+       "t": "p",
+       "x": "**292. Why are adverbs important in occupations?**"
+      },
+      {
+       "t": "p",
+       "x": "They help us explain how, when, where or to what degree an occupational activity is performed."
+      }
+     ]
+    },
+    {
+     "title": "COMPOSITION ABOUT AN OCCUPATION",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**293. What should you include when writing about an occupation?**"
+      },
+      {
+       "t": "p",
+       "x": "You should include:"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "the name of the occupation;",
+        "the person who does the job;",
+        "the tools or equipment used;",
+        "the materials used;",
+        "how the work is done;",
+        "the products produced;",
+        "the importance of the occupation."
+       ],
+       "start": 1
+      },
+      {
+       "t": "p",
+       "x": "**294. What questions can guide a composition about an occupation?**"
+      },
+      {
+       "t": "p",
+       "x": "You can ask: What is the occupation? Who does it? What tools are used? What materials are used? How is the work done? What product is produced? How does the occupation benefit people?"
+      },
+      {
+       "t": "p",
+       "x": "**295. Why should you use adverbs in a composition about an occupation?**"
+      },
+      {
+       "t": "p",
+       "x": "Adverbs help explain how, when and where the work is done."
       }
      ]
     },
@@ -5288,84 +7551,763 @@
      "blocks": [
       {
        "t": "p",
-       "x": "Occupations are important because they:"
+       "x": "**296. Why are occupations important?**"
       },
       {
-       "t": "ul",
-       "items": [
-        "Provide income.",
-        "Provide employment.",
-        "Provide goods and services.",
-        "Improve people's standards of living.",
-        "Promote economic development.",
-        "Help people meet their basic needs.",
-        "Generate government revenue.",
-        "Promote self-reliance.",
-        "Develop people's skills.",
-        "Contribute to national development."
-       ]
+       "t": "p",
+       "x": "Occupations help people earn a living and provide goods and services."
+      },
+      {
+       "t": "p",
+       "x": "**297. How do occupations help families?**"
+      },
+      {
+       "t": "p",
+       "x": "They enable family members to earn money to meet needs such as food, clothing, shelter, education and healthcare."
+      },
+      {
+       "t": "p",
+       "x": "**298. How do occupations help communities?**"
+      },
+      {
+       "t": "p",
+       "x": "They provide goods, services and employment and contribute to community development."
+      },
+      {
+       "t": "p",
+       "x": "**299. Why should learners appreciate different occupations?**"
+      },
+      {
+       "t": "p",
+       "x": "Different occupations require different skills and contribute to society in different ways."
+      },
+      {
+       "t": "p",
+       "x": "**300. Is one honest occupation more important than all others?**"
+      },
+      {
+       "t": "p",
+       "x": "No. Different occupations serve different purposes and can complement one another."
       }
      ]
     },
     {
-     "title": "KEY DEFINITIONS",
+     "title": "KEY DEFINITIONS (KEY VOCABULARY)",
      "blocks": [
+      {
+       "t": "h3",
+       "x": "General Occupations"
+      },
       {
        "t": "table",
        "head": [
-        "Term",
+        "Word",
         "Meaning"
        ],
        "rows": [
         [
          "Occupation",
-         "The work that a person does regularly to earn a living or provide a service."
+         "A job or activity done to earn a living"
+        ],
+        [
+         "Livelihood",
+         "The means of earning a living"
+        ],
+        [
+         "Activity",
+         "Something a person does"
+        ],
+        [
+         "Business",
+         "An activity carried out to provide goods or services, often for profit"
         ],
         [
          "Farming",
-         "The growing of crops and keeping of animals for food, raw materials and income."
+         "Growing crops and/or keeping animals"
         ],
         [
-         "Fishing",
-         "The catching or rearing of fish for food and income."
-        ],
-        [
-         "Trading",
-         "The buying and selling of goods and services."
-        ],
-        [
-         "Teaching",
-         "The process of helping people acquire knowledge, skills and good behaviour."
-        ],
-        [
-         "Teacher",
-         "A person who teaches."
-        ],
-        [
-         "Doctor",
-         "A trained person who diagnoses and treats diseases."
-        ],
-        [
-         "Nurse",
-         "A trained health worker who cares for sick and injured people."
-        ],
-        [
-         "Carpentry",
-         "The occupation of making and repairing things mainly from wood."
-        ],
-        [
-         "Carpenter",
-         "A person who does carpentry."
-        ],
-        [
-         "Building",
-         "The occupation of constructing houses and other structures."
-        ],
-        [
-         "Transport",
-         "The occupation of moving people and goods from one place to another."
+         "Earning",
+         "Receiving money for work"
         ]
        ]
+      },
+      {
+       "t": "h3",
+       "x": "Carpentry"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Carpenter",
+         "A person who works with wood"
+        ],
+        [
+         "Wood",
+         "Hard material obtained from trees"
+        ],
+        [
+         "Timber",
+         "Prepared wood used for building or making things"
+        ],
+        [
+         "Saw",
+         "Tool for cutting wood"
+        ],
+        [
+         "Plane",
+         "Tool for smoothing wood"
+        ],
+        [
+         "Drill",
+         "Tool for making holes"
+        ],
+        [
+         "Hammer",
+         "Tool for driving nails"
+        ],
+        [
+         "Nail",
+         "Metal object used for joining materials"
+        ],
+        [
+         "Plank",
+         "Long, flat piece of wood"
+        ],
+        [
+         "Wood glue",
+         "Adhesive used to join wood"
+        ],
+        [
+         "Furniture",
+         "Objects such as chairs, tables and beds"
+        ],
+        [
+         "Sandpaper",
+         "Material used for smoothing surfaces"
+        ],
+        [
+         "Screwdriver",
+         "Tool used for driving or removing screws"
+        ],
+        [
+         "Polish",
+         "Substance used to improve a surface's appearance"
+        ],
+        [
+         "Varnish",
+         "Protective coating applied to wood"
+        ],
+        [
+         "Sawdust",
+         "Fine waste from cutting wood"
+        ],
+        [
+         "Bench",
+         "Strong table used for working"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Tailoring"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Tailor",
+         "Person who makes or repairs clothes"
+        ],
+        [
+         "Seamstress",
+         "Woman who sews professionally"
+        ],
+        [
+         "Garment",
+         "An item of clothing"
+        ],
+        [
+         "Bobbin",
+         "Small spool that holds thread"
+        ],
+        [
+         "Tape measure",
+         "Flexible tool used for measuring"
+        ],
+        [
+         "Stitch",
+         "A single joining point made with thread"
+        ],
+        [
+         "Cloth",
+         "Material used for making clothes"
+        ],
+        [
+         "Needle",
+         "Pointed sewing tool"
+        ],
+        [
+         "Design",
+         "Plan or pattern"
+        ],
+        [
+         "Seam",
+         "Joined line between pieces of cloth"
+        ],
+        [
+         "Sew",
+         "Join material using thread"
+        ],
+        [
+         "Mend",
+         "Repair something damaged"
+        ],
+        [
+         "Weave",
+         "Interlace threads to make cloth"
+        ],
+        [
+         "Hemming",
+         "Finishing the edge of cloth"
+        ],
+        [
+         "Buttonhole",
+         "Opening through which a button passes"
+        ],
+        [
+         "Thread",
+         "Fine strand used for sewing"
+        ],
+        [
+         "Scissors",
+         "Cutting tool"
+        ],
+        [
+         "Sewing machine",
+         "Machine used for sewing"
+        ],
+        [
+         "Zip",
+         "Fastening device"
+        ],
+        [
+         "Patch",
+         "Piece of material used for repairing cloth"
+        ],
+        [
+         "Thimble",
+         "Finger protector used during sewing"
+        ],
+        [
+         "Knitting",
+         "Making fabric by interlocking loops"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Baking"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Oven",
+         "Appliance used for baking"
+        ],
+        [
+         "Butter",
+         "A fat used in cooking and baking"
+        ],
+        [
+         "Baking tin",
+         "Container used for baking"
+        ],
+        [
+         "Cookie cutter",
+         "Tool for cutting cookie shapes"
+        ],
+        [
+         "Icing sugar",
+         "Finely powdered sugar"
+        ],
+        [
+         "Food colour",
+         "Substance used to colour food"
+        ],
+        [
+         "Yeast",
+         "Ingredient used to make dough rise"
+        ],
+        [
+         "Bake",
+         "Cook using dry heat"
+        ],
+        [
+         "Bun",
+         "Small bread product"
+        ],
+        [
+         "Cake",
+         "Baked food made from ingredients such as flour and sugar"
+        ],
+        [
+         "Biscuit",
+         "Small baked food"
+        ],
+        [
+         "Cookie",
+         "Small sweet baked food"
+        ],
+        [
+         "Mix",
+         "Combine ingredients"
+        ],
+        [
+         "Loaf",
+         "A shaped quantity of bread"
+        ],
+        [
+         "Pinch",
+         "A very small amount"
+        ],
+        [
+         "Tier",
+         "One level of a layered cake"
+        ],
+        [
+         "Sprinkle",
+         "Scatter small amounts"
+        ],
+        [
+         "Knead",
+         "Press and fold dough"
+        ],
+        [
+         "Roll out",
+         "Flatten dough"
+        ],
+        [
+         "Sieve",
+         "Tool for separating fine material"
+        ],
+        [
+         "Bakery",
+         "Place where baked products are made or sold"
+        ],
+        [
+         "Baker",
+         "Person who bakes"
+        ],
+        [
+         "Dough",
+         "Mixture prepared for baking"
+        ],
+        [
+         "Ingredients",
+         "Items used to prepare food"
+        ],
+        [
+         "Recipe",
+         "Instructions for preparing food"
+        ],
+        [
+         "Flavour",
+         "Taste or smell of food"
+        ]
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Keeping Animals"
+      },
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Pet",
+         "Animal kept mainly for companionship"
+        ],
+        [
+         "Welfare",
+         "Well-being"
+        ],
+        [
+         "Misery",
+         "Great suffering or unhappiness"
+        ],
+        [
+         "Comfort",
+         "State of being free from distress"
+        ],
+        [
+         "Discomfort",
+         "Lack of comfort"
+        ],
+        [
+         "Anxious",
+         "Worried or uneasy"
+        ],
+        [
+         "Anxiety",
+         "Feeling of worry or uneasiness"
+        ],
+        [
+         "Cruelty",
+         "Behaviour that causes unnecessary suffering"
+        ],
+        [
+         "Stray",
+         "Lost, abandoned or ownerless animal"
+        ],
+        [
+         "Sorrow",
+         "Great sadness"
+        ],
+        [
+         "Cruel",
+         "Causing pain or suffering"
+        ],
+        [
+         "Body signs",
+         "Physical signs showing an animal's condition or behaviour"
+        ],
+        [
+         "Torture",
+         "Deliberately causing severe pain"
+        ],
+        [
+         "Husbandry",
+         "Care and management of animals"
+        ],
+        [
+         "Dip",
+         "Treat animals with a suitable solution to control parasites"
+        ],
+        [
+         "Slaughter",
+         "Kill an animal, especially for food"
+        ],
+        [
+         "Veterinary",
+         "Relating to animal healthcare"
+        ],
+        [
+         "Tether",
+         "Tie an animal so that its movement is restricted"
+        ],
+        [
+         "Mistreatment",
+         "Bad or improper treatment"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT LANGUAGE STRUCTURES",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Carpentry"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "**Used for** - \"A saw is used for cutting wood.\"",
+        "**First...next...then** - \"First you measure the wood, next you cut it, then you join the pieces.\"",
+        "**Besides** - \"The carpenter made a chair besides a table.\"",
+        "**Though** - \"Though he is young, he makes good furniture.\""
+       ],
+       "start": 1
+      },
+      {
+       "t": "h3",
+       "x": "Tailoring"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "**Be careful when** - \"Be careful when using the needle.\"",
+        "**Prefer...to** - \"I prefer sewing to knitting.\"",
+        "**What is/are...used for?** - \"What are scissors used for?\"",
+        "**As soon as** - \"As soon as the tailor finished sewing, she ironed the dress.\"",
+        "**Immediately** - \"Immediately the cloth was cut, the tailor started sewing.\"",
+        "**But** - \"She was tired but she continued sewing.\"",
+        "**And** - \"Sarah and Peter made good designs.\""
+       ],
+       "start": 5
+      },
+      {
+       "t": "h3",
+       "x": "Baking"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "**To + infinitive** - \"Remember to turn off the oven.\"",
+        "**Used to** - \"I used to bake cakes.\"",
+        "**Used for** - \"A spoon is used for mixing.\"",
+        "**Prefers...to** - \"Musa prefers cakes to bread.\"",
+        "**Neither...nor** - \"Neither Juma nor Kadoma eats biscuits.\"",
+        "**Even though** - \"Even though the cake looked good, it was not tasty.\""
+       ],
+       "start": 12
+      },
+      {
+       "t": "h3",
+       "x": "Keeping Animals"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "**You should** - \"You should care for animals.\"",
+        "**You should not** - \"You should not mistreat animals.\"",
+        "**Not only...but also** - \"Not only should you feed animals but also give them clean water.\"",
+        "**Need not** - \"We need not be cruel to animals.\"",
+        "**If...would** - \"If animals could speak, they would complain about cruelty.\""
+       ],
+       "start": 18
+      }
+     ]
+    },
+    {
+     "title": "MAIN COMPETENCIES FOR THE TOPIC",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "By the end of the Occupations topic, the learner should be able to:"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Describe different occupations.",
+        "Identify tools and equipment used in different occupations.",
+        "Describe processes involved in making different products.",
+        "Use vocabulary related to carpentry.",
+        "Use vocabulary related to tailoring.",
+        "Use vocabulary related to baking.",
+        "Use vocabulary related to keeping animals.",
+        "Read texts related to different occupations.",
+        "Write texts related to different occupations.",
+        "Construct meaningful sentences using occupational vocabulary.",
+        "Explain the uses of different tools.",
+        "Explain the steps involved in different processes.",
+        "Use different types of adverbs correctly.",
+        "Identify and use verbs related to livelihood activities.",
+        "Explain the advantages of keeping animals and birds.",
+        "Describe appropriate ways of caring for animals.",
+        "Interpret simple baking recipes.",
+        "Identify different bakery products.",
+        "Appreciate honest work and different occupations.",
+        "Demonstrate respect, sympathy and empathy towards people and animals.",
+        "Communicate clearly and confidently when discussing occupations.",
+        "Present ideas logically when describing an occupation or process."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "KEY VALUES AND LIFE SKILLS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**330. What values are developed through the topic of Occupations?**"
+      },
+      {
+       "t": "p",
+       "x": "The topic develops: appreciation, love, respect, sympathy and empathy."
+      },
+      {
+       "t": "p",
+       "x": "**331. What communication skills are developed?**"
+      },
+      {
+       "t": "p",
+       "x": "Learners develop: fluency, audibility, confidence, articulation and logical presentation of ideas."
+      },
+      {
+       "t": "p",
+       "x": "**332. What creative-thinking skills are developed?**"
+      },
+      {
+       "t": "p",
+       "x": "Learners develop: logical reasoning and the ability to initiate new ideas."
+      },
+      {
+       "t": "p",
+       "x": "**333. What critical-thinking skills are developed?**"
+      },
+      {
+       "t": "p",
+       "x": "Learners develop: responding to questions appropriately, selecting and evaluating information, and giving reasons for actions taken."
+      },
+      {
+       "t": "p",
+       "x": "**334. Why should we respect people who do different jobs?**"
+      },
+      {
+       "t": "p",
+       "x": "Because different occupations provide important goods and services and require different skills."
+      },
+      {
+       "t": "p",
+       "x": "**335. Why should we show empathy towards animals?**"
+      },
+      {
+       "t": "p",
+       "x": "Because animals can experience pain, fear, discomfort and suffering."
+      },
+      {
+       "t": "p",
+       "x": "**336. What is empathy?**"
+      },
+      {
+       "t": "p",
+       "x": "Empathy is the ability to understand or share the feelings of another person or living thing."
+      },
+      {
+       "t": "p",
+       "x": "**337. What is sympathy?**"
+      },
+      {
+       "t": "p",
+       "x": "Sympathy is feeling concern or sorrow for someone who is suffering or experiencing difficulty."
+      }
+     ]
+    },
+    {
+     "title": "FINAL REVISION",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**338. Name the four main sub-topics under Occupations.**"
+      },
+      {
+       "t": "p",
+       "x": "Carpentry, Tailoring, Baking and Keeping Animals."
+      },
+      {
+       "t": "p",
+       "x": "**339. Name five tools used by a carpenter.**"
+      },
+      {
+       "t": "p",
+       "x": "Saw, plane, hammer, drill and screwdriver."
+      },
+      {
+       "t": "p",
+       "x": "**340. Name five tailoring tools or materials.**"
+      },
+      {
+       "t": "p",
+       "x": "Needle, scissors, tape measure, sewing machine and thread."
+      },
+      {
+       "t": "p",
+       "x": "**341. Name five baking ingredients.**"
+      },
+      {
+       "t": "p",
+       "x": "Flour, sugar, salt, margarine/butter and yeast."
+      },
+      {
+       "t": "p",
+       "x": "**342. Name five things needed for proper animal care.**"
+      },
+      {
+       "t": "p",
+       "x": "Food, clean water, shelter, cleanliness and veterinary care."
+      },
+      {
+       "t": "p",
+       "x": "**343. Who makes furniture?**"
+      },
+      {
+       "t": "p",
+       "x": "A carpenter."
+      },
+      {
+       "t": "p",
+       "x": "**344. Who makes clothes?**"
+      },
+      {
+       "t": "p",
+       "x": "A tailor or seamstress."
+      },
+      {
+       "t": "p",
+       "x": "**345. Who makes bread and cakes?**"
+      },
+      {
+       "t": "p",
+       "x": "A baker."
+      },
+      {
+       "t": "p",
+       "x": "**346. What is the purpose of an occupation?**"
+      },
+      {
+       "t": "p",
+       "x": "To provide a livelihood and useful goods or services."
+      },
+      {
+       "t": "p",
+       "x": "**347. Why is carpentry important?**"
+      },
+      {
+       "t": "p",
+       "x": "It provides furniture and other useful wooden products."
+      },
+      {
+       "t": "p",
+       "x": "**348. Why is tailoring important?**"
+      },
+      {
+       "t": "p",
+       "x": "It provides clothes and helps repair and alter garments."
+      },
+      {
+       "t": "p",
+       "x": "**349. Why is baking important?**"
+      },
+      {
+       "t": "p",
+       "x": "It provides food products such as bread, cakes and biscuits."
+      },
+      {
+       "t": "p",
+       "x": "**350. Why is keeping animals important?**"
+      },
+      {
+       "t": "p",
+       "x": "It provides food, income, employment, companionship and other useful products."
+      },
+      {
+       "t": "p",
+       "x": "**351. What is the main lesson about occupations?**"
+      },
+      {
+       "t": "p",
+       "x": "All honest occupations are valuable, and people should respect the work and skills of others while developing useful skills for earning a living."
       }
      ]
     },
@@ -5375,14 +8317,18 @@
       {
        "t": "ul",
        "items": [
-        "An occupation is done **regularly** — to **earn a living** or **provide a service**.",
-        "Farmers come in types: **crop, poultry, dairy, fish and pig** farmers.",
-        "Traders include **shopkeepers, wholesalers, retailers and market vendors**.",
-        "Carpenters make things **mainly from wood**: chairs, tables, beds, doors, cupboards.",
-        "Building brings together **builders, bricklayers, plumbers, electricians, engineers and architects**.",
-        "Transport occupations include **driver, pilot, sailor, mechanic and motorcycle rider**.",
-        "When choosing an occupation, consider **ability, education, interests, skills, employment, income, working conditions, training, demand and health**.",
-        "All occupations **provide income and employment, goods and services**, and help **economic and national development**."
+        "The four P.6 occupations are **carpentry, tailoring, baking and keeping animals**.",
+        "A **carpenter** works with **wood/timber**: saw cuts, plane smooths, hammer drives nails, drill makes holes, screwdriver handles screws, sandpaper smooths, glue joins, varnish protects.",
+        "Carpenter's order: **plan and measure → mark → cut → smooth → join → check → finish**.",
+        "A **tailor/seamstress** makes clothes: first **take measurements**, then cut the cloth, stitch the pieces, then check, fit, finish, iron and decorate.",
+        "A **baker** follows a **recipe**: prepare and measure ingredients, mix or knead, let dough rise, bake at the right temperature — handle the oven carefully.",
+        "**Yeast** makes dough rise; **kneading** presses and folds dough; a **pinch** is a very small amount.",
+        "Proper animal care: **food, clean water, shelter, clean surroundings, veterinary care, protection and careful handling**.",
+        "Animal sounds: dog **barks**, cat **meows**, cow **moos**, goat/sheep **bleats**, pig **grunts**, hen **clucks**, cock **crows**, horse **neighs**.",
+        "Passive voice: the receiver becomes the focus — \"Good chairs **are made by** Angela.\"",
+        "Adverb types: **manner** (carefully), **time** (soon), **place** (outside), **emphasis** (very), **quality**.",
+        "Structures: **used for** (purpose), **first…next…then** (order), **prefer…to** (preference), **neither…nor**, **not only…but also**, **need not**, **if…would**.",
+        "**All honest occupations are valuable** — respect the work and skills of others."
        ]
       }
      ]
@@ -5393,10 +8339,13 @@
       {
        "t": "ul",
        "items": [
-        "Learn the KEY DEFINITIONS word for word — **occupation, farming, fishing, trading, teaching, doctor, nurse, carpentry, building** are the favourites.",
-        "\"Importance\" questions must say **what the occupation provides** (food, income, employment, raw materials, export goods…) — never \"it is good\" alone.",
-        "Keep the **examples lists** ready: five types of farmers, four types of traders, five carpentry products, five transport occupations.",
-        "Choosing-occupation questions accept any reasonable factor — give **five** and use the words from the notes."
+        "Learn the KEY DEFINITIONS tables word for word — tool questions (\"What is a saw used for?\") are guaranteed for all four occupations.",
+        "\"Who makes…?\" questions: furniture = **carpenter**, clothes = **tailor/seamstress**, bread and cakes = **baker**.",
+        "Process-order questions: carpentry (measure → mark → cut → smooth → join → finish), tailoring (measure → cut → stitch → finish), baking (prepare → measure → mix/knead → rise → bake).",
+        "Passive-voice conversions are certain: \"The carpenter repairs the table\" → \"The table is repaired by the carpenter.\"",
+        "Adverb questions must name the **type** (manner, time, place, emphasis, quality) AND give an example.",
+        "Animal-care questions: five needs of animals; **you should / you should not** answers for welfare.",
+        "Composition questions: occupation, who does it, tools, materials, how it is done, products, importance — plus adverbs."
        ]
       }
      ]
@@ -5407,21 +8356,35 @@
       {
        "t": "ol",
        "items": [
-        "What is an occupation?",
-        "Give five examples of occupations.",
+        "What are the four main sub-topics under Occupations?",
+        "Who makes wooden furniture?",
+        "Who makes clothes?",
+        "Who makes bread and cakes?",
+        "What is a saw used for?",
+        "What is a plane used for?",
+        "What is sandpaper used for?",
+        "What is wood glue used for?",
+        "What is a tape measure used for?",
+        "What is a needle used for?",
+        "What are scissors used for?",
+        "What is a thimble used for?",
+        "What is an oven used for?",
+        "What is a recipe?",
+        "What is dough?",
+        "What does kneading mean?",
+        "What is animal welfare?",
+        "What is animal husbandry?",
+        "Why should animals be given shelter?",
+        "Why should animals receive veterinary care?",
+        "What is rearing?",
+        "What is livelihood?",
+        "What is earning?",
         "What is farming?",
-        "Mention four types of farmers.",
-        "State four importance of farming.",
-        "What is trading?",
-        "Mention three examples of traders.",
-        "Who is a teacher?",
-        "Who is a carpenter?",
-        "Mention four products made by carpenters.",
-        "State five factors considered when choosing an occupation.",
-        "Give five importance of occupations.",
-        "What is fishing?",
-        "Mention three occupations related to transport.",
-        "Why are occupations important to a country?"
+        "What is an adverb of manner?",
+        "What is an adverb of time?",
+        "What is an adverb of place?",
+        "What is an adverb of emphasis?",
+        "What is an adverb of quality?"
        ],
        "start": 1
       }
@@ -5433,21 +8396,35 @@
       {
        "t": "ol",
        "items": [
-        "An occupation is the work that a person does regularly to earn a living or provide a service.",
-        "Any five: farming, teaching, fishing, trading, carpentry, nursing, driving, building, tailoring, banking.",
-        "Farming is the growing of crops and keeping of animals for food, raw materials and income.",
-        "Any four: crop farmers, poultry farmers, dairy farmers, fish farmers, pig farmers.",
-        "Any four: it provides food; provides employment; provides raw materials for industries; provides income; provides goods for export; supports other businesses.",
-        "Trading is the buying and selling of goods and services.",
-        "Any three: shopkeepers, wholesalers, retailers, market vendors.",
-        "A teacher is a person who teaches — one who helps people acquire knowledge, skills and good behaviour.",
-        "A carpenter is a person who does carpentry — making and repairing things mainly from wood.",
-        "Any four: chairs, tables, beds, doors, cupboards.",
-        "Any five: ability and talent; level of education; personal interests; skills; availability of employment; income expected; working conditions; availability of training; demand for the occupation; health and physical ability.",
-        "Any five: they provide income; provide employment; provide goods and services; improve standards of living; promote economic development; generate government revenue; promote self-reliance; develop people's skills.",
-        "Fishing is the catching or rearing of fish for food and income.",
-        "Any three: driver, pilot, sailor, mechanic, motorcycle rider.",
-        "Because they provide income and employment, provide goods and services, promote economic development, generate government revenue and contribute to national development."
+        "Carpentry, Tailoring, Baking and Keeping Animals.",
+        "A carpenter.",
+        "A tailor or seamstress.",
+        "A baker.",
+        "It is used for cutting wood.",
+        "It is used for smoothing wood.",
+        "It is used for smoothing surfaces.",
+        "It is used for joining pieces of wood.",
+        "It is used for taking measurements.",
+        "It is used for sewing.",
+        "They are used for cutting cloth and other materials.",
+        "It protects the finger during hand sewing.",
+        "It is used for baking and cooking.",
+        "A recipe is a set of instructions for preparing food.",
+        "Dough is a mixture prepared for making baked products.",
+        "It means pressing and folding dough repeatedly.",
+        "It is the proper care and well-being of animals.",
+        "It is the care, breeding and management of domestic animals.",
+        "To protect them from weather, predators and other dangers.",
+        "To prevent and treat diseases and injuries.",
+        "It is raising and caring for animals or birds.",
+        "It is the way a person earns a living.",
+        "It is receiving money for work or services.",
+        "It is growing crops and/or keeping animals.",
+        "It tells us how an action is performed.",
+        "It tells us when an action happens.",
+        "It tells us where an action happens.",
+        "It adds emphasis or force to a statement.",
+        "It describes the quality or manner of an action or situation."
        ],
        "start": 1
       }
