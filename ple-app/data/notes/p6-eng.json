@@ -3,7 +3,7 @@
  "subject": "ENG",
  "subject_name": "English",
  "total": 6,
- "words": 12926,
+ "words": 13865,
  "topics": [
   {
    "id": "P6_ENG_T01",
@@ -15,7 +15,7 @@
    "slug": "safety-on-the-road",
    "periods": 36,
    "curriculum_pages": "26–29",
-   "words": 2099,
+   "words": 3038,
    "sections": [
     {
      "title": "About this topic",
@@ -26,7 +26,7 @@
       },
       {
        "t": "p",
-       "x": "**What you already know:** In P.1 and P.2 you learnt about accidents, safety and transport. In P.6 you study **Safety on the Road** — who uses the road, how each road user stays safe, the main road signs, traffic lights, safe crossing, and how road accidents are caused, prevented and why road safety matters."
+       "x": "**What you already know:** You already use roads every day. In P.6 you now master **road safety** fully — the road users and their rules, traffic signs and lights, the causes and effects of accidents, safety equipment, responsible road use and what to do in an emergency."
       },
       {
        "t": "p",
@@ -35,12 +35,11 @@
       {
        "t": "ul",
        "items": [
-        "say what road safety and a road user are",
-        "name the road users and the safety rules for each of them",
-        "name and describe the three main types of road signs",
-        "say what the red, yellow and green traffic lights mean",
-        "describe a safe way of crossing a road",
-        "state the causes and effects of road accidents and how to prevent them"
+        "explain road safety and name the road users",
+        "give the safety rules for pedestrians, drivers, passengers, cyclists and motorcyclists",
+        "explain the types of traffic signs, the traffic lights and road safety equipment",
+        "state the causes, effects and prevention of road accidents",
+        "act responsibly and safely after an accident"
        ]
       }
      ]
@@ -50,15 +49,27 @@
      "blocks": [
       {
        "t": "p",
-       "x": "**Road safety** refers to the measures taken to prevent accidents and protect people using roads."
+       "x": "**1. What is road safety?**"
       },
       {
        "t": "p",
-       "x": "People who use roads are called **road users**."
+       "x": "Road safety refers to the measures and practices used to prevent road accidents and protect road users."
       },
       {
        "t": "p",
-       "x": "Examples of road users:"
+       "x": "**2. Who is a road user?**"
+      },
+      {
+       "t": "p",
+       "x": "A road user is any person who uses a road."
+      },
+      {
+       "t": "p",
+       "x": "**3. Mention examples of road users.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples of road users include:"
       },
       {
        "t": "ul",
@@ -74,161 +85,172 @@
      ]
     },
     {
-     "title": "ROAD USERS",
+     "title": "SAFETY FOR PEDESTRIANS",
      "blocks": [
       {
-       "t": "h3",
-       "x": "1. Pedestrians"
+       "t": "p",
+       "x": "**4. Who is a pedestrian?**"
       },
       {
        "t": "p",
-       "x": "A **pedestrian** is a person who walks along or crosses a road."
+       "x": "A pedestrian is a person who walks along or crosses a road."
       },
       {
        "t": "p",
-       "x": "Safety rules for pedestrians:"
+       "x": "**5. What is a footpath?**"
+      },
+      {
+       "t": "p",
+       "x": "A footpath is a part of a road or area provided for pedestrians to walk safely."
+      },
+      {
+       "t": "p",
+       "x": "**6. Why should pedestrians use footpaths?**"
+      },
+      {
+       "t": "p",
+       "x": "Pedestrians should use footpaths to avoid being hit by vehicles using the road."
+      },
+      {
+       "t": "p",
+       "x": "**7. Which side should pedestrians walk on when there is no footpath?**"
+      },
+      {
+       "t": "p",
+       "x": "Where there is no footpath, pedestrians should walk on the **right-hand side of the road**, facing oncoming traffic."
+      },
+      {
+       "t": "p",
+       "x": "**8. How should pedestrians cross a road safely?**"
+      },
+      {
+       "t": "p",
+       "x": "They should:"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Stop at the edge of the road.",
+        "Look right.",
+        "Look left.",
+        "Look right again.",
+        "Listen for approaching vehicles.",
+        "Cross when it is safe.",
+        "Continue looking and listening while crossing."
+       ],
+       "start": 1
+      },
+      {
+       "t": "p",
+       "x": "**9. Where should pedestrians cross roads?**"
+      },
+      {
+       "t": "p",
+       "x": "Pedestrians should cross roads at safe places such as:"
       },
       {
        "t": "ul",
        "items": [
-        "Walk on the **right side of the road** where there is no footpath, facing oncoming traffic.",
-        "Use a **footpath or pavement** where it is provided.",
-        "Cross the road at a **zebra crossing, pedestrian crossing or other safe place**.",
-        "Look **right, left and right again** before crossing where traffic approaches from the right.",
-        "Do not run across the road.",
-        "Do not play on the road.",
-        "Obey traffic lights and road signs.",
-        "Wear bright or reflective clothing when walking at night.",
-        "Avoid using a phone or wearing earphones while crossing the road.",
-        "Hold young children's hands when crossing busy roads."
+        "Zebra crossings",
+        "Pedestrian crossings",
+        "Footbridges",
+        "Pedestrian underpasses",
+        "Traffic-light controlled crossings"
        ]
       },
       {
-       "t": "h3",
-       "x": "2. Drivers"
+       "t": "p",
+       "x": "**10. What is a zebra crossing?**"
       },
       {
        "t": "p",
-       "x": "A **driver** is a person who controls and operates a vehicle."
+       "x": "A zebra crossing is a marked part of a road where pedestrians can cross safely."
       },
       {
        "t": "p",
-       "x": "Safety rules for drivers:"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "Obey traffic rules and road signs.",
-        "Drive at a safe speed.",
-        "Do not drive when drunk or under the influence of drugs.",
-        "Do not use a mobile phone while driving.",
-        "Wear a seat belt.",
-        "Keep the vehicle in good mechanical condition.",
-        "Do not overload the vehicle.",
-        "Give way to pedestrians at designated crossings.",
-        "Keep a safe distance from other vehicles.",
-        "Do not overtake where it is dangerous.",
-        "Use indicators when turning or changing lanes."
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "3. Passengers"
+       "x": "**11. Why should pedestrians use zebra crossings?**"
       },
       {
        "t": "p",
-       "x": "A **passenger** is a person travelling in a vehicle but is not controlling it."
+       "x": "They should use zebra crossings because they provide a safer and more visible place for crossing the road."
       },
       {
        "t": "p",
-       "x": "Safety rules for passengers:"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "Wear a seat belt where one is provided.",
-        "Sit properly in the vehicle.",
-        "Do not distract the driver.",
-        "Do not put your head or hands outside the vehicle.",
-        "Do not jump on or off a moving vehicle.",
-        "Do not stand in a moving vehicle unless the vehicle is designed for standing passengers.",
-        "Do not overload the vehicle.",
-        "Children should use appropriate child restraints where available."
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "4. Cyclists"
+       "x": "**12. Why should children not play on roads?**"
       },
       {
        "t": "p",
-       "x": "A **cyclist** is a person who rides a bicycle."
+       "x": "Children should not play on roads because vehicles may hit them and cause serious injuries or death."
       },
       {
        "t": "p",
-       "x": "Safety rules for cyclists:"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "Wear a properly fitted helmet.",
-        "Ride on the correct side of the road.",
-        "Obey traffic signs and signals.",
-        "Use hand signals when turning.",
-        "Keep the bicycle in good condition.",
-        "Use lights or reflectors when riding at night.",
-        "Do not carry too many passengers.",
-        "Do not ride while using a mobile phone.",
-        "Avoid riding at excessive speed.",
-        "Keep both hands available for controlling the bicycle when necessary."
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "5. Motorcyclists"
+       "x": "**13. Why should pedestrians avoid using mobile phones while crossing roads?**"
       },
       {
        "t": "p",
-       "x": "A **motorcyclist** is a person who rides a motorcycle."
+       "x": "Mobile phones can distract pedestrians and prevent them from paying attention to approaching vehicles."
       },
       {
        "t": "p",
-       "x": "Safety rules for motorcyclists:"
+       "x": "**14. Why should pedestrians avoid using earphones when crossing busy roads?**"
       },
       {
-       "t": "ul",
-       "items": [
-        "Wear a properly fitted helmet.",
-        "Obey traffic rules and road signs.",
-        "Ride at a safe speed.",
-        "Keep the motorcycle in good condition.",
-        "Do not ride under the influence of alcohol or drugs.",
-        "Do not use a mobile phone while riding.",
-        "Do not carry more passengers than the motorcycle is designed to carry.",
-        "Use indicators when turning.",
-        "Wear visible or reflective clothing, especially at night."
-       ]
+       "t": "p",
+       "x": "Earphones may prevent pedestrians from hearing approaching vehicles, horns and other warning sounds."
       }
      ]
     },
     {
-     "title": "ROAD SIGNS",
+     "title": "TRAFFIC SIGNS",
      "blocks": [
       {
        "t": "p",
-       "x": "**Road signs** are signs placed along roads to give information, warnings or instructions to road users."
-      },
-      {
-       "t": "h3",
-       "x": "1. Warning signs"
+       "x": "**15. What is a traffic sign?**"
       },
       {
        "t": "p",
-       "x": "These signs warn road users about possible dangers ahead."
+       "x": "A traffic sign is a sign placed on or near a road to give information, warnings, instructions or restrictions to road users."
       },
       {
        "t": "p",
-       "x": "Examples:"
+       "x": "**16. Why are traffic signs important?**"
+      },
+      {
+       "t": "p",
+       "x": "Traffic signs help control traffic, warn road users of dangers and provide information for safe use of roads."
+      },
+      {
+       "t": "p",
+       "x": "**17. What are the main types of traffic signs?**"
+      },
+      {
+       "t": "p",
+       "x": "The main types are:"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Warning signs",
+        "Regulatory signs",
+        "Information signs"
+       ],
+       "start": 1
+      },
+      {
+       "t": "p",
+       "x": "**18. What are warning signs?**"
+      },
+      {
+       "t": "p",
+       "x": "Warning signs are signs that warn road users about dangers or hazards ahead."
+      },
+      {
+       "t": "p",
+       "x": "**19. Give examples of warning signs.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include:"
       },
       {
        "t": "ul",
@@ -243,39 +265,47 @@
        ]
       },
       {
-       "t": "h3",
-       "x": "2. Regulatory signs"
+       "t": "p",
+       "x": "**20. What are regulatory signs?**"
       },
       {
        "t": "p",
-       "x": "These signs give instructions or restrictions that road users must obey."
+       "x": "Regulatory signs give instructions, restrictions or prohibitions that road users must obey."
       },
       {
        "t": "p",
-       "x": "Examples:"
+       "x": "**21. Give examples of regulatory signs.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include:"
       },
       {
        "t": "ul",
        "items": [
         "Stop",
+        "Give way",
         "No entry",
         "No parking",
         "Speed limit",
-        "No overtaking",
-        "Give way"
+        "No overtaking"
        ]
       },
       {
-       "t": "h3",
-       "x": "3. Information signs"
+       "t": "p",
+       "x": "**22. What are information signs?**"
       },
       {
        "t": "p",
-       "x": "These signs provide useful information to road users."
+       "x": "Information signs provide useful information or directions to road users."
       },
       {
        "t": "p",
-       "x": "Examples:"
+       "x": "**23. Give examples of information signs.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include:"
       },
       {
        "t": "ul",
@@ -283,8 +313,8 @@
         "Hospital",
         "Bus stop",
         "Parking area",
-        "Telephone",
-        "Petrol station"
+        "Petrol station",
+        "Telephone"
        ]
       }
      ]
@@ -294,62 +324,61 @@
      "blocks": [
       {
        "t": "p",
-       "x": "**Traffic lights** are signals used to control the movement of road users."
+       "x": "**24. What are traffic lights?**"
       },
       {
        "t": "p",
-       "x": "**Red light** — **STOP.**"
+       "x": "Traffic lights are signals used to control the movement of vehicles and pedestrians on roads."
       },
       {
        "t": "p",
-       "x": "**Yellow/amber light** — **Prepare to stop** or proceed only according to the applicable traffic signal."
+       "x": "**25. What does a red traffic light mean?**"
       },
       {
        "t": "p",
-       "x": "**Green light** — **GO** when the way is clear and it is safe to proceed."
+       "x": "A red traffic light means **stop**."
+      },
+      {
+       "t": "p",
+       "x": "**26. What does a yellow or amber traffic light mean?**"
+      },
+      {
+       "t": "p",
+       "x": "A yellow or amber light warns road users to prepare to stop and follow the signal instructions."
+      },
+      {
+       "t": "p",
+       "x": "**27. What does a green traffic light mean?**"
+      },
+      {
+       "t": "p",
+       "x": "A green light means that road users may proceed when the way is clear and safe."
+      },
+      {
+       "t": "p",
+       "x": "**28. Why are traffic lights important?**"
+      },
+      {
+       "t": "p",
+       "x": "They help control the movement of traffic and reduce collisions at junctions and crossings."
       }
      ]
     },
     {
-     "title": "SAFE ROAD CROSSING",
+     "title": "ROAD ACCIDENTS",
      "blocks": [
       {
        "t": "p",
-       "x": "A safe way of crossing a road is:"
-      },
-      {
-       "t": "ol",
-       "items": [
-        "Stop at the edge of the road.",
-        "Look **right**.",
-        "Look **left**.",
-        "Look **right again**.",
-        "Listen for approaching vehicles.",
-        "Cross when the road is clear and it is safe.",
-        "Keep looking and listening while crossing.",
-        "Cross directly without running."
-       ],
-       "start": 1
+       "x": "**29. What is a road accident?**"
       },
       {
        "t": "p",
-       "x": "Places where pedestrians can cross:"
+       "x": "A road accident is an unexpected event involving road users or vehicles that may result in injury, death or damage to property."
       },
       {
-       "t": "ul",
-       "items": [
-        "Zebra crossings",
-        "Pedestrian crossings",
-        "Footbridges",
-        "Pedestrian underpasses",
-        "Traffic-light controlled crossings"
-       ]
-      }
-     ]
-    },
-    {
-     "title": "CAUSES OF ROAD ACCIDENTS",
-     "blocks": [
+       "t": "p",
+       "x": "**30. What are the main causes of road accidents?**"
+      },
       {
        "t": "p",
        "x": "Road accidents may be caused by:"
@@ -358,19 +387,66 @@
        "t": "ul",
        "items": [
         "Over-speeding",
-        "Driving while drunk",
         "Reckless driving",
-        "Using a mobile phone while driving",
-        "Overtaking in dangerous places",
-        "Failure to obey traffic rules",
+        "Drunk driving",
+        "Careless crossing",
+        "Using mobile phones while driving",
+        "Dangerous overtaking",
+        "Overloading",
         "Poorly maintained vehicles",
         "Poor road conditions",
-        "Crossing roads carelessly",
-        "Overloading vehicles",
-        "Driving while tired or sleepy",
         "Poor visibility",
-        "Failure to use safety equipment such as helmets and seat belts"
+        "Driving while tired",
+        "Failure to obey traffic rules"
        ]
+      },
+      {
+       "t": "p",
+       "x": "**31. How does over-speeding cause road accidents?**"
+      },
+      {
+       "t": "p",
+       "x": "Over-speeding reduces the time a driver has to react to danger and increases the distance needed to stop a vehicle."
+      },
+      {
+       "t": "p",
+       "x": "**32. How does drunk driving cause accidents?**"
+      },
+      {
+       "t": "p",
+       "x": "Alcohol can affect a driver's judgement, concentration, coordination and reaction time."
+      },
+      {
+       "t": "p",
+       "x": "**33. How does careless crossing cause accidents?**"
+      },
+      {
+       "t": "p",
+       "x": "A pedestrian who crosses without checking for vehicles may be hit by an approaching vehicle."
+      },
+      {
+       "t": "p",
+       "x": "**34. How does using a mobile phone cause accidents?**"
+      },
+      {
+       "t": "p",
+       "x": "Using a mobile phone distracts the driver and reduces attention to the road."
+      },
+      {
+       "t": "p",
+       "x": "**35. How does overloading cause accidents?**"
+      },
+      {
+       "t": "p",
+       "x": "Overloading can make a vehicle difficult to control and can increase the risk of accidents."
+      },
+      {
+       "t": "p",
+       "x": "**36. How can poor vehicle maintenance cause accidents?**"
+      },
+      {
+       "t": "p",
+       "x": "Faulty brakes, worn tyres, defective lights and other mechanical problems can cause accidents."
       }
      ]
     },
@@ -379,28 +455,338 @@
      "blocks": [
       {
        "t": "p",
-       "x": "Road accidents can lead to:"
+       "x": "**37. What are the effects of road accidents?**"
+      },
+      {
+       "t": "p",
+       "x": "Road accidents may cause:"
       },
       {
        "t": "ul",
        "items": [
         "Death",
         "Injuries",
-        "Disability",
+        "Permanent disability",
         "Damage to vehicles",
         "Damage to property",
         "Loss of income",
-        "Loss of family members",
-        "High medical expenses",
+        "Medical expenses",
+        "Emotional suffering",
         "Traffic congestion",
-        "Emotional suffering"
+        "Loss of family members"
        ]
+      },
+      {
+       "t": "p",
+       "x": "**38. How do road accidents affect families?**"
+      },
+      {
+       "t": "p",
+       "x": "They may cause loss of family members, injuries, financial difficulties and emotional suffering."
+      },
+      {
+       "t": "p",
+       "x": "**39. How do road accidents affect the economy?**"
+      },
+      {
+       "t": "p",
+       "x": "They can cause loss of working people, destruction of property, medical expenses and loss of productive time."
+      }
+     ]
+    },
+    {
+     "title": "SAFETY RULES FOR DRIVERS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**40. Who is a driver?**"
+      },
+      {
+       "t": "p",
+       "x": "A driver is a person who operates or controls a motor vehicle."
+      },
+      {
+       "t": "p",
+       "x": "**41. Mention safety rules for drivers.**"
+      },
+      {
+       "t": "p",
+       "x": "Drivers should:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Obey traffic rules.",
+        "Obey traffic signs.",
+        "Observe speed limits.",
+        "Wear seat belts.",
+        "Avoid driving under the influence of alcohol or drugs.",
+        "Avoid using mobile phones while driving.",
+        "Keep vehicles properly maintained.",
+        "Avoid dangerous overtaking.",
+        "Keep a safe distance from other vehicles.",
+        "Avoid driving when extremely tired or sleepy.",
+        "Avoid overloading vehicles."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**42. Why should drivers wear seat belts?**"
+      },
+      {
+       "t": "p",
+       "x": "Seat belts help protect occupants from being thrown around or out of a vehicle during a collision."
+      },
+      {
+       "t": "p",
+       "x": "**43. Why should drivers avoid over-speeding?**"
+      },
+      {
+       "t": "p",
+       "x": "Drivers should avoid over-speeding because it increases the risk and severity of accidents."
+      },
+      {
+       "t": "p",
+       "x": "**44. Why should drivers maintain their vehicles?**"
+      },
+      {
+       "t": "p",
+       "x": "Proper vehicle maintenance helps ensure that important parts such as brakes, tyres and lights work correctly."
+      },
+      {
+       "t": "p",
+       "x": "**45. Why should drivers not drive when drunk?**"
+      },
+      {
+       "t": "p",
+       "x": "Alcohol can impair judgement, coordination and reaction time, making driving dangerous."
+      }
+     ]
+    },
+    {
+     "title": "SAFETY RULES FOR PASSENGERS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**46. Who is a passenger?**"
+      },
+      {
+       "t": "p",
+       "x": "A passenger is a person travelling in a vehicle without controlling it."
+      },
+      {
+       "t": "p",
+       "x": "**47. Mention safety rules for passengers.**"
+      },
+      {
+       "t": "p",
+       "x": "Passengers should:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Wear seat belts where provided.",
+        "Sit properly.",
+        "Avoid distracting the driver.",
+        "Keep their heads and hands inside the vehicle.",
+        "Avoid jumping on or off moving vehicles.",
+        "Avoid overcrowding vehicles.",
+        "Follow the instructions of the driver and relevant safety rules."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**48. Why should passengers not distract drivers?**"
+      },
+      {
+       "t": "p",
+       "x": "Distraction may prevent drivers from concentrating on the road and can lead to accidents."
+      },
+      {
+       "t": "p",
+       "x": "**49. Why should passengers not put their heads or hands outside moving vehicles?**"
+      },
+      {
+       "t": "p",
+       "x": "They may be hit by other vehicles, trees, buildings or other objects."
+      }
+     ]
+    },
+    {
+     "title": "SAFETY RULES FOR CYCLISTS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**50. Who is a cyclist?**"
+      },
+      {
+       "t": "p",
+       "x": "A cyclist is a person who rides a bicycle."
+      },
+      {
+       "t": "p",
+       "x": "**51. Mention safety rules for cyclists.**"
+      },
+      {
+       "t": "p",
+       "x": "Cyclists should:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Wear a properly fitted helmet.",
+        "Obey traffic rules and signs.",
+        "Ride carefully.",
+        "Keep their bicycles in good condition.",
+        "Use lights or reflectors at night.",
+        "Give appropriate signals when turning.",
+        "Avoid using mobile phones while riding.",
+        "Avoid carrying too many passengers."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**52. Why should cyclists wear helmets?**"
+      },
+      {
+       "t": "p",
+       "x": "Helmets help protect the head from serious injury in the event of a crash."
+      },
+      {
+       "t": "p",
+       "x": "**53. Why should bicycles have reflectors or lights?**"
+      },
+      {
+       "t": "p",
+       "x": "They make cyclists more visible to other road users, especially at night or in poor visibility."
+      }
+     ]
+    },
+    {
+     "title": "SAFETY RULES FOR MOTORCYCLISTS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**54. Who is a motorcyclist?**"
+      },
+      {
+       "t": "p",
+       "x": "A motorcyclist is a person who rides a motorcycle."
+      },
+      {
+       "t": "p",
+       "x": "**55. Mention safety rules for motorcyclists.**"
+      },
+      {
+       "t": "p",
+       "x": "Motorcyclists should:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Wear a properly fitted helmet.",
+        "Obey traffic rules.",
+        "Observe speed limits.",
+        "Keep the motorcycle in good condition.",
+        "Avoid riding under the influence of alcohol or drugs.",
+        "Avoid using mobile phones while riding.",
+        "Carry only the permitted number of passengers.",
+        "Use appropriate signals when turning."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**56. Why should motorcyclists wear helmets?**"
+      },
+      {
+       "t": "p",
+       "x": "Helmets protect the head and can reduce the severity of head injuries during crashes."
+      }
+     ]
+    },
+    {
+     "title": "SAFETY AT NIGHT",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**57. Why is walking at night more dangerous?**"
+      },
+      {
+       "t": "p",
+       "x": "Visibility may be poor, making it harder for pedestrians and drivers to see one another."
+      },
+      {
+       "t": "p",
+       "x": "**58. How can pedestrians improve their safety at night?**"
+      },
+      {
+       "t": "p",
+       "x": "They should:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Wear bright or reflective clothing.",
+        "Use well-lit routes where possible.",
+        "Walk where pedestrians are expected to walk.",
+        "Cross at safe crossing points.",
+        "Stay alert to approaching vehicles."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**59. How can vehicles be made more visible at night?**"
+      },
+      {
+       "t": "p",
+       "x": "Vehicles should have working headlights, rear lights and reflectors."
+      }
+     ]
+    },
+    {
+     "title": "ROAD SAFETY EQUIPMENT",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**60. What is a seat belt?**"
+      },
+      {
+       "t": "p",
+       "x": "A seat belt is a safety device used to secure a person in a vehicle."
+      },
+      {
+       "t": "p",
+       "x": "**61. What is a helmet?**"
+      },
+      {
+       "t": "p",
+       "x": "A helmet is protective headgear worn by cyclists and motorcyclists."
+      },
+      {
+       "t": "p",
+       "x": "**62. What is a reflector?**"
+      },
+      {
+       "t": "p",
+       "x": "A reflector is a material or device that reflects light and makes a person, bicycle or vehicle more visible."
+      },
+      {
+       "t": "p",
+       "x": "**63. Why is road safety equipment important?**"
+      },
+      {
+       "t": "p",
+       "x": "It helps protect road users and reduces the risk or severity of injuries."
       }
      ]
     },
     {
      "title": "WAYS OF PREVENTING ROAD ACCIDENTS",
      "blocks": [
+      {
+       "t": "p",
+       "x": "**64. How can road accidents be prevented?**"
+      },
       {
        "t": "p",
        "x": "Road accidents can be reduced by:"
@@ -411,18 +797,133 @@
         "Obeying traffic rules.",
         "Avoiding over-speeding.",
         "Avoiding drunk driving.",
-        "Wearing seat belts.",
-        "Wearing helmets when riding motorcycles and bicycles.",
-        "Maintaining vehicles properly.",
-        "Avoiding mobile-phone use while driving or crossing roads.",
         "Using pedestrian crossings.",
-        "Providing proper road signs.",
-        "Improving road conditions.",
+        "Wearing helmets.",
+        "Wearing seat belts.",
+        "Avoiding mobile-phone use while driving.",
+        "Maintaining vehicles properly.",
         "Avoiding overloading.",
-        "Educating road users about road safety.",
-        "Ensuring drivers are properly trained and licensed.",
-        "Providing street lighting in appropriate places."
+        "Providing clear road signs.",
+        "Improving roads.",
+        "Providing adequate lighting.",
+        "Educating road users."
        ]
+      },
+      {
+       "t": "p",
+       "x": "**65. What is the responsibility of the government in road safety?**"
+      },
+      {
+       "t": "p",
+       "x": "The government and relevant authorities should:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Construct and maintain roads.",
+        "Provide road signs and markings.",
+        "Control traffic.",
+        "Enforce traffic laws.",
+        "Educate road users.",
+        "Provide safe pedestrian facilities.",
+        "Improve road lighting where necessary."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**66. What is the responsibility of road users in promoting road safety?**"
+      },
+      {
+       "t": "p",
+       "x": "Road users should obey traffic rules, use roads responsibly and avoid behaviour that puts themselves or others in danger."
+      }
+     ]
+    },
+    {
+     "title": "RESPONSIBLE ROAD USE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**67. What does responsible road use mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Responsible road use means using roads carefully, obeying traffic rules and considering the safety of other road users."
+      },
+      {
+       "t": "p",
+       "x": "**68. How can children practise responsible road use?**"
+      },
+      {
+       "t": "p",
+       "x": "Children can:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Use footpaths where provided.",
+        "Cross at safe places.",
+        "Obey traffic lights.",
+        "Obey road signs.",
+        "Avoid playing on roads.",
+        "Stay alert near roads.",
+        "Avoid using phones while crossing."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**69. Why should road users obey traffic rules?**"
+      },
+      {
+       "t": "p",
+       "x": "Traffic rules help organise road use, prevent accidents and protect people's lives and property."
+      },
+      {
+       "t": "p",
+       "x": "**70. Why should road users be patient?**"
+      },
+      {
+       "t": "p",
+       "x": "Patience helps prevent reckless actions such as dangerous overtaking, speeding and careless crossing."
+      }
+     ]
+    },
+    {
+     "title": "EMERGENCY ACTION AFTER A ROAD ACCIDENT",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**71. What should a person do after witnessing a road accident?**"
+      },
+      {
+       "t": "p",
+       "x": "A person should:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Move to a safe place.",
+        "Call or alert the appropriate emergency services or authorities.",
+        "Seek help from responsible adults or trained first-aiders.",
+        "Avoid putting themselves in danger.",
+        "Avoid moving seriously injured people unnecessarily unless there is immediate danger."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**72. Why should people avoid crowding around an accident?**"
+      },
+      {
+       "t": "p",
+       "x": "Crowding can make it difficult for rescuers to help injured people and may create additional danger."
+      },
+      {
+       "t": "p",
+       "x": "**73. Why should injured people be handled carefully?**"
+      },
+      {
+       "t": "p",
+       "x": "Improper handling may make some injuries worse."
       }
      ]
     },
@@ -431,25 +932,36 @@
      "blocks": [
       {
        "t": "p",
+       "x": "**74. Why is road safety important?**"
+      },
+      {
+       "t": "p",
        "x": "Road safety is important because it:"
       },
       {
        "t": "ul",
        "items": [
-        "Prevents road accidents.",
-        "Saves people's lives.",
-        "Reduces injuries and disabilities.",
+        "Saves lives.",
+        "Prevents injuries.",
         "Protects property.",
-        "Reduces medical expenses.",
+        "Reduces medical costs.",
         "Reduces traffic congestion caused by accidents.",
-        "Helps people use roads safely.",
-        "Promotes responsible behaviour among road users."
+        "Promotes responsible behaviour.",
+        "Makes travelling safer."
        ]
+      },
+      {
+       "t": "p",
+       "x": "**75. What is the main aim of road safety?**"
+      },
+      {
+       "t": "p",
+       "x": "The main aim of road safety is to prevent accidents and protect the lives and property of road users."
       }
      ]
     },
     {
-     "title": "KEY DEFINITIONS (IMPORTANT TERMS)",
+     "title": "KEY DEFINITIONS",
      "blocks": [
       {
        "t": "table",
@@ -460,7 +972,7 @@
        "rows": [
         [
          "Road safety",
-         "Measures taken to prevent road accidents and protect road users."
+         "The measures and practices used to prevent road accidents and protect road users."
         ],
         [
          "Road user",
@@ -471,8 +983,40 @@
          "A person who walks along or crosses a road."
         ],
         [
+         "Footpath",
+         "A part of a road or area provided for pedestrians to walk safely."
+        ],
+        [
+         "Zebra crossing",
+         "A marked part of a road where pedestrians can cross safely."
+        ],
+        [
+         "Traffic sign",
+         "A sign placed on or near a road to give information, warnings, instructions or restrictions to road users."
+        ],
+        [
+         "Warning sign",
+         "A sign that warns road users about dangers or hazards ahead."
+        ],
+        [
+         "Regulatory sign",
+         "A sign that gives instructions, restrictions or prohibitions that road users must obey."
+        ],
+        [
+         "Information sign",
+         "A sign that provides useful information or directions to road users."
+        ],
+        [
+         "Traffic light",
+         "A signal used to control the movement of vehicles and pedestrians on roads."
+        ],
+        [
+         "Road accident",
+         "An unexpected event involving road users or vehicles that may result in injury, death or damage to property."
+        ],
+        [
          "Driver",
-         "A person who operates a vehicle."
+         "A person who operates or controls a motor vehicle."
         ],
         [
          "Passenger",
@@ -487,28 +1031,20 @@
          "A person who rides a motorcycle."
         ],
         [
-         "Road accident",
-         "An unexpected event involving road users or vehicles that may cause injury, death or damage."
-        ],
-        [
-         "Road sign",
-         "A sign placed on or near a road to give warnings, instructions or information."
-        ],
-        [
-         "Traffic lights",
-         "Signals used to control the movement of road users and vehicles."
-        ],
-        [
-         "Zebra crossing",
-         "A marked part of a road where pedestrians can cross safely."
+         "Seat belt",
+         "A safety device used to secure a person in a vehicle."
         ],
         [
          "Helmet",
          "Protective headgear worn by cyclists and motorcyclists."
         ],
         [
-         "Seat belt",
-         "A safety device used to secure a person in a vehicle."
+         "Reflector",
+         "A material or device that reflects light and makes a person, bicycle or vehicle more visible."
+        ],
+        [
+         "Responsible road use",
+         "Using roads carefully, obeying traffic rules and considering the safety of other road users."
         ]
        ]
       }
@@ -520,13 +1056,15 @@
       {
        "t": "ul",
        "items": [
-        "Road safety protects **all** road users: pedestrians, drivers, passengers, cyclists, motorcyclists and animal handlers.",
-        "A pedestrian with no footpath walks on the **right side**, facing oncoming traffic.",
-        "The safe crossing drill is: **stop, look right, look left, look right again, listen, then cross** without running.",
-        "Road signs come in three types: **warning**, **regulatory** and **information** signs.",
-        "Traffic lights mean: **red — stop**, **yellow/amber — prepare to stop**, **green — go** when safe.",
-        "Helmets protect the heads of cyclists and motorcyclists; seat belts secure drivers and passengers.",
-        "Most road accidents come from human mistakes such as over-speeding, drunk driving and phone use, so most can be prevented."
+        "Road users include **pedestrians, drivers, passengers, cyclists, motorcyclists and animal handlers**.",
+        "With no footpath, walk on the **right-hand side**, facing oncoming traffic.",
+        "The crossing drill: **stop, look right, look left, look right again, listen, cross when safe, keep looking and listening**.",
+        "**Red = stop**, **amber/yellow = prepare to stop**, **green = proceed when safe**.",
+        "Three sign types: **warning** (dangers ahead), **regulatory** (must obey), **information** (useful directions).",
+        "Main accident causes: **over-speeding, drunk driving, reckless driving, careless crossing, phone use, dangerous overtaking, overloading, poor maintenance**.",
+        "**Seat belts** secure people in vehicles; **helmets** protect heads; **reflectors** make you visible at night.",
+        "After an accident: **move to safety, alert emergency services, get trained help, do not crowd, handle injured people carefully**.",
+        "The main aim of road safety is to **prevent accidents and protect lives and property**."
        ]
       }
      ]
@@ -537,11 +1075,11 @@
       {
        "t": "ul",
        "items": [
-        "Expect definition questions on **road safety, road user, pedestrian, zebra crossing, traffic lights** — learn the KEY DEFINITIONS word for word.",
-        "List questions love **safety rules**: be ready to give four rules each for pedestrians, drivers, passengers and cyclists.",
-        "Classify any named sign as **warning, regulatory or information** — e.g. *Stop* is regulatory, *Sharp bend* is warning, *Hospital* is information.",
-        "For causes, effects and prevention of accidents, write one point per line and match each cause with its prevention (drunk driving → avoid drunk driving).",
-        "In a crossing question, the order of looking (**right, left, right again**) earns marks — do not change it."
+        "Learn the KEY DEFINITIONS word for word — **road safety, pedestrian, footpath, zebra crossing, traffic sign, traffic light, seat belt, helmet, reflector** are the favourites.",
+        "\"Give rules\" questions must match the road user: five for pedestrians, five for drivers, four for passengers, cyclists and motorcyclists.",
+        "Causes-and-effects questions: give the **cause** (over-speeding) with **how** it causes accidents (less time to react, longer stopping distance).",
+        "Sign-type questions: name the type AND an example (warning — sharp bend; regulatory — stop; information — hospital).",
+        "Emergency questions: never say \"move the injured person\" — the correct answer is to avoid moving them unless there is immediate danger."
        ]
       }
      ]
@@ -552,31 +1090,27 @@
       {
        "t": "ol",
        "items": [
-        "What is road safety?",
-        "Who is a road user?",
-        "Mention four examples of road users.",
-        "Who is a pedestrian?",
-        "State four safety rules for pedestrians.",
-        "Why should pedestrians avoid playing on the road?",
-        "Who is a driver?",
-        "Give four safety rules for drivers.",
-        "Why should drivers avoid using mobile phones while driving?",
-        "Who is a passenger?",
-        "State four safety rules for passengers.",
-        "Mention four safety rules for cyclists.",
-        "Why should motorcyclists wear helmets?",
-        "What are road signs?",
-        "Name the three main types of road signs.",
-        "Give three examples of warning signs.",
-        "Give three examples of regulatory signs.",
-        "Give three examples of information signs.",
+        "Define road safety.",
+        "Mention six road users.",
+        "Mention three types of traffic signs.",
+        "State five causes of road accidents.",
+        "State five effects of road accidents.",
+        "Give five road safety rules for pedestrians.",
+        "Give five road safety rules for drivers.",
+        "Give four road safety rules for passengers.",
+        "Give four safety rules for cyclists.",
+        "Give four safety rules for motorcyclists.",
         "What does a red traffic light mean?",
         "What does a green traffic light mean?",
-        "Mention four causes of road accidents.",
-        "State four effects of road accidents.",
-        "Give five ways of preventing road accidents.",
-        "Why is road safety important?",
-        "What is a zebra crossing?"
+        "What is a zebra crossing?",
+        "What is a helmet?",
+        "What is a seat belt?",
+        "Why should children not play on roads?",
+        "Why should drivers not use mobile phones while driving?",
+        "Why should motorcyclists wear helmets?",
+        "Why should passengers wear seat belts?",
+        "Mention five ways of preventing road accidents.",
+        "What is the responsibility of every road user?"
        ],
        "start": 1
       }
@@ -588,31 +1122,27 @@
       {
        "t": "ol",
        "items": [
-        "Road safety is the measures taken to prevent accidents and protect people using roads.",
-        "A road user is any person who uses a road, such as a pedestrian, driver, passenger, cyclist, motorcyclist or animal handler.",
-        "Pedestrians, drivers, passengers and cyclists (also motorcyclists and animal handlers).",
-        "A pedestrian is a person who walks along or crosses a road.",
-        "Any four: walk on the right side facing traffic where there is no footpath; use a footpath where provided; cross at a zebra crossing; look right, left and right again; do not run or play on the road; obey traffic lights and signs; wear bright clothing at night.",
-        "Because a child playing on the road is not watching traffic and can easily be knocked down by a vehicle; roads are for vehicles, not for games.",
-        "A driver is a person who controls and operates a vehicle.",
-        "Any four: obey traffic rules and signs; drive at a safe speed; do not drive when drunk; do not use a mobile phone; wear a seat belt; keep the vehicle in good condition; do not overload.",
-        "Because a mobile phone takes the driver's attention off the road and can cause an accident.",
-        "A passenger is a person travelling in a vehicle but not controlling it.",
-        "Any four: wear a seat belt; sit properly; do not distract the driver; do not put the head or hands outside; do not jump on or off a moving vehicle.",
-        "Any four: wear a properly fitted helmet; ride on the correct side; obey traffic signs; use hand signals when turning; keep the bicycle in good condition; use lights at night.",
-        "To protect the head from injury if an accident happens.",
-        "Road signs are signs placed along roads to give information, warnings or instructions to road users.",
+        "Road safety is the practice of using roads in ways that prevent accidents and protect road users.",
+        "Pedestrians, drivers, passengers, cyclists, motorcyclists and animal handlers.",
         "Warning signs, regulatory signs and information signs.",
-        "Any three: sharp bend, dangerous junction, children crossing, pedestrian crossing, road works, hump ahead, railway crossing.",
-        "Any three: stop, no entry, no parking, speed limit, no overtaking, give way.",
-        "Any three: hospital, bus stop, parking area, telephone, petrol station.",
-        "A red light means STOP.",
-        "A green light means GO when the way is clear and it is safe to proceed.",
-        "Any four: over-speeding; driving while drunk; reckless driving; using a mobile phone while driving; overtaking in dangerous places; poorly maintained vehicles; crossing roads carelessly; overloading.",
-        "Any four: death; injuries; disability; damage to vehicles and property; loss of income; high medical expenses; traffic congestion; emotional suffering.",
-        "Any five: obeying traffic rules; avoiding over-speeding and drunk driving; wearing seat belts and helmets; maintaining vehicles; using pedestrian crossings; providing proper road signs; improving road conditions; avoiding overloading.",
-        "Because it prevents accidents, saves lives, reduces injuries and medical expenses, protects property and helps people use roads safely.",
-        "A zebra crossing is a marked part of a road where pedestrians can cross safely."
+        "Over-speeding, drunk driving, reckless driving, careless crossing and using mobile phones while driving.",
+        "Death, injuries, disability, damage to property and loss of income.",
+        "Use footpaths, cross at safe places, obey traffic signals, avoid playing on roads and remain alert.",
+        "Obey traffic rules, avoid over-speeding, wear seat belts, avoid drunk driving and maintain vehicles properly.",
+        "Wear seat belts, sit properly, do not distract the driver and keep body parts inside the vehicle.",
+        "Wear a helmet, obey traffic rules, maintain the bicycle and use lights or reflectors when necessary.",
+        "Wear a helmet, obey traffic rules, avoid speeding and maintain the motorcycle.",
+        "It means stop.",
+        "It means proceed when the way is clear and safe.",
+        "It is a marked place on a road where pedestrians can cross.",
+        "A helmet is protective headgear worn to protect the head.",
+        "A seat belt is a safety device used to secure a person in a vehicle.",
+        "Because they may be hit by vehicles and seriously injured or killed.",
+        "Because mobile phones distract drivers and reduce their concentration on the road.",
+        "To protect their heads and reduce the severity of head injuries during crashes.",
+        "Seat belts help protect passengers during sudden stops or collisions.",
+        "Obey traffic rules, avoid speeding, avoid drunk driving, use safe crossing points and maintain vehicles properly.",
+        "Every road user should use the road responsibly, obey traffic rules and protect the safety of other road users."
        ],
        "start": 1
       }
