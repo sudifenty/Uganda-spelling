@@ -1,273 +1,260 @@
 # PRIMARY 6 ENGLISH
 
-# TOPIC 2: DEBATING
+# TOPIC 2: DEBATE
 
-*Curriculum reference: NCDC Primary Six Curriculum, Set One, English Topic 2, 24 periods
-(`curriculum/P6-SET-ONE-2010.pdf`, topic outline page 24 and pages 30–32).*
+*Curriculum reference: NCDC Primary Six Curriculum, Set One, English Topic 2, 36 periods
+(`curriculum/P6-SET-ONE-2010.pdf`, pages 30–32). The study content below was provided
+by the app owner and replaces the earlier version of this topic.*
 
-**What you already know:** You have argued for and against ideas in class. In P.6 you learn
-the **language of a formal debate** — the roles, the motion, the points of order, and the
-structures *even though, although* and *if*.
+**What you already know:** In lower classes you have discussed topics and given your
+opinions in class. In P.6 you learn the **formal way of discussing a topic** — the
+debate — with its sides, its people, its rules and its language.
 
 **By the end of this topic you should be able to:**
 
-- name the people in a debate and the work of each
-- read, interpret and formulate a motion
-- speak for or against a motion using proper language
-- raise a point of order, information or inquiry correctly
-- write points and take notes during a debate
-- use direct and indirect speech and the structures *even though, although, if*
+- say what a debate, a motion, a proposition and an opposition are
+- name the people who take part in a debate and the work of each
+- tell the types, parts and rules of a debate
+- prepare for a debate and give points for or against a motion
+- write a proper introduction for a speaker
 
----
+## MEANING OF A DEBATE
 
-## 1. WHAT A DEBATE IS
+A **debate** is a formal discussion in which people give different opinions about a
+particular topic or motion.
 
-**Debate:** A formal discussion in which two sides argue for and against a motion before an audience.
+A debate normally has **two sides**:
 
-**Motion:** The statement that is being debated. It always begins with **"That …"** — for example, *"That girls should be given more chances in education than boys."*
+- The **proposing side (for)** supports the motion.
+- The **opposing side (against)** disagrees with the motion.
 
----
+## IMPORTANT TERMS USED IN A DEBATE
 
-## 2. THE PEOPLE IN A DEBATE AND THEIR WORK
+### 1. Motion
 
-| Person | Work |
-|---|---|
-| **Chairperson** | Controls the debate, keeps order, gives each speaker a turn, decides on points raised, and announces the winning side |
-| **Secretary** | Writes the minutes and records the points of each speaker |
-| **Time keeper** | Keeps time and rings a bell to warn or stop a speaker |
-| **Proposer** | Speaks **for** the motion (the proposing side) |
-| **Opposer** | Speaks **against** the motion (the opposing side) |
-| **Main speaker** | The first and strongest speaker on each side |
-| **Audience (the house)** | Listens, raises points and may vote |
-| **Judges** | Award marks where the debate is a competition |
+A **motion** is the statement or topic being debated.
 
-### Vocabulary from the syllabus
+**Example:** "Pupils should be allowed to use mobile phones at school."
 
-| Word | Meaning |
-|---|---|
-| motion | The statement being debated |
-| proposer | A speaker supporting the motion |
-| opposer | A speaker against the motion |
-| point of order | A statement drawing attention to a rule being broken |
-| point of information | A short piece of correct information offered to a speaker |
-| point of inquiry | A question asking for clarification |
-| audience | The people listening |
-| argue / argument | To give reasons for or against / the reason given |
-| opinion | What a person thinks |
-| conclude | To end |
-| previous | The one that came before |
-| current | The one at present |
+### 2. Proposition
 
----
+The **proposition** is the side that supports the motion.
 
-## 3. THE THREE POINTS AND HOW TO RAISE THEM
+### 3. Opposition
 
-| Point | When it is used | How to say it |
-|---|---|---|
-| **Point of order** | When a rule is broken — a speaker abuses another, goes off the motion, or exceeds the time | *"Mr Chairperson, I rise on a **point of order**. The speaker is insulting…"* |
-| **Point of information** | When you can give a correct fact the speaker has got wrong | *"Mr Chairperson, on a **point of information**, the school has 400 pupils, not 200."* |
-| **Point of inquiry** | When something needs to be made clear | *"Mr Chairperson, on a **point of inquiry**, does the motion mean all pupils or only P.7?"* |
+The **opposition** is the side that disagrees with the motion.
 
-**The rule:** stand up, address the **chairperson**, state which point you are raising,
-be brief, and sit down when the chairperson tells you to.
+### 4. Speaker
 
----
+A **speaker** is a person who presents ideas during a debate.
 
-## 4. THE LANGUAGE OF DEBATE
+### 5. Chairperson
 
-### Opening
+The **chairperson** is the person who controls and guides the debate.
 
-*"Mr/Madam Chairperson, honourable members of the house, ladies and gentlemen, I greet you
-all. I stand here to **support (or oppose)** the motion which says that…"*
+### 6. Timekeeper
 
-### Giving points
+A **timekeeper** is a person who keeps track of the time given to each speaker.
 
-*"My first point is that…" · "Furthermore…" · "In addition…" · "Moreover…" ·
-"For example…" · "This is because…"*
+### 7. Audience
 
-### Disagreeing politely
+The **audience** consists of people who listen to the debate.
 
-*"The previous speaker said…, but I disagree because…" · "Even though my opponent says…,
-the truth is…" · "I would like to correct the previous speaker…"*
+## TYPES OF DEBATE
 
-### Closing
+### 1. Formal Debate
 
-*"With those few words, Mr Chairperson, I beg to move (or oppose) the motion. Thank you."*
+This is a debate that follows specific rules and procedures.
 
-### Rules of good debating
+Examples include:
 
-Address the **chairperson**, not your opponent directly · attack the **point, never the
-person** · keep to the **motion** · keep within the **time** · speak loudly and clearly ·
-stand up straight and look at the audience · listen when others are speaking · accept the
-chairperson's ruling.
+- School debates
+- Parliamentary debates
+- Inter-school debates
 
----
+### 2. Informal Debate
 
-## 5. LANGUAGE STRUCTURES
+This is a less organised discussion where people exchange different opinions about
+an issue.
 
-| Structure | Example |
-|---|---|
-| **Even though …** | ***Even though** the previous speaker said father buys clothes, mother loves me more.* |
-| **… although …** | *She argued out her points **although** people did not accept them.* |
-| **If … (If 2)** | ***If** I **were** the chairperson, I **would** chase Zika from the debate for misbehaviour.* |
+## PARTS OF A DEBATE
 
-**Note:** *even though* and *although* both show contrast and are followed by a **complete
-idea**. In **If 2** we use *were* for every person — *If I **were** you…*
+A debate normally has the following parts:
 
----
+1. Introduction of the motion
+2. Introduction of the speakers
+3. Presentation of arguments for the motion
+4. Presentation of arguments against the motion
+5. Rebuttal of opposing arguments
+6. Conclusion
+7. Decision or voting
 
-## 6. GRAMMAR FOCUS: DIRECT AND INDIRECT SPEECH
+## RULES OF A DEBATE
 
-In a debate you often report what another speaker said.
+During a debate, participants should:
 
-| Direct | Indirect (reported) |
-|---|---|
-| *"I support the motion," said Ann.* | *Ann said that **she supported** the motion.* |
-| *"We shall win the debate," the proposers said.* | *The proposers said that **they would win** the debate.* |
-| *"The school has 400 pupils," he said.* | *He said that the school **had** 400 pupils.* |
-| *"Are you opposing?" the chairperson asked.* | *The chairperson asked **whether I was opposing**.* |
-| *"Sit down," the chairperson said.* | *The chairperson told him **to sit down**.* |
+- Speak clearly and loudly enough for everyone to hear.
+- Respect other speakers.
+- Listen carefully to other speakers.
+- Support their arguments with facts and examples.
+- Avoid insulting other speakers.
+- Follow the instructions of the chairperson.
+- Keep within the time given.
+- Address the chairperson properly.
+- Avoid interrupting another speaker.
+- Stay focused on the motion.
 
-**The rules:** the tense moves **one step back**; pronouns change; *today → that day*,
-*here → there*, *this → that*; questions become *whether/if* statements; commands become
-*to + verb*.
+## HOW TO PREPARE FOR A DEBATE
 
----
+Before taking part in a debate, a speaker should:
 
-## 7. WRITING POINTS AND TAKING NOTES
+1. Understand the motion.
+2. Know whether they are supporting or opposing it.
+3. Research information about the topic.
+4. Identify strong arguments.
+5. Find examples to support the arguments.
+6. Think about possible arguments from the other side.
+7. Prepare answers to opposing arguments.
+8. Organise the points in a logical order.
+9. Practise speaking clearly.
+10. Keep within the given time.
 
-**Before the debate:** read the motion carefully and be sure which side you are on ·
-**research** — ask teachers, read books, listen to radio · write your points in **short
-phrases**, not full paragraphs · put the **strongest point first** · think of what the other
-side will say and prepare an answer.
+## QUALITIES OF A GOOD DEBATER
 
-**During the debate:** write down each speaker's **main point** in a few words · mark the
-points you can answer · note any wrong facts so you can raise a **point of information**.
+A good debater should be:
 
-**A sample motion and points**
+- Confident
+- Well prepared
+- Respectful
+- Clear in speech
+- Good at listening
+- Knowledgeable
+- Logical
+- Persuasive
+- Disciplined
+- Able to respond to opposing views
 
-> **Motion: "That television is more useful to a pupil than radio."**
->
-> **For:** you see as well as hear · programmes show experiments and places · it teaches
-> good English through pictures and speech.
-> **Against:** it is expensive and needs electricity · it wastes study time · radio is
-> portable and can be used anywhere.
+## IMPORTANCE OF DEBATING
 
----
+Debating helps pupils to:
 
-# KEY DEFINITIONS
+- Develop confidence.
+- Improve speaking skills.
+- Improve listening skills.
+- Develop critical thinking.
+- Learn how to express opinions.
+- Learn how to defend their ideas.
+- Learn how to respect different opinions.
+- Improve research skills.
+- Develop leadership skills.
+- Learn how to make decisions.
+
+## EXAMPLE OF A DEBATE
+
+**Motion:** "School uniforms should be abolished."
+
+Points **for** the motion:
+
+1. School uniforms can be expensive for parents.
+2. Pupils can choose clothes that are comfortable.
+3. Pupils can express themselves through their clothing.
+4. Parents would have more choices when buying clothes.
+
+Points **against** the motion:
+
+1. School uniforms promote equality among pupils.
+2. Uniforms make pupils easily identifiable.
+3. Uniforms promote discipline.
+4. Uniforms create a sense of belonging to the school.
+5. Uniforms reduce competition over fashionable clothes.
+
+## SAMPLE DEBATE INTRODUCTION
+
+A speaker supporting the motion may say:
+
+"Mr/Madam Chairperson, the panel of judges, fellow debaters and members of the
+audience, I am here to support the motion that school uniforms should be abolished.
+I believe that school uniforms can be expensive and may limit pupils' freedom of
+choice."
+
+A speaker opposing the motion may say:
+
+"Mr/Madam Chairperson, the panel of judges, fellow debaters and members of the
+audience, I am here to oppose the motion that school uniforms should be abolished.
+I believe that school uniforms promote discipline, equality and a sense of belonging
+among pupils."
+
+## KEY DEFINITIONS
 
 | Term | Meaning |
 |---|---|
-| Debate | A formal discussion for and against a motion |
-| Motion | The statement being debated |
-| Proposer | A speaker who supports the motion |
-| Opposer | A speaker who is against the motion |
-| Chairperson | The person who controls the debate |
-| Point of order | A statement showing that a rule has been broken |
-| Point of information | Correct information offered to a speaker |
-| Point of inquiry | A question asking for clarification |
-| Direct speech | The exact words spoken, in quotation marks |
-| Indirect speech | Reporting what was said without the exact words |
+| Debate | A formal discussion in which people give different opinions about a particular topic or motion. |
+| Motion | The statement or topic being debated. |
+| Proposition | The side that supports the motion. |
+| Opposition | The side that disagrees with the motion. |
+| Speaker | A person who presents ideas during a debate. |
+| Chairperson | The person who controls and guides the debate. |
+| Timekeeper | The person who keeps track of the time given to each speaker. |
+| Audience | The people who listen to the debate. |
+| Formal debate | A debate that follows specific rules and procedures, such as school and parliamentary debates. |
+| Informal debate | A less organised discussion where people exchange different opinions about an issue. |
+| Rebuttal | The part of a debate where a speaker answers and attacks the opposing arguments. |
 
----
+## IMPORTANT FACTS TO REMEMBER
 
-# IMPORTANT FACTS TO REMEMBER
+- Every debate has **two sides**: the **proposition (for)** and the **opposition (against)**.
+- The **chairperson** controls the debate; the **timekeeper** watches the time; the **audience** listens.
+- A formal debate has **seven parts**, from the introduction of the motion to the decision or voting.
+- Speakers must **respect** one another, **avoid insults and interruptions**, and **keep within the time**.
+- A good debater is **confident, well prepared, respectful, clear, logical and persuasive**.
+- Always **address the chairperson** when speaking, for example: "Mr/Madam Chairperson, the panel of judges, fellow debaters…"
 
-- A motion always begins with **"That …"**.
-- The **chairperson** controls the debate; the **secretary** records; the **time keeper** keeps time.
-- Always address the **chairperson**, never your opponent directly.
-- **Attack the point, not the person.**
-- **Point of order** = a rule broken · **information** = a fact · **inquiry** = a question.
-- In reported speech the tense moves **one step back**.
-- **If 2** uses *were* for all persons: *If I **were** the chairperson…*
-- *Even though* and *although* both show **contrast**.
+## EXAMINATION POINTS
 
----
+- Expect definition questions on **debate, motion, proposition, opposition, chairperson, timekeeper** — learn the KEY DEFINITIONS word for word.
+- List questions love **rules of debating**, **qualities of a good debater** and **ways to prepare** — practise giving five at a time.
+- In "points for/against" questions, pick a side and keep every point about **that** side; a for-point written against loses the mark.
+- Memorise the **sample introduction** pattern — it earns easy marks in composition and oral questions.
+- Remember the order of the **parts of a debate**: motion, speakers, for-arguments, against-arguments, rebuttal, conclusion, decision.
 
-# EXAMINATION POINTS
+## REVISION QUESTIONS
 
-- The person who controls a debate → the chairperson.
-- A speaker who supports the motion → the proposer.
-- The statement being debated → the motion.
-- Raising attention to a broken rule → a point of order.
-- *"I support the motion," said Ann.* → *Ann said that **she supported** the motion.*
-- *If I ____ (be) the chairperson, I would stop him.* → **were**
-- Two words showing contrast → *although* and *even though*.
+1. What is a debate?
+2. What is a motion?
+3. Who is a proposition?
+4. Who is an opposition speaker?
+5. Who is a chairperson?
+6. What is the work of a timekeeper?
+7. Mention two types of debate.
+8. State five rules of debating.
+9. Give five qualities of a good debater.
+10. How does debating help pupils?
+11. How should a pupil prepare for a debate?
+12. Give four points for the motion: "Pupils should be given homework."
+13. Give four points against the motion: "Pupils should be given homework."
+14. Why should debaters respect opposing speakers?
+15. What is the role of the audience in a debate?
 
----
+## ANSWERS TO REVISION QUESTIONS
 
-# COMMON MISTAKES TO AVOID
+1. A debate is a formal discussion in which people give different opinions about a particular topic or motion.
+2. A motion is the statement or topic being debated.
+3. The proposition is the side that supports the motion.
+4. An opposition speaker is a speaker on the side that disagrees with the motion.
+5. The chairperson is the person who controls and guides the debate.
+6. The timekeeper keeps track of the time given to each speaker.
+7. Formal debate and informal debate.
+8. Any five: speak clearly; respect other speakers; listen carefully; support arguments with facts and examples; avoid insulting others; follow the chairperson's instructions; keep within the time; do not interrupt.
+9. Any five: confident; well prepared; respectful; clear in speech; good at listening; knowledgeable; logical; persuasive; disciplined.
+10. It helps them develop confidence, improve speaking and listening skills, develop critical thinking, express and defend opinions, respect different opinions, and improve research and leadership skills.
+11. Understand the motion; know your side; research the topic; identify strong arguments with examples; think about the other side's arguments; prepare answers to them; organise points logically; practise speaking clearly; keep within the time.
+12. Any four, for example: homework helps pupils revise what was taught in class; it builds the habit of hard work and discipline; it keeps pupils usefully busy at home; it lets parents follow the child's progress.
+13. Any four, for example: homework tires pupils after a long school day; it leaves little time for rest, play and home duties; some parents cannot help with the work; too much homework can make pupils dislike studying.
+14. Because a debate is a discussion, not a fight; respect keeps the debate orderly and makes the audience and judges take your points seriously.
+15. The audience listens to the debate and may take part in the decision or voting at the end.
 
-- Insulting the other speaker instead of answering the point.
-- Writing a motion without "That …".
-- Keeping the present tense in reported speech.
-- Using *was* instead of **were** in an If 2 sentence.
-- Standing up and speaking before the chairperson allows you.
-- Going outside the motion.
+## A NOTE ON SOURCES
 
----
-
-# REVISION QUESTIONS
-
-1. What is a debate, and what is a motion?
-2. Name any five people involved in a debate and the work of each.
-3. Give the difference between a proposer and an opposer.
-4. Explain a point of order, a point of information and a point of inquiry.
-5. How does a speaker correctly raise a point of order?
-6. Write a suitable opening sentence for a speaker supporting a motion.
-7. Write a suitable closing sentence for a speaker opposing a motion.
-8. Give any six rules of good debating.
-9. Complete: *____ ____ the previous speaker said father buys clothes, mother loves me more.* (two words)
-10. Complete: *She argued out her points ____ people did not accept them.*
-11. Complete: *If I ____ (be) the chairperson, I would stop the noise.*
-12. Change to reported speech: *"I support the motion," said Ann.*
-13. Change to reported speech: *"Sit down," the chairperson said to him.*
-14. Write a motion of your own and give two points for it and two against it.
-15. Give any four things a speaker should do before a debate.
-
----
-
-# ANSWERS TO REVISION QUESTIONS
-
-1. A **debate** is a formal discussion in which two sides argue for and against a motion before an audience. A **motion** is the statement being debated, beginning with "That …".
-2. Any five: **chairperson** — controls the debate; **secretary** — writes the minutes and records the points; **time keeper** — keeps time and rings the bell; **proposer** — speaks for the motion; **opposer** — speaks against it; **audience** — listens and may vote.
-3. A **proposer** speaks **for** the motion; an **opposer** speaks **against** it.
-4. **Point of order** — raised when a rule has been broken, for example insulting or going off the motion; **point of information** — giving a correct fact the speaker has got wrong; **point of inquiry** — asking for something to be made clear.
-5. The speaker stands up, addresses the **chairperson**, says *"I rise on a point of order,"* states the point briefly, and sits down when the chairperson rules.
-6. *Learner's answer,* for example: *"Mr Chairperson, honourable members of the house, I stand here to **support** the motion which says that…"*
-7. *Learner's answer,* for example: *"With those few words, Mr Chairperson, I beg to **oppose** the motion. Thank you."*
-8. Any six of: address the chairperson; attack the point, not the person; keep to the motion; keep within the time; speak loudly and clearly; stand up straight; listen to others; accept the chairperson's ruling.
-9. **Even though**
-10. **although**
-11. **were**
-12. *Ann said that **she supported** the motion.*
-13. *The chairperson told him **to sit down**.*
-14. *Learner's answer.* The motion must begin with **"That …"**, with two clear points supporting it and two opposing it.
-15. Any four of: read the motion carefully and know which side you are on; research the topic; write points in short phrases; put the strongest point first; think about what the other side will say and prepare answers; practise speaking.
-
----
-
-# P.6 QUICK REVISION
-
-- Motion begins with **"That …"**
-- Chairperson controls · secretary records · time keeper times · **proposer for** · **opposer against**
-- **Order** = rule broken · **Information** = fact · **Inquiry** = question
-- Address the **chairperson** · attack the **point, not the person**
-- **Even though / although** = contrast · **If 2** uses **were**
-- Reported speech: tense **one step back**, commands → **to + verb**
-
----
-
-## A note on sources
-
-The topic title, vocabulary list, language structures, grammar items (direct and indirect
-speech), competences and teacher guidance above were taken from the official **NCDC Primary
-Six Curriculum, Set One** (© NCDC 2010; topic outline page 24 and pages 30–32 of the PDF in
-`curriculum/`), including its instruction to hold debates at least once a month and to
-revise "If 1" before teaching "If 2". The explanations, tables, sample motion, exercises and
-answers are original teaching material written for the learner; they are **not** copied from
-the curriculum document or from any textbook.
-
-No NCDC **Teacher's Guide** for P.6 was available, so the syllabus "Guidance to the
-Teacher" was used directly instead.
+*The study content of this topic was provided by the app owner for the P.6 theme
+Debate (NCDC Primary Six Curriculum, Set One, English Topic 2, pages 30–32). All
+revision answers above are drawn from that owner-provided content.*
