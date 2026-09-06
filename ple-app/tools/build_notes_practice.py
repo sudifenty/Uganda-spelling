@@ -92,6 +92,103 @@ def sec(topic, rx):
     return next((s for s in topic["sections"] if re.search(rx, s["title"], re.I)), None)
 
 
+# the app hides "About this topic" and numbers the remaining sections from 0 —
+# state.noteSeen keys use those VIEW indices, so every sec we emit must too
+ABOUT_SEC = re.compile(r"^about\s+this\s+topic\b", re.I)
+
+
+def view_map(topic):
+    """raw section index -> app view index (About this topic excluded)"""
+    m, j = {}, 0
+    for i, s in enumerate(topic["sections"]):
+        if not ABOUT_SEC.search((s["title"] or "").strip()):
+            m[i] = j
+            j += 1
+    return m
+
+
+def sec_index(topic, rx):
+    vm = view_map(topic)
+    for i, s in enumerate(topic["sections"]):
+        if re.search(rx, s["title"], re.I):
+            return vm.get(i, 0)
+    return 0
+
+
+# sections that AGGREGATE material from the whole topic — a term first
+# appearing here has not been taught yet at that point of the notes
+AGG_SEC = re.compile(
+    r"^(key definitions|important facts|examination points|revision questions"
+    r"|answers to revision|a note on sources|.*quick revision|final revision"
+    r"|important language|important grammar|main competenc|main grammar"
+    r"|common mistakes)", re.I)
+
+STOPW = {"their", "there", "which", "means", "meant", "people", "should",
+         "would", "because", "these", "those", "about", "other", "after",
+         "before", "first", "words", "given", "using", "called", "being",
+         "makes", "things", "someone", "something", "anything", "through",
+         "between", "against", "during", "without", "within", "another"}
+
+
+def section_text(s):
+    parts = []
+    for b in s["blocks"]:
+        if b.get("x"):
+            parts.append(str(b["x"]))
+        if b.get("items"):
+            parts.extend(str(i) for i in b["items"])
+        if b.get("head"):
+            parts.extend(str(h) for h in b["head"])
+        for r in (b.get("rows") or []):
+            parts.extend(str(c) for c in r)
+    return clean(" ".join(parts)).lower()
+
+
+def sec_for_def(topic, term, fallback):
+    """VIEW index of the section that actually TEACHES the term — where it is
+    defined ("X is/are/means...") or asked ("Who/What is a X?"). Only if no
+    such section exists do we fall back to the first mention."""
+    t_ = re.escape(term.lower().strip())
+    pat_def = re.compile(r"\b" + t_ + r"\b[^.]{0,40}\b(is|are|means|refers)\b", re.I)
+    pat_q = re.compile(r"(who|what)\s+(is|are)\s+(a\s+|an\s+|the\s+)?" + t_ + r"\b", re.I)
+    vm = view_map(topic)
+    for i, s in enumerate(topic["sections"]):
+        if i not in vm or AGG_SEC.search(s["title"] or ""):
+            continue
+        st = section_text(s)
+        if pat_def.search(st) or pat_q.search(st):
+            return vm[i]
+    low = term.lower().strip()
+    for i, s in enumerate(topic["sections"]):
+        if i not in vm or AGG_SEC.search(s["title"] or ""):
+            continue
+        if low and low in section_text(s):
+            return vm[i]
+    return fallback
+
+
+def sec_for_text(topic, text, fallback):
+    """VIEW index of the teaching section for `text` — the section whose own
+    words best cover the distinctive words of the text (at least 60% of
+    them). Best coverage wins, so "safety rules for cyclists" lands on the
+    cyclists section, not on an earlier section that merely mentions the
+    word "cyclists"."""
+    ws = [w for w in re.findall(r"[a-z]{5,}", str(text).lower()) if w not in STOPW]
+    if not ws:
+        return fallback
+    vm = view_map(topic)
+    best_i, best_r = None, 0.0
+    for i, s in enumerate(topic["sections"]):
+        if i not in vm or AGG_SEC.search(s["title"] or ""):
+            continue
+        st = section_text(s)
+        hits = sum(1 for w in ws if w in st)
+        r = hits / float(len(ws))
+        if r >= 0.6 and r > best_r:
+            best_i, best_r = vm[i], r
+    return best_i if best_i is not None else fallback
+
+
 def ol_items(s):
     return [i for b in s["blocks"] if b["t"] == "ol" for i in b["items"]] if s else []
 
@@ -106,6 +203,7 @@ def collect(pack):
     for t in pack["topics"]:
         tno, title = t["topic_no"], t["title"]
         d = sec(t, r"^key definitions$")
+        didx = sec_index(t, r"^key definitions$")
         if d:
             for b in d["blocks"]:
                 if b["t"] == "table" and len(b["head"]) >= 2:
@@ -115,7 +213,8 @@ def collect(pack):
                         term, mean = clean(r[0]), clean(r[1])
                         if term and mean and not SKIP.search(term + mean) \
                            and len(mean.split()) >= 3:
-                            defs.append((tno, title, term, mean))
+                            defs.append((tno, title, term, mean,
+                                         sec_for_def(t, term, didx)))
         # restructured Q&A notes (and classic body tables): every
         # definitional two-column table in every section is material.
         # ROLE columns are skipped: "What is meant by X?" must never ask
@@ -123,7 +222,9 @@ def collect(pack):
         # exercises as "What was the role of X?" instead.
         ROLE_HEAD = re.compile(r"what (it|the person) does|what it did|\brole\b|^work$|function|duty|responsib|importance|why it matters|how it helps|^uses?$|used for", re.I)
         ROLE_ANS = re.compile(r"^(ran|carried|controlled|managed|promoted|provided|collected|flew|handled|lent|supplied|transported|delivered|supervised|maintained|operated|ensured|served|worked|used to|used for|shows?|makes?|provides?|helps?|represents?|protects?|prevents?|carries|forms?|connects?|serves?|supplies|controls?|manages?|promotes?|collects?|handles?|runs?|responsible for)\b", re.I)
-        for s_ in t["sections"]:
+        vmap = view_map(t)
+        for si, s_ in enumerate(t["sections"]):
+            vsi = vmap.get(si)
             for b in s_["blocks"]:
                 if b["t"] == "table" and len(b.get("head", [])) == 2 \
                    and DEF_HEAD.match(b["head"][1].strip()) \
@@ -137,24 +238,29 @@ def collect(pack):
                            and 1 <= len(term.split()) <= 5 \
                            and not NUMISH.match(mean) \
                            and not ROLE_ANS.match(mean):
-                            defs.append((tno, title, term, mean))
+                            defs.append((tno, title, term, mean,
+                                         vsi if (vsi is not None and not AGG_SEC.search(s_["title"] or ""))
+                                         else sec_for_def(t, term, vsi if vsi is not None else 0)))
         for name in (r"^important facts", r"^examination points"):
             s = sec(t, name)
+            fidx = sec_index(t, name)
             for it in ul_items(s):
                 txt = clean(it)
                 if SKIP.search(txt) or len(txt.split()) < 6:
                     continue
                 for b in bolds(it):
                     if 1 <= len(b.split()) <= 7 and b.lower() not in txt.lower()[:0] + " ":
-                        facts.append((tno, title, txt, b))
+                        facts.append((tno, title, txt, b, fidx))
                         break
         qs = [clean(x) for x in ol_items(sec(t, r"^revision questions$"))]
         ans = [clean(x) for x in ol_items(sec(t, r"answers to revision"))]
+        ridx = sec_index(t, r"^revision questions$")
         for q, a in zip(qs, ans):
             if SKIP.search(q) or SKIP.search(a):
                 continue
             if 1 <= len(a.split()) <= 6 and not a.lower().startswith("any "):
-                shorts.append((tno, title, q, a))
+                shorts.append((tno, title, q, a,
+                               sec_for_text(t, q + " " + a, ridx)))
     return defs, facts, shorts
 
 
@@ -184,7 +290,7 @@ def pick_distractors(rng, correct, pool, topic_no, n=3):
     return out if len(out) == n else None
 
 
-def make(rng, cls, subj, kind, tno, topic, stem, correct, pool, seq):
+def make(rng, cls, subj, kind, tno, topic, stem, correct, pool, seq, sec=None):
     ds = pick_distractors(rng, correct, pool, tno)
     if not ds:
         return None
@@ -192,7 +298,7 @@ def make(rng, cls, subj, kind, tno, topic, stem, correct, pool, seq):
     rng.shuffle(opts)
     letters = "ABCD"
     idx = opts.index(correct)
-    return {
+    q = {
         "id": f"{cls}_{subj}_N{seq:03d}",
         "class": cls, "subject": SUBJ_NAME[subj],
         "topic": topic, "subtopic": kind,
@@ -207,6 +313,11 @@ def make(rng, cls, subj, kind, tno, topic, stem, correct, pool, seq):
         "origin": "Built from the app's own curriculum-checked study notes "
                   "(not a UNEB past paper)",
     }
+    if isinstance(sec, int):
+        # index of the notes section that teaches this — the app only offers
+        # the question once the learner has read up to that section
+        q["sec"] = sec
+    return q
 
 
 def main():
@@ -222,34 +333,34 @@ def main():
         rng = random.Random(f"{cls}-{subj}-v1")     # stable between builds
         defs, facts, shorts = collect(pack)
 
-        mean_pool = [(t, m) for t, _, _, m in defs]
-        term_pool = [(t, x) for t, _, x, _ in defs]
-        bold_pool = [(t, b) for t, _, _, b in facts]
-        ans_pool = [(t, a) for t, _, _, a in shorts]
+        mean_pool = [(t, m) for t, _, _, m, _ in defs]
+        term_pool = [(t, x) for t, _, x, _, _ in defs]
+        bold_pool = [(t, b) for t, _, _, b, _ in facts]
+        ans_pool = [(t, a) for t, _, _, a, _ in shorts]
 
         out, seen, seq = [], set(), 1
 
-        def add(kind, tno, topic, stem, correct, pool):
+        def add(kind, tno, topic, stem, correct, pool, sec=None):
             nonlocal seq
             key = re.sub(r"\W+", "", stem.lower())[:90]
             if key in seen or len(out) >= CAP:
                 return
-            q = make(rng, cls, subj, kind, tno, topic, stem, correct, pool, seq)
+            q = make(rng, cls, subj, kind, tno, topic, stem, correct, pool, seq, sec)
             if q:
                 out.append(q)
                 seen.add(key)
                 seq += 1
 
         # 1 — definitions, both directions
-        for tno, topic, term, mean in defs:
-            add("definition", tno, topic, f"What is meant by \u201c{term}\u201d?", mean, mean_pool)
-        for tno, topic, term, mean in defs:
-            add("term", tno, topic, f"Which term means: {mean}", term, term_pool)
+        for tno, topic, term, mean, sidx in defs:
+            add("definition", tno, topic, f"What is meant by \u201c{term}\u201d?", mean, mean_pool, sidx)
+        for tno, topic, term, mean, sidx in defs:
+            add("term", tno, topic, f"Which term means: {mean}", term, term_pool, sidx)
         # 2 — short revision questions
-        for tno, topic, q, a in shorts:
-            add("recall", tno, topic, q, a, ans_pool)
+        for tno, topic, q, a, sidx in shorts:
+            add("recall", tno, topic, q, a, ans_pool, sidx)
         # 3 — cloze from facts and examination points
-        for tno, topic, txt, b in facts:
+        for tno, topic, txt, b, sidx in facts:
             stem = re.sub(re.escape(b), "__________", txt, count=1)
             if "__________" not in stem:
                 continue
@@ -258,7 +369,7 @@ def main():
                 continue
             if stem.strip().startswith("__________"):
                 continue
-            add("fact", tno, topic, f"Complete: {stem}", b, bold_pool)
+            add("fact", tno, topic, f"Complete: {stem}", b, bold_pool, sidx)
 
         path = f"{OUT}/notes-{subj.lower()}-{cls.lower()}.json"
         json.dump({"class": cls, "subject": SUBJ_NAME[subj],

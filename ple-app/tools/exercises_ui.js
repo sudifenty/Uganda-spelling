@@ -150,12 +150,17 @@ function exShuffle(a){
    start again at question 1. */
 function exStart(cls, subj, tid, setId, mode){
   const t = exTopicById(cls, subj, tid); if(!t) return;
+  /* only questions whose teaching section has actually been read */
   let qids;
   if(mode==='random'){
-    qids = exShuffle(t.questions.map(q=>q.id)).slice(0, Math.min(10, t.questions.length));
+    const avail = t.questions.filter(pbUnlocked);
+    if(!avail.length){ setTimeout(()=>toast('Read the notes for this topic first!'),0); return; }
+    qids = exShuffle(avail.map(q=>q.id)).slice(0, Math.min(10, avail.length));
   }else{
     const s = t.sets.find(x=>x.id===setId); if(!s) return;
-    qids = exShuffle(s.qids);
+    const avail = s.qids.map(id=>exQ(t,id)).filter(q=>q&&pbUnlocked(q));
+    if(!avail.length){ setTimeout(()=>toast('Read the notes for this topic first!'),0); return; }
+    qids = exShuffle(avail.map(q=>q.id));
   }
   state.exRun = {cls, subj, tid, setId: mode==='random'?null:setId, mode,
                  qids, given:{}, i:0, done:false, result:null,
@@ -325,6 +330,10 @@ SCREENS.exTopic = () => {
   if(!t) return SCREENS.exercises();
   const st = exStats(t.topic_id);
   const meta = EX_SUBJECTS.find(s=>s.id===subj);
+  /* questions unlock as the learner reads the notes sections that teach them */
+  const unlockedQs = t.questions.filter(pbUnlocked);
+  const setAvail = s => s.qids.map(id=>exQ(t,id)).filter(q=>q&&pbUnlocked(q)).length;
+  const anyLocked = unlockedQs.length < t.questions.length;
   return `
   <header class="pagehead">
     <button class="back" onclick="go('exercises')" aria-label="Go back">${I.back(22)}</button>
@@ -332,7 +341,7 @@ SCREENS.exTopic = () => {
       <div class="sub">${cls} ${meta.name} · Topic ${t.topic_no}</div></div>
   </header>
   <div class="card" style="background:var(--sky-50);border-color:var(--sky-100)">
-    <div class="muted">${t.total} questions · ${t.marks} marks · ${t.sets.length} sets</div>
+    <div class="muted">${unlockedQs.length} of ${t.total} questions unlocked · ${t.marks} marks · ${t.sets.length} sets</div>
     ${st ? `<div style="margin-top:10px">
         <div class="bar"><i style="width:0;background:${EX_BAND[st.band][1]}" data-grow="${st.pct}%"></i></div>
         <div class="muted" style="margin-top:7px">Attempted ${st.attempted} · correct ${st.correct} · ${st.pct}% — <b>${EX_BAND[st.band][0]}</b></div>
@@ -340,16 +349,17 @@ SCREENS.exTopic = () => {
   </div>
   <div class="section-title">Exercise sets</div>
   <div class="rows">
-    ${t.sets.map((s,i)=>`
-      <button class="sec-btn" onclick="exStart('${cls}','${subj}','${t.topic_id}','${s.id}','set')">
-        <span class="dot">${i+1}</span>
-        <span style="flex:1">${s.name}<span class="ex-meta">${s.qids.length} questions · ${s.marks} marks</span></span>
-        ${I.chev(17)}</button>`).join('')}
-    <button class="sec-btn" onclick="exStart('${cls}','${subj}','${t.topic_id}',null,'random')">
+    ${t.sets.map((s,i)=>{const av=setAvail(s);return `
+      <button class="sec-btn ${av?'':'read'}" onclick="exStart('${cls}','${subj}','${t.topic_id}','${s.id}','set')">
+        <span class="dot">${av?i+1:'\u{1F512}'}</span>
+        <span style="flex:1">${s.name}<span class="ex-meta">${av===s.qids.length?`${s.qids.length} questions · ${s.marks} marks`:`${av} of ${s.qids.length} questions unlocked`}</span></span>
+        ${I.chev(17)}</button>`;}).join('')}
+    <button class="sec-btn ${unlockedQs.length?'':'read'}" onclick="exStart('${cls}','${subj}','${t.topic_id}',null,'random')">
       <span class="dot">↻</span>
-      <span style="flex:1">Random Practice<span class="ex-meta">A shuffled set from this topic only</span></span>
+      <span style="flex:1">Random Practice<span class="ex-meta">${unlockedQs.length?`A shuffled set from the ${unlockedQs.length} unlocked questions`:'Read the notes to unlock questions'}</span></span>
       ${I.chev(17)}</button>
   </div>
+  ${anyLocked?`<div class="hint-strip">\u{1F512} <span>Questions unlock as you read each section of <b>${nEsc(t.title)}</b> in the Notes.</span></div>`:''}
   <div class="spacer"></div>
   <div class="hint-strip">${I.info(18)} <span>Every question here comes from <b>${nEsc(t.title)}</b> only — no other topic, subject or class is mixed in.</span></div>
   <div class="hint-strip">${I.shuffle(18)} <span><b>The questions are shuffled every time.</b> Open a set again and they come in a new order. If you leave before submitting, the exercise starts again from question 1 — your place is not saved.</span></div>`;
