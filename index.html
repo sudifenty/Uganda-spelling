@@ -1984,7 +1984,7 @@ const TAB_OF = {home:'home',hub:'home',start:'home',practice:'practice',subjects
   notes:'notes',noteTopic:'notes',noteRead:'notes',
   exercises:'exercises',exTopic:'exercises',exDo:'exercises',exResult:'exercises',exMine:'exercises',
   avatar:'profile',settings:'profile',offline:'profile',about:'profile', auth:'profile', spelling:'home', spellDifficulty:'home', spellModes:'home', spellPractice:'home', spellResults:'home', spellMistakes:'home', noteChallenge:'notes', mathHome:'practice', mathLearn:'practice', mathPlay:'practice', mathLesson:'notes', noteJourney:'notes', notePath:'notes', noteSub:'notes'};
-const FULLSCREEN = ['question','exam','results','review','archive','pquestion','spellPractice','spellResults','mathPlay'];
+const FULLSCREEN = ['question','exam','results','review','archive','pquestion','spellPractice','spellResults','mathPlay','spExam'];
 
 function go(screen, push=true){
   if(!state.authUser && screen!=='auth'){state.screen='auth';render();return;}
@@ -2767,6 +2767,245 @@ function pathState(t){                     /* first locked index = current; befo
   if(cur<0)cur=subs.length;                /* all done */
   return {subs,cur};
 }
+/* ============================================================
+   STUDY-PATH MILESTONE EXAMS — a Mid-Topic Test at the halfway
+   point (50% gate) and an End-of-Topic Exam after the last
+   sub-topic (100% gate). One offline paper, two sections:
+   A = objective pills in exam mode (neutral until submit),
+   B = written answers marked by keyword overlap (exMark).
+   Pass mark 50% unlocks the next stage. Results + review are
+   reused; records live in smartple_midtests_v1 /
+   smartple_topicExams_v1.
+   ============================================================ */
+const MID_KEY='smartple_midtests_v1', TEX_KEY='smartple_topicExams_v1';
+function spStore(k){ try{ return JSON.parse(localStorage.getItem(k))||{}; }catch(e){ return {}; } }
+function spRec(k,tid){ return spStore(k)[tid]||null; }
+function spPut(k,tid,rec){ const d=spStore(k); d[tid]=rec; try{ localStorage.setItem(k,JSON.stringify(d)); }catch(e){} }
+function spShuf(a){ const x=a.slice(); for(let i=x.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[x[i],x[j]]=[x[j],x[i]];} return x; }
+/* question pools, re-checked for class + subject + id prefix (safety guard) */
+function spPool(t,upto){
+  const meta=SUBJ_META[t.subject]; if(!meta) return {objs:[],wr:[]};
+  const pb=meta.bank()[t.class];
+  const objs=(pb&&pb.questions||[]).filter(q=>
+    q.class===t.class && q.subject===meta.name && String(q.id||'').indexOf(meta.tag)>=0 &&
+    q.topic===t.title && (q.renderAs==='mcq'||q.renderAs==='tf') &&
+    Array.isArray(q.options)&&q.options.length>=2 &&
+    (upto==null || (typeof q.sec==='number' && q.sec<upto)));
+  const eb=(EXERCISE_BANK[t.class]||{})[t.subject];
+  const et=eb&&eb.topics?eb.topics.find(x=>x.topic_id===t.id):null;
+  const wr=(et?et.questions:[]).filter(q=>
+    q.class===t.class && String(q.id||'').indexOf(meta.tag)>=0 &&
+    (upto==null || (typeof q.sec==='number' && q.sec<upto)));
+  return {objs,wr};
+}
+function spAvailable(t,upto){ const p=spPool(t,upto); return p.objs.length>=5 && p.wr.length>=1; }
+function spGates(t){
+  const subs=pathSubs(t), total=subs.length;
+  const done=subs.filter((s,i)=>pathDone(t,i)).length;
+  const half=Math.ceil(total/2);
+  const mid=spRec(MID_KEY,t.id), tex=spRec(TEX_KEY,t.id);
+  /* a gate that cannot be built (not enough bank questions) never blocks */
+  const midOk=!spAvailable(t,half)||!!(mid&&mid.passed);
+  const texOk=!spAvailable(t,null)||!!(tex&&tex.passed);
+  return {subs,total,done,half,mid,tex,midOk,texOk,midDue:done>=half,texDue:done>=total};
+}
+function lpEndBtn(t){
+  const gg=spGates(t);
+  if(gg.texDue&&!gg.texOk&&spAvailable(t,null))
+    return `<button class="btn btn-primary" style="margin-top:12px;background:#D9A514" onclick="closeSheet();spStart('end','${t.id}')">\u{1F3C6} TAKE THE END-OF-TOPIC EXAM</button>`;
+  return `<button class="btn btn-primary" style="margin-top:12px" onclick="closeSheet();njGoPractice()">\u{01F3AF} GO TO PRACTICE</button>`;
+}
+function spStart(mode,tid){
+  const t=noteFindAnywhere(tid||state.ntopic); if(!t) return;
+  const g=spGates(t);
+  if(mode==='mid'&&!g.midDue){toast('Read the first half of the topic first');return;}
+  if(mode==='end'&&!g.texDue){toast('Finish every sub-topic first');return;}
+  const pool=spPool(t, mode==='mid'? g.half : null);
+  const wantW= mode==='mid'?2:3;
+  const wr=spShuf(pool.wr).slice(0,wantW);
+  const objs=spShuf(pool.objs).slice(0,Math.max(0,10-wr.length));
+  const items=objs.map(q=>({kind:'mcq',q})).concat(wr.map(q=>({kind:'written',q})));
+  if(items.length<5){toast('No questions available for this test yet.');return;}
+  state.sp={mode,tid:t.id,half:g.half,items,i:0,
+           picks:Array(items.length).fill(null),texts:{},work:{},t0:Date.now()};
+  go('spExam');
+}
+function spPick(idx){ const s=state.sp; s.picks[s.i]=idx;
+  document.querySelectorAll('#spAnswers .ans').forEach(b=>b.classList.toggle('picked',+b.dataset.i===idx)); }
+function spText(i,v){ if(state.sp) state.sp.texts[i]=v; }
+function spWork(i,v){ if(state.sp) state.sp.work[i]=v; }
+function spMove(d){ const s=state.sp; if(!s)return; const n=s.i+d; if(n<0||n>=s.items.length)return; s.i=n; render();
+  const v=document.getElementById('views'); if(v)v.scrollTop=0; window.scrollTo(0,0); }
+function spConfirm(){
+  const s=state.sp; if(!s)return;
+  const A=s.items.filter(x=>x.kind==='mcq').length;
+  const a=s.picks.slice(0,A).filter(p=>p!==null).length;
+  const b=s.items.map((x,i)=>x.kind==='written'?(s.texts[i]||'').trim():null).filter(Boolean).length;
+  openSheet(`<div class="grabber"></div><div style="text-align:center">${ART.owl(84,'think')}</div>
+   <h3 style="margin-top:8px">Submit your test?</h3>
+   <div class="sh-sub">Section A: ${a} of ${A} answered &middot; Section B: ${b} of ${s.items.length-A} written.</div>
+   <div style="height:18px"></div>
+   <button class="btn btn-primary btn-lg" onclick="closeSheet();spSubmit()">${I.check(20)} YES, SUBMIT</button>
+   <div style="height:11px"></div><button class="btn btn-ghost" onclick="closeSheet()">Keep answering</button>`);
+}
+function spSubmit(){
+  const s=state.sp, t=noteFindAnywhere(s.tid); if(!t)return;
+  let points=0; const detail=[];
+  s.items.forEach((it,i)=>{
+    if(it.kind==='mcq'){
+      const q=it.q, right='ABCD'.indexOf(String(q.correctAnswer).trim().charAt(0));
+      const pick=s.picks[i], ok=pick===right;
+      if(ok)points++;
+      detail.push({kind:'mcq',ok,question:q.question,explanation:q.explanation||'',right,pick});
+    }else{
+      const q=it.q, given=(s.texts[i]||'');
+      const m=exMark(Object.assign({},q,{kind:'auto',accepted:[q.a]}),given);
+      const pts=m.state==='right'?1:(m.state==='part'?0.5:0);
+      points+=pts;
+      detail.push({kind:'written',ok:m.state==='right',part:m.state==='part',question:q.q,user:given.trim(),model:q.a});
+    }
+  });
+  const total=s.items.length, pct=Math.round(100*points/total);
+  const rec={attempted:true,score:pct,passed:pct>=50,date:new Date().toISOString().slice(0,10)};
+  spPut(s.mode==='mid'?MID_KEY:TEX_KEY, t.id, rec);
+  try{trackActivity(s.mode==='mid'?'midtest':'topicexam',{topic:t.id,score:pct,passed:rec.passed});}catch(e){}
+  state.lastResult={correct:Math.round(points*10)/10,total,pct,
+    time:Math.max(5,Math.round((Date.now()-s.t0)/1000)),detail,kind:'spexam',sp:{mode:s.mode,tid:t.id}};
+  afxPlay(pct>=75?'star':'correct');
+  go('results');
+}
+SCREENS.spExam = () => {
+  const s=state.sp; if(!s) return SCREENS.notePath();
+  const t=noteFindAnywhere(s.tid); if(!t) return SCREENS.notePath();
+  const it=s.items[s.i], n=s.i+1, A=s.items.filter(x=>x.kind==='mcq').length;
+  const isMid=s.mode==='mid';
+  const head=isMid?'\u{1F3AF} Mid-Topic Test: '+nEsc(t.title)+' (1\u2013'+s.half+')':'\u{1F3C6} End-of-Topic Exam: '+nEsc(t.title);
+  let body='';
+  if(it.kind==='mcq'){
+    const q=it.q;
+    body='<div class="answers" id="spAnswers">'+
+      q.options.map((o,i)=>{const lab=String(o).replace(/^[A-D]\.\s*/,'');
+        return '<button class="ans '+(s.picks[s.i]===i?'picked':'')+'" data-i="'+i+'" onclick="spPick('+i+')">'+
+          '<span class="let">'+'ABCD'[i]+'</span><span class="lab">'+lab+'</span><span class="mark">'+I.check(22)+'</span></button>';}).join('')+
+    '</div>';
+  } else {
+    const q=it.q;
+    body='<div style="display:flex;flex-direction:column;gap:10px">'+
+      '<textarea style="width:100%;border:2px solid var(--line);border-radius:16px;padding:12px 14px;font:inherit;font-weight:600;min-height:96px;background:#fff"'+
+      ' placeholder="Write your answer here" oninput="spText('+s.i+',this.value)">'+nEsc(s.texts[s.i]||'')+'</textarea>'+
+      '<textarea style="width:100%;border:2px dashed var(--line);border-radius:16px;padding:12px 14px;font:inherit;min-height:70px;background:var(--cream,#FFFDF6)"'+
+      ' placeholder="Working space (not marked)" oninput="spWork('+s.i+',this.value)">'+nEsc(s.work[s.i]||'')+'</textarea></div>';
+  }
+  return `
+  <div class="pq-wrap">
+    <button class="pq-quit" onclick="confirmQuit()" aria-label="Leave test">${I.x(20)}</button>
+    <div class="pq-banner" style="background:${isMid?'var(--purple)':'#E0AC1F'}">
+      <span class="pq-flag" aria-hidden="true">${isMid?'\u{1F3AF}':'\u{1F3C6}'}</span>
+      <b>${head}</b>
+      <img class="pq-cardowl" src="${PLE_ART.owlHero}" alt="">
+    </div>
+    <div class="pq-progress">
+      <div class="pq-ptop"><b>Question ${n} <em>of ${s.items.length}</em></b>
+        <span class="pq-exam">${s.i<A?'SECTION A':'SECTION B'}</span></div>
+      <div class="pq-bar"><i style="width:${n/s.items.length*100}%"></i></div>
+    </div>
+    <div class="pq-qcard">
+      <div class="qtext">${it.kind==='mcq'?it.q.question:nEsc(it.q.q)}</div>
+      <div class="pq-sub">${it.kind==='mcq'?'Section A \u2014 choose the correct answer':'Section B \u2014 write your answer, then press Next'}</div>
+      ${body}
+    </div>
+    <img class="pq-peek pq-peek-l" src="${PLE_ART.englishkid}" alt=""><img class="pq-peek pq-peek-r" src="${PLE_ART.sstkid}" alt="">
+    <div style="margin-top:auto;padding-top:18px;display:flex;flex-direction:column;gap:11px">
+      <div class="btn-row">
+        <button class="btn btn-ghost" onclick="spMove(-1)" ${s.i===0?'disabled style="opacity:.45"':''}>${I.back(18)} Back</button>
+        <button class="btn btn-primary" onclick="spMove(1)" ${s.i===s.items.length-1?'disabled style="opacity:.45"':''}>Next ${I.chev(18)}</button>
+      </div>
+      ${s.i===s.items.length-1?`<button class="btn btn-green btn-lg" onclick="spConfirm()">${I.check(20)} CHECK &amp; SUBMIT</button>`:''}
+    </div>
+  </div>`;
+};
+/* notePath rows with the two milestone cards injected on the rail.
+   Every nested piece is built as its own string first — no nested
+   template literals inside the row templates. */
+function spNoteRows(t,g,cur){
+  const rows=[];
+  g.subs.forEach((s,i)=>{
+    const done=pathDone(t,i);
+    const isCur=i===cur;
+    const locked=i>cur||(i>=g.half&&g.midDue&&!g.midOk);
+    const dot=done?'\u2713':(locked?LOCK_SVG:String(i+1));
+    const dotCls=done?'done':(isCur&&!locked?'now':'lock');
+    const cardCls=done?'c-done':(isCur&&!locked?'c-now':'c-lock');
+    const statCls=done?'done':(isCur&&!locked?'now':'lock');
+    let stat;
+    if(done) stat='Completed \u00B7 '+s.mins+' min \u2705';
+    else if(isCur&&!locked) stat='Current \u00B7 about '+s.mins+' min \u{1F680}';
+    else if(i>=g.half&&g.midDue&&!g.midOk) stat='Locked \u00B7 pass the Mid-Topic Test to unlock \u{1F3AF}';
+    else if(i===cur+1) stat='Locked \u00B7 complete the previous to unlock \u{1F512}';
+    else stat='Locked \u00B7 earn stars to unlock \u{1F512}';
+    let btn='';
+    if(done) btn='<button class="btn lp-btn lp-review" onclick="event.stopPropagation();lpOpen('+i+')">REVIEW \u2B50 \u27A1</button>';
+    else if(!locked) btn='<button class="btn lp-btn lp-read" onclick="event.stopPropagation();lpOpen('+i+')">READ NOTES \u2728 \u27A1</button>';
+    rows.push('<div class="lp-item">'+
+      '<div class="lp-dot '+dotCls+'" onclick="lpOpen('+i+')" role="button" aria-label="'+nEsc(s.title)+'">'+dot+'</div>'+
+      '<div class="lp-card '+cardCls+'" onclick="lpOpen('+i+')" role="button"><b>'+nEsc(s.title)+'</b>'+
+      '<span class="lp-status '+statCls+'">'+stat+'</span>'+btn+'</div></div>');
+    if(i===g.half-1&&g.midDue&&spAvailable(t,g.half)){
+      const now=!g.midOk;
+      const mDotCls=(g.mid&&g.mid.passed)?'done':'now';
+      const mDotBg=(g.mid&&g.mid.passed)?'var(--green)':'var(--purple)';
+      const mClick=now?"spStart('mid','"+t.id+"')":"lpOpen("+g.half+")";
+      const mCardCls=now?'c-now':'c-done';
+      const mCardBg=now?'#F3EEFF':'#FBFAFF';
+      let mStat;
+      if(g.mid&&g.mid.passed) mStat='Passed \u00B7 '+g.mid.score+'% \u2705';
+      else if(now) mStat='Unlocks sub-topics '+(g.half+1)+'\u2013'+g.total+' \u00B7 pass mark 50%';
+      else mStat='\u2014';
+      const mBtn=now?'<button class="btn lp-btn" style="background:var(--purple);color:#fff" onclick="event.stopPropagation();spStart(\'mid\',\''+t.id+'\')">START MID-TEST \u{1F3AF} \u27A1</button>':'';
+      rows.push('<div class="lp-item">'+
+        '<div class="lp-dot '+mDotCls+'" style="background:'+mDotBg+';border-color:var(--purple);color:#fff" onclick="'+mClick+'" role="button" aria-label="Mid-Topic Test">\u{1F3AF}</div>'+
+        '<div class="lp-card '+mCardCls+'" style="border-color:var(--purple);background:'+mCardBg+'" onclick="'+(now?mClick:'')+'" role="button">'+
+        '<b>\u{1F3AF} Mid-Topic Test</b><span class="lp-status '+(now?'now':'done')+'">'+mStat+'</span>'+mBtn+'</div></div>');
+    }
+  });
+  if(spAvailable(t,null)){
+    const now=g.texDue&&!g.texOk;
+    const eDotCls=(g.tex&&g.tex.passed)?'done':(now?'now':'lock');
+    const eDotBg=(g.tex&&g.tex.passed)?'var(--green)':(now?'#E0AC1F':'#FFF6DC');
+    const eClick=now?"spStart('end','"+t.id+"')":"lpOpen("+(g.total-1)+")";
+    const eCardCls=(g.tex&&g.tex.passed)?'c-done':(now?'c-now':'c-lock');
+    const eCardBg=(g.tex&&g.tex.passed)?'#FFFDF4':(now?'#FFF9E8':'#FFFDF7');
+    let eStat;
+    if(g.tex&&g.tex.passed) eStat='Passed \u00B7 '+g.tex.score+'% \u2014 topic complete! \u{1F389}';
+    else if(now) eStat='Final gate \u00B7 pass mark 50%';
+    else eStat='Locked \u00B7 finish every sub-topic first \u{1F512}';
+    const eBtn=now?'<button class="btn lp-btn" style="background:#D9A514;color:#fff" onclick="event.stopPropagation();spStart(\'end\',\''+t.id+'\')">START EXAM \u{1F3C6} \u27A1</button>':'';
+    rows.push('<div class="lp-item">'+
+      '<div class="lp-dot '+eDotCls+'" style="background:'+eDotBg+';border-color:#D9A514" onclick="'+eClick+'" role="button" aria-label="End-of-Topic Exam">\u{1F3C6}</div>'+
+      '<div class="lp-card '+eCardCls+'" style="border-color:#D9A514;background:'+eCardBg+'" onclick="'+(now?eClick:'')+'" role="button">'+
+      '<b>\u{1F3C6} End-of-Topic Exam</b><span class="lp-status '+(now?'now':(g.tex&&g.tex.passed?'done':'lock'))+'">'+eStat+'</span>'+eBtn+'</div></div>');
+  }
+  return rows.join('');
+}
+/* next-topic gate: the previous topic's end exam must be passed */
+function noteLocked(t){
+  const bank=notesFor(t.class,t.subject); if(!bank||!bank.topics) return false;
+  const idx=bank.topics.findIndex(x=>x.id===t.id); if(idx<=0) return false;
+  if(noteDone(t).read>0) return false;            /* already started — never wall off */
+  const prev=bank.topics[idx-1];
+  return !spGates(prev).texOk;
+}
+function noteOpen(id){
+  const t=noteFindAnywhere(id); if(!t)return;
+  if(noteLocked(t)){
+    const bank=notesFor(t.class,t.subject);
+    const prev=bank.topics[bank.topics.findIndex(x=>x.id===t.id)-1];
+    toast('Finish \u201C'+prev.title+'\u201D and its End-of-Topic Exam \u{1F3C6} first');
+    return;
+  }
+  openNotePath(id);
+}
+
 function topicIcon(t){
   const s=(t.title+' '+t.subject).toLowerCase();
   const M=[[/digest|alimentar/,'🍉'],[/respirat|breath|lung/,'🫁'],[/circulat|heart|blood/,'❤\uFE0F'],
@@ -2799,6 +3038,8 @@ function lpOpen(i){                        /* tap a circle: enforce the unlock *
   const t=noteById(state.ntopic)||noteFindAnywhere(state.ntopic);if(!t)return;
   const {cur}=pathState(t);
   if(i>cur){toast('Complete the previous sub-topic to unlock this one');return;}
+  const g=spGates(t);
+  if(i>=g.half&&g.midDue&&!g.midOk){toast('Pass the Mid-Topic Test \u{1F3AF} to unlock the second half');return;}
   state.nsec=i;
   go('noteSub');
 }
@@ -2829,7 +3070,7 @@ function lpComplete(){                     /* Mark as Complete & Continue */
       <div style="font-size:56px">🏆</div>
       <h3 style="margin-top:6px">Topic complete!</h3>
       <p class="muted" style="margin:8px 0 4px">You finished every sub-topic of <b>${nEsc(t.title)}</b>.</p>
-      <button class="btn btn-primary" style="margin-top:12px" onclick="closeSheet();njGoPractice()">\u{01F3AF} GO TO PRACTICE</button>
+      ${lpEndBtn(t)}
       <button class="btn btn-ghost" style="margin-top:8px" onclick="closeSheet();go('notePath')">BACK TO THE PATH</button>
     </div>`);
   afxPlay('star');
@@ -2856,7 +3097,10 @@ const LOCK_SVG = `<svg viewBox="0 0 40 40" width="26" height="26" aria-hidden="t
 SCREENS.notePath = () => {
   const t=noteById(state.ntopic)||noteFindAnywhere(state.ntopic);
   if(!t)return SCREENS.notes;
-  const {subs,cur}=pathState(t);
+  const {subs,cur:baseCur}=pathState(t);
+  const g=spGates(t);
+  let cur=baseCur;
+  if(g.midDue&&!g.midOk&&cur>g.half)cur=g.half;
   const doneCount=subs.filter((s,i)=>pathDone(t,i)).length;
   const pct=subs.length?Math.round(100*doneCount/subs.length):0;
   const cheer = doneCount===subs.length
@@ -2878,28 +3122,7 @@ SCREENS.notePath = () => {
 
     <div class="lp-wrap">
       <div class="lp-rail"><i style="height:${pct}%"></i></div>
-      ${subs.map((s,i)=>{
-        const done=pathDone(t,i);
-        const isCur=i===cur;
-        const locked=i>cur;
-        return `
-        <div class="lp-item">
-          <div class="lp-dot ${done?'done':isCur?'now':'lock'}"
-               onclick="lpOpen(${i})" role="button" aria-label="${nEsc(s.title)}">
-            ${done?'\u2713':locked?LOCK_SVG:(i+1)}
-          </div>
-          <div class="lp-card ${done?'c-done':isCur?'c-now':'c-lock'}" onclick="lpOpen(${i})" role="button">
-            <b>${nEsc(s.title)}</b>
-            <span class="lp-status ${done?'done':isCur?'now':'lock'}">
-              ${done?`Completed \u00B7 ${s.mins} min \u2705`
-                :isCur?`Current \u00B7 about ${s.mins} min \u{1F680}`
-                :(i===cur+1?`Locked \u00B7 complete the previous to unlock \u{1F512}`
-                           :`Locked \u00B7 earn stars to unlock \u{1F512}`)}
-            </span>
-            ${done?`<button class="btn lp-btn lp-review" onclick="event.stopPropagation();lpOpen(${i})">REVIEW \u2B50 \u27A1</button>`
-              :!locked?`<button class="btn lp-btn lp-read" onclick="event.stopPropagation();lpOpen(${i})">READ NOTES \u2728 \u27A1</button>`:''}
-          </div>
-        </div>`;}).join('')}
+      ${spNoteRows(t,g,cur)}
     </div>
 
     <div class="lp-kids"><img src="${PLE_ART.kidsjumping}" alt="Kids cheering you on"></div>
@@ -5885,9 +6108,14 @@ SCREENS.pprogress = () => {
   <div class="card">
     ${Object.keys(topics).sort().map((t,i)=>{
       const st=p.byTopic[t], v=st?pct(st.c,st.n):0;
+      const nb=((notesFor(cls,state.psubject)||{}).topics)||[];
+      const nt=nb.find(x=>x.title===t);
+      const gb=nt?spGates(nt):null;
+      const badge=gb&&gb.tex&&gb.tex.passed?'\u{1F3C6} topic complete':(gb&&gb.mid&&gb.mid.passed?'\u{1F3AF} mid-test passed':'');
       return `<div style="padding:${i?'13px':'2px'} 0 13px;${i?'border-top:1.5px solid var(--line)':''}">
         <div style="display:flex;gap:10px;align-items:center">
           <b style="flex:1;font-size:15.5px">${t}</b>
+          ${badge?`<span class="pill dl" style="background:var(--purple-50);border-color:var(--purple-100);color:var(--purple-ink)">${badge}</span>`:''}
           <span style="font-weight:900;color:${st?(v>=60?'var(--green-ink)':'var(--coral-ink)'):'var(--muted)'}">
             ${st?v+'%':'—'}</span></div>
         <div class="bar" style="margin-top:8px"><i style="width:0;background:${v>=60?'var(--green)':'var(--coral)'}" data-grow="${v}%"></i></div>
@@ -6247,6 +6475,23 @@ SCREENS.exam = () => {
 
 SCREENS.results = () => {
   const r = state.lastResult, pct = r.pct;
+  const isSP = r.kind==='spexam';
+  const spStrip = isSP
+    ? '<div class="hint-strip '+(pct>=50?'green':'amber')+'">'+(pct>=50?I.medal(20):I.target(20))+
+      ' <span><b>'+(r.sp.mode==='mid'?'Mid-Topic Test':'End-of-Topic Exam')+'</b> '+
+      (pct>=50?'passed \u2014 the next stage is unlocked!':'needs 50% to unlock the next stage \u2014 retry or review your notes.')+'</span></div>'
+    : '<div class="hint-strip amber">'+I.medal(20)+' <span>You earned a new badge: <b>Steady Learner</b></span></div>';
+  let spBtns='';
+  if(isSP){
+    spBtns='<button class="btn btn-primary btn-lg" onclick="go(\'review\')">'+I.eye(20)+' REVIEW ANSWERS</button>';
+    if(pct<50){
+      spBtns+='<button class="btn btn-coral btn-lg" onclick="spStart(\''+r.sp.mode+'\',\''+r.sp.tid+'\')">'+I.refresh(20)+' RETRY TEST</button>';
+      spBtns+='<button class="btn btn-soft btn-lg" onclick="openNotePath(\''+r.sp.tid+'\')">'+I.book(20)+' REVIEW NOTES</button>';
+    }else{
+      spBtns+='<button class="btn btn-green btn-lg" onclick="openNotePath(\''+r.sp.tid+'\')">'+I.check(20)+' CONTINUE THE PATH</button>';
+    }
+    spBtns+='<button class="btn btn-ghost" onclick="tabTo(\'home\')">'+I.home(20)+' Back to Home</button>';
+  }
   const tone = pct>=75?'':(pct>=50?'mid':'low');
   const art  = pct>=75?ART.trophy(96):(pct>=50?ART.star(96):ART.bulb(96));
   const title= pct>=75?'Great Work!':(pct>=50?'Well Done!':'Good Effort!');
@@ -6269,39 +6514,45 @@ SCREENS.results = () => {
     <div class="stat">${iconBox('target','purple',20,44)}<span><b>${pct}%</b><span>Accuracy</span></span></div>
   </div>
   <div class="spacer"></div>
-  <div class="hint-strip amber">${I.medal(20)} <span>You earned a new badge: <b>Steady Learner</b></span></div>
+  ${spStrip}
   <div style="margin-top:auto;padding-top:22px;display:flex;flex-direction:column;gap:12px">
+    ${isSP?spBtns:`
     <button class="btn btn-primary btn-lg" onclick="go('review')">${I.eye(20)} REVIEW ANSWERS</button>
     <button class="btn btn-green btn-lg" onclick="repeatSession()">${I.refresh(20)} PRACTICE AGAIN</button>
-    <button class="btn btn-ghost" onclick="tabTo('home')">${I.home(20)} Back to Home</button>
+    <button class="btn btn-ghost" onclick="tabTo('home')">${I.home(20)} Back to Home</button>`}
   </div>`;
 };
 
 SCREENS.review = () => {
   const r = state.lastResult;
+  const isSP = r.kind==='spexam';
+  const rows=(r.detail||[]).map((d,i)=>{
+    let ansLines;
+    if(d.kind==='written'){
+      ansLines='<div class="hint-strip '+(d.ok?'green':'')+'" style="padding:11px 13px;font-size:13.5px;'+(d.ok?'':'background:var(--coral-50);border-color:var(--coral-100);color:var(--coral-ink)')+'">'+I.hand(17)+' <span>Your answer: '+(nEsc(d.user)||'\u2014')+(d.part?' (partly correct)':'')+'</span></div>'+
+        '<div class="hint-strip green" style="padding:11px 13px;font-size:13.5px">'+I.check(17)+' <span>Model answer: '+nEsc(d.model)+'</span></div>';
+    }else{
+      ansLines='<div class="hint-strip green" style="padding:11px 13px;font-size:13.5px">'+I.check(17)+' <span>Correct answer: option '+'ABCD'[d.right]+'</span></div>'+
+        (!d.ok?'<div class="hint-strip" style="padding:11px 13px;font-size:13.5px;background:var(--coral-50);border-color:var(--coral-100);color:var(--coral-ink)">'+I.hand(17)+' <span>You chose: option '+(d.pick===null?'\u2014':'ABCD'[d.pick])+'</span></div>':'');
+    }
+    return '<div class="card" style="padding:16px">'+
+      '<div style="display:flex;align-items:center;gap:11px">'+
+      iconBox(d.ok?'check':'refresh',d.ok?'green':'coral',18,40)+
+      '<b style="flex:1;font-size:16px">Question '+(i+1)+(d.kind==='written'?' \u00B7 Section B':' \u00B7 Section A')+'</b>'+
+      '<span class="pill '+(d.ok?'off':'warn')+'">'+(d.ok?'Correct':(d.part?'Partly correct':'Try again'))+'</span></div>'+
+      '<p style="margin-top:11px;font-weight:700;font-size:16px">'+(d.question?d.question:(d.src?'':'Placeholder question text '+(i+1)+'.'))+'</p>'+
+      (d.explanation?'<div class="hint-strip cream" style="padding:11px 13px;font-size:13.5px;margin-top:8px">'+I.bulb(17)+' <span>'+d.explanation+'</span></div>':'')+
+      (d.src?'<div class="t-meta">'+I.papers(13)+' '+d.src+'</div>':'')+
+      '<div style="margin-top:10px;display:flex;flex-direction:column;gap:7px">'+ansLines+'</div></div>';
+  }).join('');
   return `
   <header class="pagehead">
     <button class="back" onclick="go('results',false)" aria-label="Go back">${I.back(22)}</button>
     <div><h2>Review Answers</h2><div class="sub">${r.correct} of ${r.total} correct</div></div>
   </header>
-  <div class="rows">
-    ${r.detail.map((d,i)=>`
-      <div class="card" style="padding:16px">
-        <div style="display:flex;align-items:center;gap:11px">
-          ${iconBox(d.ok?'check':'refresh',d.ok?'green':'coral',18,40)}
-          <b style="flex:1;font-size:16px">Question ${i+1}</b>
-          <span class="pill ${d.ok?'off':'warn'}">${d.ok?'Correct':'Try again'}</span>
-        </div>
-        <p style="margin-top:11px;font-weight:700;font-size:16px">${d.question?d.question:(d.src?'':'Placeholder question text '+(i+1)+'.')}</p>
-        ${d.explanation?`<div class="hint-strip cream" style="padding:11px 13px;font-size:13.5px;margin-top:8px">${I.bulb(17)} <span>${d.explanation}</span></div>`:''}
-        ${d.src?`<div class="t-meta">${I.papers(13)} ${d.src}</div>`:''}
-        <div style="margin-top:10px;display:flex;flex-direction:column;gap:7px">
-          <div class="hint-strip green" style="padding:11px 13px;font-size:13.5px">${I.check(17)} <span>Correct answer: option ${'ABCD'[d.right]}</span></div>
-          ${!d.ok?`<div class="hint-strip" style="padding:11px 13px;font-size:13.5px;background:var(--coral-50);border-color:var(--coral-100);color:var(--coral-ink)">${I.hand(17)} <span>You chose: option ${d.pick===null?'—':'ABCD'[d.pick]}</span></div>`:''}
-        </div>
-      </div>`).join('')}
-  </div>
+  <div class="rows">${rows}</div>
   <div class="spacer"></div>
+  ${isSP?`<button class="btn btn-green btn-lg" onclick="openNotePath('${r.sp.tid}')">${I.check(20)} CONTINUE THE PATH \u27A1</button>`:''}
   <button class="btn btn-primary btn-lg" onclick="repeatSession()">${I.refresh(20)} PRACTICE AGAIN</button>`;
 };
 
@@ -6637,13 +6888,14 @@ SCREENS.notes = () => {
       const mins=subs.reduce((a,s)=>a+s.mins,0);
       const doneN=subs.filter((s,i)=>pathDone(t,i)).length;
       const pct=subs.length?Math.round(100*doneN/subs.length):0;
-      return `<button class="tcard" onclick="openNotePath('${t.id}')">
-        <span class="tic">${topicIcon(t)}</span>
+      const gb=spGates(t), lkd=noteLocked(t);
+      return `<button class="tcard" onclick="noteOpen('${t.id}')" ${lkd?'style="opacity:.62"':''}>
+        <span class="tic">${lkd?'\u{1F512}':topicIcon(t)}</span>
         <span style="flex:1;min-width:0">
           <b>${nEsc(t.title)}</b>
           <span class="tsub">${subs.length} sub-topics \u00B7 about ${mins} min</span>
           <span class="tbar"><i style="width:${pct}%"></i></span>
-          <span class="tmeta">${doneN}/${subs.length} done${pct===100?' \u2014 complete! 🎉':''}</span>
+          <span class="tmeta">${doneN}/${subs.length} done${gb.tex&&gb.tex.passed?' \u00B7 \u{1F3C6} topic complete! \u{1F389}':pct===100?' \u2014 complete! 🎉':''}${gb.mid&&gb.mid.passed?' \u00B7 \u{1F3AF} mid-test passed':''}${lkd?' \u00B7 finish the previous topic + its \u{1F3C6} exam first':''}</span>
         </span>
         <span class="go">${I.chev(20)}</span>
       </button>`;}).join('')}
@@ -6745,7 +6997,9 @@ function openNoteTopic(id){
   openNotePath(id);
   return;
 }
-function readSection(i){ state.nsec=i; markSeen(); const t=noteById(state.ntopic); if(t){recordLast({ntopic:state.ntopic,nsec:i,pct:noteDone(t).pct,meta:(i+1)+' of '+noteSections(t).length+' sections read'});} go('noteRead'); }
+function readSection(i){ const tg=noteById(state.ntopic)||noteFindAnywhere(state.ntopic);
+  if(tg){ const g=spGates(tg); if(i>=g.half&&g.midDue&&!g.midOk){toast('Pass the Mid-Topic Test \u{1F3AF} to unlock the second half');return;} }
+  state.nsec=i; markSeen(); const t=noteById(state.ntopic); if(t){recordLast({ntopic:state.ntopic,nsec:i,pct:noteDone(t).pct,meta:(i+1)+' of '+noteSections(t).length+' sections read'});} go('noteRead'); }
 function markSeen(){
   const t=noteById(state.ntopic); if(!t) return;
   const k=t.id+':'+state.nsec,was=!!state.noteSeen[k]; state.noteSeen[k]=true;
@@ -6755,6 +7009,8 @@ function noteMove(d){
   const t=noteById(state.ntopic); if(!t) return;
   const n=state.nsec+d;
   if(n<0||n>=noteSections(t).length) return;
+  const gm=spGates(t);
+  if(n>=gm.half&&gm.midDue&&!gm.midOk){toast('Pass the Mid-Topic Test \u{1F3AF} to unlock the second half');return;}
   state.nsec=n; markSeen(); render();
   const v=document.getElementById('views'); if(v) v.scrollTop=0; window.scrollTo(0,0);
 }
@@ -7168,6 +7424,7 @@ function finish(){
 }
 function repeatSession(){
   const r=state.lastResult;
+  if(r.kind==='spexam'){ spStart(r.sp.mode, r.sp.tid); return; }
   if(r.kind==='sst'){ startPractice(state.session?state.session.mode:'quick', state.ptopic); return; }
   if(r.kind==='exam') startExam(state.paper);
   else startSession(state.mode||'quick', state.subject||'math', state.topic);
