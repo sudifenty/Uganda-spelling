@@ -2851,10 +2851,9 @@ function spBlockTexts(b,acc){
   if(Array.isArray(b)){b.forEach(x=>spBlockTexts(x,acc));return;}
   if(typeof b==='object'){for(const k in b){if(k==='t')continue;spBlockTexts(b[k],acc);}}
 }
-function spFactMCQs(t,upto){
-  const key=t.id+'|'+(upto==null?'all':upto);
-  if(SP_FACT_MCQ_CACHE[key]) return SP_FACT_MCQ_CACHE[key];
-  const meta=SUBJ_META[t.subject];
+const SP_FACTS_CACHE={};
+function spFacts(t){
+  if(SP_FACTS_CACHE[t.id]) return SP_FACTS_CACHE[t.id];
   const secs=noteSections(t);
   const allFacts=[];
   for(let i=0;i<secs.length;i++){
@@ -2864,11 +2863,20 @@ function spFactMCQs(t,upto){
       if(!m) continue;
       const ans=m[1].trim();
       if(ans.length<2) continue;
+      const clean=s.replace(/\*\*/g,'').replace(/\s+/g,' ').trim();
       const stem=s.replace(/\*\*([^*]{2,60})\*\*/,' ______ ').replace(/\*\*/g,'').replace(/\s+/g,' ').trim();
-      if(stem.length<10||stem.length>170) continue;
-      allFacts.push({sec:i,stem,ans});
+      if(stem.length<10||stem.length>170||clean.length>160) continue;
+      allFacts.push({sec:i,stem,ans,full:clean});
     }
   }
+  SP_FACTS_CACHE[t.id]=allFacts;
+  return allFacts;
+}
+function spFactMCQs(t,upto){
+  const key=t.id+'|'+(upto==null?'all':upto);
+  if(SP_FACT_MCQ_CACHE[key]) return SP_FACT_MCQ_CACHE[key];
+  const meta=SUBJ_META[t.subject];
+  const allFacts=spFacts(t);
   const answers=[...new Set(allFacts.map(f=>f.ans))];
   const pool=(upto==null)?allFacts:allFacts.filter(f=>f.sec<upto);
   const out=[]; let n=0; const used={};
@@ -3535,7 +3543,24 @@ function kidExerciseFor(t,i){
   /* ---- this section's own bolded key facts as cloze tap-MCQs ---- */
   const objFacts=spFactMCQs(t,i+1).filter(f=>f.sec===i).slice(0,2).map(f=>({type:'objective',marks:1,
     q:f.question,options:f.options.map(o=>String(o).replace(/^[A-D]\.\s*/,'')),correct:f.correctAnswer}));
-  const objective=objQs.concat(objBank,objConv,objFacts).slice(0,2);
+  /* ---- last resort: true/false MCQs from the topic's own key facts ---- */
+  const objTF=[];
+  {
+    const facts=spFacts(t);
+    let mine=facts.filter(f=>f.sec===i);
+    if(!mine.length) mine=facts.filter(f=>f.sec<=i);
+    if(!mine.length) mine=facts;
+    for(let fi=0;objTF.length<2&&fi<mine.length;fi++){
+      const f=mine[fi];
+      const o=pick(facts.filter(x=>x.ans!==f.ans),1)[0];
+      if(!o) break;
+      const makeFalse=rng()<0.5;
+      const statement=makeFalse?f.full.replace(f.ans,o.ans):f.full;
+      if(makeFalse&&statement===f.full) continue;
+      objTF.push({type:'objective',marks:1,q:'True or false: '+statement,options:['True','False'],correct:makeFalse?'B':'A'});
+    }
+  }
+  const objective=objQs.concat(objBank,objConv,objFacts,objTF).slice(0,2);
   /* ---- written fill from the exercises bank (model answers + marks) ---- */
   let exq=[];
   try{
