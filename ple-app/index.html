@@ -3489,7 +3489,7 @@ function kidExerciseFor(t,i){
   let bank=[];
   try{
     bank=((meta&&meta.bank()[t.class]||{}).questions||[])
-      .filter(q=>q.topic===t.title&&Array.isArray(q.options)&&q.options.length===4&&q.correctAnswer)
+      .filter(q=>spThemeHit(t.title,q.topic)&&Array.isArray(q.options)&&q.options.length===4&&q.correctAnswer)
       /* notes questions whose teaching section is AHEAD of this one stay out */
       .filter(q=>typeof q.sec!=='number'||q.sec<=i);
   }catch(e){}
@@ -3512,7 +3512,30 @@ function kidExerciseFor(t,i){
   };
   const objBank=pick(bank.filter(q=>kexRelevant({q:q.question,a:q.answerValue})),2).map(q=>({type:'objective',marks:1,q:q.question,
     options:q.options.map(o=>String(o).replace(/^[A-D]\.\s*/,'')),correct:q.correctAnswer}));
-  const objective=objQs.concat(objBank).slice(0,2);
+  /* ---- auto-marked exercises of THIS topic, re-cast as tap-the-answer MCQs ---- */
+  let convPool=[];
+  try{
+    const et=((EXERCISE_BANK[t.class]||{})[t.subject]||{topics:[]}).topics.find(x=>x.topic_id===t.id);
+    convPool=((et&&et.questions)||[]).filter(q=>q.kind==='auto'&&Array.isArray(q.accepted)&&q.accepted.length&&
+      (typeof q.sec!=='number'||q.sec<=i));
+  }catch(e){}
+  convPool=convPool.slice().sort((a,b)=>((typeof b.sec==='number'&&b.sec===i)?1:0)-((typeof a.sec==='number'&&a.sec===i)?1:0));
+  const convModels=[...new Set(convPool.map(q=>String(q.accepted[0])))];
+  const objConv=[];
+  for(const q of convPool){
+    if(objConv.length>=2)break;
+    const right=String(q.accepted[0]);
+    if(!right||right.length>70)continue;
+    const distract=pick(convModels.filter(m=>m!==right&&m.length<70),3);
+    if(distract.length<3)continue;
+    const opts=[right].concat(distract);
+    for(let k=opts.length-1;k>0;k--){const r2=Math.floor(rng()*(k+1));const tmp=opts[k];opts[k]=opts[r2];opts[r2]=tmp;}
+    objConv.push({type:'objective',marks:1,q:q.q,options:opts,correct:'ABCD'[opts.indexOf(right)]});
+  }
+  /* ---- this section's own bolded key facts as cloze tap-MCQs ---- */
+  const objFacts=spFactMCQs(t,i+1).filter(f=>f.sec===i).slice(0,2).map(f=>({type:'objective',marks:1,
+    q:f.question,options:f.options.map(o=>String(o).replace(/^[A-D]\.\s*/,'')),correct:f.correctAnswer}));
+  const objective=objQs.concat(objBank,objConv,objFacts).slice(0,2);
   /* ---- written fill from the exercises bank (model answers + marks) ---- */
   let exq=[];
   try{
