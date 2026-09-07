@@ -3015,6 +3015,7 @@ function lpEndBtn(t){
     return `<button class="btn btn-primary" style="margin-top:12px;background:#D9A514" onclick="closeSheet();spStart('end','${t.id}')">\u{1F3C6} TAKE THE END-OF-TOPIC EXAM</button>`;
   return `<button class="btn btn-primary" style="margin-top:12px" onclick="closeSheet();njGoPractice()">\u{01F3AF} GO TO PRACTICE</button>`;
 }
+function spMidToast(h){toast('Complete sub-topics 1\u2013'+h+' to unlock the Mid-Topic Test \u{1F3AF}');}
 function spStart(mode,tid){
   const t=noteFindAnywhere(tid||state.ntopic); if(!t) return;
   const g=spGates(t);
@@ -3129,17 +3130,19 @@ function spNoteRows(t,g,cur){
       '<div class="lp-dot '+dotCls+'" onclick="lpOpen('+i+')" role="button" aria-label="'+nEsc(s.title)+'">'+dot+'</div>'+
       '<div class="lp-card '+cardCls+'" onclick="lpOpen('+i+')" role="button"><b>'+nEsc(s.title)+'</b>'+
       '<span class="lp-status '+statCls+'">'+stat+'</span>'+btn+'</div></div>');
-    if(i===g.half-1&&g.midDue&&spAvailable(t,g.half)){
-      const now=!g.midOk;
-      const mDotCls=(g.mid&&g.mid.passed)?'done':'now';
-      const mDotBg=(g.mid&&g.mid.passed)?'var(--green)':'var(--purple)';
-      const mClick=now?"spStart('mid','"+t.id+"')":"lpOpen("+g.half+")";
-      const mCardCls=now?'c-now':'c-done';
-      const mCardBg=now?'#F3EEFF':'#FBFAFF';
+    if(i===g.half-1&&spAvailable(t,g.half)){
+      const passed=!!(g.mid&&g.mid.passed);
+      const now=!passed&&g.midDue;
+      const locked=!passed&&!g.midDue;
+      const mDotCls=passed?'done':(now?'now':'lock');
+      const mDotBg=passed?'var(--green)':'var(--purple)';
+      const mClick=now?"spStart('mid','"+t.id+"')":(locked?"spMidToast("+g.half+")":"lpOpen("+g.half+")");
+      const mCardCls=passed?'c-done':(now?'c-now':'c-lock');
+      const mCardBg=passed?'#FBFAFF':(now?'#F3EEFF':'#F7F4FF');
       let mStat;
-      if(g.mid&&g.mid.passed) mStat='Passed \u00B7 '+g.mid.score+'% \u2705';
+      if(passed) mStat='Passed \u00B7 '+g.mid.score+'% \u2705';
       else if(now) mStat='Unlocks sub-topics '+(g.half+1)+'\u2013'+g.total+' \u00B7 pass mark 50%';
-      else mStat='\u2014';
+      else mStat='Locked \u00B7 complete sub-topics 1\u2013'+g.half+' first \u{1F512}';
       const mBtn=now?'<button class="btn lp-btn" style="background:var(--purple);color:#fff" onclick="event.stopPropagation();spStart(\'mid\',\''+t.id+'\')">START MID-TEST \u{1F3AF} \u27A1</button>':'';
       rows.push('<div class="lp-item">'+
         '<div class="lp-dot '+mDotCls+'" style="background:'+mDotBg+';border-color:var(--purple);color:#fff" onclick="'+mClick+'" role="button" aria-label="Mid-Topic Test">\u{1F3AF}</div>'+
