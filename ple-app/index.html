@@ -2796,7 +2796,9 @@ function spPool(t,upto){
   const wr=(et?et.questions:[]).filter(q=>
     q.class===t.class && String(q.id||'').indexOf(meta.tag)>=0 &&
     (upto==null || (typeof q.sec==='number' && q.sec<upto)));
-  return {objs:objs.concat(spConvMCQs(t,upto)),wr};
+  let all=objs.concat(spConvMCQs(t,upto));
+  if(all.length<8) all=all.concat(spNoteMCQs(t,upto));   /* thin bank → notes supply the options */
+  return {objs:all,wr};
 }
 /* written auto-marked exercises re-cast as tap-the-answer MCQs:
    the model answer plus three true answers from the same topic as
@@ -2830,6 +2832,41 @@ function spSpread(objs,n){
     if(q){out.push(q); idx++;}
     else keys=keys.filter(x=>x!==k);
   }
+  return out;
+}
+/* objective questions built from the topic's own notes Q&A pairs, so that
+   EVERY topic can field a mid and an end exam even with a thin bank:
+   the note's own answer is correct; three other true answers from the same
+   topic are the distractors. Nothing is invented. */
+const SP_NOTE_MCQ_CACHE={};
+function spNoteMCQs(t,upto){
+  const key=t.id+'|'+(upto==null?'all':upto);
+  if(SP_NOTE_MCQ_CACHE[key]) return SP_NOTE_MCQ_CACHE[key];
+  const meta=SUBJ_META[t.subject];
+  const secs=noteSections(t);
+  const flips=[];
+  for(let i=0;i<secs.length;i++){
+    if(upto!=null&&i>=upto) break;
+    let cards=[]; try{cards=kidCardsFor(t,i);}catch(e){continue;}
+    for(const c of cards){
+      if(c&&c.kind==='flip'&&c.question&&c.back){
+        const q=kidStrip(c.front), a=kidStrip(String(c.back));
+        if(q&&a&&q.length>8&&a.length>3&&a.length<140&&!/\?$/.test(a)) flips.push({sec:i,q,a});
+      }
+    }
+  }
+  const answers=[...new Set(flips.map(f=>f.a))];
+  const out=[]; let n=0;
+  for(const f of flips){
+    const distract=spShuf(answers.filter(x=>x!==f.a)).slice(0,3);
+    if(distract.length<3) continue;
+    const opts=spShuf([f.a].concat(distract));
+    out.push({id:t.id+'_NM'+(n++),class:t.class,subject:meta?meta.name:t.subject,
+      topic:t.title,sec:f.sec,renderAs:'mcq',question:f.q+'',
+      options:opts.map((o,i)=>'ABCD'[i]+'. '+o),
+      correctAnswer:'ABCD'[opts.indexOf(f.a)],explanation:''});
+  }
+  SP_NOTE_MCQ_CACHE[key]=out;
   return out;
 }
 function spAvailable(t,upto){ const p=spPool(t,upto); return p.objs.length>=5; }
