@@ -2796,9 +2796,43 @@ function spPool(t,upto){
   const wr=(et?et.questions:[]).filter(q=>
     q.class===t.class && String(q.id||'').indexOf(meta.tag)>=0 &&
     (upto==null || (typeof q.sec==='number' && q.sec<upto)));
-  return {objs,wr};
+  return {objs:objs.concat(spConvMCQs(t,upto)),wr};
 }
-function spAvailable(t,upto){ const p=spPool(t,upto); return p.objs.length>=5 && p.wr.length>=1; }
+/* written auto-marked exercises re-cast as tap-the-answer MCQs:
+   the model answer plus three true answers from the same topic as
+   distractors — nothing invented, coverage spread across subtopics */
+function spConvMCQs(t,upto){
+  const eb=(EXERCISE_BANK[t.class]||{})[t.subject];
+  const et=eb&&eb.topics?eb.topics.find(x=>x.topic_id===t.id):null;
+  if(!et) return [];
+  const autos=(et.questions||[]).filter(q=>q.class===t.class&&q.kind==='auto'&&Array.isArray(q.accepted)&&q.accepted.length);
+  const models=autos.map(q=>String(q.accepted[0]));
+  return autos.filter(q=>upto==null||(typeof q.sec==='number'&&q.sec<upto)).map(q=>{
+    const right=String(q.accepted[0]);
+    const distract=spShuf(models.filter(m=>m!==right)).slice(0,3);
+    if(distract.length<3) return null;
+    const opts=spShuf([right].concat(distract));
+    return {id:q.id+'_mc',class:q.class,subject:q.subject,topic:t.title,sec:q.sec,
+      renderAs:'mcq',question:q.q,options:opts.map((o,i)=>'ABCD'[i]+'. '+o),
+      correctAnswer:'ABCD'[opts.indexOf(right)],explanation:'Model answer: '+right};
+  }).filter(Boolean);
+}
+/* round-robin over subtopics so a test touches as many sections as the bank allows */
+function spSpread(objs,n){
+  const bySec={};
+  objs.forEach(q=>{const k=String(q.sec==null?999:q.sec); (bySec[k]=bySec[k]||[]).push(q);});
+  let keys=spShuf(Object.keys(bySec));
+  keys.forEach(k=>{bySec[k]=spShuf(bySec[k]);});
+  const out=[]; let idx=0;
+  while(out.length<Math.min(n,objs.length)&&keys.length){
+    const k=keys[idx%keys.length];
+    const q=bySec[k].pop();
+    if(q){out.push(q); idx++;}
+    else keys=keys.filter(x=>x!==k);
+  }
+  return out;
+}
+function spAvailable(t,upto){ const p=spPool(t,upto); return p.objs.length>=5; }
 function spGates(t){
   const subs=pathSubs(t), total=subs.length;
   const done=subs.filter((s,i)=>pathDone(t,i)).length;
@@ -2821,10 +2855,9 @@ function spStart(mode,tid){
   if(mode==='mid'&&!g.midDue){toast('Read the first half of the topic first');return;}
   if(mode==='end'&&!g.texDue){toast('Finish every sub-topic first');return;}
   const pool=spPool(t, mode==='mid'? g.half : null);
-  const wantW= mode==='mid'?2:3;
-  const wr=spShuf(pool.wr).slice(0,wantW);
-  const objs=spShuf(pool.objs).slice(0,Math.max(0,10-wr.length));
-  const items=objs.map(q=>({kind:'mcq',q})).concat(wr.map(q=>({kind:'written',q})));
+  /* both milestone tests are objective only: tap-the-right-answer MCQs,
+     spread across as many of the covered subtopics as the bank allows */
+  const items=spSpread(pool.objs,10).map(q=>({kind:'mcq',q}));
   if(items.length<5){toast('No questions available for this test yet.');return;}
   state.sp={mode,tid:t.id,half:g.half,items,i:0,
            picks:Array(items.length).fill(null),texts:{},work:{},t0:Date.now()};
@@ -2838,12 +2871,10 @@ function spMove(d){ const s=state.sp; if(!s)return; const n=s.i+d; if(n<0||n>=s.
   const v=document.getElementById('views'); if(v)v.scrollTop=0; window.scrollTo(0,0); }
 function spConfirm(){
   const s=state.sp; if(!s)return;
-  const A=s.items.filter(x=>x.kind==='mcq').length;
-  const a=s.picks.slice(0,A).filter(p=>p!==null).length;
-  const b=s.items.map((x,i)=>x.kind==='written'?(s.texts[i]||'').trim():null).filter(Boolean).length;
+  const answered=s.picks.filter(p=>p!==null).length;
   openSheet(`<div class="grabber"></div><div style="text-align:center">${ART.owl(84,'think')}</div>
    <h3 style="margin-top:8px">Submit your test?</h3>
-   <div class="sh-sub">Section A: ${a} of ${A} answered &middot; Section B: ${b} of ${s.items.length-A} written.</div>
+   <div class="sh-sub">You answered ${answered} of ${s.items.length} questions.</div>
    <div style="height:18px"></div>
    <button class="btn btn-primary btn-lg" onclick="closeSheet();spSubmit()">${I.check(20)} YES, SUBMIT</button>
    <div style="height:11px"></div><button class="btn btn-ghost" onclick="closeSheet()">Keep answering</button>`);
@@ -2852,18 +2883,10 @@ function spSubmit(){
   const s=state.sp, t=noteFindAnywhere(s.tid); if(!t)return;
   let points=0; const detail=[];
   s.items.forEach((it,i)=>{
-    if(it.kind==='mcq'){
-      const q=it.q, right='ABCD'.indexOf(String(q.correctAnswer).trim().charAt(0));
-      const pick=s.picks[i], ok=pick===right;
-      if(ok)points++;
-      detail.push({kind:'mcq',ok,question:q.question,explanation:q.explanation||'',right,pick});
-    }else{
-      const q=it.q, given=(s.texts[i]||'');
-      const m=exMark(Object.assign({},q,{kind:'auto',accepted:[q.a]}),given);
-      const pts=m.state==='right'?1:(m.state==='part'?0.5:0);
-      points+=pts;
-      detail.push({kind:'written',ok:m.state==='right',part:m.state==='part',question:q.q,user:given.trim(),model:q.a});
-    }
+    const q=it.q, right='ABCD'.indexOf(String(q.correctAnswer).trim().charAt(0));
+    const pick=s.picks[i], ok=pick===right;
+    if(ok)points++;
+    detail.push({kind:'mcq',ok,question:q.question,explanation:q.explanation||'',right,pick});
   });
   const total=s.items.length, pct=Math.round(100*points/total);
   const rec={attempted:true,score:pct,passed:pct>=50,date:new Date().toISOString().slice(0,10)};
@@ -2877,25 +2900,15 @@ function spSubmit(){
 SCREENS.spExam = () => {
   const s=state.sp; if(!s) return SCREENS.notePath();
   const t=noteFindAnywhere(s.tid); if(!t) return SCREENS.notePath();
-  const it=s.items[s.i], n=s.i+1, A=s.items.filter(x=>x.kind==='mcq').length;
+  const it=s.items[s.i], n=s.i+1;
   const isMid=s.mode==='mid';
   const head=isMid?'\u{1F3AF} Mid-Topic Test: '+nEsc(t.title)+' (1\u2013'+s.half+')':'\u{1F3C6} End-of-Topic Exam: '+nEsc(t.title);
-  let body='';
-  if(it.kind==='mcq'){
-    const q=it.q;
-    body='<div class="answers" id="spAnswers">'+
-      q.options.map((o,i)=>{const lab=String(o).replace(/^[A-D]\.\s*/,'');
-        return '<button class="ans '+(s.picks[s.i]===i?'picked':'')+'" data-i="'+i+'" onclick="spPick('+i+')">'+
-          '<span class="let">'+'ABCD'[i]+'</span><span class="lab">'+lab+'</span><span class="mark">'+I.check(22)+'</span></button>';}).join('')+
-    '</div>';
-  } else {
-    const q=it.q;
-    body='<div style="display:flex;flex-direction:column;gap:10px">'+
-      '<textarea style="width:100%;border:2px solid var(--line);border-radius:16px;padding:12px 14px;font:inherit;font-weight:600;min-height:96px;background:#fff"'+
-      ' placeholder="Write your answer here" oninput="spText('+s.i+',this.value)">'+nEsc(s.texts[s.i]||'')+'</textarea>'+
-      '<textarea style="width:100%;border:2px dashed var(--line);border-radius:16px;padding:12px 14px;font:inherit;min-height:70px;background:var(--cream,#FFFDF6)"'+
-      ' placeholder="Working space (not marked)" oninput="spWork('+s.i+',this.value)">'+nEsc(s.work[s.i]||'')+'</textarea></div>';
-  }
+  const q=it.q;
+  const body='<div class="answers" id="spAnswers">'+
+    q.options.map((o,i)=>{const lab=String(o).replace(/^[A-D]\.\s*/,'');
+      return '<button class="ans '+(s.picks[s.i]===i?'picked':'')+'" data-i="'+i+'" onclick="spPick('+i+')">'+
+        '<span class="let">'+'ABCD'[i]+'</span><span class="lab">'+lab+'</span><span class="mark">'+I.check(22)+'</span></button>';}).join('')+
+  '</div>';
   return `
   <div class="pq-wrap">
     <button class="pq-quit" onclick="confirmQuit()" aria-label="Leave test">${I.x(20)}</button>
@@ -2906,12 +2919,12 @@ SCREENS.spExam = () => {
     </div>
     <div class="pq-progress">
       <div class="pq-ptop"><b>Question ${n} <em>of ${s.items.length}</em></b>
-        <span class="pq-exam">${s.i<A?'SECTION A':'SECTION B'}</span></div>
+        <span class="pq-exam">EXAM MODE</span></div>
       <div class="pq-bar"><i style="width:${n/s.items.length*100}%"></i></div>
     </div>
     <div class="pq-qcard">
-      <div class="qtext">${it.kind==='mcq'?it.q.question:nEsc(it.q.q)}</div>
-      <div class="pq-sub">${it.kind==='mcq'?'Section A \u2014 choose the correct answer':'Section B \u2014 write your answer, then press Next'}</div>
+      <div class="qtext">${q.question}</div>
+      <div class="pq-sub">Tap the correct answer below</div>
       ${body}
     </div>
     <img class="pq-peek pq-peek-l" src="${PLE_ART.englishkid}" alt=""><img class="pq-peek pq-peek-r" src="${PLE_ART.sstkid}" alt="">
@@ -6538,7 +6551,7 @@ SCREENS.review = () => {
     return '<div class="card" style="padding:16px">'+
       '<div style="display:flex;align-items:center;gap:11px">'+
       iconBox(d.ok?'check':'refresh',d.ok?'green':'coral',18,40)+
-      '<b style="flex:1;font-size:16px">Question '+(i+1)+(d.kind==='written'?' \u00B7 Section B':' \u00B7 Section A')+'</b>'+
+      '<b style="flex:1;font-size:16px">Question '+(i+1)+'</b>'+
       '<span class="pill '+(d.ok?'off':'warn')+'">'+(d.ok?'Correct':(d.part?'Partly correct':'Try again'))+'</span></div>'+
       '<p style="margin-top:11px;font-weight:700;font-size:16px">'+(d.question?d.question:(d.src?'':'Placeholder question text '+(i+1)+'.'))+'</p>'+
       (d.explanation?'<div class="hint-strip cream" style="padding:11px 13px;font-size:13.5px;margin-top:8px">'+I.bulb(17)+' <span>'+d.explanation+'</span></div>':'')+
