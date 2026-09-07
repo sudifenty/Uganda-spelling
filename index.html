@@ -2783,21 +2783,136 @@ function spRec(k,tid){ return spStore(k)[tid]||null; }
 function spPut(k,tid,rec){ const d=spStore(k); d[tid]=rec; try{ localStorage.setItem(k,JSON.stringify(d)); }catch(e){} }
 function spShuf(a){ const x=a.slice(); for(let i=x.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[x[i],x[j]]=[x[j],x[i]];} return x; }
 /* question pools, re-checked for class + subject + id prefix (safety guard) */
+/* --- theme/name matching between notes topics and the practice bank ---
+   bank themes are short ("East African Community") while notes titles carry
+   articles/prefixes ("The East African Community") — match on normalised,
+   whole-word terms so "East Africa" never swallows "East African Community" */
+function spNorm(x){ return String(x||'').toLowerCase().replace(/^topic\s*\d+\s*[:.\-]?\s*/,'').replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim(); }
+function spThemeHit(tTitle,qTopic){
+  const a=spNorm(tTitle).replace(/^the\s+/,''), b=spNorm(qTopic).replace(/^the\s+/,'');
+  if(!a||!b) return false;
+  if(a===b) return true;
+  const esc=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+  return new RegExp('(^| )'+esc(b)+'( |$)').test(a)||new RegExp('(^| )'+esc(a)+'( |$)').test(b);
+}
+/* bank questions carry a loose subtopic label ("EAC organs") — map it to a
+   view-section index when every content word appears in one section title,
+   so a mid test can stay inside the first half of the taught sub-topics */
+const SP_SEC_WMAP=(typeof WeakMap==='function')?new WeakMap():null;
+const SP_STOP={the:1,and:1,of:1,in:1,to:1,for:1,its:1,with:1,was:1,are:1,what:1,which:1,how:1,why:1,does:1,do:1,is:1,on:1,a:1};
+function spSecFor(t,q){
+  const sub=spNorm(q.subtopic);
+  if(!sub) return null;
+  const toks=sub.split(' ').filter(w=>w.length>2&&!SP_STOP[w]);
+  if(!toks.length) return null;
+  const secs=noteSections(t);
+  for(let i=0;i<secs.length;i++){
+    const title=' '+spNorm(secs[i].title).replace(/^\d+\s*/,'')+' ';
+    if(toks.every(w=>title.indexOf(w)>=0)) return i;
+  }
+  return null;
+}
+function spTagSecs(t,bank){
+  for(const q of bank){
+    if(typeof q.sec==='number') continue;
+    let m=SP_SEC_WMAP&&SP_SEC_WMAP.get(q);
+    if(!m){ m={}; if(SP_SEC_WMAP) SP_SEC_WMAP.set(q,m); }
+    if(!(t.id in m)) m[t.id]=spSecFor(t,q);
+    q.sec=m[t.id];
+  }
+  return bank;
+}
+/* fill-in-the-blank bank questions re-cast as tap-the-answer MCQs using the
+   other true answers from the same topic bank as distractors */
+function spFillMCQs(fills,t,others){
+  const pool=[...new Set(fills.map(q=>String((q.answers&&q.answers[0])||q.correctAnswer||'').trim())
+    .concat((others||[]).map(q=>{
+      const i='ABCD'.indexOf(String(q.correctAnswer||'').trim().charAt(0));
+      return String((q.options&&q.options[i])||'').replace(/^[A-D]\.\s*/,'').trim();
+    })).filter(x=>x&&x.length<60))];
+  return fills.map(q=>{
+    const right=String((q.answers&&q.answers[0])||q.correctAnswer||'').trim();
+    if(!right||right.length>60) return null;
+    const distract=spShuf(pool.filter(x=>x!==right)).slice(0,3);
+    if(distract.length<3) return null;
+    const opts=spShuf([right].concat(distract));
+    return {id:q.id+'_fc',class:q.class,subject:q.subject,topic:t.title,sec:q.sec,
+      renderAs:'mcq',question:q.question,options:opts.map((o,i)=>'ABCD'[i]+'. '+o),
+      correctAnswer:'ABCD'[opts.indexOf(right)],explanation:'Answer: '+right};
+  }).filter(Boolean);
+}
+/* last-resort objective items: the topic's own bolded key facts become
+   cloze MCQs (the bold span is blanked out; three other bolded facts from
+   the same topic are the distractors). Nothing is invented. */
+const SP_FACT_MCQ_CACHE={};
+function spBlockTexts(b,acc){
+  if(b==null) return;
+  if(typeof b==='string'){acc.push(b);return;}
+  if(Array.isArray(b)){b.forEach(x=>spBlockTexts(x,acc));return;}
+  if(typeof b==='object'){for(const k in b){if(k==='t')continue;spBlockTexts(b[k],acc);}}
+}
+function spFactMCQs(t,upto){
+  const key=t.id+'|'+(upto==null?'all':upto);
+  if(SP_FACT_MCQ_CACHE[key]) return SP_FACT_MCQ_CACHE[key];
+  const meta=SUBJ_META[t.subject];
+  const secs=noteSections(t);
+  const allFacts=[];
+  for(let i=0;i<secs.length;i++){
+    const acc=[]; (secs[i].blocks||[]).forEach(b=>spBlockTexts(b,acc));
+    for(const s of acc){
+      const m=/\*\*([^*]{2,60})\*\*/.exec(s);
+      if(!m) continue;
+      const ans=m[1].trim();
+      if(ans.length<2) continue;
+      const stem=s.replace(/\*\*([^*]{2,60})\*\*/,' ______ ').replace(/\*\*/g,'').replace(/\s+/g,' ').trim();
+      if(stem.length<10||stem.length>170) continue;
+      allFacts.push({sec:i,stem,ans});
+    }
+  }
+  const answers=[...new Set(allFacts.map(f=>f.ans))];
+  const pool=(upto==null)?allFacts:allFacts.filter(f=>f.sec<upto);
+  const out=[]; let n=0; const used={};
+  for(const f of pool){
+    if(used[f.stem]) continue; used[f.stem]=1;
+    const distract=spShuf(answers.filter(x=>x!==f.ans)).slice(0,3);
+    if(distract.length<3) continue;
+    const opts=spShuf([f.ans].concat(distract));
+    out.push({id:t.id+'_FM'+(n++),class:t.class,subject:meta?meta.name:t.subject,
+      topic:t.title,sec:f.sec,renderAs:'mcq',question:f.stem,
+      options:opts.map((o,i)=>'ABCD'[i]+'. '+o),
+      correctAnswer:'ABCD'[opts.indexOf(f.ans)],explanation:''});
+  }
+  SP_FACT_MCQ_CACHE[key]=out;
+  return out;
+}
 function spPool(t,upto){
   const meta=SUBJ_META[t.subject]; if(!meta) return {objs:[],wr:[]};
   const pb=meta.bank()[t.class];
-  const objs=(pb&&pb.questions||[]).filter(q=>
+  const bank=spTagSecs(t,((pb&&pb.questions)||[]).filter(q=>
     q.class===t.class && q.subject===meta.name && String(q.id||'').indexOf(meta.tag)>=0 &&
-    q.topic===t.title && (q.renderAs==='mcq'||q.renderAs==='tf') &&
-    Array.isArray(q.options)&&q.options.length>=2 &&
-    (upto==null || (typeof q.sec==='number' && q.sec<upto)));
+    spThemeHit(t.title,q.topic)));
+  /* a question only leaves the first-half pool when it is LOCATED in the
+     second half — unmapped questions stay available to both exams */
+  const inHalf=q=>upto==null||q.sec==null||q.sec<upto;
+  const direct=bank.filter(q=>(q.renderAs==='mcq'||q.renderAs==='tf')&&Array.isArray(q.options)&&q.options.length>=2);
+  const filled=spFillMCQs(bank.filter(q=>q.renderAs==='fill'),t,direct);
+  let all=direct.filter(inHalf).concat(filled.filter(inHalf),spConvMCQs(t,upto));
+  if(all.length<10) all=all.concat(spNoteMCQs(t,upto));  /* thin bank → notes Q&A supply the options */
+  if(all.length<10) all=all.concat(spFactMCQs(t,upto));  /* thin notes Q&A → the topic's own key facts */
+  if(upto!=null&&all.length<10){                         /* thin first half → the topic's revision-card facts top it up */
+    const secs=noteSections(t);
+    all=all.concat(spFactMCQs(t,null).filter(x=>
+      !all.some(y=>y.id===x.id)&&x.sec!=null&&secs[x.sec]&&spRefTitle(secs[x.sec].title)));
+  }
+  if(upto!=null&&all.length<5){                          /* still thin → second-half items keep the exam possible */
+    all=all.concat(direct.filter(q=>!inHalf(q)),
+      spFactMCQs(t,null).filter(x=>!all.some(y=>y.id===x.id)));
+  }
   const eb=(EXERCISE_BANK[t.class]||{})[t.subject];
   const et=eb&&eb.topics?eb.topics.find(x=>x.topic_id===t.id):null;
   const wr=(et?et.questions:[]).filter(q=>
     q.class===t.class && String(q.id||'').indexOf(meta.tag)>=0 &&
     (upto==null || (typeof q.sec==='number' && q.sec<upto)));
-  let all=objs.concat(spConvMCQs(t,upto));
-  if(all.length<8) all=all.concat(spNoteMCQs(t,upto));   /* thin bank → notes supply the options */
   return {objs:all,wr};
 }
 /* written auto-marked exercises re-cast as tap-the-answer MCQs:
@@ -2870,10 +2985,24 @@ function spNoteMCQs(t,upto){
   return out;
 }
 function spAvailable(t,upto){ const p=spPool(t,upto); return p.objs.length>=5; }
+/* the mid exam sits at the middle of the TEACHING sub-topics — trailing
+   reference cards (definitions, dates, revision, answers...) are not lessons,
+   so e.g. 12 taught sub-topics + 4 reference cards still puts the exam
+   after the 6th taught sub-topic */
+function spRefTitle(s){
+  const t=String(s||'').replace(/^\d+\.\s*/,'').trim();
+  return /^(key definitions|important|examination points|revision questions|answers to|common (abbreviations|mistakes)|main skills|language areas|a note on|note on sources|map work|p\.?\d+ quick|quick revision)\b/i.test(t);
+}
+function spTeachCount(t){
+  const secs=noteSections(t);
+  let c=0;
+  for(const s of secs){ if(spRefTitle(s.title)) break; c++; }
+  return Math.max(1,Math.min(c,secs.length));
+}
 function spGates(t){
   const subs=pathSubs(t), total=subs.length;
   const done=subs.filter((s,i)=>pathDone(t,i)).length;
-  const half=Math.ceil(total/2);
+  const half=Math.ceil(spTeachCount(t)/2);
   const mid=spRec(MID_KEY,t.id), tex=spRec(TEX_KEY,t.id);
   /* a gate that cannot be built (not enough bank questions) never blocks */
   const midOk=!spAvailable(t,half)||!!(mid&&mid.passed);
