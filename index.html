@@ -3501,13 +3501,22 @@ function kidExerciseFor(t,i){
       /* notes questions whose teaching section is AHEAD of this one stay out */
       .filter(q=>typeof q.sec!=='number'||q.sec<=i);
   }catch(e){}
-  const secText=((sec.blocks||[]).map(b=>[b.x,b.head?b.head.join(' '):'',(b.items||[]).join(' '),((b.rows||[]).join(' '))].filter(Boolean).join(' ')).join(' ')).toLowerCase();
+  /* the exercise tests what has been READ SO FAR: cumulative text of sections 0..i */
+  let secText='';
+  for(let j=0;j<=i;j++){
+    const sj=noteSections(t)[j]; if(!sj) continue;
+    secText+=((sj.blocks||[]).map(b=>[b.x,b.head?b.head.join(' '):'',(b.items||[]).join(' '),((b.rows||[]).join(' '))].filter(Boolean).join(' ')).join(' ')+' ');
+  }
+  secText=secText.toLowerCase();
   const KEX_STOP=new Set(['which','term','means','meant','what','following','statement','correct','answer','called','about','under','given','people','number']);
   const kexWords=s=>String(s||'').toLowerCase().replace(/[^a-z0-9\s]/g,' ').split(/\s+/)
       .filter(w=>w.length>=5&&!KEX_STOP.has(w));
+  const kexNums=s=>(String(s||'').match(/\d{4,}/g)||[]);
   /* a question belongs to this sub-topic only if its own words — or its
      ANSWER's words — appear in THIS section's notes above it */
   const kexRelevant=qq=>{
+    const nums=kexNums(qq.q);
+    if(nums.length&&!nums.every(nw=>secText.includes(nw))) return false;   /* "in 1967" must have been taught */
     const w1=kexWords(qq.q),w2=kexWords(qq.a);
     const hits1=w1.filter(w=>secText.includes(w)).length;
     const hits2=w2.filter(w=>secText.includes(w)).length;
@@ -3549,7 +3558,6 @@ function kidExerciseFor(t,i){
     const facts=spFacts(t);
     let mine=facts.filter(f=>f.sec===i);
     if(!mine.length) mine=facts.filter(f=>f.sec<=i);
-    if(!mine.length) mine=facts;
     for(let fi=0;objTF.length<2&&fi<mine.length;fi++){
       const f=mine[fi];
       const o=pick(facts.filter(x=>x.ans!==f.ans),1)[0];
