@@ -2807,11 +2807,12 @@ async function spSubmitPay() {
   if(!p || !pp || !t){ alert('Fill all fields: Your phone, Payment phone, Transaction ID'); return; }
 
   try {
-    // make sure supabase client exists
-    const sb = window.supabase || window.supabaseClient;
-    if(!sb) { alert('Supabase not loaded'); return; }
+    // make sure supabase client exists — prefer the created client (has .from)
+    let client = (typeof supabaseClient!=='undefined' && supabaseClient) || window.supabaseClient;
+    if(!client || !client.from) client = window.supabase;
+    if(!client || !client.from) { alert('Supabase not loaded'); return; }
 
-    const { error } = await sb.from('smartple_payments_pending').insert({
+    const { error } = await client.from('smartple_payments_pending').insert({
       phone: p,
       payment_phone: pp,
       payment_txn: t,
@@ -2821,8 +2822,8 @@ async function spSubmitPay() {
     if(error) throw error;
 
     // also save to profiles for tracking
-    await sb.from('smartple_profiles').upsert({ phone: p, payment_phone: pp, payment_txn: t, amount: 30000 }, { onConflict: 'phone' });
-    await sb.from('profiles').upsert({ phone: p, is_paid: false, payment_phone: pp, payment_txn: t }, { onConflict: 'phone' });
+    await client.from('smartple_profiles').upsert({ phone: p, payment_phone: pp, payment_txn: t, amount: 30000 }, { onConflict: 'phone' });
+    await client.from('profiles').upsert({ phone: p, is_paid: false, payment_phone: pp, payment_txn: t }, { onConflict: 'phone' });
 
     alert('Received! We will verify your 30,000 UGX to 0753 825453 and unlock in 10 mins. WhatsApp 0753825453 if delay.');
     localStorage.setItem('sp_last_txn', t);
