@@ -148,13 +148,13 @@ function exShuffle(a){
 /* Every run is built fresh and shuffled. Nothing is ever resumed: if the
    learner leaves an exercise and comes back, they get a new shuffle and
    start again at question 1. */
-function exStart(cls, subj, tid, setId, mode){
+function exStart(cls, subj, tid, setId, mode, noGate){
   const t = exTopicById(cls, subj, tid); if(!t) return;
-  /* only questions whose teaching section has actually been read */
+  /* learning sets wait for the notes; the NO-answers exam drill does not */
   let qids;
   if(mode==='random'){
-    const avail = t.questions.filter(pbUnlocked);
-    if(!avail.length){ setTimeout(()=>toast('Read the notes for this topic first!'),0); return; }
+    const avail = noGate ? t.questions.slice() : t.questions.filter(pbUnlocked);
+    if(!avail.length){ setTimeout(()=>toast(noGate?'No questions for this topic yet!':'Read the notes for this topic first!'),0); return; }
     qids = exShuffle(avail.map(q=>q.id)).slice(0, Math.min(10, avail.length));
   }else{
     const s = t.sets.find(x=>x.id===setId); if(!s) return;
@@ -162,7 +162,7 @@ function exStart(cls, subj, tid, setId, mode){
     if(!avail.length){ setTimeout(()=>toast('Read the notes for this topic first!'),0); return; }
     qids = exShuffle(avail.map(q=>q.id));
   }
-  state.exRun = {cls, subj, tid, setId: mode==='random'?null:setId, mode,
+  state.exRun = {cls, subj, tid, setId: mode==='random'?null:setId, mode, noGate:!!noGate,
                  qids, given:{}, i:0, done:false, result:null,
                  title: t.title,
                  setName: mode==='random' ? 'Random Practice'
@@ -251,7 +251,7 @@ function exFinish(){
 }
 function exRetry(){
   const r = state.exRun; if(!r) return;
-  exStart(r.cls, r.subj, r.tid, null, 'random');
+  exStart(r.cls, r.subj, r.tid, null, 'random', r.noGate);
 }
 function exReviewWrong(){
   const r = state.exRun; if(!r||!r.result) return;
