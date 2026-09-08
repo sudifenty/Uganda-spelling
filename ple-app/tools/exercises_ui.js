@@ -149,16 +149,23 @@ function exShuffle(a){
    learner leaves an exercise and comes back, they get a new shuffle and
    start again at question 1. */
 function exStart(cls, subj, tid, setId, mode, noGate){
+  /* freemium: unpaid learners only get the free topic's first-two-sub exercise pool */
+  if(typeof spPaid==='function' && !spPaid()){
+    if(tid!==spFreeTopicId(cls)){ if(typeof spOpenPaywall==='function') spOpenPaywall(); return; }
+  }
+  const freeOnly = (typeof spPaid==='function') && !spPaid();
   const t = exTopicById(cls, subj, tid); if(!t) return;
   /* learning sets wait for the notes; the NO-answers exam drill does not */
   let qids;
   if(mode==='random'){
-    const avail = noGate ? t.questions.slice() : t.questions.filter(pbUnlocked);
+    let avail = noGate ? t.questions.slice() : t.questions.filter(pbUnlocked);
+    if(freeOnly) avail = avail.filter(q=>typeof q.sec!=='number'||q.sec<1);
     if(!avail.length){ setTimeout(()=>toast(noGate?'No questions for this topic yet!':'Read the notes for this topic first!'),0); return; }
     qids = exShuffle(avail.map(q=>q.id)).slice(0, Math.min(10, avail.length));
   }else{
     const s = t.sets.find(x=>x.id===setId); if(!s) return;
-    const avail = s.qids.map(id=>exQ(t,id)).filter(q=>q&&pbUnlocked(q));
+    let avail = s.qids.map(id=>exQ(t,id)).filter(q=>q&&pbUnlocked(q));
+    if(freeOnly) avail = avail.filter(q=>typeof q.sec!=='number'||q.sec<1);
     if(!avail.length){ setTimeout(()=>toast('Read the notes for this topic first!'),0); return; }
     qids = exShuffle(avail.map(q=>q.id));
   }

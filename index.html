@@ -1983,11 +1983,11 @@ const TAB_OF = {home:'home',hub:'home',start:'home',practice:'practice',subjects
   topics:'practice',papers:'papers',paperDetail:'papers',progress:'home',profile:'profile',
   notes:'notes',noteTopic:'notes',noteRead:'notes',
   exercises:'exercises',exTopic:'exercises',exDo:'exercises',exResult:'exercises',exMine:'exercises',
-  avatar:'profile',settings:'profile',offline:'profile',about:'profile', auth:'profile', spelling:'home', spellDifficulty:'home', spellModes:'home', spellPractice:'home', spellResults:'home', spellMistakes:'home', noteChallenge:'notes', mathHome:'practice', mathLearn:'practice', mathPlay:'practice', mathLesson:'notes', noteJourney:'notes', notePath:'notes', noteSub:'notes'};
-const FULLSCREEN = ['question','exam','results','review','archive','pquestion','spellPractice','spellResults','mathPlay','spExam'];
+  avatar:'profile',settings:'profile',offline:'profile',about:'profile', auth:'profile', spelling:'home', spellDifficulty:'home', spellModes:'home', spellPractice:'home', spellResults:'home', spellMistakes:'home', noteChallenge:'notes', mathHome:'practice', mathLearn:'practice', mathPlay:'practice', mathLesson:'notes', noteJourney:'notes', notePath:'notes', noteSub:'notes', paywall:'home', admin:'home'};
+const FULLSCREEN = ['question','exam','results','review','archive','pquestion','spellPractice','spellResults','mathPlay','spExam','paywall','admin'];
 
 function go(screen, push=true){
-  if(!state.authUser && screen!=='auth'){state.screen='auth';render();return;}
+  if(!state.authUser && screen!=='auth'&&screen!=='admin'){state.screen='auth';render();return;}
   if(push && state.screen!==screen) state.stack.push(state.screen);
   state.screen = screen; trackActivity('screen_view',{screen}); render();
   const v=document.getElementById('views'); if(v) v.scrollTop=0; window.scrollTo(0,0);
@@ -2778,6 +2778,53 @@ function pathState(t){                     /* first locked index = current; befo
    smartple_topicExams_v1.
    ============================================================ */
 const MID_KEY='smartple_midtests_v1', TEX_KEY='smartple_topicExams_v1';
+/* ---- FREEMIUM: free trial + manual MoMo paywall ----
+   One place decides what a free account may touch: the first SST topic of
+   the class, and only its first two taught sub-topics. No exams for free. */
+function spPaid(){ if(state.paid===true) return true; try{ return localStorage.getItem('sp_isPaid')==='1'; }catch(e){ return false; } }
+function spSetPaid(v){ state.paid=!!v; try{ localStorage.setItem('sp_isPaid',v?'1':'0'); }catch(e){} }
+function spFreeTopicId(cls){ const p=(NOTES_BANK[cls]||{}).SST; return (p&&p.topics&&p.topics.length)?p.topics[0].id:null; }
+function spSubFree(t,i){ return spPaid()|| (!!t&&t.id===spFreeTopicId(t.class)&&i===0); }
+function isFreeAllowed(topicId,subIndex){ return spSubFree(noteFindAnywhere(topicId),subIndex); }
+function spOpenPaywall(){ if(!state.payStep) state.payStep='info'; go('paywall'); }
+async function spSyncPaid(){
+  if(!supabaseClient||!state.authUser) return;
+  try{
+    let {data}=await supabaseClient.from('smartple_profiles').select('is_paid').eq('user_id',state.authUser.id).maybeSingle();
+    if(!data&&state.authUser.phone){ ({data}=await supabaseClient.from('smartple_profiles').select('is_paid').eq('phone',state.authUser.phone).maybeSingle()); }
+    if(data) spSetPaid(!!data.is_paid);
+  }catch(e){}
+}
+async function spSubmitPayment(){
+  const own=(document.getElementById('pwOwn')||{}).value||'', phone=(document.getElementById('pwPhone')||{}).value||'', txn=(document.getElementById('pwTxn')||{}).value||'';
+  const ph=String(phone).replace(/[\s-]/g,''), ow=String(own).replace(/[\s-]/g,'');
+  if(!/^07\d{8}$/.test(ow)){ toast('Enter YOUR phone like 07XXXXXXXX'); return; }
+  if(!/^07\d{8}$/.test(ph)){ toast('Enter the payment phone like 07XXXXXXXX'); return; }
+  if(!String(txn).trim()){ toast('Enter the transaction ID from the Airtel SMS'); return; }
+  const rec={id:(window.crypto&&crypto.randomUUID)?crypto.randomUUID():String(Date.now()), user_id:state.authUser?state.authUser.id:null, phone:ow, payment_phone:ph, payment_txn:String(txn).trim(), amount:30000, status:'pending', created_at:new Date().toISOString()};
+  if(supabaseClient){
+    try{ await supabaseClient.from('smartple_payments_pending').insert(rec); }catch(e){}
+    if(state.authUser){ try{ await supabaseClient.from('smartple_profiles').upsert({user_id:state.authUser.id,phone:ow,payment_phone:ph,payment_txn:rec.txn,status:'pending'},{onConflict:'user_id'}); }catch(e){} }
+  }
+  try{ localStorage.setItem('sp_pending_payment',JSON.stringify(rec)); }catch(e){}
+  state.payStep='done'; render();
+}
+function adminCheckPin(){ const v=(document.getElementById('adminPin')||{}).value||''; if(v==='1234'){ state.adminOk=true; adminLoad(); } else toast('Wrong PIN'); }
+async function adminLoad(){
+  state.adminRows=[]; state.adminErr=null;
+  if(!supabaseClient){ const ok=await supabaseLoadLib(8000); if(ok&&window.supabase) supabaseClient=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,{auth:{persistSession:true}}); }
+  if(!supabaseClient){ state.adminErr='Supabase is unavailable right now.'; render(); return; }
+  const {data,error}=await supabaseClient.from('smartple_payments_pending').select('*').eq('status','pending').order('at',{ascending:true});
+  if(error) state.adminErr=String(error.message||error);
+  state.adminRows=data||[]; render();
+}
+async function adminApprove(id,userId){
+  if(!supabaseClient) return;
+  try{ await supabaseClient.from('smartple_payments_pending').update({status:'approved',approved_at:new Date().toISOString()}).eq('id',id); }catch(e){}
+  if(userId){ try{ await supabaseClient.from('smartple_profiles').upsert({user_id:userId,is_paid:true,status:'paid',paid_at:new Date().toISOString()},{onConflict:'user_id'}); }catch(e){} }
+  toast('Approved \u2014 the learner unlocks on their next sync');
+  adminLoad();
+}
 function spStore(k){ try{ return JSON.parse(localStorage.getItem(k))||{}; }catch(e){ return {}; } }
 function spRec(k,tid){ return spStore(k)[tid]||null; }
 function spPut(k,tid,rec){ const d=spStore(k); d[tid]=rec; try{ localStorage.setItem(k,JSON.stringify(d)); }catch(e){} }
@@ -3025,6 +3072,7 @@ function lpEndBtn(t){
 }
 function spMidToast(h){toast('Complete sub-topics 1\u2013'+h+' to unlock the Mid-Topic Test \u{1F3AF}');}
 function spStart(mode,tid){
+  if(!spPaid()){ spOpenPaywall(); return; }
   const t=noteFindAnywhere(tid||state.ntopic); if(!t) return;
   const g=spGates(t);
   if(mode==='mid'&&!g.midDue){toast('Read the first half of the topic first');return;}
@@ -3120,7 +3168,8 @@ function spNoteRows(t,g,cur){
   g.subs.forEach((s,i)=>{
     const done=pathDone(t,i);
     const isCur=i===cur;
-    const locked=i>cur||(i>=g.half&&g.midDue&&!g.midOk);
+    const freeLock=!spSubFree(t,i);
+    const locked=i>cur||(i>=g.half&&g.midDue&&!g.midOk)||freeLock;
     const dot=done?'\u2713':(locked?LOCK_SVG:String(i+1));
     const dotCls=done?'done':(isCur&&!locked?'now':'lock');
     const cardCls=done?'c-done':(isCur&&!locked?'c-now':'c-lock');
@@ -3129,6 +3178,7 @@ function spNoteRows(t,g,cur){
     if(done) stat='Completed \u00B7 '+s.mins+' min \u2705';
     else if(isCur&&!locked) stat='Current \u00B7 about '+s.mins+' min \u{1F680}';
     else if(i>=g.half&&g.midDue&&!g.midOk) stat='Locked \u00B7 pass the Mid-Topic Test to unlock \u{1F3AF}';
+    else if(freeLock) stat='Free trial \u00B7 first 2 lessons free \u{1F512}';
     else if(i===cur+1) stat='Locked \u00B7 complete the previous to unlock \u{1F512}';
     else stat='Locked \u00B7 earn stars to unlock \u{1F512}';
     let btn='';
@@ -3138,20 +3188,22 @@ function spNoteRows(t,g,cur){
       '<div class="lp-dot '+dotCls+'" onclick="lpOpen('+i+')" role="button" aria-label="'+nEsc(s.title)+'">'+dot+'</div>'+
       '<div class="lp-card '+cardCls+'" onclick="lpOpen('+i+')" role="button"><b>'+nEsc(s.title)+'</b>'+
       '<span class="lp-status '+statCls+'">'+stat+'</span>'+btn+'</div></div>');
+    const freeL=!spPaid();
     if(i===g.half-1&&spAvailable(t,g.half)){
       const passed=!!(g.mid&&g.mid.passed);
-      const now=!passed&&g.midDue;
+      const now=!passed&&g.midDue&&!freeL;
       const locked=!passed&&!g.midDue;
       const mDotCls=passed?'done':(now?'now':'lock');
       const mDotBg=passed?'var(--green)':'var(--purple)';
-      const mClick=now?"spStart('mid','"+t.id+"')":(locked?"spMidToast("+g.half+")":"lpOpen("+g.half+")");
+      const mClick=freeL?"spOpenPaywall()":now?"spStart('mid','"+t.id+"')":(locked?"spMidToast("+g.half+")":"lpOpen("+g.half+")");
       const mCardCls=passed?'c-done':(now?'c-now':'c-lock');
       const mCardBg=passed?'#FBFAFF':(now?'#F3EEFF':'#F7F4FF');
       let mStat;
       if(passed) mStat='Passed \u00B7 '+g.mid.score+'% \u2705';
       else if(now) mStat='Unlocks sub-topics '+(g.half+1)+'\u2013'+g.total+' \u00B7 pass mark 50%';
+      else if(freeL) mStat='Part of the full unlock \u{1F512}';
       else mStat='Locked \u00B7 complete sub-topics 1\u2013'+g.half+' first \u{1F512}';
-      const mBtn=now?'<button class="btn lp-btn" style="background:var(--purple);color:#fff" onclick="event.stopPropagation();spStart(\'mid\',\''+t.id+'\')">START MID-TEST \u{1F3AF} \u27A1</button>':'';
+      const mBtn=now&&!freeL?'<button class="btn lp-btn" style="background:var(--purple);color:#fff" onclick="event.stopPropagation();spStart(\'mid\',\''+t.id+'\')">START MID-TEST \u{1F3AF} \u27A1</button>':'';
       rows.push('<div class="lp-item">'+
         '<div class="lp-dot '+mDotCls+'" style="background:'+mDotBg+';border-color:var(--purple);color:#fff" onclick="'+mClick+'" role="button" aria-label="Mid-Topic Test">\u{1F3AF}</div>'+
         '<div class="lp-card '+mCardCls+'" style="border-color:var(--purple);background:'+mCardBg+'" onclick="'+(now?mClick:'')+'" role="button">'+
@@ -3159,14 +3211,16 @@ function spNoteRows(t,g,cur){
     }
   });
   if(spAvailable(t,null)){
-    const now=g.texDue&&!g.texOk;
-    const eDotCls=(g.tex&&g.tex.passed)?'done':(now?'now':'lock');
+    const freeLE=!spPaid();
+    const now=g.texDue&&!g.texOk&&!freeLE;
+    const eDotCls=(g.tex&&g.tex.passed)?'done':(freeLE?'lock':(now?'now':'lock'));
     const eDotBg=(g.tex&&g.tex.passed)?'var(--green)':(now?'#E0AC1F':'#FFF6DC');
-    const eClick=now?"spStart('end','"+t.id+"')":"lpOpen("+(g.total-1)+")";
+    const eClick=freeLE?"spOpenPaywall()":now?"spStart('end','"+t.id+"')":"lpOpen("+(g.total-1)+")";
     const eCardCls=(g.tex&&g.tex.passed)?'c-done':(now?'c-now':'c-lock');
     const eCardBg=(g.tex&&g.tex.passed)?'#FFFDF4':(now?'#FFF9E8':'#FFFDF7');
     let eStat;
     if(g.tex&&g.tex.passed) eStat='Passed \u00B7 '+g.tex.score+'% \u2014 topic complete! \u{1F389}';
+    else if(freeLE) eStat='Part of the full unlock \u{1F512}';
     else if(now) eStat='Final gate \u00B7 pass mark 50%';
     else eStat='Locked \u00B7 finish every sub-topic first \u{1F512}';
     const eBtn=now?'<button class="btn lp-btn" style="background:#D9A514;color:#fff" onclick="event.stopPropagation();spStart(\'end\',\''+t.id+'\')">START EXAM \u{1F3C6} \u27A1</button>':'';
@@ -3217,6 +3271,7 @@ function topicIcon(t){
 }
 function openNotePath(id){
   const t=noteFindAnywhere(id);if(!t)return;
+  if(!spPaid()&&t.id!==spFreeTopicId(t.class)){ spOpenPaywall(); return; }
   if(state.klass!==t.class&&checkClassAccess(t.class))state.klass=t.class;
   state.nsubject=t.subject;state.ntopic=id;state.nsec=0;
   state.njourney=null;
@@ -3226,6 +3281,7 @@ function openNotePath(id){
 }
 function lpOpen(i){                        /* tap a circle: enforce the unlock */
   const t=noteById(state.ntopic)||noteFindAnywhere(state.ntopic);if(!t)return;
+  if(!spSubFree(t,i)){ spOpenPaywall(); return; }
   const {cur}=pathState(t);
   if(i>cur){toast('Complete the previous sub-topic to unlock this one');return;}
   const g=spGates(t);
@@ -3405,6 +3461,7 @@ function kidTitleFor(text,secTitle){
    ============================================================ */
 function kidExerciseFor(t,i){
   const sec=noteSections(t)[i];if(!sec)return null;
+  if(!spSubFree(t,i))return null;               /* free trial: no exercises past sub 2 */
   const stitle=String(sec.title||'').trim();
   if(/^(revision questions|answers to revision|p\.\s?\d quick revision|a note on sources)/i.test(stitle))return null;
   const rng=cpaRng(t.id+':ex'+i);
@@ -6088,6 +6145,15 @@ function pmNoAnswers(){
   /* straight into written exercises: questions that demand answers,
      answers stay hidden until the learner checks them */
   const cls=state.klass;
+  if(!spPaid()){
+    /* free trial: only the free topic's own questions, nothing else */
+    if(state.exsubject!=='SST'){ spOpenPaywall(); return; }
+    const ft=spFreeTopicId(cls);
+    const eb0=exFor(cls,'SST');
+    const t0=eb0&&(eb0.topics||[]).find(x=>x.topic_id===ft);
+    if(!t0||(t0.questions||[]).length===0){ spOpenPaywall(); return; }
+    exStart(cls,'SST',ft,null,'random',true); return;
+  }
   let subj=state.exsubject, eb=exFor(cls,subj);
   if(!eb){
     const alt=['SST','MATH','SCI','ENG'].find(s=>exFor(cls,s));
@@ -6098,6 +6164,52 @@ function pmNoAnswers(){
   const t=eb.topics.slice().sort((a,b)=>(b.questions||[]).length-(a.questions||[]).length)[0];
   exStart(cls,subj,t.topic_id,null,'random',true);
 }
+SCREENS.paywall = () => {
+  const step=state.payStep||'info';
+  return `
+  <div style="min-height:100%;display:flex;align-items:center;justify-content:center;padding:16px">
+    <div class="kid-card kex-card" style="max-width:440px">
+      <div style="text-align:center;font-size:46px;line-height:1">\u{1F512}</div>
+      <h2 style="text-align:center;margin:8px 0 6px">Unlock All \u2014 30,000 UGX One-Time</h2>
+      <p style="text-align:center;font-weight:700;margin:0 0 12px">You finished free lesson. 1 sub-topic free. Pay once to open all P4-P7, all subjects, all exams.</p>
+      <div class="card warm" style="margin:0 0 12px"><b>Step 1:</b> Send <b>30,000 UGX</b> to Airtel Money <b>0753 825453</b> \u2014 Name: Sudifenty</div>
+      ${step==='info'||step==='done'?`<button class="btn btn-primary" style="width:100%;min-height:52px" onclick="state.payStep='form';render()">I Have Paid \u2705</button>`:''}
+      ${step==='form'?`
+        <label class="ex-lab">Step 2 \u00B7 Your phone (07XX)</label>
+        <input id="pwOwn" class="kex-input" style="width:100%" placeholder="07XXXXXXXX" inputmode="tel">
+        <label class="ex-lab">Payment phone (07...)</label>
+        <input id="pwPhone" class="kex-input" style="width:100%" placeholder="07XXXXXXXX" inputmode="tel">
+        <label class="ex-lab">Transaction ID from the Airtel SMS</label>
+        <input id="pwTxn" class="kex-input" style="width:100%" placeholder="e.g. 1234567890">
+        <button class="btn btn-primary" style="width:100%;min-height:52px;margin-top:10px" onclick="spSubmitPayment()">Submit \u2714</button>`:''}
+      ${step==='done'?`<div class="card warm" style="margin-top:12px;text-align:center">Received! We will verify and unlock in 10 mins. WhatsApp 0753825453 if delay. \u{1F4AC}</div>`:''}
+      <button class="btn btn-soft" style="width:100%;margin-top:10px" onclick="back()">${I.back(18)} Back</button>
+    </div>
+  </div>`;
+};
+SCREENS.admin = () => {
+  if(!state.adminOk) return `
+  <div style="min-height:100%;display:flex;align-items:center;justify-content:center;padding:16px">
+    <div class="kid-card kex-card" style="max-width:380px">
+      <h2 style="text-align:center">Owner Admin</h2>
+      <label class="ex-lab">PIN</label>
+      <input id="adminPin" class="kex-input" style="width:100%" type="password" inputmode="numeric">
+      <button class="btn btn-primary" style="width:100%;margin-top:10px" onclick="adminCheckPin()">Open</button>
+    </div>
+  </div>`;
+  const rows=(state.adminRows||[]).map(r=>`
+    <div class="card warm" style="margin:0 0 10px">
+      <b>${nEsc(r.phone||r.payment_phone||'?')}</b> \u00B7 paid from ${nEsc(r.payment_phone||'?')}<br>
+      txn ${nEsc(r.payment_txn||r.txn||'?')} \u00B7 ${nEsc(String(r.created_at||r.at||'').slice(0,16))}<br>
+      <button class="btn btn-primary" style="margin-top:8px" onclick="adminApprove(${r.id},'${nEsc(r.user_id||'')}')">APPROVE \u2705</button>
+    </div>`).join('');
+  return `
+  <header class="pagehead"><button class="back" onclick="location.hash='';state.adminOk=false;go('home')">${I.back(22)}</button>
+    <div><h2>Pending Payments</h2><div class="sub">manual MoMo check \u00B7 approve to unlock</div></div></header>
+  <div style="padding:14px">${state.adminErr?`<div class="card warm">${nEsc(state.adminErr)}</div>`:''}
+    ${rows||'<div class="card">No pending payments.</div>'}
+    <button class="btn btn-soft" onclick="adminLoad()">Refresh \u{1F504}</button></div>`;
+};
 SCREENS.practice = () => {
   const cls = state.klass;
   const nq = ['SST','MATH','SCI','ENG'].reduce((a,s)=>{
@@ -6887,14 +6999,14 @@ async function authInit(){if(AUTH_BUSY)return;AUTH_BUSY=true;try{
   state.authUser=data.session?data.session.user:null;
   if(state.authUser)state.offlineGrace=false;
   if(!state.authUser){const u=supabaseCachedUser();if(u){state.authUser=u;state.offlineGrace=true;}}
-  if(state.authUser)applyUserProfile(state.authUser);
-  supabaseClient.auth.onAuthStateChange((evt,session)=>{state.authUser=session?session.user:null;if(state.authUser){applyUserProfile(state.authUser);state.offlineGrace=false;}if(!state.authUser){state.stack=[];state.screen='auth';}if(evt==='PASSWORD_RECOVERY'&&state.authUser){state.stack=[];state.screen='profile';setTimeout(authNewPassword,60);}if(state.screen==='auth'||state.screen==='profile'||!state.authUser)render();});
+  if(state.authUser){applyUserProfile(state.authUser);spSyncPaid();}
+  supabaseClient.auth.onAuthStateChange((evt,session)=>{state.authUser=session?session.user:null;if(state.authUser){applyUserProfile(state.authUser);state.offlineGrace=false;spSyncPaid();}if(!state.authUser){state.stack=[];state.screen='auth';}if(evt==='PASSWORD_RECOVERY'&&state.authUser){state.stack=[];state.screen='profile';setTimeout(authNewPassword,60);}if(state.screen==='auth'||state.screen==='profile'||!state.authUser)render();});
 }catch(e){console.warn('Supabase auth unavailable',e);const u=supabaseCachedUser();if(u&&!state.authUser){state.authUser=u;applyUserProfile(u);state.offlineGrace=true;}else state.authError='Login service is unavailable.';}finally{AUTH_BUSY=false;state.authReady=true;if(!state.authUser&&state.screen!=='auth')state.screen='auth';render();if(state.offlineGrace)toast('Offline \u2014 you are still signed in on this device.');}}
 /* If the app started offline (signed in from the saved session) and the
    internet comes back, silently reconnect the REAL login session so the
    token keeps refreshing. Without this, a learner who opens the app
    offline could let their session expire unnoticed — and be logged out. */
-window.addEventListener('online',()=>{ if(!supabaseClient) setTimeout(()=>authInit(),500); });
+window.addEventListener('online',()=>{ if(!supabaseClient) setTimeout(()=>authInit(),500); else spSyncPaid(); });
 /* Activity tracking — built for millions of learners.
    One insert per screen view would flood the database (30M+ rows/day at 1M
    daily users). So: screen_view is sampled 1-in-8, events queue in memory,
@@ -7128,13 +7240,14 @@ SCREENS.notes = () => {
       const doneN=subs.filter((s,i)=>pathDone(t,i)).length;
       const pct=subs.length?Math.round(100*doneN/subs.length):0;
       const gb=spGates(t), lkd=noteLocked(t);
-      return `<button class="tcard" onclick="noteOpen('${t.id}')" ${lkd?'style="opacity:.62"':''}>
-        <span class="tic">${lkd?'\u{1F512}':topicIcon(t)}</span>
+      const freeT=!spPaid()&&t.id!==spFreeTopicId(cls);
+      return `<button class="tcard" onclick="${freeT?'spOpenPaywall()':"noteOpen('${t.id}')"}" ${lkd||freeT?'style="opacity:.62"':''}>
+        <span class="tic">${lkd||freeT?'\u{1F512}':topicIcon(t)}</span>
         <span style="flex:1;min-width:0">
           <b>${nEsc(t.title)}</b>
           <span class="tsub">${subs.length} sub-topics \u00B7 about ${mins} min</span>
           <span class="tbar"><i style="width:${pct}%"></i></span>
-          <span class="tmeta">${doneN}/${subs.length} done${gb.tex&&gb.tex.passed?' \u00B7 \u{1F3C6} topic complete! \u{1F389}':pct===100?' \u2014 complete! 🎉':''}${gb.mid&&gb.mid.passed?' \u00B7 \u{1F3AF} mid-test passed':''}${lkd?' \u00B7 finish the previous topic + its \u{1F3C6} exam first':''}</span>
+          <span class="tmeta">${doneN}/${subs.length} done${gb.tex&&gb.tex.passed?' \u00B7 \u{1F3C6} topic complete! \u{1F389}':pct===100?' \u2014 complete! 🎉':''}${gb.mid&&gb.mid.passed?' \u00B7 \u{1F3AF} mid-test passed':''}${lkd?' \u00B7 finish the previous topic + its \u{1F3C6} exam first':''}${freeT?' \u00B7 free trial: SST Topic 1 only \u{1F512}':''}</span>
         </span>
         <span class="go">${I.chev(20)}</span>
       </button>`;}).join('')}
@@ -7217,7 +7330,7 @@ SCREENS.noteRead = () => {
 };
 
 function setNoteClass(c){if(!checkClassAccess(c))return;state.klass=c;state.ntopic=null;go('notes',false);}
-function setNoteSubject(id){ state.nsubject=id; state.ntopic=null; go('notes',false); }
+function setNoteSubject(id){ if(!spPaid()&&id!=='SST'){ spOpenPaywall(); return; } state.nsubject=id; state.ntopic=null; go('notes',false); }
 function noteFindAnywhere(id){
   for(const cls of Object.keys(NOTES_BANK))
     for(const subj of Object.keys(NOTES_BANK[cls]))
@@ -7273,6 +7386,7 @@ function setPSubject(sid){ state.psubject=sid; state.ptopic=null;
   render(); toast(SUBJ_META[sid].name+' selected'); }
 
 function startPractice(mode, topic){
+  if(!spPaid()){ spOpenPaywall(); return; }
   const cls = state.klass;
   let items = [], label = '';
   if(mode==='quick')          { items = pbSelect(cls,{limit:10});               label='Quick Practice'; }
@@ -7511,7 +7625,7 @@ function pickSubject(id){
   if(state.screen==='subjects_topics' || state.mode==='topic'){ go('topics'); return; }
   startSession(state.mode||'quick', id);
 }
-function openPaper(id){ state.paper=id; go('paperDetail'); }
+function openPaper(id){ if(!spPaid()){ spOpenPaywall(); return; } state.paper=id; go('paperDetail'); }
 function toggleOffline(id){
   state.offline[id]=!state.offline[id]; render();
   toast(state.offline[id]?'Saved to your phone':'Removed from your phone');
@@ -7962,16 +8076,23 @@ function exShuffle(a){
    learner leaves an exercise and comes back, they get a new shuffle and
    start again at question 1. */
 function exStart(cls, subj, tid, setId, mode, noGate){
+  /* freemium: unpaid learners only get the free topic's first-two-sub exercise pool */
+  if(typeof spPaid==='function' && !spPaid()){
+    if(tid!==spFreeTopicId(cls)){ if(typeof spOpenPaywall==='function') spOpenPaywall(); return; }
+  }
+  const freeOnly = (typeof spPaid==='function') && !spPaid();
   const t = exTopicById(cls, subj, tid); if(!t) return;
   /* learning sets wait for the notes; the NO-answers exam drill does not */
   let qids;
   if(mode==='random'){
-    const avail = noGate ? t.questions.slice() : t.questions.filter(pbUnlocked);
+    let avail = noGate ? t.questions.slice() : t.questions.filter(pbUnlocked);
+    if(freeOnly) avail = avail.filter(q=>typeof q.sec!=='number'||q.sec<1);
     if(!avail.length){ setTimeout(()=>toast(noGate?'No questions for this topic yet!':'Read the notes for this topic first!'),0); return; }
     qids = exShuffle(avail.map(q=>q.id)).slice(0, Math.min(10, avail.length));
   }else{
     const s = t.sets.find(x=>x.id===setId); if(!s) return;
-    const avail = s.qids.map(id=>exQ(t,id)).filter(q=>q&&pbUnlocked(q));
+    let avail = s.qids.map(id=>exQ(t,id)).filter(q=>q&&pbUnlocked(q));
+    if(freeOnly) avail = avail.filter(q=>typeof q.sec!=='number'||q.sec<1);
     if(!avail.length){ setTimeout(()=>toast('Read the notes for this topic first!'),0); return; }
     qids = exShuffle(avail.map(q=>q.id));
   }
