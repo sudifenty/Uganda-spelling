@@ -2789,39 +2789,67 @@ function isFreeAllowed(topicId,subIndex){ return spSubFree(noteFindAnywhere(topi
 function spOpenPaywall(){ if(!state.payStep) state.payStep='info'; go('paywall'); }
 async function spSyncPaid(){
   if(!supabaseClient||!state.authUser) return;
-  try{
-    let {data}=await supabaseClient.from('smartple_profiles').select('is_paid').eq('user_id',state.authUser.id).maybeSingle();
-    if(!data&&state.authUser.phone){ ({data}=await supabaseClient.from('smartple_profiles').select('is_paid').eq('phone',state.authUser.phone).maybeSingle()); }
-    if(data) spSetPaid(!!data.is_paid);
-  }catch(e){}
+  try{ const {data}=await supabaseClient.from('smartple_profiles').select('is_paid').eq('user_id',state.authUser.id).maybeSingle();
+       if(data) spSetPaid(!!data.is_paid); }catch(e){}
+  const ph=state.authUser.phone||localStorage.getItem('sp_phone');
+  if(ph){ try{ const {data}=await supabaseClient.from('smartple_profiles').select('is_paid').eq('phone',ph).maybeSingle();
+       if(data) spSetPaid(!!data.is_paid); }catch(e){} }
 }
-async function spSubmitPayment(){
-  const own=(document.getElementById('pwOwn')||{}).value||'', phone=(document.getElementById('pwPhone')||{}).value||'', txn=(document.getElementById('pwTxn')||{}).value||'';
-  const ph=String(phone).replace(/[\s-]/g,''), ow=String(own).replace(/[\s-]/g,'');
-  if(!/^07\d{8}$/.test(ow)){ toast('Enter YOUR phone like 07XXXXXXXX'); return; }
-  if(!/^07\d{8}$/.test(ph)){ toast('Enter the payment phone like 07XXXXXXXX'); return; }
-  if(!String(txn).trim()){ toast('Enter the transaction ID from the Airtel SMS'); return; }
-  const rec={id:(window.crypto&&crypto.randomUUID)?crypto.randomUUID():String(Date.now()), user_id:state.authUser?state.authUser.id:null, phone:ow, payment_phone:ph, payment_txn:String(txn).trim(), amount:30000, status:'pending', created_at:new Date().toISOString()};
-  if(supabaseClient){
-    try{ await supabaseClient.from('smartple_payments_pending').insert(rec); }catch(e){}
-    if(state.authUser){ try{ await supabaseClient.from('smartple_profiles').upsert({user_id:state.authUser.id,phone:ow,payment_phone:ph,payment_txn:rec.txn,status:'pending'},{onConflict:'user_id'}); }catch(e){} }
+async function spSubmitPay() {
+  const phone = document.querySelector('[data-pay-phone]')?.value || localStorage.getItem('sp_phone') || document.getElementById('payUserPhone')?.value || document.getElementById('userPhone')?.value || '';
+  const payPhone = document.getElementById('payPhone')?.value || document.querySelector('input[placeholder*="PAYMENT"]')?.value || '';
+  const txn = document.getElementById('txnId')?.value || document.querySelector('input[placeholder*="TRANSACTION"]')?.value || '';
+
+  const p = phone.trim();
+  const pp = payPhone.trim();
+  const t = txn.trim();
+
+  if(!p || !pp || !t){ alert('Fill all fields: Your phone, Payment phone, Transaction ID'); return; }
+
+  try {
+    // make sure supabase client exists
+    const sb = window.supabase || window.supabaseClient;
+    if(!sb) { alert('Supabase not loaded'); return; }
+
+    const { error } = await sb.from('smartple_payments_pending').insert({
+      phone: p,
+      payment_phone: pp,
+      payment_txn: t,
+      amount: 30000,
+      status: 'pending'
+    });
+    if(error) throw error;
+
+    // also save to profiles for tracking
+    await sb.from('smartple_profiles').upsert({ phone: p, payment_phone: pp, payment_txn: t, amount: 30000 }, { onConflict: 'phone' });
+    await sb.from('profiles').upsert({ phone: p, is_paid: false, payment_phone: pp, payment_txn: t }, { onConflict: 'phone' });
+
+    alert('Received! We will verify your 30,000 UGX to 0753 825453 and unlock in 10 mins. WhatsApp 0753825453 if delay.');
+    localStorage.setItem('sp_last_txn', t);
+  } catch(e){
+    console.error(e);
+    alert('Save failed: ' + e.message + ' \u2014 Check console F12');
   }
-  try{ localStorage.setItem('sp_pending_payment',JSON.stringify(rec)); }catch(e){}
-  state.payStep='done'; render();
 }
 function adminCheckPin(){ const v=(document.getElementById('adminPin')||{}).value||''; if(v==='1234'){ state.adminOk=true; adminLoad(); } else toast('Wrong PIN'); }
 async function adminLoad(){
   state.adminRows=[]; state.adminErr=null;
   if(!supabaseClient){ const ok=await supabaseLoadLib(8000); if(ok&&window.supabase) supabaseClient=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,{auth:{persistSession:true}}); }
   if(!supabaseClient){ state.adminErr='Supabase is unavailable right now.'; render(); return; }
-  const {data,error}=await supabaseClient.from('smartple_payments_pending').select('*').eq('status','pending').order('at',{ascending:true});
+  let {data,error}=await supabaseClient.from('smartple_payments_pending').select('*').eq('status','pending').order('created_at',{ascending:true});
+  if(error){ ({data,error}=await supabaseClient.from('smartple_payments_pending').select('*').eq('status','pending')); }
   if(error) state.adminErr=String(error.message||error);
   state.adminRows=data||[]; render();
 }
 async function adminApprove(id,userId){
   if(!supabaseClient) return;
+  const row=(state.adminRows||[]).find(r=>String(r.id)===String(id));
+  const ph=(row&&(row.phone||row.payment_phone))||'';
+  if(!ph&&!userId){ state.adminErr='approve failed: row has no phone/user id'; render(); return; }
   try{ await supabaseClient.from('smartple_payments_pending').update({status:'approved',approved_at:new Date().toISOString()}).eq('id',id); }catch(e){}
+  if(ph){ try{ await supabaseClient.from('smartple_profiles').update({is_paid:true,paid_at:new Date().toISOString()}).eq('phone',ph); }catch(e){} }
   if(userId){ try{ await supabaseClient.from('smartple_profiles').upsert({user_id:userId,is_paid:true,status:'paid',paid_at:new Date().toISOString()},{onConflict:'user_id'}); }catch(e){} }
+  if(ph){ try{ await supabaseClient.from('profiles').update({is_paid:true}).eq('phone',ph); }catch(e){} }
   toast('Approved \u2014 the learner unlocks on their next sync');
   adminLoad();
 }
@@ -6176,12 +6204,12 @@ SCREENS.paywall = () => {
       ${step==='info'||step==='done'?`<button class="btn btn-primary" style="width:100%;min-height:52px" onclick="state.payStep='form';render()">I Have Paid \u2705</button>`:''}
       ${step==='form'?`
         <label class="ex-lab">Step 2 \u00B7 Your phone (07XX)</label>
-        <input id="pwOwn" class="kex-input" style="width:100%" placeholder="07XXXXXXXX" inputmode="tel">
+        <input id="payUserPhone" data-pay-phone class="kex-input" style="width:100%" placeholder="07XXXXXXXX" inputmode="tel">
         <label class="ex-lab">Payment phone (07...)</label>
-        <input id="pwPhone" class="kex-input" style="width:100%" placeholder="07XXXXXXXX" inputmode="tel">
+        <input id="payPhone" class="kex-input" style="width:100%" placeholder="PAYMENT PHONE 07XXXXXXXX" inputmode="tel">
         <label class="ex-lab">Transaction ID from the Airtel SMS</label>
-        <input id="pwTxn" class="kex-input" style="width:100%" placeholder="e.g. 1234567890">
-        <button class="btn btn-primary" style="width:100%;min-height:52px;margin-top:10px" onclick="spSubmitPayment()">Submit \u2714</button>`:''}
+        <input id="txnId" class="kex-input" style="width:100%" placeholder="TRANSACTION ID from Airtel SMS">
+        <button class="btn btn-primary" style="width:100%;min-height:52px;margin-top:10px" onclick="spSubmitPay()">Submit \u2714</button>`:''}
       ${step==='done'?`<div class="card warm" style="margin-top:12px;text-align:center">Received! We will verify and unlock in 10 mins. WhatsApp 0753825453 if delay. \u{1F4AC}</div>`:''}
       <button class="btn btn-soft" style="width:100%;margin-top:10px" onclick="back()">${I.back(18)} Back</button>
     </div>
