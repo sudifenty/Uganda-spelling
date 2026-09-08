@@ -2789,19 +2789,36 @@ function isFreeAllowed(topicId,subIndex){ return spSubFree(noteFindAnywhere(topi
 function spOpenPaywall(){ if(!state.payStep) state.payStep='info'; go('paywall'); }
 function spNormPhone(v){
   const d=String(v||'').replace(/\D/g,'');
-  if(d.length===9&&d[0]==='7') return '0'+d;
-  if(d.length===10&&d[0]==='0') return d;
-  if(d.length===12&&d.startsWith('256')) return '0'+d.slice(3);
+  if(d.length===9&&d[0]==='7') return '+256'+d;
+  if(d.length===10&&d[0]==='0') return '+256'+d.slice(1);
+  if(d.length===12&&d.startsWith('256')) return '+'+d;
   return String(v||'').trim();
 }
-function spPhoneVariants(v){ const c=spNormPhone(v); const out=[c]; if(/^07\d{8}$/.test(c)) out.push('+256'+c.slice(1)); return out; }
+function spPhoneVariants(v){ const c=spNormPhone(v); if(!/^\+256\d{9}$/.test(c)) return [c];
+  return [c,'0'+c.slice(4),c.slice(1)]; }
+function spRowPaid(r){ return !!r.is_paid&&(!r.paid_until||new Date(r.paid_until).getTime()>Date.now()); }
+async function spLinkPhoneRow(ph,uid){
+  if(!supabaseClient||!ph) return;
+  try{ await supabaseClient.from('smartple_profiles').upsert({phone:ph,user_id:uid||null},{onConflict:'phone'}); }catch(e){}
+  if(uid){ try{ await supabaseClient.from('smartple_profiles').update({user_id:uid}).in('phone',spPhoneVariants(ph)); }catch(e){} }
+  await spSyncPaid();
+}
+async function spSaveProfilePhone(){
+  const v=(document.getElementById('profPhone')||{}).value||'';
+  const np=spNormPhone(v);
+  if(!/^\+256\d{9}$/.test(np)){ toast('Enter a phone like 07XXXXXXXX'); return; }
+  localStorage.setItem('sp_phone',np);
+  await spLinkPhoneRow(np,state.authUser&&state.authUser.id);
+  toast(spPaid()?'Phone saved \u2014 you are UNLOCKED \u{1F389}':'Phone saved. After payment we unlock this number.');
+  render();
+}
 async function spSyncPaid(){
   if(!supabaseClient||!state.authUser) return;
-  try{ const {data}=await supabaseClient.from('smartple_profiles').select('is_paid').eq('user_id',state.authUser.id);
-       if(data&&data.some(r=>r.is_paid)) spSetPaid(true); }catch(e){}
+  try{ const {data}=await supabaseClient.from('smartple_profiles').select('*').eq('user_id',state.authUser.id);
+       if(data&&data.some(spRowPaid)) spSetPaid(true); }catch(e){}
   const ph=spNormPhone(state.authUser.phone||localStorage.getItem('sp_phone'));
-  if(ph){ try{ const {data}=await supabaseClient.from('smartple_profiles').select('is_paid').in('phone',spPhoneVariants(ph));
-       if(data&&data.some(r=>r.is_paid)) spSetPaid(true); }catch(e){} }
+  if(ph){ try{ const {data}=await supabaseClient.from('smartple_profiles').select('*').in('phone',spPhoneVariants(ph));
+       if(data&&data.some(spRowPaid)) spSetPaid(true); }catch(e){} }
 }
 async function spRefreshPaid(){
   const el=document.getElementById('payUserPhone');
@@ -2866,7 +2883,7 @@ async function adminApprove(id,userId){
   const ph=(row&&(row.phone||row.payment_phone))||'';
   if(!ph&&!userId){ state.adminErr='approve failed: row has no phone/user id'; render(); return; }
   try{ await supabaseClient.from('smartple_payments_pending').update({status:'approved',approved_at:new Date().toISOString()}).eq('id',id); }catch(e){}
-  if(ph){ try{ await supabaseClient.from('smartple_profiles').update({is_paid:true,paid_at:new Date().toISOString()}).in('phone',spPhoneVariants(ph)); }catch(e){} }
+  if(ph){ try{ await supabaseClient.from('smartple_profiles').update({is_paid:true,paid_at:new Date().toISOString(),paid_until:new Date(Date.now()+30*864e5).toISOString()}).in('phone',spPhoneVariants(ph)); }catch(e){} }
   if(userId){ try{ await supabaseClient.from('smartple_profiles').upsert({user_id:userId,is_paid:true,status:'paid',paid_at:new Date().toISOString()},{onConflict:'user_id'}); }catch(e){} }
   if(ph){ try{ await supabaseClient.from('profiles').update({is_paid:true}).eq('phone',ph); }catch(e){} }
   toast('Approved \u2014 the learner unlocks on their next sync');
@@ -7084,9 +7101,9 @@ function applyUserProfile(user){const m=user?.user_metadata||{};if(m.full_name)s
 function classOptions(){ if(state.authUser) return CLASSES; return state.classLocked?[state.klass]:CLASSES; }
 function checkClassAccess(c){ if(state.authUser) return true; if(state.classLocked&&c!==state.klass){toast('Your account is set to '+state.klass);return false;}return true; }
 function authMessage(){return state.authMode==='signup'?'Create your account to save your learning progress.':'Welcome back. Sign in to continue learning.';}
-SCREENS.auth=()=>`<header class="pagehead"><button class="back" onclick="go('profile')">${I.back(22)}</button><div><h2>${state.authMode==='signup'?'Create account':'Sign in'}</h2><div class="sub">Smart PLE learner account</div></div></header><div class="auth-card"><div class="auth-mark">📚</div><h3>${state.authMode==='signup'?'Join Smart PLE':'Welcome back'}</h3><p class="muted" style="margin-top:7px">${authMessage()}</p>${state.authMode==='signup'?`<label class="auth-label">Your name<input id="authName" class="auth-input" type="text" autocomplete="name" placeholder="Enter your name"></label><label class="auth-label">Your class<select id="authClass" class="auth-input"><option value="P4">Primary 4</option><option value="P5">Primary 5</option><option value="P6" selected>Primary 6</option><option value="P7">Primary 7</option></select></label>`:''}${state.authError?`<div class="auth-error">${nEsc(state.authError)}</div>`:''}<label class="auth-label">Email<input id="authEmail" class="auth-input" type="email" autocomplete="email" placeholder="you@example.com"></label><label class="auth-label">Password<input id="authPassword" class="auth-input" type="password" autocomplete="${state.authMode==='signup'?'new-password':'current-password'}" placeholder="At least 6 characters"></label><button class="btn btn-primary" style="margin-top:14px" onclick="authSubmit()">${state.authMode==='signup'?'CREATE ACCOUNT':'SIGN IN'}</button><button class="auth-switch" onclick="state.authMode='${state.authMode==='signup'?'signin':'signup'}';state.authError='';render()">${state.authMode==='signup'?'Already have an account? Sign in':'Need an account? Create one'}</button>
+SCREENS.auth=()=>`<header class="pagehead"><button class="back" onclick="go('profile')">${I.back(22)}</button><div><h2>${state.authMode==='signup'?'Create account':'Sign in'}</h2><div class="sub">Smart PLE learner account</div></div></header><div class="auth-card"><div class="auth-mark">📚</div><h3>${state.authMode==='signup'?'Join Smart PLE':'Welcome back'}</h3><p class="muted" style="margin-top:7px">${authMessage()}</p>${state.authMode==='signup'?`<label class="auth-label">Your name<input id="authName" class="auth-input" type="text" autocomplete="name" placeholder="Enter your name"></label><label class="auth-label">Your class<select id="authClass" class="auth-input"><option value="P4">Primary 4</option><option value="P5">Primary 5</option><option value="P6" selected>Primary 6</option><option value="P7">Primary 7</option></select></label><label class="auth-label">Phone (for payment unlock)<input id="authPhone" class="auth-input" type="tel" inputmode="tel" autocomplete="tel" placeholder="07XXXXXXXX"></label>`:''}${state.authError?`<div class="auth-error">${nEsc(state.authError)}</div>`:''}<label class="auth-label">Email<input id="authEmail" class="auth-input" type="email" autocomplete="email" placeholder="you@example.com"></label><label class="auth-label">Password<input id="authPassword" class="auth-input" type="password" autocomplete="${state.authMode==='signup'?'new-password':'current-password'}" placeholder="At least 6 characters"></label><button class="btn btn-primary" style="margin-top:14px" onclick="authSubmit()">${state.authMode==='signup'?'CREATE ACCOUNT':'SIGN IN'}</button><button class="auth-switch" onclick="state.authMode='${state.authMode==='signup'?'signin':'signup'}';state.authError='';render()">${state.authMode==='signup'?'Already have an account? Sign in':'Need an account? Create one'}</button>
 ${state.authMode==='signup'?'':'<button class="auth-switch" style="margin-top:8px" onclick="authReset()">Forgot your password?</button>'}</div>`;
-async function authSubmit(){if(state.authBusy)return;state.authBusy=true;try{state.authError='';const email=(document.getElementById('authEmail')||{}).value?.trim(),password=(document.getElementById('authPassword')||{}).value||'',fullName=(document.getElementById('authName')||{}).value?.trim()||'',classLevel=(document.getElementById('authClass')||{}).value||'P6';if(!email||!password||(state.authMode==='signup'&&!fullName)){state.authError=state.authMode==='signup'?'Enter your name, email and password.':'Enter your email and password.';render();return;}if(password.length<6){state.authError='Your password must be at least 6 characters.';render();return;}if(!supabaseClient){state.authError='Login service is not available. Check your internet connection and try again.';render();return;}const result=state.authMode==='signup'?await supabaseClient.auth.signUp({email,password,options:{data:{full_name:fullName,class_level:classLevel}}}):await supabaseClient.auth.signInWithPassword({email,password});if(result.error){const msg=String(result.error.message||'');state.authError=/rate limit|too many requests|email rate/i.test(msg)?'Supabase has temporarily limited email requests. Wait a while before trying again, or sign in if this account already exists.':msg;render();return;}if(state.authMode==='signup'&&result.data.user&&!result.data.session){state.authMode='signin';state.authError='Account created! Check your email to confirm it, then sign in below.';render();return;}
+async function authSubmit(){if(state.authBusy)return;state.authBusy=true;try{state.authError='';const email=(document.getElementById('authEmail')||{}).value?.trim(),password=(document.getElementById('authPassword')||{}).value||'',fullName=(document.getElementById('authName')||{}).value?.trim()||'',classLevel=(document.getElementById('authClass')||{}).value||'P6',phoneRaw=(document.getElementById('authPhone')||{}).value||'',phone=phoneRaw?spNormPhone(phoneRaw):'';if(!email||!password||(state.authMode==='signup'&&!fullName)){state.authError=state.authMode==='signup'?'Enter your name, email and password.':'Enter your email and password.';render();return;}if(password.length<6){state.authError='Your password must be at least 6 characters.';render();return;}if(phone&&!/^\+256\d{9}$/.test(phone)){state.authError='Phone should look like 07XXXXXXXX.';render();return;}if(!supabaseClient){state.authError='Login service is not available. Check your internet connection and try again.';render();return;}const result=state.authMode==='signup'?await supabaseClient.auth.signUp({email,password,options:{data:{full_name:fullName,class_level:classLevel}}}):await supabaseClient.auth.signInWithPassword({email,password});if(result.error){const msg=String(result.error.message||'');state.authError=/rate limit|too many requests|email rate/i.test(msg)?'Supabase has temporarily limited email requests. Wait a while before trying again, or sign in if this account already exists.':msg;render();return;}if(state.authMode==='signup'&&result.data.user&&!result.data.session){state.authMode='signin';state.authError='Account created! Check your email to confirm it, then sign in below.';render();return;}if(phone){localStorage.setItem('sp_phone',phone);spLinkPhoneRow(phone,result.data.user&&result.data.user.id);}
 state.authUser=result.data.user||null;if(state.authUser)applyUserProfile(state.authUser);toast(state.authMode==='signup'?'Account created!':'Signed in successfully!');state.stack=[];go('home',false);}finally{state.authBusy=false;}}
 function authNewPassword(){openSheet(`<h3>🔒 Set a new password</h3><p class="muted" style="margin:8px 0">You followed a reset link. Choose a new password for your account.</p><label class="auth-label">New password<input id="newPw" class="auth-input" type="password" autocomplete="new-password" placeholder="At least 6 characters"></label><button class="btn btn-primary" style="margin-top:14px" onclick="authSaveNewPassword()">SAVE PASSWORD</button><button class="btn btn-ghost" style="margin-top:10px" onclick="closeSheet()">Not now</button>`);}
 async function authSaveNewPassword(){const pw=(document.getElementById('newPw')||{}).value||'';if(pw.length<6){toast('The password must be at least 6 characters.');return;}const {error}=await supabaseClient.auth.updateUser({password:pw});closeSheet();toast(error?'Could not save the new password — please use the reset link again.':'Password updated — you are signed in!');}
@@ -7098,7 +7115,9 @@ SCREENS.profile = () => `
     <div class="brand"><span class="logo" style="background:var(--coral-100)">${I.profile(24)}</span>
       <span><div class="brand-name">My Profile</div><div class="brand-sub">Your learning space</div></span></div>
   </header>
-  ${state.authUser?`<div class="auth-status"><span>✅</span><div><b>${nEsc(state.authUser.email||"Signed in")}</b><small>Your account is connected</small></div><button onclick="authSignOut()">Sign out</button></div>`:`<div class="auth-status"><span>🔐</span><div><b>Save your learning progress</b><small>Sign in with email and password</small></div><button onclick="go('auth')">Sign in</button></div>`}
+  ${state.authUser?`<div class="auth-status"><span>✅</span><div><b>${nEsc(state.authUser.email||"Signed in")}</b><small>Your account is connected</small></div><button onclick="authSignOut()">Sign out</button></div>
+  <div class="auth-status" style="margin-top:8px"><span>\u{1F4F1}</span><div><b>Payment phone</b><small>So MoMo payments unlock this account automatically</small></div></div>
+  <div style="display:flex;gap:8px;padding:0 14px 10px"><input id="profPhone" class="auth-input" style="flex:1;margin:0" type="tel" inputmode="tel" placeholder="${nEsc(localStorage.getItem('sp_phone')||'07XXXXXXXX')}"><button class="btn btn-primary" style="white-space:nowrap" onclick="spSaveProfilePhone()">Save</button></div>`:`<div class="auth-status"><span>🔐</span><div><b>Save your learning progress</b><small>Sign in with email and password</small></div><button onclick="go('auth')">Sign in</button></div>`}
   <div class="profile-hero">
     <div class="big-avatar">${state.avatar}</div>
     <div class="p-name">${nEsc(state.name)}</div>

@@ -18,7 +18,7 @@
      • only caches whose names start with 'smart-ple-' are ever
        deleted, so other applications are never affected
    ============================================================ */
-const VERSION = 'd8196cedd637';
+const VERSION = '0560c5a38852';
 const CACHE = 'smart-ple-' + VERSION;
 
 self.addEventListener('install', (e) => {
@@ -54,8 +54,23 @@ self.addEventListener('fetch', (e) => {
   const isDoc = req.mode === 'navigate' ||
                 (req.headers.get('accept') || '').includes('text/html');
   const target = isDoc ? new Request('./', { cache: 'reload' }) : req;
-  e.respondWith(staleWhileRevalidate(target));
+  e.respondWith(isDoc ? networkFirstDoc(target) : staleWhileRevalidate(target));
 });
+
+/* App document: network-first so deployed fixes arrive on the very next
+   open; the cached copy is used only when the network fails (offline). */
+async function networkFirstDoc(req) {
+  const cache = await caches.open(CACHE);
+  try {
+    const res = await fetch(req);
+    if (res && res.ok) await cache.put(req, res.clone());
+    return res;
+  } catch (e) {
+    const cached = await cache.match(req);
+    if (cached) return cached;
+    return new Response('Offline and not yet cached.', { status: 503 });
+  }
+}
 
 /* Serve the cached copy immediately, refresh it in the background. */
 async function swrInto(req, cacheName) {
