@@ -2787,21 +2787,36 @@ function spFreeTopicId(cls){ const p=(NOTES_BANK[cls]||{}).SST; return (p&&p.top
 function spSubFree(t,i){ return spPaid()|| (!!t&&t.id===spFreeTopicId(t.class)&&i===0); }
 function isFreeAllowed(topicId,subIndex){ return spSubFree(noteFindAnywhere(topicId),subIndex); }
 function spOpenPaywall(){ if(!state.payStep) state.payStep='info'; go('paywall'); }
+function spNormPhone(v){
+  const d=String(v||'').replace(/\D/g,'');
+  if(d.length===9&&d[0]==='7') return '0'+d;
+  if(d.length===10&&d[0]==='0') return d;
+  if(d.length===12&&d.startsWith('256')) return '0'+d.slice(3);
+  return String(v||'').trim();
+}
+function spPhoneVariants(v){ const c=spNormPhone(v); const out=[c]; if(/^07\d{8}$/.test(c)) out.push('+256'+c.slice(1)); return out; }
 async function spSyncPaid(){
   if(!supabaseClient||!state.authUser) return;
-  try{ const {data}=await supabaseClient.from('smartple_profiles').select('is_paid').eq('user_id',state.authUser.id).maybeSingle();
-       if(data) spSetPaid(!!data.is_paid); }catch(e){}
-  const ph=state.authUser.phone||localStorage.getItem('sp_phone');
-  if(ph){ try{ const {data}=await supabaseClient.from('smartple_profiles').select('is_paid').eq('phone',ph).maybeSingle();
-       if(data) spSetPaid(!!data.is_paid); }catch(e){} }
+  try{ const {data}=await supabaseClient.from('smartple_profiles').select('is_paid').eq('user_id',state.authUser.id);
+       if(data&&data.some(r=>r.is_paid)) spSetPaid(true); }catch(e){}
+  const ph=spNormPhone(state.authUser.phone||localStorage.getItem('sp_phone'));
+  if(ph){ try{ const {data}=await supabaseClient.from('smartple_profiles').select('is_paid').in('phone',spPhoneVariants(ph));
+       if(data&&data.some(r=>r.is_paid)) spSetPaid(true); }catch(e){} }
+}
+async function spRefreshPaid(){
+  const el=document.getElementById('payUserPhone');
+  if(el&&el.value) localStorage.setItem('sp_phone',spNormPhone(el.value));
+  if(state.authUser) await spSyncPaid();
+  if(spPaid()){ toast('Unlocked! Enjoy every topic \u{1F389}'); go('home'); }
+  else toast('Not unlocked yet \u2014 still verifying. WhatsApp 0753825453 if delay.');
 }
 async function spSubmitPay() {
   const phone = document.querySelector('[data-pay-phone]')?.value || localStorage.getItem('sp_phone') || document.getElementById('payUserPhone')?.value || document.getElementById('userPhone')?.value || '';
   const payPhone = document.getElementById('payPhone')?.value || document.querySelector('input[placeholder*="PAYMENT"]')?.value || '';
   const txn = document.getElementById('txnId')?.value || document.querySelector('input[placeholder*="TRANSACTION"]')?.value || '';
 
-  const p = phone.trim();
-  const pp = payPhone.trim();
+  const p = spNormPhone(phone);
+  const pp = spNormPhone(payPhone);
   const t = txn.trim();
 
   if(!p || !pp || !t){ alert('Fill all fields: Your phone, Payment phone, Transaction ID'); return; }
@@ -2823,6 +2838,9 @@ async function spSubmitPay() {
 
     // also save to profiles for tracking
     await client.from('smartple_profiles').upsert({ phone: p, payment_phone: pp, payment_txn: t, amount: 30000 }, { onConflict: 'phone' });
+    // link the paid profile row to THIS login account so email logins find it by user_id
+    if(state.authUser&&state.authUser.id){ try{ await client.from('smartple_profiles').update({ user_id: state.authUser.id }).in('phone', spPhoneVariants(p)); }catch(e){} }
+    localStorage.setItem('sp_phone', p);
     await client.from('profiles').upsert({ phone: p, is_paid: false, payment_phone: pp, payment_txn: t }, { onConflict: 'phone' });
 
     alert('Received! We will verify your 30,000 UGX to 0753 825453 and unlock in 10 mins. WhatsApp 0753825453 if delay.');
@@ -2848,7 +2866,7 @@ async function adminApprove(id,userId){
   const ph=(row&&(row.phone||row.payment_phone))||'';
   if(!ph&&!userId){ state.adminErr='approve failed: row has no phone/user id'; render(); return; }
   try{ await supabaseClient.from('smartple_payments_pending').update({status:'approved',approved_at:new Date().toISOString()}).eq('id',id); }catch(e){}
-  if(ph){ try{ await supabaseClient.from('smartple_profiles').update({is_paid:true,paid_at:new Date().toISOString()}).eq('phone',ph); }catch(e){} }
+  if(ph){ try{ await supabaseClient.from('smartple_profiles').update({is_paid:true,paid_at:new Date().toISOString()}).in('phone',spPhoneVariants(ph)); }catch(e){} }
   if(userId){ try{ await supabaseClient.from('smartple_profiles').upsert({user_id:userId,is_paid:true,status:'paid',paid_at:new Date().toISOString()},{onConflict:'user_id'}); }catch(e){} }
   if(ph){ try{ await supabaseClient.from('profiles').update({is_paid:true}).eq('phone',ph); }catch(e){} }
   toast('Approved \u2014 the learner unlocks on their next sync');
@@ -6202,7 +6220,8 @@ SCREENS.paywall = () => {
       <h2 style="text-align:center;margin:8px 0 6px">Unlock All \u2014 30,000 UGX One-Time</h2>
       <p style="text-align:center;font-weight:700;margin:0 0 12px">You finished free lesson. 1 sub-topic free. Pay once to open all P4-P7, all subjects, all exams.</p>
       <div class="card warm" style="margin:0 0 12px"><b>Step 1:</b> Send <b>30,000 UGX</b> to Airtel Money <b>0753 825453</b> \u2014 Name: Sudifenty</div>
-      ${step==='info'||step==='done'?`<button class="btn btn-primary" style="width:100%;min-height:52px" onclick="state.payStep='form';render()">I Have Paid \u2705</button>`:''}
+      ${step==='info'||step==='done'?`<button class="btn btn-primary" style="width:100%;min-height:52px" onclick="state.payStep='form';render()">I Have Paid \u2705</button>
+      <button class="btn btn-soft" style="width:100%;margin-top:8px" onclick="spRefreshPaid()">I Have Paid \u2014 Refresh \u{1F513}</button>`:''}
       ${step==='form'?`
         <label class="ex-lab">Step 2 \u00B7 Your phone (07XX)</label>
         <input id="payUserPhone" data-pay-phone class="kex-input" style="width:100%" placeholder="07XXXXXXXX" inputmode="tel">
@@ -6210,7 +6229,8 @@ SCREENS.paywall = () => {
         <input id="payPhone" class="kex-input" style="width:100%" placeholder="PAYMENT PHONE 07XXXXXXXX" inputmode="tel">
         <label class="ex-lab">Transaction ID from the Airtel SMS</label>
         <input id="txnId" class="kex-input" style="width:100%" placeholder="TRANSACTION ID from Airtel SMS">
-        <button class="btn btn-primary" style="width:100%;min-height:52px;margin-top:10px" onclick="spSubmitPay()">Submit \u2714</button>`:''}
+        <button class="btn btn-primary" style="width:100%;min-height:52px;margin-top:10px" onclick="spSubmitPay()">Submit \u2714</button>
+        <button class="btn btn-soft" style="width:100%;margin-top:8px" onclick="spRefreshPaid()">I Have Paid \u2014 Refresh \u{1F513}</button>`:''}
       ${step==='done'?`<div class="card warm" style="margin-top:12px;text-align:center">Received! We will verify and unlock in 10 mins. WhatsApp 0753825453 if delay. \u{1F4AC}</div>`:''}
       <button class="btn btn-soft" style="width:100%;margin-top:10px" onclick="back()">${I.back(18)} Back</button>
     </div>
