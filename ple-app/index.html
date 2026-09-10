@@ -7128,6 +7128,7 @@ SCREENS.profile = () => `
   </div>
   <div class="section-title">Settings</div>
   <div class="menu">
+    ${state.pwaInstalled?`<button class="menu-item" onclick="pwaInstall()">${iconBox('download','green',20,44)}<b>Install app</b><span class="pill dl">Installed \u2705</span></button>`:`<button class="menu-item" onclick="pwaInstall()">${iconBox('download','green',20,44)}<b>Install app</b><small style="color:var(--muted)">Works offline like a real app</small><span class="pill dl">Get \u{1F4F2}</span><span class="chev">${I.chev(20)}</span></button>`}
     <button class="menu-item" onclick="go('classPick')">${iconBox('book','purple',20,44)}<b>My class</b><span class="pill dl">${state.klass}</span><span class="chev">${I.chev(20)}</span></button>
     <button class="menu-item" onclick="go('avatar')">${iconBox('smile','coral',20,44)}<b>Change avatar</b><span class="chev">${I.chev(20)}</span></button>
     <button class="menu-item" onclick="go('offline')">${iconBox('download','green',20,44)}<b>Offline content</b><span class="pill off">2 saved</span><span class="chev">${I.chev(20)}</span></button>
@@ -9394,6 +9395,27 @@ function spSetVol(v){ localStorage.setItem('ple_vol', v); }
 function spSetVoice(uri){ localStorage.setItem('ple_voice', uri);
   if(SP.on){ const i=SP.i; spStopAudio(); SP.i=i; spNext(); } spBar(); }
 
+/* PWA install prompt + #admin route — kept in this file's tail because
+   patch_speech re-injects this whole region into index.html on every build */
+window.addEventListener('beforeinstallprompt',(e)=>{ e.preventDefault(); state.pwaPrompt=e; if(state.screen==='profile') render(); });
+window.addEventListener('appinstalled',()=>{ state.pwaInstalled=true; state.pwaPrompt=null; if(state.screen==='profile') render(); });
+async function pwaInstall(){
+  if(state.pwaInstalled){ toast('Smart PLE is already installed \u2705'); return; }
+  if(state.pwaPrompt){
+    try{ state.pwaPrompt.prompt();
+      const res=await state.pwaPrompt.userChoice;
+      if(res&&res.outcome==='accepted') toast('Installing Smart PLE \u{1F389}');
+      state.pwaPrompt=null; render();
+    }catch(e){ toast('Install is not available right now.'); }
+    return;
+  }
+  const ua=navigator.userAgent||'';
+  if(/iPhone|iPad|iPod/i.test(ua)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1))
+    toast('On iPhone/iPad: tap Share \u2192 "Add to Home Screen".');
+  else toast('Open your browser menu (\u22EE) \u2192 "Install app" or "Add to Home screen".');
+}
+if(location.hash==='#admin'){ state.screen='admin'; }
+window.addEventListener('hashchange',()=>{ if(location.hash==='#admin'){ state.screen='admin'; render(); } });
 spInit();
 authInit();
 seenLoad();   /* restore the learning-path progress saved on this device —
