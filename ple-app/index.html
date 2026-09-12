@@ -1984,7 +1984,7 @@ const TAB_OF = {home:'home',hub:'home',start:'home',practice:'practice',subjects
   notes:'notes',noteTopic:'notes',noteRead:'notes',
   exercises:'exercises',exTopic:'exercises',exDo:'exercises',exResult:'exercises',exMine:'exercises',
   avatar:'profile',settings:'profile',offline:'profile',about:'profile', auth:'profile', spelling:'home', spellDifficulty:'home', spellModes:'home', spellPractice:'home', spellResults:'home', spellMistakes:'home', noteChallenge:'notes', mathHome:'practice', mathLearn:'practice', mathPlay:'practice', mathLesson:'notes', noteJourney:'notes', notePath:'notes', noteSub:'notes', paywall:'home', admin:'home'};
-const FULLSCREEN = ['question','exam','results','review','archive','pquestion','spellPractice','spellResults','mathPlay','spExam','paywall','admin'];
+const FULLSCREEN = ['question','exam','results','review','archive','pquestion','spellPractice','spellResults','mathPlay','spExam','paywall','admin','smartExam'];
 
 /* ------------------------------------------------------------
    WHO MAY SEE THE TOPICS LIST
@@ -2019,6 +2019,9 @@ function go(screen, push=true){
   /* the teacher's switches: a feature that is switched off cannot be
      reached at all, from any button, tab or back arrow */
   if(rcScreenDenied(screen)) screen = rcFallback(screen);
+  /* an assigned exam is sat first: every other screen waits until it is
+     submitted (or the teacher releases it) */
+  if(rcExamLocked() && screen!=='smartExam' && screen!=='auth') screen='smartExam';
   if(push && state.screen!==screen) state.stack.push(state.screen);
   state.screen = screen; trackActivity('screen_view',{screen}); render();
   const v=document.getElementById('views'); if(v) v.scrollTop=0; window.scrollTo(0,0);
@@ -2051,7 +2054,8 @@ const RC_OPEN={notes:true,pwa:true,pna:true};
 const RC_COLS={allow_notes:'notes',
   allow_practice_with_answers:'pwa',allow_practice_no_answers:'pna'};
 const RC={notes:true,pwa:true,pna:true,klass:null,subject:null,topic:null,tier:null,
-          examId:null,examTitle:'',examStatus:null,note:'',at:0,offline:false,uid:null};
+          examId:null,examTitle:'',examStatus:null,exam:null,examDone:false,
+          note:'',at:0,offline:false,uid:null};
 const RC_NOTES_SCREENS=['notes','notePath','noteSub','noteTopic','noteRead','noteJourney','noteChallenge','mathLesson'];
 const RC_PWA_SCREENS=['ptopics','mathHome','mathLearn','mathPlay'];
 const RC_PNA_SCREENS=['exercises','exTopic','exDo','exResult','exMine','papers','years','paperDetail','exam'];
@@ -2120,13 +2124,21 @@ async function rcFetch(){
         .eq('user_id',uid).in('status',['locked','in_progress'])
         .order('created_at',{ascending:false}).limit(1);
       const e=(ea&&ea[0])||null;
-      RC.examId=e?(e.exam_id||e.id):null;
+      const nid=e?(e.exam_id||e.id):null;
+      if(nid!==RC.examId){ RC.examDone=false; RC.exam=null; }   /* a new exam re-locks */
+      RC.examId=nid;
       RC.examStatus=e?e.status:null;
       RC.examTitle=e?(e.title||e.exam_title||'Your exam'):'';
+      if(RC.examId){
+        const {data:ex}=await supabaseClient.from('smartple_exams').select('*')
+          .eq('id',RC.examId).limit(1);
+        RC.exam=(ex&&ex[0])||null;
+        if(RC.exam&&RC.exam.title) RC.examTitle=RC.exam.title;
+      } else RC.exam=null;
     }catch(err){ RC.examId=null; RC.examStatus=null; RC.examTitle=''; }
     try{ localStorage.setItem(RC_KEY,JSON.stringify(RC)); }catch(e){}
     rcForce();
-    const snap=JSON.stringify([RC.notes,RC.pwa,RC.pna,RC.klass,RC.subject,RC.examId,RC.examStatus]);
+    const snap=JSON.stringify([RC.notes,RC.pwa,RC.pna,RC.klass,RC.subject,RC.examId,RC.examStatus,RC.examDone]);
     if(snap!==rcSnap){ rcSnap=snap; rcReact(); }    /* only when it really changed */
   }catch(e){
     /* no internet: keep the settings already known, or the saved copy.
@@ -2138,6 +2150,10 @@ async function rcFetch(){
 /* a teacher's change takes effect at once: whatever was just switched off
    closes itself, even if the learner is standing inside it */
 function rcReact(){
+  /* the teacher released the exam (or it was submitted): stop holding them */
+  if(!rcExamLocked() && state.screen==='smartExam' && !(state.sx&&state.sx.done)){
+    state.stack=[]; go('home',false); return;
+  }
   if(rcScreenDenied(state.screen)){ const from=state.screen; state.stack=[]; go(rcFallback(from),false); return; }
   render();
 }
@@ -2150,12 +2166,104 @@ function rcStart(){
   rcTimer=setInterval(rcFetch,15000);               /* 2) every 15 seconds */
 }
 function rcStop(){ if(rcTimer)clearInterval(rcTimer); rcTimer=null; rcStarting=null; }
-function rcReset(){ rcStop(); Object.assign(RC,{notes:true,pwa:true,pna:true,klass:null,
+function rcReset(){ rcStop(); if(state.sxTimer)clearInterval(state.sxTimer);
+  state.sx=null; Object.assign(RC,{notes:true,pwa:true,pna:true,klass:null,
   subject:null,topic:null,tier:null,examId:null,examTitle:'',examStatus:null,
-  note:'',at:0,offline:false,uid:null}); rcSnap=''; }
+  exam:null,examDone:false,note:'',at:0,offline:false,uid:null}); rcSnap=''; }
 document.addEventListener('visibilitychange',()=>{ if(!document.hidden) rcFetch(); });  /* 3) back to the app */
 window.addEventListener('focus',()=>rcFetch());
 window.addEventListener('online',()=>rcFetch());
+
+/* ============================================================
+   EXAMS — the teacher assigns one and the learner must sit it.
+   Nothing extra to install: the exam lives in smartple_exams
+   (title, subject, duration_minutes, questions jsonb) and the
+   assignment in smartple_exam_assignments (status, score).
+   The same 15-second sync that carries the switches carries the
+   exam, so it appears on the phone the moment it is assigned.
+   ============================================================ */
+const RC_EXAM_OPEN=['locked','in_progress'];  /* the DB check constraint allows only
+  locked / in_progress / completed, so those are the only words used here */
+const rcExamLocked = () => !isAdmin() && !RC.examDone && !!RC.examId &&
+  RC_EXAM_OPEN.includes(RC.examStatus);
+
+/* accept either shape of the questions column: an array, a JSON string,
+   or {items:[...]} — and either q/question, answer/correct_answer */
+function sxQuestions(ex){
+  let qs=ex&&ex.questions;
+  if(typeof qs==='string'){ try{ qs=JSON.parse(qs); }catch(e){ qs=[]; } }
+  if(!Array.isArray(qs)) qs=(qs&&Array.isArray(qs.items))?qs.items:[];
+  return qs.filter(q=>q&&(q.q||q.question)).map((q,i)=>({
+    id:q.id||('q'+(i+1)),
+    text:String(q.q||q.question),
+    options:Array.isArray(q.options)?q.options:[],
+    kind:(q.kind==='short'||!(Array.isArray(q.options)&&q.options.length))?'short':'mcq',
+    answer:String(q.answer!=null?q.answer:(q.correct_answer!=null?q.correct_answer:'')),
+    marks:Number(q.marks||1), topic:q.topic||''
+  }));
+}
+function sxStart(){
+  const ex=RC.exam;
+  if(!ex){ toast('The exam is still loading \u2014 one moment'); rcFetch(); return; }
+  const qs=sxQuestions(ex);
+  if(!qs.length){ toast('This exam has no questions yet'); return; }
+  state.sx={qs,i:0,ans:new Array(qs.length).fill(null),
+    t0:Date.now(),secs:Math.max(60,(Number(ex.duration_minutes)||30)*60),
+    remain:Math.max(60,(Number(ex.duration_minutes)||30)*60),done:false,score:null};
+  go('smartExam',false);
+  sxTick();
+}
+/* the clock updates its own element only — a full re-render would throw
+   the learner out of the box they are typing in */
+function sxTick(){
+  if(state.sxTimer) clearInterval(state.sxTimer);
+  state.sxTimer=setInterval(()=>{
+    const s=state.sx; if(!s||s.done){ clearInterval(state.sxTimer); return; }
+    s.remain=Math.max(0,s.secs-Math.floor((Date.now()-s.t0)/1000));
+    const el=document.getElementById('sxTime'); if(el) el.textContent=fmt(s.remain);
+    if(s.remain<=0) sxSubmit(true);
+  },1000);
+}
+function sxGo(i){
+  const s=state.sx; if(!s) return;
+  s.i=Math.max(0,Math.min(s.qs.length-1,i)); render();
+}
+function sxAnswer(i,val){ const s=state.sx; if(s) s.ans[i]=val; }   /* typing: no re-render */
+function sxPick(i,val){ const s=state.sx; if(!s) return; s.ans[i]=val; render(); }
+async function sxSubmit(auto){
+  const s=state.sx; if(!s||s.done) return;
+  s.done=true; if(state.sxTimer) clearInterval(state.sxTimer);
+  let got=0,total=0;
+  s.detail=s.qs.map((q,i)=>{
+    total+=q.marks;
+    const a=s.ans[i];
+    const ok=q.kind==='mcq'
+      ? String(a==null?'':a).trim().toUpperCase()===String(q.answer).trim().toUpperCase()
+      : null;                                   /* short answers: teacher marks */
+    if(ok) got+=q.marks;
+    return {q:q.text,kind:q.kind,given:a==null?'':String(a),answer:q.answer,ok:ok,marks:q.marks};
+  });
+  const marked=s.detail.filter(d=>d.ok!==null);
+  const scored=marked.reduce((a,d)=>a+d.marks,0);
+  s.score=scored?Math.round(100*marked.filter(d=>d.ok).reduce((a,d)=>a+d.marks,0)/scored):0;
+  s.got=marked.filter(d=>d.ok).reduce((a,d)=>a+d.marks,0); s.total=total;
+  s.pending=s.detail.length-marked.length;
+  /* unlock at once: the learner is never held hostage by a slow network */
+  RC.examDone=true; RC.examStatus='completed';
+  try{ const d=JSON.parse(localStorage.getItem(RC_KEY)||'null');
+    if(d){ d.examDone=true; d.examStatus='completed'; localStorage.setItem(RC_KEY,JSON.stringify(d)); } }catch(e){}
+  render();
+  try{
+    if(supabaseClient&&state.authUser){
+      await supabaseClient.from('smartple_exam_assignments')
+        .update({status:'completed',score:s.score})
+        .eq('user_id',state.authUser.id).eq('exam_id',RC.examId);
+      trackActivity('exam_submitted',{exam_id:RC.examId,
+        title:(RC.exam&&RC.exam.title)||'',score:s.score,auto:!!auto,answers:s.detail});
+      activityFlush();
+    }
+  }catch(e){ /* offline: the answers stay on the device, nothing is lost */ }
+}
 function back(){ state.screen = state.stack.pop() || 'home'; render(); }
 function tabTo(id){ if(!state.authUser){state.screen='auth';render();return;} state.stack=[]; state.tab=id; go(id,false); }
 
@@ -6239,6 +6347,86 @@ function pleBigCard(img,title,sub,onclick){
 }
 
 /* ---- simple welcome home: two big doors, just like the picture ---- */
+/* ============================================================
+   SCREEN: the assigned exam. One question at a time, MCQ taps or
+   a typed answer, a running clock, then a score and a review.
+   ============================================================ */
+SCREENS.smartExam = () => {
+  const ex=RC.exam;
+  if(!ex) return `
+  <div style="min-height:80%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center">
+    <img src="${PLE_ART.owlHero}" alt="" style="width:120px;height:100px;object-fit:contain">
+    <h2 style="margin-top:8px">Getting your exam\u2026</h2>
+    <p class="muted">One moment while it loads.</p>
+    <button class="btn btn-soft" style="margin-top:12px" onclick="rcFetch()">Try again</button>
+  </div>`;
+  const s=state.sx;
+  if(!s||!s.qs) return `
+  <div style="min-height:80%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center">
+    <div style="font-size:52px">\u{1F4DD}</div>
+    <h2 style="margin-top:6px">${nEsc(ex.title||'Your exam')}</h2>
+    <p class="muted">${nEsc(String(ex.subject||''))} \u00B7 ${sxQuestions(ex).length} questions \u00B7
+      ${Number(ex.duration_minutes)||30} minutes</p>
+    <div class="hint-strip cream" style="margin:14px 0">${I.info(18)}
+      <span>Answer every question, then submit. The clock starts when you do.</span></div>
+    <button class="btn btn-primary btn-lg" onclick="sxStart()">START THE EXAM \u27A1</button>
+  </div>`;
+  if(s.done){
+    const rows=s.detail.map((d,i)=>`
+      <div class="card" style="margin:0 0 10px;padding:12px">
+        <b>Q${i+1}. ${nEsc(d.q)}</b>
+        <div style="margin-top:6px">Your answer: <b>${nEsc(d.given||'\u2014')}</b></div>
+        ${d.ok===null
+          ? `<div class="hint-strip cream" style="margin-top:6px">${I.info(16)} <span>Your teacher will mark this one.</span></div>`
+          : `<div style="margin-top:4px;color:${d.ok?'#1E7A34':'#B3261E'}"><b>${d.ok?'\u2705 Correct':'\u274C Not correct'}</b>
+             \u00B7 answer: ${nEsc(d.answer)}</div>`}
+      </div>`).join('');
+    return `
+    <header class="pagehead"><div><h2>Exam submitted</h2>
+      <div class="sub">${nEsc(ex.title||'')}</div></div></header>
+    <div style="padding:14px">
+      <div class="spell-score"><div class="score-big">${s.score}%</div>
+        <b>${s.got} of ${s.total-s.pending*0} marks on the auto-marked questions</b>
+        <p>${s.score>=80?'Excellent work!':s.score>=50?'Good effort \u2014 review the ones below.':'Keep going \u2014 read the answers below and try again.'}</p></div>
+      ${s.pending?`<div class="hint-strip cream">${I.info(18)} <span>${s.pending} written answer${s.pending>1?'s':''} going to your teacher for marking.</span></div>`:''}
+      ${rows}
+      <button class="btn btn-primary" onclick="state.sx=null;go('home',false)">BACK TO HOME</button>
+    </div>`;
+  }
+  const q=s.qs[s.i], n=s.i+1;
+  const answered=s.ans.filter(a=>a!=null&&String(a).trim()!=='').length;
+  const body=q.kind==='mcq'
+    ? `<div class="mx-mcq" style="grid-template-columns:1fr">
+        ${q.options.map((o,idx)=>{const L='ABCD'[idx]||String(idx+1);
+          const on=String(s.ans[s.i]||'')===L;
+          return `<button class="mx-opt mx-opt${idx%4}" style="${on?'border-color:var(--sky);background:var(--sky-50)':''}"
+            onclick="sxPick(${s.i},'${L}')">
+            <span class="mx-opt-let">${L}</span><span>${nEsc(String(o).replace(/^[A-D][.\)]\s*/,''))}</span></button>`;}).join('')}
+      </div>`
+    : `<textarea class="fillin" style="width:100%;min-height:150px;font-size:17px"
+        placeholder="Type your answer here\u2026" oninput="sxAnswer(${s.i},this.value)">${nEsc(String(s.ans[s.i]||''))}</textarea>`;
+  return `
+  <div class="qbar"><div class="qbar-top">
+      <div class="qcount">Question ${n} <em>of ${s.qs.length}</em></div>
+      <span class="pill ${s.remain<60?'warn':'dl'}" id="sxTime">${fmt(s.remain)}</span>
+    </div>
+    <div class="qprog"><i style="width:${n/s.qs.length*100}%"></i></div></div>
+  <div style="padding:14px">
+    <div class="mx-card"><div class="mx-topic">${nEsc(q.topic||ex.title||'Exam')}</div>
+      <div class="mx-qtext" style="font-size:clamp(19px,5vw,26px)">${nEsc(q.text)}</div></div>
+    ${body}
+    <div class="hint-strip cream" style="margin-top:12px">${I.info(16)}
+      <span>${answered} of ${s.qs.length} answered${q.kind==='short'?' \u00B7 written answers are marked by your teacher':''}</span></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px">
+      <button class="btn btn-ghost" ${s.i===0?'disabled style="opacity:.45"':''} onclick="sxGo(${s.i-1})">\u2B05 BACK</button>
+      ${n===s.qs.length
+        ? `<button class="btn btn-green" onclick="sxSubmit(false)">SUBMIT \u2705</button>`
+        : `<button class="btn btn-primary" onclick="sxGo(${s.i+1})">NEXT \u27A1</button>`}
+    </div>
+    ${n<s.qs.length?`<button class="btn btn-soft" style="margin-top:10px" onclick="sxSubmit(false)">Finish and submit now</button>`:''}
+  </div>`;
+};
+
 SCREENS.home = () => `
   <div class="newhome">
     <div class="nh-logo">
@@ -6251,6 +6439,12 @@ SCREENS.home = () => `
     </div>
     <div class="nh-tag">Ugandan Kids Learning \u00B7 Primary Leaving Examination</div>
     <div class="nh-hello">Let's learn together!</div>
+
+    ${rcExamLocked()?`<button class="nh-card" onclick="go('smartExam')" aria-label="Open your exam"
+      style="background:#FFF3D6;border:2px solid #D9A514;margin-bottom:12px">
+      <span class="nh-txt" style="color:#7A5B00"><b>\u{1F4DD} NEW EXAM \u00B7 ${nEsc(RC.examTitle)}</b>
+      <span>Tap to start \u00B7 your teacher set this for you</span></span>
+    </button>`:''}
 
     ${RC.notes?`<button class="nh-card nh-start" onclick="go('start')" aria-label="Start learning">
       <img class="nh-art" src="${PLE_ART.homestart}" alt="Two kids jumping with books and the Smart PLE owl">
