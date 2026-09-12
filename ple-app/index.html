@@ -1986,12 +1986,176 @@ const TAB_OF = {home:'home',hub:'home',start:'home',practice:'practice',subjects
   avatar:'profile',settings:'profile',offline:'profile',about:'profile', auth:'profile', spelling:'home', spellDifficulty:'home', spellModes:'home', spellPractice:'home', spellResults:'home', spellMistakes:'home', noteChallenge:'notes', mathHome:'practice', mathLearn:'practice', mathPlay:'practice', mathLesson:'notes', noteJourney:'notes', notePath:'notes', noteSub:'notes', paywall:'home', admin:'home'};
 const FULLSCREEN = ['question','exam','results','review','archive','pquestion','spellPractice','spellResults','mathPlay','spExam','paywall','admin'];
 
+/* ------------------------------------------------------------
+   WHO MAY SEE THE TOPICS LIST
+   The "Study Notes" screen that lists every topic of a subject
+   (The East African Community, Location of Our District, …) is the
+   OWNER's workbench: it is how a topic is opened to set questions for it.
+   Students must never land on it, so every route that used to open it now
+   drops them straight into the learning path of the next unfinished topic.
+   Nothing is deleted — the screen and all its content stay in the file,
+   they are simply not shown to a learner. The owner unlocks with #admin
+   + PIN, which sets state.adminOk (memory only: reload = student again).
+   ------------------------------------------------------------ */
+const isAdmin = () => !!state.adminOk;
+const ADMIN_ONLY_SCREENS = ['notes'];
+function pickStudentTopic(){
+  const bank = notesFor(state.klass, state.nsubject);
+  if(!bank || !bank.topics || !bank.topics.length) return null;
+  const t = bank.topics.find(x=>noteDone(x).pct<100) || bank.topics[0];
+  state.ntopic = t.id;
+  return t;
+}
+const hasNoteTopic = () => !!(noteById(state.ntopic) || noteFindAnywhere(state.ntopic));
+
 function go(screen, push=true){
   if(!state.authUser && screen!=='auth'&&screen!=='admin'){state.screen='auth';render();return;}
+  /* ONE guard covers every way in: the Notes tab, every back button, the
+     class/subject chips and the shortcuts on the results screens. */
+  if(ADMIN_ONLY_SCREENS.includes(screen) && !isAdmin()){
+    if(!hasNoteTopic()) pickStudentTopic();
+    screen = hasNoteTopic() ? 'notePath' : 'start';
+  }
+  /* the teacher's switches: a feature that is switched off cannot be
+     reached at all, from any button, tab or back arrow */
+  if(rcScreenDenied(screen)) screen = rcFallback(screen);
   if(push && state.screen!==screen) state.stack.push(state.screen);
   state.screen = screen; trackActivity('screen_view',{screen}); render();
   const v=document.getElementById('views'); if(v) v.scrollTop=0; window.scrollTo(0,0);
 }
+/* Back out of the learning path: a learner goes straight home and never sees
+   the topics list; the owner keeps the old route into the topics list. */
+function pathBack(){ if(isAdmin()){ go('notes'); return; } tabTo('home'); }
+
+/* ============================================================
+   REMOTE CONTROL — the teacher's switches, live on this phone.
+   The owner's admin panel writes one row per learner into
+   smartple_assignments; this app reads that row and obeys it:
+
+     allow_notes                  hide the whole learning path (START,
+                                  Notes tab, reading, journey, tests)
+     allow_practice_with_answers  hide "Practice WITH Answers" + Maths
+     allow_practice_no_answers    hide "Practice NO Answers", the written
+                                  exercises and the past papers
+     forced_class / forced_subject  lock the learner to one class/subject
+
+   Hidden means HIDDEN — never greyed out, never a dead button.
+   Refreshed the moment the app opens, every 15 seconds while it is
+   open, and every time the learner comes back to it. A live answer
+   always wins; the saved copy is used only with no internet, so a
+   learner is never locked out by a bad network and never sees an error.
+   ============================================================ */
+const RC_KEY='sp_rc_cache';
+const RC_OPEN={notes:true,pwa:true,pna:true};
+/* database column -> switch. Missing row, missing column or null = ALLOWED. */
+const RC_COLS={allow_notes:'notes',
+  allow_practice_with_answers:'pwa',allow_practice_no_answers:'pna'};
+const RC={notes:true,pwa:true,pna:true,klass:null,subject:null,topic:null,tier:null,
+          examId:null,examTitle:'',examStatus:null,note:'',at:0,offline:false,uid:null};
+const RC_NOTES_SCREENS=['notes','notePath','noteSub','noteTopic','noteRead','noteJourney','noteChallenge','mathLesson'];
+const RC_PWA_SCREENS=['ptopics','mathHome','mathLearn','mathPlay'];
+const RC_PNA_SCREENS=['exercises','exTopic','exDo','exResult','exMine','papers','years','paperDetail','exam'];
+let rcTimer=null, rcSnap='', rcStarting=null;
+
+const rcTabAllowed = id => id==='notes' ? RC.notes
+  : (id==='exercises'||id==='papers') ? RC.pna : true;
+function rcScreenDenied(screen){
+  if(isAdmin()) return null;                       /* the owner sees everything */
+  if(!RC.notes && RC_NOTES_SCREENS.includes(screen)) return 'notes';
+  if(!RC.pwa   && RC_PWA_SCREENS.includes(screen))   return 'pwa';
+  if(!RC.pna   && RC_PNA_SCREENS.includes(screen))   return 'pna';
+  return null;
+}
+/* where a blocked learner lands instead: the closest thing still allowed */
+function rcFallback(from){
+  if(RC_NOTES_SCREENS.includes(from||''))            /* pushed out of the notes */
+    return (RC.pwa||RC.pna) ? 'practice' : 'home';
+  if(RC.notes) return 'start';                       /* pushed out of practice */
+  return 'home';
+}
+function rcApply(a){
+  /* map each database column onto its switch. A missing column, a missing
+     row or a null value always means ALLOWED — a learner is never locked
+     out by a table that has not been filled in yet. */
+  for(const col in RC_COLS){
+    const k=RC_COLS[col];
+    RC[k]=(a&&typeof a[col]==='boolean')?a[col]:RC_OPEN[k];
+  }
+  RC.klass=(a&&a.forced_class)||null;
+  RC.subject=(a&&a.forced_subject)||null;
+  RC.topic=(a&&a.forced_topic)||null;
+  RC.tier=(a&&a.forced_tier!=null&&a.forced_tier!=='')?Number(a.forced_tier):null;
+  RC.note=(a&&a.note)||'';
+}
+/* a forced class or subject wins over anything the learner tapped —
+   but never over the owner, who must be able to open any class */
+function rcForce(){
+  if(isAdmin()) return;
+  if(RC.klass && state.klass!==RC.klass){ state.klass=RC.klass; state.ntopic=null; state.ptopic=null; }
+  if(RC.subject){
+    if(state.psubject!==RC.subject) state.ptopic=null;
+    state.psubject=RC.subject; state.nsubject=RC.subject; state.exsubject=RC.subject;
+  }
+}
+function rcFromCache(){
+  if(RC.at) return false;
+  try{ const d=JSON.parse(localStorage.getItem(RC_KEY)||'null');
+    if(d&&typeof d==='object'){ Object.assign(RC,d); rcForce(); return true; } }catch(e){}
+  return false;
+}
+async function rcFetch(){
+  const uid=state.authUser&&state.authUser.id;
+  if(!uid) return;
+  if(!supabaseClient){ if(rcFromCache()) rcReact(); return; }  /* offline open */
+  try{
+    const {data,error}=await supabaseClient.from('smartple_assignments')
+      .select('*').eq('user_id',uid).limit(1);      /* .limit(1): a duplicate
+      row must never throw and silently re-allow everything */
+    if(error) throw error;
+    rcApply((data&&data[0])||null);
+    RC.at=Date.now(); RC.offline=false; RC.uid=uid;
+    try{                                            /* a locked exam: empty or
+      missing tables must never break the learner's app */
+      const {data:ea}=await supabaseClient.from('smartple_exam_assignments').select('*')
+        .eq('user_id',uid).in('status',['locked','in_progress'])
+        .order('created_at',{ascending:false}).limit(1);
+      const e=(ea&&ea[0])||null;
+      RC.examId=e?(e.exam_id||e.id):null;
+      RC.examStatus=e?e.status:null;
+      RC.examTitle=e?(e.title||e.exam_title||'Your exam'):'';
+    }catch(err){ RC.examId=null; RC.examStatus=null; RC.examTitle=''; }
+    try{ localStorage.setItem(RC_KEY,JSON.stringify(RC)); }catch(e){}
+    rcForce();
+    const snap=JSON.stringify([RC.notes,RC.pwa,RC.pna,RC.klass,RC.subject,RC.examId,RC.examStatus]);
+    if(snap!==rcSnap){ rcSnap=snap; rcReact(); }    /* only when it really changed */
+  }catch(e){
+    /* no internet: keep the settings already known, or the saved copy.
+       Never an error, never "FAILED" — the learner just keeps working. */
+    if(rcFromCache()) rcReact();
+    RC.offline=true;
+  }
+}
+/* a teacher's change takes effect at once: whatever was just switched off
+   closes itself, even if the learner is standing inside it */
+function rcReact(){
+  if(rcScreenDenied(state.screen)){ const from=state.screen; state.stack=[]; go(rcFallback(from),false); return; }
+  render();
+}
+function rcStart(){
+  const uid=state.authUser&&state.authUser.id;
+  if(!uid||rcStarting===uid) return;
+  rcStarting=uid;
+  rcFetch();                                        /* 1) the moment it opens */
+  if(rcTimer) clearInterval(rcTimer);
+  rcTimer=setInterval(rcFetch,15000);               /* 2) every 15 seconds */
+}
+function rcStop(){ if(rcTimer)clearInterval(rcTimer); rcTimer=null; rcStarting=null; }
+function rcReset(){ rcStop(); Object.assign(RC,{notes:true,pwa:true,pna:true,klass:null,
+  subject:null,topic:null,tier:null,examId:null,examTitle:'',examStatus:null,
+  note:'',at:0,offline:false,uid:null}); rcSnap=''; }
+document.addEventListener('visibilitychange',()=>{ if(!document.hidden) rcFetch(); });  /* 3) back to the app */
+window.addEventListener('focus',()=>rcFetch());
+window.addEventListener('online',()=>rcFetch());
 function back(){ state.screen = state.stack.pop() || 'home'; render(); }
 function tabTo(id){ if(!state.authUser){state.screen='auth';render();return;} state.stack=[]; state.tab=id; go(id,false); }
 
@@ -2011,7 +2175,7 @@ function render(){
   const afxBtn=document.getElementById('afxMute');
   if(afxBtn)afxBtn.textContent=AFX.muted?'🔇':'🔊';
   const active = TAB_OF[state.screen];
-  bar.innerHTML = TABS.map(t=>`
+  bar.innerHTML = TABS.filter(t=>rcTabAllowed(t.id)).map(t=>`
     <button class="tab ${t.id===active?'on':''}" onclick="tabTo('${t.id}')"
       aria-label="${t.label}" aria-current="${t.id===active?'page':'false'}">
       <span class="ic">${I[t.icon](25)}</span><span>${t.label}</span>
@@ -2473,8 +2637,8 @@ function mathLessonSpeak(){const L=state.mlesson;if(!L)return;const st=L.steps[L
   if(st&&st.type==='check')mathSpeak(st.q.question);}
 
 SCREENS.mathLesson = () => {
-  const L=state.mlesson;if(!L)return SCREENS.notes;
-  const t=noteById(L.tid);if(!t)return SCREENS.notes;
+  const L=state.mlesson;if(!L)return isAdmin()?SCREENS.notes():SCREENS.notePath();
+  const t=noteById(L.tid);if(!t)return isAdmin()?SCREENS.notes():SCREENS.notePath();
   if(L.i>=L.steps.length)L.i=L.steps.length-1;
   const st=L.steps[L.i],n=L.i+1,total=L.steps.length;
   let body='';
@@ -2868,6 +3032,9 @@ async function spSubmitPay() {
   }
 }
 function adminCheckPin(){ const v=(document.getElementById('adminPin')||{}).value||''; if(v==='1234'){ state.adminOk=true; adminLoad(); } else toast('Wrong PIN'); }
+/* Owner only: open the full topic list for the selected class and subject —
+   the screen students never see — so questions can be set for any topic. */
+function adminTopics(){ state.adminOk=true; go('notes'); }
 async function adminLoad(){
   state.adminRows=[]; state.adminErr=null;
   if(!supabaseClient){ const ok=await supabaseLoadLib(8000); if(ok&&window.supabase) supabaseClient=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,{auth:{persistSession:true}}); }
@@ -3405,8 +3572,11 @@ const LOCK_SVG = `<svg viewBox="0 0 40 40" width="26" height="26" aria-hidden="t
 </svg>`;
 
 SCREENS.notePath = () => {
-  const t=noteById(state.ntopic)||noteFindAnywhere(state.ntopic);
-  if(!t)return SCREENS.notes;
+  let t=noteById(state.ntopic)||noteFindAnywhere(state.ntopic);
+  /* no topic chosen yet: a learner is put on the next unfinished topic of
+     their subject, so the topics list is never needed as a fallback */
+  if(!t && !isAdmin() && pickStudentTopic()) t=noteById(state.ntopic)||noteFindAnywhere(state.ntopic);
+  if(!t) return isAdmin() ? SCREENS.notes() : SCREENS.start();
   const {subs,cur:baseCur}=pathState(t);
   const g=spGates(t);
   let cur=baseCur;
@@ -3420,7 +3590,7 @@ SCREENS.notePath = () => {
     : `\u2B50 A new adventure! ${subs.length} lessons await \u2B50`;
   return `
   <div class="lp-fun">
-    <button class="path-back" onclick="go('notes')" aria-label="Back to topics">${I.back(20)}</button>
+    <button class="path-back" onclick="pathBack()" aria-label="${isAdmin()?'Back to topics':'Back to home'}">${I.back(20)}</button>
 
     <div class="lp-banner">
       <span class="lp-flag" aria-hidden="true">\u{1F1FA}\u{1F1EC}</span>
@@ -5555,10 +5725,10 @@ function mathSinglePage(t,i,sec){
 
 SCREENS.noteSub = () => {
   const t=noteById(state.ntopic)||noteFindAnywhere(state.ntopic);
-  if(!t)return SCREENS.notePath;
+  if(!t)return SCREENS.notePath();
   const secs=noteSections(t);
   const i=Math.max(0,Math.min(state.nsec||0,secs.length-1));
-  const sec=secs[i];if(!sec)return SCREENS.notePath;
+  const sec=secs[i];if(!sec)return SCREENS.notePath();
   const {cur}=pathState(t);
   if(i>cur){setTimeout(()=>{toast('Finish the previous one first!');go('notePath');},0);return '';}
   if(state.nsec!==i)state.nsec=i;
@@ -5917,8 +6087,8 @@ function njFinish(){
 }
 
 SCREENS.noteJourney = () => {
-  const J=state.njourney;if(!J)return SCREENS.notes;
-  const t=njTopic();if(!t)return SCREENS.notes;
+  const J=state.njourney;if(!J)return isAdmin()?SCREENS.notes():SCREENS.notePath();
+  const t=njTopic();if(!t)return isAdmin()?SCREENS.notes():SCREENS.notePath();
   if(J.i>=J.steps.length)J.i=J.steps.length-1;
   const st=J.steps[J.i],n=J.i+1,total=J.steps.length;
   if(st.type==='read')state.nsec=st.secIndex;   /* keeps recordings + reading machine in sync */
@@ -6082,15 +6252,19 @@ SCREENS.home = () => `
     <div class="nh-tag">Ugandan Kids Learning \u00B7 Primary Leaving Examination</div>
     <div class="nh-hello">Let's learn together!</div>
 
-    <button class="nh-card nh-start" onclick="go('start')" aria-label="Start learning">
+    ${RC.notes?`<button class="nh-card nh-start" onclick="go('start')" aria-label="Start learning">
       <img class="nh-art" src="${PLE_ART.homestart}" alt="Two kids jumping with books and the Smart PLE owl">
       <span class="nh-txt"><b>START</b><span>Begin your learning journey</span></span>
-    </button>
+    </button>`:''}
 
-    <button class="nh-card nh-practice" onclick="go('practice')" aria-label="Practice">
+    ${(RC.pwa||RC.pna)?`<button class="nh-card nh-practice" onclick="go('practice')" aria-label="Practice">
       <img class="nh-art" src="${PLE_ART.homepractice}" alt="Two kids doing a quiz together at a table">
       <span class="nh-txt"><b>PRACTICE</b><span>Review questions &amp; quizzes</span></span>
-    </button>
+    </button>`:''}
+
+    ${(!RC.notes&&!RC.pwa&&!RC.pna)?`<div class="nh-goal" style="text-align:center">
+      <span>\u{1F4DA} Your teacher has paused your sections for now. They will open again soon!</span></div>`:''}
+    ${RC.note?`<div class="nh-goal"><span>\u{1F4AC} Your teacher says: ${nEsc(RC.note)}</span></div>`:''}
 
     <div class="nh-goal">
       <span>Daily Goal \u00B7 ${dailyGoal().n}/5 quizzes completed</span>
@@ -6104,6 +6278,7 @@ SCREENS.home = () => `
 
 /* ---- "Choose Subject": the screen START opens, like the picture ---- */
 function startSubject(id){
+  if(rcScreenDenied('notePath')){ go(rcFallback('notePath'),false); return; }
   state.psubject=id; state.nsubject=id; state.exsubject=id;
   state.ptopic=null; state.ntopic=null; state.exTid=null;
   /* straight into the learning path: first not-finished topic */
@@ -6112,8 +6287,12 @@ function startSubject(id){
     const t = bank.topics.find(x=>noteDone(x).pct<100) || bank.topics[0];
     state.ntopic = t.id;
     go('notePath');
-  } else {
+  } else if(isAdmin()) {
     go('notes');
+  } else {
+    /* no notes for that class/subject: say so instead of opening the
+       owner-only topics list */
+    toast('No '+id+' notes for '+state.klass+' yet \u2014 try another subject');
   }
 }
 SCREENS.start = () => {
@@ -6128,7 +6307,7 @@ SCREENS.start = () => {
     ['SCI','Science &amp; Nature','green','flask'],
     ['ENG','English &amp; Grammar','purple','book'],
     ['MATH','Mathematics &amp; Numbers','orange','calc'],
-  ];
+  ].filter(c=>!RC.subject||c[0]===RC.subject);   /* teacher's forced subject only */
   return `
   <div class="subpick">
     <div class="sp-head">
@@ -6137,7 +6316,8 @@ SCREENS.start = () => {
         <h2>Choose Subject</h2>
         <div class="sp-sub">Smart PLE \u00B7 PLE Prep for Ugandan Kids</div>
         <div class="sp-row">\u{1F1FA}\u{1F1EC}
-          <button class="sp-pill" onclick="go('classPick')" aria-label="Change class">Primary ${cls.slice(1)} \u00B7 change</button>
+          ${RC.klass?`<span class="sp-pill">Primary ${cls.slice(1)}</span>`
+            :`<button class="sp-pill" onclick="go('classPick')" aria-label="Change class">Primary ${cls.slice(1)} \u00B7 change</button>`}
         </div>
       </div>
     </div>
@@ -6206,6 +6386,8 @@ function pmSubject(id){
   render(); toast(SUBJ_META[id].name+' selected');
 }
 function pmNoAnswers(){
+  if(rcScreenDenied('exercises')){ toast('Your teacher has switched this off for now');
+    go(rcFallback('exercises'),false); return; }
   /* straight into written exercises: questions that demand answers,
      answers stay hidden until the learner checks them */
   const cls=state.klass;
@@ -6274,7 +6456,11 @@ SCREENS.admin = () => {
     <div><h2>Pending Payments</h2><div class="sub">manual MoMo check \u00B7 approve to unlock</div></div></header>
   <div style="padding:14px">${state.adminErr?`<div class="card warm">${nEsc(state.adminErr)}</div>`:''}
     ${rows||'<div class="card">No pending payments.</div>'}
-    <button class="btn btn-soft" onclick="adminLoad()">Refresh \u{1F504}</button></div>`;
+    <button class="btn btn-soft" onclick="adminLoad()">Refresh \u{1F504}</button>
+    <div class="section-title" style="margin-top:20px">Owner tools</div>
+    <button class="btn btn-primary" onclick="adminTopics()">\u{1F4DA} Open the topic list \u00B7 set questions</button>
+    <div class="hint-strip cream" style="margin-top:8px">${I.info(18)} <span>Students never see the topic list. It stays here so you can open any topic and set questions for it.</span></div>
+  </div>`;
 };
 SCREENS.practice = () => {
   const cls = state.klass;
@@ -6300,17 +6486,17 @@ SCREENS.practice = () => {
       <button class="sp-pill" onclick="go('classPick')" aria-label="Change class">Primary ${cls.slice(1)} \u00B7 change</button>
     </div>
     <div class="chips pm-chips">
-      ${['SST','SCI','ENG','MATH'].map(s=>`<button class="chip ${state.psubject===s?'on':''}" onclick="pmSubject('${s}')">${SUBJ_EMO[s]} ${s}</button>`).join('')}
+      ${['SST','SCI','ENG','MATH'].filter(s=>!RC.subject||s===RC.subject).map(s=>`<button class="chip ${state.psubject===s?'on':''}" onclick="pmSubject('${s}')">${SUBJ_EMO[s]} ${s}</button>`).join('')}
     </div>
     <div class="pm-choose">Choose how you want to practice today</div>
 
-    <button class="pm-card pm-with" onclick="startPractice('quick')">
+    ${RC.pwa?`<button class="pm-card pm-with" onclick="startPractice('quick')">
       <span class="pm-ic pm-ic-green">${I.check(30)}</span>
       <span class="pm-txt"><b>Practice WITH Answers</b><span>Learn with explanations</span></span>
       <span class="pm-chev">${I.chev(20)}</span>
-    </button>
+    </button>`:''}
 
-    <button class="pm-card pm-no" onclick="pmNoAnswers()">
+    ${RC.pna?`<button class="pm-card pm-no" onclick="pmNoAnswers()">
       <span class="pm-ic pm-ic-blue">
         <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <rect x="5" y="4" width="14" height="17" rx="2.5"/>
@@ -6320,8 +6506,9 @@ SCREENS.practice = () => {
       </span>
       <span class="pm-txt"><b>Practice NO Answers</b><span>Test yourself like PLE exam</span></span>
       <span class="pm-chev">${I.chev(20)}</span>
-    </button>
+    </button>`:''}
 
+    ${(!RC.pwa&&!RC.pna)?`<div class="hint-strip cream"><span>Your teacher has switched practice off for now \u2014 your learning path is where the work is.</span></div>`:''}
     <div class="pm-tip"><span aria-hidden="true">\u{1F4A1}</span>
       <span>Tip: Use \u201CPractice WITH Answers\u201D to learn, then try \u201CPractice NO Answers\u201D when you're ready for the real exam!</span></div>
     <div class="pm-kids"><img src="${PLE_ART.kidsjumping}" alt="Happy learners cheering you on"></div>
@@ -7065,8 +7252,8 @@ async function authInit(){if(AUTH_BUSY)return;AUTH_BUSY=true;try{
   state.authUser=data.session?data.session.user:null;
   if(state.authUser)state.offlineGrace=false;
   if(!state.authUser){const u=supabaseCachedUser();if(u){state.authUser=u;state.offlineGrace=true;}}
-  if(state.authUser){applyUserProfile(state.authUser);spSyncPaid();}
-  supabaseClient.auth.onAuthStateChange((evt,session)=>{state.authUser=session?session.user:null;if(state.authUser){applyUserProfile(state.authUser);state.offlineGrace=false;spSyncPaid();}if(!state.authUser){state.stack=[];state.screen='auth';}if(evt==='PASSWORD_RECOVERY'&&state.authUser){state.stack=[];state.screen='profile';setTimeout(authNewPassword,60);}if(state.screen==='auth'||state.screen==='profile'||!state.authUser)render();});
+  if(state.authUser){applyUserProfile(state.authUser);spSyncPaid();rcStart();}
+  supabaseClient.auth.onAuthStateChange((evt,session)=>{state.authUser=session?session.user:null;if(state.authUser){applyUserProfile(state.authUser);state.offlineGrace=false;spSyncPaid();rcStart();}else{rcReset();}if(!state.authUser){state.stack=[];state.screen='auth';}if(evt==='PASSWORD_RECOVERY'&&state.authUser){state.stack=[];state.screen='profile';setTimeout(authNewPassword,60);}if(state.screen==='auth'||state.screen==='profile'||!state.authUser)render();});
 }catch(e){console.warn('Supabase auth unavailable',e);const u=supabaseCachedUser();if(u&&!state.authUser){state.authUser=u;applyUserProfile(u);state.offlineGrace=true;}else state.authError='Login service is unavailable.';}finally{AUTH_BUSY=false;state.authReady=true;if(!state.authUser&&state.screen!=='auth')state.screen='auth';render();if(state.offlineGrace)toast('Offline \u2014 you are still signed in on this device.');}}
 /* If the app started offline (signed in from the saved session) and the
    internet comes back, silently reconnect the REAL login session so the
@@ -7104,11 +7291,11 @@ function authMessage(){return state.authMode==='signup'?'Create your account to 
 SCREENS.auth=()=>`<header class="pagehead"><button class="back" onclick="go('profile')">${I.back(22)}</button><div><h2>${state.authMode==='signup'?'Create account':'Sign in'}</h2><div class="sub">Smart PLE learner account</div></div></header><div class="auth-card"><div class="auth-mark">📚</div><h3>${state.authMode==='signup'?'Join Smart PLE':'Welcome back'}</h3><p class="muted" style="margin-top:7px">${authMessage()}</p>${state.authMode==='signup'?`<label class="auth-label">Your name<input id="authName" class="auth-input" type="text" autocomplete="name" placeholder="Enter your name"></label><label class="auth-label">Your class<select id="authClass" class="auth-input"><option value="P4">Primary 4</option><option value="P5">Primary 5</option><option value="P6" selected>Primary 6</option><option value="P7">Primary 7</option></select></label><label class="auth-label">Phone (for payment unlock)<input id="authPhone" class="auth-input" type="tel" inputmode="tel" autocomplete="tel" placeholder="07XXXXXXXX"></label>`:''}${state.authError?`<div class="auth-error">${nEsc(state.authError)}</div>`:''}<label class="auth-label">Email<input id="authEmail" class="auth-input" type="email" autocomplete="email" placeholder="you@example.com"></label><label class="auth-label">Password<input id="authPassword" class="auth-input" type="password" autocomplete="${state.authMode==='signup'?'new-password':'current-password'}" placeholder="At least 6 characters"></label><button class="btn btn-primary" style="margin-top:14px" onclick="authSubmit()">${state.authMode==='signup'?'CREATE ACCOUNT':'SIGN IN'}</button><button class="auth-switch" onclick="state.authMode='${state.authMode==='signup'?'signin':'signup'}';state.authError='';render()">${state.authMode==='signup'?'Already have an account? Sign in':'Need an account? Create one'}</button>
 ${state.authMode==='signup'?'':'<button class="auth-switch" style="margin-top:8px" onclick="authReset()">Forgot your password?</button>'}</div>`;
 async function authSubmit(){if(state.authBusy)return;state.authBusy=true;try{state.authError='';const email=(document.getElementById('authEmail')||{}).value?.trim(),password=(document.getElementById('authPassword')||{}).value||'',fullName=(document.getElementById('authName')||{}).value?.trim()||'',classLevel=(document.getElementById('authClass')||{}).value||'P6',phoneRaw=(document.getElementById('authPhone')||{}).value||'',phone=phoneRaw?spNormPhone(phoneRaw):'';if(!email||!password||(state.authMode==='signup'&&!fullName)){state.authError=state.authMode==='signup'?'Enter your name, email and password.':'Enter your email and password.';render();return;}if(password.length<6){state.authError='Your password must be at least 6 characters.';render();return;}if(phone&&!/^\+256\d{9}$/.test(phone)){state.authError='Phone should look like 07XXXXXXXX.';render();return;}if(!supabaseClient){state.authError='Login service is not available. Check your internet connection and try again.';render();return;}const result=state.authMode==='signup'?await supabaseClient.auth.signUp({email,password,options:{data:{full_name:fullName,class_level:classLevel}}}):await supabaseClient.auth.signInWithPassword({email,password});if(result.error){const msg=String(result.error.message||'');state.authError=/rate limit|too many requests|email rate/i.test(msg)?'Supabase has temporarily limited email requests. Wait a while before trying again, or sign in if this account already exists.':msg;render();return;}if(state.authMode==='signup'&&result.data.user&&!result.data.session){state.authMode='signin';state.authError='Account created! Check your email to confirm it, then sign in below.';render();return;}if(phone){localStorage.setItem('sp_phone',phone);spLinkPhoneRow(phone,result.data.user&&result.data.user.id);}
-state.authUser=result.data.user||null;if(state.authUser)applyUserProfile(state.authUser);toast(state.authMode==='signup'?'Account created!':'Signed in successfully!');state.stack=[];go('home',false);}finally{state.authBusy=false;}}
+state.authUser=result.data.user||null;if(state.authUser){applyUserProfile(state.authUser);rcStart();}toast(state.authMode==='signup'?'Account created!':'Signed in successfully!');state.stack=[];go('home',false);}finally{state.authBusy=false;}}
 function authNewPassword(){openSheet(`<h3>🔒 Set a new password</h3><p class="muted" style="margin:8px 0">You followed a reset link. Choose a new password for your account.</p><label class="auth-label">New password<input id="newPw" class="auth-input" type="password" autocomplete="new-password" placeholder="At least 6 characters"></label><button class="btn btn-primary" style="margin-top:14px" onclick="authSaveNewPassword()">SAVE PASSWORD</button><button class="btn btn-ghost" style="margin-top:10px" onclick="closeSheet()">Not now</button>`);}
 async function authSaveNewPassword(){const pw=(document.getElementById('newPw')||{}).value||'';if(pw.length<6){toast('The password must be at least 6 characters.');return;}const {error}=await supabaseClient.auth.updateUser({password:pw});closeSheet();toast(error?'Could not save the new password — please use the reset link again.':'Password updated — you are signed in!');}
 async function authReset(){const email=(document.getElementById('authEmail')||{}).value?.trim();if(!email){state.authError='Type your email above first, then tap Forgot your password.';render();return;}if(!supabaseClient){state.authError='Password reset needs an internet connection.';render();return;}const {error}=await supabaseClient.auth.resetPasswordForEmail(email);state.authError=error?String(error.message||'Could not send the reset email right now — try again in a little while.'):'If that email has an account, a reset link is on its way. Check the inbox.';render();}
-async function authSignOut(){if(supabaseClient)await supabaseClient.auth.signOut();try{localStorage.removeItem(SUPABASE_CACHE_KEY);}catch(e){}state.authUser=null;state.offlineGrace=false;state.classLocked=false;state.stack=[];state.screen='auth';toast('You have signed out');render();}
+async function authSignOut(){rcReset();if(supabaseClient)await supabaseClient.auth.signOut();try{localStorage.removeItem(SUPABASE_CACHE_KEY);}catch(e){}state.authUser=null;state.offlineGrace=false;state.classLocked=false;state.stack=[];state.screen='auth';toast('You have signed out');render();}
 
 SCREENS.profile = () => `
   <header class="appbar">
@@ -7449,12 +7636,14 @@ function practiseFromNotes(){
 /* ============================================================
    SST PRACTICE ENGINE — mcq / true-false / typed / matching
    ============================================================ */
-function setClass(c){if(!checkClassAccess(c))return;state.klass=c;state.stack=[];go('practice',false);toast(`Class ${c} selected`);}
+function setClass(c){if(RC.klass&&c!==RC.klass){toast('Your teacher has set you to '+RC.klass);return;}if(!checkClassAccess(c))return;state.klass=c;state.stack=[];go('practice',false);toast(`Class ${c} selected`);}
 function setPSubject(sid){ state.psubject=sid; state.ptopic=null;
   if(sid==='MATH'){ state.mclass=state.mclass||state.klass; go('mathHome'); return; }
   render(); toast(SUBJ_META[sid].name+' selected'); }
 
 function startPractice(mode, topic){
+  if(rcScreenDenied('ptopics')){ toast('Your teacher has switched this off for now');
+    go(rcFallback('ptopics'),false); return; }
   if(!spPaid()){ spOpenPaywall(); return; }
   const cls = state.klass;
   let items = [], label = '';
