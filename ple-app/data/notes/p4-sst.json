@@ -3,7 +3,7 @@
  "subject": "SST",
  "subject_name": "Social Studies",
  "total": 6,
- "words": 8027,
+ "words": 10540,
  "topics": [
   {
    "id": "P4_SST_T01",
@@ -1309,7 +1309,7 @@
    "slug": "people-in-our-district",
    "periods": 15,
    "curriculum_pages": "26–31",
-   "words": 1419,
+   "words": 3932,
    "sections": [
     {
      "title": "About this topic",
@@ -1317,56 +1317,989 @@
       {
        "t": "p",
        "x": "*Curriculum reference: NCDC Primary Four Social Studies Syllabus, Term II, Topic 4 (15 periods, pages 26–31).*"
+      }
+     ]
+    },
+    {
+     "title": "1. PEOPLE IN OUR DISTRICT",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Who are the people in our district?**"
       },
       {
        "t": "p",
-       "x": "**How to use this topic.** The syllabus asks about the people of **your own district** — their origin, why they settled there and the work they do. You fill in the tribes, clans and jobs of your own district."
+       "x": "The people in our district are the different groups of people who live and work in the district."
       },
       {
        "t": "p",
-       "x": "**By the end of this topic you should be able to:**"
+       "x": "**What makes up the social environment?**"
+      },
+      {
+       "t": "p",
+       "x": "People and the things they make make up the social environment."
+      },
+      {
+       "t": "p",
+       "x": "**What are some things made by people in our district?**"
       },
       {
        "t": "ul",
        "items": [
-        "explain the origin of the people in your district",
-        "name the tribes and clans found in your district",
-        "tell a legend of one of those people",
-        "give the causes of immigration",
-        "give the factors that make people settle in a place",
-        "name the types of work people do and the problems they meet"
+        "Houses",
+        "Roads",
+        "Schools",
+        "Hospitals",
+        "Markets",
+        "Shops",
+        "Churches",
+        "Mosques",
+        "Factories"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Why do people live in a district?**"
+      },
+      {
+       "t": "p",
+       "x": "People live in a district to carry out different activities such as farming, fishing, trading, teaching and other kinds of work."
+      },
+      {
+       "t": "p",
+       "x": "**Why is it important to study the people in our district?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "To know the people who live in our district.",
+        "To know their origins.",
+        "To know their activities.",
+        "To understand their cultures.",
+        "To understand how they live and work.",
+        "To promote peaceful living."
        ]
       }
      ]
     },
     {
-     "title": "1. What is the social environment?",
+     "title": "2. ORIGIN OF THE PEOPLE IN OUR DISTRICT",
      "blocks": [
       {
        "t": "p",
-       "x": "The environment has two parts:"
+       "x": "**What is origin?**"
       },
       {
-       "t": "table",
-       "head": [
-        "Physical environment",
-        "Social environment"
-       ],
-       "rows": [
-        [
-         "The natural things — land, water, air, plants, animals",
-         "**People and the things people make** — homes, schools, roads, markets"
-        ]
+       "t": "p",
+       "x": "Origin is the place where a person or group of people came from."
+      },
+      {
+       "t": "p",
+       "x": "**What does the origin of people in a district mean?**"
+      },
+      {
+       "t": "p",
+       "x": "It means knowing where the people in the district came from."
+      },
+      {
+       "t": "p",
+       "x": "**What is a tribe?**"
+      },
+      {
+       "t": "p",
+       "x": "A tribe is a group of people who have a common culture, language and history."
+      },
+      {
+       "t": "p",
+       "x": "**What is a clan?**"
+      },
+      {
+       "t": "p",
+       "x": "A clan is a group of people who believe that they have a common ancestor."
+      },
+      {
+       "t": "p",
+       "x": "**What is immigration?**"
+      },
+      {
+       "t": "p",
+       "x": "Immigration is the movement of people into a place to live there."
+      },
+      {
+       "t": "p",
+       "x": "**What is emigration?**"
+      },
+      {
+       "t": "p",
+       "x": "Emigration is the movement of people out of a place to live somewhere else."
+      },
+      {
+       "t": "p",
+       "x": "**What are some tribes found in our district?**"
+      },
+      {
+       "t": "p",
+       "x": "The tribes found in a district depend on the particular district. Learners should know the major tribes found in their own district."
+      },
+      {
+       "t": "p",
+       "x": "**What languages are spoken by people in our district?**"
+      },
+      {
+       "t": "p",
+       "x": "People in a district may speak different languages depending on their tribes and communities."
+      },
+      {
+       "t": "p",
+       "x": "**How are clans related to tribes?**"
+      },
+      {
+       "t": "p",
+       "x": "Several clans may form a tribe."
+      },
+      {
+       "t": "p",
+       "x": "**Mention some traditional legends about the origin of people in Uganda.**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "The story of Kintu and Nambi in Buganda.",
+        "The story of Labong and Gipir in Luo-speaking areas.",
+        "The story of Mundu and Sera in Bugisu."
        ]
       },
       {
        "t": "p",
-       "x": "This topic is about the **social environment**: the people."
+       "x": "**Why do people move from one place to another?**"
+      },
+      {
+       "t": "p",
+       "x": "People move from one place to another for different reasons."
+      },
+      {
+       "t": "p",
+       "x": "**Give reasons why people move into our district.**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Looking for water.",
+        "Looking for food.",
+        "Looking for pasture.",
+        "Looking for fertile soils.",
+        "Looking for jobs.",
+        "Looking for better living conditions.",
+        "Looking for security.",
+        "Running away from conflicts.",
+        "Escaping drought.",
+        "Escaping epidemics."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Why do some people leave our district?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Looking for jobs.",
+        "Looking for fertile land.",
+        "Looking for food and water.",
+        "Looking for pasture.",
+        "Running away from conflicts.",
+        "Escaping drought.",
+        "Moving to places with better opportunities."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Why should we learn about the origin of people in our district?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "It helps us understand our history.",
+        "It helps us understand different cultures.",
+        "It helps us respect other people.",
+        "It promotes unity.",
+        "It helps us understand why different groups live in the district."
+       ]
       }
      ]
     },
     {
-     "title": "2. What is a tribe? What is a clan? What is a totem?",
+     "title": "3. SETTLEMENT OF PEOPLE IN OUR DISTRICT",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**What is settlement?**"
+      },
+      {
+       "t": "p",
+       "x": "Settlement is the place where people live."
+      },
+      {
+       "t": "p",
+       "x": "**What is settlement pattern?**"
+      },
+      {
+       "t": "p",
+       "x": "Settlement pattern is the way people are spread or arranged in an area."
+      },
+      {
+       "t": "p",
+       "x": "**Why are some places in the district more populated than others?**"
+      },
+      {
+       "t": "p",
+       "x": "Some places have more people because they have better conditions for living and working."
+      },
+      {
+       "t": "p",
+       "x": "**Mention factors that influence settlement patterns in our district.**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Fertile soils.",
+        "Enough and reliable rainfall.",
+        "Trade.",
+        "Jobs.",
+        "Availability of food.",
+        "Good security.",
+        "Availability of water.",
+        "Good roads.",
+        "Health services.",
+        "Education.",
+        "Other social services."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**How does fertile soil affect settlement?**"
+      },
+      {
+       "t": "p",
+       "x": "People are attracted to areas with fertile soils because they can grow crops well."
+      },
+      {
+       "t": "p",
+       "x": "**How does rainfall affect settlement?**"
+      },
+      {
+       "t": "p",
+       "x": "Areas with enough and reliable rainfall attract people because they support farming and provide water."
+      },
+      {
+       "t": "p",
+       "x": "**How do jobs affect settlement?**"
+      },
+      {
+       "t": "p",
+       "x": "People move to places where there are jobs so that they can earn money."
+      },
+      {
+       "t": "p",
+       "x": "**How does trade affect settlement?**"
+      },
+      {
+       "t": "p",
+       "x": "Trading centres attract people because people can buy and sell goods there."
+      },
+      {
+       "t": "p",
+       "x": "**How does security affect settlement?**"
+      },
+      {
+       "t": "p",
+       "x": "People prefer to live in places where they are safe and peaceful."
+      },
+      {
+       "t": "p",
+       "x": "**How do social services affect settlement?**"
+      },
+      {
+       "t": "p",
+       "x": "People are attracted to places with services such as schools, health centres, water and good roads."
+      },
+      {
+       "t": "p",
+       "x": "**Why do many people settle near roads?**"
+      },
+      {
+       "t": "p",
+       "x": "People settle near roads because roads make transport and communication easier."
+      },
+      {
+       "t": "p",
+       "x": "**Why do people settle near markets?**"
+      },
+      {
+       "t": "p",
+       "x": "People settle near markets because they can easily buy and sell goods."
+      },
+      {
+       "t": "p",
+       "x": "**What may happen when many people settle in one place?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "More houses are built.",
+        "More shops may be opened.",
+        "More schools may be built.",
+        "More health centres may be needed.",
+        "More roads and other services may be developed."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "4. TYPES OF WORK DONE BY PEOPLE IN OUR DISTRICT",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**What is work?**"
+      },
+      {
+       "t": "p",
+       "x": "Work is an activity done by a person to earn a living or meet needs."
+      },
+      {
+       "t": "p",
+       "x": "**What is an occupation?**"
+      },
+      {
+       "t": "p",
+       "x": "An occupation is the work a person does to earn a living."
+      },
+      {
+       "t": "p",
+       "x": "**Mention types of work done by people in our district.**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Farming",
+        "Fishing",
+        "Pottery",
+        "Brick laying",
+        "Craft work",
+        "Trading",
+        "Teaching",
+        "Office work"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**What is farming?**"
+      },
+      {
+       "t": "p",
+       "x": "Farming is the growing of crops and keeping of animals."
+      },
+      {
+       "t": "p",
+       "x": "**What is fishing?**"
+      },
+      {
+       "t": "p",
+       "x": "Fishing is the catching of fish for food or sale."
+      },
+      {
+       "t": "p",
+       "x": "**What is pottery?**"
+      },
+      {
+       "t": "p",
+       "x": "Pottery is the making of things from clay."
+      },
+      {
+       "t": "p",
+       "x": "**Mention things that can be made from clay.**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Pots",
+        "Plates",
+        "Cups",
+        "Cooking stoves",
+        "Other clay objects"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**What is brick laying?**"
+      },
+      {
+       "t": "p",
+       "x": "Brick laying is the building of structures using bricks."
+      },
+      {
+       "t": "p",
+       "x": "**What is craft work?**"
+      },
+      {
+       "t": "p",
+       "x": "Craft work is the making of useful or decorative things by hand."
+      },
+      {
+       "t": "p",
+       "x": "**Mention some crafts made by people in our district.**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Mats",
+        "Baskets",
+        "Pots",
+        "Carpets",
+        "Other woven items"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**What is trading?**"
+      },
+      {
+       "t": "p",
+       "x": "Trading is the buying and selling of goods and services."
+      },
+      {
+       "t": "p",
+       "x": "**What is teaching?**"
+      },
+      {
+       "t": "p",
+       "x": "Teaching is helping people to gain knowledge and skills."
+      },
+      {
+       "t": "p",
+       "x": "**What is office work?**"
+      },
+      {
+       "t": "p",
+       "x": "Office work is work carried out in an office, such as keeping records and serving people."
+      },
+      {
+       "t": "p",
+       "x": "**Why do people work?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "To earn money.",
+        "To get food.",
+        "To provide shelter.",
+        "To pay school fees.",
+        "To pay medical expenses.",
+        "To provide clothing.",
+        "To meet other needs."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "5. PROBLEMS FACED BY PEOPLE AT WORK",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "People face different problems while carrying out their work."
+      },
+      {
+       "t": "p",
+       "x": "**Mention problems faced by people while doing their work.**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Insecurity and wars.",
+        "Diseases of animals and birds.",
+        "Poor health.",
+        "Poor transport.",
+        "Poor roads.",
+        "Lack of knowledge and skills.",
+        "Weather changes.",
+        "Poverty.",
+        "Unstable prices of goods.",
+        "Thieves.",
+        "Laziness."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**How does insecurity affect people's work?**"
+      },
+      {
+       "t": "p",
+       "x": "Insecurity can make people lose property and prevent them from working freely."
+      },
+      {
+       "t": "p",
+       "x": "**How do animal diseases affect farmers?**"
+      },
+      {
+       "t": "p",
+       "x": "Animal diseases can cause animals to become sick or die, causing farmers to lose income."
+      },
+      {
+       "t": "p",
+       "x": "**How does poor health affect people's work?**"
+      },
+      {
+       "t": "p",
+       "x": "People who are sick may not be able to work well or work regularly."
+      },
+      {
+       "t": "p",
+       "x": "**How do poor roads affect people's work?**"
+      },
+      {
+       "t": "p",
+       "x": "Poor roads make it difficult and expensive to transport people and goods."
+      },
+      {
+       "t": "p",
+       "x": "**How does lack of knowledge and skills affect work?**"
+      },
+      {
+       "t": "p",
+       "x": "People may find it difficult to do some jobs properly when they lack the necessary knowledge and skills."
+      },
+      {
+       "t": "p",
+       "x": "**How does bad weather affect people's work?**"
+      },
+      {
+       "t": "p",
+       "x": "Bad weather can destroy crops, affect transport and make some work difficult."
+      },
+      {
+       "t": "p",
+       "x": "**How does poverty affect people's work?**"
+      },
+      {
+       "t": "p",
+       "x": "Poverty may prevent people from getting the tools and money needed to do their work."
+      },
+      {
+       "t": "p",
+       "x": "**How do thieves affect people's work?**"
+      },
+      {
+       "t": "p",
+       "x": "Thieves may steal people's crops, animals, money or other property."
+      },
+      {
+       "t": "p",
+       "x": "**How can some problems faced at work be reduced?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Improving roads.",
+        "Providing security.",
+        "Getting medical care.",
+        "Teaching people new skills.",
+        "Using better farming methods.",
+        "Providing better transport.",
+        "Protecting people's property.",
+        "Working hard."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "6. SOCIAL ACTIVITIES IN OUR DISTRICT",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**What are social activities?**"
+      },
+      {
+       "t": "p",
+       "x": "Social activities are activities in which people come together and interact with one another."
+      },
+      {
+       "t": "p",
+       "x": "**Mention social activities carried out in our district.**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Introduction ceremonies.",
+        "Marriages.",
+        "Weddings.",
+        "Naming ceremonies.",
+        "Circumcision.",
+        "Cultural celebrations.",
+        "Community activities."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**What is an introduction ceremony?**"
+      },
+      {
+       "t": "p",
+       "x": "An introduction ceremony is a ceremony in which a person introduces his or her future spouse to the family."
+      },
+      {
+       "t": "p",
+       "x": "**What is a marriage?**"
+      },
+      {
+       "t": "p",
+       "x": "Marriage is the union of a man and a woman as husband and wife according to the customs, religion or laws of their society."
+      },
+      {
+       "t": "p",
+       "x": "**What is a wedding?**"
+      },
+      {
+       "t": "p",
+       "x": "A wedding is a ceremony held to celebrate a marriage."
+      },
+      {
+       "t": "p",
+       "x": "**What is a naming ceremony?**"
+      },
+      {
+       "t": "p",
+       "x": "A naming ceremony is a ceremony held when a child is given a name."
+      },
+      {
+       "t": "p",
+       "x": "**What is circumcision?**"
+      },
+      {
+       "t": "p",
+       "x": "Circumcision is the removal of the foreskin from the penis."
+      },
+      {
+       "t": "p",
+       "x": "**Why do people take part in social activities?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "To bring people together.",
+        "To celebrate important events.",
+        "To strengthen family relationships.",
+        "To preserve culture.",
+        "To promote cooperation.",
+        "To teach acceptable behaviour."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "7. IMPORTANCE OF SOCIAL ACTIVITIES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Why are social activities important?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "They keep families together.",
+        "They promote culture.",
+        "They unite people.",
+        "They promote acceptable behaviour.",
+        "They promote working together.",
+        "They strengthen family and clan ties.",
+        "They help people share ideas.",
+        "They help people support one another."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**How do social activities promote culture?**"
+      },
+      {
+       "t": "p",
+       "x": "They help people pass on their language, food, dressing, customs and traditions to younger people."
+      },
+      {
+       "t": "p",
+       "x": "**How do social activities unite people?**"
+      },
+      {
+       "t": "p",
+       "x": "They bring people together to celebrate, work and share experiences."
+      },
+      {
+       "t": "p",
+       "x": "**How do social activities strengthen families?**"
+      },
+      {
+       "t": "p",
+       "x": "They bring family members together and help them support one another."
+      },
+      {
+       "t": "p",
+       "x": "**How do social activities promote acceptable behaviour?**"
+      },
+      {
+       "t": "p",
+       "x": "They teach people how to behave well and respect others in society."
+      }
+     ]
+    },
+    {
+     "title": "8. PEOPLE'S WAY OF LIFE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**What is a way of life?**"
+      },
+      {
+       "t": "p",
+       "x": "A way of life is how people live and carry out their daily activities."
+      },
+      {
+       "t": "p",
+       "x": "**Mention factors that contribute to people's way of life in our district.**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Work.",
+        "Availability of food.",
+        "Security.",
+        "Education.",
+        "Diseases.",
+        "Unemployment.",
+        "Poverty.",
+        "Trade.",
+        "Transport.",
+        "Communication."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**How does work affect people's way of life?**"
+      },
+      {
+       "t": "p",
+       "x": "Work gives people money to provide food, shelter, education, clothing and other needs."
+      },
+      {
+       "t": "p",
+       "x": "**How does food affect people's way of life?**"
+      },
+      {
+       "t": "p",
+       "x": "Availability of food helps people live healthy and active lives."
+      },
+      {
+       "t": "p",
+       "x": "**How does security affect people's way of life?**"
+      },
+      {
+       "t": "p",
+       "x": "Good security allows people to live, work and travel peacefully."
+      },
+      {
+       "t": "p",
+       "x": "**How does education affect people's way of life?**"
+      },
+      {
+       "t": "p",
+       "x": "Education gives people knowledge and skills that can help them get jobs and make better decisions."
+      },
+      {
+       "t": "p",
+       "x": "**How do diseases affect people's way of life?**"
+      },
+      {
+       "t": "p",
+       "x": "Diseases make people sick, reduce their ability to work and may cause them to spend money on treatment."
+      },
+      {
+       "t": "p",
+       "x": "**How does unemployment affect people's way of life?**"
+      },
+      {
+       "t": "p",
+       "x": "Unemployment makes it difficult for people to earn money to meet their needs."
+      },
+      {
+       "t": "p",
+       "x": "**How does poverty affect people's way of life?**"
+      },
+      {
+       "t": "p",
+       "x": "Poverty makes it difficult for people to get basic needs such as food, shelter, education and medical care."
+      },
+      {
+       "t": "p",
+       "x": "**How does trade affect people's way of life?**"
+      },
+      {
+       "t": "p",
+       "x": "Trade provides people with goods, services and opportunities to earn money."
+      },
+      {
+       "t": "p",
+       "x": "**How does transport affect people's way of life?**"
+      },
+      {
+       "t": "p",
+       "x": "Good transport makes it easier for people and goods to move from one place to another."
+      },
+      {
+       "t": "p",
+       "x": "**How does communication affect people's way of life?**"
+      },
+      {
+       "t": "p",
+       "x": "Communication helps people share information and keep in touch with one another."
+      }
+     ]
+    },
+    {
+     "title": "9. QUALITY OF LIFE OF PEOPLE IN OUR DISTRICT",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**What is quality of life?**"
+      },
+      {
+       "t": "p",
+       "x": "Quality of life is the general well-being of people."
+      },
+      {
+       "t": "p",
+       "x": "**What things can improve the quality of life of people in our district?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Good education.",
+        "Good health services.",
+        "Enough food.",
+        "Good housing.",
+        "Employment.",
+        "Good roads.",
+        "Clean water.",
+        "Security.",
+        "Good communication.",
+        "Peace."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**How can education improve people's quality of life?**"
+      },
+      {
+       "t": "p",
+       "x": "Education gives people knowledge and skills for getting jobs and solving problems."
+      },
+      {
+       "t": "p",
+       "x": "**How can health services improve people's quality of life?**"
+      },
+      {
+       "t": "p",
+       "x": "Health services help prevent and treat diseases so that people can remain healthy."
+      },
+      {
+       "t": "p",
+       "x": "**How can good roads improve people's quality of life?**"
+      },
+      {
+       "t": "p",
+       "x": "Good roads make transport easier and help people take goods to markets and reach services."
+      },
+      {
+       "t": "p",
+       "x": "**How can peace improve people's quality of life?**"
+      },
+      {
+       "t": "p",
+       "x": "Peace allows people to live, work, study and develop their communities safely."
+      }
+     ]
+    },
+    {
+     "title": "10. LIVING TOGETHER IN OUR DISTRICT",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Why should people in our district live together peacefully?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "To promote unity.",
+        "To promote development.",
+        "To help one another.",
+        "To avoid conflicts.",
+        "To create a safe community."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**How can people live peacefully with one another?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Respecting one another.",
+        "Helping one another.",
+        "Cooperating.",
+        "Sharing.",
+        "Obeying laws.",
+        "Solving disagreements peacefully.",
+        "Respecting other people's cultures."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Why should we respect people from different tribes?**"
+      },
+      {
+       "t": "p",
+       "x": "We should respect them because all people are important and have a right to live peacefully with others."
+      },
+      {
+       "t": "p",
+       "x": "**Why should we respect other people's cultures?**"
+      },
+      {
+       "t": "p",
+       "x": "We should respect other people's cultures to promote peace, unity and good relationships."
+      },
+      {
+       "t": "p",
+       "x": "**What is cooperation?**"
+      },
+      {
+       "t": "p",
+       "x": "Cooperation is working together to achieve a common goal."
+      },
+      {
+       "t": "p",
+       "x": "**Why is cooperation important in our district?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "It makes work easier.",
+        "It promotes unity.",
+        "It helps people solve problems.",
+        "It promotes development.",
+        "It strengthens relationships."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
      "blocks": [
       {
        "t": "table",
@@ -1376,364 +2309,126 @@
        ],
        "rows": [
         [
+         "**District**",
+         "An administrative area of Uganda."
+        ],
+        [
+         "**Origin**",
+         "The place where a person or group of people came from."
+        ],
+        [
          "**Tribe**",
-         "A large group of people who share one language, one culture and one origin"
+         "A group of people who have a common culture, language and history."
         ],
         [
          "**Clan**",
-         "A smaller group inside a tribe, whose members believe they came from one ancestor"
-        ],
-        [
-         "**Ancestor**",
-         "A person from whom a family or clan came long ago"
-        ],
-        [
-         "**Totem**",
-         "An animal or plant that a clan respects and does not eat"
-        ],
-        [
-         "**Culture**",
-         "The whole way of life of a group of people"
-        ]
-       ]
-      },
-      {
-       "t": "p",
-       "x": "A **tribe is made up of many clans**. Each clan usually has its own **totem**."
-      },
-      {
-       "t": "p",
-       "x": "**Fill this in for your own district:**"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Question",
-        "My answer"
-       ],
-       "rows": [
-        [
-         "The main tribe or tribes in my district",
-         "*(your answer)*"
-        ],
-        [
-         "The language they speak",
-         "*(your answer)*"
-        ],
-        [
-         "My clan",
-         "*(your answer)*"
-        ],
-        [
-         "My clan's totem",
-         "*(your answer)*"
-        ]
-       ]
-      }
-     ]
-    },
-    {
-     "title": "3. What is a legend? Name the three legends in the syllabus.",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "A **legend** is an **old story handed down by word of mouth**, telling how a group of people began. Legends are told by elders. They are not history that can be proved, but they teach a people about themselves."
-      },
-      {
-       "t": "table",
-       "head": [
-        "Legend",
-        "People it belongs to"
-       ],
-       "rows": [
-        [
-         "The story of **Mundu and Sera**",
-         "The Bagisu, in Bugisu"
-        ],
-        [
-         "The story of **Labong and Gipir**",
-         "The Luo-speaking people"
-        ],
-        [
-         "The story of **Kintu and Nambi**",
-         "The Baganda"
-        ]
-       ]
-      },
-      {
-       "t": "note",
-       "x": "*The syllabus names these three legends but does not print the stories. Ask an elder, your teacher or the school library to tell you the one that belongs to your own people, and write it in your own words.*"
-      }
-     ]
-    },
-    {
-     "title": "4. What is migration? What do immigration and emigration mean?",
-     "blocks": [
-      {
-       "t": "table",
-       "head": [
-        "Word",
-        "Meaning"
-       ],
-       "rows": [
-        [
-         "**Migration**",
-         "The movement of people from one place to another to settle"
+         "A group of people who believe that they have a common ancestor."
         ],
         [
          "**Immigration**",
-         "Moving **into** a place"
+         "The movement of people into a place to live there."
         ],
         [
          "**Emigration**",
-         "Moving **out of** a place"
+         "The movement of people out of a place to live somewhere else."
         ],
         [
-         "**Immigrant**",
-         "A person who moves into a place"
+         "**Settlement**",
+         "The place where people live."
         ],
         [
-         "**Emigrant**",
-         "A person who moves out of a place"
-        ]
-       ]
-      },
-      {
-       "t": "note",
-       "x": "**A way to remember: I**mmigration = coming **I**n."
-      }
-     ]
-    },
-    {
-     "title": "5. What causes migration?",
-     "blocks": [
-      {
-       "t": "table",
-       "head": [
-        "Cause",
-        "Why people move"
-       ],
-       "rows": [
-        [
-         "**Search for water, food and pasture**",
-         "To find enough water and grass for animals and food for the family"
+         "**Settlement pattern**",
+         "The way people are spread or arranged in an area."
         ],
         [
-         "**Looking for jobs**",
-         "To find work and earn money"
+         "**Work**",
+         "An activity done by a person to earn a living or meet needs."
         ],
         [
-         "**Epidemics**",
-         "To escape a disease that is killing many people"
-        ],
-        [
-         "**Droughts**",
-         "To escape a long time without rain"
-        ],
-        [
-         "**Running away from conflicts**",
-         "To escape war and fighting"
-        ],
-        [
-         "**Search for fertile soils**",
-         "To find good soil for growing crops"
-        ]
-       ]
-      }
-     ]
-    },
-    {
-     "title": "6. What is a drought? What is an epidemic?",
-     "blocks": [
-      {
-       "t": "table",
-       "head": [
-        "Word",
-        "Meaning"
-       ],
-       "rows": [
-        [
-         "**Drought**",
-         "A long time without rain"
-        ],
-        [
-         "**Epidemic**",
-         "A disease that attacks very many people at once"
-        ]
-       ]
-      }
-     ]
-    },
-    {
-     "title": "7. What is a settlement pattern? What makes people settle in a place?",
-     "blocks": [
-      {
-       "t": "p",
-       "x": "A **settlement pattern** is **the way people's homes are arranged in a place** — whether they are close together or far apart."
-      },
-      {
-       "t": "table",
-       "head": [
-        "Factor",
-        "Why it attracts people"
-       ],
-       "rows": [
-        [
-         "**Fertile soil**",
-         "Crops grow well, so there is food"
-        ],
-        [
-         "**Enough and reliable rainfall**",
-         "Crops and animals do well"
-        ],
-        [
-         "**Trade**",
-         "People can buy and sell and earn money"
-        ],
-        [
-         "**Jobs**",
-         "There is work to do"
-        ],
-        [
-         "**Enough food**",
-         "Nobody goes hungry"
-        ],
-        [
-         "**Good security and peace**",
-         "People feel safe"
-        ],
-        [
-         "**Social services**",
-         "Schools, water, good roads and health care are near"
-        ]
-       ]
-      },
-      {
-       "t": "p",
-       "x": "**Why some places have few people**"
-      },
-      {
-       "t": "p",
-       "x": "Poor or rocky soil · too little rain · steep slopes · thick forests · big swamps · insecurity · pests and diseases · no roads, schools or water."
-      }
-     ]
-    },
-    {
-     "title": "8. What types of work do people do? Why do people work?",
-     "blocks": [
-      {
-       "t": "table",
-       "head": [
-        "Work",
-        "What the person does"
-       ],
-       "rows": [
-        [
-         "**Fishing**",
-         "Catches fish from lakes, rivers or ponds"
+         "**Occupation**",
+         "The work a person does to earn a living."
         ],
         [
          "**Farming**",
-         "Grows crops and keeps animals"
+         "The growing of crops and keeping of animals."
+        ],
+        [
+         "**Fishing**",
+         "The catching of fish for food or sale."
         ],
         [
          "**Pottery**",
-         "Makes pots and jars from clay"
+         "The making of things from clay."
         ],
         [
          "**Brick laying**",
-         "Makes bricks and builds with them"
+         "The building of structures using bricks."
         ],
         [
-         "**Craft working**",
-         "Makes mats, baskets, carpets and carvings"
+         "**Craft work**",
+         "The making of useful or decorative things by hand."
         ],
         [
          "**Trading**",
-         "Buys and sells goods"
+         "The buying and selling of goods and services."
         ],
         [
-         "**Teaching**",
-         "Teaches learners in a school"
+         "**Social activities**",
+         "Activities in which people come together and interact with one another."
         ],
         [
-         "**Office work**",
-         "Works in an office, writing and keeping records"
+         "**Marriage**",
+         "The union of a man and a woman as husband and wife according to the customs, religion or laws of their society."
+        ],
+        [
+         "**Wedding**",
+         "A ceremony held to celebrate a marriage."
+        ],
+        [
+         "**Naming ceremony**",
+         "A ceremony held when a child is given a name."
+        ],
+        [
+         "**Way of life**",
+         "How people live and carry out their daily activities."
+        ],
+        [
+         "**Quality of life**",
+         "The general well-being of people."
+        ],
+        [
+         "**Cooperation**",
+         "Working together to achieve a common goal."
         ]
-       ]
-      },
-      {
-       "t": "p",
-       "x": "An **occupation** is the work a person does to earn a living."
-      },
-      {
-       "t": "p",
-       "x": "**Why people work:** to get food, to get money, to pay school fees, to buy clothes and medicine, to build a home, and to serve others."
-      }
-     ]
-    },
-    {
-     "title": "9. What problems do people face in their work?",
-     "blocks": [
-      {
-       "t": "table",
-       "head": [
-        "Problem",
-        "What it does"
-       ],
-       "rows": [
-        [
-         "**Insecurity and wars**",
-         "People cannot work in safety and property is destroyed"
-        ],
-        [
-         "**Diseases of animals and birds**",
-         "Animals die, so the farmer loses money"
-        ],
-        [
-         "**Poor people's health**",
-         "A sick person cannot work"
-        ],
-        [
-         "**Poor transport**",
-         "Goods cannot reach the market, and they go bad"
-        ]
-       ]
-      },
-      {
-       "t": "p",
-       "x": "**Other problems you should also know:** bad weather · poor prices · pests and crop diseases · lack of money to start · lack of skills · too few tools · theft."
-      },
-      {
-       "t": "p",
-       "x": "**Suggested solutions**"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "Keep **peace and security** and report wrong acts",
-        "**Vaccinate** and treat animals; spray against pests",
-        "Go for treatment early and keep the home clean",
-        "Repair the **roads** and use better transport",
-        "**Save** money and join a savings group",
-        "Learn **skills** at a technical school",
-        "Store crops well and sell when the price is fair"
        ]
       }
      ]
     },
     {
-     "title": "COMMON MISTAKES TO AVOID",
+     "title": "IMPORTANT FACTS TO REMEMBER",
      "blocks": [
       {
        "t": "ul",
        "items": [
-        "Mixing up **immigration** (in) with **emigration** (out).",
-        "Saying a clan is bigger than a tribe — it is **smaller**.",
-        "Treating a **legend** as proved history.",
-        "Giving a **problem** when the question asks for a **solution**.",
-        "Naming a tribe that is not found in your own district.",
-        "Writing \"people\" as an answer for the type of work — name the actual work."
+        "People and the things they make form the social environment.",
+        "People in a district may come from different tribes and clans.",
+        "Different tribes may speak different languages.",
+        "Several clans may form a tribe.",
+        "People move from one place to another for different reasons.",
+        "People may move in search of water, food, pasture, jobs and fertile soils.",
+        "People may also move because of drought, diseases and conflicts.",
+        "Fertile soils attract people because they support farming.",
+        "Jobs and trade attract people to places.",
+        "Good roads, schools, health centres and water also attract people.",
+        "People do different types of work in the district.",
+        "Farming, fishing, pottery, brick laying, craft work, trading, teaching and office work are examples of work.",
+        "People face many problems while doing their work.",
+        "Social activities include introduction ceremonies, marriages, weddings, naming ceremonies and circumcision.",
+        "Social activities promote culture and unite people.",
+        "People's way of life is affected by work, food, security, education, diseases, unemployment and poverty.",
+        "Good transport and communication improve people's lives.",
+        "Education and health services improve people's quality of life.",
+        "People should respect one another and live peacefully."
        ]
       }
      ]
@@ -1744,26 +2439,46 @@
       {
        "t": "ol",
        "items": [
-        "What is the social environment?",
-        "What is a tribe?",
-        "What is a clan?",
-        "Which is bigger, a tribe or a clan?",
-        "What is a totem?",
-        "What is a legend?",
-        "Name the legend told among the Baganda.",
-        "Name the legend told in Bugisu.",
-        "Name the legend told among the Luo-speaking people.",
-        "What is migration?",
-        "What is the difference between immigration and emigration?",
-        "Give any four causes of migration.",
-        "What is a drought?",
-        "What is a settlement pattern?",
-        "Give any five factors that make people settle in a place.",
-        "Give any two reasons why some places have very few people.",
-        "Name any six types of work done by people in a district.",
-        "Give any three problems people face as they do their work.",
-        "Suggest one solution to poor transport.",
-        "Name the main tribe found in your own district."
+        "Give the meaning of: origin.",
+        "Give the meaning of: tribe.",
+        "Give the meaning of: clan.",
+        "Give the meaning of: immigration.",
+        "Give the meaning of: emigration.",
+        "Give the meaning of: settlement.",
+        "Give the meaning of: settlement pattern.",
+        "Give the meaning of: occupation.",
+        "Give the meaning of: pottery.",
+        "Give the meaning of: craft work.",
+        "Give the meaning of: trading.",
+        "Give the meaning of: social activities.",
+        "Give the meaning of: way of life.",
+        "Give the meaning of: quality of life.",
+        "Give the meaning of: cooperation.",
+        "Who are the people in our district?",
+        "What makes up the social environment?",
+        "Mention four things made by people in our district.",
+        "Mention three traditional legends about the origin of people in Uganda.",
+        "Give six reasons why people move from one place to another.",
+        "Mention six factors that influence settlement patterns.",
+        "Why do people settle in areas with fertile soils?",
+        "Why do jobs attract people to an area?",
+        "Why do people settle in peaceful areas?",
+        "Mention eight types of work done by people in our district.",
+        "Why do people work?",
+        "Mention five problems faced by people while doing their work.",
+        "How do poor roads affect people's work?",
+        "How do animal diseases affect farmers?",
+        "Mention five social activities carried out in our district.",
+        "What is the importance of social activities?",
+        "How do social activities promote culture?",
+        "How do social activities unite people?",
+        "Mention ten factors that contribute to people's way of life.",
+        "How does education affect people's way of life?",
+        "How do diseases affect people's way of life?",
+        "How does unemployment affect people's way of life?",
+        "Mention five things that improve people's quality of life.",
+        "Why should people live peacefully together?",
+        "Give five ways of promoting peace in our district."
        ],
        "start": 1
       }
@@ -1775,28 +2490,268 @@
       {
        "t": "ol",
        "items": [
-        "**People and the things that people make**",
-        "**A large group of people who share one language, one culture and one origin**",
-        "**A smaller group inside a tribe whose members believe they came from one ancestor**",
-        "A **tribe**",
-        "**An animal or plant that a clan respects and does not eat**",
-        "**An old story handed down by word of mouth**, telling how a people began",
-        "**Kintu and Nambi**",
-        "**Mundu and Sera**",
-        "**Labong and Gipir**",
-        "**The movement of people from one place to another to settle**",
-        "**Immigration** is moving **into** a place; **emigration** is moving **out of** a place.",
-        "Any four of **search for water, food and pasture; looking for jobs; epidemics; droughts; running away from conflicts; search for fertile soils**",
-        "**A long time without rain**",
-        "**The way people's homes are arranged in a place**",
-        "Any five of **fertile soil, enough and reliable rainfall, trade, jobs, enough food, good security and peace, social services**",
-        "Any two of **poor soil, little rain, steep slopes, thick forests, big swamps, insecurity, pests and diseases, no roads or schools or water**",
-        "Any six of **fishing, farming, pottery, brick laying, craft working, trading, teaching, office work**",
-        "Any three of **insecurity and wars, diseases of animals and birds, poor health, poor transport, bad weather, poor prices, lack of money**",
-        "**Repair the roads** (or use better vehicles, or build bridges)",
-        "*(Your own answer — the tribe really found in your district.)*"
+        "**Origin:** The place where a person or group of people came from.",
+        "**Tribe:** A group of people who have a common culture, language and history.",
+        "**Clan:** A group of people who believe that they have a common ancestor.",
+        "**Immigration:** The movement of people into a place to live there.",
+        "**Emigration:** The movement of people out of a place to live somewhere else.",
+        "**Settlement:** The place where people live.",
+        "**Settlement pattern:** The way people are spread or arranged in an area.",
+        "**Occupation:** The work a person does to earn a living.",
+        "**Pottery:** The making of things from clay.",
+        "**Craft work:** The making of useful or decorative things by hand.",
+        "**Trading:** The buying and selling of goods and services.",
+        "**Social activities:** Activities in which people come together and interact with one another.",
+        "**Way of life:** How people live and carry out their daily activities.",
+        "**Quality of life:** The general well-being of people.",
+        "**Cooperation:** Working together to achieve a common goal.",
+        "The people in our district are the different groups of people who live and work in the district.",
+        "People and the things they make form the social environment.",
+        "Houses, roads, schools and markets.",
+        "Kintu and Nambi, Labong and Gipir, and Mundu and Sera.",
+        "People move to look for water, food, pasture, jobs, fertile soils and security.",
+        "Fertile soils, reliable rainfall, trade, jobs, food, security, water, roads, education and health services.",
+        "People settle in areas with fertile soils because they can grow crops well.",
+        "Jobs give people opportunities to earn money.",
+        "Peaceful areas are safer places for people to live and work.",
+        "Farming, fishing, pottery, brick laying, craft work, trading, teaching and office work.",
+        "People work to earn money and meet their needs.",
+        "Insecurity, diseases, poor roads, poor health and poverty.",
+        "Poor roads make it difficult and expensive to transport people and goods.",
+        "Animal diseases can make animals sick or die, causing farmers to lose income.",
+        "Introduction ceremonies, marriages, weddings, naming ceremonies and circumcision.",
+        "Social activities keep families together, promote culture, unite people, promote acceptable behaviour and encourage people to work together.",
+        "They help people pass on their language, food, dressing, customs and traditions.",
+        "They bring people together to celebrate, work and share experiences.",
+        "Work, food, security, education, diseases, unemployment, poverty, trade, transport and communication.",
+        "Education gives people knowledge and skills for getting jobs and solving problems.",
+        "Diseases make people sick, reduce their ability to work and may cause them to spend money on treatment.",
+        "Unemployment makes it difficult for people to earn money to meet their needs.",
+        "Good education, health services, enough food, employment and good roads.",
+        "To promote unity, development, cooperation and security.",
+        "Respecting one another, helping one another, cooperating, obeying laws and solving disagreements peacefully."
        ],
        "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.4 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Origin of people"
+      },
+      {
+       "t": "p",
+       "x": "People in our district may come from different:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Tribes",
+        "Clans",
+        "Places"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "Reasons why people move:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Search for water",
+        "Search for food",
+        "Search for pasture",
+        "Search for jobs",
+        "Search for fertile soils",
+        "Security",
+        "Drought",
+        "Diseases",
+        "Conflicts"
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Settlement"
+      },
+      {
+       "t": "p",
+       "x": "**Settlement →** The place where people live."
+      },
+      {
+       "t": "p",
+       "x": "Factors affecting settlement:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Fertile soils",
+        "Rainfall",
+        "Trade",
+        "Jobs",
+        "Food",
+        "Security",
+        "Water",
+        "Schools",
+        "Health services",
+        "Roads"
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Types of work"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "**Farming →** Growing crops and keeping animals.",
+        "**Fishing →** Catching fish.",
+        "**Pottery →** Making things from clay.",
+        "**Brick laying →** Building structures using bricks.",
+        "**Craft work →** Making useful or decorative things by hand.",
+        "**Trading →** Buying and selling goods and services.",
+        "**Teaching →** Helping people gain knowledge and skills.",
+        "**Office work →** Work carried out in an office."
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Problems people face at work"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Insecurity",
+        "Diseases",
+        "Poor health",
+        "Poor roads",
+        "Poor transport",
+        "Lack of skills",
+        "Weather changes",
+        "Poverty",
+        "Unstable prices",
+        "Thieves"
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Social activities"
+      },
+      {
+       "t": "p",
+       "x": "Examples:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Introduction ceremonies",
+        "Marriages",
+        "Weddings",
+        "Naming ceremonies",
+        "Circumcision"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "Importance of social activities:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Keep families together",
+        "Promote culture",
+        "Unite people",
+        "Promote good behaviour",
+        "Encourage cooperation",
+        "Strengthen family and clan ties"
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "People's way of life"
+      },
+      {
+       "t": "p",
+       "x": "Factors affecting people's way of life include:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Work",
+        "Food",
+        "Security",
+        "Education",
+        "Diseases",
+        "Unemployment",
+        "Poverty",
+        "Trade",
+        "Transport",
+        "Communication"
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Final P.4 reminder"
+      },
+      {
+       "t": "p",
+       "x": "**People in our district are different groups of people who live and work in the district.**"
+      },
+      {
+       "t": "p",
+       "x": "They may have different **tribes, clans, languages, cultures and occupations**, but they should **respect one another, cooperate and live peacefully**."
+      },
+      {
+       "t": "p",
+       "x": "A good community has people who **work, help one another, respect their culture and improve the quality of life of everyone.**"
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "An administrative area of Uganda → a **district**.",
+        "The place where a person or group of people came from → their **origin**.",
+        "A group of people who have a common culture, language and history → a **tribe**.",
+        "A group of people who believe that they have a common ancestor → a **clan**.",
+        "The movement of people into a place to live there → **immigration**.",
+        "The movement of people out of a place to live somewhere else → **emigration**.",
+        "The place where people live → a **settlement**.",
+        "The way people are spread or arranged in an area → the **settlement pattern**.",
+        "An activity done by a person to earn a living or meet needs → **work**.",
+        "The work a person does to earn a living → an **occupation**.",
+        "Growing crops and keeping animals → **farming**.",
+        "Catching fish for food or sale → **fishing**.",
+        "Making things from clay → **pottery**.",
+        "Building structures using bricks → **brick laying**.",
+        "Making useful or decorative things by hand → **craft work**.",
+        "Buying and selling goods and services → **trading**.",
+        "Helping people gain knowledge and skills → **teaching**.",
+        "Work carried out in an office → **office work**.",
+        "Activities in which people come together and interact with one another → **social activities**.",
+        "How people live and carry out their daily activities → their **way of life**.",
+        "The general well-being of people → their **quality of life**.",
+        "Working together to achieve a common goal → **cooperation**.",
+        "Three legends about the origin of people in Uganda → **Kintu and Nambi**, **Labong and Gipir**, **Mundu and Sera**.",
+        "Several clans may form → a **tribe**.",
+        "Why fertile soils attract people → they **support farming**.",
+        "Why jobs and trade attract people → they give people **opportunities to earn money**.",
+        "Why people settle near roads → roads make **transport and communication easier**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "A NOTE ON SOURCES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The study content of this topic — the questions and answers, the key definitions, the important facts and the revision questions with their answers — was provided by the app owner for the P.4 Social Studies theme *Living Together in Our District*. The topic title, its position in the scheme of work and the period allocation follow the official **NCDC Primary Four Social Studies Syllabus**, Term II, Topic 4 (`curriculum/p4-topics.md`). No external publisher's material has been reproduced here."
       }
      ]
     }
