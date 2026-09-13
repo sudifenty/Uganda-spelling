@@ -36,7 +36,8 @@ import json, glob, os, random, re, sys
 SRC = "data/notes"
 OUT = "data/practice"
 TARGET = 100          # minimum questions per class+subject
-CAP = 150             # don't balloon the file
+CAP = 250             # raised from 150: P.4 SST grew to 7 topics and the old cap was
+                      # silently taking questions away from the smaller topics
 # these must match the labels the app filters on in SUBJ_META, exactly
 SUBJ_NAME = {"SST": "SST", "MATH": "Mathematics",
              "SCI": "Science", "ENG": "English"}
@@ -291,6 +292,12 @@ def pick_distractors(rng, correct, pool, topic_no, n=3):
 
 
 def make(rng, cls, subj, kind, tno, topic, stem, correct, pool, seq, sec=None):
+    # A stem a learner cannot read as a question is worse than no question at
+    # all. validate_notes_practice rejects anything under three words, so never
+    # emit one — a bare term like "AU" used to slip through whenever the CAP
+    # happened to cut it off before validation ever saw it.
+    if len(str(stem).split()) < 3:
+        return None
     ds = pick_distractors(rng, correct, pool, tno)
     if not ds:
         return None
