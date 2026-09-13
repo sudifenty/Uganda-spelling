@@ -2289,14 +2289,29 @@ async function sxSubmit(auto){
   const s=state.sx; if(!s||s.done) return;
   s.done=true; if(state.sxTimer) clearInterval(state.sxTimer);
   let got=0,total=0;
+  /* A multiple-choice answer is only a letter ("A"), and the paper may be
+     edited long after this run — so the WORDS the learner chose are recorded
+     with the answer. That is what the teacher wants to read, and it can never
+     be reconstructed wrongly later. */
+  const optText=(q,letter)=>{
+    const L=String(letter==null?'':letter).trim().toUpperCase();
+    if(!/^[A-D]$/.test(L)||!Array.isArray(q.options))return '';
+    const o=q.options[L.charCodeAt(0)-65];
+    return o?L+'. '+o:'';
+  };
   s.detail=s.qs.map((q,i)=>{
     total+=q.marks;
     const a=s.ans[i];
+    const given=a==null?'':String(a);
     const ok=q.kind==='mcq'
-      ? String(a==null?'':a).trim().toUpperCase()===String(q.answer).trim().toUpperCase()
+      ? given.trim().toUpperCase()===String(q.answer).trim().toUpperCase()
       : null;                                   /* short answers: teacher marks */
     if(ok) got+=q.marks;
-    return {q:q.text,kind:q.kind,given:a==null?'':String(a),answer:q.answer,ok:ok,marks:q.marks};
+    return {q:q.text,kind:q.kind,given:given,
+            given_text:optText(q,given)||given,
+            answer:q.answer,
+            answer_text:optText(q,q.answer)||String(q.answer==null?'':q.answer),
+            ok:ok,marks:q.marks};
   });
   const marked=s.detail.filter(d=>d.ok!==null);
   const scored=marked.reduce((a,d)=>a+d.marks,0);
@@ -2308,16 +2323,21 @@ async function sxSubmit(auto){
   try{ const d=JSON.parse(localStorage.getItem(RC_KEY)||'null');
     if(d){ d.examDone=true; d.examStatus='completed'; localStorage.setItem(RC_KEY,JSON.stringify(d)); } }catch(e){}
   render();
+  /* The answers are the only copy the teacher will ever see of what this
+     learner wrote, so they are queued FIRST — with or without a connection.
+     Only the assignment row needs the network. */
+  try{
+    trackActivity('exam_submitted',{exam_id:RC.examId,
+      title:(RC.exam&&RC.exam.title)||'',score:s.score,auto:!!auto,answers:s.detail},true);
+    activityFlush();
+  }catch(e){}
   try{
     if(supabaseClient&&state.authUser){
       await supabaseClient.from('smartple_exam_assignments')
         .update({status:'completed',score:s.score})
         .eq('user_id',state.authUser.id).eq('exam_id',RC.examId);
-      trackActivity('exam_submitted',{exam_id:RC.examId,
-        title:(RC.exam&&RC.exam.title)||'',score:s.score,auto:!!auto,answers:s.detail});
-      activityFlush();
     }
-  }catch(e){ /* offline: the answers stay on the device, nothing is lost */ }
+  }catch(e){ /* offline: the words are safe on the device, the row catches up later */ }
 }
 function back(){ state.screen = state.stack.pop() || 'home'; render(); }
 function tabTo(id){ if(!state.authUser){state.screen='auth';render();return;} state.stack=[]; state.tab=id; go(id,false); }
@@ -7575,7 +7595,12 @@ function actSave(){
 }
 function trackActivity(type,details={},keep){
   if(type==='screen_view'&&(ACT_TICK=(ACT_TICK+1)%8)!==0)return;
-  if(!supabaseClient||!state.authUser)return;
+  if(!state.authUser)return;
+  /* No client yet (the supabase library is fetched over the network, so an
+     offline phone has none) still must not lose what a learner wrote: keep:true
+     events queue to localStorage and go out when the connection returns.
+     Disposable screen views are worthless without a way to send them. */
+  if(!supabaseClient&&!keep)return;
   ACT_QUEUE.push({user_id:state.authUser.id,event_type:type,details,keep:!!keep});
   /* over the cap: drop the oldest disposable event, never something a learner wrote */
   while(ACT_QUEUE.length>200){
@@ -8073,9 +8098,35 @@ SCREENS.pquestion = () => {
 `;
 };
 
-function pFinishItem(ok, q){
+/* The words of the right answer, so a teacher reads a sentence and not "C". */
+function pModelAnswer(q){
+  const L=String(q.correctAnswer==null?'':q.correctAnswer).trim().toUpperCase();
+  if(q.renderAs==='mcq'||q.renderAs==='tf'){
+    const arr=Array.isArray(q.options)?q.options:[];
+    const t=arr[L.charCodeAt(0)-65];
+    return t==null?L:L+'. '+String(t).replace(/^[A-D]\.\s*/,'');
+  }
+  if(Array.isArray(q.answers)&&q.answers.length)return String(q.answers[0]);
+  if(Array.isArray(q.pairs)&&q.pairs.length)return q.pairs.map(p=>p[0]+' \u2192 '+p[1]).join('; ');
+  return '';
+}
+/* What the learner chose, in words: "B. Give it back to the owner". */
+function pPickText(q,i){
+  const arr=Array.isArray(q.options)?q.options:[];
+  const t=arr[i];
+  return t==null?'':('ABCD'[i]||'')+'. '+String(t).replace(/^[A-D]\.\s*/,'');
+}
+/* What they matched, in words: "Teacher \u2192 School; Doctor \u2192 Health centre". */
+function pMatchText(q,matches){
+  return (Array.isArray(q.pairs)?q.pairs:[]).map((pr,i)=>pr[0]+' \u2192 '+((matches||{})[i]||'')).join('; ');
+}
+function pFinishItem(ok, q, given){
   const s = state.session;
-  s.detail.push({ok, id:q.id, topic:q.topic, question:q.question, explanation:q.explanation});
+  /* What they chose is stored as WORDS. A bare letter tells a teacher nothing,
+     and this is the only record of the answer that ever leaves the phone. */
+  s.detail.push({ok, id:q.id, topic:q.topic, question:q.question, explanation:q.explanation,
+                 given:given==null?'':String(given), answer:pModelAnswer(q),
+                 renderAs:q.renderAs||'mcq'});
   if(ok) s.correct++;
   recordAnswer(s.cls, q, ok);
   s.locked = true;
@@ -8106,7 +8157,7 @@ function pAnswer(i){
       const k=+b.dataset.i; b.disabled=true;
       if(k===i) b.classList.add('picked');
     });
-    pFinishItem(ok,q); return;
+    pFinishItem(ok,q,pPickText(q,i)); return;
   }
   afxPlay(i==='ABCD'.indexOf(q.correctAnswer)?'correct':'wrong');
   const right = 'ABCD'.indexOf(q.correctAnswer);
@@ -8117,7 +8168,7 @@ function pAnswer(i){
     else if(k===i){ b.classList.add('wrong','nudge'); b.querySelector('.mark').innerHTML=I.x(22); }
     else b.classList.add('dim');
   });
-  pFinishItem(ok,q);
+  pFinishItem(ok,q,pPickText(q,i));
 }
 
 function pFill(){
@@ -8127,11 +8178,11 @@ function pFill(){
   const given=normAns(el.value);
   if(!given){ toast('Type your answer first'); return; }
   const ok = (q.answers||[]).some(a=>normAns(a)===given);
-  if(s.hide){ el.disabled=true; pFinishItem(ok,q); return; }
+  if(s.hide){ el.disabled=true; pFinishItem(ok,q,el.value.trim()); return; }
   afxPlay(ok?'correct':'wrong');
   el.disabled=true;
   el.classList.add(ok?'good':'bad');
-  pFinishItem(ok,q);
+  pFinishItem(ok,q,el.value.trim());
 }
 
 function pMatch(i, btn){
@@ -8149,7 +8200,7 @@ function pMatchCheck(){
   q.pairs.forEach((pr,i)=>{ if(s.matches[i]!==pr[1]) ok=false; });
   if(s.hide){
     document.querySelectorAll('.matchrow .mchip').forEach(b=>{ b.disabled=true; });
-    pFinishItem(ok,q); return;
+    pFinishItem(ok,q,pMatchText(q,s.matches)); return;
   }
   afxPlay(ok?'correct':'wrong');
   document.querySelectorAll('.matchrow').forEach((row,i)=>{
@@ -8160,7 +8211,7 @@ function pMatchCheck(){
       if(b.dataset.v===q.pairs[i][1]) b.classList.add('answer');
     });
   });
-  pFinishItem(ok,q);
+  pFinishItem(ok,q,pMatchText(q,s.matches));
 }
 
 function pNext(){
@@ -8184,6 +8235,22 @@ function pFinish(){
   bumpDaily();
   state.lastResult={correct:s.correct,total:s.total,pct:Math.round(s.correct/s.total*100),
     time:Math.max(5,Math.round((Date.now()-s.t0)/1000)),detail:s.detail,kind:'sst',cls:s.cls};
+  /* Send the run. Without this the teacher never sees a practice answer, and
+     what the learner chose exists nowhere but on this phone. keep:true means a
+     run finished offline is delivered later rather than lost. */
+  try{
+    const max=s.total||0;
+    trackActivity('practice_submitted',{
+      cls:s.cls, subj:state.psubject||'', topic:s.label||'', set:s.mode||'',
+      got:s.correct, max, pct: max? Math.round(s.correct/max*100):0,
+      answers:(s.detail||[]).map(d=>({
+        qid:d.id||null, q:d.question||'', given:d.given||'',
+        answer:d.answer||'', kind:d.renderAs||'mcq',
+        marks:1, max:1, ok:d.ok===true, self:null, state:d.ok===true?'right':'wrong'
+      }))
+    },true);
+    activityFlush();
+  }catch(e){}
   go('results');
 }
 
@@ -8239,7 +8306,7 @@ function startSession(mode, subject, topicId, opts={}){
   state.year = year;
   state.session={kind:'practice',mode,subject,total,i:0,correct:0,items,topicName:label,
     picks:Array(total).fill(null),detail:[],t0:Date.now(),locked:false};
-  {const pr=state.progress[cls];recordLast({kind:'practice',mode:mode,topic:topic,label:label||'Practice',
+  {const pr=state.progress[state.klass];recordLast({kind:'practice',mode:mode,topic:topic,label:label||'Practice',
     sub:(subject||'Practice')+' practice',meta:(pr&&pr.attempted||0)+' questions attempted',
     pct:pr&&pr.attempted?Math.round(100*pr.correct/Math.max(1,pr.attempted)):0});}
   go('question');
@@ -8307,7 +8374,14 @@ function answer(idx){
   const right = item ? 'ABCD'.indexOf(item.correct_answer) : rightFor(s.i);
   const ok = idx===right;
   afxPlay(ok?'correct':'wrong');          /* one warm voice for every subject */
-  s.picks[s.i]=idx; s.detail.push({ok,pick:idx,right,src:item?qSource(item):null}); if(ok) s.correct++;
+  s.picks[s.i]=idx;
+  /* words, not an index — a teacher cannot read "2" */
+  const opts=Array.isArray(item&&item.options)?item.options:[];
+  const wordAt=k=>opts[k]==null?'':('ABCD'[k]||'')+'. '+String(opts[k]).replace(/^[A-D]\.\s*/,'');
+  s.detail.push({ok,pick:idx,right,src:item?qSource(item):null,
+                 question:(item&&item.question)||'', given:wordAt(idx), answer:wordAt(right),
+                 renderAs:'mcq'});
+  if(ok) s.correct++;
   if(item){                                   // feed "Questions I Got Wrong"
     const k = qKey(item);
     if(!ok && !state.wrongIds.includes(k)) state.wrongIds.push(k);
@@ -8352,6 +8426,23 @@ function finish(){
   const s=state.session, time=Math.max(5,Math.round((Date.now()-s.t0)/1000));
   state.lastResult={correct:s.correct,total:s.total,pct:Math.round(s.correct/s.total*100),time,detail:s.detail,kind:s.kind};
   if(state.timerId){clearInterval(state.timerId);state.timerId=null;}
+  /* The Papers practice reaches the teacher the same way everything else does.
+     keep:true so a run finished offline is delivered later, not lost. */
+  if(s.kind==='practice'||s.kind==='archive'){
+    try{
+      const max=s.total||0;
+      trackActivity('practice_submitted',{
+        cls:state.klass||'', subj:s.subject||'', topic:s.topicName||'', set:s.mode||'',
+        got:s.correct, max, pct: max? Math.round(s.correct/max*100):0,
+        answers:(s.detail||[]).map(d=>({
+          qid:(d.src&&d.src.id)||null, q:d.question||'', given:d.given||'',
+          answer:d.answer||'', kind:d.renderAs||'mcq',
+          marks:1, max:1, ok:d.ok===true, self:null, state:d.ok===true?'right':'wrong'
+        }))
+      },true);
+      activityFlush();
+    }catch(e){}
+  }
   go('results');
 }
 function repeatSession(){
