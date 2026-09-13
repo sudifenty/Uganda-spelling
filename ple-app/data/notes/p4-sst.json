@@ -2,8 +2,8 @@
  "class": "P4",
  "subject": "SST",
  "subject_name": "Social Studies",
- "total": 6,
- "words": 10540,
+ "total": 7,
+ "words": 14368,
  "topics": [
   {
    "id": "P4_SST_T01",
@@ -3703,6 +3703,1503 @@
         "*(Your own answer — two centres really found in your district.)*"
        ],
        "start": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P4_SST_T07",
+   "class": "P4",
+   "subject": "SST",
+   "topic_no": 7,
+   "title": "Culture and Social Activities",
+   "heading": "TOPIC 7: CULTURE AND SOCIAL ACTIVITIES",
+   "slug": "culture-and-social-activities",
+   "periods": null,
+   "curriculum_pages": "26–31",
+   "words": 3828,
+   "sections": [
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: a supplementary topic extending the NCDC Primary Four Social Studies Syllabus, Term II, Topic 4 — People in Our District (pages 26–31).*"
+      }
+     ]
+    },
+    {
+     "title": "1. MEANING OF CULTURE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**What is culture?**"
+      },
+      {
+       "t": "p",
+       "x": "Culture is the way of life of a group of people."
+      },
+      {
+       "t": "p",
+       "x": "**What does culture include?**"
+      },
+      {
+       "t": "p",
+       "x": "Culture includes the way people:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Speak.",
+        "Dress.",
+        "Eat.",
+        "Work.",
+        "Marry.",
+        "Worship.",
+        "Greet one another.",
+        "Celebrate.",
+        "Build their homes.",
+        "Bring up children."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Why do people have different cultures?**"
+      },
+      {
+       "t": "p",
+       "x": "People have different cultures because they come from different communities and have different histories, beliefs and ways of life."
+      },
+      {
+       "t": "p",
+       "x": "**Mention some examples of culture in Uganda.**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Different languages.",
+        "Different foods.",
+        "Different forms of dressing.",
+        "Traditional dances.",
+        "Traditional songs.",
+        "Marriage customs.",
+        "Ways of greeting.",
+        "Traditional ceremonies.",
+        "Religious practices.",
+        "Traditional beliefs."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "2. IMPORTANCE OF CULTURE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Why is culture important?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "It gives people an identity.",
+        "It teaches people how to live.",
+        "It helps people know their history.",
+        "It preserves traditions.",
+        "It promotes unity.",
+        "It teaches good behaviour.",
+        "It helps people respect their heritage."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**What is cultural identity?**"
+      },
+      {
+       "t": "p",
+       "x": "Cultural identity is the feeling of belonging to a particular culture or community."
+      },
+      {
+       "t": "p",
+       "x": "**Why should children learn their culture?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "To know their history.",
+        "To learn good cultural practices.",
+        "To respect their elders.",
+        "To preserve their culture.",
+        "To know their community.",
+        "To pass good traditions to future generations."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Why should we respect other people's cultures?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "To promote peace.",
+        "To promote unity.",
+        "To avoid conflicts.",
+        "To live well with other people.",
+        "To appreciate other people's ways of life."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "3. ELEMENTS OF CULTURE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**What are elements of culture?**"
+      },
+      {
+       "t": "p",
+       "x": "Elements of culture are the different parts that make up the way of life of people."
+      },
+      {
+       "t": "p",
+       "x": "**Mention the major elements of culture.**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Language.",
+        "Food.",
+        "Dressing.",
+        "Music.",
+        "Dance.",
+        "Marriage.",
+        "Religion.",
+        "Beliefs.",
+        "Customs.",
+        "Traditions.",
+        "Arts and crafts."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "4. LANGUAGE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**What is language?**"
+      },
+      {
+       "t": "p",
+       "x": "Language is a way people use to communicate with one another."
+      },
+      {
+       "t": "p",
+       "x": "**Why is language important in a community?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "It helps people communicate.",
+        "It helps people share ideas.",
+        "It helps people teach children.",
+        "It helps preserve culture.",
+        "It brings people together."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Mention some languages spoken in Uganda.**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Luganda.",
+        "Runyankole-Rukiga.",
+        "Lusoga.",
+        "Luo.",
+        "Runyoro-Rutooro.",
+        "Lugisu.",
+        "Ateso.",
+        "English.",
+        "Kiswahili."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Why should we respect other people's languages?**"
+      },
+      {
+       "t": "p",
+       "x": "We should respect other people's languages because language is an important part of their culture and identity."
+      }
+     ]
+    },
+    {
+     "title": "5. FOOD AND DRESSING",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**How is food part of culture?**"
+      },
+      {
+       "t": "p",
+       "x": "Food is part of culture because different communities have different foods and ways of preparing and eating food."
+      },
+      {
+       "t": "p",
+       "x": "**Mention some traditional foods eaten in Uganda.**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Matooke.",
+        "Millet bread.",
+        "Sweet potatoes.",
+        "Cassava.",
+        "Posho.",
+        "Beans.",
+        "Groundnuts.",
+        "Fish."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**How is dressing part of culture?**"
+      },
+      {
+       "t": "p",
+       "x": "Dressing is part of culture because different communities have different traditional clothes and ways of dressing."
+      },
+      {
+       "t": "p",
+       "x": "**Mention some traditional forms of dressing in Uganda.**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Gomesi.",
+        "Kanzu.",
+        "Bark cloth.",
+        "Animal skins.",
+        "Traditional beads and ornaments."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "6. MUSIC AND DANCE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**What is traditional music?**"
+      },
+      {
+       "t": "p",
+       "x": "Traditional music is music that belongs to a particular community and is passed from one generation to another."
+      },
+      {
+       "t": "p",
+       "x": "**What is traditional dance?**"
+      },
+      {
+       "t": "p",
+       "x": "Traditional dance is a dance performed according to the customs of a particular community."
+      },
+      {
+       "t": "p",
+       "x": "**Why are traditional music and dances important?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "They entertain people.",
+        "They preserve culture.",
+        "They teach people about their history.",
+        "They bring people together.",
+        "They are used during ceremonies.",
+        "They can promote tourism."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Mention some traditional dances in Uganda.**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Bwola.",
+        "Bakisimba.",
+        "Ekitaguriro.",
+        "Larakaraka.",
+        "Imbalu dances."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "7. CUSTOMS AND TRADITIONS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**What is a custom?**"
+      },
+      {
+       "t": "p",
+       "x": "A custom is a way of behaving that has been followed by a particular community for a long time."
+      },
+      {
+       "t": "p",
+       "x": "**What is a tradition?**"
+      },
+      {
+       "t": "p",
+       "x": "A tradition is a belief or practice passed from one generation to another."
+      },
+      {
+       "t": "p",
+       "x": "**Give examples of customs and traditions.**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Ways of greeting.",
+        "Marriage practices.",
+        "Naming children.",
+        "Traditional dances.",
+        "Traditional ceremonies.",
+        "Respecting elders.",
+        "Preparing traditional foods."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Why are customs and traditions important?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "They preserve culture.",
+        "They teach children how to behave.",
+        "They unite communities.",
+        "They help people remember their history.",
+        "They give people a sense of identity."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "8. CULTURAL VALUES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**What are cultural values?**"
+      },
+      {
+       "t": "p",
+       "x": "Cultural values are good beliefs and principles that guide the behaviour of people in a community."
+      },
+      {
+       "t": "p",
+       "x": "**Mention some good cultural values.**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Respect.",
+        "Honesty.",
+        "Hard work.",
+        "Kindness.",
+        "Sharing.",
+        "Cooperation.",
+        "Obedience.",
+        "Responsibility.",
+        "Hospitality."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Why are good cultural values important?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "They promote good behaviour.",
+        "They promote peace.",
+        "They strengthen families.",
+        "They help people live well together.",
+        "They promote cooperation."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "9. SOCIAL ACTIVITIES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**What are social activities?**"
+      },
+      {
+       "t": "p",
+       "x": "Social activities are activities in which people come together and interact with one another."
+      },
+      {
+       "t": "p",
+       "x": "**Mention examples of social activities.**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Weddings.",
+        "Introduction ceremonies.",
+        "Naming ceremonies.",
+        "Burial ceremonies.",
+        "Birthday celebrations.",
+        "Religious celebrations.",
+        "Cultural festivals.",
+        "Sports.",
+        "Community work.",
+        "Meetings."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Why do people take part in social activities?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "To celebrate.",
+        "To meet other people.",
+        "To strengthen relationships.",
+        "To preserve culture.",
+        "To support one another.",
+        "To promote unity.",
+        "To share ideas."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "10. MARRIAGE AND WEDDING CEREMONIES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**What is marriage?**"
+      },
+      {
+       "t": "p",
+       "x": "Marriage is the union of a man and a woman as husband and wife."
+      },
+      {
+       "t": "p",
+       "x": "**What is a wedding?**"
+      },
+      {
+       "t": "p",
+       "x": "A wedding is a ceremony held to celebrate a marriage."
+      },
+      {
+       "t": "p",
+       "x": "**What is an introduction ceremony?**"
+      },
+      {
+       "t": "p",
+       "x": "An introduction ceremony is a ceremony where a person introduces his or her future spouse to the family."
+      },
+      {
+       "t": "p",
+       "x": "**Why are marriage ceremonies important?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "They unite families.",
+        "They bring relatives together.",
+        "They strengthen relationships.",
+        "They celebrate the joining of a couple.",
+        "They help communities follow their customs."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "11. NAMING CEREMONIES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**What is a naming ceremony?**"
+      },
+      {
+       "t": "p",
+       "x": "A naming ceremony is a ceremony held when a child is given a name."
+      },
+      {
+       "t": "p",
+       "x": "**Why are naming ceremonies important?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "They give a child a name.",
+        "They bring families together.",
+        "They introduce the child to the community.",
+        "They preserve cultural practices."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Who may take part in a naming ceremony?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Parents.",
+        "Relatives.",
+        "Friends.",
+        "Religious leaders.",
+        "Elders.",
+        "Other members of the community."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "12. BURIAL CEREMONIES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**What is a burial ceremony?**"
+      },
+      {
+       "t": "p",
+       "x": "A burial ceremony is an activity carried out when a dead person is buried."
+      },
+      {
+       "t": "p",
+       "x": "**Why are burial ceremonies important?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "They give people an opportunity to mourn.",
+        "They bring relatives together.",
+        "They allow people to support the bereaved family.",
+        "They help communities show respect for the dead."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**How should children behave during burial ceremonies?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "They should respect the bereaved family.",
+        "They should behave quietly.",
+        "They should follow instructions.",
+        "They should avoid playing around the burial place.",
+        "They should show respect to the dead."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "13. RELIGIOUS ACTIVITIES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**What are religious activities?**"
+      },
+      {
+       "t": "p",
+       "x": "Religious activities are activities carried out by people according to their religion."
+      },
+      {
+       "t": "p",
+       "x": "**Mention examples of religious activities.**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Praying.",
+        "Worshipping.",
+        "Fasting.",
+        "Religious celebrations.",
+        "Attending religious services.",
+        "Giving offerings or charity."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Why are religious activities important?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "They bring believers together.",
+        "They teach good behaviour.",
+        "They strengthen faith.",
+        "They encourage people to help others.",
+        "They promote unity among believers."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "14. CULTURAL CEREMONIES AND FESTIVALS",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**What is a cultural ceremony?**"
+      },
+      {
+       "t": "p",
+       "x": "A cultural ceremony is an activity carried out according to the customs of a particular community."
+      },
+      {
+       "t": "p",
+       "x": "**What is a cultural festival?**"
+      },
+      {
+       "t": "p",
+       "x": "A cultural festival is a special event where people celebrate and display their culture."
+      },
+      {
+       "t": "p",
+       "x": "**Mention activities that may take place during cultural festivals.**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Traditional dancing.",
+        "Singing.",
+        "Traditional food preparation.",
+        "Storytelling.",
+        "Display of traditional clothes.",
+        "Display of arts and crafts.",
+        "Traditional games."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Why are cultural festivals important?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "They preserve culture.",
+        "They promote unity.",
+        "They entertain people.",
+        "They teach young people about their culture.",
+        "They promote tourism.",
+        "They bring communities together."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "15. SPORTS AND GAMES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**What are sports and games?**"
+      },
+      {
+       "t": "p",
+       "x": "Sports and games are activities people take part in for exercise, enjoyment and competition."
+      },
+      {
+       "t": "p",
+       "x": "**Mention examples of sports and games.**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Football.",
+        "Netball.",
+        "Athletics.",
+        "Volleyball.",
+        "Basketball.",
+        "Traditional games."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Why are sports and games important?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "They keep the body healthy.",
+        "They provide entertainment.",
+        "They develop talents.",
+        "They promote teamwork.",
+        "They bring people together.",
+        "They provide opportunities for competition."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "16. COMMUNITY WORK",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**What is community work?**"
+      },
+      {
+       "t": "p",
+       "x": "Community work is work done by people together to improve their community."
+      },
+      {
+       "t": "p",
+       "x": "**Mention examples of community work.**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Cleaning roads.",
+        "Cleaning markets.",
+        "Planting trees.",
+        "Cleaning water sources.",
+        "Repairing community facilities.",
+        "Digging drainage channels."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Why is community work important?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "It improves the community.",
+        "It promotes cooperation.",
+        "It keeps the environment clean.",
+        "It strengthens relationships.",
+        "It helps people solve community problems."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "17. IMPORTANCE OF SOCIAL ACTIVITIES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Why are social activities important?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "They bring people together.",
+        "They promote unity.",
+        "They strengthen relationships.",
+        "They preserve culture.",
+        "They provide entertainment.",
+        "They help people support one another.",
+        "They promote cooperation.",
+        "They help people share ideas.",
+        "They teach children good behaviour."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**How do social activities promote unity?**"
+      },
+      {
+       "t": "p",
+       "x": "They bring people together to celebrate, work, share ideas and support one another."
+      },
+      {
+       "t": "p",
+       "x": "**How do social activities preserve culture?**"
+      },
+      {
+       "t": "p",
+       "x": "They help people pass their customs, traditions, songs, dances, language and other cultural practices from one generation to another."
+      },
+      {
+       "t": "p",
+       "x": "**How do social activities promote cooperation?**"
+      },
+      {
+       "t": "p",
+       "x": "People work together to organise and take part in activities."
+      }
+     ]
+    },
+    {
+     "title": "18. GOOD AND BAD CULTURAL PRACTICES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Not every cultural practice is good. Some practices can harm people."
+      },
+      {
+       "t": "p",
+       "x": "**What are good cultural practices?**"
+      },
+      {
+       "t": "p",
+       "x": "Good cultural practices are cultural practices that help people live healthy, peaceful and responsible lives."
+      },
+      {
+       "t": "p",
+       "x": "**Mention examples of good cultural practices.**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Respecting elders.",
+        "Helping the needy.",
+        "Caring for children.",
+        "Sharing with others.",
+        "Welcoming visitors.",
+        "Working together.",
+        "Respecting other people."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**What are harmful cultural practices?**"
+      },
+      {
+       "t": "p",
+       "x": "Harmful cultural practices are practices that can hurt people or prevent them from living healthy and peaceful lives."
+      },
+      {
+       "t": "p",
+       "x": "**Mention examples of harmful cultural practices.**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Child marriage.",
+        "Female genital mutilation.",
+        "Denying children education.",
+        "Discrimination.",
+        "Violence.",
+        "Some harmful traditional beliefs."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Why should harmful cultural practices be stopped?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "They can hurt people.",
+        "They can cause diseases.",
+        "They can deny children their rights.",
+        "They can cause suffering.",
+        "They can prevent community development."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**What should we do about good cultural practices?**"
+      },
+      {
+       "t": "p",
+       "x": "We should preserve and pass good cultural practices to future generations."
+      },
+      {
+       "t": "p",
+       "x": "**What should we do about harmful cultural practices?**"
+      },
+      {
+       "t": "p",
+       "x": "We should discourage and stop harmful cultural practices."
+      }
+     ]
+    },
+    {
+     "title": "19. CULTURE AND CHANGE",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "Culture can change with time."
+      },
+      {
+       "t": "p",
+       "x": "**Why does culture change?**"
+      },
+      {
+       "t": "p",
+       "x": "Culture changes because people learn new ideas and come into contact with other communities."
+      },
+      {
+       "t": "p",
+       "x": "**Mention factors that can cause cultural change.**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Education.",
+        "Technology.",
+        "Religion.",
+        "Migration.",
+        "Trade.",
+        "Intermarriage.",
+        "Communication.",
+        "Contact with other communities."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**How has technology changed people's culture?**"
+      },
+      {
+       "t": "p",
+       "x": "Technology has changed the way people communicate, work, learn, travel and entertain themselves."
+      },
+      {
+       "t": "p",
+       "x": "**How does education change culture?**"
+      },
+      {
+       "t": "p",
+       "x": "Education gives people new knowledge and ideas that may change some of their ways of living."
+      },
+      {
+       "t": "p",
+       "x": "**How does migration change culture?**"
+      },
+      {
+       "t": "p",
+       "x": "When people move to new places, they share their language, food, dressing, beliefs and other cultural practices with other people."
+      }
+     ]
+    },
+    {
+     "title": "20. RESPECTING DIFFERENT CULTURES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**Why should we respect people from different cultures?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "To promote peace.",
+        "To promote unity.",
+        "To avoid discrimination.",
+        "To live well with others.",
+        "To learn from one another."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**How can we show respect for other cultures?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Respecting other people's languages.",
+        "Respecting their customs.",
+        "Respecting their beliefs.",
+        "Avoiding insulting other cultures.",
+        "Learning about other cultures.",
+        "Living peacefully with people from different communities."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**What is discrimination?**"
+      },
+      {
+       "t": "p",
+       "x": "Discrimination is treating a person unfairly because of differences such as culture, tribe, religion or other characteristics."
+      },
+      {
+       "t": "p",
+       "x": "**Why should we avoid discrimination?**"
+      },
+      {
+       "t": "p",
+       "x": "We should avoid discrimination because it causes hatred, conflicts and disunity."
+      }
+     ]
+    },
+    {
+     "title": "21. CULTURE AND NATIONAL UNITY",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**How can culture promote national unity?**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "It brings people together.",
+        "It helps people appreciate one another.",
+        "It encourages respect for different cultures.",
+        "It promotes peaceful living.",
+        "It helps people share cultural experiences."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Why is cultural diversity important in Uganda?**"
+      },
+      {
+       "t": "p",
+       "x": "Cultural diversity gives Uganda different languages, foods, dances, music, customs and traditions."
+      },
+      {
+       "t": "p",
+       "x": "**What should Ugandans do despite having different cultures?**"
+      },
+      {
+       "t": "p",
+       "x": "Ugandans should respect one another, cooperate, live peacefully and work together for the development of Uganda."
+      }
+     ]
+    },
+    {
+     "title": "KEY DEFINITIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "**Culture**",
+         "The way of life of a group of people."
+        ],
+        [
+         "**Cultural identity**",
+         "The feeling of belonging to a particular culture or community."
+        ],
+        [
+         "**Language**",
+         "A way people use to communicate with one another."
+        ],
+        [
+         "**Custom**",
+         "A way of behaving that has been followed by a particular community for a long time."
+        ],
+        [
+         "**Tradition**",
+         "A belief or practice passed from one generation to another."
+        ],
+        [
+         "**Cultural value**",
+         "A good belief or principle that guides the behaviour of people in a community."
+        ],
+        [
+         "**Social activities**",
+         "Activities in which people come together and interact with one another."
+        ],
+        [
+         "**Marriage**",
+         "The union of a man and a woman as husband and wife."
+        ],
+        [
+         "**Wedding**",
+         "A ceremony held to celebrate a marriage."
+        ],
+        [
+         "**Introduction ceremony**",
+         "A ceremony where a person introduces his or her future spouse to the family."
+        ],
+        [
+         "**Naming ceremony**",
+         "A ceremony held when a child is given a name."
+        ],
+        [
+         "**Burial ceremony**",
+         "An activity carried out when a dead person is buried."
+        ],
+        [
+         "**Religious activities**",
+         "Activities carried out by people according to their religion."
+        ],
+        [
+         "**Cultural ceremony**",
+         "An activity carried out according to the customs of a particular community."
+        ],
+        [
+         "**Cultural festival**",
+         "A special event where people celebrate and display their culture."
+        ],
+        [
+         "**Community work**",
+         "Work done by people together to improve their community."
+        ],
+        [
+         "**Discrimination**",
+         "Treating a person unfairly because of differences such as culture, tribe or religion."
+        ],
+        [
+         "**Cultural diversity**",
+         "The existence of different cultures in one community or country."
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "The way of life of a group of people → **culture**.",
+        "The feeling of belonging to a particular culture or community → **cultural identity**.",
+        "A way people use to communicate with one another → **language**.",
+        "A way of behaving followed by a community for a long time → a **custom**.",
+        "A belief or practice passed from one generation to another → a **tradition**.",
+        "A good belief or principle that guides behaviour in a community → a **cultural value**.",
+        "Activities in which people come together and interact → **social activities**.",
+        "The union of a man and a woman as husband and wife → **marriage**.",
+        "A ceremony held to celebrate a marriage → a **wedding**.",
+        "A ceremony where a person introduces a future spouse to the family → an **introduction ceremony**.",
+        "A ceremony held when a child is given a name → a **naming ceremony**.",
+        "An activity carried out when a dead person is buried → a **burial ceremony**.",
+        "A special event where people celebrate and display their culture → a **cultural festival**.",
+        "Work done by people together to improve their community → **community work**.",
+        "Treating a person unfairly because of culture, tribe or religion → **discrimination**.",
+        "The existence of different cultures in one community or country → **cultural diversity**.",
+        "Languages spoken in Uganda → **Luganda**, **Lusoga**, **Luo**, **Runyankole-Rukiga**, **Ateso**, **Lugisu**.",
+        "Traditional foods eaten in Uganda → **matooke**, **millet bread**, **sweet potatoes**, **cassava**, **posho**.",
+        "Traditional forms of dressing in Uganda → the **gomesi**, the **kanzu**, **bark cloth**, **animal skins**.",
+        "Traditional dances in Uganda → **Bwola**, **Bakisimba**, **Ekitaguriro**, **Larakaraka**, **Imbalu** dances.",
+        "Examples of harmful cultural practices → **child marriage**, **female genital mutilation**, denying children education.",
+        "Good cultural values → **respect**, **honesty**, **hard work**, **kindness**, **cooperation**.",
+        "Factors that cause cultural change → **education**, **technology**, **migration**, **trade**, **religion**.",
+        "Good cultural practices should be → **preserved**.",
+        "Harmful cultural practices should be → **discouraged and stopped**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Culture is the way of life of a group of people.",
+        "Culture includes language, food, dressing, music, dance, customs and traditions.",
+        "Culture gives people an identity.",
+        "Language helps people communicate and preserve culture.",
+        "Traditional music and dance help preserve culture.",
+        "Customs and traditions are passed from one generation to another.",
+        "Good cultural values include respect, honesty, hard work, kindness and cooperation.",
+        "Social activities bring people together.",
+        "Weddings, naming ceremonies and burial ceremonies are examples of social activities.",
+        "Religious activities are carried out according to people's religions.",
+        "Cultural festivals help people celebrate and preserve their cultures.",
+        "Sports and games provide exercise, entertainment and competition.",
+        "Community work helps people improve their communities.",
+        "Good cultural practices should be preserved.",
+        "Harmful cultural practices should be discouraged and stopped.",
+        "Culture can change because of education, technology, migration, trade and contact with other communities.",
+        "People should respect different cultures.",
+        "Discrimination can cause hatred, conflict and disunity.",
+        "Different cultures can live together peacefully.",
+        "Culture can promote national unity."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Give the meaning of: culture.",
+        "Give the meaning of: cultural identity.",
+        "Give the meaning of: language.",
+        "Give the meaning of: custom.",
+        "Give the meaning of: tradition.",
+        "Give the meaning of: cultural value.",
+        "Give the meaning of: social activities.",
+        "Give the meaning of: marriage.",
+        "Give the meaning of: wedding.",
+        "Give the meaning of: naming ceremony.",
+        "Give the meaning of: cultural festival.",
+        "Give the meaning of: community work.",
+        "Give the meaning of: discrimination.",
+        "Give the meaning of: cultural diversity.",
+        "What is culture?",
+        "Mention six elements of culture.",
+        "Give five examples of culture in Uganda.",
+        "Why is culture important?",
+        "Why should children learn their culture?",
+        "Mention five languages spoken in Uganda.",
+        "Why is language important?",
+        "Mention five traditional foods eaten in Uganda.",
+        "Mention five traditional forms of dressing.",
+        "What is traditional music?",
+        "What is traditional dance?",
+        "Mention four traditional dances in Uganda.",
+        "Why are traditional dances important?",
+        "What is a custom?",
+        "What is a tradition?",
+        "Mention five good cultural values.",
+        "What are social activities?",
+        "Mention six social activities.",
+        "Why are social activities important?",
+        "What is a wedding?",
+        "What is a naming ceremony?",
+        "Why are naming ceremonies important?",
+        "Mention four religious activities.",
+        "Why are religious activities important?",
+        "What is a cultural festival?",
+        "Mention five activities that take place during cultural festivals.",
+        "What is community work?",
+        "Mention four examples of community work.",
+        "Why is community work important?",
+        "What are harmful cultural practices?",
+        "Mention four harmful cultural practices.",
+        "Why should harmful cultural practices be stopped?",
+        "Mention five factors that cause cultural change.",
+        "How does education change culture?",
+        "How does migration change culture?",
+        "Why should we respect other people's cultures?",
+        "Give five ways of showing respect for other cultures.",
+        "Why should we avoid discrimination?",
+        "How can culture promote national unity?"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "ANSWERS TO REVISION QUESTIONS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "**Culture:** The way of life of a group of people.",
+        "**Cultural identity:** The feeling of belonging to a particular culture or community.",
+        "**Language:** A way people use to communicate with one another.",
+        "**Custom:** A way of behaving that has been followed by a particular community for a long time.",
+        "**Tradition:** A belief or practice passed from one generation to another.",
+        "**Cultural value:** A good belief or principle that guides people's behaviour in a community.",
+        "**Social activities:** Activities in which people come together and interact with one another.",
+        "**Marriage:** The union of a man and a woman as husband and wife.",
+        "**Wedding:** A ceremony held to celebrate a marriage.",
+        "**Naming ceremony:** A ceremony held when a child is given a name.",
+        "**Cultural festival:** A special event where people celebrate and display their culture.",
+        "**Community work:** Work done by people together to improve their community.",
+        "**Discrimination:** Treating a person unfairly because of differences such as culture, tribe or religion.",
+        "**Cultural diversity:** The existence of different cultures in one community or country.",
+        "Culture is the way of life of a group of people.",
+        "Language, food, dressing, music, dance and religion.",
+        "Language, food, dressing, traditional dances and marriage customs.",
+        "Culture gives people an identity, teaches people how to live, preserves traditions, promotes unity and helps people know their history.",
+        "Children should learn their culture to know their history, learn good cultural practices, respect elders, preserve culture and pass good traditions to future generations.",
+        "Luganda, Lusoga, Luo, Runyankole-Rukiga and Ateso.",
+        "Language helps people communicate, share ideas, teach children and preserve culture.",
+        "Matooke, millet bread, sweet potatoes, cassava and beans.",
+        "Gomesi, kanzu, bark cloth, animal skins and traditional beads.",
+        "Traditional music is music that belongs to a particular community and is passed from one generation to another.",
+        "Traditional dance is a dance performed according to the customs of a particular community.",
+        "Bwola, Bakisimba, Ekitaguriro and Larakaraka.",
+        "Traditional dances entertain people, preserve culture, teach history and bring people together.",
+        "A custom is a way of behaving that has been followed by a particular community for a long time.",
+        "A tradition is a belief or practice passed from one generation to another.",
+        "Respect, honesty, hard work, kindness and cooperation.",
+        "Social activities are activities in which people come together and interact with one another.",
+        "Weddings, introduction ceremonies, naming ceremonies, burial ceremonies, religious celebrations and sports.",
+        "They bring people together, promote unity, strengthen relationships, preserve culture and help people support one another.",
+        "A wedding is a ceremony held to celebrate a marriage.",
+        "A naming ceremony is a ceremony held when a child is given a name.",
+        "They give a child a name, bring families together, introduce the child to the community and preserve cultural practices.",
+        "Praying, worshipping, fasting and attending religious services.",
+        "They bring believers together, teach good behaviour, strengthen faith and encourage people to help others.",
+        "A cultural festival is a special event where people celebrate and display their culture.",
+        "Traditional dancing, singing, storytelling, traditional food preparation and displaying traditional clothes.",
+        "Community work is work done by people together to improve their community.",
+        "Cleaning roads, planting trees, cleaning water sources and repairing community facilities.",
+        "It improves the community, promotes cooperation, keeps the environment clean and helps people solve problems.",
+        "Harmful cultural practices are practices that can hurt people or prevent them from living healthy and peaceful lives.",
+        "Child marriage, female genital mutilation, denying children education and discrimination.",
+        "They can hurt people, cause suffering, cause diseases and prevent community development.",
+        "Education, technology, religion, migration and trade.",
+        "Education gives people new knowledge and ideas that may change some of their ways of living.",
+        "Migration brings people from different communities together, allowing them to share their languages, foods, dressing and other cultural practices.",
+        "We should respect other cultures to promote peace, unity and good relationships.",
+        "Respecting their languages, customs, beliefs, traditions and ways of life.",
+        "We should avoid discrimination because it can cause hatred, conflicts and disunity.",
+        "Culture promotes national unity by bringing people together, encouraging respect and helping people appreciate different cultures."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "P.4 QUICK REVISION",
+     "blocks": [
+      {
+       "t": "h3",
+       "x": "Culture"
+      },
+      {
+       "t": "p",
+       "x": "**Culture →** The way of life of a group of people."
+      },
+      {
+       "t": "p",
+       "x": "Elements of culture:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Language",
+        "Food",
+        "Dressing",
+        "Music",
+        "Dance",
+        "Marriage",
+        "Religion",
+        "Customs",
+        "Traditions",
+        "Beliefs"
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Social activities"
+      },
+      {
+       "t": "p",
+       "x": "**Social activities →** Activities in which people come together and interact with one another."
+      },
+      {
+       "t": "p",
+       "x": "Examples:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Weddings",
+        "Introduction ceremonies",
+        "Naming ceremonies",
+        "Burial ceremonies",
+        "Religious celebrations",
+        "Cultural festivals",
+        "Sports",
+        "Community work"
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Importance of social activities"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Unite people",
+        "Strengthen relationships",
+        "Preserve culture",
+        "Provide entertainment",
+        "Promote cooperation",
+        "Help people support one another"
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Good cultural values"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Respect",
+        "Honesty",
+        "Hard work",
+        "Kindness",
+        "Sharing",
+        "Cooperation",
+        "Responsibility"
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Harmful cultural practices"
+      },
+      {
+       "t": "p",
+       "x": "Examples:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Child marriage",
+        "Female genital mutilation",
+        "Denying children education",
+        "Discrimination",
+        "Violence"
+       ]
+      },
+      {
+       "t": "note",
+       "x": "Remember: good cultural practices should be preserved, while harmful cultural practices should be discouraged and stopped."
+      },
+      {
+       "t": "h3",
+       "x": "Causes of cultural change"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Education",
+        "Technology",
+        "Migration",
+        "Trade",
+        "Religion",
+        "Intermarriage",
+        "Communication"
+       ]
+      },
+      {
+       "t": "h3",
+       "x": "Remember"
+      },
+      {
+       "t": "p",
+       "x": "**Culture gives people an identity.**"
+      },
+      {
+       "t": "p",
+       "x": "**Social activities bring people together.**"
+      },
+      {
+       "t": "p",
+       "x": "**Good cultural practices should be preserved.**"
+      },
+      {
+       "t": "p",
+       "x": "**Harmful cultural practices should be stopped.**"
+      },
+      {
+       "t": "p",
+       "x": "**Different cultures should be respected.**"
+      },
+      {
+       "t": "p",
+       "x": "**People from different cultures can live together peacefully and work together for the development of Uganda.**"
+      }
+     ]
+    },
+    {
+     "title": "A NOTE ON SOURCES",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "The study content of this topic — the questions and answers, the key definitions, the important facts and the revision questions with their answers — was provided by the app owner for the P.4 Social Studies theme *Living Together in Our District*. This topic is supplementary: it extends the ideas in **NCDC Primary Four Social Studies Syllabus**, Term II, Topic 4 — People in Our District (`curriculum/p4-topics.md`, pages 26–31), which the six syllabus topics already cover. It is numbered 7 so that topics 1 to 6 keep the numbering used by the syllabus itself. No external publisher's material has been reproduced here."
       }
      ]
     }
