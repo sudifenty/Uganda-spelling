@@ -2187,12 +2187,32 @@ const RC_EXAM_OPEN=['locked','in_progress'];  /* the DB check constraint allows 
 const rcExamLocked = () => !isAdmin() && !RC.examDone && !!RC.examId &&
   RC_EXAM_OPEN.includes(RC.examStatus);
 
-/* accept either shape of the questions column: an array, a JSON string,
-   or {items:[...]} — and either q/question, answer/correct_answer */
+/* The whole paper lives in smartple_exams.questions:
+     {kind:'topic',questions:[...]}   built question by question
+     {kind:'pdf',pdf_path,boxes:[...]}  a UNEB paper with answer boxes on it
+   Older rows may hold a bare array. Boxes are stored as FRACTIONS of the
+   page (0..1) so they land in the same place on any screen. */
+function sxPaper(ex){
+  let p=ex&&ex.questions;
+  if(typeof p==='string'){ try{ p=JSON.parse(p); }catch(e){ p=null; } }
+  if(Array.isArray(p)) return {kind:'topic',questions:p};
+  if(p&&p.kind==='pdf') return p;
+  if(p&&Array.isArray(p.questions)) return {kind:'topic',questions:p.questions};
+  return {kind:'topic',questions:(p&&Array.isArray(p.items))?p.items:[]};
+}
 function sxQuestions(ex){
-  let qs=ex&&ex.questions;
-  if(typeof qs==='string'){ try{ qs=JSON.parse(qs); }catch(e){ qs=[]; } }
-  if(!Array.isArray(qs)) qs=(qs&&Array.isArray(qs.items))?qs.items:[];
+  const paper=sxPaper(ex);
+  if(paper.kind==='pdf'){
+    return (Array.isArray(paper.boxes)?paper.boxes:[]).map((b,i)=>({
+      id:b.id||('box'+(i+1)),
+      text:String(b.label||('Question '+(b.n||i+1))),
+      options:Array.isArray(b.options)?b.options:[],
+      kind:b.type==='mcq'?'mcq':'short',
+      answer:String(b.answer==null?'':b.answer),
+      marks:Number(b.marks||1), topic:'Paper', box:b
+    }));
+  }
+  const qs=paper.questions;
   return qs.filter(q=>q&&(q.q||q.question)).map((q,i)=>({
     id:q.id||('q'+(i+1)),
     text:String(q.q||q.question),
@@ -2201,6 +2221,40 @@ function sxQuestions(ex){
     answer:String(q.answer!=null?q.answer:(q.correct_answer!=null?q.correct_answer:'')),
     marks:Number(q.marks||1), topic:q.topic||''
   }));
+}
+const PDFJS_CDN='https://cdn.jsdelivr.net/npm/pdfjs-dist@5.6.205/build/';
+let PDFJS=null;
+async function pdfLoad(){
+  if(PDFJS) return PDFJS;
+  const m=await import(PDFJS_CDN+'pdf.min.mjs');
+  m.GlobalWorkerOptions.workerSrc=PDFJS_CDN+'pdf.worker.min.mjs';
+  PDFJS=m; return m;
+}
+/* paint every page, then the boxes sit on top of it as real inputs */
+async function sxRenderPdf(){
+  const ex=RC.exam, paper=sxPaper(ex);
+  if(!ex||paper.kind!=='pdf') return;
+  try{
+    state.sxErr=null;
+    const lib=await pdfLoad();
+    if(!supabaseClient) throw new Error('sign in again to open the paper');
+    const {data}=await supabaseClient.storage.from('exam-pdfs').createSignedUrl(paper.pdf_path,3600);
+    if(!data||!data.signedUrl) throw new Error('the paper is not available right now');
+    const doc=await lib.getDocument({url:data.signedUrl}).promise;
+    state.sxPages=doc.numPages;
+    render();
+    for(let pg=1;pg<=doc.numPages;pg++){
+      const c=document.getElementById('sxpdf'+pg); if(!c) continue;
+      const page=await doc.getPage(pg);
+      const base=page.getViewport({scale:1});
+      const wide=(c.parentElement&&c.parentElement.clientWidth)||700;
+      const vp=page.getViewport({scale:Math.min(2,wide/base.width)});
+      c.width=vp.width; c.height=vp.height;
+      await page.render({canvasContext:c.getContext('2d'),viewport:vp}).promise;
+    }
+  }catch(e){
+    state.sxErr=String((e&&e.message)||e); render();
+  }
 }
 function sxStart(){
   const ex=RC.exam;
@@ -2212,6 +2266,7 @@ function sxStart(){
     remain:Math.max(60,(Number(ex.duration_minutes)||30)*60),done:false,score:null};
   go('smartExam',false);
   sxTick();
+  if(sxPaper(ex).kind==='pdf') sxRenderPdf();
 }
 /* the clock updates its own element only — a full re-render would throw
    the learner out of the box they are typing in */
@@ -6365,8 +6420,9 @@ SCREENS.smartExam = () => {
   <div style="min-height:80%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center">
     <div style="font-size:52px">\u{1F4DD}</div>
     <h2 style="margin-top:6px">${nEsc(ex.title||'Your exam')}</h2>
-    <p class="muted">${nEsc(String(ex.subject||''))} \u00B7 ${sxQuestions(ex).length} questions \u00B7
-      ${Number(ex.duration_minutes)||30} minutes</p>
+    <p class="muted">${nEsc(String(ex.subject||''))} \u00B7 ${sxPaper(ex).kind==='pdf'
+      ? sxQuestions(ex).length+' answer boxes on the paper'
+      : sxQuestions(ex).length+' questions'} \u00B7 ${Number(ex.duration_minutes)||30} minutes</p>
     <div class="hint-strip cream" style="margin:14px 0">${I.info(18)}
       <span>Answer every question, then submit. The clock starts when you do.</span></div>
     <button class="btn btn-primary btn-lg" onclick="sxStart()">START THE EXAM \u27A1</button>
@@ -6393,6 +6449,7 @@ SCREENS.smartExam = () => {
       <button class="btn btn-primary" onclick="state.sx=null;go('home',false)">BACK TO HOME</button>
     </div>`;
   }
+  if(sxPaper(ex).kind==='pdf') return sxPdfView(ex,s);
   const q=s.qs[s.i], n=s.i+1;
   const answered=s.ans.filter(a=>a!=null&&String(a).trim()!=='').length;
   const body=q.kind==='mcq'
@@ -6426,6 +6483,51 @@ SCREENS.smartExam = () => {
     ${n<s.qs.length?`<button class="btn btn-soft" style="margin-top:10px" onclick="sxSubmit(false)">Finish and submit now</button>`:''}
   </div>`;
 };
+
+/* one answer box, placed exactly where the owner drew it (fractions of the
+   page, so it lines up on a phone as well as on the admin's laptop) */
+function sxBoxHtml(b,i,s){
+  const at=`position:absolute;left:${(b.x*100).toFixed(3)}%;top:${(b.y*100).toFixed(3)}%;`+
+           `width:${(b.w*100).toFixed(3)}%;height:${(b.h*100).toFixed(3)}%;`;
+  if(b.type==='mcq'){
+    return `<div style="${at}display:flex;gap:3px;flex-wrap:wrap;align-items:center">`+
+      (Array.isArray(b.options)?b.options:[]).map((o,k)=>{
+        const L='ABCD'[k]||String(k+1), on=String(s.ans[i]||'')===L;
+        return `<button onclick="sxPick(${i},'${L}')" title="${nEsc(String(o))}" `+
+          `style="min-width:27px;height:27px;border-radius:7px;font-weight:800;font-size:12px;`+
+          `border:1.6px solid ${on?'#1E7A34':'#2D4159'};background:${on?'#DFF5E3':'#fff'};color:#2D4159">${L}</button>`;
+      }).join('')+`</div>`;
+  }
+  return `<textarea style="${at}font-size:12px;line-height:1.3;padding:3px;border-radius:7px;`+
+    `border:1.6px solid #2D4159;background:rgba(255,255,255,.94)" placeholder="Q${b.n}" `+
+    `oninput="sxAnswer(${i},this.value)">${nEsc(String(s.ans[i]||''))}</textarea>`;
+}
+function sxPdfView(ex,s){
+  const answered=s.ans.filter(a=>a!=null&&String(a).trim()!=='').length;
+  const pages=state.sxPages||0;
+  const nums=pages?Array.from({length:pages},(_,k)=>k+1):[0];
+  return `
+  <div class="qbar"><div class="qbar-top">
+      <div class="qcount">${nEsc(ex.title||'Exam paper')}</div>
+      <span class="pill ${s.remain<60?'warn':'dl'}" id="sxTime">${fmt(s.remain)}</span>
+    </div><div class="qprog"><i style="width:${s.qs.length?answered/s.qs.length*100:0}%"></i></div></div>
+  <div style="padding:10px">
+    ${state.sxErr?`<div class="hint-strip amber">${I.info(18)} <span>${nEsc(state.sxErr)}.</span></div>
+      <button class="btn btn-soft" style="margin:8px 0" onclick="sxRenderPdf()">Try again</button>`:''}
+    ${nums.map(pg=>`
+      <div style="position:relative;background:#fff;margin:0 0 10px;box-shadow:0 1px 6px rgba(0,0,0,.18)">
+        ${pg?`<canvas id="sxpdf${pg}" style="width:100%;display:block"></canvas>`
+           :`<div style="padding:40px;text-align:center" class="muted">Opening the paper\u2026</div>`}
+        ${pg?s.qs.filter(q=>q.box&&Number(q.box.page)===pg)
+              .map(q=>sxBoxHtml(q.box,s.qs.indexOf(q),s)).join(''):''}
+        ${pg?`<span style="position:absolute;right:6px;bottom:3px;font-size:10px;color:#9AA3AF">page ${pg}</span>`:''}
+      </div>`).join('')}
+    <div class="hint-strip cream">${I.info(16)}
+      <span>${answered} of ${s.qs.length} answered \u00B7 type straight into the boxes on the paper</span></div>
+    <button class="btn btn-green btn-lg" style="margin-top:10px" onclick="sxSubmit(false)">SUBMIT THE PAPER \u2705</button>
+    <div style="height:22px"></div>
+  </div>`;
+}
 
 SCREENS.home = () => `
   <div class="newhome">
