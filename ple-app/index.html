@@ -7558,22 +7558,47 @@ async function authInit(){if(AUTH_BUSY)return;AUTH_BUSY=true;try{
 window.addEventListener('online',()=>{ if(!supabaseClient) setTimeout(()=>authInit(),500); else spSyncPaid(); });
 /* Activity tracking — built for millions of learners.
    One insert per screen view would flood the database (30M+ rows/day at 1M
-   daily users). So: screen_view is sampled 1-in-8, events queue in memory,
-   and flush as ONE batched insert — every 45s, every 25 events, or when the
-   learner leaves. Offline drops are by design, never a crash. */
-const ACT_QUEUE=[];let ACT_TICK=0;
-function trackActivity(type,details={}){
+   daily users), so screen_view is sampled 1-in-8 and events flush as ONE
+   batched insert — every 45s, every 25 events, or when the learner leaves.
+
+   Losing a screen view offline is fine. Losing what a learner WROTE is not:
+   it is the only copy their teacher will ever see. So events flagged keep:true
+   are written to localStorage and stay in the queue until the insert actually
+   succeeds — an offline practice run is delivered later, not dropped. */
+const ACT_QUEUE=[];let ACT_TICK=0;const ACT_STORE='sp_act_queue';
+function actLoad(){
+  try{const arr=JSON.parse(localStorage.getItem(ACT_STORE)||'[]');
+    if(Array.isArray(arr))for(const e of arr.slice(-200))if(e&&e.event_type&&e.user_id)ACT_QUEUE.push(e);}catch(e){}
+}
+function actSave(){
+  try{localStorage.setItem(ACT_STORE,JSON.stringify(ACT_QUEUE.slice(-200)));}catch(e){}
+}
+function trackActivity(type,details={},keep){
   if(type==='screen_view'&&(ACT_TICK=(ACT_TICK+1)%8)!==0)return;
   if(!supabaseClient||!state.authUser)return;
-  ACT_QUEUE.push({user_id:state.authUser.id,event_type:type,details});
-  if(ACT_QUEUE.length>200)ACT_QUEUE.splice(0,ACT_QUEUE.length-200);
+  ACT_QUEUE.push({user_id:state.authUser.id,event_type:type,details,keep:!!keep});
+  /* over the cap: drop the oldest disposable event, never something a learner wrote */
+  while(ACT_QUEUE.length>200){
+    const j=ACT_QUEUE.findIndex(e=>!e.keep);
+    if(j<0)break;
+    ACT_QUEUE.splice(j,1);
+  }
+  actSave();
   if(ACT_QUEUE.length>=25)activityFlush();
 }
 async function activityFlush(){
   if(!supabaseClient||!ACT_QUEUE.length)return;
-  const batch=ACT_QUEUE.splice(0,100);
-  try{await supabaseClient.from('learning_events').insert(batch);}catch(e){/* offline: dropped by design */}
+  const batch=ACT_QUEUE.slice(0,100);
+  /* the internal keep flag never reaches the database */
+  const rows=batch.map(e=>({user_id:e.user_id,event_type:e.event_type,details:e.details}));
+  let failed=false;
+  try{const r=await supabaseClient.from('learning_events').insert(rows);failed=!!(r&&r.error);}
+  catch(e){failed=true;}
+  if(failed)return actSave();          /* kept: retried on the next tick, or when the network returns */
+  ACT_QUEUE.splice(0,batch.length);
+  actSave();
 }
+actLoad();
 setInterval(activityFlush,45000);
 document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden')activityFlush();});
 window.addEventListener('pagehide',activityFlush);
@@ -8734,6 +8759,28 @@ function exFinish(){
                     when: new Date().toISOString().slice(0,10)});
   EXDB.att = EXDB.att.slice(0,60);
   exSave(EXDB);
+  /* Send what they actually wrote. Until now a practice run existed only on
+     this phone, so a teacher could read an exam answer but never a practice
+     one. Prose answers carry the learner's own verdict (they self-mark) and
+     the model answer beside it, so the teacher can disagree. keep:true means
+     an offline run is delivered later rather than lost. */
+  try{
+    trackActivity('practice_submitted',{
+      cls:r.cls, subj:r.subj, tid:r.tid, topic:r.title, set:r.setName||'', mode:r.mode||'',
+      got, max, pct: max? Math.round(got/max*100):0,
+      answers:r.result.map(x=>({
+        qid:x.id,
+        q:(x.q&&x.q.q)||'',
+        given:(x.given||'').trim(),
+        answer:(x.q&&x.q.a)||'',
+        kind:(x.q&&x.q.kind)||'',
+        marks:x.marks, max:x.max,
+        ok:x.state==='right'?true:x.state==='wrong'?false:null,
+        self:x.self||null,
+        state:x.state
+      }))
+    },true);
+  }catch(e){}
   toast(`Saved — ${got} of ${max} marks`);
   exExit();
 }

@@ -253,6 +253,28 @@ function exFinish(){
                     when: new Date().toISOString().slice(0,10)});
   EXDB.att = EXDB.att.slice(0,60);
   exSave(EXDB);
+  /* Send what they actually wrote. Until now a practice run existed only on
+     this phone, so a teacher could read an exam answer but never a practice
+     one. Prose answers carry the learner's own verdict (they self-mark) and
+     the model answer beside it, so the teacher can disagree. keep:true means
+     an offline run is delivered later rather than lost. */
+  try{
+    trackActivity('practice_submitted',{
+      cls:r.cls, subj:r.subj, tid:r.tid, topic:r.title, set:r.setName||'', mode:r.mode||'',
+      got, max, pct: max? Math.round(got/max*100):0,
+      answers:r.result.map(x=>({
+        qid:x.id,
+        q:(x.q&&x.q.q)||'',
+        given:(x.given||'').trim(),
+        answer:(x.q&&x.q.a)||'',
+        kind:(x.q&&x.q.kind)||'',
+        marks:x.marks, max:x.max,
+        ok:x.state==='right'?true:x.state==='wrong'?false:null,
+        self:x.self||null,
+        state:x.state
+      }))
+    },true);
+  }catch(e){}
   toast(`Saved — ${got} of ${max} marks`);
   exExit();
 }
