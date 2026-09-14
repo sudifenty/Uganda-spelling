@@ -463,6 +463,7 @@ p{margin:0}
 .rc-force b{display:block;font-size:13px;letter-spacing:.02em;text-transform:uppercase;opacity:.85}
 .rc-force span{display:block;font-size:15px;font-weight:700;margin-top:2px}
 .rc-force-extra{background:#f99307;box-shadow:0 2px 8px rgba(249,147,7,.3)}
+.rc-force-owner{background:#334155;box-shadow:0 2px 8px rgba(51,65,85,.3)}
 
 /* ---------- 9. PROFILE ---------- */
 .profile-hero{
@@ -2111,7 +2112,21 @@ function rcOpenForceTarget(){
    silent — a hidden chain with no explanation reads as the app being broken. */
 function rcForceBannerInto(el){
   const prev=document.getElementById('rcForceBanner'); if(prev) prev.remove();
-  if(!el || isAdmin() || !rcForceActive()) return;
+  if(!el) return;
+  /* Owner mode silently bypasses every restriction so the owner can reach any
+     topic. That is correct — but silent is exactly why "I locked them and it
+     did nothing" is impossible to diagnose. Say so on screen instead. */
+  if(isAdmin()){
+    if(!RC.topic && !RC.subtopic) return;
+    const own=document.createElement('div');
+    own.id='rcForceBanner'; own.className='rc-force rc-force-owner';
+    own.innerHTML='<b>Owner mode</b><span>Restrictions are bypassed for you. '+
+      'A learner on this account would be locked to '+
+      String(RC.subtopic||RC.topic).replace(/^\d+\.\s*/,'')+'.</span>';
+    el.insertBefore(own, el.firstChild);
+    return;
+  }
+  if(!rcForceActive()) return;
   const mode=rcForceMode();
   const label=String(RC.subtopic||RC.forceTarget||'your task').replace(/^\d+\.\s*/,'');
   const box=document.createElement('div');

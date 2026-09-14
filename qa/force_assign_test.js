@@ -137,6 +137,21 @@ setTimeout(function () {
     check('reading sections still unlocks more practice (chain intact)',
       chainOpen > chainLocked, true);
 
+    /* ---- the banners: a lock must never be silent ------------------------ */
+    row(lockRow());
+    check('a locked learner is told they are locked',
+      ev(`(function(){const d=document.createElement('div');rcForceBannerInto(d);
+            return /Teacher Assigned/.test(d.innerHTML);})()`), true);
+    ev(`state.adminOk = true`);
+    check('owner mode says it is bypassing the lock, instead of doing it silently',
+      ev(`(function(){const d=document.createElement('div');rcForceBannerInto(d);
+            return /Owner mode/.test(d.innerHTML);})()`), true);
+    ev(`state.adminOk = false`);
+    row({});
+    check('no banner when nothing is locked',
+      ev(`(function(){const d=document.createElement('div');rcForceBannerInto(d);
+            return d.innerHTML===''})()`), true);
+
     done();
   } catch (e) {
     console.log('ERROR: ' + (e && e.stack || e));
