@@ -137,6 +137,35 @@ setTimeout(function () {
     check('reading sections still unlocks more practice (chain intact)',
       chainOpen > chainLocked, true);
 
+    /* ---- the reported bug: changing ONLY the subtopic ---------------------
+       The learner is already forced to P6 SST and standing inside topic 1.
+       The teacher changes nothing but the subtopic. The old snapshot did not
+       include it, so rcForce() moved the learner and the screen never
+       re-rendered — they kept reading topic 1. */
+    ev(`state.adminOk=false; state.klass='P6'; state.nsubject='SST';
+        state.ntopic='P6_SST_T01'; state.screen='notePath';`);
+    const before = ev(`(function(){
+        rcApply({user_id:'l1',forced_class:'P6',forced_subject:'SST',forced_topic:null,
+          forced_subtopic:null,forced_tier:null,allow_notes:true,
+          allow_practice_with_answers:true,allow_practice_no_answers:true});
+        return rcSnapshot(); })()`);
+    const after = ev(`(function(){
+        rcApply({user_id:'l1',forced_class:'P6',forced_subject:'SST',
+          forced_topic:'Responsible Living in the East African Environment',
+          forced_subtopic:'6. SOLUTIONS TO THE ENVIRONMENTAL PROBLEMS',forced_tier:null,
+          allow_notes:true,allow_practice_with_answers:true,allow_practice_no_answers:true});
+        return rcSnapshot(); })()`);
+    check('changing only the subtopic changes the snapshot, so the screen re-renders',
+      before !== after, true);
+
+    /* and the learner actually lands on the locked subtopic */
+    ev(`rcForce()`);
+    check('the learner is moved off the topic they were reading',
+      ev(`state.ntopic`), 'P6_SST_T05');
+    check('and only the locked subtopic is left',
+      ev(`noteSections(noteById(state.ntopic)).map(s=>String(s.title))`),
+      ['6. SOLUTIONS TO THE ENVIRONMENTAL PROBLEMS']);
+
     /* ---- the banners: a lock must never be silent ------------------------ */
     row(lockRow());
     check('a locked learner is told they are locked',

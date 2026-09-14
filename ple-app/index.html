@@ -2230,6 +2230,15 @@ function rcForce(){
   }
   if(RC.subtopic) state.nsec=0;
 }
+/* Everything that changes what the learner is allowed to see or where they
+   stand. This list used to omit the topic and subtopic locks, so a teacher who
+   changed ONLY the subtopic produced an identical snapshot: rcForce() moved the
+   learner but nothing re-rendered, and they kept looking at the old topic. */
+function rcSnapshot(){
+  return JSON.stringify([RC.notes,RC.pwa,RC.pna,RC.klass,RC.subject,
+    RC.topic,RC.subtopic,RC.forceMode,RC.forceTarget,RC.forceUntil,
+    RC.examId,RC.examStatus,RC.examDone]);
+}
 function rcFromCache(){
   if(RC.at) return false;
   try{ const d=JSON.parse(localStorage.getItem(RC_KEY)||'null');
@@ -2267,7 +2276,7 @@ async function rcFetch(){
     }catch(err){ RC.examId=null; RC.examStatus=null; RC.examTitle=''; }
     try{ localStorage.setItem(RC_KEY,JSON.stringify(RC)); }catch(e){}
     rcForce();
-    const snap=JSON.stringify([RC.notes,RC.pwa,RC.pna,RC.klass,RC.subject,RC.examId,RC.examStatus,RC.examDone]);
+    const snap=rcSnapshot();
     if(snap!==rcSnap){ rcSnap=snap; rcReact(); }    /* only when it really changed */
   }catch(e){
     /* no internet: keep the settings already known, or the saved copy.
