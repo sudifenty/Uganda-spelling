@@ -458,6 +458,11 @@ p{margin:0}
 .badge small{display:block;font-size:11px;font-weight:800;color:var(--orange-ink);margin-top:6px}
 .badge.locked{background:#F1F5F9;border-color:var(--line);opacity:.7}
 .badge.locked small{color:var(--muted)}
+.rc-force{background:#106b64;color:#fff;border-radius:14px;padding:12px 14px;margin:10px 0;
+  box-shadow:0 2px 8px rgba(16,107,100,.25)}
+.rc-force b{display:block;font-size:13px;letter-spacing:.02em;text-transform:uppercase;opacity:.85}
+.rc-force span{display:block;font-size:15px;font-weight:700;margin-top:2px}
+.rc-force-extra{background:#f99307;box-shadow:0 2px 8px rgba(249,147,7,.3)}
 
 /* ---------- 9. PROFILE ---------- */
 .profile-hero{
@@ -2058,6 +2063,9 @@ const RC_OPEN={notes:true,pwa:true,pna:true};
 const RC_COLS={allow_notes:'notes',
   allow_practice_with_answers:'pwa',allow_practice_no_answers:'pna'};
 const RC={notes:true,pwa:true,pna:true,klass:null,subject:null,topic:null,subtopic:null,tier:null,
+          /* admin override: LOCK_ONLY hides everything but the target, EXTRA
+             only adds a task, EXAM opens a paper. null = no override. */
+          forceMode:null,forceTarget:null,forceUntil:null,
           examId:null,examTitle:'',examStatus:null,exam:null,examDone:false,
           note:'',at:0,offline:false,uid:null};
 const RC_NOTES_SCREENS=['notes','notePath','noteSub','noteTopic','noteRead','noteJourney','noteChallenge','mathLesson'];
@@ -2074,8 +2082,58 @@ function rcMatch(want){
     if(String(arguments[i]==null?'':arguments[i]).trim().toLowerCase()===w) return true;
   return false;
 }
-const rcTopicLocked = () => !isAdmin() && !!RC.topic;
-const rcSubLocked   = () => !isAdmin() && !!RC.subtopic;
+/* Is any override live? An override with no mode but a stored subtopic is the
+   lock that shipped before force_mode existed, so it still counts as LOCK_ONLY
+   — otherwise turning this on would silently release learners already locked. */
+const rcForceActive = () => !isAdmin() && (!!RC.forceMode || (!!RC.subtopic && !RC.forceMode));
+const rcForceMode   = () => RC.forceMode || (RC.subtopic ? 'LOCK_ONLY' : null);
+const rcIsLock      = () => !isAdmin() && rcForceMode()==='LOCK_ONLY';
+const rcIsExtra     = () => !isAdmin() && RC.forceMode==='EXTRA';
+const rcIsExamForce = () => !isAdmin() && RC.forceMode==='EXAM';
+/* Open the forced target. forced_subtopic_id is "<topic id>#<section index>",
+   which is stable in a way a section title is not; the index is only trusted
+   when it is in range, and a title match is tried first. */
+function rcOpenForceTarget(){
+  const raw=String(RC.forceTarget||'');
+  const hash=raw.lastIndexOf('#');
+  const tid=hash>0?raw.slice(0,hash):'';
+  const t=tid?noteById(tid):null;
+  if(!t) return;
+  let i=hash>0?parseInt(raw.slice(hash+1),10):NaN;
+  const secs=noteSections(t);
+  if(!(i>=0&&i<secs.length)){
+    i=secs.findIndex(s=>rcMatch(RC.subtopic||RC.forceTarget,s.title));
+  }
+  if(!(i>=0)) i=0;
+  state.ntopic=t.id; state.nsec=i; state.screen='noteRead'; render();
+}
+/* Sits on top of whatever the learner was looking at, so an override is never
+   silent — a hidden chain with no explanation reads as the app being broken. */
+function rcForceBannerInto(el){
+  const prev=document.getElementById('rcForceBanner'); if(prev) prev.remove();
+  if(!el || isAdmin() || !rcForceActive()) return;
+  const mode=rcForceMode();
+  const label=String(RC.subtopic||RC.forceTarget||'your task').replace(/^\d+\.\s*/,'');
+  const box=document.createElement('div');
+  box.id='rcForceBanner';
+  box.setAttribute('role','status');
+  if(mode==='EXTRA'){
+    box.className='rc-force rc-force-extra';
+    box.innerHTML='<b>Extra task from your teacher</b><span>'+label+'</span>';
+    box.onclick=rcOpenForceTarget;
+    box.style.cursor='pointer';
+  } else if(mode==='EXAM'){
+    box.className='rc-force';
+    box.innerHTML='<b>Your teacher set an exam</b><span>'+String(RC.examTitle||'Open it to begin')+'</span>';
+  } else {
+    box.className='rc-force';
+    box.innerHTML='<b>Teacher Assigned</b><span>'+label+
+      ' &mdash; everything else is hidden until your teacher unlocks it.</span>';
+  }
+  el.insertBefore(box, el.firstChild);
+}
+const rcTopicLocked = () => !isAdmin() && !!RC.topic && rcForceMode()!=='EXTRA';
+const rcSubLocked   = () => !isAdmin() && !!RC.subtopic && rcIsLock();
 const rcTabAllowed = id => id==='notes' ? RC.notes
   : (id==='exercises'||id==='papers') ? RC.pna : true;
 function rcScreenDenied(screen){
@@ -2112,6 +2170,28 @@ function rcApply(a){
   RC.subject=(a&&a.forced_subject)||null;
   RC.topic=(a&&a.forced_topic)||null;
   RC.subtopic=(a&&a.forced_subtopic)||null;
+  /* ---- admin override / force lock ----
+     An override with a forced_until in the past is treated as if it was never
+     set, so it lapses on the learner's next sync without anyone touching it. */
+  {
+    const mode=(a&&a.force_mode)||null;
+    const until=(a&&a.forced_until)||null;
+    const lapsed=!!until && (new Date(until).getTime()||0) < Date.now();
+    if(mode && lapsed){
+      /* The override has run out. It must release everything it set — the
+         stored titles too, or the "no mode but a subtopic" fallback below
+         would keep the learner locked long after the teacher's deadline. */
+      RC.forceMode=null; RC.forceTarget=null; RC.forceUntil=null;
+      RC.topic=null; RC.subtopic=null;
+    } else {
+      RC.forceMode   = mode ? String(mode) : null;
+      RC.forceTarget = mode ? ((a&&a.forced_subtopic_id)||null) : null;
+      RC.forceUntil  = mode ? until : null;
+      /* EXTRA and EXAM must hide nothing, so a leftover topic/subtopic from an
+         earlier LOCK_ONLY is dropped rather than silently narrowing the app. */
+      if(mode && mode!=='LOCK_ONLY'){ RC.topic=null; RC.subtopic=null; }
+    }
+  }
   RC.tier=(a&&a.forced_tier!=null&&a.forced_tier!=='')?Number(a.forced_tier):null;
   RC.note=(a&&a.note)||'';
 }
@@ -2381,6 +2461,7 @@ function render(){
   const screenHtml = !state.authReady ? `<div class="auth-loading"><img src="${PLE_ART.owlHero}" alt="Owl" style="width:120px;height:100px;object-fit:contain;animation:hbWave 1.6s ease-in-out infinite"><h2>Checking your account…</h2><p>Just a moment.</p></div>` : (locked ? SCREENS.auth() : SCREENS[state.screen]());
   document.getElementById('views').innerHTML =
     `<section class="screen active ${FULLSCREEN.includes(state.screen)?'no-nav':''}">${screenHtml}</section>`;
+  rcForceBannerInto(document.querySelector('#views .screen'));
   const bar = document.getElementById('tabbar');
   bar.classList.toggle('hidden', FULLSCREEN.includes(state.screen) || !state.authUser);
   if(!document.getElementById('afxMute')){
