@@ -166,6 +166,38 @@ setTimeout(function () {
       ev(`noteSections(noteById(state.ntopic)).map(s=>String(s.title))`),
       ['6. SOLUTIONS TO THE ENVIRONMENTAL PROBLEMS']);
 
+    /* ---- THE REPORTED LEAK: stranded in a topic that is not locked --------
+       rcForce() only runs on a 15-second sync, so between syncs the learner
+       can be sitting in any topic. noteSections() used to skip the subtopic
+       filter for a topic that was not the locked one, so it returned every
+       section - the learner saw the whole P6_SST_T01 study path while locked
+       to P6_SST_T05 section 6. */
+    const vis = s => ev(`(function(){const d=document.createElement('div');
+        d.innerHTML=(SCREENS['${s}']||function(){return ''})();
+        return (d.textContent||'').replace(/\s+/g,' ');})()`);
+
+    ev(`state.klass='P6'; state.nsubject='SST';
+        state.ntopic='P6_SST_T01'; state.screen='notePath';`);
+    check('a locked-out topic shows none of its sections',
+      ev(`noteSections(noteFindAnywhere('P6_SST_T01')).length`), 0);
+    check('the learning path never renders a locked-out topic',
+      /East African Community/.test(vis('notePath')), false);
+    check('and moves the learner onto the topic they were locked to',
+      ev(`state.ntopic`), 'P6_SST_T05');
+    check('which shows only the locked subtopic',
+      /SOLUTIONS TO THE ENVIRONMENTAL PROBLEMS/.test(vis('notePath')), true);
+
+    ev(`state.ntopic='P6_SST_T01';`);
+    ev(`openNotePath('P6_SST_T01')`);
+    check('tapping a locked-out topic lands on the locked one',
+      ev(`state.ntopic`), 'P6_SST_T05');
+
+    /* the owner must still see everything */
+    ev(`state.adminOk=true; state.ntopic='P6_SST_T01';`);
+    check('owner mode still sees the full topic',
+      ev(`noteSections(noteFindAnywhere('P6_SST_T01')).length`) > 5, true);
+    ev(`state.adminOk=false;`);
+
     /* ---- the banners: a lock must never be silent ------------------------ */
     row(lockRow());
     check('a locked learner is told they are locked',

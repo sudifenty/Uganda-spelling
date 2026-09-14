@@ -3823,7 +3823,10 @@ function topicIcon(t){
   return t.subject==='MATH'?'🔢':t.subject==='SCI'?'🔬':t.subject==='ENG'?'📖':'🌍';
 }
 function openNotePath(id){
-  const t=noteFindAnywhere(id);if(!t)return;
+  let t=noteFindAnywhere(id);if(!t)return;
+  /* a topic lock outranks any navigation: asking for a locked-out topic lands
+     the learner on the one they were locked to */
+  const rt=rcResolveTopic(t); if(rt&&rt.id!==t.id){ t=rt; id=t.id; }
   if(!spPaid()&&t.id!==spFreeTopicId(t.class)){ spOpenPaywall(); return; }
   if(state.klass!==t.class&&checkClassAccess(t.class))state.klass=t.class;
   state.nsubject=t.subject;state.ntopic=id;state.nsec=0;
@@ -3895,6 +3898,10 @@ const LOCK_SVG = `<svg viewBox="0 0 40 40" width="26" height="26" aria-hidden="t
 
 SCREENS.notePath = () => {
   let t=noteById(state.ntopic)||noteFindAnywhere(state.ntopic);
+  /* a topic lock outranks state.ntopic: whatever put the learner on this screen,
+     they are shown the topic they were locked to, never the one they wandered
+     into between two 15-second syncs */
+  t=rcResolveTopic(t);
   /* no topic chosen yet: a learner is put on the next unfinished topic of
      their subject, so the topics list is never needed as a fallback */
   if(!t && !isAdmin() && pickStudentTopic()) t=noteById(state.ntopic)||noteFindAnywhere(state.ntopic);
@@ -7907,12 +7914,41 @@ const noteById = id => {
   const b = notesFor(state.klass, state.nsubject);
   return b ? b.topics.find(t=>t.id===id) : null;
 };
+/* A topic lock is absolute. Whatever state.ntopic happens to say - a tap, a
+   saved study plan, a deep link, anything between two 15-second syncs - the
+   learner may only ever be shown the locked topic. */
+/* A topic lock only hides the other topics when the locked topic really exists
+   in the learner's bank. If the saved name is stale - a topic renamed last
+   term - the lock degrades to no lock at all rather than hiding everything. */
+function rcLockedTopicExists(){
+  if(!RC.topic) return false;
+  const b=notesFor(state.klass, state.nsubject||RC.subject);
+  return !!(b&&b.topics.find(x=>rcMatch(RC.topic,x.id,x.title)));
+}
+function rcResolveTopic(t){
+  if(isAdmin() || !rcTopicLocked()) return t;
+  if(t && rcMatch(RC.topic,t.id,t.title)) return t;
+  const b=notesFor(state.klass, state.nsubject||RC.subject);
+  const hit=b&&b.topics.find(x=>rcMatch(RC.topic,x.id,x.title));
+  if(hit){ if(!t||t.id!==hit.id){ state.ntopic=hit.id; state.nsec=0; } return hit; }
+  return t;
+}
 function noteSections(t){
   let s=(t.sections||[]).filter(sec=>!/^about\s+this\s+topic\b/i.test(String(sec.title||'').trim()));
   /* Locked to one subtopic: the other sections of this topic disappear. */
-  if(rcSubLocked()&&rcMatch(RC.topic,t&&t.id,t&&t.title)){
-    const only=s.filter(sec=>rcMatch(RC.subtopic,sec.title));
-    if(only.length) s=only;
+  if(rcSubLocked()){
+    if(!RC.topic || rcMatch(RC.topic,t&&t.id,t&&t.title)){
+      /* This is the locked topic (or no topic was named). A subtopic name that
+         matches nothing still leaves the topic reachable, so a mistyped title
+         can never lock a learner out of everything. */
+      const only=s.filter(sec=>rcMatch(RC.subtopic,sec.title));
+      if(only.length) s=only;
+    } else if(rcLockedTopicExists()){
+      /* A real topic WAS named and this is not it: hide every section. This used
+         to fall through and return them all, so a learner left standing in
+         another topic saw its whole study path - a lock that hid nothing. */
+      return [];
+    }
   }
   return s;
 }
