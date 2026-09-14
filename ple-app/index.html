@@ -1820,6 +1820,10 @@ function pbAll(cls){
 function pbTopics(cls){
   const t = {};
   pbAll(cls).forEach(q => { (t[q.topic] = t[q.topic] || []).push(q); });
+  if(rcTopicLocked()){
+    const keep=Object.keys(t).filter(k=>rcMatch(RC.topic,k));
+    if(keep.length) return keep.reduce((o,k)=>(o[k]=t[k],o),{});
+  }
   return t;
 }
 function shuffle(a){ return a.map(v=>[Math.random(),v]).sort((x,y)=>x[0]-y[0]).map(v=>v[1]); }
@@ -2053,7 +2057,7 @@ const RC_OPEN={notes:true,pwa:true,pna:true};
 /* database column -> switch. Missing row, missing column or null = ALLOWED. */
 const RC_COLS={allow_notes:'notes',
   allow_practice_with_answers:'pwa',allow_practice_no_answers:'pna'};
-const RC={notes:true,pwa:true,pna:true,klass:null,subject:null,topic:null,tier:null,
+const RC={notes:true,pwa:true,pna:true,klass:null,subject:null,topic:null,subtopic:null,tier:null,
           examId:null,examTitle:'',examStatus:null,exam:null,examDone:false,
           note:'',at:0,offline:false,uid:null};
 const RC_NOTES_SCREENS=['notes','notePath','noteSub','noteTopic','noteRead','noteJourney','noteChallenge','mathLesson'];
@@ -2061,10 +2065,29 @@ const RC_PWA_SCREENS=['ptopics','mathHome','mathLearn','mathPlay'];
 const RC_PNA_SCREENS=['exercises','exTopic','exDo','exResult','exMine','papers','years','paperDetail','exam'];
 let rcTimer=null, rcSnap='', rcStarting=null;
 
+/* A topic or subtopic lock is matched by id OR by title, trimmed and
+   case-folded, so either form the admin stores finds the same content. */
+function rcMatch(want){
+  if(!want) return false;
+  const w=String(want).trim().toLowerCase();
+  for(let i=1;i<arguments.length;i++)
+    if(String(arguments[i]==null?'':arguments[i]).trim().toLowerCase()===w) return true;
+  return false;
+}
+const rcTopicLocked = () => !isAdmin() && !!RC.topic;
+const rcSubLocked   = () => !isAdmin() && !!RC.subtopic;
 const rcTabAllowed = id => id==='notes' ? RC.notes
   : (id==='exercises'||id==='papers') ? RC.pna : true;
 function rcScreenDenied(screen){
   if(isAdmin()) return null;                       /* the owner sees everything */
+  /* Locked to one subtopic: that section's notes are the ONLY content, so
+     practice and past papers are hidden too. The practice banks are grouped
+     under their own topic names, which do not line up with the notes topics,
+     so narrowing practice by name would be guesswork — hiding it is honest. */
+  if(rcSubLocked()){
+    if(RC_PWA_SCREENS.includes(screen)) return 'pwa';
+    if(RC_PNA_SCREENS.includes(screen)) return 'pna';
+  }
   if(!RC.notes && RC_NOTES_SCREENS.includes(screen)) return 'notes';
   if(!RC.pwa   && RC_PWA_SCREENS.includes(screen))   return 'pwa';
   if(!RC.pna   && RC_PNA_SCREENS.includes(screen))   return 'pna';
@@ -2088,6 +2111,7 @@ function rcApply(a){
   RC.klass=(a&&a.forced_class)||null;
   RC.subject=(a&&a.forced_subject)||null;
   RC.topic=(a&&a.forced_topic)||null;
+  RC.subtopic=(a&&a.forced_subtopic)||null;
   RC.tier=(a&&a.forced_tier!=null&&a.forced_tier!=='')?Number(a.forced_tier):null;
   RC.note=(a&&a.note)||'';
 }
@@ -2100,6 +2124,16 @@ function rcForce(){
     if(state.psubject!==RC.subject) state.ptopic=null;
     state.psubject=RC.subject; state.nsubject=RC.subject; state.exsubject=RC.subject;
   }
+  /* A topic lock pins the learner inside that topic, a subtopic lock inside one
+     section of it. The list filters below hide everything else, so there is
+     nothing left to tap — this only decides where they land. */
+  if(RC.topic){
+    const b=notesFor(state.klass, state.nsubject||RC.subject);
+    const hit=b&&b.topics.find(x=>rcMatch(RC.topic,x.id,x.title));
+    if(hit){ if(state.ntopic!==hit.id){ state.ntopic=hit.id; state.nsec=0; } }
+    state.ptopic=null;
+  }
+  if(RC.subtopic) state.nsec=0;
 }
 function rcFromCache(){
   if(RC.at) return false;
@@ -7752,8 +7786,15 @@ const NOTE_SUBJECTS = [
 function notesFor(cls, subj){
   const c = NOTES_BANK[cls]; if(!c) return null;
   const b = c[subj]; if(!b) return null;
-  const topics = (b.topics||[]).filter(t => t.class===cls && t.subject===subj)
+  let topics = (b.topics||[]).filter(t => t.class===cls && t.subject===subj)
                                .sort((x,y)=>x.topic_no-y.topic_no);
+  /* Locked to one topic: every other topic disappears from every notes screen.
+     If nothing matches the stored name, show them all rather than lock the
+     learner out of the subject completely. */
+  if(rcTopicLocked()){
+    const only=topics.filter(t=>rcMatch(RC.topic,t.id,t.title));
+    if(only.length) topics=only;
+  }
   return topics.length ? {class:cls, subject:subj, subject_name:b.subject_name,
                           words:b.words, topics} : null;
 }
@@ -7761,7 +7802,15 @@ const noteById = id => {
   const b = notesFor(state.klass, state.nsubject);
   return b ? b.topics.find(t=>t.id===id) : null;
 };
-function noteSections(t){return (t.sections||[]).filter(sec=>!/^about\s+this\s+topic\b/i.test(String(sec.title||'').trim()));}
+function noteSections(t){
+  let s=(t.sections||[]).filter(sec=>!/^about\s+this\s+topic\b/i.test(String(sec.title||'').trim()));
+  /* Locked to one subtopic: the other sections of this topic disappear. */
+  if(rcSubLocked()&&rcMatch(RC.topic,t&&t.id,t&&t.title)){
+    const only=s.filter(sec=>rcMatch(RC.subtopic,sec.title));
+    if(only.length) s=only;
+  }
+  return s;
+}
 function noteDone(t){
   let n=0; noteSections(t).forEach((_,i)=>{ if(state.noteSeen[t.id+':'+i]) n++; });
   return {read:n, total:noteSections(t).length, pct:Math.round(n/noteSections(t).length*100)};
