@@ -3371,15 +3371,51 @@ async function adminApprove(id,userId){
   const row=(state.adminRows||[]).find(r=>String(r.id)===String(id));
   const ph=(row&&(row.phone||row.payment_phone))||'';
   if(!ph&&!userId){ state.adminErr='approve failed: row has no phone/user id'; render(); return; }
-  try{ await supabaseClient.from('smartple_payments_pending').update({status:'approved',approved_at:new Date().toISOString()}).eq('id',id); }catch(e){}
-  if(ph){ try{ await supabaseClient.from('smartple_profiles').update({is_paid:true,paid_at:new Date().toISOString(),paid_until:new Date(Date.now()+30*864e5).toISOString()}).in('phone',spPhoneVariants(ph)); }catch(e){} }
-  /* status may only ever be 'active' or 'expired' — smartple_profiles carries a
-     CHECK constraint, and this write is wrapped in a catch, so a bad value failed
-     SILENTLY: the learner saw "Approved" and never unlocked. 'paid' is not a
-     status; being paid is what is_paid and paid_until say. */
-  if(userId){ try{ await supabaseClient.from('smartple_profiles').upsert({user_id:userId,is_paid:true,status:'active',paid_at:new Date().toISOString()},{onConflict:'user_id'}); }catch(e){} }
+  /* supabase-js does NOT throw when the database rejects a write - it hands
+     back {error}. Every write here used to be wrapped in try{}catch(e){} with
+     the result thrown away, so a rejected write was invisible twice over: the
+     catch never fired and the error object was never read. The toast then
+     claimed success regardless. Each write is now checked, and the message
+     says what actually happened. */
+  const errs=[];
+  const bad=(what,r)=>{ if(r&&r.error) errs.push(what+': '+(r.error.message||r.error)); return r; };
+  const nowIso=()=>new Date().toISOString();
+
+  bad('payment row', await supabaseClient.from('smartple_payments_pending')
+    .update({status:'approved',approved_at:nowIso()}).eq('id',id));
+
+  /* status may only ever be 'active' or 'expired' - smartple_profiles carries a
+     CHECK constraint. 'paid' is not a status; being paid is what is_paid and
+     paid_until say. */
+  let unlocked=0;
+  if(ph){
+    const r=bad('profile by phone', await supabaseClient.from('smartple_profiles')
+      .update({is_paid:true,status:'active',paid_at:nowIso(),
+               paid_until:new Date(Date.now()+30*864e5).toISOString()})
+      .in('phone',spPhoneVariants(ph)).select('user_id'));
+    if(r&&!r.error) unlocked+=(r.data||[]).length;
+  }
+  if(userId){
+    const r=bad('profile by user', await supabaseClient.from('smartple_profiles')
+      .upsert({user_id:userId,is_paid:true,status:'active',paid_at:nowIso()},
+              {onConflict:'user_id'}).select('user_id'));
+    if(r&&!r.error) unlocked+=(r.data||[]).length;
+  }
+  /* legacy table, best effort: it must never be the reason an approval looks
+     like it failed */
   if(ph){ try{ await supabaseClient.from('profiles').update({is_paid:true}).eq('phone',ph); }catch(e){} }
-  toast('Approved \u2014 the learner unlocks on their next sync');
+
+  if(!unlocked){
+    state.adminErr='NOT approved - nobody was unlocked. '
+      +(errs.length?errs.join(' | '):'No profile matched that phone or user id.');
+    toast('Not approved \u2014 nobody was unlocked');
+  }else if(errs.length){
+    state.adminErr='Approved, but a write failed: '+errs.join(' | ');
+    toast('Approved with a warning');
+  }else{
+    state.adminErr='';
+    toast('Approved \u2014 the learner unlocks on their next sync');
+  }
   adminLoad();
 }
 function spStore(k){ try{ return JSON.parse(localStorage.getItem(k))||{}; }catch(e){ return {}; } }
