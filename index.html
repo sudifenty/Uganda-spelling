@@ -3373,7 +3373,11 @@ async function adminApprove(id,userId){
   if(!ph&&!userId){ state.adminErr='approve failed: row has no phone/user id'; render(); return; }
   try{ await supabaseClient.from('smartple_payments_pending').update({status:'approved',approved_at:new Date().toISOString()}).eq('id',id); }catch(e){}
   if(ph){ try{ await supabaseClient.from('smartple_profiles').update({is_paid:true,paid_at:new Date().toISOString(),paid_until:new Date(Date.now()+30*864e5).toISOString()}).in('phone',spPhoneVariants(ph)); }catch(e){} }
-  if(userId){ try{ await supabaseClient.from('smartple_profiles').upsert({user_id:userId,is_paid:true,status:'paid',paid_at:new Date().toISOString()},{onConflict:'user_id'}); }catch(e){} }
+  /* status may only ever be 'active' or 'expired' — smartple_profiles carries a
+     CHECK constraint, and this write is wrapped in a catch, so a bad value failed
+     SILENTLY: the learner saw "Approved" and never unlocked. 'paid' is not a
+     status; being paid is what is_paid and paid_until say. */
+  if(userId){ try{ await supabaseClient.from('smartple_profiles').upsert({user_id:userId,is_paid:true,status:'active',paid_at:new Date().toISOString()},{onConflict:'user_id'}); }catch(e){} }
   if(ph){ try{ await supabaseClient.from('profiles').update({is_paid:true}).eq('phone',ph); }catch(e){} }
   toast('Approved \u2014 the learner unlocks on their next sync');
   adminLoad();
