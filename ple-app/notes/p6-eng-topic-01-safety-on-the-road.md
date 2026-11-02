@@ -3,268 +3,655 @@
 # TOPIC 1: SAFETY ON THE ROAD
 
 *Curriculum reference: NCDC Primary Six Curriculum, Set One, English Topic 1, 36 periods
-(`curriculum/P6-SET-ONE-2010.pdf`, topic outline page 24 and pages 26–29).
-Sub-topics: **1A Safety on the Road (18 periods)** and **1B Traffic Dangers (18 periods)**.*
+(`curriculum/P6-SET-ONE-2010.pdf`, pages 26–29). The study content below was provided
+by the app owner and replaces the earlier version of this topic.*
 
-**What you already know:** In P.1 and P.2 you learnt about accidents, safety and transport.
-In P.6 you learn the **English used to talk about road safety** — the vocabulary, the
-must/should structures, adjectives and adverbs, and the conjunctions *when, because* and
-*so … that*.
+**What you already know:** You already use roads every day. In P.6 you now master
+**road safety** fully — the road users and their rules, traffic signs and lights,
+the causes and effects of accidents, safety equipment, responsible road use and
+what to do in an emergency.
 
 **By the end of this topic you should be able to:**
 
-- use road-safety vocabulary correctly
-- describe how to use the road safely
-- pronounce and write words with the **'l'** and **'r'** sounds correctly
-- use *must, mustn't … unless, should not, as soon as, may, should always*
-- use *because, when, so … that* to give reasons
-- read and write texts, poems and dialogues about road safety
+- explain road safety and name the road users
+- give the safety rules for pedestrians, drivers, passengers, cyclists and
+  motorcyclists
+- explain the types of traffic signs, the traffic lights and road safety equipment
+- state the causes, effects and prevention of road accidents
+- act responsibly and safely after an accident
 
----
+## MEANING OF ROAD SAFETY
 
-## SUB-TOPIC 1A: SAFETY ON THE ROAD
+**1. What is road safety?**
 
-### Vocabulary from the syllabus
+Road safety refers to the measures and practices used to prevent road accidents and
+protect road users.
 
-| Word | Meaning |
-|---|---|
-| pedestrian | A person walking along or crossing a road |
-| zebra crossing | The black and white stripes where pedestrians cross |
-| traffic | The vehicles and people moving on a road |
-| traffic jam | A long line of vehicles that can hardly move |
-| cyclist | A person riding a bicycle |
-| motorist | A person driving a motor vehicle |
-| signal | A sign given to show what one is about to do |
-| sign post | A board at the roadside giving information or warning |
-| rail crossing | The place where a road crosses a railway line |
-| black spot | A place where accidents happen very often |
-| seat belt | The belt that holds a person safely in a vehicle |
-| helmet | The hard hat worn by a rider for protection |
+**2. Who is a road user?**
 
-### Rules for using the road safely
+A road user is any person who uses a road.
 
-Walk on the **right-hand side** facing oncoming traffic where there is no pavement · use a
-**side path or pavement** where there is one · **look right, look left and look right
-again** before crossing · cross at the **zebra crossing** or where you can see clearly ·
-never cross in front of or behind a parked vehicle · never play or run in the road · wear
-**bright clothing** at night · obey the **traffic police** and the traffic lights · wear a
-**seat belt** in a vehicle and a **helmet** on a motorcycle · never board or leave a moving
-vehicle · do not put your hand or head out of a moving vehicle.
+**3. Mention examples of road users.**
 
-### Language structures
+Examples of road users include:
 
-| Structure | Example |
-|---|---|
-| **… as soon as …** | *The boy crossed the road **as soon as** it was clear.* |
-| **… must …** | *Drivers **must** signal at junctions.* |
-| **… should not …** | *Children **should not** play in the road.* |
-| **… mustn't … unless …** | *You **mustn't** cross the road **unless** it is clear.* |
+- Pedestrians
+- Drivers
+- Passengers
+- Cyclists
+- Motorcyclists
+- Animal handlers
 
-**Note:** *must* shows a **strong duty or rule**; *mustn't* is a **prohibition**;
-*should not* is strong advice. After *unless* we use the **positive** form —
-*unless it **is** clear*, never "unless it isn't clear".
+## SAFETY FOR PEDESTRIANS
 
-### Grammar focus 1: adjectives and adverbs
+**4. Who is a pedestrian?**
 
-| Adjective (describes a noun) | Adverb (describes a verb) |
-|---|---|
-| a **careless** driver | he drove **carelessly** |
-| a **quick** cyclist | she rode **quickly** |
-| a **heavy** lorry | it moved **heavily** |
-| a **good** driver | he drives **well** |
-| a **fast** vehicle | it moves **fast** |
+A pedestrian is a person who walks along or crosses a road.
 
-### Grammar focus 2: the 'l' and 'r' sounds
+**5. What is a footpath?**
 
-Many learners confuse these two sounds. Practise the pairs aloud:
+A footpath is a part of a road or area provided for pedestrians to walk safely.
 
-| 'l' | 'r' |
-|---|---|
-| light | right |
-| lane | rain |
-| load | road |
-| collect | correct |
-| play | pray |
-| glass | grass |
-| lice | rice |
-| belly | berry |
+**6. Why should pedestrians use footpaths?**
 
-*Practice sentence:* **"The lorry driver turned right at the rail crossing and lit his
-lights."**
+Pedestrians should use footpaths to avoid being hit by vehicles using the road.
 
----
+**7. Which side should pedestrians walk on when there is no footpath?**
 
-## SUB-TOPIC 1B: TRAFFIC DANGERS
+Where there is no footpath, pedestrians should walk on the **right-hand side of the
+road**, facing oncoming traffic.
 
-### Vocabulary from the syllabus
+**8. How should pedestrians cross a road safely?**
 
-| Word | Meaning |
-|---|---|
-| cross road | A place where two roads cross each other |
-| roundabout | A circular junction round which traffic moves |
-| junction | A place where roads meet |
-| traffic lights | The red, amber and green lights controlling traffic |
-| side path | The path at the side of the road for pedestrians |
-| island | The raised part in the middle of a road where pedestrians can wait |
-| road humps | Raised bars across the road to slow vehicles |
-| Highway Code | The book of rules for using roads |
-| first aid | The first help given to an injured person |
-| careless / careful | Without care / with care |
+They should:
 
-### The traffic lights
+1. Stop at the edge of the road.
+2. Look right.
+3. Look left.
+4. Look right again.
+5. Listen for approaching vehicles.
+6. Cross when it is safe.
+7. Continue looking and listening while crossing.
 
-| Light | Meaning |
-|---|---|
-| **Red** | **Stop** |
-| **Amber (yellow)** | Get ready — stop if you can, or prepare to move |
-| **Green** | **Go**, if the way is clear |
+**9. Where should pedestrians cross roads?**
 
-### Causes of road accidents
+Pedestrians should cross roads at safe places such as:
 
-Careless and **over-speeding** drivers · **drunken driving** · using a phone while driving ·
-**poor vehicles** — bad brakes and worn tyres · **bad roads** with potholes, no humps or no
-markings · careless pedestrians crossing without looking · children playing in the road ·
-overloading vehicles · driving at night without lights · animals straying onto the road ·
-riding without a helmet · ignoring road signs and traffic lights.
+- Zebra crossings
+- Pedestrian crossings
+- Footbridges
+- Pedestrian underpasses
+- Traffic-light controlled crossings
 
-### What to do at the scene of an accident
+**10. What is a zebra crossing?**
 
-Keep calm and **call for help** — shout, or ring the police or an ambulance · do not crowd
-around the injured · give **first aid** if you know how · do not move a badly injured person
-carelessly · take the injured to hospital quickly · report to the **police**.
+A zebra crossing is a marked part of a road where pedestrians can cross safely.
 
-### Language structures
+**11. Why should pedestrians use zebra crossings?**
 
-| Structure | Example |
-|---|---|
-| **… so … that …** | *The driver was **so** careless **that** he caused the accident.* |
-| **… so …** | *It became dark, **so** he turned on the headlights.* |
-| **… because …** | *Trudy was knocked down by the car **because** she crossed the road carelessly.* |
-| **… may …** | *You **may** get an accident if you don't use a side path.* |
-| **… should always …** | *We **should always** be aware of the Highway Code.* |
+They should use zebra crossings because they provide a safer and more visible
+place for crossing the road.
 
-### Grammar focus 3: conjunctions *when* and *because*
+**12. Why should children not play on roads?**
 
-- **When** joins ideas by **time**: *He stopped **when** the light turned red.*
-- **Because** gives the **reason**: *He stopped **because** the light turned red.*
+Children should not play on roads because vehicles may hit them and cause serious
+injuries or death.
 
-**Careful:** write one sentence, not two. *"He stopped. Because the light was red."* is
-wrong — join them: *He stopped **because** the light was red.*
+**13. Why should pedestrians avoid using mobile phones while crossing roads?**
 
----
+Mobile phones can distract pedestrians and prevent them from paying attention to
+approaching vehicles.
 
-# KEY DEFINITIONS
+**14. Why should pedestrians avoid using earphones when crossing busy roads?**
+
+Earphones may prevent pedestrians from hearing approaching vehicles, horns and
+other warning sounds.
+
+## TRAFFIC SIGNS
+
+**15. What is a traffic sign?**
+
+A traffic sign is a sign placed on or near a road to give information, warnings,
+instructions or restrictions to road users.
+
+**16. Why are traffic signs important?**
+
+Traffic signs help control traffic, warn road users of dangers and provide
+information for safe use of roads.
+
+**17. What are the main types of traffic signs?**
+
+The main types are:
+
+1. Warning signs
+2. Regulatory signs
+3. Information signs
+
+**18. What are warning signs?**
+
+Warning signs are signs that warn road users about dangers or hazards ahead.
+
+**19. Give examples of warning signs.**
+
+Examples include:
+
+- Sharp bend
+- Dangerous junction
+- Children crossing
+- Pedestrian crossing
+- Road works
+- Hump ahead
+- Railway crossing
+
+**20. What are regulatory signs?**
+
+Regulatory signs give instructions, restrictions or prohibitions that road users
+must obey.
+
+**21. Give examples of regulatory signs.**
+
+Examples include:
+
+- Stop
+- Give way
+- No entry
+- No parking
+- Speed limit
+- No overtaking
+
+**22. What are information signs?**
+
+Information signs provide useful information or directions to road users.
+
+**23. Give examples of information signs.**
+
+Examples include:
+
+- Hospital
+- Bus stop
+- Parking area
+- Petrol station
+- Telephone
+
+## TRAFFIC LIGHTS
+
+**24. What are traffic lights?**
+
+Traffic lights are signals used to control the movement of vehicles and pedestrians
+on roads.
+
+**25. What does a red traffic light mean?**
+
+A red traffic light means **stop**.
+
+**26. What does a yellow or amber traffic light mean?**
+
+A yellow or amber light warns road users to prepare to stop and follow the signal
+instructions.
+
+**27. What does a green traffic light mean?**
+
+A green light means that road users may proceed when the way is clear and safe.
+
+**28. Why are traffic lights important?**
+
+They help control the movement of traffic and reduce collisions at junctions and
+crossings.
+
+## ROAD ACCIDENTS
+
+**29. What is a road accident?**
+
+A road accident is an unexpected event involving road users or vehicles that may
+result in injury, death or damage to property.
+
+**30. What are the main causes of road accidents?**
+
+Road accidents may be caused by:
+
+- Over-speeding
+- Reckless driving
+- Drunk driving
+- Careless crossing
+- Using mobile phones while driving
+- Dangerous overtaking
+- Overloading
+- Poorly maintained vehicles
+- Poor road conditions
+- Poor visibility
+- Driving while tired
+- Failure to obey traffic rules
+
+**31. How does over-speeding cause road accidents?**
+
+Over-speeding reduces the time a driver has to react to danger and increases the
+distance needed to stop a vehicle.
+
+**32. How does drunk driving cause accidents?**
+
+Alcohol can affect a driver's judgement, concentration, coordination and reaction
+time.
+
+**33. How does careless crossing cause accidents?**
+
+A pedestrian who crosses without checking for vehicles may be hit by an
+approaching vehicle.
+
+**34. How does using a mobile phone cause accidents?**
+
+Using a mobile phone distracts the driver and reduces attention to the road.
+
+**35. How does overloading cause accidents?**
+
+Overloading can make a vehicle difficult to control and can increase the risk of
+accidents.
+
+**36. How can poor vehicle maintenance cause accidents?**
+
+Faulty brakes, worn tyres, defective lights and other mechanical problems can
+cause accidents.
+
+## EFFECTS OF ROAD ACCIDENTS
+
+**37. What are the effects of road accidents?**
+
+Road accidents may cause:
+
+- Death
+- Injuries
+- Permanent disability
+- Damage to vehicles
+- Damage to property
+- Loss of income
+- Medical expenses
+- Emotional suffering
+- Traffic congestion
+- Loss of family members
+
+**38. How do road accidents affect families?**
+
+They may cause loss of family members, injuries, financial difficulties and
+emotional suffering.
+
+**39. How do road accidents affect the economy?**
+
+They can cause loss of working people, destruction of property, medical expenses
+and loss of productive time.
+
+## SAFETY RULES FOR DRIVERS
+
+**40. Who is a driver?**
+
+A driver is a person who operates or controls a motor vehicle.
+
+**41. Mention safety rules for drivers.**
+
+Drivers should:
+
+- Obey traffic rules.
+- Obey traffic signs.
+- Observe speed limits.
+- Wear seat belts.
+- Avoid driving under the influence of alcohol or drugs.
+- Avoid using mobile phones while driving.
+- Keep vehicles properly maintained.
+- Avoid dangerous overtaking.
+- Keep a safe distance from other vehicles.
+- Avoid driving when extremely tired or sleepy.
+- Avoid overloading vehicles.
+
+**42. Why should drivers wear seat belts?**
+
+Seat belts help protect occupants from being thrown around or out of a vehicle
+during a collision.
+
+**43. Why should drivers avoid over-speeding?**
+
+Drivers should avoid over-speeding because it increases the risk and severity of
+accidents.
+
+**44. Why should drivers maintain their vehicles?**
+
+Proper vehicle maintenance helps ensure that important parts such as brakes, tyres
+and lights work correctly.
+
+**45. Why should drivers not drive when drunk?**
+
+Alcohol can impair judgement, coordination and reaction time, making driving
+dangerous.
+
+## SAFETY RULES FOR PASSENGERS
+
+**46. Who is a passenger?**
+
+A passenger is a person travelling in a vehicle without controlling it.
+
+**47. Mention safety rules for passengers.**
+
+Passengers should:
+
+- Wear seat belts where provided.
+- Sit properly.
+- Avoid distracting the driver.
+- Keep their heads and hands inside the vehicle.
+- Avoid jumping on or off moving vehicles.
+- Avoid overcrowding vehicles.
+- Follow the instructions of the driver and relevant safety rules.
+
+**48. Why should passengers not distract drivers?**
+
+Distraction may prevent drivers from concentrating on the road and can lead to
+accidents.
+
+**49. Why should passengers not put their heads or hands outside moving vehicles?**
+
+They may be hit by other vehicles, trees, buildings or other objects.
+
+## SAFETY RULES FOR CYCLISTS
+
+**50. Who is a cyclist?**
+
+A cyclist is a person who rides a bicycle.
+
+**51. Mention safety rules for cyclists.**
+
+Cyclists should:
+
+- Wear a properly fitted helmet.
+- Obey traffic rules and signs.
+- Ride carefully.
+- Keep their bicycles in good condition.
+- Use lights or reflectors at night.
+- Give appropriate signals when turning.
+- Avoid using mobile phones while riding.
+- Avoid carrying too many passengers.
+
+**52. Why should cyclists wear helmets?**
+
+Helmets help protect the head from serious injury in the event of a crash.
+
+**53. Why should bicycles have reflectors or lights?**
+
+They make cyclists more visible to other road users, especially at night or in
+poor visibility.
+
+## SAFETY RULES FOR MOTORCYCLISTS
+
+**54. Who is a motorcyclist?**
+
+A motorcyclist is a person who rides a motorcycle.
+
+**55. Mention safety rules for motorcyclists.**
+
+Motorcyclists should:
+
+- Wear a properly fitted helmet.
+- Obey traffic rules.
+- Observe speed limits.
+- Keep the motorcycle in good condition.
+- Avoid riding under the influence of alcohol or drugs.
+- Avoid using mobile phones while riding.
+- Carry only the permitted number of passengers.
+- Use appropriate signals when turning.
+
+**56. Why should motorcyclists wear helmets?**
+
+Helmets protect the head and can reduce the severity of head injuries during
+crashes.
+
+## SAFETY AT NIGHT
+
+**57. Why is walking at night more dangerous?**
+
+Visibility may be poor, making it harder for pedestrians and drivers to see one
+another.
+
+**58. How can pedestrians improve their safety at night?**
+
+They should:
+
+- Wear bright or reflective clothing.
+- Use well-lit routes where possible.
+- Walk where pedestrians are expected to walk.
+- Cross at safe crossing points.
+- Stay alert to approaching vehicles.
+
+**59. How can vehicles be made more visible at night?**
+
+Vehicles should have working headlights, rear lights and reflectors.
+
+## ROAD SAFETY EQUIPMENT
+
+**60. What is a seat belt?**
+
+A seat belt is a safety device used to secure a person in a vehicle.
+
+**61. What is a helmet?**
+
+A helmet is protective headgear worn by cyclists and motorcyclists.
+
+**62. What is a reflector?**
+
+A reflector is a material or device that reflects light and makes a person,
+bicycle or vehicle more visible.
+
+**63. Why is road safety equipment important?**
+
+It helps protect road users and reduces the risk or severity of injuries.
+
+## WAYS OF PREVENTING ROAD ACCIDENTS
+
+**64. How can road accidents be prevented?**
+
+Road accidents can be reduced by:
+
+- Obeying traffic rules.
+- Avoiding over-speeding.
+- Avoiding drunk driving.
+- Using pedestrian crossings.
+- Wearing helmets.
+- Wearing seat belts.
+- Avoiding mobile-phone use while driving.
+- Maintaining vehicles properly.
+- Avoiding overloading.
+- Providing clear road signs.
+- Improving roads.
+- Providing adequate lighting.
+- Educating road users.
+
+**65. What is the responsibility of the government in road safety?**
+
+The government and relevant authorities should:
+
+- Construct and maintain roads.
+- Provide road signs and markings.
+- Control traffic.
+- Enforce traffic laws.
+- Educate road users.
+- Provide safe pedestrian facilities.
+- Improve road lighting where necessary.
+
+**66. What is the responsibility of road users in promoting road safety?**
+
+Road users should obey traffic rules, use roads responsibly and avoid behaviour
+that puts themselves or others in danger.
+
+## RESPONSIBLE ROAD USE
+
+**67. What does responsible road use mean?**
+
+Responsible road use means using roads carefully, obeying traffic rules and
+considering the safety of other road users.
+
+**68. How can children practise responsible road use?**
+
+Children can:
+
+- Use footpaths where provided.
+- Cross at safe places.
+- Obey traffic lights.
+- Obey road signs.
+- Avoid playing on roads.
+- Stay alert near roads.
+- Avoid using phones while crossing.
+
+**69. Why should road users obey traffic rules?**
+
+Traffic rules help organise road use, prevent accidents and protect people's lives
+and property.
+
+**70. Why should road users be patient?**
+
+Patience helps prevent reckless actions such as dangerous overtaking, speeding and
+careless crossing.
+
+## EMERGENCY ACTION AFTER A ROAD ACCIDENT
+
+**71. What should a person do after witnessing a road accident?**
+
+A person should:
+
+- Move to a safe place.
+- Call or alert the appropriate emergency services or authorities.
+- Seek help from responsible adults or trained first-aiders.
+- Avoid putting themselves in danger.
+- Avoid moving seriously injured people unnecessarily unless there is immediate danger.
+
+**72. Why should people avoid crowding around an accident?**
+
+Crowding can make it difficult for rescuers to help injured people and may create
+additional danger.
+
+**73. Why should injured people be handled carefully?**
+
+Improper handling may make some injuries worse.
+
+## IMPORTANCE OF ROAD SAFETY
+
+**74. Why is road safety important?**
+
+Road safety is important because it:
+
+- Saves lives.
+- Prevents injuries.
+- Protects property.
+- Reduces medical costs.
+- Reduces traffic congestion caused by accidents.
+- Promotes responsible behaviour.
+- Makes travelling safer.
+
+**75. What is the main aim of road safety?**
+
+The main aim of road safety is to prevent accidents and protect the lives and
+property of road users.
+
+## KEY DEFINITIONS
 
 | Term | Meaning |
 |---|---|
-| Pedestrian | A person walking along or crossing a road |
-| Zebra crossing | The striped place where pedestrians cross |
-| Junction | A place where roads meet |
-| Roundabout | A circular junction round which traffic moves |
-| Black spot | A place where accidents happen very often |
-| Highway Code | The book of rules for using the road |
-| First aid | The first help given to an injured person |
-| Adjective | A word that describes a noun |
-| Adverb | A word that tells how, when or where an action is done |
-| Conjunction | A word that joins parts of a sentence |
+| Road safety | The measures and practices used to prevent road accidents and protect road users. |
+| Road user | Any person who uses a road. |
+| Pedestrian | A person who walks along or crosses a road. |
+| Footpath | A part of a road or area provided for pedestrians to walk safely. |
+| Zebra crossing | A marked part of a road where pedestrians can cross safely. |
+| Traffic sign | A sign placed on or near a road to give information, warnings, instructions or restrictions to road users. |
+| Warning sign | A sign that warns road users about dangers or hazards ahead. |
+| Regulatory sign | A sign that gives instructions, restrictions or prohibitions that road users must obey. |
+| Information sign | A sign that provides useful information or directions to road users. |
+| Traffic light | A signal used to control the movement of vehicles and pedestrians on roads. |
+| Road accident | An unexpected event involving road users or vehicles that may result in injury, death or damage to property. |
+| Driver | A person who operates or controls a motor vehicle. |
+| Passenger | A person travelling in a vehicle without controlling it. |
+| Cyclist | A person who rides a bicycle. |
+| Motorcyclist | A person who rides a motorcycle. |
+| Seat belt | A safety device used to secure a person in a vehicle. |
+| Helmet | Protective headgear worn by cyclists and motorcyclists. |
+| Reflector | A material or device that reflects light and makes a person, bicycle or vehicle more visible. |
+| Responsible road use | Using roads carefully, obeying traffic rules and considering the safety of other road users. |
 
----
+## IMPORTANT FACTS TO REMEMBER
 
-# IMPORTANT FACTS TO REMEMBER
+- Road users include **pedestrians, drivers, passengers, cyclists, motorcyclists
+  and animal handlers**.
+- With no footpath, walk on the **right-hand side**, facing oncoming traffic.
+- The crossing drill: **stop, look right, look left, look right again, listen,
+  cross when safe, keep looking and listening**.
+- **Red = stop**, **amber/yellow = prepare to stop**, **green = proceed when safe**.
+- Three sign types: **warning** (dangers ahead), **regulatory** (must obey),
+  **information** (useful directions).
+- Main accident causes: **over-speeding, drunk driving, reckless driving, careless
+  crossing, phone use, dangerous overtaking, overloading, poor maintenance**.
+- **Seat belts** secure people in vehicles; **helmets** protect heads; **reflectors**
+  make you visible at night.
+- After an accident: **move to safety, alert emergency services, get trained help,
+  do not crowd, handle injured people carefully**.
+- The main aim of road safety is to **prevent accidents and protect lives and
+  property**.
 
-- **Red = stop · Amber = get ready · Green = go** when clear.
-- **Look right, left and right again** before crossing.
-- Walk facing **oncoming traffic** where there is no pavement.
-- **Must** = a rule; **mustn't** = forbidden; **should** = strong advice.
-- After **unless**, use the **positive** form.
-- Adjectives describe **nouns**; adverbs describe **verbs** and usually end in **-ly**.
-- **Because** gives a reason; **when** gives the time.
-- The book of road rules is the **Highway Code**.
+## EXAMINATION POINTS
 
----
+- Learn the KEY DEFINITIONS word for word — **road safety, pedestrian, footpath,
+  zebra crossing, traffic sign, traffic light, seat belt, helmet, reflector** are
+  the favourites.
+- "Give rules" questions must match the road user: five for pedestrians, five for
+  drivers, four for passengers, cyclists and motorcyclists.
+- Causes-and-effects questions: give the **cause** (over-speeding) with **how** it
+  causes accidents (less time to react, longer stopping distance).
+- Sign-type questions: name the type AND an example (warning — sharp bend;
+  regulatory — stop; information — hospital).
+- Emergency questions: never say "move the injured person" — the correct answer is
+  to avoid moving them unless there is immediate danger.
 
-# EXAMINATION POINTS
+## REVISION QUESTIONS
 
-- *You mustn't cross the road ____ it is clear.* → **unless**
-- *The driver was so careless ____ he caused an accident.* → **that**
-- *Trudy was knocked down ____ she crossed carelessly.* → **because**
-- Give one word for: a place where accidents happen very often → **black spot**.
-- Give one word for: a person walking on the road → **pedestrian**.
-- Adverb from *careless* → **carelessly**; from *good* → **well**.
-- What the amber light means → get ready to stop or move.
+1. Define road safety.
+2. Mention six road users.
+3. Mention three types of traffic signs.
+4. State five causes of road accidents.
+5. State five effects of road accidents.
+6. Give five road safety rules for pedestrians.
+7. Give five road safety rules for drivers.
+8. Give four road safety rules for passengers.
+9. Give four safety rules for cyclists.
+10. Give four safety rules for motorcyclists.
+11. What does a red traffic light mean?
+12. What does a green traffic light mean?
+13. What is a zebra crossing?
+14. What is a helmet?
+15. What is a seat belt?
+16. Why should children not play on roads?
+17. Why should drivers not use mobile phones while driving?
+18. Why should motorcyclists wear helmets?
+19. Why should passengers wear seat belts?
+20. Mention five ways of preventing road accidents.
+21. What is the responsibility of every road user?
 
----
+## ANSWERS TO REVISION QUESTIONS
 
-# COMMON MISTAKES TO AVOID
+1. Road safety is the practice of using roads in ways that prevent accidents and protect road users.
+2. Pedestrians, drivers, passengers, cyclists, motorcyclists and animal handlers.
+3. Warning signs, regulatory signs and information signs.
+4. Over-speeding, drunk driving, reckless driving, careless crossing and using mobile phones while driving.
+5. Death, injuries, disability, damage to property and loss of income.
+6. Use footpaths, cross at safe places, obey traffic signals, avoid playing on roads and remain alert.
+7. Obey traffic rules, avoid over-speeding, wear seat belts, avoid drunk driving and maintain vehicles properly.
+8. Wear seat belts, sit properly, do not distract the driver and keep body parts inside the vehicle.
+9. Wear a helmet, obey traffic rules, maintain the bicycle and use lights or reflectors when necessary.
+10. Wear a helmet, obey traffic rules, avoid speeding and maintain the motorcycle.
+11. It means stop.
+12. It means proceed when the way is clear and safe.
+13. It is a marked place on a road where pedestrians can cross.
+14. A helmet is protective headgear worn to protect the head.
+15. A seat belt is a safety device used to secure a person in a vehicle.
+16. Because they may be hit by vehicles and seriously injured or killed.
+17. Because mobile phones distract drivers and reduce their concentration on the road.
+18. To protect their heads and reduce the severity of head injuries during crashes.
+19. Seat belts help protect passengers during sudden stops or collisions.
+20. Obey traffic rules, avoid speeding, avoid drunk driving, use safe crossing points and maintain vehicles properly.
+21. Every road user should use the road responsibly, obey traffic rules and protect the safety of other road users.
 
-- Writing *"unless it isn't clear"* — after **unless** use the positive.
-- Using an adjective for an adverb: *"He drove careless"* → *he drove **carelessly***.
-- Starting a sentence with *Because* and leaving it incomplete.
-- Confusing **l** and **r**: *"lice"* for *rice*, *"pray"* for *play*.
-- Writing *"traffic jam"* when you mean *traffic lights*.
+## A NOTE ON SOURCES
 
----
-
-# REVISION QUESTIONS
-
-1. Give the meaning of: pedestrian, zebra crossing, black spot, Highway Code.
-2. What do the red, amber and green traffic lights mean?
-3. Give any six rules of using the road safely.
-4. Give any six causes of road accidents.
-5. Say what should be done at the scene of an accident.
-6. Complete: *You mustn't cross the road ____ it is clear.*
-7. Complete: *The boy crossed the road ____ ____ ____ it was clear.* (three words)
-8. Complete: *Drivers ____ signal at junctions.*
-9. Join using *because*: *Trudy was knocked down by a car. She crossed carelessly.*
-10. Join using *so … that*: *The driver was very careless. He caused an accident.*
-11. Join using *when*: *He stopped. The light turned red.*
-12. Give the adverbs formed from: careless, quick, heavy, good, angry.
-13. Write the pairs correctly: l____ and r____ (light/right); g____ and g____ (glass/grass).
-14. Use *should always* in a sentence about the Highway Code.
-15. Write a short paragraph (about six sentences) advising P.3 pupils on how to cross the road safely.
-
----
-
-# ANSWERS TO REVISION QUESTIONS
-
-1. **Pedestrian** — a person walking along or crossing a road; **zebra crossing** — the striped place where pedestrians cross; **black spot** — a place where accidents happen very often; **Highway Code** — the book of rules for using roads.
-2. **Red** — stop; **amber** — get ready, stop if you can or prepare to move; **green** — go if the way is clear.
-3. Any six of: walk on a side path or facing oncoming traffic; look right, left and right again before crossing; cross at the zebra crossing; never cross in front of a parked vehicle; never play in the road; wear bright clothes at night; obey the traffic police and lights; wear a seat belt and a helmet; never board a moving vehicle.
-4. Any six of: over-speeding; drunken driving; using a phone while driving; bad brakes and worn tyres; potholed roads; careless pedestrians; children playing in the road; overloading; driving without lights; stray animals; ignoring road signs.
-5. Keep calm and call for help (police or ambulance); do not crowd round the injured; give first aid if you know how; do not move a badly injured person carelessly; take the injured to hospital quickly; report to the police.
-6. **unless**
-7. **as soon as**
-8. **must**
-9. *Trudy was knocked down by a car **because** she crossed carelessly.*
-10. *The driver was **so** careless **that** he caused an accident.*
-11. *He stopped **when** the light turned red.*
-12. careless → **carelessly**; quick → **quickly**; heavy → **heavily**; good → **well**; angry → **angrily**.
-13. **light** and **right**; **glass** and **grass**.
-14. *Learner's sentence,* for example: *We **should always** obey the Highway Code when using the road.*
-15. *Learner's paragraph.* It should be one paragraph, in the present tense, with clear advice such as: stop at the edge, look right, look left and right again, listen, cross quickly but do not run, use the zebra crossing, and never cross in front of a parked vehicle.
-
----
-
-# P.6 QUICK REVISION
-
-- **Red stop · Amber get ready · Green go** · Look **right, left, right**
-- **must** rule · **mustn't … unless (positive)** · **should not** advice
-- Adjective → noun · **Adverb → verb (-ly)**
-- **because** = reason · **when** = time · **so … that** = result
-- Practise **l / r**: light–right, glass–grass, play–pray
-- Accident scene: call for help, first aid, do not crowd, report to police
-
----
-
-## A note on sources
-
-The topic title, sub-topics, vocabulary lists, language structures, grammar items,
-competences and teacher guidance above were taken from the official **NCDC Primary Six
-Curriculum, Set One** (© NCDC 2010; topic outline page 24 and pages 26–29 of the PDF in
-`curriculum/`), including its instruction to teach the difference between the **'l' and
-'r'** sounds. The explanations, tables, examples, exercises and answers are original
-teaching material written for the learner; they are **not** copied from the curriculum
-document or from any textbook.
-
-No NCDC **Teacher's Guide** for P.6 was available, so the syllabus "Guidance to the
-Teacher" was used directly instead.
+*The study content of this topic was provided by the app owner for the P.6 theme
+Safety on the Road (NCDC Primary Six Curriculum, Set One, English Topic 1, pages
+26–29). All revision answers above are drawn from that owner-provided content.*

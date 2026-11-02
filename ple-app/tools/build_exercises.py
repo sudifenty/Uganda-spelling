@@ -24,6 +24,9 @@ Usage: python3 tools/build_exercises.py      (run from the ple-app folder)
 """
 import json, glob, os, re, sys
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from build_notes_practice import sec_for_text, sec_index   # view-index tagging
+
 SRC = "data/notes"
 OUT = "data/exercises"
 
@@ -111,6 +114,7 @@ def main():
                          f"but only {len(ans)} answers")
 
             questions = []
+            ridx = sec_index(t, r"^revision questions$")
             for i, (q, a) in enumerate(zip(qs, ans), 1):
                 kind, marks, accepted, working = classify(q, a)
                 questions.append({
@@ -120,6 +124,9 @@ def main():
                     "n": i, "q": q, "a": a,
                     "kind": kind, "marks": marks,
                     "accepted": accepted, "working": working,
+                    # the notes section that teaches this — the app only
+                    # offers the question once that section has been read
+                    "sec": sec_for_text(t, q + " " + a, ridx),
                 })
 
             # split into exercise sets of SET_SIZE

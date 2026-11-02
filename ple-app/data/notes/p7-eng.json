@@ -3,7 +3,7 @@
  "subject": "ENG",
  "subject_name": "English",
  "total": 7,
- "words": 15509,
+ "words": 22357,
  "topics": [
   {
    "id": "P7_ENG_T01",
@@ -15,18 +15,31 @@
    "slug": "school-holidays",
    "periods": 30,
    "curriculum_pages": "32–35",
-   "words": 2023,
+   "words": 5762,
    "sections": [
     {
      "title": "About this topic",
      "blocks": [
       {
        "t": "p",
-       "x": "*Curriculum reference: NCDC Primary Seven Curriculum, Set One, English Topic 1, 30 periods (`curriculum/PRIMARY-SEVEN-SET-ONE.pdf`, topic outline page 30 and pages 32–35). Sub-topics: **1A Holiday Plans** and **1B Holiday Activities**.*"
+       "x": "*Curriculum reference: NCDC Primary Seven Curriculum, Set One, English Topic 1 — School Holidays, 30 periods (`curriculum/PRIMARY-SEVEN-SET-ONE.pdf`, pages 32–35), sub-topics **1A Holiday Plans** and **1B Holiday Activities**. The question-and-answer content of this topic was supplied by the app owner and follows the syllabus vocabulary, structures, grammar, skills and values for this topic.*"
+      }
+     ]
+    },
+    {
+     "title": "About this topic",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Seven Curriculum, Set One, English Topic 1 — School Holidays, 30 periods (pages 32–35). This app topic covers sub-topics 1A Holiday Plans and 1B Holiday Activities using the owner's question-and-answer notes.*"
       },
       {
        "t": "p",
-       "x": "**What you already know:** You have talked and written about your holidays before. In P.7 you learn the **vocabulary, language structures and grammar** that let you describe plans and activities correctly."
+       "x": "**Background:** During school holidays children meet different people whom they interact with at varying levels, and they carry out various activities. This topic equips learners with language skills and values to enable them to interact effectively with others."
+      },
+      {
+       "t": "p",
+       "x": "**Main purpose of the topic:** It equips learners with language skills and values that help them interact effectively with others during holiday situations."
       },
       {
        "t": "p",
@@ -35,565 +48,2064 @@
       {
        "t": "ul",
        "items": [
-        "use holiday vocabulary correctly in speech and writing",
-        "use \"going to\" for the near future and form question tags",
-        "change direct speech into reported speech",
-        "use participles and the third conditional (If 3)",
-        "form adjectives and use the active voice",
-        "write compositions, stories and poems about holiday plans and activities"
+        "describe holiday plans and holiday activities using appropriate language",
+        "narrate, read and write texts, stories, poems and dialogues about holidays",
+        "use the near future (**am/is/are going to + verb**) correctly",
+        "use **question tags**, **reported speech**, **participles**, **adjectives**, the **active voice** and the **third conditional** correctly",
+        "spell holiday vocabulary correctly and present ideas logically",
+        "demonstrate responsibility, cooperation, sharing, care, respect and love"
        ]
       }
      ]
     },
     {
-     "title": "SUB-TOPIC 1A: HOLIDAY PLANS",
+     "title": "A. Understanding school holidays",
      "blocks": [
       {
-       "t": "h3",
-       "x": "Vocabulary from the syllabus"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Word",
-        "Meaning"
-       ],
-       "rows": [
-        [
-         "holiday",
-         "A period when school is closed and learners rest at home"
-        ],
-        [
-         "travel",
-         "To move from one place to another"
-        ],
-        [
-         "plan",
-         "An arrangement made in advance"
-        ],
-        [
-         "break off",
-         "To stop; to close for the holidays"
-        ],
-        [
-         "prepare for",
-         "To get ready for something"
-        ],
-        [
-         "pick",
-         "To collect somebody or something"
-        ],
-        [
-         "remedial classes",
-         "Extra lessons to help learners who are behind"
-        ],
-        [
-         "end of vacation",
-         "The last part of the holiday"
-        ],
-        [
-         "relatives",
-         "People in your family — uncles, aunts, cousins"
-        ],
-        [
-         "pen pal",
-         "A friend you write letters to but may never have met"
-        ],
-        [
-         "up-country",
-         "Away from the city, in the villages"
-        ],
-        [
-         "urban",
-         "To do with a town or city"
-        ],
-        [
-         "rural",
-         "To do with the countryside"
-        ],
-        [
-         "commence",
-         "To begin"
-        ],
-        [
-         "board",
-         "To get into a bus, train or plane"
-        ],
-        [
-         "programme",
-         "A plan showing what will be done and when"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Language structures"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Structure",
-        "Example",
-        "When it is used"
-       ],
-       "rows": [
-        [
-         "**… going to …** (near future)",
-         "*I am going to visit my grandmother next holiday.*",
-         "For a plan already decided"
-        ],
-        [
-         "**Question tags**",
-         "*You will go to the village next week, **won't you**?*",
-         "To ask for agreement"
-        ],
-        [
-         "**Reported speech**",
-         "*She said that she was going to travel.*",
-         "To report what someone said"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Grammar focus 1: Question tags"
+       "t": "p",
+       "x": "**1. What is a school holiday?**"
       },
       {
        "t": "p",
-       "x": "A question tag is a short question added at the end of a statement."
+       "x": "A school holiday is a period when learners do not attend their normal school lessons."
       },
       {
        "t": "p",
-       "x": "**The rule:** positive statement → **negative** tag; negative statement → **positive** tag. The tag uses the same auxiliary verb and a pronoun."
-      },
-      {
-       "t": "table",
-       "head": [
-        "Statement",
-        "Tag"
-       ],
-       "rows": [
-        [
-         "You are travelling tomorrow,",
-         "**aren't you?**"
-        ],
-        [
-         "She isn't coming,",
-         "**is she?**"
-        ],
-        [
-         "We shall visit Jinja,",
-         "**shan't we?**"
-        ],
-        [
-         "They went home,",
-         "**didn't they?**"
-        ],
-        [
-         "Peter can swim,",
-         "**can't he?**"
-        ],
-        [
-         "Let us go,",
-         "**shall we?**"
-        ],
-        [
-         "Open the window,",
-         "**will you?**"
-        ],
-        [
-         "I am late,",
-         "**aren't I?**"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Grammar focus 2: Reported speech"
+       "x": "**2. Why do schools have holidays?**"
       },
       {
        "t": "p",
-       "x": "**Direct speech** gives the exact words in quotation marks. **Reported (indirect) speech** tells what was said, without quotation marks."
+       "x": "Schools have holidays to give learners and teachers time to rest and to take part in other useful activities."
       },
       {
        "t": "p",
-       "x": "**When reporting, the tense moves one step back:**"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Direct",
-        "Reported"
-       ],
-       "rows": [
-        [
-         "present simple →",
-         "past simple"
-        ],
-        [
-         "present continuous →",
-         "past continuous"
-        ],
-        [
-         "past simple →",
-         "past perfect"
-        ],
-        [
-         "will →",
-         "would · can → could · may → might"
-        ]
-       ]
+       "x": "**3. What can learners do during school holidays?**"
       },
       {
        "t": "p",
-       "x": "Words also change: *today → that day · tomorrow → the following day · here → there · this → that · now → then · I → he/she.*"
-      },
-      {
-       "t": "p",
-       "x": "**Examples**"
+       "x": "Learners can:"
       },
       {
        "t": "ul",
        "items": [
-        "Direct: *\"I am going to the village,\" said Ann.* Reported: *Ann said that **she was going** to the village.*",
-        "Direct: *\"We shall write to our pen pals,\" the pupils said.* Reported: *The pupils said that **they would write** to their pen pals.*",
-        "Direct: *\"Did you pick her from the park?\" he asked.* Reported: *He asked **whether I had picked** her from the park.*"
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Grammar focus 3: Forming adjectives"
-      },
-      {
-       "t": "table",
-       "head": [
-        "From a noun",
-        "Adjective",
-        "From a verb",
-        "Adjective"
-       ],
-       "rows": [
-        [
-         "danger",
-         "dangerous",
-         "enjoy",
-         "enjoyable"
-        ],
-        [
-         "beauty",
-         "beautiful",
-         "excite",
-         "exciting / excited"
-        ],
-        [
-         "care",
-         "careful / careless",
-         "interest",
-         "interesting / interested"
-        ],
-        [
-         "friend",
-         "friendly",
-         "tire",
-         "tiring / tired"
-        ],
-        [
-         "child",
-         "childish",
-         "bore",
-         "boring / bored"
-        ]
+        "visit relatives.",
+        "travel.",
+        "study.",
+        "attend remedial classes.",
+        "help with housework.",
+        "work on the family farm.",
+        "visit friends.",
+        "go on trips and tours.",
+        "attend camps.",
+        "take part in sports.",
+        "attend concerts and shows.",
+        "revise school work.",
+        "learn new skills."
        ]
       },
       {
        "t": "p",
-       "x": "**Careful:** *-ing* describes the thing (*the journey was **tiring***); *-ed* describes the person (*I was **tired***)."
+       "x": "**4. What is a holiday plan?**"
+      },
+      {
+       "t": "p",
+       "x": "A holiday plan is an arrangement of activities that a person intends to carry out during a holiday."
+      },
+      {
+       "t": "p",
+       "x": "**5. Why should learners make holiday plans?**"
+      },
+      {
+       "t": "p",
+       "x": "Learners should make holiday plans so that they can use their holiday time properly and productively."
+      },
+      {
+       "t": "p",
+       "x": "**6. What should a good holiday plan contain?**"
+      },
+      {
+       "t": "p",
+       "x": "A good holiday plan should contain:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "activities to be done.",
+        "places to visit.",
+        "people to visit.",
+        "time for each activity.",
+        "study or revision time.",
+        "household responsibilities.",
+        "recreation and rest."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**7. Why is planning important during a holiday?**"
+      },
+      {
+       "t": "p",
+       "x": "Planning helps a learner organise time, avoid wasting time and accomplish useful activities."
+      },
+      {
+       "t": "p",
+       "x": "**8. What is a holiday activity?**"
+      },
+      {
+       "t": "p",
+       "x": "A holiday activity is something a person does during a school holiday."
+      },
+      {
+       "t": "p",
+       "x": "**9. What is the difference between a holiday plan and a holiday activity?**"
+      },
+      {
+       "t": "p",
+       "x": "A holiday plan describes what someone intends to do, while a holiday activity is something actually done during the holiday."
       }
      ]
     },
     {
-     "title": "SUB-TOPIC 1B: HOLIDAY ACTIVITIES",
+     "title": "B. Holiday plans",
      "blocks": [
       {
-       "t": "h3",
-       "x": "Vocabulary from the syllabus"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Word",
-        "Meaning"
-       ],
-       "rows": [
-        [
-         "tour",
-         "A journey visiting several places"
-        ],
-        [
-         "camp",
-         "To stay in tents away from home"
-        ],
-        [
-         "concert",
-         "A show of music, dance and drama"
-        ],
-        [
-         "revise",
-         "To go over work already learnt"
-        ],
-        [
-         "chores",
-         "Small jobs done at home"
-        ],
-        [
-         "routine",
-         "The usual order of doing things each day"
-        ],
-        [
-         "vacation",
-         "A holiday period"
-        ],
-        [
-         "fare",
-         "Money paid for a journey"
-        ],
-        [
-         "bash",
-         "A party or celebration"
-        ],
-        [
-         "trip",
-         "A short journey to a place and back"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Language structures"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Structure",
-        "Example"
-       ],
-       "rows": [
-        [
-         "**Participle tense**",
-         "*Having finished my chores, I went to play.*"
-        ],
-        [
-         "**If 3 (third conditional)**",
-         "*If I had seen him in the holiday, he would have given me money.*"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Grammar focus 4: Participles"
+       "t": "p",
+       "x": "**10. What is a holiday plan?**"
       },
       {
        "t": "p",
-       "x": "A **participle** is a form of a verb used with a helping verb or as an adjective."
-      },
-      {
-       "t": "table",
-       "head": [
-        "Type",
-        "Form",
-        "Example"
-       ],
-       "rows": [
-        [
-         "Present participle",
-         "verb + **-ing**",
-         "*We were **swimming** in the lake.*"
-        ],
-        [
-         "Past participle",
-         "usually verb + **-ed**, or an irregular form",
-         "*We have **eaten**. The **broken** cup…*"
-        ],
-        [
-         "Perfect participle",
-         "**having** + past participle",
-         "***Having washed** the plates, she rested.*"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Grammar focus 5: The third conditional (If 3)"
+       "x": "A holiday plan is a list or arrangement of activities that a learner intends to carry out during the holiday."
       },
       {
        "t": "p",
-       "x": "**If 3** talks about something in the **past that did not happen**."
+       "x": "**11. What should a learner consider when making a holiday plan?**"
       },
       {
        "t": "p",
-       "x": "**If + past perfect , would have + past participle**"
+       "x": "A learner should consider:"
       },
       {
        "t": "ul",
        "items": [
-        "*If I **had known**, I **would have come** earlier.*",
-        "*If we **had saved** money, we **would have travelled** to Mombasa.*",
-        "*If she **had revised**, she **would have passed**.*"
+        "the length of the holiday.",
+        "available resources.",
+        "family responsibilities.",
+        "personal interests.",
+        "study needs.",
+        "places to visit.",
+        "people to visit.",
+        "time available."
        ]
       },
       {
        "t": "p",
-       "x": "Compare the three conditionals:"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Type",
-        "Structure",
-        "Example"
-       ],
-       "rows": [
-        [
-         "If 1 (real, future)",
-         "If + present simple, will + verb",
-         "*If it rains, we **will stay** indoors.*"
-        ],
-        [
-         "If 2 (unreal, present)",
-         "If + past simple, would + verb",
-         "*If I **had** money, I would buy a bicycle.*"
-        ],
-        [
-         "If 3 (unreal, past)",
-         "If + past perfect, would have + past participle",
-         "*If I **had had** money, I would have bought a bicycle.*"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Grammar focus 6: Active voice"
+       "x": "**12. Why should holiday plans suit the family setting?**"
       },
       {
        "t": "p",
-       "x": "In the **active voice** the subject does the action; in the **passive** it receives it."
+       "x": "Holiday plans should suit the family setting because families have different responsibilities, resources, needs and circumstances."
+      },
+      {
+       "t": "p",
+       "x": "**13. What is a programme?**"
+      },
+      {
+       "t": "p",
+       "x": "A programme is a planned list of activities and the times when they will take place."
+      },
+      {
+       "t": "p",
+       "x": "**14. How can a programme help a learner during a holiday?**"
+      },
+      {
+       "t": "p",
+       "x": "It helps the learner organise activities and use time effectively."
+      },
+      {
+       "t": "p",
+       "x": "**15. What is travel?**"
+      },
+      {
+       "t": "p",
+       "x": "Travel is the act of moving from one place to another."
+      },
+      {
+       "t": "p",
+       "x": "**16. Why might learners travel during holidays?**"
+      },
+      {
+       "t": "p",
+       "x": "They may travel to:"
       },
       {
        "t": "ul",
        "items": [
-        "Active: **Mother cooked** the food. → Passive: The food **was cooked** by mother.",
-        "Active: **The pupils cleaned** the compound. → Passive: The compound **was cleaned** by the pupils."
+        "visit relatives.",
+        "visit friends.",
+        "attend celebrations.",
+        "go on tours.",
+        "go to the countryside.",
+        "attend camps.",
+        "visit interesting places."
        ]
       },
       {
        "t": "p",
-       "x": "The syllabus asks you to use the **active voice** when telling stories, because it is shorter and livelier."
-      },
-      {
-       "t": "h3",
-       "x": "Writing practice"
+       "x": "**17. What does \"prepare for\" mean?**"
       },
       {
        "t": "p",
-       "x": "**A holiday composition should have:** an interesting **title**, an **introduction** saying when and where, a **body** in proper paragraphs telling what happened in order, and a **conclusion** saying how you felt. Use the **past tense**, joining words (*first, then, after that, finally*), and correct punctuation."
+       "x": "\"Prepare for\" means to get ready for something."
+      },
+      {
+       "t": "p",
+       "x": "**18. Make a sentence using \"prepare for\".**"
+      },
+      {
+       "t": "p",
+       "x": "I am preparing for my holiday trip."
+      },
+      {
+       "t": "p",
+       "x": "**19. What does \"break off\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Break off\" means to stop or end something."
+      },
+      {
+       "t": "p",
+       "x": "**20. What does \"pick\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Pick\" can mean to choose or collect something."
+      },
+      {
+       "t": "p",
+       "x": "**21. Make a sentence using \"pick\".**"
+      },
+      {
+       "t": "p",
+       "x": "I will pick some fruits from the garden."
+      },
+      {
+       "t": "p",
+       "x": "**22. What are remedial classes?**"
+      },
+      {
+       "t": "p",
+       "x": "Remedial classes are additional lessons intended to help learners improve areas in which they have difficulties."
+      },
+      {
+       "t": "p",
+       "x": "**23. Why might a learner attend remedial classes during a holiday?**"
+      },
+      {
+       "t": "p",
+       "x": "A learner may attend remedial classes to improve performance in subjects or areas that need more practice."
+      },
+      {
+       "t": "p",
+       "x": "**24. What does \"end vacation\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "It means to finish the holiday period and prepare to return to school."
+      },
+      {
+       "t": "p",
+       "x": "**25. Who are relatives?**"
+      },
+      {
+       "t": "p",
+       "x": "Relatives are members of a person's family."
+      },
+      {
+       "t": "p",
+       "x": "**26. Who are pen pals?**"
+      },
+      {
+       "t": "p",
+       "x": "Pen pals are people who regularly communicate with each other by writing letters or messages, often while living in different places."
+      },
+      {
+       "t": "p",
+       "x": "**27. What does \"up-country\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "In the Ugandan context, \"up-country\" refers to places outside the main town or city where a person lives, especially other parts of the country."
+      },
+      {
+       "t": "p",
+       "x": "**28. What is a town?**"
+      },
+      {
+       "t": "p",
+       "x": "A town is a built-up settlement that is larger than a village but generally smaller than a city."
+      },
+      {
+       "t": "p",
+       "x": "**29. What does \"urban\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Urban refers to areas associated with towns and cities."
+      },
+      {
+       "t": "p",
+       "x": "**30. What does \"rural\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Rural refers to areas in the countryside, usually away from large towns and cities."
+      },
+      {
+       "t": "p",
+       "x": "**31. What is the difference between urban and rural areas?**"
+      },
+      {
+       "t": "p",
+       "x": "Urban areas are mainly towns and cities, while rural areas are mainly countryside areas and villages."
+      },
+      {
+       "t": "p",
+       "x": "**32. What does \"commence\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Commence\" means to begin or start."
+      },
+      {
+       "t": "p",
+       "x": "**33. Make a sentence using \"commence\".**"
+      },
+      {
+       "t": "p",
+       "x": "The holiday programme will commence on Monday."
+      },
+      {
+       "t": "p",
+       "x": "**34. What does \"board\" mean in travelling?**"
+      },
+      {
+       "t": "p",
+       "x": "To board means to get onto a bus, train, aeroplane, boat or other means of transport."
+      },
+      {
+       "t": "p",
+       "x": "**35. Make a sentence using \"board\".**"
+      },
+      {
+       "t": "p",
+       "x": "We will board the bus at seven o'clock."
+      },
+      {
+       "t": "p",
+       "x": "**36. What is a birthday?**"
+      },
+      {
+       "t": "p",
+       "x": "A birthday is the day on which a person was born, celebrated each year."
+      },
+      {
+       "t": "p",
+       "x": "**37. Why might a birthday appear in a holiday programme?**"
+      },
+      {
+       "t": "p",
+       "x": "A learner may plan to attend or celebrate a birthday during the holiday."
       }
      ]
     },
     {
-     "title": "KEY DEFINITIONS",
+     "title": "C. Talking about holiday plans",
      "blocks": [
       {
-       "t": "table",
-       "head": [
-        "Term",
-        "Meaning"
-       ],
-       "rows": [
-        [
-         "Question tag",
-         "A short question added at the end of a statement"
-        ],
-        [
-         "Direct speech",
-         "The exact words spoken, written in quotation marks"
-        ],
-        [
-         "Reported speech",
-         "Telling what someone said without using their exact words"
-        ],
-        [
-         "Participle",
-         "A verb form ending in -ing or -ed used with a helping verb or as an adjective"
-        ],
-        [
-         "Conditional sentence",
-         "A sentence with \"if\", showing that one thing depends on another"
-        ],
-        [
-         "Active voice",
-         "A sentence in which the subject does the action"
-        ],
-        [
-         "Passive voice",
-         "A sentence in which the subject receives the action"
-        ],
-        [
-         "Adjective",
-         "A word that describes a noun"
-        ],
-        [
-         "Pen pal",
-         "A friend one writes letters to"
-        ]
+       "t": "p",
+       "x": "**38. How can a learner talk about a future holiday plan?**"
+      },
+      {
+       "t": "p",
+       "x": "A learner can use the structure:"
+      },
+      {
+       "t": "p",
+       "x": "**am/is/are going to + verb**"
+      },
+      {
+       "t": "p",
+       "x": "**39. What does \"going to\" express in this topic?**"
+      },
+      {
+       "t": "p",
+       "x": "It is used to talk about a planned or intended future action."
+      },
+      {
+       "t": "p",
+       "x": "**40. Give an example using \"going to\".**"
+      },
+      {
+       "t": "p",
+       "x": "I am going to visit my parents next holiday."
+      },
+      {
+       "t": "p",
+       "x": "**41. Give another example.**"
+      },
+      {
+       "t": "p",
+       "x": "We are going to travel up-country during the holiday."
+      },
+      {
+       "t": "p",
+       "x": "**42. Make a sentence using \"is going to\".**"
+      },
+      {
+       "t": "p",
+       "x": "Sarah is going to attend remedial classes."
+      },
+      {
+       "t": "p",
+       "x": "**43. Make a sentence using \"are going to\".**"
+      },
+      {
+       "t": "p",
+       "x": "The children are going to visit their grandparents."
+      },
+      {
+       "t": "p",
+       "x": "**44. Make a sentence using \"am going to\".**"
+      },
+      {
+       "t": "p",
+       "x": "I am going to revise Mathematics during the holiday."
+      },
+      {
+       "t": "p",
+       "x": "**45. How do we form a negative sentence using \"going to\"?**"
+      },
+      {
+       "t": "p",
+       "x": "We use:"
+      },
+      {
+       "t": "p",
+       "x": "**am/is/are + not + going to + verb**"
+      },
+      {
+       "t": "p",
+       "x": "**46. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "I am not going to travel this holiday."
+      },
+      {
+       "t": "p",
+       "x": "**47. Give another example.**"
+      },
+      {
+       "t": "p",
+       "x": "They are not going to attend the concert."
+      },
+      {
+       "t": "p",
+       "x": "**48. How do we ask a question using \"going to\"?**"
+      },
+      {
+       "t": "p",
+       "x": "We place the appropriate form of **be** before the subject."
+      },
+      {
+       "t": "p",
+       "x": "**49. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "Are you going to visit your relatives?"
+      },
+      {
+       "t": "p",
+       "x": "**50. Give another example.**"
+      },
+      {
+       "t": "p",
+       "x": "Is Mary going to attend the camp?"
+      }
+     ]
+    },
+    {
+     "title": "D. Question tags",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**51. What is a question tag?**"
+      },
+      {
+       "t": "p",
+       "x": "A question tag is a short question added to the end of a statement to confirm information or seek agreement."
+      },
+      {
+       "t": "p",
+       "x": "**52. Give an example of a question tag about a holiday.**"
+      },
+      {
+       "t": "p",
+       "x": "You will go to the village next week, won't you?"
+      },
+      {
+       "t": "p",
+       "x": "**53. What is the question tag in \"You will visit your aunt, won't you?\"?**"
+      },
+      {
+       "t": "p",
+       "x": "The question tag is **\"won't you?\"**"
+      },
+      {
+       "t": "p",
+       "x": "**54. What is the main statement in \"You will visit your aunt, won't you?\"?**"
+      },
+      {
+       "t": "p",
+       "x": "The main statement is **\"You will visit your aunt.\"**"
+      },
+      {
+       "t": "p",
+       "x": "**55. What is the general rule for question tags?**"
+      },
+      {
+       "t": "p",
+       "x": "A positive statement normally takes a negative question tag, while a negative statement normally takes a positive question tag."
+      },
+      {
+       "t": "p",
+       "x": "**56. Give a positive statement with a negative tag.**"
+      },
+      {
+       "t": "p",
+       "x": "You are going to travel, aren't you?"
+      },
+      {
+       "t": "p",
+       "x": "**57. Give a negative statement with a positive tag.**"
+      },
+      {
+       "t": "p",
+       "x": "You aren't going to travel, are you?"
+      },
+      {
+       "t": "p",
+       "x": "**58. Add the correct question tag: John will visit his grandmother, ______?**"
+      },
+      {
+       "t": "p",
+       "x": "won't he?"
+      },
+      {
+       "t": "p",
+       "x": "**59. Add the correct question tag: Mary is going to Kampala, ______?**"
+      },
+      {
+       "t": "p",
+       "x": "isn't she?"
+      },
+      {
+       "t": "p",
+       "x": "**60. Add the correct question tag: They will travel tomorrow, ______?**"
+      },
+      {
+       "t": "p",
+       "x": "won't they?"
+      }
+     ]
+    },
+    {
+     "title": "E. Reported speech in holiday plans",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**61. What is reported speech?**"
+      },
+      {
+       "t": "p",
+       "x": "Reported speech is used to tell someone what another person said without using the speaker's exact words."
+      },
+      {
+       "t": "p",
+       "x": "**62. What is direct speech?**"
+      },
+      {
+       "t": "p",
+       "x": "Direct speech gives the exact words spoken by a person."
+      },
+      {
+       "t": "p",
+       "x": "**63. Give an example of direct speech about a holiday.**"
+      },
+      {
+       "t": "p",
+       "x": "Peter said, \"I am going to visit my uncle.\""
+      },
+      {
+       "t": "p",
+       "x": "**64. Change into reported speech: Peter said, \"I am going to visit my uncle.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Peter said that he was going to visit his uncle."
+      },
+      {
+       "t": "p",
+       "x": "**65. Why do we use reported speech?**"
+      },
+      {
+       "t": "p",
+       "x": "We use reported speech to tell another person what someone said."
+      },
+      {
+       "t": "p",
+       "x": "**66. Change into reported speech: Mary said, \"I am going to travel.\"**"
+      },
+      {
+       "t": "p",
+       "x": "Mary said that she was going to travel."
+      },
+      {
+       "t": "p",
+       "x": "**67. Change into reported speech: John said, \"I will visit my grandmother.\"**"
+      },
+      {
+       "t": "p",
+       "x": "John said that he would visit his grandmother."
+      },
+      {
+       "t": "p",
+       "x": "**68. Change into direct speech: Sarah said that she was going to attend remedial classes.**"
+      },
+      {
+       "t": "p",
+       "x": "Sarah said, \"I am going to attend remedial classes.\""
+      },
+      {
+       "t": "p",
+       "x": "**69. What happens to pronouns when changing direct speech into reported speech?**"
+      },
+      {
+       "t": "p",
+       "x": "Pronouns may change according to who is reporting the speech."
+      },
+      {
+       "t": "p",
+       "x": "**70. What happens to some verb tenses when direct speech is changed into reported speech?**"
+      },
+      {
+       "t": "p",
+       "x": "Some verb tenses normally change to agree with the reporting verb and the time of reporting."
+      }
+     ]
+    },
+    {
+     "title": "F. Participle tense",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**71. What is a participle?**"
+      },
+      {
+       "t": "p",
+       "x": "A participle is a form of a verb that can be used in verb phrases or as an adjective."
+      },
+      {
+       "t": "p",
+       "x": "**72. What is the present participle?**"
+      },
+      {
+       "t": "p",
+       "x": "The present participle is usually formed by adding **-ing** to a verb."
+      },
+      {
+       "t": "p",
+       "x": "**73. Give examples of present participles.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "travelling.",
+        "visiting.",
+        "studying.",
+        "preparing.",
+        "cooking.",
+        "playing.",
+        "revising."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**74. Make a sentence using a present participle.**"
+      },
+      {
+       "t": "p",
+       "x": "The children are travelling to the village."
+      },
+      {
+       "t": "p",
+       "x": "**75. What is the past participle?**"
+      },
+      {
+       "t": "p",
+       "x": "The past participle is a form of a verb commonly used with auxiliary verbs to form perfect tenses and passive constructions."
+      },
+      {
+       "t": "p",
+       "x": "**76. Give examples of past participles.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "visited.",
+        "travelled.",
+        "prepared.",
+        "written.",
+        "eaten.",
+        "gone.",
+        "seen."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**77. Make a sentence using a past participle.**"
+      },
+      {
+       "t": "p",
+       "x": "I have visited my grandmother."
+      }
+     ]
+    },
+    {
+     "title": "G. Formation of adjectives",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**78. What is an adjective?**"
+      },
+      {
+       "t": "p",
+       "x": "An adjective is a word that describes a noun or gives more information about it."
+      },
+      {
+       "t": "p",
+       "x": "**79. Give examples of adjectives that can describe a holiday.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "enjoyable.",
+        "interesting.",
+        "exciting.",
+        "memorable.",
+        "wonderful.",
+        "tiring.",
+        "pleasant."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**80. How can some adjectives be formed from nouns?**"
+      },
+      {
+       "t": "p",
+       "x": "Some adjectives are formed by adding suitable suffixes to nouns."
+      },
+      {
+       "t": "p",
+       "x": "**81. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "**Care → careful**"
+      },
+      {
+       "t": "p",
+       "x": "**82. Give another example.**"
+      },
+      {
+       "t": "p",
+       "x": "**Excitement → exciting**"
+      },
+      {
+       "t": "p",
+       "x": "**83. Give another example.**"
+      },
+      {
+       "t": "p",
+       "x": "**Interest → interesting**"
+      },
+      {
+       "t": "p",
+       "x": "**84. Make a sentence using \"interesting\".**"
+      },
+      {
+       "t": "p",
+       "x": "We visited an interesting place during the holiday."
+      },
+      {
+       "t": "p",
+       "x": "**85. Make a sentence using \"exciting\".**"
+      },
+      {
+       "t": "p",
+       "x": "The trip was exciting."
+      }
+     ]
+    },
+    {
+     "title": "H. Holiday activities",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**86. What are holiday activities?**"
+      },
+      {
+       "t": "p",
+       "x": "Holiday activities are things that learners do during their school holidays."
+      },
+      {
+       "t": "p",
+       "x": "**87. Mention five educational activities learners can do during holidays.**"
+      },
+      {
+       "t": "p",
+       "x": "They can:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "study.",
+        "revise school work.",
+        "attend remedial classes.",
+        "read books.",
+        "write stories."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**88. Mention five recreational activities learners can do during holidays.**"
+      },
+      {
+       "t": "p",
+       "x": "They can:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "play games.",
+        "go on trips.",
+        "attend shows.",
+        "attend concerts.",
+        "visit interesting places."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**89. What is a farm?**"
+      },
+      {
+       "t": "p",
+       "x": "A farm is a place where crops and/or animals are kept for production."
+      },
+      {
+       "t": "p",
+       "x": "**90. Why might learners visit or work on a farm during a holiday?**"
+      },
+      {
+       "t": "p",
+       "x": "They may learn farming skills, help their families and gain practical experience."
+      },
+      {
+       "t": "p",
+       "x": "**91. What is a tour?**"
+      },
+      {
+       "t": "p",
+       "x": "A tour is a journey made to visit and see different places."
+      },
+      {
+       "t": "p",
+       "x": "**92. What is a camp?**"
+      },
+      {
+       "t": "p",
+       "x": "A camp is a place or organised activity where people stay temporarily, often for learning, recreation or other purposes."
+      },
+      {
+       "t": "p",
+       "x": "**93. What is a visit?**"
+      },
+      {
+       "t": "p",
+       "x": "A visit is an occasion when someone goes to see a person or place."
+      },
+      {
+       "t": "p",
+       "x": "**94. What does \"begin\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Begin\" means to start."
+      },
+      {
+       "t": "p",
+       "x": "**95. What is a concert?**"
+      },
+      {
+       "t": "p",
+       "x": "A concert is a public performance of music."
+      },
+      {
+       "t": "p",
+       "x": "**96. What is a show?**"
+      },
+      {
+       "t": "p",
+       "x": "A show is an organised performance or event presented for people to watch."
+      },
+      {
+       "t": "p",
+       "x": "**97. What does \"cook\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To cook means to prepare food by heating it."
+      },
+      {
+       "t": "p",
+       "x": "**98. What does \"revise\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To revise means to study something again, especially in preparation for an examination."
+      },
+      {
+       "t": "p",
+       "x": "**99. Why should learners revise during holidays?**"
+      },
+      {
+       "t": "p",
+       "x": "They should revise to remember what they learnt and prepare for the next term or examinations."
+      },
+      {
+       "t": "p",
+       "x": "**100. What is housework?**"
+      },
+      {
+       "t": "p",
+       "x": "Housework is work done to maintain and manage a home."
+      },
+      {
+       "t": "p",
+       "x": "**101. Give examples of housework.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "sweeping.",
+        "washing clothes.",
+        "cleaning the house.",
+        "washing utensils.",
+        "fetching water.",
+        "arranging rooms."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**102. What is a trip?**"
+      },
+      {
+       "t": "p",
+       "x": "A trip is a journey to a place and usually back again."
+      },
+      {
+       "t": "p",
+       "x": "**103. What does \"enjoy\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To enjoy means to get pleasure from something."
+      },
+      {
+       "t": "p",
+       "x": "**104. Make a sentence using \"enjoy\".**"
+      },
+      {
+       "t": "p",
+       "x": "I enjoyed visiting my grandparents."
+      },
+      {
+       "t": "p",
+       "x": "**105. What does \"nice\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Nice\" means pleasant, enjoyable or pleasing."
+      },
+      {
+       "t": "p",
+       "x": "**106. What does \"interesting\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Interesting\" means attracting attention because it is unusual, enjoyable or informative."
+      },
+      {
+       "t": "p",
+       "x": "**107. What does \"exciting\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Exciting\" means causing great interest, happiness or enthusiasm."
+      },
+      {
+       "t": "p",
+       "x": "**108. What is a report?**"
+      },
+      {
+       "t": "p",
+       "x": "A report is a written or spoken account that gives information about something that happened or that was investigated."
+      },
+      {
+       "t": "p",
+       "x": "**109. What is a vacation?**"
+      },
+      {
+       "t": "p",
+       "x": "A vacation is a period when a person is away from normal work or school activities."
+      }
+     ]
+    },
+    {
+     "title": "I. Household chores and responsibilities",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**110. What are chores?**"
+      },
+      {
+       "t": "p",
+       "x": "Chores are small regular jobs that must be done, especially at home."
+      },
+      {
+       "t": "p",
+       "x": "**111. Give examples of holiday chores.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "sweeping.",
+        "washing utensils.",
+        "cleaning the compound.",
+        "fetching water.",
+        "washing clothes.",
+        "looking after animals.",
+        "helping on the family farm."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**112. Why should learners help with chores during holidays?**"
+      },
+      {
+       "t": "p",
+       "x": "They should help because it develops responsibility, cooperation and useful life skills."
+      },
+      {
+       "t": "p",
+       "x": "**113. What is a routine?**"
+      },
+      {
+       "t": "p",
+       "x": "A routine is a regular way of doing things or a regular pattern of activities."
+      },
+      {
+       "t": "p",
+       "x": "**114. Why should a learner have a holiday routine?**"
+      },
+      {
+       "t": "p",
+       "x": "A routine helps a learner balance study, work, rest and recreation."
+      },
+      {
+       "t": "p",
+       "x": "**115. What does responsibility mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Responsibility means having a duty to do something and being accountable for it."
+      },
+      {
+       "t": "p",
+       "x": "**116. How can a learner show responsibility during a holiday?**"
+      },
+      {
+       "t": "p",
+       "x": "A learner can show responsibility by:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "completing assigned chores.",
+        "following family rules.",
+        "studying.",
+        "caring for younger children when appropriate.",
+        "looking after property.",
+        "keeping the environment clean."
        ]
       }
      ]
     },
     {
-     "title": "IMPORTANT FACTS TO REMEMBER",
+     "title": "J. If 3 conditional",
      "blocks": [
+      {
+       "t": "p",
+       "x": "**117. What is the third conditional?**"
+      },
+      {
+       "t": "p",
+       "x": "The third conditional is used to talk about an unreal or imagined situation in the past and its possible result."
+      },
+      {
+       "t": "p",
+       "x": "**118. What is the basic structure of the third conditional?**"
+      },
+      {
+       "t": "p",
+       "x": "**If + past perfect tense, would have + past participle**"
+      },
+      {
+       "t": "p",
+       "x": "**119. Give the example used in the topic.**"
+      },
+      {
+       "t": "p",
+       "x": "If I had seen him in the holiday, he would have given me money."
+      },
+      {
+       "t": "p",
+       "x": "**120. What does the sentence mean?**"
+      },
+      {
+       "t": "p",
+       "x": "It means that the speaker did not see him during the holiday, so the possible result did not happen."
+      },
+      {
+       "t": "p",
+       "x": "**121. Give another example of the third conditional.**"
+      },
+      {
+       "t": "p",
+       "x": "If I had travelled to the village, I would have visited my grandmother."
+      },
+      {
+       "t": "p",
+       "x": "**122. Give another example.**"
+      },
+      {
+       "t": "p",
+       "x": "If Mary had studied during the holiday, she would have performed better."
+      },
+      {
+       "t": "p",
+       "x": "**123. Complete: If I had gone to the farm, I ______ have helped my father.**"
+      },
+      {
+       "t": "p",
+       "x": "would"
+      },
+      {
+       "t": "p",
+       "x": "**124. Complete: If John had visited us, we would ______ welcomed him.**"
+      },
+      {
+       "t": "p",
+       "x": "have"
+      },
+      {
+       "t": "p",
+       "x": "**125. Complete: If she had revised, she ______ have passed the test.**"
+      },
+      {
+       "t": "p",
+       "x": "would"
+      }
+     ]
+    },
+    {
+     "title": "K. Active voice",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**126. What is active voice?**"
+      },
+      {
+       "t": "p",
+       "x": "Active voice is a sentence structure in which the subject performs the action."
+      },
+      {
+       "t": "p",
+       "x": "**127. Give an example of active voice.**"
+      },
+      {
+       "t": "p",
+       "x": "Peter cleaned the house."
+      },
+      {
+       "t": "p",
+       "x": "**128. Identify the subject in \"Peter cleaned the house.\"**"
+      },
+      {
+       "t": "p",
+       "x": "The subject is **Peter**."
+      },
+      {
+       "t": "p",
+       "x": "**129. Identify the action in \"Peter cleaned the house.\"**"
+      },
+      {
+       "t": "p",
+       "x": "The action is **cleaned**."
+      },
+      {
+       "t": "p",
+       "x": "**130. Give another example of active voice related to holidays.**"
+      },
+      {
+       "t": "p",
+       "x": "Sarah visited her grandmother."
+      },
+      {
+       "t": "p",
+       "x": "**131. Change into active voice: \"The farm was visited by John.\"**"
+      },
+      {
+       "t": "p",
+       "x": "John visited the farm."
+      },
+      {
+       "t": "p",
+       "x": "**132. Why is active voice useful?**"
+      },
+      {
+       "t": "p",
+       "x": "It makes it clear who performs an action."
+      }
+     ]
+    },
+    {
+     "title": "L. Holiday travel",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**133. Why do learners travel during holidays?**"
+      },
+      {
+       "t": "p",
+       "x": "They may travel to visit relatives, attend celebrations, go on tours, attend camps or visit other places."
+      },
+      {
+       "t": "p",
+       "x": "**134. What should a learner consider before travelling?**"
+      },
+      {
+       "t": "p",
+       "x": "The learner should consider:"
+      },
       {
        "t": "ul",
        "items": [
-        "Positive statement takes a **negative** tag; negative statement takes a **positive** tag.",
-        "*I am late,* **aren't I?** (not \"amn't I\")",
-        "In reported speech the tense moves **one step back** and time words change.",
-        "**If 3** = *If + had + past participle , would have + past participle.*",
-        "*-ing* adjectives describe the **thing**; *-ed* adjectives describe the **person**.",
-        "\"Going to\" is used for a plan already made.",
-        "Use the **past tense** in a holiday composition."
+        "the destination.",
+        "means of transport.",
+        "travel time.",
+        "cost.",
+        "safety.",
+        "necessary items.",
+        "people travelling with them."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**135. What does \"fare\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Fare is the amount of money paid for travelling in a vehicle or other means of transport."
+      },
+      {
+       "t": "p",
+       "x": "**136. Make a sentence using \"fare\".**"
+      },
+      {
+       "t": "p",
+       "x": "The bus fare to the village was affordable."
+      },
+      {
+       "t": "p",
+       "x": "**137. What does \"board\" mean when travelling?**"
+      },
+      {
+       "t": "p",
+       "x": "It means to get onto a vehicle, train, plane, boat or other means of transport."
+      },
+      {
+       "t": "p",
+       "x": "**138. Make a sentence using \"board\".**"
+      },
+      {
+       "t": "p",
+       "x": "We will board the bus at the main stage."
+      },
+      {
+       "t": "p",
+       "x": "**139. What should learners do when travelling?**"
+      },
+      {
+       "t": "p",
+       "x": "They should:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "obey safety rules.",
+        "stay with responsible adults where necessary.",
+        "take care of their belongings.",
+        "use safe means of transport.",
+        "behave responsibly."
        ]
       }
      ]
     },
     {
-     "title": "EXAMINATION POINTS",
+     "title": "M. Holiday entertainment",
      "blocks": [
+      {
+       "t": "p",
+       "x": "**140. What is entertainment?**"
+      },
+      {
+       "t": "p",
+       "x": "Entertainment is an activity that provides enjoyment or amusement."
+      },
+      {
+       "t": "p",
+       "x": "**141. What entertainment activities can learners take part in during holidays?**"
+      },
+      {
+       "t": "p",
+       "x": "They can:"
+      },
       {
        "t": "ul",
        "items": [
-        "*You will travel tomorrow, ____?* → **won't you**",
-        "*\"I am tired,\" said John.* → *John said that **he was tired**.*",
-        "*If I had gone early, I ____ (meet) her.* → **would have met**",
-        "Form the adjective from *danger* → **dangerous**; from *enjoy* → **enjoyable**.",
-        "Change to the active voice: *The letter was written by Ann.* → *Ann wrote the letter.*",
-        "One word for \"a friend one writes to but has never met\" → **pen pal**."
+        "attend concerts.",
+        "watch shows.",
+        "play games.",
+        "participate in sports.",
+        "listen to music.",
+        "attend suitable cultural events."
        ]
+      },
+      {
+       "t": "p",
+       "x": "**142. What is a bash?**"
+      },
+      {
+       "t": "p",
+       "x": "A bash is an informal party or celebration."
+      },
+      {
+       "t": "p",
+       "x": "**143. Make a sentence using \"bash\".**"
+      },
+      {
+       "t": "p",
+       "x": "We attended a birthday bash during the holiday."
+      },
+      {
+       "t": "p",
+       "x": "**144. Why should learners choose suitable entertainment?**"
+      },
+      {
+       "t": "p",
+       "x": "They should choose activities that are safe, responsible and appropriate for their age."
       }
      ]
     },
     {
-     "title": "COMMON MISTAKES TO AVOID",
+     "title": "N. Holiday plans and family relationships",
      "blocks": [
+      {
+       "t": "p",
+       "x": "**145. Why are relatives important during holidays?**"
+      },
+      {
+       "t": "p",
+       "x": "Holidays give learners opportunities to visit, interact with and strengthen relationships with relatives."
+      },
+      {
+       "t": "p",
+       "x": "**146. How can learners show care for relatives during holidays?**"
+      },
+      {
+       "t": "p",
+       "x": "They can:"
+      },
       {
        "t": "ul",
        "items": [
-        "Writing *\"amn't I?\"* instead of **aren't I?**",
-        "Keeping the present tense in reported speech: *She said she **is** going* → *She said she **was** going.*",
-        "Mixing conditionals: *If I would have known…* → *If I **had** known…*",
-        "Saying *I was very boring* when you mean *I was very **bored***.",
-        "Forgetting the comma before the question tag."
+        "visit them.",
+        "help them.",
+        "communicate politely.",
+        "share with them.",
+        "listen to them.",
+        "spend time with them."
        ]
+      },
+      {
+       "t": "p",
+       "x": "**147. How can holidays strengthen friendship?**"
+      },
+      {
+       "t": "p",
+       "x": "Learners can visit friends, play together, share experiences and work together during holidays."
+      },
+      {
+       "t": "p",
+       "x": "**148. Why is sharing important during holidays?**"
+      },
+      {
+       "t": "p",
+       "x": "Sharing promotes friendship, cooperation and good relationships."
+      },
+      {
+       "t": "p",
+       "x": "**149. Why is forgiveness important?**"
+      },
+      {
+       "t": "p",
+       "x": "Forgiveness helps people maintain peaceful and healthy relationships."
+      }
+     ]
+    },
+    {
+     "title": "O. Writing about holiday plans",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**150. What should a learner include when writing a holiday plan?**"
+      },
+      {
+       "t": "p",
+       "x": "The learner should include:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "the activities planned.",
+        "when they will take place.",
+        "where they will take place.",
+        "people involved.",
+        "study time.",
+        "responsibilities.",
+        "recreation."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**151. Write a short holiday plan.**"
+      },
+      {
+       "t": "p",
+       "x": "**MY HOLIDAY PLAN**"
+      },
+      {
+       "t": "p",
+       "x": "During the holiday, I am going to visit my grandparents up-country. I am going to help them with some farm work. I am also going to revise my school work every morning. In the afternoon, I will play with my cousins. I am going to return home before the holiday ends."
+      },
+      {
+       "t": "p",
+       "x": "**152. Why should a holiday plan be organised logically?**"
+      },
+      {
+       "t": "p",
+       "x": "A logical plan makes it easy to understand the order and timing of activities."
+      },
+      {
+       "t": "p",
+       "x": "**153. What should a learner do after writing a holiday plan?**"
+      },
+      {
+       "t": "p",
+       "x": "The learner should read it again and correct spelling, grammar and punctuation mistakes."
+      }
+     ]
+    },
+    {
+     "title": "P. Writing about holiday activities",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**154. What is a holiday composition?**"
+      },
+      {
+       "t": "p",
+       "x": "A holiday composition is a piece of writing describing what happened or what someone did during a holiday."
+      },
+      {
+       "t": "p",
+       "x": "**155. What should a good holiday composition contain?**"
+      },
+      {
+       "t": "p",
+       "x": "It should contain:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "an introduction.",
+        "activities carried out.",
+        "places visited.",
+        "people met.",
+        "experiences.",
+        "a conclusion."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**156. Why should events be presented in order?**"
+      },
+      {
+       "t": "p",
+       "x": "Presenting events in order makes the story clear and easy to follow."
+      },
+      {
+       "t": "p",
+       "x": "**157. Write a short composition about a holiday activity.**"
+      },
+      {
+       "t": "p",
+       "x": "During the last holiday, I visited my grandparents in the village. I helped my grandfather on the farm and assisted my grandmother with housework. In the afternoon, I played football with my cousins. I also revised my school work every evening. I enjoyed the holiday because I learnt many useful things and spent time with my family."
+      }
+     ]
+    },
+    {
+     "title": "Q. Reading and comprehension",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**158. What should a learner do when reading a text about holiday activities?**"
+      },
+      {
+       "t": "p",
+       "x": "The learner should read carefully, identify the main ideas and pay attention to important details."
+      },
+      {
+       "t": "p",
+       "x": "**159. What questions can be asked about a holiday text?**"
+      },
+      {
+       "t": "p",
+       "x": "Questions can ask about:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "who travelled.",
+        "where someone went.",
+        "what activities were done.",
+        "when activities happened.",
+        "why an activity was done.",
+        "how someone felt.",
+        "what happened."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**160. Why should learners read holiday stories and articles?**"
+      },
+      {
+       "t": "p",
+       "x": "Reading improves vocabulary, comprehension, fluency and understanding of different experiences."
+      }
+     ]
+    },
+    {
+     "title": "R. Listening and speaking about holidays",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**161. What should a learner do when listening to a holiday story?**"
+      },
+      {
+       "t": "p",
+       "x": "The learner should listen carefully and identify important information."
+      },
+      {
+       "t": "p",
+       "x": "**162. What makes a good spoken holiday story?**"
+      },
+      {
+       "t": "p",
+       "x": "A good story should have:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "clear ideas.",
+        "correct language.",
+        "logical order.",
+        "good pronunciation.",
+        "appropriate vocabulary.",
+        "confidence."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**163. What does fluency mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Fluency is the ability to speak smoothly and easily."
+      },
+      {
+       "t": "p",
+       "x": "**164. What does confidence mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Confidence is belief in one's ability to do something successfully."
+      },
+      {
+       "t": "p",
+       "x": "**165. What does accuracy mean in speaking?**"
+      },
+      {
+       "t": "p",
+       "x": "Accuracy means using correct grammar, vocabulary and pronunciation."
+      },
+      {
+       "t": "p",
+       "x": "**166. Why is logical presentation important?**"
+      },
+      {
+       "t": "p",
+       "x": "It helps listeners understand the message easily."
+      }
+     ]
+    },
+    {
+     "title": "S. Poems and dialogues about holidays",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**167. What is a poem?**"
+      },
+      {
+       "t": "p",
+       "x": "A poem is a piece of writing in which ideas and feelings are expressed in a special style, often using rhythm and carefully chosen words."
+      },
+      {
+       "t": "p",
+       "x": "**168. What can a holiday poem describe?**"
+      },
+      {
+       "t": "p",
+       "x": "It can describe:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "travelling.",
+        "visiting relatives.",
+        "playing.",
+        "studying.",
+        "family life.",
+        "exciting experiences."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**169. What is a dialogue?**"
+      },
+      {
+       "t": "p",
+       "x": "A dialogue is a conversation between two or more people."
+      },
+      {
+       "t": "p",
+       "x": "**170. Give an example of a short holiday dialogue.**"
+      },
+      {
+       "t": "p",
+       "x": "**Amina:** What are you going to do during the holiday?"
+      },
+      {
+       "t": "p",
+       "x": "**John:** I am going to visit my grandparents."
+      },
+      {
+       "t": "p",
+       "x": "**Amina:** Are you going to study too?"
+      },
+      {
+       "t": "p",
+       "x": "**John:** Yes. I am going to revise every morning."
+      },
+      {
+       "t": "p",
+       "x": "**Amina:** That sounds like a good plan."
+      },
+      {
+       "t": "p",
+       "x": "**John:** What about you?"
+      },
+      {
+       "t": "p",
+       "x": "**Amina:** I am going to attend a holiday camp."
+      }
+     ]
+    },
+    {
+     "title": "T. Holiday reports",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**171. What is a holiday report?**"
+      },
+      {
+       "t": "p",
+       "x": "A holiday report is a written or spoken account of activities or experiences during a holiday."
+      },
+      {
+       "t": "p",
+       "x": "**172. What can a holiday report contain?**"
+      },
+      {
+       "t": "p",
+       "x": "It can contain:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "the places visited.",
+        "activities carried out.",
+        "people met.",
+        "experiences.",
+        "lessons learnt.",
+        "challenges faced."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**173. Why should a report be clear?**"
+      },
+      {
+       "t": "p",
+       "x": "A clear report helps the reader understand what happened."
+      },
+      {
+       "t": "p",
+       "x": "**174. Why should a learner check a report before presenting it?**"
+      },
+      {
+       "t": "p",
+       "x": "The learner should check it for spelling, grammar, punctuation and accuracy."
+      }
+     ]
+    },
+    {
+     "title": "U. Holiday values and life skills",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**175. What responsibility can learners develop during holidays?**"
+      },
+      {
+       "t": "p",
+       "x": "They can develop responsibility by completing chores, studying and caring for property."
+      },
+      {
+       "t": "p",
+       "x": "**176. What is cooperation?**"
+      },
+      {
+       "t": "p",
+       "x": "Cooperation is working together with others to achieve a common goal."
+      },
+      {
+       "t": "p",
+       "x": "**177. How can learners show cooperation during holidays?**"
+      },
+      {
+       "t": "p",
+       "x": "They can work together during household activities, farming, games and group activities."
+      },
+      {
+       "t": "p",
+       "x": "**178. What is care?**"
+      },
+      {
+       "t": "p",
+       "x": "Care means showing concern for the wellbeing of other people or things."
+      },
+      {
+       "t": "p",
+       "x": "**179. How can learners show care?**"
+      },
+      {
+       "t": "p",
+       "x": "They can help family members, care for animals, protect property and keep the environment clean."
+      },
+      {
+       "t": "p",
+       "x": "**180. What is respect?**"
+      },
+      {
+       "t": "p",
+       "x": "Respect is showing consideration and good manners towards other people."
+      },
+      {
+       "t": "p",
+       "x": "**181. How can learners show respect during holidays?**"
+      },
+      {
+       "t": "p",
+       "x": "They can listen to elders, speak politely, obey reasonable rules and treat others well."
+      },
+      {
+       "t": "p",
+       "x": "**182. What is love?**"
+      },
+      {
+       "t": "p",
+       "x": "Love is a strong feeling of care and affection for another person."
+      },
+      {
+       "t": "p",
+       "x": "**183. How can holidays promote friendship?**"
+      },
+      {
+       "t": "p",
+       "x": "They give learners opportunities to share, play, work and communicate with others."
+      }
+     ]
+    },
+    {
+     "title": "V. Holiday vocabulary",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**184. What does \"holiday\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "A period when learners are away from their normal school activities."
+      },
+      {
+       "t": "p",
+       "x": "**185. What does \"vacation\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "A period away from normal school or work activities."
+      },
+      {
+       "t": "p",
+       "x": "**186. What does \"travel\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To move from one place to another."
+      },
+      {
+       "t": "p",
+       "x": "**187. What does \"plan\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "An arrangement of what someone intends to do."
+      },
+      {
+       "t": "p",
+       "x": "**188. What does \"prepare\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To get ready for something."
+      },
+      {
+       "t": "p",
+       "x": "**189. What does \"relative\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "A member of one's family."
+      },
+      {
+       "t": "p",
+       "x": "**190. What does \"pen pal\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "A person with whom one regularly communicates through letters or messages."
+      },
+      {
+       "t": "p",
+       "x": "**191. What does \"urban\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Related to a town or city."
+      },
+      {
+       "t": "p",
+       "x": "**192. What does \"rural\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Related to the countryside."
+      },
+      {
+       "t": "p",
+       "x": "**193. What does \"commence\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To begin."
+      },
+      {
+       "t": "p",
+       "x": "**194. What does \"board\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To get onto a means of transport."
+      },
+      {
+       "t": "p",
+       "x": "**195. What does \"programme\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "A planned list or schedule of activities."
+      },
+      {
+       "t": "p",
+       "x": "**196. What does \"farm\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Land used for growing crops or keeping animals."
+      },
+      {
+       "t": "p",
+       "x": "**197. What does \"tour\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "A journey made to visit different places."
+      },
+      {
+       "t": "p",
+       "x": "**198. What does \"camp\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "A place or organised activity where people stay temporarily."
+      },
+      {
+       "t": "p",
+       "x": "**199. What does \"concert\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "A public musical performance."
+      },
+      {
+       "t": "p",
+       "x": "**200. What does \"revise\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To study something again."
+      },
+      {
+       "t": "p",
+       "x": "**201. What does \"chores\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Regular small jobs that need to be done, especially at home."
+      },
+      {
+       "t": "p",
+       "x": "**202. What does \"routine\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "A regular pattern of activities."
+      },
+      {
+       "t": "p",
+       "x": "**203. What does \"fare\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "The money paid for travelling."
+      },
+      {
+       "t": "p",
+       "x": "**204. What does \"exciting\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Causing great interest or enthusiasm."
+      },
+      {
+       "t": "p",
+       "x": "**205. What does \"interesting\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Attracting attention because something is enjoyable or informative."
+      },
+      {
+       "t": "p",
+       "x": "**206. What does \"enjoy\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To get pleasure from something."
       }
      ]
     },
@@ -603,26 +2115,45 @@
       {
        "t": "ol",
        "items": [
-        "Add a correct question tag: *You are travelling to Gulu tomorrow, ____?*",
-        "Add a correct question tag: *She didn't attend the concert, ____?*",
-        "Add a correct question tag: *Let us begin the journey, ____?*",
-        "Change to reported speech: *\"I am going to visit my aunt,\" said Maria.*",
-        "Change to reported speech: *\"We shall board the bus at six o'clock,\" the children said.*",
-        "Change to direct speech: *He said that he had enjoyed the trip.*",
-        "Complete with the correct form: *If I ____ (know) about the party, I would have come.*",
-        "Complete: *If she had revised well, she ____ (pass) the examination.*",
-        "Give the adjective formed from each: care, beauty, friend, excite.",
-        "Fill in: *The journey was very ____ (tire) and we were all ____ (tire) when we arrived.*",
-        "Change to the active voice: *The compound was swept by the pupils.*",
-        "Rewrite using \"going to\": *I intend to visit my grandparents next holiday.*",
-        "Give one word for: a friend you write letters to but may never have met.",
-        "Give one word for: extra lessons given to help a learner who is behind.",
-        "Use the word *commence* in a sentence of your own.",
-        "Rewrite beginning with the words given: *He finished his chores and then went to play.* — **Having** …",
-        "Give the meaning of *up-country* and use it in a sentence.",
-        "Write four sentences describing your plans for the next holiday, using \"going to\" in each.",
-        "Write a short paragraph (about six sentences) about the most interesting thing you did last holiday. Use the past tense.",
-        "Give two differences between direct speech and reported speech."
+        "What are the two sub-topics under School Holidays in Primary Seven?",
+        "What is the main purpose of the School Holidays topic?",
+        "What is a holiday plan?",
+        "Mention five things that can be included in a holiday plan.",
+        "What is a programme?",
+        "What is a remedial class?",
+        "What is the difference between urban and rural?",
+        "What does \"commence\" mean?",
+        "What does \"board\" mean?",
+        "What is a holiday activity?",
+        "Mention six holiday activities.",
+        "What are chores?",
+        "Why should learners help with chores?",
+        "What is a routine?",
+        "What is a tour?",
+        "What is a concert?",
+        "What is a bash?",
+        "What is fare?",
+        "What is the structure used to talk about planned future actions?",
+        "Make a sentence using \"going to\".",
+        "What is a question tag?",
+        "Add the correct question tag: You will travel tomorrow, ______?",
+        "What is reported speech?",
+        "Change into reported speech: John said, \"I am going to visit my uncle.\"",
+        "What is a present participle?",
+        "Give two present participles.",
+        "What is active voice?",
+        "Give an example of active voice.",
+        "What is the third conditional used for?",
+        "Give the structure of the third conditional.",
+        "Complete: If I had seen him, he ______ have helped me.",
+        "What is an adjective?",
+        "Give three adjectives that can describe a holiday.",
+        "What is cooperation?",
+        "Mention the values emphasised in the School Holidays topic.",
+        "Mention the life skills developed through the topic.",
+        "What communication skills should learners develop?",
+        "What critical-thinking skills are developed?",
+        "What friendship skills are developed?"
        ],
        "start": 1
       }
@@ -634,57 +2165,311 @@
       {
        "t": "ol",
        "items": [
-        "**aren't you?**",
-        "**did she?**",
-        "**shall we?**",
-        "Maria said that **she was going to visit her aunt**.",
-        "The children said that **they would board the bus at six o'clock**.",
-        "*\"I enjoyed the trip,\"* **he said**. (Also acceptable: *\"I have enjoyed the trip,\" he said.*)",
-        "**had known**",
-        "**would have passed**",
-        "care → **careful** (or careless); beauty → **beautiful**; friend → **friendly**; excite → **exciting** (or excited).",
-        "The journey was very **tiring** and we were all **tired**.",
-        "**The pupils swept the compound.**",
-        "**I am going to visit my grandparents next holiday.**",
-        "A **pen pal**.",
-        "**Remedial classes.**",
-        "*Learner's sentence,* for example: *The lessons will **commence** at eight o'clock.*",
-        "**Having finished his chores, he went to play.**",
-        "*Up-country* means away from the city, in the villages. Example: *My father travelled **up-country** to see his parents.*",
-        "*Learner's answer.* Each sentence must use \"am/is/are going to\" + verb, for example: *I **am going to** help my mother in the garden.*",
-        "*Learner's paragraph.* It should be in the **past tense**, in one paragraph, with a topic sentence, correct punctuation and capital letters.",
-        "In **direct speech** the exact words are used and put in quotation marks, while in **reported speech** the words are not exact and there are no quotation marks; in reported speech the **tense moves one step back** and words such as *today, here, this* change to *that day, there, that*."
+        "Holiday Plans and Holiday Activities.",
+        "It equips learners with language skills and values that help them interact effectively with others during holiday situations.",
+        "An arrangement of activities a learner intends to carry out during a holiday.",
+        "Study, visiting relatives, travelling, household chores and recreation.",
+        "A planned list of activities and their times.",
+        "An additional lesson designed to help learners improve areas where they have difficulties.",
+        "Urban refers to towns and cities, while rural refers to countryside areas.",
+        "To begin.",
+        "To get onto a means of transport.",
+        "Something a learner does during a school holiday.",
+        "Studying, visiting relatives, farming, travelling, cooking and playing games.",
+        "Regular small jobs that need to be done.",
+        "To develop responsibility, cooperation and useful life skills.",
+        "A regular pattern of activities.",
+        "A journey made to visit different places.",
+        "A public performance of music.",
+        "An informal party or celebration.",
+        "Money paid for travelling.",
+        "am/is/are going to + verb.",
+        "I am going to visit my aunt next holiday.",
+        "A short question added to the end of a statement.",
+        "won't you?",
+        "It is used to report what someone said without giving the exact words.",
+        "John said that he was going to visit his uncle.",
+        "A verb form usually ending in -ing.",
+        "Travelling and studying.",
+        "A sentence structure in which the subject performs the action.",
+        "Mary cleaned the house.",
+        "It is used to talk about unreal or imagined past situations and their possible results.",
+        "If + past perfect, would have + past participle.",
+        "would.",
+        "A word that describes a noun.",
+        "Interesting, exciting and enjoyable.",
+        "Working together to achieve a common goal.",
+        "Responsibility, cooperation, sharing, care, respect and love.",
+        "Effective communication, creative thinking, critical thinking, interpersonal relationships and friendship formation.",
+        "Fluency, confidence, accuracy and logical presentation of ideas.",
+        "Responding appropriately to questions, giving reasons for actions, making good use of available information and analysing statements.",
+        "Sharing, playing with others and working in groups."
        ],
        "start": 1
       }
      ]
     },
     {
-     "title": "P.7 QUICK REVISION",
+     "title": "KEY DEFINITIONS",
      "blocks": [
       {
-       "t": "ul",
-       "items": [
-        "Question tags: **positive → negative**, negative → positive · *I am…, **aren't I?***",
-        "Reported speech: tense **one step back**, change time and place words",
-        "**If 3**: *If + had + p.p. , would have + p.p.* (about the past that did not happen)",
-        "Participles: **-ing** (present) · **-ed / irregular** (past) · **having + p.p.** (perfect)",
-        "**-ing** describes the thing · **-ed** describes the person",
-        "Holiday composition: title · introduction · body in paragraphs · conclusion · past tense"
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Holiday",
+         "A period away from normal school activities"
+        ],
+        [
+         "Vacation",
+         "A period away from normal school or work"
+        ],
+        [
+         "Travel",
+         "To move from one place to another"
+        ],
+        [
+         "Plan",
+         "An arrangement of what one intends to do"
+        ],
+        [
+         "Prepare",
+         "To get ready for something"
+        ],
+        [
+         "Relatives",
+         "Members of one's family"
+        ],
+        [
+         "Pen pals",
+         "People who communicate regularly through letters or messages"
+        ],
+        [
+         "Up-country",
+         "Places outside the main town or city where one lives"
+        ],
+        [
+         "Town",
+         "A built-up settlement larger than a village"
+        ],
+        [
+         "Urban",
+         "Related to towns and cities"
+        ],
+        [
+         "Rural",
+         "Related to the countryside"
+        ],
+        [
+         "Commence",
+         "To begin or start"
+        ],
+        [
+         "Board",
+         "To get onto a means of transport"
+        ],
+        [
+         "Programme",
+         "A planned list of activities and their times"
+        ],
+        [
+         "Birthday",
+         "The yearly celebration of the day a person was born"
+        ],
+        [
+         "Farm",
+         "Land used for crops or animals"
+        ],
+        [
+         "Tour",
+         "A journey to visit different places"
+        ],
+        [
+         "Camp",
+         "A place or organised activity where people stay temporarily"
+        ],
+        [
+         "Concert",
+         "A public musical performance"
+        ],
+        [
+         "Show",
+         "An organised performance or event"
+        ],
+        [
+         "Revise",
+         "To study something again"
+        ],
+        [
+         "Housework",
+         "Work done to maintain a home"
+        ],
+        [
+         "Trip",
+         "A journey to a place and usually back again"
+        ],
+        [
+         "Enjoy",
+         "To get pleasure from something"
+        ],
+        [
+         "Interesting",
+         "Attracting attention because something is enjoyable"
+        ],
+        [
+         "Exciting",
+         "Causing great interest or enthusiasm"
+        ],
+        [
+         "Report",
+         "An account giving information about something"
+        ],
+        [
+         "Chores",
+         "Regular small jobs done especially at home"
+        ],
+        [
+         "Routine",
+         "A regular pattern of activities"
+        ],
+        [
+         "Bash",
+         "An informal party or celebration"
+        ],
+        [
+         "Fare",
+         "Money paid for travelling"
+        ],
+        [
+         "Remedial classes",
+         "Extra lessons to help learners improve"
+        ]
        ]
       }
      ]
     },
     {
-     "title": "A note on sources",
+     "title": "IMPORTANT LANGUAGE AREAS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Holiday plans",
+        "Holiday activities",
+        "Near future using **going to**",
+        "Question tags",
+        "Reported speech",
+        "Participle tense",
+        "Formation of adjectives",
+        "Active voice",
+        "Third conditional",
+        "Holiday vocabulary",
+        "Asking and answering questions",
+        "Listening comprehension",
+        "Reading comprehension",
+        "Storytelling",
+        "Dialogue",
+        "Poetry",
+        "Guided composition",
+        "Spelling",
+        "Logical presentation of ideas",
+        "Appropriate use of vocabulary and structures"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "A **holiday plan** is what a person **intends** to do; a **holiday activity** is what is **actually done** during the holiday.",
+        "The near future structure is **am/is/are going to + verb**; negative: **am/is/are + not + going to + verb**.",
+        "A **positive statement** takes a **negative tag**; a **negative statement** takes a **positive tag**.",
+        "*You will go to the village next week, **won't you?*** is the topic's question-tag example.",
+        "**Reported speech** repeats what someone said without the exact words; **\"am going to\"** becomes **\"was going to\"** in reported speech.",
+        "The **present participle** ends in **-ing** (travelling, revising); the **past participle** (visited, written) forms perfect tenses and passive voice.",
+        "Adjectives are formed by suffixes: **care → careful**, **interest → interesting**, **excitement → exciting**.",
+        "In the **active voice** the **subject performs the action**: *Peter cleaned the house.*",
+        "The **third conditional** = **If + past perfect, would have + past participle** — an unreal past.",
+        "**Up-country** = places outside the main town or city; **urban** = towns and cities; **rural** = countryside.",
+        "**Remedial classes** are **additional lessons** for learners who need more practice.",
+        "The values of the topic are **responsibility, cooperation, sharing, care, respect and love**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Expect **question-tag** gaps: *John will visit his grandmother, **won't he?** / They will travel tomorrow, **won't they?***",
+        "Expect **reported speech** changes: *\"I am going to visit my uncle\"* → **he was going to visit his uncle**; *\"I will visit\"* → **he would visit**.",
+        "Expect **going to** in the three forms: positive (*is going to attend*), negative (*am not going to travel*), question (*Are you going to visit…?*).",
+        "Expect **participle** naming: present participles end in **-ing** (travelling, studying); past participles include **written, eaten, gone, seen**.",
+        "Expect **adjective formation**: care → **careful**, interest → **interesting**, excitement → **exciting**.",
+        "Expect **active voice** changes: *\"The farm was visited by John.\"* → **John visited the farm.**",
+        "Expect **If 3** gaps filled with **would** or **have**.",
+        "Expect **vocabulary meanings**: commence = **to begin**, fare = **money paid for travelling**, bash = **an informal party**, chores = **regular small jobs**.",
+        "Question words to expect: **Mention… State… Give… Make a sentence… Change… Complete… Add the correct tag… Identify…**"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "MAIN SKILLS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Describe holiday plans.",
+        "Use appropriate language when talking about holiday plans.",
+        "Narrate stories about holiday plans.",
+        "Read texts about holiday plans.",
+        "Write texts about holiday plans.",
+        "Describe holiday activities.",
+        "Use appropriate language to describe activities and actions.",
+        "Narrate holiday stories fluently and intelligently.",
+        "Read texts about holiday activities.",
+        "Write texts about holiday activities.",
+        "Ask and answer questions about holidays.",
+        "Listen to and answer questions about holiday texts.",
+        "Spell holiday vocabulary correctly.",
+        "Write and recite poems about holidays.",
+        "Act dialogues about holidays.",
+        "Write holiday plans.",
+        "Write guided compositions about holiday activities.",
+        "Complete puzzles and riddles related to holidays.",
+        "Write and tell stories about holiday plans.",
+        "Write and tell stories about holiday activities.",
+        "Use the near future correctly.",
+        "Use question tags correctly.",
+        "Use reported speech correctly.",
+        "Use participles correctly.",
+        "Form and use adjectives correctly.",
+        "Use the active voice correctly.",
+        "Use the third conditional correctly.",
+        "Demonstrate responsibility and cooperation.",
+        "Share and care for others.",
+        "Show respect and love in relationships."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "A NOTE ON SOURCES",
      "blocks": [
       {
        "t": "p",
-       "x": "The topic title, sub-topics, vocabulary list, language structures, grammar items, competences and teacher guidance above were taken from the official **NCDC Primary Seven Curriculum, Set One** (topic outline page 30 and pages 32–35 of the PDF in `curriculum/`). The explanations, tables, examples, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
-      },
-      {
-       "t": "p",
-       "x": "No NCDC **Teacher's Guide** was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+       "x": "The question-and-answer content of this topic (sections A–V, the revision questions and answers, the key vocabulary, language areas and main skills) was supplied by the app owner as the authoritative notes for **Topic 1: School Holidays** and is reproduced here in the app's format with its continuous numbering (1–245) preserved. The topic aligns with the official **NCDC Primary Seven Curriculum, Set One**, English Topic 1 — School Holidays, 30 periods (`curriculum/PRIMARY-SEVEN-SET-ONE.pdf`, pages 32–35): the syllabus vocabulary, the structures *going to*, question tags and reported speech, the grammar items (participles, adjectives, active voice, third conditional) and the values and life skills all match the syllabus table, and the example *\"If I had seen him in the holiday, he would have given me money\"* is the syllabus's own. No additional curriculum content has been invented."
       }
      ]
     }
@@ -699,563 +2484,2070 @@
    "heading": "TOPIC 2: LETTER WRITING",
    "slug": "letter-writing",
    "periods": 28,
-   "curriculum_pages": "36–39",
-   "words": 2390,
+   "curriculum_pages": "36–38",
+   "words": 5499,
    "sections": [
     {
      "title": "About this topic",
      "blocks": [
       {
        "t": "p",
-       "x": "*Curriculum reference: NCDC Primary Seven Curriculum, Set One, English Topic 2, 28 periods (`curriculum/PRIMARY-SEVEN-SET-ONE.pdf`, topic outline page 30 and pages 36–39). Sub-topics: **2A Informal Letters** and **2B Formal Letters**.*"
-      },
-      {
-       "t": "p",
-       "x": "**What you already know:** You wrote letters in P.5. In P.7 you must know the **exact format** of both an informal and a formal letter, and be able to tell them apart. Letter writing is one of the commonest questions in the examination."
-      },
-      {
-       "t": "p",
-       "x": "**By the end of this topic you should be able to:**"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "name the parts of an informal letter and of a formal letter",
-        "say when each type of letter is written",
-        "write both types correctly, including an application letter",
-        "fill in official forms",
-        "use the abbreviations and adverbs required by the syllabus",
-        "answer comprehension questions about letters"
-       ]
+       "x": "*Curriculum reference: NCDC Primary Seven Curriculum, Set One, English Topic 2 — Letter Writing, 28 periods (`curriculum/PRIMARY-SEVEN-SET-ONE.pdf`, pages 36–38), sub-topics **2A Informal Letters** and **2B Formal Letters**. The question-and-answer content of this topic was supplied by the app owner as the authoritative notes and follows the syllabus vocabulary, structures, grammar, skills and values for this topic.*"
       }
      ]
     },
     {
-     "title": "SUB-TOPIC 2A: INFORMAL LETTERS",
+     "title": "About this topic",
      "blocks": [
       {
-       "t": "h3",
-       "x": "Definition"
+       "t": "p",
+       "x": "*Curriculum reference: NCDC Primary Seven Curriculum, Set One, English Topic 2 — Letter Writing, 28 periods (pages 36–38). This app topic covers sub-topics 2A Informal Letters and 2B Formal Letters using the owner's question-and-answer notes.*"
       },
       {
        "t": "p",
-       "x": "**Informal (personal) letter:** A letter written to someone you know well — a parent, a brother, a friend, a classmate or a pen pal."
-      },
-      {
-       "t": "h3",
-       "x": "When an informal letter is written"
+       "x": "**Background (from the syllabus):** Letter writing is an important functional use of language. A learner in P.7 is expected to communicate through writing, like when applying for jobs, making friendship and giving information. This topic equips learners with the skills of writing informal and formal letters. It builds on what was covered under Topic 4, Letter Writing, in Primary Five, and it enables learners to differentiate between formal and informal letters."
       },
       {
        "t": "p",
-       "x": "To greet somebody · to thank them · to invite them to a party or ceremony · to ask for something · to give news · to congratulate or console · to apologise · to reply to a letter."
+       "x": "**Learning outcome (from the syllabus):** The learner writes informal and formal letters using the appropriate format."
       },
       {
-       "t": "h3",
-       "x": "The parts of an informal letter, in order"
+       "t": "p",
+       "x": "**Life skills and indicators (from the syllabus):**"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "**Effective communication** — logical presentation of ideas, accuracy, articulation",
+        "**Creative thinking** — logical reasoning, initiative, finding different ways of doing things",
+        "**Critical thinking** — selecting and evaluating information, making best use of information, analysing statements, taking decisions",
+        "**Self-esteem** — talking about self, friendliness"
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**Values (from the syllabus):** appreciation and respect."
+      }
+     ]
+    },
+    {
+     "title": "A. Understanding letter writing",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**1. What is letter writing?**"
+      },
+      {
+       "t": "p",
+       "x": "Letter writing is the act of communicating a message to another person or organisation in written form."
+      },
+      {
+       "t": "p",
+       "x": "**2. Why is letter writing important?**"
+      },
+      {
+       "t": "p",
+       "x": "Letter writing is important because it enables people to:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "give information.",
+        "make requests.",
+        "apply for jobs.",
+        "make friends.",
+        "thank people.",
+        "apologise.",
+        "give invitations.",
+        "maintain relationships.",
+        "communicate with people who are far away."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**3. What are the two main types of letters studied in Primary Seven?**"
+      },
+      {
+       "t": "p",
+       "x": "The two main types are:"
       },
       {
        "t": "ol",
        "items": [
-        "**Your address** — written at the top **right-hand** corner (never your name above it).",
-        "**The date** — written under the address.",
-        "**The salutation (greeting)** — *Dear Ann,* *Dear Uncle,* followed by a **comma**.",
-        "**The introduction** — a short opening: *How are you? I hope you are fine.*",
-        "**The body** — the message, in paragraphs.",
-        "**The conclusion** — *Greet everyone at home. I look forward to hearing from you.*",
-        "**The complimentary close** — *Yours affectionately,* *Yours sincerely,* *Your friend,*",
-        "**Your first name only** — *Sarah*"
+        "Informal letters.",
+        "Formal letters."
        ],
        "start": 1
       },
       {
-       "t": "h3",
-       "x": "Example layout"
-      },
-      {
-       "t": "pre",
-       "x": "                                        P.7 Blue\n                                        Kabale Junior School\n                                        P.O. Box 45\n                                        Kabale\n                                        12th August 2026\n\nDear Grace,\n\n    How are you? I hope you and the family are well. ...\n\n    ... (body of the letter in paragraphs) ...\n\n    Please greet everyone at home. I am waiting for your reply.\n\n                                        Yours affectionately,\n                                        Sarah"
-      },
-      {
-       "t": "h3",
-       "x": "Vocabulary from the syllabus"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Word",
-        "Meaning"
-       ],
-       "rows": [
-        [
-         "address",
-         "The details of where a person lives or receives post"
-        ],
-        [
-         "personal letter",
-         "A letter to somebody you know well"
-        ],
-        [
-         "stamp",
-         "A small printed label paid for and stuck on an envelope"
-        ],
-        [
-         "envelope",
-         "The paper cover in which a letter is posted"
-        ],
-        [
-         "occasion",
-         "A special event"
-        ],
-        [
-         "affectionately",
-         "With love; used to close a letter to a relative"
-        ],
-        [
-         "sincerely",
-         "Truly; used to close a letter to a person you named"
-        ],
-        [
-         "body",
-         "The main part of the letter"
-        ],
-        [
-         "purpose",
-         "The reason for writing"
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Language structures"
-      },
-      {
-       "t": "table",
-       "head": [
-        "Structure",
-        "Example"
-       ],
-       "rows": [
-        [
-         "**… is likely to …**",
-         "*Anna **is likely to** write to me. / I **am likely to** forget your address.*"
-        ],
-        [
-         "**… hardly …**",
-         "*There is **hardly** anyone who has bothered to reply.*"
-        ]
-       ]
+       "t": "p",
+       "x": "**4. What is an informal letter?**"
       },
       {
        "t": "p",
-       "x": "**Note:** *hardly* means \"almost not\". It is already negative, so never add another negative: *I can **hardly** hear you* (not \"can't hardly\")."
-      },
-      {
-       "t": "h3",
-       "x": "Grammar focus: the present continuous tense"
+       "x": "An informal letter is a personal letter written to someone we know well, such as a friend, relative or classmate."
       },
       {
        "t": "p",
-       "x": "**Form:** am / is / are + verb + **-ing**"
-      },
-      {
-       "t": "ul",
-       "items": [
-        "*I **am writing** to invite you to my birthday party.*",
-        "*They **are preparing** for the ceremony.*"
-       ]
+       "x": "**5. What is a formal letter?**"
       },
       {
        "t": "p",
-       "x": "It is used for something happening **now** or **around now**, and also for a **fixed future arrangement**: *We **are travelling** to Mbale on Friday.*"
+       "x": "A formal letter is an official letter written to a person, organisation or institution for a particular official purpose."
+      },
+      {
+       "t": "p",
+       "x": "**6. What is the difference between an informal and a formal letter?**"
+      },
+      {
+       "t": "p",
+       "x": "An informal letter is mainly used for personal communication, while a formal letter is used for official communication."
+      },
+      {
+       "t": "p",
+       "x": "**7. What determines the type of letter one should write?**"
+      },
+      {
+       "t": "p",
+       "x": "The person being addressed and the purpose of writing determine the type of letter."
+      },
+      {
+       "t": "p",
+       "x": "**8. What is the main learning outcome of Letter Writing in Primary Seven?**"
+      },
+      {
+       "t": "p",
+       "x": "The learner should be able to write informal and formal letters using the appropriate format."
       }
      ]
     },
     {
-     "title": "SUB-TOPIC 2B: FORMAL LETTERS",
+     "title": "B. Informal letters",
      "blocks": [
       {
-       "t": "h3",
-       "x": "Definition"
+       "t": "p",
+       "x": "**9. What is an informal letter?**"
       },
       {
        "t": "p",
-       "x": "**Formal (official) letter:** A letter written to someone in their official position — a head teacher, a manager, an editor, a district officer — usually somebody you do not know personally."
-      },
-      {
-       "t": "h3",
-       "x": "When a formal letter is written"
+       "x": "An informal letter is a personal letter written to a friend, relative, classmate or another person whom the writer knows well."
       },
       {
        "t": "p",
-       "x": "To apply for a job or a place in school · to ask for permission · to make a request · to complain · to apologise · to invite officially · to give or ask for information · to reply to an advertisement."
+       "x": "**10. When are informal letters written?**"
       },
       {
-       "t": "h3",
-       "x": "The parts of a formal letter, in order"
+       "t": "p",
+       "x": "Informal letters are written when people want to:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "give personal information.",
+        "share news.",
+        "maintain friendship.",
+        "invite someone.",
+        "thank someone.",
+        "ask for information.",
+        "describe an experience.",
+        "congratulate someone.",
+        "apologise."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**11. Who can receive an informal letter?**"
+      },
+      {
+       "t": "p",
+       "x": "An informal letter can be written to:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "a friend.",
+        "a relative.",
+        "a classmate.",
+        "a brother.",
+        "a sister.",
+        "a parent."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**12. What are the main components of an informal letter?**"
+      },
+      {
+       "t": "p",
+       "x": "The main components include:"
       },
       {
        "t": "ol",
        "items": [
-        "**Your address and the date** — top **right**.",
-        "**The receiver's address** — on the **left**, below your date: *The Head Teacher, …*",
-        "**The salutation** — *Dear Sir,* / *Dear Madam,* / *Dear Sir/Madam,*",
-        "**The heading (Re:)** — underlined: *RE: APPLICATION FOR THE POST OF A TYPIST*",
-        "**The body** — short, polite and to the point, in paragraphs.",
-        "**The complimentary close** — **Yours faithfully,** if you began *Dear Sir/Madam*; **Yours sincerely,** if you used the person's name.",
-        "**Your signature**, then **your full name** in capital letters below it."
+        "Address.",
+        "Date.",
+        "Salutation.",
+        "Introduction.",
+        "Body.",
+        "Conclusion.",
+        "Complimentary close.",
+        "Name or signature."
        ],
        "start": 1
       },
       {
-       "t": "h3",
-       "x": "Example layout"
+       "t": "p",
+       "x": "**13. What is an address?**"
       },
       {
-       "t": "pre",
-       "x": "                                        P.O. Box 120\n                                        Mbarara\n                                        3rd September 2026\n\nThe Head Teacher\nRukungiri Modern Primary School\nP.O. Box 33\nRukungiri\n\nDear Sir,\n\nRE: REQUEST FOR A PLACE IN SENIOR ONE\n\n    I am writing to request ...\n\n                                        Yours faithfully,\n                                        (signature)\n                                        JOHN MUGISHA"
+       "t": "p",
+       "x": "An address is information showing where a person lives or where a letter is being sent from."
       },
       {
-       "t": "h3",
-       "x": "Informal and formal letters compared"
+       "t": "p",
+       "x": "**14. Where is the writer's address placed in an informal letter?**"
       },
       {
-       "t": "table",
-       "head": [
-        "Point",
-        "Informal letter",
-        "Formal letter"
-       ],
-       "rows": [
-        [
-         "Written to",
-         "A relative or friend",
-         "An official or a stranger"
-        ],
-        [
-         "Receiver's address",
-         "Not written",
-         "**Written on the left**"
-        ],
-        [
-         "Salutation",
-         "*Dear Ann,*",
-         "*Dear Sir,* / *Dear Madam,*"
-        ],
-        [
-         "Heading (Re:)",
-         "Not used",
-         "**Used and underlined**"
-        ],
-        [
-         "Language",
-         "Friendly, may use short forms",
-         "Polite, official, no short forms"
-        ],
-        [
-         "Closing",
-         "*Yours affectionately / Your friend*",
-         "**Yours faithfully / Yours sincerely**"
-        ],
-        [
-         "Signing off",
-         "First name only",
-         "**Signature + full name in capitals**"
-        ]
-       ]
+       "t": "p",
+       "x": "It is normally placed at the top right-hand side of the letter."
       },
       {
-       "t": "h3",
-       "x": "Vocabulary from the syllabus"
+       "t": "p",
+       "x": "**15. What is the date?**"
       },
       {
-       "t": "table",
-       "head": [
-        "Word",
-        "Meaning"
-       ],
-       "rows": [
-        [
-         "surname",
-         "Family name"
-        ],
-        [
-         "maiden name",
-         "A woman's family name before marriage"
-        ],
-        [
-         "salutation",
-         "The greeting at the beginning of a letter"
-        ],
-        [
-         "vacancy",
-         "A job or place that is free and needs to be filled"
-        ],
-        [
-         "application",
-         "A written request for a job or place"
-        ],
-        [
-         "referee",
-         "A person who can speak about your character or work"
-        ],
-        [
-         "draft",
-         "A first rough copy"
-        ],
-        [
-         "edit",
-         "To correct and improve a piece of writing"
-        ],
-        [
-         "signature",
-         "Your own written mark showing you wrote it"
-        ]
-       ]
+       "t": "p",
+       "x": "The date shows when the letter was written."
       },
       {
-       "t": "h3",
-       "x": "Abbreviations you must know"
+       "t": "p",
+       "x": "**16. Where is the date placed?**"
       },
       {
-       "t": "table",
-       "head": [
-        "Abbreviation",
-        "Full meaning"
-       ],
-       "rows": [
-        [
-         "**Re:**",
-         "Reference — the subject of the letter"
-        ],
-        [
-         "**pp**",
-         "On behalf of (signing for another person)"
-        ],
-        [
-         "**c.c.**",
-         "Carbon copy — a copy sent to another person"
-        ],
-        [
-         "**P.O. Box**",
-         "Post Office Box"
-        ],
-        [
-         "**Dr**",
-         "Doctor · **Rev** — Reverend · **Hon** — Honourable · **Prof** — Professor"
-        ],
-        [
-         "**Mr, Mrs, Miss, Ms**",
-         "Titles for men, married women, unmarried women, and women whether married or not"
-        ],
-        [
-         "**e.g.**",
-         "For example · **i.e.** — that is · **etc.** — and the rest"
-        ],
-        [
-         "**N.B.**",
-         "Note well · **P.S.** — added at the end of a letter"
-        ],
-        [
-         "**NGO**",
-         "Non-Governmental Organisation · **UNEB** — Uganda National Examinations Board"
-        ]
-       ]
+       "t": "p",
+       "x": "It is normally written below the writer's address."
       },
       {
-       "t": "h3",
-       "x": "Language structures"
+       "t": "p",
+       "x": "**17. What is a salutation?**"
       },
       {
-       "t": "table",
-       "head": [
-        "Structure",
-        "Example"
-       ],
-       "rows": [
-        [
-         "**Barely …** (at the start)",
-         "***Barely** 30% of the people applied for the position advertised.*"
-        ],
-        [
-         "**… barely …** (inside the sentence)",
-         "*The letter was **barely** legible.*"
-        ]
+       "t": "p",
+       "x": "A salutation is the greeting used at the beginning of a letter."
+      },
+      {
+       "t": "p",
+       "x": "**18. Give examples of salutations used in informal letters.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Dear John,",
+        "Dear Mary,",
+        "Dear Aunt,",
+        "Dear Uncle,",
+        "Dear Peter,"
        ]
       },
       {
        "t": "p",
-       "x": "*Barely* means \"only just\" or \"almost not\"."
-      },
-      {
-       "t": "h3",
-       "x": "Grammar focus: forming adverbs"
+       "x": "**19. What is an introduction?**"
       },
       {
        "t": "p",
-       "x": "Most adverbs are formed by adding **-ly** to an adjective."
-      },
-      {
-       "t": "table",
-       "head": [
-        "Adjective",
-        "Adverb",
-        "Note"
-       ],
-       "rows": [
-        [
-         "quick",
-         "quickly",
-         "simple + ly"
-        ],
-        [
-         "careful",
-         "carefully",
-         ""
-        ],
-        [
-         "happy",
-         "happily",
-         "y → i + ly"
-        ],
-        [
-         "gentle",
-         "gently",
-         "drop the e, add y"
-        ],
-        [
-         "true",
-         "truly",
-         "irregular spelling"
-        ],
-        [
-         "good",
-         "**well**",
-         "completely irregular"
-        ],
-        [
-         "fast",
-         "**fast**",
-         "no change"
-        ],
-        [
-         "hard",
-         "**hard** (*hardly* means something else!)",
-         ""
-        ]
-       ]
-      },
-      {
-       "t": "h3",
-       "x": "Filling in official forms"
+       "x": "An introduction is the opening part of a letter that introduces the purpose or subject of the letter."
       },
       {
        "t": "p",
-       "x": "Write in **CAPITAL LETTERS** unless told otherwise · use **black or blue ink** · write your **surname first** where asked · write dates as **day/month/year** · leave nothing blank — write **N/A** (not applicable) where a question does not concern you · do not overwrite — cancel neatly with one line · sign where a signature is asked for; do not print your name there."
+       "x": "**20. What is the body of a letter?**"
+      },
+      {
+       "t": "p",
+       "x": "The body is the main part of the letter where the writer gives the information or message."
+      },
+      {
+       "t": "p",
+       "x": "**21. What is a conclusion?**"
+      },
+      {
+       "t": "p",
+       "x": "A conclusion is the final part of the message where the writer brings the letter to an end."
+      },
+      {
+       "t": "p",
+       "x": "**22. What is a complimentary close?**"
+      },
+      {
+       "t": "p",
+       "x": "A complimentary close is the polite expression used at the end of a letter before the writer's name."
+      },
+      {
+       "t": "p",
+       "x": "**23. Give examples of complimentary closes for informal letters.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Yours affectionately,",
+        "Yours lovingly,",
+        "Yours sincerely,",
+        "Best wishes,",
+        "With love."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**24. What does \"affectionately\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Affectionately means in a loving or caring manner."
+      },
+      {
+       "t": "p",
+       "x": "**25. What does \"sincerely\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Sincerely means honestly or genuinely."
       }
      ]
     },
     {
-     "title": "KEY DEFINITIONS",
+     "title": "C. Informal letter vocabulary",
      "blocks": [
       {
-       "t": "table",
-       "head": [
-        "Term",
-        "Meaning"
+       "t": "p",
+       "x": "**26. What does \"personal letter\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "A personal letter is a letter written about personal matters, usually to someone the writer knows."
+      },
+      {
+       "t": "p",
+       "x": "**27. What is a stamp?**"
+      },
+      {
+       "t": "p",
+       "x": "A stamp is a small piece of paper attached to an envelope to show that postage has been paid."
+      },
+      {
+       "t": "p",
+       "x": "**28. What is an envelope?**"
+      },
+      {
+       "t": "p",
+       "x": "An envelope is a paper covering used to carry and protect a letter."
+      },
+      {
+       "t": "p",
+       "x": "**29. What is an occasion?**"
+      },
+      {
+       "t": "p",
+       "x": "An occasion is a particular event or time when something happens."
+      },
+      {
+       "t": "p",
+       "x": "**30. What is a party?**"
+      },
+      {
+       "t": "p",
+       "x": "A party is a social gathering held to celebrate or enjoy something."
+      },
+      {
+       "t": "p",
+       "x": "**31. Who are relatives?**"
+      },
+      {
+       "t": "p",
+       "x": "Relatives are members of one's family."
+      },
+      {
+       "t": "p",
+       "x": "**32. Who are friends?**"
+      },
+      {
+       "t": "p",
+       "x": "Friends are people who know and care about one another."
+      },
+      {
+       "t": "p",
+       "x": "**33. Who are classmates?**"
+      },
+      {
+       "t": "p",
+       "x": "Classmates are learners who study in the same class."
+      },
+      {
+       "t": "p",
+       "x": "**34. What does \"reply\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "A reply is an answer to a letter, question or message."
+      },
+      {
+       "t": "p",
+       "x": "**35. What does \"purpose\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Purpose is the reason why something is done or why something exists."
+      },
+      {
+       "t": "p",
+       "x": "**36. What does \"reason\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "A reason is an explanation for something."
+      },
+      {
+       "t": "p",
+       "x": "**37. What does \"inform\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To inform means to give someone information."
+      },
+      {
+       "t": "p",
+       "x": "**38. What does \"ask\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To ask means to request information or something from someone."
+      },
+      {
+       "t": "p",
+       "x": "**39. What does \"thank\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To thank means to express gratitude to someone."
+      }
+     ]
+    },
+    {
+     "title": "D. Language structures in informal letters",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**40. What language structure is taught under informal letters?**"
+      },
+      {
+       "t": "p",
+       "x": "One structure is:"
+      },
+      {
+       "t": "p",
+       "x": "**... is likely to ...**"
+      },
+      {
+       "t": "p",
+       "x": "**41. What does \"is likely to\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "It means that something will probably happen."
+      },
+      {
+       "t": "p",
+       "x": "**42. Give the NCDC example of \"is likely to\".**"
+      },
+      {
+       "t": "p",
+       "x": "Anna is likely to write to me."
+      },
+      {
+       "t": "p",
+       "x": "**43. Give another example.**"
+      },
+      {
+       "t": "p",
+       "x": "John is likely to visit his uncle."
+      },
+      {
+       "t": "p",
+       "x": "**44. Make a sentence using \"am likely to\".**"
+      },
+      {
+       "t": "p",
+       "x": "I am likely to forget your address."
+      },
+      {
+       "t": "p",
+       "x": "**45. Make a sentence using \"are likely to\".**"
+      },
+      {
+       "t": "p",
+       "x": "They are likely to arrive tomorrow."
+      },
+      {
+       "t": "p",
+       "x": "**46. What is another structure taught under informal letters?**"
+      },
+      {
+       "t": "p",
+       "x": "**... hardly ...**"
+      },
+      {
+       "t": "p",
+       "x": "**47. What does \"hardly\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Hardly means almost not or almost never."
+      },
+      {
+       "t": "p",
+       "x": "**48. Give the NCDC example using \"hardly\".**"
+      },
+      {
+       "t": "p",
+       "x": "There is hardly anyone who has bothered to reply."
+      },
+      {
+       "t": "p",
+       "x": "**49. Give another example using \"hardly\".**"
+      },
+      {
+       "t": "p",
+       "x": "I hardly see my old friend these days."
+      },
+      {
+       "t": "p",
+       "x": "**50. Make a sentence using \"hardly\".**"
+      },
+      {
+       "t": "p",
+       "x": "She hardly writes letters to her relatives."
+      }
+     ]
+    },
+    {
+     "title": "E. Grammar in informal letters",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**51. What tense is taught under informal letters?**"
+      },
+      {
+       "t": "p",
+       "x": "The present continuous tense."
+      },
+      {
+       "t": "p",
+       "x": "**52. What is the present continuous tense?**"
+      },
+      {
+       "t": "p",
+       "x": "The present continuous tense describes an action that is happening now or around the present time."
+      },
+      {
+       "t": "p",
+       "x": "**53. How is the present continuous tense formed?**"
+      },
+      {
+       "t": "p",
+       "x": "It is formed using:"
+      },
+      {
+       "t": "p",
+       "x": "**am/is/are + verb-ing**"
+      },
+      {
+       "t": "p",
+       "x": "**54. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "I am writing a letter."
+      },
+      {
+       "t": "p",
+       "x": "**55. Give another example.**"
+      },
+      {
+       "t": "p",
+       "x": "Mary is writing to her friend."
+      },
+      {
+       "t": "p",
+       "x": "**56. Give an example using \"are\".**"
+      },
+      {
+       "t": "p",
+       "x": "They are preparing a letter."
+      },
+      {
+       "t": "p",
+       "x": "**57. What is an adjective?**"
+      },
+      {
+       "t": "p",
+       "x": "An adjective is a word that describes a noun."
+      },
+      {
+       "t": "p",
+       "x": "**58. Give examples of adjectives that can be used in informal letters.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "happy.",
+        "friendly.",
+        "kind.",
+        "interesting.",
+        "exciting.",
+        "beautiful.",
+        "wonderful."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**59. Make a sentence using \"interesting\".**"
+      },
+      {
+       "t": "p",
+       "x": "I had an interesting experience during the holiday."
+      },
+      {
+       "t": "p",
+       "x": "**60. Make a sentence using \"friendly\".**"
+      },
+      {
+       "t": "p",
+       "x": "My new classmate is very friendly."
+      }
+     ]
+    },
+    {
+     "title": "F. Reading informal letters",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**61. What should a learner do when reading an informal letter?**"
+      },
+      {
+       "t": "p",
+       "x": "The learner should read carefully and identify the writer, receiver, purpose and important information."
+      },
+      {
+       "t": "p",
+       "x": "**62. What questions can be asked about an informal letter?**"
+      },
+      {
+       "t": "p",
+       "x": "Questions may ask about:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "the writer.",
+        "the receiver.",
+        "the date.",
+        "the purpose.",
+        "the main message.",
+        "important details.",
+        "vocabulary."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**63. How can a learner identify the purpose of a letter?**"
+      },
+      {
+       "t": "p",
+       "x": "The learner should read the letter carefully and identify the main reason why it was written."
+      },
+      {
+       "t": "p",
+       "x": "**64. Why is careful reading important?**"
+      },
+      {
+       "t": "p",
+       "x": "Careful reading helps the learner understand the message and answer comprehension questions correctly."
+      }
+     ]
+    },
+    {
+     "title": "G. Example of an informal letter",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**65. Write an informal letter to your friend telling him or her about your holiday.**"
+      },
+      {
+       "t": "p",
+       "x": "**Example:**"
+      },
+      {
+       "t": "p",
+       "x": "P.O. Box 145, Kampala. 15th September, 2026."
+      },
+      {
+       "t": "p",
+       "x": "Dear John,"
+      },
+      {
+       "t": "p",
+       "x": "How are you? I hope you are fine. I am also fine. I am writing to tell you about my holiday."
+      },
+      {
+       "t": "p",
+       "x": "During the holiday, I visited my grandparents in the village. I helped my grandmother with some housework and assisted my grandfather on the farm. I also played football with my cousins."
+      },
+      {
+       "t": "p",
+       "x": "I enjoyed my holiday very much. I wish you had been there with us."
+      },
+      {
+       "t": "p",
+       "x": "Please write back and tell me how you spent your holiday."
+      },
+      {
+       "t": "p",
+       "x": "Yours affectionately,"
+      },
+      {
+       "t": "p",
+       "x": "Peter"
+      },
+      {
+       "t": "p",
+       "x": "**66. Identify the address in the letter above.**"
+      },
+      {
+       "t": "p",
+       "x": "**P.O. Box 145, Kampala.**"
+      },
+      {
+       "t": "p",
+       "x": "**67. Identify the date.**"
+      },
+      {
+       "t": "p",
+       "x": "**15th September, 2026.**"
+      },
+      {
+       "t": "p",
+       "x": "**68. Identify the salutation.**"
+      },
+      {
+       "t": "p",
+       "x": "**Dear John,**"
+      },
+      {
+       "t": "p",
+       "x": "**69. Identify the body of the letter.**"
+      },
+      {
+       "t": "p",
+       "x": "The paragraphs between the salutation and the closing form the body of the letter."
+      },
+      {
+       "t": "p",
+       "x": "**70. Identify the complimentary close.**"
+      },
+      {
+       "t": "p",
+       "x": "**Yours affectionately,**"
+      },
+      {
+       "t": "p",
+       "x": "**71. Who is the writer?**"
+      },
+      {
+       "t": "p",
+       "x": "Peter."
+      },
+      {
+       "t": "p",
+       "x": "**72. Who is the receiver?**"
+      },
+      {
+       "t": "p",
+       "x": "John."
+      },
+      {
+       "t": "p",
+       "x": "**73. Why did Peter write the letter?**"
+      },
+      {
+       "t": "p",
+       "x": "He wrote to tell John about his holiday."
+      }
+     ]
+    },
+    {
+     "title": "H. Completing informal letters",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**74. What does it mean to complete an informal letter?**"
+      },
+      {
+       "t": "p",
+       "x": "It means filling in the missing words, sentences or parts to make the letter complete."
+      },
+      {
+       "t": "p",
+       "x": "**75. What should you consider when completing an informal letter?**"
+      },
+      {
+       "t": "p",
+       "x": "You should consider:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "the type of letter.",
+        "the purpose.",
+        "the receiver.",
+        "the information already given.",
+        "grammar.",
+        "spelling.",
+        "punctuation."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**76. Why must the language match the letter?**"
+      },
+      {
+       "t": "p",
+       "x": "The language should be suitable for the person receiving the letter and the purpose of writing it."
+      }
+     ]
+    },
+    {
+     "title": "I. Formal letters",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**77. What is a formal letter?**"
+      },
+      {
+       "t": "p",
+       "x": "A formal letter is an official letter written to a person, organisation or institution for a particular purpose."
+      },
+      {
+       "t": "p",
+       "x": "**78. When are formal letters written?**"
+      },
+      {
+       "t": "p",
+       "x": "Formal letters may be written to:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "apply for a job.",
+        "make a request.",
+        "make a complaint.",
+        "give official information.",
+        "apologise.",
+        "express regret.",
+        "respond to an advertisement."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**79. Who can receive a formal letter?**"
+      },
+      {
+       "t": "p",
+       "x": "A formal letter may be written to:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "an employer.",
+        "a head teacher.",
+        "a manager.",
+        "a government official.",
+        "an organisation.",
+        "an institution."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**80. What are the main components of a formal letter?**"
+      },
+      {
+       "t": "p",
+       "x": "They include:"
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Writer's address.",
+        "Date.",
+        "Receiver's address.",
+        "Salutation.",
+        "Subject or reference where appropriate.",
+        "Introduction.",
+        "Body.",
+        "Conclusion.",
+        "Complimentary close.",
+        "Signature.",
+        "Name."
        ],
-       "rows": [
-        [
-         "Informal letter",
-         "A letter to a person you know well"
-        ],
-        [
-         "Formal letter",
-         "A letter written to somebody in their official position"
-        ],
-        [
-         "Salutation",
-         "The greeting at the beginning of a letter"
-        ],
-        [
-         "Complimentary close",
-         "The polite ending, such as *Yours faithfully*"
-        ],
-        [
-         "Re:",
-         "The reference or subject of a formal letter"
-        ],
-        [
-         "c.c.",
-         "Carbon copy — a copy sent to another person"
-        ],
-        [
-         "pp",
-         "Signing on behalf of another person"
-        ],
-        [
-         "Vacancy",
-         "A job or place that needs to be filled"
-        ],
-        [
-         "Referee",
-         "A person who speaks for your character or ability"
-        ],
-        [
-         "Adverb",
-         "A word that tells how, when or where an action is done"
-        ]
+       "start": 1
+      },
+      {
+       "t": "p",
+       "x": "**81. What is a formal salutation?**"
+      },
+      {
+       "t": "p",
+       "x": "A formal salutation is a polite official greeting used at the beginning of a formal letter."
+      },
+      {
+       "t": "p",
+       "x": "**82. Give examples of formal salutations.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "Dear Sir,",
+        "Dear Madam,",
+        "Dear Sir/Madam."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**83. What complimentary close is normally used with \"Dear Sir\" or \"Dear Madam\"?**"
+      },
+      {
+       "t": "p",
+       "x": "**Yours faithfully** is normally used."
+      },
+      {
+       "t": "p",
+       "x": "**84. What complimentary close may be used when the person's name is known?**"
+      },
+      {
+       "t": "p",
+       "x": "**Yours sincerely** may be used."
+      }
+     ]
+    },
+    {
+     "title": "J. Formal letter vocabulary",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**85. What is a surname?**"
+      },
+      {
+       "t": "p",
+       "x": "A surname is a person's family name."
+      },
+      {
+       "t": "p",
+       "x": "**86. What is a maiden name?**"
+      },
+      {
+       "t": "p",
+       "x": "A maiden name is the surname a woman used before marriage."
+      },
+      {
+       "t": "p",
+       "x": "**87. What is an advertisement?**"
+      },
+      {
+       "t": "p",
+       "x": "An advertisement is a public notice giving information about a product, service, opportunity or vacancy."
+      },
+      {
+       "t": "p",
+       "x": "**88. What is an application?**"
+      },
+      {
+       "t": "p",
+       "x": "An application is a formal request for something."
+      },
+      {
+       "t": "p",
+       "x": "**89. What is a vacancy?**"
+      },
+      {
+       "t": "p",
+       "x": "A vacancy is an available position, especially a job."
+      },
+      {
+       "t": "p",
+       "x": "**90. What is a post?**"
+      },
+      {
+       "t": "p",
+       "x": "A post is a job or position held by a person."
+      },
+      {
+       "t": "p",
+       "x": "**91. What is a referee?**"
+      },
+      {
+       "t": "p",
+       "x": "A referee is a person who provides information about an applicant's character, ability or suitability."
+      },
+      {
+       "t": "p",
+       "x": "**92. What is a draft?**"
+      },
+      {
+       "t": "p",
+       "x": "A draft is the first version of a piece of writing before it is completed."
+      },
+      {
+       "t": "p",
+       "x": "**93. What does \"edit\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To edit means to check and improve writing."
+      },
+      {
+       "t": "p",
+       "x": "**94. What does \"sign\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To sign means to write one's name on a document."
+      },
+      {
+       "t": "p",
+       "x": "**95. What is a signature?**"
+      },
+      {
+       "t": "p",
+       "x": "A signature is a person's written name or personal mark."
+      },
+      {
+       "t": "p",
+       "x": "**96. What is a post office?**"
+      },
+      {
+       "t": "p",
+       "x": "A post office is a place where postal services are provided."
+      },
+      {
+       "t": "p",
+       "x": "**97. What is e-mail?**"
+      },
+      {
+       "t": "p",
+       "x": "E-mail is electronic mail sent through electronic communication systems, especially the internet."
+      },
+      {
+       "t": "p",
+       "x": "**98. What is the internet?**"
+      },
+      {
+       "t": "p",
+       "x": "The internet is a worldwide network that allows computers and other devices to communicate and share information."
+      },
+      {
+       "t": "p",
+       "x": "**99. What does \"sign in\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To sign in means to enter or register one's details when accessing a system, service or place."
+      },
+      {
+       "t": "p",
+       "x": "**100. What does \"sign out\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "To sign out means to leave or log out of a system or service."
+      }
+     ]
+    },
+    {
+     "title": "K. Abbreviations in formal letters",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**101. What is an abbreviation?**"
+      },
+      {
+       "t": "p",
+       "x": "An abbreviation is a shortened form of a word or group of words."
+      },
+      {
+       "t": "p",
+       "x": "**102. What does \"pp\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "In formal correspondence, **pp** can be used to indicate that someone signs a document on behalf of another person. The NCDC curriculum also lists it as \"person present\" in its vocabulary."
+      },
+      {
+       "t": "p",
+       "x": "**103. What does \"c.c.\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "**c.c.** means carbon copy. It indicates that a copy of the letter is sent to another person."
+      },
+      {
+       "t": "p",
+       "x": "**104. What does \"Re:\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "**Re:** means reference and is used to show the subject or matter being referred to."
+      },
+      {
+       "t": "p",
+       "x": "**105. What does \"Mr\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "**Mr** is a title used before the name of a man."
+      },
+      {
+       "t": "p",
+       "x": "**106. What does \"Mrs\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "**Mrs** is a title traditionally used before the name of a married woman."
+      },
+      {
+       "t": "p",
+       "x": "**107. What does \"Ms\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "**Ms** is a title used before a woman's name without indicating her marital status."
+      },
+      {
+       "t": "p",
+       "x": "**108. What does \"Miss\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "**Miss** is traditionally used before the name of an unmarried girl or woman."
+      },
+      {
+       "t": "p",
+       "x": "**109. What does \"Hon.\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "**Hon.** is an abbreviation for Honourable."
+      },
+      {
+       "t": "p",
+       "x": "**110. What does \"Dr\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "**Dr** is an abbreviation for Doctor."
+      },
+      {
+       "t": "p",
+       "x": "**111. What does \"Rev.\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "**Rev.** is an abbreviation for Reverend."
+      },
+      {
+       "t": "p",
+       "x": "**112. What does \"Prof.\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "**Prof.** is an abbreviation for Professor."
+      },
+      {
+       "t": "p",
+       "x": "**113. Why are abbreviations useful?**"
+      },
+      {
+       "t": "p",
+       "x": "They provide shorter forms of words and phrases commonly used in written communication."
+      }
+     ]
+    },
+    {
+     "title": "L. Language structures in formal letters",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**114. What language structure is taught under formal letters?**"
+      },
+      {
+       "t": "p",
+       "x": "One structure is:"
+      },
+      {
+       "t": "p",
+       "x": "**Barely ...**"
+      },
+      {
+       "t": "p",
+       "x": "**115. What does \"barely\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "\"Barely\" means only just or hardly."
+      },
+      {
+       "t": "p",
+       "x": "**116. Give the NCDC example.**"
+      },
+      {
+       "t": "p",
+       "x": "Barely 30% of the people applied for the position advertised."
+      },
+      {
+       "t": "p",
+       "x": "**117. Give another example beginning with \"Barely\".**"
+      },
+      {
+       "t": "p",
+       "x": "Barely ten applicants attended the interview."
+      },
+      {
+       "t": "p",
+       "x": "**118. What is another structure taught under formal letters?**"
+      },
+      {
+       "t": "p",
+       "x": "**... barely ...**"
+      },
+      {
+       "t": "p",
+       "x": "**119. Give the NCDC example.**"
+      },
+      {
+       "t": "p",
+       "x": "The letter was barely legible."
+      },
+      {
+       "t": "p",
+       "x": "**120. What does \"legible\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Legible means clear enough to be read."
+      },
+      {
+       "t": "p",
+       "x": "**121. Make another sentence using \"barely\".**"
+      },
+      {
+       "t": "p",
+       "x": "The writing was barely visible."
+      }
+     ]
+    },
+    {
+     "title": "M. Formation of adverbs",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**122. What is an adverb?**"
+      },
+      {
+       "t": "p",
+       "x": "An adverb is a word that gives more information about a verb, adjective or another adverb."
+      },
+      {
+       "t": "p",
+       "x": "**123. Give examples of adverbs.**"
+      },
+      {
+       "t": "p",
+       "x": "Examples include:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "carefully.",
+        "slowly.",
+        "quickly.",
+        "politely.",
+        "clearly.",
+        "accurately."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**124. How are many adverbs formed?**"
+      },
+      {
+       "t": "p",
+       "x": "Many adverbs are formed by adding **-ly** to an adjective."
+      },
+      {
+       "t": "p",
+       "x": "**125. Give an example.**"
+      },
+      {
+       "t": "p",
+       "x": "**Careful → carefully**"
+      },
+      {
+       "t": "p",
+       "x": "**126. Give another example.**"
+      },
+      {
+       "t": "p",
+       "x": "**Polite → politely**"
+      },
+      {
+       "t": "p",
+       "x": "**127. Give another example.**"
+      },
+      {
+       "t": "p",
+       "x": "**Accurate → accurately**"
+      },
+      {
+       "t": "p",
+       "x": "**128. Make a sentence using \"carefully\".**"
+      },
+      {
+       "t": "p",
+       "x": "She carefully wrote the formal letter."
+      },
+      {
+       "t": "p",
+       "x": "**129. Make a sentence using \"politely\".**"
+      },
+      {
+       "t": "p",
+       "x": "He politely requested permission."
+      },
+      {
+       "t": "p",
+       "x": "**130. Make a sentence using \"clearly\".**"
+      },
+      {
+       "t": "p",
+       "x": "The applicant clearly explained his qualifications."
+      }
+     ]
+    },
+    {
+     "title": "N. Formal application letters",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**131. What is an application letter?**"
+      },
+      {
+       "t": "p",
+       "x": "An application letter is a formal letter written to request consideration for a job or other position."
+      },
+      {
+       "t": "p",
+       "x": "**132. What is a job application?**"
+      },
+      {
+       "t": "p",
+       "x": "A job application is a formal request to be considered for a particular job."
+      },
+      {
+       "t": "p",
+       "x": "**133. What is a job advertisement?**"
+      },
+      {
+       "t": "p",
+       "x": "A job advertisement is a public notice announcing an available job."
+      },
+      {
+       "t": "p",
+       "x": "**134. What is a job vacancy?**"
+      },
+      {
+       "t": "p",
+       "x": "A job vacancy is an available job position."
+      },
+      {
+       "t": "p",
+       "x": "**135. What information can be obtained from a job advertisement?**"
+      },
+      {
+       "t": "p",
+       "x": "It may give:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "the name of the organisation.",
+        "the available post.",
+        "qualifications required.",
+        "experience required.",
+        "closing date.",
+        "application instructions."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**136. What should a learner do before writing an application letter?**"
+      },
+      {
+       "t": "p",
+       "x": "The learner should read and understand the job advertisement carefully."
+      },
+      {
+       "t": "p",
+       "x": "**137. Why should an application letter be relevant?**"
+      },
+      {
+       "t": "p",
+       "x": "It should focus on the job or position being applied for."
+      },
+      {
+       "t": "p",
+       "x": "**138. What should an applicant mention in an application letter?**"
+      },
+      {
+       "t": "p",
+       "x": "The applicant may mention:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "the post being applied for.",
+        "relevant qualifications.",
+        "relevant skills.",
+        "relevant experience.",
+        "where the vacancy was advertised."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**139. Why should information in an application letter be truthful?**"
+      },
+      {
+       "t": "p",
+       "x": "False information can mislead the person receiving the application."
+      }
+     ]
+    },
+    {
+     "title": "O. Example of a formal application letter",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**140. Write a formal letter applying for an advertised post.**"
+      },
+      {
+       "t": "p",
+       "x": "**Example:**"
+      },
+      {
+       "t": "p",
+       "x": "P.O. Box 125, Kampala. 15th September, 2026."
+      },
+      {
+       "t": "p",
+       "x": "The Manager, Bright Star Company, P.O. Box 450, Kampala."
+      },
+      {
+       "t": "p",
+       "x": "Dear Sir/Madam,"
+      },
+      {
+       "t": "p",
+       "x": "**RE: APPLICATION FOR THE POST OF OFFICE ASSISTANT**"
+      },
+      {
+       "t": "p",
+       "x": "I am writing to apply for the post of office assistant advertised recently."
+      },
+      {
+       "t": "p",
+       "x": "I am a hardworking and responsible person. I have good communication skills and I can work well with other people."
+      },
+      {
+       "t": "p",
+       "x": "I would be grateful if my application were considered. I am ready to attend an interview at your convenience."
+      },
+      {
+       "t": "p",
+       "x": "Yours faithfully,"
+      },
+      {
+       "t": "p",
+       "x": "Peter Ssenyonga"
+      },
+      {
+       "t": "p",
+       "x": "**141. What is the purpose of this letter?**"
+      },
+      {
+       "t": "p",
+       "x": "It is to apply for the post of office assistant."
+      },
+      {
+       "t": "p",
+       "x": "**142. Is this letter formal or informal?**"
+      },
+      {
+       "t": "p",
+       "x": "It is a formal letter."
+      },
+      {
+       "t": "p",
+       "x": "**143. Why is it formal?**"
+      },
+      {
+       "t": "p",
+       "x": "It is written for an official purpose and uses formal language and format."
+      }
+     ]
+    },
+    {
+     "title": "P. Formal requests",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**144. What is a request?**"
+      },
+      {
+       "t": "p",
+       "x": "A request is a polite way of asking for something."
+      },
+      {
+       "t": "p",
+       "x": "**145. Give an example of a formal request.**"
+      },
+      {
+       "t": "p",
+       "x": "I kindly request permission to use the school hall."
+      },
+      {
+       "t": "p",
+       "x": "**146. Why should formal requests be polite?**"
+      },
+      {
+       "t": "p",
+       "x": "Polite language shows respect towards the person receiving the request."
+      },
+      {
+       "t": "p",
+       "x": "**147. What types of things can be requested formally?**"
+      },
+      {
+       "t": "p",
+       "x": "A person may request:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "permission.",
+        "information.",
+        "assistance.",
+        "an opportunity.",
+        "a service.",
+        "consideration."
        ]
       }
      ]
     },
     {
-     "title": "IMPORTANT FACTS TO REMEMBER",
+     "title": "Q. Apologies and regrets",
      "blocks": [
+      {
+       "t": "p",
+       "x": "**148. What is an apology?**"
+      },
+      {
+       "t": "p",
+       "x": "An apology is an expression of regret for something wrong that a person has done."
+      },
+      {
+       "t": "p",
+       "x": "**149. Give an example of a formal apology.**"
+      },
+      {
+       "t": "p",
+       "x": "I sincerely apologise for my late response."
+      },
+      {
+       "t": "p",
+       "x": "**150. What does \"regret\" mean?**"
+      },
+      {
+       "t": "p",
+       "x": "Regret means feeling sorry about something that happened or something one did."
+      },
+      {
+       "t": "p",
+       "x": "**151. Give an example of expressing regret.**"
+      },
+      {
+       "t": "p",
+       "x": "I regret to inform you that I will not be able to attend the meeting."
+      },
+      {
+       "t": "p",
+       "x": "**152. Why may someone write a letter of apology?**"
+      },
+      {
+       "t": "p",
+       "x": "A person may write an apology letter after making a mistake, causing inconvenience or failing to fulfil an obligation."
+      }
+     ]
+    },
+    {
+     "title": "R. Reading job advertisements",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**153. What is a job advertisement?**"
+      },
+      {
+       "t": "p",
+       "x": "A job advertisement is a notice that gives information about a job vacancy."
+      },
+      {
+       "t": "p",
+       "x": "**154. What should a learner look for in a job advertisement?**"
+      },
+      {
+       "t": "p",
+       "x": "The learner should look for:"
+      },
       {
        "t": "ul",
        "items": [
-        "**Dear Sir / Dear Madam → Yours faithfully.** **Dear Mr Okello → Yours sincerely.**",
-        "The receiver's address is written **only in a formal letter**, on the **left**.",
-        "**Re:** is written and **underlined** in a formal letter only.",
-        "Sign an informal letter with your **first name**; a formal letter with your **signature and full name in capitals**.",
-        "Never use short forms (*don't, can't, I'm*) in a formal letter — write them in full.",
-        "*Yours* has **no apostrophe**: *Yours faithfully*, never \"Your's\".",
-        "Only the first word of the closing takes a capital letter: *Yours faithfully*, not *Yours Faithfully*.",
-        "**N/A** means \"not applicable\" when filling a form."
+        "the job title.",
+        "qualifications.",
+        "experience.",
+        "application procedure.",
+        "closing date.",
+        "address for applications."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**155. Why should job advertisements be read carefully?**"
+      },
+      {
+       "t": "p",
+       "x": "Careful reading helps an applicant know whether they qualify and how to apply."
+      },
+      {
+       "t": "p",
+       "x": "**156. What is a qualification?**"
+      },
+      {
+       "t": "p",
+       "x": "A qualification is an achievement, skill or certificate that makes someone suitable for a particular job or activity."
+      },
+      {
+       "t": "p",
+       "x": "**157. What is experience?**"
+      },
+      {
+       "t": "p",
+       "x": "Experience is knowledge or skill gained by doing something over time."
+      }
+     ]
+    },
+    {
+     "title": "S. Official forms",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**158. What is an official form?**"
+      },
+      {
+       "t": "p",
+       "x": "An official form is a document with spaces provided for information required by an organisation or institution."
+      },
+      {
+       "t": "p",
+       "x": "**159. Why are official forms used?**"
+      },
+      {
+       "t": "p",
+       "x": "They are used to collect information in an organised way."
+      },
+      {
+       "t": "p",
+       "x": "**160. What information may appear on an official form?**"
+      },
+      {
+       "t": "p",
+       "x": "It may ask for:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "first name.",
+        "surname.",
+        "address.",
+        "date of birth.",
+        "telephone number.",
+        "nationality.",
+        "qualifications.",
+        "signature."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**161. Why should official forms be filled in carefully?**"
+      },
+      {
+       "t": "p",
+       "x": "Incorrect information can cause problems or delays."
+      },
+      {
+       "t": "p",
+       "x": "**162. Why should a learner read instructions before filling in a form?**"
+      },
+      {
+       "t": "p",
+       "x": "Instructions explain what information should be entered and where it should be entered."
+      }
+     ]
+    },
+    {
+     "title": "T. Differences between informal and formal letters",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**163. What is one major difference between formal and informal letters?**"
+      },
+      {
+       "t": "p",
+       "x": "Informal letters are personal, while formal letters are official."
+      },
+      {
+       "t": "p",
+       "x": "**164. Who usually receives an informal letter?**"
+      },
+      {
+       "t": "p",
+       "x": "A friend, relative or classmate."
+      },
+      {
+       "t": "p",
+       "x": "**165. Who usually receives a formal letter?**"
+      },
+      {
+       "t": "p",
+       "x": "An official, employer, organisation or institution."
+      },
+      {
+       "t": "p",
+       "x": "**166. What type of language is used in informal letters?**"
+      },
+      {
+       "t": "p",
+       "x": "Friendly and personal language."
+      },
+      {
+       "t": "p",
+       "x": "**167. What type of language is used in formal letters?**"
+      },
+      {
+       "t": "p",
+       "x": "Polite, official and respectful language."
+      },
+      {
+       "t": "p",
+       "x": "**168. What is the purpose of an informal letter?**"
+      },
+      {
+       "t": "p",
+       "x": "It is mainly used for personal communication."
+      },
+      {
+       "t": "p",
+       "x": "**169. What is the purpose of a formal letter?**"
+      },
+      {
+       "t": "p",
+       "x": "It is used for official purposes such as applications, requests and complaints."
+      },
+      {
+       "t": "p",
+       "x": "**170. What is one similarity between formal and informal letters?**"
+      },
+      {
+       "t": "p",
+       "x": "Both are written forms of communication."
+      },
+      {
+       "t": "p",
+       "x": "**171. What is another similarity?**"
+      },
+      {
+       "t": "p",
+       "x": "Both should have a clear purpose and organised ideas."
+      },
+      {
+       "t": "p",
+       "x": "**172. Should both types of letters have correct spelling?**"
+      },
+      {
+       "t": "p",
+       "x": "Yes."
+      },
+      {
+       "t": "p",
+       "x": "**173. Should both types of letters have correct punctuation?**"
+      },
+      {
+       "t": "p",
+       "x": "Yes."
+      }
+     ]
+    },
+    {
+     "title": "U. Writing skills",
+     "blocks": [
+      {
+       "t": "p",
+       "x": "**174. Why should ideas be logically arranged?**"
+      },
+      {
+       "t": "p",
+       "x": "Logical arrangement makes the letter easy to understand."
+      },
+      {
+       "t": "p",
+       "x": "**175. What does accuracy mean in letter writing?**"
+      },
+      {
+       "t": "p",
+       "x": "Accuracy means using correct spelling, grammar, punctuation and information."
+      },
+      {
+       "t": "p",
+       "x": "**176. Why is articulation important?**"
+      },
+      {
+       "t": "p",
+       "x": "Articulation helps a learner pronounce words clearly when discussing or reading letters aloud."
+      },
+      {
+       "t": "p",
+       "x": "**177. What is creative thinking?**"
+      },
+      {
+       "t": "p",
+       "x": "Creative thinking is the ability to produce or consider new ideas and different ways of doing things."
+      },
+      {
+       "t": "p",
+       "x": "**178. What is critical thinking?**"
+      },
+      {
+       "t": "p",
+       "x": "Critical thinking is the ability to examine and evaluate information before making a decision."
+      },
+      {
+       "t": "p",
+       "x": "**179. How can letter writing develop self-esteem?**"
+      },
+      {
+       "t": "p",
+       "x": "It gives learners opportunities to express themselves, communicate with others and share their ideas confidently."
+      },
+      {
+       "t": "p",
+       "x": "**180. What values are emphasised in Letter Writing?**"
+      },
+      {
+       "t": "p",
+       "x": "The main values are:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "appreciation.",
+        "respect."
        ]
       }
      ]
     },
     {
-     "title": "EXAMINATION POINTS",
+     "title": "V. Practical letter-writing activities",
      "blocks": [
+      {
+       "t": "p",
+       "x": "**181. What activities can learners do when studying informal letters?**"
+      },
+      {
+       "t": "p",
+       "x": "They can:"
+      },
       {
        "t": "ul",
        "items": [
-        "A letter beginning *Dear Madam* must end with **Yours faithfully**.",
-        "The full meaning of **c.c.** — carbon copy. Of **Re:** — reference. Of **pp** — on behalf of.",
-        "One difference between formal and informal letters — the receiver's address is written in a formal letter only.",
-        "The adverb from *happy* → **happily**; from *good* → **well**.",
-        "A woman's family name before marriage — her **maiden name**.",
-        "A job that is free and needs to be filled — a **vacancy**."
+        "read informal letters.",
+        "answer comprehension questions.",
+        "write informal letters.",
+        "complete incomplete letters.",
+        "act dialogues.",
+        "write and recite poems.",
+        "discuss personal experiences."
        ]
+      },
+      {
+       "t": "p",
+       "x": "**182. What activities can learners do when studying formal letters?**"
+      },
+      {
+       "t": "p",
+       "x": "They can:"
+      },
+      {
+       "t": "ul",
+       "items": [
+        "answer comprehension questions.",
+        "write application letters.",
+        "write requests.",
+        "write apologies.",
+        "write expressions of regret.",
+        "read job advertisements.",
+        "respond to job advertisements.",
+        "fill official forms.",
+        "act dialogues.",
+        "write and recite poems.",
+        "complete formal letters."
+       ]
+      },
+      {
+       "t": "p",
+       "x": "**183. Why should learners practise completing letters?**"
+      },
+      {
+       "t": "p",
+       "x": "It helps them understand the correct parts, format and language of letters."
+      },
+      {
+       "t": "p",
+       "x": "**184. Why should learners practise writing application letters?**"
+      },
+      {
+       "t": "p",
+       "x": "It prepares them for real-life situations where they may need to apply for jobs or opportunities."
+      },
+      {
+       "t": "p",
+       "x": "**185. Why should learners practise filling official forms?**"
+      },
+      {
+       "t": "p",
+       "x": "It prepares them for situations where personal information must be provided accurately."
       }
      ]
     },
     {
-     "title": "COMMON MISTAKES TO AVOID",
+     "title": "W. Sample informal letter questions",
      "blocks": [
       {
-       "t": "ul",
+       "t": "ol",
        "items": [
-        "Writing \"Your's faithfully\" — it is **Yours faithfully**.",
-        "Ending *Dear Sir* with *Yours sincerely*.",
-        "Writing your **name above your address** at the top of the letter.",
-        "Putting the receiver's address in an **informal** letter.",
-        "Using slang or short forms in a formal letter.",
-        "Forgetting the **comma** after the salutation and after the closing.",
-        "Writing *Re:* in an informal letter."
-       ]
+        "Write a letter to your friend telling him or her about your new school."
+       ],
+       "start": 186
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Write a letter to your cousin inviting him or her to your birthday party."
+       ],
+       "start": 187
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Write a letter to your friend thanking him or her for a gift."
+       ],
+       "start": 188
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Write a letter to your relative telling him or her about your holiday."
+       ],
+       "start": 189
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Write a letter to your friend asking about his or her school."
+       ],
+       "start": 190
+      }
+     ]
+    },
+    {
+     "title": "X. Sample formal letter questions",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Write a letter applying for an advertised job."
+       ],
+       "start": 191
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Write a letter to your head teacher requesting permission to organise a school"
+       ],
+       "start": 192
+      },
+      {
+       "t": "p",
+       "x": "activity."
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Write a letter apologising for failing to attend an important meeting."
+       ],
+       "start": 193
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Write a letter expressing regret about an incident."
+       ],
+       "start": 194
+      },
+      {
+       "t": "ol",
+       "items": [
+        "Read a job advertisement and write an application letter for the advertised post."
+       ],
+       "start": 195
       }
      ]
     },
@@ -1265,26 +4557,47 @@
       {
        "t": "ol",
        "items": [
-        "Give the difference between a formal and an informal letter.",
-        "Name any six parts of a formal letter in the order in which they are written.",
-        "Name any five parts of an informal letter.",
-        "Which complimentary close is used when a letter begins with *Dear Sir*?",
-        "Which complimentary close is used when a letter begins with *Dear Mrs Achieng*?",
-        "Give the full meaning of: Re:, c.c., pp, N.B., P.S.",
-        "Give the meaning of *maiden name* and *vacancy*.",
-        "Where is the receiver's address written, and in which type of letter?",
-        "Form adverbs from: careful, happy, true, good, fast.",
-        "Fill in with the correct word: *There is ____ anyone who replied to my letter.* (hardly / hard)",
-        "Rewrite beginning with the word given: *Only 30% of the people applied.* — **Barely** …",
-        "Use *is likely to* in a sentence of your own.",
-        "Write the present continuous form: *I ____ (write) to invite you to my party.*",
-        "Give any four rules to follow when filling in an official form.",
-        "You are Nakato Sarah of P.O. Box 12, Masaka. Write the address and date part of a letter you would write on 4th May 2026.",
-        "Write the heading (Re:) you would use in a letter applying for the post of a cook.",
-        "Write a short formal letter (about eight lines) to your head teacher requesting permission to be away from school for two days.",
-        "Write a short informal letter (about eight lines) to your friend telling him or her about your new school.",
-        "Give two reasons why people write informal letters and two reasons why they write formal letters.",
-        "Correct the mistake: *Dear Sir, … Your's Sincerely, Ann.*"
+        "What is letter writing?",
+        "What are the two main types of letters studied in P.7?",
+        "What is an informal letter?",
+        "What is a formal letter?",
+        "Mention five components of an informal letter.",
+        "Mention five components of a formal letter.",
+        "Who can receive informal letters?",
+        "Who can receive formal letters?",
+        "Mention four reasons for writing informal letters.",
+        "Mention four reasons for writing formal letters.",
+        "What is a salutation?",
+        "Give two informal salutations.",
+        "Give two formal salutations.",
+        "What is a complimentary close?",
+        "What is normally used after \"Dear Sir/Madam\"?",
+        "What can be used when the person's name is known?",
+        "What does \"hardly\" mean?",
+        "Make a sentence using \"hardly\".",
+        "What does \"is likely to\" mean?",
+        "Make a sentence using \"is likely to\".",
+        "What grammar areas are taught under informal letters?",
+        "What language structure is taught under formal letters?",
+        "What grammar areas are taught under formal letters?",
+        "What does \"c.c.\" mean?",
+        "What does \"Re:\" mean?",
+        "What does \"Dr\" mean?",
+        "What does \"Rev.\" mean?",
+        "What is a vacancy?",
+        "What is an application?",
+        "What is a referee?",
+        "What is a draft?",
+        "What does \"edit\" mean?",
+        "What is a signature?",
+        "What is an official form?",
+        "Why should official forms be filled carefully?",
+        "What is an application letter?",
+        "What is a job advertisement?",
+        "What is an apology?",
+        "What does regret mean?",
+        "What are the main skills developed through letter writing?",
+        "What values are emphasised?"
        ],
        "start": 1
       }
@@ -1296,57 +4609,431 @@
       {
        "t": "ol",
        "items": [
-        "An **informal letter** is written to a person you know well, such as a friend or relative, using friendly language; a **formal letter** is written to somebody in their official position, using polite official language, and it includes the receiver's address and a heading (Re:).",
-        "Sender's address; date; receiver's address; salutation; heading (Re:); body; complimentary close; signature and full name. (Any six in order.)",
-        "Sender's address; date; salutation; introduction; body; conclusion; complimentary close; first name. (Any five.)",
-        "**Yours faithfully.**",
-        "**Yours sincerely.**",
-        "Re: — **reference**; c.c. — **carbon copy**; pp — **on behalf of**; N.B. — **note well**; P.S. — a note **added at the end of a letter**.",
-        "**Maiden name** — a woman's family name before she married. **Vacancy** — a job or place that is free and needs to be filled.",
-        "On the **left-hand side**, below the date, and only in a **formal letter**.",
-        "careful → **carefully**; happy → **happily**; true → **truly**; good → **well**; fast → **fast**.",
-        "**hardly**",
-        "**Barely 30% of the people applied.**",
-        "*Learner's sentence,* for example: *He **is likely to** come tomorrow.*",
-        "**am writing**",
-        "Any four of: write in capital letters; use black or blue ink; write the surname first where asked; write dates as day/month/year; leave nothing blank — write N/A; do not overwrite; sign where a signature is required.",
-        "For example: *P.O. Box 12* *Masaka* *4th May 2026* (written at the top right, with no name above the address)",
-        "**RE: APPLICATION FOR THE POST OF A COOK** (written and underlined).",
-        "*Learner's letter.* It must have: the sender's address and date (right), the head teacher's address (left), *Dear Sir/Madam,*, an underlined **RE:** line, a polite body giving the reason and dates, **Yours faithfully,** a signature and the full name in capitals.",
-        "*Learner's letter.* It must have: the sender's address and date (right), *Dear …,* a friendly opening, a body in paragraphs, a closing greeting, *Yours affectionately/Your friend,* and the first name only. **No** receiver's address and **no** Re: line.",
-        "**Informal:** to greet or give news, to invite a friend, to thank somebody, to apologise (any two). **Formal:** to apply for a job or a place, to ask permission, to complain, to request information (any two).",
-        "It should read: *Dear Sir, … **Yours faithfully**, Ann.* — the close must match *Dear Sir*, *Yours* has no apostrophe, and *faithfully* takes a small letter."
+        "It is communicating a message to another person or organisation in written form.",
+        "Informal letters and formal letters.",
+        "A personal letter written to someone we know well.",
+        "An official letter written for a particular formal purpose.",
+        "Address, date, salutation, body and complimentary close.",
+        "Writer's address, date, receiver's address, salutation and body.",
+        "Friends, relatives and classmates.",
+        "Officials, employers, organisations and institutions.",
+        "To give information, maintain friendship, ask questions and thank someone.",
+        "To apply for a job, make a request, make a complaint and give official information.",
+        "A greeting at the beginning of a letter.",
+        "Dear John and Dear Mary.",
+        "Dear Sir and Dear Madam.",
+        "A polite expression used at the end of a letter before the writer's name.",
+        "Yours faithfully.",
+        "Yours sincerely.",
+        "Almost not or almost never.",
+        "I hardly receive letters from my old friend.",
+        "It means something will probably happen.",
+        "Mary is likely to visit us tomorrow.",
+        "Present continuous tense and adjectives.",
+        "\"Barely...\" and \"... barely ...\"",
+        "Abbreviations and formation of adverbs.",
+        "Carbon copy.",
+        "Reference.",
+        "Doctor.",
+        "Reverend.",
+        "An available job or position.",
+        "A formal request for something.",
+        "A person who provides information about an applicant's character, ability or suitability.",
+        "The first version of a piece of writing.",
+        "To check and improve writing.",
+        "A person's written name or personal mark.",
+        "A document with spaces provided for required information.",
+        "To ensure that the information provided is correct.",
+        "A formal letter written to apply for a job or position.",
+        "A notice giving information about an available job.",
+        "An expression of regret for something wrong that one has done.",
+        "Feeling sorry about something that happened or something one did.",
+        "Effective communication, creative thinking, critical thinking and self-expression.",
+        "Appreciation and respect."
        ],
        "start": 1
       }
      ]
     },
     {
-     "title": "P.7 QUICK REVISION",
+     "title": "KEY DEFINITIONS",
      "blocks": [
       {
-       "t": "ul",
-       "items": [
-        "**Dear Sir/Madam → Yours faithfully** · **Dear Mr/Mrs (name) → Yours sincerely**",
-        "Formal letter only: **receiver's address (left)** + **RE: underlined** + signature and full name",
-        "Informal letter: address, date, *Dear …,* body, *Yours affectionately,* **first name**",
-        "**Yours** — no apostrophe · small letter for *faithfully / sincerely*",
-        "Re: = reference · c.c. = carbon copy · pp = on behalf of · N/A = not applicable",
-        "Adverbs: happy → happily · true → truly · good → **well**"
+       "t": "table",
+       "head": [
+        "Word",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "Address",
+         "Information showing where someone lives or where a letter is sent"
+        ],
+        [
+         "First name",
+         "A person's personal name"
+        ],
+        [
+         "Personal letter",
+         "A letter concerning personal matters"
+        ],
+        [
+         "Informal letter",
+         "A personal letter to someone known well"
+        ],
+        [
+         "Formal letter",
+         "An official letter for an official purpose"
+        ],
+        [
+         "Stamp",
+         "Paper attached to an envelope to show postage has been paid"
+        ],
+        [
+         "Envelope",
+         "Cover used for carrying and protecting a letter"
+        ],
+        [
+         "Occasion",
+         "A particular event or time"
+        ],
+        [
+         "Party",
+         "A social gathering"
+        ],
+        [
+         "Affectionately",
+         "In a loving or caring manner"
+        ],
+        [
+         "Sincerely",
+         "Honestly or genuinely"
+        ],
+        [
+         "Relatives",
+         "Members of one's family"
+        ],
+        [
+         "Friends",
+         "People who know and care about each other"
+        ],
+        [
+         "Classmates",
+         "Learners in the same class"
+        ],
+        [
+         "Introduction",
+         "Opening part of a letter"
+        ],
+        [
+         "Body",
+         "Main part of a letter"
+        ],
+        [
+         "Date",
+         "Day, month and year when something happened"
+        ],
+        [
+         "Reply",
+         "Answer to a letter"
+        ],
+        [
+         "Purpose",
+         "Reason for doing something"
+        ],
+        [
+         "Reason",
+         "Explanation for something"
+        ],
+        [
+         "Inform",
+         "To give information"
+        ],
+        [
+         "Ask",
+         "To request information or something"
+        ],
+        [
+         "Thank",
+         "To express gratitude"
+        ],
+        [
+         "Surname",
+         "Family name"
+        ],
+        [
+         "Maiden name",
+         "Surname used before marriage"
+        ],
+        [
+         "Salutation",
+         "Greeting at the beginning of a letter"
+        ],
+        [
+         "Faithfully",
+         "In a loyal or sincere manner"
+        ],
+        [
+         "Sign",
+         "To write one's name"
+        ],
+        [
+         "Signature",
+         "Written name or personal mark"
+        ],
+        [
+         "Advertisement",
+         "Public notice giving information"
+        ],
+        [
+         "Application",
+         "Formal request for something"
+        ],
+        [
+         "Vacancy",
+         "Available job or position"
+        ],
+        [
+         "Post",
+         "Job or position"
+        ],
+        [
+         "Draft",
+         "First version of writing"
+        ],
+        [
+         "Referee",
+         "Person who gives information about an applicant"
+        ],
+        [
+         "Reference",
+         "Information identifying a subject or matter"
+        ],
+        [
+         "Edit",
+         "To check and improve writing"
+        ],
+        [
+         "Post office",
+         "Place providing postal services"
+        ],
+        [
+         "E-mail",
+         "Electronic mail"
+        ],
+        [
+         "Internet",
+         "Worldwide network connecting computers and devices"
+        ],
+        [
+         "Barely",
+         "Only just; hardly"
+        ],
+        [
+         "Legible",
+         "Clear enough to be read"
+        ],
+        [
+         "Abbreviation",
+         "Shortened form of a word or phrase"
+        ],
+        [
+         "Apology",
+         "Expression of regret"
+        ],
+        [
+         "Regret",
+         "Feeling sorry about something"
+        ],
+        [
+         "Qualification",
+         "Skill, certificate or achievement relevant to a position"
+        ],
+        [
+         "Experience",
+         "Knowledge or skill gained through doing something"
+        ]
        ]
       }
      ]
     },
     {
-     "title": "A note on sources",
+     "title": "COMMON ABBREVIATIONS",
+     "blocks": [
+      {
+       "t": "table",
+       "head": [
+        "Abbreviation",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "pp",
+         "Used when signing on behalf of another person; NCDC also lists person present"
+        ],
+        [
+         "c.c.",
+         "Carbon copy"
+        ],
+        [
+         "Re:",
+         "Reference"
+        ],
+        [
+         "Mr",
+         "Used before the name of a man"
+        ],
+        [
+         "Mrs",
+         "Traditionally used before the name of a married woman"
+        ],
+        [
+         "Ms",
+         "Title used before a woman's name without indicating marital status"
+        ],
+        [
+         "Miss",
+         "Traditionally used before the name of an unmarried girl or woman"
+        ],
+        [
+         "Hon.",
+         "Honourable"
+        ],
+        [
+         "Dr",
+         "Doctor"
+        ],
+        [
+         "Rev.",
+         "Reverend"
+        ],
+        [
+         "Prof.",
+         "Professor"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT LANGUAGE AREAS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Informal letters",
+        "Formal letters",
+        "Components of letters",
+        "Present continuous tense",
+        "Adjectives",
+        "\"... is likely to ...\"",
+        "\"... hardly ...\"",
+        "\"Barely ...\"",
+        "\"... barely ...\"",
+        "Abbreviations",
+        "Formation of adverbs",
+        "Job advertisements",
+        "Application letters",
+        "Requests",
+        "Apologies",
+        "Regrets",
+        "Official forms",
+        "Comprehension of letters",
+        "Correct spelling",
+        "Correct punctuation",
+        "Logical presentation of ideas"
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "IMPORTANT FACTS TO REMEMBER",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "An **informal letter** is a **personal** letter to someone the writer knows well; a **formal letter** is an **official** letter for an official purpose.",
+        "The writer's address goes at the **top right-hand side** of the letter; the **date** is written **below the address**.",
+        "Components of an informal letter: **address, date, salutation, introduction, body, conclusion, complimentary close, name or signature**.",
+        "A formal letter also includes the **receiver's address** and a **subject or reference**.",
+        "Informal closes: **Yours affectionately, Yours lovingly, Yours sincerely, Best wishes, With love**.",
+        "**Dear Sir / Dear Madam** takes **Yours faithfully**; when the name is known, use **Yours sincerely**.",
+        "**\"is likely to\"** means will probably happen — *Anna is likely to write to me.* (NCDC example)",
+        "**\"hardly\"** means almost not — *There is hardly anyone who has bothered to reply.* (NCDC example)",
+        "**\"barely\"** means only just — *Barely 30% of the people applied for the position advertised.* (NCDC example); **legible** means clear enough to be read.",
+        "The **present continuous** is formed with **am/is/are + verb-ing**; many **adverbs** are made by adding **-ly** to adjectives (careful → carefully).",
+        "**c.c.** = carbon copy; **Re:** = reference; **pp** = signing on behalf of another person.",
+        "A **referee** gives information about an applicant; a **draft** is the first version of a piece of writing.",
+        "The values emphasised in Letter Writing are **appreciation and respect**."
+       ]
+      }
+     ]
+    },
+    {
+     "title": "EXAMINATION POINTS",
+     "blocks": [
+      {
+       "t": "ul",
+       "items": [
+        "Expect **parts-of-a-letter** identification: address, date, salutation, body, complimentary close, writer, receiver.",
+        "Expect **complimentary close choices**: Dear Sir/Madam → **Yours faithfully**; name known → **Yours sincerely**.",
+        "Expect **abbreviation meanings**: c.c. = **carbon copy**, Re: = **reference**, Dr = **Doctor**, Rev. = **Reverend**, Prof. = **Professor**, Hon. = **Honourable**.",
+        "Expect **adverb formation**: careful → **carefully**, polite → **politely**, accurate → **accurately**.",
+        "Expect sentences with **\"is likely to\"**, **\"hardly\"** and **\"barely\"**.",
+        "Expect **present continuous** examples: *I am writing a letter.*",
+        "Expect **application letter** content: the post applied for, qualifications, skills, experience, where the vacancy was advertised.",
+        "Expect **informal vs formal** differences: personal vs official; friendly vs polite official language.",
+        "Question words to expect: **Mention… Give… Identify… Write… Complete… What does … mean?**"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "MAIN SKILLS",
+     "blocks": [
+      {
+       "t": "ol",
+       "items": [
+        "Identify the components of an informal letter.",
+        "Identify the components of a formal letter.",
+        "Explain when informal letters are written.",
+        "Explain when formal letters are written.",
+        "Differentiate between formal and informal letters.",
+        "Read informal letters.",
+        "Interpret informal letters.",
+        "Read formal letters.",
+        "Interpret formal letters.",
+        "Answer comprehension questions about letters.",
+        "Write informal letters correctly.",
+        "Write formal letters correctly.",
+        "Write application letters.",
+        "Write requests.",
+        "Write apologies.",
+        "Express regrets appropriately.",
+        "Read and respond to job advertisements.",
+        "Fill official forms correctly.",
+        "Complete informal letters.",
+        "Complete formal letters.",
+        "Use letter-writing vocabulary appropriately.",
+        "Use appropriate language structures.",
+        "Use abbreviations correctly.",
+        "Form and use adverbs correctly.",
+        "Present ideas logically.",
+        "Communicate accurately.",
+        "Express oneself confidently.",
+        "Show appreciation and respect."
+       ],
+       "start": 1
+      }
+     ]
+    },
+    {
+     "title": "A NOTE ON SOURCES",
      "blocks": [
       {
        "t": "p",
-       "x": "The topic title, sub-topics, vocabulary list, language structures, abbreviations, competences and teacher guidance above were taken from the official **NCDC Primary Seven Curriculum, Set One** (topic outline page 30 and pages 36–39 of the PDF in `curriculum/`). The sample layouts, explanations, tables, exercises and answers are original teaching material written for the learner; they are **not** copied from the curriculum document or from any textbook."
-      },
-      {
-       "t": "p",
-       "x": "No NCDC **Teacher's Guide** was available, so the syllabus \"Guidance to the Teacher\" was used directly instead."
+       "x": "The question-and-answer content of this topic (sections A–Y, the revision questions and answers, the key vocabulary, common abbreviations, language areas and main skills) was supplied by the app owner as the authoritative notes for **Topic 2: Letter Writing** and is reproduced here in the app's format with its continuous numbering (1–236) preserved. The topic aligns with the official **NCDC Primary Seven Curriculum, Set One**, English Topic 2 — Letter Writing, 28 periods (`curriculum/PRIMARY-SEVEN-SET-ONE.pdf`, pages 36–38), sub-topics 2A Informal Letters and 2B Formal Letters: the syllabus structures *\"is likely to\"*, *\"hardly\"*, *\"barely\"*, the grammar items (present continuous tense, adjectives, formation of adverbs, abbreviations) and the examples *\"Anna is likely to write to me\"*, *\"There is hardly anyone who has bothered to reply\"* and *\"Barely 30% of the people applied for the position advertised\"* are quoted from the owner's notes as NCDC material. No additional curriculum content has been invented."
       }
      ]
     }
